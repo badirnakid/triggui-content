@@ -1,20 +1,82 @@
 {
   "libros": [
     {
-      "titulo": "Los hábitos secretos de los genios",
-      "autor": "Craig Wright",
-      "dimension": "Bienestar|Prosperidad|Conexión",
+      "titulo": "La Buena Vida",
+      "autor": "Robert Waldinger",
+      "dimension": "Conexión",
       "palabras": [
-        "vivo",
-        "sueño",
-        "paz",
-        "luz"
+        "Abrazo",
+        "Sonrisa",
+        "Luz",
+        "Armonía"
       ],
       "frases": [
-        "🌟 La mente clara abre nuevas oportunidades.",
-        "🌱 Cultiva hábitos que transformen tu vida.",
-        "💫 La conexión auténtica enriquece el alma.",
-        "🌈 La prosperidad comienza con pensamientos positivos."
+        "🤝 La conexión nutre el alma.",
+        "🌱 Cultiva la empatía con amor.",
+        "💖 La autenticidad ilumina la vida.",
+        "✨ Los vínculos son nuestro hogar."
+      ],
+      "colores": [
+        "#FF5722",
+        "#FFC107",
+        "#4CAF50",
+        "#2196F3"
+      ],
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 La Buena Vida\nRobert Waldinger"
+    },
+    {
+      "titulo": "Can't Hurt Me",
+      "autor": "David Goggins",
+      "dimension": "Bienestar",
+      "palabras": [
+        "Fuerza",
+        "Valor",
+        "Trato",
+        "Avance"
+      ],
+      "frases": [
+        "🔥 El coraje transforma la debilidad.",
+        "🌟 Cada paso es un triunfo.",
+        "💪 La disciplina edifica el ser.",
+        "🚀 El dolor es el camino a la grandeza."
+      ],
+      "colores": [
+        "#FF5722",
+        "#4CAF50",
+        "#2196F3",
+        "#FFC107"
+      ],
+      "fondo": "#212121",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "portada": "📚 Can't Hurt Me\nDavid Goggins"
+    },
+    {
+      "titulo": "Rejection Proof",
+      "autor": "Jia Jiang",
+      "dimension": "Conexión",
+      "palabras": [
+        "Valor",
+        "Amor",
+        "Fuerza",
+        "Luz"
+      ],
+      "frases": [
+        "🌈 Cada rechazo abre una nueva puerta.",
+        "💪 La valentía transforma el miedo en éxito.",
+        "🌟 Abrazar el rechazo es abrazar la vida.",
+        "🤝 Conectar es crecer, incluso en el desafío."
       ],
       "colores": [
         "#FF5733",
@@ -22,133 +84,107 @@
         "#3357FF",
         "#FF33A1"
       ],
-      "fondo": "#2C2C2C",
+      "fondo": "#1A1A1A",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Rejection Proof\nJia Jiang"
+    },
+    {
+      "titulo": "Think Again",
+      "autor": "Adam Grant",
+      "dimension": "Conexión",
+      "palabras": [
+        "Sorpresa",
+        "Fluidez",
+        "Despertar",
+        "Crecimiento"
+      ],
+      "frases": [
+        "🌟 Recuérdate que todo fluye y cambia.",
+        "💡 La curiosidad abre puertas inesperadas.",
+        "🤝 Escuchar transforma relaciones profundas.",
+        "🌱 Crecer es un viaje lleno de oportunidades."
+      ],
+      "colores": [
+        "#FF5733",
+        "#33FF57",
+        "#3357FF",
+        "#F3FF33"
+      ],
+      "fondo": "#2A2A2A",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "portada": "📚 Think Again\nAdam Grant"
+    },
+    {
+      "titulo": "Los hábitos secretos de los genios",
+      "autor": "Craig Wright",
+      "dimension": "Bienestar",
+      "palabras": [
+        "Fluir",
+        "Brillo",
+        "Paz",
+        "Crecimiento"
+      ],
+      "frases": [
+        "🌱 Cultiva hábitos, cosecha grandeza.",
+        "💡 La sabiduría transforma tu día a día.",
+        "🌈 Abre la mente, siente la libertad.",
+        "✨ Cada hábito, un paso hacia el éxito."
+      ],
+      "colores": [
+        "#FF5722",
+        "#FFC107",
+        "#8BC34A",
+        "#3F51B5"
+      ],
+      "fondo": "#212121",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
       "portada": "📚 Los hábitos secretos de los genios\nCraig Wright"
     },
     {
       "titulo": "La ciencia del éxito",
       "autor": "Napoleon Hill",
-      "dimension": "Bienestar|Prosperidad|Conexión",
+      "dimension": "Prosperidad",
       "palabras": [
-        "amor",
-        "luz",
-        "paz",
-        "red"
+        "Éxito",
+        "Fuego",
+        "Meta",
+        "Brío"
       ],
       "frases": [
-        "🌱 La gratitud alimenta el alma.",
-        "✨ La fe transforma los sueños en realidad.",
-        "🤝 La conexión es el puente del éxito.",
-        "🌈 La felicidad se cultiva en la mente."
+        "🌟 Tu potencial es infinito.",
+        "💪 Cada paso te acerca a tus sueños.",
+        "💡 La acción transforma ideas en oro.",
+        "🚀 Hoy es el día para avanzar."
       ],
       "colores": [
         "#FF5733",
         "#33FF57",
         "#3357FF",
-        "#F3FF33"
+        "#FF33A6"
       ],
-      "fondo": "#333333",
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
       "portada": "📚 La ciencia del éxito\nNapoleon Hill"
-    },
-    {
-      "titulo": "Think Again",
-      "autor": "Adam Grant",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "palabras": [
-        "luz",
-        "vida",
-        "paz",
-        "amor"
-      ],
-      "frases": [
-        "💡 La curiosidad nos guía hacia nuevas ideas.",
-        "🌱 Crecer es aceptar la incertidumbre con alegría.",
-        "🤝 Conectar es construir puentes de entendimiento.",
-        "✨ La reflexión constante transforma nuestro camino."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#1C1C1C",
-      "portada": "📚 Think Again\nAdam Grant"
-    },
-    {
-      "titulo": "La Buena Vida",
-      "autor": "Robert Waldinger",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "palabras": [
-        "amor",
-        "paz",
-        "feliz",
-        "esfuerzo"
-      ],
-      "frases": [
-        "🌟 La felicidad se construye día a día.",
-        "💖 La conexión es la clave de la felicidad.",
-        "🌱 Cultiva relaciones significativas.",
-        "✨ El bienestar comienza en tu interior."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F3FF33"
-      ],
-      "fondo": "#2C3E50",
-      "portada": "📚 La Buena Vida\nRobert Waldinger"
-    },
-    {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "palabras": [
-        "amor",
-        "vida",
-        "luz",
-        "paz"
-      ],
-      "frases": [
-        "🌟 La vida está llena de oportunidades.",
-        "🌈 Cultiva conexiones auténticas a tu alrededor.",
-        "💪 El rechazo es solo un paso hacia el crecimiento.",
-        "✨ La prosperidad comienza en tu mente."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#2D2D2D",
-      "portada": "📚 Rejection Proof\nJia Jiang"
-    },
-    {
-      "titulo": "Can't Hurt Me",
-      "autor": "David Goggins",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "palabras": [
-        "amor",
-        "salud",
-        "paz",
-        "éxito"
-      ],
-      "frases": [
-        "💪 La disciplina es el puente entre metas y logros.",
-        "🔥 El dolor es temporal, el orgullo es para siempre.",
-        "🌟 La verdadera fuerza nace de enfrentar tus miedos.",
-        "🌈 Cada día es una oportunidad para mejorar."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#1C1C1C",
-      "portada": "📚 Can't Hurt Me\nDavid Goggins"
     }
   ]
 }
