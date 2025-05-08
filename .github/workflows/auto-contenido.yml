@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci                      # ← línea correcta
+      - run: npm install openai csv-parse                      # ← línea correcta
       - run: node scripts/build-contenido.js
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
