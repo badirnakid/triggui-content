@@ -1,0 +1,24 @@
+name: Generar contenido diario
+
+on:
+  schedule:
+    - cron: '0 12 * * *'       # 06:00 CDMX (UTC-6)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_KEY: ${{ secrets.OPENAI_KEY }}   # opcional
+      TZ: America/Mexico_City
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i openai csv-parse
+      - run: node scripts/build-contenido.js
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: contenido.json
+          commit_message: "bot: contenido diario ✨"
