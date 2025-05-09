@@ -1,114 +1,134 @@
-/* ───────────── Triggui · build-contenido.js (v Dios) ──────────────
-   - GPT-4o-mini recibe contexto rico + ejemplo + reglas duras.
-   - Detecta dimensión, crea palabras emocionales, frases elevadoras,
-     colores vibrantes y fondo oscuro.
-   - Portada: usa URL si existe en CSV, si no crea texto estético.
-   - Autodepuración de JSON + fallback garantizado.
-────────────────────────────────────────────────────────────────── */
+/* ════════════════════════════════════════════════════════════════
+   Triggui · build-contenido.js  (versión “Centros & Hawkins”)
+   ----------------------------------------------------------------
+   – Por cada libro entrega un activador de 3 pasos:
+       1. Movimiento   (cuerpo)   · palabra₁ + frase₁
+       2. Corazón      (emoción)  · palabra₂ + frase₂
+       3. Cerebro      (mente)    · palabra₃ + frase₃
+     Cada paso sube en el mapa de Hawkins y está ligado a la
+     Dimensión (Bienestar / Prosperidad / Conexión).
+   – Campos extra: punto (Cero|Creativo|Activo|Máximo),
+     4 colores vibrantes, fondo oscuro y textColors auto-calculado.
+   – Todo lenguaje cotidiano, 0 misticismo.
+════════════════════════════════════════════════════════════════ */
 
-import fs from "node:fs/promises";
+import fs   from "node:fs/promises";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
 
-const KEY = process.env.OPENAI_KEY;
-
-/* 1 ▸ leer CSV -------------------------------------------------- */
-const csv = await fs.readFile("data/libros_master.csv", "utf8");
-const master = parse(csv, { columns: true, skip_empty_lines: true });
-
-/* 2 ▸ salir si no hay clave ------------------------------------ */
-if (!KEY) {
-  console.log("🔕  Sin OPENAI_KEY → contenido.json queda intacto.");
+/* ENV & CONST --------------------------------------------------- */
+const OPENAI_KEY = process.env.OPENAI_KEY;
+if(!OPENAI_KEY){
+  console.log("🔕  Sin OPENAI_KEY — contenido.json se conserva.");
   process.exit(0);
 }
 
-const openai = new OpenAI({ apiKey: KEY });
+const CSV_FILE   = "data/libros_master.csv";
+const OUT_JSON   = "contenido.json";
+const DAILY_MAX  = 10;              // libros procesados por ejecución
+const MODEL      = "gpt-4o-mini";
 
-/* utils -------------------------------------------------------- */
-const pick10 = master.sort(() => Math.random() - 0.5).slice(0, 10);
-const lum = h => {
-  const [r, g, b] = h.replace("#", "").match(/.{2}/g).map(x => parseInt(x, 16) / 255);
-  const a = [r, g, b].map(v => (v <= .03928 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4));
-  return 0.2126 * a[0] + 0.7152 * a[1] + 0.0722 * a[2];
+/* UTILS --------------------------------------------------------- */
+const luma  = h=>{const [r,g,b]=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255);
+  const a=v=>v<=.03928? v/12.92 : ((v+.055)/1.055)**2.4;
+  const [R,G,B]=[a(r),a(g),a(b)];
+  return .2126*R + .7152*G + .0722*B;
 };
-const textColor = bg => (lum(bg) > 0.35 ? "#000000" : "#FFFFFF");
+const txtColor = h => luma(h)>.35 ? "#000000" : "#FFFFFF";
 
-/* fallback ----------------------------------------------------- */
-function fallback(b, cause) {
-  console.warn(`⚠️  Fallback «${b.titulo}»:`, cause);
-  const col = ["#FF7F50", "#FFB347", "#FFCC33", "#FF6666"];
-  return {
-    ...b,
-    dimension: "Bienestar",
-    palabras: ["Lectura", "Pausa", "Pulso", "Luz"],
-    frases: [
-      "📖 Abre y despierta.",
-      "🌱 Una línea nutre.",
-      "💫 Pulso de papel real.",
-      "🔑 La luz está adentro."
-    ],
-    colores: col,
-    textColors: col.map(textColor),
-    fondo: "#111111",
-    portada: b.portada?.trim() ? b.portada.trim() : `📚 ${b.titulo}\n${b.autor}`
-  };
+/* READ CSV ------------------------------------------------------ */
+const csv   = await fs.readFile(CSV_FILE,"utf8");
+const lista = parse(csv,{columns:true,skip_empty_lines:true});
+const pick  = lista.sort(()=>Math.random()-.5).slice(0,Math.min(lista.length,DAILY_MAX));
+
+/* OPENAI -------------------------------------------------------- */
+const openai = new OpenAI({apiKey:OPENAI_KEY});
+
+/* ── PROMPT NIVEL DIOS ────────────────────────────────────────── */
+const SYSTEM = `
+Eres Triggui, impulso mínimo para abrir un libro físico.
+Entrega JSON estricto (sin \`\`\`), exactamente con estas claves:
+{
+  "dimension": "Bienestar|Prosperidad|Conexión",
+  "punto": "Cero|Creativo|Activo|Máximo",
+  "palabras": ["...", "...", "..."],
+  "frases":   ["...", "...", "..."],
+  "colores":  ["#hex1","#hex2","#hex3","#hex4"],
+  "fondo": "#hex"
 }
 
-/* prompt base -------------------------------------------------- */
-const SYSTEM = `
-Eres Triggui: una chispa que impulsa a abrir un libro físico.
-Tu salida SIEMPRE es JSON estricto, sin \`\`\` ni texto extra.
-Reglas:
-• Elige dimensión correcta:
-    – Bienestar  = cuerpo, mente, hábitos, salud interior.
-    – Prosperidad = dinero, negocio, talento productivo.
-    – Conexión   = vínculos, familia, espiritualidad, empatía.
-• "palabras": 4 emociones breves (1–2 sílabas) que el lector SENTIRÁ.
-• "frases": 4 frases ≤60c, cada una con emoji único; elevan energía (mapa Hawkins) pero sin nombrarlo.
-• "colores": 4 hex vibrantes (sin repetir).
-• "fondo": un hex oscuro que combine.
-Ejemplo válido:
+Reglas vitales:
+• Cada índice i (0,1,2) corresponde:
+    0 → Centro de Energía Movimiento   (cuerpo, acción)
+    1 → Centro de Energía Corazón      (emoción, sentimiento)
+    2 → Centro de Energía Cerebro      (claridad, mente)
+• Las 3 frases forman una secuencia LÓGICA y ASCENDENTE en Hawkins:
+    Movimiento (Impulso) → Corazón (Apertura) → Cerebro (Claridad)
+• Cada frase:
+    – ≤ 60 caracteres
+    – Empieza con 1 emoji relacionado
+    – Lenguaje cotidiano, directo, sin “universo/energía/vibrar”
+    – Relacionada con la palabra y el libro
+• "dimension": usa 1 de estas guías rápidas
+    Bienestar  → cuerpo / hábitos / mente
+    Prosperidad→ dinero / proyecto / talento
+    Conexión   → vínculos / servicio / propósito
+• "punto" define la intensidad del mensaje:
+    Cero (pausa) · Creativo (idea) · Activo (acción) · Máximo (expansión)
+• "colores": 4 hex vibrantes distintos.
+  color[0] → bloque 0 (Movimiento) ... color[2] → bloque 2, color[3] → portada
+• "fondo": un hex oscuro que haga contraste.
+• Si no sabes un dato, inventa con sentido.
+Ejemplo breve válido:
 {
  "dimension":"Prosperidad",
- "palabras":["Ritmo","Brillo","Pulso","Foco"],
- "frases":["🚀 El ritmo fabrica grandeza."],
- "colores":["#FF0066","#00D9FF","#7C4DFF","#FFC300"],
- "fondo":"#10102A"
+ "punto":"Creativo",
+ "palabras":["Ritmo","Pulso","Foco"],
+ "frases":["🚶 Da un paso ya.","❤️ Siente el logro.","🧠 Piensa en simple."],
+ "colores":["#FF007A","#FF9B42","#40F99B","#5126FF"],
+ "fondo":"#101019"
 }
 `;
 
-async function enrich(b) {
-  const USER = `Libro: "${b.titulo}" de ${b.autor} → genera el JSON.`;
-  try {
-    const chat = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      temperature: 0.9,
-      messages: [
-        { role: "system", content: SYSTEM.trim() },
-        { role: "user",   content: USER }
+function fallback(b,msg){
+  const base=["#ff8a8a","#ffd56b","#8affc1","#6a8dff"];
+  return{
+    ...b,
+    dimension:"Bienestar",
+    punto:"Cero",
+    palabras:["Mover","Sentir","Pensar"],
+    frases:["🚶 Camina un minuto.","❤️ Nota tu pulso.","🧠 Respira y aclara."],
+    colores:base,
+    textColors:base.map(txtColor),
+    fondo:"#111111",
+    portada:b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`
+  };
+}
+
+/* ENRICH -------------------------------------------------------- */
+async function enrich(book){
+  const USER=`Libro: "${book.titulo}" de ${book.autor}\nGenera estructura.`;
+  try{
+    const resp=await openai.chat.completions.create({
+      model:MODEL,
+      temperature:.9,
+      messages:[
+        {role:"system",content:SYSTEM.trim()},
+        {role:"user",content:USER.trim()}
       ]
     });
-
-    /* limpiar posible envoltorio ```json ... ``` */
-    let raw = chat.choices[0].message.content.trim();
-    if (raw.startsWith("```")) raw = raw.replace(/```[\s\S]*?\n/, "").replace(/```$/, "");
-
-    /* autodepuración rudimentaria de comas finales / quotes simples */
-    raw = raw.replace(/,\s*}/g, "}").replace(/,\s*]/g, "]").replace(/'/g, '"');
-
-    const extra = JSON.parse(raw);
-    extra.textColors = extra.colores.map(textColor);
-    return {
-      ...b,
-      ...extra,
-      portada: b.portada?.trim() ? b.portada.trim() : `📚 ${b.titulo}\n${b.autor}`
-    };
-  } catch (err) {
-    return fallback(b, err.code || err.message);
+    let raw=resp.choices[0].message.content.trim();
+    if(raw.startsWith("```")) raw=raw.replace(/```[\s\S]*?\n/,"").replace(/```$/,"");
+    const extra=JSON.parse(raw);
+    extra.textColors=extra.colores.map(txtColor);
+    return {...book,...extra,portada:book.portada?.trim()||`📚 ${book.titulo}\n${book.autor}`};
+  }catch(e){
+    console.warn("⚠️ Fallback:",book.titulo,e.message||e.code);
+    return fallback(book,e.message);
   }
 }
 
-/* procesar ----------------------------------------------------- */
-const libros = await Promise.all(pick10.map(enrich));
-await fs.writeFile("contenido.json", JSON.stringify({ libros }, null, 2));
-console.log("✅ contenido.json generado:", libros.length, "libros");
+/* MAIN ---------------------------------------------------------- */
+const libros = await Promise.all(pick.map(enrich));
+await fs.writeFile(OUT_JSON,JSON.stringify({libros},null,2));
+console.log("✅ contenido.json generado:",libros.length,"libros");
