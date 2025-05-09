@@ -1,134 +1,121 @@
-/* ════════════════════════════════════════════════════════════════
-   Triggui · build-contenido.js  (versión “Centros & Hawkins”)
-   ----------------------------------------------------------------
-   – Por cada libro entrega un activador de 3 pasos:
-       1. Movimiento   (cuerpo)   · palabra₁ + frase₁
-       2. Corazón      (emoción)  · palabra₂ + frase₂
-       3. Cerebro      (mente)    · palabra₃ + frase₃
-     Cada paso sube en el mapa de Hawkins y está ligado a la
-     Dimensión (Bienestar / Prosperidad / Conexión).
-   – Campos extra: punto (Cero|Creativo|Activo|Máximo),
-     4 colores vibrantes, fondo oscuro y textColors auto-calculado.
-   – Todo lenguaje cotidiano, 0 misticismo.
-════════════════════════════════════════════════════════════════ */
+/* ────────────────────────────────────────────────────────────────
+   Triggui · build-contenido.js  (4-bloques, prompt “nivel-dios”)
+   ─ Para cada libro genera:
+       ▸ 4 palabras  (Movimiento · Corazón · Cerebro · Integración)
+       ▸ 4 frases    (40-75 car, 1 emoji, tono directo, ascendente)
+       ▸ dimensión   (Bienestar | Prosperidad | Conexión)
+       ▸ punto       (Cero | Creativo | Activo | Máximo)
+       ▸ 4 colores   vibrantes + fondo oscuro  + textColors
+   ─ Fallback seguro si la API falla.
+──────────────────────────────────────────────────────────────── */
 
 import fs   from "node:fs/promises";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
 
-/* ENV & CONST --------------------------------------------------- */
-const OPENAI_KEY = process.env.OPENAI_KEY;
-if(!OPENAI_KEY){
-  console.log("🔕  Sin OPENAI_KEY — contenido.json se conserva.");
-  process.exit(0);
-}
-
-const CSV_FILE   = "data/libros_master.csv";
-const OUT_JSON   = "contenido.json";
-const DAILY_MAX  = 10;              // libros procesados por ejecución
+/* ENV ----------------------------------------------------------- */
+const KEY = process.env.OPENAI_KEY;
+if (!KEY) { console.log("🔕  Sin OPENAI_KEY — contenido.json se conserva."); process.exit(0); }
 const MODEL      = "gpt-4o-mini";
+const CSV_FILE   = "data/libros_master.csv";
+const OUT_FILE   = "contenido.json";
+const DAILY_MAX  = 10;                          // libros por ejecución
 
-/* UTILS --------------------------------------------------------- */
-const luma  = h=>{const [r,g,b]=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255);
-  const a=v=>v<=.03928? v/12.92 : ((v+.055)/1.055)**2.4;
-  const [R,G,B]=[a(r),a(g),a(b)];
-  return .2126*R + .7152*G + .0722*B;
+/* CONTRASTE ----------------------------------------------------- */
+const lum = h=>{const [r,g,b]=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255);
+  const f=v=>v<=.03928? v/12.92 : ((v+.055)/1.055)**2.4;
+  return .2126*f(r)+.7152*f(g)+.0722*f(b);
 };
-const txtColor = h => luma(h)>.35 ? "#000000" : "#FFFFFF";
+const txt = h => lum(h)>.35 ? "#000000" : "#FFFFFF";
 
 /* READ CSV ------------------------------------------------------ */
 const csv   = await fs.readFile(CSV_FILE,"utf8");
 const lista = parse(csv,{columns:true,skip_empty_lines:true});
-const pick  = lista.sort(()=>Math.random()-.5).slice(0,Math.min(lista.length,DAILY_MAX));
+const pick  = lista.sort(()=>Math.random()-.5).slice(0,Math.min(DAILY_MAX,lista.length));
 
 /* OPENAI -------------------------------------------------------- */
-const openai = new OpenAI({apiKey:OPENAI_KEY});
+const openai = new OpenAI({apiKey:KEY});
 
-/* ── PROMPT NIVEL DIOS ────────────────────────────────────────── */
+/* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
-Eres Triggui, impulso mínimo para abrir un libro físico.
-Entrega JSON estricto (sin \`\`\`), exactamente con estas claves:
+Eres Triggui. Entregas activadores claros, breves y potentes.
+Formato JSON estricto, sin \` \`\`:
+
 {
-  "dimension": "Bienestar|Prosperidad|Conexión",
-  "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": ["...", "...", "..."],
-  "frases":   ["...", "...", "..."],
-  "colores":  ["#hex1","#hex2","#hex3","#hex4"],
-  "fondo": "#hex"
+ "dimension": "Bienestar|Prosperidad|Conexión",
+ "punto": "Cero|Creativo|Activo|Máximo",
+ "palabras": ["...", "...", "...", "..."],     // 4
+ "frases":   ["...", "...", "...", "..."],     // 4
+ "colores":  ["#hex1","#hex2","#hex3","#hex4"],
+ "fondo": "#hex"
 }
 
-Reglas vitales:
-• Cada índice i (0,1,2) corresponde:
-    0 → Centro de Energía Movimiento   (cuerpo, acción)
-    1 → Centro de Energía Corazón      (emoción, sentimiento)
-    2 → Centro de Energía Cerebro      (claridad, mente)
-• Las 3 frases forman una secuencia LÓGICA y ASCENDENTE en Hawkins:
-    Movimiento (Impulso) → Corazón (Apertura) → Cerebro (Claridad)
-• Cada frase:
-    – ≤ 60 caracteres
-    – Empieza con 1 emoji relacionado
-    – Lenguaje cotidiano, directo, sin “universo/energía/vibrar”
-    – Relacionada con la palabra y el libro
-• "dimension": usa 1 de estas guías rápidas
-    Bienestar  → cuerpo / hábitos / mente
-    Prosperidad→ dinero / proyecto / talento
-    Conexión   → vínculos / servicio / propósito
-• "punto" define la intensidad del mensaje:
-    Cero (pausa) · Creativo (idea) · Activo (acción) · Máximo (expansión)
-• "colores": 4 hex vibrantes distintos.
-  color[0] → bloque 0 (Movimiento) ... color[2] → bloque 2, color[3] → portada
-• "fondo": un hex oscuro que haga contraste.
-• Si no sabes un dato, inventa con sentido.
-Ejemplo breve válido:
-{
- "dimension":"Prosperidad",
- "punto":"Creativo",
- "palabras":["Ritmo","Pulso","Foco"],
- "frases":["🚶 Da un paso ya.","❤️ Siente el logro.","🧠 Piensa en simple."],
- "colores":["#FF007A","#FF9B42","#40F99B","#5126FF"],
- "fondo":"#101019"
-}
+Asignación fija de índice → Centro de Energía + intención
+0 • Movimiento  · impulsa acción física
+1 • Corazón     · conecta emoción / gratitud
+2 • Cerebro     · brinda claridad mental
+3 • Integración · invita a abrir el libro
+
+Requisitos de las FRASES:
+• Longitud 40-75 caracteres (varía; evita aspecto robot).
+• Comienzan con 1 emoji alineado al mensaje, sin repetir emojis.
+• Tono cotidiano, directo, sin términos esotéricos.
+• Relación explícita a la PALABRA y al tema del libro.
+• Cada frase sube un nivel de expansión (Hawkins ascendente).
+
+Colores:
+• 4 hex vibrantes distintos que contrasten entre sí (se usarán en orden).
+• fondo: un hex oscuro armónico.
+
+Si algo falta, crea con sentido. No añadas otros campos.
 `;
 
-function fallback(b,msg){
-  const base=["#ff8a8a","#ffd56b","#8affc1","#6a8dff"];
+const FALL_COLORS=["#ff8a8a","#ffb56b","#8cabff","#d288ff"];
+function fallback(b,why){
   return{
     ...b,
     dimension:"Bienestar",
     punto:"Cero",
-    palabras:["Mover","Sentir","Pensar"],
-    frases:["🚶 Camina un minuto.","❤️ Nota tu pulso.","🧠 Respira y aclara."],
-    colores:base,
-    textColors:base.map(txtColor),
+    palabras:["Mover","Sentir","Pensar","Abrir"],
+    frases:["🚶 Da un paso pequeño ahora.","❤️ Nota qué te alegra hoy.","🧠 Elige una idea y simplifícala.","✨ Abre el libro y deja que te sorprenda."],
+    colores:FALL_COLORS,
+    textColors:FALL_COLORS.map(txt),
     fondo:"#111111",
-    portada:b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`
+    portada:b.portada?.trim()||`📚 ${b.titulo}\n${b.autor}`
   };
 }
 
 /* ENRICH -------------------------------------------------------- */
-async function enrich(book){
-  const USER=`Libro: "${book.titulo}" de ${book.autor}\nGenera estructura.`;
+async function enrich(b){
   try{
-    const resp=await openai.chat.completions.create({
-      model:MODEL,
-      temperature:.9,
+    const chat = await openai.chat.completions.create({
+      model:MODEL,temperature:.9,
       messages:[
         {role:"system",content:SYSTEM.trim()},
-        {role:"user",content:USER.trim()}
+        {role:"user",content:`Libro: "${b.titulo}" de ${b.autor}. Genera la estructura.`}
       ]
     });
-    let raw=resp.choices[0].message.content.trim();
+    let raw=chat.choices[0].message.content.trim();
     if(raw.startsWith("```")) raw=raw.replace(/```[\s\S]*?\n/,"").replace(/```$/,"");
     const extra=JSON.parse(raw);
-    extra.textColors=extra.colores.map(txtColor);
-    return {...book,...extra,portada:book.portada?.trim()||`📚 ${book.titulo}\n${book.autor}`};
+
+    /* Garantizar arrays de longitud 4 */
+    ["palabras","frases","colores"].forEach(k=>{
+      while(extra[k].length<4) extra[k].push(extra[k][extra[k].length-1]);
+    });
+    extra.textColors=extra.colores.map(txt);
+    return{
+      ...b,
+      ...extra,
+      portada:b.portada?.trim()||`📚 ${b.titulo}\n${b.autor}`
+    };
   }catch(e){
-    console.warn("⚠️ Fallback:",book.titulo,e.message||e.code);
-    return fallback(book,e.message);
+    console.warn("⚠️ Fallback",b.titulo,":",e.message);
+    return fallback(b,e.message);
   }
 }
 
 /* MAIN ---------------------------------------------------------- */
 const libros = await Promise.all(pick.map(enrich));
-await fs.writeFile(OUT_JSON,JSON.stringify({libros},null,2));
+await fs.writeFile(OUT_FILE,JSON.stringify({libros},null,2));
 console.log("✅ contenido.json generado:",libros.length,"libros");
