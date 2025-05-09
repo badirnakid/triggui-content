@@ -1,28 +1,117 @@
 {
   "libros": [
     {
-      "titulo": "Think Again",
-      "autor": "Adam Grant",
-      "dimension": "Conexión",
+      "titulo": "Conciencia",
+      "autor": "Osho",
+      "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
-        "Asombro",
-        "Fe",
-        "Vínculo",
-        "Cambio"
+        "Despertar",
+        "Sentir",
+        "Entender"
       ],
       "frases": [
-        "🌱 Creer es el primer paso hacia el cambio.",
-        "💡 La curiosidad conecta corazones.",
-        "🔄 Cada opinión puede ser una invitación a aprender.",
-        "🌍 El entendimiento nos une en la diversidad."
+        "🌅 Comienza a notar lo que te rodea.",
+        "💖 Permite que las emociones fluyan.",
+        "🧠 Reflexiona sobre tus pensamientos."
+      ],
+      "colores": [
+        "#FF5733",
+        "#FFC300",
+        "#DAF7A6",
+        "#C70039"
+      ],
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Conciencia\nOsho"
+    },
+    {
+      "titulo": "El poder de la concentración absoluta",
+      "autor": "Dandapani",
+      "dimension": "Bienestar",
+      "punto": "Activa",
+      "palabras": [
+        "Enfoque",
+        "Claridad",
+        "Disciplina"
+      ],
+      "frases": [
+        "💪 Mantén el foco en lo que importa.",
+        "❤️ Abre tu mente a nuevas posibilidades.",
+        "🧠 Organiza tus pensamientos con claridad."
+      ],
+      "colores": [
+        "#FF6347",
+        "#FFD700",
+        "#00BFFF",
+        "#7FFF00"
+      ],
+      "fondo": "#2F4F4F",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 El poder de la concentración absoluta\nDandapani"
+    },
+    {
+      "titulo": "Rejection Proof",
+      "autor": "Jia Jiang",
+      "dimension": "Conexión",
+      "punto": "Activo",
+      "palabras": [
+        "Valentía",
+        "Apertura",
+        "Aprendizaje"
+      ],
+      "frases": [
+        "🚀 Atrévete a pedir más.",
+        "❤️ Abre tu corazón a nuevas experiencias.",
+        "🧠 Reflexiona sobre el rechazo como oportunidad."
+      ],
+      "colores": [
+        "#FF5733",
+        "#FFC300",
+        "#DAF7A6",
+        "#900C3F"
+      ],
+      "fondo": "#2C2C2C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Rejection Proof\nJia Jiang"
+    },
+    {
+      "titulo": "Think Again",
+      "autor": "Adam Grant",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "Reflexión",
+        "Apertura",
+        "Crecimiento"
+      ],
+      "frases": [
+        "🧐 Cuestiona lo conocido.",
+        "💡 Escucha nuevas ideas.",
+        "🧠 Aprende sin límites."
       ],
       "colores": [
         "#FF6F61",
-        "#6B5B9A",
+        "#6B5B95",
         "#88B04B",
-        "#FFD700"
+        "#F7CAC9"
       ],
-      "fondo": "#2E2E2E",
+      "fondo": "#2B2D42",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -32,126 +121,92 @@
       "portada": "📚 Think Again\nAdam Grant"
     },
     {
-      "titulo": "La Buena Vida",
-      "autor": "Robert Waldinger",
-      "dimension": "Bienestar",
-      "palabras": [
-        "Paz",
-        "Amor",
-        "Risa",
-        "Sueño"
-      ],
-      "frases": [
-        "🌱 La paz florece en el corazón.",
-        "❤️ El amor construye la verdadera vida.",
-        "😂 La risa es el sol que brilla.",
-        "💤 Los sueños son el camino a la felicidad."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#10101A",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 La Buena Vida\nRobert Waldinger"
-    },
-    {
       "titulo": "La ciencia del éxito",
       "autor": "Napoleon Hill",
       "dimension": "Prosperidad",
+      "punto": "Activo",
       "palabras": [
-        "Éxito",
-        "Fuerza",
         "Meta",
-        "Riqueza"
+        "Confianza",
+        "Éxito"
       ],
       "frases": [
-        "💪 La fuerza del deseo transforma sueños en logros.",
-        "🌟 Cada meta es un peldaño hacia la grandeza.",
-        "🏆 La riqueza comienza en la mente antes de llegar a las manos.",
-        "🔥 El impulso crea las oportunidades que esperas."
+        "🚀 Establece una meta clara.",
+        "💪 Cree en ti mismo.",
+        "🏆 Actúa para lograrlo."
       ],
       "colores": [
         "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F3FF33"
+        "#FFC300",
+        "#DAF7A6",
+        "#581845"
       ],
       "fondo": "#2C2C2C",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#FFFFFF"
       ],
       "portada": "📚 La ciencia del éxito\nNapoleon Hill"
     },
     {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
+      "titulo": "La Buena Vida",
+      "autor": "Robert Waldinger",
       "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
-        "Lectura",
-        "Pausa",
-        "Pulso",
-        "Luz"
+        "Relaciones",
+        "Felicidad",
+        "Plenitud"
       ],
       "frases": [
-        "📖 Abre y despierta.",
-        "🌱 Una línea nutre.",
-        "💫 Pulso de papel real.",
-        "🔑 La luz está adentro."
+        "🚶 Cultiva tus relaciones día a día.",
+        "❤️ Disfruta cada momento compartido.",
+        "🧠 Reflexiona sobre tu camino hacia la felicidad."
       ],
       "colores": [
-        "#FF7F50",
-        "#FFB347",
-        "#FFCC33",
-        "#FF6666"
+        "#FF6F61",
+        "#6FA3EF",
+        "#88D8B0",
+        "#FFDA44"
       ],
+      "fondo": "#2E2E2E",
       "textColors": [
+        "#FFFFFF",
         "#000000",
         "#000000",
-        "#000000",
-        "#FFFFFF"
+        "#000000"
       ],
-      "fondo": "#111111",
-      "portada": "📚 Rejection Proof\nJia Jiang"
+      "portada": "📚 La Buena Vida\nRobert Waldinger"
     },
     {
       "titulo": "Can't Hurt Me",
       "autor": "David Goggins",
       "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
-        "Fuerza",
-        "Valor",
-        "Foco",
-        "Crecimiento"
+        "Disciplina",
+        "Superación",
+        "Enfoque"
       ],
       "frases": [
-        "🔥 La fuerza transforma el dolor en poder.",
-        "🌟 El valor desafía tus límites diarios.",
-        "💪 El enfoque crea caminos hacia el éxito.",
-        "🌱 El crecimiento florece tras la adversidad."
+        "🏃‍♂️ Entrena tu cuerpo cada día.",
+        "💪 Cada obstáculo te fortalece.",
+        "🧠 La mente es tu mejor aliada."
       ],
       "colores": [
         "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F1C40F"
+        "#C70039",
+        "#FFC300",
+        "#900C3F"
       ],
-      "fondo": "#2C3E50",
+      "fondo": "#1C1C1C",
       "textColors": [
         "#FFFFFF",
-        "#000000",
         "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#FFFFFF"
       ],
       "portada": "📚 Can't Hurt Me\nDavid Goggins"
     },
@@ -159,32 +214,61 @@
       "titulo": "Los hábitos secretos de los genios",
       "autor": "Craig Wright",
       "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
-        "Flujo",
-        "Fuerza",
-        "Armonía",
-        "Vitalidad"
+        "Ritmo",
+        "Disciplina",
+        "Éxito"
       ],
       "frases": [
-        "🌱 Cultiva hábitos que transforman tu vida.",
-        "🌟 La fuerza de un genio está en su rutina.",
-        "💡 La armonía se encuentra en el enfoque diario.",
-        "🔥 Vitalidad en cada acción te lleva lejos."
+        "🚶 Crea un hábito hoy.",
+        "❤️ Celebra tus avances.",
+        "🧠 Visualiza tu futuro."
       ],
       "colores": [
-        "#FFC107",
-        "#FF5722",
+        "#FF6F20",
+        "#FFD700",
         "#4CAF50",
-        "#3F51B5"
+        "#2196F3"
       ],
-      "fondo": "#212121",
+      "fondo": "#1B1B1B",
       "textColors": [
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#FFFFFF",
         "#FFFFFF"
       ],
       "portada": "📚 Los hábitos secretos de los genios\nCraig Wright"
+    },
+    {
+      "titulo": "El cisne negro",
+      "autor": "Nassim Nicholas Taleb",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "Sorpresa",
+        "Adaptación",
+        "Reflexión"
+      ],
+      "frases": [
+        "🦢 Aprende a esperar lo inesperado.",
+        "❤️ Acepta el cambio en tu vida.",
+        "🧠 Cuestiona tus certezas."
+      ],
+      "colores": [
+        "#FF5733",
+        "#C70039",
+        "#900C3F",
+        "#581845"
+      ],
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 El cisne negro\nNassim Nicholas Taleb"
     }
   ]
 }
