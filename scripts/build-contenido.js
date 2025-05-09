@@ -57,14 +57,14 @@ Asignación fija de índice → Centro de Energía + intención
 3 • Integración · invita a abrir el libro
 
 Requisitos de las FRASES:
-• Longitud 40-75 caracteres (varía; evita aspecto robot).
-• Comienzan con 1 emoji alineado al mensaje, sin repetir emojis.
-• Tono cotidiano, directo, sin términos esotéricos.
+• Longitud 40-85 caracteres (varía; evita aspecto robot).
+• Comienzan con 1 emoji padrísimo alineado al mensaje, sin repetir emojis.
+• Tono cotidiano, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
 • Relación explícita a la PALABRA y al tema del libro.
-• Cada frase sube un nivel de expansión (Hawkins ascendente).
+• Cada frase sube un nivel de expansión (mapa de conciencia de David Hawkins ascendente). De verdad debe ser impactante lo que leerá el usuario. Sublime
 
 Colores:
-• 4 hex vibrantes distintos que contrasten entre sí (se usarán en orden).
+• 4 hex vibrantes dopaminérgicos espectaculares combinaciones algunos tipo neón distintos que contrasten entre sí (se usarán en orden).
 • fondo: un hex oscuro armónico.
 
 Si algo falta, crea con sentido. No añadas otros campos.
