@@ -1,181 +1,21 @@
 {
   "libros": [
     {
-      "titulo": "Can't Hurt Me",
-      "autor": "David Goggins",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "resiliencia",
-        "determinación",
-        "auto-superación",
-        "fortaleza"
-      ],
-      "frases": [
-        "💪 Tu fuerza interior es inquebrantable; ¡descúbrela hoy!",
-        "🔥 Transformar el dolor en poder es tu mayor desafío.",
-        "🚀 Cada paso hacia adelante es una victoria en tu viaje personal.",
-        "🌟 Aplica 3 pasos: 1. Enfrenta tus miedos, 2. Establece metas audaces, 3. Celebra cada logro."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A8"
-      ],
-      "fondo": "#2C3E50",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Can't Hurt Me\nDavid Goggins"
-    },
-    {
-      "titulo": "El poder de la concentración absoluta",
-      "autor": "Dandapani",
-      "dimension": "Bienestar",
+      "titulo": "El cisne negro",
+      "autor": "Nassim Nicholas Taleb",
+      "dimension": "Cerebro",
       "punto": "Activo",
       "palabras": [
-        "Enfoque",
-        "Determinación",
-        "Clareza",
-        "Éxito"
+        "Incertidumbre",
+        "Sorprendente",
+        "Riesgo",
+        "Adaptación"
       ],
       "frases": [
-        "🚀 La claridad en tu propósito abre puertas inesperadas.",
-        "🌟 Con cada paso decidido, tu enfoque se vuelve imparable.",
-        "🔥 La determinación transforma el ruido en poder absoluto, ¡actúa ahora!",
-        "💡 Dedica 10 minutos diarios a meditar, establece objetivos y visualiza tu éxito."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#1C1C1C",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 El poder de la concentración absoluta\nDandapani"
-    },
-    {
-      "titulo": "Conciencia",
-      "autor": "Osho",
-      "dimension": "Conexión",
-      "punto": "Activo",
-      "palabras": [
-        "Despertar",
-        "Autenticidad",
-        "Interacción",
-        "Transformación"
-      ],
-      "frases": [
-        "🌟 Desata tu esencia, vive y deja ser a otros.",
-        "🔥 Conéctate desde el corazón, integra cada experiencia a tu ser.",
-        "✨ Cada interacción es una oportunidad para redescubrirte y elevarte.",
-        "🚀 Acción: Medita 10 minutos, escribe tus emociones, comparte tu luz."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#1A1A1A",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Conciencia\nOsho"
-    },
-    {
-      "titulo": "Cointeligencia",
-      "autor": "Ethan Mollick",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
-        "Colaboración",
-        "Innovación",
-        "Sinergia",
-        "Impacto"
-      ],
-      "frases": [
-        "🚀 La unión de talentos transforma ideas en acciones poderosas.",
-        "✨ Cada colaboración teje un futuro lleno de posibilidades vibrantes.",
-        "🌟 Juntos, creamos impactos que trascienden más allá de lo imaginable.",
-        "💡 Actúa ahora: busca un socio, comparte una idea y da el primer paso hacia el cambio."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#1C1C1C",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Cointeligencia\nEthan Mollick"
-    },
-    {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
-      "dimension": "Bienestar",
-      "punto": "Activo",
-      "palabras": [
-        "resiliencia",
-        "autenticidad",
-        "valentía",
-        "oportunidad"
-      ],
-      "frases": [
-        "🚀 Cada no que enfrentas es un paso hacia tu verdadero sí. ¡Abrazalo!",
-        "🔥 La valentía de pedir es el primer paso hacia tus sueños. No temas.",
-        "🌟 Cada rechazo es una oportunidad disfrazada. ¡Descúbrela hoy!",
-        "🎯 Actúa, pregunta y nunca dejes de buscar lo que mereces. Toma el control."
-      ],
-      "colores": [
-        "#ff5733",
-        "#33ff57",
-        "#3357ff",
-        "#ff33a1"
-      ],
-      "fondo": "#2c2c2c",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Rejection Proof\nJia Jiang"
-    },
-    {
-      "titulo": "La ciencia del éxito",
-      "autor": "Napoleon Hill",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Triunfo",
-        "Éxito",
-        "Abundancia",
-        "Poder"
-      ],
-      "frases": [
-        "🚀 Tu grandeza comienza hoy. ¡Deja huella en el mundo!",
-        "🔥 Eres capaz de transformar metas en realidades, ¡adelante!",
-        "💎 La verdadera riqueza se construye con acciones, sé imparable.",
-        "✨ Da tres pasos hoy: visualiza, actúa y celebra tus logros."
+        "🦩 La sorpresa es el motor que impulsa la innovación.",
+        "🦩 Enfrentar lo inesperado abre puertas a nuevas realidades.",
+        "🦩 Abraza la incertidumbre y transforma el riesgo en oportunidad.",
+        "🦩 Cuestiona lo establecido: observa, reflexiona, actúa."
       ],
       "colores": [
         "#FF5733",
@@ -190,61 +30,125 @@
         "#FFFFFF",
         "#000000"
       ],
-      "portada": "📚 La ciencia del éxito\nNapoleon Hill"
+      "portada": "📚 El cisne negro\nNassim Nicholas Taleb"
     },
     {
-      "titulo": "La Buena Vida",
-      "autor": "Robert Waldinger",
-      "dimension": "Conexión",
-      "punto": "Máximo",
+      "titulo": "Think Again",
+      "autor": "Adam Grant",
+      "dimension": "Cerebro",
+      "punto": "Activo",
       "palabras": [
-        "relación",
-        "significado",
-        "bienestar",
-        "felicidad"
+        "Reflexión",
+        "Adaptación",
+        "Curiosidad",
+        "Transformación"
       ],
       "frases": [
-        "💖 Conecta con quienes realmente importan, tu vida florecerá.",
-        "🌟 La clave de la felicidad se encuentra en las relaciones profundas.",
-        "🌈 Alimenta el sentido de pertenencia, cada encuentro es una joya.",
-        "🚀 Haz estas tres cosas: escucha realmente, comparte experiencias, cultiva gratitud."
+        "🧠 Reflexionar te lleva a descubrir nuevas posibilidades en tu vida.",
+        "🔄 La adaptación es clave para navegar un mundo en constante cambio.",
+        "🔍 La curiosidad es la chispa que enciende el conocimiento ilimitado.",
+        "🔧 Transformar tus ideas te permite crecer y evolucionar sin límites. Actúa: Escucha a otros, cuestiona tus creencias, escribe un diario."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6B5B9A",
+        "#88B04B",
+        "#F7CAC9"
+      ],
+      "fondo": "#3B3B3B",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 Think Again\nAdam Grant"
+    },
+    {
+      "titulo": "Cointeligencia",
+      "autor": "Ethan Mollick",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "Innovación",
+        "Colaboración",
+        "Crecimiento",
+        "Impacto"
+      ],
+      "frases": [
+        "🚀 La innovación abre puertas a nuevas oportunidades. ¡Impulsa tu camino!",
+        "🤝 La colaboración transforma ideas en realidades. ¡Únete y crea!",
+        "🌱 El crecimiento personal es la clave del éxito sostenible. ¡Aprovecha cada momento!",
+        "🌟 Impacta el mundo a través de tus acciones. ¡Haz que cada paso cuente!"
       ],
       "colores": [
         "#FF5733",
         "#33FF57",
         "#3357FF",
-        "#FF33A8"
+        "#FF33A1"
       ],
-      "fondo": "#1A1A1A",
+      "fondo": "#2C3E50",
       "textColors": [
         "#FFFFFF",
         "#000000",
         "#FFFFFF",
         "#FFFFFF"
       ],
-      "portada": "📚 La Buena Vida\nRobert Waldinger"
+      "portada": "📚 Cointeligencia\nEthan Mollick"
     },
     {
-      "titulo": "Indistractable",
-      "autor": "Nir Eyal",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
+      "titulo": "Los hábitos secretos de los genios",
+      "autor": "Craig Wright",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
       "palabras": [
+        "Eficiencia",
+        "Creatividad",
         "Enfoque",
-        "Autodisciplina",
-        "Claridad",
-        "Propósito"
+        "Inspiración"
       ],
       "frases": [
-        "🚀 ¡Aprovecha cada instante y enfócate en lo importante!",
-        "🌟 Conquista tus distracciones y despierta tu autodisciplina.",
-        "🔥 La claridad mental es tu mejor aliada para disfrutar de la vida.",
-        "💡 Define tu propósito y observa cómo se transforma tu realidad. Haz 3 acciones hoy para alinear tu tiempo con tus metas."
+        "🚀 La acción constante alimenta tus sueños, ¡no te detengas nunca!",
+        "💡 La chispa de la creatividad enciende oportunidades infinitas en tu vida.",
+        "🎯 La claridad de propósito lleva a un enfoque potente y transformador.",
+        "🌟 Crea un ritual diario: despierta, planifica, ejecuta y celebra tus logros."
       ],
       "colores": [
         "#FF5733",
         "#33FF57",
-        "#337BFF",
+        "#3357FF",
+        "#F39C12"
+      ],
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "portada": "📚 Los hábitos secretos de los genios\nCraig Wright"
+    },
+    {
+      "titulo": "La ciencia del éxito",
+      "autor": "Napoleon Hill",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Éxito",
+        "Determinación",
+        "Abundancia",
+        "Logro"
+      ],
+      "frases": [
+        "🚀 La cima está más cerca de lo que imaginas, ¡avanza con determinación!",
+        "💡 Tu potencial es tan infinito como tu deseo de triunfar. ¡Actúa ya!",
+        "🌟 La abundancia te rodea; solo es necesario abrir la mente a las oportunidades.",
+        "🔥 Define tus metas, crea un plan y toma acción diaria para materializar tus sueños."
+      ],
+      "colores": [
+        "#FF5733",
+        "#33FF57",
+        "#3357FF",
         "#FF33A1"
       ],
       "fondo": "#1C1C1C",
@@ -254,56 +158,88 @@
         "#FFFFFF",
         "#FFFFFF"
       ],
-      "portada": "📚 Indistractable\nNir Eyal"
+      "portada": "📚 La ciencia del éxito\nNapoleon Hill"
     },
     {
-      "titulo": "El cisne negro",
-      "autor": "Nassim Nicholas Taleb",
-      "dimension": "Cerebro",
-      "punto": "Activo",
+      "titulo": "El poder de la concentración absoluta",
+      "autor": "Dandapani",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
       "palabras": [
-        "Impredecible",
-        "Oportunidad",
-        "Conocimiento",
-        "Adaptabilidad"
+        "Enfoque",
+        "Claridad",
+        "Presencia",
+        "Intención"
       ],
       "frases": [
-        "🦅 La vida está llena de sorpresas; acéptalas y crece con ellas.",
-        "🎯 Cada reto es una oportunidad disfrazada, ¡aprovéchala hoy!",
-        "💡 La sabiduría se encuentra en lo inesperado; mantén tu mente abierta.",
-        "🌟 Haz tres cosas hoy que desafíen tu comodidad: aprende algo nuevo, busca una conexión inesperada y reflexiona sobre tus aprendizajes."
+        "😎 Cada instante es una oportunidad para forjar tu destino.",
+        "🌟 La magia sucede cuando tu mente y corazón están en sintonía.",
+        "💡 La claridad mental transforma tus acciones en logros extraordinarios.",
+        "🔥 Enfócate: respira profundo, reconoce tu propósito y actúa con determinación."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A8"
+        "#FF6F61",
+        "#6FA3EF",
+        "#F9E74E",
+        "#FF9F00"
       ],
-      "fondo": "#1A1A1A",
+      "fondo": "#2B2D42",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
+        "#000000",
+        "#000000"
       ],
-      "portada": "📚 El cisne negro\nNassim Nicholas Taleb"
+      "portada": "📚 El poder de la concentración absoluta\nDandapani"
     },
     {
       "titulo": "En pocas palabras",
       "autor": "Ben Guttmann",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
+      "dimension": "Conexión",
+      "punto": "Activo",
       "palabras": [
         "Claridad",
-        "Comunicación",
-        "Autenticidad",
+        "Dirección",
+        "Compasión",
+        "Empoderamiento"
+      ],
+      "frases": [
+        "🚀 La claridad es el primer paso hacia la transformación. ¡Actúa hoy!",
+        "🌈 Cada palabra que eliges puede cambiar el rumbo de tu vida. ¡Elige sabiamente!",
+        "💖 La compasión hacia ti mismo y los demás crea lazos inquebrantables. ¡Conecta!",
+        "🔥 Empodérate, toma decisiones audaces y transforma tu realidad. ¡Inicia ahora! \n1. Escribe tus metas.\n2. Comparte tus pensamientos.\n3. Activa tu red de apoyo."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6B5B93",
+        "#88B04B",
+        "#F7CAC9"
+      ],
+      "fondo": "#2D2A26",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 En pocas palabras\nBen Guttmann"
+    },
+    {
+      "titulo": "Steve Jobs",
+      "autor": " Walter Isaacson",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Innovación",
+        "Visión",
+        "Pasión",
         "Impacto"
       ],
       "frases": [
-        "✨ La claridad en tus palabras transforma cada conversación en una oportunidad de conexión.",
-        "💡 Comunica desde la autenticidad y observa cómo tus relaciones florecen.",
-        "🔥 Tus palabras tienen el poder de impactar vidas; elige expresarlas con sabiduría.",
-        "🚀 Acciona: escoge tres palabras poderosas hoy, comunícalas con pasión y observa el cambio."
+        "🚀 Impulsa tu creatividad y transforma el mundo en cada paso.",
+        "🔥 Atrévete a soñar en grande y a convertir tus ideas en realidades vibrantes.",
+        "🌟 La excelencia no es un acto, sino un hábito; establece tu legado hoy mismo.",
+        "💡 Has un compromiso contigo mismo: aprende, crea y comparte tu luz única."
       ],
       "colores": [
         "#FF5733",
@@ -311,14 +247,78 @@
         "#3357FF",
         "#FF33A1"
       ],
-      "fondo": "#282828",
+      "fondo": "#1C1C1C",
       "textColors": [
         "#FFFFFF",
         "#000000",
         "#FFFFFF",
         "#FFFFFF"
       ],
-      "portada": "📚 En pocas palabras\nBen Guttmann"
+      "portada": "📚 Steve Jobs\n Walter Isaacson"
+    },
+    {
+      "titulo": "Rejection Proof",
+      "autor": "Jia Jiang",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "Valentía",
+        "Resiliencia",
+        "Crecimiento",
+        "Empoderamiento"
+      ],
+      "frases": [
+        "🚀 Atrévete a enfrentarte a lo desconocido y transforma tu vida.",
+        "🔥 Cada rechazo es una oportunidad disfrazada, ¡abraza el aprendizaje!",
+        "💪 Despierta tu fuerza interna y conviértete en el dueño de tu destino.",
+        "✨ Toma acción: enfrenta un miedo, pide ayuda a alguien cercano, y celebra un rechazo como parte del camino."
+      ],
+      "colores": [
+        "#FF5733",
+        "#33FF57",
+        "#3357FF",
+        "#FF33A8"
+      ],
+      "fondo": "#2C2C2C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Rejection Proof\nJia Jiang"
+    },
+    {
+      "titulo": "Indistractable",
+      "autor": "Nir Eyal",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "Enfoque",
+        "Presencia",
+        "Determinado",
+        "Libertad"
+      ],
+      "frases": [
+        "🚀 Cada momento cuenta, elige conscientemente tu foco.",
+        "🌟 La verdadera libertad nace de la decisión de estar presente.",
+        "🔥 Con determinación, transformas distracciones en oportunidades.",
+        "🎯 Acción: Define tus metas, crea un espacio libre de distracciones, y practica la técnica de los 10 minutos."
+      ],
+      "colores": [
+        "#FF5733",
+        "#33FF57",
+        "#3357FF",
+        "#F0FF33"
+      ],
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "portada": "📚 Indistractable\nNir Eyal"
     }
   ]
 }
