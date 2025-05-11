@@ -1,123 +1,27 @@
 {
   "libros": [
     {
-      "titulo": "Suficiente",
-      "autor": "John C. Bogle",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
-        "Abundancia",
-        "Satisfacción",
-        "Equilibrio",
-        "Éxito"
-      ],
-      "frases": [
-        "🚀 La verdadera riqueza se cultiva en la gratitud y la visión.",
-        "🌱 Lo que tienes ya es suficiente para comenzar a crecer más.",
-        "🌟 Con cada decisión consciente, construyes tu futuro próspero.",
-        "💡 1. Reflexiona sobre tus logros. 2. Establece metas realistas. 3. Comparte tus aprendizajes."
-      ],
-      "colores": [
-        "#FFD700",
-        "#32CD32",
-        "#FF4500",
-        "#1E90FF"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Suficiente\nJohn C. Bogle"
-    },
-    {
-      "titulo": "Las cuatro puertas",
-      "autor": "Jorge Benito",
-      "dimension": "Conexión",
-      "punto": "Activo",
-      "palabras": [
-        "Autenticidad",
-        "Unidad",
-        "Empatía",
-        "Armonía"
-      ],
-      "frases": [
-        "🚪 La verdadera fuerza reside en ser tú mismo y abrirte al mundo.",
-        "🌐 Al conectar con los demás, creamos un tejido de vida vibrante y único.",
-        "❤️ La empatía transforma corazones, uniendo almas en un abrazo sincero.",
-        "✨ Activa tu conexión: escucha sin juicio, comparte sin miedo, y ama incondicionalmente."
-      ],
-      "colores": [
-        "#FF6347",
-        "#4682B4",
-        "#FFD700",
-        "#32CD32"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "portada": "📚 Las cuatro puertas\nJorge Benito"
-    },
-    {
       "titulo": "El cisne negro",
       "autor": "Nassim Nicholas Taleb",
       "dimension": "Cerebro",
       "punto": "Máximo",
       "palabras": [
         "Incertidumbre",
-        "Oportunidad",
         "Sorpresa",
-        "Cambio"
+        "Riesgo",
+        "Oportunidad"
       ],
       "frases": [
-        "🦢 La belleza de lo inesperado transforma nuestra realidad.",
-        "🌌 Cada suceso escondido es una puerta hacia nuevas posibilidades.",
-        "🎯 Enfrentamos lo incierto; ¿qué oportunidades brillan en la niebla?",
-        "🚀 Explora lo desconocido, abraza el cambio: 1. Cuestiona tus supuestos. 2. Busca patrones en lo aleatorio. 3. Aprende de cada sorpresa."
+        "🦩 La incertidumbre es el terreno fértil de la grandeza; ¡abraza lo inesperado!",
+        "🌌 Cada sorpresa tiene una lección oculta; busca el aprendizaje tras la niebla.",
+        "💥 Acepta el caos, danza con el riesgo y convierte cada desafío en tu aliado. Accionables: 1. Reflexiona sobre tus miedos, 2. Apunta tres riesgos que estás evitando, 3. Crea un plan para enfrentarlos.",
+        "✨ La oportunidad surge donde menos la esperas; mantén tu mente abierta y receptiva."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F1C40F"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "portada": "📚 El cisne negro\nNassim Nicholas Taleb"
-    },
-    {
-      "titulo": "Los hábitos secretos de los genios",
-      "autor": "Craig Wright",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Brillantez",
-        "Inspira",
-        "Transforma",
-        "Conquista"
-      ],
-      "frases": [
-        "🚀 Tu potencial brilla con cada hábito que eliges adoptar.",
-        "🌟 La transformación comienza con cada pequeña acción decidida.",
-        "🎯 Conquista tu día, una intención clara y un hábito poderoso.",
-        "✨ 1. Define tu hábito clave. 2. Dedica 20 minutos diarios. 3. Celebra cada logro, por pequeño que sea."
-      ],
-      "colores": [
-        "#FF69B4",
-        "#32CD32",
+        "#FF6347",
         "#FFD700",
-        "#FF4500"
+        "#00CED1",
+        "#8A2BE2"
       ],
       "fondo": "#11111d",
       "textColors": [
@@ -126,7 +30,7 @@
         "#000000",
         "#FFFFFF"
       ],
-      "portada": "📚 Los hábitos secretos de los genios\nCraig Wright"
+      "portada": "📚 El cisne negro\nNassim Nicholas Taleb"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -135,92 +39,124 @@
       "punto": "Máximo",
       "palabras": [
         "Maestría",
-        "Estrategia",
         "Disciplina",
+        "Enfoque",
         "Honor"
       ],
       "frases": [
-        "🏯 La grandeza se forja en la disciplina constante y el enfoque.",
-        "⚔️ Domina la mente, y la victoria llegará sin esfuerzo.",
-        "🌀 Practica: Visualiza tus metas, actúa con determinación, celebra tus logros.",
-        "🌌 La sabiduría se encuentra en el silencio del guerrero en paz."
+        "🏯 La esencia de la victoria radica en la claridad del propósito.",
+        "⚔️ Cada desafío es una oportunidad para pulir tu destreza y fortaleza.",
+        "🧘‍♂️ Enfoca tu energía, actúa con determinación y observa cómo el universo se alinea.",
+        "💪 Listado de acción: Practica la meditación diaria, establece metas específicas, honra tu compromiso con la disciplina."
+      ],
+      "colores": [
+        "#FF4500",
+        "#FFD700",
+        "#228B22",
+        "#4682B4"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 El libro de los 5 anillos\nMiyamoto Musashi"
+    },
+    {
+      "titulo": "Can't Hurt Me",
+      "autor": "David Goggins",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Resiliencia",
+        "Superación",
+        "Fuerza",
+        "Coraje"
+      ],
+      "frases": [
+        "💪 ¡Tu mente es tu mayor aliado, rompa las cadenas del miedo!",
+        "🔥 La incomodidad es el camino hacia tu mejor versión. ¡Atrévete!",
+        "🌟 Alcanza nuevas alturas, no te limites a lo que conoces. ¡Desafíate!",
+        "📝 Acción: define tus metas, enfrenta tus miedos y celebra cada avance."
       ],
       "colores": [
         "#FF4500",
         "#32CD32",
         "#FFD700",
+        "#00BFFF"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 Can't Hurt Me\nDavid Goggins"
+    },
+    {
+      "titulo": "Suficiente",
+      "autor": "John C. Bogle",
+      "dimension": "Prosperidad",
+      "punto": "Active",
+      "palabras": [
+        "Abundancia",
+        "Equilibrio",
+        "Propósito",
+        "Conexión"
+      ],
+      "frases": [
+        "💡 La verdadera riqueza nace del equilibrio en cada decisión financiera.",
+        "🌟 Tu propósito financiero te conecta con la abundancia que mereces.",
+        "🚀 Invierte en lo esencial; simplifica y observa la prosperidad florecer. Acciona: 1. Evalúa tus gastos. 2. Establece metas claras. 3. Conéctate con tu porqué.",
+        "🌈 Al buscar suficiente, descubres la abundancia en lo simple."
+      ],
+      "colores": [
+        "#2E8B57",
+        "#FFD700",
+        "#FF6347",
         "#1E90FF"
       ],
       "fondo": "#11111d",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "portada": "📚 El libro de los 5 anillos\nMiyamoto Musashi"
-    },
-    {
-      "titulo": "En pocas palabras",
-      "autor": "Ben Guttmann",
-      "dimension": "Cerebro",
-      "punto": "Creativo",
-      "palabras": [
-        "Claridad",
-        "Expresión",
-        "Sabiduría",
-        "Intuición"
-      ],
-      "frases": [
-        "🌟 Tu mente despierta al poder de la comunicación consciente.",
-        "🧠 Expresar tu esencia es un acto de valentía y autenticidad.",
-        "🚀 Elevate: escucha profundamente, habla con intención, conecta genuinamente.",
-        "✨ La simplicidad se convierte en un puente hacia la comprensión profunda."
-      ],
-      "colores": [
-        "#FF4500",
-        "#FFD700",
-        "#00FF7F",
-        "#8A2BE2"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
         "#FFFFFF",
-        "#000000",
-        "#000000",
         "#FFFFFF"
       ],
-      "portada": "📚 En pocas palabras\nBen Guttmann"
+      "portada": "📚 Suficiente\nJohn C. Bogle"
     },
     {
       "titulo": "Think Again",
       "autor": "Adam Grant",
-      "dimension": "Cerebro",
+      "dimension": "Bienestar",
       "punto": "Activo",
       "palabras": [
-        "Flexibilidad",
         "Reflexión",
+        "Cambio",
         "Curiosidad",
-        "Adaptación"
+        "Apertura"
       ],
       "frases": [
-        "🧠 Abrir tu mente es el primer paso hacia nuevas realidades.",
-        "🌱 La evolución comienza con la disposición a cuestionar lo que crees.",
-        "🌟 Desafía tus ideas y florece en la verdad que te rodea.",
-        "🚀 Acoge la incertidumbre: haz preguntas, escucha activamente, reevalúa constantemente."
+        "💡 La verdadera fuerza radica en cuestionar lo que crees saber.",
+        "🌱 Deja que tus ideas florezcan en un campo de nuevas perspectivas.",
+        "🚀 Liberarte de certezas te impulsa hacia un futuro asombroso. ¡Actúa!",
+        "🌟 Reflexiona, pregúntate, y abraza el cambio: 1) Escucha nuevas opiniones, 2) Desafía tus creencias, 3) Aprende algo nuevo hoy."
       ],
       "colores": [
-        "#FF4500",
+        "#00BFFF",
+        "#FF1493",
         "#32CD32",
-        "#1E90FF",
-        "#FFD700"
+        "#FF6347"
       ],
       "fondo": "#11111d",
       "textColors": [
-        "#FFFFFF",
         "#000000",
         "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#FFFFFF"
       ],
       "portada": "📚 Think Again\nAdam Grant"
     },
@@ -231,47 +167,15 @@
       "punto": "Máximo",
       "palabras": [
         "Innovación",
-        "Visión",
         "Pasión",
+        "Visión",
         "Impacto"
       ],
       "frases": [
-        "🚀 La creatividad no tiene límites cuando te dejas llevar por tu pasión.",
-        "🌌 La grandeza surge de una visión clara y audaz que desafía lo ordinario.",
-        "🔥 Despierta cada día con la intención de dejar una huella poderosa en el mundo.",
-        "🛠️ Actúa: 1. Piensa diferente. 2. Persigue tu sueño sin miedo. 3. Inspira a otros con tu luz."
-      ],
-      "colores": [
-        "#FF4500",
-        "#32CD32",
-        "#FFD700",
-        "#1E90FF"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Steve Jobs\n Walter Isaacson"
-    },
-    {
-      "titulo": "El poder de la concentración absoluta",
-      "autor": "Dandapani",
-      "dimension": "Bienestar",
-      "punto": "Activo",
-      "palabras": [
-        "Enfoque",
-        "Claridad",
-        "Disciplina",
-        "Liberación"
-      ],
-      "frases": [
-        "🌟 La claridad se encuentra en cada instante presente. ¡Conéctate y observa!",
-        "💪 La disciplina abre las puertas a un poder inaudito en tu vida.",
-        "✨ Cuando el enfoque se alinea, la energía fluye sin esfuerzo. ¡Vívelo!",
-        "🌈 3 pasos poderosos: 1. Elimina distracciones, 2. Practica la atención plena, 3. Dedica tiempo a tus pasiones."
+        "🚀 La creatividad es tu mejor aliado, ¡déjala volar hoy!",
+        "💡 El futuro pertenece a quienes creen en sus ideas y las persiguen.",
+        "🔥 Visualiza lo imposible y conviértelo en tu realidad. ¡Hazlo ahora!",
+        "🌟 1. Pregunta lo que realmente te apasiona. 2. Rodéate de personas brillantes. 3. Actúa sin miedo al fracaso."
       ],
       "colores": [
         "#FF6F61",
@@ -286,39 +190,135 @@
         "#000000",
         "#000000"
       ],
-      "portada": "📚 El poder de la concentración absoluta\nDandapani"
+      "portada": "📚 Steve Jobs\n Walter Isaacson"
     },
     {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
+      "titulo": "Las cuatro puertas",
+      "autor": "Jorge Benito",
       "dimension": "Conexión",
-      "punto": "Máximo",
+      "punto": "Activo",
       "palabras": [
-        "Valentía",
-        "Confianza",
         "Autenticidad",
-        "Resiliencia"
+        "Integridad",
+        "Amistad",
+        "Compasión"
       ],
       "frases": [
-        "🚀 La aventura de enfrentar el rechazo nos empodera como nunca antes.",
-        "🌟 La confianza en ti mismo convierte cada 'no' en un 'sí' vibrante.",
-        "💡 Abrazar tu autenticidad te lleva a conexiones verdaderas y significativas.",
-        "✊ Accionables: 1. Sal a buscar un rechazo hoy. 2. Comparte tu experiencia con alguien. 3. Celebra cada 'no' como un paso hacia el 'sí'."
+        "🌟 La verdadera conexión comienza en tu esencia pura.",
+        "🌈 Abre tu corazón y recuerda que el amor siempre encuentra su camino.",
+        "🚀 El viaje hacia el ser auténtico transforma relaciones en tesoros.",
+        "💫 Activa tu red de apoyo: comparte tus sueños, escucha con el alma, agradece cada conexión."
       ],
       "colores": [
         "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A2"
+        "#C70039",
+        "#900C3F",
+        "#581845"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Las cuatro puertas\nJorge Benito"
+    },
+    {
+      "titulo": "El poder de la concentración absoluta",
+      "autor": "Dandapani",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Enfoque",
+        "Claridad",
+        "Intensidad",
+        "Maestría"
+      ],
+      "frases": [
+        "💥 La mente enfocada transforma la realidad en una obra maestra.",
+        "🌟 La claridad cristalina abre puertas hacia nuevas dimensiones.",
+        "🔥 La intensidad en la concentración es el camino hacia la maestría.",
+        "🌈 Mantén tu enfoque: respira, visualiza y actúa con propósito."
+      ],
+      "colores": [
+        "#FF4500",
+        "#32CD32",
+        "#FFD700",
+        "#1E90FF"
       ],
       "fondo": "#11111d",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#FFFFFF",
+        "#000000",
         "#FFFFFF"
       ],
-      "portada": "📚 Rejection Proof\nJia Jiang"
+      "portada": "📚 El poder de la concentración absoluta\nDandapani"
+    },
+    {
+      "titulo": "Einstein para desistados",
+      "autor": "Allan Percy",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "Inspira",
+        "Crea",
+        "Transforma",
+        "Conecta"
+      ],
+      "frases": [
+        "🚀 Tu curiosidad es el motor que impulsa tu creatividad.",
+        "🌍 Cada idea puede cambiar el mundo, atrévete a generar impacto.",
+        "💡 Comienza hoy: escribe un sueño, comparte una idea, actúa con valentía.",
+        "✨ Lo extraordinario nace de lo cotidiano, busca la magia en lo simple."
+      ],
+      "colores": [
+        "#FF6347",
+        "#4682B4",
+        "#FFD700",
+        "#32CD32"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 Einstein para desistados\nAllan Percy"
+    },
+    {
+      "titulo": "Conciencia",
+      "autor": "Osho",
+      "dimension": "Conexión",
+      "punto": "Activo",
+      "palabras": [
+        "Liberación",
+        "Fluidez",
+        "Presencia",
+        "Trascendencia"
+      ],
+      "frases": [
+        "🌌 La verdadera libertad es no aferrarse a nada ni a nadie.",
+        "🔥 Suelta el pasado y siente la vida fluir a través de ti.",
+        "🌊 En la presente conexión, todo se vuelve posible: respira, sonríe, actúa.",
+        "🌈 Expande tu ser, deslízate hacia el infinito y celebra tu existencia."
+      ],
+      "colores": [
+        "#FF4500",
+        "#FFDA44",
+        "#00BFFF",
+        "#DA70D6"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Conciencia\nOsho"
     }
   ]
 }
