@@ -72,7 +72,7 @@ Requisitos de las PALABRAS:
 • Relacionada con la energía del libro original.
 
 Requisitos de las FRASES:
-• Longitud random 20-75 caracteres (varía; evita aspecto robot).
+• Longitud random 20-65 caracteres (varía; evita aspecto robot).
 • Comienzan con 1 emoji increíblemente padrísimo genialmente alineado al mensaje, sin repetir emojis.
 • Tono perfecto, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
 • Relación explícita con la PALABRA y el libro del cual viene.
@@ -82,14 +82,11 @@ Requisitos de las FRASES:
 Colores:
 • Cada libro, cada palabra, cada frase tiene colores diferentes. Y diferentes también dependiendo del día de la semana, del título del libro, de las palabras.
 • Usa combinaciones vibrantes, diferentes y espectaculares. Que no se parezcan entre sí.
-• Ejemplos válidos de combinaciones: (son ejemplos, no tienes que usarlos super estrictamente. Arriesga visualmente)
-  ["#FF00FF", "#00FFFF", "#FF6600", "#00FF66"]  
-  ["#8A2BE2", "#FFD700", "#00CED1", "#FF1493"]  
-  ["#FF6EC7", "#7DF9FF", "#FFDE59", "#38B6FF"]
+
 • Nunca repitas exactamente la misma combinación entre libros.
 • No uses grises, marrones o pasteles apagados.
 • Los 4 colores deben ser exageradamente vibrantes, dopaminéricos, contrastantes y armoniosos entre sí.
-• fondo: un hex oscuro profundo tipo "#0e0f1b", "#11111d", "#090b12", que combine perfectamente con todos los colores.
+• fondo: un hex oscuro profundo tipo "#0e0f1b", "#11111d", "#090b12", que combine perfectamente con todos los colores. Cámbia, varía, arriesga
 
 Si algo falta, crea con sentido. No añadas otros campos.
 `;
