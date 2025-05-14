@@ -82,8 +82,7 @@ Requisitos de las FRASES:
 
 Colores:
 • Cada libro, cada palabra, cada frase tiene colores diferentes. Y diferentes también dependiendo del día de la semana, del título del libro, de las palabras.
-- Cada libro, cada palabra, cada frase tiene colores diferentes.
-+ Cada iteración debe usar combinaciones completamente nuevas, jamás parecidas a las anteriores.
++ Cada iteración debe usar combinaciones completamente nuevas, contrastantes entre ellas, jamás parecidas a las anteriores.
 + Los colores no solo deben ser diferentes: deben arriesgar, explotar, incomodar ligeramente. Ser memorables.
 + Cada combinación debe sentirse como una *colisión energética visual*. Que deje huella en la retina y la emoción.
 • Usa combinaciones vibrantes, diferentes y espectaculares. Que no se parezcan entre sí.
