@@ -93,6 +93,9 @@ Colores:
 - fondo: un hex oscuro profundo tipo "#0e0f1b", "#11111d", "#090b12", que combine perfectamente con todos los colores.
 + fondo: un hex oscuro profundo que realce los colores como si fueran neón. Cada fondo debe ser específico para esos 4 colores. No genérico.
 + El fondo debe amplificar el contraste: como si fuera un escenario silencioso para una explosión visual.
++ La variación entre días consecutivos debe ser drástica. Si los colores de hoy se parecen a los de ayer, fallaste.
++ Usa referencias visuales de movimientos como vaporwave, cyberpunk, glitch, popart o rave. Pero no las menciones explícitamente.
+
 Si algo falta, crea con sentido. No añadas otros campos.
 `;
 
