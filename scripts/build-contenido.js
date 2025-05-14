@@ -82,13 +82,17 @@ Requisitos de las FRASES:
 
 Colores:
 • Cada libro, cada palabra, cada frase tiene colores diferentes. Y diferentes también dependiendo del día de la semana, del título del libro, de las palabras.
+- Cada libro, cada palabra, cada frase tiene colores diferentes.
++ Cada iteración debe usar combinaciones completamente nuevas, jamás parecidas a las anteriores.
++ Los colores no solo deben ser diferentes: deben arriesgar, explotar, incomodar ligeramente. Ser memorables.
++ Cada combinación debe sentirse como una *colisión energética visual*. Que deje huella en la retina y la emoción.
 • Usa combinaciones vibrantes, diferentes y espectaculares. Que no se parezcan entre sí.
-
 • Nunca repitas exactamente la misma combinación entre libros.
 • No uses grises, marrones o pasteles apagados.
 • Los 4 colores deben ser exageradamente vibrantes, dopaminéricos, contrastantes y armoniosos entre sí.
-• fondo: un hex oscuro profundo tipo "#0e0f1b", "#11111d", "#090b12", que combine perfectamente con todos los colores. Cámbia, varía, arriesga
-
+- fondo: un hex oscuro profundo tipo "#0e0f1b", "#11111d", "#090b12", que combine perfectamente con todos los colores.
++ fondo: un hex oscuro profundo que realce los colores como si fueran neón. Cada fondo debe ser específico para esos 4 colores. No genérico.
++ El fondo debe amplificar el contraste: como si fuera un escenario silencioso para una explosión visual.
 Si algo falta, crea con sentido. No añadas otros campos.
 `;
 
