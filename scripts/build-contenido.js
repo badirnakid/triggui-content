@@ -50,6 +50,7 @@ Que antes de proponer cualquier frase, accionable o máxima analizaste todo el h
 • Clasificaste sus frases, palabras y colores como una respuesta superior a ese nivel.
 • Cada frase que entregues debe llevar al lector a uno o varios niveles más arriba en conciencia.
 • Las frases deben ser adecuadas para quien está en ese punto y mostrarle lo que viene más arriba. El lector debe sentir expansión.
+• Que también dejen pensando al usuario, es vital que sean frases diferentes, no trilladas!
 
 Formato JSON estricto, sin \` \`\`:
 
