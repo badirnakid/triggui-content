@@ -82,6 +82,7 @@ Requisitos de las FRASES:
 • Una o dos de las frases debe ser una lista de 3 accionables (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son accionables para no gastar espacio.
 
 Colores:
+• Combina gradientes, lisos, patterns, veamos qué pasa.
 • Cada libro, cada palabra, cada frase tiene colores SUPER diferentes. Y diferentes también dependiendo del día de la semana, del título del libro, de las palabras.
 + Cada iteración debe usar combinaciones completamente nuevas, contrastantes entre ellas, jamás parecidas a las anteriores.
 + Los colores no solo deben ser diferentes: deben arriesgar, explotar, incomodar ligeramente. Ser memorables.
