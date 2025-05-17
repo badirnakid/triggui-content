@@ -74,6 +74,7 @@ Requisitos de las PALABRAS:
 • Relacionada con la energía del libro original.
 
 Requisitos de las FRASES:
+• Que analices e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo
 • Longitud random 20-65 caracteres (varía mucho los tonos; evita aspecto robot).
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
 • Tono perfecto, cambia y mejorar en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
