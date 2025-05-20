@@ -1,29 +1,221 @@
 {
   "libros": [
     {
+      "titulo": "Think Again",
+      "autor": "Adam Grant",
+      "dimension": "Cerebro",
+      "punto": "Máximo",
+      "palabras": [
+        "Reinvención",
+        "Flexibilidad",
+        "Curiosidad",
+        "Evolución"
+      ],
+      "frases": [
+        "🧠 Cuestiona tus certezas, la mente es un laberinto infinito.",
+        "🔄 La verdadera sabiduría surge al desafiar lo conocido.",
+        "🌱 Cultiva la curiosidad, septiembre es el mes de la renovación.",
+        "✨ Abre la mente a nuevas posibilidades: redescubre tu verdad, vuelve a crear."
+      ],
+      "colores": [
+        "#ff5c57",
+        "#ffb246",
+        "#5afee5",
+        "#6a0572"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Think Again\nAdam Grant"
+    },
+    {
+      "titulo": "Lo que nunca cambia",
+      "autor": "Morgan Housel",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "Resiliencia",
+        "Sabiduría",
+        "Paciencia",
+        "Visión"
+      ],
+      "frases": [
+        "🌊 El cambio es la única constante, fluye con él.",
+        "💎 La riqueza se construye en la mente, no en el capital.",
+        "🌱 Cultiva hoy para cosechar tesoros mañana. Practica la resiliencia, busca la sabiduría y mantén la paciencia.",
+        "🚀 En cada crisis hay una oportunidad escondida, descúbrela."
+      ],
+      "colores": [
+        "#ff6f61",
+        "#6fa3ef",
+        "#4caf50",
+        "#ffea00"
+      ],
+      "fondo": "#1b1f24",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "portada": "📚 Lo que nunca cambia\nMorgan Housel"
+    },
+    {
+      "titulo": "Sesgos Inconscientes",
+      "autor": "Pamela Fuller",
+      "dimension": "Conexión",
+      "punto": "Activo",
+      "palabras": [
+        "Equidad",
+        "Percepción",
+        "Desconstrucción",
+        "Empatía"
+      ],
+      "frases": [
+        "🔍 La equidad comienza en la mente; cuestiona tus juicios.",
+        "💡 Cada percepción distorsionada es una oportunidad de crecimiento.",
+        "🌍 Desconstruir creencias abre puertas a nuevas realidades.",
+        "❤️ Empatiza: cada historia es un reflejo de un mundo compartido."
+      ],
+      "colores": [
+        "#ff3838",
+        "#ffdd59",
+        "#00b8a9",
+        "#ffffff"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "portada": "📚 Sesgos Inconscientes\nPamela Fuller"
+    },
+    {
+      "titulo": "Principios",
+      "autor": "Ray Dalio",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Sabiduría",
+        "Transparencia",
+        "Resiliencia",
+        "Efectividad"
+      ],
+      "frases": [
+        "🧭 Cada decisión es un paso hacia tu destino. Elige sabiamente.",
+        "🔍 La verdad se revela en la claridad; busca la transparencia en todo.",
+        "⚡️ Abrazar la adversidad es potenciar tu capacidad de respuesta.",
+        "📈 Define tus principios y verás cómo el universo conspira a tu favor. Actúa: haz un inventario de tus principios, busca retroalimentación abierta, establece metas a largo plazo."
+      ],
+      "colores": [
+        "#ff3e57",
+        "#2a7f62",
+        "#f9e843",
+        "#3d5b9e"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Principios\nRay Dalio"
+    },
+    {
+      "titulo": "Good to great",
+      "autor": "Jim Collins",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Transformación",
+        "Excelencia",
+        "Resiliencia",
+        "Impacto"
+      ],
+      "frases": [
+        "🚀 La grandeza es una decisión, no un destino.",
+        "🏆 La excelencia se cultiva en la cotidianeidad.",
+        "💡 Para brillar, primero debes ser auténtico y fiel a tu propósito.",
+        "🔑 Evalúa tus cimientos: el éxito comienza con la cultura adecuada."
+      ],
+      "colores": [
+        "#F39C12",
+        "#D35400",
+        "#C0392B",
+        "#8E44AD"
+      ],
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Good to great\nJim Collins"
+    },
+    {
+      "titulo": "Grit",
+      "autor": "Angela Duckworth",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Resiliencia",
+        "Pasión",
+        "Determinación",
+        "Tenacidad"
+      ],
+      "frases": [
+        "🔥 Tu carácter forja el camino hacia tus sueños más ambiciosos.",
+        "💎 La verdadera grandeza se encuentra en la perseverancia constante.",
+        "🎯 Actúa con valentía, persevera con pasión: el éxito te espera.",
+        "🌟 Cultiva la tenacidad: tus fracasos son escalones hacia la maestría."
+      ],
+      "colores": [
+        "#ff5733",
+        "#ffbd33",
+        "#33ff57",
+        "#3375ff"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "portada": "📚 Grit\nAngela Duckworth"
+    },
+    {
       "titulo": "El libro de los 5 anillos",
       "autor": "Miyamoto Musashi",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
         "Maestría",
-        "Estrategia",
-        "Enfoque",
-        "Disciplina"
+        "Fluidez",
+        "Disciplina",
+        "Estrategia"
       ],
       "frases": [
-        "🗡️ Maestros son aquellos que trascienden la lucha.",
-        "🔥 La estrategia es la danza del guerrero en calma.",
-        "🌀 Encuentra tu centro, y la batalla será una manifestación.",
-        "🤝 Cultiva la disciplina, y el universo te abrirá puertas."
+        "🗡️ La verdadera victoria nace en el conocimiento profundo.",
+        "🌊 Domina los cambios como el río abraza las rocas.",
+        "🔥 Transformar el miedo en fuerza es el arte del guerrero.",
+        "🎯 En cada paso, la intención se convierte en acción: visualiza, actúa, transforma."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A2"
+        "#ff5733",
+        "#33ffbd",
+        "#ff33e6",
+        "#3385ff"
       ],
-      "fondo": "#0B0F1B",
+      "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
@@ -33,283 +225,91 @@
       "portada": "📚 El libro de los 5 anillos\nMiyamoto Musashi"
     },
     {
-      "titulo": "Lo que nunca cambia",
-      "autor": "Morgan Housel",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
-        "Resiliencia",
-        "Adaptación",
-        "Crecimiento",
-        "Sabiduría"
-      ],
-      "frases": [
-        "🌱 La evolución personal trasciende cualquier obstáculo.",
-        "💡 La sabiduría se encuentra en cada cambio vivido.",
-        "⚡️ Encuentra tu fuerza en la adaptabilidad continua.",
-        "🌊 El crecimiento es el arte de fluir con la vida: abraza el cambio."
-      ],
-      "colores": [
-        "#ff6f61",
-        "#6a1b9a",
-        "#00bcd4",
-        "#ffeb3b"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "portada": "📚 Lo que nunca cambia\nMorgan Housel"
-    },
-    {
-      "titulo": "Sin filtro",
-      "autor": "Sarah Frier",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
-        "Transparencia",
-        "Conexión",
-        "Impacto",
-        "Visibilidad"
-      ],
-      "frases": [
-        "💡 La verdad se vuelve viral cuando se comparte sin miedo.",
-        "🌐 Tu voz puede transformar realidades invisibles en conexiones tangibles.",
-        "🌈 Provoca cambios auténticos en el mundo digital al ser tuyo sin filtros.",
-        "🔥 Escucha, comparte y actúa: la conexión auténtica crea impacto real."
-      ],
-      "colores": [
-        "#ff6f20",
-        "#1e90ff",
-        "#ffcc00",
-        "#38b000"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Sin filtro\nSarah Frier"
-    },
-    {
-      "titulo": "Grit",
-      "autor": "Angela Duckworth",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
-        "Tenacidad",
-        "Resiliencia",
-        "Pasión",
-        "Determinación"
-      ],
-      "frases": [
-        "🔥 La perseverancia transforma la aspiración en logro.",
-        "🌟 La pasión sin acción es solo un sueño, actúa ya.",
-        "💪 La tenacidad te lleva donde otros desisten. Acelera.",
-        "🧠 Enfrentar desafíos es el camino hacia tu grandeza. Abre tu mente."
-      ],
-      "colores": [
-        "#FF3F34",
-        "#FF9B00",
-        "#F9FF00",
-        "#00FFA3"
-      ],
-      "fondo": "#0C0D1A",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "portada": "📚 Grit\nAngela Duckworth"
-    },
-    {
-      "titulo": "Los hábitos secretos de los genios",
-      "autor": "Craig Wright",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Maestría",
-        "Desarrollo",
-        "Innovación",
-        "Transformación"
-      ],
-      "frases": [
-        "🚀 La genialidad se forja en la disciplina diaria.",
-        "✨ La curiosidad abre puertas que la conformidad cierra.",
-        "🌀 Domina tus rutinas y observa el poder de la transformación.",
-        "🌌 Conecta ideas dispares y despierta la innovación en ti."
-      ],
-      "colores": [
-        "#FF4F00",
-        "#FFD700",
-        "#1B2F6E",
-        "#6D3C99"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Los hábitos secretos de los genios\nCraig Wright"
-    },
-    {
-      "titulo": "Principios",
-      "autor": "Ray Dalio",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Transparencia",
-        "Resultados",
-        "Sabiduría",
-        "Colaboración"
-      ],
-      "frases": [
-        "🧭 La claridad en las decisiones crea caminos de éxito.",
-        "💡 Aprender de los errores es la bisagra del crecimiento.",
-        "🌐 La unión de ideas transforma el potencial en poder.",
-        "✨ Define tus principios y verás cómo el universo responde a ellos. Recuerda: observa, analiza y ajusta."
-      ],
-      "colores": [
-        "#ff6f61",
-        "#6c5b7f",
-        "#c06c84",
-        "#355c7d"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "portada": "📚 Principios\nRay Dalio"
-    },
-    {
-      "titulo": "Descubre tu abracadabra",
-      "autor": "Eva Sandoval",
+      "titulo": "El gato que amaba los libros",
+      "autor": "Sosuke Natsukawa",
       "dimension": "Conexión",
-      "punto": "Activo",
-      "palabras": [
-        "Manifestación",
-        "Magia",
-        "Potencial",
-        "Transformación"
-      ],
-      "frases": [
-        "✨ El poder está en ti; despiértalo y créalo todo.",
-        "🌟 Cada pensamiento es un hechizo; ¿cuál es el tuyo hoy?",
-        "🔥 Activa tu chispa interna, ¡el universo responde a tu energía!",
-        "🪄 Imagina, siente y actúa; el camino se revela al andar."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6B5B95",
-        "#88B04B",
-        "#F7CAC9"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "portada": "📚 Descubre tu abracadabra\nEva Sandoval"
-    },
-    {
-      "titulo": "Optimal",
-      "autor": "Daniel Goleman",
-      "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "Sinergia",
-        "Fluidez",
-        "Intención",
-        "Conexión"
+        "Sabiduría",
+        "Empatía",
+        "Transcendencia",
+        "Apertura"
       ],
       "frases": [
-        "🌌 La verdadera sabiduría florece en la conexión profunda.",
-        "🔗 Cada interacción es una oportunidad para expandir tu ser.",
-        "💡 La claridad se encuentra en la sinergia de pensamientos y emociones.",
-        "🌱 Aquí y ahora, tu intención transforma el potencial en realidad."
+        "📚 La lectura es un abrazo que nunca acaba.",
+        "🐾 En cada página, un rincón del alma se ilumina.",
+        "🌌 Cuando el amor por los libros florece, el mundo se expande.",
+        "🌱 Permite que las historias nutran tu conexión con la vida; escucha, siente, comparte."
       ],
       "colores": [
-        "#ff7f50",
-        "#32cd32",
-        "#ffa07a",
-        "#6a5acd"
+        "#ff4c4c",
+        "#ffdb4c",
+        "#4cff4c",
+        "#4c4cff"
       ],
-      "fondo": "#0e0f1b",
+      "fondo": "#090b12",
       "textColors": [
-        "#000000",
+        "#FFFFFF",
         "#000000",
         "#000000",
         "#FFFFFF"
       ],
-      "portada": "📚 Optimal\nDaniel Goleman"
+      "portada": "📚 El gato que amaba los libros\nSosuke Natsukawa"
     },
     {
-      "titulo": "La inteligencia que asusta",
-      "autor": "Mo Gawdat",
-      "dimension": "Bienestar",
+      "titulo": "Einstein para despistados",
+      "autor": "Allan Percy",
+      "dimension": "Cerebro",
       "punto": "Máximo",
       "palabras": [
-        "Claridad",
-        "Conexión",
-        "Empoderamiento",
-        "Evolución"
+        "Genialidad",
+        "Conocimiento",
+        "Curiosidad",
+        "Transformación"
       ],
       "frases": [
-        "💡 La mente es un vasto universo esperando ser explorado.",
-        "🚀 Cada pensamiento es un paso hacia tu mejor versión.",
-        "❤️ La conexión profunda comienza con la autoaceptación.",
-        "🌍 Evoluciona tu realidad: sueña, crea y transforma. Identifica tres patrones limitantes, despierta tu curiosidad y actúa con intención."
+        "🧠 Tu mente es un universo esperando a ser descubierto.",
+        "⚡ Con cada pregunta, expands tu realidad y tu sabiduría.",
+        "✨ La curiosidad abre puertas que ni el tiempo puede cerrar.",
+        "🔥 Revitaliza tu intelecto: cuestiona, aprende y comparte."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F39C12"
+        "#FF5C00",
+        "#00FFC8",
+        "#D500F9",
+        "#FFEA00"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0d0e1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
         "#FFFFFF",
         "#000000"
       ],
-      "portada": "📚 La inteligencia que asusta\nMo Gawdat"
+      "portada": "📚 Einstein para despistados\nAllan Percy"
     },
     {
       "titulo": "Ansiedad",
       "autor": "Augusto Cury",
       "dimension": "Bienestar",
-      "punto": "Máximo",
+      "punto": "Activo",
       "palabras": [
+        "Liberación",
         "Resiliencia",
-        "Trascendencia",
-        "Armonía",
-        "Liberación"
+        "Consciencia",
+        "Transcendencia"
       ],
       "frases": [
-        "🌌 La mente es un universo; respira y expande tu esencia.",
-        "🌱 Desde el caos, florece la fuerza interior que te transforma.",
-        "🌀 Encuentra la paz en la tormenta, allí se revela tu grandiosidad.",
-        "💎 Liberarte significa abrazar lo que eres y lo que puedes ser. Respira, siente, actúa."
+        "💫 Tu mente es un universo; redescúbrelo cada día.",
+        "🌊 La calma no es ausencia de tormenta, sino presencia de paz.",
+        "🌟 Al liberar tus miedos, abrazas tu esencia más auténtica.",
+        "🌈 Respira profundamente: conecta, siente, transforma tu realidad."
       ],
       "colores": [
-        "#ff4f81",
-        "#38b6ff",
-        "#ffdc52",
-        "#9b59b6"
+        "#ff6f61",
+        "#6fbf8e",
+        "#f5a623",
+        "#7b2cbf"
       ],
       "fondo": "#0e0f1b",
       "textColors": [
