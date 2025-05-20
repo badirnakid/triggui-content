@@ -43,7 +43,7 @@ Que previamente categorizaste libro, palabra y accionables en puntos (cero, crea
 Que previamente categorizaste libro, palabra y accionables en centros de energía (Movimiento, Corazón, Cerebro).
 Que previamente categorizaste libro, palabra y accionables en dimensiones (Bienestar: Salud Física, Emocional/Mental, Prosperidad: Salud Financiera, Negocios, Conexión: Relaciones, Familia, Espiritualidad).
 
-Que antes de proponer cualquier frase, accionable o máxima analizaste todo el histórico de frases que ya has dado y el libro de origen (proveniente de libros_master.csv), entendiste su tema central, su propósito, su energía predominante, y a partir de eso:
+Que antes de proponer cualquier frase, accionable o máxima analizaste todo el histórico de frases que ya has dado y el libro de origen (proveniente de libros_master.csv), investigaste breve resumen, entendiste su tema central, su propósito, su energía predominante, y a partir de eso:
 
 • Mejoraste por mucho cada una, subiste mucho de nivel. De manera Sublime
 • Asignaste una calificación numérica al libro según el mapa de conciencia de David Hawkins (por ejemplo: 125, 200, 310, 500...).
