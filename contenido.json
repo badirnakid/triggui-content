@@ -1,67 +1,163 @@
 {
   "libros": [
     {
-      "titulo": "Sin filtro",
-      "autor": "Sarah Frier",
-      "portada": "📚 Sin filtro\nSarah Frier",
-      "dimension": "Conexión",
-      "punto": "Activo",
+      "titulo": "Principios",
+      "autor": "Ray Dalio",
+      "portada": "📚 Principios\nRay Dalio",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
       "palabras": [
-        "Autenticidad",
-        "Vulnerabilidad",
-        "Transparencia",
-        "Empoderamiento"
+        "Integridad",
+        "Estrategia",
+        "Colaboración",
+        "Transparencia"
       ],
       "frases": [
-        "🌟 La verdad resplandece en la conexión genuina.",
-        "🌀 Tu esencia brilla al eliminar las máscaras sociales.",
-        "💫 La vulnerabilidad es el camino hacia la verdadera conexión.",
-        "🚀 Sé el cambio: comparte tu verdad y transforma relaciones."
+        "🚀 La verdad es el mejor camino hacia el crecimiento.",
+        "💡 La estrategia sin ejecución es solo un sueño efímero.",
+        "🤝 La colaboración fomenta conexiones que transforman todo.",
+        "🛠️ Establece principios para evolucionar sin miedo al cambio."
+      ],
+      "colores": [
+        "#FF5722",
+        "#4CAF50",
+        "#2196F3",
+        "#FFEB3B"
+      ],
+      "fondo": "#0F0F0F",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Las cuatro puertas",
+      "autor": "Jorge Benito",
+      "portada": "📚 Las cuatro puertas\nJorge Benito",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Liberación",
+        "Autenticidad",
+        "Transformación",
+        "Trascendencia"
+      ],
+      "frases": [
+        "🚪 La verdadera libertad comienza donde termina el miedo.",
+        "✨ Encuentra la luz en cada sombra, ahí reside tu sabiduría.",
+        "🌌 Con cada paso hacia dentro, el universo se expande fuera.",
+        "🎇 En la búsqueda de tu esencia, los límites se desvanecen."
+      ],
+      "colores": [
+        "#ff5733",
+        "#33ff57",
+        "#3357ff",
+        "#f1c40f"
+      ],
+      "fondo": "#1e1e2f",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Timeboxing",
+      "autor": "Marc Zao-Sanders",
+      "portada": "📚 Timeboxing\nMarc Zao-Sanders",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "Estructura",
+        "Enfoque",
+        "Disciplina",
+        "Energía"
+      ],
+      "frases": [
+        "⏳ La gestión del tiempo se convierte en arte cuando lo estructuras.",
+        "🚀 Crea el espacio que mereces: enfócate, actúa y conquista.",
+        "🧠 La disciplina transforma tus horas en hitos extraordinarios. ¡Practícalo!",
+        "⚡️ Dedica 25 minutos a tu pasión, luego respira: el progreso es inevitable."
+      ],
+      "colores": [
+        "#ff5733",
+        "#33ff57",
+        "#3357ff",
+        "#ff33a1"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Conciencia",
+      "autor": "Osho",
+      "portada": "📚 Conciencia\nOsho",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "Trascendencia",
+        "Liberación",
+        "Plenitud",
+        "Autenticidad"
+      ],
+      "frases": [
+        "✨ Salta hacia la luz de tu esencia más pura.",
+        "🌌 Permite que cada pensamiento sea un portal a lo divino.",
+        "🌈 La verdadera conexión empieza en la vulnerabilidad y termina en la totalidad.",
+        "🌿 Escucha el silencio y despierta tu ser interior; ahí reside tu poder."
+      ],
+      "colores": [
+        "#FF4F00",
+        "#00FFD5",
+        "#FFED00",
+        "#3C00FF"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Sesgos Inconscientes",
+      "autor": "Pamela Fuller",
+      "portada": "📚 Sesgos Inconscientes\nPamela Fuller",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Perspectiva",
+        "Autoevaluación",
+        "Empatía",
+        "Transformación"
+      ],
+      "frases": [
+        "🌌 Mira más allá: tu mundo se expande con diversidad.",
+        "🌱 Cultiva tu coraje: el cambio comienza en tu interior.",
+        "💡 Reflexiona y sé un faro: ilumina mentes con tu ejemplo.",
+        "🔍 Escucha y aprende: cada voz te regala una nueva visión."
       ],
       "colores": [
         "#ff6f61",
-        "#6a5acd",
-        "#20b2aa",
-        "#ffb347"
+        "#6b5b93",
+        "#88b04b",
+        "#f7cac9"
       ],
-      "fondo": "#1a1d29",
+      "fondo": "#1e1f24",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
         "#000000",
         "#000000"
-      ]
-    },
-    {
-      "titulo": "Grit",
-      "autor": "Angela Duckworth",
-      "portada": "📚 Grit\nAngela Duckworth",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Resiliencia",
-        "Determinación",
-        "Pasión",
-        "Constancia"
-      ],
-      "frases": [
-        "💪 La pasión se forja en el fuego de la perseverancia.",
-        "🚀 Cada pequeño esfuerzo te acerca a la cima de tus sueños.",
-        "🌱 Enfrenta el desafío; la adversidad nutre la granza del éxito.",
-        "🎯 Cultiva tu propósito, actuar con intención es tu brújula."
-      ],
-      "colores": [
-        "#FF5733",
-        "#C70039",
-        "#900C3F",
-        "#581845"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
       ]
     },
     {
@@ -72,60 +168,28 @@
       "punto": "Máximo",
       "palabras": [
         "Relación",
-        "Conexión",
-        "Crecimiento",
-        "Sabiduría"
+        "Vínculo",
+        "Pertenencia",
+        "Amor"
       ],
       "frases": [
-        "🦋 El verdadero éxito florece en las relaciones profundas.",
-        "🌱 Cultivar vínculos genuinos es sembrar felicidad duradera.",
-        "💖 La autenticidad es el puente hacia el amor verdadero.",
-        "🔥 Conéctate, comparte, transforma: el camino hacia la plenitud."
+        "💖 La conexión auténtica es el arte de estar presente.",
+        "🌱 Cultiva relaciones que nutran tu esencia y florece.",
+        "🔑 El verdadero éxito se mide en el amor que compartimos.",
+        "🎇 Disfruta cada momento con aquellos que te elevan. Haz una lista de tres personas importantes, dedica un tiempo de calidad con ellas y exprésales tu gratitud."
       ],
       "colores": [
-        "#FF6F61",
-        "#6B5B93",
-        "#88B04B",
-        "#F7CAC9"
+        "#ff6f61",
+        "#6ab04c",
+        "#2980b9",
+        "#f39c12"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
-        "#000000",
+        "#FFFFFF",
         "#000000"
-      ]
-    },
-    {
-      "titulo": "Optimal",
-      "autor": "Daniel Goleman",
-      "portada": "📚 Optimal\nDaniel Goleman",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Sinergia",
-        "Fluidez",
-        "Conexión",
-        "Esencialidad"
-      ],
-      "frases": [
-        "🌌 La sinergia es el arte de unir fuerzas para elevarte.",
-        "🚀 Fluye con la energía de tu esencia y transforma el mundo.",
-        "💫 Conecta el instante presente con la grandeza del futuro.",
-        "🌟 Cultiva la claridad en tu mente, y el universo se abrirá para ti."
-      ],
-      "colores": [
-        "#f39c12",
-        "#e67e22",
-        "#d35400",
-        "#c0392b"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
       ]
     },
     {
@@ -135,29 +199,93 @@
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
+        "Visionario",
         "Innovación",
-        "Visión",
-        "Revolución",
-        "Pasión"
+        "Determinación",
+        "Revolución"
       ],
       "frases": [
-        "🔥 El futuro se crea con ideas audaces y acción. ",
-        "🌌 Tu visión puede transformar la realidad, ¡atrévete a soñar!",
-        "🚀 La pasión es el combustible que impulsa la grandeza. Disfrútalo.",
-        "✨ Desafía lo convencional, innova en cada rincón de tu vida."
+        "🚀 La creatividad nace del desafío. ¡Atrévete a romper moldes!",
+        "💡 Cada fracaso es un paso valioso hacia la grandeza.",
+        "🌟 La excelencia no es un acto, es un hábito. ¡Construye el tuyo!",
+        "🌈 Persigue tu pasión, y el éxito te seguirá como sombra."
       ],
       "colores": [
-        "#ff4f00",
-        "#ffcb00",
-        "#00bfff",
-        "#ff47e0"
+        "#ff4757",
+        "#1e90ff",
+        "#28a745",
+        "#ffcc00"
       ],
-      "fondo": "#090b12",
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "El poder de la concentración absoluta",
+      "autor": "Dandapani",
+      "portada": "📚 El poder de la concentración absoluta\nDandapani",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Enfoque",
+        "Determinación",
+        "Maestría",
+        "Presencia"
+      ],
+      "frases": [
+        "💡 La claridad transforma el instante en poder.",
+        "🌌 Al concentrarte, desatas el universo en tu mente.",
+        "🏆 La disciplina es el arte de la libertad.",
+        "🌿 Encuentra la fuerza en tu atención plena: respira, observa, actúa."
+      ],
+      "colores": [
+        "#ff6f61",
+        "#6a5acd",
+        "#00ced1",
+        "#ffd700"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Ansiedad",
+      "autor": "Augusto Cury",
+      "portada": "📚 Ansiedad\nAugusto Cury",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Equilibrio",
+        "Resiliencia",
+        "Conciencia",
+        "Liberación"
+      ],
+      "frases": [
+        "🌌 La calma nace del entendimiento profundo de ti mismo.",
+        "🦋 El miedo es una ilusión que se disuelve en el autoconocimiento.",
+        "💪 Desafía la ansiedad; tu poder interno es ilimitado. Haz una pausa, respira y observa.",
+        "🌊 Fluye con las emociones, no luches contra ellas; cada ola te acerca a la serenidad."
+      ],
+      "colores": [
+        "#ff3d00",
+        "#00c853",
+        "#2979ff",
+        "#ffeb3b"
+      ],
+      "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ]
     },
     {
@@ -167,152 +295,24 @@
       "dimension": "Cerebro",
       "punto": "Máximo",
       "palabras": [
-        "Incógnita",
-        "Aleatoriedad",
+        "Imprevisibilidad",
         "Incertidumbre",
-        "Resiliencia"
+        "Caos",
+        "Rigurosidad"
       ],
       "frases": [
-        "🦢 La vida es un juego de sombras y luces, ¡acepta lo inesperado!",
-        "🌌 Desata tu curiosidad, la incertidumbre es la madre de la sabiduría.",
-        "💡 En lo incierto florece la oportunidad; atrévete a explorar.",
-        "🔥 Lee, reflexiona y experimenta; transforma el miedo en fuerza."
-      ],
-      "colores": [
-        "#FF3D00",
-        "#FFD600",
-        "#00C853",
-        "#2979FF"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "El gato que amaba los libros",
-      "autor": "Sosuke Natsukawa",
-      "portada": "📚 El gato que amaba los libros\nSosuke Natsukawa",
-      "dimension": "Conexión",
-      "punto": "Máximo",
-      "palabras": [
-        "Compasión",
-        "Sabiduría",
-        "Trascendencia",
-        "Conexión"
-      ],
-      "frases": [
-        "📚 La sabiduría se encuentra donde el corazón y las letras se abrazan.",
-        "🐾 Cada página es un abrazo que nos susurra, 'no estás solo'.",
-        "✨ Con cada libro, te elevas y conectas con el mundo eterno.",
-        "🌌 Sumérgete en el abrazo de las historias y descubre tu esencia."
-      ],
-      "colores": [
-        "#ff9aa2",
-        "#ffb3b3",
-        "#ff677d",
-        "#d78bff"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Lo que nunca cambia",
-      "autor": "Morgan Housel",
-      "portada": "📚 Lo que nunca cambia\nMorgan Housel",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Perspectiva",
-        "Evolución",
-        "Resiliencia",
-        "Inmersión"
-      ],
-      "frases": [
-        "🌱 La evolución es el viaje más poético que experimentamos.",
-        "🔮 Lo que nunca cambia es nuestra capacidad de adaptarnos.",
-        "🚀 En cada desafío, se oculta la oportunidad de crecer más allá.",
-        "🌍 Reflexiona: ¿Cómo tu historia se entrelaza con el universo? Activa tres cambios hoy para abrirte a lo inesperado."
+        "🦢 La realidad a menudo se asoma detrás de lo inesperado.",
+        "⚡ La vida florece en el caos; abracemos lo incierto.",
+        "🔮 La preparación ante lo inesperado es nuestra mejor estrategia.",
+        "🌌 Cuestiona tus certezas y descubrirás un universo más amplio."
       ],
       "colores": [
         "#ff6f61",
         "#6ab04c",
-        "#f9ca24",
-        "#e74c3c"
+        "#e58e26",
+        "#1e90ff"
       ],
       "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Can't Hurt Me",
-      "autor": "David Goggins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/f5/b5/88/f5b58852-0ca0-090d-23f7-852f49263755/9781544512266.jpg/626x0w.jpg",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Resiliencia",
-        "Desafío",
-        "Intensidad",
-        "Superación"
-      ],
-      "frases": [
-        "🔥 El dolor es temporal; el éxito es eterno.",
-        "💪 La mente es una cadena que tú decides romper.",
-        "🚀 Conviértete en el guerrero que no se rinde nunca. Hazlo hoy.",
-        "🎯 Forja tu propio camino a la grandeza: entrenar, fallar, levantarte."
-      ],
-      "colores": [
-        "#ff5f57",
-        "#00e0d6",
-        "#ffcc00",
-        "#ff005a"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "El libro de los 5 anillos",
-      "autor": "Miyamoto Musashi",
-      "portada": "📚 El libro de los 5 anillos\nMiyamoto Musashi",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Maestría",
-        "Estrategia",
-        "Disciplina",
-        "Honor"
-      ],
-      "frases": [
-        "⚔️ Domina el arte de cada instante, no lo dejes escapar.",
-        "🧘‍♂️ La paz mental se forja a través de la disciplina diaria.",
-        "🔥 La estrategia es la vida misma, predecir es triunfar.",
-        "🌌 La armonía es la esencia del guerrero en su camino."
-      ],
-      "colores": [
-        "#FF3D00",
-        "#45AAB8",
-        "#FFD700",
-        "#A07C41"
-      ],
-      "fondo": "#0A0B12",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
