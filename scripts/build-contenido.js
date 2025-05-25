@@ -74,7 +74,8 @@ Requisitos de las FRASES:
 • Tono perfecto, cambia y mejorar en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
 • Relación explícita con la PALABRA y el libro del cual viene.
 • Cada frase debe elevar al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
-• Una o dos de las frases debe ser una lista de 3 accionables (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son accionables para no gastar espacio.
+• Una de las frases (la que sea) debe ser una lista de 3 accionables (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son accionables para no gastar espacio.
+• Otra de las frases (la que sea) debe ser un dato o hecho que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
 
 Colores:
 • Combina gradientes, lisos, patterns, veamos qué pasa.
