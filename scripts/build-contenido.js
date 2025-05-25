@@ -1,12 +1,6 @@
 /* ────────────────────────────────────────────────────────────────
    Triggui · build-contenido.js  (4-bloques, prompt “nivel-dios”)
-   ─ Para cada libro genera:
-       ▸ 4 palabras  (Movimiento · Corazón · Cerebro · Integración)
-       ▸ 4 frases    (40-75 car, 1 emoji, tono directo, ascendente)
-       ▸ dimensión   (Bienestar | Prosperidad | Conexión)
-       ▸ punto       (Cero | Creativo | Activo | Máximo)
-       ▸ 4 colores   vibrantes + fondo oscuro  + textColors
-   ─ Fallback seguro si la API falla.
+   + Versión con soporte para columna extra “tagline”
 ──────────────────────────────────────────────────────────────── */
 
 import fs   from "node:fs/promises";
@@ -101,18 +95,24 @@ Colores:
 Si algo falta, crea con sentido. No añadas otros campos.
 `;
 
-const FALL_COLORS=["#ff8a8a","#ffb56b","#8cabff","#d288ff"];
-function fallback(b,why){
-  return{
+/* COLORES POR DEFECTO ------------------------------------------ */
+const FALL_COLORS = ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"];
+function fallback(b, why){
+  return {
     ...b,
-    dimension:"Bienestar",
-    punto:"Cero",
-    palabras:["Mover","Sentir","Pensar","Abrir"],
-    frases:["🚶 Da un paso pequeño ahora.","❤️ Nota qué te alegra hoy.","🧠 Elige una idea y simplifícala.","✨ Abre el libro y deja que te sorprenda."],
-    colores:FALL_COLORS,
-    textColors:FALL_COLORS.map(txt),
-    fondo:"#111111",
-    portada:b.portada?.trim()||`📚 ${b.titulo}\n${b.autor}`
+    dimension: "Bienestar",
+    punto: "Cero",
+    palabras: ["Mover", "Sentir", "Pensar", "Abrir"],
+    frases: [
+      "🚶 Da un paso pequeño ahora.",
+      "❤️ Nota qué te alegra hoy.",
+      "🧠 Elige una idea y simplifícala.",
+      "✨ Abre el libro y deja que te sorprenda."
+    ],
+    colores: FALL_COLORS,
+    textColors: FALL_COLORS.map(txt),
+    fondo: "#111111",
+    portada: b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`
   };
 }
 
@@ -120,33 +120,45 @@ function fallback(b,why){
 async function enrich(b){
   try{
     const chat = await openai.chat.completions.create({
-      model:MODEL,temperature:.9,
-      messages:[
-        {role:"system",content:SYSTEM.trim()},
-        {role:"user",content:`Libro: "${b.titulo}" de ${b.autor}. Genera la estructura.`}
+      model: MODEL,
+      temperature: 0.9,
+      messages: [
+        { role: "system", content: SYSTEM.trim() },
+        {
+          role: "user",
+          // 👉 inyección de tagline si existe
+          content: `Libro: "${b.titulo}" de ${b.autor}.`
+                + (b.tagline ? ` Tagline: "${b.tagline}".` : "")
+                + " Genera la estructura."
+        }
       ]
     });
-    let raw=chat.choices[0].message.content.trim();
-    if(raw.startsWith("```")) raw=raw.replace(/```[\s\S]*?\n/,"").replace(/```$/,"");
-    const extra=JSON.parse(raw);
+
+    let raw = chat.choices[0].message.content.trim();
+    if(raw.startsWith("```")){
+      raw = raw.replace(/```[\\s\\S]*?\\n/, "").replace(/```$/, "");
+    }
+    const extra = JSON.parse(raw);
 
     /* Garantizar arrays de longitud 4 */
-    ["palabras","frases","colores"].forEach(k=>{
-      while(extra[k].length<4) extra[k].push(extra[k][extra[k].length-1]);
+    ["palabras", "frases", "colores"].forEach(k=>{
+      while(extra[k].length < 4) extra[k].push(extra[k][extra[k].length-1]);
     });
-    extra.textColors=extra.colores.map(txt);
-    return{
-      ...b,
+    extra.textColors = extra.colores.map(txt);
+
+    return {
+      ...b,           // mantiene titulo, autor, portada, tagline
       ...extra,
-      portada:b.portada?.trim()||`📚 ${b.titulo}\n${b.autor}`
+      portada: b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`
     };
+
   }catch(e){
-    console.warn("⚠️ Fallback",b.titulo,":",e.message);
-    return fallback(b,e.message);
+    console.warn("⚠️ Fallback", b.titulo, ":", e.message);
+    return fallback(b, e.message);
   }
 }
 
 /* MAIN ---------------------------------------------------------- */
 const libros = await Promise.all(pick.map(enrich));
-await fs.writeFile(OUT_FILE,JSON.stringify({libros},null,2));
-console.log("✅ contenido.json generado:",libros.length,"libros");
+await fs.writeFile(OUT_FILE, JSON.stringify({libros}, null, 2));
+console.log("✅ contenido.json generado:", libros.length, "libros");
