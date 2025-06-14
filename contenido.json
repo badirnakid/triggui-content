@@ -1,6 +1,138 @@
 {
   "libros": [
     {
+      "titulo": "Millonario en un fin de semana",
+      "autor": "Noah Kagan",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
+      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Audacia",
+        "Transformación",
+        "Éxito",
+        "Oportunidad"
+      ],
+      "frases": [
+        "🚀 La audacia de actuar abre puertas a fortunas inesperadas.",
+        "💡 Cada idea brillante puede ser el primer paso hacia tu millón.",
+        "🌟 Dale forma a tu visión; la acción es el camino hacia tu legado. Establece metas, escucha a tus clientes, y lanza tu producto.",
+        "📈 Un fin de semana puede cambiar tu vida; el tiempo es tu aliado si lo usas sabiamente."
+      ],
+      "colores": [
+        "#ff5c00",
+        "#ffdd00",
+        "#00e0ff",
+        "#ff1f7a"
+      ],
+      "fondo": "#090b12",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Hay tiempo",
+      "autor": "Jenny Blake",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/2c/ba/00/2cba0031-7acc-68f5-3a50-596fbc5a4ccf/1045156369.jpg/626x0w.jpg",
+      "tagline": "se trata de ser amable contigo y aprender a simplificar y agilizar los procesos lo más que puedas",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "Agilidad",
+        "Amabilidad",
+        "Simplificación",
+        "Fluidez"
+      ],
+      "frases": [
+        "🌊 La agilidad se encuentra en cada respiración, fluyendo sin esfuerzo.",
+        "🌟 Ser amable contigo mismo es el primer paso hacia un cambio real.",
+        "🌱 Simplifica tus procesos: elimina, prioriza, actúa.",
+        "🍃 En la danza de la vida, cada paso ligero te acerca a tus metas."
+      ],
+      "colores": [
+        "#ff6f20",
+        "#ffd700",
+        "#1e90ff",
+        "#32cd32"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Extreme ownership",
+      "autor": "Jocko Willink",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/af/2b/a9/af2ba9d3-b21f-ed60-16f2-a4fe2a4501b7/9781250184726.jpg/626x0w.jpg",
+      "tagline": "demonstrate how to apply powerful leadership principles from the battlefield to business and life",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "Responsabilidad",
+        "Liderazgo",
+        "Disciplina",
+        "Valor"
+      ],
+      "frases": [
+        "💪 La verdadera grandeza nace en la responsabilidad plena.",
+        "📈 En la adversidad, el líder forja su legado y el de su equipo.",
+        "🎯 La disciplina es el puente entre los sueños y la acción constante. Tres pasos: Prioriza, Actúa, Aprende.",
+        "📚 Cada victoria es un aprendizaje; cada error, una lección de liderazgo."
+      ],
+      "colores": [
+        "#FF4D00",
+        "#FF931E",
+        "#FBFF00",
+        "#009B77"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Máximo Rendimiento",
+      "autor": "Brad Stulberg",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/e7/de/87/e7de8764-4c77-ead7-ef8b-8da06b2e4ce6/1029631734.jpg/626x0w.jpg",
+      "tagline": "Sube de nivel evita el agotamiento y prospera con la nueva ciencia del éxito",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Resiliencia",
+        "Éxito",
+        "Flujo",
+        "Potencial"
+      ],
+      "frases": [
+        "🚀 La clave es fluir, no forzar tu ser hacia el éxito.",
+        "🌟 La resiliencia se cultiva en las pequeñas victorias diarias.",
+        "📈 Establece límites claros, establece hábitos poderosos: prioriza, planifica, persiste.",
+        "📚 La ciencia muestra que el equilibrio es el nuevo camino hacia la grandeza."
+      ],
+      "colores": [
+        "#f39c12",
+        "#e74c3c",
+        "#8e44ad",
+        "#3498db"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
       "titulo": "El poder de la concentración absoluta",
       "autor": "Dandapani",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d9/7b/22/d97b22e5-bf04-0347-be42-e292765dca7f/9788411191036.jpg/626x0w.jpg",
@@ -8,161 +140,62 @@
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "Focalización",
-        "Flujo",
-        "Autenticidad",
-        "Trascendencia"
+        "Enfoque",
+        "Claridad",
+        "Transformación",
+        "Liberación"
       ],
       "frases": [
-        "🧠 La claridad es el faro en el océano de distracciones.",
-        "🌟 Conéctate a lo esencial y observa cómo floreces.",
-        "🔑 Te invito a despejar el ruido, abrazar el ahora y encontrar tu esencia. Practica meditación, establece prioridades, y abraza momentos de silencio.",
-        "📖 La verdadera concentración transforma el caos en serenidad, permitiendo descubrir la alegría en cada instante."
+        "🌊 El verdadero poder reside en tu atención plena.",
+        "🌟 Al concentrarte en tu esencia, florece tu propósito.",
+        "🔑 Respira, observa y elige; la distracción es solo un espejismo.",
+        "🔍 Infunde tu día con intencionalidad: visualiza, actúa, agradece."
       ],
       "colores": [
-        "#ff4757",
-        "#1e90ff",
-        "#ffa502",
-        "#2ed573"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "El libro de los 5 anillos",
-      "autor": "Miyamoto Musashi",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/36/8a/f1/368af195-4b40-408b-54be-d070bbebc91e/9788441438941.jpg/626x0w.jpg",
-      "tagline": "Adéntrate en el mundo de la estrategia y la filosofía samurái",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Maestría",
-        "Estrategia",
-        "Conquista",
-        "Harmonia"
-      ],
-      "frases": [
-        "⚔️ La verdadera victoria se alcanza en la mente antes que en el campo de batalla.",
-        "🔥 Domina tu espíritu y el universo se inclinará ante ti.",
-        "🌌 La vida es un río de constante cambio; fluye con audacia y creatividad.",
-        "🧘‍♂️ Observe la naturaleza, escuche su sabiduría: enfócate, adapta, avanza."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F1C40F"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Bruce Lee",
-      "autor": " John Little",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
-      "tagline": "un artista de la vida",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Fluidez",
-        "Sabiduría",
-        "Autenticidad",
-        "Vitalidad"
-      ],
-      "frases": [
-        "🌊 La vida fluye en la danza de tu autenticidad.",
-        "🔥 En cada desafío, una chispa de crecimiento espera.",
-        "💡 La verdadera sabiduría nace del constante cuestionamiento, actúa hoy.",
-        "📜 Bruce Lee afirmó que el arte de vivir es ser lo que eres."
-      ],
-      "colores": [
-        "#ff6f61",
-        "#6a5acd",
-        "#3cb371",
-        "#ffda44"
+        "#ff8c00",
+        "#00bfff",
+        "#32cd32",
+        "#ff1493"
       ],
       "fondo": "#0e0f1b",
       "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Can't Hurt Me",
-      "autor": "David Goggins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/f5/b5/88/f5b58852-0ca0-090d-23f7-852f49263755/9781544512266.jpg/626x0w.jpg",
-      "tagline": "Domina tu mente y desafía las probabilidades",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Resiliencia",
-        "Desafío",
-        "Superación",
-        "Determinación"
-      ],
-      "frases": [
-        "🔥 Domina tus límites y despierta al guerrero interno.",
-        "🌟 Cada dolor es una oportunidad para forjar tu grandeza.",
-        "💪 Actúa, persiste y transforma el sufrimiento en poder: enfrenta tus miedos, establece metas audaces, celebra cada victoria.",
-        "🚀 El verdadero crecimiento surge al desafiar lo que creías posible."
-      ],
-      "colores": [
-        "#FF4C00",
-        "#FFEA00",
-        "#00FF4F",
-        "#00BFFF"
-      ],
-      "fondo": "#0A0A0D",
-      "textColors": [
-        "#FFFFFF",
         "#000000",
         "#000000",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e0/90/f2/e090f237-a113-0def-3523-29651e6089f1/9780804141390.jpg/626x0w.jpg",
-      "tagline": "How I Beat Fear and Became Invincible Through 100 Days of Rejection",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Audacia",
-        "Inquebrantable",
-        "Valentía",
-        "Resiliencia"
-      ],
-      "frases": [
-        "💥 Tu valentía transforma el rechazo en oportunidad.",
-        "🌈 Busca el no, el sí está más cerca de lo que piensas.",
-        "🔥 Enfrenta tus miedos y conviértelos en tu superpoder: haz tres peticiones audaces hoy.",
-        "🦁 La verdadera fortaleza emerge al cruzar la frontera del miedo."
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#FF33A1"
-      ],
-      "fondo": "#191A24",
-      "textColors": [
-        "#FFFFFF",
         "#000000",
-        "#FFFFFF",
         "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Enamórate del problema no de la solución",
+      "autor": "Uri Levine",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/ec/b3/47/ecb34700-b504-9032-41c9-04cb928fabef/9786287578302.jpg/626x0w.jpg",
+      "tagline": "mediante la identificación de los problemas más serios de nuestros consumidores y perturbar los mercados ineficientes que actualmente les sirven",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Perturbación",
+        "Identificación",
+        "Innovación",
+        "Transformación"
+      ],
+      "frases": [
+        "💡 Los problemas son oportunidades disfrazadas; abracémoslos.",
+        "🚀 Al enfocarte en el dolor del cliente, creas soluciones que transforman.",
+        "🧠 Observa, analiza y redefine; el éxito nace del enfoque en lo real.",
+        "📊 Identificar el problema, explorar la causa y crear una solución innovadora. ¡Hazlo hoy!"
+      ],
+      "colores": [
+        "#ff4081",
+        "#00e676",
+        "#2979ff",
+        "#ffc107"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
       ]
     },
     {
@@ -173,95 +206,62 @@
       "dimension": "Cerebro",
       "punto": "Máximo",
       "palabras": [
-        "Eureka",
-        "Sabiduría",
         "Relatividad",
-        "Innovación"
+        "Ingenio",
+        "Eureka",
+        "Exploración"
       ],
       "frases": [
-        "⚛️ La curiosidad despierta la grandeza en cada idea.",
-        "🌌 Rompe tus límites, la relatividad transforma la percepción.",
-        "💡 Encuentra tres soluciones creativas para cada problema que enfrentes.",
-        "📉 La mente de Einstein nos enseña que lo complejo puede ser simple."
+        "⚛️ Las grandes ideas nacen en el caos de lo cotidiano.",
+        "🔍 La curiosidad es el motor que transforma lo desconocido.",
+        "🌌 ¿Sabías que Einstein afirmó que la imaginación es más importante que el conocimiento? Cultívala!",
+        "🚀 Visualiza tu reto como una partícula: descompón, fusiona y ¡haz que estalle en soluciones!"
       ],
       "colores": [
-        "#00ffcc",
-        "#ff6699",
-        "#ffcc00",
-        "#9900cc"
+        "#ff6f61",
+        "#6ab04c",
+        "#f39c12",
+        "#2980b9"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0e0f1b",
       "textColors": [
-        "#000000",
+        "#FFFFFF",
         "#FFFFFF",
         "#000000",
         "#FFFFFF"
       ]
     },
     {
-      "titulo": "Lo que nunca cambia en un mundo cambiante",
-      "autor": "Morgan Housel",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/4b/a0/20/4ba02068-a80a-6933-5008-190ad2baef7f/9788408285502.jpg/626x0w.jpg",
-      "tagline": "23 lecciones atemporales para nuestra vida personal y financiera",
+      "titulo": "Optimal",
+      "autor": "Daniel Goleman",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/de/76/16/de76166b-f792-9945-8b0d-01ef9ef37c0b/9786073841566.jpg/626x0w.jpg",
+      "tagline": "Cómo alcanzar la excelencia personal y laboral todos los días",
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "Resiliencia",
-        "Perspectiva",
-        "Sostenibilidad",
-        "Adaptación"
+        "Maestría",
+        "Excelencia",
+        "Transformación",
+        "Éxito"
       ],
       "frases": [
-        "🌱 Lo que perdura es tu capacidad de reinventarte.",
-        "🧠 En un mundo volátil, cultiva la calma dentro de ti.",
-        "💡 Siembra hoy, cosecha mañana: el tiempo es tu aliado.",
-        "🌍 Tres pasos hacia tu futuro: ahorra, invierte, aprende."
+        "✨ La maestría se forja día a día, nunca se detiene.",
+        "🌟 La excelencia no es un destino, es un camino lleno de aprendizajes.",
+        "🚀 Cultiva tu mente: establece rutinas que eleven tu potencial. Observa el cambio.",
+        "📚 Alcanzar la grandeza implica reflexión, acción y dedicación constante."
       ],
       "colores": [
         "#ff5733",
         "#33ff57",
         "#3357ff",
-        "#ff33a1"
+        "#f3ff33"
       ],
       "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
         "#FFFFFF",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Sin filtro",
-      "autor": "Sarah Frier",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/22/19/01/221901bb-8836-7a74-5ad2-e6bd055f10be/9788417992217.jpg/626x0w.jpg",
-      "tagline": "La historia secreta de Instagram",
-      "dimension": "Conexión",
-      "punto": "Creativo",
-      "palabras": [
-        "Ecosistema",
-        "Influencia",
-        "Conexión",
-        "Autenticidad"
-      ],
-      "frases": [
-        "📷 La interacción visual crea puentes invisibles entre almas.",
-        "🌀 Explora cómo la imagen transforma la narrativa de vida.",
-        "🌈 Reconoce el poder de ser auténtico, más allá del filtro.",
-        "✨ Abrazar la vulnerabilidad genera conexiones reales. Captura momentos, comparte experiencias, vive sin miedos."
-      ],
-      "colores": [
-        "#ff4b5c",
-        "#fc7f43",
-        "#f6f45f",
-        "#4caf50"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
+        "#000000"
       ]
     },
     {
@@ -273,58 +273,58 @@
       "punto": "Máximo",
       "palabras": [
         "Manifestación",
-        "Poder",
         "Creación",
+        "Empoderamiento",
         "Transformación"
       ],
       "frases": [
-        "✨ La palabra es el catalizador de tu universo interno.",
-        "🔥 Cada sílaba que pronuncias, es magia que transforma tu realidad.",
-        "🌌 Al hablar, moldeas el tejido de tu existencia. Escoge con sabiduría.",
-        "🌀 En las palabras resuena el poder de tu ser. Creación, autenticidad y amor."
+        "🔮 Las palabras son el hilo que teje tu destino.",
+        "🚀 Al hablar, siembra realidades; la magia empieza en ti.",
+        "✨ Comunica con pasión: da vida a tus sueños y deseos. Haz una lista de lo que deseas, habla en presente y actúa como si ya lo tuvieras.",
+        "🌌 La energía de tus palabras resuena en el universo, creando tu camino."
       ],
       "colores": [
-        "#FF5C00",
-        "#FFDD00",
-        "#009FFF",
-        "#A700D1"
+        "#ff5c00",
+        "#00c3ff",
+        "#ff00a8",
+        "#ccff00"
       ],
       "fondo": "#11111d",
       "textColors": [
         "#FFFFFF",
         "#000000",
         "#FFFFFF",
-        "#FFFFFF"
+        "#000000"
       ]
     },
     {
-      "titulo": "Relentless",
-      "autor": "Tim S. Grover",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/58/eb/7e/58eb7e2f-81fe-32a5-95d5-ee6728a5d7e9/9781476714219.jpg/626x0w.jpg",
-      "tagline": "From good to great to unstoppable",
-      "dimension": "Prosperidad",
+      "titulo": "Wu wei",
+      "autor": "Henri Borel",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/0a/7f/91/0a7f918a-4d24-eb85-8b52-28a932ee4694/Laotzu_s_Tao_and_Wu_Wei_-_Henri_Borel.jpg/626x0w.jpg",
+      "tagline": "la vía del no actuar o cómo seguir el ritmo natural de la vida",
+      "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "Imparables",
-        "Fuego",
-        "Éxito",
-        "Dominio"
+        "Fluidez",
+        "Armonía",
+        "Ritmo",
+        "Serenidad"
       ],
       "frases": [
-        "🔥 El fracaso es solo un escalón hacia tu grandeza.",
-        "💥 La disciplina no se negocia; se convierte en tu esencia.",
-        "🌪️ La verdadera fuerza surge al aceptar tus límites y derribarlos.",
-        "📈 Fatiga, dolor y sudor son las marcas de los que se atreven a ser grandes. ¡Vívelo! Mantén tu enfoque, actúa con determinación y transforma el miedo en poder."
+        "🌊 En la fluidez del ser, el universo te abraza.",
+        "🌌 La armonía surge cuando dejas que la vida fluya sin prisa.",
+        "✨ Aférrate a la serenidad y el movimiento se convierte en danza.",
+        "🚀 Encontrar tu ritmo es descifrar la sinfonía de la existencia. Explora, respira, suelta."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#3357FF",
-        "#F33FFF"
+        "#00ffcc",
+        "#ffcc00",
+        "#ff007f",
+        "#6600ff"
       ],
-      "fondo": "#0e0f1b",
+      "fondo": "#11111d",
       "textColors": [
-        "#FFFFFF",
+        "#000000",
         "#000000",
         "#FFFFFF",
         "#FFFFFF"
