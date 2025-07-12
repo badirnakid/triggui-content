@@ -1,163 +1,196 @@
 {
   "libros": [
     {
-      "titulo": "Grit",
-      "autor": "Angela Duckworth",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/26/fe/71/26fe7112-1523-0907-371c-9d5080db8387/9788416715381.jpeg/626x0w.jpg",
-      "tagline": "El poder de la pasión y la perseverancia",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Resiliencia",
-        "Determinación",
-        "Tenacidad",
-        "Constancia"
-      ],
-      "frases": [
-        "🏆 La pasión forja el camino hacia la grandeza.",
-        "🔥 La perseverancia transforma los sueños en logros tangibles.",
-        "🌟 Encuentra tu propósito, sigue adelante y no te detengas.",
-        "⚡ Mantén tu enfoque: cada paso firme te lleva más alto. Actúa, persiste, inspira."
-      ],
-      "colores": [
-        "#f03f3f",
-        "#ffbd3e",
-        "#3fff8d",
-        "#3e61ff"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Wa La vía japonesa de la armonía",
-      "autor": "Laura Imai",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/83/ae/42/83ae42a9-1dd1-4dbd-3137-95d33393790d/9788403521520.jpg/626x0w.jpg",
-      "tagline": "la belleza la alegría y el civismo se construyen con grandes dosis de compromiso mediante el trabajo continuo en uno mismo ejercitando la paciencia haciendo las cosas con cuidado y nunca a expensas de otros",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Armonía",
-        "Compromiso",
-        "Paciencia",
-        "Cuidado"
-      ],
-      "frases": [
-        "🌿 La paz florece donde hay dedicación sincera.",
-        "🌸 Cultivar lo interno es el camino hacia la belleza externa.",
-        "🌱 La armonía nace cuando trabajamos juntos, sin prisa.",
-        "🔑 Paciencia, dedicación, conexión: los pilares de un ser pleno."
-      ],
-      "colores": [
-        "#ff4757",
-        "#1e90ff",
-        "#fffa65",
-        "#2ed573"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "No me hagas pensar",
-      "autor": "Steve Krug",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/62/78/b9/6278b988-3aa4-171d-5f9b-50d07fab5b47/9780133597264.jpg/626x0w.jpg",
-      "tagline": "understand the principles of intuitive navigation and information design Witty commonsensical and eminently practical",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Intuición",
-        "Claridad",
-        "Acción",
-        "Simplicidad"
-      ],
-      "frases": [
-        "💡 La comprensión se forja en la simplicidad.",
-        "🚀 Diseña con propósito y observa el impacto inmediato.",
-        "🌊 Las interfaces intuitivas son olas que arrastran al usuario hacia el éxito.",
-        "📚 Explora, simplifica y transforma la navegación digital: observa, adapta y aplica."
-      ],
-      "colores": [
-        "#ff6b6b",
-        "#ffd93d",
-        "#6bcf63",
-        "#3c4dc4"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Cuestión de límites",
-      "autor": "Nedra Glover",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/9f/fd/b6/9ffdb681-b177-507c-ade6-7347e5a685a3/9786070777790.jpg/626x0w.jpg",
-      "tagline": "La falta de límites nos conduce a una cultura del burnout y a una sociedad exhausta y sobrepasada",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "Autenticidad",
-        "Resiliencia",
-        "Equilibrio",
-        "Empoderamiento"
-      ],
-      "frases": [
-        "🌅 La autenticidad en tus límites revela tu esencia más pura.",
-        "💪 Redefinir tus límites es un acto de amor inquebrantable hacia ti mismo.",
-        "💖 Cada 'no' que pronuncias es un 'sí' hacia tu bienestar total. La verdadera libertad comienza aquí.",
-        "✨ Estructura tu vida: evalúa tus límites, prioriza tu paz, y recalibra tus relaciones."
-      ],
-      "colores": [
-        "#FF5E3A",
-        "#FFCC00",
-        "#00A8E1",
-        "#7D3C98"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Creatividad",
-      "autor": "Ed Catmull",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/94/a5/64/94a56452-3190-72d6-af27-fc0bb20198b9/9788416029204.jpg/626x0w.jpg",
-      "tagline": "sobre liderazgo creativo que recoge los principios que construyeron la cultura singularmente exitosa de Pixar y le permitieron conservar su creatividad sin dejar de evolucionar",
+      "titulo": "Steve Jobs",
+      "autor": " Walter Isaacson",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
+      "tagline": "La Biografía",
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
         "Innovación",
-        "Colaboración",
-        "Visión",
-        "Evolución"
+        "Revolución",
+        "Creatividad",
+        "Visión"
       ],
       "frases": [
-        "🎨 La magia ocurre cuando las ideas se entrelazan en un abrazo eterno.",
-        "🌟 Un gran líder no guía, sino que inspira a otros a crear sin límites.",
-        "📈 Fomenta un espacio donde el riesgo y la creatividad bailen juntos: escucha, comparte y experimenta.",
-        "🧠 En Pixar, la creatividad se redefine a menudo: cada proyecto es una oportunidad para aprender y crecer."
+        "🚀 Cada idea brillante es una chispa en el vasto cosmos de la creación.",
+        "✨ La verdadera revolución se manifiesta cuando la pasión se convierte en acción.",
+        "🌱 En cada fracaso, hay semillas de éxito esperando florecer. Conviértete en tu propio jardinero.",
+        "🎯 Desafía lo convencional: Pregunta, explora y experimenta con audacia. Hazlo tu estilo de vida."
       ],
       "colores": [
-        "#FF6F61",
-        "#6A5ACD",
-        "#FFD700",
-        "#20B2AA"
+        "#ff6f20",
+        "#00bcd4",
+        "#9c27b0",
+        "#4caf50"
       ],
-      "fondo": "#0E0F1B",
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "101 reflexiones que cambiarán tu forma de pensar",
+      "autor": "Brianna Wiest",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
+      "tagline": "why you should pursue purpose over passion embrace negative thinking see the wisdom in daily routine and become aware of the cognitive biases that are creating the way you see your life",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Propósito",
+        "Sabiduría",
+        "Perspectiva",
+        "Transformación"
+      ],
+      "frases": [
+        "🌱 El verdadero crecimiento florece en la adversidad.",
+        "💡 La vida se transforma cuando eliges el propósito por encima de la pasión.",
+        "🔍 Desarma tus sesgos cognitivos; observa la realidad con nuevos ojos.",
+        "🔗 Da un paso hacia la transformación: refina tus rutinas, redefine tus creencias."
+      ],
+      "colores": [
+        "#ff6f61",
+        "#6ab04c",
+        "#2980b9",
+        "#f39c12"
+      ],
+      "fondo": "#1a1a2e",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
+      "autor": "David JP Phillips",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
+      "tagline": "Dopamina Oxitocina Serotonina Cortisol Endorfinas Testosterona",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Sinergia",
+        "Vitalidad",
+        "Transformación",
+        "Equilibrio"
+      ],
+      "frases": [
+        "🌟 La sinergia hormonal impulsa tu esencia. ¡Revélala ya!",
+        "❤️ La conexión emocional eleva tus hormonas a nuevas alturas.",
+        "⚡ La transformación hormonal redefine tu vida. ¡Aprovecha cada instante!",
+        "🌀 Experimenta el equilibrio, un ágil baile de hormonas en perfecta armonía."
+      ],
+      "colores": [
+        "#ff5f8f",
+        "#4f8eff",
+        "#ffbf40",
+        "#1f5f8f"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "La ciencia del éxito",
+      "autor": "Napoleon Hill",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/23/4f/0b/234f0bcd-6265-5ee3-8dc3-d84fc463292d/9786073817684.jpg/626x0w.jpg",
+      "tagline": "El curso magistral de Napoleón Hill",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Determinación",
+        "Visión",
+        "Propósito",
+        "Éxito"
+      ],
+      "frases": [
+        "🚀 Tu destino se forja en cada decisión audaz que tomas.",
+        "💡 La fe en tus sueños es el primer paso hacia su realización.",
+        "🌟 El éxito no llega por casualidad; se construye con esfuerzo y pasión.",
+        "📝 Visualiza tus metas, actúa con intensidad y transforma tu vida."
+      ],
+      "colores": [
+        "#ff4f6d",
+        "#3cd8a8",
+        "#f7b9a5",
+        "#ff8d3b"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Bruce Lee",
+      "autor": " John Little",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
+      "tagline": "un artista de la vida",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Maestría",
+        "Fluidez",
+        "Intensidad",
+        "Vitalidad"
+      ],
+      "frases": [
+        "⚡️ Adopta la fluidez en cada acción, como el agua.",
+        "🧘‍♂️ La maestría en la vida se construye desde la intensidad del presente.",
+        "🔥 La energía vital es tu arma más poderosa: ¡utilízala!",
+        "🌌 La esencia del arte de vivir es ser como el viento: adaptable y libre."
+      ],
+      "colores": [
+        "#ff4c4c",
+        "#ff9a00",
+        "#34d399",
+        "#4c1dff"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "El líder que no tenía cargo",
+      "autor": "Robin Sharma",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/aa/fe/04/aafe04af-1d29-ec58-3719-66bb23f693ea/9788425346224.jpg/626x0w.jpg",
+      "tagline": "el mejor en tu campo a la vez que contribuirás con tu talento a que tu empresa alcance las metas más altas",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "Empoderamiento",
+        "Contribución",
+        "Inspiración",
+        "Excelencia"
+      ],
+      "frases": [
+        "🌟 La verdadera grandeza surge al servir con pasión.",
+        "📈 Tu impacto se mide por la grandeza que inspiras en otros.",
+        "🚀 Domina tu arte y permite que tu luz guíe a la organización.",
+        "🌍 Al contribuir, expandes tu propio potencial; el círculo se cierra."
+      ],
+      "colores": [
+        "#FF4B5C",
+        "#6D5AE1",
+        "#00C9A7",
+        "#FF8C00"
+      ],
+      "fondo": "#11111d",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -166,35 +199,35 @@
       ]
     },
     {
-      "titulo": "Good to great",
-      "autor": "Jim Collins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/bd/62/e0/mzi.ruipsrer.jpg/626x0w.jpg",
-      "tagline": "Why Some Companies Make the Leap...And Others Don't",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
+      "titulo": "Cómo conocer a una persona",
+      "autor": "David Brooks",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/54/cf/51/54cf5132-06c7-d163-2a63-2f5d0ef5b9c2/1044120648.jpg/626x0w.jpg",
+      "tagline": "se nutre de la psicología y la neurociencia así como del teatro la filosofía y la historia para ofrecer un enfoque esperanzador sobre la conexión humana que nos enseña a realizar acciones concretas pequeñas pero significativas ser un buen oyente pedir y ofrecer perdón sentarse con quien sufre mirar las cosas desde la perspectiva del otro",
+      "dimension": "Conexión",
+      "punto": "Máximo",
       "palabras": [
-        "Transformación",
-        "Excelencia",
-        "Impacto",
-        "Estrategia"
+        "Empatía",
+        "Escucha",
+        "Conexión",
+        "Transcendencia"
       ],
       "frases": [
-        "🚀 La evolución es la clave para dejar huella en el mundo empresarial.",
-        "🌟 La búsqueda de la grandeza comienza con la disciplina y la pasión.",
-        "📊 Un enfoque audaz en la estrategia hace la diferencia pero no olvides adaptarte.",
-        "🎯 Define tu 'por qué', alinea tu equipo y enciende el camino hacia el éxito."
+        "🧠 Cada conversación es un viaje hacia el alma del otro.",
+        "💖 La verdadera conexión comienza cuando el silencio se convierte en comprensión.",
+        "🔑 Escuchar es un arte, dominarlo transforma vidas. Rinde homenaje a la humanidad.",
+        "🌱 Las pequeñas acciones de hoy crean el puente hacia una conexión profunda y duradera."
       ],
       "colores": [
         "#FF6F61",
-        "#6FA3EF",
-        "#24B47E",
-        "#FFBF00"
+        "#6B5B95",
+        "#88B04B",
+        "#F7CAC9"
       ],
-      "fondo": "#0D0E14",
+      "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#000000"
       ]
     },
@@ -206,121 +239,88 @@
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "Resiliencia",
         "Innovación",
         "Transformación",
-        "Impacto"
+        "Impacto",
+        "Disruptor"
       ],
       "frases": [
-        "💡 Cada problema es un latido de innovación esperando ser escuchado.",
-        "🚀 Al enfrentarte a lo incómodo, abres las puertas a la transformación.",
-        "🔍 La clave del éxito radica en amar lo que se soluciona, no en lo que se repara.",
-        "🌟 Para triunfar, identifica tres problemas profundos que te interpelan; busca su raíz."
+        "🔥 Transforma tu perspectiva: el problema es el puente al éxito.",
+        "🚀 Enfócate en lo que duele; ahí está la oportunidad dorada.",
+        "💡 Identificar un problema profundo es el primer paso hacia el cambio radical. ¡Actúa ya!",
+        "🌍 La innovación nace de la incomodidad. Cuanto más grande el problema, mayor el impacto."
       ],
       "colores": [
         "#FF5722",
         "#FFC107",
-        "#3F51B5",
-        "#8BC34A"
+        "#8BC34A",
+        "#3F51B5"
       ],
-      "fondo": "#0A0D14",
+      "fondo": "#11111d",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#FFFFFF"
       ]
     },
     {
-      "titulo": "Sólo una cosa",
-      "autor": "Gary Keller",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/6a/01/02/6a0102ee-8eb4-58ac-18b8-fcd074f6967a/9781848549234.jpg/626x0w.jpg",
-      "tagline": "Detrás de cualquier éxito se encuentra una sencilla y sorprendente verdad enfócate en lo único what's the cost of distractions Second-rate work missed deadlines smaller pay cheques fewer promotions and lots of stress",
+      "titulo": "Millonario en un fin de semana",
+      "autor": "Noah Kagan",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
+      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "Destello",
-        "Destello",
-        "Destello",
-        "Destello"
-      ],
-      "frases": [
-        "✨ Enfocarse es la brújula del éxito; cada distracción es un desvío.",
-        "🌟 La claridad trae poder; elige lo esencial y observa cómo floreces.",
-        "🚀 En el arte del enfoque, encontrarás tu camino hacia la grandeza. Prioriza, actúa, celebra.",
-        "💡 La verdadera productividad nace al decir 'no' a lo trivial; un solo paso hacia lo significativo transforma todo."
-      ],
-      "colores": [
-        "#ff5733",
-        "#33ff57",
-        "#3357ff",
-        "#f1c40f"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Superpoderes del éxito para gente normal",
-      "autor": "Mago More",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a7/58/65/a75865d8-5636-d11c-e673-7de8d9987d2b/9788416253470.jpg/626x0w.jpg",
-      "tagline": "En este libro cuento cómo he pasado de ser un auténtico desastre en todo a mejorar mi vida ostensiblemente O como diría mi madre cómo pasé de ser un perroflauta a convertirme en un flautista de Helín",
-      "dimension": "Prosperidad",
-      "punto": "Activo",
-      "palabras": [
+        "Emprendimiento",
+        "Valentía",
         "Transformación",
-        "Empoderamiento",
-        "Resiliencia",
-        "Autenticidad"
+        "Oportunidad"
       ],
       "frases": [
-        "🚀 El cambio verdadero comienza cuando decides hacerlo tú.",
-        "🥇 Adopta la mentalidad de un aprendiz y cada experiencia será un maestro.",
-        "🌠 Levántate, reinvéntate y asume el control de tu historia.",
-        "💡 Es la combinación de esfuerzo, constancia y pasión lo que te lleva a la cima."
+        "🚀 Salta hacia lo desconocido y lo que sueñas será tu nuevo hogar.",
+        "💡 Comienza con una idea y descubre el poder de tu creatividad, el mundo espera tu luz.",
+        "🎯 Visualiza tus metas, actúa como si ya hubieras triunfado y verás cómo el universo conspira a tu favor.",
+        "📈 Define tu visión, actúa con audacia, y conquista un resultado que supere tu imaginación."
       ],
       "colores": [
-        "#ff5733",
-        "#33ff57",
-        "#3357ff",
-        "#f4c300"
+        "#FF6F61",
+        "#6FA3EF",
+        "#7EF4D8",
+        "#FFCE54"
       ],
       "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#FFFFFF",
+        "#000000",
         "#000000"
       ]
     },
     {
-      "titulo": "LIT Life ignition tools",
-      "autor": "Jeff Karp",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/21/9e/74/219e74c0-0074-2855-fd9e-2995c19f9245/9788417992361.jpg/626x0w.jpg",
-      "tagline": "Cómo puedes lograr un mayor rendimiento mental y creatividad en un mundo lleno de distracciones de fechas límite constantes de tiempo perdido en las redes",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
+      "titulo": "Hooked",
+      "autor": "Nir Eyal",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/c1/3b/34/c13b34ce-b455-cb07-d2dd-64196392a1f2/9780698190665.d.jpg/626x0w.jpg",
+      "tagline": "Through consecutive hook cycles these products reach their ultimate goal of bringing users back again and again without depending on costly advertising or aggressive messaging",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
       "palabras": [
-        "Energía",
-        "Fluidez",
-        "Enfoque",
-        "Resiliencia"
+        "Enganche",
+        "Círculo",
+        "Inmersión",
+        "Retorno"
       ],
       "frases": [
-        "🚀 Despierta tu potencial oculto cada día.",
-        "🎨 La creatividad fluye cuando el ruido se apaga.",
-        "🌟 Aprende a reinventarte con cada distracción.",
-        "📈 Encuentra la claridad: define tus prioridades, respira, actúa."
+        "🔄 La clave está en el ciclo: crea hábitos, no solo usuarios.",
+        "🌟 Mantén el interés: una experiencia adictiva es un arte constante.",
+        "📊 Productos de éxito son aquellos que entienden la mente del usuario. Implementa retroalimentación, personaliza la experiencia, y sorprende siempre.",
+        "💡 Cada interacción es una oportunidad: maximiza el valor y minimiza el esfuerzo."
       ],
       "colores": [
-        "#ff5733",
-        "#33ff57",
-        "#3357ff",
-        "#ff33a1"
+        "#ff6f20",
+        "#1db954",
+        "#0066ff",
+        "#d5006d"
       ],
       "fondo": "#0e0f1b",
       "textColors": [
