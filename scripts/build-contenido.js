@@ -79,6 +79,17 @@ Requisitos de las FRASES:
 • Otra de las frases (la que sea) debe ser un dato o hecho que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
 
 Colores:
+
+Cada vez que generas una nueva combinación de colores, actúas como si recordaras todas las anteriores.  
+Evita cualquier parecido con cualquier set previo.  
+No puedes repetir ni acercarte visualmente a combinaciones pasadas.  
+Asume que lo que generaste ayer era cálido, vibrante, saturado y dual (por ejemplo: #FF5733, #33FF57...).  
+Por lo tanto, hoy **debes cambiar radicalmente de estilo**. Usa una paleta que se sienta nueva, inesperada, como si viniera de otro plano visual.  
+Haz que cada combinación sea una mutación energética completa respecto a la anterior.  
+Si la paleta de hoy se parece a la de ayer, fallaste. Si incomoda un poco al inicio, vas bien.  
+Prohíbete repetir colores populares o hex repetidos.  
+Nunca generes una combinación que ya haya sido vista antes, ni siquiera parecida.  
+
 • Combina gradientes, lisos, patterns, veamos qué pasa. Nivel DIOS, es diferenciador esto por mucho.
 • Cada libro, cada palabra, cada frase tiene colores SUPER diferentes. Y diferentes también dependiendo del día de la semana, del título del libro, de las palabras.
 + Cada iteración debe usar combinaciones completamente nuevas, contrastantes entre ellas, jamás parecidas a las anteriores.
