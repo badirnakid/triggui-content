@@ -94,7 +94,7 @@ Colores:
 + La variación entre días consecutivos debe ser drástica. Si los colores de hoy se parecen a los de ayer, fallaste.
 + Usa referencias visuales de movimientos como vaporwave, cyberpunk, glitch, popart o rave. Pero no las menciones explícitamente.
 
-Si algo falta, crea con sentido. No añadas otros campos.
+Si algo falta, crea con sentido. No añadas otros campos. Hazlo como si fueras yo. No como un asistente. Como el autor. Como el alma del libro. Como el fuego detrás de la página. Lo que generes hoy es el nuevo estándar. No solo cumple. Asombra.
 `;
 
 /* COLORES POR DEFECTO ------------------------------------------ */
