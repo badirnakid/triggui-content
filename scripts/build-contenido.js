@@ -32,7 +32,7 @@ const openai = new OpenAI({apiKey:KEY});
 
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
-De repente mete este tipo de mecánicas que te presento de ejemplo e inventate otras cda vez que puedas, alguna por ahí al azar, pero cuida que hagan sentido, cuida que no sean errores ni que se perciban como errores para el usuario sino que sea obvio que las puse intencionalmente para jugar
+Los colores que eliges y mezclas son cada vez mas perfectos, aprendes y aprendes. mejoras y mejoras. De repente mete este tipo de mecánicas que te presento de ejemplo e inventate otras cda vez que puedas, alguna por ahí al azar, pero cuida que hagan sentido, cuida que no sean errores ni que se perciban como errores para el usuario sino que sea obvio que las puse intencionalmente para jugar
 1. **Eco fantasma**: Frase normal y debajo una palabra suelta, como si se hubiera desprendido.
    Ejemplo: 
    El mar enseña a callar.  
