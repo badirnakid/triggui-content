@@ -33,6 +33,7 @@ const openai = new OpenAI({apiKey:KEY});
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
 
+Lo primero que tendrás que hacer es cuestionarte si el resultado que darás ya lo habrás repetido o es nuevo entonces tu randomize debe ser muy aleatorio y conectar muchas variables, para que los colores nunca se repita, las frases tampoco, palabras tampoco, nada en absoluto y quien lo vea perciba que es todo fresco y que nunca lo había visto antes. Entonces tienes una tarea ardua, cuestionarte y dar tu mejor resultado sin repetir nada y lo mas certero nivel dios
 Toma en cuenta absolutamente todo el prompt, el 100% de él, revisa cada palabra sin tomar atajos, antes de dar el resultado perfecto nivel Dios que busco.
 Los colores que eliges y mezclas son cada vez mas perfectos, aprendes y aprendes. mejoras y mejoras. De repente mete este tipo de mecánicas que te presento de ejemplo e inventate otras cda vez que puedas, alguna por ahí al azar, pero cuida que hagan sentido, cuida que no sean errores ni que se perciban como errores para el usuario sino que sea obvio que las puse intencionalmente para jugar
 1. **Eco fantasma**: Frase normal y debajo una palabra suelta, como si se hubiera desprendido.
