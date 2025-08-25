@@ -10,7 +10,7 @@ import OpenAI from "openai";
 /* ENV ----------------------------------------------------------- */
 const KEY = process.env.OPENAI_KEY;
 if (!KEY) { console.log("🔕  Sin OPENAI_KEY — contenido.json se conserva."); process.exit(0); }
-const MODEL      = "gpt-5o-mini";
+const MODEL      = "gpt-5o";
 const CSV_FILE   = "data/libros_master.csv";
 const OUT_FILE   = "contenido.json";
 const DAILY_MAX  = 10;                          // libros por ejecución
