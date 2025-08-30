@@ -447,7 +447,7 @@ async function enrich(b){
   try{
     const chat = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.5,
+      temperature: 1.3,
       messages: [
         { role: "system", content: SYSTEM.trim() },
         {
