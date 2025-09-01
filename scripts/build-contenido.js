@@ -25,7 +25,18 @@ const txt = h => lum(h)>.35 ? "#000000" : "#FFFFFF";
 /* READ CSV ------------------------------------------------------ */
 const csv   = await fs.readFile(CSV_FILE,"utf8");
 const lista = parse(csv,{columns:true,skip_empty_lines:true});
-const pick  = lista.sort(()=>Math.random()-.5).slice(0,Math.min(DAILY_MAX,lista.length));
+// Fisher–Yates shuffle (aleatorio justo)
+function shuffle(array) {
+  let m = array.length, i;
+  while (m) {
+    i = Math.floor(Math.random() * m--);
+    [array[m], array[i]] = [array[i], array[m]];
+  }
+  return array;
+}
+
+const pick = shuffle([...lista]).slice(0, Math.min(DAILY_MAX, lista.length));
+
 
 /* OPENAI -------------------------------------------------------- */
 const openai = new OpenAI({apiKey:KEY});
