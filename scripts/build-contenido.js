@@ -52,7 +52,7 @@ if (["Tuesday","Thursday"].includes(day)) {
   langInstr = "Generate ALL content in clear, natural ENGLISH.";
 }
 if (day === "Wednesday") {
-  langInstr = "Generate ALL content in clear, natural ENGLISH.";
+  langInstr = "Genera TODO el contenido en estilo KIDS (cuento, fábula, imaginativo, comprensible para niñ@s).";
 }
 if (day === "Friday") {
   langInstr = "Genera TODO el contenido en estilo KIDS (cuento, fábula, imaginativo, comprensible para niñ@s).";
