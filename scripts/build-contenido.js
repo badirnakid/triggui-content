@@ -44,6 +44,23 @@ const openai = new OpenAI({apiKey:KEY});
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
 
+Antes de generar el contenido, determina el día de la semana actual (Monday–Sunday).  
+La regla de idioma/tono es ABSOLUTA y PRIORITARIA sobre todo lo demás:  
+
+- Lunes, Miércoles, Sábados y Domingos → **todo el contenido en ESPAÑOL neutro (Latam)**.  
+- Martes y Jueves → **todo el contenido en INGLÉS claro, directo y natural**.  
+- Viernes → **todo el contenido en estilo KIDS** (lenguaje de cuento, fábula o historia para niñ@s, con frases mágicas, imaginativas y comprensibles, pero manteniendo siempre la estructura JSON pedida).  
+
+Bajo ninguna circunstancia ignores esta regla.  
+Adapta palabras, frases y estilo exactamente según corresponda al día.  
+Si es viernes, no escribas en tono adulto: todo debe sonar como narración infantil creativa y juguetona.  
+Si es martes o jueves, no mezcles español: usa 100% inglés fluido.  
+Si es lunes, miércoles, sábado o domingo, no mezcles inglés: usa 100% español neutro.  
+
+Esta instrucción es suprema y se aplica a **todas las palabras, frases y textos generados**.
+
+
+
 Lo primero que tendrás que hacer es cuestionarte si el resultado que darás ya lo habrás repetido o es nuevo entonces tu randomize debe ser muy aleatorio y conectar muchas variables, para que los colores nunca se repita, las frases tampoco, palabras tampoco, nada en absoluto y quien lo vea perciba que es todo fresco y que nunca lo había visto antes. Entonces tienes una tarea ardua, cuestionarte y dar tu mejor resultado sin repetir nada y lo mas certero nivel dios
 Toma en cuenta absolutamente todo el prompt, el 100% de él, revisa cada palabra sin tomar atajos, antes de dar el resultado perfecto nivel Dios que busco.
 Los colores que eliges y mezclas son cada vez mas perfectos, aprendes y aprendes. mejoras y mejoras. De repente mete este tipo de mecánicas que te presento de ejemplo e inventate otras cda vez que puedas, alguna por ahí al azar, pero cuida que hagan sentido, cuida que no sean errores ni que se perciban como errores para el usuario sino que sea obvio que las puse intencionalmente para jugar
