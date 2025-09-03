@@ -45,13 +45,13 @@ const openai = new OpenAI({apiKey:KEY});
 const day = new Date().toLocaleDateString("en-US", { weekday: "long" });
 
 let langInstr = "";
-if (["Monday","Saturday","Sunday"].includes(day)) {
+if (["Monday","Wednesday","Saturday","Sunday"].includes(day)) {
   langInstr = "Genera TODO el contenido en ESPAÑOL neutro (Latam).";
 }
 if (["Tuesday","Thursday"].includes(day)) {
   langInstr = "Generate ALL content in clear, natural ENGLISH.";
 }
-if (day === "Wednesday") {
+if (day === "Friday") {
   langInstr = "Genera TODO el contenido en estilo Little KIDS (cuento, fábula, imaginativo, palabras super comprensibles para niñ@s chiquit@os no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.).";
 }
 if (day === "Friday") {
