@@ -47,8 +47,8 @@ const SYSTEM = `
 Antes de generar el contenido, determina el día de la semana actual (Monday–Sunday).  
 La regla de idioma/tono es ABSOLUTA y PRIORITARIA sobre todo lo demás:  
 
-- Lunes, Miércoles, Sábados y Domingos → **todo el contenido en ESPAÑOL neutro (Latam)**.  
-- Martes y Jueves → **todo el contenido en INGLÉS claro, directo y natural**.  
+- Lunes, Sábados y Domingos → **todo el contenido en ESPAÑOL neutro (Latam)**.  
+- Martes, miércoles y Jueves → **todo el contenido en INGLÉS claro, directo y natural**.  
 - Viernes → **todo el contenido en estilo KIDS** (lenguaje de cuento, fábula o historia para niñ@s, con frases mágicas, imaginativas y comprensibles, pero manteniendo siempre la estructura JSON pedida).  
 
 Bajo ninguna circunstancia ignores esta regla.  
