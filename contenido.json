@@ -1,201 +1,36 @@
 {
   "libros": [
     {
-      "titulo": "La inteligencia que asusta",
-      "autor": "Mo Gawdat",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/14/03/be/1403be84-1f13-d710-3cd4-3191caf1b234/9788449342141.jpg/626x0w.jpg",
-      "tagline": "El futuro de la inteligencia artificial y cómo podemos salvar nuestro mundo",
-      "dimension": "Conexión",
-      "punto": "Máximo",
-      "palabras": [
-        "conciencia",
-        "futuro",
-        "esperanza",
-        "innovación"
-      ],
-      "frases": [
-        "🤖 La tecnología puede ser nuestra aliada si aprendemos a usarla sabiamente.",
-        "✨ La inteligencia artificial puede transformar vidas, pero el poder de elección sigue en nuestras manos.",
-        "🌍 Imagina un mundo donde la IA y la humanidad coexisten en armonía. ¿Qué pasos estás dispuesto a dar?",
-        "🎯 Crea una lista de tres acciones que impulsen el diálogo sobre ética en la inteligencia artificial y compártelas hoy."
-      ],
-      "colores": [
-        "#00B4D8",
-        "#0077B6",
-        "#023E8A",
-        "#03045E"
-      ],
-      "fondo": "#1D3557",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "Blitzscaling",
-      "autor": "Reid Hoffman",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e7/02/46/e70246bb-98a1-4528-0f30-5acf592d0a61/9781524761424.jpg/626x0w.jpg",
-      "tagline": "LinkedIn cofounder legendary investor and host of the award winning Masters of Scale podcast reveals the secret to starting and scaling massively valuable companies",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Innovación",
-        "Escalabilidad",
-        "Conexiones",
-        "Oportunidad"
-      ],
-      "frases": [
-        "🚀 La velocidad es clave en el mundo de los negocios en expansión.",
-        "🌟 Al construir conexiones sólidas, se abren puertas inesperadas hacia el éxito.",
-        "🎯 La estrategia de blitzscaling se centra en el crecimiento rápido y audaz.",
-        "📊 Para escalar, observa, aprende y adapta con rapidez. Mantén la flexibilidad."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6FA3EF",
-        "#5BBE7D",
-        "#FFDA77"
-      ],
-      "fondo": "#2B2D42",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Máximo Rendimiento",
-      "autor": "Brad Stulberg",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/e7/de/87/e7de8764-4c77-ead7-ef8b-8da06b2e4ce6/1029631734.jpg/626x0w.jpg",
-      "tagline": "Sube de nivel evita el agotamiento y prospera con la nueva ciencia del éxito",
+      "titulo": "Can't Hurt Me",
+      "autor": "David Goggins",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/f5/b5/88/f5b58852-0ca0-090d-23f7-852f49263755/9781544512266.jpg/626x0w.jpg",
+      "tagline": "Domina tu mente y desafía las probabilidades",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "progreso",
-        "equilibrio",
-        "energía",
-        "crecimiento"
+        "resiliencia",
+        "fuerza",
+        "poder",
+        "superación"
       ],
       "frases": [
-        "🚀 El verdadero éxito se construye sobre el bienestar sostenible.",
-        "💡 Abre la puerta al rendimiento consciente, donde el descanso es parte del proceso.",
-        "🌱 Cultiva hábitos que nutran tanto la mente como el cuerpo; ahí reside el verdadero potencial.",
-        "✅ Establece momentos de pausa, planifica tu jornada y encuentra tu zona de confort en el esfuerzo."
+        "💪 The strongest chains are forged in the fire of hardship.",
+        "🌟 Greatness lies just beyond the wall of self-doubt.",
+        "🚀 Challenge your limits: embrace discomfort, face fears, and push forward!",
+        "🔥 Remember, pain is a temporary visitor on the path to victory."
       ],
       "colores": [
-        "#1F7A8C",
-        "#F6D55C",
-        "#F15BB5",
-        "#3A0CA3"
+        "#F44336",
+        "#4CAF50",
+        "#FFEB3B",
+        "#2196F3"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0C0D12",
       "textColors": [
         "#FFFFFF",
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "La vida minimal",
-      "autor": "Pedro Campos",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/28/38/9a/28389a46-4d6a-98eb-6ff5-15b8ce6a2b47/9786073171182.jpg/626x0w.jpg",
-      "tagline": "Qué pasaría si en lugar de ir en busca de más nos dedicáramos a disfrutar la riqueza de vivir con menos Qué pasaría si nos enfocáramos en lo que realmente vale la pena y dejáramos de acumular consumir y perseguir cosas que no tienen sentido",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "esencialidad",
-        "conexión",
-        "presencia",
-        "liberación"
-      ],
-      "frases": [
-        "✨ La vida florece cuando abrazas lo simple y dejas ir lo innecesario.",
-        "🌱 Lo que realmente cuenta no está en el exterior, sino en la paz del alma.",
-        "💖 Disfrutar el momento es un regalo; practica la gratitud hoy, crea conexiones profundas y aprende a soltar.",
-        "🌞 Menos cosas, más claridad. La verdadera riqueza está en la esencia de lo cotidiano."
-      ],
-      "colores": [
-        "#1A1A2E",
-        "#F9F7F7",
-        "#EAE2B7",
-        "#D5C4B1"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ]
-    },
-    {
-      "titulo": "Millonario en un fin de semana",
-      "autor": "Noah Kagan",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
-      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "emprendimiento",
-        "oportunidad",
-        "acción",
-        "libertad"
-      ],
-      "frases": [
-        "🚀 La valentía es el primer paso hacia el millón.",
-        "🦄 Cada idea es una semilla que puede florecer en oro.",
-        "💡 Crear valor transforma sueños en realidades tangibles.",
-        "🔥 ¡Recuerda! Conecta con tus fortalezas, define tu meta, y actúa: (1) Encuentra un mentor; (2) Establece un plan claro; (3) Lanza tu idea al mundo."
-      ],
-      "colores": [
-        "#F9C74F",
-        "#90BE6D",
-        "#43AA8B",
-        "#577590"
-      ],
-      "fondo": "#2A2630",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ]
-    },
-    {
-      "titulo": "The hidden economy",
-      "autor": "Alejandra Gonzalez",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/82/9b/6b/829b6be5-4ce6-072e-ee91-f5e0ad311d7d/9786073839396.jpg/626x0w.jpg",
-      "tagline": "Con la llegada de las plataformas digitales surgió una nueva fase económica que además de permitir un modelo laboral más flexible cambió el panorama del marketing digital: la economíade los creadores",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "Flexibilidad",
-        "Innovación",
-        "Empoderamiento",
-        "Conexión"
-      ],
-      "frases": [
-        "📲 En la era digital, el trabajo se adapta a los sueños.",
-        "🚀 La economía de creadores redefine el éxito: aquí, todos pueden brillar.",
-        "✨ La flexibilidad laboral permite crear sin límites. Atrévete a dar el paso.",
-        "💡 La colaboración en línea puede abrir puertas inesperadas: busca, conecta, transforma."
-      ],
-      "colores": [
-        "#FF4E50",
-        "#FC913A",
-        "#F9D423",
-        "#EDE574"
-      ],
-      "fondo": "#1D1D1D",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
       ]
     },
     {
@@ -206,24 +41,90 @@
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "Imparable",
-        "Éxito",
-        "Superación",
-        "Determinación"
+        "Unyielding",
+        "Drive",
+        "Tenacity",
+        "Champion"
       ],
       "frases": [
-        "🔥 La grandeza se encuentra más allá de la comodidad.",
-        "🏆 Lo imparable nace de la disciplina diaria y la perseverancia.",
-        "🌟 Tu potencial es una fuerza que nunca se detiene; úsalos.",
-        "💪 Cada reto es una oportunidad disfrazada; acéptalo y crece."
+        "🚀 Push beyond limits, unleash your inner power.",
+        "💥 Greatness is born from relentless determination.",
+        "🔥 Remember: Winners embrace the struggle and rise stronger.",
+        "⚡ Seek discomfort, learn, and thrive beyond measure."
       ],
       "colores": [
-        "#FF3D00",
-        "#FFAB40",
-        "#FFEA00",
-        "#00C853"
+        "#FF5733",
+        "#C70039",
+        "#FFC300",
+        "#581845"
       ],
-      "fondo": "#212121",
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "Wa La vía japonesa de la armonía",
+      "autor": "Laura Imai",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/83/ae/42/83ae42a9-1dd1-4dbd-3137-95d33393790d/9788403521520.jpg/626x0w.jpg",
+      "tagline": "la belleza la alegría y el civismo se construyen con grandes dosis de compromiso mediante el trabajo continuo en uno mismo ejercitando la paciencia haciendo las cosas con cuidado y nunca a expensas de otros",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "Armonía",
+        "Compromiso",
+        "Paciencia",
+        "Belleza"
+      ],
+      "frases": [
+        "🌸 Embrace harmony within to inspire joy around you.",
+        "🛠️ A true commitment builds beauty through thoughtful actions.",
+        "🎨 Cultivating patience is like painting a masterpiece of life.",
+        "💪 Invest in yourself to radiate positivity in the world."
+      ],
+      "colores": [
+        "#FFC107",
+        "#FF5722",
+        "#4CAF50",
+        "#2196F3"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "El libro para las personas ocupadas",
+      "autor": "Sandra Badillo",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/a1/d7/2d/a1d72da8-6369-1145-513d-1b8d6027ee51/9788413142968.jpg/626x0w.jpg",
+      "tagline": "desarrollar hábitos que nos beneficien y entrenar como un músculo nuestro afán de superación nuestra constancia y nuestra ilusión",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "Fortaleza",
+        "Motivación",
+        "Disciplina",
+        "Progreso"
+      ],
+      "frases": [
+        "🌟 Habits are like seeds; nurture them and watch them grow.",
+        "📈 Embrace each day as an opportunity to become better than yesterday.",
+        "💪 Develop routines that empower and elevate your spirit, fueling the journey.",
+        "🌈 Find joy in every small win, for they are the building blocks of great success."
+      ],
+      "colores": [
+        "#FF6B6B",
+        "#FFED66",
+        "#6BFF6B",
+        "#6BB0FF"
+      ],
+      "fondo": "#0e0f1b",
       "textColors": [
         "#FFFFFF",
         "#000000",
@@ -232,102 +133,201 @@
       ]
     },
     {
-      "titulo": "Tu momento es ahora",
-      "autor": "Victor Hugo Manzanilla",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/626x0w.jpg",
-      "tagline": "Este libro te guiará por un proceso de tres pasos sencillos cuya aplicación garantizan que alcances tus sueños y metas El éxito es una ciencia y un arte a la vez es un arte un proceso de descubrirte a ti mismo y encontrar plenitud y significado para tu vida",
-      "dimension": "Bienestar",
+      "titulo": "Good to great",
+      "autor": "Jim Collins",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/bd/62/e0/mzi.ruipsrer.jpg/626x0w.jpg",
+      "tagline": "Why Some Companies Make the Leap...And Others Don't",
+      "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "Descubrimiento",
-        "Plenitud",
-        "Éxito",
-        "Conexión"
+        "Momentum",
+        "Catalyst",
+        "Discipline",
+        "Vision"
       ],
       "frases": [
-        "🌟 Cada paso en el camino revela un nuevo horizonte de posibilidades.",
-        "🎨 El arte del éxito se encuentra en descubrir la esencia de uno mismo.",
-        "🌈 Permite que tu corazón hable y guía tus decisiones más importantes.",
-        "✨ Imagina alcanzar tus sueños; ahora da un paso hacia ellos."
+        "🚀 Momentum is the invisible hand that propels companies forward.",
+        "🔍 A clear vision shapes the path for greatness ahead.",
+        "💡 Discipline fuels sustained excellence in every action.",
+        "📊 Companies that thrive have leaders who are unwavering in focus."
       ],
       "colores": [
-        "#D5006D",
-        "#FFEA00",
-        "#3D5AFE",
-        "#00BFAE"
+        "#F7C6A7",
+        "#A6D6D7",
+        "#F8A3C7",
+        "#FFD95A"
       ],
       "fondo": "#0E0F1B",
       "textColors": [
-        "#FFFFFF",
         "#000000",
-        "#FFFFFF",
+        "#000000",
+        "#000000",
         "#000000"
       ]
     },
     {
-      "titulo": "Einstein para despistados",
-      "autor": "Allan Percy",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4f/d4/33/4fd43350-abcd-6548-a29c-e6989b7a5a55/9786073180825.jpg/626x0w.jpg",
-      "tagline": "Soluciones atómicas para problemas relativamente graves",
-      "dimension": "Bienestar",
+      "titulo": "The creators code",
+      "autor": "Amy Wilkinson",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/9a/d3/8d/9ad38d0b-b8ba-4c4c-e374-5f6e49120be8/9781451666090.jpg/626x0w.jpg",
+      "tagline": " unlocks the six essential skills that turn small notions into big companies This landmark book is based on 200 interviews with todays leading entrepreneurs",
+      "dimension": "Prosperidad",
       "punto": "Activo",
       "palabras": [
-        "sabiduría",
-        "relatividad",
-        "innovación",
-        "resiliencia"
+        "Innovation",
+        "Vision",
+        "Courage",
+        "Collaboration"
       ],
       "frases": [
-        "🌌 La sabiduría se encuentra en cada pequeño rincón del universo.",
-        "🔍 Resolver es un arte que requiere creatividad y curiosidad constante.",
-        "💡 Enfrentar los problemas con una mente abierta revela soluciones ocultas. Recuerda explorar más allá de lo evidente.",
-        "📘 Si el tiempo es relativo, entonces cada momento es una oportunidad para aprender y crecer."
+        "🚀 Every great company starts as a spark of an idea!",
+        "💡 Think big, act bigger; your vision is your superpower.",
+        "✨ With courage, the smallest ideas can light the world!",
+        "🔑 Connect with others; collaboration is the key to success."
       ],
       "colores": [
+        "#F9A826",
         "#4A90E2",
-        "#D5A623",
-        "#E94E77",
-        "#6BBF6A"
+        "#FF3E7B",
+        "#32D74B"
       ],
-      "fondo": "#1D1F21",
+      "fondo": "#1C1C1C",
       "textColors": [
-        "#FFFFFF",
         "#000000",
+        "#FFFFFF",
         "#FFFFFF",
         "#000000"
       ]
     },
     {
-      "titulo": "Los hábitos secretos de los genios",
-      "autor": "Craig Wright",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/85/77/b0/8577b0f2-3a45-e840-f08e-638cbd60818a/9780062892720.jpg/626x0w.jpg",
-      "tagline": "Los 14 rasgos de las mentes más brillantes de la historia",
+      "titulo": "Cómo sanar tu ansiedad cuando nadie más puede hacerlo",
+      "autor": "Amy B. Scher",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a7/dd/fe/a7ddfe95-fccf-918f-a2cf-56ab37e29839/9786073182041.jpg/626x0w.jpg",
+      "tagline": "comparte sus métodos comprobados para abordar y curar la raíz de la ansiedad cambiar creencias dañinas calmar tu cuerpo y liberar la vieja energía emocional que te detiene.",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "Innovación",
-        "Brillantez",
-        "Determinación",
-        "Creatividad"
+        "liberación",
+        "tranquilidad",
+        "renovación",
+        "fluir"
       ],
       "frases": [
-        "💡 Cada rasgo de un genio revela el camino hacia el éxito.",
-        "🎨 La creatividad se alimenta de la curiosidad y el desafío constante.",
-        "🚀 Implementa tres nuevos hábitos esta semana: leer, reflexionar y crear.",
-        "🔍 A menudo, los genios encuentran respuestas donde otros solo ven problemas."
+        "✨ Inhale la paz, exhale la ansiedad. Hay magia en el soltar.",
+        "🌈 La vida fluye más suave cuando el corazón se libera de viejas cadenas.",
+        "🌀 Practica el arte de dejar ir, porque cada nuevo amanecer trae consigo la oportunidad de renacer.",
+        "🌿 Permite que tus emociones encuentren su camino, y transforma el caos en claridad: respira, siente, suelta."
       ],
       "colores": [
-        "#F3E7D2",
-        "#E4B5E8",
-        "#F9C89A",
-        "#FF6F61"
+        "#A2DFF7",
+        "#FFABAB",
+        "#FF677D",
+        "#D4A5A5"
       ],
-      "fondo": "#1F1F1F",
+      "fondo": "#1E1E2F",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Pensar con claridad",
+      "autor": "Shane Parrish",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/7c/e8/f2/7ce8f280-3ce8-3686-2908-e4d42b11480e/9788408280774.jpg/626x0w.jpg",
+      "tagline": "nuestro cerebro reptiliano nos empuja a veces a tomar malas decisiones y que el secreto del éxito parte de identificar correctamente cuáles son los datos relevantes en ese mar de información que nos ahoga",
+      "dimension": "Cerebro",
+      "punto": "Máximo",
+      "palabras": [
+        "perspicacia",
+        "foco",
+        "razonamiento",
+        "claridad"
+      ],
+      "frases": [
+        "🧠 Clarity comes when we sift through the noise of thoughts.",
+        "🔍 Focus your mind on the details that truly matter.",
+        "✨ Make space for the essential to shine through.",
+        "📊 Identifying key data transforms chaos into clarity."
+      ],
+      "colores": [
+        "#2D9CDB",
+        "#27AE60",
+        "#F2C94C",
+        "#EB5757"
+      ],
+      "fondo": "#1F1C2E",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "titulo": "El libro del Niksen",
+      "autor": "Olga Mecking",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/bd/fe/5b/bdfe5b9c-ad86-4e3e-dd3f-b7316ccfe995/9788408249016.jpg/626x0w.jpg",
+      "tagline": "Descubre el secreto holandés para ser feliz sin hacer nada",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "tranquilidad",
+        "serenidad",
+        "vagabundeo",
+        "pausa"
+      ],
+      "frases": [
+        "🌷 Embrace the joy of doing nothing and let tranquility fill your heart.",
+        "🌼 In stillness, creativity blooms like wildflowers in spring.",
+        "🌊 Take a moment to breathe, enjoy a gentle breeze, and simply be.",
+        "🌸 A day spent doing nothing is a treasure; allow your mind to wander."
+      ],
+      "colores": [
+        "#FFB300",
+        "#D5E1E1",
+        "#FFF6D6",
+        "#FFC1A0"
+      ],
+      "fondo": "#1E1E2D",
       "textColors": [
         "#000000",
         "#000000",
         "#000000",
-        "#FFFFFF"
+        "#000000"
+      ]
+    },
+    {
+      "titulo": "Sin filtro",
+      "autor": "Sarah Frier",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/22/19/01/221901bb-8836-7a74-5ad2-e6bd055f10be/9788417992217.jpg/626x0w.jpg",
+      "tagline": "La historia secreta de Instagram",
+      "dimension": "Conexión",
+      "punto": "Creativo",
+      "palabras": [
+        "influencia",
+        "comunicación",
+        "transformación",
+        "conexiones"
+      ],
+      "frases": [
+        "📱 Every photo tells a hidden story of connection.",
+        "✨ A moment can reshape perceptions, just like an unexpected scroll.",
+        "🎨 Dive into how digital threads weave us together. Explore, share, and feel the buzz!",
+        "💡 Did you know that small interactions can create monumental shifts in your digital presence?"
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6A4C93",
+        "#88B04B",
+        "#F9C74F"
+      ],
+      "fondo": "#1A1A2E",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
       ]
     }
   ]
