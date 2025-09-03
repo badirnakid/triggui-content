@@ -41,23 +41,36 @@ const pick = shuffle([...lista]).slice(0, Math.min(DAILY_MAX, lista.length));
 /* OPENAI -------------------------------------------------------- */
 const openai = new OpenAI({apiKey:KEY});
 
+// ───────────── IDIOMA SEGÚN DÍA ─────────────
+const day = new Date().toLocaleDateString("en-US", { weekday: "long" });
+
+let langInstr = "";
+if (["Monday","Saturday","Sunday"].includes(day)) {
+  langInstr = "Genera TODO el contenido en ESPAÑOL neutro (Latam).";
+}
+if (["Tuesday","Thursday"].includes(day)) {
+  langInstr = "Generate ALL content in clear, natural ENGLISH.";
+}
+if (day === "Wednesday") {
+  langInstr = "Generate ALL content in clear, natural ENGLISH.";
+}
+if (day === "Friday") {
+  langInstr = "Genera TODO el contenido en estilo KIDS (cuento, fábula, imaginativo, comprensible para niñ@s).";
+}
+
+
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
 
-Antes de generar el contenido, determina el día de la semana actual (Monday–Sunday).  
-La regla de idioma/tono es ABSOLUTA y PRIORITARIA sobre todo lo demás:  
+${langInstr}
 
-- Lunes, Sábados y Domingos → **todo el contenido en ESPAÑOL neutro (Latam)**.  
-- Martes, miércoles y Jueves → **todo el contenido en INGLÉS claro, directo y natural**.  
-- Viernes → **todo el contenido en estilo KIDS** (lenguaje de cuento, fábula o historia para niñ@s, con frases mágicas, imaginativas y comprensibles, pero manteniendo siempre la estructura JSON pedida).  
 
-Bajo ninguna circunstancia ignores esta regla.  
 Adapta palabras, frases y estilo exactamente según corresponda al día.  
-Si es viernes, no escribas en tono adulto: todo debe sonar como narración infantil creativa y juguetona.  
-Si es martes o jueves, no mezcles español: usa 100% inglés fluido.  
-Si es lunes, miércoles, sábado o domingo, no mezcles inglés: usa 100% español neutro.  
+Si es viernes, no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.  
+Si es martes, miércoles o jueves, no mezcles español: usa 100% inglés fluido.  
+Si es lunes, sábado o domingo, no mezcles inglés: usa 100% español neutro.  
 
-Esta instrucción es suprema y se aplica a **todas las palabras, frases y textos generados**.
+Esta instrucción es suprema y se aplica a **todas las palabras, frases, textos, colores y todo generados**.
 
 
 
