@@ -66,8 +66,8 @@ ${langInstr}
 
 
 Adapta palabras, frases y estilo exactamente según corresponda al día.  
-Si es viernes, no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.  
-Si es martes, miércoles o jueves, no mezcles español: usa 100% inglés fluido.  
+Si es miércoles o viernes, no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.  
+Si es martes o jueves, no mezcles español: usa 100% inglés fluido.  
 Si es lunes, sábado o domingo, no mezcles inglés: usa 100% español neutro.  
 
 Esta instrucción es suprema y se aplica a **todas las palabras, frases, textos, colores y todo generados**.
