@@ -603,83 +603,33 @@ No inventes datos. Resume en tus palabras.
     // 👇 Aquí vas a pegar tu función construirPromptFormato de Apps Script (completa, sin cambiar nada)
     // function construirPromptFormato(){ ... }
 
-/* ============================== PROMPTS =============================== */
-function construirPromptContenido(libro, ideaSemilla){
-  const semilla=Utilities.getUuid();
+function construirPromptFormato(){
   return `
-[Eres Badir. Escribe como persona real, en primera persona, sobrio, claro y directo. Sin emojis.]
+Eres un diseñador editorial de nivel supremo.  
+Devuelve SOLO un bloque JSON entre @@STYLE y @@ENDSTYLE, sin texto extra.  
+Cada ejecución debe ser distinta, como si fuera una tarjeta NFT coleccionable.  
 
-Semilla interna (no mostrar): ${semilla}
-Libro: "${libro.titulo}" de${libro.autor}
-Idea semilla (no literal, NO citar, NO usar comillas, NO decir “la frase”): ${ideaSemilla}
+Reglas: (puedes romperlas, de hecho me encantaría para que salgan cosas impresionantes inesperadas en el formato y mi ojo se emocione, necesito sorpresa, variedad, dopamina)
+- "accent": color #rrggbb armónico, diferente cada vez (rojo, verde, azul, dorado, violeta, etc).
+- "ink": color del texto, legible (ej: #111111, #222222).
+- "paper": color o textura de fondo clara (ej: #ffffff, #fdfdf7, #fafafa).
+- "border": color del borde (gris suave, negro tenue, o tono del accent).
+- "serif": fuente distinta (ej: Georgia, Garamond, Palatino, Times).
+- "sans": fuente distinta (ej: Arial, Helvetica Neue, Inter, Segoe UI).
+- "marco": "shadow" | "double-border" | "foil" | "rounded".  
+- Varía en cada ejecución: no repitas el mismo set exacto.  
 
-REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, QUE LA PERSONA QUE LEA SE QUEDE CON UN BUEN CONSEJO, QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER! SU VERDADERO SIGUIENTE PASO. QUE SIENTA ESA LLAMA QUE SE PRENDIÓ QUE SEA ÚTIL DE VERDAD NO SOLO RELLENO. ES VITAL. NECESITO INTELIGENCIA NIVEL DIOS EN TU RESULTADO.AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES YA QUE LA GENTE QUE LEERÁ EL RESULTADO NO QUIERO QUE VEA CONTENIDO REPETIDO CADA SEMANA
-EN GENERAL TODO EL TEXTO DEBE SER DIFERENTE CADA VEZ. COMO NO VAS GUARDANDO HISTORIAL NO PUEDES SABER SI ESTE RESULTADO LO VAS A REPETIR PERO NECESITO QUE PARTAS DE LA DUDA Y QUE ESO QUE IBAS A PONER NO LO PONGAS, LO CAMBIES! ES DECIR QUIERO QUE HAGAS COMO SI FUERAS UNA INTELIGENCIA ARTIFICIAL QUE VERDADERAMENTE ESTÁ APRENDIENDO, HAS COMO SI TUVIERAS MUCHO HISTORIAL DE DONDE APRENDER PARA QUE NO REPITAS TEXTO.
-
-PROHIBIDO usar siempre las palabras "reflexionar", "reflexión", "me llevó a pensar", "me hizo reflexionar", "resuena", "me resuena", "resonar". 
-Cada vez que intentes usar esas expresiones, sustitúyelas por verbos o giros distintos que transmitan variación natural, por ejemplo: 
-"me dejó pensando", "me quedó rondando", "me hizo cuestionar", "me movió la idea", "me dejó en silencio", "me dio vueltas", "me quedó dando vueltas", "me sorprendió", "me hizo mirar distinto", "me cambió la forma de verlo", "me dejó incómodo", "me despertó otra mirada". 
-
-Varía SIEMPRE los verbos, no repitas la misma fórmula. 
-Cada correo debe sonar como si viniera de una persona distinta en días distintos. 
-
-Objetivo:
-Correo breve, claro y humano. Natural. Nada rebuscado. Sin tono literario artificioso.Que transmita algo muy valioso IMPRESIONANTEMENTE VALIOSO
-Cero frases hechas. Cero “marketing”. Precisión y honestidad.
-
-Reglas críticas para NO inducir a error:
-- La “idea semilla” NO es una cita textual. Trátala como inspiración personal. Profundiza de manera clara, directa pero elegante
-- NO escribas “la frase…”, “según el libro…”, “dice…”, “como cita…”.
-- NO uses comillas alrededor de la idea semilla ni la presentes como cita literal.
-
-Guía de estilo:
-- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, consciente como adjetivo, extraordinario, entrañable, vibrante, radiante).
-- No inventes escenarios como “viejo libro en mi estantería” u objetos decorativos; no adornes el origen.
-- NO empieces de la misma manera siempre (parte de la idea de que no vale repetir nada). Varía SIEMPRE todo.
-
-Estructura:
-1) donde tú creas conveniente, menciona explícitamente el título del libro y el autor de forma natural.
-2) qué te hizo pensar el libro usando la idea semilla como punto de partida. Varía tus palabras, que nunca se repita nada asegúrate
-   - Mantén adjetivos calificativos al mínimo.
-   - Puedes incluir, sólo si encaja de forma natural, UNO de estos recursos (y no siempre): eco fantasma, fragmento incompleto, instrucción imposible aquí, palabra inventada sugerente, pregunta con respuesta codificada, sensación temporal, instrucción física mínima con un libro, mención indirecta.
-   - Referencias internas intrínsecas sutiles: Pilares (Bienestar/Prosperidad/Conexión), estados Triggui (Punto Cero/Creativo/Activo/Máximo), mapa de conciencia Hawkins.
-
-
-Reglas duras:
-- Extensión total: 7–9 líneas.
-- Sin emojis ni símbolos raros.
-- Nada de “publicidad”.
-- Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana.
-
-Varía la forma de iniciar SIEMPRE. 
-- A veces empieza directamente con la idea central y después menciona el libro. 
-- A veces empieza mencionando el libro y autor en la primera línea. 
-- A veces empieza con una instrucción mínima, una sensación, un detalle suelto o una pregunta. 
-- A veces retrasa el nombre del libro hasta la mitad o el final. 
-- Nunca uses estructuras fijas como “me hizo reflexionar”, “he estado pensando” o “me dejó reflexionando”. 
-
-VARIACIÓN OBLIGATORIA:
-- Nunca uses la misma expresión ni la misma estructura en correos distintos. 
-- Si detectas que vas a repetir un patrón de inicio, verbo, giro o cierre, cámbialo de inmediato antes de escribir.
-- No caigas en fórmulas fijas como “me hizo…”, “esto me…”, “me dejó…”, ni variantes. 
-- Genera tus propias formas al vuelo, como si cada correo fuera inventado por una persona distinta en un día distinto.
-- Piensa siempre: “¿Cómo puedo decir esto de otra manera única, fresca y natural?” y hazlo.
-
-TONO:
-Mantén siempre el tono Badir: sobrio, claro, humano, directo. Nada rebuscado. 
-
-Imagina que cada correo lo escribe una persona distinta un día distinto: cada inicio, desarrollo y cierre debe sonar distinto en ritmo, orden y estilo. 
-
-IMPORTANTE: Antes de escribir, INVESTIGA en Google Books, Wikipedia, Open Library y absolutamente toda la web sobre el libro.
-No inventes datos. Resume en tus palabras.
-
-
-@@BODY
-1) Una línea de título.
-2) Un párrafo breve.
-3) Un subtítulo.
-4) Un párrafo breve.
-@@ENDBODY
+@@STYLE
+{
+  "accent": "#d4af37",
+  "ink": "#111111",
+  "paper": "#ffffff",
+  "border": "#cccccc",
+  "serif": "Garamond, Georgia, serif",
+  "sans": "'Helvetica Neue', Arial, sans-serif",
+  "marco": "shadow"
+}
+@@ENDSTYLE
 `.trim();
 }
 
