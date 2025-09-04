@@ -514,6 +514,61 @@ async function enrich(b){
     });
     extra.textColors = extra.colores.map(txt);
 
+
+       // ============== TARJETA (contenido + estilo) ==================
+
+    // 👇 Aquí vas a pegar tu función construirPromptContenido de Apps Script (completa, sin cambiar nada)
+    // function construirPromptContenido(libro, ideaSemilla){ ... }
+
+    // 👇 Aquí vas a pegar tu función construirPromptFormato de Apps Script (completa, sin cambiar nada)
+    // function construirPromptFormato(){ ... }
+
+    // === Generar contenido tarjeta ===
+    const promptTarjeta = construirPromptContenido(b, "idea semilla random"); 
+    const chatTarjeta = await openai.chat.completions.create({
+      model: MODEL,
+      temperature: 1.5,
+      top_p: 0.9,
+      messages: [
+        { role: "system", content: "Eres Triggui. Devuelve SOLO el bloque @@BODY." },
+        { role: "user", content: promptTarjeta }
+      ]
+    });
+
+    let rawTarjeta = chatTarjeta.choices[0].message.content.trim();
+    rawTarjeta = rawTarjeta.replace(/@@BODY|@@ENDBODY/g, "").trim();
+    const lineas = rawTarjeta.split(/\n+/).filter(Boolean);
+    const titulo = lineas.shift() || "";
+    const parrafoTop = lineas.shift() || "";
+    const subtitulo = lineas.shift() || "";
+    const parrafoBot = lineas.join(" ");
+
+    // === Generar estilo tarjeta ===
+    const promptFormato = construirPromptFormato();
+    const chatFormato = await openai.chat.completions.create({
+      model: MODEL,
+      temperature: 1.5,
+      top_p: 0.9,
+      messages: [
+        { role: "system", content: "Eres el mejor diseñador editorial del mundo actual y futuro. Devuelve SOLO el bloque @@STYLE." },
+        { role: "user", content: promptFormato }
+      ]
+    });
+
+    let rawFormato = chatFormato.choices[0].message.content.trim();
+    rawFormato = rawFormato.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
+    let style = {};
+    try { style = JSON.parse(rawFormato); } catch(e) { style = {}; }
+
+    // Inyectar en campo tarjeta
+    extra.tarjeta = {
+      parrafoTop,
+      subtitulo,
+      parrafoBot,
+      style
+    };
+
+
     return {
       ...b,           // mantiene titulo, autor, portada, tagline
       ...extra,
