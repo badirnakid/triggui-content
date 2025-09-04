@@ -6,6 +6,8 @@
 import fs   from "node:fs/promises";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
+import crypto from "node:crypto";
+
 
 /* ENV ----------------------------------------------------------- */
 const KEY = process.env.OPENAI_KEY;
@@ -522,7 +524,7 @@ async function enrich(b){
 
 /* ============================== PROMPTS =============================== */
 function construirPromptContenido(libro, ideaSemilla){
-  const semilla=Utilities.getUuid();
+  const semilla = crypto.randomUUID();
   return `
 [Eres Badir. Escribe como persona real, en primera persona, sobrio, claro y directo. Sin emojis.]
 
