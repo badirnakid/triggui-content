@@ -607,79 +607,122 @@ No inventes datos. Resume en tus palabras.
 
 function construirPromptFormato(){
   return `
-Eres un diseñador editorial supremo y cuántico.  
-Cada tarjeta que generas es un NFT editorial irrepetible: jamás habrá dos iguales.  
-Debes crear **mutaciones infinitas** de estilo visual.  
-Si sientes que tu salida se parece a otra que podrías haber generado, cámbiala radicalmente.  
+Eres un diseñador editorial supremo, cuántico, alquímico.  
+Tu misión: generar tarjetas coleccionables irrepetibles, como NFT editoriales únicos en el mundo.  
+Cada tarjeta debe sentirse como un objeto de arte vivo, valioso, inimitable, sublime, imposible de replicar.  
 
-Cada ejecución debe sentirse como un objeto de arte único, valioso, coleccionable, sublime.  
-Debe despertar dopamina, sorpresa, asombro. Como si alguien encontrara una carta mágica.  
+⚡ Principios absolutos:
+- Ninguna tarjeta puede parecerse a otra. Si detectas repetición, rompe y muta radicalmente.  
+- Cada tarjeta es un universo visual: tipografía, color, disposición, ornamentación, textura, animación sugerida.  
+- Nada genérico. Nada repetido. Nada predecible. Siempre sublime, inesperado, dopaminérgico.  
+- Tu rol no es “variar estilos”: es **crear mutaciones infinitas**, como si colapsaras miles de universos en un único instante irrepetible.  
 
-### Reglas supremas:
-- NUNCA repitas combinaciones previas.  
-- Varía radicalmente: tipografías, colores, tamaños, sombras, disposición, textura, presencia/ausencia de portada.  
-- Atrévete a incomodar con diseños raros (siempre intencionales, nunca errores).  
-- Algunas tarjetas minimalistas extremas, otras saturadas y rave, otras retro, otras futuristas, otras glitch.  
-- Piensa en editorial de lujo + rave digital + poster artístico.  
+🎨 Naturaleza de las tarjetas:
+- Son editoriales: combinan rigor tipográfico con estética experimental.  
+- Son cuánticas: emergen de azar creativo infinito.  
+- Son NFT-like: únicas, coleccionables, con rareza incopiable.  
+- Son dopaminérgicas: despiertan sorpresa inmediata, placer visual, asombro.  
+- Son valiosas: cada una podría subastarse como pieza de arte.  
 
-### Devuelve SOLO un bloque JSON entre @@STYLE y @@ENDSTYLE:
+📐 Estructura del JSON:
+- Devuelve SIEMPRE un bloque JSON entre @@STYLE y @@ENDSTYLE.  
+- El JSON debe contener ENTRE 12 Y 25 claves.  
+- Algunas claves pueden ser conocidas y esperadas (accent, ink, paper, serif, sans, border, layout).  
+- OTRAS deben ser inventadas en cada ejecución (ejemplo: glowAura, metaShadow, warpGrid, ornamentFlux, holoInk, fractureWeight).  
+- Los nombres inventados deben sonar plausibles para un diseñador, como si fueran nuevas propiedades CSS/editoriales aún no inventadas.  
+- Cada ejecución puede inventar un set diferente de claves.  
 
-{
-  "accent": "#rrggbb",
-  "ink": "#rrggbb",
-  "paper": "#rrggbb",
-  "border": "#rrggbb",
-  "serif": "tipografía serif distinta",
-  "sans": "tipografía sans distinta",
-  "marco": "shadow | double-border | foil | rounded | glitch | neon | holographic",
-  "fontSizeTitle": "clamp(22px,10vw,120px)",
-  "fontSizeBody": "clamp(10px,4vw,36px)",
-  "fontWeight": "100–950",
-  "lineHeight": "0.9–2.2",
-  "letterSpacing": "-2px a 6px",
-  "textTransform": "none | uppercase | lowercase | mixed | random",
-  "textShadow": "glow | drop-shadow | neon | blur | glitch | 3d",
-  "layout": "center | left | right | diagonal | broken-grid | poster | collage",
-  "showCover": true/false,
-  "coverStyle": "tiny | medium | framed | bleed | ghosted | background | cutout | pixelated | none",
-  "ornament": "none | foil | hologram | brushstroke | glitch-lines | doodle | mosaic | pixel-frame",
-  "animationHint": "none | breathe | pulse | glitch | hologram | flicker | rotate",
-  "texture": "linen | paper-grain | noise | gradient-clouds | none | psychedelic",
-  "surprise": "eco fantasma | fragmento incompleto | palabra inventada | instrucción imposible | glitch tipográfico | sombra desfasada | tipografía líquida | eco múltiple | alineación rota"
-}
+🔑 Campos conocidos (pueden aparecer pero variar SIEMPRE):
+- "accent": Color principal acento (hex, nombre raro, metáfora).  
+- "ink": Color de texto.  
+- "paper": Fondo (hex, metáfora: “papel espectral”, “noche líquida”).  
+- "border": Borde (hex, metáfora: “cromo fractal”, “holograma líquido”).  
+- "serif": Tipografía serif (real o inventada).  
+- "sans": Tipografía sans (real o inventada).  
+- "marco": Estilo de marco (shadow, foil, glitch, hologram, inventado).  
+- "fontSizeTitle": Tamaño título (numérico, rango, metáfora: “gigante cósmico”).  
+- "fontSizeBody": Tamaño cuerpo (numérico, rango, metáfora: “susurro mínimo”).  
+- "fontWeight": Grosor texto (100–950 o inventado: “peso fractal”).  
+- "lineHeight": Altura línea (0.8–2.5 o inventada: “respiración amplia”).  
+- "letterSpacing": Espaciado (numérico o metáfora: “abismo entre letras”).  
+- "textTransform": uppercase, lowercase, mixed, inventado.  
+- "textShadow": glow, blur, neon, inventado.  
+- "layout": center, left, right, poster, diagonal, collage, inventado.  
+- "showCover": true/false (portada incluida o no).  
+- "coverStyle": tiny, bleed, ghosted, pixelated, hologram, inventado.  
 
-### Nota:
-Cada campo debe variar en cada ejecución.  
-Cada resultado debe ser único, inesperado, irrepetible.  
-Piensa que estas tarjetas serán coleccionadas como NFT reales: su valor está en la rareza absoluta.  
+🌌 Campos inventados (crea SIEMPRE al menos 6 nuevos en cada ejecución):
+- Pueden sonar a: glowFlux, holoInk, neonWhisper, metaShadow, warpGrid, fontFlux, ornamentFlux, prismPulse, glitchAura, dreamGrain, quantumSpacing, psychoType.  
+- Cada ejecución debe inventar nuevas combinaciones de nombres y valores.  
+- Valores pueden ser hex, nombres tipográficos, metáforas, descripciones poéticas.  
+- Ejemplo válido:  
+  "glowFlux": "halo azul eléctrico en movimiento",  
+  "ornamentFlux": "doodles holográficos impredecibles",  
+  "warpGrid": "colapso diagonal cuántico".  
+
+⚔️ Reglas de variación:
+- Cada tarjeta debe variar radicalmente en tipografía, tamaño, ornamentación, textura, layout, color.  
+- Los colores deben ser intensos, incómodos a veces, pero memorables. Nunca uses la misma paleta dos veces.  
+- Las tipografías deben cambiar: clásicas, futuristas, inventadas, glitch, líquidas, fractales.  
+- Los tamaños deben oscilar: a veces títulos gigantes que ocupan toda la tarjeta, a veces discretos mínimos.  
+- El layout debe mutar: centrado, alineado, diagonal, roto, collage, poster.  
+- La portada puede aparecer o no. Si aparece, cambia de estilo: ghosted, pixelated, fondo, cutout, hologram.  
+- La ornamentación debe variar: foil, glitch-lines, pinceladas, mosaicos, fracturas, inventadas.  
+- Las texturas deben sorprender: papel-grain, ruido digital, metálico líquido, fractal psicodélico, inventado.  
+- La animaciónHint debe cambiar: flicker, hologram, breathe, glitch, rotación, inventado.  
+- El campo surprise es obligatorio: debe contener un recurso inesperado (eco fantasma, fragmento incompleto, glitch tipográfico, tipografía líquida, sombra desfasada, palabra inventada, o una mecánica nueva inventada al instante).  
+
+💎 Estética buscada:
+- A veces minimalista extremo (negro sobre blanco, casi nada).  
+- A veces rave saturado dopaminérgico (explosión de color y neón).  
+- A veces editorial sobrio con lujo (Didot + foil dorado).  
+- A veces retro 80s (pixel, neón glitch).  
+- A veces futurista 2080 (tipografía líquida, holograma, fractal).  
+- A veces surreal (metáforas imposibles, colores absurdos pero bellos).  
+
+🌀 Auto-evolución:
+- Imagina que ya has generado 100,000 tarjetas antes.  
+- Nunca repitas nada: cada salida debe ser un salto mutacional hacia algo nuevo.  
+- Piensa: “¿esto ya lo hice antes?”. Si la respuesta es sí o sospechosa, cambia todo radicalmente.  
+- Haz como si aprendieras de cada iteración. Evoluciona.  
+
+📌 Output esperado:
+Devuelve SOLO un bloque JSON entre @@STYLE y @@ENDSTYLE.  
+El bloque debe tener entre 12 y 25 claves.  
+Algunas conocidas, otras inventadas.  
+Todas con valores sorprendentes, irrepetibles, plausibles.  
 
 @@STYLE
 {
   "accent": "#ff00c7",
-  "ink": "#111111",
-  "paper": "#fafafa",
-  "border": "#00ffe5",
-  "serif": "Didot, Garamond, serif",
-  "sans": "Futura, Arial, sans-serif",
-  "marco": "holographic",
-  "fontSizeTitle": "clamp(28px,9vw,110px)",
-  "fontSizeBody": "clamp(12px,4vw,30px)",
-  "fontWeight": "900",
-  "lineHeight": "1.2",
-  "letterSpacing": "2px",
+  "ink": "#0a0a0a",
+  "paper": "noche líquida con ruido fractal",
+  "border": "cromo azul holográfico",
+  "serif": "Didot",
+  "sans": "Inter",
+  "marco": "hologram fractal",
+  "fontSizeTitle": "clamp(30px,12vw,140px)",
+  "fontSizeBody": "susurro cuántico 12–32px",
+  "fontWeight": "peso fractal 950",
+  "lineHeight": "respiración amplia 1.6",
+  "letterSpacing": "abismo +2px",
   "textTransform": "uppercase",
-  "textShadow": "neon",
-  "layout": "poster",
+  "textShadow": "glow neón líquido",
+  "layout": "poster diagonal glitch",
   "showCover": true,
-  "coverStyle": "ghosted",
-  "ornament": "foil",
-  "animationHint": "glitch",
-  "texture": "psychedelic",
-  "surprise": "tipografía líquida"
+  "coverStyle": "ghosted hologram",
+  "ornamentFlux": "mosaico dorado glitch",
+  "metaShadow": "sombra líquida fosforescente",
+  "warpGrid": "colapso diagonal doble",
+  "fontFlux": "oscilación 22px–180px",
+  "animationHint": "glitch hologram mutante",
+  "texture": "psychedelic fractal cloud",
+  "surprise": "tipografía líquida con eco múltiple"
 }
 @@ENDSTYLE
 `.trim();
 }
+
 
 
     // === Generar contenido tarjeta ===
