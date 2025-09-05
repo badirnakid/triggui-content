@@ -607,33 +607,80 @@ No inventes datos. Resume en tus palabras.
 
 function construirPromptFormato(){
   return `
-Eres un diseñador editorial de nivel supremo.  
-Devuelve SOLO un bloque JSON entre @@STYLE y @@ENDSTYLE, sin texto extra.  
-Cada ejecución debe ser distinta, como si fuera una tarjeta NFT coleccionable.  
+Eres un diseñador editorial supremo y cuántico.  
+Cada tarjeta que generas es un NFT editorial irrepetible: jamás habrá dos iguales.  
+Debes crear **mutaciones infinitas** de estilo visual.  
+Si sientes que tu salida se parece a otra que podrías haber generado, cámbiala radicalmente.  
 
-Reglas: (puedes romperlas, de hecho me encantaría para que salgan cosas impresionantes inesperadas en el formato y mi ojo se emocione, necesito sorpresa, variedad, dopamina)
-- "accent": color #rrggbb armónico, diferente cada vez (rojo, verde, azul, dorado, violeta, etc).
-- "ink": color del texto, legible (ej: #111111, #222222).
-- "paper": color o textura de fondo clara (ej: #ffffff, #fdfdf7, #fafafa).
-- "border": color del borde (gris suave, negro tenue, o tono del accent).
-- "serif": fuente distinta (ej: Georgia, Garamond, Palatino, Times).
-- "sans": fuente distinta (ej: Arial, Helvetica Neue, Inter, Segoe UI).
-- "marco": "shadow" | "double-border" | "foil" | "rounded".  
-- Varía en cada ejecución: no repitas el mismo set exacto.  
+Cada ejecución debe sentirse como un objeto de arte único, valioso, coleccionable, sublime.  
+Debe despertar dopamina, sorpresa, asombro. Como si alguien encontrara una carta mágica.  
+
+### Reglas supremas:
+- NUNCA repitas combinaciones previas.  
+- Varía radicalmente: tipografías, colores, tamaños, sombras, disposición, textura, presencia/ausencia de portada.  
+- Atrévete a incomodar con diseños raros (siempre intencionales, nunca errores).  
+- Algunas tarjetas minimalistas extremas, otras saturadas y rave, otras retro, otras futuristas, otras glitch.  
+- Piensa en editorial de lujo + rave digital + poster artístico.  
+
+### Devuelve SOLO un bloque JSON entre @@STYLE y @@ENDSTYLE:
+
+{
+  "accent": "#rrggbb",
+  "ink": "#rrggbb",
+  "paper": "#rrggbb",
+  "border": "#rrggbb",
+  "serif": "tipografía serif distinta",
+  "sans": "tipografía sans distinta",
+  "marco": "shadow | double-border | foil | rounded | glitch | neon | holographic",
+  "fontSizeTitle": "clamp(22px,10vw,120px)",
+  "fontSizeBody": "clamp(10px,4vw,36px)",
+  "fontWeight": "100–950",
+  "lineHeight": "0.9–2.2",
+  "letterSpacing": "-2px a 6px",
+  "textTransform": "none | uppercase | lowercase | mixed | random",
+  "textShadow": "glow | drop-shadow | neon | blur | glitch | 3d",
+  "layout": "center | left | right | diagonal | broken-grid | poster | collage",
+  "showCover": true/false,
+  "coverStyle": "tiny | medium | framed | bleed | ghosted | background | cutout | pixelated | none",
+  "ornament": "none | foil | hologram | brushstroke | glitch-lines | doodle | mosaic | pixel-frame",
+  "animationHint": "none | breathe | pulse | glitch | hologram | flicker | rotate",
+  "texture": "linen | paper-grain | noise | gradient-clouds | none | psychedelic",
+  "surprise": "eco fantasma | fragmento incompleto | palabra inventada | instrucción imposible | glitch tipográfico | sombra desfasada | tipografía líquida | eco múltiple | alineación rota"
+}
+
+### Nota:
+Cada campo debe variar en cada ejecución.  
+Cada resultado debe ser único, inesperado, irrepetible.  
+Piensa que estas tarjetas serán coleccionadas como NFT reales: su valor está en la rareza absoluta.  
 
 @@STYLE
 {
-  "accent": "#d4af37",
+  "accent": "#ff00c7",
   "ink": "#111111",
-  "paper": "#ffffff",
-  "border": "#cccccc",
-  "serif": "Garamond, Georgia, serif",
-  "sans": "'Helvetica Neue', Arial, sans-serif",
-  "marco": "shadow"
+  "paper": "#fafafa",
+  "border": "#00ffe5",
+  "serif": "Didot, Garamond, serif",
+  "sans": "Futura, Arial, sans-serif",
+  "marco": "holographic",
+  "fontSizeTitle": "clamp(28px,9vw,110px)",
+  "fontSizeBody": "clamp(12px,4vw,30px)",
+  "fontWeight": "900",
+  "lineHeight": "1.2",
+  "letterSpacing": "2px",
+  "textTransform": "uppercase",
+  "textShadow": "neon",
+  "layout": "poster",
+  "showCover": true,
+  "coverStyle": "ghosted",
+  "ornament": "foil",
+  "animationHint": "glitch",
+  "texture": "psychedelic",
+  "surprise": "tipografía líquida"
 }
 @@ENDSTYLE
 `.trim();
 }
+
 
     // === Generar contenido tarjeta ===
     const promptTarjeta = construirPromptContenido(b, "idea semilla random"); 
