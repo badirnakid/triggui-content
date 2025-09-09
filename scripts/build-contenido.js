@@ -565,7 +565,7 @@ Estructura:
 
 
 Reglas duras:
-- Extensión total: 7–9 líneas.
+- Extensión total: 4–6 líneas.
 - Sin emojis ni símbolos raros.
 - Nada de “publicidad”.
 - Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana.
