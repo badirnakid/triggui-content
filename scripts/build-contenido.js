@@ -567,10 +567,10 @@ Estructura:
 Reglas duras:
 Reglas duras (LONGITUD ESTRICTA PARA LA TARJETA):
 - Título: máximo 50 caracteres.
-- Primer párrafo: máximo 140 caracteres.
+- Primer párrafo: máximo 120 caracteres.
 - Subtítulo: máximo 48 caracteres.
-- Segundo párrafo: máximo 140 caracteres.
-- Total combinado ≤ 340 caracteres.
+- Segundo párrafo: máximo 120 caracteres.
+- Total combinado ≤ 300 caracteres.
 - Sin emojis ni símbolos raros.
 - Nada de “publicidad”.
 - Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana.
@@ -600,9 +600,9 @@ No inventes datos. Resume en tus palabras.
 
 @@BODY
 1) Una línea de título (≤50c).
-2) Un párrafo breve (≤140c).
+2) Un párrafo breve (≤120c).
 3) Un subtítulo (≤48c).
-4) Un párrafo breve (≤140c).
+4) Un párrafo breve (≤120c).
 @@ENDBODY
 `.trim();
 }
