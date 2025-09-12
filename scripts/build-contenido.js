@@ -146,7 +146,7 @@ Requisitos de las PALABRAS:
 
 Requisitos de las FRASES:
 • Que analices e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo
-• Longitud random 20-50 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
+• Longitud random 20-55 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
 • Tono perfecto, cambia y mejorar en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
 • Relación explícita con la PALABRA y el libro del cual viene.
@@ -567,10 +567,10 @@ Estructura:
 Reglas duras:
 Reglas duras (LONGITUD ESTRICTA PARA LA TARJETA):
 - Título: máximo 50 caracteres.
-- Primer párrafo: máximo 120 caracteres.
+- Primer párrafo: máximo 130 caracteres.
 - Subtítulo: máximo 48 caracteres.
-- Segundo párrafo: máximo 120 caracteres.
-- Total combinado ≤ 300 caracteres.
+- Segundo párrafo: máximo 130 caracteres.
+- Total combinado ≤ 320 caracteres.
 - Sin emojis ni símbolos raros.
 - Nada de “publicidad”.
 - Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana.
@@ -600,9 +600,9 @@ No inventes datos. Resume en tus palabras.
 
 @@BODY
 1) Una línea de título (≤50c).
-2) Un párrafo breve (≤120c).
+2) Un párrafo breve (≤130c).
 3) Un subtítulo (≤48c).
-4) Un párrafo breve (≤120c).
+4) Un párrafo breve (≤130c).
 @@ENDBODY
 `.trim();
 }
