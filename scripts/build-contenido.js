@@ -599,10 +599,10 @@ No inventes datos. Resume en tus palabras.
 
 
 @@BODY
-1) Una línea de título.
-2) Un párrafo breve.
-3) Un subtítulo.
-4) Un párrafo breve.
+1) Una línea de título (≤50c).
+2) Un párrafo breve (≤140c).
+3) Un subtítulo (≤48c).
+4) Un párrafo breve (≤140c).
 @@ENDBODY
 `.trim();
 }
