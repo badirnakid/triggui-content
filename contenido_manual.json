@@ -1,32 +1,31 @@
 {
   "libros": [
     {
-      "titulo": "Good to Great",
-      "autor": "Jim Collins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/bd/62/e0/mzi.ruipsrer.jpg/626x0w.jpg",
-      "tagline": "Primero claridad, luego velocidad: formula las preguntas correctas y decide desde conocimiento. Enfócate en la intersección de talento, pasión y motor económico (Hedgehog).",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
+      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
+      "autor": "David JP Phillips",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
+      "tagline": "Baja el cortisol con un método simple: lista tus estresores y clasifícalos en eliminar, resolver o ‘no lo sé’. Actúa hoy en lo eliminable y planifica lo resoluble.",
+      "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
+        "cortisol",
         "claridad",
-        "disciplina",
-        "Hedgehog",
-        "foco",
-        "preguntas"
+        "acción",
+        "límites"
       ],
       "frases": [
-        "🦔 Elige lo esencial: donde puedes ser el mejor del mundo.",
-        "🎯 Crece sólo cuando hay claridad de modelo y de motor económico.",
-        "🚦 Velocidad sin foco = riesgo; disciplina con foco = excelencia.",
-        "🔎 Las preguntas correctas valen más que la bravuconería."
+        "✂️ Si se puede eliminar, elimínalo: notificaciones, plazos imposibles y compromisos sin sentido.",
+        "🧩 Si se puede resolver, trocéalo en pasos pequeños y ponlo en agenda.",
+        "🫶 Si no lo sabes, aparca con fecha de revisión y pide ayuda.",
+        "🌡️ Menos cortisol = más presencia. Respira, descansa y protege tu energía."
       ],
       "colores": [
-        "#7F1D1D",
         "#B91C1C",
-        "#D97706",
-        "#1F2937"
+        "#0EA5E9",
+        "#F59E0B",
+        "#10B981"
       ],
-      "fondo": "#0E0A0A",
+      "fondo": "#0F1220",
       "textColors": [
         "#FFFFFF",
         "#000000",
@@ -34,11 +33,11 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "La niebla se disipa cuando eliges un rumbo. Evita ‘crecer por crecer’: pregunta, entiende y decide desde datos, no desde impulsos.",
-        "subtitulo": "Del bueno al sobresaliente (Hedgehog)",
-        "parrafoBot": "Concentra tu estrategia en la intersección de: (1) lo que puedes hacer de manera sobresaliente, (2) lo que enciende tu pasión y (3) lo que impulsa tu motor económico. Así pasas de correr sin dirección a avanzar con disciplina y progreso compuesto.",
+        "parrafoTop": "Paso 1: escribe todos tus estresores. Paso 2: etiqueta cada uno como «Se puede eliminar», «Se puede resolver» o «No lo sé». La claridad baja el cortisol.",
+        "subtitulo": "Cortisol bajo control",
+        "parrafoBot": "Elimina lo que te drena (apps que te hacen sentir mal, notificaciones, plazos irracionales, responsabilidades que no son tuyas). Lo resoluble, divídelo en micro-acciones; acepta diferencias, convierte conflictos en oportunidad y relativiza el perfeccionismo. Lo incierto, revísalo en una fecha fija y busca apoyo.",
         "style": {
-          "accent": "#B91C1C",
+          "accent": "#0EA5E9",
           "ink": "#121212",
           "paper": "papel etéreo con resplandor solar",
           "border": "chromatic chaos line",
@@ -60,10 +59,4 @@
           "quantumSpacing": "rebotar 1.5em",
           "fontFlux": "método de variación infinita",
           "animationHint": "respiración lumínica sin fin",
-          "texture": "papel oscuro con tintes de estrellas",
-          "surprise": "fragmentos de textos interdimensionales"
-        }
-      }
-    }
-  ]
-}
+          "text
