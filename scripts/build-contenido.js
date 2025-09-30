@@ -141,8 +141,16 @@ Asignación fija de índice → Centro de Energía + intención
 3 • Integración · genera sutilmente deseo por abrir el libro
 
 Requisitos de las PALABRAS:
-• Una sola palabra, pero demasiado inteligente y que tenga absolutamente TODO que ver con el libro y autor que estés evaluando. Que responda perfectamente a la pregunta ¿Qué sientes?
-• Relacionada con la energía del libro original. REAL
+• Deben ser RESPUESTAS directas a “¿Qué sientes ahora?”.
+• Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
+  Ejemplos válidos: “calma”, “ansiedad”, “curiosidad”, “enfado”, “motivación”, “claridad”, “gratitud”. 
+• Prohibido: verbos de acción (“cautivar”), adjetivos orientados a objeto (“enganchador”), 
+  roles (“líder”), técnicas (“foco”), conceptos externos (“estrategia”), 
+  nombres de efectos (“flujo”), palabras con sufijos -dor/-ción -- TODO ESTO A MENOS QUE QUEDE BIEN CON LA PREGUNTA ¿QUÉ SIENTES AHORA?.
+• Si detectas que una propuesta no responde a la pregunta, reemplázala por 
+  la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo.
+• Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
+
 
 Requisitos de las FRASES:
 • Que analices e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo
