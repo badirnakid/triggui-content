@@ -151,8 +151,7 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 • Señales indirectas de la emoción: alude a cuerpo/ritmo/atención (ej. pulso, nudo, ruido, calma, foco) sin decir la palabra.
 • Formato de cada frase:
   – Empieza con 1 emoji coherente (sin repetir entre las 4).
-  – 20–55 caracteres.
-  – Contiene 1 verbo imperativo suave (ej. respira, mira, suelta, anota, elige, abre).
+   – Contiene 1 verbo imperativo suave (ej. respira, mira, suelta, anota, elige, abre).
   – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).
 • Una de las frases (cualquiera) debe ser ej. “triple 3x” implícito:
   – 0: “camina 3x10 pasos”
