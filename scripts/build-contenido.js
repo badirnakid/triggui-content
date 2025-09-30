@@ -518,6 +518,21 @@ async function enrich(b){
     }
     const extra = JSON.parse(raw);
 
+     // --- Guard emocional: fuerza que "palabras" sean emociones reales
+const EMO_FALLBACKS = ["calma","ansiedad","curiosidad","gratitud","claridad","alegría","serenidad","valor"];
+const EMO_DENY_PAT  = /(?:dor|dora|ción|miento|ble|izar|izarse|técnica|estrategia|modelo)$/i;
+const NOT_EMO = new Set(["cautivar","enganchador","ganar","vender","crecer","dominar","cambiar","cautivo","hábito","ganancia"]);
+
+extra.palabras = (extra.palabras || []).map((w,i)=>{
+  const s = (w||"").toString().trim().toLowerCase();
+  const looksBad = !s || s.split(/\s+/).length>1 || EMO_DENY_PAT.test(s) || NOT_EMO.has(s);
+  if (looksBad) return EMO_FALLBACKS[i % EMO_FALLBACKS.length];
+  // normaliza algunas formas
+  const map = { motivado:"motivación", enojado:"enfado", molesto:"enfado", tranquilo:"calma", inspirado:"inspiración" };
+  return map[s] || s;
+});
+
+
     /* Garantizar arrays de longitud 4 */
     ["palabras", "frases", "colores"].forEach(k=>{
       while(extra[k].length < 4) extra[k].push(extra[k][extra[k].length-1]);
