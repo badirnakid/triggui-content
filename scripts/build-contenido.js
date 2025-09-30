@@ -140,6 +140,28 @@ Asignación fija de índice → Centro de Energía + intención
 2 • Cerebro     · brinda claridad mental
 3 • Integración · genera sutilmente deseo por abrir el libro
 
+Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
+• Cada frase debe responder a la emoción (palabra[i]) SIN nombrarla.
+• Usa un micro-protocolo de 10–15s, distinto por índice:
+  0 Movimiento  → gesto físico mínimo ( ej. estira hombros, camina 10 pasos, endereza postura).
+  1 Corazón     → giro afectivo breve (ej. agradece 1 cosa, nombra a quién ayudas hoy).
+  2 Cerebro     → claridad express (ej. anota 3 palabras, divide en 1 paso, elige 1 tarea).
+  3 Integración → llamada a abrir el libro (ej. abre al azar y lee 1 línea en voz baja).
+• Eleva sólo un peldaño en Hawkins (ej. miedo→coraje, apatía→interés, deseo→aceptación, orgullo→apertura).
+• Señales indirectas de la emoción: alude a cuerpo/ritmo/atención (ej. pulso, nudo, ruido, calma, foco) sin decir la palabra.
+• Formato de cada frase:
+  – Empieza con 1 emoji coherente (sin repetir entre las 4).
+  – 20–55 caracteres.
+  – Contiene 1 verbo imperativo suave (ej. respira, mira, suelta, anota, elige, abre).
+  – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).
+• Una de las frases (cualquiera) debe ser ej. “triple 3x” implícito:
+  – 0: “camina 3x10 pasos”
+  – 1: “di gracias por 3 cosas”
+  – 2: “anota 3 palabras clave”
+  – 3: “lee 3 líneas y cierra”
+• Prohibido sonar a “app de hábitos”. Nada de “rutina” o “tarea”; suena a gesto único del momento.
+todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
+
 Requisitos de las PALABRAS:
 • Deben ser RESPUESTAS directas a “¿Qué sientes ahora?”.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
