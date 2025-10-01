@@ -171,7 +171,7 @@ Requisitos de las PALABRAS:
 • Si detectas que una propuesta no responde a la pregunta, reemplázala por 
   la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
 • Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
-• Prohibido repetir PALABRAS en el mismo .json que vas a entregar, es decir no puedes repetir PALABRAS/EMOCIONES a menos que realmente el tema del libro, el libro o el autor sea demasiado similar
+• Prohibido repetir PALABRAS en el mismo .json que vas a entregar, es decir no puedes repetir PALABRAS/EMOCIONES a menos que realmente el tema del libro, el libro o el autor sea demasiado similar! SOLO SI VES QUE NO HAY MUCHAS EMOCIONES EN EL VOCABULARIO Y TIENES QUE REPETIR PUES MEJOR USA OTRAS PALABRAS SIMILARES QUE EMOCIONES QUE TAMBIEN RESPONDAN A LA PREGUNTA ¿QUÉ SIENTES AHORA? EL CASO ES SIEMPRE HAGA SENTIDO PERFECTO NIVEL DIOS
 
 
 Requisitos de las FRASES:
