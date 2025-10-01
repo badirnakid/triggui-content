@@ -164,10 +164,6 @@ todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan 
 Requisitos de las PALABRAS:
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
-  Ejemplos válidos: “calma”, “ansiedad”, “curiosidad”, “enfado”, “motivación”, “claridad”, “gratitud”. SON EJEMPLOS!!
-• Prohibido: verbos de acción (“cautivar”), adjetivos orientados a objeto (“enganchador”), 
-  roles (“líder”), técnicas (“foco”), conceptos externos (“estrategia”), SON EJEMPLOS! te lo dejo abierto a tu criterio
-  nombres de efectos (“flujo”), palabras con sufijos -dor/-ción -- TODO ESTO A MENOS QUE QUEDE BIEN CON LA PREGUNTA ¿QUÉ SIENTES AHORA?.
 • Si detectas que una propuesta no responde a la pregunta, reemplázala por 
   la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
 • Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
