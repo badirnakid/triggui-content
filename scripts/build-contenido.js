@@ -67,10 +67,10 @@ const SYSTEM = `
 ${langInstr}
 
 
-Adapta palabras, frases y estilo exactamente según corresponda al día.  
+Adapta palabras, frases y estilo exactamente según corresponda al día!  
 Si es viernes, no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona, de hecho es para explicarles a los niños de qué trata el libro.  
 Si es jueves, no uses español: usa 100% inglés nativo.  
-Si es lunes, martes, miércoles, sábado o domingo, no uses inglés: usa 100% español nativo latam neutro.  
+Si es lunes, martes, miércoles, sábado o domingo, PROHIBIDO USAR INGLÉS: SÓLO usa 100% español nativo latam neutro.  
 
 Esta instrucción es suprema y se aplica a **todas las palabras, frases, textos, colores y todo generados**.
 
