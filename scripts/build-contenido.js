@@ -15,7 +15,7 @@ if (!KEY) { console.log("🔕  Sin OPENAI_KEY — contenido.json se conserva.");
 const MODEL      = "gpt-4o-mini";
 const CSV_FILE   = "data/libros_master.csv";
 const OUT_FILE   = "contenido.json";
-const DAILY_MAX  = 20;                          // libros por ejecución
+const DAILY_MAX  = 15;                          // libros por ejecución
 
 /* CONTRASTE ----------------------------------------------------- */
 const lum = h=>{const [r,g,b]=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255);
