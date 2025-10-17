@@ -1,67 +1,57 @@
 {
   "libros": [
     {
-      "titulo": "The Innovation Delusion",
-      "autor": "Lee Vinsel · Andrew L. Russell",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/0a/8b/590a8b9a-d3f5-9fdd-3091-0e94124780f3/9780525575696.d.jpg/626x0w.jpg",
-      "tagline": "Menos culto a lo nuevo, más respeto por lo que nos sostiene: mantener, cuidar, entender y decidir con calma.",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
+      "titulo": "The Resilience Shield",
+      "autor": "Dan Pronk, Ben Pronk & Tim Curtis",
+      "portada": "",
+      "tagline": "Un marco por capas para no reventarte: conviertes el “viernes punto cero” en un reinicio deliberado que fortalece mente, cuerpo, relaciones, trabajo y propósito.",
+      "dimension": "Bienestar",
+      "punto": "Activo",
       "palabras": [
+        "resiliencia práctica",
+        "capas",
+        "recuperación",
+        "estrés útil",
+        "rituales de cierre",
         "mantenimiento",
-        "ritmo",
-        "claridad",
-        "fiabilidad",
-        "decisiones"
+        "antifrágil"
       ],
       "frases": [
-        "⚙️ La verdadera ventaja no es ‘moverse rápido’, es moverse **confiable y conscientemente**.",
-        "🧯 Primero arregla y cuida lo que ya existe; la innovación útil **crece sobre bases mantenidas**.",
-        "🧭 La velocidad sin asimilación genera errores caros; **pausas breves y deliberadas** mejoran la puntería.",
-        "📚 El conocimiento se deposita con tiempo: **aprende–aplica–estabiliza**, y recién entonces acelera."
+        "Resiliencia no es aguantar más; es recuperar mejor y más a menudo.",
+        "Tu ‘punto cero’ del viernes no es falla: es señal para reiniciar el sistema.",
+        "El escudo se construye por capas: biología, mente, cuerpo, conexiones, oficio y sentido.",
+        "La resistencia (interna) protege hábitos; úsala como alerta para rediseñarlos, no para pelearte con ella.",
+        "Sin mantenimiento, cualquier ‘innovación’ se vuelve deuda fisiológica y emocional.",
+        "El avance sostenible alterna tensión y descarga: carga inteligente + descanso intencional.",
+        "Lo que se mide se mejora: sueño, movimiento, foco y vínculos son indicadores, no adornos.",
+        "Adaptación hedónica: lo extraordinario deja de motivar; por eso necesitas propósito y progresos visibles.",
+        "Cuando todo acelera, tu ventaja es la cadencia: pausas breves, decisiones lentas en lo importante.",
+        "Viernes: cerrar, aprender, agradecer, plan ligero del lunes. Ciclo completo, energía de regreso."
       ],
-      "colores": [
-        "#2563EB",
-        "#111827",
-        "#059669",
-        "#F59E0B"
-      ],
-      "fondo": "#0B1020",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
+      "colores": ["#0F766E", "#EA580C", "#0B3B3C", "#F59E0B"],
+      "fondo": "#F6FBFC",
+      "textColors": ["#0B3B3C", "#0B3B3C", "#0B3B3C", "#0B3B3C"],
       "tarjeta": {
-        "parrafoTop": "El libro muestra el costo del ‘move fast and break things’: deuda técnica, sistemas frágiles, gente quemada. Propone el **mindset de mantenimiento**: cuidar, estabilizar y mejorar lo que ya entrega valor. Tu idea encaja perfecto: si todo va demasiado rápido, se degrada la calidad de la decisión. **Pausa breve → asimila → decide mejor.**",
-        "subtitulo": "Velocidad sostenible, no velocidad máxima",
-        "parrafoBot": "• **Ritmo de mantenimiento**: 60–70% del tiempo para fiabilidad (bugs, deuda, procesos), 30–40% para novedad. • **Ventanas de asimilación**: tras cada entrega, 30–90 min sin notificaciones para documentar, aprender y decidir el siguiente paso. • **Política Fix-It-First**: lo roto y lo crítico se atiende antes que lo nuevo. • **Buffers de decisión**: define ‘latencia mínima’ (p. ej., 24 h) para decisiones irreversibles. • **Tablero de estabilidad**: mide MTTR, defectos reabiertos y satisfacción del usuario; no solo ‘features lanzadas’. • **Semana de cuidado** cada 6–8: refactoriza, limpia datos, simplifica herramientas. [H]La innovación que perdura es la que no sacrifica el cuidado.[/H] [H]Acelera después de entender; no antes.[/H]",
+        "parrafoTop": "{{H}}Viernes no es derrumbe; es ritual de cierre.{{/H}} Documenta 3 cargas que soltarás, 3 aprendizajes y una microacción amable para el lunes. La señal de cansancio es información, no identidad.",
+        "subtitulo": "Escudo por capas (uso táctico)",
+        "parrafoBot": "1) Biología: agua-sueño-proteína antes de pantalla. 2) Cuerpo: 20–30 min de movimiento fácil. 3) Mente: una lista ‘menos, pero mejor’. 4) Conexiones: pedir y ofrecer ayuda. 5) Oficio: protege tu franja maestra. 6) Sentido: recuerda por qué importa. {{H}}Cargas breves, descansos reales, progreso pequeño visible.{{/H}}",
         "style": {
-          "accent": "#2563EB",
-          "ink": "#0B0F19",
-          "paper": "papel claro nítido",
-          "border": "línea neutra suave",
-          "serif": "Bodoni Moda",
+          "accent": "#EA580C",
+          "ink": "#0B3B3C",
+          "paper": "glass mint",
+          "border": "#E2EEF1",
+          "serif": "Noto Serif Display",
           "sans": "Inter",
           "marco": "rounded",
-          "fontSizeTitle": "38–96px adaptable",
-          "fontSizeBody": "12–20px",
+          "fontSizeTitle": "18px–20px",
+          "fontSizeBody": "16px–18px",
           "fontWeight": "700/400",
-          "lineHeight": "1.45",
+          "lineHeight": "1.4",
           "letterSpacing": "0.2px",
-          "textTransform": "none",
-          "textShadow": "none",
-          "layout": "limpio con bloques",
+          "layout": "clean focus",
           "showCover": false,
-          "ornamentFlux": "none",
-          "glowAura": "none",
-          "metaShadow": "sombra sutil",
-          "quantumSpacing": "1.4em",
-          "fontFlux": "estático",
-          "animationHint": "none",
-          "texture": "liso",
-          "surprise": "—"
+          "glowAura": "soft mint",
+          "metaShadow": "subtle"
         }
       }
     }
