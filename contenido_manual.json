@@ -1,69 +1,66 @@
 {
   "libros": [
     {
-      "titulo": "Algospeak",
-      "autor": "Adam Aleksic",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/d1/24/5e/d1245e1d-5a5f-b1f9-c234-83d02cf388ff/9780593804087.d.jpg/626x0w.jpg",
-      "tagline": "Las palabras ya no solo comunican: sobreviven. En la era algorítmica, el lenguaje se adapta como un organismo que aprende a esquivar la censura y buscar luz en los feeds.",
-      "dimension": "Lenguaje",
+      "titulo": "The Science of Stuck",
+      "autor": "Britt Frank",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/94/48/a2/9448a2bd-2a47-f665-2f61-2ab034e57173/9780593419458.d.jpg/626x0w.jpg",
+      "tagline": "No estás roto. Solo estás en pausa. Comprender la inercia mental es el primer paso para volver a moverte con sentido.",
+      "dimension": "Bienestar",
       "punto": "Creativo",
       "palabras": [
-        "algoritmo",
-        "lenguaje",
-        "adaptación",
-        "contexto",
-        "atención",
-        "mutación"
+        "inercia",
+        "conciencia",
+        "movimiento",
+        "dirección"
       ],
       "frases": [
-        "🧬 El lenguaje ya no evoluciona con el tiempo, sino con el algoritmo. Lo que el sistema oculta, la gente reinventa.",
-        "🌐 Algospeak es la prueba de que las palabras se doblan, pero no mueren: cambian de forma para seguir circulando.",
-        "🪞 Cada red crea su propio dialecto. Quien no aprende a escucharlo, queda fuera del juego de la visibilidad.",
-        "💬 Las audiencias no leen solo palabras, leen patrones. Y el algoritmo decide cuáles patrones florecen.",
-        "⚡ El nuevo alfabetismo no es técnico, es adaptativo: saber decir lo esencial sin ser filtrado."
+        "🧠 La inercia no es flojera, es energía sin dirección. Cuando la ves, ya empezó el cambio.",
+        "🌱 No necesitas motivación, solo notar lo que se repite y elegir un paso distinto.",
+        "⚙️ El cuerpo obedece al pensamiento, y el pensamiento obedece a la atención. Mueve la atención, y todo se mueve.",
+        "💡 Cada mínima acción rompe la quietud: abrir un libro, cambiar de lugar, respirar distinto."
       ],
       "colores": [
-        "#0E0E10",
-        "#3B82F6",
-        "#93C5FD",
-        "#60A5FA"
+        "#0A0A0C",
+        "#FFD166",
+        "#06D6A0",
+        "#118AB2"
       ],
-      "fondo": "#0A0A0C",
+      "fondo": "#11111D",
       "textColors": [
         "#FFFFFF",
-        "#0A0A0C",
-        "#0A0A0C",
+        "#000000",
+        "#000000",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "En ‘Algospeak’, Adam Aleksic revela que el lenguaje digital ya no pertenece a los humanos, sino al ecosistema que los contiene: los algoritmos. Cada palabra se convierte en un código que intenta sobrevivir al filtro invisible de las plataformas. Cambiamos ‘suicidio’ por ‘unalive’, ‘sexo’ por ‘segso’, no por moda, sino por evolución adaptativa. El idioma se volvió un campo de batalla entre expresión y visibilidad.",
-        "subtitulo": "Lenguaje que sobrevive al algoritmo",
-        "parrafoBot": "Comprender Algospeak es entender que el lenguaje ya no se usa solo para comunicar, sino para navegar sistemas de atención. Las palabras son ahora estrategias: microformas de inteligencia colectiva que burlan censura, optimizan alcance y crean nuevos significados. En la práctica: 1) observa qué palabras tu entorno digital evita o codifica; 2) estudia cómo la audiencia sustituye términos sin perder sentido; 3) identifica los patrones que los algoritmos premian (tiempo de lectura, reacción, retención); 4) crea tu propio lenguaje que comunique esencia sin volverse prisionero de la tendencia. La verdadera fluidez hoy no es gramatical: es algorítmica.",
+        "parrafoTop": "En ‘The Science of Stuck’, Britt Frank desmantela la idea de que estar detenido es un fallo. Explica que la inercia surge cuando el cerebro confunde cambio con peligro. En lugar de forzar movimiento, propone reconocer los patrones que mantienen nuestra energía girando en el mismo punto. Entender la inercia no como bloqueo, sino como pausa biológica, transforma la culpa en claridad.",
+        "subtitulo": "Moverse no es empujar: es darse cuenta",
+        "parrafoBot": "La salida no está en hacer más, sino en ver lo que haces sin darte cuenta. Identifica un ciclo que repites, crea una micro-acción diferente y hazla visible. Cada mínima alteración reinicia el sistema. En la práctica: 1) anota lo que haces igual cada día; 2) cambia una sola variable (hora, lugar o secuencia); 3) ejecuta un acto físico simple —abrir un libro, escribir una línea, caminar una cuadra—. La claridad precede al movimiento, y la acción más pequeña puede ser la fuerza que rompa la inercia.",
         "style": {
-          "accent": "#3B82F6",
-          "ink": "#E0F2FE",
-          "paper": "papel profundo con reflejos azul neón",
-          "border": "línea eléctrica tenue",
+          "accent": "#FFD166",
+          "ink": "#E0FBFC",
+          "paper": "superficie oscura con reflejos turquesa-ámbar",
+          "border": "borde doble de luz ámbar suave",
           "serif": "IBM Plex Serif",
           "sans": "Inter",
           "marco": "rounded glow",
-          "fontSizeTitle": "coloso 40–90px",
-          "fontSizeBody": "nítido 12–26px",
+          "fontSizeTitle": "coloso 38–80px",
+          "fontSizeBody": "nítido 13–24px",
           "fontWeight": "700",
           "lineHeight": "1.45",
           "letterSpacing": "0.2px",
           "textTransform": "none",
-          "textShadow": "halo azul sutil",
-          "layout": "grid minimalista con aura digital",
+          "textShadow": "halo ámbar-turquesa muy tenue",
+          "layout": "grid minimalista con respiración amplia",
           "showCover": true,
-          "ornamentFlux": "líneas fractales azuladas",
-          "glowAura": "halo azul/blanco suave",
-          "metaShadow": "sombra translúcida fría",
-          "quantumSpacing": "espaciado 1.5em",
-          "fontFlux": "ligera variación entre serif/sans",
-          "animationHint": "pulso lumínico digital muy sutil",
-          "texture": "granulado fino con ruido electrónico",
-          "surprise": "microcódigo oculto en el subtítulo que parpadea como glitch"
+          "ornamentFlux": "ondas lentas color ámbar que simulan movimiento",
+          "glowAura": "halo suave entre verde menta y amarillo cálido",
+          "metaShadow": "sombra translúcida fría con profundidad",
+          "quantumSpacing": "espaciado 1.6em",
+          "fontFlux": "alternancia ligera entre serif/sans",
+          "animationHint": "pulso respiratorio lumínico lento",
+          "texture": "granulado fino con eco de movimiento",
+          "surprise": "línea oculta que se ilumina brevemente al leer la palabra 'pausa'"
         }
       }
     }
