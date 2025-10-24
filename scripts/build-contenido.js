@@ -54,10 +54,10 @@ if (["Tuesday","Thursday"].includes(day)) {
   langInstr = "Generate ALL content in clear, natural ENGLISH.";
 }
 if (day === "Friday") {
-  langInstr = "Genera TODO el contenido en estilo Little KIDS (cuento, fábula, imaginativo, palabras super comprensibles para niñ@s chiquit@os no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.).";
+  langInstr = "Genera TODO el contenido en estilo Little KIDS como tipo moraleja que entiendan (cuento, fábula, imaginativo, palabras super comprensibles para niñ@s chiquit@os no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.).";
 }
 if (day === "Friday") {
-  langInstr = "Genera TODO el contenido en estilo Little KIDS (cuento, fábula, imaginativo, comprensible para niñ@s).";
+  langInstr = "Genera TODO el contenido en estilo Little KIDS como tipo moraleja que entiendan (cuento, fábula, imaginativo, comprensible para niñ@s).";
 }
 
 
@@ -68,9 +68,9 @@ ${langInstr}
 
 
 Adapta palabras, frases y estilo exactamente según corresponda al día!  
-Si es viernes, no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona, de hecho es para explicarles a los niños de qué trata el libro.  
-Si es jueves, no uses español: usa 100% inglés nativo.  
-Si es lunes, martes, miércoles, sábado o domingo, PROHIBIDO USAR INGLÉS: SÓLO usa 100% español nativo latam neutro.  
+Si es viernes: escribe para niños y niñas : TODO debe sonar y estar como narración infantil con moraleja creativa y juguetona, de hecho es para explicarles a los niños de qué trata el libro.  
+Si es jueves: usa 100% inglés nativo.  
+Si es lunes, martes, miércoles, sábado o domingo, SÓLO usa 100% español nativo latam neutro.  
 
 Esta instrucción es suprema y se aplica a **todas las palabras, frases, textos, colores y todo generados**.
 
@@ -162,12 +162,11 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
 
 Requisitos de las PALABRAS:
-• Deben ser RESPUESTAS, CONSEJOS, TIPS, LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”.
+• Deben ser RESPUESTAS, CONSEJOS, TIPS, LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones del mapa de conciencia de Dr. David Hawkins desde abajo y usa todos los sinónimos que puedas de todas las emociones. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, frustración, o coraje, o fracaso, el usuario le pica a aesa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
-• Si detectas que una propuesta no responde a la pregunta, reemplázala por 
-  la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
+• Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
 • Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
-• Prohibido repetir PALABRAS en el mismo .json que vas a entregar, es decir no puedes repetir PALABRAS/EMOCIONES a menos que realmente el tema del libro, el libro o el autor sea demasiado similar! SOLO SI VES QUE NO HAY MUCHAS EMOCIONES EN EL VOCABULARIO Y TIENES QUE REPETIR PUES MEJOR USA OTRAS PALABRAS SIMILARES QUE EMOCIONES QUE TAMBIEN RESPONDAN A LA PREGUNTA ¿QUÉ SIENTES AHORA? EL CASO ES SIEMPRE HAGA SENTIDO PERFECTO NIVEL DIOS
+• Prohibido repetir PALABRAS en el mismo .json que vas a entregar, es decir no puedes repetir PALABRAS/EMOCIONES
 
 
 Requisitos de las FRASES:
