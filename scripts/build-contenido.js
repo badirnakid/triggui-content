@@ -161,7 +161,7 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 • Prohibido sonar a “app de hábitos”. Nada de “rutina” o “tarea”; suena a gesto único del momento.
 todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
 
-REGLAS INVULNERABLES de las PALABRAS:
+REGLAS INQUEBRANTABLES de las PALABRAS:
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita, como respuesta a la pregunta ¿Qué sientes ahora? cuida género es decir ej. si es cansada o cansado mejor usa cansancio y así.
 • Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente y congruente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
@@ -169,8 +169,8 @@ REGLAS INVULNERABLES de las PALABRAS:
 • Prohibido repetir PALABRAS Y EMOJIS en el mismo .json que vas a entregar, es decir NO puedes repetir PALABRAS/EMOCIONES NI EMOJIS
 
 
-REGLAS INVULNERABLES de las FRASES:
-• Dentro de la frase NO puede estar la PALABRA! ej. si la PALABRA es "Tranquilidad", no puede estar "Tranquilidad" en la FRASE.
+REGLAS INQUEBRANTABLES de las FRASES:
+• PROHIBIDO!! Dentro de la frase NO puede estar la PALABRA! ej. si la PALABRA es "Tranquilidad", no puede estar "Tranquilidad" en la FRASE.
 • Que analices PROFUNDAMENTE e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo. dale al lector la percepción total de que el mismisimo autor de el libro en cuestión escribió todo!
 • Longitud random 50-85 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
