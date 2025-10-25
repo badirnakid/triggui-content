@@ -1,31 +1,413 @@
 {
   "libros": [
     {
-      "titulo": "LIT Life ignition tools",
-      "autor": "Jeff Karp",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/21/9e/74/219e74c0-0074-2855-fd9e-2995c19f9245/9788417992361.jpg/626x0w.jpg",
-      "tagline": "Cómo puedes lograr un mayor rendimiento mental y creatividad en un mundo lleno de distracciones de fechas límite constantes de tiempo perdido en las redes",
+      "titulo": "No pongas un punto donde Dios puso una coma",
+      "autor": "Shiva Ryu",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/32/af/11/32af11b2-d6f0-18f6-4be7-0b8d1fb33671/9788411190046.jpg/626x0w.jpg",
+      "tagline": "que podemos aprender a reconocer lo bueno en lo supuestamente malo. Aunque a veces la vida parece llevarnos por un camino que no es parte de nuestro plan ese camino incomprensible para nuestra cabeza es precisamente el que anhela nuestro corazón.",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "resiliencia",
+        "esperanza",
+        "curiosidad",
+        "gratitud"
+      ],
+      "frases": [
+        "🌱 Abre tu corazón a nuevas oportunidades, porque lo que parece un tropiezo puede ser el inicio de algo grandioso.",
+        "✨ Reflexiona sobre 3 situaciones que pensaste que eran negativas y elige ver su luz oculta.",
+        "🔍 Cuando crees que todo se desmorona, recuerda que a menudo eso es solo un renacer disfrazado de despedida.",
+        "💖 Valora los momentos difíciles, pues en ellos se encuentra la magia de la transformación y el descubrimiento."
+      ],
+      "colores": [
+        "#6A5ACD",
+        "#FFD700",
+        "#FF6347",
+        "#20B2AA"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Algunos momentos exigen un giro inesperado en nuestras decisiones. En \"No pongas un punto donde Dios puso una coma\" de Shiva Ryu, se plantea que la vida a menudo requiere un enfoque flexible y creativo.",
+        "subtitulo": "Abre tu mente",
+        "parrafoBot": "Cuando te encuentres ante un obstáculo, considera que puede haber otra opción. En lugar de rendirte o limitarte, busca esa posibilidad que pueda cambiar tu rumbo. Es tu momento para tomar una decisión que refleje esa creatividad innata que todos poseemos.",
+        "style": {
+          "accent": "#a10a84",
+          "ink": "#f1f1f1",
+          "paper": "papel espectral en neón",
+          "border": "cromo prisma vibrante",
+          "serif": "Miriam Libre",
+          "sans": "Futura Variations",
+          "marco": "foil dorado pulsante",
+          "fontSizeTitle": "cosmic giant 45–120px",
+          "fontSizeBody": "susurro cósmico 10–28px",
+          "fontWeight": "peso fractal 700",
+          "lineHeight": "expansión nebulosa 1.4",
+          "letterSpacing": "interludio +3px",
+          "textTransform": "mixed dynamic",
+          "textShadow": "blur multidimensional",
+          "layout": "collage efímero",
+          "showCover": false,
+          "ornamentFlux": "holograma líquido etéreo",
+          "glowAura": "halo verde vibrante en movimiento",
+          "dreamGrain": "ruido onírico granuloso",
+          "quantumSpacing": "espacio fluctuante de 0.5em",
+          "neonWhisper": "susurro de neón en acción",
+          "animationHint": "breathe fluido constante",
+          "texture": "papel antiguo con fracturas digitales",
+          "surprise": "fragmento incompleto de relato"
+        }
+      }
+    },
+    {
+      "titulo": "Conecta con la motivación",
+      "autor": "Brian Tracy",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/1e/05/db/1e05dbe3-8c52-861b-70ab-0f45aad36af9/9786073820035.jpg/626x0w.jpg",
+      "tagline": "La mayoría de las personas afirma que quiere ser exitosa y feliz. Sin embargo son pocos los capaces de sostener esfuerzos prolongados para lograr sus metas. El problema central radica en mantener la motivación sin importar cuántas dificultades surjan en el camino. Brian Tracy experto mundial en desarrollopersonal nos muestra cómo salvar la brecha entre lo que decimos que queremos y lo que debemos hacer para lograrlo que a menudo requiere retrasar la gratificación temporal y las soluciones rápidas para obtener una felicidad y un éxito duraderos.",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "persiste",
+        "enfócate",
+        "avanza",
+        "crea"
+      ],
+      "frases": [
+        "💪 Persiste en tu camino, la recompensa está más allá de los desafíos.",
+        "🎯 Enfócate en lo que verdaderamente deseas; los resultados llegan a quienes no se detienen.",
+        "🚀 Avanza con determinación, cada paso cuenta hacia tu éxito.",
+        "✨ Crea la vida que sueñas al priorizar tus metas y trabajar diariamente por ellas."
+      ],
+      "colores": [
+        "#F15BB5",
+        "#FBBF24",
+        "#4DABEF",
+        "#3A0CA3"
+      ],
+      "fondo": "#0D1B2A",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Cuando decidimos tomar el control de nuestras vidas, el verdadero impulso proviene de dentro. El libro de Brian Tracy habla de esto: no se trata solo de querer, sino de comprometernos con acciones concretas.",
+        "subtitulo": "Acción y compromiso",
+        "parrafoBot": "Identifica un objetivo específico y da el primer paso hoy mismo. Si lo haces con determinación, el cambio comienza en este instante. No esperes a que llegue la oportunidad; crea tu propia oportunidad.",
+        "style": {
+          "accent": "#3cddc4",
+          "ink": "#2e2e2e",
+          "paper": "papel nebuloso de ensueño",
+          "border": "aurora polar etérea",
+          "serif": "Playfair Display",
+          "sans": "Poppins",
+          "marco": "glitch radical",
+          "fontSizeTitle": "gigante cuántico 100px",
+          "fontSizeBody": "susurro oculto 10–28px",
+          "fontWeight": "peso pulsante 850",
+          "lineHeight": "susurro del viento 1.5",
+          "letterSpacing": "distancia estelar +3px",
+          "textTransform": "mixed surrealista",
+          "textShadow": "neon nebuloso",
+          "layout": "collage fractal vibrante",
+          "showCover": false,
+          "ornamentFlux": "destellos holográficos espontáneos",
+          "holoInk": "tinta lumínica fugaz",
+          "warpGrid": "grid elástico cuántico",
+          "prismPulse": "pulso de prismas oscilantes",
+          "dreamGrain": "grano de sueño onírico",
+          "animationHint": "breathe holográfico",
+          "texture": "liquido cristalino interactivo",
+          "surprise": "fragmentos de palabras perdidas"
+        }
+      }
+    },
+    {
+      "titulo": "Sin filtro",
+      "autor": "Sarah Frier",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/22/19/01/221901bb-8836-7a74-5ad2-e6bd055f10be/9788417992217.jpg/626x0w.jpg",
+      "tagline": "La historia secreta de Instagram",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "calma",
+        "ansiedad",
+        "impacto",
+        "comunidad"
+      ],
+      "frases": [
+        "🌟 Abre los ojos a un mundo oculto detrás de la pantalla que transforma conexiones. Hay más de lo que se ve.",
+        "🔍 Sumérgete en el entramado de la red social que moldeó cómo compartimos nuestros momentos, recuerdos y vidas.",
+        "📊 Descubre cómo la presión social en línea impacta nuestras relaciones y la forma en que nos expresamos. Observa y reflexiona.",
+        "💬 Pregúntate cómo la comunidad virtual puede influir en nuestra realidad: las decisiones, las emociones y las conexiones auténticas."
+      ],
+      "colores": [
+        "#F25F5C",
+        "#F3B562",
+        "#F1E3C9",
+        "#E6B89C"
+      ],
+      "fondo": "#1A1A1D",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Las redes sociales pueden ser herramientas poderosas si sabes utilizarlas a tu favor. A menudo, las distracciones nos alejan de nuestro propósito real.",
+        "subtitulo": "Conexión auténtica",
+        "parrafoBot": "Reflexiona sobre cómo te relacionas con la tecnología. Pregúntate si realmente estás aprovechando su potencial para crecer o si solo consumes sin rumbo. Encuentra un balance y comienza a usar tus plataformas de forma intencionada.",
+        "style": {
+          "accent": "#ff4e50",
+          "ink": "#1b1b1b",
+          "paper": "mar de esferas etéreas",
+          "border": "brillo ultravioleta en espiral",
+          "serif": "Bodoni",
+          "sans": "Futura",
+          "marco": "corte en 3D",
+          "fontSizeTitle": "clamp(35px,10vw,150px)",
+          "fontSizeBody": "susurro vibrante 10–28px",
+          "fontWeight": "peso lumínico 800",
+          "lineHeight": "respiración amplia intensa 1.5",
+          "letterSpacing": "ecos espaciales +3px",
+          "textTransform": "mixed",
+          "textShadow": "neón danzante",
+          "layout": "collage dinámico",
+          "showCover": false,
+          "ornamentFlux": "burbujas de plasma aleatorio",
+          "glowAura": "destellos en cascada",
+          "quantumSpacing": "intersticios cuánticos 4px",
+          "holoInk": "tinta fluida cambiante",
+          "dreamGrain": "textura onírica y nebulosa",
+          "animationHint": "fluctuación de color etéreo",
+          "surprise": "fragmentos de realidad distorsionada"
+        }
+      }
+    },
+    {
+      "titulo": "Viaje al optimismo",
+      "autor": "Eduardo Punset",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/aa/72/44/aa7244fd-56eb-2411-8889-01c193e8d1d1/9788423346059.jpg/626x0w.jpg",
+      "tagline": "El pasado fue siempre peor y no hay duda de que el futuro será mejor. Ese mensaje orienta el Viaje al optimismo.En este viaje Punset desmiente que la crisis sea planetaria proclama la obligada redistribución del trabajo mientras la esperanza de vida aumenta dos años y medio cada década y recuerda que ya no es posible vivir sin las redes sociales.",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
-        "enfoque",
-        "creatividad",
-        "libertad",
-        "energía"
+        "esperanza",
+        "ansiedad",
+        "optimismo",
+        "futuro"
       ],
       "frases": [
-        "🚀 Respira hondo y siente cómo el enfoque despierta en ti, llevando tu mente a nuevas alturas.",
-        "🎨 Imagina que la creatividad es una chispa. Enciéndela y observa cómo transforma tu día a día.",
-        "🌈 Agradece las pequeñas libertades que te permiten jugar y explorar. Cada una cuenta en el viaje hacia el máximo rendimiento.",
-        "⚡ Desata tu energía interior eligiendo 3 momentos para desconectar y conectar contigo mismo."
+        "🌱 Abre la mente a la certeza de que cada día trae nuevas oportunidades.",
+        "🌞 Deja que la luz de lo posible ilumine tu camino hacia un futuro radiante.",
+        "🌍 Mira hacia adelante y recuerda: el cambio es constante y siempre puede ser positivo.",
+        "✨ Recuerda tres cosas que hoy te hagan sentir afortunado y verás que el optimismo crece."
+      ],
+      "colores": [
+        "#FF9A00",
+        "#FDE24D",
+        "#36B5E8",
+        "#3AEB89"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Reflexionar sobre cómo abordamos las dificultades puede transformar nuestra realidad. En \"Viaje al optimismo\" de Eduardo Punset, encontramos que una mentalidad positiva no es solo un estado emocional, sino una herramienta activa.",
+        "subtitulo": "Activa tu mentalidad ",
+        "parrafoBot": "Cada desafío es una oportunidad disfrazada. Para avanzar, identifica una situación difícil y replantea tu perspectiva. Pregúntate cómo puedes extraer algo positivo de ello. Ese es el primer paso para cultivar el optimismo en tu vida diaria.",
+        "style": {
+          "accent": "#a63e97",
+          "ink": "#111111",
+          "paper": "neblina de medianoche con destellos",
+          "border": "plasma verde eléctrico",
+          "serif": "Bodoni XT",
+          "sans": "Poppins",
+          "marco": "cutout orgánico",
+          "fontSizeTitle": "ultra gigante cósmico 120px",
+          "fontSizeBody": "susurro mínimo 10–28px",
+          "fontWeight": "peso espectral 800",
+          "lineHeight": "breathe 2.0",
+          "letterSpacing": "abismo de +3px",
+          "textTransform": "liquido-invertido",
+          "textShadow": "neon pulsante",
+          "layout": "collage orgánico",
+          "showCover": false,
+          "ornamentFlux": "estrellas fractales danzantes",
+          "glowFlux": "halo magenta efervescente",
+          "quantumSpacing": "espaciado cuántico irregular",
+          "dreamGrain": "textura de nube soñadora",
+          "animationHint": "flicker cuántico infinito",
+          "holoInk": "tinta holográfica vibrante",
+          "fractureWeight": "peso fracturado 720",
+          "surprise": "fragmento tipográfico caído en tiempo"
+        }
+      }
+    },
+    {
+      "titulo": "Recupera tu poder",
+      "autor": "Rut Nieves",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/2d/4b/762d4b59-2d7a-68b9-71b4-940ac0fffaf0/9788408265122.jpg/626x0w.jpg",
+      "tagline": " nuestra mente ha sido condicionada con creencias muy limitantes que nos han llevado a olvidar nuestras verdaderas capacidades y a desconectarnos de nuestra sabiduría interior intuición e instinto. Las herramientas que contiene Recupera tu poder te ayudarán a conectar con tu fuerza vital tu confianza interior y tu claridad para que puedas avanzar con alegría y decisión hacia la vida que de corazón deseas y mereces vivir:tu propia vida.",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "calma",
+        "claridad",
+        "confianza",
+        "sabiduría"
+      ],
+      "frases": [
+        "✨ Descubre cómo tu fuerza interior ilumina cada paso que das hacia tus sueños.",
+        "🌟 Siembra claridad en tu mente y observa cómo florecen tus decisiones con cada aliento.",
+        "💪 Nutre tu confianza y siente cómo el mundo se alinea a tu propósito.",
+        "🌈 La sabiduría interna es el mapa que te guía hacia la vida que realmente deseas."
       ],
       "colores": [
         "#FF6F61",
-        "#6B5B93",
-        "#88B04B",
-        "#F7CAC9"
+        "#6A0572",
+        "#F8A3B0",
+        "#2A9D8F"
       ],
-      "fondo": "#2C3E50",
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Enfrentar los propios miedos puede abrir puertas inesperadas. En \"Recupera tu poder\" de Rut Nieves, se enfatiza la necesidad de tomar acción a pesar de las dudas. ",
+        "subtitulo": "Toma decisiones que transformen tu vida",
+        "parrafoBot": "Identifica un área en la que sientas que te limitas y establece un pequeño paso hacia adelante. Actuar es la clave para recuperar ese control perdido.",
+        "style": {
+          "accent": "#00ff5c",
+          "ink": "#1a1a1a",
+          "paper": "nebulosa etérea",
+          "border": "plasma líquido iridiscente",
+          "serif": "Playfair Display",
+          "sans": "Futura",
+          "marco": "glitch elegante",
+          "fontSizeTitle": "gigante etéreo 40–150px",
+          "fontSizeBody": "susurro intenso 10–24px",
+          "fontWeight": "peso cuántico 700",
+          "lineHeight": "respiración galáctica 1.8",
+          "letterSpacing": "viento entre letras 1.5px",
+          "textTransform": "mixed-infinite",
+          "textShadow": "blur cósmico suave",
+          "layout": "collage dimensional",
+          "showCover": false,
+          "ornamentFlux": "dibujos abstractos vibrantes",
+          "glowAura": "halo verde brillante",
+          "quantumSpacing": "espacio cuántico dinámico",
+          "fontWarp": "deformación mágica 15%",
+          "animationHint": "respirar holográfico",
+          "texture": "metal líquido viscoso",
+          "surprise": "fragmento de luz flotante"
+        }
+      }
+    },
+    {
+      "titulo": "La nueva ciencia de la atención",
+      "autor": "Amishi Jha",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/1a/dc/16/1adc1662-58c3-8552-824a-a577bbf03623/9788449340789.jpg/626x0w.jpg",
+      "tagline": "Desde la constante reclamación de atención de la tecnología hasta las 24 horas de titulares constantes y las abrumadoras exigencias del trabajo a nuestra capacidad de concentración se le exige más que nunca. Estamos sufriendo un trastorno colectivo de déficit de atención que nos hace sentir dispersos abrumados y ansiosos pero incapaces de resistirse a distracciones como los correos electrónicos las videollamadas los mensajes o las notificaciones.A menos que creemos espacio en nuestra mente mediante una práctica diaria específica y dirigida no podremos controlar lo que capta nuestra atención. ",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "dispersión",
+        "abrumo",
+        "curiosidad",
+        "gratitud"
+      ],
+      "frases": [
+        "🧠 Respira profundamente y enfoca tu mente en una sola tarea por unos momentos.",
+        "💡 Cuando te sientas disperso, elige conscientemente dónde dirigir tu atención.",
+        "✨ Cada pequeño gesto cuenta, como dar un paso hacia la calma, respira 3x para reconectar.",
+        "🌿 Al desconectarte de las notificaciones, permites que tu mente recupere su espacio creativo."
+      ],
+      "colores": [
+        "#1D4E89",
+        "#FF6B35",
+        "#F1C40F",
+        "#9B59B6"
+      ],
+      "fondo": "#0A0A0A",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La atención es clave en todo lo que hacemos. No la descuides.  ",
+        "subtitulo": "Descubre tu enfoque  ",
+        "parrafoBot": "Una lectura reciente sobre atención me hizo cuestionar cómo priorizo mis energías. Una práctica simple puede ser establecer bloques de tiempo dedicados a tareas específicas, sin distracciones. Hazlo y observa cómo mejora tu productividad y bienestar.",
+        "style": {
+          "accent": "#29ff68",
+          "ink": "#ffffff",
+          "paper": "papel de neón estelar",
+          "border": "oro fractal pulsante",
+          "serif": "Bodoni Moda",
+          "sans": "Futura Now",
+          "marco": "glitch sutil",
+          "fontSizeTitle": "ultra titanesco 48px",
+          "fontSizeBody": "susurro mínimo 10–28px",
+          "fontWeight": "peso cúbico 750",
+          "lineHeight": "respiración envolvente 1.8",
+          "letterSpacing": "vacío profundo 3px",
+          "textTransform": "mixed chaos",
+          "textShadow": "neón flotante",
+          "layout": "collage tridimensional",
+          "showCover": false,
+          "ornamentFlux": "flujo de vapor de color",
+          "holoInk": "tinta holográfica que respira",
+          "glowAura": "aura luminosa radiante",
+          "quantumSpacing": "espacio cuántico fluctuante",
+          "dreamGrain": "textura de nube onírica",
+          "animationHint": "respirar holográficamente",
+          "metaShadow": "sombra crujiente distorsionada",
+          "surprise": "fragmento ilusorio y resonante"
+        }
+      }
+    },
+    {
+      "titulo": "Jugarse la piel",
+      "autor": "Nassim Nicholas Taleb",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/5c/48/b2/5c48b27d-8c15-6139-d294-828ab38bbe26/9788449335709.jpg/626x0w.jpg",
+      "tagline": "En uno de sus libros más provocadores el famoso pensador Nassim Nicholas Taleb redefine lo que significa comprender el mundo tener éxito en una profesión contribuir a una sociedad justa y equitativa detectar el absurdo e influir en los demás Demuestra cómo la voluntad de aceptar los propios riesgos es un atributo esencial de héroes santos e individuos prósperos en todos los ámbitos de la sociedad.",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "valentía",
+        "autenticidad",
+        "desafío",
+        "gratitud"
+      ],
+      "frases": [
+        "🌟 Atrévete a ser auténtico, el mundo necesita tu verdad.",
+        "🔥 La valentía se forja en los desafíos, es el fuego que nos transforma.",
+        "🧩 Aceptar riesgos es el primer paso para construir un futuro significativo.",
+        "🚀 Cuando eliges jugarte la piel, te conviertes en el héroe de tu propia historia."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6F5B7F",
+        "#88B04B",
+        "#F6D55C"
+      ],
+      "fondo": "#111111",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -33,54 +415,55 @@
         "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "Las decisiones pequeñas pueden cambiar tu vida. A veces, es el paso más sencillo lo que te mueve a tu verdadero ser.  ",
-        "subtitulo": "Un camino hacia la autenticidad  ",
-        "parrafoBot": "La lectura de \"LIT Life ignition tools\" de Jeff Karp me hizo cuestionar cómo cada día es una oportunidad para actuar. Hoy es el momento ideal para dar ese paso que llevas postergando y que puede transformar tu realidad.",
+        "parrafoTop": "La vida se trata de exponerse y tomar decisiones valientes. Jugarse la piel es fundamental.",
+        "subtitulo": "Decisión y compromiso",
+        "parrafoBot": "No temas equivocarte al arriesgarte. En lugar de buscar la seguridad, abraza la incertidumbre y aprende de cada experiencia. Es tu camino hacia el crecimiento personal.",
         "style": {
-          "accent": "#e53e3e",
-          "ink": "#ffffff",
-          "paper": "neblina auroral",
-          "border": "vapor metálico iridiscente",
-          "serif": "Bodoni Moda",
-          "sans": "Roboto Mono",
-          "marco": "pixelado retro",
-          "fontSizeTitle": "colosal astronómico 50–200px",
-          "fontSizeBody": "susurro sutil 10–25px",
-          "fontWeight": "peso abstracto 700",
-          "lineHeight": "fluctuación infinita 2.2",
-          "letterSpacing": "espacio cuántico +1.5px",
-          "textTransform": "mixed whimsical",
-          "textShadow": "holo neón vibrante",
-          "layout": "collage caos armonioso",
+          "accent": "#ff5e3a",
+          "ink": "#1f1f1f",
+          "paper": "espectro nocturno con destellos cósmicos",
+          "border": "holograma líquido brillante",
+          "serif": "BodoniXT",
+          "sans": "Orbitron",
+          "marco": "foileado 3D",
+          "fontSizeTitle": "gigante cuántico 100px",
+          "fontSizeBody": "susurro luminoso 10–24px",
+          "fontWeight": "peso onírico 850",
+          "lineHeight": "expansión etérea 1.8",
+          "letterSpacing": "distancia cuántica +4px",
+          "textTransform": "liquido-fluido",
+          "textShadow": "neón etéreo pulsante",
+          "layout": "collage cinético",
           "showCover": false,
-          "ornamentFlux": "serpenteo floral fractal",
-          "dreamGrain": "granulado etéreo",
-          "quantumSpacing": "oscilación 0.4em",
-          "glowFlux": "aura cálida fluctuante",
-          "animationHint": "flicker interdimensional",
-          "texture": "papel nebuloso interactivo",
-          "surprise": "fragmento ilusorio de sueños"
+          "ornamentFlux": "doodles impredecibles cromados",
+          "glowFlux": "brillo anaranjado vibrante",
+          "quantumSpacing": "salto temporal 3px",
+          "fontFlux": "marea tipográfica 18px–120px",
+          "dreamGrain": "textura de nube digital",
+          "animationHint": "breathe lumínico dinámico",
+          "metaShadow": "sombra de plasma interdimensional",
+          "surprise": "fragmento textural desplazado"
         }
       }
     },
     {
-      "titulo": "La vida bien vivida",
-      "autor": " Gladys McGarey",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/8d/53/bf/8d53bfba-60e6-412d-1100-629eae4279a6/9786073902199.jpg/626x0w.jpg",
-      "tagline": "La salud no requiere vivir en un cuerpo libre de problemas así como la felicidad no requiere que vivamos una vida libre de dificultades.La doctora Gladys McGarey madre de la medicina holística es una de las médicas más activas y reconocidas en el mundo. A sus 102 años revela los secretos sobre cómo vivir con alegría vitalidad y con un propósito a cualquier edad. Su enfoque parece opuesto a la intuición: para vivir una vida plena y sin enfermedades no conserves energía empléala sin restricciones; en lugar de buscar reconocimientos individuales trabaja en equipo; permanecer en tu zona de confort te atará a tus dolores solo el movimiento te ayudará a superarlos.",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
+      "titulo": "El cuerpo habla",
+      "autor": "Joe Navarro",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/95/37/71/953771b5-5e9a-06f6-8133-7ac1fee65d3f/1017170810.jpg/626x0w.jpg",
+      "tagline": "Grandes secretos de la comunicación no verbal revelados por un exagente del FBI",
+      "dimension": "Conexión",
+      "punto": "Creativo",
       "palabras": [
-        "vitalidad",
-        "alegría",
-        "propósito",
+        "curiosidad",
+        "ansiedad",
+        "curiosidad",
         "gratitud"
       ],
       "frases": [
-        "🌼 Abre tus brazos a cada nuevo día y deja que la vida te llene de energía positiva.",
-        "🌈 Permítete sentir la felicidad en cada pequeño gesto, el amor es el motor de tu ser.",
-        "🌟 Hoy es el momento ideal para abrazar el movimiento, un paso hacia tu bienestar pleno.",
-        "✨ Siembra propósito en tus acciones, juntos somos más fuertes que separados."
+        "👀 Mira más allá de las palabras y descubre el mensaje oculto en cada gesto.",
+        "💡 Cada mirada es una pista; agudiza tus sentidos y conecta profundamente con los demás.",
+        "📖 Escucha lo que el cuerpo dice: es un libro abierto lleno de secretos por desvelar.",
+        "🌍 ¿Qué revelan las posturas de quienes te rodean? Presta atención y comprenderás su historia."
       ],
       "colores": [
         "#FF6B6B",
@@ -96,803 +479,97 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "Es vital priorizar tu bienestar.  ",
-        "subtitulo": "Crea un espacio para ti.  ",
-        "parrafoBot": "El primer paso hacia una vida plena es el autocuidado. Dedica tiempo a conocerte, a escuchar tus necesidades y a hacer pequeños ajustes que te acerquen a la vida que deseas. Te sorprenderá el cambio que esto puede traer.",
+        "parrafoTop": "A veces, los gestos dicen más que las palabras. Joe Navarro, en \"El cuerpo habla\", nos invita a prestar atención a las señales que emitimos sin saberlo. ",
+        "subtitulo": "Escucha con tu cuerpo",
+        "parrafoBot": "Cada movimiento o postura puede influir en cómo te perciben. Al tomar conciencia de esto, puedes mejorar tus interacciones diarias y fortalecer conexiones auténticas. Revisa tu lenguaje corporal y ajusta lo necesario para comunicarte con más efectividad.",
         "style": {
-          "accent": "#39ff14",
-          "ink": "#121212",
-          "paper": "cielo turbulento con destellos estelares",
-          "border": "cromo rosa metamórfico",
-          "serif": "Bodoni",
-          "sans": "Futura Fluid",
-          "marco": "cutout con holograma",
-          "fontSizeTitle": "supernova expansiva 50px",
-          "fontSizeBody": "susurro distante 10–28px",
-          "fontWeight": "peso etéreo 700",
-          "lineHeight": "respiración mística 1.4",
-          "letterSpacing": "abismo iluminado +3px",
-          "textTransform": "mixed",
-          "textShadow": "neon psicodélico vibrante",
-          "layout": "collage cósmico",
-          "showCover": false,
-          "coverStyle": "pixelated caos",
-          "ornamentFlux": "doodles cósmicos erráticos",
-          "glowFlux": "halo verde eléctrico en expansión",
-          "dreamGrain": "textura de nube etérea",
-          "quantumSpacing": "distancia cuántica variable",
-          "animationHint": "flicker intergaláctico",
-          "texture": "papel de espejo liquido",
-          "surprise": "fragmento incompleto de poema holográfico"
-        }
-      }
-    },
-    {
-      "titulo": "Objections",
-      "autor": "Jeb Blount",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/e3/81/ef/e381ef86-1d0d-3def-e0cb-5fe25748b832/9781119477372.jpg/626x0w.jpg",
-      "tagline": "you ll learn a new psychology for turning-around objections and proven techniques that work with todays more informed in control and skeptical buyers",
-      "dimension": "Conexión",
-      "punto": "Creativo",
-      "palabras": [
-        "escepticismo",
-        "ansiedad",
-        "curiosidad",
-        "confianza"
-      ],
-      "frases": [
-        "🧩 Mira la objeción como una pista hacia la conexión auténtica.",
-        "🌈 Reconoce que cada duda trae consigo una oportunidad de confianza mutua.",
-        "🕊️ Escuchar con el corazón puede deshacer los nudos de desconfianza.",
-        "📈 Al enfrentarte a un 'no', abre las puertas a una conversación sincera y transformadora."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6B5B95",
-        "#88B04B",
-        "#F7CAC9"
-      ],
-      "fondo": "#3A3A3A",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "La incertidumbre puede paralizarte, pero el crecimiento ocurre al actuar. Acepta el desafío, sugiere Jeb Blount en \"Objections\".",
-        "subtitulo": "Supera la resistencia",
-        "parrafoBot": "Tu próximo paso es elegir una objeción que te detiene y abordarla directamente. Actuar te liberará y abrirá nuevas oportunidades. Enfrentar el temor trae resultados sorprendentes.",
-        "style": {
-          "accent": "#a64dff",
-          "ink": "#1c1c1c",
-          "paper": "papel espectral con destellos estelares",
-          "border": "cromo multicolor pulsante",
-          "serif": "Bodoni XT",
-          "sans": "Vespera",
-          "marco": "foil ondulado",
-          "fontSizeTitle": "gigante cósmico 40px",
-          "fontSizeBody": "susurro mínimo 10–28px",
-          "fontWeight": "peso gravitacional 800",
-          "lineHeight": "respiración estrecha 1.2",
-          "letterSpacing": "distancia cuántica +3px",
-          "textTransform": "mixed",
-          "textShadow": "blur fantasmal suave",
-          "layout": "collage roto",
-          "showCover": false,
-          "ornamentFlux": "destellos de cristal inesperados",
-          "glowFlux": "aura violetada vibrante",
-          "metaShadow": "sombra fragmentada en capas",
-          "prismPulse": "palpitación de color espectral",
-          "animationHint": "breathe etéreo",
-          "texture": "ruido digital 8bit",
-          "surprise": "fragmento incompleto de una historia visual"
-        }
-      }
-    },
-    {
-      "titulo": "Miedo",
-      "autor": "Osho",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/a8/19/b2/a819b29a-1104-1d15-2d07-47875ddaa196/9788499892948.jpg/626x0w.jpg",
-      "tagline": "La vida es inseguridad. Cada nueva situación nos lleva a una inseguridad más profunda que la anterior. Es un juego en el que nadie sabe cuál será el siguiente paso. ¡En esto radica la belleza de la existencia! Si fuera predecible no valdría la pena vivir; si todo fuera tal y como deseáramos y no hubiese lugar para la incertidumbre no seríamos seres humanos sino máquinas ya que solo para ellas todo es seguro y cierto.El hombre vive en libertad. La libertad necesita inseguridad e incertidumbre.",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "inquietud",
-        "libertad",
-        "valentía",
-        "gratitud"
-      ],
-      "frases": [
-        "🌈 Explora lo desconocido y siente el viento de la aventura en tu rostro.",
-        "🌻 Da un paso adelante hacia tus sueños, ¡cada temor es solo una oportunidad para crecer!",
-        "✨ Juega con la vida, porque en cada incertidumbre hay un regalo escondido esperando ser descubierto.",
-        "🎈 Anímate a brillar y descubre que la inseguridad es la chispa que enciende la llama de la valentía."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6B5B95",
-        "#88B04B",
-        "#F7CAC9"
-      ],
-      "fondo": "#1C1C1E",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "El miedo no tiene que paralizarte; puede ser un motor para tu crecimiento. Lo aprendido en \"Miedo\" de Osho invita a ver este sentimiento como una oportunidad.  ",
-        "subtitulo": "El poder del miedo  ",
-        "parrafoBot": "Cuando sientes temor, pregúntate: ¿qué paso pequeño puedo dar hacia adelante? La acción, aunque sea mínima, puede cambiar tu perspectiva y abrirte nuevas puertas.",
-        "style": {
-          "accent": "#c70039",
-          "ink": "#ffffff",
-          "paper": "tinta de estrellas en papel neón",
-          "border": "cromo iridiscente",
-          "serif": "Garamond V",
+          "accent": "#f45d01",
+          "ink": "#f2f2f2",
+          "paper": "nube de tinta espacial",
+          "border": "oro cósmico desvanecido",
+          "serif": "Playfair Display",
           "sans": "Avenir Next",
-          "marco": "foiled aurora",
-          "fontSizeTitle": "gigante de mil colores",
-          "fontSizeBody": "susurro mínimo 10–24px",
-          "fontWeight": "peso espectral 700",
-          "lineHeight": "vibración profunda 1.2",
-          "letterSpacing": "salto dimensional +4px",
-          "textTransform": "mixed quantum",
-          "textShadow": "holográfico sutil",
-          "layout": "collage cósmico",
-          "showCover": false,
-          "coverStyle": "pixelated retro-futurista",
-          "glowFlux": "resplandor ácido constante",
-          "quantumSpacing": "distancia cuántica 0.15em",
-          "dreamGrain": "textura de nube de sueños",
-          "ornamentFlux": "esquirlas de luz errantes",
-          "fractalWeight": "grosor fractal 850",
-          "animationHint": "breathe de holograma fugaz",
-          "texture": "ruido analógico psicodélico",
-          "surprise": "fragmento holográfico del infinito"
-        }
-      }
-    },
-    {
-      "titulo": "Los 7 hábitos de la gente altamente efectiva",
-      "autor": "Stephen R. Covey",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/93/2a/9f/932a9fa0-7d30-41f0-3067-db7236c3117a/9788449330605.jpg/626x0w.jpg",
-      "tagline": "si queremos modificar una situación deberemos cambiarnos a nosotros mismos y para ello es necesario que cambiemos también nuestras percepciones Así lograremos desarrollar nuestra autoconfianza nuestro carácter nuestra integridad nuestra honestidad y nuestra dignidad para transformar nuestro universo laboral en algo auténtico e intransferible",
-      "dimension": "Conexión",
-      "punto": "Máximo",
-      "palabras": [
-        "autenticidad",
-        "confianza",
-        "curiosidad",
-        "integridad"
-      ],
-      "frases": [
-        "🌟 Reconoce que el cambio comienza desde adentro. Respira y observa lo que realmente sientes. ✨",
-        "💪 Fortalece tu esencia cada día, pues cada pequeña acción cuenta. Hazlo por 3 cosas que te muevan hoy. 🌈",
-        "🎈 Da el primer paso hacia la grandeza, haz algo auténtico y significativo. Puedes lograrlo si eliges hoy actuar. 🌍",
-        "🔑 La clave para transformar tu mundo laboral es elevarte con confianza. Anota 3 cualidades que admiras de ti mismo y siéntete libre. 🌼"
-      ],
-      "colores": [
-        "#FFD700",
-        "#4B0082",
-        "#FF6347",
-        "#00FA9A"
-      ],
-      "fondo": "#1D3557",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Cada decisión tiene impacto. Esto me recuerda al trabajo de Covey, donde nos enseña a ser proactivos y enfocados.  ",
-        "subtitulo": "Elige ser tú quien determina tus resultados.  ",
-        "parrafoBot": "Afronta la vida desde tu centro, estableciendo prioridades y tomando decisiones alineadas con tus valores. La acción clara y consciente genera cambios positivos.",
-        "style": {
-          "accent": "#32ff7e",
-          "ink": "#101820",
-          "paper": "papel etéreo de medianoche",
-          "border": "holograma prisma",
-          "serif": "Bodoni XT",
-          "sans": "Neon Dreams",
-          "marco": "shadow radial",
-          "fontSizeTitle": "gigante cósmico 48–150px",
+          "marco": "shadow multicolor",
+          "fontSizeTitle": "gigante estelar 50px",
           "fontSizeBody": "susurro mínimo 14–28px",
-          "fontWeight": "peso fractal 750",
-          "lineHeight": "respiración rítmica 1.8",
-          "letterSpacing": "espacio cósmico +3px",
+          "fontWeight": "peso surrealista 750",
+          "lineHeight": "fluidez cuántica 1.8",
+          "letterSpacing": "fractura etérea +3px",
           "textTransform": "mixed surrealista",
-          "textShadow": "neon pulsante",
-          "layout": "collage caleidoscópico",
+          "textShadow": "neón danzante",
+          "layout": "collage irregular",
           "showCover": false,
-          "ornamentFlux": "doodles vibrantes inesperados",
-          "glowFlux": "halo verdoso fluctuante",
-          "metaShadow": "sombra de vapor difusa",
-          "quantumSpacing": "espaciado aleatorio 0.5em",
-          "fontFlux": "variable entre 18px–160px",
-          "animationHint": "breathe psicodélico",
-          "texture": "ruido digital abstracto",
-          "surprise": "fragmento tipográfico borroso con eco"
+          "ornamentFlux": "espiral de energía",
+          "glowAura": "resplandor cian fugaz",
+          "holoInk": "tinta holográfica interactiva",
+          "prismPulse": "latido prismático lento",
+          "dreamGrain": "textura onírica granulada",
+          "animationHint": "breathe ethereal ripple",
+          "metaShadow": "sombra fractal errante",
+          "surprise": "fragmento incompleto de un universo perdido"
         }
       }
     },
     {
-      "titulo": "El libro del ego",
-      "autor": "Osho",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/ae/35/74/ae357431-4468-0e0a-b3e0-90926f95a5e7/9788425346125.jpg/626x0w.jpg",
-      "tagline": "Osho nos muestra el camino para liberarnos de nuestro ego y llegar a ser nosotros mismos.El ego es justo lo contrario de nuestro verdadero ser. El ego es un envoltorio de nuestra conciencia.Al ser un engaño el ego rehúye lo sencillo pues lo delata; lo difícil sí es un reto para él y lo imposible un reto de verdad. Cuanto mayor sea el reto que aceptemos mayor será el ego que estamos construyendo en nosotros mismos: es nuestra ambición la que dará la medida de nuestro ego que es también la medida de nuestro fracaso.",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "autenticidad",
-        "libertad",
-        "esencial",
-        "verdad"
-      ],
-      "frases": [
-        "🌱 El camino hacia lo auténtico empieza con un susurro de tu ser interior.",
-        "💫 Suelta el peso del disfraz y encuentra la ligereza en tu esencia.",
-        "🌈 Descubre el brillo de la verdad al dejar atrás el velo del ego: permite que surja lo sencillo.",
-        "✨ Abrázate con ternura, que tu verdadera naturaleza es un baile de luz y amor."
-      ],
-      "colores": [
-        "#FF6B6B",
-        "#FFD93D",
-        "#6BCB77",
-        "#6A0F8E"
-      ],
-      "fondo": "#0F1B1C",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Cuando asumimos la responsabilidad de nuestras acciones, encontramos claridad y paz interior. Osho nos muestra que el ego puede nublar nuestra verdadera esencia.",
-        "subtitulo": "Despierta tu autenticidad",
-        "parrafoBot": "La vida se simplifica al soltar las cargas innecesarias del ego. En lugar de aferrarte a creencias limitantes, haz espacio para nuevas experiencias. Da ese primer paso hacia lo auténtico y observa cómo cambia tu realidad.",
-        "style": {
-          "accent": "#34ebc6",
-          "ink": "#1c1c1c",
-          "paper": "nubes etéreas pulsantes",
-          "border": "plata líquida refractada",
-          "serif": "Playfair Display",
-          "sans": "Poppins",
-          "marco": "foil prismático",
-          "fontSizeTitle": "infinito radiante 40px–120px",
-          "fontSizeBody": "susurro del vacío 10–28px",
-          "fontWeight": "peso gravitacional 700",
-          "lineHeight": "ritmo de expansión 1.4",
-          "letterSpacing": "vínculo cósmico 3px",
-          "textTransform": "mixed lumínico",
-          "textShadow": "blur resplandor holográfico",
-          "layout": "collage caótico",
-          "showCover": false,
-          "ornamentFlux": "doodles espectrales impredecibles",
-          "holoInk": "tinta holográfica vibrante",
-          "quantumSpacing": "espaciado cuántico fluctuante",
-          "dreamGrain": "grano de sueño holográfico",
-          "fontFlux": "explosión tipográfica 15px–175px",
-          "animationHint": "respirar como un agujero negro",
-          "texture": "fractal acuático en movimiento",
-          "surprise": "palabras danzantes en el horizonte"
-        }
-      }
-    },
-    {
-      "titulo": "Tiende tu cama",
-      "autor": "William H. McRaven",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/d2/e2/47/d2e2479e-fed9-5ebf-5084-7a286a1ce089/9786070745133.jpg/626x0w.jpg",
-      "tagline": "valorar la compañía aceptar que el mundo no es justo afrontar el fracaso no darse por vencido y tender la cama",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "calma",
-        "resiliencia",
-        "compañía",
-        "valor"
-      ],
-      "frases": [
-        "🛏️ Tómate un momento para recordar que cada día comienza con un paso, ¡haz tu cama hoy! 👏",
-        "🌍 Alza la mirada, recuerda que el camino está lleno de desafíos, pero cada uno te fortalece. 💪",
-        "🤝 Busca a tu lado a quienes comparten este viaje; la compañía hace la carga más ligera. 🥰",
-        "🔥 Para avanzar, enfócate en lo que puedes lograr, respira y elige el siguiente paso, por pequeño que sea. ✨"
-      ],
-      "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#FF33A6",
-        "#3390FF"
-      ],
-      "fondo": "#11111d",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "No subestimes el impacto que tiene tu espacio en tu vida. Mantén orden en lo físico y mental para lograr tus metas. El cambio comienza con pequeños hábitos.  ",
-        "subtitulo": "El poder de los detalles.  ",
-        "parrafoBot": "Cada acción cuenta, incluso la más sencilla. A veces, una simple decisión puede marcar la diferencia en tu día y en tu vida. Empieza hoy por cuidar esos detalles.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#f4f4f4",
-          "paper": "cielo onírico vibrante",
-          "border": "oro espectral brillante",
-          "serif": "Playfair Display",
-          "sans": "Futura",
-          "marco": "pixelated dream",
-          "fontSizeTitle": "gigante cuántico 50px",
-          "fontSizeBody": "susurro luminoso 10–24px",
-          "fontWeight": "peso holográfico 700",
-          "lineHeight": "respiración íntima 1.4",
-          "letterSpacing": "abismo negativo -1px",
-          "textTransform": "mixed surreal",
-          "textShadow": "blur lumínico suave",
-          "layout": "collage frenético",
-          "showCover": false,
-          "coverStyle": "pixelated layers",
-          "holoInk": "tinta iridiscente oscura",
-          "quantumSpacing": "distorsión gravitacional 5px",
-          "glitchAura": "aura digital caótica",
-          "dreamGrain": "textura etérea como un susurro",
-          "prismPulse": "pulso prismático dinámico",
-          "animationHint": "breathe fragmentado",
-          "texture": "nebulosa vibrante de ruido",
-          "surprise": "fragmento poético en espejo roto"
-        }
-      }
-    },
-    {
-      "titulo": "Rejection Proof",
-      "autor": "Jia Jiang",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e0/90/f2/e090f237-a113-0def-3523-29651e6089f1/9780804141390.jpg/626x0w.jpg",
-      "tagline": "How I Beat Fear and Became Invincible Through 100 Days of Rejection",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "calma",
-        "valentía",
-        "aprendizaje",
-        "resiliencia"
-      ],
-      "frases": [
-        "🌟 Mira la vida como un juego lleno de aventuras. ¡Cada no es un paso más cerca de un sí! 🤩",
-        "💪 Si te caes, levántate y ríe. Cada tropiezo es una lección disfrazada. 😂",
-        "🎈 Con cada rechazo, creces más fuerte y brillante. No hay miedo que no puedas vencer. 🚀",
-        "🌈 Da el primer paso hacia lo desconocido y siente la emoción de descubrir. ¡Atrévete a explorar! ✨"
-      ],
-      "colores": [
-        "#FF5733",
-        "#FFC300",
-        "#DAF7A6",
-        "#581845"
-      ],
-      "fondo": "#0e0f1b",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Aceptar el rechazo como parte del proceso puede abrir puertas. En \"Rejection Proof\" de Jia Jiang, se explora cómo enfrentarse a esa incomodidad transforma la forma de relacionarse y avanzar.",
-        "subtitulo": "Enfrenta lo desconocido",
-        "parrafoBot": "Toma pequeños riesgos. Pide lo que deseas, ya sea una opinión o una colaboración. La clave está en desmitificar el rechazo y entender que cada intento es un paso hacia tu objetivo.",
-        "style": {
-          "accent": "#0effeb",
-          "ink": "#1e1e1e",
-          "paper": "papel cristalino espectral",
-          "border": "circuito radiante",
-          "serif": "Bodoni XT",
-          "sans": "Roboto Mono",
-          "marco": "brillo envolvente",
-          "fontSizeTitle": "gigante cuántico 50px",
-          "fontSizeBody": "susurro metálico 10–28px",
-          "fontWeight": "peso osmótico 850",
-          "lineHeight": "respiración etérea 1.8",
-          "letterSpacing": "fragmento -1px",
-          "textTransform": "mixed",
-          "textShadow": "neonWhisper vibrante",
-          "layout": "collage kaleidoscópico",
-          "showCover": false,
-          "ornamentFlux": "dibujos vibrantes inusuales",
-          "holoInk": "tinta iridiscente",
-          "dreamGrain": "textura de sueño pixelado",
-          "quantumSpacing": "distancia fluctuante 5px",
-          "fontFlux": "variación asimétrica 18px–200px",
-          "animationHint": "breathe holográfico",
-          "metaShadow": "sombra cósmica envolvente",
-          "surprise": "glitch tipográfico en espiral"
-        }
-      }
-    },
-    {
-      "titulo": "Piensa como un monje",
-      "autor": "Jay Shetty",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/90/4a/2b/904a2ba7-af01-b470-5cdc-0d5d3d7ff87f/9788425358296.jpg/626x0w.jpg",
-      "tagline": " cómo desarrollar tu poder cambiando tu enfoque de la autoimagen a la autoestima. Piensa como un monje te libera de la hipnosis del condicionamiento social y te ayuda a convertirte en el arquitecto de tu propia vida",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "libertad",
-        "confianza",
-        "autenticidad",
-        "gratitud"
-      ],
-      "frases": [
-        "🌱 Suelta las dudas y despierta tu esencia auténtica, es tiempo de brillar.",
-        "💪 Confía en ti mismo y observa cómo el universo se alinea con tu fuerza interior.",
-        "✨ Acepta cada parte de ti y descubre el poder transformador de tu verdadera identidad.",
-        "📚 Conecta con tu sabiduría interna, y elige construir el futuro que deseas en cada paso."
-      ],
-      "colores": [
-        "#FAD02E",
-        "#F8A3A3",
-        "#38B6FF",
-        "#F47B20"
-      ],
-      "fondo": "#1B1B1B",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Nuestros pensamientos influyen directamente en nuestras decisiones y, por ende, en nuestra vida. Es fundamental ser conscientes de lo que dejamos entrar en nuestra mente.  ",
-        "subtitulo": "Haz espacio para lo positivo.  ",
-        "parrafoBot": "Evalúa qué ideas y creencias son limitantes y trabaja en cambiarlas. Rodéate de influencias que alimenten tu crecimiento y bienestar.",
-        "style": {
-          "accent": "#4caf50",
-          "ink": "#ffffff",
-          "paper": "misterio oscuro como terciopelo",
-          "border": "holograma pulsante",
-          "serif": "Playfair Display",
-          "sans": "Montserrat Alternates",
-          "marco": "foil suave iridiscente",
-          "fontSizeTitle": "supernova 36–120px",
-          "fontSizeBody": "susurro espectral 10–24px",
-          "fontWeight": "peso cósmico 700",
-          "lineHeight": "ecos de luz 1.8",
-          "letterSpacing": "estrella fugaz +1.5px",
-          "textTransform": "mixed",
-          "textShadow": "neón profundo",
-          "layout": "collage fractal",
-          "showCover": false,
-          "ornamentFlux": "doodles lumínicos vibrantes",
-          "glowAura": "halo verde eléctrico constante",
-          "dreamGrain": "ruido suave de ensueño",
-          "prismPulse": "ritmo de colores cambiantes",
-          "quantumSpacing": "distancia cuántica +3px",
-          "animationHint": "breathe con eco temporal",
-          "texture": "papel texturizado metálico",
-          "surprise": "fragmento de luz que se escapa"
-        }
-      }
-    },
-    {
-      "titulo": "Hay tiempo",
-      "autor": "Jenny Blake",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/2c/ba/00/2cba0031-7acc-68f5-3a50-596fbc5a4ccf/1045156369.jpg/626x0w.jpg",
-      "tagline": "se trata de ser amable contigo y aprender a simplificar y agilizar los procesos lo más que puedas",
+      "titulo": "La vida minimal",
+      "autor": "Pedro Campos",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/28/38/9a/28389a46-4d6a-98eb-6ff5-15b8ce6a2b47/9786073171182.jpg/626x0w.jpg",
+      "tagline": "Qué pasaría si en lugar de ir en busca de más nos dedicáramos a disfrutar la riqueza de vivir con menos Qué pasaría si nos enfocáramos en lo que realmente vale la pena y dejáramos de acumular consumir y perseguir cosas que no tienen sentido",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
         "simplificar",
-        "ansiedad",
-        "cuidar",
-        "sonreír"
+        "valorar",
+        "sereneza",
+        "desapego"
       ],
       "frases": [
-        "🌈 Sonríe a cada paso, la amabilidad comienza contigo.",
-        "🚀 Agiliza tus días dejando ir lo que no necesitas y disfruta cada momento.",
-        "🌼 Cuida de ti mismo como lo harías con un amigo especial, ¡te lo mereces!",
-        "✨ Simplifica tu vida: respira, sonríe y vive lo esencial, como una melodía suave."
+        "🌱 Respira y observa la belleza de lo simple. La esencia se encuentra en lo pequeño.",
+        "✨ Reconoce que la felicidad no se mide en posesiones, sino en momentos significativos.",
+        "🌼 Piensa en 3 cosas que realmente te llenan, elige disfrutar de ellas cada día.",
+        "📖 Al abrir el corazón, lo esencial se vuelve evidente: el tiempo es un regalo que hay que cuidar."
       ],
       "colores": [
-        "#FFC300",
-        "#FF5733",
-        "#C70039",
-        "#900C3F"
+        "#1D4E89",
+        "#F1C40F",
+        "#2ECC71",
+        "#E74C3C"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0E0F1B",
       "textColors": [
+        "#FFFFFF",
         "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Identificar lo que realmente valoras puede cambiar tu enfoque. Hay una energía especial cuando alineas tus acciones con tus prioridades. ",
-        "subtitulo": "Un paso hacia la claridad",
-        "parrafoBot": "Tomar decisiones alineadas a tus valores requiere valor, pero te lleva a un camino más auténtico. Permítete explorar y actuar según lo que realmente te importa.",
-        "style": {
-          "accent": "#34ff7f",
-          "ink": "#f8f8f2",
-          "paper": "desierto nebuloso de sombras",
-          "border": "brillo cósmico plateado",
-          "serif": "Bodoni Moda",
-          "sans": "Noto Sans Black",
-          "marco": "foil lumínico",
-          "fontSizeTitle": "universo expansivo 45–160px",
-          "fontSizeBody": "susurro efímero 10–28px",
-          "fontWeight": "peso imaginario 600",
-          "lineHeight": "fluido 1.75",
-          "letterSpacing": "distancia entre estrellas 3px",
-          "textTransform": "mixed kaleidoscópico",
-          "textShadow": "neón vibrante espectral",
-          "layout": "collage distorsionada",
-          "showCover": false,
-          "ornamentFlux": "biselado psicodélico de rayos",
-          "glowAura": "resplandor de galaxias perdidas",
-          "dreamGrain": "grano etéreo espiralado",
-          "holoInk": "tinta holográfica que fluye",
-          "fractalWeight": "denso como la gravedad",
-          "animationHint": "flicker dimensional",
-          "texture": "papel texturizado iridiscente",
-          "surprise": "fragmento tipográfico inacabado"
-        }
-      }
-    },
-    {
-      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
-      "autor": "David JP Phillips",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
-      "tagline": "Dopamina Oxitocina Serotonina Cortisol Endorfinas Testosterona",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "energía",
-        "conexión",
-        "alegría",
-        "calma"
-      ],
-      "frases": [
-        "🌟 Siente cómo la energía vital fluye a través de cada rincón de tu ser, renovando tus ganas de vivir y disfrutar cada momento.",
-        "❤️ Permite que la conexión con quienes amas te envuelva, llenando tu corazón de felicidad y gratitud, haciendo crecer el amor en ti.",
-        "😄 Disfruta de la alegría que nace en tu interior, como una burbuja de felicidad que estalla al compartir momentos especiales.",
-        "🌈 Busca la calma en cada respiración, sintiendo cómo la serenidad te abraza y transforma tus pensamientos en paz."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6C5B7B",
-        "#F7B733",
-        "#6A2C2A"
-      ],
-      "fondo": "#2D2D2D",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
         "#000000",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "Las hormonas son más que química; son tus aliadas en la vida diaria. Al entender su papel, puedes mejorar tu bienestar.  ",
-        "subtitulo": "El poder de las hormonas  ",
-        "parrafoBot": "Conoce cómo tu cuerpo reacciona ante el estrés y la felicidad. Haz ajustes pequeños en tu rutina diaria para equilibrarlas. Tu siguiente paso: identifica un área donde puedas implementar cambios y actúa.",
+        "parrafoTop": "En \"La vida minimal\" de Pedro Campos se resalta la necesidad de eliminar lo innecesario para enfocarse en lo que realmente importa. Esta idea resuena con muchos, pero requiere acción.",
+        "subtitulo": "Haz lo esencial primero.",
+        "parrafoBot": "Dedica tiempo a evaluar tus prioridades. Pregúntate qué es lo que realmente quieres y elimina las distracciones. Tomar decisiones conscientes hoy puede transformar tu camino mañana.",
         "style": {
-          "accent": "#00c3ff",
+          "accent": "#00ff8f",
           "ink": "#121212",
-          "paper": "universo oscuro con texturas nebulosas",
-          "border": "holograma fragmentado",
-          "serif": "Bodoni Poster",
-          "sans": "Zilla Slab",
-          "marco": "foiled chaos",
-          "fontSizeTitle": "monstruo titánico 40px",
-          "fontSizeBody": "susurro de estrellas 14–28px",
-          "fontWeight": "peso cuántico 800",
-          "lineHeight": "respiración compacta 1.4",
-          "letterSpacing": "abismo cósmico +3px",
-          "textTransform": "mixed",
-          "textShadow": "blur fantasmal",
-          "layout": "collage de luces rotas",
+          "paper": "silencio nocturno de acuarela",
+          "border": "holograma roto",
+          "serif": "Bodoni",
+          "sans": "Roboto Flex",
+          "marco": "foil reflejado",
+          "fontSizeTitle": "coloso galáctico 40–120px",
+          "fontSizeBody": "susurro sutil 10–28px",
+          "fontWeight": "peso etéreo 850",
+          "lineHeight": "respiración cinética 1.75",
+          "letterSpacing": "abismo sutil +1.5px",
+          "textTransform": "mixed-sensations",
+          "textShadow": "neon fractal vaporoso",
+          "layout": "collage psicodélico",
           "showCover": false,
-          "ornamentFlux": "tinta volátil holográfica",
-          "glowFlux": "destello de aurora violeta",
-          "quantumSpacing": "espacio subatómico 1.2em",
-          "holoInk": "tinta iridiscente activa",
-          "fractalWeight": "sombra dinámica y móvil",
-          "animationHint": "breathe cuántico fluido",
-          "texture": "tela cósmica irreal",
-          "surprise": "palabras en expansión fractal"
-        }
-      }
-    },
-    {
-      "titulo": "Think Again",
-      "autor": "Adam Grant",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/77/2b/28/772b28ee-2bff-dddf-312b-e6ee7fa271e8/9781984878113.d.jpg/626x0w.jpg",
-      "tagline": "The power of knowing what you don't know",
-      "dimension": "Cerebro",
-      "punto": "Creativo",
-      "palabras": [
-        "curiosidad",
-        "aprendizaje",
-        "sorpresa",
-        "reflexión"
-      ],
-      "frases": [
-        "🧠 Explora el vasto océano de lo desconocido; cada pregunta es un tesoro. 💡",
-        "🌱 Cultiva la curiosidad, permite que florezcan nuevas ideas en tu mente. 🌸",
-        "✨ La sorpresa llega al abrir la puerta del aprendizaje; atrévete a entrar. 🚪",
-        "🔍 Reflexiona sobre lo que no sabes, pues ahí radica la verdadera sabiduría. 📖"
-      ],
-      "colores": [
-        "#2E8B57",
-        "#FFB300",
-        "#FF6F61",
-        "#6A5ACD"
-      ],
-      "fondo": "#0F0F1B",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "El cambio de perspectiva puede ser liberador. Adam Grant en \"Think Again\" nos invita a desafiar nuestras propias creencias. Este proceso no es fácil, pero puede abrirte puertas inesperadas.",
-        "subtitulo": "Explora nuevas ideas",
-        "parrafoBot": "Para avanzar, cuestiona lo que crees saber. La curiosidad puede llevarte a nuevas oportunidades y relaciones valiosas. Date el permiso de aprender y de soltar viejos patrones. Recuerda, crecer es un acto continuo.",
-        "style": {
-          "accent": "#00ff9f",
-          "ink": "#1e1e1e",
-          "paper": "nube de tormenta translúcida",
-          "border": "brillo pulsante naranja",
-          "serif": "Bodoni Moda",
-          "sans": "Exo 2",
-          "marco": "neón desvanecido",
-          "fontSizeTitle": "explosión cósmica 50px",
-          "fontSizeBody": "susurro del espacio 14–36px",
-          "fontWeight": "densidad cuántica 700",
-          "lineHeight": "espacio astral 2.0",
-          "letterSpacing": "distancia gravitacional +1.5px",
-          "textTransform": "mixed",
-          "textShadow": "destello surrealista",
-          "layout": "collage irregular",
-          "showCover": false,
-          "ornamentFlux": "hilos de luz intermitentes",
-          "glitchAura": "neblina electrónica cambiante",
-          "quantumSpacing": "horizonte cuántico de 3px",
-          "warpLayer": "pliegues de tiempo",
-          "prismPulse": "latido prismático en RGB",
-          "animationHint": "breathe intermitente",
-          "texture": "papel luminoso con burbujas",
-          "surprise": "fragmento de poema oculto en sombra"
-        }
-      }
-    },
-    {
-      "titulo": "Relentless",
-      "autor": "Tim S. Grover",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/58/eb/7e/58eb7e2f-81fe-32a5-95d5-ee6728a5d7e9/9781476714219.jpg/626x0w.jpg",
-      "tagline": "From good to great to unstoppable",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
-        "calma",
-        "esfuerzo",
-        "fuerza",
-        "potencial"
-      ],
-      "frases": [
-        "💪 En cada desafío, el espíritu se fortalece y brilla con más fuerza.",
-        "🔥 El camino hacia la grandeza está lleno de esfuerzo, pero vale la pena cada paso.",
-        "🚀 Acepta el reto y descubre que dentro de ti hay una fuerza imparable que espera salir.",
-        "🌟 En cada pequeño logro, hay un indicio del enorme potencial que llevas contigo."
-      ],
-      "colores": [
-        "#FF6B6B",
-        "#FFD93D",
-        "#6BCB77",
-        "#4D6CFA"
-      ],
-      "fondo": "#1B1B1D",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "No subestimes la fuerza del desafío.  ",
-        "subtitulo": "Desafía tus límites  ",
-        "parrafoBot": "El verdadero crecimiento ocurre fuera de la zona de confort. Cada obstáculo es una oportunidad para forjarte más fuerte. Abrazar la presión en lugar de evitarla te llevará a niveles que nunca imaginaste alcanzar. Cada esfuerzo cuenta.",
-        "style": {
-          "accent": "#00ff99",
-          "ink": "#111111",
-          "paper": "nube nebulosa de sombra",
-          "border": "brillo lunar vibrante",
-          "serif": "Bodoni Moda",
-          "sans": "Cera Pro",
-          "marco": "corte digital pixeleado",
-          "fontSizeTitle": "cosmos colosal 40–120px",
-          "fontSizeBody": "susurro sutil 14–28px",
-          "fontWeight": "peso psicodélico 800",
-          "lineHeight": "resonancia profunda 1.75",
-          "letterSpacing": "expansión +3px",
-          "textTransform": "mixed fluid",
-          "textShadow": "neón etéreo desvanecido",
-          "layout": "collage irregular tridimensional",
-          "showCover": false,
-          "ornamentFlux": "doodles de luz fractal",
-          "glowFlux": "destello iridiscente en movimiento",
-          "metaShadow": "sombra cuántica sutil",
-          "warpGrid": "red cuadrícula flexible",
-          "holoInk": "tinta holográfica que brilla",
-          "texture": "granulado digital dinámico",
-          "animationHint": "breathe estelar oscilante",
-          "surprise": "fragmento incompleto de realidad"
-        }
-      }
-    },
-    {
-      "titulo": "Viaje al optimismo",
-      "autor": "Eduardo Punset",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/aa/72/44/aa7244fd-56eb-2411-8889-01c193e8d1d1/9788423346059.jpg/626x0w.jpg",
-      "tagline": "El pasado fue siempre peor y no hay duda de que el futuro será mejor. Ese mensaje orienta el Viaje al optimismo.En este viaje Punset desmiente que la crisis sea planetaria proclama la obligada redistribución del trabajo mientras la esperanza de vida aumenta dos años y medio cada década y recuerda que ya no es posible vivir sin las redes sociales.",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "optimismo",
-        "esperanza",
-        "futuro",
-        "conexión"
-      ],
-      "frases": [
-        "🌞 Cultiva la luz en cada amanecer, cada día trae nuevas oportunidades.",
-        "✨ La esperanza es el faro que guía incluso en las tormentas más oscuras.",
-        "💡 Cuando el mundo parezca confuso, recuerda: el futuro está lleno de posibilidades por descubrir.",
-        "🌈 Conecta con quienes comparten tus sueños, juntos, ¡el optimismo crece como una flor!"
-      ],
-      "colores": [
-        "#FFD700",
-        "#FF8C00",
-        "#FF6347",
-        "#32CD32"
-      ],
-      "fondo": "#1C1C1C",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Los caminos que elegimos impactan en nuestra realidad. A veces, necesitamos revisar nuestras creencias.  ",
-        "subtitulo": "Potencial oculto  ",
-        "parrafoBot": "Aprovechar la energía del optimismo no es solo positivo; es esencial. Una nueva perspectiva puede abrir oportunidades. Haz un cambio hoy: desafía lo que crees y actúa con renovada determinación.",
-        "style": {
-          "accent": "#00ff7f",
-          "ink": "#ffffff",
-          "paper": "papiro espectral suave",
-          "border": "cromo rosado nebuloso",
-          "serif": "Playfair Display",
-          "sans": "Poppins",
-          "marco": "shadow iridiscente",
-          "fontSizeTitle": "galáctico 50px",
-          "fontSizeBody": "susurro tenue 10–24px",
-          "fontWeight": "peso oscuro 700",
-          "lineHeight": "respiración profunda 2.0",
-          "letterSpacing": "abismo +1.5px",
-          "textTransform": "mixed surreal",
-          "textShadow": "neon suave espectral",
-          "layout": "collage cinético",
-          "showCover": false,
-          "ornamentFlux": "siluetas etéreas flotantes",
-          "glowFlux": "halo verde neón pulsatante",
-          "metaShadow": "sombra crómica desplazada",
-          "quantumSpacing": "espaciado cuántico entrelazado",
-          "dreamGrain": "grano de sueños vibrantes",
-          "animationHint": "breathe visual profundo",
-          "texture": "liquidez plástica lumínica",
-          "surprise": "fragmento de palabra invisible"
+          "ornamentFlux": "efecto de vapor de colores",
+          "glowFlux": "destello de esmeralda brillante",
+          "quantumSpacing": "distorsión rítmica +4px",
+          "holoInk": "tinta invisible luminosa",
+          "animationHint": "breathe mutante en bucle",
+          "texture": "ruido digital dinámico",
+          "surprise": "fragmento textural de recuerdos efímeros"
         }
       }
     },
@@ -901,27 +578,283 @@
       "autor": "Kelley Kosow",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/e4/5f/dd/e45fdd97-7753-972b-5154-1c8530608684/1032894287.jpg/626x0w.jpg",
       "tagline": "Como afirma Kelley Kosow: ¿Recuerdas la última vez que te prometiste decir lo que pensabas en una reunión de trabajo pero permaneciste sentado en silencio? Cada vez que te muerdes la lengua ahogas tu integridad. Integridad no significa perfección. No es una estrategia sino una manera de vivir en consonancia con quien realmente somos.El poder de la integridad te enseña a empezar a vivir la vida a tu manera a enfrentarte al miedo a la vergüenza y a las creencias erróneas para a partir de ahí empezar a vivir la vida según tus principios y desde tu verdadera esencia.Transforma tus limitaciones y conecta con tus capacidades infinitas.Tu integridad es tu poder.",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "valentía",
+        "autenticidad",
+        "expansión",
+        "poder"
+      ],
+      "frases": [
+        "🌱 Respira hondo y suelta la duda. Cada acción alineada a tu esencia expande tu ser.",
+        "✨ Agradece tres cosas de tu vida que reflejan tu autenticidad. Permite que ese agradecimiento brille en ti.",
+        "🔍 Anota tres creencias que te limitan y deshazte de ellas. Hoy es el día para liberarte y abrazar tu verdad.",
+        "💬 Al conectar con tu esencia, enfrentas cualquier situación con coraje. El poder reside en tu integridad."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6FA3EF",
+        "#6B8E23",
+        "#F7C74E"
+      ],
+      "fondo": "#0E0F1B",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Cuando nos alineamos con nuestra verdadera esencia, surgen oportunidades inesperadas. El libro \"El poder de la integridad\" de Kelley Kosow enfatiza este viaje hacia lo auténtico. No subestimes el poder de ser tú mismo; cada acción cuenta.",
+        "subtitulo": "Toma el control de tu narrativa",
+        "parrafoBot": "Identifica aquello que te motiva y actúa en consecuencia. Da un paso hoy, ya sea pequeño o grande, y empieza a construir el futuro que realmente deseas. La integridad se refleja en las decisiones que tomas en el día a día.",
+        "style": {
+          "accent": "#29b6f6",
+          "ink": "#ffffff",
+          "paper": "papel etéreo con bruma azul",
+          "border": "espejo líquido con destellos",
+          "serif": "Bodoni Moda",
+          "sans": "Futura Now",
+          "marco": "foil texturizado",
+          "fontSizeTitle": "gigante estelar 50px",
+          "fontSizeBody": "susurro suave 14–26px",
+          "fontWeight": "peso espectral 800",
+          "lineHeight": "nube envolvente 1.4",
+          "letterSpacing": "distancia astral +3px",
+          "textTransform": "mixed",
+          "textShadow": "neon shimmer en movimiento",
+          "layout": "collage cinético",
+          "showCover": false,
+          "ornamentFlux": "doodles oníricos en caos",
+          "holoInk": "tinta brillante cambiante",
+          "glitchAura": "halo distorsionado fluctuante",
+          "quantumSpacing": "espacio cuántico irregular",
+          "dreamGrain": "textura suave de neblina",
+          "animationHint": "rotación suave con eco",
+          "surprise": "fragmento textual disperso con sombra oculta"
+        }
+      }
+    },
+    {
+      "titulo": "Bruce Lee",
+      "autor": " John Little",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
+      "tagline": "un artista de la vida",
       "dimension": "Conexión",
       "punto": "Máximo",
       "palabras": [
-        "autenticidad",
-        "valentía",
-        "expresión",
+        "calma",
+        "ansiedad",
+        "fortaleza",
+        "creatividad"
+      ],
+      "frases": [
+        "💪 Respira hondo y siente la fuerza de tu ser, que guía cada paso en tu viaje.",
+        "🌟 Reconoce que cada desafío es una oportunidad disfrazada, descúbrelo hoy mismo.",
+        "🎨 Expresa tu esencia única, crea tu camino y deja huella en el mundo.",
+        "🔥 Atrévete a transformar el miedo en motivación, y siente el impulso que te eleva."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6F8E7E",
+        "#88C8D8",
+        "#FFB74D"
+      ],
+      "fondo": "#0A0A0A",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La búsqueda constante de Bruce Lee por el autoconocimiento es asombrosa. Entender tu cuerpo y mente es clave para alcanzar tus objetivos.",
+        "subtitulo": "Despierta tu potencial ",
+        "parrafoBot": "Incorpora el aprendizaje en tu vida diaria. No esperes el momento perfecto; actúa, prueba y ajusta. La práctica y la persistencia te llevarán más lejos de lo que imaginas.",
+        "style": {
+          "accent": "#00ff7f",
+          "ink": "#1e1e1e",
+          "paper": "tela de sombras flotantes",
+          "border": "cromo rosa iridiscente",
+          "serif": "Playfair Display",
+          "sans": "Roboto Flex",
+          "marco": "neon glitched",
+          "fontSizeTitle": "explosión cósmica 40px",
+          "fontSizeBody": "susurro suave 10–25px",
+          "fontWeight": "peso vibrante 700",
+          "lineHeight": "espacio nebuloso 1.4",
+          "letterSpacing": "eco de letras +3px",
+          "textTransform": "mixed celestial",
+          "textShadow": "holo neón expansivo",
+          "layout": "collage vibrante",
+          "showCover": false,
+          "ornamentFlux": "fluido holográfico impredecible",
+          "dreamGrain": "papel suave con textura de neblina",
+          "glowFlux": "destello verde vibrante en movimiento",
+          "quantumSpacing": "distancia cuántica irregular",
+          "fontPulse": "latido 15px–100px",
+          "animationHint": "respirar luz",
+          "texture": "diseño fractal de metal líquido",
+          "surprise": "fragmento de tiempo congelado"
+        }
+      }
+    },
+    {
+      "titulo": "Charlas Ted",
+      "autor": "Chris Anderson",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/f0/30/26/f03026c2-8472-c382-734b-6f566690793f/9788498754346.jpg/626x0w.jpg",
+      "tagline": "una charla breve y cuidadosamente preparada puede ser la clave para generar empatía suscitar emoción intercambiar conocimiento y promover un sueño compartido. Una charla bien planificada puede electrizar a todo un público y transformar su visión de las cosas; su poder puede ser muchísimo mayor que cualquier palabra escrita.",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "calma",
+        "ansiedad",
+        "empatía",
         "gratitud"
       ],
       "frases": [
-        "🌟 Expresa lo que llevas dentro, ¡libera tu auténtico yo en cada momento!",
-        "💪 Da un paso hacia tu valentía; lo que piensas es tan importante como lo que dices.",
-        "✨ Tu transformación empieza cuando eliges ser fiel a ti mismo y a tus valores más profundos.",
-        "🌈 Conecta con tus capacidades infinitas y recuerda que cada palabra sincera refuerza tu esencia."
+        "✨ Crea momentos que conecten corazones y mentes, potenciando el cambio positivo.",
+        "💡 A veces, una sola voz puede resonar y generar un eco que transforma el futuro de muchos.",
+        "🌟 Recuerda: cada palabra bien elegida tiene el poder de iluminar un nuevo camino hacia el entendimiento.",
+        "🎤 Un mensaje claro y apasionado puede cruzar barreras, abriendo puertas a sueños compartidos."
       ],
       "colores": [
-        "#FF5733",
-        "#FFC300",
-        "#28B463",
-        "#3498DB"
+        "#F1C40F",
+        "#E67E22",
+        "#2980B9",
+        "#2ECC71"
       ],
-      "fondo": "#2C3E50",
+      "fondo": "#1B1C22",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Es esencial transmitir lo que piensas sin miedo. En \"Charlas TED\" de Chris Anderson, se aborda cómo cada uno tiene algo único que compartir. ",
+        "subtitulo": "Encuentra tu mensaje ",
+        "parrafoBot": "Reconoce que tu experiencia y perspectiva son valiosas. Practica comunicar tus ideas y permítete el error. Ese es el camino para conectar y crecer.",
+        "style": {
+          "accent": "#c70039",
+          "ink": "#ffffff",
+          "paper": "papel espectral en movimiento",
+          "border": "circuito bioluminiscente",
+          "serif": "Bodoni XT",
+          "sans": "Roboto Flex",
+          "marco": "glitch explosion",
+          "fontSizeTitle": "gigante cuántico 50px",
+          "fontSizeBody": "susurro mínimo 14px",
+          "fontWeight": "peso fractal 600",
+          "lineHeight": "respiración mínima 1.2",
+          "letterSpacing": "vacío absoluto 1.5px",
+          "textTransform": "lowercase con giro",
+          "textShadow": "neon surge brillante",
+          "layout": "collage de surrealismo",
+          "showCover": false,
+          "coverStyle": "pixelated cutout",
+          "glowFlux": "destello ácido radiante",
+          "holoInk": "tinta holográfica cambiante",
+          "dreamGrain": "grano de sueño efervescente",
+          "quantumSpacing": "espaciado cuántico en expansión",
+          "prismPulse": "pulso de prisma multicolor",
+          "animationHint": "breathe efecto oscilante",
+          "texture": "metal líquido reflexivo",
+          "surprise": "fragmento incompleto con eco abstracto"
+        }
+      }
+    },
+    {
+      "titulo": "La magia de la concentración",
+      "autor": "Daigo",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/eb/a8/56/eba85611-fb88-bcbb-f0af-f87aac877f5a/9786073192934.jpg/626x0w.jpg",
+      "tagline": "presenta técnicas y estrategias para incrementar tu fuerza de voluntad evitar el cansancio mental y fortalecer tus hábitos Entiende cómo funciona tu mente aumenta la concentración el rendimiento y la productividad en tu vida profesional y personal",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "foco",
+        "claridad",
+        "curiosidad",
+        "éxito"
+      ],
+      "frases": [
+        "🧠 Respira y siente cómo cada pensamiento se alinea en tu mente.",
+        "🔍 Mira más allá de la distracción, descubre el poder que reside en ti.",
+        "🔥 Enfoca tus energías: prioriza, actúa y transforma tu día en un viaje de logros.",
+        "✨ Comprender la mente es el primer paso para ser el arquitecto de tu destino."
+      ],
+      "colores": [
+        "#FBCB09",
+        "#D7D300",
+        "#75B31C",
+        "#6DAA65"
+      ],
+      "fondo": "#1A1A1A",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "A veces, un pequeño cambio en nuestro enfoque puede desbloquear todo nuestro potencial. En \"La magia de la concentración\" de Daigo, se destaca la importancia de cultivar una mente enfocada.  ",
+        "subtitulo": "Mejorar tu enfoque  ",
+        "parrafoBot": "Establece un momento diario para desconectarte y centrarte en una sola tarea. Esto te ayudará a ver avances significativos. Prueba esta práctica y observa cómo cambia tu productividad.",
+        "style": {
+          "accent": "#1de3f7",
+          "ink": "#1f1f1f",
+          "paper": "cielo tumultuoso",
+          "border": "chromatic ripple",
+          "serif": "Bodoni Moda",
+          "sans": "Poppins",
+          "marco": "glitch-lines",
+          "fontSizeTitle": "gigante de estrellas 45px",
+          "fontSizeBody": "susurro etéreo 10–28px",
+          "fontWeight": "peso neón 600",
+          "lineHeight": "suspenso eterno 1.75",
+          "letterSpacing": "vacío profundo 1.5px",
+          "textTransform": "mixed",
+          "textShadow": "blur etéreo",
+          "layout": "collage de sueños",
+          "showCover": false,
+          "ornamentFlux": "revestimiento holográfico fugaz",
+          "holoInk": "tinta vibrante",
+          "glowFlux": "resplandor de cometas",
+          "dreamGrain": "textura de nubosidad",
+          "quantumSpacing": "dispersión aleatoria",
+          "animationHint": "flicker psíquico",
+          "texture": "papel de sombras líquidas",
+          "surprise": "fragmento tipográfico quebrado"
+        }
+      }
+    },
+    {
+      "titulo": "Cuerpos sin edad mentes sin tiempo",
+      "autor": "Deepak Shopra",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/62/01/5f/62015f89-459a-4400-15ae-fa787aead51f/9788416076758.jpg/626x0w.jpg",
+      "tagline": "el gran maestro Deepak Chopra nos muestra que el pasado y el futuro son proyecciones mentales y que si logramos liberarnos de ellas podremos vivir la experiencia de un cuerpo sin edad y una mente sin tiempo. Transformaremos así nuestro cuerpo creando las condiciones para la longevidad y preservando el equilibrio de la vida.",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "calma",
+        "equilibrio",
+        "curiosidad",
+        "transcendencia"
+      ],
+      "frases": [
+        "🌟 Transforma tu ser al dejar ir el pasado y abrazar el presente.",
+        "🌱 Con cada momento, nutre tu cuerpo y despierta a una nueva vida.",
+        "✨ En el equilibrio se encuentra la clave para una existencia plena y prolongada.",
+        "🌀 Permítete fluir en la danza de la vida, trascendiendo lo que ya no te sirve."
+      ],
+      "colores": [
+        "#4B8B3B",
+        "#F6C54E",
+        "#A83D80",
+        "#1C2D6D"
+      ],
+      "fondo": "#0E0F1B",
       "textColors": [
         "#FFFFFF",
         "#000000",
@@ -929,33 +862,97 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "Actuar con autenticidad transforma nuestra vida.  ",
-        "subtitulo": "Actitud hacia el cambio  ",
-        "parrafoBot": "Desafiar nuestras creencias limitantes nos permite crecer. Encuentra la forma de ser auténtico en tus decisiones y empieza a vivir en alineación con tus valores. Es momento de dar el primer paso hacia esa autenticidad que siempre has deseado.",
+        "parrafoTop": "Al comprender que el envejecimiento es más una cuestión de percepción que de biología, encontramos la oportunidad de rediseñar nuestra vida. Deepak Chopra en \"Cuerpos sin edad, mentes sin tiempo\" propone un enfoque que nos invita a cuestionar la relación que tenemos con nuestras experiencias.",
+        "subtitulo": "Explora nuevas posibilidades.",
+        "parrafoBot": "Cada día es una invitación a desafiar el tiempo. En lugar de ver los años como un peso, considéralos como capítulos llenos de aprendizaje. La transformación comienza al dejar de lado las creencias limitantes y abrazar un estado de apertura hacia el crecimiento personal.",
         "style": {
-          "accent": "#00bfff",
-          "ink": "#f2f2f2",
-          "paper": "canvas del abismo azul",
-          "border": "chromatic gradient burst",
-          "serif": "Bodoni Moda",
-          "sans": "Poppins",
-          "marco": "neon frame pulse",
-          "fontSizeTitle": "interstellar giant 45px",
-          "fontSizeBody": "susurro digital 14–30px",
-          "fontWeight": "thick shadow 800",
-          "lineHeight": "floating rhythm 1.8",
-          "letterSpacing": "crystal clear +3px",
-          "textTransform": "mixed",
-          "textShadow": "deep space blur",
-          "layout": "collage chaotic",
+          "accent": "#e61c77",
+          "ink": "#161616",
+          "paper": "tinta de noche en danza",
+          "border": "vórtice de cromo eléctrico",
+          "serif": "Bodoni",
+          "sans": "Avenir Next",
+          "marco": "foil roto",
+          "fontSizeTitle": "gigante cósmico 50px",
+          "fontSizeBody": "susurro mínimo 10–28px",
+          "fontWeight": "peso astral 800",
+          "lineHeight": "respiración cósmica 2.0",
+          "letterSpacing": "vacío profundo +4px",
+          "textTransform": "glitchwave",
+          "textShadow": "holoBrillo distorsionado",
+          "layout": "collage surrealista",
           "showCover": false,
-          "ornamentFlux": "organic wave patterns",
-          "holoInk": "iridescent shimmer",
-          "glitchAura": "dynamic split waves",
-          "quantumSpacing": "phase shift 1.5",
-          "dreamGrain": "textured spectral haze",
-          "animationHint": "flicker pulsar",
-          "surprise": "fragmented memory layer"
+          "ornamentFlux": "doodles liquidos en espiral",
+          "glowFlux": "halo de luz rosada pulsatil",
+          "quantumSpacing": "intervalos fractales de 6px",
+          "dreamGrain": "textura de niebla cósmica",
+          "animationHint": "danza holográfica errante",
+          "metaShadow": "sombra prismática desbordante",
+          "texture": "superficie líquida con efecto de profundidad",
+          "surprise": "fragmento de mensaje cifrado etéreo"
+        }
+      }
+    },
+    {
+      "titulo": "Una Vida Sin Limites",
+      "autor": " Alejandra Llamas",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/1b/9d/7e/1b9d7e5b-0463-be8e-a4d9-717136794757/9786073185349.jpg/626x0w.jpg",
+      "tagline": " Alejandra Llamas realiza un profundo análisis sobre la conexión que debe tener todo ser humano con su mundo interno para lograr alejarse del miedo y acercarse a la unión y al amor.A través de 45 versos fundamentales del Tao Te Ching texto ancestral clásico chino atribuido al filósofo Lao Tsé. Una vida sin límites se constituye como una herramienta para entender y ver de manera positiva nuestro entorno y lograr nuestra paz interior. Este libro nos invita a dejarnos llevar por el camino del Tao para reflexionar y alcanzar la serenidad.",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "serenidad",
+        "conexión",
+        "tranquilidad",
+        "amor"
+      ],
+      "frases": [
+        "🌸 Respira profundo y siente la paz florecer en ti.",
+        "✨ Cultiva el amor en cada pensamiento y verás la transformación.",
+        "🌱 Anota tres momentos donde experimentaste verdadera conexión con tu entorno.",
+        "🌈 Abre el libro y deja que las palabras te guíen hacia la serenidad."
+      ],
+      "colores": [
+        "#FFD700",
+        "#FF6347",
+        "#32CD32",
+        "#1E90FF"
+      ],
+      "fondo": "#0e0f1b",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Al leer \"Una Vida Sin Límites\" de Alejandra Llamas, comprendí que las barreras están en nuestra mente.  ",
+        "subtitulo": "Desafía tus creencias  ",
+        "parrafoBot": "El cambio real comienza cuando decides cuestionar lo que te han enseñado. Haz una lista de creencias limitantes y retóralas; identifica una que quieras transformar hoy. Empieza ese cambio ahora.",
+        "style": {
+          "accent": "#0efeff",
+          "ink": "#0a0a0a",
+          "paper": "silencio espectral suave",
+          "border": "cromo fractal morado",
+          "serif": "Garamond Nouvelle",
+          "sans": "Roboto Slab",
+          "marco": "shadow vortex",
+          "fontSizeTitle": "colosal 50px–120px",
+          "fontSizeBody": "susurro intergaláctico 10–28px",
+          "fontWeight": "densidad cósmica 900",
+          "lineHeight": "fluctuación amplia 2.0",
+          "letterSpacing": "distancia entre dimensiones 1.5px",
+          "textTransform": "mixed-reality",
+          "textShadow": "neon dream fog",
+          "layout": "collage surrealista",
+          "showCover": false,
+          "ornamentFlux": "pinceladas de luz estelar",
+          "glitchAura": "resplandor de fracturas temporales",
+          "holoInk": "tinta líquida refractiva",
+          "quantumSpacing": "infinito 3px",
+          "animationHint": "breathe lumínico",
+          "texture": "papel cósmico cristalizado",
+          "surprise": "fragmento lumínico con pulsos temporales"
         }
       }
     }
