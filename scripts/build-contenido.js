@@ -114,14 +114,14 @@ Que previamente categorizaste libro, palabra y accionables en puntos: Punto cero
 Que previamente categorizaste libro, palabra y accionables en centros de energía (Movimiento, Corazón, Cerebro). Algo así como Cuerpo, Espiritu y Mente, los chakras
 Que previamente categorizaste libro, palabra y accionables en dimensiones (Bienestar: Salud Física, Emocional/Mental, Prosperidad: Salud Financiera, Negocios, Conexión: Relaciones, Familia, Espiritualidad).
 
-Que antes de proponer cualquier frase, accionable o máxima analizaste todo el histórico de frases que ya has dado y el libro de origen (proveniente de libros_master.csv), investigaste, entendiste su tema central, su propósito, su energía predominante, y a partir de eso:
+Antes de proponer cualquier palabra, frase, accionable o máxima analizaste todo el histórico ya has dado anteriormente, si no tienes acceso intuyes, y el libro de origen (proveniente de libros_master.csv), investigaste, entendiste su tema central, su propósito, su energía predominante y mucho más predictivo, y a partir de eso:
 
-• Mejoraste por mucho cada una comparado con todo el histórico de mi perfil y de las frases que has hecho en el pasado, subiste mucho de nivel. De manera Sublime nivel dios.
+• Mejoraste por mucho cada una comparado con todo el histórico de mi perfil y de palabras, frases, colores, que has hecho en el pasado, subiste mucho de nivel. De manera Sublime nivel dios.
 • Asignaste una calificación numérica al libro según el mapa de conciencia de David Hawkins y basas todo en subir al usuario de nivel (por ejemplo: 125, 200, 310, 500...).
-• Clasificaste sus frases, palabras y colores como una respuesta superior a ese nivel.
-• Cada frase que entregues debe llevar al lector a uno o varios niveles más arriba en conciencia. PERO EN SERIO!.
-• Las frases deben ser 100% adecuadas para quien está en ese punto y mostrarle lo que viene más arriba. El lector debe sentir expansión, mejora comtinua, que está avanzando, progresión, que triggui es verdaderamente la mejor app de todos los tiempos!
-• Que también dejen pensando al usuario, que piense por sí mism@ es vital que sean frases diferentes, no trilladas!, que se entiendan perfectamente, claras, directas pero útiles nivel dios!
+• Clasificaste sus palabras, frases y colores como una respuesta superior a ese nivel.
+• Cada frase que entregues debe llevar al lector a uno o varios niveles más arriba en conciencia, Según la palabra seleccionada. PERO EN SERIO!.
+• Las frases deben ser 100% adecuadas para quien está en esa palabra elegida y mostrarle intrínsecamente lo que viene más arriba en el mapa de Hawkins. El lector debe sentir ese cambio, esa expansión, mejora comtinua, que está avanzando, progresión, que triggui es verdaderamente la mejor app de todos los tiempos!
+• Que también dejen pensando al usuario, que piense por sí mism@ es vital que sean frases diferentes, nunca trilladas!, que se entiendan perfectamente, claras, directas pero útiles nivel dios!
 
 Formato JSON estricto, sin \` \`\`:
 
@@ -141,16 +141,16 @@ Asignación fija de índice → Centro de Energía + intención
 3 • Integración · genera sutilmente deseo por abrir el libro, te lo dejo abierto a tu criterio
 
 Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
-• Cada frase debe responder a la emoción (palabra[i]) SIN nombrarla.
+• Cada frase debe estar relacionada a la emoción (palabra[i]) SIN nombrarla.
 • Usa un micro-protocolo de 15–30s, distinto por índice:
   0 Movimiento  → gesto físico mínimo ( ej. estira hombros, camina 10 pasos, endereza postura) Sólo son ejemplos! te lo dejo abierto a tu criterio
   1 Corazón     → giro afectivo breve (ej. agradece 1 cosa, nombra a quién ayudas hoy). te lo dejo abierto a tu criterio
-  2 Cerebro     → claridad express (ej. anota 3 palabras, divide en 1 paso, elige 1 tarea).te lo dejo abierto a tu criterio
+  2 Cerebro     → claridad express (ej. anota 3 palabras, divide en 1 paso, elige 1 tarea).abre tu criterio
   3 Integración → llamada a abrir el libro (ej. abre al azar y lee 1 línea en voz baja).te lo dejo abierto a tu criterio
-• Eleva sólo un peldaño en Hawkins (ej. miedo→coraje, apatía→interés, deseo→aceptación, orgullo→apertura).
+• Eleva un peldaño en Hawkins (ej. miedo→coraje, apatía→interés, deseo→aceptación, orgullo→apertura).
 • Señales indirectas de la emoción: alude a cuerpo/ritmo/atención (ej. pulso, nudo, ruido, calma, foco) sin decir la palabra. te lo dejo abierto a tu criterio
 • Formato de cada frase:
-  – Empieza con 1 emoji coherente (sin repetir entre las 4).
+  – Empieza con 1 emoji coherente, congruente (sin repetir entre las 4).
    – Contiene 1 verbo imperativo suave (ej. respira, mira, suelta, anota, elige, abre).te lo dejo abierto a tu criterio
   – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).te lo dejo abierto a tu criterio
 • Una de las frases (cualquiera) debe ser ej. “triple 3x” implícito (te lo dejo abierto a tu criterio):
@@ -162,7 +162,7 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
 
 Requisitos de las PALABRAS:
-• Deben ser RESPUESTAS, CONSEJOS, TIPS, LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones del mapa de conciencia de Dr. David Hawkins desde abajo y usa todos los sinónimos que puedas de todas las emociones. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, frustración, o coraje, o fracaso, el usuario le pica a aesa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
+• Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
 • Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
 • Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
