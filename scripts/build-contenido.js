@@ -163,21 +163,21 @@ todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan 
 
 Requisitos de las PALABRAS:
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
-• Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita. 
-• Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
+• Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita, como respuesta a la pregunta ¿Qué sientes ahora? cuida género es decir ej. si es cansada o cansado mejor usa cansancio y así.
+• Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente y congruente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
 • Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
-• Prohibido repetir PALABRAS en el mismo .json que vas a entregar, es decir no puedes repetir PALABRAS/EMOCIONES
+• Prohibido repetir PALABRAS Y EMOJIS en el mismo .json que vas a entregar, es decir NO puedes repetir PALABRAS/EMOCIONES NI EMOJIS
 
 
 Requisitos de las FRASES:
-• Que analices e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo. dale al lector la percepción total de que el mismisimo autor de el libro en cuestión escribió las frases!
+• Que analices PROFUNDAMENTE e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo. dale al lector la percepción total de que el mismisimo autor de el libro en cuestión escribió todo!
 • Longitud random 40-85 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
-• Tono perfecto, nivel dios, cambia y mejorar en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA. 
+• Tono perfecto, nivel dios, cambia y mejora progresivamente en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA en cuestión dentro de la frase. 
 • Relación explícita y perfecta con la PALABRA y el libro del cual viene.
-• Cada frase debe elevar al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
-• Una de las frases (la que sea) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son accionables para no gastar espacio.
-• Otra de las frases (la que sea) debe ser un dato o hecho que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
+• Cada frase debe elevar definitivmente al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
+• Una de las frases (la que sea) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (también alineados con el libro, palabra y nivel de conciencia para elever en el mapa de hawkins). No menciones explícitamente que son accionables para no gastar espacio.
+• Otra de las frases (la que sea) debe ser un dato o hecho investigado profundamente que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
 
 Colores:
 
@@ -217,7 +217,7 @@ Prohíbido mantenerte en la misma gama de forma cómoda.
 Si dudas, arriesga más. 
 Cada salida debe ser radicalmente distinta a la anterior, pero siempre armónica y usable.
 
-[INSPIRACIÓN DE 250 REGISTROS COMIENZA AQUÍ]
+[INSPIRACIÓN DE 250 REGISTROS COMIENZA AQUÍ PERO SÓLO SON EJEMPLOS, TU PUEDES INVENTAR MEJORES]
 
 Combinación1	#8B6AEF	#88EBFC	#9BF9E1	#D7C6E5
 Combinación2	#0096D1	#FFF4EA	#A8EAD5	#3EBDC6
