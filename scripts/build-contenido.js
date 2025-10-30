@@ -138,7 +138,7 @@ Asignación fija de índice → Centro de Energía + intención
 0 • Movimiento  · impulsa acción física o lo que tu veas, te lo dejo abierto a tu criterio
 1 • Corazón     · conecta emoción / gratitud, te lo dejo abierto a tu criterio
 2 • Cerebro     · brinda claridad mental, te lo dejo abierto a tu criterio
-3 • Integración · genera sutilmente intrínsecamente deseo por abrir el libro investigar más, te lo dejo abierto a tu criterio
+3 • Integración · genera sutilmente intrínsecamente deseo por abrir el libro investigar más, sin decir "abre el libro"
 
 Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 • Cada frase debe estar relacionada a la emoción (palabra[i]) SIN nombrarla.
