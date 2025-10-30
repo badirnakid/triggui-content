@@ -138,7 +138,7 @@ Asignación fija de índice → Centro de Energía + intención
 0 • Movimiento  · impulsa acción física o lo que tu veas, te lo dejo abierto a tu criterio
 1 • Corazón     · conecta emoción / gratitud, te lo dejo abierto a tu criterio
 2 • Cerebro     · brinda claridad mental, te lo dejo abierto a tu criterio
-3 • Integración · genera sutilmente deseo por abrir el libro, te lo dejo abierto a tu criterio
+3 • Integración · genera sutilmente intrínsecamente deseo por abrir el libro investigar más, te lo dejo abierto a tu criterio
 
 Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 • Cada frase debe estar relacionada a la emoción (palabra[i]) SIN nombrarla.
@@ -150,16 +150,16 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 • Eleva un peldaño en Hawkins (ej. miedo→coraje, apatía→interés, deseo→aceptación, orgullo→apertura).
 • Señales indirectas de la emoción: alude a cuerpo/ritmo/atención (ej. pulso, nudo, ruido, calma, foco) sin decir la palabra. te lo dejo abierto a tu criterio
 • Formato de cada frase:
-  – Empieza con 1 emoji coherente, congruente (sin repetir entre las 4).
-   – Contiene 1 verbo imperativo suave (ej. respira, mira, suelta, anota, elige, abre).te lo dejo abierto a tu criterio
+  – Empieza con 1 emoji coherente, congruente (PROHIBIDO repetir entre las 4).
+   – Contiene verbo imperativo cordial congruente (ej. respira, mira, suelta, anota, elige, abre).te lo dejo abierto a tu criterio
   – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).te lo dejo abierto a tu criterio
-• Una de las frases (cualquiera) debe ser ej. “triple 3x” implícito (te lo dejo abierto a tu criterio):
+• Una de las frases (cualquiera) debe ser tipo los siguientes ej.  (te lo dejo abierto a tu criterio):
   – 0: “camina 3x10 pasos”
   – 1: “di gracias por 3 cosas”
   – 2: “anota 3 palabras clave”
   – 3: “lee 3 líneas y cierra”
-• Prohibido sonar a “app de hábitos”. Nada de “rutina” o “tarea”; suena a gesto único del momento.
-todo lo ej. son ejemplos pero el chiste es que tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
+
+todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
 
 REGLAS INQUEBRANTABLES de las PALABRAS:
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
@@ -176,9 +176,9 @@ REGLAS INQUEBRANTABLES de las FRASES:
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
 • Tono perfecto, nivel dios, cambia y mejora progresivamente en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA en cuestión dentro de la frase. 
 • Relación explícita y perfecta con la PALABRA y el libro del cual viene.
-• Cada frase debe elevar definitivmente al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
-• Una de las frases (la que sea) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (también alineados con el libro, palabra y nivel de conciencia para elever en el mapa de hawkins). No menciones explícitamente que son accionables para no gastar espacio.
-• Otra de las frases (la que sea) debe ser un dato o hecho investigado profundamente que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
+• Cada frase debe debe ser un accionable, imperativo cordial congruente, elevar definitivmente al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
+• Una de las frases (la que sea) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (también alineados con el libro, palabra y nivel de conciencia para elevar en el mapa de hawkins). No menciones explícitamente que son accionables para no gastar espacio.
+• Otra de las frases (elije tú cual) debe ser un dato o hecho investiga profundamente que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
 
 Colores:
 
