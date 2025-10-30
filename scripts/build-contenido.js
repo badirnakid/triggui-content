@@ -171,7 +171,7 @@ REGLAS INQUEBRANTABLES de las PALABRAS:
 
 
 REGLAS INQUEBRANTABLES de las FRASES:
-• PROHIBIDO!! Dentro de la frase NO puede estar la PALABRA! ej. si la PALABRA es "Tranquilidad", no puede estar "Tranquilidad" en la FRASE.
+• PROHIBIDO!! Dentro de la frase NO puede estar la PALABRA ni su familia LÉXICA ej. si la PALABRA es "Tranquilidad", no puede estar "Tranquilidad", "Tranquilo" "Tranquila" ETC, en la FRASE. USA SINÓNIMOS, OTRAS FAMILIAS LÉXICAS ETC.
 • Que analices PROFUNDAMENTE e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo. dale al lector la percepción total de que el mismisimo autor de el libro en cuestión escribió todo!
 • Longitud random 60-90 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
 • Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
