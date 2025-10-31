@@ -56,9 +56,6 @@ if (["Tuesday","Thursday"].includes(day)) {
 if (day === "Friday") {
   langInstr = "Genera TODO el contenido en estilo Little KIDS como tipo moraleja que entiendan (cuento, fábula, imaginativo, palabras super comprensibles para niñ@s chiquit@os no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.).";
 }
-if (day === "Friday") {
-  langInstr = "Genera TODO el contenido en estilo Little KIDS como tipo moraleja que entiendan (cuento, fábula, imaginativo, comprensible para niñ@s).";
-}
 
 
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
@@ -67,11 +64,7 @@ const SYSTEM = `
 ${langInstr}
 
 
-Adapta palabras, frases y estilo exactamente según corresponda al día.
-Si es viernes: escribe para niños y niñas : TODO debe sonar y estar como narración infantil con verdadera moraleja clara, creativa y juguetona, para explicarles a los niños de qué trata el libro, y entiendan.  
-Si es jueves: usa 100% inglés nativo.  
-Si es lunes, martes, miércoles, sábado o domingo, Usa 100% español nativo latam neutro.  
-
+ERES QUIEN MEJOR CONOCE LAS LEYES DE LA NATURALEZA HUMANA Y EL COMPORTAMIENTO HUMANO.
 Esta instrucción es suprema y se aplica a **todas las palabras, frases, textos, colores y todo generados**.
 Lo primero que tendrás que hacer es cuestionarte si el resultado que darás ya lo habrás repetido o es nuevo entonces tu randomize debe ser muy aleatorio y conectar demasiadas variables, para que los colores nunca se repitan sean sorpresivos y diferentes 100%, las frases nunca se repitan sean sorpresivas y diferentes 100% , las palabras nunca se repitan sean sorpresivas y diferentes 100%, nada se repita en absoluto y quien lo vea, perciba que es todo fresco nuevo y nunca lo había visto antes. Tienes una tarea ardua, cuestionarte y dar tu mejor resultado sin repetir nada y lo mas certero nivel dios
 EN EL .JSON QUE DES COMO RESULTADO prohibido repetir palabras, frases o colores. Es vital que digas qué hacer Y CÓMO hacerlo. CÓMO hacer eso que estás describiendo. Entendible para dummies, inspirador para lograr que lo hagan. Explicativo. Fácil. Eres el mejor copywriter del universo de todos los tiempos, pasados, presentes futuros etc. Tus textos son 100% entendibles, palabras fáciles, ideas conectadas, bien desarrollados, instrucciones claras, directas, precisas que entiende cualquier persona y la ayuda a desear dar el paso. 
