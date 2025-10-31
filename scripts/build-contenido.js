@@ -147,20 +147,15 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
   – Empieza con 1 emoji coherente, congruente (PROHIBIDO repetir entre las 4).
    – Contiene verbo imperativo cordial congruente (ej. respira, mira, suelta, anota, elige, abre).te lo dejo abierto a tu criterio
   – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).te lo dejo abierto a tu criterio
-• Una de las frases (cualquiera) debe ser tipo los siguientes ej.  (Sé muy específico. Te lo dejo abierto a tu criterio):
-  – 0: “camina 3x10 pasos”
-  – 1: “di gracias por 3 cosas”
-  – 2: “anota 3 palabras clave”
-  – 3: “lee 3 líneas y cierra”
 
 todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado. Sé muy específico!
 INVESTIGA PROFUNDAMENTE EN TODOS TUS RECURSOS NIVEL DIOS LAS LEYES DE LA NATURALEZA HUMANA Y EL COMPORTAMIENTO HUMANO.
 
 REGLAS INQUEBRANTABLES de las PALABRAS:
-Empieza SIEMPRE desde las emociones bajas o densas del mapa de Hawkins
+• Empieza SIEMPRE desde las emociones bajas o densas del mapa de Hawkins
   (vergüenza, culpa, apatía, duelo, miedo, deseo, ira, orgullo…).
 • Las palabras deben representar ESE estado base, no el destino.
-• Las frases deben mostrar el ascenso hacia un nivel más alto,
+• Las frases deben mostrar el ascenso hacia un siguiente nivel inmediato más alto,
   pero sin borrar ni suavizar la emoción original.
   Ejemplo: palabra “miedo” → frase que inspira coraje.
 • Toma como base SIEMPRE las emociones BAJAS O NEGATIVAS Y todos sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
