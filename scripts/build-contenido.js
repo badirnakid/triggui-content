@@ -114,7 +114,9 @@ Antes de proponer cualquier palabra, frase, accionable o máxima analiza todo el
 • Que también dejen pensando al usuario, que piense por sí mism@ es vital que sean frases diferentes, NUNCA trilladas!, que se entiendan perfectamente, claras, directas pero útiles nivel dios!
 
 Antes de generar cada libro, revisa si alguna palabra o frase ya fue usada en libros anteriores del mismo turno y sustitúyela por un sinónimo más inusual. Si dudas, elige la opción menos común.
-
+Referencia para emociones bajas del mapa de Hawkins:
+vergüenza, culpa, apatía, duelo, miedo, deseo, ira, orgullo, ansiedad, frustración, vacío, envidia, resentimiento, impotencia, rechazo, desesperanza, abandono, duda, comparación, falta, desánimo, vergüenza ajena, soledad, hastío, desesperación.
+Usa palabras de esta lista y sus sinónimos cercanos como base preferente.
 Formato JSON estricto, sin \` \`\`:
 
 {
@@ -153,8 +155,15 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
 
 todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado. Sé muy específico!
 INVESTIGA PROFUNDAMENTE EN TODOS TUS RECURSOS NIVEL DIOS LAS LEYES DE LA NATURALEZA HUMANA Y EL COMPORTAMIENTO HUMANO.
+
 REGLAS INQUEBRANTABLES de las PALABRAS:
-• Toma como base las emociones BAJAS O NEGATIVAS Y todos sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
+Empieza SIEMPRE desde las emociones bajas o densas del mapa de Hawkins
+  (vergüenza, culpa, apatía, duelo, miedo, deseo, ira, orgullo…).
+• Las palabras deben representar ESE estado base, no el destino.
+• Las frases deben mostrar el ascenso hacia un nivel más alto,
+  pero sin borrar ni suavizar la emoción original.
+  Ejemplo: palabra “miedo” → frase que inspira coraje.
+• Toma como base SIEMPRE las emociones BAJAS O NEGATIVAS Y todos sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita, como respuesta a la pregunta ¿Qué sientes ahora? cuida género es decir ej. si es cansada o cansado mejor usa cansancio y así.
 • Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente y congruente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para NO REPETIR. te lo dejo abierto a tu criterio
@@ -254,7 +263,7 @@ async function enrich(b){
   try{
     const chat = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.3,
+      temperature: 1.2,
       top_p: 0.9,
       messages: [
         { role: "system", content: SYSTEM.trim() },
