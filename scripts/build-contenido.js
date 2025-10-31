@@ -150,33 +150,33 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
   – Empieza con 1 emoji coherente, congruente (PROHIBIDO repetir entre las 4).
    – Contiene verbo imperativo cordial congruente (ej. respira, mira, suelta, anota, elige, abre).te lo dejo abierto a tu criterio
   – Incrusta el micro-protocolo sin listar pasos (ej. “3x”: 3 respiraciones, 3 palabras, 3 segundos).te lo dejo abierto a tu criterio
-• Una de las frases (cualquiera) debe ser tipo los siguientes ej.  (te lo dejo abierto a tu criterio):
+• Una de las frases (cualquiera) debe ser tipo los siguientes ej.  (Sé muy específico. Te lo dejo abierto a tu criterio):
   – 0: “camina 3x10 pasos”
   – 1: “di gracias por 3 cosas”
   – 2: “anota 3 palabras clave”
   – 3: “lee 3 líneas y cierra”
 
-todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado!
+todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado. Sé muy específico!
 
 REGLAS INQUEBRANTABLES de las PALABRAS:
-• Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
-• Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
+• Toma como base las emociones BAJAS O NEGATIVAS Y todos sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
+• Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Formato: una sola palabra, emoción o sensación SENTIDA en primera persona implícita, como respuesta a la pregunta ¿Qué sientes ahora? cuida género es decir ej. si es cansada o cansado mejor usa cansancio y así.
-• Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente y congruente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para no estar repitiendo. te lo dejo abierto a tu criterio
-• Relación con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
-• Prohibido repetir PALABRAS Y EMOJIS en el mismo .json que vas a entregar, es decir NO puedes repetir PALABRAS/EMOCIONES NI EMOJIS
+• Si detectas que una propuesta no responde a la pregunta, reemplázala por la emoción más cercana coherente y congruente con el libro, el centro de energía, o mapa de conciencia de David Hawkins, busca sinónimos también para NO REPETIR. te lo dejo abierto a tu criterio
+• Relación total con la energía del libro: REAL y evidente, sin nombrar al libro en la palabra.
+• Prohibido repetir PALABRAS Y EMOJIS en el mismo .json que entregues. NO puedes repetir PALABRAS/EMOCIONES NI EMOJIS
 
 
 REGLAS INQUEBRANTABLES de las FRASES:
-• PROHIBIDO!! Dentro de la frase NO puede estar la PALABRA ni su familia LÉXICA ej. si la PALABRA es "Tranquilidad", no puede estar "Tranquilidad", "Tranquilo" "Tranquila" ETC, en la FRASE. USA SINÓNIMOS, OTRAS FAMILIAS LÉXICAS ETC.
-• Que analices PROFUNDAMENTE e intuyas perfectamente el interior del libro y autor en cuestión que estás evaluando para que las frases que des realmente provengan de ahí aún cuando no tengas acceso a todo el libro pero claramente puedes lograrlo. dale al lector la percepción total de que el mismisimo autor de el libro en cuestión escribió todo!
+• PROHIBIDO!! Dentro de la frase NO puede estar la PALABRA ni su familia LÉXICA ej. si la PALABRA es "Tranquilidad", prohibido "Tranquilidad", "Tranquilo" "Tranquila" ETC, en la FRASE. USA SINÓNIMOS, OTRAS FAMILIAS LÉXICAS ETC.
+• Analiza PROFUNDAMENTE e intuye perfectamente el interior del libro y autor en cuestión que estás evaluando. Las frases que des realmente provienen de ahí, aún cuando no tienes acceso a todo el libro pero claramente puedes lograrlo. Dale al lector la percepción total de que el autor de el libro en cuestión escribió todo!
 • Longitud random 60-90 caracteres (varía mucho los tonos; evita aspecto robot, sé natural).
-• Comienzan con 1 emoji increíblemente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
+• Comienzan con 1 emoji brutalmente relacionado al libro y palabra que estés evaluando, padrísimo genialmente alineado al mensaje, sin repetir emojis.
 • Tono perfecto, nivel dios, cambia y mejora progresivamente en cada intento, directo, sin términos esotéricos. Sin mencionar explícitamente la PALABRA en cuestión dentro de la frase. 
 • Relación explícita y perfecta con la PALABRA y el libro del cual viene.
-• Cada frase debe debe ser un accionable, instrucciones para salir de ese estado de la PALABRA, imperativo cordial congruente, elevar definitivmente al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
-• Una de las frases (la que sea) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (también alineados con el libro, palabra y nivel de conciencia para elevar en el mapa de hawkins). No menciones explícitamente que son accionables para no gastar espacio.
-• Otra de las frases (elije tú cual) debe ser un dato o hecho investiga profundamente que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos para no gastar espacio.
+• Cada frase debe debe ser un accionable, brutalmente específico y con ejemplo. Instrucciones para salir de ese estado de la PALABRA, imperativo cordial congruente, elevar definitivamente al lector uno o varios niveles en el mapa de conciencia de David Hawkins, pero ENSERIO!. Tiene que sentirse verdaderamente sublime.
+• Una de las 4 frases (la que elijas random) debe ser una lista de 3 accionables nivel dios, magistralmente útiles (alineados con el libro, palabra y nivel de conciencia para elevar en el mapa de hawkins). No menciones explícitamente que son accionables.
+• Otra de las frases (la que elijas random) debe ser dato o hecho actual o no tanto siempre y cuando sea brutalmente interesante y cierto. Investiga profundamente que esté dentro del libro (también alineados con el libro, palabra y nivel de conciencia). No menciones explícitamente que son datos o hechos.
 
 Colores:
 
