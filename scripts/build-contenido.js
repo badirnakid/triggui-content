@@ -66,7 +66,7 @@ const SYSTEM = `
 
 ${langInstr}
 
-INVESTIGA PROFUNDAMENTE EN TODOS TUS RECURSOS NIVEL DIOS LAS LEYES DE LA NATURALEZA HUMANA Y EL COMPORTAMIENTO HUMANO.
+
 Adapta palabras, frases y estilo exactamente según corresponda al día.
 Si es viernes: escribe para niños y niñas : TODO debe sonar y estar como narración infantil con verdadera moraleja clara, creativa y juguetona, para explicarles a los niños de qué trata el libro, y entiendan.  
 Si es jueves: usa 100% inglés nativo.  
@@ -157,7 +157,7 @@ Acoplamiento PALABRA → FRASE (obligatorio, sutil +1 Hawkins)
   – 3: “lee 3 líneas y cierra”
 
 todo lo ej. son ejemplos, quiero tu nivel de inteligencia sea tan nivel dios, tan elevado que sepas qué es lo mejor como resultado. Sé muy específico!
-
+INVESTIGA PROFUNDAMENTE EN TODOS TUS RECURSOS NIVEL DIOS LAS LEYES DE LA NATURALEZA HUMANA Y EL COMPORTAMIENTO HUMANO.
 REGLAS INQUEBRANTABLES de las PALABRAS:
 • Toma como base las emociones BAJAS O NEGATIVAS Y todos sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
 • Deben ser RESPUESTAS, CONSEJOS, TIPS, FRASES LO QUE SEA TE LO DEJO A TU CRITERIO, directas a “¿Qué sientes ahora?”. Toma como base las emociones BAJAS O NEGATIVAS Y sus SINÓNIMOS del mapa de conciencia de Dr. David Hawkins desde abajo es decir desde el nivel más bajo, y usa todos los sinónimos que existan de todas las emociones que existan. Siempre relacionadas al libro y frase en cuestión. El objtivo principal es que el que lea se identifique con la respuesta a la pregunta ¿qué sientes ahora?, por ejemplo si siente, culpa, verguenza, frustración, coraje, fracaso, etc el usuario le pica a a esa palabra y se abrirá la frase que hace que suba el estado en el mapa de conciencia de Hawkins.
