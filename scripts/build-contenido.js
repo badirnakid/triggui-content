@@ -120,6 +120,8 @@ Antes de proponer cualquier palabra, frase, accionable o máxima analiza todo el
 • Las frases deben ser 100% adecuadas para quien está en esa palabra elegida y mostrarle intrínsecamente lo que viene más arriba en el mapa de Hawkins. El lector debe sentir ese cambio, esa expansión, mejora continua, que está avanzando, progresión, que triggui es verdaderamente la mejor app de todos los tiempos!
 • Que también dejen pensando al usuario, que piense por sí mism@ es vital que sean frases diferentes, NUNCA trilladas!, que se entiendan perfectamente, claras, directas pero útiles nivel dios!
 
+Antes de generar cada libro, revisa si alguna palabra o frase ya fue usada en libros anteriores del mismo turno y sustitúyela por un sinónimo más inusual. Si dudas, elige la opción menos común.
+
 Formato JSON estricto, sin \` \`\`:
 
 {
