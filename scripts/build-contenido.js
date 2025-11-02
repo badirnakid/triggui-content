@@ -559,11 +559,14 @@ Todas con valores sorprendentes, irrepetibles, plausibles.
     };
 
 
-    return {
-      ...b,           // mantiene titulo, autor, portada, tagline
-      ...extra,
-      portada: b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`
-    };
+return {
+  ...b,
+  ...extra,
+  portada: b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`,
+  // 🔥 NUEVO CAMPO: genera el enlace directo al video
+  videoUrl: `https://duckduckgo.com/?q=!ducky+${encodeURIComponent(`${b.titulo} ${b.autor} entrevista subtítulos español`)}`
+};
+
 
   }catch(e){
     console.warn("⚠️ Fallback", b.titulo, ":", e.message);
