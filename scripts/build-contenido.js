@@ -564,7 +564,7 @@ return {
   ...extra,
   portada: b.portada?.trim() || `📚 ${b.titulo}\n${b.autor}`,
   // 🔥 NUEVO CAMPO: genera el enlace directo al video
-  videoUrl: `https://duckduckgo.com/?q=!ducky+${encodeURIComponent(`${b.titulo} ${b.autor} entrevista subtítulos español`)}`
+  videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${b.titulo} ${b.autor} entrevista español`)}`
 
 };
 
