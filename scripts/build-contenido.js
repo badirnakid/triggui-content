@@ -875,7 +875,23 @@ return {
 }
 
 /* MAIN ---------------------------------------------------------- */
-const libros = await Promise.all(pick.map(enrich));
+/* MAIN ---------------------------------------------------------- */
+const libros = [];
+let progreso = 0;
+
+for (const libro of pick) {
+  progreso++;
+  console.log(`📖 Procesando ${progreso}/${pick.length}: ${libro.titulo}`);
+  
+  const enriched = await enrich(libro);
+  libros.push(enriched);
+  
+  // Mostrar palabras usadas hasta ahora
+  if (progreso % 5 === 0) {
+    console.log(`   📊 Palabras únicas: ${usedToday.palabras.size} | Colores: ${usedToday.colores.size}`);
+  }
+}
+
 await fs.writeFile(OUT_FILE, JSON.stringify({libros}, null, 2));
 console.log("✅ contenido.json generado:", libros.length, "libros");
 console.log("📊 Palabras únicas HOY:", usedToday.palabras.size, "de", libros.length * 4, "posibles");
