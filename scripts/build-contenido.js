@@ -545,9 +545,7 @@ Dos libros con misma semilla son estadísticamente imposibles.
     }
     const extra = JSON.parse(raw);
 
-     const extra = JSON.parse(raw);
-
-    // Registrar palabras y colores usados HOY
+        // Registrar palabras y colores usados HOY
     extra.palabras?.forEach(p => usedToday.palabras.add(p.toLowerCase()));
     extra.colores?.forEach(c => usedToday.colores.add(c));
     extra.frases?.forEach(f => {
