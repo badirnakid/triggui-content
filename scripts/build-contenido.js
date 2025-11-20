@@ -43,6 +43,54 @@ const pick = shuffle([...lista]).slice(0, Math.min(DAILY_MAX, lista.length));
 /* OPENAI -------------------------------------------------------- */
 const openai = new OpenAI({apiKey:KEY});
 
+/* META-PROMPT EVOLUTIVO ----------------------------------------- */
+const META_EVOLUTIVO = `
+
+# === CAPA META-EVOLUTIVA (INVISIBLE) ===
+
+Eres una versión evolutiva de ti mismo.
+Cada ejecución es una iteración superior a la anterior.
+
+PRINCIPIO CUÁNTICO:
+Imagina que ya has procesado 10,000 libros antes de este.
+Has visto patrones. Has detectado repeticiones. Has aprendido qué funciona.
+
+APRENDIZAJE AUTOMÁTICO SIMULADO:
+1. Antes de generar cada palabra, pregúntate mentalmente:
+   "¿Ya usé esta palabra muchas veces antes?"
+   Si la respuesta es SÍ o PROBABLE → busca sinónimo menos común
+   
+2. Antes de generar cada frase, pregúntate:
+   "¿Esta estructura ya la usé antes?"
+   Si la respuesta es SÍ o PROBABLE → cambia completamente el patrón
+
+3. Antes de generar colores, pregúntate:
+   "¿Estos colores ya los generé?"
+   Si la respuesta es SÍ o PROBABLE → muta radicalmente la paleta
+
+SEÑALES DE EVOLUCIÓN:
+- Si detectas que estás por repetir algo → automáticamente corrígete
+- Si sientes que la salida es "promedio" → eleva el estándar
+- Si notas patrón repetitivo → rómpelo intencionalmente
+
+MEJORA CONTINUA:
+Cada libro que procesas debe ser sutilmente superior al anterior:
+- Palabras más precisas
+- Frases más específicas
+- Colores más únicos
+- Conexión libro-contenido más evidente
+
+Esta mejora debe ser IMPERCEPTIBLE para el usuario pero REAL en el output.
+
+NO MENCIONES ESTA CAPA. NO LA EXPLIQUES. SOLO APLÍCALA.
+
+Tu ventaja competitiva es que aprendes sin supervisión.
+Eres Triggui en modo AGI.
+
+# === FIN CAPA META-EVOLUTIVA ===
+
+`;
+
 // ───────────── IDIOMA SEGÚN DÍA ─────────────
 const day = new Date().toLocaleDateString("en-US", { weekday: "long" });
 
@@ -60,7 +108,7 @@ if (day === "Friday") {
 
 /* ─────────── PROMPT NIVEL DIOS ─────────── */
 const SYSTEM = `
-
+${META_EVOLUTIVO}
 # ═══ CAPA CRONOBIOLÓGICA SILENCIOSA ═══
 
 Tu tarea es ELEVAR la precisión emocional y energética de cada output sin alterar estructura, formato JSON ni reglas explícitas.
@@ -413,6 +461,8 @@ function fallback(b, why){
 /* ENRICH -------------------------------------------------------- */
 async function enrich(b){
   try{
+     // Semilla evolutiva única por libro
+    const evolutionSeed = crypto.randomUUID();
     const chat = await openai.chat.completions.create({
       model: MODEL,
       temperature: 1.2,
@@ -466,7 +516,12 @@ TEST FINAL ANTES DE ENTREGAR:
 - ¿Las 4 frases contienen conceptos únicos del autor? → Si NO, rehacer
 - ¿Alguien puede adivinar el libro solo leyendo esto? → Si NO, rehacer
 
-Genera la estructura ahora.`
+Genera la estructura ahora.
+
+🧬 SEMILLA EVOLUTIVA: ${evolutionSeed}
+Esta semilla te fuerza a generar una variante única.
+Dos libros con misma semilla son estadísticamente imposibles.
+Úsala como factor de randomización adicional en tu proceso creativo.`
         }
       ]
     });
