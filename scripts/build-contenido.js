@@ -565,8 +565,43 @@ Proceso obligatorio para cada color:
     if(raw.startsWith("```")){
       raw = raw.replace(/```[\\s\\S]*?\\n/, "").replace(/```$/, "");
     }
-    const extra = JSON.parse(raw);
+    let extra = JSON.parse(raw);
 
+    // ============== VALIDACIÓN (MINIMALISTA) ==============
+    const repetidas = extra.palabras?.filter(p => 
+      usedToday.palabras.has(p.toLowerCase())
+    ) || [];
+    
+    if (repetidas.length > 0) {
+      console.warn(`⚠️  "${b.titulo}": repeticiones detectadas`);
+      
+      const validacionChat = await openai.chat.completions.create({
+        model: MODEL,
+        temperature: 1.3,
+        messages: [{
+          role: "system",
+          content: `Corrector de palabras. Lista prohibida: ${[...usedToday.palabras].join(", ")}
+Reemplaza repeticiones con sinónimos específicos al libro. Devuelve JSON corregido.`
+        }, {
+          role: "user",
+          content: `Libro: "${b.titulo}"
+JSON: ${JSON.stringify(extra)}
+Repetidas: ${repetidas.join(", ")}`
+        }]
+      });
+      
+      try {
+        let raw = validacionChat.choices[0].message.content.trim()
+          .replace(/```[\s\S]*?\n/, "").replace(/```$/, "");
+        extra = JSON.parse(raw);
+        console.log(`   ✅ Corregido`);
+      } catch (e) {
+        console.warn(`   ⚠️  Usando original`);
+      }
+    }
+    // ============== FIN VALIDACIÓN ==============
+
+    
         // Registrar palabras y colores usados HOY
     extra.palabras?.forEach(p => usedToday.palabras.add(p.toLowerCase()));
     extra.colores?.forEach(c => usedToday.colores.add(c));
