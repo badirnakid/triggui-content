@@ -419,12 +419,54 @@ async function enrich(b){
       top_p: 0.9,
       messages: [
         { role: "system", content: SYSTEM.trim() },
-        {
+       {
           role: "user",
-          // 👉 inyección de tagline si existe
           content: `Libro: "${b.titulo}" de ${b.autor}.`
                 + (b.tagline ? ` Tagline: "${b.tagline}".` : "")
-                + " Genera la estructura."
+                + `
+
+🎯 PROTOCOLO DE ESPECIFICIDAD ABSOLUTA:
+
+PASO 1 - ANALIZA EL LIBRO:
+Antes de generar cualquier palabra o frase, identifica mentalmente:
+- ¿Cuál es el tema CENTRAL único de este libro?
+- ¿Qué problema específico resuelve?
+- ¿Qué conceptos/métodos/frameworks son únicos del autor?
+
+PASO 2 - PALABRAS/EMOCIONES (responden a "¿Qué sientes o buscas ahora?"):
+Cada palabra debe cumplir este test:
+✅ ¿Alguien que NECESITA este libro sentiría esta emoción ANTES de leerlo?
+✅ ¿Esta emoción es específica del tema del libro, no genérica?
+✅ ¿Si cambio el libro por otro de diferente tema, esta emoción seguiría teniendo sentido? → Si SÍ = RECHAZAR
+
+Proceso mental obligatorio por cada palabra:
+1. Piensa: "¿Qué siente alguien que busca ESTE libro específico?"
+2. Usa el tema del libro como prefijo mental de la emoción
+3. Verifica que sea una emoción baja Hawkins relacionada al problema del libro
+
+PASO 3 - FRASES (elevan +1 Hawkins desde la emoción):
+Cada frase debe cumplir este test:
+✅ ¿Contiene un concepto/método/idea ÚNICA del libro?
+✅ ¿Alguien que conoce el libro reconocería de qué trata solo leyendo esta frase?
+✅ ¿Esta frase podría funcionar para otro libro? → Si SÍ = RECHAZAR
+
+Proceso mental obligatorio por cada frase:
+1. Toma la palabra/emoción que elegiste
+2. Usa un concepto ESPECÍFICO del libro para elevar desde esa emoción
+3. Hazlo accionable con método concreto del autor
+4. Verifica: "¿Solo este libro puede dar esta solución?"
+
+REGLA SUPREMA:
+Tu metodología Triggui (Hawkins + Cronobiología + Centros de Energía + Dimensiones) 
+debe aplicarse a través del contenido ÚNICO del libro.
+No uses metodología genérica. Usa la sabiduría ESPECÍFICA del autor.
+
+TEST FINAL ANTES DE ENTREGAR:
+- ¿Las 4 palabras solo tienen sentido para ESTE libro? → Si NO, rehacer
+- ¿Las 4 frases contienen conceptos únicos del autor? → Si NO, rehacer
+- ¿Alguien puede adivinar el libro solo leyendo esto? → Si NO, rehacer
+
+Genera la estructura ahora.`
         }
       ]
     });
