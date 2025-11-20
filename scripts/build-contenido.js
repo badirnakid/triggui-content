@@ -529,11 +529,33 @@ Genera la estructura ahora.
 Esta semilla te fuerza a generar una variante única.
 Dos libros con misma semilla son estadísticamente imposibles.
 Úsala como factor de randomización adicional en tu proceso creativo.`
-                + (usedToday.palabras.size > 0 
-                    ? `\n\n🚫 YA USADAS HOY (prohibidas): ${[...usedToday.palabras].join(", ")}`
++ (usedToday.palabras.size > 0 
+                    ? `\n\n🚫🚫🚫 PALABRAS ABSOLUTAMENTE PROHIBIDAS (ya usadas hoy):
+${[...usedToday.palabras].join(", ")}
+
+CRITICAL: Si usas CUALQUIERA de estas palabras, el resultado será RECHAZADO.
+Proceso obligatorio:
+1. Ve cada palabra prohibida
+2. Busca su familia léxica completa (sustantivo, adjetivo, verbo)
+3. Busca 5 sinónimos de cada una
+4. Elige el sinónimo MÁS INUSUAL y específico al libro
+5. Verifica que no esté en la lista prohibida
+6. Si dudas, elige la opción menos común que conozcas`
                     : "")
                 + (usedToday.colores.size > 0 
-                    ? `\n🎨 COLORES YA USADOS HOY (evítalos): ${[...usedToday.colores].slice(-8).join(", ")}`
+                    ? `\n\n🎨🎨🎨 COLORES ABSOLUTAMENTE PROHIBIDOS (ya usados hoy):
+${[...usedToday.colores].join(", ")}
+
+CRITICAL: Si usas colores iguales o visualmente SIMILARES, el resultado será RECHAZADO.
+
+Proceso obligatorio para cada color:
+1. Analiza TODOS los colores prohibidos arriba
+2. Identifica sus familias (ej. todos los amarillos, todos los azules cyan, todos los rosas)
+3. Elige colores que estén EN MEDIO entre dos familias (no en ninguna familia conocida)
+4. Usa valores intermedios inusuales en los 3 canales RGB
+5. Mezcla saturaciones opuestas: un color ultra saturado + uno desaturado + uno metálico + uno tierra
+6. Pregúntate: "¿Este set de 4 colores podría confundirse con alguno anterior?" Si SÍ → rehacer completamente
+7. Objetivo: Paleta que cause sorpresa visual inmediata, no familiaridad`
                     : "")
         }
       ]
