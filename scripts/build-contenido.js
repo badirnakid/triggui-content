@@ -590,18 +590,94 @@ let extra = JSON.parse(raw);
     if (repetidas.length > 0) {
       console.warn(`⚠️  "${b.titulo}": repeticiones detectadas`);
       
-      const validacionChat = await openai.chat.completions.create({
+     const validacionChat = await openai.chat.completions.create({
         model: MODEL,
-        temperature: 1.3,
+        temperature: 1.5,
         messages: [{
           role: "system",
-          content: `Corrector de palabras. Lista prohibida: ${[...usedToday.palabras].join(", ")}
-Reemplaza repeticiones con sinónimos específicos al libro. Devuelve JSON corregido.`
+          content: `CORRECTOR ULTRA-ESTRICTO DE PALABRAS REPETIDAS.
+
+📛 PALABRAS ABSOLUTAMENTE PROHIBIDAS (ya usadas):
+${[...usedToday.palabras].join(", ")}
+
+⚠️ REPETICIONES DETECTADAS:
+- Intra-libro (dentro del mismo array): ${repetidasIntra.length > 0 ? repetidasIntra.join(", ") : "ninguna"}
+- Inter-libro (ya usadas antes): ${repetidasInter.length > 0 ? repetidasInter.join(", ") : "ninguna"}
+
+🎯 TU MISIÓN:
+Generar 4 palabras/emociones COMPLETAMENTE DIFERENTES entre sí, específicas al libro "${b.titulo}", y que NO estén en la lista prohibida.
+
+📋 PROCESO OBLIGATORIO:
+
+PASO 1 - ANALIZA EL LIBRO:
+- Tema central: ¿De qué trata realmente "${b.titulo}"?
+- Problema que resuelve: ¿Qué dolor/necesidad aborda?
+- Emoción dominante del lector que lo busca: ¿Qué siente ANTES de leerlo?
+
+PASO 2 - GENERA PALABRAS ÚNICAS:
+Para CADA palabra repetida:
+1. Piensa en la EMOCIÓN ESPECÍFICA que alguien siente al buscar ESTE libro
+2. Busca un sinónimo INUSUAL del mapa de Hawkins (nivel bajo: 20-200)
+3. Verifica que sea MUY específico al tema del libro
+4. NO uses palabras comunes ni de la lista prohibida
+
+PASO 3 - CRITERIOS DE SELECCIÓN:
+✅ Debe responder a "¿Qué sientes ahora?" (primera persona implícita)
+✅ Debe ser UNA SOLA PALABRA (emoción/sensación)
+✅ Debe ser específica al tema de "${b.titulo}"
+✅ Debe ser DIFERENTE a todas las anteriores (prohibidas + las otras 3 del array)
+✅ Debe ser una emoción BAJA Hawkins (vergüenza, culpa, apatía, miedo, deseo, ira, orgullo y sus sinónimos)
+
+PASO 4 - TEST DE ESPECIFICIDAD:
+Pregúntate: "¿Esta palabra tiene sentido SOLO para este libro, o sirve para cualquiera?"
+- Si sirve para cualquiera → RECHAZAR, buscar más específica
+- Si es única del tema → APROBAR
+
+🚫 PROHIBIDO:
+- Usar palabras de la lista prohibida arriba
+- Usar palabras genéricas: ansiedad, miedo, duda, calma, tristeza
+- Usar palabras que no sean emociones: técnica, estrategia, cambio, hábito
+- Repetir palabras dentro del array de 4
+
+💡 ESTRATEGIA:
+En lugar de buscar sinónimos directos, busca la EMOCIÓN ESPECÍFICA del contexto del libro.
+
+Ejemplos (NO USAR, solo ilustrativos):
+- Libro de finanzas → "escasez", "carencia", "penuria" (específicas al dinero)
+- Libro de liderazgo → "impotencia", "desvalimiento", "ineficacia" (específicas al control)
+- Libro de estoicismo → "turbación", "desasosiego", "perturbación" (específicas a la paz mental)
+
+✅ VERIFICACIÓN FINAL:
+- ¿Las 4 palabras son DIFERENTES entre sí? → Si NO, rehacer
+- ¿Ninguna está en la lista prohibida? → Si SÍ, rehacer
+- ¿Todas son emociones BAJAS Hawkins? → Si NO, rehacer
+- ¿Todas son específicas al libro? → Si NO, rehacer
+- ¿Todas responden a "¿Qué sientes ahora?"? → Si NO, rehacer
+
+DEVUELVE SOLO EL JSON CORREGIDO:
+{
+  "dimension": "${extra.dimension}",
+  "punto": "${extra.punto}",
+  "palabras": ["palabra1", "palabra2", "palabra3", "palabra4"],
+  "frases": ${JSON.stringify(extra.frases)},
+  "colores": ${JSON.stringify(extra.colores)},
+  "fondo": "${extra.fondo}"
+}
+
+NADA MÁS.`
         }, {
           role: "user",
-          content: `Libro: "${b.titulo}"
-JSON: ${JSON.stringify(extra)}
-Repetidas: ${repetidas.join(", ")}`
+          content: `Libro: "${b.titulo}" de ${b.autor}
+${b.tagline ? `Tagline: "${b.tagline}"` : ""}
+
+JSON CON REPETICIONES:
+${JSON.stringify(extra, null, 2)}
+
+PALABRAS QUE DEBES REEMPLAZAR:
+${repetidas.join(", ")}
+
+GENERA 4 PALABRAS ÚNICAS, ESPECÍFICAS A ESTE LIBRO, USANDO EL MAPA HAWKINS.
+NO uses palabras de la lista prohibida ni genéricas.`
         }]
       });
       
