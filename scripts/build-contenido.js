@@ -910,7 +910,6 @@ return {
 }
 
 /* MAIN ---------------------------------------------------------- */
-/* MAIN ---------------------------------------------------------- */
 const libros = [];
 let progreso = 0;
 
@@ -921,9 +920,13 @@ for (const libro of pick) {
   const enriched = await enrich(libro);
   libros.push(enriched);
   
-  // Mostrar palabras usadas hasta ahora
+  // Reset cada 5 libros para liberar memoria de GPT
   if (progreso % 5 === 0) {
     console.log(`   📊 Palabras únicas: ${usedToday.palabras.size} | Colores: ${usedToday.colores.size}`);
+    console.log(`   🔄 Reset: limpiando memoria prohibidos`);
+    usedToday.palabras.clear();
+    usedToday.colores.clear();
+    usedToday.emojis.clear();
   }
 }
 
