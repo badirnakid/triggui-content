@@ -565,12 +565,27 @@ Proceso obligatorio para cada color:
     if(raw.startsWith("```")){
       raw = raw.replace(/```[\\s\\S]*?\\n/, "").replace(/```$/, "");
     }
-    let extra = JSON.parse(raw);
+let extra = JSON.parse(raw);
 
-    // ============== VALIDACIÓN (MINIMALISTA) ==============
-    const repetidas = extra.palabras?.filter(p => 
+    // ============== VALIDACIÓN DOBLE (MINIMALISTA) ==============
+    // 1. Detectar repeticiones DENTRO del mismo libro
+    const palabrasSet = new Set();
+    const repetidasIntra = [];
+    extra.palabras?.forEach(p => {
+      const lower = p.toLowerCase();
+      if (palabrasSet.has(lower)) {
+        repetidasIntra.push(p);
+      } else {
+        palabrasSet.add(lower);
+      }
+    });
+    
+    // 2. Detectar repeticiones con libros ANTERIORES
+    const repetidasInter = extra.palabras?.filter(p => 
       usedToday.palabras.has(p.toLowerCase())
     ) || [];
+    
+    const repetidas = [...new Set([...repetidasIntra, ...repetidasInter])];
     
     if (repetidas.length > 0) {
       console.warn(`⚠️  "${b.titulo}": repeticiones detectadas`);
