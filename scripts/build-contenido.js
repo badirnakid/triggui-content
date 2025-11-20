@@ -39,6 +39,13 @@ function shuffle(array) {
 
 const pick = shuffle([...lista]).slice(0, Math.min(DAILY_MAX, lista.length));
 
+/* ANTI-REPETICIÓN DENTRO DEL DÍA -------------------------------- */
+const usedToday = {
+  palabras: new Set(),
+  colores: new Set(),
+  emojis: new Set()
+};
+
 
 /* OPENAI -------------------------------------------------------- */
 const openai = new OpenAI({apiKey:KEY});
@@ -522,6 +529,12 @@ Genera la estructura ahora.
 Esta semilla te fuerza a generar una variante única.
 Dos libros con misma semilla son estadísticamente imposibles.
 Úsala como factor de randomización adicional en tu proceso creativo.`
+                + (usedToday.palabras.size > 0 
+                    ? `\n\n🚫 YA USADAS HOY (prohibidas): ${[...usedToday.palabras].join(", ")}`
+                    : "")
+                + (usedToday.colores.size > 0 
+                    ? `\n🎨 COLORES YA USADOS HOY (evítalos): ${[...usedToday.colores].slice(-8).join(", ")}`
+                    : "")
         }
       ]
     });
@@ -531,6 +544,18 @@ Dos libros con misma semilla son estadísticamente imposibles.
       raw = raw.replace(/```[\\s\\S]*?\\n/, "").replace(/```$/, "");
     }
     const extra = JSON.parse(raw);
+
+     const extra = JSON.parse(raw);
+
+    // Registrar palabras y colores usados HOY
+    extra.palabras?.forEach(p => usedToday.palabras.add(p.toLowerCase()));
+    extra.colores?.forEach(c => usedToday.colores.add(c));
+    extra.frases?.forEach(f => {
+      const emojiMatch = f.match(/^[\u{1F300}-\u{1F9FF}]/u);
+      if (emojiMatch) usedToday.emojis.add(emojiMatch[0]);
+    });
+
+     // --- Guard emocional: fuerza que "palabras" sean emociones reales
 
      // --- Guard emocional: fuerza que "palabras" sean emociones reales
 const EMO_FALLBACKS = ["calma","ansiedad","curiosidad","gratitud","claridad","alegría","serenidad","valor"];
@@ -833,3 +858,6 @@ return {
 const libros = await Promise.all(pick.map(enrich));
 await fs.writeFile(OUT_FILE, JSON.stringify({libros}, null, 2));
 console.log("✅ contenido.json generado:", libros.length, "libros");
+console.log("📊 Palabras únicas HOY:", usedToday.palabras.size, "de", libros.length * 4, "posibles");
+console.log("🎨 Colores únicos HOY:", usedToday.colores.size, "de", libros.length * 4, "posibles");
+console.log("😀 Emojis únicos HOY:", usedToday.emojis.size);
