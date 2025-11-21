@@ -1,327 +1,715 @@
 {
   "libros": [
     {
-      "titulo": "The messy middle",
-      "autor": "Scott Belsky",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/a8/0f/f2/a80ff296-c01e-22d5-8608-592c019d6f03/9780735218086.jpg/626x0w.jpg",
-      "tagline": "The Messy Middle is the indispensable guide to navigating the volatility of new ventures and leading bold creative projects",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "confusión",
-        "ansiedad",
-        "inseguridad",
-        "desánimo"
-      ],
-      "frases": [
-        "🔄 Embrace the chaos; identify one step that can propel your idea forward. Imagine the outcome of a single action.",
-        "🗺️ The path of creation often twists; clarity comes from documenting your thoughts daily. Consider this: what insights emerge?",
-        "🌪️ The journey is unpredictable; dedicate 5 minutes to sketch your current vision. Articulate the feelings tied to each detail.",
-        "🧩 Every misstep teaches; find value in the challenge today. Remember, adjustments bring progress in unseen ways."
-      ],
-      "colores": [
-        "#F15A24",
-        "#28A745",
-        "#007BFF",
-        "#6F42C1"
-      ],
-      "fondo": "#0B0C10",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "A menudo, la confusión es parte del proceso. Acepta que lo desordenado es donde las ideas florecen.  ",
-        "subtitulo": "Sigue el camino hacia la claridad.  ",
-        "parrafoBot": "Recuerda que en la incertidumbre puedes encontrar la motivación para innovar. Aprovecha esos momentos para probar y experimentar sin miedo.",
-        "style": {
-          "accent": "#ff4d00",
-          "ink": "#2e2e2e",
-          "paper": "viento oscuro de terciopelo",
-          "border": "misterio negro intergaláctico",
-          "serif": "Playfair Display",
-          "sans": "Orbitron",
-          "marco": "glitch sutil",
-          "fontSizeTitle": "gigante astral 48–150px",
-          "fontSizeBody": "susurro vibrante 10–28px",
-          "fontWeight": "peso cuántico 700",
-          "lineHeight": "respiro cósmico 1.75",
-          "letterSpacing": "espacio infinito +3px",
-          "textTransform": "neonfluid",
-          "textShadow": "neón vibrante expandido",
-          "layout": "collage caleidoscópico",
-          "showCover": false,
-          "ornamentFlux": "fractura prismática errante",
-          "holoInk": "tinta líquida con brillo radiante",
-          "quantumSpacing": "distorsión espacial",
-          "dreamGrain": "textura etérea vaporosa",
-          "animationHint": "destello psicodélico constante",
-          "metaShadow": "sombra fractal en movimiento",
-          "surprise": "fragmento tipográfico fluido",
-          "glowAura": "halo naranja iridiscente"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20messy%20middle%20Scott%20Belsky%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "La psicología del dinero",
-      "autor": "Morgan Housel",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/af/91/e6/af91e624-1850-7aef-661a-dc9f390922c7/9788408247265.jpg/626x0w.jpg",
-      "tagline": "En cuestiones de dinero lo que importa no es lo listo que seas sino cómo te comportas.Tendemos a pensar en la inversión o la gestión de las finanzas personales como una disciplina matemática en la que los datos y las fórmulas nos dicen exactamente qué hacer. Sin embargo el rasgo que define a las personas que logran enriquecerse no es su destreza con los números ni su salario o su talento sino su historia personal sus motivaciones y su visión única del mundo.Este libro llamado a convertirse en un clásico de las finanzas personales nos provee del conocimiento esencial para entender la psicología del dinero y nos invita a hacernos una pregunta fundamental que raramente nos hacemos cuál es nuestra relación con el dinero y qué queremos realmente de él.",
-      "dimension": "Bienestar",
-      "punto": "Máximo",
-      "palabras": [
-        "inquietud",
-        "carencia",
-        "ambigüedad",
-        "gratitud"
-      ],
-      "frases": [
-        "💡 Observa cómo las historias personales influyen en cada decisión financiera; haz un breve diario sobre tus pensamientos. ",
-        "📉 Las limitaciones emocionales que sentimos al abordar el dinero pueden cambiar con una mentalidad abierta; prueba a compartir tus experiencias con alguien de confianza. ",
-        "🛤️ Un enfoque efectivo para liberarte de la presión económica es definir claramente tus objetivos y trabajar en pequeñas metas; anota tres deseos financieros para el futuro.",
-        "🔍 En el mundo actual, la riqueza es cada vez más accesible si aprendemos a observar nuestra relación con el dinero; estudia un caso de éxito y analiza qué aprendizajes puedes aplicar."
-      ],
-      "colores": [
-        "#E12A67",
-        "#4B8C89",
-        "#C1C12B",
-        "#FF6F30"
-      ],
-      "fondo": "#1B1F24",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Las finanzas son más emocionales que racionales. Aprendí que entender cómo cada uno valora el dinero es crucial para una vida equilibrada.",
-        "subtitulo": "Comprendiendo la psicología",
-        "parrafoBot": "Este conocimiento no solo se trata de acumular; se trata de cómo te sientes con lo que tienes. Evalúa tus creencias sobre el dinero y ajusta tus decisiones financieras a esa nueva perspectiva.",
-        "style": {
-          "accent": "#4bff3d",
-          "ink": "#2e1e1d",
-          "paper": "nube de neón rasgada",
-          "border": "sombra fractal oscura",
-          "serif": "Bodoni",
-          "sans": "Orbitron",
-          "marco": "foil arcoíris",
-          "fontSizeTitle": "colosal estelar 50–120px",
-          "fontSizeBody": "susurro vibrante 10–24px",
-          "fontWeight": "peso fluctuante 800",
-          "lineHeight": "danza etérea 1.4",
-          "letterSpacing": "puente luminoso +3px",
-          "textTransform": "mixed flow",
-          "textShadow": "blur dorado cinético",
-          "layout": "collage orgánico",
-          "showCover": false,
-          "ornamentFlux": "filigrana iridiscente",
-          "glitchAura": "resplandor de holograma incierto",
-          "quantumSpacing": "interludio caótico 0.1rem",
-          "holoInk": "tinta de luz fluctuante",
-          "fractalWeight": "grosor mutante 750",
-          "animationHint": "breathe en espiral",
-          "texture": "pintura acrílica vívida",
-          "surprise": "palabras destiladas en niebla de eco"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20psicolog%C3%ADa%20del%20dinero%20Morgan%20Housel%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "¿Envejeces o rejuveneces?",
-      "autor": "Sari Arponen",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/6c/59/bc/6c59bc67-9654-7bd6-f9ad-822e7d4e6130/9788413444130.jpg/626x0w.jpg",
-      "tagline": "Dale vida a los años y no sólo años a la vida.puedes optar por rejuvenecer mientras cumples años. Depende de tus decisiones: la longevidad saludable no es un mito sino una realidad al alcance de tu mano si conoces las herramientas adecuadas.la Dra. Sari Arponen explora los conceptos de edad salud y envejecimiento desde nuestras raíces evolutivas hasta los últimos avances en células madre o terapias génicas.Profundiza en una reflexión honesta incluso incómoda sobre cómo percibimos la muerte y nuestra humanidad.Pautas concretas y realistas para una larga vida repleta de bienestar.Para vivir mejor mañana cada decisión que tomas hoy cuenta.",
+      "titulo": "Homo creativus",
+      "autor": "Juan Carlos Chavez",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/5c/3f/c25c3fcf-3d93-66d4-f634-b512c3a4b6ec/rm_image.jpg/626x0w.jpg",
+      "tagline": "5 virtudes biológicas que te representan potencia privilegiada 3 intenciones que marcan una dirección inteligentemente benéfica 3 medios que adicionan suma fortaleza a cada paso 11 peligros inminentes que debes evitar a toda costa y 11 posibilidades que te mostrarán un puerto fértil y profundamente cautivador",
       "dimension": "Bienestar",
       "punto": "Creativo",
       "palabras": [
         "desasosiego",
-        "anhelo",
-        "curiosidad",
-        "temor"
+        "desconfianza",
+        "incertidumbre",
+        "inseguridad"
       ],
       "frases": [
-        "🌱 Permite que la vida brote desde cada elección consciente que tomas. Abre tus ojos a nuevas posibilidades cada día.",
-        "🧭 Visualiza el potencial de tus decisiones: el camino hacia una existencia llena de vitalidad está frente a ti.",
-        "🕊️ El cambio comienza aquí; anota tres hábitos que incorporarás para reavivar tu bienestar a medida que creces.",
-        "✨ En cada paso que das, recuerda: cada momento es una oportunidad para rejuvenecer tu espíritu y cuerpo."
+        "✨ Permite que la curiosidad guíe tus pasos hacia lo desconocido. Acepta 3 nuevas ideas hoy.",
+        "🌱 Enfócate en la posibilidad de crear y la desconfianza se disolverá. Respira 3 veces y sueña.",
+        "🚀 Las oportunidades florecen cuando dejas de lado las dudas. Escribe 1 meta nueva en tu cuaderno.",
+        "🌌 Cada idea puede ser un nuevo comienzo. Piensa en 3 caminos diferentes que puedas explorar."
       ],
       "colores": [
-        "#8A7D9D",
-        "#FFD47F",
-        "#2E8B77",
-        "#FF6B6B"
+        "#4A90E2",
+        "#E94E77",
+        "#F8B400",
+        "#5F2E37"
       ],
-      "fondo": "#1D1F21",
+      "fondo": "#0A0A0A",
       "textColors": [
         "#FFFFFF",
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "La perspectiva que tenemos sobre el paso del tiempo influye en nuestra salud y bienestar.  ",
-        "subtitulo": "Redefine tu enfoque.  ",
-        "parrafoBot": "Lo que decides creer sobre el envejecimiento puede afectar cómo te sientes. Empieza a tomar decisiones que alimenten tu vitalidad y tu conexión con la vida.",
+        "parrafoTop": "Tomar riesgos es esencial para desarrollar tu creatividad. Si no te permites salir de tu zona de confort, te quedas estancado.",
+        "subtitulo": "Rompe tus límites",
+        "parrafoBot": "Experimenta hoy mismo con una nueva actividad que te apasione. Conéctate contigo y permite que la creatividad fluya sin restricciones. Empieza ahora y observa cómo se transforma tu perspectiva.",
         "style": {
-          "accent": "#00ffcc",
-          "ink": "#161616",
-          "paper": "nube digital en penumbra",
-          "border": "cromo coral desvanecido",
-          "serif": "Playfair Display",
-          "sans": "Orbitron",
-          "marco": "foil iridiscente",
-          "fontSizeTitle": "gigante cósmico 50px",
-          "fontSizeBody": "susurro galáctico 14–28px",
-          "fontWeight": "peso vibrante 800",
-          "lineHeight": "respiración intensa 1.8",
-          "letterSpacing": "horizonte abierto +4px",
-          "textTransform": "mixed surreal",
-          "textShadow": "neón sutil fluido",
-          "layout": "collage cinético",
+          "accent": "#ff5e00",
+          "ink": "#2f2f2f",
+          "paper": "pálido de medusa luminosa",
+          "border": "efecto neón desvanecido",
+          "serif": "Bodoni",
+          "sans": "Montserrat Alternates",
+          "marco": "glitch envolvente",
+          "fontSizeTitle": "gigante etéreo 50px",
+          "fontSizeBody": "susurro galáctico 10–28px",
+          "fontWeight": "peso líquido 800",
+          "lineHeight": "respiro hiperspacial 1.4",
+          "letterSpacing": "eco distante +3px",
+          "textTransform": "mixed",
+          "textShadow": "sombra flotante radiante",
+          "layout": "collage fractal invertido",
           "showCover": false,
-          "ornamentFlux": "trazo errático de estrellas",
-          "glitchAura": "destellos en tiempo real",
-          "dreamGrain": "textura onírica y granulada",
-          "warpGrid": "malla cuántica fragmentada",
-          "fontFlux": "expansión radial 16px–160px",
-          "animationHint": "flicker espiral dimensional",
-          "texture": "papel mineral brillante",
-          "surprise": "fragmento en clave morse y sombra dislocada"
+          "ornamentFlux": "destellos de luces oníricos",
+          "glowFlux": "destello cian explosivo",
+          "holoInk": "tinta lumínica con efecto tridimensional",
+          "warpGrid": "cuadrícula entrelazada cuántica",
+          "quantumSpacing": "espacio cuántico fluctuante",
+          "animationHint": "breathe digitalmente",
+          "texture": "nube vaporosa iridiscente",
+          "surprise": "fragmentos de realidades colisionantes"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+%C2%BFEnvejeces%20o%20rejuveneces%3F%20Sari%20Arponen%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Homo%20creativus%20Juan%20Carlos%20Chavez%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El gato que amaba los libros",
-      "autor": "Sosuke Natsukawa",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/626x0w.jpg",
-      "tagline": "Un homenaje a las librerías a los libros y a todos aquellos que los aman",
+      "titulo": "El viaje a la vida",
+      "autor": "Eduardo Punset",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/cc/43/58/cc4358ee-140c-a645-a2ed-570ab33feed0/9788423348626.jpg/626x0w.jpg",
+      "tagline": "Cómo la empatía y la intuición cambiarán nuestro futuro.Gradualmente la sociedad está aprendiendo gracias a las redes sociales y a la propagación de la empatía a cuidar de sí misma y a no necesitar de las ayudas interesadas de terceros. Algún día ya nadie dudará de que la mejor manera de ser feliz será haciendo feliz a los demás.",
       "dimension": "Conexión",
       "punto": "Creativo",
       "palabras": [
-        "nostalgia",
-        "lingüística",
-        "enigma",
-        "pasión"
+        "calma",
+        "aversiones",
+        "curiosidad",
+        "somnolencia"
       ],
       "frases": [
-        "📚 Reconoce el poder de las historias; en cada página hay un refugio para el alma. (15s de lectura)",
-        "🐾 Un felino puede ser el guía que abra los mundos escondidos entre líneas, descubre su magia. (relaciona tu entorno)",
-        "✨ Dale vida a los libros; comparte una línea que te resuene con alguien cercano. (escribe y entrega)",
-        "🖤 En la soledad de una estantería, un libro puede esperar toda una vida por un lector ansioso. (recuerda un título olvidado)"
+        "🌟 Reconecta con tu esencia, observa cómo el amor crece en la cercanía. Respira profundo y agradece 3 momentos que hoy te toquen el corazón.",
+        "💖 Las redes son puentes que construyen empatía; deja una huella amable en cada encuentro. Reflexiona sobre 3 formas de ayudar a otros hoy.",
+        "🌱 Abre tus sentidos y abraza el instante; la felicidad florece en el dar. Piensa en 3 cosas que puedes ofrecer a alguien que necesite luz.",
+        "🌈 En este camino de vida, el corazón se abre al compartir. Dedica un momento para dejar un mensaje positivo a alguien que inspire."
       ],
       "colores": [
-        "#3C8C9A",
-        "#FFBF6F",
-        "#F5728E",
-        "#3F414A"
+        "#FF7F50",
+        "#5B92E5",
+        "#FFC0CB",
+        "#00BFFF"
       ],
-      "fondo": "#0A0C0E",
+      "fondo": "#1D1F27",
       "textColors": [
-        "#FFFFFF",
         "#000000",
         "#FFFFFF",
-        "#FFFFFF"
+        "#000000",
+        "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "Los libros pueden transformarnos, como en \"El gato que amaba los libros\" de Sosuke Natsukawa.  ",
-        "subtitulo": "Lectura y conexión  ",
-        "parrafoBot": "Cuando elige un libro, permítase sumergirse en su esencia. Pregúntese: ¿qué quiero aprender o sentir? Esa búsqueda puede guiar su próximo paso.",
+        "parrafoTop": "A menudo olvidamos la importancia de conocer nuestra esencia. En \"El viaje a la vida\" de Eduardo Punset, se destaca que entender quiénes somos es clave para avanzar.  ",
+        "subtitulo": "Conéctate contigo  ",
+        "parrafoBot": "Detente un momento y haz un ejercicio simple: anota lo que te motiva. Esa lista es el mapa hacia lo que realmente importa para ti.",
         "style": {
-          "accent": "#a03cff",
-          "ink": "#ffffff",
-          "paper": "papel cósmico intergaláctico",
-          "border": "neón azul burbujeante",
-          "serif": "Garamond Glitch",
-          "sans": "Neuropol X",
-          "marco": "foils lumínicos vibrantes",
-          "fontSizeTitle": "gigante galáctico 50–200px",
-          "fontSizeBody": "susurro lumínico 10–24px",
-          "fontWeight": "peso de estrella fugaz 800",
-          "lineHeight": "expansión cuántica 2.2",
-          "letterSpacing": "distancia estelar +3px",
-          "textTransform": "mixed espacio",
-          "textShadow": "sombra burbujeante vibrante",
-          "layout": "collage cósmico en espiral",
+          "accent": "#ff5722",
+          "ink": "#212121",
+          "paper": "papel espectral de nebulosa",
+          "border": "holograma prisma fluido",
+          "serif": "Bodoni XT",
+          "sans": "Karla",
+          "marco": "foil estelar",
+          "fontSizeTitle": "cosmic giant 40–120px",
+          "fontSizeBody": "susurro mínimo 10–24px",
+          "fontWeight": "peso intergaláctico 800",
+          "lineHeight": "respiración estelar 1.4",
+          "letterSpacing": "intersticio galáctico +3px",
+          "textTransform": "mixed quantum",
+          "textShadow": "neon burst luminoso",
+          "layout": "collage cuántico",
           "showCover": false,
-          "ornamentFlux": "fragmentos de cristal orgánico",
-          "glowAura": "halo violeta en movimiento",
-          "prismPulse": "latidos de luz arcoíris",
-          "dreamGrain": "textura de nube onírica",
-          "animationHint": "reverberación espacial",
-          "quantumSpacing": "espaciado dimensional desbordante",
-          "surprise": "palabras flotantes en fractales"
+          "ornamentFlux": "fracturas lumínicas en movimiento",
+          "glowAura": "brillo iridiscente de supernova",
+          "metaShadow": "sombra surrealista resplandeciente",
+          "warpGrid": "malla cuántica expansiva",
+          "fontFlux": "vibración entre 18px–160px",
+          "animationHint": "breathe cosmic flow",
+          "texture": "ruido digital de nebulosa",
+          "surprise": "fragmento de palabra flotante inacabado"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20gato%20que%20amaba%20los%20libros%20Sosuke%20Natsukawa%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20viaje%20a%20la%20vida%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Clear Thinking",
-      "autor": "Shane Parrish",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/bd/d4/18/bdd418be-58ca-6172-ff3c-550a048f337e/9780593086124.d.jpg/626x0w.jpg",
-      "tagline": "No actúes de forma precipitada no te dejes llevar por la inercia ni la presión social y despréndete de tu ego. Da un paso atrás y piensa con claridad. El éxito depende muchas veces de pequeñas decisiones que estás tomando por instinto. Deja de hacerlo tu futuro depende de ello.",
-      "dimension": "Cerebro",
-      "punto": "Creativo",
+      "titulo": "Beneath the surface my story",
+      "autor": "Michael Phelps",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/51/7d/3e/517d3edd-f3dd-5cc2-3083-65adb9714d86/9781613213247.jpg/626x0w.jpg",
+      "tagline": "Prepare to peek into the mind of a champion known as the most decorated Olympian of all time with 28 medals including 23 gold",
+      "dimension": "Conexión",
+      "punto": "Máximo",
       "palabras": [
-        "duda",
-        "incertidumbre",
+        "nerviosismo",
         "ansiedad",
-        "desconexión"
+        "curiosidad",
+        "estrés"
       ],
       "frases": [
-        "🧠 Respira profundo y observa el panorama: claridad se encuentra en la pausa.",
-        "💭 Antes de decidir, toma un instante: la razón y el instinto pueden ser aliados.",
-        "🌀 Desprenderse de la presión social es liberador: el éxito está en la autenticidad.",
-        "🛑 Da un paso atrás y anota tres decisiones pequeñas que podrías reevaluar hoy."
+        "🚀 Anota tres estrategias que te impulsan hacia la grandeza y suéltalas.  ",
+        "🐬 La mayoría de los campeones superan retos con coraje y mente clara, como tú puedes. ",
+        "🌊 Explora cómo el nadar a través de las adversidades construye resiliencia en ti.",
+        "🌟 Hoy, enfócate en un pequeño paso que te acerque a tus sueños como atleta."
       ],
       "colores": [
-        "#B0D7EA",
-        "#A47CBE",
-        "#8D5EAA",
-        "#F0C2A1"
+        "#FF5733",
+        "#00BFAE",
+        "#A28DFF",
+        "#FFD700"
       ],
-      "fondo": "#0D1117",
+      "fondo": "#2D2A32",
       "textColors": [
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#FFFFFF",
         "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "La elección entre actuar o dejarse llevar marca el rumbo de nuestra vida. Esto me recordó \"Clear Thinking\" de Shane Parrish.  ",
-        "subtitulo": "Responsabilidad en tus manos  ",
-        "parrafoBot": "Cuando enfrentas un desafío, pregúntate: ¿estás eligiendo cómo reaccionar? Esto puede cambiarlo todo. Tu siguiente paso debe ser tomar el control, actuar con intención y responsabilidad.",
+        "parrafoTop": "Los desafíos no definen tu capacidad, sino cómo decides afrontarlos.  ",
+        "subtitulo": "Actitud y enfoque ante la adversidad  ",
+        "parrafoBot": "El éxito no llega sin sacrificio. Aprovecha cada obstáculo para crecer y afinar tus habilidades. La disciplina es la clave que abrirá las puertas a tus sueños. Haz del esfuerzo tu rutina y observa cómo se transforma tu realidad.",
         "style": {
-          "accent": "#2a00ff",
-          "ink": "#ffffff",
-          "paper": "nieve crepuscular con destellos azules",
-          "border": "cromo violeta pulsante",
-          "serif": "Bodoni XT",
-          "sans": "Neuzeit Grotesk",
+          "accent": "#2bff78",
+          "ink": "#161616",
+          "paper": "viento etéreo en tonos marfil",
+          "border": "destello cobalto transitorio",
+          "serif": "Garamond Neo",
+          "sans": "Futura GenZ",
           "marco": "foil iridiscente",
-          "fontSizeTitle": "ultra titánico 48–120px",
-          "fontSizeBody": "susurro de estrella 14–36px",
-          "fontWeight": "peso líquido 700",
-          "lineHeight": "respiración cósmica 2.0",
-          "letterSpacing": "universo entre letras +1.5px",
+          "fontSizeTitle": "monolito cósmico 48–200px",
+          "fontSizeBody": "susurro etéreo 10–24px",
+          "fontWeight": "densidad cuántica 800",
+          "lineHeight": "cadencia suave 1.4",
+          "letterSpacing": "horizonte expansivo +3px",
           "textTransform": "mixed",
-          "textShadow": "neón con destello mágico",
-          "layout": "collage explosivo",
+          "textShadow": "halo espectral vibrante",
+          "layout": "collage orgánico",
           "showCover": false,
-          "ornamentFlux": "floraciones digitales incontroladas",
-          "holoInk": "tinta de realidad aumentada",
-          "glitchAura": "resplandor glitch por doquier",
-          "dreamGrain": "textura de nubes etéreas",
-          "quantumSpacing": "espaciado cuántico dinámico",
-          "animationHint": "breathe con susurros de luz",
-          "surprise": "fragmento incompleto de palabra en danza"
+          "ornamentFlux": "dibujos estelares en movimiento",
+          "holoInk": "tinta de holograma burbujeante",
+          "prismPulse": "pulsación prismática suave",
+          "quantumSpacing": "vacío entre dimensiones 0.5em",
+          "animationHint": "breathe cósmico fluido",
+          "texture": "papel de seda digital",
+          "surprise": "fragmento textual en dos dimensiones"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Clear%20Thinking%20Shane%20Parrish%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Beneath%20the%20surface%20my%20story%20Michael%20Phelps%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Sesgos Inconscientes",
+      "autor": "Pamela Fuller",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/67/5f/fd/675ffd96-0a8a-73e2-4005-106db15deaa9/9786073836296.jpg/626x0w.jpg",
+      "tagline": " Cómo reformularlos cultivar conexiones y crear equipos de alto rendimiento",
+      "dimension": "Conexión",
+      "punto": "Creativo",
+      "palabras": [
+        "desánimo",
+        "falta",
+        "apatía",
+        "vacío"
+      ],
+      "frases": [
+        "🕊️ Respira profundamente y observa el entorno; el primer paso hacia conexiones efectivas es abrirse a lo nuevo.",
+        "🌱 Reconoce los sesgos en tu equipo y abrázalos; esta aceptación es el inicio para crear relaciones más fuertes.",
+        "🔍 Anota tres situaciones donde los prejuicios influenciaron tus decisiones; la conciencia es clave para el cambio.",
+        "✨ En un equipo diverso, las ideas fluyen como un río; esa corriente crea innovación y entendimiento mutuo."
+      ],
+      "colores": [
+        "#A34BC5",
+        "#6BCB77",
+        "#F2A900",
+        "#E16F4E"
+      ],
+      "fondo": "#0E0E0E",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Identificar nuestros sesgos es crucial. El libro \"Sesgos Inconscientes\" de Pamela Fuller invita a tomar conciencia de las decisiones que afectan a otros.  ",
+        "subtitulo": "Despierta tu autoconciencia  ",
+        "parrafoBot": "Dedica tiempo a cuestionar tus juicios. Reflexiona sobre situaciones recientes y anota momentos en los que tus percepciones podrían haber influido.",
+        "style": {
+          "accent": "#e3ff00",
+          "ink": "#1c1c1c",
+          "paper": "nube digital en tonos violeta",
+          "border": "oro pulverizado intergaláctico",
+          "serif": "Bodoni Moda",
+          "sans": "Karla",
+          "marco": "foil vaporoso",
+          "fontSizeTitle": "galaxia expansiva 40–100px",
+          "fontSizeBody": "susurro sutil 14–28px",
+          "fontWeight": "peso distorsionado 800",
+          "lineHeight": "eco profundo 1.4",
+          "letterSpacing": "horizonte +3px",
+          "textTransform": "mixed cosmic",
+          "textShadow": "blur de luna en movimiento",
+          "layout": "collage aleatorio cósmico",
+          "showCover": false,
+          "ornamentFlux": "dibujos etéreos danzantes",
+          "glowFlux": "halo radiante en oscilación",
+          "metaShadow": "sombra astral cambiante",
+          "warpGrid": "malla cuántica expansiva",
+          "prismPulse": "pulso espectral tridimensional",
+          "animationHint": "vibración rítmica"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Sesgos%20Inconscientes%20Pamela%20Fuller%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El método smart brevity",
+      "autor": "Jim VandeHei",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/21/4f/46/214f46c8-037d-c4c0-a4cb-27286989c55c/9788418223945.jpg/626x0w.jpg",
+      "tagline": "Una fórmula para priorizar la información esencial explicar su impacto y presentarla de forma concisa y visual Aprende a decir más con menos en prácticamente cualquier formato",
+      "dimension": "Cerebro",
+      "punto": "Creativo",
+      "palabras": [
+        "confusión",
+        "dispersión",
+        "abrumado",
+        "imprecisión"
+      ],
+      "frases": [
+        "✨ Visualiza el poder de ser claro y conciso. Dedica un minuto a deshacerte de tres palabras innecesarias en tu próximo mensaje.",
+        "📌 La esencia radica en simplificar: selecciona un tema y dibuja su estructura en una línea. ¡Despierta la claridad!",
+        "🌈 Presentar la información visualmente transforma la comunicación. Explora herramientas gráficas para hacer que tus ideas brillen.",
+        "🌱 En el camino hacia la brevedad, recuerda: un mensaje bien ordenado puede abrir puertas inesperadas. Permítete experimentar en cada intento."
+      ],
+      "colores": [
+        "#C9F1F7",
+        "#E5B9F1",
+        "#A3F2B0",
+        "#FFAE5D"
+      ],
+      "fondo": "#161D24",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La esencia de conectar con los demás está en lo simple.  ",
+        "subtitulo": "La brevedad como herramienta  ",
+        "parrafoBot": "Si logras ser claro y conciso, facilitarás el entendimiento. No se trata solo de hablar, sino de dejar una huella. Utiliza palabras que impacten y eviten confusiones. Despréndete de lo innecesario y observa cómo tus mensajes llegan más lejos.",
+        "style": {
+          "accent": "#1abc9c",
+          "ink": "#2c3e50",
+          "paper": "cielo crepuscular con vibraciones pulsantes",
+          "border": "holograma líquido desvanecido",
+          "serif": "Bodoni XT",
+          "sans": "Exo 2",
+          "marco": "glitch dinámico",
+          "fontSizeTitle": "universo expansivo 50px–120px",
+          "fontSizeBody": "susurro dimensional 10–28px",
+          "fontWeight": "peso cinético 800",
+          "lineHeight": "aire etéreo 1.8",
+          "letterSpacing": "vacío expansivo +3px",
+          "textTransform": "mixed-alien",
+          "textShadow": "meta neón vibrante",
+          "layout": "collage multidimensional",
+          "showCover": false,
+          "ornamentFlux": "interferencia auroral espontánea",
+          "dreamGrain": "textura onírica con efecto de papel",
+          "quantumSpacing": "distancia cuántica impredecible",
+          "fontWarp": "doblez dimensional de 20px–200px",
+          "animationHint": "respiración oscilante fluida",
+          "texture": "neón en marea suave",
+          "surprise": "fragmentos temporales distorsionados"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20m%C3%A9todo%20smart%20brevity%20Jim%20VandeHei%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Vida contemplativa",
+      "autor": "Byung-Chul Han",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/37/1c/3d/371c3d9f-d29b-e63e-5910-f54d1947b66e/9788430625635.jpg/626x0w.jpg",
+      "tagline": "Estamos perdiendo nuestra capacidad de no hacer nada. Nuestra existencia está completamente absorbida por la actividad Byung-Chul Han indaga en los beneficios el esplendor y la magia de la ociosidad y diseña una nueva forma de vida que incluya momentos contemplativo con la que afrontar la crisis actual de nuestra sociedad ",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "apuro",
+        "agobio",
+        "prisa",
+        "dispersión"
+      ],
+      "frases": [
+        "🌼 Detente y siente la magia en los momentos de quietud, esos espacios te revelan nuevas perspectivas. Tómate un respiro profundo. 🌬️",
+        "✨ En la calma de no hacer, descubrimos la esencia de nuestra humanidad; abraza la ociosidad como una oportunidad de crecimiento. Regálate un instante. ⏳",
+        "🌌 La contemplación se vuelve un faro en medio del ruido: observa el mundo a tu alrededor, anota tres detalles que normalmente pasarías por alto. 📝",
+        "🍂 La ociosidad cultivada puede ser la respuesta a la crisis de nuestra hiperactividad; permitámonos ser como el viento, libres y presentes. Respira y siente. 🌬️"
+      ],
+      "colores": [
+        "#A9D6E5",
+        "#FFB6C1",
+        "#FF7F50",
+        "#FFE4B5"
+      ],
+      "fondo": "#1E1E2F",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Detenerse a observar es esencial. En \"Vida contemplativa\" de Byung-Chul Han se muestra cómo el ruido constante ahoga la claridad. ",
+        "subtitulo": "Escucha el silencio ",
+        "parrafoBot": "El verdadero crecimiento requiere momentos de calma. Haz de la pausa un hábito y observa cómo se transforma tu perspectiva. Permítete ese espacio para estar presente y descubrir nuevas posibilidades.",
+        "style": {
+          "accent": "#d3a628",
+          "ink": "#181818",
+          "paper": "nube de oscuridad pulida",
+          "border": "circuito luminoso púrpura",
+          "serif": "Bodoni Moda",
+          "sans": "Futura PT",
+          "marco": "foil radiante",
+          "fontSizeTitle": "gigante celeste 50px",
+          "fontSizeBody": "susurro de estrella 14–34px",
+          "fontWeight": "peso de neón 800",
+          "lineHeight": "viento expansivo 1.5",
+          "letterSpacing": "estrella lejana +3px",
+          "textTransform": "mixed",
+          "textShadow": "neon brote en movimiento",
+          "layout": "collage fractal",
+          "showCover": false,
+          "ornamentFlux": "cintas de luz en movimiento",
+          "glowAura": "resplandor dorado etéreo",
+          "metaShadow": "sombra hiperdimensional",
+          "quantumSpacing": "distancia cósmica 0.5rem",
+          "fontFlux": "variación de onda 20px–200px",
+          "animationHint": "destello en espiral",
+          "texture": "papel-sombra etéreo",
+          "surprise": "fragmentos de eco lírico"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Vida%20contemplativa%20Byung-Chul%20Han%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Extreme ownership",
+      "autor": "Jocko Willink",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/af/2b/a9/af2ba9d3-b21f-ed60-16f2-a4fe2a4501b7/9781250184726.jpg/626x0w.jpg",
+      "tagline": "demonstrate how to apply powerful leadership principles from the battlefield to business and life",
+      "dimension": "Conexión",
+      "punto": "Activo",
+      "palabras": [
+        "calma",
+        "desasosiego",
+        "desbalance",
+        "inseguridad"
+      ],
+      "frases": [
+        "🚀 Al tomar el timón de tu vida, se despiertan nuevas posibilidades. Escoge una acción decisiva ahora.",
+        "⚔️ La batalla comienza dentro; asumir responsabilidades fortalece tu carácter en cada desafío. Un paso firme hacia adelante.",
+        "🛡️ Liderar es un viaje, no un destino; decide ser parte de la solución al enfrentar cada situación con integridad. Haz un pequeño compromiso hoy.",
+        "🌌 Cuando el caos parece reinar, la claridad de propósito puede transformar tu entorno. Anota tres metas que desees alcanzar."
+      ],
+      "colores": [
+        "#4A92F4",
+        "#F45D65",
+        "#F2D600",
+        "#10E04D"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "El libro \"Extreme Ownership\" de Jocko Willink plantea la responsabilidad personal como clave.  ",
+        "subtitulo": "Asume tu papel protagónico  ",
+        "parrafoBot": "Cada desafío que enfrentas es una oportunidad para crecer. Al aceptar la responsabilidad, transformas las dificultades en aprendizajes valiosos. Reflexiona sobre tus acciones y elige actuar. Tu próximo paso puede marcar la diferencia.",
+        "style": {
+          "accent": "#34a853",
+          "ink": "#ffffff",
+          "paper": "manto estelar oscuro",
+          "border": "borde prismático quebrado",
+          "serif": "Bodoni Poster",
+          "sans": "Neuzeit Grotesk",
+          "marco": "foil en sombras difusas",
+          "fontSizeTitle": "gigante etéreo 50px",
+          "fontSizeBody": "susurro celestial 14–30px",
+          "fontWeight": "peso pulsante 700",
+          "lineHeight": "vibración líquida 1.8",
+          "letterSpacing": "horizonte abierto 1.5px",
+          "textTransform": "mixed surreal",
+          "textShadow": "halo cromático titilante",
+          "layout": "collage de realidad alterna",
+          "showCover": false,
+          "ornamentFlux": "lienzo de galaxias danzantes",
+          "holoInk": "tinta azul de sueño profundo",
+          "dreamGrain": "ruido de aurora boreal",
+          "quantumSpacing": "distancia cuántica fluida",
+          "fractalWeight": "peso fractal sutil 350",
+          "animationHint": "breathe etéreo intermitente",
+          "texture": "nubes de vapor cristalino",
+          "surprise": "fragmento temporal borroso"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Extreme%20ownership%20Jocko%20Willink%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El libro de los 5 anillos",
+      "autor": "Miyamoto Musashi",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/36/8a/f1/368af195-4b40-408b-54be-d070bbebc91e/9788441438941.jpg/626x0w.jpg",
+      "tagline": "Adéntrate en el mundo de la estrategia y la filosofía samurái",
+      "dimension": "Cerebro",
+      "punto": "Creativo",
+      "palabras": [
+        "confusión",
+        "inquietud",
+        "incertidumbre",
+        "vacío"
+      ],
+      "frases": [
+        "🧩 Respira profundamente y aclara tu mente mientras dibujas el mapa de tus pensamientos en una hoja.",
+        "🌊 Reflexiona sobre el fluir del agua; en el cambio, se encuentra la verdadera estrategia. Dibuja el flujo de tus decisiones.",
+        "🗡️ Reconoce que un guerrero necesita analizar sus batallas; anota tres retos que enfrentas y busca soluciones estratégicas.",
+        "⚔️ En tiempos de duda, la calma interior te llevará lejos; visualiza cómo superarías tus obstáculos más desafiantes."
+      ],
+      "colores": [
+        "#AD5B9C",
+        "#5E4B9D",
+        "#FBAE42",
+        "#19B58A"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La búsqueda de la perfección no es solo para guerreros. Musashi sugiere que la dedicación al arte de vivir es clave.",
+        "subtitulo": "Desafía tus límites",
+        "parrafoBot": "Cultivar habilidades requiere disciplina constante. Da el primer paso hoy; una práctica regular puede transformar tu realidad. Dedica unos minutos cada día a lo que verdaderamente importa y verás cómo se fortalece tu camino.",
+        "style": {
+          "accent": "#00ff7f",
+          "ink": "#1f1f1f",
+          "paper": "papel de nebulosa etérea",
+          "border": "brillo eléctrico intergaláctico",
+          "serif": "Merriweather",
+          "sans": "Poppins",
+          "marco": "foil infinito",
+          "fontSizeTitle": "gigante celeste 50px",
+          "fontSizeBody": "susurro óptico 10–24px",
+          "fontWeight": "peso psíquico 700",
+          "lineHeight": "danza amplia 2.0",
+          "letterSpacing": "espacio sideral +3px",
+          "textTransform": "mixed",
+          "textShadow": "neon resplandor oscuro",
+          "layout": "collage desbordante",
+          "showCover": false,
+          "ornamentFlux": "fractales lumínicos aleatorios",
+          "holoInk": "tinta brillante cósmica",
+          "quantumSpacing": "distancia cuántica variable",
+          "dreamGrain": "grano onírico sutil",
+          "glitchAura": "aura intermitente etérea",
+          "animationHint": "respiración pixelada vibrante",
+          "texture": "brillo de cristal fractal",
+          "surprise": "fragmento lumínico efímero"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20de%20los%205%20anillos%20Miyamoto%20Musashi%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Las casualidades no existen",
+      "autor": "Borja Vilaseca",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/c7/ba/50/c7ba5092-be1c-8c4a-ba2d-2893a9221b1b/9788418045929.jpg/626x0w.jpg",
+      "tagline": " espiritualidad para escépticos",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "incredulidad",
+        "anhelo",
+        "temores",
+        "rechazo"
+      ],
+      "frases": [
+        "🌀 Observa cómo las experiencias inesperadas te empujan a descubrirte. Da un paso, anota una inquietud de hoy.",
+        "💡 Recuerda, lo que hoy parece un desafío, mañana puede ser tu mejor maestro. Así que suelta la presión.",
+        "🌟 Cuando te sientas perdido, observa en qué creencias te aferras. Conéctate con tus certezas internas para elevarte.",
+        "🚀 Crea una lista de 3 acciones concretas que podrías tomar esta semana para abrirte a nuevas posibilidades."
+      ],
+      "colores": [
+        "#4F8B3D",
+        "#FFD700",
+        "#D64B37",
+        "#4B88F0"
+      ],
+      "fondo": "#11111d",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La vida está llena de elecciones que moldean nuestro camino. Este concepto me recordó a \"Las casualidades no existen\" de Borja Vilaseca.  ",
+        "subtitulo": "Decisiones y crecimiento  ",
+        "parrafoBot": "Cada decisión, grande o pequeña, abre o cierra puertas. Tómate un momento para analizar lo que realmente deseas y actúa. La acción, aunque pequeña, es el primer paso hacia tu transformación.",
+        "style": {
+          "accent": "#7c4dff",
+          "ink": "#ffffff",
+          "paper": "horizonte etéreo",
+          "border": "vórtice espectral",
+          "serif": "Bodoni XT",
+          "sans": "Futura Liquid",
+          "marco": "foil prismático",
+          "fontSizeTitle": "clamp(35px, 15vw, 120px)",
+          "fontSizeBody": "susurro vibrante 10–28px",
+          "fontWeight": "peso lumínico 850",
+          "lineHeight": "respiración rítmica 1.4",
+          "letterSpacing": "abismo suspendido +3px",
+          "textTransform": "mixed waves",
+          "textShadow": "glow cuántico suave",
+          "layout": "collage caleidoscópico",
+          "showCover": false,
+          "ornamentFlux": "dibujos fluyentes de oro",
+          "glitchAura": "destello colorido intermitente",
+          "neonWhisper": "susurro neón distorsionado",
+          "quantumSpacing": "distancia cósmica 4px",
+          "dreamGrain": "textura de sueño difusa",
+          "animationHint": "breathe holográfico",
+          "texture": "papel galáctico con brillo",
+          "surprise": "fragmento tipográfico eco inesperado"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20casualidades%20no%20existen%20Borja%20Vilaseca%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Superpoderes del éxito para gente normal",
+      "autor": "Mago More",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a7/58/65/a75865d8-5636-d11c-e673-7de8d9987d2b/9788416253470.jpg/626x0w.jpg",
+      "tagline": "En este libro cuento cómo he pasado de ser un auténtico desastre en todo a mejorar mi vida ostensiblemente O como diría mi madre cómo pasé de ser un perroflauta a convertirme en un flautista de Helín",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "desdicha",
+        "desesperanza",
+        "anarquía",
+        "desilusión"
+      ],
+      "frases": [
+        "🌈 Despliega tu música interior y verás cómo el caos se transforma en melodía. (20 segundos de respiración).",
+        "💡 No dejes que las dudas nublen tu visión; cuando decides, el mundo se acomoda a tu propósito. (Escribe un paso a seguir).",
+        "🎶 La vida no es un espectáculo; es un concierto donde tú tocas la flauta. ¿Cuál es tu próximo acorde? (Haz una pausa y reflexiona).",
+        "✨ Mientras menos ataduras sientas, más fácil será volar; elige liberar una pequeña preocupación hoy. (Cierra los ojos y siente la ligereza)."
+      ],
+      "colores": [
+        "#7D32B6",
+        "#F6A623",
+        "#1D7F77",
+        "#A02B3B"
+      ],
+      "fondo": "#1E1E2F",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "El libro de Mago More me hizo ver que el éxito radica en tomar decisiones valientes. Cada paso cuenta, incluso los pequeños.  ",
+        "subtitulo": "Tu próximo movimiento  ",
+        "parrafoBot": "Elige una acción concreta hoy. A veces, es más sobre avanzar que esperar la perfección. Comienza a construir tu camino.",
+        "style": {
+          "accent": "#2af7a1",
+          "ink": "#2c2a25",
+          "paper": "silencio cremoso con destellos",
+          "border": "cromo ardiente de carbón",
+          "serif": "Garamond Sublime",
+          "sans": "Orbitron",
+          "marco": "foil iridiscente",
+          "fontSizeTitle": "colosal cuántico 50px",
+          "fontSizeBody": "susurro mínimo 10–28px",
+          "fontWeight": "peso etéreo 800",
+          "lineHeight": "danza liviana 1.8",
+          "letterSpacing": "universo de letras 3px",
+          "textTransform": "liquid-uppercase",
+          "textShadow": "brillo de neón suave",
+          "layout": "collage vertical disonante",
+          "showCover": false,
+          "ornamentFlux": "destellos efervescentes inesperados",
+          "glitchAura": "eco distorsionado en color",
+          "holoInk": "tinta espectral que brilla",
+          "warpGrid": "red de líneas divergentes",
+          "fontFlux": "fluctuación 15px–125px",
+          "animationHint": "flicker cósmico ondulante",
+          "texture": "textura de papel arrugado",
+          "surprise": "fragmento poético flotante en la esquina"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Superpoderes%20del%20%C3%A9xito%20para%20gente%20normal%20Mago%20More%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Moral inmoral y amoral",
+      "autor": "Osho",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/f6/2a/4b/f62a4b3c-5afc-f2db-93cc-f66cbb32d5f0/9786073166713.jpg/626x0w.jpg",
+      "tagline": "Osho explica la diferencia entre un ser humano consciente y uno que no ha despertado. Habla sobre lo correcto y lo incorrecto en el contexto de una realidad llena de trampas mentales.Si tu conciencia te permite hacer algo está bien: hazlo. Que no te preocupe ninguna escritura sagrada.Y si tu consciencia no te permite hacer algo no lo hagas. Ni siquiera si Dios te dice hazlo no hay manera; no puedes hacerlo.",
+      "dimension": "Conexión",
+      "punto": "Creativo",
+      "palabras": [
+        "inseguridad",
+        "confusión",
+        "duda",
+        "culpa"
+      ],
+      "frases": [
+        "🌟 Reconoce que cada acción guiada por tu esencia brilla más allá de reglas ajenas. Respira y observa 3 momentos que te resuenen.",
+        "💫 Cuestiona lo que te han enseñado; la verdad se revela al soltar lo que no te nutre. Tómate un instante para conectar con tu voz interna.",
+        "🌈 La conciencia florece cuando dejas de lado las voces externas. Escucha el murmullo de tu ser y dale espacio durante 30 segundos.",
+        "🌀 Reflexiona: incluso las enseñanzas sagradas se doblegan ante tu autoconciencia. Abre al azar y descubre un mensaje que te inspire hoy."
+      ],
+      "colores": [
+        "#FF6B6B",
+        "#FFD93D",
+        "#6BCB77",
+        "#4D96FF"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "parrafoTop": "Cada uno tiene su propia brújula moral que guiará sus acciones.  ",
+        "subtitulo": "El poder de decidir  ",
+        "parrafoBot": "La moralidad no es un estándar universal, sino una experiencia personal. La autenticidad proviene de actuar en coherencia con tus creencias más profundas. Es momento de alinear tus decisiones con lo que realmente valoras, y no lo que te imponen.",
+        "style": {
+          "accent": "#32ff84",
+          "ink": "#0f0f0f",
+          "paper": "vibración etérea sobre lienzo blanco",
+          "border": "neón acuático translúcido",
+          "serif": "Bodoni XT",
+          "sans": "Roboto Flex",
+          "marco": "cutout vibrante",
+          "fontSizeTitle": "giga estelar 40px",
+          "fontSizeBody": "susurro de plasma 10–24px",
+          "fontWeight": "densidad cósmica 800",
+          "lineHeight": "flujo estelar 1.4",
+          "letterSpacing": "expansión de espacio +3px",
+          "textTransform": "mixed-quantum",
+          "textShadow": "holograma pulsante",
+          "layout": "collage fractal",
+          "showCover": false,
+          "coverStyle": "pixelated espejo",
+          "glowFlux": "halo verde radiante",
+          "dreamGrain": "ruido onírico caleidoscópico",
+          "quantumSpacing": "distancia cuántica 4px",
+          "ornamentFlux": "caligrafía surrealista espontánea",
+          "animationHint": "breathe y pulso de luz",
+          "texture": "papel espejo quebrado",
+          "surprise": "fragmento de palabra disuelta en espacio"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Moral%20inmoral%20y%20amoral%20Osho%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Good to great",
@@ -329,219 +717,156 @@
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/bd/62/e0/mzi.ruipsrer.jpg/626x0w.jpg",
       "tagline": "Why Some Companies Make the Leap...And Others Don't",
       "dimension": "Prosperidad",
-      "punto": "Creativo",
+      "punto": "Cero",
       "palabras": [
-        "mediocridad",
-        "inseguridad",
-        "curiosidad",
-        "desconexión"
+        "vulnerabilidad",
+        "desasosiego",
+        "incertidumbre",
+        "gratitud"
       ],
       "frases": [
-        "🚀 Visualize the leap to greatness; examine the roots of stagnation. Consider what needs to change in your approach.",
-        "🔍 Dig deep into your leadership strategy; can you identify a key component that’s missing for momentum?",
-        "💡 Analyze three companies that made the leap; what can you adopt from their journey?",
-        "📈 Studies show that companies that embrace a 'flywheel' approach gain sustained growth and resilience over time."
+        "🌱 Abre tu mente a los fallos, pues de ellos florecen las lecciones. (revisar experiencias pasadas)",
+        "🛤️ Observa cómo las grandes compañías siempre superan las tormentas con una visión clara y un plan audaz. (adoptar un enfoque proactivo)",
+        "🚀 Recuerda que para dar el gran salto, primero debes evaluar tu situación actual y los recursos disponibles. (analizar lo que tienes a mano)",
+        "🔍 En los cimientos de las mejores empresas está la capacidad de ser humildes y reconocer sus fallos. (cultivar una cultura de aprendizaje)"
       ],
       "colores": [
-        "#E75D44",
-        "#2E9B80",
-        "#F9D556",
-        "#4A90E2"
+        "#D96C5A",
+        "#F8E9A1",
+        "#9A46C5",
+        "#56B5C0"
       ],
-      "fondo": "#0F1018",
+      "fondo": "#1A1D28",
       "textColors": [
         "#FFFFFF",
-        "#FFFFFF",
         "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "Cambiar no es fácil, pero lo crucial es tomar decisiones audaces. Esto es esencial para crecer, según Jim Collins en su libro \"Good to Great\". ",
-        "subtitulo": "Pasos hacia la grandeza ",
-        "parrafoBot": "Enfócate en identificar tus fortalezas y trabaja desde allí. Pequeños cambios consistentes pueden llevarte lejos, pero solo si decides dar el primer paso. Tu próximo movimiento debe ser claro y decidido.",
+        "parrafoTop": "La grandeza no es cuestión de ambición desmedida, sino de la capacidad de ser un líder humilde.  ",
+        "subtitulo": "Cualidades del verdadero líder  ",
+        "parrafoBot": "Aprender a escuchar y apoyar a los demás es esencial. Pregúntate: ¿cómo puedes ser una mejor guía para tu equipo? Esa es la clave para escalar.",
         "style": {
-          "accent": "#34b9f3",
-          "ink": "#121212",
-          "paper": "mar de estrellas oscuras",
-          "border": "oro líquido dinámico",
-          "serif": "Playfair Display",
-          "sans": "Orbitron",
-          "marco": "foil iridiscente",
+          "accent": "#2bff67",
+          "ink": "#1c1c1c",
+          "paper": "nube metálica difusa",
+          "border": "púlsar azul intenso",
+          "serif": "Bodoni XT",
+          "sans": "Futura Future",
+          "marco": "foil vintage",
           "fontSizeTitle": "gigante cósmico 50px",
-          "fontSizeBody": "susurro mínimo 10–28px",
-          "fontWeight": "peso espectral 800",
-          "lineHeight": "respiración intensa 1.4",
-          "letterSpacing": "espacio sideral +1.5px",
-          "textTransform": "mixed",
-          "textShadow": "holo neón pulsatil",
-          "layout": "collage en espiral",
+          "fontSizeBody": "susurro cósmico 14–36px",
+          "fontWeight": "peso lunar 700",
+          "lineHeight": "danza sutil 1.4",
+          "letterSpacing": "abismo estrecho +1.5px",
+          "textTransform": "title-case",
+          "textShadow": "blur hipnótico",
+          "layout": "collage surreal",
           "showCover": false,
-          "ornamentFlux": "destellos cinéticos impredecibles",
-          "glowFlux": "brillo etéreo en constante cambio",
-          "quantumSpacing": "oscila entre realidades 1–5px",
-          "dreamGrain": "textura de papel onírico",
-          "holoInk": "tinta que brilla en 3D",
-          "animationHint": "breathe con eco dimensional",
-          "surprise": "fragmento de realidad desdoblado"
+          "ornamentFlux": "doodles vibrantes",
+          "glowFlux": "halo verde centelleante",
+          "quantumSpacing": "expansión cuántica 5px",
+          "holoInk": "tinta etérea cambiando",
+          "fractureWeight": "fractura luminosa 400",
+          "animationHint": "breathe caleidoscópico",
+          "texture": "superficie de cristal fractal",
+          "surprise": "fragmento surrealista en márgenes"
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Good%20to%20great%20Jim%20Collins%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Creatividad",
-      "autor": "Ed Catmull",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/94/a5/64/94a56452-3190-72d6-af27-fc0bb20198b9/9788416029204.jpg/626x0w.jpg",
-      "tagline": "sobre liderazgo creativo que recoge los principios que construyeron la cultura singularmente exitosa de Pixar y le permitieron conservar su creatividad sin dejar de evolucionar",
+      "titulo": "Cómo la vida imita al ajedrez",
+      "autor": "Garry Kasparov",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/a0/a8/77/a0a877ab-266c-33c6-87d2-5377b49e57c4/9786073144995.jpg/552x0w.jpg",
+      "tagline": "El mejor ajedrecista de la historia nos enseña a ver la vida como un juego de estrategia.Este libro muestra la manera de avanzar paso a paso hacia el objetivo final; también cómo convertir una derrota en una futura victoria cómo dar la vuelta a una situación comprometida y cómo prepararse para los grandes desafío",
       "dimension": "Conexión",
       "punto": "Máximo",
       "palabras": [
-        "titubeo",
-        "hanchar",
-        "curiosidad",
-        "hirviente"
-      ],
-      "frases": [
-        "🌟 Visualize the spark within your team; their ideas are the foundation of greatness.",
-        "🧠 Challenge the status quo; embrace failure as a powerful catalyst for innovation.",
-        "🎈 Embrace playful experimentation; risk nurtures creativity and reveals hidden potential.",
-        "📖 Engage in a feedback loop; solicit input and transform insights into actionable plans."
-      ],
-      "colores": [
-        "#5C3E99",
-        "#FFA500",
-        "#3BBFBE",
-        "#FFC3C3"
-      ],
-      "fondo": "#0E0F14",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "El poder de las ideas no radica solo en tenerlas, sino en saber llevarlas a la práctica. Ed Catmull, en \"Creatividad\", resalta cómo las innovaciones más significativas surgen de un ambiente donde se acepta el error.  ",
-        "subtitulo": "Libera tu creatividad  ",
-        "parrafoBot": "Explora y experimenta sin miedo al fracaso. Al permitirte errar, abres puertas a soluciones inesperadas y, sobre todo, a un aprendizaje invaluable. El verdadero cambio comienza cuando decides actuar.",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#1f1f1f",
-          "paper": "tela etérea con destellos de luz",
-          "border": "cinta reflejante holográfica",
-          "serif": "Playfair Display",
-          "sans": "Futura",
-          "marco": "efecto líquido",
-          "fontSizeTitle": "clamp(40px,15vw,150px)",
-          "fontSizeBody": "susurro mínimo 10–28px",
-          "fontWeight": "peso cósmico 850",
-          "lineHeight": "respiración densa 1.4",
-          "letterSpacing": "distancia cósmica +3px",
-          "textTransform": "mixed",
-          "textShadow": "neon oscuro vibrante",
-          "layout": "collage distorsionado",
-          "showCover": false,
-          "ornamentFlux": "patrón fractal incesante",
-          "glowFlux": "halo turquesa vibrante",
-          "prismPulse": "latido de colores prismáticos",
-          "dreamGrain": "textura de nube onírica",
-          "quantumSpacing": "intervalos irregulares cuánticos",
-          "animationHint": "efecto parpadeo lumínico",
-          "texture": "papel antiguo con efecto de desgaste",
-          "surprise": "fragmento tipográfico en disonancia"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Creatividad%20Ed%20Catmull%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Millonario en un fin de semana",
-      "autor": "Noah Kagan",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
-      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
-      "dimension": "Prosperidad",
-      "punto": "Máximo",
-      "palabras": [
+        "impotencia",
         "ansiedad",
-        "desasosiego",
         "curiosidad",
         "temor"
       ],
       "frases": [
-        "🌟 El primer paso para construir es abrazar la inquietud. Avanza hacia tu meta al observar qué pequeña acción puedes dar hoy.",
-        "💪 Atrévete a desafiar la incertidumbre. Recuerda, cada decisión cuenta en el camino hacia el éxito financiero.",
-        "🔥 El mayor obstáculo es la duda. Dale un giro a tus pensamientos: visualiza el resultado que deseas y actúa en consecuencia.",
-        "🚀 En este preciso momento, emprendedores alrededor del mundo están convirtiendo sus ideas en realidades. ¿Cuál será tu primer paso?"
+        "🛡️ Da un paso firme hacia el tablero y planifica tu próxima jugada.",
+        "🏆 Cada derrota trae lecciones que transforman el futuro en victoria.",
+        "🔄 Ajusta tu estrategia con audacia y verás cómo los obstáculos se vuelven oportunidades.",
+        "🎯 El éxito en la vida se parece a un juego de ajedrez, donde cada movimiento cuenta."
       ],
       "colores": [
-        "#FF4C58",
-        "#24A9E1",
-        "#D2C48C",
-        "#9E24A0"
+        "#2A9D8F",
+        "#F0A500",
+        "#E76F51",
+        "#264653"
       ],
-      "fondo": "#0D0E14",
+      "fondo": "#1D3557",
       "textColors": [
         "#FFFFFF",
-        "#FFFFFF",
         "#000000",
+        "#FFFFFF",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "Las oportunidades no siempre esperan, es clave aprovecharlas al instante. Este concepto se profundiza en \"Millonario en un fin de semana\" de Noah Kagan.",
-        "subtitulo": "Haz tu movimiento ahora",
-        "parrafoBot": "Dejar que el miedo te detenga es el verdadero fracaso. Haz un pequeño paso hacia tu objetivo hoy mismo; puede ser tan simple como establecer un contacto o investigar más sobre tu interés. Cada acción cuenta.",
+        "parrafoTop": "Cada decisión en el juego puede cambiar el resultado. Debemos ser conscientes de cómo nuestras elecciones diarias impactan nuestro futuro.  ",
+        "subtitulo": "Decisiones críticas  ",
+        "parrafoBot": "Así como en ajedrez, en la vida es crucial anticipar consecuencias y planificar a largo plazo. No subestimes la importancia de cada movimiento.",
         "style": {
-          "accent": "#00ff85",
-          "ink": "#ffffff",
-          "paper": "papel onírico en movimiento",
-          "border": "oro pulsante",
+          "accent": "#00ff4f",
+          "ink": "#1c1c1c",
+          "paper": "nube líquida intergaláctica",
+          "border": "cromo oxidado vaporoso",
           "serif": "Playfair Display",
-          "sans": "Futura",
-          "marco": "pixelado distorsionado",
-          "fontSizeTitle": "gigante nebuloso 50px",
-          "fontSizeBody": "susurro etéreo 10–25px",
-          "fontWeight": "peso distorsionado 800",
-          "lineHeight": "danza rítmica 1.4",
-          "letterSpacing": "espacio intergaláctico +4px",
-          "textTransform": "mixed",
-          "textShadow": "neon retro",
-          "layout": "collage surrelista",
+          "sans": "Roboto Mono",
+          "marco": "glitch reticulado",
+          "fontSizeTitle": "mega titan 40px",
+          "fontSizeBody": "susurro galáctico 14–28px",
+          "fontWeight": "peso holográfico 850",
+          "lineHeight": "respiración etérea 1.4",
+          "letterSpacing": "circuito +1.5px",
+          "textTransform": "mixed surreal",
+          "textShadow": "neon pulsante",
+          "layout": "collage sináptico",
           "showCover": false,
-          "ornamentFlux": "líneas fractales volátiles",
-          "holoInk": "tinta iridiscente fluyendo",
-          "quantumSpacing": "espaciado cuántico 0.5em",
-          "dreamGrain": "grano de sueño espectral",
-          "animationHint": "breathe cósmico",
-          "texture": "vortex de color líquido",
-          "surprise": "fragmento glitch con eco tridimensional"
+          "coverStyle": "pixelated retro",
+          "holoInk": "tinta brillosa especular",
+          "prismPulse": "latido de color en transiciones",
+          "dreamGrain": "textura suave de onirismo",
+          "quantumSpacing": "espacio cuántico en expansión",
+          "animationHint": "breathe espectral",
+          "texture": "holográfico espejo fractal",
+          "surprise": "fragmento incompleto con eco lumínico"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Millonario%20en%20un%20fin%20de%20semana%20Noah%20Kagan%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+C%C3%B3mo%20la%20vida%20imita%20al%20ajedrez%20Garry%20Kasparov%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Estoicismo cotidiano",
-      "autor": "Ryan Holiday y Stephen Hanselman",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/0b/22/da/0b22dac8-067e-04fa-0319-0dc78a18bbf3/1031232141.jpg/626x0w.jpg",
-      "tagline": "Controla tus percepciones. Dirige tus acciones adecuadamente. Acepta con voluntad lo que escapa a tu control para afrontar la adversidad y dar lo mejor de ti mismo",
+      "titulo": "Cuerpo Cuántico",
+      "autor": "Deepak Chopra",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/1d/57/3d/1d573d04-3859-52b7-0692-115aa6a733b0/9786073840378.jpg/626x0w.jpg",
+      "tagline": "La nueva ciencia para una vida más larga sana y vital",
       "dimension": "Bienestar",
       "punto": "Máximo",
       "palabras": [
         "calma",
-        "incomodidad",
-        "perplejidad",
-        "tensión"
+        "ansiedad",
+        "desgano",
+        "desaliento"
       ],
       "frases": [
-        "💪 Enfrenta lo desconocido, acepta que la incertidumbre es parte del camino. Respira profundamente y da un paso hacia adelante.",
-        "🌅 Recuerda que lo que te molesta puede ser una oportunidad para aprender a soltar el control. Estira tu cuerpo, siente la libertad.",
-        "⚖️ Cuestiona tus creencias, una nueva perspectiva puede liberar tu mente. Toma un momento para anotar tus pensamientos más perturbadores.",
-        "🌀 En la naturaleza, los ríos fluyen adaptándose a su entorno. Abre un libro al azar y encuentra una línea que te resuene profundamente."
+        "🌱 Cultiva hábitos que nutran tu esencia; sonríe tres veces hoy.",
+        "🌈 Conéctate con quienes vibran en armonía; tu red te sostiene.",
+        "🌞 Cada día es una oportunidad para revitalizarte; elige crecer.",
+        "💪 Acepta tus sentimientos, respira profundo, ¡transfórmalos!"
       ],
       "colores": [
-        "#FFC0CB",
-        "#6A5ACD",
-        "#FF6347",
-        "#FFD700"
+        "#3EED77",
+        "#F20E68",
+        "#D44C84",
+        "#55B8F0"
       ],
-      "fondo": "#2C2F33",
+      "fondo": "#1D1F24",
       "textColors": [
         "#000000",
         "#FFFFFF",
@@ -549,748 +874,427 @@
         "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "La resiliencia es fundamental para superar los desafíos. Estoicismo cotidiano de Ryan Holiday y Stephen Hanselman lo resalta.  ",
-        "subtitulo": "Enfrentando lo inevitable  ",
-        "parrafoBot": "Aceptar lo que no podemos controlar nos libera. Aprende a reaccionar ante las circunstancias, elige tu respuesta.",
+        "parrafoTop": "Todo en el universo es energía, y tu capacidad de conectar con ella puede transformar tu vida. El libro \"Cuerpo Cuántico\" de Deepak Chopra destaca cómo esa energía está presente en cada acción y pensamiento.  ",
+        "subtitulo": "Activa tu potencial ahora  ",
+        "parrafoBot": "Es momento de sintonizar con tus emociones y pensamientos. Observa tus interacciones y elige aquellas que nutren tu ser. Con cada decisión, actúa desde la consciencia y observa cómo se despliega tu verdadera fuerza.",
         "style": {
-          "accent": "#0ef0a1",
-          "ink": "#1a1c2c",
-          "paper": "nebulosa turquesa resplandeciente",
-          "border": "brillo violeta etéreo",
-          "serif": "Garamond Luxe",
-          "sans": "Synthwave Vibe",
-          "marco": "foil arcoíris",
-          "fontSizeTitle": "supernova 50px",
-          "fontSizeBody": "susurro cósmico 10–25px",
-          "fontWeight": "peso lumínico 800",
-          "lineHeight": "suspensión elástica 1.8",
-          "letterSpacing": "fractura +3px",
-          "textTransform": "mixed",
-          "textShadow": "blur vórtice radial",
+          "accent": "#4caf50",
+          "ink": "#ffffff",
+          "paper": "luz de aurora boreal",
+          "border": "rojo ardiente fractal",
+          "serif": "Garamond Nova",
+          "sans": "Roboto Mono",
+          "marco": "foil holográfico",
+          "fontSizeTitle": "gigante etéreo 50px",
+          "fontSizeBody": "susurro etéreo 14–28px",
+          "fontWeight": "peso onírico 700",
+          "lineHeight": "respiración cósmica 1.75",
+          "letterSpacing": "horizonte 3px",
+          "textTransform": "lowercase",
+          "textShadow": "neon espiral vibrante",
+          "layout": "collage aleatorio",
+          "showCover": false,
+          "ornamentFlux": "pinceladas de luz incierta",
+          "glowFlux": "destellos de jade vibrante",
+          "quantumSpacing": "distorsión cuántica 1em",
+          "holoInk": "tinta espectral ondulante",
+          "animationHint": "breathe líquido etéreo",
+          "texture": "sutil capa de gasa flotante",
+          "surprise": "fragmentos de un sueño fragmentado"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuerpo%20Cu%C3%A1ntico%20Deepak%20Chopra%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Nunca pares",
+      "autor": "Phil Knight",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/76/36/7f/76367ffb-9473-22d8-a5d0-c70b5376843a/9788416883011.jpg/626x0w.jpg",
+      "tagline": "nos habla por primera vez de la auténtica historia que hay detrás de Nike Todo comenzó con 50 dólares y una idea sencilla importar calzado deportivo económico y de gran calidad creó una marca universal e innovadora y evolucionó hasta convertirse en el gigante actual",
+      "dimension": "Prosperidad",
+      "punto": "Máximo",
+      "palabras": [
+        "carencia",
+        "desesperanza",
+        "necesidad",
+        "anhelo"
+      ],
+      "frases": [
+        "🚀 Amplía tu visión y verás que lo posible es inalcanzable. Comparte una meta.",
+        "🎯 Con cada paso que das, construyes un camino lleno de oportunidades. Detente a observar.",
+        "💡 Importar no solo zapatos, sino sueños, impulsa a miles. Piensa en tu huella.",
+        "🔑 Visualiza lo que puede nacer de un simple impulso y busca ese punto de partida."
+      ],
+      "colores": [
+        "#FF6A45",
+        "#3CDBF5",
+        "#9C2D73",
+        "#F1C40F"
+      ],
+      "fondo": "#2B2D42",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La persistencia es clave para el crecimiento. En \"Nunca pares\" de Phil Knight, queda claro que cada error trae una lección. ",
+        "subtitulo": "La lección de los errores ",
+        "parrafoBot": "Cada tropiezo es una oportunidad disfrazada. No temas equivocarte; si lo haces, aprende rápido y sigue avanzando. Así, tu camino hacia el éxito se vuelve más claro.",
+        "style": {
+          "accent": "#a500ff",
+          "ink": "#2c2c2c",
+          "paper": "sombra de atardecer holográfico",
+          "border": "metálico líquido destellante",
+          "serif": "Playfair Display",
+          "sans": "Roboto Flex",
+          "marco": "foil pulsante",
+          "fontSizeTitle": "monstruo estelar 40–120px",
+          "fontSizeBody": "susurro etéreo 10–28px",
+          "fontWeight": "densidad cuántica 700",
+          "lineHeight": "efervescencia sutil 1.8",
+          "letterSpacing": "expansión intergaláctica +3px",
+          "textTransform": "mixedDreams",
+          "textShadow": "blur nebuloso",
+          "layout": "collage en espiral",
+          "showCover": false,
+          "ornamentFlux": "destellos holográficos caprichosos",
+          "glowFlux": "resplandor azul cósmico",
+          "dreamGrain": "textura de nube onírica",
+          "quantumSpacing": "intervalos fluctuantes +1.5px",
+          "fontFlux": "métrica variable 18px–150px",
+          "animationHint": "breathe surrealista",
+          "metaShadow": "eco oscurecido fantasmagórico",
+          "surprise": "fragmento poético en neón"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Nunca%20pares%20Phil%20Knight%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
+      "autor": "David JP Phillips",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
+      "tagline": "Dopamina Oxitocina Serotonina Cortisol Endorfinas Testosterona",
+      "dimension": "Bienestar",
+      "punto": "Máximo",
+      "palabras": [
+        "inquietud",
+        "desánimo",
+        "miedo",
+        "gratitud"
+      ],
+      "frases": [
+        "🌱 Reconoce cada pequeño paso hacia tu felicidad, respira 3x y siente cómo tu energía se transforma.",
+        "✨ Al crear conexiones auténticas, la alegría empieza a fluir. Haz una llamada a alguien querido hoy.",
+        "🎈 Las endorfinas son tus aliadas para liberar el estrés. Realiza 3 minutos de ejercicio y nota la magia.",
+        "💡 Recuerda: la dopamina se activa al celebrar logros, por pequeños que sean. Escribe 3 cosas que has hecho bien esta semana."
+      ],
+      "colores": [
+        "#E57373",
+        "#64B5F6",
+        "#81C784",
+        "#FFB74D"
+      ],
+      "fondo": "#0E0F1B",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "La clave para cambiar tu vida está en cómo gestionas tus hormonas. Entender su impacto es el primer paso.  ",
+        "subtitulo": "Equilibrio hormonal esencial  ",
+        "parrafoBot": "Si sientes que no estás donde deseas, prioriza hábitos que fomenten un equilibrio hormonal. Tu bienestar puede mejorar notablemente.",
+        "style": {
+          "accent": "#1bff56",
+          "ink": "#f9f9f9",
+          "paper": "tierra viva con destellos",
+          "border": "cromo borroso dimensional",
+          "serif": "Bodoni Moda",
+          "sans": "Roboto Slab",
+          "marco": "foil prismático",
+          "fontSizeTitle": "gigante estelar 50px",
+          "fontSizeBody": "susurro mínimo 10–25px",
+          "fontWeight": "peso etéreo 800",
+          "lineHeight": "respiración acelerada 1.4",
+          "letterSpacing": "vacío denso +3px",
+          "textTransform": "mixed experimental",
+          "textShadow": "blur suave fantasmagórico",
           "layout": "collage onírico",
           "showCover": false,
-          "ornamentFlux": "siluetas abstractas vibrantes",
-          "glowAura": "aurora boreal interactiva",
-          "quantumSpacing": "espaciado cuántico 4px",
-          "prismPulse": "pulsación prismática rítmica",
-          "dreamGrain": "grano de ensueño suave",
-          "animationHint": "vibración etérea en espiral",
-          "texture": "materia líquida resplandeciente",
-          "surprise": "palabras danzantes en fractales fugaces"
+          "ornamentFlux": "doodles cósmicos entrelazados",
+          "holoInk": "tinta iridiscente cambiante",
+          "quantumSpacing": "distorsión cuántica ajustable",
+          "prismPulse": "latido prismático multicolor",
+          "glitchAura": "halo digital desvanecido",
+          "animationHint": "rotación suave cíclica",
+          "texture": "nube de humo digital surrealista",
+          "surprise": "fragmento de tiempo quebrado"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Estoicismo%20cotidiano%20Ryan%20Holiday%20y%20Stephen%20Hanselman%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%206%20hormonas%20que%20van%20a%20revolucionar%20tu%20vida%20David%20JP%20Phillips%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El Club de las 5 de la mañana",
-      "autor": "Robin Sharma",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/f3/69/5f/f3695f43-ade6-325d-ff22-2038d07d0b43/9780008312855.jpg/626x0w.jpg",
-      "tagline": " Una forma de aprovechar las mañanas para conseguir unos resultados extraordinarios.Una fórmula poco conocida para despertarse temprano con buen ánimo y la energía necesaria para aprovechar el día al máximo.Un método para dedicar las horas más tranquilas del día a hacer ejercicio renovarse y crecer como persona. Un hábito científicamente probado que nos permitirá levantarnos mientras los demás siguen durmiendo y disponer así de unas horas preciosas para pensar potenciar nuestra creatividad y empezar el día con calma y sin prisas.",
+      "titulo": "Suficiente",
+      "autor": "John C. Bogle",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/3f/c0/bc/3fc0bc78-b53f-721b-34f8-3dad493cb9fb/9788419251077.jpeg/626x0w.jpg",
+      "tagline": "Reflexiones sobre el dinero los negocios y la vida",
       "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "descontento",
-        "ansiedad",
-        "letargo",
-        "gratitud"
-      ],
-      "frases": [
-        "🌅 Respira profundo mientras visualizas tus mejores mañanas. Cada respiro en calma despierta el potencial oculto que espera tu atención. Detén tus pasos por un momento, siéntelo.",
-        "🌞 Este método te invita a abrazar la serenidad antes de que el mundo despierte. Toma el control y despierta antes de la multitud para renovar tu propósito.",
-        "🧘‍♂️ A medida que asumes el desafío de levantarte más temprano, percibe cómo tu mente se ilumina con cada nuevo amanecer. El silencio de la mañana es el lienzo donde pintarás tu grandeza.",
-        "💪 La primera hora de tu día puede transformarse en un templo personal. Para aprovecharla: escribe tres cosas que deseas lograr, haz 10 respiraciones profundas y camina por tu espacio para energizarte."
-      ],
-      "colores": [
-        "#FF5722",
-        "#FFC107",
-        "#8BC34A",
-        "#00BCD4"
-      ],
-      "fondo": "#1A1A2E",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Estructurar tu día puede cambiarlo todo.  ",
-        "subtitulo": "La clave del éxito  ",
-        "parrafoBot": "El inicio del día define tu enfoque. Dedica las primeras horas a lo que realmente importa. Si cultivas hábitos en ese tiempo, notarás cambios en tu productividad y bienestar. Implementa una rutina matutina centrada en tus prioridades.",
-        "style": {
-          "accent": "#1abc9c",
-          "ink": "#2c3e50",
-          "paper": "papel espectral en penumbra",
-          "border": "cromo espectral resplandeciente",
-          "serif": "Bodoni Moda",
-          "sans": "Futura Now",
-          "marco": "foil iridiscente",
-          "fontSizeTitle": "galáctico gigante 48px",
-          "fontSizeBody": "susurro místico 14–28px",
-          "fontWeight": "peso cuántico 800",
-          "lineHeight": "respiración etérea 1.4",
-          "letterSpacing": "abismo fraccionado +1.5px",
-          "textTransform": "mixed-echo",
-          "textShadow": "neon pulsante",
-          "layout": "collage orgánico",
-          "showCover": false,
-          "ornamentFlux": "fragmentos cromáticos fugaces",
-          "glowFlux": "halo vibrante azul intenso",
-          "quantumSpacing": "intersticio luminoso 3px",
-          "holoInk": "tinta holográfica en fusión",
-          "dreamGrain": "textura de sueño cósmico",
-          "animationHint": "breathe fractal en movimiento",
-          "metaShadow": "sombra fractal pulsante",
-          "surprise": "palabra inventada: misticorporeo"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20Club%20de%20las%205%20de%20la%20ma%C3%B1ana%20Robin%20Sharma%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Alchemy",
-      "autor": "Rory Sutherland",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/c2/63/99/c26399a4-04d1-2639-0f73-469f0748523f/9780753551370.jpg/626x0w.jpg",
-      "tagline": "reveals why abandoning logic and casting aside rationality is the best way to solve any problem",
-      "dimension": "Prosperidad",
       "punto": "Cero",
       "palabras": [
-        "calma",
-        "desconexión",
-        "duda",
-        "inseguridad"
+        "incertidumbre",
+        "cautela",
+        "inseguridad",
+        "vacío"
       ],
       "frases": [
-        "🔄 Recuérdalo: a veces lo ilógico es el camino más claro hacia la solución. Observa qué ideas descartarías normalmente. ",
-        "⚡ Da un giro inesperado: desafía tus premisas actuales, escribe dos conceptos opuestos sobre el problema que enfrentas. ",
-        "🌌 Rompe las barreras de lo habitual: visualiza un resultado que parece absurdo, y anota las formas en que podría ser posible.",
-        "🔍 Reevalúa tu enfoque: haz una lista de tres soluciones inusuales, y permite que tu mente las explore sin restricciones."
+        "🌱 Al identificar lo que realmente importa, comienza a definir tu propio camino financiero.",
+        "🔍 Considera cómo los pequeños cambios en hábitos pueden generar grandes avances a largo plazo.",
+        "💡 Un fondo indexado puede ser tu aliado más potente; recuerda que el tiempo es tu mejor amigo en inversiones.",
+        "📈 Cada decisión de gasto refleja tus valores: pregúntate si realmente apoya tu vida deseada."
       ],
       "colores": [
-        "#FF5733",
-        "#33FF57",
-        "#C70039",
-        "#FFC300"
+        "#B89BC4",
+        "#68DAD1",
+        "#FFC74B",
+        "#9B6F4B"
       ],
-      "fondo": "#1B1B2A",
+      "fondo": "#1E1E2F",
       "textColors": [
-        "#FFFFFF",
         "#000000",
-        "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#000000",
+        "#FFFFFF"
       ],
       "tarjeta": {
-        "parrafoTop": "Explorar nuevos enfoques transforma nuestra realidad.  ",
-        "subtitulo": "Un viaje a la creatividad  ",
-        "parrafoBot": "Un simple giro en tu perspectiva puede abrir oportunidades que antes no veías. Atrévete a cuestionar tus creencias y permite que esa curiosidad te guíe. Dale la bienvenida a lo desconocido y verás cómo cambia tu camino.",
+        "parrafoTop": "Es fundamental plantearte qué es suficiente para ti. El enfoque de Bogle en el valor a largo plazo puede guiar tus decisiones.  ",
+        "subtitulo": "Más que dinero: define tu objetivo  ",
+        "parrafoBot": "Establece metas claras en tus inversiones y en tu vida. No se trata solo de acumular, sino de crear un impacto significativo en tu bienestar y el de los demás.",
         "style": {
-          "accent": "#00bfff",
-          "ink": "#2c2c2c",
-          "paper": "papel de neón etéreo",
-          "border": "oro líquido destellante",
-          "serif": "Garamond Ultra",
-          "sans": "Roboto Flex",
-          "marco": "pixelado surrealista",
-          "fontSizeTitle": "gigante cósmico 48–120px",
-          "fontSizeBody": "susurro espectral 10–28px",
-          "fontWeight": "peso cuántico 800",
-          "lineHeight": "respiración rítmica 1.8",
-          "letterSpacing": "infinito -1px",
-          "textTransform": "liquido",
-          "textShadow": "neón titilante",
-          "layout": "collage cuántico",
+          "accent": "#00ff6e",
+          "ink": "#1a1a1a",
+          "paper": "ecosistema oscuro radiante",
+          "border": "vibrante cúbico",
+          "serif": "Bodoni Xtrem",
+          "sans": "Exo 2",
+          "marco": "glitch plasma",
+          "fontSizeTitle": "cósmico expansivo 50–150px",
+          "fontSizeBody": "susurro estelar 14–36px",
+          "fontWeight": "dilatación óptica 800",
+          "lineHeight": "dimensión fluyente 1.4",
+          "letterSpacing": "surcos +3px",
+          "textTransform": "mixed cosmic",
+          "textShadow": "neon fog ripple",
+          "layout": "collage holográfico",
           "showCover": false,
-          "ornamentFlux": "doodles holográficos efímeros",
-          "glowFlux": "aura azul eléctrico pulsatil",
-          "holoInk": "tinta espectral reflejada",
-          "dreamGrain": "nubes de textura iridiscente",
-          "quantumSpacing": "expansión atómica 4px",
-          "animationHint": "vibración de sueño interdimensional",
-          "surprise": "fragmento incompleto de realidad",
-          "fractalWave": "onda visual colapsante"
+          "coverStyle": "pixelated vortex",
+          "holoInk": "tinta iridiscente mutante",
+          "glowFlux": "aura líquida centelleante",
+          "dreamGrain": "nubes de sueño caleidoscópico",
+          "quantumSpacing": "espaciado cuántico expandido",
+          "ornamentFlux": "flujo de líneas holográficas",
+          "animationHint": "breathe cósmico etéreo",
+          "texture": "digital ether con fracturas",
+          "surprise": "fragmentos de luz intergalácticos"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Alchemy%20Rory%20Sutherland%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Suficiente%20John%20C.%20Bogle%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "La vía rápida del millonario",
-      "autor": "MJ DeMarco",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e7/45/3d/e7453d84-b95e-adc6-b60b-87ee375a3930/1027097383.jpg/626x0w.jpg",
-      "tagline": "Hay una carretera oculta que conduce a la riqueza y la libertad financiera un atajo que puede recorrerse a una velocidad deslumbrante. Jubilarte cuatro décadas antes de lo habitual y llevar una vida que la mayoría no puede permitirse es posible. Sin embargo nos han inculcado el dogma de hazte rico poco a poco un plan asfixiante con una ligera posibilidad de obtener riquezas en nuestra vejez: Ve a la universidad saca buenas notas gradúate consigue un buen trabajo ahorra invierte contrata un plan de pensiones. Entonces algún día cuando tengas sesenta y cinco años serás rico.No permitas que tu plan financiero consista en tener esperanzas y rezar! Cambia de carril; ve por la vía rápida y haz realidad tus sueños.",
+      "titulo": "La ciencia del éxito",
+      "autor": "Napoleon Hill",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/23/4f/0b/234f0bcd-6265-5ee3-8dc3-d84fc463292d/9786073817684.jpg/626x0w.jpg",
+      "tagline": "El curso magistral de Napoleón Hill",
       "dimension": "Prosperidad",
       "punto": "Máximo",
       "palabras": [
-        "impotencia",
-        "desamparo",
-        "aprehensión",
-        "opresión"
-      ],
-      "frases": [
-        "🚀 Con cada paso que das, el destino financiero se transforma. (Empodérate hoy).",
-        "💡 Tu capacidad de cambio es mayor que cualquier limitación impuesta por la sociedad.",
-        "🏎️ Al dejar de lado lo convencional, las posibilidades de riqueza se multiplican.",
-        "📈 En lugar de esperar un mañana incierto, define un objetivo claro y toma acción inmediata."
-      ],
-      "colores": [
-        "#4A90E2",
-        "#D9BF77",
-        "#F15A29",
-        "#8F43A3"
-      ],
-      "fondo": "#181818",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Es esencial entender que nuestras decisiones financieras deben ser intencionales y alineadas con nuestros objetivos.  ",
-        "subtitulo": "El camino hacia la libertad económica  ",
-        "parrafoBot": "En \"La vía rápida del millonario\", MJ DeMarco enfatiza la importancia de crear activos que generen ingresos. Si deseas transformar tu vida, comienza a invertir en tus habilidades y en proyectos que realmente te apasionen.",
-        "style": {
-          "accent": "#34eb86",
-          "ink": "#222222",
-          "paper": "tinta estelar con brillos de galaxia",
-          "border": "luz violeta de neón",
-          "serif": "Playfair Display",
-          "sans": "Poppins",
-          "marco": "cutout espacial",
-          "fontSizeTitle": "clamp(40px,15vw,160px)",
-          "fontSizeBody": "susurro cuántico 14–28px",
-          "fontWeight": "peso cósmico 800",
-          "lineHeight": "respiración densa 1.8",
-          "letterSpacing": "abismo profundo +3px",
-          "textTransform": "mixed",
-          "textShadow": "neón pulsante en capas",
-          "layout": "collage surrealista",
-          "showCover": false,
-          "ornamentFlux": "doodles estelares vibrantes",
-          "holoInk": "tinta holográfica iridiscente",
-          "quantumSpacing": "espaciado cuántico desfasado",
-          "glitchAura": "halo de errores luminosos",
-          "animationHint": "breathe cósmico",
-          "texture": "digital haze con brillos sutiles",
-          "surprise": "fragmento incompleto en tipografía quebrada"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20v%C3%ADa%20r%C3%A1pida%20del%20millonario%20MJ%20DeMarco%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Think Again",
-      "autor": "Adam Grant",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/77/2b/28/772b28ee-2bff-dddf-312b-e6ee7fa271e8/9781984878113.d.jpg/626x0w.jpg",
-      "tagline": "The power of knowing what you don't know",
-      "dimension": "Cerebro",
-      "punto": "Creativo",
-      "palabras": [
-        "confusión",
-        "ansiedad",
-        "tensión",
-        "desasosiego"
-      ],
-      "frases": [
-        "🌱 En la incertidumbre, el primer paso es abrir tu mente a nuevas posibilidades. Respira hondo, elige un hecho desconocido para investigar.",
-        "🧩 Replantear tus creencias puede ser la clave para desbloquear tu potencial. Tómate un instante para escribir tres ideas que siempre has considerado ciertas.",
-        "📚 Al dudar, recuerda que cada perspectiva ofrece un nuevo ángulo. Revisa algo que siempre te pareció inamovible y considera otra opinión.",
-        "🔍 A veces, la respuesta está en lo que ignoramos. Elige un tema de tu curiosidad y investiga una faceta que nunca has explorado."
-      ],
-      "colores": [
-        "#5C9C7B",
-        "#FFCFE6",
-        "#A72C49",
-        "#F2E2A6"
-      ],
-      "fondo": "#0E1A1D",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Es fácil quedar atrapado en nuestras creencias, pero cuestionarlas abre puertas. Adam Grant en \"Think Again\" resalta la importancia de dudar de nuestras certezas.",
-        "subtitulo": "El poder de la incertidumbre",
-        "parrafoBot": "Fomentar una mentalidad flexible nos lleva a aprendizajes inesperados. Este es el momento de desafiar tus suposiciones y explorar nuevas perspectivas que enriquezcan tu vida. No te aferres a lo conocido, experimenta lo desconocido.",
-        "style": {
-          "accent": "#00ff7f",
-          "ink": "#1a1a1a",
-          "paper": "nube de sombras brillantes",
-          "border": "efecto pixelado vibrante",
-          "serif": "Bodoni",
-          "sans": "Futura",
-          "marco": "foil desintegrado",
-          "fontSizeTitle": "cosmos expansivo 45px",
-          "fontSizeBody": "susurro etéreo 14–36px",
-          "fontWeight": "peso cuántico 800",
-          "lineHeight": "flujo cósmico 2.2",
-          "letterSpacing": "espacio de universo +3px",
-          "textTransform": "mixed-constellation",
-          "textShadow": "neón espectral pulsatil",
-          "layout": "collage irregular fractal",
-          "showCover": false,
-          "ornamentFlux": "doodles lumínicos impredecibles",
-          "glowFlux": "aura verde fosforescente en movimiento",
-          "quantumSpacing": "espaciado de ondas cuánticas",
-          "holoInk": "tinta iridiscente cambiante",
-          "dreamGrain": "grano de sueño onírico",
-          "animationHint": "respiración lumínica fluctuante",
-          "texture": "metal líquido en ebullición",
-          "surprise": "fragmento tipográfico en caleidoscopio"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Think%20Again%20Adam%20Grant%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Principios para enfrentarse al nuevo orden mundial",
-      "autor": "Ray Dalio",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/fd/1d/39/fd1d3978-85e8-7386-d1b0-d5d1318ad632/9788423433766.jpg/626x0w.jpg",
-      "tagline": "Los tiempos que vienen serán radicalmente diferentes a los que hemos vivido hasta ahora pero se parecerán mucho a otras etapas de la historia después de un titánico estudio de episodios análogos al presente en los últimos quinientos años los ciclos históricos siempre han sido muy similares entre ellos",
-      "dimension": "Conexión",
-      "punto": "Cero",
-      "palabras": [
-        "calma",
-        "ansiedad",
-        "inquietud",
-        "pesimismo"
-      ],
-      "frases": [
-        "💔 Detenerse a observar el mundo en cambio es esencial para hallar claridad. Respira y toma un instante para notar la transformación.",
-        "🔍 Reconocer patrones en la historia puede aliviar la angustia presente. Anota tres ciclos históricos que creas se repiten hoy.",
-        "📉 Los ciclos de prosperidad y desafío son inevitables. Recuerda que cada episodio es una oportunidad para reconstruir. Mira más allá de la superficie.",
-        "🕰️ Reflexiona sobre lo que los grandes líderes han aprendido en tiempos turbulentos. A menudo, una estrategia adaptativa es la clave del éxito. Considera leer una biografía de un líder transformador."
-      ],
-      "colores": [
-        "#B97B4B",
-        "#5B95F0",
-        "#FFBB8D",
-        "#62CBA0"
-      ],
-      "fondo": "#2C3E50",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "La situación actual exige una mentalidad flexible y una continua adaptación.  ",
-        "subtitulo": "La clave es la acción  ",
-        "parrafoBot": "Es fundamental evaluar tus recursos y aprender a anticipar cambios. Mantén la calma, pero actúa de inmediato para ajustarte y evolucionar ante las circunstancias que se presentan.",
-        "style": {
-          "accent": "#a3ff4d",
-          "ink": "#222222",
-          "paper": "nieve nocturna texturizada",
-          "border": "cinturón de asteroides cromado",
-          "serif": "Bodoni",
-          "sans": "Futura",
-          "marco": "shadow 3D con neón",
-          "fontSizeTitle": "universo gigante 50px",
-          "fontSizeBody": "susurro astral 14–28px",
-          "fontWeight": "peso celeste 750",
-          "lineHeight": "respiración cósmica 1.8",
-          "letterSpacing": "dimensión distorsionada +3px",
-          "textTransform": "mixed con toques etéreos",
-          "textShadow": "blur nebuloso",
-          "layout": "collage disruptivo",
-          "showCover": false,
-          "ornamentFlux": "fractales orgánicos danzantes",
-          "glowAura": "halo vibrante verdoso",
-          "metaShadow": "eco de sombra surrealista",
-          "warpGrid": "retícula en expansión",
-          "fontFlux": "dinámica caótica 20px–160px",
-          "animationHint": "breathe etéreo",
-          "texture": "rugosidad etérea",
-          "surprise": "fragmentos de sueño abstractos"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Principios%20para%20enfrentarse%20al%20nuevo%20orden%20mundial%20Ray%20Dalio%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El poder frente a la fuerza",
-      "autor": "David R. Hawkins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/c4/51/01/c45101d7-47c9-276a-4a8d-f1063333abce/9788494279690.jpg/626x0w.jpg",
-      "tagline": "El doctor Hawkins nos aporta una explicación muy clara y comprensible de los niveles de la conciencia humana asociados con las emociones.Nos presenta conceptos como el de atractor que sirven para ilustrar su sistema de pensamiento.También nos enseña la prueba kinesiológica para distinguir lo verdadero de lo falso.La clave del libro está en el estudio y la distinción entre poder y fuerza entre aquellos estados en los que interviene el yo personal y están marcados por el esfuerzo y aquellos otros en los que nos alineamos con el verdadero poder y podemos fluir con él.",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "apariencia",
-        "cautela",
-        "regado",
-        "compasión"
-      ],
-      "frases": [
-        "🌊 Considera la fuerza que te rodea y elige fluir con ella; así hallarás tu verdad. (abrir un libro y encontrar 3 palabras que te resuenen)",
-        "🔥 Permite que la energía interna se transforme; el poder está en tu capacidad de elección. (anota 3 decisiones recientes y evalúa su impacto)",
-        "🌈 El auténtico poder se manifiesta en la calma, no en el esfuerzo; identifica y abandona lo innecesario. (mira al horizonte y respira profundo 5 veces)",
-        "🌟 La prueba kinesiológica revela la conexión entre lo verdadero y lo falso; confía en tu percepción interna. (realiza un gesto de agradecimiento hacia ti mismo)"
-      ],
-      "colores": [
-        "#A11B6E",
-        "#5DBE99",
-        "#FF6F4C",
-        "#2E2E73"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "La verdadera transformación no es solo un deseo, es un compromiso interno. Cuando decides actuar, todo a tu alrededor comienza a ajustarse.  ",
-        "subtitulo": "Tu paso hacia la autenticidad  ",
-        "parrafoBot": "Recuerda que lo que sientes tiene un impacto real en tu vida. Escucha tu voz interna y dale espacio; ahí reside tu fuerza. Actúa hoy, busca esa conexión que tanto anhelas.",
-        "style": {
-          "accent": "#ff5733",
-          "ink": "#202124",
-          "paper": "espacio neón etéreo",
-          "border": "holograma líquido cian",
-          "serif": "Bodoni XT",
-          "sans": "Futura Variable",
-          "marco": "foil de luz intermitente",
-          "fontSizeTitle": "clamp(40px,15vw,160px)",
-          "fontSizeBody": "susurro oculto 10–28px",
-          "fontWeight": "peso de luz 800",
-          "lineHeight": "respiración de galaxia 1.5",
-          "letterSpacing": "cavidad entre letras +3px",
-          "textTransform": "mixed cosmic",
-          "textShadow": "blur estelar",
-          "layout": "collage multidimensional",
-          "showCover": false,
-          "ornamentFlux": "fractura cósmica infinita",
-          "holoInk": "tinta líquida azul zafiro",
-          "glitchAura": "brillo desfasado multicolor",
-          "quantumSpacing": "distorsión en el tiempo 4px",
-          "dreamGrain": "ruido de sueños vibrantes",
-          "animationHint": "breathe fractal oscuro",
-          "texture": "nubes de sombra líquida",
-          "surprise": "fragmento textual inconcluso"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20frente%20a%20la%20fuerza%20David%20R.%20Hawkins%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Una Vida Sin Limites",
-      "autor": " Alejandra Llamas",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/1b/9d/7e/1b9d7e5b-0463-be8e-a4d9-717136794757/9786073185349.jpg/626x0w.jpg",
-      "tagline": " Alejandra Llamas realiza un profundo análisis sobre la conexión que debe tener todo ser humano con su mundo interno para lograr alejarse del miedo y acercarse a la unión y al amor.A través de 45 versos fundamentales del Tao Te Ching texto ancestral clásico chino atribuido al filósofo Lao Tsé. Una vida sin límites se constituye como una herramienta para entender y ver de manera positiva nuestro entorno y lograr nuestra paz interior. Este libro nos invita a dejarnos llevar por el camino del Tao para reflexionar y alcanzar la serenidad.",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "inseguridad",
-        "vacío",
-        "duda",
+        "anhelo",
+        "tormento",
+        "desequilibrio",
         "gratitud"
       ],
       "frases": [
-        "🌱 Inhale el presente mientras exhala lo que le retiene. La serenidad llega cuando conectas con tu esencia. Tómate un momento para respirar profundamente, siente la calma en tu interior.",
-        "✨ El camino hacia la unión empieza al soltar lo que pesa. Reflexiona sobre un momento de gratitud hoy y deja que eso ilumine tu senda. Cada acción trae un eco de paz en tu vida.",
-        "🌀 Permite que el flujo del Tao te guíe. Abre tu mente a nuevas perspectivas, toma una decisión pequeña que te acerque a tu verdadero yo. Anota tres pensamientos positivos que te inspiren.",
-        "🌟 Cada verso del Tao es una llave a la transformación. ¿Sabías que al aplicar el amor en lugar del miedo, tu mundo cambia radicalmente? Escribe en tu diario cómo se siente esa conexión."
+        "🌱 Respira profundamente y siente cómo crece el deseo de actuar, cada paso cuenta en tu viaje. (3x)",
+        "🚀 Impulsa tu energía hacia el propósito, visualizar el éxito te lleva más cerca de alcanzarlo. (anota 3 objetivos)",
+        "🎯 En cada desafío yace una oportunidad, recuerda: el triunfo es la suma de pequeños esfuerzos diarios. (10 pasos)",
+        "🌟 Reflexiona sobre las historias de aquellos que superaron adversidades; cada uno trazó su camino único."
       ],
       "colores": [
-        "#A7C7E7",
-        "#F6C9A6",
-        "#A5D7A2",
-        "#F0A3A0"
+        "#FF9A00",
+        "#FF5C00",
+        "#FFA700",
+        "#FFABAB"
       ],
-      "fondo": "#11111d",
+      "fondo": "#0B0C0F",
       "textColors": [
         "#000000",
-        "#000000",
+        "#FFFFFF",
         "#000000",
         "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "Es fundamental tomar decisiones que nos acerquen a nuestras metas. A veces, una lectura como la de Alejandra Llamas puede motivarnos a dar ese primer paso.  ",
-        "subtitulo": "Transformación personal  ",
-        "parrafoBot": "Identificar lo que realmente queremos y trazar un plan es esencial. Al hacerlo, permitimos que nuestras acciones reflejen nuestros deseos y nos acerquen a una vida más plena.",
+        "parrafoTop": "La ciencia del éxito de Napoleon Hill ofrece un camino claro. Lo esencial es pasar de la intención a la acción; no basta con desear, hay que hacer.  ",
+        "subtitulo": "Pasos para avanzar  ",
+        "parrafoBot": "Tomar decisiones firmes y seguir adelante, incluso cuando la motivación flaquea, es lo que distingue a quienes alcanzan sus metas. Enfócate en actuar hoy, ese es el primer paso hacia tu futuro.",
         "style": {
-          "accent": "#34ebba",
-          "ink": "#141414",
-          "paper": "eco de niebla digital",
-          "border": "reflejo de aurora boreal",
-          "serif": "Merriweather",
-          "sans": "Avenir Next",
-          "marco": "glitch cósmico",
-          "fontSizeTitle": "cosmos expansivo 40–120px",
-          "fontSizeBody": "susurro de estrella 10–25px",
-          "fontWeight": "peso cristalino 800",
-          "lineHeight": "resonancia sutil 1.4",
-          "letterSpacing": "intersticio de luz +3px",
+          "accent": "#1effd6",
+          "ink": "#222222",
+          "paper": "tierra resplandeciente",
+          "border": "corte laser cinético",
+          "serif": "Bodoni Poster",
+          "sans": "Futura Bold",
+          "marco": "vibración retro",
+          "fontSizeTitle": "colosal estelar 50–120px",
+          "fontSizeBody": "susurro cósmico 14–28px",
+          "fontWeight": "peso crudo 700",
+          "lineHeight": "susurro celeste 1.4",
+          "letterSpacing": "laberinto +1.5px",
           "textTransform": "mixed",
-          "textShadow": "holo desvanecido",
-          "layout": "collage fractal inesperado",
+          "textShadow": "halo iridiscente",
+          "layout": "collage multidimensional",
           "showCover": false,
-          "ornamentFlux": "siluetas líquidas impredecibles",
-          "neonWhisper": "susurro verde brillante",
-          "prismPulse": "pulsación espectral en movimiento",
-          "quantumSpacing": "expansión de realidad 0.5em",
-          "animationHint": "breathe espectral",
-          "texture": "lienzo de agua líquida",
-          "surprise": "fragmento de tiempo distorsionado"
+          "ornamentFlux": "fractura temporal ecléctica",
+          "holoInk": "tinta del futuro  #aaddff",
+          "prismPulse": "ritmo luminoso frenético",
+          "quantumSpacing": "salto dimensional 0.6rem",
+          "dreamGrain": "neblina onírica con textura granulada",
+          "animationHint": "breathe fluido pulsante",
+          "texture": "papel de seda digitalizado",
+          "surprise": "fragmento tipográfico distorsionado en eco"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Una%20Vida%20Sin%20Limites%20%20Alejandra%20Llamas%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20ciencia%20del%20%C3%A9xito%20Napoleon%20Hill%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Cómo ganar amigos",
+      "autor": "Dale Carnegie",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/22/20/b2/2220b227-f639-025f-c1ea-42f85e449bc5/1040101972.jpg/626x0w.jpg",
+      "tagline": "Clásico absoluto de las relaciones humanas es un compendio de principios y verdades que aun hoy no han sido aún superados. Cuando inició este proyecto Dale Carnegie decidió aplicar en él su gran conocimiento sobre las personas sus dotes de observación y su experiencia profesional y el resultado fue un tratado de psicología cotidiana que no ha perdido ni un ápice de actualidad y que en buena medida es el origen del marketing moderno. Según Carnegie el éxito económico depende en un 15 por ciento del conocimiento profesional y en un 85 por ciento de la capacidad para expresar ideas asumir el liderazgo y despertar entusiasmo en los demás.Carnegie nos muestra las técnicas fundamentales para ser empáticos y gustar a los demás comprender sus puntos de vista y saber convencer de nuestras propias ideas sin causar resentimiento.",
+      "dimension": "Conexión",
+      "punto": "Máximo",
+      "palabras": [
+        "guardia",
+        "animosidad",
+        "curiosidad",
+        "aprecio"
+      ],
+      "frases": [
+        "🌟 Practica la escucha activa para crear lazos profundos con quienes te rodean.",
+        "🌼 Recuerda que el aprecio genuino es el primer paso para ser querido.",
+        "🌈 La comunicación clara y positiva te abrirá puertas hacia nuevas amistades y conexiones.",
+        "🍀 Tres formas de expresar gratitud hoy: una sonrisa, un agradecimiento sincero y un cumplido inesperado."
+      ],
+      "colores": [
+        "#FF6F61",
+        "#6A4C93",
+        "#FFD23F",
+        "#00BFAE"
+      ],
+      "fondo": "#2D3E50",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "parrafoTop": "El libro de Dale Carnegie habla de cómo las relaciones pueden cambiar nuestras vidas. Cuando decides escuchar a los demás, comienzas a construir conexiones auténticas.  ",
+        "subtitulo": "Construyendo relaciones efectivas.  ",
+        "parrafoBot": "Aprovecha cada oportunidad para demostrar interés genuino en quienes te rodean. Esa simple acción puede abrir puertas que ni imaginabas. Deja que la curiosidad guíe tus interacciones y observa los resultados.",
+        "style": {
+          "accent": "#7cfc00",
+          "ink": "#1e1e1e",
+          "paper": "textura de bruma estelar",
+          "border": "reflejo prismático suave",
+          "serif": "Playfair Display",
+          "sans": "Futura Nova",
+          "marco": "foil plateado interdimensional",
+          "fontSizeTitle": "gigante lumínico 40px–160px",
+          "fontSizeBody": "susurro etéreo 14–28px",
+          "fontWeight": "densidad cósmica 800",
+          "lineHeight": "eco rítmico 1.8",
+          "letterSpacing": "expansión cuántica +1.5px",
+          "textTransform": "mixed fractal",
+          "textShadow": "neon suave con resplandor",
+          "layout": "collage radial abstracto",
+          "showCover": false,
+          "ornamentFlux": "fractal bioluminiscente",
+          "holoInk": "tinta que brilla como luciérnaga",
+          "quantumSpacing": "espacio interdimensional irregular",
+          "warpGrid": "reticulado en colapso horizontal",
+          "glitchAura": "destello irreal persistente",
+          "animationHint": "breathe y retorcer",
+          "texture": "superficie líquida interactiva",
+          "surprise": "fragmento de relato perdido en glitch"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+C%C3%B3mo%20ganar%20amigos%20Dale%20Carnegie%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Cuestión de límites",
       "autor": "Nedra Glover",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/9f/fd/b6/9ffdb681-b177-507c-ade6-7347e5a685a3/9786070777790.jpg/626x0w.jpg",
       "tagline": "La falta de límites nos conduce a una cultura del burnout y a una sociedad exhausta y sobrepasada",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "desasosiego",
-        "sobrecarga",
-        "desinterés",
-        "gratitud"
-      ],
-      "frases": [
-        "✨ Reconoce que establecer límites te permitirá redescubrir tu energía. Tómate un momento para identificar una tarea que puedes delegar hoy.",
-        "🌪️ La falta de límites crea un ciclo de agotamiento; prioriza tu bienestar al establecer un micro límite. Intenta decir 'no' a una solicitud esta semana.",
-        "🌱 Establecer barreras personales revitaliza la conexión contigo mismo. Anota tres actividades que realmente te nutren y elige una para hacer hoy.",
-        "🌀 Aprender a decir 'no' es un acto de autocuidado. En lugar de aceptar cada invitación, respira hondo y decide en función de tus prioridades."
-      ],
-      "colores": [
-        "#2B4C73",
-        "#F75C8B",
-        "#B7E3D1",
-        "#FFDA63"
-      ],
-      "fondo": "#0E0F1B",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Poner fronteras en nuestras vidas es fundamental para crecer. En \"Cuestión de límites\" de Nedra Glover, se abordan herramientas efectivas para crear un espacio personal que respete tus necesidades.  ",
-        "subtitulo": "Importancia de los límites  ",
-        "parrafoBot": "Aprender a decir “no” es un acto de amor propio. Establecer claramente lo que te incomoda o no deseas es esencial para proteger tu bienestar y fomentar relaciones sanas. Hazlo hoy.",
-        "style": {
-          "accent": "#0cbfff",
-          "ink": "#141414",
-          "paper": "vapor líquido que danza",
-          "border": "cromo fractal iridiscente",
-          "serif": "Bodoni",
-          "sans": "Montserrat Alternates",
-          "marco": "shadow interdimensional",
-          "fontSizeTitle": "gigante cuántico 50px",
-          "fontSizeBody": "susurro etéreo 10–24px",
-          "fontWeight": "peso cinético 700",
-          "lineHeight": "respiración cósmica 2.0",
-          "letterSpacing": "horizonte +3px",
-          "textTransform": "mixed dimension",
-          "textShadow": "blur espectral",
-          "layout": "collage fractal",
-          "showCover": false,
-          "ornamentFlux": "tendencias psicodélicas vibrantes",
-          "glowFlux": "aura azul en movimiento",
-          "dreamGrain": "grano de nube etérea",
-          "prismPulse": "pulso prismático en expansión",
-          "quantumSpacing": "espaciado de singularidad +5px",
-          "animationHint": "breathe intermitente",
-          "texture": "pintura líquida metálica",
-          "surprise": "fragmento de memoria pixelada"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuesti%C3%B3n%20de%20l%C3%ADmites%20Nedra%20Glover%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Enamórate del problema no de la solución",
-      "autor": "Uri Levine",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/ec/b3/47/ecb34700-b504-9032-41c9-04cb928fabef/9786287578302.jpg/626x0w.jpg",
-      "tagline": "mediante la identificación de los problemas más serios de nuestros consumidores y perturbar los mercados ineficientes que actualmente les sirven",
-      "dimension": "Prosperidad",
-      "punto": "Cero",
-      "palabras": [
-        "impotencia",
-        "ansiedad",
-        "curiosidad",
-        "errante"
-      ],
-      "frases": [
-        "🛠️ Identifying the core issues leads to the most innovative solutions; map them out today.",
-        "🔍 Focusing on genuine problems opens new market pathways; start by listing your consumers' frustrations.",
-        "🚀 Identify 3 significant challenges faced by your audience, and consider how to disrupt existing inefficiencies.",
-        "🌱 Market disruption thrives on genuine understanding; what does your audience truly need? Look closely."
-      ],
-      "colores": [
-        "#7A8DCA",
-        "#F05D77",
-        "#EBDA54",
-        "#25A85D"
-      ],
-      "fondo": "#0E0F1B",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Resolver lo superficial no te llevará lejos. En lugar de buscar soluciones inmediatas, identifica el núcleo del problema. Uri Levine, en su obra sobre emprendimiento, recalca la importancia de enamorarte de las dificultades que enfrentas. ",
-        "subtitulo": "Entiende tu motivación",
-        "parrafoBot": "Pregúntate qué es lo que realmente te mueve a actuar. Conocer tus motivaciones te permitirá encontrar respuestas más efectivas y auténticas. Al conectar con el problema de fondo, podrás trazar un camino más claro hacia la solución.",
-        "style": {
-          "accent": "#29d4ff",
-          "ink": "#3b3b3b",
-          "paper": "espuma etérea con destellos de luz",
-          "border": "neón azul profundo",
-          "serif": "Garamond Spectral",
-          "sans": "Aero Liquid",
-          "marco": "shadow glitch dinámico",
-          "fontSizeTitle": "gigante cósmico 50px",
-          "fontSizeBody": "susurro mínimo 10–25px",
-          "fontWeight": "peso de niebla 600",
-          "lineHeight": "respiración estelar 1.4",
-          "letterSpacing": "vacío pulsante +1.5px",
-          "textTransform": "mixed wave",
-          "textShadow": "meta-glow iridiscente",
-          "layout": "collage cósmico",
-          "showCover": false,
-          "ornamentFlux": "ornamentación líquida incesante",
-          "glitchAura": "efecto de ondulación sutil",
-          "warpGrid": "red caótica vibrante",
-          "fontFlux": "variación infinita 15px–200px",
-          "animationHint": "parpadeo cuántico",
-          "texture": "ruido orgánico gelatinoso",
-          "surprise": "fragmento dimensional desfasado"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Enam%C3%B3rate%20del%20problema%20no%20de%20la%20soluci%C3%B3n%20Uri%20Levine%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Wu wei",
-      "autor": "Henri Borel",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/0a/7f/91/0a7f918a-4d24-eb85-8b52-28a932ee4694/Laotzu_s_Tao_and_Wu_Wei_-_Henri_Borel.jpg/626x0w.jpg",
-      "tagline": "la vía del no actuar o cómo seguir el ritmo natural de la vida",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "calma",
-        "apatía",
-        "letargo",
-        "gratitud"
-      ],
-      "frases": [
-        "🌀 Respira profundamente y suelta lo que pesa en tu mente. Practica dejar ir en un momento de calma.",
-        "🌊 Fluye con lo que sucede a tu alrededor; dejarse llevar puede ser liberador. Piensa en cómo un río se adapta a su entorno.",
-        "🔄 Tómate un instante para observar tus pensamientos. Una pausa breve puede mostrarte el camino hacia la serenidad.",
-        "✨ Conectarte con tu entorno puede traerte paz; deja que la naturaleza guíe tu ser en cada paso que des."
-      ],
-      "colores": [
-        "#3D65A4",
-        "#DAA136",
-        "#8F16B8",
-        "#A3F1C3"
-      ],
-      "fondo": "#0B0D14",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "parrafoTop": "Acción sin esfuerzo es clave para avanzar.  ",
-        "subtitulo": "Cultivando la fluidez  ",
-        "parrafoBot": "Aceptar el fluir de la vida puede abrir puertas que ni imaginabas. Al dejar ir el control, descubres oportunidades y soluciones que antes parecían inalcanzables. Practica esa entrega, te llevará a una vida más plena y creativa.",
-        "style": {
-          "accent": "#00bcd4",
-          "ink": "#1c1c1c",
-          "paper": "papel etéreo con brillos ocultos",
-          "border": "reflejo prismático",
-          "serif": "Bodoni",
-          "sans": "Suisse Int'l",
-          "marco": "foil dorado quebrado",
-          "fontSizeTitle": "mega titán 40–150px",
-          "fontSizeBody": "susurro oscuro 10–28px",
-          "fontWeight": "peso radical 800",
-          "lineHeight": "eco de amplitud 1.5",
-          "letterSpacing": "expansión etérea +1.5px",
-          "textTransform": "mixed",
-          "textShadow": "neón radiante distorsionado",
-          "layout": "collage dinámico",
-          "showCover": false,
-          "ornamentFlux": "salpicaduras lumínicas caóticas",
-          "glowAura": "aura vibrante de ámbar",
-          "quantumSpacing": "vacío cuántico de 5px",
-          "dreamGrain": "grano de sueño nebuloso",
-          "holoInk": "tinta holográfica flotante",
-          "animationHint": "pulso rítmico errático",
-          "texture": "silkwave sintética",
-          "surprise": "fragmento lumínico no discernible"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Wu%20wei%20Henri%20Borel%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Sé tu propio CEO",
-      "autor": " Leo Piccioli",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/2c/a4/46/2ca446ef-d5ed-5fa1-309b-410c72c6a93b/1045450739.jpg/626x0w.jpg",
-      "tagline": "Hay dos formas de verlo son rebeldes si la empresa quiere aferrarse al pasado. Son líderes si entiende que debe cambiar",
       "dimension": "Conexión",
       "punto": "Máximo",
       "palabras": [
-        "rebeldía",
-        "audacia",
+        "lastimadura",
+        "desasosiego",
         "curiosidad",
-        "gratitud"
+        "agobio"
       ],
       "frases": [
-        "💥 Abraza la rebeldía y descubre cómo el cambio puede abrir puertas inesperadas.",
-        "🌟 La audacia es la chispa que enciende el liderazgo en tiempos de incertidumbre.",
-        "🔥 La transformación empieza al cuestionar lo que te han enseñado. ¿Cuál es tu primer paso?",
-        "📈 Acepta la agitación como parte del proceso. Conecta con tu propósito y actúa."
+        "🌀 Observa cómo la dedicación a los demás puede dejarte exhausto. Respira hondo y da un paso atrás en este instante.",
+        "🪴 Las dinámicas de sobrecarga crean una tormenta interna. Tómate un respiro y considera cómo establecer tus propios límites para hallar calma.",
+        "🔑 Recuerda que no hay éxito sin un propósito claro. Anota tres límites que te gustaría establecer hoy para proteger tu bienestar.",
+        "🎈 La práctica del 'no' permite más espacio para el 'sí' en lo que realmente importa. ¿Cómo podrías practicar esto esta semana?"
       ],
       "colores": [
-        "#4ECDC4",
-        "#F6B93B",
-        "#E69A28",
-        "#D62D5D"
+        "#C23448",
+        "#5DB3E3",
+        "#4D7C86",
+        "#FFD56B"
       ],
-      "fondo": "#2A2E34",
+      "fondo": "#1E1E1E",
       "textColors": [
+        "#FFFFFF",
         "#000000",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ],
       "tarjeta": {
-        "parrafoTop": "El empoderamiento personal se centra en tomar decisiones. Cada acción que eliges influye en tu trayectoria profesional. El libro de Leo Piccioli ilumina esta idea. ",
-        "subtitulo": "Decide hoy, sin postergaciones. El cambio real comienza cuando decides dar un paso, por pequeño que sea. Pregúntate: ¿qué acción concreta puedo tomar ahora para avanzar hacia mis metas?",
-        "parrafoBot": "",
+        "parrafoTop": "Las decisiones marcan el rumbo de nuestras vidas.  ",
+        "subtitulo": "Reconocer los límites que nos imponen es esencial.  ",
+        "parrafoBot": "El libro \"Cuestión de límites\" de Nedra Glover invita a evaluar cómo estos afectan nuestro bienestar. Es momento de identificar qué te está frenando y dar el paso para cambiarlo. Enfócate en lo que puedes controlar y comienza a construir la vida que deseas.",
         "style": {
-          "accent": "#f0a500",
-          "ink": "#2d3a4e",
-          "paper": "papel espectral con textura cósmica",
-          "border": "cromo ardiente",
-          "serif": "Playfair Display",
-          "sans": "Poppins",
-          "marco": "shadow retro",
-          "fontSizeTitle": "gigante cuántico 40px",
+          "accent": "#00ff84",
+          "ink": "#141414",
+          "paper": "algodón etéreo",
+          "border": "oro líquidas volutas",
+          "serif": "Bodoni XT",
+          "sans": "Nova Mono",
+          "marco": "foil holográfico vivo",
+          "fontSizeTitle": "supernova 40px",
           "fontSizeBody": "susurro mínimo 10–28px",
-          "fontWeight": "peso ondulante 700",
-          "lineHeight": "respiración amplia 1.4",
-          "letterSpacing": "abismo -1px",
-          "textTransform": "mixed surreal",
-          "textShadow": "neon brillo místico",
-          "layout": "collage vertical abstracto",
+          "fontWeight": "peso abstracto 700",
+          "lineHeight": "susurros flotantes 1.8",
+          "letterSpacing": "infinito -1px",
+          "textTransform": "mixed",
+          "textShadow": "neón envolvente",
+          "layout": "collage asimétrico",
           "showCover": false,
-          "ornamentFlux": "espirales holográficas impredecibles",
-          "glowAura": "aura vibrante multicolor",
-          "dreamGrain": "textura de nube de ensueño",
-          "prismPulse": "latido prismático cambiante",
-          "animationHint": "rotación suave interdimensional",
-          "holoInk": "tinta líquida efervescente",
-          "surprise": "fragmento poético oculto"
+          "ornamentFlux": "fractales danzantes dorados",
+          "glowFlux": "brillo profundo y pulsante",
+          "quantumSpacing": "saltos de espacio caóticos",
+          "dreamGrain": "textura de sueños y humo",
+          "metaLayer": "capa interactiva mágica",
+          "animationHint": "breathe y pulso",
+          "holoInk": "tinta que respira luz",
+          "surprise": "fragmento incompleto con eco cósmico"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+S%C3%A9%20tu%20propio%20CEO%20%20Leo%20Piccioli%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuesti%C3%B3n%20de%20l%C3%ADmites%20Nedra%20Glover%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
