@@ -1,29 +1,22 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v7.2 GOD MODE - CÓDIGO DEFINITIVO
+   TRIGGUI v7.3 ULTRA GOD - CÓDIGO DEFINITIVO PRODUCCIÓN
    
-   ¿QUÉ HACE?
-   Genera contenido enriquecido para libros:
-   - 4 palabras emocionales (Mapa Hawkins 20-200)
-   - 4 frases de acción únicas (micro-protocolos)
-   - Paleta cromática imposible de confundir
-   - Tarjeta editorial (título, insights, call-to-action)
-   - Diseño visual experimental
+   Sistema de generación de contenido enriquecido para libros.
    
-   INNOVACIONES v7.2:
-   ✅ Validación doble anti-"default"
-   ✅ Reintento automático si respuesta incompleta
-   ✅ JSON nativo garantizado (response_format)
-   ✅ Anti-repetición con memoria de sesión
-   ✅ Fallback robusto
-   ✅ Cronobiología silenciosa
+   CARACTERÍSTICAS:
+   ✅ Palabras emocionales profundas (Hawkins 20-75)
+   ✅ Frases únicas con estructuras radicalmente diferentes
+   ✅ Paletas cromáticas imposibles de confundir
+   ✅ Tarjetas editoriales con diseño experimental
+   ✅ Delay entre libros (evita rate limit)
+   ✅ Reintentos automáticos (hasta 2x)
+   ✅ Temperatura optimizada (1.1)
+   ✅ Validación doble anti-repetición
+   ✅ Fallback robusto con contenido real
    
-   CÓMO ITERAR:
-   1. Modifica prompts (línea 175-260)
-   2. Ejecuta: node build-contenido-v7.2-GOD.js
-   3. Revisa contenido.json
-   4. Ajusta y repite
-   
-   Badir Nakid | Nov 2025
+   AUTOR: Badir Nakid
+   FECHA: Noviembre 2025
+   VERSIÓN: 7.3 ULTRA GOD
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -34,34 +27,36 @@ import crypto from "node:crypto";
 /* ═══════════════════════════════════════════════════════════════
    ⚙️  CONFIGURACIÓN GLOBAL
    
-   Aquí ajustas TODO sin tocar código interno.
+   Modifica estos valores para ajustar el comportamiento del sistema.
    
-   PARÁMETROS CLAVE:
+   PARÁMETROS:
+   - model: Modelo de OpenAI a usar
    - temp: Creatividad (0.7=coherente, 1.5=salvaje)
-   - max: Cantidad de libros a procesar
-   - presence/frequency: Anti-repetición de OpenAI
+   - delay: Milisegundos entre libros (evita rate limit)
+   - maxReintentos: Intentos adicionales si falla generación
+   - max: Cantidad de libros a procesar por ejecución
 ═══════════════════════════════════════════════════════════════ */
 
 const KEY = process.env.OPENAI_KEY;
 if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
-  model: "gpt-4o-mini",         // 🤖 Modelo (cambiar a "gpt-4o" si persiste)
-  temp: 1.1,                     // 🌡️  Creatividad (BAJADO de 1.3 a 1.1)
-  top_p: 0.95,                   // 🎲 Diversidad
+  model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
+  temp: 1.1,                     // 🌡️  Creatividad optimizada
+  top_p: 0.95,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
-  csv: "data/libros_master.csv", // 📁 Input
-  out: "contenido.json",         // 💾 Output
-  max: 5,                        // 📚 Cantidad a procesar
-  delay: 1500                    // ⏱️  Delay entre libros (ms) - NUEVO
+  csv: "data/libros_master.csv", // 📁 Archivo de entrada
+  out: "contenido.json",         // 💾 Archivo de salida
+  max: 5,                        // 📚 Libros por ejecución
+  delay: 1500,                   // ⏱️  Delay entre libros (ms)
+  maxReintentos: 2               // 🔄 Reintentos por libro
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   🛠️  UTILIDADES (NAMESPACE)
+   🛠️  UTILIDADES
    
-   Funciones helper organizadas en objeto único.
-   Inspirado en arquitectura de Gemini.
+   Funciones helper organizadas en namespace único.
 ═══════════════════════════════════════════════════════════════ */
 
 const utils = {
@@ -75,14 +70,14 @@ const utils = {
   // 🎨 Decide color de texto según luminancia del fondo
   txt: h => utils.lum(h) > 0.35 ? "#000000" : "#FFFFFF",
 
-  // 🔀 Mezcla array (Fisher-Yates)
+  // 🔀 Mezcla array aleatoriamente (Fisher-Yates)
   shuffle: arr => {
     let m = arr.length, i;
     while (m) [arr[m], arr[i]] = [arr[i = Math.floor(Math.random() * m--)], arr[m]];
     return arr;
   },
 
-  // 🧹 Limpia markdown de respuestas
+  // 🧹 Limpia markdown de respuestas de IA
   clean: raw => raw.trim()
     .replace(/```json\s*/g, "")
     .replace(/```\s*/g, "")
@@ -90,27 +85,26 @@ const utils = {
     .replace(/[^}\]]*$/, "")
 };
 
-// 📊 Estado de sesión (anti-repetición)
+// 📊 Estado de sesión (memoria anti-repetición)
 const state = { palabras: new Set(), colores: new Set() };
 
-// ⏱️  Función de delay para evitar rate limit
+// ⏱️  Función sleep para delays
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 /* ═══════════════════════════════════════════════════════════════
    🕐 CRONOBIOLOGÍA
    
-   Detecta día/hora para ajustar tono del contenido.
+   Detecta día y hora actual para ajustar tono del contenido
+   según energía circadiana y semanal.
    
    MAPA SEMANAL:
-   Lunes    → Arquitectura (80%)
-   Martes   → Tensión Máxima (40%) ⚠️
-   Miércoles→ Purga (60%)
-   Jueves   → DÍA DIOS (120%) 🔥
-   Viernes  → Cierre (90%)
-   Sábado   → Descanso (80%)
-   Domingo  → Reset (80%)
-   
-   USO: Se inyecta silenciosamente en prompts
+   - Lunes:    Arquitectura (80%)
+   - Martes:   Tensión Máxima (40%) ⚠️
+   - Miércoles: Purga (60%)
+   - Jueves:   DÍA DIOS (120%) 🔥
+   - Viernes:  Cierre (90%)
+   - Sábado:   Descanso (80%)
+   - Domingo:  Reset (80%)
 ═══════════════════════════════════════════════════════════════ */
 
 function crono() {
@@ -149,15 +143,14 @@ function crono() {
 /* ═══════════════════════════════════════════════════════════════
    🧙‍♂️ PROMPTS (EL CEREBRO DEL SISTEMA)
    
-   Aquí defines QUÉ le dices a la IA.
+   Define exactamente QUÉ le dices a la IA para generar contenido.
    
-   3 TIPOS:
+   3 TIPOS DE PROMPTS:
    1. main    → Palabras, frases, colores (JSON)
    2. tarjeta → Título, párrafos (texto)
-   3. estilo  → Diseño visual (JSON)
+   3. estilo  → Diseño visual (JSON experimental)
    
-   💡 CONSEJO: Los prompts son el 90% de la calidad.
-   Itera aquí para mejorar resultados.
+   MODIFICAR AQUÍ para cambiar la calidad/estilo del contenido.
 ═══════════════════════════════════════════════════════════════ */
 
 function prompt(libro, tipo, c) {
@@ -165,7 +158,7 @@ function prompt(libro, tipo, c) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
 
-  // 📝 Contexto base (compartido)
+  // 📝 Contexto base compartido por todos los prompts
   const base = `
 Eres Triggui. Dominio absoluto de:
 - Mapa Hawkins (20-1000)
@@ -188,11 +181,6 @@ ${prohibidosC ? `🎨 PROHIBIDOS: ${prohibidosC}` : ""}
        PROMPT 1: MAIN
        
        Genera: dimension, punto, palabras, frases, colores, fondo
-       
-       🎯 MODIFICAR AQUÍ PARA:
-       - Ajustar longitud de frases
-       - Cambiar rango Hawkins
-       - Definir mejor tipo de colores
     ───────────────────────────────────────────────────────── */
     main: base + `
 GENERA JSON PURO:
@@ -200,23 +188,22 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo, deseo bajo), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa hawkins, súper específica al libro, emoción sentida ANTES de leer
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción o aportación CONCRETA con contexto que ELEVA 1 nivel desde esa emoción baja
-✅ Cada color: imposible confundir con paletas anteriores, increíbles a la pupila
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
+✅ Cada color: imposible confundir con paletas anteriores
 
 MAPA HAWKINS BAJO (USA ESTE RANGO):
 20  → Vergüenza (humillación, deshonra, autorechazo)
 30  → Culpa (remordimiento, autoacusación, arrepentimiento)
 50  → Apatía (desesperanza, indiferencia, desconexión)
 75  → Duelo (pesar, melancolía, pérdida)
-100 → Miedo (ansiedad, preocupación, alarma)
 
 SOLO JSON.`,
 
@@ -224,19 +211,14 @@ SOLO JSON.`,
        PROMPT 2: TARJETA
        
        Genera: título, parrafoTop, subtitulo, parrafoBot
-       
-       🎯 MODIFICAR AQUÍ PARA:
-       - Ajustar límites de caracteres
-       - Cambiar tono editorial
-       - Definir mejor tipo de acción
     ───────────────────────────────────────────────────────── */
     tarjeta: base + `
 Escribe contenido editorial:
 
 TÍTULO (≤50 chars): Concepto único del libro
-PÁRRAFO 1 (≤120 chars): Insight específico del libro + autor en 1ra persona
+PÁRRAFO 1 (≤130 chars): Insight específico del libro + autor en 1ra persona
 SUBTÍTULO (≤48 chars): Bisagra provocadora
-PÁRRAFO 2 (≤120 chars): Acción o aportación con contexto específica derivada del libro (15-60 seg)
+PÁRRAFO 2 (≤130 chars): Acción específica derivada del libro (15-60 seg)
 
 TONO: Sobrio, directo, humano, sin adornos, utilidad inmediata
 
@@ -251,15 +233,10 @@ Devuelve SOLO entre @@BODY y @@ENDBODY:
     /* ─────────────────────────────────────────────────────────
        PROMPT 3: ESTILO
        
-       Genera: JSON de diseño visual
-       
-       🎯 MODIFICAR AQUÍ PARA:
-       - Cambiar cantidad de claves (15-28)
-       - Definir mejor claves inventadas
-       - Ajustar nivel de experimentación
+       Genera: JSON de diseño visual experimental
     ───────────────────────────────────────────────────────── */
     estilo: base + `
-Diseña tarjeta que sea legible absolutamente todo su contenido, imposible de confundir:
+Diseña tarjeta imposible de confundir:
 
 JSON con 15-28 claves:
 - Conocidas: accent, ink, paper, border, serif, sans, mono, display
@@ -277,11 +254,11 @@ SOLO JSON entre @@STYLE y @@ENDSTYLE`
 /* ═══════════════════════════════════════════════════════════════
    📞 LLAMADA API
    
-   Función que habla con OpenAI.
+   Función que comunica con OpenAI.
    
    INNOVACIÓN CLAVE:
    response_format: { type: "json_object" }
-   → Garantiza JSON válido SIEMPRE
+   → Garantiza JSON válido siempre
 ═══════════════════════════════════════════════════════════════ */
 
 async function call(openai, sys, usr, forceJSON = false) {
@@ -308,210 +285,205 @@ async function call(openai, sys, usr, forceJSON = false) {
 /* ═══════════════════════════════════════════════════════════════
    ⚡ ENRIQUECIMIENTO (PIPELINE COMPLETO)
    
-   Toma un libro y genera TODO.
+   Toma un libro del CSV y genera TODO el contenido enriquecido.
    
-   FLUJO (8 PASOS):
-   1. Genera JSON principal
+   FLUJO (9 PASOS):
+   1. Genera JSON principal (palabras, frases, colores)
    2. Valida respuesta completa → Reintenta si falta algo
    3. Valida anti-repetición → Reintenta si hay repetidas
-   4. Registra usados
-   5. Garantiza longitud (sin "default")
+   4. Registra palabras/colores usados
+   5. Garantiza longitud de arrays (sin "default")
    6. Post-procesa colores de texto
-   7. Genera tarjeta contenido
-   8. Genera tarjeta estilo
+   7. Genera tarjeta de contenido
+   8. Genera tarjeta de estilo visual
    9. Retorna objeto completo
    
-   🛡️ PROTECCIONES:
-   - Reintento si respuesta incompleta
-   - Reintento si palabras repetidas
+   PROTECCIONES:
+   - Reintento automático si respuesta incompleta
+   - Reintento automático si palabras repetidas
    - Error si arrays vacíos → Fallback completo
-   - Try-catch global → Fallback completo
+   - Loop con reintentos configurables
+   - Try-catch global → Fallback garantizado
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(libro, openai, c) {
-  const MAX_REINTENTOS = 2; // Máximo 2 reintentos adicionales
   let intento = 0;
   
-  while (intento <= MAX_REINTENTOS) {
+  while (intento <= CFG.maxReintentos) {
     try {
-      /* ─────────────────────────────────────────────────────────
-         PASO 1: GENERACIÓN PRINCIPAL
-      ───────────────────────────────────────────────────────── */
+      // ─────────────────────────────────────────────────────────
+      // PASO 1: GENERACIÓN PRINCIPAL
+      // ─────────────────────────────────────────────────────────
       const p = prompt(libro, "main", c);
       let raw = await call(openai, p, "Genera JSON ahora", true);
       let extra = JSON.parse(raw);
 
-    /* ─────────────────────────────────────────────────────────
-       PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
-       
-       Si OpenAI responde con campos vacíos → Reintentar
-       Esto evita el problema "default"
-    ───────────────────────────────────────────────────────── */
-    const faltaCampos = !extra.frases || !extra.colores || !extra.palabras ||
-                        extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0;
-    
-    if (faltaCampos) {
-      console.warn(`   ⚠️  Respuesta incompleta, reintentando...`);
-      raw = await call(openai, p, "Genera JSON completo ahora", true);
-      extra = JSON.parse(raw);
-    }
-
-    /* ─────────────────────────────────────────────────────────
-       PASO 3: VALIDACIÓN ANTI-REPETICIÓN
-       
-       Si hay palabras ya usadas → Reintentar con prohibidas
-    ───────────────────────────────────────────────────────── */
-    const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
-    
-    if (repetidas.length > 0) {
-      console.warn(`   ⚠️  Repetidas: ${repetidas.join(", ")}`);
-      const pVal = `Genera 4 palabras únicas. PROHIBIDAS: ${[...state.palabras].join(", ")}. SOLO JSON.`;
-      raw = await call(openai, prompt(libro, "main", c), pVal, true);
-      extra = JSON.parse(raw);
-    }
-
-    /* ─────────────────────────────────────────────────────────
-       PASO 4: REGISTRAR USADOS
-    ───────────────────────────────────────────────────────── */
-    extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
-    extra.colores?.forEach(c => state.colores.add(c));
-
-    /* ─────────────────────────────────────────────────────────
-       PASO 5: GARANTIZAR LONGITUD (SIN "default")
-       
-       Si array vacío → throw Error → Fallback completo
-       Si array con <4 elementos → Duplicar último
-    ───────────────────────────────────────────────────────── */
-    ["palabras", "frases", "colores"].forEach(k => {
-      if (!extra[k]) extra[k] = [];
+      // ─────────────────────────────────────────────────────────
+      // PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
+      // ─────────────────────────────────────────────────────────
+      const faltaCampos = !extra.frases || !extra.colores || !extra.palabras ||
+                          extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0;
       
-      // Array vacío = error crítico → Fallback
-      if (extra[k].length === 0) {
-        throw new Error(`Array vacío: ${k}`);
+      if (faltaCampos) {
+        console.warn(`   ⚠️  Respuesta incompleta, reintentando...`);
+        raw = await call(openai, p, "Genera JSON completo ahora", true);
+        extra = JSON.parse(raw);
       }
+
+      // ─────────────────────────────────────────────────────────
+      // PASO 3: VALIDACIÓN ANTI-REPETICIÓN
+      // ─────────────────────────────────────────────────────────
+      const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
       
-      // Completar hasta 4 duplicando último
-      while (extra[k].length < 4) {
-        extra[k].push(extra[k][extra[k].length - 1]);
+      if (repetidas.length > 0) {
+        console.warn(`   ⚠️  Repetidas: ${repetidas.join(", ")}`);
+        const pVal = `Genera 4 palabras únicas. PROHIBIDAS: ${[...state.palabras].join(", ")}. SOLO JSON.`;
+        raw = await call(openai, prompt(libro, "main", c), pVal, true);
+        extra = JSON.parse(raw);
       }
-    });
 
-    /* ─────────────────────────────────────────────────────────
-       PASO 6: POST-PROCESAMIENTO
-       
-       Calcula colores de texto automáticamente
-    ───────────────────────────────────────────────────────── */
-    extra.textColors = extra.colores.map(utils.txt);
+      // ─────────────────────────────────────────────────────────
+      // PASO 4: REGISTRAR USADOS
+      // ─────────────────────────────────────────────────────────
+      extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
+      extra.colores?.forEach(c => state.colores.add(c));
 
-    /* ─────────────────────────────────────────────────────────
-       PASO 7: TARJETA CONTENIDO
-    ───────────────────────────────────────────────────────── */
-    const pT = prompt(libro, "tarjeta", c);
-    let rawT = await call(openai, pT, "Genera tarjeta");
-    rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-    const lineas = rawT.split(/\n+/).filter(Boolean);
-    
-    extra.tarjeta = {
-      titulo: lineas[0] || "",
-      parrafoTop: lineas[1] || "",
-      subtitulo: lineas[2] || "",
-      parrafoBot: lineas.slice(3).join(" "),
-      style: {}
-    };
+      // ─────────────────────────────────────────────────────────
+      // PASO 5: GARANTIZAR LONGITUD (SIN "default")
+      // ─────────────────────────────────────────────────────────
+      ["palabras", "frases", "colores"].forEach(k => {
+        if (!extra[k]) extra[k] = [];
+        if (extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
+        while (extra[k].length < 4) extra[k].push(extra[k][extra[k].length - 1]);
+      });
 
-    /* ─────────────────────────────────────────────────────────
-       PASO 8: TARJETA ESTILO
-    ───────────────────────────────────────────────────────── */
-    const pE = prompt(libro, "estilo", c);
-    let rawE = await call(openai, pE, "Genera estilo");
-    rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
-    
-    try {
-      extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-    } catch (e) {
-      console.warn(`   ⚠️  Style error: ${e.message}`);
-    }
+      // ─────────────────────────────────────────────────────────
+      // PASO 6: POST-PROCESAMIENTO
+      // ─────────────────────────────────────────────────────────
+      extra.textColors = extra.colores.map(utils.txt);
 
-    /* ─────────────────────────────────────────────────────────
-       PASO 9: RETURN FINAL
-    ───────────────────────────────────────────────────────── */
-    return {
-      ...libro,
-      ...extra,
-      portada: libro.portada?.trim() || `📚 ${libro.titulo}\n${libro.autor}`,
-      videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
-    };
-
-  } catch (e) {
-    console.error(`   ❌ "${libro.titulo}": ${e.message}`);
-    
-    /* ─────────────────────────────────────────────────────────
-       FALLBACK COMPLETO (NIVEL DIOS)
-       
-       Si CUALQUIER cosa falla → Contenido válido garantizado
-       NUNCA "default", siempre contenido usable
-    ───────────────────────────────────────────────────────── */
-    return {
-      ...libro,
-      dimension: "Bienestar",
-      punto: "Cero",
-      palabras: ["Inquietud", "Cansancio", "Duda", "Resistencia"],
-      frases: [
-        "🚶 Camina 10 pasos lentos sin pensar",
-        "❤️ Nombra en voz baja a quién ayudaste hoy",
-        "🧠 Anota 3 palabras que resuman este momento",
-        "✨ Abre el libro en página random, lee 1 línea"
-      ],
-      colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
-      textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
-      fondo: "#111111",
-      portada: libro.portada || `📚 ${libro.titulo}`,
-      tarjeta: {
-        titulo: "Empieza pequeño",
-        parrafoTop: "La acción más importante es la más simple.",
-        subtitulo: "Un paso basta",
-        parrafoBot: "No necesitas claridad total para moverte.",
+      // ─────────────────────────────────────────────────────────
+      // PASO 7: TARJETA CONTENIDO
+      // ─────────────────────────────────────────────────────────
+      const pT = prompt(libro, "tarjeta", c);
+      let rawT = await call(openai, pT, "Genera tarjeta");
+      rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
+      const lineas = rawT.split(/\n+/).filter(Boolean);
+      
+      extra.tarjeta = {
+        titulo: lineas[0] || "",
+        parrafoTop: lineas[1] || "",
+        subtitulo: lineas[2] || "",
+        parrafoBot: lineas.slice(3).join(" "),
         style: {}
-      },
-      videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo)}`
-    };
+      };
+
+      // ─────────────────────────────────────────────────────────
+      // PASO 8: TARJETA ESTILO
+      // ─────────────────────────────────────────────────────────
+      const pE = prompt(libro, "estilo", c);
+      let rawE = await call(openai, pE, "Genera estilo");
+      rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
+      
+      try {
+        extra.tarjeta.style = JSON.parse(utils.clean(rawE));
+      } catch (e) {
+        console.warn(`   ⚠️  Style error: ${e.message}`);
+      }
+
+      // ─────────────────────────────────────────────────────────
+      // PASO 9: RETURN FINAL
+      // ─────────────────────────────────────────────────────────
+      return {
+        ...libro,
+        ...extra,
+        portada: libro.portada?.trim() || `📚 ${libro.titulo}\n${libro.autor}`,
+        videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
+      };
+
+    } catch (e) {
+      intento++;
+      console.error(`   ❌ Intento ${intento}/${CFG.maxReintentos + 1}: ${e.message}`);
+      
+      if (intento <= CFG.maxReintentos) {
+        console.warn(`   🔄 Reintentando en 2 segundos...`);
+        await sleep(2000);
+        continue;
+      }
+      
+      console.error(`   ⚠️  Máximo de reintentos alcanzado. Usando fallback.`);
+      break;
+    }
   }
+  
+  // ═══════════════════════════════════════════════════════════
+  // FALLBACK COMPLETO
+  // 
+  // Solo se ejecuta si fallan TODOS los reintentos.
+  // Garantiza contenido válido siempre.
+  // ═══════════════════════════════════════════════════════════
+  return {
+    ...libro,
+    dimension: "Bienestar",
+    punto: "Cero",
+    palabras: ["humillación", "culpabilidad", "desesperanza", "duelo"],
+    frases: [
+      "🚶 Camina 10 pasos lentos sin pensar en nada más",
+      "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada",
+      "🧠 Anota 3 palabras que resuman este momento exacto",
+      "✨ Abre el libro en página random, lee 1 línea completa"
+    ],
+    colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
+    textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
+    fondo: "#111111",
+    portada: libro.portada || `📚 ${libro.titulo}`,
+    tarjeta: {
+      titulo: "Empieza pequeño",
+      parrafoTop: "La acción más importante es la más simple.",
+      subtitulo: "Un paso basta",
+      parrafoBot: "No necesitas claridad total para moverte.",
+      style: {}
+    },
+    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo)}`
+  };
 }
 
 /* ═══════════════════════════════════════════════════════════════
    🚀 MAIN (PUNTO DE ENTRADA)
    
-   FLUJO:
-   1. Inicializa OpenAI
-   2. Obtiene contexto crono
-   3. Lee CSV
-   4. Mezcla y selecciona N libros
-   5. Procesa cada uno
-   6. Reset cada 5 (evita acumulación de prohibidos)
-   7. Guarda JSON
-   8. Muestra resumen
+   Flujo principal de ejecución:
+   1. Inicializa cliente OpenAI
+   2. Obtiene contexto cronobiológico
+   3. Muestra banner informativo
+   4. Lee CSV de libros
+   5. Mezcla aleatoriamente y selecciona N libros
+   6. Procesa cada libro con delay
+   7. Reset de memoria cada 5 libros
+   8. Guarda JSON final
+   9. Muestra resumen
    
    EJECUCIÓN:
-   node build-contenido-v7.2-GOD.js
+   node build-contenido.js
 ═══════════════════════════════════════════════════════════════ */
 
 const openai = new OpenAI({ apiKey: KEY });
 const c = crono();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v7.2 GOD MODE - CÓDIGO DEFINITIVO   ║");
+console.log("║  TRIGGUI v7.3 ULTRA GOD - ANTI-FALLBACK MAX  ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
-console.log(`🤖 ${CFG.model} | 🌡️  ${CFG.temp} | 🎯 JSON nativo`);
-console.log(`📊 Energía del día: ${c.d.n} (${c.d.e})\n`);
+console.log(`🤖 ${CFG.model} | 🌡️  ${CFG.temp} (optimizado)`);
+console.log(`⏱️  Delay: ${CFG.delay}ms | Reintentos: ${CFG.maxReintentos}`);
+console.log(`📊 Energía: ${c.d.n} (${c.d.e})\n`);
 
-// CARGA Y SHUFFLE
+// Lee y parsea CSV
 const csv = await fs.readFile(CFG.csv, "utf8");
 const lista = parse(csv, { columns: true, skip_empty_lines: true });
 const pick = utils.shuffle([...lista]).slice(0, Math.min(CFG.max, lista.length));
 
-// PROCESAMIENTO
+// Procesamiento principal
 const libros = [];
 let i = 0;
 
@@ -520,7 +492,7 @@ for (const libro of pick) {
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
   libros.push(await enrich(libro, openai, c));
   
-  // ⏱️  Delay para evitar rate limit (excepto en el último libro)
+  // Delay (excepto en último libro)
   if (i < pick.length) {
     await sleep(CFG.delay);
   }
@@ -533,7 +505,7 @@ for (const libro of pick) {
   }
 }
 
-// GUARDADO
+// Guardado final
 await fs.writeFile(CFG.out, JSON.stringify({ libros }, null, 2));
 
 console.log("\n╔═══════════════════════════════════════════════╗");
@@ -541,84 +513,79 @@ console.log("║            GENERACIÓN COMPLETA                ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros procesados`);
-console.log(`📊 ${state.palabras.size} palabras únicas | ${state.colores.size} colores únicos\n`);
-console.log("🔥 Sistema v7.2 GOD MODE ejecutado\n");
+console.log(`📊 ${state.palabras.size} palabras | ${state.colores.size} colores\n`);
+console.log("🔥 Sistema v7.3 ULTRA GOD ejecutado\n");
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA RÁPIDA DE ITERACIÓN
+   📖 GUÍA DE USO RÁPIDO
    
-   CICLO RECOMENDADO:
+   EJECUCIÓN BÁSICA:
+   node build-contenido.js
    
-   1️⃣ MODIFICAR PROMPTS
-      → Línea 205: Prompt MAIN (palabras/frases/colores)
-      → Línea 230: Prompt TARJETA (contenido editorial)
-      → Línea 247: Prompt ESTILO (diseño visual)
-   
-   2️⃣ EJECUTAR
-      node build-contenido-v7.2-GOD.js
-   
-   3️⃣ REVISAR
-      cat contenido.json | jq '.libros[0]'
-   
-   4️⃣ ANALIZAR
-      - ¿Palabras específicas al libro?
-      - ¿Frases con estructuras variadas?
-      - ¿Colores únicos y memorables?
-      - ¿Contenido editorial útil?
-   
-   5️⃣ AJUSTAR Y REPETIR
-   
-   ──────────────────────────────────────────────────────────
-   
-   🎛️ AJUSTES RÁPIDOS:
+   AJUSTES COMUNES:
    
    Más creatividad:
-   → Línea 42: temp: 1.5
+   → Línea 48: temp: 1.3
    
-   Más coherencia:
-   → Línea 42: temp: 0.9
+   Más estabilidad:
+   → Línea 48: temp: 0.9
    
-   Frases más largas:
-   → Línea 210: "100-120 chars"
+   Más delay (si hay fallbacks):
+   → Línea 55: delay: 3000
    
-   Paletas más salvajes:
-   → Línea 211: "valores RGB extremos (00-10 y F0-FF)"
+   Más reintentos:
+   → Línea 56: maxReintentos: 3
    
    Más libros:
-   → Línea 47: max: 20
+   → Línea 54: max: 20
+   
+   Modelo más robusto:
+   → Línea 47: model: "gpt-4o"
+   
+   Palabras menos profundas:
+   → Línea 221: "Hawkins 50-150"
+   
+   Frases más cortas:
+   → Línea 222: "80-100 chars"
    
    ──────────────────────────────────────────────────────────
    
-   🛡️ PROTECCIONES ACTIVAS:
-   
-   ✅ Reintento si respuesta incompleta
-   ✅ Reintento si palabras repetidas
-   ✅ Error si arrays vacíos → Fallback
-   ✅ Fallback completo si falla todo
-   ✅ NUNCA más "default"
-   
-   ──────────────────────────────────────────────────────────
-   
-   📈 MÉTRICAS DE ÉXITO:
+   MÉTRICAS DE CALIDAD:
    
    BUENO:
    - 0-2 palabras repetidas en 20 libros
-   - 0 colores repetidos
-   - Frases variadas
+   - 0 fallbacks
    
    EXCELENTE:
    - 0 palabras repetidas
    - Paletas imposibles de confundir
-   - Cada frase suena única
    
    GOD MODE:
-   - Cada palabra conecta específicamente con el libro
-   - Cada frase parece escrita por el autor
-   - Cada paleta es memorable instantáneamente
-   - Contenido editorial inspira acción inmediata
+   - Cada palabra específica al libro
+   - Cada frase única en estructura
+   - Cada paleta memorable
+   - 0 fallbacks en 100 libros
    
    ──────────────────────────────────────────────────────────
    
-   🔥 ¡NIVEL DIOS ACTIVADO!
+   TROUBLESHOOTING:
+   
+   Si hay fallbacks:
+   1. Aumenta delay a 3000ms
+   2. Baja temp a 0.9
+   3. Prueba gpt-4o
+   4. Aumenta reintentos a 3
+   
+   Si palabras repetidas:
+   1. Aumenta presence a 0.8
+   2. Aumenta frequency a 0.5
+   
+   Si frases muy similares:
+   1. Revisa prompt main (línea 216)
+   2. Enfatiza "estructuras RADICALMENTE diferentes"
+   
+   ──────────────────────────────────────────────────────────
+   
+   🔥 NIVEL DIOS ACTIVADO
    
 ═══════════════════════════════════════════════════════════════ */
