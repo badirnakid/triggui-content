@@ -422,7 +422,7 @@ ANTES de escribir cada frase:
 
 ### Estructura de Frase Suprema
 
-**Formato estricto**: String.raw`
+**Formato estricto**: \`String.raw\`
 ```
 [Emoji único] [Verbo imperativo variado] [Micro-protocolo específico del libro]
 ```
