@@ -196,7 +196,7 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, bajas Hawkins 20-75, específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS EN LA ESCALA! Hawkins 20-75, específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
