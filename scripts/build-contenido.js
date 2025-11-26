@@ -28,7 +28,7 @@ if (!KEY) {
   process.exit(0);
 }
 
-const MODEL = "gpt-4o-mini";
+const MODEL = "gpt-4-turbo-preview";
 const CSV_FILE = "data/libros_master.csv";
 const OUT_FILE = "contenido.json";
 const DAILY_MAX = 20;
