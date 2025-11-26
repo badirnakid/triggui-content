@@ -1,22 +1,24 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v7.3 ULTRA GOD - CÓDIGO DEFINITIVO PRODUCCIÓN
+   TRIGGUI v7.4 GOD MODE - CÓDIGO DEFINITIVO PRODUCCIÓN
    
    Sistema de generación de contenido enriquecido para libros.
    
-   CARACTERÍSTICAS:
-   ✅ Palabras emocionales profundas (Hawkins 20-100)
+   CARACTERÍSTICAS v7.4:
+   ✅ Palabras emocionales profundas (Hawkins 20-75)
    ✅ Frases únicas con estructuras radicalmente diferentes
    ✅ Paletas cromáticas imposibles de confundir
-   ✅ Tarjetas editoriales con diseño experimental
-   ✅ Delay entre libros (evita rate limit)
-   ✅ Reintentos automáticos (hasta 2x)
+   ✅ Tarjetas editoriales DARK MODE (logo blanco visible)
+   ✅ Delay 3 segundos entre libros (anti rate limit)
+   ✅ Reintentos automáticos 3x
    ✅ Temperatura optimizada (1.1)
+   ✅ Logging detallado para diagnóstico
    ✅ Validación doble anti-repetición
    ✅ Fallback robusto con contenido real
+   ✅ CERO duplicados de variables
    
    AUTOR: Badir Nakid
    FECHA: Noviembre 2025
-   VERSIÓN: 7.3 ULTRA GOD
+   VERSIÓN: 7.4 GOD MODE
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -43,14 +45,14 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 const CFG = {
   model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
   temp: 1.1,                     // 🌡️  Creatividad optimizada
-  top_p: 0.9,                   // 🎲 Diversidad de tokens
+  top_p: 0.95,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
   max: 5,                        // 📚 Libros por ejecución
-  delay: 3000,                   // ⏱️  Delay entre libros (ms)
-  maxReintentos: 3              // 🔄 Reintentos por libro
+  delay: 5000,                   // ⏱️  Delay entre libros (3 segundos)
+  maxReintentos: 5               // 🔄 Reintentos por libro (hasta 3x)
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -148,7 +150,7 @@ function crono() {
    3 TIPOS DE PROMPTS:
    1. main    → Palabras, frases, colores (JSON)
    2. tarjeta → Título, párrafos (texto)
-   3. estilo  → Diseño visual (JSON experimental)
+   3. estilo  → Diseño visual DARK MODE (JSON experimental)
    
    MODIFICAR AQUÍ para cambiar la calidad/estilo del contenido.
 ═══════════════════════════════════════════════════════════════ */
@@ -188,25 +190,22 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100 (vergüenza, culpa, apatía, duelo, miedo y todos los sinónimos que tengas), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa de conciencia de Hawkins, súper específica al libro
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
 ✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
 ✅ Cada color: imposible confundir con paletas anteriores
 
 MAPA HAWKINS BAJO (USA ESTE RANGO):
-20  → Vergüenza (humillación, deshonra, autorechazo, etc)
-30  → Culpa (remordimiento, autoacusación, arrepentimiento, etc)
-50  → Apatía (desesperanza, indiferencia, desconexión, etc)
-75  → Duelo (pesar, melancolía, pérdida, etc)
-.
-.
-.
+20  → Vergüenza (humillación, deshonra, autorechazo)
+30  → Culpa (remordimiento, autoacusación, arrepentimiento)
+50  → Apatía (desesperanza, indiferencia, desconexión)
+75  → Duelo (pesar, melancolía, pérdida)
 
 SOLO JSON.`,
 
@@ -234,17 +233,24 @@ Devuelve SOLO entre @@BODY y @@ENDBODY:
 @@ENDBODY`,
 
     /* ─────────────────────────────────────────────────────────
-       PROMPT 3: ESTILO
+       PROMPT 3: ESTILO (DARK MODE)
        
        Genera: JSON de diseño visual experimental
+       🌑 DARK MODE FORZADO para logo blanco de Buscalibre
     ───────────────────────────────────────────────────────── */
     estilo: base + `
-Diseña tarjeta siempre dark mode, legible, perfecta, imposible de confundir:
+Diseña tarjeta DARK MODE (fondo oscuro, texto claro):
 
 JSON con 15-28 claves:
 - Conocidas: accent, ink, paper, border, serif, sans, mono, display
 - Inventadas (8-15): glowFlux, metaShadow, warpGrid, prismPulse, etc
 - surprise: string describiendo recurso más inesperado
+
+REGLAS DARK MODE OBLIGATORIAS:
+✅ paper: SIEMPRE colores oscuros (#0a0a0a a #2a2a2a)
+✅ ink: SIEMPRE colores claros (#e0e0e0 a #ffffff)
+✅ accent: Colores vibrantes que contrasten con fondo oscuro
+✅ border: Tonos sutiles pero visibles sobre oscuro
 
 Mezcla: Clásico + Experimental + Rigor + Dopamina
 
@@ -298,15 +304,17 @@ async function call(openai, sys, usr, forceJSON = false) {
    5. Garantiza longitud de arrays (sin "default")
    6. Post-procesa colores de texto
    7. Genera tarjeta de contenido
-   8. Genera tarjeta de estilo visual
+   8. Genera tarjeta de estilo visual DARK MODE
    9. Retorna objeto completo
    
    PROTECCIONES:
+   - Logging detallado en cada paso
    - Reintento automático si respuesta incompleta
    - Reintento automático si palabras repetidas
    - Error si arrays vacíos → Fallback completo
-   - Loop con reintentos configurables
+   - Loop con reintentos configurables (3x)
    - Try-catch global → Fallback garantizado
+   - Stack trace en errores para diagnóstico
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(libro, openai, c) {
@@ -317,9 +325,11 @@ async function enrich(libro, openai, c) {
       // ─────────────────────────────────────────────────────────
       // PASO 1: GENERACIÓN PRINCIPAL
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 1: Generando JSON principal...`);
       const p = prompt(libro, "main", c);
       let raw = await call(openai, p, "Genera JSON ahora", true);
       let extra = JSON.parse(raw);
+      console.log(`   ✅ JSON parseado: ${extra.palabras?.length || 0} palabras`);
 
       // ─────────────────────────────────────────────────────────
       // PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
@@ -348,12 +358,14 @@ async function enrich(libro, openai, c) {
       // ─────────────────────────────────────────────────────────
       // PASO 4: REGISTRAR USADOS
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 4: Registrando palabras usadas...`);
       extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
       extra.colores?.forEach(c => state.colores.add(c));
 
       // ─────────────────────────────────────────────────────────
       // PASO 5: GARANTIZAR LONGITUD (SIN "default")
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 5: Validando longitud de arrays...`);
       ["palabras", "frases", "colores"].forEach(k => {
         if (!extra[k]) extra[k] = [];
         if (extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
@@ -363,11 +375,13 @@ async function enrich(libro, openai, c) {
       // ─────────────────────────────────────────────────────────
       // PASO 6: POST-PROCESAMIENTO
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 6: Calculando colores de texto...`);
       extra.textColors = extra.colores.map(utils.txt);
 
       // ─────────────────────────────────────────────────────────
       // PASO 7: TARJETA CONTENIDO
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 7: Generando tarjeta de contenido...`);
       const pT = prompt(libro, "tarjeta", c);
       let rawT = await call(openai, pT, "Genera tarjeta");
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
@@ -382,21 +396,40 @@ async function enrich(libro, openai, c) {
       };
 
       // ─────────────────────────────────────────────────────────
-      // PASO 8: TARJETA ESTILO
+      // PASO 8: TARJETA ESTILO (CON FORZADO DARK MODE)
       // ─────────────────────────────────────────────────────────
+      console.log(`   🔧 Paso 8: Generando tarjeta de estilo...`);
       const pE = prompt(libro, "estilo", c);
       let rawE = await call(openai, pE, "Genera estilo");
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
+        
+        // 🌑 FORZAR DARK MODE si IA se equivocó
+        if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
+          console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
+          extra.tarjeta.style.paper = "#1a1a1a";
+        }
+        if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
+          console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
+          extra.tarjeta.style.ink = "#f0f0f0";
+        }
       } catch (e) {
         console.warn(`   ⚠️  Style error: ${e.message}`);
+        // Fallback dark mode
+        extra.tarjeta.style = {
+          accent: "#ff6b6b",
+          ink: "#f0f0f0",
+          paper: "#1a1a1a",
+          border: "#333333"
+        };
       }
 
       // ─────────────────────────────────────────────────────────
       // PASO 9: RETURN FINAL
       // ─────────────────────────────────────────────────────────
+      console.log(`   ✅ Libro completado exitosamente`);
       return {
         ...libro,
         ...extra,
@@ -407,6 +440,7 @@ async function enrich(libro, openai, c) {
     } catch (e) {
       intento++;
       console.error(`   ❌ Intento ${intento}/${CFG.maxReintentos + 1}: ${e.message}`);
+      console.error(`   📍 Stack: ${e.stack?.split('\n')[1]?.trim() || 'N/A'}`);
       
       if (intento <= CFG.maxReintentos) {
         console.warn(`   🔄 Reintentando en 2 segundos...`);
@@ -420,11 +454,12 @@ async function enrich(libro, openai, c) {
   }
   
   // ═══════════════════════════════════════════════════════════
-  // FALLBACK COMPLETO
+  // FALLBACK COMPLETO (DARK MODE)
   // 
   // Solo se ejecuta si fallan TODOS los reintentos.
-  // Garantiza contenido válido siempre.
+  // Garantiza contenido válido siempre en DARK MODE.
   // ═══════════════════════════════════════════════════════════
+  console.warn(`   🛡️  Activando fallback con contenido genérico...`);
   return {
     ...libro,
     dimension: "Bienestar",
@@ -438,14 +473,21 @@ async function enrich(libro, openai, c) {
     ],
     colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
     textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
-    fondo: "#111111",
+    fondo: "#0a0a0a",
     portada: libro.portada || `📚 ${libro.titulo}`,
     tarjeta: {
       titulo: "Empieza pequeño",
       parrafoTop: "La acción más importante es la más simple.",
       subtitulo: "Un paso basta",
       parrafoBot: "No necesitas claridad total para moverte.",
-      style: {}
+      style: {
+        accent: "#ff6b6b",
+        ink: "#f0f0f0",
+        paper: "#1a1a1a",
+        border: "#333333",
+        serif: "Georgia, serif",
+        sans: "Inter, sans-serif"
+      }
     },
     videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo)}`
   };
@@ -461,7 +503,7 @@ async function enrich(libro, openai, c) {
    4. Lee CSV de libros
    5. Mezcla aleatoriamente y selecciona N libros
    6. Procesa cada libro con delay
-   7. Reset de memoria cada 5 libros
+   7. Reset de memoria cada 5 libros (DESPUÉS de procesar)
    8. Guarda JSON final
    9. Muestra resumen
    
@@ -473,7 +515,7 @@ const openai = new OpenAI({ apiKey: KEY });
 const c = crono();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v7.3 ULTRA GOD - ANTI-FALLBACK MAX  ║");
+console.log("║   TRIGGUI v7.4 GOD MODE - ANTI-FALLBACK MAX  ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -495,16 +537,16 @@ for (const libro of pick) {
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
   libros.push(await enrich(libro, openai, c));
   
-  // Delay (excepto en último libro)
-  if (i < pick.length) {
-    await sleep(CFG.delay);
-  }
-  
-  // Reset cada 5
-  if (i % 5 === 0) {
+  // Reset cada 5 (DESPUÉS de procesar exitosamente)
+  if (i % 5 === 0 && i < pick.length) {
     console.log(`   📊 P:${state.palabras.size} C:${state.colores.size} | 🔄 Reset`);
     state.palabras.clear();
     state.colores.clear();
+  }
+  
+  // Delay (excepto en último libro)
+  if (i < pick.length) {
+    await sleep(CFG.delay);
   }
 }
 
@@ -517,7 +559,7 @@ console.log("╚═════════════════════�
 console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros procesados`);
 console.log(`📊 ${state.palabras.size} palabras | ${state.colores.size} colores\n`);
-console.log("🔥 Sistema v7.3 ULTRA GOD ejecutado\n");
+console.log("🔥 Sistema v7.4 GOD MODE ejecutado con éxito\n");
 
 /* ═══════════════════════════════════════════════════════════════
    📖 GUÍA DE USO RÁPIDO
@@ -525,42 +567,47 @@ console.log("🔥 Sistema v7.3 ULTRA GOD ejecutado\n");
    EJECUCIÓN BÁSICA:
    node build-contenido.js
    
-   AJUSTES COMUNES:
+   ══════════════════════════════════════════════════════════════
+   
+   AJUSTES COMUNES (LÍNEAS DE REFERENCIA):
    
    Más creatividad:
-   → Línea 48: temp: 1.3
+   → Línea 50: temp: 1.3
    
    Más estabilidad:
-   → Línea 48: temp: 0.9
+   → Línea 50: temp: 0.9
    
    Más delay (si hay fallbacks):
-   → Línea 55: delay: 3000
+   → Línea 57: delay: 5000
    
    Más reintentos:
-   → Línea 56: maxReintentos: 3
+   → Línea 58: maxReintentos: 5
    
    Más libros:
-   → Línea 54: max: 20
+   → Línea 56: max: 20
    
    Modelo más robusto:
-   → Línea 47: model: "gpt-4o"
+   → Línea 49: model: "gpt-4o"
    
    Palabras menos profundas:
-   → Línea 221: "Hawkins 50-150"
+   → Línea 225: "Hawkins 50-150"
    
    Frases más cortas:
-   → Línea 222: "80-100 chars"
+   → Línea 226: "80-100 chars"
    
-   ──────────────────────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════
    
    MÉTRICAS DE CALIDAD:
    
    BUENO:
    - 0-2 palabras repetidas en 20 libros
-   - 0 fallbacks
+   - 0-1 fallbacks
+   - Dark mode en 95% de tarjetas
    
    EXCELENTE:
    - 0 palabras repetidas
+   - 0 fallbacks
+   - Dark mode al 100%
    - Paletas imposibles de confundir
    
    GOD MODE:
@@ -568,27 +615,48 @@ console.log("🔥 Sistema v7.3 ULTRA GOD ejecutado\n");
    - Cada frase única en estructura
    - Cada paleta memorable
    - 0 fallbacks en 100 libros
+   - Dark mode perfecto siempre
    
-   ──────────────────────────────────────────────────────────
+   ══════════════════════════════════════════════════════════════
    
    TROUBLESHOOTING:
    
    Si hay fallbacks:
-   1. Aumenta delay a 3000ms
-   2. Baja temp a 0.9
-   3. Prueba gpt-4o
-   4. Aumenta reintentos a 3
+   1. Revisa logs: busca "❌ Intento"
+   2. Aumenta delay a 5000ms
+   3. Baja temp a 0.9
+   4. Prueba gpt-4o
+   5. Aumenta reintentos a 5
    
    Si palabras repetidas:
    1. Aumenta presence a 0.8
    2. Aumenta frequency a 0.5
    
    Si frases muy similares:
-   1. Revisa prompt main (línea 216)
+   1. Revisa prompt main (línea 220)
    2. Enfatiza "estructuras RADICALMENTE diferentes"
    
-   ──────────────────────────────────────────────────────────
+   Si tarjetas no dark mode:
+   1. El código ya fuerza dark mode automáticamente
+   2. Verifica logs: "⚠️  Fondo claro detectado"
+   3. Si persiste, reporta bug
    
-   🔥 NIVEL DIOS ACTIVADO
+   ══════════════════════════════════════════════════════════════
+   
+   LOGS DETALLADOS INCLUIDOS:
+   
+   Ahora verás en cada libro:
+   - 🔧 Paso X: [acción]
+   - ✅ [éxito]
+   - ⚠️  [advertencia]
+   - ❌ [error con stack trace]
+   - 🔄 [reintento]
+   - 🛡️  [fallback]
+   
+   Esto permite diagnosticar exactamente dónde falla.
+   
+   ══════════════════════════════════════════════════════════════
+   
+   🔥 NIVEL DIOS MÁXIMO ACTIVADO
    
 ═══════════════════════════════════════════════════════════════ */
