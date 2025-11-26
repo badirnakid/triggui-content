@@ -214,16 +214,16 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, bajas Hawkins 20-200, específicas al libro],
-  "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 60-80 chars],
-  "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales],
+  "palabras": [4 emociones únicas, bajas Hawkins 20-100, específicas al libro],
+  "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 80-100 chars],
+  "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS:
-✅ Cada palabra: específica al libro, poco común, emoción sentida
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA
-✅ Cada color: imposible confundir con paletas anteriores
+✅ Cada palabra: súper específica al libro, poco común, emoción sentida
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción o aportación CONCRETA con contexto
+✅ Cada color: imposible confundir con paletas anteriores, increíbles a la pupila, apantallantes.
 
 SOLO JSON.`,
 
