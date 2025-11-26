@@ -198,7 +198,7 @@ GENERA JSON PURO:
 
 REGLAS CRÍTICAS:
 ✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto previo detallado
 ✅ Cada color: imposible confundir con paletas anteriores
 
 MAPA HAWKINS BAJO (USA ESTE RANGO):
