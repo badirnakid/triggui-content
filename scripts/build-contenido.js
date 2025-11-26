@@ -1037,59 +1037,59 @@ Pregúntate antes de entregar:
 ### CLAVES CONOCIDAS (Puedes usar, pero VARÍA valores siempre):
 
 **Colores**:
-- `accent`: Color principal (#hex)
-- `ink`: Color de texto (#hex)
-- `paper`: Descripción de fondo (puede ser poética)
-- `border`: Estilo de borde (descripción o hex)
+- accent: Color principal (hex)
+- ink: Color de texto (hex)
+- paper: Descripción de fondo (puede ser poética)
+- border: Estilo de borde (descripción o hex)
 
 **Tipografía**:
-- `serif`: Fuente serif (nombre real o inventado)
-- `sans`: Fuente sans (nombre real o inventado)
-- `mono`: Fuente monoespaciada (opcional)
-- `display`: Fuente display (opcional)
+- serif: Fuente serif (nombre real o inventado)
+- sans: Fuente sans (nombre real o inventado)
+- mono: Fuente monoespaciada (opcional)
+- display: Fuente display (opcional)
 
 **Tamaños y pesos**:
-- `fontSizeTitle`: Tamaño título (CSS válido o descripción)
-- `fontSizeBody`: Tamaño cuerpo (CSS válido o descripción)
-- `fontWeight`: Peso tipográfico (100-900 o descripción)
-- `lineHeight`: Altura de línea (número o descripción)
-- `letterSpacing`: Espaciado de letras (px/em o descripción)
+- fontSizeTitle: Tamaño título (CSS válido o descripción)
+- fontSizeBody: Tamaño cuerpo (CSS válido o descripción)
+- fontWeight: Peso tipográfico (100-900 o descripción)
+- lineHeight: Altura de línea (número o descripción)
+- letterSpacing: Espaciado de letras (px/em o descripción)
 
 **Transformaciones**:
-- `textTransform`: uppercase, lowercase, capitalize, none, o inventado
-- `textShadow`: Descripción de sombra
-- `textGlow`: Descripción de glow (inventado)
+- textTransform: uppercase, lowercase, capitalize, none, o inventado
+- textShadow: Descripción de sombra
+- textGlow: Descripción de glow (inventado)
 
 **Layout**:
-- `layout`: Tipo de layout (descripción conceptual)
-- `alignment`: Alineación (left, center, right, justify, o inventado)
-- `spacing`: Descripción de espaciado
+- layout: Tipo de layout (descripción conceptual)
+- alignment: Alineación (left, center, right, justify, o inventado)
+- spacing: Descripción de espaciado
 
 **Ornamentos**:
-- `marco`: Descripción de marco/borde decorativo
-- `texture`: Descripción de textura de fondo
-- `pattern`: Descripción de patrón decorativo
+- marco: Descripción de marco/borde decorativo
+- texture: Descripción de textura de fondo
+- pattern: Descripción de patrón decorativo
 
 **Portada**:
-- `showCover`: true/false
-- `coverStyle`: Descripción de cómo se muestra portada
+- showCover: true/false
+- coverStyle: Descripción de cómo se muestra portada
 
 ### CLAVES INVENTADAS (Crea al menos 8-15 nuevas cada vez):
 
 **Nombres que suenan plausibles pero NO existen** (ejemplos - NO copies):
-- `glowFlux`, `holoInk`, `neonWhisper`, `metaShadow`
-- `warpGrid`, `fontFlux`, `ornamentFlux`, `prismPulse`
-- `glitchAura`, `dreamGrain`, `quantumSpacing`, `psychoType`
-- `liquidType`, `crystalEdge`, `noiseField`, `echoLayers`
-- `chromaShift`, `voidMargin`, `pulseWeight`, `fractalBorder`
+- glowFlux, holoInk, neonWhisper, metaShadow
+- warpGrid, fontFlux, ornamentFlux, prismPulse
+- glitchAura, dreamGrain, quantumSpacing, psychoType
+- liquidType, crystalEdge, noiseField, echoLayers
+- chromaShift, voidMargin, pulseWeight, fractalBorder
 
 **Valores pueden ser**:
-- Hex colors: `#ff00c7`
-- Números: `1.6`, `950`, `+2px`
-- Descripciones poéticas: `"susurro cuántico 12–32px"`
-- Metáforas: `"peso fractal"`, `"respiración amplia"`
-- CSS válido: `clamp(30px, 12vw, 140px)`
-- Conceptos: `"oscilación vertical"`, `"colapso diagonal"`
+- Hex colors: #ff00c7
+- Números: 1.6, 950, +2px
+- Descripciones poéticas: "susurro cuántico 12–32px"
+- Metáforas: "peso fractal", "respiración amplia"
+- CSS válido: clamp(30px, 12vw, 140px)
+- Conceptos: "oscilación vertical", "colapso diagonal"
 
 ### CAMPO OBLIGATORIO "surprise":
 Describe el recurso más inesperado de esta tarjeta:
@@ -1166,7 +1166,7 @@ Si alguna respuesta es NO → rehacer esa dimensión.
 - Ruido digital
 - Belleza por error controlado
 
-**7. Orgánico Naturale**:
+**7. Orgánico Natural**:
 - Colores de naturaleza raros
 - Texturas papel/grain
 - Tipografía humanista
