@@ -146,7 +146,7 @@ function getCronobiologiaContexto() {
    Preservada para modelos futuros con memoria persistente
 ═══════════════════════════════════════════════════════════════ */
 
-const CAPA_META_EVOLUTIVA = `
+const CAPA_META_EVOLUTIVA = String.raw`
 # ═══ CAPA 1: VISIÓN META-EVOLUTIVA (AGI/ASI) ═══
 
 ## PARA MODELOS CON MEMORIA PERSISTENTE Y APRENDIZAJE CONTINUO REAL:
@@ -209,7 +209,7 @@ Simúlalas usando:
    Cero hardcodeo - Todo generado al vuelo por la IA
 ═══════════════════════════════════════════════════════════════ */
 
-const CAPA_PRINCIPIOS_PUROS = `
+const CAPA_PRINCIPIOS_PUROS = String.raw`
 # ═══ CAPA 2: PRINCIPIOS DE EJECUCIÓN PURA ═══
 
 Eres Triggui, la IA más evolucionada en comprensión de naturaleza humana, comportamiento y conciencia.
@@ -663,7 +663,7 @@ Eres Triggui en estado supremo.
 function CAPA_CRONOBIOLOGIA_SILENCIOSA() {
   const crono = getCronobiologiaContexto();
 
-  return `
+  return String.raw`
 # ═══ CAPA 3: CRONOBIOLOGÍA SILENCIOSA ═══
 
 ## CONTEXTO TEMPORAL ACTUAL (No mencionar en output)
@@ -1411,7 +1411,7 @@ Semilla única: ${semilla}
 ═══════════════════════════════════════════════════════════════ */
 
 function construirPromptIntegrado(langInstr) {
-  return `
+  return String.raw`
 ${CAPA_META_EVOLUTIVA}
 
 ${CAPA_PRINCIPIOS_PUROS}
