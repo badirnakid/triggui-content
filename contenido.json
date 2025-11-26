@@ -1,31 +1,173 @@
 {
   "libros": [
     {
-      "titulo": "No me puedes lastimar",
-      "autor": "David Goggins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/20/ee/fb/20eefb8b-6bb2-5c6a-70c6-8a31b46f2655/9781544529134.jpg/626x0w.jpg",
-      "tagline": "La pobreza los prejuicios y los malos tratos físicos colorearon sus días y atormentaron sus noches. Pero gracias a su autodisciplina su fortaleza mental y trabajo duro Goggins pasó de ser un joven con sobrepeso deprimido y sin futuro a convertirse en uno de los mejores atletas de resistencia del mundo. Su historia ilumina un camino que cualquiera puede seguir para superar el dolor vencer al miedo y alcanzar su máximo potencial.",
-      "dimension": "Bienestar",
-      "punto": "Cero",
+      "titulo": "Law of Success",
+      "autor": "Napoleon Hill",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/aa/bd/2f/aabd2f82-befe-0944-9007-a9881566947c/1062335359.jpg/626x0w.jpg",
+      "tagline": "Whatever the mind can conceive and believe it can achieve. More than a guide to financial success. The Law of Success is a philosophy of life a system for unlocking human potential mastering your mindset and creating a life of abundance purpose and influence.With clarity conviction and timeless wisdom Hill teaches that success begins within—with thoughts habits and the courage to turn vision into reality.",
+      "dimension": "Prosperidad",
+      "punto": "Creativo",
       "palabras": [
-        "opresión",
         "frustración",
-        "desesperanza",
+        "desmotivación",
+        "apatía",
         "inseguridad"
       ],
       "frases": [
-        "💪 Realiza 10 flexiones y recuerda un logro pasado.",
-        "🌟 Reflexiona sobre una vez que desafiaron tus límites.",
-        "💥 Tómate un instante para respirar hondo y reconocer tu fuerza.",
-        "📖 Abre el libro al azar y busca una línea que resuene contigo."
+        "🔑 Visualiza: 1) Imagínate logrando tu meta, 2) Siente la emoción de alcanzarla, 3) Registra 1 hábito necesario para conseguirla",
+        "📊 El 90% de las personas no establecen metas. Escribe 1 meta específica y anúnciala a alguien hoy.",
+        "🧘 Conéctate: 3 minutos de respiración profunda, visualiza lo que quieres crear, repite 3 afirmaciones sobre tu potencial.",
+        "📖 Abre en página 45. Lee 2 párrafos sobre la importancia de la perseverancia y aplica hoy un paso hacia tu sueño."
       ],
       "colores": [
-        "#c0392b",
-        "#2980b9",
-        "#f1c40f",
-        "#8e44ad"
+        "#7B2E3E",
+        "#F6C52A",
+        "#4A84C4",
+        "#D0E1FF"
       ],
-      "fondo": "#1f1f1f",
+      "fondo": "#1A1A1A",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"Un cambio mental radical\"",
+        "parrafoTop": "Napoleon Hill revela que el éxito radica en una transformación interna. Al internalizar este principio, descubro que mis pensamientos moldean mi realidad.",
+        "subtitulo": "\"El punto de inflexión\"",
+        "parrafoBot": "Decide hoy un hábito negativo que te limita. Escribe una afirmación positiva contraria y repítela al menos cinco veces en voz alta.",
+        "style": {
+          "accent": "#0ef0b4",
+          "ink": "#161616",
+          "paper": "textura suave como susurro de seda",
+          "border": "contorno fractal en negro profundo",
+          "serif": "Lyon Pro",
+          "sans": "Inter Variable",
+          "fontSizeTitle": "clamp(90px, 18vw, 250px)",
+          "fontSizeBody": "16px",
+          "fontWeight": "600",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.5px",
+          "textTransform": "uppercase",
+          "textShadow": "brillo suave, como neón disolviéndose",
+          "layout": "asymmetrical dance of elements",
+          "showCover": true,
+          "coverStyle": "fragmented hologram en vista, como un caleidoscopio",
+          "glowFlux": "auras energéticas fluctuantes en cada palabra",
+          "metaShadow": "sombras que se expanden y contraen en tiempo real",
+          "warpGrid": "rejilla distorsionada que parece respirar",
+          "fontFlux": "tipografía en constante cambio, como una ola",
+          "ornamentFlux": "pinceladas digitales que laten en la superficie",
+          "prismPulse": "efecto de prisma que descompone la luz alrededor",
+          "liquidType": "letras que fluyen y gotean, como pintura húmeda",
+          "crystalEdge": "bordes que brillan como cristales al sol",
+          "noiseField": "campo de ruido digital suave como bruma",
+          "echoLayers": "capas de eco que reverberan en el espacio",
+          "chromaShift": "cambio de color que evoca sensaciones de tiempo",
+          "texture": "textura granulada, como papel reciclado",
+          "surprise": "tipografía que se descompone en colores al ser leída"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Law%20of%20Success%20Napoleon%20Hill%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El poder del Tao",
+      "autor": "Lou Marinoff",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/ca/9e/fe/ca9efe48-750c-ed50-8272-a8de5385b703/9788466650731.jpg/626x0w.jpg",
+      "tagline": "Durante más de dos mil quinientos años la filosofía taoísta ha ayudado a cientos de millones de personas a alcanzar de modo duradero la ecuanimidad la serenidad y la felicidad. El poder del Tao dilucida las enseñanzas fundamentales de Lao Tzu aplicándolas a cuestiones a las que nos enfrentamos a diario en los ámbitos de la salud y el bienestar el amor y el matrimonio la creatividad y la profesión los logros y ambiciones personales.El Tao nos enseña a alcanzar nuestro verdadero potencial y a evitar la envidia la avaricia y la ira. ",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "desasosiego",
+        "envidia",
+        "suplicio",
+        "desesperanza"
+      ],
+      "frases": [
+        "🌱 Practica: 1) Nombra 1 logro reciente, 2) Escribe 1 razón de orgullo, 3) Reflexiona sobre tu evolución",
+        "📊 Un estudio demuestra que la ecuanimidad reduce el estrés. Dedica 5 min hoy a meditar en silencio",
+        "🧘 8 respiraciones profundas: inhala contando hasta 4, retén 4, exhala 6, mientras visualizas tranquilidad",
+        "📖 Abre el libro en una página aleatoria. Lee y encuentra 1 consejo sobre dejar ir el rencor. Aplícalo hoy"
+      ],
+      "colores": [
+        "#4E9B81",
+        "#E5B030",
+        "#A66F4C",
+        "#7C4D3A"
+      ],
+      "fondo": "#1C1C1C",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "\"Despliega tu verdadera esencia\"",
+        "parrafoTop": "El poder del Tao de Lou Marinoff revela cómo la sabiduría taoísta puede liberar nuestro potencial oculto. Aquí, la clave es el flujo: en lugar de resistir, debemos aprender a adaptarnos. Este concepto transforma nuestro enfoque hacia la vida diaria.",
+        "subtitulo": "\"Descubre la acción que activa tu energía\"",
+        "parrafoBot": "Haz una pausa y anota una creencia que te limita. Luego, reformúlala en positivo, como un mantra. Repite esa afirmación durante el día, permitiendo que el cambio fluya en ti. Esto, extraído del Tao, abre el camino a la transformación auténtica.",
+        "style": {
+          "accent": "#f39c12",
+          "ink": "#2c3e50",
+          "paper": "nubes en el atardecer, con una textura suave que invita a tocar",
+          "border": "filigrana dorada en estilo barroco",
+          "serif": "Vernada",
+          "sans": "Gravitas One",
+          "fontSizeTitle": "clamp(60px, 12vw, 120px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "800",
+          "lineHeight": "1.5",
+          "letterSpacing": "1px",
+          "textTransform": "capitalize",
+          "textShadow": "una sombra difusa de color gris claro con ángulo de 120 grados",
+          "layout": "asymmetrical dynamism with diagonal tension",
+          "showCover": true,
+          "coverStyle": "corte asimétrico, con formas orgánicas que fluyen",
+          "glowFlux": "destello etéreo alrededor de los bordes de la tarjeta",
+          "metaShadow": "sombra que se extiende como una neblina luminosa",
+          "warpGrid": "una cuadrícula distorsionada que vibra al tacto visual",
+          "fontFlux": "tipografía que fluctúa en peso con el movimiento de la vista",
+          "ornamentFlux": "dibujos florales que emergen del fondo en relieve",
+          "prismPulse": "efectos prismáticos que se despliegan en colores cambiantes",
+          "liquidType": "tipografía que parece fluir y cambiar de forma sutilmente",
+          "crystalEdge": "bordes que refractan la luz como si fueran cristales",
+          "noiseField": "un campo de ruido visual que evoca texturas naturales",
+          "echoLayers": "capas superpuestas que crean un efecto de profundidad vibrante",
+          "chromaShift": "cambio sutil de color que juega con la percepción del espectador",
+          "texture": "grano digital con efecto de lienzo desgastado",
+          "surprise": "tipografía que parpadea en diferentes tamaños y opacidades"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20del%20Tao%20Lou%20Marinoff%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Timeboxing",
+      "autor": "Marc Zao-Sanders",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/26/c3/4b/26c34bb3-e2c4-edb2-92a0-d437e210e268/9788410159792.jpeg/626x0w.jpg",
+      "tagline": "The Power of Doing One Thing at a Time",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "abrumo",
+        "agotamiento",
+        "estrés",
+        "confusión"
+      ],
+      "frases": [
+        "🔄 Anota: 1) Elige 1 tarea esencial, 2) Establece 25 min, 3) Ejecuta sin interrupciones",
+        "📊 Al dedicar 30 minutos a una sola tarea, aumentas productividad en 40%. Prueba hoy.",
+        "🚶 Haz 3 movimientos: 1) Camina 2 min para despejar la mente, 2) Suelta tensión del cuello, 3) Respira profundamente 5 veces.",
+        "📚 Abre el libro en la página 45. Lee sobre la técnica del 'Pomodoro' y aplícala hoy."
+      ],
+      "colores": [
+        "#B43E1B",
+        "#1C3A51",
+        "#D0A120",
+        "#7C4C8F"
+      ],
+      "fondo": "#181818",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -33,43 +175,691 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "\"Transforma tu dolor en fuerza\"",
-        "parrafoTop": "David Goggins nos muestra que el sufrimiento puede ser el catalizador para alcanzar tu máximo potencial. El dolor es un maestro y su comprensión abre las puertas a una vida de autodisciplina y fortaleza mental.",
-        "subtitulo": "\"El camino de los fuertes\"",
-        "parrafoBot": "Anota tres momentos difíciles de tu vida. Elige uno y escribe cómo te ayudó a crecer. No lo evadas, actúa sobre él. Usa esa lección para impulsarte hoy.",
+        "titulo": "\"Unboxing el tiempo perdido\"  ",
+        "parrafoTop": "Con el timeboxing de Marc Zao-Sanders, aprendo a canalizar mis esfuerzos en una sola tarea y maximizar mi productividad.  ",
+        "subtitulo": "\"Detener la dispersión\"  ",
+        "parrafoBot": "Dedica 25 minutos a una sola actividad que te frene hoy. Usa un temporizador. Haz una pausa de 5 minutos y repite.",
         "style": {
-          "accent": "#f39c12",
-          "ink": "#2c3e50",
-          "paper": "sutil susurro del alba, con textura suave",
-          "border": "finos bordes de cromo brillante",
-          "serif": "Garamond Supreme",
-          "sans": "Futura Flux",
+          "accent": "#f25c54",
+          "ink": "#2b2d42",
+          "paper": "lienzo de nube líquida, donde el azul se funde con el dorado",
+          "border": "sombra de cristal con bordes suaves y luminiscentes",
+          "serif": "Mistral Unique",
+          "sans": "Klarheit Variable",
+          "fontSizeTitle": "clamp(60px, 12vw, 120px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "700",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.05em",
+          "textTransform": "capitalize",
+          "textShadow": "ecos tenues de luz detrás del texto",
+          "layout": "Asimétrico dinámico, equilibrio entre tensión y espacio",
+          "showCover": true,
+          "coverStyle": "Portada holográfica, donde las luces bailan en su superficie",
+          "glowFlux": "auras cambiantes en tonos cálidos y fríos",
+          "metaShadow": "sombras fluidas que desafían la lógica espacial",
+          "warpGrid": "retícula fluida que se pliega y despliega",
+          "fontFlux": "tipografía que juega en una oscilación suave y melódica",
+          "ornamentFlux": "diseño de arabescos imposibles que parecen respirar",
+          "prismPulse": "pulsos de luz que transforman el color de fondo en patrones caleidoscópicos",
+          "liquidType": "tipografía que se derrite en las esquinas, formando gotas visuales",
+          "crystalEdge": "bordes afilados que reflejan destellos de luz como gemas",
+          "noiseField": "textura de ruido suave que imita el murmullo del agua",
+          "echoLayers": "capas de eco que reverberan con patrones contrastantes",
+          "chromaShift": "variaciones de color que giran en el espectro con cada movimiento",
+          "texture": "textura que evoca la suavidad de la seda pero tiene una base de papel",
+          "surprise": "tipografía que cambia de peso de forma inesperada, rompiendo el ritmo visual"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Timeboxing%20Marc%20Zao-Sanders%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Eutanasia para vivir",
+      "autor": "Martín Achirica",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/02/99/9a/02999a3a-82d5-4ec7-06da-461285320963/9788419251367.jpeg/626x0w.jpg",
+      "tagline": "realizaremos un viaje de muerte y vida nos sorprenderemos ante la vinculación entre la ciencia y la espiritualidad aquello que se ve y no se ve como parte de un todo encaminado al nuevo paradigma del bienestar y la salud integrativa. Un nuevo arquetipo para el sentido de la existencia",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "Inquietud",
+        "Cansancio",
+        "Duda",
+        "Resistencia"
+      ],
+      "frases": [
+        "🚶 Camina 10 pasos lentos antes de decidir.",
+        "❤️ Nombra en voz baja a quién ayudaste hoy.",
+        "🧠 Anota 3 palabras que resuman tu día.",
+        "✨ Abre el libro en página random, lee 1 línea."
+      ],
+      "colores": [
+        "#ff8a8a",
+        "#ffb56b",
+        "#8cabff",
+        "#d288ff"
+      ],
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "fondo": "#111111",
+      "tarjeta": {
+        "titulo": "Empieza pequeño",
+        "parrafoTop": "A veces la acción más importante es la más simple.",
+        "subtitulo": "Un paso basta",
+        "parrafoBot": "No necesitas tenerlo todo claro para empezar a moverte.",
+        "style": {}
+      }
+    },
+    {
+      "titulo": "El sendero del yoga",
+      "autor": "Osho",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d7/6c/e0/d76ce0f7-6112-3eb5-e338-097c110d7f62/9789180130530.jpg/626x0w.jpg",
+      "tagline": " Al estar cuerpo y mente tan íntimamente conectados es posible lograr cierta paz de espítritu mediante una postura corporal que corresponda a esta paz. Una ciencia del alma.",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "malestar",
+        "tensión",
+        "deseo",
+        "disconformidad"
+      ],
+      "frases": [
+        "💪 Tensa: 1) Relaja 5 segundos los hombros, 2) Mantén la columna recta, 3) Inhala profundamente 3 veces",
+        "📊 El cuerpo puede ser un reflejo de tu paz interna. Reconéctate con 1 postura que sientas hoy.",
+        "🧠 Escribe: ¿Qué creencias te mantienen en desarmonía? Elimina 2 pensamientos limitantes ahora.",
+        "📖 Abre en la página 45. Busca la palabra 'armonía' y reflexiona sobre su significado en tu vida."
+      ],
+      "colores": [
+        "#C24D30",
+        "#4B8B91",
+        "#FF9B1A",
+        "#8D5A9A"
+      ],
+      "fondo": "#141414",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "\"El cuerpo como puente hacia el alma\"  ",
+        "parrafoTop": "La paz del espíritu emerge cuando el cuerpo se alinea, tal como enseña Osho en \"El sendero del yoga\". Aquí, el movimiento se convierte en meditación.  ",
+        "subtitulo": "\"Activando la conexión cuerpo-mente\"  ",
+        "parrafoBot": "Dedica 5 minutos a realizar una postura de yoga que sientas en este momento. Observa cómo esa postura afecta tu estado mental y emocional.",
+        "style": {
+          "accent": "#c71757",
+          "ink": "#f8f2e3",
+          "paper": "textura suave como el terciopelo lunar",
+          "border": "contorno holográfico iridiscente",
+          "serif": "Didot",
+          "sans": "Suisse Int'l",
+          "fontSizeTitle": "clamp(50px, 10vw, 150px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "700",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.1em",
+          "textTransform": "capitalize",
+          "textShadow": "brillo suave en ángulo 45°",
+          "layout": "asymmetrical dynamic with visual tension",
+          "showCover": true,
+          "coverStyle": "holographic cutout with a liquid ripple effect",
+          "glowFlux": "brillo de neón en movimiento suave",
+          "metaShadow": "sombra fractal que se descompone en múltiples capas",
+          "warpGrid": "cuadrícula fluida con elementos que se distorsionan",
+          "fontFlux": "tipografía que cambia sutilmente de grosor",
+          "ornamentFlux": "pinceladas digitales que aparecen y desaparecen",
+          "prismPulse": "efecto prismático en cada esquina del diseño",
+          "liquidType": "tipografía que parece fluir como agua",
+          "crystalEdge": "borde en forma de cristal facetado",
+          "noiseField": "campo de ruido generativo en fondo sutil",
+          "echoLayers": "capas de eco que reverberan en el espacio",
+          "chromaShift": "cambio cromático inesperado en áreas clave",
+          "texture": "ruido orgánico con un toque de papel reciclado",
+          "surprise": "un ornamento que se transforma en un holograma inesperado al tocarlo"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20sendero%20del%20yoga%20Osho%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "La nueva ciencia de la atención",
+      "autor": "Amishi Jha",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/1a/dc/16/1adc1662-58c3-8552-824a-a577bbf03623/9788449340789.jpg/626x0w.jpg",
+      "tagline": "Desde la constante reclamación de atención de la tecnología hasta las 24 horas de titulares constantes y las abrumadoras exigencias del trabajo a nuestra capacidad de concentración se le exige más que nunca. Estamos sufriendo un trastorno colectivo de déficit de atención que nos hace sentir dispersos abrumados y ansiosos pero incapaces de resistirse a distracciones como los correos electrónicos las videollamadas los mensajes o las notificaciones.A menos que creemos espacio en nuestra mente mediante una práctica diaria específica y dirigida no podremos controlar lo que capta nuestra atención. ",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "dispersión",
+        "agobio",
+        "desconexión",
+        "abrumamiento"
+      ],
+      "frases": [
+        "🌪️ Decide: 1) Apaga notificaciones, 2) Cierra 2 pestañas, 3) Respira 3 veces",
+        "📊 Alrededor del 85% de la gente experimenta déficit de atención. Reserva 5 minutos para conectar contigo mismo",
+        "🧘 7 respiraciones profundas: inhala contando 4, mantén 4, exhala contando 6",
+        "📖 Abre en página aleatoria y busca el término 'atención'. Reflexiona sobre cómo puedes aplicarlo hoy"
+      ],
+      "colores": [
+        "#8D8B7E",
+        "#F3A26A",
+        "#3B3E54",
+        "#C3D3D2"
+      ],
+      "fondo": "#1E1E1E",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"La atención como músculo entrenable\"  ",
+        "parrafoTop": "Amishi Jha, en \"La nueva ciencia de la atención\", revela cómo nuestras distracciones constantes deterioran nuestra concentración. El desafío radica en la práctica diaria que debemos adoptar.  ",
+        "subtitulo": "\"Ejercicio de respiración intencional\"  ",
+        "parrafoBot": "Dedica 60 segundos a inhalar profundamente por la nariz y exhalar por la boca. Repite este ciclo cinco veces y concéntrate en la respiración. Así empezarás a recuperar el control de tu atención.",
+        "style": {
+          "accent": "#f5b300",
+          "ink": "#2d2d2d",
+          "paper": "susurro de neblina cinética",
+          "border": "trazo irregular con brillo iridiscente",
+          "serif": "Didot",
+          "sans": "Inter",
           "fontSizeTitle": "clamp(60px, 12vw, 180px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "800",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.02em",
+          "textTransform": "uppercase",
+          "textShadow": "sombra nebulosa que fluye",
+          "layout": "asimetricamente dinámico con zonas de tensión",
+          "showCover": true,
+          "coverStyle": "corte diagonal que revela capas internas",
+          "glowFlux": "halo vibrante que pulse en tonos dorados",
+          "metaShadow": "sombra que emerge de múltiples direcciones",
+          "warpGrid": "rejilla que se pliega en olas de color",
+          "fontFlux": "tipografía que cambia de peso con el scroll",
+          "ornamentFlux": "brillos geométricos que bailan al movimiento",
+          "prismPulse": "efecto de dispersión de luz en múltiples ángulos",
+          "liquidType": "texto que se transforma como agua fluyendo",
+          "crystalEdge": "bordes facetados que reflejan luz en tonos arcoíris",
+          "noiseField": "ruido orgánico que vibra en el fondo",
+          "echoLayers": "capas de texto que repiten en intervalos difusos",
+          "chromaShift": "transiciones cromáticas de azul a naranja",
+          "texture": "grano digital sutil como papel reciclado",
+          "surprise": "tipografía que fluye entre palabras, rompiendo el espacio"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20nueva%20ciencia%20de%20la%20atenci%C3%B3n%20Amishi%20Jha%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Las cuatro puertas",
+      "autor": "Jorge Benito",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d6/36/5e/d6365e07-f9fc-3b70-0e13-2220db0fde41/9786070794339.jpg/626x0w.jpg",
+      "tagline": "Cómo encontrar el coraje y el sentido en un mundo cada vez más delirante",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "confusión",
+        "inseguridad",
+        "desasosiego",
+        "desorientación"
+      ],
+      "frases": [
+        "⚡ Elimina: 1) Di NO a un compromiso innecesario, 2) Deshazte de un objeto que ya no usas, 3) Respira 5 veces y suelta tensión",
+        "📊 La mayoría de las personas luchan con el propósito diario. Identifica una acción que te acerque a tu sentido hoy.",
+        "🏋️ Tensa tu cuerpo 10s. Luego, corre en el lugar durante 1 min. Conecta con tu fuerza interior y prepárate para actuar.",
+        "📖 Abre en el capítulo 3. Busca la sección que menciona 'coraje'. Lee en voz alta 2 frases que te inspiren."
+      ],
+      "colores": [
+        "#B67F9A",
+        "#65BDA0",
+        "#F3EEDD",
+        "#7C3E77"
+      ],
+      "fondo": "#1F1F1F",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "\"El coraje del desconcierto\"",
+        "parrafoTop": "En \"Las cuatro puertas\", Jorge Benito sugiere que el caos externo revela nuestro verdadero potencial. La confusión es una oportunidad.",
+        "subtitulo": "\"Cómo transformar la angustia\"",
+        "parrafoBot": "Elige una situación que te desconcierte y anota tres formas de enfrentarlo. Implementa la primera en los próximos cinco minutos.",
+        "style": {
+          "accent": "#3DFFC9",
+          "ink": "#1D1A19",
+          "paper": "textura de lienzo etéreo con matices de gris suave",
+          "border": "marco cristalino con destellos iridiscentes",
+          "serif": "Cloister Black",
+          "sans": "Space Mono",
+          "fontSizeTitle": "clamp(60px, 12vw, 150px)",
+          "fontSizeBody": "18px",
+          "fontWeight": "700",
+          "lineHeight": "1.5",
+          "letterSpacing": "+2px",
+          "textTransform": "uppercase",
+          "textShadow": "sombras etéreas con matiz de verde",
+          "layout": "asimétrico dinámico con elementos que fluyen",
+          "showCover": true,
+          "coverStyle": "holográfica, efecto de cambio de color según la luz",
+          "glowFlux": "destellos suaves de neón en las esquinas",
+          "metaShadow": "sombras invertidas que danzan en el espacio",
+          "warpGrid": "grid fluido que se distorsiona como agua",
+          "fontFlux": "tipografía en constante oscilación de peso",
+          "ornamentFlux": "pinceladas digitales que simulan tinta derramada",
+          "prismPulse": "efecto prismático que altera la percepción del color",
+          "liquidType": "tipografía que se extiende como mercurio",
+          "crystalEdge": "bordes facetados que capturan luz",
+          "noiseField": "campo de ruido digital que pulsa sutilmente",
+          "echoLayers": "capas de eco visual que repiten la forma",
+          "chromaShift": "cambio cromático que varía con el ángulo de visión",
+          "texture": "superficie con relieve táctil de ondas",
+          "surprise": "tipografía que respira con cambios de grosor aleatorios"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20cuatro%20puertas%20Jorge%20Benito%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El Club de las 5 de la mañana",
+      "autor": "Robin Sharma",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/f3/69/5f/f3695f43-ade6-325d-ff22-2038d07d0b43/9780008312855.jpg/626x0w.jpg",
+      "tagline": " Una forma de aprovechar las mañanas para conseguir unos resultados extraordinarios.Una fórmula poco conocida para despertarse temprano con buen ánimo y la energía necesaria para aprovechar el día al máximo.Un método para dedicar las horas más tranquilas del día a hacer ejercicio renovarse y crecer como persona. Un hábito científicamente probado que nos permitirá levantarnos mientras los demás siguen durmiendo y disponer así de unas horas preciosas para pensar potenciar nuestra creatividad y empezar el día con calma y sin prisas.",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "desánimo",
+        "desmotivación",
+        "fatiga",
+        "pereza"
+      ],
+      "frases": [
+        "🏋️ Tensa tu cuerpo: 1) Haz 15 sentadillas, 2) Respira 5 veces, 3) Estira brazos 3x",
+        "📊 El 90% de las personas no aprovechan las mañanas. Comienza hoy despertándote 30 minutos antes.",
+        "🧘 Detén tu mente: Anota 3 cosas que te inspiren para este día y guárdalas a la vista.",
+        "📖 Abre en la página 42. Lee cómo crear un entorno matutino que potencie tu creatividad."
+      ],
+      "colores": [
+        "#5B8C3C",
+        "#D7B248",
+        "#C4568A",
+        "#2D4B76"
+      ],
+      "fondo": "#1F1F1F",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "\"Despierta a la grandeza en la mañana\"",
+        "parrafoTop": "En \"El Club de las 5 de la mañana\", Robin Sharma nos muestra que la clave para desbloquear nuestro potencial radica en las horas previas al amanecer. Un despertar intencional transforma nuestra energía y enfoque diario.",
+        "subtitulo": "\"Tu hora dorada\"",
+        "parrafoBot": "Dedica 20 minutos a una actividad significativa: elige un ejercicio físico, escribe en un diario o medita. Realízalo en la primera hora de tu día y observa cómo cambia tu perspectiva.",
+        "style": {
+          "accent": "#e63946",
+          "ink": "#1d3557",
+          "paper": "Un fondo de terciopelo azul profundo que absorbe la luz y evoca calma.",
+          "border": "Borde holográfico que brilla sutilmente bajo diferentes ángulos de luz.",
+          "serif": "Didot",
+          "sans": "GT America",
+          "fontSizeTitle": "clamp(70px, 12vw, 150px)",
           "fontSizeBody": "18px",
           "fontWeight": "600",
           "lineHeight": "1.5",
-          "letterSpacing": "+2px",
+          "letterSpacing": "0.05em",
           "textTransform": "capitalize",
-          "textShadow": "sombra etérea con profundidad dimensional",
-          "layout": "asimétrico dinámico, tensión controlada",
+          "textShadow": "Sombra suave y difusa que da profundidad al texto.",
+          "layout": "Asimétrico dinámico con una fuerte diagonal que guía la vista.",
           "showCover": true,
-          "coverStyle": "corte irregular con holografía sutil",
-          "glowFlux": "destellos de luz que vibran al contacto",
-          "metaShadow": "sombras que se desvanecen y reaparecen",
-          "warpGrid": "rejilla fluida que respira con el diseño",
-          "fontFlux": "tipografía que fluctúa en tamaño sutilmente",
-          "ornamentFlux": "decoración de glitch orgánico que brota",
-          "prismPulse": "efectos prismáticos que cambian con la luz",
-          "liquidType": "tipografía que parece fluir como el agua",
-          "crystalEdge": "bordes afilados como facetas de cristal",
-          "noiseField": "campo de ruido que genera movimiento visual",
-          "echoLayers": "capas que repiten ecos tipográficos en profundidad",
-          "chromaShift": "cambio cromático radical entre matices imposibles",
-          "texture": "textura rugosa que invita a tocarla",
-          "surprise": "tipografía que respira con oscilaciones rítmicas"
+          "coverStyle": "Portada holográfica que parece cambiar de color con la luz.",
+          "glowFlux": "Un resplandor sutil alrededor del título que parece pulsar.",
+          "metaShadow": "Sombra inversa que se desplaza como un eco en la dirección opuesta a la luz.",
+          "warpGrid": "Estructura que parece ondular, rompiendo la rigidez del grid convencional.",
+          "fontFlux": "Títulos que cambian de tamaño mientras el lector los observa, creando una danza visual.",
+          "ornamentFlux": "Patrones generativos que aparecen y desaparecen como una ilusión óptica.",
+          "prismPulse": "Un efecto prismático que crea un halo de colores alrededor de las palabras clave.",
+          "liquidType": "Tipografía que parece fluir y cambiar de forma, como agua en movimiento.",
+          "crystalEdge": "Bordes que brillan como si estuvieran tallados en cristal facetado.",
+          "noiseField": "Un campo de ruido digital que acompaña al fondo, creando una textura vibrante.",
+          "echoLayers": "Capas de texto que parecen repetirse en el espacio, dando un efecto de eco.",
+          "chromaShift": "Colores que cambian suavemente en respuesta a la interacción visual.",
+          "texture": "Textura de papel arrugado que añade un nivel táctil a la experiencia visual.",
+          "surprise": "Un ornamento que gira y cambia de forma con el movimiento del espectador."
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+No%20me%20puedes%20lastimar%20David%20Goggins%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20Club%20de%20las%205%20de%20la%20ma%C3%B1ana%20Robin%20Sharma%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Cuestión de límites",
+      "autor": "Nedra Glover",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/9f/fd/b6/9ffdb681-b177-507c-ade6-7347e5a685a3/9786070777790.jpg/626x0w.jpg",
+      "tagline": "La falta de límites nos conduce a una cultura del burnout y a una sociedad exhausta y sobrepasada",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "Inquietud",
+        "Cansancio",
+        "Duda",
+        "Resistencia"
+      ],
+      "frases": [
+        "🚶 Camina 10 pasos lentos antes de decidir.",
+        "❤️ Nombra en voz baja a quién ayudaste hoy.",
+        "🧠 Anota 3 palabras que resuman tu día.",
+        "✨ Abre el libro en página random, lee 1 línea."
+      ],
+      "colores": [
+        "#ff8a8a",
+        "#ffb56b",
+        "#8cabff",
+        "#d288ff"
+      ],
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "fondo": "#111111",
+      "tarjeta": {
+        "titulo": "Empieza pequeño",
+        "parrafoTop": "A veces la acción más importante es la más simple.",
+        "subtitulo": "Un paso basta",
+        "parrafoBot": "No necesitas tenerlo todo claro para empezar a moverte.",
+        "style": {}
+      }
+    },
+    {
+      "titulo": "El libro del ego",
+      "autor": "Osho",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/ae/35/74/ae357431-4468-0e0a-b3e0-90926f95a5e7/9788425346125.jpg/626x0w.jpg",
+      "tagline": "Osho nos muestra el camino para liberarnos de nuestro ego y llegar a ser nosotros mismos.El ego es justo lo contrario de nuestro verdadero ser. El ego es un envoltorio de nuestra conciencia.Al ser un engaño el ego rehúye lo sencillo pues lo delata; lo difícil sí es un reto para él y lo imposible un reto de verdad. Cuanto mayor sea el reto que aceptemos mayor será el ego que estamos construyendo en nosotros mismos: es nuestra ambición la que dará la medida de nuestro ego que es también la medida de nuestro fracaso.",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "vergüenza",
+        "culpa",
+        "frustración",
+        "ira"
+      ],
+      "frases": [
+        "💔 Recuerda: ¿en qué situación el ego te ha mantenido atrapado? Nombrar esa vez te liberará.",
+        "🔍 Identifica: 1) una ambición que ahora sientes como carga, 2) algo simple que evitas, 3) un momento de verdad que has ignorado.",
+        "💨 Tensa: 7 veces los músculos del abdomen al exhalar. Deja ir lo que no te define.",
+        "📖 Abre en página aleatoria. Lee una idea sobre el ego que nunca has reflexionado. Reflexiona en voz alta."
+      ],
+      "colores": [
+        "#C14D56",
+        "#F2A900",
+        "#5C75A8",
+        "#DA9BC4"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"Ego: el engaño que llevamos dentro\"",
+        "parrafoTop": "Osho revela que el ego se alimenta del desafío. Si lo difícil atrae, lo sencillo expone su fragilidad. ",
+        "subtitulo": "\"Rompe el patrón del desafío\"",
+        "parrafoBot": "Hoy, elige una acción simple y directa: anota un miedo que evitas. Ahora, díselo a alguien. Desmonta tu ego.",
+        "style": {
+          "accent": "#6f00ff",
+          "ink": "#ffffff",
+          "paper": "tela suave con textura que evoca el susurro del espacio",
+          "border": "brillo metálico líquido que cambia con la luz",
+          "serif": "Mistral",
+          "sans": "Circular Std",
+          "fontSizeTitle": "clamp(70px, 12vw, 220px)",
+          "fontSizeBody": "16px",
+          "fontWeight": "800",
+          "lineHeight": "1.2",
+          "letterSpacing": "1.5px",
+          "textTransform": "capitalize",
+          "textShadow": "brillo difuso que parece flotar",
+          "layout": "asimetricidad dinámica que captura el movimiento",
+          "showCover": true,
+          "coverStyle": "cutout donde la forma define el contenido",
+          "glowFlux": "resplandor que parece emanar desde el núcleo",
+          "metaShadow": "sombra etérea que se alarga y se contrae",
+          "warpGrid": "cuadrícula que se distorsiona al tacto visual",
+          "fontFlux": "tipografía que respira, pulsando en escalas",
+          "ornamentFlux": "motivos en 3D que emergen y se desplazan",
+          "prismPulse": "destellos de color que vibran al ritmo",
+          "liquidType": "tipografía que fluye como el agua",
+          "crystalEdge": "bordes que refractan la luz como un prisma",
+          "noiseField": "campo de ruido que susurra secretos visuales",
+          "echoLayers": "capas de eco que repiten susurros tipográficos",
+          "chromaShift": "cambio cromático que descompone lo ordinario",
+          "texture": "textura de lienzo en el que se dibuja el infinito",
+          "surprise": "layout que rompe la simetría, creando una danza visual"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20del%20ego%20Osho%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Tú no eres tu dolor",
+      "autor": "Vidyamala Burch y Danny Penman",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/1c/7a/f9/1c7af9dd-1b90-de5d-c20d-6c0f5d511d4a/1023238726.jpg/626x0w.jpg",
+      "tagline": "El dolor el sufrimiento y el estrés pueden resultar intolerables; pero no necesariamente tiene que ser así. El mindfulness puede ser tan eficaz como los calmantes para mejorar los sistemas de curación natural del cuerpo.",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "aflicción",
+        "opresión",
+        "tensión",
+        "agonía"
+      ],
+      "frases": [
+        "💡 Decide: 1) Toma 3 respiraciones profundas, 2) Nombra 1 cosa que controlas, 3) Elimina 1 pensamiento negativo ahora mismo",
+        "📊 El 70% de las personas siente alivio tras 10 minutos de mindfulness. Dedica 10 min hoy a practicarlo",
+        "💪 Tensa músculos 5s en cada parte del cuerpo, luego relaja. Repite 3x mientras te concentras en tu respiración",
+        "📖 Busca en la página 42 del libro. Lee el apartado sobre \"Aceptación\" y medita sobre su mensaje"
+      ],
+      "colores": [
+        "#4A90E2",
+        "#E94E77",
+        "#F5A623",
+        "#B1B3B3"
+      ],
+      "fondo": "#1F1F1F",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"Desactivar el dolor con conciencia\"",
+        "parrafoTop": "Al conectar con el cuerpo a través de la atención plena, como sugiere Vidyamala Burch, encontramos que el dolor no es nuestra identidad.",
+        "subtitulo": "\"El momento del cambio\"",
+        "parrafoBot": "Dedica cinco minutos a sentir tu cuerpo desde adentro. Identifica una tensión y respira en ella. Suéltala lentamente, visualizando que te liberas del peso que lleva.",
+        "style": {
+          "accent": "#00ffcc",
+          "ink": "#2e003e",
+          "paper": "una neblina suave, con un toque etéreo que evoca la profundidad del espacio",
+          "border": "borde quebrado, como fragmentos de cristal reflejando luz",
+          "serif": "Canela",
+          "sans": "Inter",
+          "fontSizeTitle": "clamp(60px, 10vw, 200px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "600",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.02em",
+          "textTransform": "capitalize",
+          "textShadow": "sombra delicada, creando una sensación de flotación",
+          "layout": "asímetría dramática, donde cada elemento parece estar en equilibrio inestable",
+          "showCover": true,
+          "coverStyle": "portada holográfica que brilla en tonos cambiantes",
+          "glowFlux": "resplandor en las esquinas, como destellos de energía",
+          "metaShadow": "sombra proyectada que se despliega en múltiples dimensiones",
+          "warpGrid": "una cuadrícula fluida que se distorsiona suavemente",
+          "fontFlux": "tipografía que cambia de forma sutilmente, creando una danza visual",
+          "ornamentFlux": "decoración digital que parece vibrar en una oscilación armónica",
+          "prismPulse": "efecto prismático que distorsiona la luz a su alrededor",
+          "liquidType": "tipografía que parece fluir y moverse como el agua",
+          "crystalEdge": "bordes con facetas que capturan la luz de manera intrigante",
+          "noiseField": "campo de ruido visual que añade textura orgánica al fondo",
+          "echoLayers": "capas de eco tipográfico que reverberan en el espacio",
+          "chromaShift": "un cambio cromático que altera la percepción visual de los colores",
+          "texture": "textura suave y granulada, como seda sobre papel",
+          "surprise": "un layout que parece desmaterializarse en un patrón fractal inesperado"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+T%C3%BA%20no%20eres%20tu%20dolor%20Vidyamala%20Burch%20y%20Danny%20Penman%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El poder de la concentración absoluta",
+      "autor": "Dandapani",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d9/7b/22/d97b22e5-bf04-0347-be42-e292765dca7f/9788411191036.jpg/626x0w.jpg",
+      "tagline": "Herramientas Prácticas Para Curarse de la Distracción Y Vivir Con Alegría Y Propósito",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "desánimo",
+        "desasosiego",
+        "inquietud",
+        "frustración"
+      ],
+      "frases": [
+        "🔄 Anota: 1) Un pensamiento que te distrae, 2) Un hábito a soltar, 3) Una intención clara para hoy",
+        "📊 La mente humana puede cambiar su enfoque en 10 segundos. Practica un cambio rápido hoy.",
+        "🏃 Realiza 15 sentadillas sin parar. Acelera tu circulación y luego pregúntate: ¿en qué quiero concentrarme?",
+        "📚 Busca en el capítulo sobre 'intención'. Lee dos párrafos y reflexiona sobre cómo aplicar esa idea."
+      ],
+      "colores": [
+        "#FFB300",
+        "#6DA64D",
+        "#B94FBA",
+        "#F47C2D"
+      ],
+      "fondo": "#0E0E0E",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "\"Concentración: el arte de renunciar\"",
+        "parrafoTop": "Dandapani propone que la verdadera concentración comienza con renunciar a lo que no importa. Debes permitir que las distracciones se desvanezcan y centrarte en lo esencial.  ",
+        "subtitulo": "\"Renuncia a lo que pesa\"",
+        "parrafoBot": "Dedica un minuto a identificar una actividad que drena tu energía y anótala. Luego, decide reducir o eliminarla de tu rutina hoy.",
+        "style": {
+          "accent": "#7a33f8",
+          "ink": "#fefefe",
+          "paper": "susurro de neblina luminosa",
+          "border": "plano abstracto con relieve oculto",
+          "serif": "Chronicle",
+          "sans": "Bison",
+          "fontSizeTitle": "clamp(60px, 12vw, 180px)",
+          "fontSizeBody": "18px",
+          "fontWeight": "800",
+          "lineHeight": "1.4",
+          "letterSpacing": "+1px",
+          "textTransform": "capitalize",
+          "textShadow": "distorcionado como un eco lejano",
+          "layout": "asimetricamente equilibrado, con tensión visual",
+          "showCover": true,
+          "coverStyle": "cubierta holográfica con textura fractal",
+          "glowFlux": "aura eléctrica en borde suave",
+          "metaShadow": "sombra dual que desafía la lógica",
+          "warpGrid": "recuadros flexibles que respiran",
+          "fontFlux": "oscilación aleatoria de grosor",
+          "ornamentFlux": "pinceladas de luz líquida sobre papel",
+          "prismPulse": "reflejos multicolores en cascada",
+          "liquidType": "tipografía que parece fluir y gotear",
+          "crystalEdge": "bordes agudos como cristal tallado",
+          "noiseField": "campo de ruido digital sutil pero palpable",
+          "echoLayers": "capas de texto que resuenan en el fondo",
+          "chromaShift": "cambio de color en base a la distancia",
+          "texture": "grano de papel texturizado, suave al tacto",
+          "surprise": "tipografía que se disuelve en el aire"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20de%20la%20concentraci%C3%B3n%20absoluta%20Dandapani%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Amar lo que es",
+      "autor": "Byron Katie",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/73/90/7f/73907ff5-f69a-f783-7e89-cc292b94a659/amar_lo_que_es.jpg/626x0w.jpg",
+      "tagline": "Lo que provoca nuestro sufrimiento no es el problema sino lo que pensamos sobre el mismo. Paso a paso y mediante ejemplos claros Amar lo que es te enseñará a poner en práctica este proceso revolucionario.",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "desconsuelo",
+        "desazón",
+        "sufrimiento",
+        "consternación"
+      ],
+      "frases": [
+        "💡 Reconoce: 1) Nombra una situación difícil, 2) Escribe 2 creencias que sostienes, 3) Cuestiona una de ellas",
+        "📊 El 90% de tu sufrimiento proviene de tus pensamientos. Elige soltar 1 hoy.",
+        "💪 Tensa el cuerpo 3 segundos, suelta y siente cómo cambia tu perspectiva sobre ese problema.",
+        "📖 Abre en la página 35. Busca el concepto 'cuestionamiento' y reflexiona sobre su aplicabilidad ahora."
+      ],
+      "colores": [
+        "#E07A3D",
+        "#1D4C6D",
+        "#A4C8E1",
+        "#FFDA6D"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "La lucha interna como oportunidad",
+        "parrafoTop": "Byron Katie nos muestra que el sufrimiento nace de nuestros pensamientos. Cuando lo comprendo, puedo dejar de luchar.",
+        "subtitulo": "La estrategia transformadora",
+        "parrafoBot": "Anota una creencia que te causa sufrimiento. Pregúntate: ¿es realmente verdad? Responde en tres frases.",
+        "style": {
+          "accent": "#3b7a4a",
+          "ink": "#f4f4f4",
+          "paper": "sutil susurro de jade matizado",
+          "border": "contorno fractal que desafía la simetría",
+          "serif": "Tiempos Exquisitos",
+          "sans": "Grafik Noir",
+          "fontSizeTitle": "clamp(70px, 12vw, 180px)",
+          "fontSizeBody": "18px",
+          "fontWeight": "800",
+          "lineHeight": "1.5",
+          "letterSpacing": "1.2px",
+          "textTransform": "capitalize",
+          "textShadow": "una sombra envolvente como bruma de montaña",
+          "layout": "asimetría controlada con dinámicas de tensión visual",
+          "showCover": true,
+          "coverStyle": "corte lateral, como un umbral hacia un mundo nuevo",
+          "glowFlux": "efecto de resplandor que parece fluir entre los elementos",
+          "metaShadow": "sombra que parece cruzar la línea del tiempo",
+          "warpGrid": "una rejilla que se distorsiona bajo el peso de la narrativa",
+          "fontFlux": "tipografía que cambia de forma y tamaño al tocarla",
+          "ornamentFlux": "dibujo en espiral que crece y se contrae en el espacio",
+          "prismPulse": "estallidos de color que se proyectan como un arcoíris cambiante",
+          "liquidType": "texto que se comporta como una corriente de agua en movimiento",
+          "crystalEdge": "bordes que brillan con destellos de cristal líquido",
+          "noiseField": "un campo de ruido suave que envuelve cada palabra",
+          "echoLayers": "capas de texto que resuenan con ecos distantes",
+          "chromaShift": "transiciones de color que sorprenden y fascinan a la vista",
+          "texture": "textura de papel etéreo, como el tacto de una nube",
+          "surprise": "tipografía que fluye y cambia con cada mirada, como un susurro de viento"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Amar%20lo%20que%20es%20Byron%20Katie%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Good to great",
@@ -77,141 +867,422 @@
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/bd/62/e0/mzi.ruipsrer.jpg/626x0w.jpg",
       "tagline": "Why Some Companies Make the Leap...And Others Don't",
       "dimension": "Prosperidad",
-      "punto": "Creativo",
+      "punto": "Activo",
       "palabras": [
-        "desánimo",
-        "culpa",
-        "desilusión",
-        "apatía"
+        "duda",
+        "miedo",
+        "saturación",
+        "desconfianza"
       ],
       "frases": [
-        "💡 Revisa una estrategia que te pareció difícil ayer.",
-        "📈 ¿Cuándo fue la última vez que brillaste como líder?",
-        "🚀 Cuéntate una vez más por qué comenzaste este camino.",
-        "🧐 Examina qué valoras verdaderamente en tu trabajo."
+        "🚀 Decide: 1) Identifica 1 área de mejora, 2) Establece 1 meta concreta, 3) Comprométete a medir el progreso",
+        "📊 El 90% de las empresas en su estudio no lograron trascender. Reflexiona sobre lo que te impide avanzar hoy.",
+        "💡 Elimina: 1) Una actividad que consume tiempo sin retorno, 2) Un pensamiento que te frena, 3) Una creencia limitante.",
+        "📚 Busca en capítulo 2: la diferencia entre un 'sueño' y una 'visión'. Escríbelo en 1 frase."
       ],
       "colores": [
-        "#27ae60",
-        "#e67e22",
-        "#8e44ad",
-        "#34495e"
+        "#A03A2E",
+        "#36B7B0",
+        "#C4A54D",
+        "#6F4E8A"
       ],
-      "fondo": "#1f1f1f",
+      "fondo": "#1F1F1F",
       "textColors": [
         "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
+        "#000000",
+        "#000000",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "\"El enfoque del erizo: simplicidad poderosa\"  ",
-        "parrafoTop": "Las empresas sobresalientes no se confunden. En \"Good to Great\", Collins nos enseña a concentrarnos en lo esencial y dejar de lado lo irrelevante.  ",
-        "subtitulo": "\"Descubre tu verdadera ventaja.\"  ",
-        "parrafoBot": "Define hoy la única cosa que puedes hacer mejor que cualquier otro y alinea tus acciones hacia esa meta. Escríbelo y actúa en consecuencia en 15 minutos.",
+        "titulo": "\"¿Quiénes son tus mejores? Cambia el rumbo\"  ",
+        "parrafoTop": "En \"Good to Great\", Jim Collins plantea que el éxito radica en encontrar y mantener a las personas adecuadas en tu equipo.  ",
+        "subtitulo": "\"Reconsidera tus alianzas\"  ",
+        "parrafoBot": "Identifica a las tres personas más influyentes en tu entorno laboral. Hoy, habla con una de ellas sobre una decisión crítica que estás tomando.",
         "style": {
-          "accent": "#3b82f6",
-          "ink": "#ffffff",
-          "paper": "susurro etéreo con textura de cielo al amanecer",
-          "border": "sombra líquida con reflejos holográficos",
-          "serif": "Didot",
-          "sans": "Circular",
-          "fontSizeTitle": "clamp(60px, 10vw, 180px)",
-          "fontSizeBody": "18px",
+          "accent": "#8e1a75",
+          "ink": "#f7f7f7",
+          "paper": "textura suave con un sutil brillo metálico que recuerda a un amanecer",
+          "border": "bordes en cromo pulido que reflejan la luz",
+          "serif": "Canela",
+          "sans": "Graphik",
+          "fontSizeTitle": "clamp(90px, 18vw, 250px)",
+          "fontSizeBody": "20px",
           "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "0.02em",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.1em",
           "textTransform": "capitalize",
-          "textShadow": "sombra suave de 2px en color azul profundo",
-          "layout": "asímetrico dinámico con tensión controlada",
+          "textShadow": "sombra sutil que imita un halo etéreo",
+          "layout": "asymetría dinámica con una tensión visual que invita a la exploración",
           "showCover": true,
-          "coverStyle": "portada holográfica que interactúa con la luz",
-          "glowFlux": "aura lumínica de tonalidades cambiantes",
-          "metaShadow": "sombras que parecen fluir con el texto",
-          "warpGrid": "deformación visual que sigue el flujo de la luz",
-          "fontFlux": "tipografía que se expande y contrae suavemente",
-          "ornamentFlux": "elementos generativos que cambian con cada mirada",
-          "prismPulse": "efecto de difracción que envuelve la composición",
-          "liquidType": "tipografía que parece moverse como el agua",
-          "crystalEdge": "bordes afilados como facetas de un cristal",
-          "noiseField": "campo de ruido digital que susurra texturas",
-          "echoLayers": "capas de eco tipográfico que reverberan",
-          "chromaShift": "transiciones cromáticas que mutan lentamente",
-          "texture": "textura de papel reciclado con brillo sutil",
-          "surprise": "layout que rompe las convenciones pero respira armonía"
+          "coverStyle": "portada holográfica que cambia de color al moverse",
+          "glowFlux": "brillo iridiscente que fluye como una ola",
+          "metaShadow": "sombra en 3D que parece expandirse fuera de la página",
+          "warpGrid": "red que parece moverse como ondas en el agua",
+          "fontFlux": "tipografía que parece fluir en diferentes tamaños al tocarse",
+          "ornamentFlux": "ornamento generativo que evoluciona en cada impresión",
+          "prismPulse": "efecto prismático que se despliega en la luz",
+          "liquidType": "tipografía que se derrite como cera",
+          "crystalEdge": "bordes que refractan la luz como un cristal facetado",
+          "noiseField": "campo de ruido que parece pulsar al ritmo del corazón",
+          "echoLayers": "capas superpuestas que resonan con ecos visuales",
+          "chromaShift": "transiciones de color que sorprenden al espectador",
+          "texture": "textura que evoca un suave lienzo tocado por la luz",
+          "surprise": "una tipografía que cambia de forma y se adapta a la emoción del espectador"
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Good%20to%20great%20Jim%20Collins%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Steve Jobs",
-      "autor": " Walter Isaacson",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
-      "tagline": "La Biografía",
+      "titulo": "La Buena Vida",
+      "autor": "Robert Waldinger",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d3/8c/25/d38c2571-313b-0169-2957-927fcefe9737/9788408271536.jpg/626x0w.jpg",
+      "tagline": "El mayor estudio mundial para responder a la pregunta más importante de todas: ¿Qué nos hace felices?",
+      "dimension": "Conexión",
+      "punto": "Cero",
+      "palabras": [
+        "desesperanza",
+        "tristeza",
+        "aislamiento",
+        "desapego"
+      ],
+      "frases": [
+        "🔄 Recuerda: ¿quién en tu vida te hace sonreír? Escribe su nombre y haz un plan para conectarte.",
+        "📊 El 70% de nuestra felicidad proviene de relaciones significativas. Conéctate con 1 amigo hoy.",
+        "🌱 Realiza 5 respiraciones profundas y sonríe mientras recuerdas un momento feliz con alguien especial.",
+        "📖 Abre 'La Buena Vida' en la página 45. Lee sobre la importancia de las conexiones humanas y reflexiona."
+      ],
+      "colores": [
+        "#F1C40F",
+        "#3498DB",
+        "#9B59B6",
+        "#E67E22"
+      ],
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Conexiones auténticas determinan la felicidad  ",
+        "parrafoTop": "El estudio de Robert Waldinger revela que nuestras relaciones son clave para el bienestar. Esta verdad simple, aunque poderosa, me llevó a entender que cultivar conexiones auténticas transforma nuestra experiencia diaria.  ",
+        "subtitulo": "Fortalece lo esencial  ",
+        "parrafoBot": "Dedica 5 minutos a llamar a una persona con la que no hablas hace tiempo. Pregúntale cómo está y escucha activamente. Esto abrirá la puerta a una conexión más profunda.",
+        "style": {
+          "accent": "#d5006d",
+          "ink": "#ffffff",
+          "paper": "plano profundo con textura de satén",
+          "border": "bordes difusos como auroras",
+          "serif": "Didot",
+          "sans": "GT America",
+          "fontSizeTitle": "clamp(60px, 12vw, 180px)",
+          "fontSizeBody": "18px",
+          "fontWeight": "800",
+          "lineHeight": "1.5",
+          "letterSpacing": "+0.5em",
+          "textTransform": "capitalize",
+          "textShadow": "doble sombra difusa en tonos violetas",
+          "layout": "asymetría vibrante que guía la vista",
+          "showCover": true,
+          "coverStyle": "portada holográfica con efectos de refracción",
+          "glowFlux": "halo dinámico que cambia de color según el ángulo",
+          "metaShadow": "sombra fractal que parece moverse",
+          "warpGrid": "cuadrícula en espiral que provoca dislocación",
+          "fontFlux": "tipografía que pulsan con cada palabra",
+          "ornamentFlux": "fragmentos de mosaico digital que emergen",
+          "prismPulse": "efectos prismáticos en los bordes de texto",
+          "liquidType": "tipografía que fluye como agua en movimiento",
+          "crystalEdge": "bordes que brillan como cristales pulidos",
+          "noiseField": "grano de ruido digital que añade textura",
+          "echoLayers": "capas de texto en ecos desfasados",
+          "chromaShift": "transiciones cromáticas que oscilan inesperadamente",
+          "texture": "textura de papel de arroz con leve traslúcido",
+          "surprise": "tipografía que parece crecer al pasar la vista"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20Buena%20Vida%20Robert%20Waldinger%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
+      "autor": "David JP Phillips",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
+      "tagline": "Dopamina Oxitocina Serotonina Cortisol Endorfinas Testosterona",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "desasosiego",
+        "agobio",
+        "confusión",
+        "rencor"
+      ],
+      "frases": [
+        "⚡ Elimina: 1) Deja ir 1 carga mental, 2) Pregunta a tu cuerpo qué necesita, 3) Haz espacio en tu agenda.",
+        "📊 La dopamina impulsa la motivación. Define 1 meta hoy que te emocione y actúa ahora mismo.",
+        "🧘 Sostén tensión en tus manos 10s. Suéltala y respira. Repite 3x para liberar estrés acumulado.",
+        "📚 Abre el libro en la página 50. Lee sobre la oxitocina. Identifica cómo puedes aplicar su poder hoy."
+      ],
+      "colores": [
+        "#ff5b00",
+        "#1da9ff",
+        "#b40056",
+        "#fff600"
+      ],
+      "fondo": "#141414",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"Dopamina: la clave para la felicidad\"",
+        "parrafoTop": "David JP Phillips nos muestra que el secreto de la dopamina radica en cómo manejamos nuestras metas y recompensas.",
+        "subtitulo": "\"Desbloquea tu química cerebral\"",
+        "parrafoBot": "Identifica una meta sencilla que hayas postergado. Escribe los pasos para alcanzarla y ejecuta el primero en 5 minutos.",
+        "style": {
+          "accent": "#0bce0b",
+          "ink": "#ffffff",
+          "paper": "toque etéreo de neblina plateada",
+          "border": "contorno cristalino en ángulo fractal",
+          "serif": "Velvetica Nova",
+          "sans": "Spectral Blue",
+          "fontSizeTitle": "clamp(90px, 12vw, 200px)",
+          "fontSizeBody": "24px",
+          "fontWeight": "800",
+          "lineHeight": "1.4",
+          "letterSpacing": "+2px",
+          "textTransform": "uppercase",
+          "textShadow": "brillo espectral en sombras que flotan",
+          "layout": "asymmetrical dance of forms",
+          "showCover": true,
+          "coverStyle": "hologram reflection with liquid motion",
+          "warpGrid": "deformación ondulante que atrae la vista",
+          "glowFlux": "luminescencia variable que fluye y se desvanece",
+          "crystalEdge": "borde como prisma cortado, difracción sutil",
+          "liquidType": "tipografía que fluye con energía viscosa",
+          "ornamentFlux": "detalles pulsantes en patrones fractales",
+          "echoLayers": "capas sonoras de tipografía superpuesta",
+          "metaShadow": "sombra dimensional que se extiende hacia el vacío",
+          "chromaShift": "transformación de color que baila en el espacio",
+          "texture": "rugosidad que simula el tejido del universo",
+          "surprise": "tipografía que se transforma al tacto visual"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%206%20hormonas%20que%20van%20a%20revolucionar%20tu%20vida%20David%20JP%20Phillips%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Los Fundadores",
+      "autor": "Jimmy Soni",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/91/20/77/912077f5-6ac7-b066-8839-065e1889868d/1040091942.jpg/626x0w.jpg",
+      "tagline": "A través de cientos de entrevistas y acceso a material nunca antes compartido Jimmy Soni nos relata la historia de los primeros empleados de Paypal (Elon Musk Amy Rowe Klement Peter Thiel y Julie Anderson entre otros) considerados la red más poderosa de la industria tecnológica y fundadores de gran parte de lo que conforma nuestro mundo actual.Jimmy Soni explora los primeros días turbulentos de PayPal. Con cientos de entrevistas y acceso sin precedentes a miles de páginas de material interno muestra cómo las semillas de gran parte de lo que da forma a nuestro mundo actual (empresas emergentes digitales de rápido crecimiento las criptomonedas transferencia de dinero móvil) se plantaron hace dos décadas atrás.",
       "dimension": "Prosperidad",
       "punto": "Creativo",
       "palabras": [
-        "desasosiego",
-        "exasperación",
-        "rencor",
-        "anhelo"
+        "incertidumbre",
+        "frustración",
+        "escepticismo",
+        "desconsuelo"
       ],
       "frases": [
-        "🌱 Enfócate en una meta que te entusiasme.",
-        "✨ ¿Qué sueño parecía imposible antes de leer?",
-        "🔍 Busca una frase inspiradora en la biografía.",
-        "💡 Visualiza tu idea más innovadora y escribe un paso."
+        "🔍 Investiga: 1) ¿Qué 3 ideas valiosas surgieron de PayPal? 2) ¿Quién de tu entorno logró triunfar? 3) ¿Qué startups actuales te inspiran?",
+        "📊 El 70% de las empresas emergentes fracasaron en sus primeros 5 años. Evalúa 1 riesgo hoy para ajustarlo.",
+        "💪 Tensa tu cuerpo 6s y suelta. Repite 4x para despejar tu mente antes de una decisión importante.",
+        "📚 Abre el libro en la página 22 y lee hasta encontrar 1 estrategia que aplicarás esta semana."
       ],
       "colores": [
-        "#e74c3c",
-        "#1abc9c",
-        "#f39c12",
-        "#9b59b6"
+        "#7e57c2",
+        "#ffca28",
+        "#d50000",
+        "#00e676"
       ],
       "fondo": "#121212",
       "textColors": [
         "#FFFFFF",
         "#000000",
-        "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ],
       "tarjeta": {
-        "titulo": "\"Creatividad radical a través de la adversidad\"",
-        "parrafoTop": "Entender cómo Steve Jobs transformó el caos en innovación es clave. Walter Isaacson muestra que la dificultad puede ser un motor de creatividad si aprendemos a navegarla.",
-        "subtitulo": "\"Rompe tu zona de confort\"",
-        "parrafoBot": "Identifica un obstáculo en tu vida actual. Anota tres maneras en que podrías convertirlo en una oportunidad. Escoge una y ejecútala hoy mismo.",
+        "titulo": "\"Fundadores en acción: aprendizajes de PayPal\"",
+        "parrafoTop": "Jimmy Soni muestra cómo las interacciones de los primeros empleados de PayPal sentaron bases para el futuro tecnológico. La complejidad de crear una cultura innovadora resuena en mí.",
+        "subtitulo": "\"Desbloquea tu creatividad\"",
+        "parrafoBot": "Escribe tres maneras de mejorar un proceso en tu vida. Escoge la más pequeña y actúa en menos de cinco minutos.",
         "style": {
-          "accent": "#ff7f50",
-          "ink": "#1c1c1c",
-          "paper": "blanco puro, con un susurro de textura suave como el algodón",
-          "border": "borde irregular, simulando una ruptura en el espacio",
-          "serif": "Vidalon",
-          "sans": "Futura Pro",
-          "fontSizeTitle": "clamp(50px, 12vw, 200px)",
+          "accent": "#c4d600",
+          "ink": "#4b3f00",
+          "paper": "nieve de otoño desgastada",
+          "border": "finos bordes de acero iridiscente",
+          "serif": "Didot",
+          "sans": "Graphik",
+          "fontSizeTitle": "clamp(60px, 12vw, 180px)",
+          "fontSizeBody": "16px",
+          "fontWeight": "700",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.1em",
+          "textTransform": "capitalize",
+          "textShadow": "dos sombras desfasadas hacia la derecha",
+          "layout": "asymétrico en espiral con zonas de tensión visual",
+          "showCover": true,
+          "coverStyle": "cutout en forma de ola, revelando un fondo vibrante",
+          "glowFlux": "resplandores etéreos que emergen del texto",
+          "metaShadow": "sombras que se desplazan con la luz del observador",
+          "warpGrid": "una cuadrícula que fluye como un río serpenteante",
+          "fontFlux": "tipografía que muta de serif a sans al desplazarse",
+          "ornamentFlux": "líneas que se entrelazan como un fractal en movimiento",
+          "prismPulse": "efecto prismático que captura luz y color de manera caótica",
+          "liquidType": "tipografía que se expande y contrae en un ciclo orgánico",
+          "crystalEdge": "bordes con facetado similar a un cristal de cuarzo",
+          "noiseField": "campo de ruido visual que da vida a la superficie",
+          "echoLayers": "capas de texto que resuenan con eco en varias opacidades",
+          "chromaShift": "transiciones de color que parecen vibrar en el espectro",
+          "texture": "rugoso como papel reciclado con patrones de ruido",
+          "surprise": "tipografía que oscila entre estilos cada vez que es mirada"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Los%20Fundadores%20Jimmy%20Soni%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Diseña tu mente",
+      "autor": "Ryan A. Bush",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/33/c3/a0/33c3a0f3-6847-8210-8bb8-c49634d14c47/9788441442634.jpg/626x0w.jpg",
+      "tagline": "El proceso de la psiquitectura te permite desconectar de tu propia mente identificar los patrones subyacentes y convertirte en el arquitecto de tu propia iluminación",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "apatía",
+        "desaliento",
+        "inseguridad",
+        "temor"
+      ],
+      "frases": [
+        "🛠️ Diseña: 1) Enumera 3 patrones que repites, 2) Descompón 1 en sus partes, 3) Define 1 cambio mínimo.",
+        "📊 El 70% de nuestras decisiones son inconscientes. Identifica 1 hábito que afecta tu vida hoy.",
+        "🚶 Tensa cuerpo 10s, suelta. Luego, escribe 5 pensamientos que te limitan.",
+        "📖 Abre en página aleatoria. Lee el primer concepto que te resuene y busca aplicarlo hoy."
+      ],
+      "colores": [
+        "#43a047",
+        "#f9a825",
+        "#1565c0",
+        "#e0e0e0"
+      ],
+      "fondo": "#101010",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"Arquitectura de tu mente\"",
+        "parrafoTop": "Ryan A. Bush en \"Diseña tu mente\" te ofrece una metodología para rediseñar pensamientos. La psiquitectura descompone patrones que limitan tu conciencia. Esto es clave para avanzar en la claridad mental en momentos de transición.",
+        "subtitulo": "\"Reconstruir patrones limitantes\"",
+        "parrafoBot": "Elige un patrón de pensamiento que te detenga. Escríbelo y descompónlo en tres partes: qué sientes, qué crees y qué acciones derivan. Anota un pequeño cambio que puedas ejecutar hoy para reemplazarlo.",
+        "style": {
+          "accent": "#ff6f20",
+          "ink": "#001f3f",
+          "paper": "tela texturizada con un brillo suave",
+          "border": "marco irregular con fracturas orgánicas",
+          "serif": "Bodoni Deluxe",
+          "sans": "Klarheit",
+          "fontSizeTitle": "clamp(70px, 12vw, 200px)",
           "fontSizeBody": "18px",
-          "fontWeight": "800",
+          "fontWeight": "700",
           "lineHeight": "1.5",
           "letterSpacing": "1px",
           "textTransform": "capitalize",
-          "textShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
-          "layout": "asymmetrical chaos with a focal point in the center",
+          "textShadow": "sombra etérea que oscila en azul profundo",
+          "layout": "asímetrico con un enfoque dinámico hacia la izquierda",
           "showCover": true,
-          "coverStyle": "distorted perspective, resembling a liquid form cascading off the page",
-          "glowFlux": "un resplandor suave en la tipografía, como un eco luminoso",
-          "metaShadow": "sombra en forma de espiral, que atrae la vista hacia el título",
-          "warpGrid": "malla en movimiento, con líneas que fluyen y cambian de forma",
-          "fontFlux": "tipografía que oscila suavemente entre grosores y tamaños",
-          "ornamentFlux": "patrones generativos que se despliegan como enredaderas a lo largo del margen",
-          "prismPulse": "efecto de prisma que despliega colores del arcoíris en cada movimiento",
-          "liquidType": "tipografía que parece estar en un estado de fluidez constante",
-          "crystalEdge": "bordes cristalinos que refractan la luz de maneras inesperadas",
-          "noiseField": "un campo de ruido sutil que parece vibrar con energía visual",
-          "echoLayers": "capas que reverberan entre sí, creando profundidad",
-          "chromaShift": "una transición de colores que se desplaza entre tonos nunca antes vistos",
-          "texture": "un acabado sutil que recuerda al papel artesanal con ligeras imperfecciones",
-          "surprise": "tipografía que se expande y contrae, creando una ilusión de respiración"
+          "coverStyle": "corte en diagonal, mostrando solo parte de la imagen",
+          "glowFlux": "resplandor suave que cambia entre naranja y amarillo",
+          "metaShadow": "sombra proyectada hacia arriba que desafía la gravedad",
+          "warpGrid": "rejilla flexible que se distorsiona hacia adentro",
+          "fontFlux": "tipografía que parece cambiar de forma levemente con el movimiento",
+          "ornamentFlux": "líneas de glitch que fluyen a lo largo del borde",
+          "prismPulse": "efecto de luz prismática que cambia de ángulo",
+          "liquidType": "letras que fluyen como si estuvieran en agua",
+          "crystalEdge": "bordes facetados que brillan con matices",
+          "noiseField": "ruido sutil que genera vibraciones visuales",
+          "echoLayers": "capas superpuestas de texto que repiten el mensaje en opacidad decreciente",
+          "chromaShift": "cambio cromático que transita entre tonos cálidos y fríos",
+          "texture": "pinceladas de pintura digital que añaden profundidad",
+          "surprise": "una tipografía que parece derretirse al tacto visual"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Steve%20Jobs%20%20Walter%20Isaacson%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Dise%C3%B1a%20tu%20mente%20Ryan%20A.%20Bush%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Blitzscaling",
+      "autor": "Reid Hoffman",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e7/02/46/e70246bb-98a1-4528-0f30-5acf592d0a61/9781524761424.jpg/626x0w.jpg",
+      "tagline": "LinkedIn cofounder legendary investor and host of the award winning Masters of Scale podcast reveals the secret to starting and scaling massively valuable companies",
+      "dimension": "Prosperidad",
+      "punto": "Creativo",
+      "palabras": [
+        "ambición",
+        "anhelo",
+        "estrés",
+        "impulso"
+      ],
+      "frases": [
+        "💥 Identifica: 1) Tu visión más audaz, 2) 3 acciones para acelerarla, 3) 1 red a la que te conectarás hoy",
+        "📊 El 70% de las startups no alcanzan su objetivo. Define un pequeño milestone alcanzable hoy para salir de la inercia.",
+        "🏃 Corre 1 minuto en el lugar, luego escribe 2 ideas sobre cómo escalar tu proyecto más ambicioso.",
+        "📖 Abre el libro en la página 45. Busca el término 'escala' y escribe cómo lo aplicarás esta semana."
+      ],
+      "colores": [
+        "#ff7f50",
+        "#4682b4",
+        "#32cd32",
+        "#ffd700"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "\"El caos que impulsa el crecimiento\"",
+        "parrafoTop": "Con Blitzscaling, Reid Hoffman muestra que en el crecimiento rápido, la adaptación es clave. Aquí, la velocidad supera la perfección. ",
+        "subtitulo": "\"El camino incierto\"",
+        "parrafoBot": "Prioriza la acción. Define tu producto mínimo viable hoy y compártelo con 5 personas. Recoge feedback inmediato para ajustar tu dirección.",
+        "style": {
+          "accent": "#e94e77",
+          "ink": "#0c1a28",
+          "paper": "sutil textura de papel reciclado, suave y acogedor",
+          "border": "borde fractal con efectos holográficos que cambian con la luz",
+          "serif": "Mistral Nova",
+          "sans": "Origo",
+          "fontSizeTitle": "clamp(70px, 15vw, 200px)",
+          "fontSizeBody": "16px",
+          "fontWeight": "800",
+          "lineHeight": "1.5",
+          "letterSpacing": "+2px",
+          "textTransform": "capitalize",
+          "textShadow": "sombra etérea que parece fluir detrás del texto",
+          "layout": "asymmetrical chaos with elegant control",
+          "showCover": true,
+          "coverStyle": "cutout technique revealing a liquid background underneath",
+          "glowFlux": "suave resplandor que vibra en el horizonte de la tipografía",
+          "metaShadow": "sombra desfasada creando un efecto de profundidad dimensional",
+          "warpGrid": "cuadrícula fluida que se distorsiona según la mirada del espectador",
+          "fontFlux": "tipografía que fluctúa en tamaño sutilmente como una brisa suave",
+          "ornamentFlux": "diseños de textura generativa que evolucionan con el movimiento",
+          "prismPulse": "efecto prismático que juega con la luz, creando patrones visuales hipnóticos",
+          "liquidType": "tipografía que parece fluir como agua, conectándose entre letras",
+          "crystalEdge": "bordes facetados que reflejan diferentes tonalidades del acento",
+          "noiseField": "campo de ruido digital que acompaña la estructura visual",
+          "echoLayers": "capas de eco visual que reverberan a través del espacio",
+          "chromaShift": "cambio cromático radical que interfiere en la percepción",
+          "texture": "textura de seda suave que da la impresión de lujo tangible",
+          "surprise": "un diseño tipográfico que se descompone en letras flotantes al tacto"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Blitzscaling%20Reid%20Hoffman%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "El código del dinero",
@@ -221,1094 +1292,22 @@
       "dimension": "Prosperidad",
       "punto": "Cero",
       "palabras": [
-        "avaricia",
-        "opulencia",
-        "desequilibrio",
-        "disconformidad"
-      ],
-      "frases": [
-        "💰 Reflexiona sobre un gasto que te hizo sentir libre.",
-        "🔑 Descubre cómo pequeñas decisiones pueden transformar tu economía.",
-        "🌱 Respira hondo mientras visualizas tu futuro financiero.",
-        "📖 Abre el libro en una página aleatoria y busca una lección clave."
-      ],
-      "colores": [
-        "#ff5733",
-        "#33ff57",
-        "#3357ff",
-        "#f9ff33"
-      ],
-      "fondo": "#1f1f1f",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "[Entiende tu relación con el dinero]  ",
-        "parrafoTop": "[En \"El código del dinero\", Raimon Samsó muestra cómo la percepción de la riqueza está anclada en creencias limitantes que nos detienen.]  ",
-        "subtitulo": "[Desbloquea tu poder financiero]  ",
-        "parrafoBot": "[Escribe cinco creencias sobre el dinero que te limitan. Elige una y formula una alternativa positiva. Repite esta nueva creencia diariamente.]",
-        "style": {
-          "accent": "#7f00ff",
-          "ink": "#ffffff",
-          "paper": "tela etérea con destellos de estrellas perdidas",
-          "border": "línea holográfica ondulante",
-          "serif": "Bodoni Axiom",
-          "sans": "Flux Sans",
-          "fontSizeTitle": "clamp(60px, 20vw, 120px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.5",
-          "letterSpacing": "2px",
-          "textTransform": "uppercase",
-          "textShadow": "sombras superpuestas que vibran",
-          "layout": "asimetría poética con puntos focales sorpresivos",
-          "showCover": true,
-          "coverStyle": "portada cortada en formas irregulares que revelan un juego interno",
-          "glowFlux": "brillo pulsante en el contorno del título",
-          "metaShadow": "sombras que escapan hacia dimensiones alternativas",
-          "warpGrid": "cuadrícula que se deforma hacia el infinito",
-          "fontFlux": "tipografía que cambia de forma en cada mirada",
-          "ornamentFlux": "borde fractal que parece susurrar",
-          "prismPulse": "efecto prismático que convierte la luz en emoción",
-          "liquidType": "tipografía que flota como si estuviera en un mar etéreo",
-          "crystalEdge": "borde que refleja colores del espectro completo",
-          "noiseField": "campo de ruido suave como un canto de sirenas",
-          "echoLayers": "capas que resuenan con ecos de antiguos relatos",
-          "chromaShift": "transiciones cromáticas que parecen danzar",
-          "texture": "superficie táctil que simula el roce de un susurro",
-          "surprise": "layout que cambia de dirección inesperadamente, como un viaje en espiral"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20c%C3%B3digo%20del%20dinero%20Raimon%20Sams%C3%B3%20Queralt%C3%B3%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Spin selling",
-      "autor": "Neil Rackham",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/b7/01/37/b70137f5-1598-9f7d-2275-e5bee13d645c/9781260027099.jpg/626x0w.jpg",
-      "tagline": "the revolutionary SPIN (Situation Problem Implication Need payoff) strategy",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
-      "palabras": [
-        "dificultad",
-        "fricción",
-        "ansiedad",
-        "insatisfacción"
-      ],
-      "frases": [
-        "🔑 Descubre la esencia de tus necesidades clave.",
-        "📊 Reflexiona sobre cómo cada problema impacta tus objetivos.",
-        "💡 Asocia cada desafío a un potencial nuevo logro.",
-        "📖 Inicia un viaje al núcleo de tus prioridades."
-      ],
-      "colores": [
-        "#bfbfbf",
-        "#e4b636",
-        "#6a6f8b",
-        "#d8a21a"
-      ],
-      "fondo": "#141414",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "\"Los 4 errores fatales en ventas\"",
-        "parrafoTop": "Entender el modelo SPIN de Rackham transforma tu enfoque. Conozco las barreras que enfrentas al intentar conectar genuinamente con un cliente. ",
-        "subtitulo": "\"El juego oculto\"",
-        "parrafoBot": "Anota las preguntas que has dejado de hacer en tus interacciones de venta. Dedica 5 minutos a formularlas y hazlas en tu próxima llamada.",
-        "style": {
-          "accent": "#f00e63",
-          "ink": "#0e1a3b",
-          "paper": "neblina estelar sobre un horizonte de obsidiana",
-          "border": "sutil corte fractal en ángulo agudo",
-          "serif": "Rondel",
-          "sans": "Fluxa",
-          "fontSizeTitle": "clamp(50px, 12vw, 150px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "800",
-          "lineHeight": "1.4",
-          "letterSpacing": "0.2em",
-          "textTransform": "none",
-          "textShadow": "sombras gemelas que juegan en el vacío",
-          "layout": "Asimétrico dinámico con foco en el vacío",
-          "showCover": true,
-          "coverStyle": "distorsionada en múltiples capas holográficas",
-          "glowFlux": "halo vibrante que parece fluir como agua",
-          "metaShadow": "sombra líquida que desafía la gravedad",
-          "warpGrid": "retícula flexible que se retuerce hacia el infinito",
-          "fontFlux": "tipografía que cambia de tamaño como una ola",
-          "ornamentFlux": "dibujo orgánico que evoluciona en cada iteración",
-          "prismPulse": "efecto de luz prismática que vibra suavemente",
-          "liquidType": "tipografía que se expande y contrae como respiración",
-          "crystalEdge": "bordes facetados que capturan la luz en ángulos inesperados",
-          "noiseField": "ruido digital que susurra secretos en cada esquina",
-          "echoLayers": "capas de eco visual que resuenan en el fondo",
-          "chromaShift": "cambio de color que sugiere movimiento constante",
-          "texture": "textura de papel reciclado con acabados irregulares",
-          "surprise": "tipografía que respira, oscilando entre la normalidad y la abstracción"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Spin%20selling%20Neil%20Rackham%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Sapiens",
-      "autor": "Yuval Noah Harari",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/ae/bc/79/aebc793f-d82f-7f36-6055-fb554d6af50c/9788499924748.jpg/626x0w.jpg",
-      "tagline": "¿Hemos ganado en felicidad a medida que ha avanzado la historia? ¿Seremos capaces de liberar alguna vez nuestra conducta de la herencia del pasado? ¿Podemos hacer algo para influir en los siglos futuros?",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "angustia",
-        "desasosiego",
-        "melancolía",
-        "desconsuelo"
-      ],
-      "frases": [
-        "🌀 Reflexiona sobre un instante en tu vida que transformó tu visión.",
-        "🔍 Considera cómo tu pasado afecta tu decisión actual.",
-        "🗣 Recuerda un momento de conexión genuina que te llenó de alegría.",
-        "📚 Lee un pasaje al azar y pregúntate qué revela sobre nuestra historia."
-      ],
-      "colores": [
-        "#3b3b82",
-        "#ffcc5c",
-        "#6a2c91",
-        "#e03e31"
-      ],
-      "fondo": "#141414",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "\"Historia y felicidad: un dilema moderno\"  ",
-        "parrafoTop": "Yuval Noah Harari en \"Sapiens\" plantea que nuestra búsqueda de felicidad puede estar condicionada por nuestra historia. Cada decisión histórica ha moldeado nuestro presente y nuestras emociones.  ",
-        "subtitulo": "\"¿Qué herencia decides romper?\"  ",
-        "parrafoBot": "Haz una lista de tres comportamientos que consideras herencia de tu pasado. Escoge uno y actúa de manera opuesta hoy.",
-        "style": {
-          "accent": "#ff4f00",
-          "ink": "#ffffff",
-          "paper": "nieve suspendida en un horizonte crepuscular",
-          "border": "contornos irregulares de un arco iris fugaz",
-          "serif": "Bodoni Spectra",
-          "sans": "Futura Sublime",
-          "fontSizeTitle": "clamp(60px, 10vw, 200px)",
-          "fontSizeBody": "20px",
-          "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "1.5px",
-          "textTransform": "uppercase",
-          "textShadow": "sombras flotantes de ensueño",
-          "layout": "asímetría dinámica con tensión de contraste",
-          "showCover": true,
-          "coverStyle": "frontal holográfico que interactúa con la luz",
-          "glowFlux": "resplandores pulsantes de energía luminosa",
-          "metaShadow": "sombra que flota, desafiando la gravedad",
-          "warpGrid": "retícula fluida que se ondula como el agua",
-          "fontFlux": "tipografía que se expande y contrae",
-          "ornamentFlux": "motivos fractales en espiral emergentes",
-          "prismPulse": "destellos de color como si la luz respirara",
-          "liquidType": "texto que parece fluir como corriente",
-          "crystalEdge": "bordes facetados que refractan el entorno",
-          "noiseField": "ruido sutil que provoca una sensación de movimiento",
-          "echoLayers": "capas de texto que se repiten en eco visual",
-          "chromaShift": "cambio de color que captura el susurro de la tarde",
-          "texture": "tejido de papeles suaves con un toque digital",
-          "surprise": "tipografía que cambia de tamaño en un abrazo envolvente"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Sapiens%20Yuval%20Noah%20Harari%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Superpoderes del éxito para gente normal",
-      "autor": "Mago More",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a7/58/65/a75865d8-5636-d11c-e673-7de8d9987d2b/9788416253470.jpg/626x0w.jpg",
-      "tagline": "En este libro cuento cómo he pasado de ser un auténtico desastre en todo a mejorar mi vida ostensiblemente O como diría mi madre cómo pasé de ser un perroflauta a convertirme en un flautista de Helín",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "frustración",
-        "desesperanza",
-        "apatía",
-        "inseguridad"
-      ],
-      "frases": [
-        "🌱 Visualiza tus pequeños logros diarios.",
-        "🌈 Nombra algo que hayas mejorado en ti.",
-        "📚 Busca una frase inspiradora en el libro.",
-        "🌟 Recuerda un momento en que te sentiste orgulloso."
-      ],
-      "colores": [
-        "#b0d48c",
-        "#4e8d7f",
-        "#ff6f61",
-        "#f6b93a"
-      ],
-      "fondo": "#1f1f1f",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "\"Desastre a flautista: mi camino real\"  ",
-        "parrafoTop": "En \"Superpoderes del éxito para gente normal\", Mago More muestra cómo convertir la desesperanza en propósito. Estoy aquí para recordarte que cada error puede ser una lección vital.  ",
-        "subtitulo": "\"Una clave inesperada\"  ",
-        "parrafoBot": "Dedica un minuto a escribir un fracaso reciente. Anota una lección clara que aprendiste. Comprométete a aplicar esa lección hoy mismo.",
-        "style": {
-          "accent": "#ff3d81",
-          "ink": "#2e2a35",
-          "paper": "lámina digital con un susurro de oro antiguo",
-          "border": "bordes cortados en diagonal con efecto cristalizado",
-          "serif": "BodoniReverie",
-          "sans": "FuturaLux",
-          "fontSizeTitle": "clamp(60px, 12vw, 120px)",
-          "fontSizeBody": "20px",
-          "fontWeight": "600",
-          "lineHeight": "1.5",
-          "letterSpacing": "+0.5em",
-          "textTransform": "capitalize",
-          "textShadow": "una sombra tenue que parece flotar",
-          "layout": "asimetricidad dinámica en múltiples planos",
-          "showCover": true,
-          "coverStyle": "portada holográfica que juega con la luz",
-          "glowFlux": "destellos cromáticos que reverberan en la superficie",
-          "metaShadow": "sombras que parecen desprenderse de la página",
-          "warpGrid": "malla deformada que desafía la geometría clásica",
-          "fontFlux": "tipografía que vibra entre estados líquidos y sólidos",
-          "ornamentFlux": "elementos decorativos que cambian de forma al mirarlos",
-          "prismPulse": "efecto prismático que refracta el texto en colores imposibles",
-          "liquidType": "tipografía que parece fluir como un líquido denso",
-          "crystalEdge": "bordes afilados como cristal facetado",
-          "noiseField": "campo de ruido digital que murmura en el fondo",
-          "echoLayers": "capas tipográficas que resuenan a distintas profundidades",
-          "chromaShift": "una transformación de color que despliega una paleta alternativa",
-          "texture": "textura de papel antiguo con destellos de luz",
-          "surprise": "un layout que parece desafiar la gravedad, donde los elementos flotan"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Superpoderes%20del%20%C3%A9xito%20para%20gente%20normal%20Mago%20More%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "The creators code",
-      "autor": "Amy Wilkinson",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/9a/d3/8d/9ad38d0b-b8ba-4c4c-e374-5f6e49120be8/9781451666090.jpg/626x0w.jpg",
-      "tagline": " unlocks the six essential skills that turn small notions into big companies This landmark book is based on 200 interviews with todays leading entrepreneurs",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
-      "palabras": [
+        "culpa",
+        "miedo",
         "duda",
-        "temor",
-        "desilusión",
-        "ansiedad"
+        "irritación"
       ],
       "frases": [
-        "💡 Reflexiona sobre tu último sueño empresarial y anótalo.",
-        "📈 Nombra a tres personas que inspiran tu camino emprendedor.",
-        "🔍 Toma un momento para investigar una idea innovadora que te emocione.",
-        "📚 Los líderes empresariales reconocen patrones que muchos ignoran."
+        "🏋️ Elimina: 1) Una creencia negativa sobre el dinero, 2) Un gasto innecesario, 3) Un pensamiento limitante hoy",
+        "📊 El 70% de las personas no sabe cómo manejar su presupuesto. Evalúa el tuyo esta semana.",
+        "🌀 Tensa puños 3s, suelta. Repite 3x mientras piensas en tu relación con el dinero.",
+        "📖 Abre en página aleatoria. Lee una lección sobre finanzas. Aplica lo aprendido hoy."
       ],
       "colores": [
-        "#a98c2f",
-        "#db2f61",
-        "#5c8dce",
-        "#7f45b4"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "El poder del enfoque radical  ",
-        "parrafoTop": "Amy Wilkinson en \"The creators code\" revela que las grandes ideas nacen de una visión enfocada y de la voluntad de actuar. La conexión entre lo que soñamos y lo que hacemos empieza aquí.  ",
-        "subtitulo": "Diferenciación disruptiva  ",
-        "parrafoBot": "Identifica tu pasión más profunda y escribe tres formas de convertirla en un proyecto. Escoge la más sencilla y comprométete a avanzar en ella hoy.",
-        "style": {
-          "accent": "#d72631",
-          "ink": "#2d3038",
-          "paper": "blanco cristalino con textura de seda sutil",
-          "border": "borde fractal suave en tonos de plata",
-          "serif": "Didot",
-          "sans": "Circular",
-          "fontSizeTitle": "clamp(60px, 10vw, 120px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "0.5px",
-          "textTransform": "uppercase",
-          "textShadow": "sombra tenue azul marino con desenfoque suave",
-          "layout": "asimetía vibrante que invita a la exploración",
-          "showCover": true,
-          "coverStyle": "portada holográfica con efecto 3D dinámico",
-          "glowFlux": "resplandor pulsante en colores mutantes",
-          "metaShadow": "sombra cinética que se mueve con el texto",
-          "warpGrid": "reconfiguración del grid en ondulaciones suaves",
-          "fontFlux": "tipografía que cambia de grosor y estilo aleatoriamente",
-          "ornamentFlux": "fragmentos de geometría que fluyen hacia afuera",
-          "prismPulse": "efecto prismático que refracta luz en capas",
-          "liquidType": "tipografía que parece derretirse suavemente",
-          "crystalEdge": "bordes de texto con facetas como un cristal pulido",
-          "noiseField": "campo de ruido que respira en tonalidades de gris",
-          "echoLayers": "capas superpuestas que crean un eco visual",
-          "chromaShift": "desplazamiento de color que juega en el espectro visible",
-          "texture": "textura suave como terciopelo que envuelve el diseño",
-          "surprise": "tipografía que parece vibrar en el espacio, desafiando la gravedad"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20creators%20code%20Amy%20Wilkinson%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Wa La vía japonesa de la armonía",
-      "autor": "Laura Imai",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/83/ae/42/83ae42a9-1dd1-4dbd-3137-95d33393790d/9788403521520.jpg/626x0w.jpg",
-      "tagline": "la belleza la alegría y el civismo se construyen con grandes dosis de compromiso mediante el trabajo continuo en uno mismo ejercitando la paciencia haciendo las cosas con cuidado y nunca a expensas de otros",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "Inquietud",
-        "Cansancio",
-        "Duda",
-        "Resistencia"
-      ],
-      "frases": [
-        "🚶 Camina 10 pasos lentos antes de decidir.",
-        "❤️ Nombra en voz baja a quién ayudaste hoy.",
-        "🧠 Anota 3 palabras que resuman tu día.",
-        "✨ Abre el libro en página random, lee 1 línea."
-      ],
-      "colores": [
-        "#ff8a8a",
-        "#ffb56b",
-        "#8cabff",
-        "#d288ff"
-      ],
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "fondo": "#111111",
-      "tarjeta": {
-        "titulo": "Empieza pequeño",
-        "parrafoTop": "A veces la acción más importante es la más simple.",
-        "subtitulo": "Un paso basta",
-        "parrafoBot": "No necesitas tenerlo todo claro para empezar a moverte.",
-        "style": {}
-      }
-    },
-    {
-      "titulo": "Piensa como un monje",
-      "autor": "Jay Shetty",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/90/4a/2b/904a2ba7-af01-b470-5cdc-0d5d3d7ff87f/9788425358296.jpg/626x0w.jpg",
-      "tagline": " cómo desarrollar tu poder cambiando tu enfoque de la autoimagen a la autoestima. Piensa como un monje te libera de la hipnosis del condicionamiento social y te ayuda a convertirte en el arquitecto de tu propia vida",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "Inquietud",
-        "Cansancio",
-        "Duda",
-        "Resistencia"
-      ],
-      "frases": [
-        "🚶 Camina 10 pasos lentos antes de decidir.",
-        "❤️ Nombra en voz baja a quién ayudaste hoy.",
-        "🧠 Anota 3 palabras que resuman tu día.",
-        "✨ Abre el libro en página random, lee 1 línea."
-      ],
-      "colores": [
-        "#ff8a8a",
-        "#ffb56b",
-        "#8cabff",
-        "#d288ff"
-      ],
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "fondo": "#111111",
-      "tarjeta": {
-        "titulo": "Empieza pequeño",
-        "parrafoTop": "A veces la acción más importante es la más simple.",
-        "subtitulo": "Un paso basta",
-        "parrafoBot": "No necesitas tenerlo todo claro para empezar a moverte.",
-        "style": {}
-      }
-    },
-    {
-      "titulo": "Tu momento es ahora",
-      "autor": "Victor Hugo Manzanilla",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/626x0w.jpg",
-      "tagline": "Este libro te guiará por un proceso de tres pasos sencillos cuya aplicación garantizan que alcances tus sueños y metas El éxito es una ciencia y un arte a la vez es un arte un proceso de descubrirte a ti mismo y encontrar plenitud y significado para tu vida",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "desesperanza",
-        "aprehensión",
-        "incertidumbre",
-        "debilidad"
-      ],
-      "frases": [
-        "🌅 Respira profundamente y reconoce la luz en tu camino.",
-        "🌟 Visualiza tu sueño más grande en este instante.",
-        "⚙️ Anota tres pasos que hoy te acerquen a tus metas.",
-        "📖 Abre el libro y encuentra la primera frase que te inspire."
-      ],
-      "colores": [
-        "#4ECDC4",
-        "#FF6F61",
-        "#F9D77E",
-        "#FF9F43"
-      ],
-      "fondo": "#1F1F1F",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "\"Convirtiendo sueños en acción\"",
-        "parrafoTop": "La metodología de Victor Hugo Manzanilla en \"Tu momento es ahora\" muestra que la clave está en acciones simples y definidas. La esencia de transformar tus aspiraciones en realidades se encuentra en tomar decisiones pequeñas pero significativas.",
-        "subtitulo": "\"Pasos claros hacia tu objetivo\"",
-        "parrafoBot": "Selecciona un sueño que te apasione y anota un paso concreto que puedas dar hoy, por más pequeño que sea. Ejecútalo en los próximos 15 minutos.",
-        "style": {
-          "accent": "#00bfff",
-          "ink": "#333333",
-          "paper": "bruma digital etérea",
-          "border": "marco de fractales brillantes",
-          "serif": "Canela",
-          "sans": "NeueHaas",
-          "fontSizeTitle": "clamp(70px, 12vw, 200px)",
-          "fontSizeBody": "20px",
-          "fontWeight": "700",
-          "lineHeight": "1.5",
-          "letterSpacing": "+1px",
-          "textTransform": "capitalize",
-          "textShadow": "sombra espectral en tonos azulados",
-          "layout": "asimétrico dinámico con tensión controlada",
-          "showCover": true,
-          "coverStyle": "holograma que se despliega en capas",
-          "glowFlux": "destello suave que varía con el ángulo",
-          "metaShadow": "sombra líquida que fluye a lo largo del borde",
-          "warpGrid": "grid elástico que se expande y contrae",
-          "fontFlux": "tipografía que oscila en peso y forma",
-          "ornamentFlux": "patrón de cristales emergentes y desvanecidos",
-          "prismPulse": "efecto prismático que distorsiona la luz",
-          "liquidType": "tipografía que se siente en movimiento perpetuo",
-          "crystalEdge": "bordes iridiscentes con facetas brillantes",
-          "noiseField": "campo de ruido visual en tonos neón",
-          "echoLayers": "capas de eco tipográfico que repiten suavemente",
-          "chromaShift": "transiciones cromáticas inesperadas y fluidas",
-          "texture": "tacto suave como terciopelo digital",
-          "surprise": "tipografía que se fragmenta y recombina al leer"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Tu%20momento%20es%20ahora%20Victor%20Hugo%20Manzanilla%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "¿Envejeces o rejuveneces?",
-      "autor": "Sari Arponen",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/6c/59/bc/6c59bc67-9654-7bd6-f9ad-822e7d4e6130/9788413444130.jpg/626x0w.jpg",
-      "tagline": "Dale vida a los años y no sólo años a la vida.puedes optar por rejuvenecer mientras cumples años. Depende de tus decisiones: la longevidad saludable no es un mito sino una realidad al alcance de tu mano si conoces las herramientas adecuadas.la Dra. Sari Arponen explora los conceptos de edad salud y envejecimiento desde nuestras raíces evolutivas hasta los últimos avances en células madre o terapias génicas.Profundiza en una reflexión honesta incluso incómoda sobre cómo percibimos la muerte y nuestra humanidad.Pautas concretas y realistas para una larga vida repleta de bienestar.Para vivir mejor mañana cada decisión que tomas hoy cuenta.",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "desilusión",
-        "aflicción",
-        "malestar",
-        "desánimo"
-      ],
-      "frases": [
-        "🌱 Toma un momento para respirar profundamente y sentir tu cuerpo.",
-        "✨ Recuerda un instante en el que te sentiste vibrante y lleno de energía.",
-        "🔍 Anota una decisión que podrías tomar hoy para mejorar tu salud.",
-        "📖 Abre este libro en una página al azar y lee una línea que te inspire."
-      ],
-      "colores": [
-        "#A0C1D6",
-        "#E05D83",
-        "#C8D86A",
-        "#8A3D4D"
-      ],
-      "fondo": "#161616",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "\"Tuve un año de más de vida, ¿y tú?\"",
-        "parrafoTop": "La Dra. Sari Arponen en \"¿Envejeces o rejuveneces?\" desafía nuestra relación con la edad y el envejecimiento, proponiendo un cambio de mentalidad hacia la longevidad saludable.",
-        "subtitulo": "\"¿Estás listo para actuar?\"",
-        "parrafoBot": "Registra hoy tres decisiones simples que pueden impactar tu bienestar a largo plazo. Elige una y ejecuta en 5 minutos.",
-        "style": {
-          "accent": "#f6c90e",
-          "ink": "#232c38",
-          "paper": "página de humo vaporoso que susurra secretos",
-          "border": "borde fractal que se despliega",
-          "serif": "Garamond Illusion",
-          "sans": "Graphik Flex",
-          "fontSizeTitle": "clamp(70px, 12vw, 180px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.5",
-          "letterSpacing": "+0.5px",
-          "textTransform": "none",
-          "textShadow": "sombras de neón sutiles que giran",
-          "layout": "collage deconstructivo en capas alternas",
-          "showCover": true,
-          "coverStyle": "portada holográfica que captura la luz",
-          "glowFlux": "un resplandor líquido que envuelve la tipografía",
-          "metaShadow": "sombra holográfica que baila en el espacio",
-          "warpGrid": "una cuadrícula que se ondula como un océano",
-          "fontFlux": "tipografía que se desplaza como un pulso",
-          "ornamentFlux": "detalles pixelados que aparecen y desaparecen",
-          "prismPulse": "un efecto que transforma la luz en color",
-          "liquidType": "tipografía que parece fluir como agua",
-          "crystalEdge": "bordes facetados que reflejan la luz",
-          "noiseField": "un campo de ruido suave como una brisa",
-          "echoLayers": "capas de eco que repiten la historia",
-          "chromaShift": "un cambio cromático que evoca emociones",
-          "texture": "textura suave como terciopelo con destellos",
-          "surprise": "tipografía que respira, pulsando con vida"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+%C2%BFEnvejeces%20o%20rejuveneces%3F%20Sari%20Arponen%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Millonario en un fin de semana",
-      "autor": "Noah Kagan",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
-      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
-      "dimension": "Prosperidad",
-      "punto": "Cero",
-      "palabras": [
-        "inseguridad",
-        "frustración",
-        "ansiedad",
-        "decepción"
-      ],
-      "frases": [
-        "🔍 Identifica un paso pequeño que te emocione para iniciar tu viaje.",
-        "📈 Encuentra una oportunidad que pueda transformar tu idea en acción.",
-        "💡 Reflexiona sobre un momento en que decidiste salir de tu zona de confort.",
-        "📊 Hoy, toma nota de una idea que podría generarte ingresos."
-      ],
-      "colores": [
-        "#3B4D6B",
-        "#D6526A",
-        "#7FAAF4",
-        "#F1C232"
-      ],
-      "fondo": "#1E1E1E",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "\"Rompe la barrera del miedo\"",
-        "parrafoTop": "Noah Kagan en \"Millonario en un fin de semana\" revela cómo la procrastinación nace del temor a fallar. Este conocimiento transforma la parálisis en acción.",
-        "subtitulo": "\"Lo que nadie cuenta\"",
-        "parrafoBot": "Elige una acción que evites por miedo. Comprométete a realizarla en las próximas 24 horas. Comienza ahora, lo pequeño abre la puerta a lo grande.",
-        "style": {
-          "accent": "#f05a28",
-          "ink": "#001e3c",
-          "paper": "el fondo evoca una suave bruma en tonos cremosos",
-          "border": "contorno en cromo brillante, que captura la luz de manera inusual",
-          "serif": "Didot",
-          "sans": "Graphik",
-          "fontSizeTitle": "clamp(70px, 12vw, 200px)",
-          "fontSizeBody": "16px",
-          "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "1px",
-          "textTransform": "capitalize",
-          "textShadow": "sombra sutil de 3px en azul oscuro",
-          "layout": "asimétrico dinámico con zonas de tensión visual controlada",
-          "showCover": true,
-          "coverStyle": "corte irregular, donde el contenido parece emerger del papel",
-          "glowFlux": "resplandor cálido que parece fluir como un líquido dorado",
-          "metaShadow": "sombras que despliegan capas de profundidad inesperadas",
-          "warpGrid": "una retícula distorsionada que sugiere movimiento",
-          "fontFlux": "tipografía que juega entre la condensación y la expansión",
-          "ornamentFlux": "glitch luminoso que transita en el espacio",
-          "prismPulse": "efectos prismáticos que generan un espectro de colores inexplorados",
-          "liquidType": "tipografía que parece derretirse y fluir",
-          "crystalEdge": "bordes que se fracturan en destellos iridiscentes",
-          "noiseField": "ruido digital que evoca texturas de una realidad alterna",
-          "echoLayers": "capas de texto que se repiten en opacidades variada",
-          "chromaShift": "una transición de color que fluye como agua viva",
-          "texture": "textura de papel reciclado con sutiles marcas de historia",
-          "surprise": "layout que parece desafiar la gravedad, creando una experiencia de flotación"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Millonario%20en%20un%20fin%20de%20semana%20Noah%20Kagan%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "The Creative Act",
-      "autor": "Rick Rubin",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a3/c3/73/a3c37376-b40b-d71f-9f18-78c2f9d08831/9780593653425.d.jpg/626x0w.jpg",
-      "tagline": "From the legendary music producer a master at helping people connect with the wellsprings of their creativity comes a beautifully crafted book many years in the making that offers that same deep wisdom to all of us.I set out to write a book about what to do to make a great work of art. Instead it revealed itself to be a book on how to be.  Over the years as he has thought deeply about where creativity comes from and where it doesn’t he has learned that being an artist isn’t about your specific output it’s about your relationship to the world. Creativity has a place in everyone’s life and everyone can make that place larger. In fact there are few more important responsibilities.",
-      "dimension": "Conexión",
-      "punto": "Creativo",
-      "palabras": [
-        "desasosiego",
-        "inquietud",
-        "bajo",
-        "renuncia"
-      ],
-      "frases": [
-        "🎨 Conéctate con tus sentimientos profundos y da un paso hacia lo auténtico.",
-        "🔍 Reflexiona sobre lo que realmente te mueve en este momento.",
-        "📝 Toma un instante para escribir lo que sientes antes de crear.",
-        "📚 Descubre cómo el arte puede ser un espejo de tu ser interior."
-      ],
-      "colores": [
-        "#E27C61",
-        "#2D3A58",
-        "#FBAE34",
-        "#8E6C8B"
-      ],
-      "fondo": "#1F1F1F",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "La relación con el mundo en la creatividad  ",
-        "parrafoTop": "Rick Rubin en \"The Creative Act\" nos invita a reimaginar cómo percibimos nuestra conexión creativa. Esta relación es el núcleo de ser un artista.  ",
-        "subtitulo": "El secreto no revelado  ",
-        "parrafoBot": "Identifica una experiencia que sientas que te aleja de tu creatividad. Escríbela en una línea y, hoy, elige cambiar una parte de ella.",
-        "style": {
-          "accent": "#00ffcc",
-          "ink": "#220044",
-          "paper": "Una niebla digital que evoca profundidades abisales",
-          "border": "Un borde fracturado con efectos holográficos",
-          "serif": "Lustre",
-          "sans": "Galano Grotesque",
-          "fontSizeTitle": "clamp(70px, 10vw, 200px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "800",
-          "lineHeight": "1.4",
-          "letterSpacing": "0.5px",
-          "textTransform": "none",
-          "textShadow": "Sombra etérea con destellos de luz interna",
-          "layout": "Asimétrico dinámico, con elementos flotantes que desafían la gravedad",
-          "showCover": true,
-          "coverStyle": "Una portada distorsionada como si fuera vista bajo agua",
-          "glowFlux": "Un resplandor pulsante que parece ir y venir en la distancia",
-          "metaShadow": "Sombras que danzan a contracorriente de la luz principal",
-          "warpGrid": "Una cuadrícula fluida que se expande y contrae con el contenido",
-          "fontFlux": "Tipografía que respira, alternando en tamaños al azar",
-          "ornamentFlux": "Un ornamento de glifos inventados que susurran secretos antiguos",
-          "prismPulse": "Un pulso cromático que transforma el espectro de colores",
-          "liquidType": "Una tipografía líquida que se moldea como un río",
-          "crystalEdge": "Bordes con textura cristalina que reflejan colores inesperados",
-          "noiseField": "Un campo de ruido visual que añade un efecto de profundidad",
-          "echoLayers": "Capas de eco que se repiten a diferentes niveles de opacidad",
-          "chromaShift": "Transiciones de color que evocan un amanecer imaginario",
-          "texture": "Grain digital que emula la textura del papel antiguo",
-          "surprise": "Un layout que rompe todas las reglas convencionales pero funciona en perfecta armonía"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Creative%20Act%20Rick%20Rubin%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Recupera tu poder",
-      "autor": "Rut Nieves",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/2d/4b/762d4b59-2d7a-68b9-71b4-940ac0fffaf0/9788408265122.jpg/626x0w.jpg",
-      "tagline": " nuestra mente ha sido condicionada con creencias muy limitantes que nos han llevado a olvidar nuestras verdaderas capacidades y a desconectarnos de nuestra sabiduría interior intuición e instinto. Las herramientas que contiene Recupera tu poder te ayudarán a conectar con tu fuerza vital tu confianza interior y tu claridad para que puedas avanzar con alegría y decisión hacia la vida que de corazón deseas y mereces vivir:tu propia vida.",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "apatía",
-        "culpa",
-        "miedo",
-        "vergüenza"
-      ],
-      "frases": [
-        "✨ Respira profundo y deja ir un pensamiento que te pesa.",
-        "🌟 Recuerda un momento en que confiaste en ti mismo.",
-        "🌀 Visualiza lo que deseas y siente su energía en tu ser.",
-        "🌈 Conecta con tu respiración y deja que fluya la claridad."
-      ],
-      "colores": [
-        "#8F5BA6",
-        "#F0A3A0",
-        "#8B9F6C",
-        "#B4C75C"
-      ],
-      "fondo": "#1F1F1F",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Recuperando la conexión vital",
-        "parrafoTop": "La mente se ha llenado de limitaciones. En \"Recupera tu poder\", Rut Nieves enseña a liberar nuestra verdadera esencia. Aquí y ahora, necesitas reconocer tu fuerza interna.",
-        "subtitulo": "Redefinición radical",
-        "parrafoBot": "Escribe tres creencias limitantes que tienes sobre ti mismo. Elige una y transforma su narrativa en afirmaciones positivas. Hazlo ahora mismo.",
-        "style": {
-          "accent": "#d53a25",
-          "ink": "#ffffff",
-          "paper": "Niebla etérea que absorbe la luz",
-          "border": "Borde líquido que parece fluir",
-          "serif": "Bodoni",
-          "sans": "MetaNova",
-          "fontSizeTitle": "clamp(60px, 12vw, 150px)",
-          "fontSizeBody": "20px",
-          "fontWeight": "700",
-          "lineHeight": "1.2",
-          "letterSpacing": "0.5px",
-          "textTransform": "capitalize",
-          "textShadow": "sombras que susurran desde el fondo",
-          "layout": "Asimétrico dinámico, tensión visual en diagonal",
-          "showCover": true,
-          "coverStyle": "Holograma distorsionado que invita a tocar",
-          "warpGrid": "Rejilla que se curva hacia el infinito",
-          "metaShadow": "Sombras que contradicen la lógica de la luz",
-          "fontFlux": "Tipografía que vibra entre tamaños",
-          "liquidType": "Letras que parecen fluir como agua",
-          "chromaShift": "Colores que cambian al interactuar",
-          "echoLayers": "Capas de eco visual que reverberan",
-          "noiseField": "Campo de ruido que palpita suavemente",
-          "ornamentFlux": "Trazos de pincel que surgen de la nada",
-          "crystalEdge": "Bordes que brillan como facetas de cristal",
-          "texture": "Textura suave como un susurro",
-          "surprise": "Glitch controlado que convierte el texto en una danza de luz"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Recupera%20tu%20poder%20Rut%20Nieves%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Haz de tu vida una obra de arte",
-      "autor": "Enrique Quezadas",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/79/43/1f/79431f51-de27-c0bb-7df5-a142ad7e8d65/1042007003.jpg/626x0w.jpg",
-      "tagline": "Pasamos por un momento de transformación planetaria. Millones de personas quieren despertar su consciencia para trascender y hacer renacer la civilización y ese despertar pasa por el autodescubrimiento y la búsqueda de la virtud la paz interior y la sabiduría que se acerca más a la sencillez que a la acumulación de conocimiento.Este libro es un viaje de iluminación que nos enseña a no vivir enajenados por falsas necesidade a entender que la belleza no está en las cosas sino en la mirada del observador a sentir el amor como la energía universal que todo lo mueve.No se trata de ser mejores se trata de sentirnos mejor de encontrar el equilibrio y de armonizarnos con el tiempo. Estamos cerrando un ciclo. Dejemos que lo viejo termine de morir para que lo nuevo pueda nacer.",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "enajenación",
-        "aprehensión",
-        "desequilibrio",
-        "anhelos"
-      ],
-      "frases": [
-        "🌟 Encuentra el balance en tu ser para sentir paz en el presente.",
-        "✨ Respira profundo y recuerda la belleza que ya está en ti.",
-        "🌈 Dibuja con tu vida la obra que siempre has querido ser.",
-        "🌍 Regala tu luz, transforma lo ordinario en extraordinario."
-      ],
-      "colores": [
-        "#8C2C4A",
-        "#F3E43D",
-        "#3B594B",
-        "#C477B7"
-      ],
-      "fondo": "#1A1A1A",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "El arte de observar lo bello  ",
-        "parrafoTop": "En \"Haz de tu vida una obra de arte\", Enrique Quezadas invita a reprogramar nuestra mirada hacia el mundo. Al entender que la belleza reside en el observador, encuentro la clave para transformar la percepción de nuestra realidad.  ",
-        "subtitulo": "Redefiniendo lo que importa  ",
-        "parrafoBot": "Selecciona un objeto cotidiano en tu entorno y obsérvalo durante un minuto. Escribe tres cosas que te transmitan belleza o valor, sin juzgar.",
-        "style": {
-          "accent": "#ff5c5c",
-          "ink": "#ffffff",
-          "paper": "blanco puro con textura suave como un susurro de luna",
-          "border": "borde fractal de líneas temblorosas",
-          "serif": "Bodoni Neue",
-          "sans": "Circular Std",
-          "fontSizeTitle": "clamp(60px, 12vw, 120px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "+1px",
-          "textTransform": "capitalize",
-          "textShadow": "sombra tenue de 3px en color azul nocturno",
-          "layout": "Asimétrico dinámico con peso visual en diagonal",
-          "showCover": true,
-          "coverStyle": "Portada holográfica que refleja el entorno",
-          "glowFlux": "destellos que emergen como destellos estelares",
-          "metaShadow": "sombras que se multiplican como ecos en un abismo",
-          "warpGrid": "malla retorcida que respira con la información",
-          "fontFlux": "tipografía que varía entre la calma y el caos",
-          "ornamentFlux": "recuadro en zig-zag que emerge del fondo",
-          "prismPulse": "efecto prisma que dispersa la luz en patrones caleidoscópicos",
-          "liquidType": "tipografía que se contorsiona como si estuviera sumergida",
-          "crystalEdge": "bordes nítidos con reflejos facetados de cristal",
-          "noiseField": "campo de ruido visual como si fuera una interferencia",
-          "echoLayers": "capas superpuestas que resuenan en armonía disonante",
-          "chromaShift": "transiciones de color que desafían la lógica",
-          "texture": "textura de lienzo crudo con un matiz luminoso",
-          "surprise": "Tipografía que se derrite y vuelve a formar en tiempo real"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Haz%20de%20tu%20vida%20una%20obra%20de%20arte%20Enrique%20Quezadas%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Relentless",
-      "autor": "Tim S. Grover",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/58/eb/7e/58eb7e2f-81fe-32a5-95d5-ee6728a5d7e9/9781476714219.jpg/626x0w.jpg",
-      "tagline": "From good to great to unstoppable",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "desasosiego",
-        "impotencia",
-        "frustración",
-        "indefensión"
-      ],
-      "frases": [
-        "💪 Recuerda un obstáculo que superaste y respira hondo.",
-        "🚀 Reflexiona sobre un momento en el que te sentiste imparable.",
-        "🧘 Haz una pausa y visualiza tu próximo gran logro.",
-        "📖 Abre el libro y encuentra una frase que te inspire a avanzar."
-      ],
-      "colores": [
-        "#F5A623",
-        "#D0021B",
-        "#4A90E2",
-        "#7ED321"
-      ],
-      "fondo": "#1F1F1F",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "El instinto de lo imparable  ",
-        "parrafoTop": "En \"Relentless\", Tim S. Grover habla sobre ese instinto que separa a los buenos de los imparables. Al enfrentar mis limitaciones, he descubierto que este camino requiere una dedicación feroz.  ",
-        "subtitulo": "Sálvate a ti mismo  ",
-        "parrafoBot": "Anota un desafío que sientes que no puedes superar. Dedica 5 minutos a descomponerlo en pasos simples y comienza a ejecutarlos uno por uno.",
-        "style": {
-          "accent": "#5e4c89",
-          "ink": "#f5e4e0",
-          "paper": "cremoso, como un amanecer nebuloso",
-          "border": "trazo irregular en oro líquido",
-          "serif": "Didot",
-          "sans": "Circe",
-          "fontSizeTitle": "clamp(70px, 10vw, 150px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.5",
-          "letterSpacing": "1px",
-          "textTransform": "capitalize",
-          "textShadow": "sombra flotante suave",
-          "layout": "collage deconstructivo, equilibrio dinámico",
-          "showCover": true,
-          "coverStyle": "hologramático con reflejos iridiscentes",
-          "glowFlux": "resplandor etéreo pulsante",
-          "metaShadow": "sombra en múltiples direcciones, confusa",
-          "warpGrid": "cuadrícula distorsionada en espiral",
-          "fontFlux": "tipografía oscilante con sutilezas",
-          "ornamentFlux": "elemento inventado en el momento, vibrante",
-          "prismPulse": "efecto prisma con reflejos dispersos",
-          "liquidType": "tipografía que parece fluir y cambiar",
-          "crystalEdge": "bordes facetados que capturan la luz",
-          "noiseField": "campo de ruido orgánico, suave y cálido",
-          "echoLayers": "capas de eco tipográfico resonante",
-          "chromaShift": "transiciones de color inesperadas",
-          "texture": "textura de papel vintage desgastado",
-          "surprise": "tipografía que respira, cambios de peso en tiempo real"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Relentless%20Tim%20S.%20Grover%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Extreme ownership",
-      "autor": "Jocko Willink",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/af/2b/a9/af2ba9d3-b21f-ed60-16f2-a4fe2a4501b7/9781250184726.jpg/626x0w.jpg",
-      "tagline": "demonstrate how to apply powerful leadership principles from the battlefield to business and life",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
-      "palabras": [
-        "culpa",
-        "miedo",
-        "envidia",
-        "desamparo"
-      ],
-      "frases": [
-        "💪 Refuerza tu disciplina con una pequeña tarea hoy.",
-        "🚀 Reflexiona sobre una lección de liderazgo que has aplicado.",
-        "🔥 Realiza una respiración profunda y decide asumir un reto.",
-        "📖 Explora una página de tu libro favorito sobre liderazgo."
-      ],
-      "colores": [
-        "#B77D2B",
-        "#1E3F73",
-        "#5C3D88",
-        "#C75724"
-      ],
-      "fondo": "#161616",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Propiedad total sobre tu vida  ",
-        "parrafoTop": "En \"Extreme Ownership\", Jocko Willink muestra que el liderazgo se fundamenta en asumir responsabilidad plena. En este instante, este principio puede ser la claridad que necesitas.  ",
-        "subtitulo": "La clave para avanzar  ",
-        "parrafoBot": "Identifica una situación donde sientes que no tienes control. Anota cómo podrías asumir la responsabilidad total y escribe un plan de acción concreto para corregirlo hoy.",
-        "style": {
-          "accent": "#ff3d00",
-          "ink": "#000000",
-          "paper": "luz blanca radiante como el comienzo del día",
-          "border": "bordes suaves que se disuelven en el fondo",
-          "serif": "Didot",
-          "sans": "GT America",
-          "fontSizeTitle": "clamp(70px, 10vw, 150px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.4",
-          "letterSpacing": "+1px",
-          "textTransform": "capitalize",
-          "textShadow": "sombra difusa de 4px con brillo en la esquina superior izquierda",
-          "layout": "asymétrico dinámico con tensión visual",
-          "showCover": true,
-          "coverStyle": "cubierta holográfica con efecto espejo",
-          "glowFlux": "aura suave que brilla al tacto",
-          "metaShadow": "sombra inversa que escapa del objeto",
-          "warpGrid": "rejilla distorsionada con ángulos imposibles",
-          "fontFlux": "tipografía que respira en tamaños variados",
-          "ornamentFlux": "patrón de líneas de glitch que vibran",
-          "prismPulse": "efecto prismático que despliega colores ocultos",
-          "liquidType": "tipografía que parece fluir como agua",
-          "crystalEdge": "bordes facetados que refractan la luz",
-          "noiseField": "campo de ruido digital que da textura",
-          "echoLayers": "capas de eco tipográfico que resuenan",
-          "chromaShift": "desplazamiento cromático que confunde los sentidos",
-          "texture": "textura de papel antiguo con patrones de cristal",
-          "surprise": "layout que rompe las reglas tradicionales pero fluye en armonía"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Extreme%20ownership%20Jocko%20Willink%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Sé tu propio CEO",
-      "autor": " Leo Piccioli",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/2c/a4/46/2ca446ef-d5ed-5fa1-309b-410c72c6a93b/1045450739.jpg/626x0w.jpg",
-      "tagline": "Hay dos formas de verlo son rebeldes si la empresa quiere aferrarse al pasado. Son líderes si entiende que debe cambiar",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
-      "palabras": [
-        "rebeldía",
-        "desilusión",
-        "inquietud",
-        "estrés"
-      ],
-      "frases": [
-        "🚀 Despliega tu curiosidad y busca nuevas maneras de liderar.",
-        "🔥 Piensa en un cambio que siempre quisiste hacer y anótalo.",
-        "🌱 Practica una pequeña acción diaria que te acerque a ser tu propio líder.",
-        "🌍 Recuerda a alguien que influyó en tu vida positivamente."
-      ],
-      "colores": [
-        "#4F00C0",
-        "#D45A9C",
-        "#F7D4D0",
-        "#1F8C2E"
-      ],
-      "fondo": "#141414",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "\"Ser el cambio en tu empresa\"  ",
-        "parrafoTop": "Con Leo Piccioli, entiendo que nuestra mayor resistencia es aceptar el cambio. Este es el momento de reconocerlo.  ",
-        "subtitulo": "\"Lo que bloquea tu avance\"  ",
-        "parrafoBot": "Anota tres creencias limitantes que impiden tu crecimiento. Escoge la más sencilla y replantea cómo podrías transformarla en una oportunidad.",
-        "style": {
-          "accent": "#5c7a94",
-          "ink": "#f5f2e8",
-          "paper": "una niebla suave y susurrante, que abraza cada elemento",
-          "border": "línea fragmentada de cromo líquido, creando un efecto etéreo",
-          "serif": "Didot",
-          "sans": "Suisse Int'l",
-          "fontSizeTitle": "clamp(50px, 10vw, 120px)",
-          "fontSizeBody": "18px",
-          "fontWeight": "700",
-          "lineHeight": "1.5",
-          "letterSpacing": "0.05em",
-          "textTransform": "capitalize",
-          "textShadow": "sombra sutil, desvaneciéndose en el fondo",
-          "layout": "asímetrico dinámico, desafiando la gravedad visual",
-          "showCover": true,
-          "coverStyle": "cubierta holográfica que danza con la luz, revelando formas ocultas",
-          "glowFlux": "resplandores pulsantes de un azul profundo, imitando auroras",
-          "metaShadow": "sombras que se desplazan en direcciones contradictorias",
-          "warpGrid": "rejilla que fluye, desvaneciéndose en puntos de luz",
-          "fontFlux": "tipografía que se expande y contrae en un susurro",
-          "ornamentFlux": "decoración generativa que se transforma con cada mirada",
-          "prismPulse": "reflejos prismáticos que explotan en colores inesperados",
-          "liquidType": "tipografía que parece fluir, como tinta en agua",
-          "crystalEdge": "bordes facetados, refractando la luz en ángulos imposibles",
-          "noiseField": "campo de ruido suave, como una brisa en la noche",
-          "echoLayers": "capas de texto que resuenan en el fondo, como ecos del pasado",
-          "chromaShift": "transiciones cromáticas que desafían la percepción normal",
-          "texture": "una superficie que se siente viva, como un tejido entrelazado",
-          "surprise": "un layout que se descompone en fragmentos flotantes, pero sorprendentemente armoniosos"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+S%C3%A9%20tu%20propio%20CEO%20%20Leo%20Piccioli%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Aprende a silenciar la mente",
-      "autor": "Osho",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/b5/43/2d/b5432d2d-4969-52f4-da15-e0c2834d4525/9786073821896.jpg/626x0w.jpg",
-      "tagline": "La meditación es el único interruptor que puede silenciar la mente. Sin necesidad de hacer exóticos rituales sino a través de la comprensión la observación y un sano sentido del humor la meditación te ayudará a alcanzar el bienestar.",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "confusión",
-        "agobio",
-        "tensión",
-        "fuga"
-      ],
-      "frases": [
-        "🌬️ Respira hondo mientras observas tu entorno.",
-        "💡 Recuerda un momento divertido y sonríe.",
-        "🧘 Siente tu respiración; simplemente sé.",
-        "📚 Abre el libro y busca una línea que te inspire."
-      ],
-      "colores": [
-        "#A44A76",
-        "#3C8C85",
-        "#5D4F9B",
-        "#F29C54"
+        "#e65100",
+        "#388e3c",
+        "#f44336",
+        "#00bcd4"
       ],
       "fondo": "#121212",
       "textColors": [
@@ -1318,43 +1317,43 @@
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "\"Silencio interior sin rituales\"  ",
-        "parrafoTop": "Osho, en \"Aprende a silenciar la mente\", plantea que la verdadera meditación nace de la observación y el humor, no de prácticas complicadas. Este enfoque transforma el caos mental en claridad.  ",
-        "subtitulo": "\"Desbloquea tu mente ahora\"  ",
-        "parrafoBot": "Detén lo que haces. Toma tres respiraciones profundas y observa tus pensamientos como si fueran nubes pasando. Reconoce que son solo eso, nubes. Hazlo por un minuto.",
+        "titulo": "\"Desbloquea tu libertad económica\"",
+        "parrafoTop": "Raimon Samsó en \"El código del dinero\" muestra que la verdadera riqueza va más allá de ganar dinero. Entender cómo fluye el dinero en tu vida es esencial.",
+        "subtitulo": "\"Más allá del trabajo duro\"",
+        "parrafoBot": "Identifica un gasto recurrente que puedes eliminar esta semana. Hazlo inmediatamente y canaliza esos fondos hacia un ahorro.",
         "style": {
-          "accent": "#0f4c75",
-          "ink": "#f7f9fc",
-          "paper": "textura suave como un susurro al viento",
-          "border": "borde de cristal fractal en 3D",
-          "serif": "Bodoni",
-          "sans": "Graphik",
-          "fontSizeTitle": "clamp(60px, 10vw, 180px)",
-          "fontSizeBody": "16px",
-          "fontWeight": "800",
+          "accent": "#4e1f7d",
+          "ink": "#f0f0f0",
+          "paper": "tela etérea que susurra historias pasadas",
+          "border": "bordes fractales que brillan sutilmente",
+          "serif": "Riven Gothic",
+          "sans": "Neo-Sansure",
+          "fontSizeTitle": "clamp(70px, 10vw, 220px)",
+          "fontSizeBody": "20px",
+          "fontWeight": "700",
           "lineHeight": "1.5",
-          "letterSpacing": "+1.5px",
-          "textTransform": "uppercase",
-          "textShadow": "sombra suave que se desliza hacia abajo",
-          "layout": "asímetrico dinámico con tensión controlada",
+          "letterSpacing": "1.5px",
+          "textTransform": "capitalize",
+          "textShadow": "sombras desvanecidas que danzan",
+          "layout": "asímetrico que atrae la mirada",
           "showCover": true,
-          "coverStyle": "portada holográfica con efecto de movimiento",
-          "glowFlux": "destello suave que irradia desde el centro",
-          "metaShadow": "sombra en la que flotan fragmentos de luz",
-          "warpGrid": "malla que fluye como agua",
-          "fontFlux": "tipografía que se estira y encoge",
-          "ornamentFlux": "textura digital como una red de sueños",
-          "prismPulse": "efecto de prisma que cambia con la luz",
-          "liquidType": "tipografía que parece fluir y cambiar",
-          "crystalEdge": "bordes nítidos con destellos de luz",
-          "noiseField": "campo de ruido suave que añade profundidad",
-          "echoLayers": "capas que reverberan en el espacio",
-          "chromaShift": "cambio de color que danza en el espectro",
-          "texture": "textura de papel antiguo con un toque digital",
-          "surprise": "tipografía que oscila en forma, nunca está quieta"
+          "coverStyle": "cubierta holográfica que cambia de forma según el ángulo",
+          "glowFlux": "resplandores pulsantes en tonos violetas",
+          "metaShadow": "sombra de cristal que revela lo oculto",
+          "warpGrid": "cuadrículas que fluyen como ríos",
+          "fontFlux": "tipografía que se adapta al estado de ánimo",
+          "ornamentFlux": "patrones que emergen de la nada",
+          "prismPulse": "efectos prismáticos que vibran suavemente",
+          "liquidType": "tipografía que parece derretirse en el espacio",
+          "crystalEdge": "bordes que brillan con un resplandor interno",
+          "noiseField": "ruido armónico que envuelve la composición",
+          "echoLayers": "capas que resuenan como un eco lejano",
+          "chromaShift": "transiciones de color que parecen escapar a la lógica",
+          "texture": "textura rugosa como un lienzo en blanco",
+          "surprise": "tipografía que se transforma en símbolos antiguos"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Aprende%20a%20silenciar%20la%20mente%20Osho%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20c%C3%B3digo%20del%20dinero%20Raimon%20Sams%C3%B3%20Queralt%C3%B3%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
