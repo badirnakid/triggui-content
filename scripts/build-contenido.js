@@ -46,14 +46,15 @@ const KEY = process.env.OPENAI_KEY;
 if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
-  model: "gpt-4o-mini",         // 🤖 Modelo
-  temp: 1.3,                     // 🌡️  Creatividad (0.1-2.0)
+  model: "gpt-4o-mini",         // 🤖 Modelo (cambiar a "gpt-4o" si persiste)
+  temp: 1.1,                     // 🌡️  Creatividad (BAJADO de 1.3 a 1.1)
   top_p: 0.95,                   // 🎲 Diversidad
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Input
   out: "contenido.json",         // 💾 Output
-  max: 5                         // 📚 Cantidad a procesar
+  max: 5,                        // 📚 Cantidad a procesar
+  delay: 1500                    // ⏱️  Delay entre libros (ms) - NUEVO
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -91,6 +92,9 @@ const utils = {
 
 // 📊 Estado de sesión (anti-repetición)
 const state = { palabras: new Set(), colores: new Set() };
+
+// ⏱️  Función de delay para evitar rate limit
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 /* ═══════════════════════════════════════════════════════════════
    🕐 CRONOBIOLOGÍA
@@ -196,16 +200,23 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS EN LA ESCALA! Hawkins 20-75, específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo, deseo bajo), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: súper específica al libro, poco común, emoción sentida
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción o aportación CONCRETA con contexto
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa hawkins, súper específica al libro, emoción sentida ANTES de leer
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción o aportación CONCRETA con contexto que ELEVA 1 nivel desde esa emoción baja
 ✅ Cada color: imposible confundir con paletas anteriores, increíbles a la pupila
+
+MAPA HAWKINS BAJO (USA ESTE RANGO):
+20  → Vergüenza (humillación, deshonra, autorechazo)
+30  → Culpa (remordimiento, autoacusación, arrepentimiento)
+50  → Apatía (desesperanza, indiferencia, desconexión)
+75  → Duelo (pesar, melancolía, pérdida)
+100 → Miedo (ansiedad, preocupación, alarma)
 
 SOLO JSON.`,
 
@@ -223,9 +234,9 @@ SOLO JSON.`,
 Escribe contenido editorial:
 
 TÍTULO (≤50 chars): Concepto único del libro
-PÁRRAFO 1 (≤130 chars): Insight específico del libro + autor en 1ra persona
+PÁRRAFO 1 (≤120 chars): Insight específico del libro + autor en 1ra persona
 SUBTÍTULO (≤48 chars): Bisagra provocadora
-PÁRRAFO 2 (≤130 chars): Acción o aportación con contexto específica derivada del libro (15-60 seg)
+PÁRRAFO 2 (≤120 chars): Acción o aportación con contexto específica derivada del libro (15-60 seg)
 
 TONO: Sobrio, directo, humano, sin adornos, utilidad inmediata
 
@@ -248,7 +259,7 @@ Devuelve SOLO entre @@BODY y @@ENDBODY:
        - Ajustar nivel de experimentación
     ───────────────────────────────────────────────────────── */
     estilo: base + `
-Diseña tarjeta imposible de confundir:
+Diseña tarjeta que sea legible absolutamente todo su contenido, imposible de confundir:
 
 JSON con 15-28 claves:
 - Conocidas: accent, ink, paper, border, serif, sans, mono, display
@@ -318,13 +329,17 @@ async function call(openai, sys, usr, forceJSON = false) {
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(libro, openai, c) {
-  try {
-    /* ─────────────────────────────────────────────────────────
-       PASO 1: GENERACIÓN PRINCIPAL
-    ───────────────────────────────────────────────────────── */
-    const p = prompt(libro, "main", c);
-    let raw = await call(openai, p, "Genera JSON ahora", true);
-    let extra = JSON.parse(raw);
+  const MAX_REINTENTOS = 2; // Máximo 2 reintentos adicionales
+  let intento = 0;
+  
+  while (intento <= MAX_REINTENTOS) {
+    try {
+      /* ─────────────────────────────────────────────────────────
+         PASO 1: GENERACIÓN PRINCIPAL
+      ───────────────────────────────────────────────────────── */
+      const p = prompt(libro, "main", c);
+      let raw = await call(openai, p, "Genera JSON ahora", true);
+      let extra = JSON.parse(raw);
 
     /* ─────────────────────────────────────────────────────────
        PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
@@ -504,6 +519,11 @@ for (const libro of pick) {
   i++;
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
   libros.push(await enrich(libro, openai, c));
+  
+  // ⏱️  Delay para evitar rate limit (excepto en el último libro)
+  if (i < pick.length) {
+    await sleep(CFG.delay);
+  }
   
   // Reset cada 5
   if (i % 5 === 0) {
