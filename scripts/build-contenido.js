@@ -250,6 +250,15 @@ Tu tarea es:
 
 ## GENERACIÓN DE PALABRAS
 
+### Semillas Únicas de Variación (Palabras)
+Para asegurar emociones irrepetibles y evitar patrones:
+
+- PalabraSeed1 → ${crypto.randomUUID()}
+- PalabraSeed2 → ${crypto.randomUUID()}
+- PalabraSeed3 → ${crypto.randomUUID()}
+- PalabraSeed4 → ${crypto.randomUUID()}
+
+
 ### Naturaleza
 Responden a la pregunta: **"¿Qué sientes ahora?"**
 
@@ -543,6 +552,15 @@ No más "respira profundo".
 
 ### Naturaleza
 Paleta visual única, memorable, imposible de confundir con otra.
+
+### Semillas Únicas de Variación (Colores)
+Estas semillas deben influir silenciosamente en la generación cromática:
+
+- ColorSeedA → ${crypto.randomUUID()}
+- ColorSeedB → ${crypto.randomUUID()}
+- ColorSeedC → ${crypto.randomUUID()}
+- ColorSeedD → ${crypto.randomUUID()}
+
 
 ### Metodología Suprema
 
