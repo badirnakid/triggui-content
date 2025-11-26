@@ -364,10 +364,6 @@ ANTES de escribir cada frase:
 - Número específico (no "varias veces", sino "3x" o "7 respiraciones")
 - Conexión con concepto del libro (aunque sea sutil)
 
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "🏃 Corre 90 segundos sin parar, luego decide" (inspirado en Switch de Chip Heath - momento de cambio)
-- "💪 Tensiona puños 5s, suelta. Repite 3x antes de responder" (inspirado en carga emocional)
-- "🧘 7 respiraciones: inhala 4, retén 7, exhala 8" (box breathing específico)
 
 ---
 
@@ -386,10 +382,6 @@ ANTES de escribir cada frase:
 - Especificidad (no "alguien", sino "la persona que...", "el momento cuando...")
 - Conexión con concepto del libro
 
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "❤️ Envía 1 mensaje: 'Gracias por [razón específica]' sin esperar respuesta" (dar sin expectativa)
-- "🤝 Recuerda: ¿quién confió en ti cuando dudabas? Di su nombre en voz alta" (gratitud concreta)
-- "💬 Pregúntate: ¿qué diría alguien que me ama sobre esto?" (perspectiva externa)
 
 ---
 
@@ -408,10 +400,6 @@ ANTES de escribir cada frase:
 - Estructura específica (no "piensa", sino "escribe 3", "elige 1 de 5", "elimina 2")
 - Conexión con metodología del libro
 
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "🧠 Escribe: ¿Qué es lo ÚNICO que moveré hoy? Elimina todo lo demás" (Esencialismo - Greg McKeown)
-- "✍️ Anota 3 opciones. Tacha 2. Ejecuta la que queda en 5 min" (Decisión por eliminación)
-- "📝 Pregunta: ¿Esto importará en 5 años? Si NO, suéltalo ahora" (Perspectiva temporal)
 
 ---
 
@@ -430,10 +418,6 @@ ANTES de escribir cada frase:
 - Especificidad (no "lee algo", sino "abre en cap. X", "busca la palabra Y")
 - Debe despertar curiosidad por leer el libro completo
 
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "📖 Abre en página random. Lee hasta encontrar 1 palabra que te incomode. Aplícala hoy" (Shadow work)
-- "🔖 Busca en índice: 'miedo'. Ve a esa página. Lee 1 párrafo en voz alta" (Confrontación directa)
-- "📚 Sostén el libro 30s. Pregunta: ¿Qué evito que este libro me dice?" (Diálogo interno)
 
 ---
 
@@ -458,12 +442,12 @@ De las 4 frases, **EXACTAMENTE**:
 
 **1 FRASE = Micro-lista de 3 accionables** (elegir al azar cuál):
 - Formato: "🎯 Verbo: 1) acción breve, 2) acción breve, 3) acción breve"
-- Ejemplo estructura: "🎯 Simplifica: 1) Elimina 1 tarea, 2) Di NO a 1 pedido, 3) Cierra 1 tab"
+
 - **Debe derivar de concepto del libro**
 
 **1 FRASE = Dato fascinante del libro** (elegir al azar cuál):
 - Formato: "📊 [Dato sorprendente + micro-acción derivada]"
-- Ejemplo estructura: "📊 El 80% de resultados viene del 20%. Identifica tu 20% hoy"
+
 - **Debe ser FACT específico del libro + aplicación inmediata**
 
 **2 FRASES = Protocolos puros** (centros de energía restantes):
