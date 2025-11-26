@@ -1,3 +1,4 @@
+// FORCE-RUN: 2025-01-25 19:00
 /* ═══════════════════════════════════════════════════════════════
    TRIGGUI · BUILD-CONTENIDO.JS - VERSIÓN DEFINITIVA v5.0
    
