@@ -248,7 +248,7 @@ Escribe contenido editorial:
 TÍTULO (≤50 chars): Concepto único del libro
 PÁRRAFO 1 (≤130 chars): Insight específico del libro + autor en 1ra persona
 SUBTÍTULO (≤48 chars): Bisagra provocadora
-PÁRRAFO 2 (≤130 chars): Acción específica derivada del libro (15-60 seg)
+PÁRRAFO 2 (≤130 chars): Acción o aportación con contexto específica derivada del libro (15-60 seg)
 
 TONO: Sobrio, directo, humano, sin adornos, utilidad inmediata
 
