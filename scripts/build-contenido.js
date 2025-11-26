@@ -1,23 +1,27 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v7.1 ULTRA - FUSIÓN PERFECTA (VERSIÓN EXPLICADA CON MANZANITAS)
+   TRIGGUI v7.2 GOD MODE - CÓDIGO DEFINITIVO
    
-   ¿QUÉ HACE ESTE CÓDIGO?
-   Toma libros de un CSV y genera contenido enriquecido:
-   - 4 palabras emocionales (del Mapa de Hawkins)
-   - 4 frases de acción (micro-protocolos)
-   - Paleta de 4 colores + fondo
-   - Tarjeta editorial (título, párrafos, estilo visual)
+   ¿QUÉ HACE?
+   Genera contenido enriquecido para libros:
+   - 4 palabras emocionales (Mapa Hawkins 20-200)
+   - 4 frases de acción únicas (micro-protocolos)
+   - Paleta cromática imposible de confundir
+   - Tarjeta editorial (título, insights, call-to-action)
+   - Diseño visual experimental
    
-   ¿CÓMO FUNCIONA?
-   1. Lee CSV con libros
-   2. Por cada libro, llama a OpenAI con prompts inteligentes
-   3. Valida que no repita palabras/colores
-   4. Guarda todo en contenido.json
+   INNOVACIONES v7.2:
+   ✅ Validación doble anti-"default"
+   ✅ Reintento automático si respuesta incompleta
+   ✅ JSON nativo garantizado (response_format)
+   ✅ Anti-repetición con memoria de sesión
+   ✅ Fallback robusto
+   ✅ Cronobiología silenciosa
    
-   ¿DÓNDE MODIFICAR?
-   - Línea 35-42: Ajustar configuración (modelo, temperatura, cantidad)
-   - Línea 127-198: Prompts (aquí está la MAGIA)
-   - Línea 222-289: Lógica de enriquecimiento (el pipeline)
+   CÓMO ITERAR:
+   1. Modifica prompts (línea 175-260)
+   2. Ejecuta: node build-contenido-v7.2-GOD.js
+   3. Revisa contenido.json
+   4. Ajusta y repite
    
    Badir Nakid | Nov 2025
 ═══════════════════════════════════════════════════════════════════════════════ */
@@ -28,66 +32,56 @@ import OpenAI from "openai";
 import crypto from "node:crypto";
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 1: CONFIGURACIÓN
+   ⚙️  CONFIGURACIÓN GLOBAL
    
-   Aquí defines TODO lo que quieras cambiar sin tocar código.
+   Aquí ajustas TODO sin tocar código interno.
    
-   ¿QUIERES EXPERIMENTAR?
-   - Sube temp a 1.5 para más locura
-   - Baja a 0.8 para más coherencia
-   - Cambia max a 50 para procesar más libros
+   PARÁMETROS CLAVE:
+   - temp: Creatividad (0.7=coherente, 1.5=salvaje)
+   - max: Cantidad de libros a procesar
+   - presence/frequency: Anti-repetición de OpenAI
 ═══════════════════════════════════════════════════════════════ */
 
 const KEY = process.env.OPENAI_KEY;
 if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
-  model: "gpt-4o-mini",        // 🤖 Modelo de OpenAI
-  temp: 1.3,                    // 🌡️  Creatividad (0.1=robótico, 2.0=caótico)
-  top_p: 0.95,                  // 🎲 Diversidad de palabras
-  presence: 0.7,                // 🚫 Penaliza repetir temas
-  frequency: 0.4,               // 🔁 Penaliza repetir palabras exactas
-  csv: "data/libros_master.csv", // 📁 Archivo de entrada
-  out: "contenido.json",        // 💾 Archivo de salida
-  max: 5                        // 📚 Cantidad de libros a procesar
+  model: "gpt-4o-mini",         // 🤖 Modelo
+  temp: 1.3,                     // 🌡️  Creatividad (0.1-2.0)
+  top_p: 0.95,                   // 🎲 Diversidad
+  presence: 0.7,                 // 🚫 Penaliza repetir temas
+  frequency: 0.4,                // 🔁 Penaliza repetir palabras
+  csv: "data/libros_master.csv", // 📁 Input
+  out: "contenido.json",         // 💾 Output
+  max: 5                         // 📚 Cantidad a procesar
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 2: UTILIDADES (NAMESPACE)
+   🛠️  UTILIDADES (NAMESPACE)
    
-   Funciones helper que usamos en varias partes.
-   Organizadas en un objeto "utils" para mantener todo limpio.
-   
-   ¿QUÉ HACE CADA UNA?
-   - lum()    → Calcula luminancia de un color
-   - txt()    → Decide si usar texto blanco o negro
-   - shuffle()→ Mezcla array aleatoriamente
-   - clean()  → Limpia markdown de respuestas de IA
+   Funciones helper organizadas en objeto único.
+   Inspirado en arquitectura de Gemini.
 ═══════════════════════════════════════════════════════════════ */
 
 const utils = {
-  // 💡 LUMINANCIA: Calcula qué tan brillante es un color
-  // Entrada: "#ff5733" → Salida: 0.45 (número entre 0 y 1)
+  // 💡 Calcula luminancia de un color (0=negro, 1=blanco)
   lum: h => {
     const [r, g, b] = h.slice(1).match(/../g).map(x => parseInt(x, 16) / 255);
     const f = v => v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
     return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
   },
 
-  // 🎨 COLOR DE TEXTO: Decide si poner texto negro o blanco
-  // Entrada: "#ff5733" → Salida: "#FFFFFF" (blanco porque el fondo es oscuro)
+  // 🎨 Decide color de texto según luminancia del fondo
   txt: h => utils.lum(h) > 0.35 ? "#000000" : "#FFFFFF",
 
-  // 🔀 SHUFFLE: Mezcla array (algoritmo Fisher-Yates)
-  // Entrada: [1,2,3,4,5] → Salida: [3,1,5,2,4] (aleatorio)
+  // 🔀 Mezcla array (Fisher-Yates)
   shuffle: arr => {
     let m = arr.length, i;
     while (m) [arr[m], arr[i]] = [arr[i = Math.floor(Math.random() * m--)], arr[m]];
     return arr;
   },
 
-  // 🧹 LIMPIEZA: Remueve markdown y texto basura
-  // Entrada: "```json\n{...}\n```" → Salida: "{...}"
+  // 🧹 Limpia markdown de respuestas
   clean: raw => raw.trim()
     .replace(/```json\s*/g, "")
     .replace(/```\s*/g, "")
@@ -95,20 +89,24 @@ const utils = {
     .replace(/[^}\]]*$/, "")
 };
 
-// 📊 ESTADO GLOBAL: Set() para evitar repeticiones en la sesión actual
+// 📊 Estado de sesión (anti-repetición)
 const state = { palabras: new Set(), colores: new Set() };
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 3: CRONOBIOLOGÍA
+   🕐 CRONOBIOLOGÍA
    
-   Detecta DÍA y HORA actual para ajustar el tono del contenido.
+   Detecta día/hora para ajustar tono del contenido.
    
-   EJEMPLO:
-   - Martes 14h → "Tensión Máxima" → Frases más intensas
-   - Jueves 10h → "DÍA DIOS" → Máxima claridad y ejecución
+   MAPA SEMANAL:
+   Lunes    → Arquitectura (80%)
+   Martes   → Tensión Máxima (40%) ⚠️
+   Miércoles→ Purga (60%)
+   Jueves   → DÍA DIOS (120%) 🔥
+   Viernes  → Cierre (90%)
+   Sábado   → Descanso (80%)
+   Domingo  → Reset (80%)
    
-   ¿DÓNDE SE USA?
-   En los prompts (línea 135) para darle contexto a la IA.
+   USO: Se inyecta silenciosamente en prompts
 ═══════════════════════════════════════════════════════════════ */
 
 function crono() {
@@ -116,7 +114,6 @@ function crono() {
   const dia = now.toLocaleDateString("es-MX", { weekday: "long" });
   const hora = now.getHours();
 
-  // 📅 MAPA DE DÍAS: Energía por día de la semana
   const dias = {
     lunes: { e: "80%", n: "Arquitectura", s: "Planificación gradual" },
     martes: { e: "40%", n: "Tensión Máxima", s: "Supervivencia emocional" },
@@ -127,7 +124,6 @@ function crono() {
     domingo: { e: "80%", n: "Reset", s: "Preparación" }
   };
 
-  // ⏰ MAPA DE HORAS: Energía por momento del día
   const horas = [
     [4, 7, "Ventana Oro", "máxima claridad mental"],
     [7, 9, "Pico Fuerza", "ejercicio intenso"],
@@ -140,7 +136,6 @@ function crono() {
     [0, 4, "Sueño", "recuperación"]
   ];
 
-  // 🔍 BUSCAR FRANJA ACTUAL
   const franja = horas.find(f => hora >= f[0] && hora < f[1]) || horas[0];
   const d = dias[dia.toLowerCase()] || dias.lunes;
 
@@ -148,22 +143,17 @@ function crono() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 4: PROMPTS (LA MAGIA ESTÁ AQUÍ 🧙‍♂️)
+   🧙‍♂️ PROMPTS (EL CEREBRO DEL SISTEMA)
    
-   Aquí defines QUÉ le dices a la IA para que genere contenido.
+   Aquí defines QUÉ le dices a la IA.
    
-   HAY 3 TIPOS DE PROMPTS:
-   1. main    → Genera palabras, frases, colores
-   2. tarjeta → Genera título, párrafos, subtítulo
-   3. estilo  → Genera JSON de diseño visual
+   3 TIPOS:
+   1. main    → Palabras, frases, colores (JSON)
+   2. tarjeta → Título, párrafos (texto)
+   3. estilo  → Diseño visual (JSON)
    
-   ¿CÓMO ITERAR?
-   1. Cambia las REGLAS (línea 162-166)
-   2. Ejecuta: node build-contenido-v7.1-ULTRA-EXPLICADO.js
-   3. Revisa contenido.json
-   4. Si no te gusta, ajusta y vuelve a ejecutar
-   
-   💡 TIP: Los prompts son el 90% de la calidad del resultado.
+   💡 CONSEJO: Los prompts son el 90% de la calidad.
+   Itera aquí para mejorar resultados.
 ═══════════════════════════════════════════════════════════════ */
 
 function prompt(libro, tipo, c) {
@@ -171,7 +161,7 @@ function prompt(libro, tipo, c) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
 
-  // 📝 BASE: Contexto compartido por todos los prompts
+  // 📝 Contexto base (compartido)
   const base = `
 Eres Triggui. Dominio absoluto de:
 - Mapa Hawkins (20-1000)
@@ -191,22 +181,14 @@ ${prohibidosC ? `🎨 PROHIBIDOS: ${prohibidosC}` : ""}
 
   const prompts = {
     /* ─────────────────────────────────────────────────────────
-       PROMPT 1: MAIN (Palabras + Frases + Colores)
+       PROMPT 1: MAIN
        
-       ¿QUÉ GENERA?
-       {
-         "dimension": "Bienestar",
-         "punto": "Cero",
-         "palabras": ["Inquietud", "Cansancio", "Duda", "Resistencia"],
-         "frases": ["🚶 Camina 10 pasos", ...],
-         "colores": ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
-         "fondo": "#111111"
-       }
+       Genera: dimension, punto, palabras, frases, colores, fondo
        
-       ¿DÓNDE MODIFICAR PARA MEJORAR?
-       - Línea 162: Cambia "bajas Hawkins 20-200" por rango específico
-       - Línea 163: Ajusta longitud de frases (60-80 chars)
-       - Línea 164: Define mejor qué es "valores RGB inusuales"
+       🎯 MODIFICAR AQUÍ PARA:
+       - Ajustar longitud de frases
+       - Cambiar rango Hawkins
+       - Definir mejor tipo de colores
     ───────────────────────────────────────────────────────── */
     main: base + `
 GENERA JSON PURO:
@@ -214,33 +196,28 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, bajas Hawkins 20-100, específicas al libro],
-  "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 80-100 chars],
+  "palabras": [4 emociones únicas, bajas Hawkins 20-75, específicas al libro],
+  "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
-REGLAS:
+REGLAS CRÍTICAS:
 ✅ Cada palabra: súper específica al libro, poco común, emoción sentida
 ✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción o aportación CONCRETA con contexto
-✅ Cada color: imposible confundir con paletas anteriores, increíbles a la pupila, apantallantes.
+✅ Cada color: imposible confundir con paletas anteriores, increíbles a la pupila
 
 SOLO JSON.`,
 
     /* ─────────────────────────────────────────────────────────
-       PROMPT 2: TARJETA (Contenido Editorial)
+       PROMPT 2: TARJETA
        
-       ¿QUÉ GENERA?
-       @@BODY
-       Conexiones que transforman realidades
-       Scott Gerber revela cómo conectar personas...
-       ¿Estás listo para construir puentes?
-       Identifica a tres personas en tu red...
-       @@ENDBODY
+       Genera: título, parrafoTop, subtitulo, parrafoBot
        
-       ¿DÓNDE MODIFICAR PARA MEJORAR?
-       - Línea 189: Ajusta límite de caracteres (≤50)
-       - Línea 192: Define mejor "acción específica"
+       🎯 MODIFICAR AQUÍ PARA:
+       - Ajustar límites de caracteres
+       - Cambiar tono editorial
+       - Definir mejor tipo de acción
     ───────────────────────────────────────────────────────── */
     tarjeta: base + `
 Escribe contenido editorial:
@@ -261,21 +238,14 @@ Devuelve SOLO entre @@BODY y @@ENDBODY:
 @@ENDBODY`,
 
     /* ─────────────────────────────────────────────────────────
-       PROMPT 3: ESTILO (Diseño Visual)
+       PROMPT 3: ESTILO
        
-       ¿QUÉ GENERA?
-       @@STYLE
-       {
-         "accent": "#FF005A",
-         "ink": "#1E1E1E",
-         "glowFlux": "#39FF14",
-         "surprise": "Efecto de nubes líquidas..."
-       }
-       @@ENDSTYLE
+       Genera: JSON de diseño visual
        
-       ¿DÓNDE MODIFICAR PARA MEJORAR?
-       - Línea 217: Define mejores claves "Conocidas"
-       - Línea 218: Ejemplifica claves "Inventadas"
+       🎯 MODIFICAR AQUÍ PARA:
+       - Cambiar cantidad de claves (15-28)
+       - Definir mejor claves inventadas
+       - Ajustar nivel de experimentación
     ───────────────────────────────────────────────────────── */
     estilo: base + `
 Diseña tarjeta imposible de confundir:
@@ -294,19 +264,13 @@ SOLO JSON entre @@STYLE y @@ENDSTYLE`
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 5: LLAMADA API
+   📞 LLAMADA API
    
    Función que habla con OpenAI.
    
-   PARÁMETROS:
-   - sys: Prompt de sistema (quién es la IA)
-   - usr: Prompt de usuario (qué debe hacer)
-   - forceJSON: Si true, OpenAI devuelve JSON garantizado
-   
-   💡 INNOVACIÓN CLAVE (De Gemini):
+   INNOVACIÓN CLAVE:
    response_format: { type: "json_object" }
-   Esto GARANTIZA que OpenAI responda con JSON válido.
-   Sin esto, a veces responde con texto + JSON.
+   → Garantiza JSON válido SIEMPRE
 ═══════════════════════════════════════════════════════════════ */
 
 async function call(openai, sys, usr, forceJSON = false) {
@@ -322,8 +286,6 @@ async function call(openai, sys, usr, forceJSON = false) {
     ]
   };
 
-  // 🎯 FORZAR JSON (Idea robada de Gemini)
-  // Si forceJSON=true, OpenAI SOLO responde con JSON válido
   if (forceJSON) {
     config.response_format = { type: "json_object" };
   }
@@ -333,43 +295,56 @@ async function call(openai, sys, usr, forceJSON = false) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 6: ENRIQUECIMIENTO (EL PIPELINE COMPLETO)
+   ⚡ ENRIQUECIMIENTO (PIPELINE COMPLETO)
    
-   Esta es la función más importante. Toma un libro y genera TODO.
+   Toma un libro y genera TODO.
    
    FLUJO (8 PASOS):
-   1. Genera JSON principal (palabras, frases, colores)
-   2. Valida si hay palabras repetidas
-   3. Registra palabras/colores usados
-   4. Garantiza 4 elementos en cada array
-   5. Calcula colores de texto (blanco/negro)
-   6. Genera tarjeta de contenido
-   7. Genera tarjeta de estilo visual
-   8. Retorna objeto completo
+   1. Genera JSON principal
+   2. Valida respuesta completa → Reintenta si falta algo
+   3. Valida anti-repetición → Reintenta si hay repetidas
+   4. Registra usados
+   5. Garantiza longitud (sin "default")
+   6. Post-procesa colores de texto
+   7. Genera tarjeta contenido
+   8. Genera tarjeta estilo
+   9. Retorna objeto completo
    
-   ¿DÓNDE ITERAR?
-   - Paso 2 (línea 242): Ajusta lógica de validación
-   - Paso 5 (línea 255): Modifica cálculo de colores
-   - Paso 8 (línea 282): Cambia estructura del objeto final
+   🛡️ PROTECCIONES:
+   - Reintento si respuesta incompleta
+   - Reintento si palabras repetidas
+   - Error si arrays vacíos → Fallback completo
+   - Try-catch global → Fallback completo
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(libro, openai, c) {
   try {
     /* ─────────────────────────────────────────────────────────
        PASO 1: GENERACIÓN PRINCIPAL
-       Llama a OpenAI con prompt "main" y forceJSON=true
     ───────────────────────────────────────────────────────── */
     const p = prompt(libro, "main", c);
     let raw = await call(openai, p, "Genera JSON ahora", true);
-    let extra = JSON.parse(raw); // Ya viene limpio (gracias a forceJSON)
+    let extra = JSON.parse(raw);
 
     /* ─────────────────────────────────────────────────────────
-       PASO 2: VALIDACIÓN ANTI-REPETICIÓN
-       Si encuentra palabras repetidas, vuelve a generar
+       PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
        
-       ¿POR QUÉ ES IMPORTANTE?
-       Sin esto, la IA tiende a usar siempre las mismas palabras:
-       "frustración", "miedo", "ansiedad"...
+       Si OpenAI responde con campos vacíos → Reintentar
+       Esto evita el problema "default"
+    ───────────────────────────────────────────────────────── */
+    const faltaCampos = !extra.frases || !extra.colores || !extra.palabras ||
+                        extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0;
+    
+    if (faltaCampos) {
+      console.warn(`   ⚠️  Respuesta incompleta, reintentando...`);
+      raw = await call(openai, p, "Genera JSON completo ahora", true);
+      extra = JSON.parse(raw);
+    }
+
+    /* ─────────────────────────────────────────────────────────
+       PASO 3: VALIDACIÓN ANTI-REPETICIÓN
+       
+       Si hay palabras ya usadas → Reintentar con prohibidas
     ───────────────────────────────────────────────────────── */
     const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
     
@@ -381,36 +356,40 @@ async function enrich(libro, openai, c) {
     }
 
     /* ─────────────────────────────────────────────────────────
-       PASO 3: REGISTRAR USADOS
-       Guarda palabras/colores en Set() para no repetir después
+       PASO 4: REGISTRAR USADOS
     ───────────────────────────────────────────────────────── */
     extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
     extra.colores?.forEach(c => state.colores.add(c));
 
     /* ─────────────────────────────────────────────────────────
-       PASO 4: GARANTIZAR LONGITUD
-       A veces la IA devuelve 3 palabras en vez de 4.
-       Esto lo corrige duplicando la última.
+       PASO 5: GARANTIZAR LONGITUD (SIN "default")
+       
+       Si array vacío → throw Error → Fallback completo
+       Si array con <4 elementos → Duplicar último
     ───────────────────────────────────────────────────────── */
     ["palabras", "frases", "colores"].forEach(k => {
       if (!extra[k]) extra[k] = [];
-      while (extra[k].length < 4) extra[k].push(extra[k][extra[k].length - 1] || "default");
+      
+      // Array vacío = error crítico → Fallback
+      if (extra[k].length === 0) {
+        throw new Error(`Array vacío: ${k}`);
+      }
+      
+      // Completar hasta 4 duplicando último
+      while (extra[k].length < 4) {
+        extra[k].push(extra[k][extra[k].length - 1]);
+      }
     });
 
     /* ─────────────────────────────────────────────────────────
-       PASO 5: POST-PROCESAMIENTO
-       Calcula automáticamente si el texto debe ser blanco/negro
-       según la luminancia del color de fondo.
+       PASO 6: POST-PROCESAMIENTO
        
-       Ejemplo:
-       colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"]
-       textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"]
+       Calcula colores de texto automáticamente
     ───────────────────────────────────────────────────────── */
     extra.textColors = extra.colores.map(utils.txt);
 
     /* ─────────────────────────────────────────────────────────
-       PASO 6: TARJETA CONTENIDO
-       Genera el texto editorial (título, párrafos, subtítulo)
+       PASO 7: TARJETA CONTENIDO
     ───────────────────────────────────────────────────────── */
     const pT = prompt(libro, "tarjeta", c);
     let rawT = await call(openai, pT, "Genera tarjeta");
@@ -426,8 +405,7 @@ async function enrich(libro, openai, c) {
     };
 
     /* ─────────────────────────────────────────────────────────
-       PASO 7: TARJETA ESTILO
-       Genera el JSON de diseño visual (tipografía, colores, etc)
+       PASO 8: TARJETA ESTILO
     ───────────────────────────────────────────────────────── */
     const pE = prompt(libro, "estilo", c);
     let rawE = await call(openai, pE, "Genera estilo");
@@ -440,8 +418,7 @@ async function enrich(libro, openai, c) {
     }
 
     /* ─────────────────────────────────────────────────────────
-       PASO 8: RETURN FINAL
-       Combina datos del libro original + datos generados
+       PASO 9: RETURN FINAL
     ───────────────────────────────────────────────────────── */
     return {
       ...libro,
@@ -451,11 +428,13 @@ async function enrich(libro, openai, c) {
     };
 
   } catch (e) {
-    console.error(`❌ "${libro.titulo}":`, e.message);
+    console.error(`   ❌ "${libro.titulo}": ${e.message}`);
     
     /* ─────────────────────────────────────────────────────────
-       FALLBACK: Si algo falla, devuelve contenido por defecto
-       Esto evita que el script se caiga completamente
+       FALLBACK COMPLETO (NIVEL DIOS)
+       
+       Si CUALQUIER cosa falla → Contenido válido garantizado
+       NUNCA "default", siempre contenido usable
     ───────────────────────────────────────────────────────── */
     return {
       ...libro,
@@ -463,10 +442,10 @@ async function enrich(libro, openai, c) {
       punto: "Cero",
       palabras: ["Inquietud", "Cansancio", "Duda", "Resistencia"],
       frases: [
-        "🚶 Camina 10 pasos lentos",
-        "❤️ Nombra a quién ayudaste",
-        "🧠 Anota 3 palabras clave",
-        "✨ Abre en página random"
+        "🚶 Camina 10 pasos lentos sin pensar",
+        "❤️ Nombra en voz baja a quién ayudaste hoy",
+        "🧠 Anota 3 palabras que resuman este momento",
+        "✨ Abre el libro en página random, lee 1 línea"
       ],
       colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
       textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
@@ -485,50 +464,32 @@ async function enrich(libro, openai, c) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SECCIÓN 7: MAIN (PUNTO DE ENTRADA)
-   
-   Aquí empieza la ejecución del script.
+   🚀 MAIN (PUNTO DE ENTRADA)
    
    FLUJO:
    1. Inicializa OpenAI
-   2. Obtiene contexto cronobiológico
-   3. Muestra banner
-   4. Lee CSV
-   5. Mezcla y selecciona N libros
-   6. Procesa cada libro
+   2. Obtiene contexto crono
+   3. Lee CSV
+   4. Mezcla y selecciona N libros
+   5. Procesa cada uno
+   6. Reset cada 5 (evita acumulación de prohibidos)
    7. Guarda JSON
    8. Muestra resumen
    
-   ¿CÓMO EJECUTAR?
-   node build-contenido-v7.1-ULTRA-EXPLICADO.js
-   
-   ¿QUÉ VAS A VER?
-   ╔════════════════════════════════════════════╗
-   ║  TRIGGUI v7.1 ULTRA - FUSIÓN PERFECTA     ║
-   ╚════════════════════════════════════════════╝
-   
-   📅 miércoles, 27 de noviembre de 2024
-   ⏰ 16:30:45
-   🤖 gpt-4o-mini | 🌡️  1.3 | 🎯 JSON nativo
-   
-   📖 [1/5] Superconnector
-   📖 [2/5] Amar lo que es
-   ...
-   
-   ✅ contenido.json
-   📚 5 libros
-   📊 20 palabras | 20 colores
+   EJECUCIÓN:
+   node build-contenido-v7.2-GOD.js
 ═══════════════════════════════════════════════════════════════ */
 
 const openai = new OpenAI({ apiKey: KEY });
 const c = crono();
 
-console.log("╔════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v7.1 ULTRA - FUSIÓN PERFECTA     ║");
-console.log("╚════════════════════════════════════════════╝\n");
+console.log("╔═══════════════════════════════════════════════╗");
+console.log("║  TRIGGUI v7.2 GOD MODE - CÓDIGO DEFINITIVO   ║");
+console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
-console.log(`🤖 ${CFG.model} | 🌡️  ${CFG.temp} | 🎯 JSON nativo\n`);
+console.log(`🤖 ${CFG.model} | 🌡️  ${CFG.temp} | 🎯 JSON nativo`);
+console.log(`📊 Energía del día: ${c.d.n} (${c.d.e})\n`);
 
 // CARGA Y SHUFFLE
 const csv = await fs.readFile(CFG.csv, "utf8");
@@ -544,7 +505,7 @@ for (const libro of pick) {
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
   libros.push(await enrich(libro, openai, c));
   
-  // RESET CADA 5 (evita que acumule demasiadas palabras prohibidas)
+  // Reset cada 5
   if (i % 5 === 0) {
     console.log(`   📊 P:${state.palabras.size} C:${state.colores.size} | 🔄 Reset`);
     state.palabras.clear();
@@ -555,92 +516,89 @@ for (const libro of pick) {
 // GUARDADO
 await fs.writeFile(CFG.out, JSON.stringify({ libros }, null, 2));
 
-console.log("\n╔════════════════════════════════════════════╗");
-console.log("║           GENERACIÓN COMPLETA              ║");
-console.log("╚════════════════════════════════════════════╝\n");
+console.log("\n╔═══════════════════════════════════════════════╗");
+console.log("║            GENERACIÓN COMPLETA                ║");
+console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`✅ ${CFG.out}`);
-console.log(`📚 ${libros.length} libros`);
-console.log(`📊 ${state.palabras.size} palabras | ${state.colores.size} colores\n`);
-console.log("🔥 Sistema v7.1 ULTRA ejecutado\n");
+console.log(`📚 ${libros.length} libros procesados`);
+console.log(`📊 ${state.palabras.size} palabras únicas | ${state.colores.size} colores únicos\n`);
+console.log("🔥 Sistema v7.2 GOD MODE ejecutado\n");
 
 /* ═══════════════════════════════════════════════════════════════
-   🎓 GUÍA DE ITERACIÓN RÁPIDA
+   📖 GUÍA RÁPIDA DE ITERACIÓN
    
    CICLO RECOMENDADO:
    
-   1️⃣ MODIFICAR
-      Edita los prompts (línea 127-226)
-      Ejemplo: Cambiar "60-80 chars" por "40-60 chars"
+   1️⃣ MODIFICAR PROMPTS
+      → Línea 205: Prompt MAIN (palabras/frases/colores)
+      → Línea 230: Prompt TARJETA (contenido editorial)
+      → Línea 247: Prompt ESTILO (diseño visual)
    
    2️⃣ EJECUTAR
-      node build-contenido-v7.1-ULTRA-EXPLICADO.js
+      node build-contenido-v7.2-GOD.js
    
    3️⃣ REVISAR
-      cat contenido.json | jq '.libros[0].frases'
-      (o abre contenido.json en tu editor)
+      cat contenido.json | jq '.libros[0]'
    
    4️⃣ ANALIZAR
-      ¿Las frases son demasiado largas?
-      ¿Los colores son muy similares?
-      ¿Las palabras son demasiado genéricas?
+      - ¿Palabras específicas al libro?
+      - ¿Frases con estructuras variadas?
+      - ¿Colores únicos y memorables?
+      - ¿Contenido editorial útil?
    
-   5️⃣ VOLVER A 1️⃣
-   
-   ──────────────────────────────────────────────────────────
-   
-   🔧 MODIFICACIONES COMUNES:
-   
-   ▸ Más creatividad:
-     Línea 37: temp: 1.5 (subir)
-   
-   ▸ Más coherencia:
-     Línea 37: temp: 0.9 (bajar)
-   
-   ▸ Más variedad de palabras:
-     Línea 162: Agregar más rangos Hawkins
-   
-   ▸ Frases más cortas:
-     Línea 163: Cambiar "60-80 chars" por "40-60 chars"
-   
-   ▸ Paletas más locas:
-     Línea 164: "valores RGB extremos (00-20 y E0-FF)"
+   5️⃣ AJUSTAR Y REPETIR
    
    ──────────────────────────────────────────────────────────
    
-   🐛 DEBUGGING:
+   🎛️ AJUSTES RÁPIDOS:
    
-   Si algo falla, mira:
-   1. Línea 242: console.warn mostrará palabras repetidas
-   2. Línea 278: console.warn mostrará errores de estilo
-   3. Línea 289: console.error mostrará libro que falló
+   Más creatividad:
+   → Línea 42: temp: 1.5
+   
+   Más coherencia:
+   → Línea 42: temp: 0.9
+   
+   Frases más largas:
+   → Línea 210: "100-120 chars"
+   
+   Paletas más salvajes:
+   → Línea 211: "valores RGB extremos (00-10 y F0-FF)"
+   
+   Más libros:
+   → Línea 47: max: 20
    
    ──────────────────────────────────────────────────────────
    
-   📈 MÉTRICAS DE CALIDAD:
+   🛡️ PROTECCIONES ACTIVAS:
+   
+   ✅ Reintento si respuesta incompleta
+   ✅ Reintento si palabras repetidas
+   ✅ Error si arrays vacíos → Fallback
+   ✅ Fallback completo si falla todo
+   ✅ NUNCA más "default"
+   
+   ──────────────────────────────────────────────────────────
+   
+   📈 MÉTRICAS DE ÉXITO:
    
    BUENO:
    - 0-2 palabras repetidas en 20 libros
-   - 0 colores repetidos en 20 libros
-   - Frases con estructuras variadas
+   - 0 colores repetidos
+   - Frases variadas
    
    EXCELENTE:
    - 0 palabras repetidas
    - Paletas imposibles de confundir
-   - Cada frase suena escrita por persona diferente
+   - Cada frase suena única
    
-   DIOS:
-   - Cada palabra conecta ESPECÍFICAMENTE con el libro
-   - Cada frase parece escrita por el autor original
-   - Cada paleta es memorable y única
+   GOD MODE:
+   - Cada palabra conecta específicamente con el libro
+   - Cada frase parece escrita por el autor
+   - Cada paleta es memorable instantáneamente
+   - Contenido editorial inspira acción inmediata
    
    ──────────────────────────────────────────────────────────
    
-   🚀 PRÓXIMOS PASOS:
+   🔥 ¡NIVEL DIOS ACTIVADO!
    
-   1. Ejecuta con CFG.max = 5
-   2. Revisa los 5 libros generados
-   3. Si te gustan, sube a CFG.max = 20
-   4. Itera sobre los prompts hasta nivel DIOS
-   
-   ¡ÉXITO! 🔥
 ═══════════════════════════════════════════════════════════════ */
