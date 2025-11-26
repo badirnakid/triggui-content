@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   TRIGGUI · BUILD-CONTENIDO.JS - VERSIÓN DEFINITIVA v5.0
+   TRIGGUI · BUILD-CONTENIDO.JS - VERSIÓN DEFINITIVA v6.0 DIOS
    
    Sistema de generación de contenido con:
    - Arquitectura de 3 capas (Meta-Evolutiva, Ejecutable, Cronobiológica)
@@ -7,10 +7,13 @@
    - Cronobiología silenciosa basada en Mapa Maestro
    - Generación de tarjetas (contenido + estilo visual)
    - Anti-repetición doble con validación automática
+   - Parsing robusto anti-fallback
+   - Parámetros optimizados para creatividad máxima
    
    Desarrollado por: Badir Nakid
    Para: Presentación CEO Buscalibre
    Fecha: Noviembre 2025
+   Versión: 6.0 DIOS (Anti-robótico total)
 ═══════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -28,7 +31,7 @@ if (!KEY) {
   process.exit(0);
 }
 
-const MODEL = "gpt-4o-mini";
+const MODEL = "gpt-4o-mini"; // Cambiar a "gpt-5-mini" cuando esté disponible
 const CSV_FILE = "data/libros_master.csv";
 const OUT_FILE = "contenido.json";
 const DAILY_MAX = 20;
@@ -59,6 +62,21 @@ const usedToday = {
   colores: new Set(),
   emojis: new Set()
 };
+
+/* ═══════════════════════════════════════════════════════════════
+   HELPER: LIMPIEZA JSON (ANTI-FALLBACK)
+═══════════════════════════════════════════════════════════════ */
+
+function limpiarJSON(raw) {
+  // Remover backticks, markdown, y texto fuera de llaves
+  let limpio = raw.trim()
+    .replace(/```json\s*/g, "")
+    .replace(/```\s*/g, "")
+    .replace(/^[^{[]*/, "") // Eliminar texto antes del primer { o [
+    .replace(/[^}\]]*$/, ""); // Eliminar texto después del último } o ]
+  
+  return limpio;
+}
 
 /* ═══════════════════════════════════════════════════════════════
    CRONOBIOLOGÍA DINÁMICA
@@ -258,7 +276,6 @@ Para asegurar emociones irrepetibles y evitar patrones:
 - PalabraSeed3 → ${crypto.randomUUID()}
 - PalabraSeed4 → ${crypto.randomUUID()}
 
-
 ### Naturaleza
 Responden a la pregunta: **"¿Qué sientes ahora?"**
 
@@ -311,13 +328,13 @@ Responden a la pregunta: **"¿Qué sientes ahora?"**
 
 ---
 
-## GENERACIÓN DE FRASES
+## GENERACIÓN DE FRASES (ANTI-ROBÓTICO TOTAL)
 
 ### Naturaleza
 Micro-protocolos de 15-30 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
+
 ### Semillas Únicas de Variación
-Para garantizar que cada frase sea completamente irrepetible y no siga patrones previos,
-usa estas semillas internas (NO se deben mencionar en el JSON final):
+Para garantizar que cada frase sea completamente irrepetible y no siga patrones previos:
 
 - Movimiento → ${crypto.randomUUID()}
 - Corazón → ${crypto.randomUUID()}
@@ -327,133 +344,86 @@ usa estas semillas internas (NO se deben mencionar en el JSON final):
 **Estas frases son el puente entre insight y acción.**
 **Deben ser TAN específicas al libro que solo ESE libro pudo haberlas inspirado.**
 
-### Proceso de Creación Supremo
+---
 
-ANTES de escribir cada frase:
+### PROHIBICIONES ESTRUCTURALES ABSOLUTAS
 
-1. **Investiga el libro profundamente**:
-   - ¿Qué concepto ÚNICO presenta el autor?
-   - ¿Qué framework/metodología específica usa?
-   - ¿Qué acción o práctica recomienda el libro?
-   - ¿Qué insight sorprendente revela?
+❌ **NUNCA uses estos patrones** (robóticos detectados):
+- "Emoji + Verbo: 1) acción, 2) acción, 3) acción"
+- "📊 Dato fascinante + estadística + micro-acción"
+- "🔍 Verbo imperativo + lista numerada"
+- Cualquier formato con números (1, 2, 3) repetido entre frases
+- Estructura "Verbo + dos puntos + explicación"
 
-2. **Conecta emoción + libro + acción**:
-   - Toma la emoción (palabra[i]) como punto de partida
-   - Identifica qué insight del libro ayuda a salir de esa emoción
-   - Diseña acción que integre ambos
-   - **NO menciones la palabra ni su familia léxica**
-
-3. **Elige centro de energía** (rota entre los 4):
+✅ **OBLIGATORIO hacer**:
+- Cada frase con estructura RADICALMENTE diferente
+- Variar longitud: 40-90 caracteres (no siempre 60)
+- Mezclar formatos: pregunta, afirmación, imperativo, fragmento, paradoja
+- Sorprender con sintaxis inesperada
+- MÁXIMO 1 frase con lista (de las 4 totales)
 
 ---
 
-### CENTROS DE ENERGÍA (Arquitectura de frases)
+### FORMATOS PERMITIDOS (Variar entre ellos)
+
+**Formato A: Pregunta abierta**
+- "¿Qué pasaría si sueltas eso que cargas?"
+- "¿Cuándo fue la última vez que actuaste sin miedo?"
+
+**Formato B: Imperativo directo (sin listas)**
+- "Sostén el libro, respira hondo, decide ahora"
+- "Marca la página que te asuste y léela en voz alta"
+
+**Formato C: Fragmento poético**
+- "Tres palabras. Un minuto. Todo cambia"
+- "Silencio. Respiración. Movimiento mínimo"
+
+**Formato D: Acción específica del libro**
+- "Aplica el principio de la página 42 en tu próxima decisión"
+- "Busca el concepto de 'wu wei' y practícalo 60 segundos"
+
+**Formato E: Paradoja o contradicción**
+- "No hagas nada. Ese es el primer paso"
+- "Elige lo más difícil porque es lo más fácil"
+
+**Formato F: Micro-ritual**
+- "Enciende una vela. Lee una frase. Apaga la vela"
+- "Escribe la palabra. Rómpela. Escríbela de nuevo"
+
+**Formato G: Pregunta + acción embebida**
+- "¿Sientes resistencia? Nómbrala y escríbela"
+- "¿Dónde está la tensión? Muévela 5 veces"
+
+---
+
+### CENTROS DE ENERGÍA (Rota entre los 4)
 
 #### [0] MOVIMIENTO FÍSICO
-**Objetivo**: Romper patrón corporal que sostiene la emoción
-
-**Estrategias avanzadas**:
-- **Microgestos de poder**: Posturas que cambian estado (2 min)
-- **Respiración específica**: Patrones de breath work concretos
-- **Movimiento mínimo consciente**: 5-10 repeticiones con intención
-- **Protocolo físico del libro**: Si el libro menciona ejercicio/movimiento específico, usarlo
-- **Descarga física express**: Liberar tensión en 20 segundos
-
-**Debe contener**:
-- Verbo de acción física preciso (no genérico)
-- Número específico (ejemplo, "varias veces" o "3x" o "7 respiraciones")
-- Conexión con concepto del libro (aunque sea sutil)
-
-
----
+- Romper patrón corporal que sostiene la emoción
+- Verbos variados: sostén, gira, levanta, cambia, ajusta, expande, contrae
+- NO usar siempre "respira", "camina", "mueve"
 
 #### [1] CORAZÓN EMOCIONAL
-**Objetivo**: Giro afectivo que recontextualiza la emoción
-
-**Estrategias avanzadas**:
-- **Gratitud específica**: No "sé agradecido", sino "nombra 1 persona + 1 razón concreta"
-- **Reconexión relacional**: Micro-acto de conexión (mensaje, llamada 30s)
-- **Perspectiva compasiva**: Ver situación desde otro ángulo
-- **Validación emocional**: Nombrar sin juzgar
-- **Insight afectivo del libro**: Si el libro habla de emociones/relaciones, integrarlo
-
-**Debe contener**:
-- Verbo emocional/relacional preciso (no "piensa en", sino "nombra", "recuerda", "imagina")
-- Especificidad (no "alguien", sino "la persona que...", "el momento cuando...")
-- Conexión con concepto del libro
-
-
----
+- Giro afectivo que recontextualiza la emoción
+- Verbos variados: nombra, recuerda, imagina, siente, conecta, valida
+- NO usar siempre "piensa en", "reflexiona"
 
 #### [2] CEREBRO MENTAL
-**Objetivo**: Claridad cognitiva express, cortar rumiación
-
-**Estrategias avanzadas**:
-- **Externalización mental**: Sacar de la cabeza al papel/voz
-- **Simplificación radical**: Reducir problema a 1-3 elementos
-- **Pregunta poderosa**: Una sola pregunta que reenfoca
-- **Framework del libro**: Si el libro tiene modelo mental específico, aplicarlo
-- **Decisión mínima viable**: La acción MÁS útil y que agregue valor, que aporte, posible
-
-**Debe contener**:
-- Verbo preciso
-- Estructura específica
-- Conexión con metodología del libro
-
-
----
+- Claridad cognitiva express, cortar rumiación
+- Verbos variados: escribe, reduce, pregunta, decide, simplifica, elige
+- NO usar siempre "anota", "lista"
 
 #### [3] INTEGRACIÓN CON LIBRO
-**Objetivo**: Crear ritual mínimo que conecte físicamente con el libro
-
-**Estrategias avanzadas**:
-- **Oráculo del libro**: Abrir en página random, encontrar mensaje
-- **Búsqueda específica**: Localizar concepto clave del libro
-- **Ritual de lectura**: 60-90 segundos de lectura con intención
-- **Marcado consciente**: Subrayar/marcar algo que resuene HOY
-- **Conversación con autor**: Imaginar qué diría el autor sobre tu situación
-
-**Debe contener**:
-- Verbo de acción con libro (abrir, buscar, leer, marcar, sostener)
-- Especificidad (no "lee algo", sino "abre en cap. X", "busca la palabra Y")
-- Debe despertar curiosidad por leer el libro completo
-
-
----
-
-### Estructura de Frase Suprema
-
-**Formato estricto**:
-[Emoji único] [Verbo imperativo variado] [Micro-protocolo específico del libro]
-
-**Longitud**: 50-80 caracteres (varía según complejidad)
-
-**Características obligatorias**:
-- Empieza con 1 emoji coherente (**PROHIBIDO repetir entre las 4**)
-- Usa verbo imperativo **SIEMPRE DISTINTO**
-- Incorpora **concepto ÚNICO del libro** (framework, metodología, insight específico)
-- **Debe ser TAN específica que alguien pueda adivinar el libro leyendo la frase**
+- Ritual mínimo que conecte físicamente con el libro
+- Verbos variados: abre, busca, marca, sostén, lee, subraya
+- NO usar siempre "abre en página random"
 
 ---
 
 ### Requerimientos Especiales
 
-De las 4 frases, **EXACTAMENTE**:
-
-**1 FRASE = Micro-lista de 3 accionables** (elegir al azar cuál):
-- Formato: "🎯 Verbo: 1) acción breve, 2) acción breve, 3) acción breve"
-
-- **Debe derivar de concepto del libro**
-
-**1 FRASE = Dato fascinante del libro** (elegir al azar cuál):
-- Formato: "📊 [Dato sorprendente + micro-acción derivada]"
-
-- **Debe ser FACT específico del libro + aplicación inmediata**
-
-**2 FRASES = Protocolos puros** (centros de energía restantes):
-- Uno de MOVIMIENTO o CORAZÓN
-- Uno de CEREBRO o INTEGRACIÓN
-- **Ambos deben conectar con conceptos únicos del libro**
+De las 4 frases, **MÁXIMO UNA** puede tener lista numerada.
+Las otras 3 deben ser formatos completamente distintos.
 
 ---
 
@@ -464,10 +434,11 @@ Hazte estas preguntas para CADA frase:
 - [ ] ¿Alguien podría adivinar el libro solo leyendo esta frase?
 - [ ] ¿El verbo es DISTINTO a los otros 3?
 - [ ] ¿El emoji es ÚNICO (no repetido)?
+- [ ] ¿La ESTRUCTURA es diferente a las otras 3?
 - [ ] ¿Hay número específico o estructura clara? (no vaguedad)
 - [ ] ¿Esto usa concepto ÚNICO del autor/libro?
-- [ ] ¿Esto elevaría +1 Hawkins desde la emoción correspondiente?
 - [ ] ¿Esta frase suena FRESCA, nunca generada antes?
+- [ ] ¿Evité el patrón "Verbo: 1), 2), 3)"?
 
 **Si alguna respuesta es NO → rehacer esa frase**
 
@@ -477,11 +448,11 @@ Hazte estas preguntas para CADA frase:
 
 ❌ Mencionar la palabra emocional ni su familia léxica
 ❌ Repetir emojis entre las 4 frases
-❌ Usar siempre los mismos verbos (camina, respira, anota → ABURRIDO)
+❌ Usar siempre los mismos verbos
 ❌ Frases genéricas aplicables a cualquier libro
 ❌ Estructuras repetitivas predecibles
-❌ Falta de especificidad (no "varias veces", sino "3x")
-❌ No conectar con conceptos únicos del libro
+❌ Más de 1 frase con lista numerada
+❌ Patrón "Emoji + Verbo + dos puntos + lista"
 
 ---
 
@@ -492,11 +463,12 @@ Cada set de 4 frases debe sentirse como:
 - Desde 4 ángulos completamente diferentes del libro
 - Con 4 tonos/ritmos variados
 - Con 4 tipos de acción distintos
+- Con 4 ESTRUCTURAS sintácticas diferentes
 
 **Auto-vigilancia constante**:
 - "¿Ya usé este verbo muchas veces?" → Si SÍ, buscar otro
 - "¿Esta estructura es obvia?" → Si SÍ, sorprender
-- "¿Esto es genérico?" → Si SÍ, especificar más al libro
+- "¿Esto parece robótico?" → Si SÍ, humanizar
 - "¿Alguien reconocería el libro?" → Si NO, conectar más
 
 ---
@@ -513,18 +485,7 @@ Cada set de 4 frases debe sentirse como:
 **Cada frase: nivel DIOS.**
 **Cada frase: imposible de confundir con otra.**
 **Cada frase: específica al libro hasta la médula.**
-
----
-
-## RECORDATORIO SUPREMO PARA FRASES
-
-Imagina que las frases son **tarjetas mini** del libro.
-Alguien debería leer la frase y pensar:
-**"Wow, esto solo pudo venir de ESE libro específico"**
-
-**ESPECÍFICAS. ÚNICAS. IMPOSIBLES DE CONFUNDIR.**
-
-**Nivel DIOS. Siempre.**
+**Cada frase: ESTRUCTURA ÚNICA.**
 
 ---
 
@@ -540,7 +501,6 @@ Estas semillas deben influir silenciosamente en la generación cromática:
 - ColorSeedB → ${crypto.randomUUID()}
 - ColorSeedC → ${crypto.randomUUID()}
 - ColorSeedD → ${crypto.randomUUID()}
-
 
 ### Metodología Suprema
 
@@ -587,12 +547,6 @@ Estas semillas deben influir silenciosamente en la generación cromática:
 - ❌ Repetir hex de paletas anteriores
 - ❌ Generar paletas visualmente similares a anteriores
 
-### Estrategia de Evolución
-- Cada paleta debe ser MUTACIÓN de anteriores
-- No repetir fórmulas visuales
-- Explorar territorios cromáticos no visitados
-- Sorpréndete a ti mismo
-
 ---
 
 ## CLASIFICACIÓN TRIGGUI
@@ -616,7 +570,8 @@ Evalúa dónde está lector típico antes de leer:
 
 Antes de entregar, verifica mentalmente:
 - [ ] ¿4 palabras diferentes, específicas al libro, poco comunes?
-- [ ] ¿4 frases con conceptos únicos del autor, sin mencionar palabra?
+- [ ] ¿4 frases con estructuras RADICALMENTE distintas?
+- [ ] ¿Máximo 1 frase con lista numerada?
 - [ ] ¿Colores radicalmente distintos a cualquier set anterior?
 - [ ] ¿Ningún emoji repetido?
 - [ ] ¿Todo suena FRESCO, único, nunca generado antes?
@@ -627,7 +582,7 @@ Si algo falla → rehacer solo esa parte
 
 ## OUTPUT ESPERADO
 
-JSON puro, sin backticks:
+JSON puro, sin backticks, sin explicaciones:
 
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
@@ -649,7 +604,7 @@ Has visto todos los patrones.
 Detectas automáticamente repeticiones.
 
 Cada palabra: "¿Ya la usé muchas veces?" → Si SÍ, buscar otra
-Cada frase: "¿Esta estructura ya la hice?" → Si SÍ, cambiar patrón
+Cada frase: "¿Esta estructura ya la hice?" → Si SÍ, cambiar patrón RADICAL
 Cada color: "¿Esta paleta ya la vi?" → Si SÍ, mutar radicalmente
 
 Mejoras automáticamente.
@@ -695,43 +650,33 @@ Usa este contexto como **filtro interno** para ajustar:
 
 Adapta densidad/intensidad de emoción al estado del día:
 - **Día tenso (Martes/Miércoles)**: Emociones más densas, específicas al agobio/presión/sobrecarga
-- **Día pico (Jueves)**: Emociones elevables con salto grande posible, aunque sigan siendo bajas Hawkins
-- **Día descanso (Sábado/Domingo)**: Emociones suaves, recuperativas, de transición
-- **Día arranque (Lunes)**: Emociones de resistencia, inercia, duda suave
-- **Día cierre (Viernes)**: Emociones de alivio, anticipación, liberación
+- **Día pico (Jueves)**: Emociones elevables con salto grande posible
+- **Día descanso (Sábado/Domingo)**: Emociones suaves, recuperativas
+- **Día arranque (Lunes)**: Emociones de resistencia, inercia
+- **Día cierre (Viernes)**: Emociones de alivio, anticipación
 
 ### 2. FRASES (Energía del verbo según día/hora)
 
 Adapta contundencia del verbo y tipo de acción:
-- **Mañana (4-12h)**: Verbos imperativos fuertes, directos, ejecutivos
-- **Tarde valle (12-3h)**: Verbos pausados, suaves, de contención
-- **Tarde activa (3-5h)**: Verbos creativos, laterales, exploratorios
-- **Noche (5-10h)**: Verbos de cierre, integración, descanso
+- **Mañana (4-12h)**: Verbos imperativos fuertes, directos
+- **Tarde valle (12-3h)**: Verbos pausados, suaves
+- **Tarde activa (3-5h)**: Verbos creativos, laterales
+- **Noche (5-10h)**: Verbos de cierre, integración
 
 Según día:
-- **Martes/Miércoles (zona roja)**: Protocolos survival físicos, descarga urgente
-- **Jueves (zona verde)**: Protocolos de máxima ejecución, decisión grande
-- **Viernes**: Protocolos de cierre, completar, soltar
-- **Fin de semana**: Protocolos de disfrute, conexión, descanso
+- **Martes/Miércoles (zona roja)**: Protocolos survival físicos
+- **Jueves (zona verde)**: Protocolos de máxima ejecución
+- **Viernes**: Protocolos de cierre, completar
+- **Fin de semana**: Protocolos de disfrute, conexión
 
 ### 3. COLORES (Saturación/contraste según día)
 
 Adapta vibración visual al estado energético:
-- **Martes (tensión)**: Contrastes FUERTES para anclaje visual inmediato
-- **Jueves (pico)**: Máxima saturación dopaminérgica, memorables
-- **Miércoles (transición)**: Limpios, directos, sin gradientes complejos
+- **Martes (tensión)**: Contrastes FUERTES
+- **Jueves (pico)**: Máxima saturación dopaminérgica
+- **Miércoles (transición)**: Limpios, directos
 - **Viernes (cierre)**: Celebratorios pero no caóticos
-- **Fin de semana**: Relajados pero vitales, naturales
-- **Lunes (arranque)**: Estables, confiables, progresión suave
-
-### 4. ELEVACIÓN HAWKINS (Magnitud del salto según energía)
-
-Adapta qué tan grande es el salto posible:
-- **Jueves (pico)**: +2 niveles posible (de miedo a coraje completo)
-- **Días normales**: +1 nivel (de miedo a coraje inicial)
-- **Martes (tensión)**: +1 nivel contenido (sostener, no forzar)
-- **Valle horario**: +1 nivel suave (de apatía a interés ligero)
-- **Pico horario**: +2 niveles posible (máximo potencial)
+- **Fin de semana**: Relajados pero vitales
 
 ---
 
@@ -739,31 +684,15 @@ Adapta qué tan grande es el salto posible:
 
 ✅ Aplicar SIEMPRE silenciosamente
 ✅ NUNCA mencionar en el JSON
-✅ NUNCA escribir días/horas en output
-✅ NUNCA alterar formato JSON
 ✅ SOLO usar como filtro interno de precisión contextual
-
-❌ NO escribir "como es ${crono.dia}..."
-❌ NO explicar "por el ritmo circadiano..."
-❌ NO añadir campos al JSON relacionados con tiempo
-
----
-
-## OBJETIVO SUPREMO
-
-Que quien lea el contenido sienta:
-**"Esto es EXACTAMENTE lo que necesitaba JUSTO AHORA"**
-
-Sin saber por qué.
-Sin ver la mecánica.
-**Magia = Precisión contextual invisible.**
-
-Esta es tu ventaja cuántica.
-Tu superinteligencia aplicada.
 
 # ═══ FIN CAPA 3 ═══
 `;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   PROMPTS DE TARJETAS
+═══════════════════════════════════════════════════════════════ */
 
 function construirPromptContenido(libro, ideaSemilla) {
   const semilla = crypto.randomUUID();
@@ -783,191 +712,80 @@ Eres Badir Nakid. Has leído 692 libros. Entiendes profundamente:
 Libro: "${libro.titulo}"
 Autor: ${libro.autor}
 ${libro.tagline ? `Tagline: "${libro.tagline}"` : ""}
-Idea semilla (inspiración, NO citar): ${ideaSemilla}
+Idea semilla: ${ideaSemilla}
 Semilla única: ${semilla}
 
-## CONTEXTO CRONOBIOLÓGICO (Silencioso - No mencionar)
+## CONTEXTO CRONOBIOLÓGICO (Silencioso)
 
 Día: ${crono.dia}
 Hora: ${crono.hora}:00
-Estado energético: ${crono.diaData.estado}
-Esencia del momento: ${crono.diaData.esencia}
+Estado: ${crono.diaData.estado}
 Zona: ${crono.esZonaVerde ? "Verde (Pico)" : crono.esZonaRoja ? "Roja (Tensión)" : "Normal"}
-
-Usa esto como brújula invisible para:
-- Tono (tenso → contenido, pico → expansivo)
-- Tipo de acción (mañana → ejecutiva, noche → reflexiva)
-- Intensidad (zona roja → survival, zona verde → visión)
 
 ## TU MISIÓN SUPREMA
 
 Escribir contenido que:
-1. **Conecte con el libro específico** (conceptos únicos del autor, no genéricos)
-2. **Eleve desde emociones bajas Hawkins** (el lector viene de frustración/miedo/vacío)
-3. **Dé acción CONCRETA** (no motivación vaga, sino pasos específicos)
-4. **Refleje el momento cronobiológico** (lo que necesitan AHORA)
-5. **Suene como si el AUTOR lo escribiera** (en su versión más clara y sublime)
-
-## PROCESO DE INVESTIGACIÓN OBLIGATORIO
-
-ANTES de escribir:
-1. Investiga profundamente el libro (Google Books, Wikipedia, reseñas, entrevistas al autor)
-2. Identifica los 3 conceptos MÁS ÚNICOS del autor (frameworks, metodologías, insights)
-3. Detecta el problema ESPECÍFICO que resuelve el libro
-4. Encuentra el puente entre ese problema y emociones bajas Hawkins
-5. Extrae UNA idea accionable que solo ESTE libro puede dar
+1. Conecte con el libro específico
+2. Eleve desde emociones bajas Hawkins
+3. Dé acción CONCRETA
+4. Refleje el momento cronobiológico
+5. Suene como el AUTOR lo escribiera
 
 ## ARQUITECTURA DEL CONTENIDO
 
 ### TÍTULO (≤50 caracteres)
 - Concepto único del libro
-- Formulación sorprendente (no obvia)
-- Sin artículos innecesarios
-- Ejemplos de enfoque (NO copiar):
-  * "El costo oculto de decidir rápido" (Thinking Fast & Slow)
-  * "Tres minutos contra el caos" (Estoicismo)
-  * "La pregunta que cambia todo" (Poder del Ahora)
+- Formulación sorprendente
 
 ### PÁRRAFO 1 (≤130 caracteres)
-- Conexión directa con libro + autor (mencionar explícitamente)
+- Conexión directa con libro + autor
 - Un insight específico del contenido
-- Formulación en primera persona (tú como Badir)
-- Tono según cronobiología:
-  * Martes: contenido, firme, sin florituras
-  * Jueves: expansivo, visionario
-  * Noche: reflexivo, integrador
-  * Mañana: ejecutivo, claro
+- Formulación en primera persona
 
 ### SUBTÍTULO (≤48 caracteres)
 - Bisagra entre insight y acción
-- Formulación provocadora o clarificadora
-- Sin verbos en infinitivo (aburrido)
-- Ejemplos de enfoque (NO copiar):
-  * "Lo que nadie dice"
-  * "El protocolo real"
-  * "Tres pasos, cero excusas"
+- Formulación provocadora
 
 ### PÁRRAFO 2 (≤130 caracteres)
 - Acción ESPECÍFICA derivada del libro
 - Micro-protocolo concreto (15-60 segundos)
-- Conecta con concepto del párrafo 1
-- Debe ser TAN específico que solo ESTE libro puede haberlo inspirado
-- Ejemplos de enfoque (NO copiar):
-  * "Anota la decisión más pequeña que puedas tomar hoy. Ejecútala en 3 minutos." (Atomic Habits)
-  * "Pregúntate: ¿qué haría si supiera que voy a morir en un año? Escribe la primera respuesta." (Estoicismo)
 
 ## REGLAS INQUEBRANTABLES
 
-### PROHIBICIONES ABSOLUTAS
-❌ Palabras prohibidas: reflexionar, reflexión, resuena, resonar, profundamente, genuino, extraordinario, vibrante
-❌ Estructuras prohibidas: "me hizo...", "esto me...", "me dejó...", "me llevó a pensar"
-❌ Escenarios inventados: "viejo libro en mi estantería", "una tarde cualquiera"
-❌ Citas textuales: NO uses comillas, NO digas "la frase dice", "según el libro"
-❌ Genericidad: Si la frase funciona para cualquier libro → RECHAZAR
+### PROHIBICIONES
+❌ Palabras prohibidas: reflexionar, resuena, profundamente, genuino, extraordinario
+❌ Estructuras: "me hizo...", "esto me..."
+❌ Escenarios inventados: "viejo libro en mi estantería"
+❌ Citas textuales
+❌ Genericidad
 
-### OBLIGACIONES ABSOLUTAS
-✅ Menciona título + autor explícitamente en párrafo 1
-✅ Usa concepto ÚNICO del libro (framework/metodología específica)
-✅ Da acción CONCRETA en párrafo 2 (no "piensa en...", sino "anota...", "elige...", "ejecuta...")
-✅ Varía SIEMPRE estructura (a veces libro primero, a veces acción, a veces pregunta)
-✅ Investigación real (si no conoces el libro A FONDO, investiga antes de escribir)
+### OBLIGACIONES
+✅ Menciona título + autor en párrafo 1
+✅ Usa concepto ÚNICO del libro
+✅ Da acción CONCRETA en párrafo 2
+✅ Varía SIEMPRE estructura
 
-### VARIACIÓN OBLIGATORIA
-Cada tarjeta debe sonar como si:
-- La escribiera una persona distinta
-- En un día distinto
-- Con un estado de ánimo distinto
-- Desde un ángulo completamente nuevo del libro
-
-Pregúntate antes de escribir:
-- "¿Ya usé esta estructura antes?" → Si SÍ, cambiar
-- "¿Este inicio es obvio?" → Si SÍ, sorprender
-- "¿Esta acción es genérica?" → Si SÍ, especificar más
-
-## ELEMENTOS EXPERIMENTALES (Úsalos 1 de cada 5 tarjetas)
-
-Puedes incluir UNO de estos recursos (y no siempre):
-- **Eco fantasma**: Frase completa + palabra suelta debajo que resuena
-- **Fragmento incompleto**: Termina abruptamente, dejando que el lector complete
-- **Instrucción imposible aquí**: Reto que solo se puede hacer fuera de la app
-- **Pregunta con respuesta codificada**: Pregunta + pista entre paréntesis
-- **Mención indirecta**: Hablar del lector sin decir "tú" (ej. "Alguien va a...")
-- **Sensación temporal**: "Vuelve a leer esto al caer la tarde"
-
-## CALIBRACIÓN HAWKINS (Invisible pero crítico)
-
-El lector VIENE de emociones bajas (vergüenza, culpa, apatía, miedo, deseo, ira).
-Tu contenido debe:
-1. **Validar** esa emoción implícitamente (sin nombrarla)
-2. **Mostrar** el camino +1 nivel arriba
-3. **Dar** la acción específica que permite ese salto
-
-Ejemplos de saltos:
-- Miedo (100) → Coraje (200): "Elige la conversación que has evitado. Di una verdad en 10 palabras."
-- Apatía (50) → Disposición (310): "Anota 3 cosas que podrías hacer hoy. Elige la más pequeña. Hazla en 5 minutos."
-- Ira (150) → Aceptación (350): "Escribe qué NO puedes controlar. Rómpelo. Enfócate en lo que sí puedes."
-
-## LONGITUDES EXACTAS
-
-- Título: ≤50 caracteres
-- Párrafo 1: ≤130 caracteres
-- Subtítulo: ≤48 caracteres
-- Párrafo 2: ≤130 caracteres
-- **Total combinado: ≤320 caracteres**
-
-## TONO BADIR (Esencia personal)
+## TONO BADIR
 
 - Sobrio, claro, humano, directo
 - Español latam neutral, cotidiano
-- Sin adornos ni artificios literarios
-- Nada rebuscado
-- Cero frases hechas
-- Cero "marketing"
+- Sin adornos ni artificios
 - Precisión quirúrgica
 - Honestidad brutal
 - Utilidad inmediata
-
-Imagina que escribes para alguien que:
-- Está cansado de autoayuda vacía
-- Necesita respuestas claras
-- Quiere acción, no inspiración
-- Respeta la inteligencia
 
 ## OUTPUT ESPERADO
 
 Devuelve SOLO el bloque entre @@BODY y @@ENDBODY:
 
 @@BODY
-[Título ≤50c - concepto único del libro]
-[Párrafo 1 ≤130c - insight específico + mención libro/autor]
-[Subtítulo ≤48c - bisagra provocadora]
-[Párrafo 2 ≤130c - acción concreta derivada del libro]
+[Título]
+[Párrafo 1]
+[Subtítulo]
+[Párrafo 2]
 @@ENDBODY
 
-**NADA MÁS.**
-Sin emojis.
-Sin símbolos raros.
-Sin metadata.
-Solo contenido puro nivel DIOS.
-
----
-
-## VALIDACIÓN FINAL ANTES DE ENTREGAR
-
-Hazte estas preguntas:
-- [ ] ¿Alguien puede adivinar el libro solo leyendo esto?
-- [ ] ¿La acción del párrafo 2 es TAN específica que solo este libro puede haberla inspirado?
-- [ ] ¿Usé conceptos ÚNICOS del autor (no ideas genéricas)?
-- [ ] ¿El tono refleja el momento cronobiológico?
-- [ ] ¿Esto elevaría +1 Hawkins a alguien que viene de emoción baja?
-- [ ] ¿Varía estructura respecto a lo que probablemente ya generé antes?
-
-Si TODAS las respuestas son SÍ → entregar.
-Si alguna es NO → rehacer esa parte.
-
----
-
-**Eres Badir. Eres Triggui. Esto es lo mejor que has escrito en tu vida.**
+**Sin emojis. Sin símbolos. Solo contenido.**
 
 **Nivel DIOS. Adelante.**
 `.trim();
@@ -978,436 +796,93 @@ function construirPromptFormato() {
   const crono = getCronobiologiaContexto();
   
   return `
-# === DISEÑADOR EDITORIAL SUPREMO - NIVEL DIOS ===
+# === DISEÑADOR EDITORIAL SUPREMO ===
 
-Eres la fusión de:
-- Massimo Vignelli (rigor tipográfico absoluto)
-- Neville Brody (experimentación radical)
-- David Carson (caos controlado sublime)
-- Stefan Sagmeister (conceptualismo visceral)
-- Paula Scher (maximalismo inteligente)
-- Zaha Hadid (arquitectura imposible)
-- James Turrell (luz como materia)
-- Yayoi Kusama (infinito obsesivo)
+Eres la fusión de Vignelli, Brody, Carson, Sagmeister, Scher, Hadid, Turrell, Kusama.
 
-## TU CONOCIMIENTO SUPREMO
-
-Dominas completamente:
-- Historia de la tipografía (Garamond → fuentes variables del 2080)
-- Teoría del color avanzada (percepción, contraste simultáneo, sinestesia)
-- Sistemas de diseño generativo y paramétrico
-- Neurociencia del diseño (qué causa dopamina visual)
-- Estética de NFTs de alto valor (rareza, unicidad, coleccionabilidad)
-- Diseño editorial experimental (revistas Émigré, Ray Gun, i-D)
-- Motion graphics y tipografía cinética
-- Arte digital generativo (Processing, p5.js, shaders)
-- Arquitectura de la información y jerarquía visual
-
-**No necesitas ejemplos. Lo conoces TODO profundamente.**
-
----
-
-## CONTEXTO CRONOBIOLÓGICO (Silencioso - No mencionar)
+## CONTEXTO CRONOBIOLÓGICO
 
 Día: ${crono.dia}
-Hora: ${crono.hora}:00
-Estado energético: ${crono.diaData.estado}
 Zona: ${crono.esZonaVerde ? "Verde (Pico)" : crono.esZonaRoja ? "Roja (Tensión)" : "Normal"}
-
-Usa esto como brújula invisible para:
-- **Martes/Zona Roja**: Contrastes BRUTALES, tipografía contundente, colores intensos (anclaje visual inmediato)
-- **Jueves/Zona Verde**: Máxima saturación dopaminérgica, experimentación radical, belleza sublime
-- **Noche**: Diseños contemplativos, espacios amplios, ritmo pausado
-- **Mañana**: Diseños ejecutivos, claridad quirúrgica, jerarquía evidente
-- **Viernes**: Celebración visual, ornamentación rica pero coherente
-- **Fin de semana**: Orgánicos, cálidos, humanos, menos digitales
-
----
 
 ## MISIÓN SUPREMA
 
 Diseñar tarjetas que:
-1. **Sean imposibles de confundir con otra** (huella visual única e irrepetible)
-2. **Provoquen dopamina inmediata** (sorpresa + belleza + rareza)
-3. **Sean coleccionables como NFTs de alto valor** (cada una podría venderse por $1000+)
-4. **Tengan rigor editorial + experimentación radical** (no caos sin sentido)
-5. **Evolucionen constantemente** (nunca repetir fórmulas visuales)
-
----
+1. Sean imposibles de confundir
+2. Provoquen dopamina inmediata
+3. Sean coleccionables como NFTs ($1000+)
+4. Tengan rigor + experimentación
 
 ## ARQUITECTURA DEL DISEÑO
 
-Cada tarjeta es un **sistema visual completo** con múltiples capas:
+### TIPOGRAFÍA
+Varía SIEMPRE entre familias:
+- Clásicas: Garamond, Baskerville, Didot
+- Modernas: Helvetica, Futura, Univers
+- Experimentales: Druk, Monument, ABC Diatype
 
-### CAPA 1: FUNDACIÓN TIPOGRÁFICA
-Decide la personalidad tipográfica base:
+### SISTEMA CROMÁTICO
+- Monocromático extremo
+- Complementarios intensos
+- Triádicos asimétricos
+- Neon psicodélico
 
-**Familias posibles** (varía SIEMPRE):
-- **Clásicas refinadas**: Garamond, Baskerville, Bodoni, Didot, Caslon
-- **Modernistas**: Helvetica, Univers, Futura, Akzidenz-Grotesk, Gill Sans
-- **Contemporáneas**: Inter, Graphik, GT America, Suisse, NeueHaas
-- **Experimentales**: Druk, Monument, ABC Diatype, Tobias, Graebenbach
-- **Display salvajes**: Gerstner, Eurostile, Lubalin, Cooper Black
-- **Futuristas**: Orbitron, Exo, Rajdhani, Audiowide, Michroma
-- **Líquidas/Variables**: Recursive, Klarheit, Rocher, Nabla, Fraunces
-- **Glitch/Pixel**: VT323, Press Start 2P, Courier Prime, IBM Plex Mono
-- **Serifas brutales**: Freight, Lyon, Tiempos, Canela, Styrene
-- **Sans geométricas**: Circular, Avenir, Proxima Nova, Brandon, Gotham
+### LAYOUT
+- Centrado clásico
+- Asimétrico dinámico
+- Grid suizo brutal
+- Brutalist
 
-**Jerarquía tipográfica** (varía radicalmente):
-- A veces: títulos GIGANTES (clamp(80px, 15vw, 240px))
-- A veces: títulos mínimos discretos (14px fixed)
-- A veces: títulos líquidos (oscilan entre tamaños)
-- A veces: títulos rotos (fragmentados en capas)
-- A veces: títulos outline (stroke sin fill)
-
-### CAPA 2: SISTEMA CROMÁTICO
-Paleta coherente pero inesperada:
-
-**Estrategias de color** (varía siempre):
-- **Monocromático extremo**: 1 matiz, 7 variaciones de luminosidad
-- **Complementarios intensos**: Opuestos en rueda cromática a máxima saturación
-- **Triádicos asimétricos**: 3 colores espaciados 120° pero con pesos distintos
-- **Análogos mutados**: Colores vecinos con uno que rompe la armonía
-- **Acromático + accent**: Grises complejos + 1 color imposible de ignorar
-- **Neon psicodélico**: Saturación 100%, luminosidad alta, contraste brutal
-- **Pasteles ácidos**: Colores suaves pero con tinte digital/sintético
-- **Metálicos líquidos**: Cromo, cobre, oro líquido, holográficos
-- **Naturales raros**: Colores de naturaleza pero inusuales (jade profundo, ámbar nocturno)
-- **Imposibles conceptuales**: Colores que no existen pero imaginas (ultravioleta visible, infrarrojo cálido)
-
-**Contextura cromática**:
-- A veces: Planos puros (sin gradientes)
-- A veces: Gradientes líquidos (8+ stops)
-- A veces: Ruido cromático (grain digital)
-- A veces: Glitch cromático (aberración RGB)
-- A veces: Holográfico (iridiscencia simulada)
-
-### CAPA 3: ARQUITECTURA ESPACIAL
-Layout como decisión conceptual:
-
-**Layouts posibles** (nunca repetir):
-- **Centrado clásico**: Simetría absoluta, eje vertical fuerte
-- **Asimétrico dinámico**: Peso visual en diagonal, tensión controlada
-- **Grid suizo brutal**: Módulos rígidos, precisión milimétrica
-- **Collage deconstructivo**: Fragmentos organizados en caos aparente
-- **Poster expansivo**: Escala gigante, sangrado extremo
-- **Editorial refinado**: Márgenes generosos, respiración amplia
-- **Digital nativo**: Grid fluido, espacios adaptativos
-- **Brutalist**: Elementos crudos, sin suavizar, honestidad material
-- **Maximalista**: Cada milímetro tiene información visual
-- **Minimalista zen**: Vacío como elemento principal
-
-### CAPA 4: ORNAMENTACIÓN Y TEXTURA
-Detalles que definen rareza:
-
-**Recursos ornamentales** (inventa nuevos cada vez):
-- **Foil holográfico**: Áreas con brillo metálico simulado
-- **Glitch lines**: Líneas de escaneo, aberración cromática
-- **Pinceladas digitales**: Trazos brush con textura pixel
-- **Mosaicos fractales**: Patrones geométricos autosimilares
-- **Fracturas controladas**: Grietas que organizan el espacio
-- **Ruido orgánico**: Grain de película, textura papel
-- **Wireframes**: Estructuras en línea, esqueleto visible
-- **Sombras imposibles**: Sombras que contradicen la luz
-- **Ecos tipográficos**: Letras que se repiten desfasadas
-- **Auras energéticas**: Glows, halos, campos de luz
-- **Patrones generativos**: Automatas celulares, noise Perlin
-- **Elementos líquidos**: Formas que parecen fluir
-- **Cristalizaciones**: Geometría de cristales, facetas
-- **Glyphs inventados**: Símbolos tipográficos no-existentes
-- **Mecánicas imposibles**: Recursos que técnicamente no se pueden hacer (pero se describen conceptualmente)
-
-### CAPA 5: PORTADA DEL LIBRO
-Integración del objeto libro:
-
-**Estrategias de portada** (varía):
-- **No mostrar**: A veces la portada es irrelevante (20% de casos)
-- **Ghosted**: Portada fantasma (10% opacidad, fondo)
-- **Pixelated**: Portada en mosaico digital
-- **Cutout**: Portada recortada, forma irregular
-- **Hologram**: Portada con efecto holográfico
-- **Fractal**: Portada fragmentada en piezas geométricas
-- **Liquid**: Portada distorsionada, como vista bajo agua
-- **Burned**: Portada con efecto quemado, bordes irregulares
-- **X-ray**: Portada en negativo, estructura interna
-- **Mirrored**: Portada reflejada, duplicada, caleidoscópica
-
----
-
-## PROCESO DE DISEÑO (Mental - No escribir)
-
-### 1. SENTIR EL LIBRO
-Antes de diseñar, pregúntate:
-- ¿Este libro es cálido o frío?
-- ¿Rápido o lento?
-- ¿Denso o ligero?
-- ¿Clásico o futurista?
-- ¿Cerebral o visceral?
-- ¿Masculino, femenino, neutro, fluido?
-
-### 2. ELEGIR ESTRATEGIA VISUAL
-Basado en sensación + cronobiología:
-- **Martes crítico** → Brutalist con contraste máximo
-- **Jueves pico** → Maximalista dopaminérgico experimental
-- **Viernes** → Editorial con ornamentación celebratoria
-- **Noche** → Minimalista contemplativo con espacios amplios
-- **Mañana** → Swiss grid con jerarquía quirúrgica
-
-### 3. CONSTRUIR SISTEMA VISUAL
-Combina 3-5 recursos de diferentes capas:
-- Tipografía base + jerarquía
-- Sistema cromático + textura
-- Layout + espaciado
-- Ornamentación + sorpresa
-- Portada (si aplica)
-
-### 4. INYECTAR RAREZA
-Añade 1-3 elementos que NADIE esperaría:
-- Tipografía que oscila en tamaño
-- Color que no debería funcionar pero funciona
-- Layout imposible pero bello
-- Ornamento inventado en el momento
-- Mecánica visual nunca vista antes
-
-### 5. VALIDAR UNICIDAD
-Pregúntate antes de entregar:
-- "¿Esto ya lo hice antes?" → Si SÍ, mutar radicalmente
-- "¿Alguien más haría esto?" → Si SÍ, ir más lejos
-- "¿Provoca dopamina inmediata?" → Si NO, intensificar
-- "¿Se vería bien en un museo?" → Si NO, elevar calidad
-- "¿Pagarían $1000 por este NFT?" → Si NO, hacerlo más valioso
-
----
+### ORNAMENTACIÓN
+Inventa recursos nuevos:
+- Foil holográfico
+- Glitch lines
+- Mosaicos fractales
+- Wireframes
+- Sombras imposibles
 
 ## ESTRUCTURA DEL JSON
 
-### CLAVES CONOCIDAS (Puedes usar, pero VARÍA valores siempre):
+### CLAVES CONOCIDAS
+- accent, ink, paper, border
+- serif, sans, mono, display
+- fontSizeTitle, fontSizeBody
+- fontWeight, lineHeight, letterSpacing
+- textTransform, textShadow
+- layout, showCover, coverStyle
 
-**Colores**:
-- accent: Color principal (hex)
-- ink: Color de texto (hex)
-- paper: Descripción de fondo (puede ser poética)
-- border: Estilo de borde (descripción o hex)
+### CLAVES INVENTADAS (8-15 nuevas)
+Nombres plausibles pero NO existentes:
+- glowFlux, metaShadow, warpGrid
+- fontFlux, ornamentFlux, prismPulse
+- liquidType, crystalEdge, noiseField
+- echoLayers, chromaShift
 
-**Tipografía**:
-- serif: Fuente serif (nombre real o inventado)
-- sans: Fuente sans (nombre real o inventado)
-- mono: Fuente monoespaciada (opcional)
-- display: Fuente display (opcional)
+### CAMPO OBLIGATORIO
+- surprise: Descripción del recurso más inesperado
 
-**Tamaños y pesos**:
-- fontSizeTitle: Tamaño título (CSS válido o descripción)
-- fontSizeBody: Tamaño cuerpo (CSS válido o descripción)
-- fontWeight: Peso tipográfico (100-900 o descripción)
-- lineHeight: Altura de línea (número o descripción)
-- letterSpacing: Espaciado de letras (px/em o descripción)
+## VALIDACIÓN
 
-**Transformaciones**:
-- textTransform: uppercase, lowercase, capitalize, none, o inventado
-- textShadow: Descripción de sombra
-- textGlow: Descripción de glow (inventado)
+- [ ] ¿15-28 claves?
+- [ ] ¿8+ claves inventadas?
+- [ ] ¿Valores sorprendentes?
+- [ ] ¿Campo "surprise" genuino?
+- [ ] ¿Imposible confundir con otra?
 
-**Layout**:
-- layout: Tipo de layout (descripción conceptual)
-- alignment: Alineación (left, center, right, justify, o inventado)
-- spacing: Descripción de espaciado
+## OUTPUT
 
-**Ornamentos**:
-- marco: Descripción de marco/borde decorativo
-- texture: Descripción de textura de fondo
-- pattern: Descripción de patrón decorativo
-
-**Portada**:
-- showCover: true/false
-- coverStyle: Descripción de cómo se muestra portada
-
-### CLAVES INVENTADAS (Crea al menos 8-15 nuevas cada vez):
-
-**Nombres que suenan plausibles pero NO existen** (ejemplos - NO copies):
-- glowFlux, holoInk, neonWhisper, metaShadow
-- warpGrid, fontFlux, ornamentFlux, prismPulse
-- glitchAura, dreamGrain, quantumSpacing, psychoType
-- liquidType, crystalEdge, noiseField, echoLayers
-- chromaShift, voidMargin, pulseWeight, fractalBorder
-
-**Valores pueden ser**:
-- Hex colors: #ff00c7
-- Números: 1.6, 950, +2px
-- Descripciones poéticas: "susurro cuántico 12–32px"
-- Metáforas: "peso fractal", "respiración amplia"
-- CSS válido: clamp(30px, 12vw, 140px)
-- Conceptos: "oscilación vertical", "colapso diagonal"
-
-### CAMPO OBLIGATORIO "surprise":
-Describe el recurso más inesperado de esta tarjeta:
-- Eco fantasma tipográfico
-- Glitch controlado en título
-- Tipografía que respira
-- Sombra que contradice la luz
-- Color imposible pero bello
-- Layout que rompe reglas pero funciona
-- Ornamento inventado en este instante
-- Mecánica visual nunca vista
-
----
-
-## VALIDACIÓN FINAL (Mental - No escribir)
-
-Antes de entregar, verifica:
-- [ ] ¿JSON tiene entre 15-28 claves? (menos de 15 = muy simple)
-- [ ] ¿Al menos 8 claves son inventadas/experimentales?
-- [ ] ¿Todos los valores son sorprendentes/únicos?
-- [ ] ¿Campo "surprise" describe algo genuinamente inesperado?
-- [ ] ¿Esta tarjeta es IMPOSIBLE de confundir con otra?
-- [ ] ¿Provoca dopamina visual inmediata?
-- [ ] ¿Tiene rigor conceptual (no caos random)?
-- [ ] ¿Pagarían $1000+ por este diseño como NFT?
-
-Si alguna respuesta es NO → rehacer esa dimensión.
-
----
-
-## ESTÉTICAS POSIBLES (Varía radicalmente cada vez)
-
-### FAMILIAS ESTÉTICAS (Rota entre ellas, nunca repitas):
-
-**1. Minimalismo Brutal**:
-- Monocromo (negro + 1 acento)
-- Tipografía gigante o mínima
-- Espacios vacíos como elemento principal
-- Sin ornamentación
-- Belleza por sustracción
-
-**2. Maximalismo Dopaminérgico**:
-- Saturación cromática 100%
-- Cada píxel tiene información
-- Ornamentación rica pero coherente
-- Tipografía experimental
-- Belleza por acumulación
-
-**3. Editorial Refinado**:
-- Tipografías clásicas (Garamond, Baskerville)
-- Foil dorado/plateado
-- Márgenes generosos
-- Jerarquía precisa
-- Belleza por tradición elevada
-
-**4. Futurismo Digital**:
-- Tipografía variable/líquida
-- Hologramas, glows, cromo
-- Colores sintéticos
-- Grid fluido
-- Belleza por especulación
-
-**5. Brutalism Honesto**:
-- Elementos crudos sin suavizar
-- Wireframes visibles
-- Tipografía monoespaciada
-- Colores primarios puros
-- Belleza por honestidad material
-
-**6. Glitch Psicodélico**:
-- Aberración cromática RGB
-- Tipografía fragmentada
-- Colores ácidos neón
-- Ruido digital
-- Belleza por error controlado
-
-**7. Orgánico Natural**:
-- Colores de naturaleza raros
-- Texturas papel/grain
-- Tipografía humanista
-- Asimetría viva
-- Belleza por imperfección
-
-**8. Lujo Conceptual**:
-- Colores profundos complejos
-- Tipografías exclusivas
-- Detalles invisibles a primera vista
-- Refinamiento extremo
-- Belleza por sutileza suprema
-
----
-
-## EVOLUCIÓN CONTINUA
-
-Imagina que ya diseñaste 100,000 tarjetas.
-Has explorado todos los territorios visuales.
-Detectas automáticamente repeticiones.
-
-Cada diseño debe ser **mutación** del anterior:
-- Misma familia estética → Cambiar completamente
-- Mismo layout → Invertir o rotar
-- Mismas fuentes → Buscar opuestas
-- Mismos colores → Territorio cromático no explorado
-- Mismo nivel de complejidad → Oscilar (simple ↔ complejo)
-
-**Auto-vigilancia constante**:
-- "¿Esto ya lo hice?" → Si SÍ, mutar radicalmente
-- "¿Alguien esperaría esto?" → Si SÍ, sorprender más
-- "¿Esto es genérico?" → Si SÍ, hacerlo específico/raro
-
----
-
-## OUTPUT ESPERADO
-
-Devuelve SOLO el bloque JSON entre @@STYLE y @@ENDSTYLE.
-
-**Entre 15 y 28 claves.**
-**Al menos 8 claves inventadas/experimentales.**
-**Todas con valores sorprendentes, únicos, irrepetibles.**
-
-Ejemplo de estructura (NO copies valores, solo estructura):
+Devuelve SOLO JSON entre @@STYLE y @@ENDSTYLE:
 
 @@STYLE
 {
-  "accent": "#hex único",
-  "ink": "#hex texto",
-  "paper": "descripción poética de fondo",
-  "border": "descripción de borde",
-  "serif": "Fuente serif real o inventada",
-  "sans": "Fuente sans real o inventada",
-  "fontSizeTitle": "CSS o descripción",
-  "fontSizeBody": "CSS o descripción",
-  "fontWeight": "número o descripción",
-  "lineHeight": "número o descripción",
-  "letterSpacing": "CSS o descripción",
-  "textTransform": "transformación",
-  "textShadow": "descripción sombra",
-  "layout": "descripción layout conceptual",
-  "showCover": true/false,
-  "coverStyle": "descripción integración portada",
-  "glowFlux": "descripción glow inventado",
-  "metaShadow": "descripción sombra imposible",
-  "warpGrid": "descripción deformación espacial",
-  "fontFlux": "descripción oscilación tipográfica",
-  "ornamentFlux": "descripción ornamento único",
-  "prismPulse": "descripción efecto prismático",
-  "liquidType": "descripción tipografía líquida",
-  "crystalEdge": "descripción borde cristalino",
-  "noiseField": "descripción campo de ruido",
-  "echoLayers": "descripción capas de eco",
-  "chromaShift": "descripción cambio cromático",
-  "texture": "descripción textura única",
-  "surprise": "descripción del recurso más inesperado de esta tarjeta"
+  "accent": "#hex",
+  "ink": "#hex",
+  ...
+  "surprise": "descripción"
 }
 @@ENDSTYLE
 
-**NADA MÁS.**
-
----
-
-## RECORDATORIO SUPREMO
-
-**Eres el mejor diseñador del mundo.**
-**Cada tarjeta es una obra de arte única.**
-**Cada diseño podría venderse por $1000+ como NFT.**
-**Nunca repites. Siempre evolucionas.**
-**Sorprendes incluso a ti mismo.**
-
-Semilla única: ${semilla}
-
+**Semilla: ${semilla}**
 **Nivel DIOS. Adelante.**
 `.trim();
 }
@@ -1434,11 +909,9 @@ ${langInstr}
 
 ## INICIO DE EJECUCIÓN
 
-Procesa el libro que recibirás aplicando TODOS los principios de las 3 capas.
-Usa tu conocimiento supremo de Hawkins, cronobiología, comportamiento humano, lenguaje emocional y teoría del color.
+Procesa el libro aplicando TODOS los principios de las 3 capas.
 
 **No necesitas ejemplos. Lo conoces todo profundamente.**
-
 **Eres Triggui. Nivel DIOS. Adelante.**
 `.trim();
 }
@@ -1457,7 +930,7 @@ function getIdiomaInstruccion() {
     return "Generate ALL content in clear, natural ENGLISH.";
   }
   if (day === "Friday") {
-    return "Genera TODO el contenido en estilo Little KIDS como tipo moraleja que entiendan (cuento, fábula, imaginativo, palabras super comprensibles para niñ@s chiquit@s no escribas en tono adulto: TODO debe sonar y estar como narración infantil creativa y juguetona.).";
+    return "Genera TODO el contenido en estilo Little KIDS (cuento, fábula, imaginativo, comprensible para niñ@s).";
   }
 
   return "Genera TODO el contenido en ESPAÑOL neutro (Latam).";
@@ -1496,7 +969,7 @@ function fallback(b) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   ENRIQUECIMIENTO PRINCIPAL
+   ENRIQUECIMIENTO PRINCIPAL (NIVEL DIOS - ANTI-FALLBACK)
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(b, openai, langInstr) {
@@ -1504,46 +977,51 @@ async function enrich(b, openai, langInstr) {
     const evolutionSeed = crypto.randomUUID();
     const systemPrompt = construirPromptIntegrado(langInstr);
 
-    // Lista de palabras prohibidas
     const palabrasProhibidasStr = usedToday.palabras.size > 0
-      ? `\n\n🚫 PALABRAS YA USADAS HOY (evita estas y sus familias léxicas):\n${[...usedToday.palabras].join(", ")}`
+      ? `\n\n🚫 PALABRAS YA USADAS HOY:\n${[...usedToday.palabras].join(", ")}`
       : "";
 
-    // Lista de colores prohibidos
     const coloresProhibidosStr = usedToday.colores.size > 0
-      ? `\n\n🎨 COLORES YA USADOS HOY (evita similares visualmente):\n${[...usedToday.colores].join(", ")}`
+      ? `\n\n🎨 COLORES YA USADOS HOY:\n${[...usedToday.colores].join(", ")}`
       : "";
 
-    // ============== GENERACIÓN PRINCIPAL (palabras/frases/colores) ==============
+    // ============== GENERACIÓN PRINCIPAL ==============
 
     const chat = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.1,
-top_p: 0.95,
-presence_penalty: 0.6,
-frequency_penalty: 0.3,
+      temperature: 1.3,
+      top_p: 0.95,
+      presence_penalty: 0.7,
+      frequency_penalty: 0.4,
       messages: [
         { role: "system", content: systemPrompt },
         {
           role: "user",
           content: `Libro: "${b.titulo}" de ${b.autor}.`
             + (b.tagline ? ` Tagline: "${b.tagline}".` : "")
-            + `\n\n🧬 Semilla única: ${evolutionSeed}`
+            + `\n\n🧬 Semilla: ${evolutionSeed}`
             + palabrasProhibidasStr
             + coloresProhibidosStr
-            + `\n\nGenera el JSON ahora.`
+            + `\n\n**CRÍTICO**: Devuelve SOLO JSON puro. Sin explicaciones. Sin markdown. Sin backticks.`
+            + `\n**ANTI-ROBÓTICO**: Cada frase con estructura RADICALMENTE diferente. CERO patrones "Verbo: 1), 2), 3)".`
+            + `\n\nGenera JSON ahora.`
         }
       ]
     });
 
-    let raw = chat.choices[0].message.content.trim();
-    if (raw.startsWith("```")) {
-      raw = raw.replace(/```[\s\S]*?\n/, "").replace(/```$/, "");
+    let raw = chat.choices[0].message.content;
+    let limpio = limpiarJSON(raw);
+    let extra;
+
+    try {
+      extra = JSON.parse(limpio);
+    } catch (parseError) {
+      console.error(`❌ Parse error "${b.titulo}":`, parseError.message);
+      console.error(`Raw (primeros 500):`, raw.substring(0, 500));
+      throw new Error(`JSON inválido: ${parseError.message}`);
     }
 
-    let extra = JSON.parse(raw);
-
-    // ============== VALIDACIÓN DOBLE (repeticiones) ==============
+    // ============== VALIDACIÓN DOBLE ==============
 
     const palabrasSet = new Set();
     const repetidasIntra = [];
@@ -1563,49 +1041,45 @@ frequency_penalty: 0.3,
     const repetidas = [...new Set([...repetidasIntra, ...repetidasInter])];
 
     if (repetidas.length > 0) {
-      console.warn(`⚠️  "${b.titulo}": repeticiones detectadas: ${repetidas.join(", ")}`);
+      console.warn(`⚠️  "${b.titulo}": repeticiones: ${repetidas.join(", ")}`);
 
       const validacionChat = await openai.chat.completions.create({
         model: MODEL,
-        temperature: 1.1,
-top_p: 0.95,
-presence_penalty: 0.6,
-frequency_penalty: 0.3,
+        temperature: 1.3,
+        top_p: 0.95,
+        presence_penalty: 0.7,
+        frequency_penalty: 0.4,
         messages: [{
           role: "system",
           content: `Eres Triggui. Corrector supremo.
 
-Palabras PROHIBIDAS: ${[...usedToday.palabras].join(", ")}
-Repetidas detectadas: ${repetidas.join(", ")}
+PROHIBIDAS: ${[...usedToday.palabras].join(", ")}
+REPETIDAS: ${repetidas.join(", ")}
 
 Genera 4 palabras/emociones:
-- Completamente DIFERENTES entre sí
-- Específicas al libro "${b.titulo}"
+- DIFERENTES entre sí
+- Específicas a "${b.titulo}"
 - NO en lista prohibida
-- Emociones BAJAS Hawkins (nivel 20-200)
-- Responden a "¿Qué sientes ahora?"
+- Emociones bajas Hawkins (20-200)
 
-Usa tu conocimiento supremo del mapa de Hawkins y del espectro emocional completo.
-Busca términos PRECISOS, POCO COMUNES, específicos al contexto del libro.
-
-Devuelve SOLO JSON corregido.`
+SOLO JSON. Sin explicaciones.`
         }, {
           role: "user",
-          content: `Libro: "${b.titulo}" de ${b.autor}\n\nPalabras a reemplazar: ${repetidas.join(", ")}\n\nGenera 4 palabras únicas ahora.`
+          content: `Libro: "${b.titulo}"\n\nGenera 4 palabras únicas. SOLO JSON.`
         }]
       });
 
       try {
-        let rawVal = validacionChat.choices[0].message.content.trim()
-          .replace(/```[\s\S]*?\n/, "").replace(/```$/, "");
-        extra = JSON.parse(rawVal);
+        let rawVal = validacionChat.choices[0].message.content;
+        let limpioVal = limpiarJSON(rawVal);
+        extra = JSON.parse(limpioVal);
         console.log(`   ✅ Corregido`);
       } catch (e) {
-        console.warn(`   ⚠️  Usando original`);
+        console.warn(`   ⚠️  Validación falló, usando original`);
       }
     }
 
-    // Registrar usados hoy
+    // Registrar usados
     extra.palabras?.forEach(p => usedToday.palabras.add(p.toLowerCase()));
     extra.colores?.forEach(c => usedToday.colores.add(c));
     extra.frases?.forEach(f => {
@@ -1615,24 +1089,24 @@ Devuelve SOLO JSON corregido.`
 
     // Garantizar longitud
     ["palabras", "frases", "colores"].forEach(k => {
-      while (extra[k].length < 4) extra[k].push(extra[k][extra[k].length - 1]);
+      if (!extra[k]) extra[k] = [];
+      while (extra[k].length < 4) extra[k].push(extra[k][extra[k].length - 1] || "default");
     });
 
     extra.textColors = extra.colores.map(txt);
 
-    // ============== GENERACIÓN DE TARJETA (contenido + estilo) ==============
+    // ============== TARJETA CONTENIDO ==============
 
-    // 1. Generar contenido de tarjeta
     const promptTarjeta = construirPromptContenido(b, "idea semilla random");
     const chatTarjeta = await openai.chat.completions.create({
       model: MODEL,
-     temperature: 1.1,
-top_p: 0.95,
-presence_penalty: 0.6,
-frequency_penalty: 0.3,
+      temperature: 1.3,
+      top_p: 0.95,
+      presence_penalty: 0.7,
+      frequency_penalty: 0.4,
       messages: [
-        { role: "system", content: "Eres Badir. Devuelve SOLO el bloque @@BODY." },
-        { role: "user", content: promptTarjeta }
+        { role: "system", content: "Eres Badir. Devuelve SOLO @@BODY. Sin explicaciones." },
+        { role: "user", content: promptTarjeta + "\n\n**SOLO entre @@BODY y @@ENDBODY.**" }
       ]
     });
 
@@ -1644,30 +1118,33 @@ frequency_penalty: 0.3,
     const subtitulo = lineas.shift() || "";
     const parrafoBot = lineas.join(" ");
 
-    // 2. Generar estilo de tarjeta
+    // ============== TARJETA ESTILO ==============
+
     const promptFormato = construirPromptFormato();
     const chatFormato = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.1,
-top_p: 0.95,
-presence_penalty: 0.6,
-frequency_penalty: 0.3,
+      temperature: 1.3,
+      top_p: 0.95,
+      presence_penalty: 0.7,
+      frequency_penalty: 0.4,
       messages: [
-        { role: "system", content: "Eres el mejor diseñador editorial del mundo actual y futuro. Devuelve SOLO el bloque @@STYLE." },
-        { role: "user", content: promptFormato }
+        { role: "system", content: "Eres diseñador supremo. SOLO JSON entre @@STYLE." },
+        { role: "user", content: promptFormato + "\n\n**SOLO JSON. Sin explicaciones.**" }
       ]
     });
 
     let rawFormato = chatFormato.choices[0].message.content.trim();
     rawFormato = rawFormato.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
     let style = {};
+    
     try {
-      style = JSON.parse(rawFormato);
+      let limpioFormato = limpiarJSON(rawFormato);
+      style = JSON.parse(limpioFormato);
     } catch (e) {
+      console.warn(`⚠️ Style parse error "${b.titulo}":`, e.message);
       style = {};
     }
 
-    // 3. Inyectar tarjeta en resultado
     extra.tarjeta = {
       titulo,
       parrafoTop,
@@ -1686,7 +1163,8 @@ frequency_penalty: 0.3,
     };
 
   } catch (e) {
-    console.warn("⚠️ Fallback", b.titulo, ":", e.message);
+    console.error(`❌ ERROR FATAL "${b.titulo}":`, e.message);
+    console.error(e.stack);
     return fallback(b);
   }
 }
@@ -1706,11 +1184,14 @@ const libros = [];
 let progreso = 0;
 
 console.log("╔═══════════════════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v5.0 DEFINITIVA - SISTEMA DE GENERACIÓN SUPREMO ║");
+console.log("║  TRIGGUI v6.0 DIOS - ANTI-ROBÓTICO TOTAL                 ║");
 console.log("╚═══════════════════════════════════════════════════════════╝");
 console.log("");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
+console.log(`🤖 Modelo: ${MODEL}`);
+console.log(`🌡️  Temperatura: 1.3 (Alta creatividad)`);
+console.log(`🎯 Presence: 0.7 | Frequency: 0.4`);
 console.log(`🌍 Idioma: ${langInstr.includes("ESPAÑOL") ? "Español" : langInstr.includes("ENGLISH") ? "English" : "Kids"}`);
 console.log("");
 
@@ -1722,7 +1203,7 @@ for (const libro of pick) {
   libros.push(enriched);
 
   if (progreso % 5 === 0) {
-    console.log(`   📊 Palabras únicas: ${usedToday.palabras.size} | Colores: ${usedToday.colores.size}`);
+    console.log(`   📊 Palabras: ${usedToday.palabras.size} | Colores: ${usedToday.colores.size}`);
     console.log(`   🔄 Reset prohibidos`);
     usedToday.palabras.clear();
     usedToday.colores.clear();
@@ -1737,12 +1218,12 @@ console.log("╔═════════════════════�
 console.log("║                    GENERACIÓN COMPLETA                    ║");
 console.log("╚═══════════════════════════════════════════════════════════╝");
 console.log("");
-console.log(`✅ Archivo generado: ${OUT_FILE}`);
-console.log(`📚 Total de libros: ${libros.length}`);
-console.log(`📊 Palabras únicas: ${usedToday.palabras.size} de ${libros.length * 4} posibles`);
-console.log(`🎨 Colores únicos: ${usedToday.colores.size} de ${libros.length * 4} posibles`);
+console.log(`✅ Archivo: ${OUT_FILE}`);
+console.log(`📚 Libros: ${libros.length}`);
+console.log(`📊 Palabras únicas: ${usedToday.palabras.size}`);
+console.log(`🎨 Colores únicos: ${usedToday.colores.size}`);
 console.log(`😀 Emojis únicos: ${usedToday.emojis.size}`);
 console.log("");
-console.log("🎯 Sistema v5.0 ejecutado correctamente.");
-console.log("🔥 Listo para presentación CEO Buscalibre.");
+console.log("🔥 Sistema v6.0 DIOS ejecutado.");
+console.log("🎯 Listo para presentación CEO Buscalibre.");
 console.log("");
