@@ -49,7 +49,7 @@ const CFG = {
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
   max: 5,                        // 📚 Libros por ejecución
-  delay: 1500,                   // ⏱️  Delay entre libros (ms)
+  delay: 3000,                   // ⏱️  Delay entre libros (ms)
   maxReintentos: 2               // 🔄 Reintentos por libro
 };
 
