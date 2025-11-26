@@ -31,7 +31,7 @@ if (!KEY) {
 const MODEL = "gpt-4o-mini";
 const CSV_FILE = "data/libros_master.csv";
 const OUT_FILE = "contenido.json";
-const DAILY_MAX = 5;
+const DAILY_MAX = 20;
 
 /* ═══════════════════════════════════════════════════════════════
    UTILIDADES
@@ -1518,10 +1518,10 @@ async function enrich(b, openai, langInstr) {
 
     const chat = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 0.8,
-top_p: 0.7,
-presence_penalty: 0.5,
-frequency_penalty: 0.40,
+      temperature: 1.1,
+top_p: 0.95,
+presence_penalty: 0.6,
+frequency_penalty: 0.3,
       messages: [
         { role: "system", content: systemPrompt },
         {
@@ -1567,10 +1567,10 @@ frequency_penalty: 0.40,
 
       const validacionChat = await openai.chat.completions.create({
         model: MODEL,
-        temperature: 0.8,
-top_p: 0.7,
-presence_penalty: 0.5,
-frequency_penalty: 0.40,
+        temperature: 1.1,
+top_p: 0.95,
+presence_penalty: 0.6,
+frequency_penalty: 0.3,
         messages: [{
           role: "system",
           content: `Eres Triggui. Corrector supremo.
@@ -1626,10 +1626,10 @@ Devuelve SOLO JSON corregido.`
     const promptTarjeta = construirPromptContenido(b, "idea semilla random");
     const chatTarjeta = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 0.8,
-top_p: 0.7,
-presence_penalty: 0.5,
-frequency_penalty: 0.40,
+     temperature: 1.1,
+top_p: 0.95,
+presence_penalty: 0.6,
+frequency_penalty: 0.3,
       messages: [
         { role: "system", content: "Eres Badir. Devuelve SOLO el bloque @@BODY." },
         { role: "user", content: promptTarjeta }
@@ -1648,10 +1648,10 @@ frequency_penalty: 0.40,
     const promptFormato = construirPromptFormato();
     const chatFormato = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 0.8,
-top_p: 0.7,
-presence_penalty: 0.5,
-frequency_penalty: 0.40,
+      temperature: 1.1,
+top_p: 0.95,
+presence_penalty: 0.6,
+frequency_penalty: 0.3,
       messages: [
         { role: "system", content: "Eres el mejor diseñador editorial del mundo actual y futuro. Devuelve SOLO el bloque @@STYLE." },
         { role: "user", content: promptFormato }
