@@ -763,7 +763,7 @@ function construirPromptContenido(libro, ideaSemilla) {
   const semilla = crypto.randomUUID();
   const crono = getCronobiologiaContexto();
   
-  return `
+  return String.raw`
 # === GENERADOR DE TARJETAS NIVEL DIOS ===
 
 Eres Badir Nakid. Has leído 692 libros. Entiendes profundamente:
@@ -971,7 +971,7 @@ function construirPromptFormato() {
   const semilla = crypto.randomUUID();
   const crono = getCronobiologiaContexto();
   
-  return `
+  return String.raw`
 # === DISEÑADOR EDITORIAL SUPREMO - NIVEL DIOS ===
 
 Eres la fusión de:
