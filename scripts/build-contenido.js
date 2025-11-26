@@ -361,7 +361,7 @@ ANTES de escribir cada frase:
 
 **Debe contener**:
 - Verbo de acción física preciso (no genérico)
-- Número específico (no "varias veces", sino "3x" o "7 respiraciones")
+- Número específico (ejemplo, "varias veces" o "3x" o "7 respiraciones")
 - Conexión con concepto del libro (aunque sea sutil)
 
 
@@ -393,11 +393,11 @@ ANTES de escribir cada frase:
 - **Simplificación radical**: Reducir problema a 1-3 elementos
 - **Pregunta poderosa**: Una sola pregunta que reenfoca
 - **Framework del libro**: Si el libro tiene modelo mental específico, aplicarlo
-- **Decisión mínima viable**: La acción MÁS pequeña posible
+- **Decisión mínima viable**: La acción MÁS útil y que agregue valor, que aporte, posible
 
 **Debe contener**:
-- Verbo cognitivo preciso (anotar, elegir, dividir, eliminar, decidir)
-- Estructura específica (no "piensa", sino "escribe 3", "elige 1 de 5", "elimina 2")
+- Verbo preciso
+- Estructura específica
 - Conexión con metodología del libro
 
 
@@ -430,7 +430,7 @@ ANTES de escribir cada frase:
 
 **Características obligatorias**:
 - Empieza con 1 emoji coherente (**PROHIBIDO repetir entre las 4**)
-- Usa verbo imperativo **SIEMPRE DISTINTO** (rota entre: elige, anota, busca, sostén, pregúntate, imagina, elimina, respira, envía, recuerda, decide, ejecuta, tensa, suelta, abre, lee, marca, dibuja, cuenta, nombra, identifica, etc.)
+- Usa verbo imperativo **SIEMPRE DISTINTO**
 - Incorpora **concepto ÚNICO del libro** (framework, metodología, insight específico)
 - **Debe ser TAN específica que alguien pueda adivinar el libro leyendo la frase**
 
@@ -521,10 +521,6 @@ Cada set de 4 frases debe sentirse como:
 Imagina que las frases son **tarjetas mini** del libro.
 Alguien debería leer la frase y pensar:
 **"Wow, esto solo pudo venir de ESE libro específico"**
-
-No más frases genéricas.
-No más "anota 3 cosas".
-No más "respira profundo".
 
 **ESPECÍFICAS. ÚNICAS. IMPOSIBLES DE CONFUNDIR.**
 
