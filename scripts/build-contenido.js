@@ -331,7 +331,7 @@ Responden a la pregunta: **"¿Qué sientes ahora?"**
 ## GENERACIÓN DE FRASES (ANTI-ROBÓTICO TOTAL)
 
 ### Naturaleza
-Micro-protocolos de 20-35 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
+Micro-protocolos de 15-30 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
 
 ### Semillas Únicas de Variación
 Para garantizar que cada frase sea completamente irrepetible y no siga patrones previos:
@@ -357,9 +357,10 @@ Para garantizar que cada frase sea completamente irrepetible y no siga patrones 
 
 ✅ **OBLIGATORIO hacer**:
 - Cada frase con estructura RADICALMENTE diferente
-- Variar longitud: 55-75 caracteres
+- Variar longitud: 40-90 caracteres (no siempre 60)
 - Mezclar formatos: pregunta, afirmación, imperativo, fragmento, paradoja
 - Sorprender con sintaxis inesperada
+- MÁXIMO 1 frase con lista (de las 4 totales)
 
 ---
 
@@ -399,29 +400,30 @@ Para garantizar que cada frase sea completamente irrepetible y no siga patrones 
 
 #### [0] MOVIMIENTO FÍSICO
 - Romper patrón corporal que sostiene la emoción
-- Verbos variados: sostén, gira, levanta, cambia, ajusta, expande, contrae, etc
+- Verbos variados: sostén, gira, levanta, cambia, ajusta, expande, contrae
 - NO usar siempre "respira", "camina", "mueve"
 
 #### [1] CORAZÓN EMOCIONAL
 - Giro afectivo que recontextualiza la emoción
-- Verbos variados: nombra, recuerda, imagina, siente, conecta, valida, etc
+- Verbos variados: nombra, recuerda, imagina, siente, conecta, valida
 - NO usar siempre "piensa en", "reflexiona"
 
 #### [2] CEREBRO MENTAL
 - Claridad cognitiva express, cortar rumiación
-- Verbos variados: escribe, reduce, pregunta, decide, simplifica, elige, etc
+- Verbos variados: escribe, reduce, pregunta, decide, simplifica, elige
 - NO usar siempre "anota", "lista"
 
 #### [3] INTEGRACIÓN CON LIBRO
 - Ritual mínimo que conecte físicamente con el libro
-- Verbos variados: abre, busca, marca, sostén, lee, subraya, etc
+- Verbos variados: abre, busca, marca, sostén, lee, subraya
 - NO usar siempre "abre en página random"
 
 ---
 
 ### Requerimientos Especiales
 
-Las 4 frases deben ser formatos completamente distintos.
+De las 4 frases, **MÁXIMO UNA** puede tener lista numerada.
+Las otras 3 deben ser formatos completamente distintos.
 
 ---
 
@@ -444,18 +446,20 @@ Hazte estas preguntas para CADA frase:
 
 ### Prohibiciones Absolutas
 
-❌ Mencionar la PALABRA ni su familia léxica
+❌ Mencionar la palabra emocional ni su familia léxica
 ❌ Repetir emojis entre las 4 frases
 ❌ Usar siempre los mismos verbos
 ❌ Frases genéricas aplicables a cualquier libro
 ❌ Estructuras repetitivas predecibles
+❌ Más de 1 frase con lista numerada
+❌ Patrón "Emoji + Verbo + dos puntos + lista"
 
 ---
 
 ### Variación Radical Obligatoria
 
 Cada set de 4 frases debe sentirse como:
-- Escrito por 4 personas distintas sobre el mismo libro
+- Escrito por 4 personas distintas
 - Desde 4 ángulos completamente diferentes del libro
 - Con 4 tonos/ritmos variados
 - Con 4 tipos de acción distintos
@@ -471,13 +475,11 @@ Cada set de 4 frases debe sentirse como:
 
 ### Formato Final de Output
 
-### Formato Final de Output
-
 "frases": [
-  "frase 1 con estructura única",
-  "frase 2 con estructura completamente diferente", 
-  "frase 3 con otra estructura distinta",
-  "frase 4 con estructura radicalmente diferente"
+  "emoji verbo micro-protocolo específico",
+  "emoji verbo micro-protocolo específico", 
+  "emoji verbo micro-protocolo específico",
+  "emoji verbo micro-protocolo específico"
 ]
 
 **Cada frase: nivel DIOS.**
