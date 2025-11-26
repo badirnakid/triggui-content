@@ -8,18 +8,41 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     env:
       OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
       TZ: America/Mexico_City
+    
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # ← IMPORTANTE: Fetch completo para rebase
+          
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install openai csv-parse                      # ← línea correcta
-      - run: node scripts/build-contenido.js
+          
+      - name: Install dependencies
+        run: npm install openai csv-parse
+        
+      - name: Pull latest changes
+        run: |
+          git config pull.rebase true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull origin main || echo "No changes to pull"
+        
+      - name: Run build script
+        run: node scripts/build-contenido.js
+        
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: contenido.json
-          commit_message: "bot: contenido diario ✨"
+          commit_message: 'bot: contenido diario ✨'
+          file_pattern: 'contenido.json'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          commit_author: 'badirnakid <16995537+badirnakid@users.noreply.github.com>'
+          push_options: '--force-with-lease'
