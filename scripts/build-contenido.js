@@ -306,6 +306,15 @@ Responden a la pregunta: **"¿Qué sientes ahora?"**
 
 ### Naturaleza
 Micro-protocolos de 15-30 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
+### Semillas Únicas de Variación
+Para garantizar que cada frase sea completamente irrepetible y no siga patrones previos,
+usa estas semillas internas (NO se deben mencionar en el JSON final):
+
+- Movimiento → ${crypto.randomUUID()}
+- Corazón → ${crypto.randomUUID()}
+- Cerebro → ${crypto.randomUUID()}
+- Integración → ${crypto.randomUUID()}
+
 **Estas frases son el puente entre insight y acción.**
 **Deben ser TAN específicas al libro que solo ESE libro pudo haberlas inspirado.**
 
