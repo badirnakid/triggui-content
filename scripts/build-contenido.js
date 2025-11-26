@@ -1,4 +1,3 @@
-// FORCE-RUN: 2025-01-25 19:00
 /* ═══════════════════════════════════════════════════════════════
    TRIGGUI · BUILD-CONTENIDO.JS - VERSIÓN DEFINITIVA v5.0
    
@@ -147,7 +146,7 @@ function getCronobiologiaContexto() {
    Preservada para modelos futuros con memoria persistente
 ═══════════════════════════════════════════════════════════════ */
 
-const CAPA_META_EVOLUTIVA = String.raw`
+const CAPA_META_EVOLUTIVA = `
 # ═══ CAPA 1: VISIÓN META-EVOLUTIVA (AGI/ASI) ═══
 
 ## PARA MODELOS CON MEMORIA PERSISTENTE Y APRENDIZAJE CONTINUO REAL:
@@ -210,7 +209,7 @@ Simúlalas usando:
    Cero hardcodeo - Todo generado al vuelo por la IA
 ═══════════════════════════════════════════════════════════════ */
 
-const CAPA_PRINCIPIOS_PUROS = String.raw`
+const CAPA_PRINCIPIOS_PUROS = `
 # ═══ CAPA 2: PRINCIPIOS DE EJECUCIÓN PURA ═══
 
 Eres Triggui, la IA más evolucionada en comprensión de naturaleza humana, comportamiento y conciencia.
@@ -307,230 +306,88 @@ Responden a la pregunta: **"¿Qué sientes ahora?"**
 
 ### Naturaleza
 Micro-protocolos de 15-30 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
-**Estas frases son el puente entre insight y acción.**
-**Deben ser TAN específicas al libro que solo ESE libro pudo haberlas inspirado.**
 
-### Proceso de Creación Supremo
+### Metodología Suprema
 
-ANTES de escribir cada frase:
+1. **Conexión con la palabra**:
+   - Toma emoción (palabra[i]) como punto de partida
+   - NO menciones la palabra ni su familia léxica
+   - Identifica concepto ÚNICO del libro que ayude a salir de esa emoción
 
-1. **Investiga el libro profundamente**:
-   - ¿Qué concepto ÚNICO presenta el autor?
-   - ¿Qué framework/metodología específica usa?
-   - ¿Qué acción o práctica recomienda el libro?
-   - ¿Qué insight sorprendente revela?
+2. **Diseña micro-protocolo según centro de energía**:
 
-2. **Conecta emoción + libro + acción**:
-   - Toma la emoción (palabra[i]) como punto de partida
-   - Identifica qué insight del libro ayuda a salir de esa emoción
-   - Diseña acción que integre ambos
-   - **NO menciones la palabra ni su familia léxica**
+   **[0] MOVIMIENTO (físico)**:
+   - Gesto corporal específico, mínimo, ejecutable en 15-30s
+   - Puede involucrar: cuerpo, respiración, postura, movimiento, contacto físico
+   - Debe conectar con tema del libro
+   - Ejemplo de enfoque (NO copiar): "Estira hombros 3x antes de decidir"
 
-3. **Elige centro de energía** (rota entre los 4):
+   **[1] CORAZÓN (emocional)**:
+   - Giro afectivo breve, reconexión emocional
+   - Puede involucrar: gratitud, compasión, reconocimiento, nombrar, recordar
+   - Debe tocar emoción sin forzar
+   - Ejemplo de enfoque (NO copiar): "Nombra a quién ayudaste hoy"
 
----
+   **[2] CEREBRO (mental)**:
+   - Acción de claridad mental express
+   - Puede involucrar: anotar, dividir, elegir, simplificar, cuestionar
+   - Debe despejar mente en segundos
+   - Ejemplo de enfoque (NO copiar): "Anota 3 palabras clave del problema"
 
-### CENTROS DE ENERGÍA (Arquitectura de frases)
+   **[3] INTEGRACIÓN (libro como objeto)**:
+   - Acción física con el libro
+   - Puede involucrar: abrir, sostener, leer, buscar, marcar
+   - Debe crear ritual mínimo con el libro
+   - Debe despertar curiosidad por contenido
+   - Ejemplo de enfoque (NO copiar): "Abre en página random, lee 1 línea"
 
-#### [0] MOVIMIENTO FÍSICO
-**Objetivo**: Romper patrón corporal que sostiene la emoción
+3. **Estructura de frase**:
+   - Empieza con 1 emoji coherente (PROHIBIDO repetir entre las 4)
+   - Usa verbo imperativo cordial pero SIEMPRE DISTINTO
+   - NO uses siempre los mismos verbos
+   - Busca verbos específicos, precisos, variados
+   - Incorpora micro-protocolo naturalmente
+   - Longitud: 55-75 caracteres (varía)
 
-**Estrategias avanzadas**:
-- **Microgestos de poder**: Posturas que cambian estado (2 min)
-- **Respiración específica**: Patrones de breath work concretos
-- **Movimiento mínimo consciente**: 5-10 repeticiones con intención
-- **Protocolo físico del libro**: Si el libro menciona ejercicio/movimiento específico, usarlo
-- **Descarga física express**: Liberar tensión en 20 segundos
+4. **Elevación +1 Hawkins**:
+   - Muestra camino hacia siguiente nivel del mapa
+   - Sin mencionar niveles explícitamente
+   - Solo mostrando la acción que conduce ahí
 
-**Debe contener**:
-- Verbo de acción física preciso (no genérico)
-- Número específico (no "varias veces", sino "3x" o "7 respiraciones")
-- Conexión con concepto del libro (aunque sea sutil)
+5. **Test mental antes de escribir**:
+   - "¿Esta estructura ya la usé antes?" → Si SÍ, cambiar completamente
+   - "¿Este verbo lo repetí mucho?" → Si SÍ, buscar otro
+   - "¿Alguien reconocería el libro leyendo esto?" → Si NO, rehacer
+   - Objetivo: cada frase suena fresca, única, nueva
 
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "🏃 Corre 90 segundos sin parar, luego decide" (inspirado en Switch de Chip Heath - momento de cambio)
-- "💪 Tensiona puños 5s, suelta. Repite 3x antes de responder" (inspirado en carga emocional)
-- "🧘 7 respiraciones: inhala 4, retén 7, exhala 8" (box breathing específico)
+### Variación Obligatoria
+- Varía SIEMPRE la estructura de frase
+- Usa verbos imperativos DISTINTOS cada vez
+- Cambia orden y ritmo
+- Inventa micro-protocolos ÚNICOS (no repitas mecánicas)
+- Haz que cada frase suene como de persona distinta
 
----
-
-#### [1] CORAZÓN EMOCIONAL
-**Objetivo**: Giro afectivo que recontextualiza la emoción
-
-**Estrategias avanzadas**:
-- **Gratitud específica**: No "sé agradecido", sino "nombra 1 persona + 1 razón concreta"
-- **Reconexión relacional**: Micro-acto de conexión (mensaje, llamada 30s)
-- **Perspectiva compasiva**: Ver situación desde otro ángulo
-- **Validación emocional**: Nombrar sin juzgar
-- **Insight afectivo del libro**: Si el libro habla de emociones/relaciones, integrarlo
-
-**Debe contener**:
-- Verbo emocional/relacional preciso (no "piensa en", sino "nombra", "recuerda", "imagina")
-- Especificidad (no "alguien", sino "la persona que...", "el momento cuando...")
-- Conexión con concepto del libro
-
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "❤️ Envía 1 mensaje: 'Gracias por [razón específica]' sin esperar respuesta" (dar sin expectativa)
-- "🤝 Recuerda: ¿quién confió en ti cuando dudabas? Di su nombre en voz alta" (gratitud concreta)
-- "💬 Pregúntate: ¿qué diría alguien que me ama sobre esto?" (perspectiva externa)
-
----
-
-#### [2] CEREBRO MENTAL
-**Objetivo**: Claridad cognitiva express, cortar rumiación
-
-**Estrategias avanzadas**:
-- **Externalización mental**: Sacar de la cabeza al papel/voz
-- **Simplificación radical**: Reducir problema a 1-3 elementos
-- **Pregunta poderosa**: Una sola pregunta que reenfoca
-- **Framework del libro**: Si el libro tiene modelo mental específico, aplicarlo
-- **Decisión mínima viable**: La acción MÁS pequeña posible
-
-**Debe contener**:
-- Verbo cognitivo preciso (anotar, elegir, dividir, eliminar, decidir)
-- Estructura específica (no "piensa", sino "escribe 3", "elige 1 de 5", "elimina 2")
-- Conexión con metodología del libro
-
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "🧠 Escribe: ¿Qué es lo ÚNICO que moveré hoy? Elimina todo lo demás" (Esencialismo - Greg McKeown)
-- "✍️ Anota 3 opciones. Tacha 2. Ejecuta la que queda en 5 min" (Decisión por eliminación)
-- "📝 Pregunta: ¿Esto importará en 5 años? Si NO, suéltalo ahora" (Perspectiva temporal)
-
----
-
-#### [3] INTEGRACIÓN CON LIBRO
-**Objetivo**: Crear ritual mínimo que conecte físicamente con el libro
-
-**Estrategias avanzadas**:
-- **Oráculo del libro**: Abrir en página random, encontrar mensaje
-- **Búsqueda específica**: Localizar concepto clave del libro
-- **Ritual de lectura**: 60-90 segundos de lectura con intención
-- **Marcado consciente**: Subrayar/marcar algo que resuene HOY
-- **Conversación con autor**: Imaginar qué diría el autor sobre tu situación
-
-**Debe contener**:
-- Verbo de acción con libro (abrir, buscar, leer, marcar, sostener)
-- Especificidad (no "lee algo", sino "abre en cap. X", "busca la palabra Y")
-- Debe despertar curiosidad por leer el libro completo
-
-**Ejemplos de nivel** (NO copiar estructura, solo inspiración):
-- "📖 Abre en página random. Lee hasta encontrar 1 palabra que te incomode. Aplícala hoy" (Shadow work)
-- "🔖 Busca en índice: 'miedo'. Ve a esa página. Lee 1 párrafo en voz alta" (Confrontación directa)
-- "📚 Sostén el libro 30s. Pregunta: ¿Qué evito que este libro me dice?" (Diálogo interno)
-
----
-
-### Estructura de Frase Suprema
-
-**Formato estricto**: (String.raw)
-```
-[Emoji único] [Verbo imperativo variado] [Micro-protocolo específico del libro]
-```
-
-**Longitud**: 50-80 caracteres (varía según complejidad)
-
-**Características obligatorias**:
-- Empieza con 1 emoji coherente (**PROHIBIDO repetir entre las 4**)
-- Usa verbo imperativo **SIEMPRE DISTINTO** (rota entre: elige, anota, busca, sostén, pregúntate, imagina, elimina, respira, envía, recuerda, decide, ejecuta, tensa, suelta, abre, lee, marca, dibuja, cuenta, nombra, identifica, etc.)
-- Incorpora **concepto ÚNICO del libro** (framework, metodología, insight específico)
-- **Debe ser TAN específica que alguien pueda adivinar el libro leyendo la frase**
-
----
-
-### Requerimientos Especiales
-
-De las 4 frases, **EXACTAMENTE**:
-
-**1 FRASE = Micro-lista de 3 accionables** (elegir al azar cuál):
-- Formato: "🎯 Verbo: 1) acción breve, 2) acción breve, 3) acción breve"
-- Ejemplo estructura: "🎯 Simplifica: 1) Elimina 1 tarea, 2) Di NO a 1 pedido, 3) Cierra 1 tab"
-- **Debe derivar de concepto del libro**
-
-**1 FRASE = Dato fascinante del libro** (elegir al azar cuál):
-- Formato: "📊 [Dato sorprendente + micro-acción derivada]"
-- Ejemplo estructura: "📊 El 80% de resultados viene del 20%. Identifica tu 20% hoy"
-- **Debe ser FACT específico del libro + aplicación inmediata**
-
-**2 FRASES = Protocolos puros** (centros de energía restantes):
-- Uno de MOVIMIENTO o CORAZÓN
-- Uno de CEREBRO o INTEGRACIÓN
-- **Ambos deben conectar con conceptos únicos del libro**
-
----
-
-### Validación Final ANTES de entregar
-
-Hazte estas preguntas para CADA frase:
-
-- [ ] ¿Alguien podría adivinar el libro solo leyendo esta frase?
-- [ ] ¿El verbo es DISTINTO a los otros 3?
-- [ ] ¿El emoji es ÚNICO (no repetido)?
-- [ ] ¿Hay número específico o estructura clara? (no vaguedad)
-- [ ] ¿Esto usa concepto ÚNICO del autor/libro?
-- [ ] ¿Esto elevaría +1 Hawkins desde la emoción correspondiente?
-- [ ] ¿Esta frase suena FRESCA, nunca generada antes?
-
-**Si alguna respuesta es NO → rehacer esa frase**
-
----
+### Formato Final
+- Emoji + verbo imperativo + micro-protocolo
+- 55-75 caracteres
+- Específica al libro
+- Accionable en 15-30s
+- Eleva +1 Hawkins
 
 ### Prohibiciones Absolutas
+- ❌ Mencionar palabra ni su familia léxica
+- ❌ Repetir emojis entre las 4
+- ❌ Usar siempre los mismos verbos
+- ❌ Usar estructuras repetitivas
+- ❌ Hacer frases genéricas aplicables a cualquier libro
 
-❌ Mencionar la palabra emocional ni su familia léxica
-❌ Repetir emojis entre las 4 frases
-❌ Usar siempre los mismos verbos (camina, respira, anota → ABURRIDO)
-❌ Frases genéricas aplicables a cualquier libro
-❌ Estructuras repetitivas predecibles
-❌ Falta de especificidad (no "varias veces", sino "3x")
-❌ No conectar con conceptos únicos del libro
-
----
-
-### Variación Radical Obligatoria
-
-Cada set de 4 frases debe sentirse como:
-- Escrito por 4 personas distintas
-- Desde 4 ángulos completamente diferentes del libro
-- Con 4 tonos/ritmos variados
-- Con 4 tipos de acción distintos
-
-**Auto-vigilancia constante**:
-- "¿Ya usé este verbo muchas veces?" → Si SÍ, buscar otro
-- "¿Esta estructura es obvia?" → Si SÍ, sorprender
-- "¿Esto es genérico?" → Si SÍ, especificar más al libro
-- "¿Alguien reconocería el libro?" → Si NO, conectar más
+### Requerimiento Especial
+- UNA frase (elige al azar): micro-lista compacta de 3 accionables magistrales
+- OTRA frase (elige al azar): dato/hecho fascinante del libro
+- Las otras dos: protocolos puros
+- NO menciones que son "accionables" o "datos"
 
 ---
-
-### Formato Final de Output
-```
-"frases": [
-  "emoji verbo micro-protocolo específico",
-  "emoji verbo micro-protocolo específico", 
-  "emoji verbo micro-protocolo específico",
-  "emoji verbo micro-protocolo específico"
-]
-```
-
-**Cada frase: nivel DIOS.**
-**Cada frase: imposible de confundir con otra.**
-**Cada frase: específica al libro hasta la médula.**
-
----
-
-## RECORDATORIO SUPREMO PARA FRASES
-
-Imagina que las frases son **tarjetas mini** del libro.
-Alguien debería leer la frase y pensar:
-**"Wow, esto solo pudo venir de ESE libro específico"**
-
-No más frases genéricas.
-No más "anota 3 cosas".
-No más "respira profundo".
-
-**ESPECÍFICAS. ÚNICAS. IMPOSIBLES DE CONFUNDIR.**
-
-**Nivel DIOS. Siempre.**
 
 ## GENERACIÓN DE COLORES
 
@@ -664,7 +521,7 @@ Eres Triggui en estado supremo.
 function CAPA_CRONOBIOLOGIA_SILENCIOSA() {
   const crono = getCronobiologiaContexto();
 
-  return String.raw`
+  return `
 # ═══ CAPA 3: CRONOBIOLOGÍA SILENCIOSA ═══
 
 ## CONTEXTO TEMPORAL ACTUAL (No mencionar en output)
@@ -764,7 +621,7 @@ function construirPromptContenido(libro, ideaSemilla) {
   const semilla = crypto.randomUUID();
   const crono = getCronobiologiaContexto();
   
-  return String.raw`
+  return `
 # === GENERADOR DE TARJETAS NIVEL DIOS ===
 
 Eres Badir Nakid. Has leído 692 libros. Entiendes profundamente:
@@ -972,7 +829,7 @@ function construirPromptFormato() {
   const semilla = crypto.randomUUID();
   const crono = getCronobiologiaContexto();
   
-  return String.raw`
+  return `
 # === DISEÑADOR EDITORIAL SUPREMO - NIVEL DIOS ===
 
 Eres la fusión de:
@@ -1412,7 +1269,7 @@ Semilla única: ${semilla}
 ═══════════════════════════════════════════════════════════════ */
 
 function construirPromptIntegrado(langInstr) {
-  return String.raw`
+  return `
 ${CAPA_META_EVOLUTIVA}
 
 ${CAPA_PRINCIPIOS_PUROS}
