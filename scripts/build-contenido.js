@@ -1538,8 +1538,10 @@ async function enrich(b, openai, langInstr) {
 
     const chat = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.3,
-      top_p: 0.95,
+      temperature: 0.62,
+top_p: 0.68,
+presence_penalty: 0.45,
+frequency_penalty: 0.30,
       messages: [
         { role: "system", content: systemPrompt },
         {
@@ -1585,7 +1587,10 @@ async function enrich(b, openai, langInstr) {
 
       const validacionChat = await openai.chat.completions.create({
         model: MODEL,
-        temperature: 1.5,
+        temperature: 0.62,
+top_p: 0.68,
+presence_penalty: 0.45,
+frequency_penalty: 0.30,
         messages: [{
           role: "system",
           content: `Eres Triggui. Corrector supremo.
@@ -1641,8 +1646,10 @@ Devuelve SOLO JSON corregido.`
     const promptTarjeta = construirPromptContenido(b, "idea semilla random");
     const chatTarjeta = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.5,
-      top_p: 0.9,
+      temperature: 0.62,
+top_p: 0.68,
+presence_penalty: 0.45,
+frequency_penalty: 0.30,
       messages: [
         { role: "system", content: "Eres Badir. Devuelve SOLO el bloque @@BODY." },
         { role: "user", content: promptTarjeta }
@@ -1661,8 +1668,10 @@ Devuelve SOLO JSON corregido.`
     const promptFormato = construirPromptFormato();
     const chatFormato = await openai.chat.completions.create({
       model: MODEL,
-      temperature: 1.5,
-      top_p: 0.9,
+      temperature: 0.62,
+top_p: 0.68,
+presence_penalty: 0.45,
+frequency_penalty: 0.30,
       messages: [
         { role: "system", content: "Eres el mejor diseñador editorial del mundo actual y futuro. Devuelve SOLO el bloque @@STYLE." },
         { role: "user", content: promptFormato }
