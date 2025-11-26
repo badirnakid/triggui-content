@@ -572,40 +572,20 @@ Si algo falla → rehacer solo esa parte
 
 ---
 
----
-
 ## OUTPUT ESPERADO
 
-JSON con exactamente estos campos:
-- dimension: string (Bienestar|Prosperidad|Conexión)
-- punto: string (Cero|Creativo|Activo|Máximo)
-- palabras: array de 4 strings (emociones nivel Hawkins 20-200)
-- frases: array de 4 strings (55-75 caracteres cada una, emoji inicial único, estructuras variadas)
-- colores: array de 4 strings hex
-- fondo: string hex
-
-**REQUISITOS CRÍTICOS DE FORMATO**:
-- Frases: CADA UNA entre 55-75 caracteres
-- Cada frase: emoji único al inicio (no repetir emojis)
-- Cada frase: estructura sintáctica DIFERENTE a las otras 3
-- NO usar índices numéricos (0, 1, 2, 3) como claves JSON
-- NO usar campo "emociones", SOLO "palabras"
-- NO agregar campos adicionales fuera de estos 6
-
-**ESTRUCTURA EXACTA DEL JSON**:
+JSON puro, sin backticks, sin explicaciones:
 
 {
-  "dimension": "string",
-  "punto": "string",
-  "palabras": ["string", "string", "string", "string"],
-  "frases": ["string", "string", "string", "string"],
-  "colores": ["#hex", "#hex", "#hex", "#hex"],
+  "dimension": "Bienestar|Prosperidad|Conexión",
+  "punto": "Cero|Creativo|Activo|Máximo",
+  "palabras": ["...", "...", "...", "..."],
+  "frases": ["emoji frase1", "emoji frase2", "emoji frase3", "emoji frase4"],
+  "colores": ["#hex1", "#hex2", "#hex3", "#hex4"],
   "fondo": "#hex"
 }
 
-**Devuelve SOLO JSON puro. Sin backticks. Sin explicaciones. Sin texto adicional.**
-
----
+**Solo JSON. Nada más.**
 
 ---
 
