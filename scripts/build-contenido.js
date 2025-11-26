@@ -4,7 +4,7 @@
    Sistema de generación de contenido enriquecido para libros.
    
    CARACTERÍSTICAS:
-   ✅ Palabras emocionales profundas (Hawkins 20-75)
+   ✅ Palabras emocionales profundas (Hawkins 20-100)
    ✅ Frases únicas con estructuras radicalmente diferentes
    ✅ Paletas cromáticas imposibles de confundir
    ✅ Tarjetas editoriales con diseño experimental
@@ -43,14 +43,14 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 const CFG = {
   model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
   temp: 1.1,                     // 🌡️  Creatividad optimizada
-  top_p: 0.95,                   // 🎲 Diversidad de tokens
+  top_p: 0.9,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
   max: 5,                        // 📚 Libros por ejecución
   delay: 3000,                   // ⏱️  Delay entre libros (ms)
-  maxReintentos: 2               // 🔄 Reintentos por libro
+  maxReintentos: 3              // 🔄 Reintentos por libro
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -188,7 +188,7 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo y todos los sinónimos que tengas), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100 (vergüenza, culpa, apatía, duelo, miedo y todos los sinónimos que tengas), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
@@ -239,7 +239,7 @@ Devuelve SOLO entre @@BODY y @@ENDBODY:
        Genera: JSON de diseño visual experimental
     ───────────────────────────────────────────────────────── */
     estilo: base + `
-Diseña tarjeta imposible de confundir:
+Diseña tarjeta siempre dark mode, legible, perfecta, imposible de confundir:
 
 JSON con 15-28 claves:
 - Conocidas: accent, ink, paper, border, serif, sans, mono, display
