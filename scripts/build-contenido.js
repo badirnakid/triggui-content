@@ -188,22 +188,25 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo y todos los sinónimos que tengas), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa de conciencia de Hawkins, súper específica al libro
 ✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
 ✅ Cada color: imposible confundir con paletas anteriores
 
 MAPA HAWKINS BAJO (USA ESTE RANGO):
-20  → Vergüenza (humillación, deshonra, autorechazo)
-30  → Culpa (remordimiento, autoacusación, arrepentimiento)
-50  → Apatía (desesperanza, indiferencia, desconexión)
-75  → Duelo (pesar, melancolía, pérdida)
+20  → Vergüenza (humillación, deshonra, autorechazo, etc)
+30  → Culpa (remordimiento, autoacusación, arrepentimiento, etc)
+50  → Apatía (desesperanza, indiferencia, desconexión, etc)
+75  → Duelo (pesar, melancolía, pérdida, etc)
+.
+.
+.
 
 SOLO JSON.`,
 
