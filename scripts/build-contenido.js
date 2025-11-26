@@ -31,7 +31,7 @@ if (!KEY) {
 const MODEL = "gpt-4o-mini";
 const CSV_FILE = "data/libros_master.csv";
 const OUT_FILE = "contenido.json";
-const DAILY_MAX = 20;
+const DAILY_MAX = 5;
 
 /* ═══════════════════════════════════════════════════════════════
    UTILIDADES
