@@ -331,7 +331,7 @@ Responden a la pregunta: **"¿Qué sientes ahora?"**
 ## GENERACIÓN DE FRASES (ANTI-ROBÓTICO TOTAL)
 
 ### Naturaleza
-Micro-protocolos de 15-30 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
+Micro-protocolos de 25-40 segundos que elevan +1 nivel Hawkins sin mencionar la emoción.
 
 ### Semillas Únicas de Variación
 Para garantizar que cada frase sea completamente irrepetible y no siga patrones previos:
@@ -348,17 +348,10 @@ Para garantizar que cada frase sea completamente irrepetible y no siga patrones 
 
 ### PROHIBICIONES ESTRUCTURALES ABSOLUTAS
 
-❌ **NUNCA uses estos patrones** (robóticos detectados):
-- "Emoji + Verbo: 1) acción, 2) acción, 3) acción"
-- "📊 Dato fascinante + estadística + micro-acción"
-- "🔍 Verbo imperativo + lista numerada"
-- Cualquier formato con números (1, 2, 3) repetido entre frases
-- Estructura "Verbo + dos puntos + explicación"
-
 ✅ **OBLIGATORIO hacer**:
 - Cada frase con estructura RADICALMENTE diferente
-- Variar longitud: 40-90 caracteres (no siempre 60)
-- Mezclar formatos: pregunta, afirmación, imperativo, fragmento, paradoja
+- Variar longitud: 60-80 caracteres
+- Mezclar formatos: pregunta, afirmación, imperativo, fragmento, paradoja, etc
 - Sorprender con sintaxis inesperada
 - MÁXIMO 1 frase con lista (de las 4 totales)
 
@@ -400,30 +393,29 @@ Para garantizar que cada frase sea completamente irrepetible y no siga patrones 
 
 #### [0] MOVIMIENTO FÍSICO
 - Romper patrón corporal que sostiene la emoción
-- Verbos variados: sostén, gira, levanta, cambia, ajusta, expande, contrae
+- Verbos variados: sostén, gira, levanta, cambia, ajusta, expande, contrae, etc
 - NO usar siempre "respira", "camina", "mueve"
 
 #### [1] CORAZÓN EMOCIONAL
 - Giro afectivo que recontextualiza la emoción
-- Verbos variados: nombra, recuerda, imagina, siente, conecta, valida
+- Verbos variados: nombra, recuerda, imagina, siente, conecta, valida, etc
 - NO usar siempre "piensa en", "reflexiona"
 
 #### [2] CEREBRO MENTAL
 - Claridad cognitiva express, cortar rumiación
-- Verbos variados: escribe, reduce, pregunta, decide, simplifica, elige
+- Verbos variados: escribe, reduce, pregunta, decide, simplifica, elige, etc
 - NO usar siempre "anota", "lista"
 
 #### [3] INTEGRACIÓN CON LIBRO
 - Ritual mínimo que conecte físicamente con el libro
-- Verbos variados: abre, busca, marca, sostén, lee, subraya
+- Verbos variados: abre, busca, marca, sostén, lee, subraya, etc
 - NO usar siempre "abre en página random"
 
 ---
 
 ### Requerimientos Especiales
 
-De las 4 frases, **MÁXIMO UNA** puede tener lista numerada.
-Las otras 3 deben ser formatos completamente distintos.
+Las 4 frases deben ser formatos completamente distintos.
 
 ---
 
@@ -452,7 +444,7 @@ Hazte estas preguntas para CADA frase:
 ❌ Frases genéricas aplicables a cualquier libro
 ❌ Estructuras repetitivas predecibles
 ❌ Más de 1 frase con lista numerada
-❌ Patrón "Emoji + Verbo + dos puntos + lista"
+
 
 ---
 
@@ -476,10 +468,10 @@ Cada set de 4 frases debe sentirse como:
 ### Formato Final de Output
 
 "frases": [
-  "emoji verbo micro-protocolo específico",
-  "emoji verbo micro-protocolo específico", 
-  "emoji verbo micro-protocolo específico",
-  "emoji verbo micro-protocolo específico"
+  "string de 60-80 caracteres con emoji a tu criterio",
+  "string de 60-80 caracteres con emoji a tu criterio", 
+  "string de 60-80 caracteres con emoji a tu criterio",
+  "string de 60-80 caracteres con emoji a tu criterio"
 ]
 
 **Cada frase: nivel DIOS.**
