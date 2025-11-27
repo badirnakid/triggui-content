@@ -63,10 +63,10 @@ const CFG = {
     lineasMin: 4,      // Líneas mínimas esperadas
     longitudMinLinea: 10,  // Chars mínimos por línea válida
     // ─── Límites GUÍA (no truncan, solo orientan a la IA) ───
-    tituloGuia: 45,      // Guía para IA (flujo natural)
-    parrafo1Guia: 120,   // Guía para IA (flujo natural)
-    subtituloGuia: 60,   // Guía para IA (flujo natural)
-    parrafo2Guia: 150    // Guía para IA (flujo natural, contexto rico)
+    tituloGuia: 60,      // Guía para IA (flujo natural)
+    parrafo1Guia: 80,   // Guía para IA (flujo natural)
+    subtituloGuia: 80,   // Guía para IA (flujo natural)
+    parrafo2Guia: 120    // Guía para IA (flujo natural, contexto rico)
   },
   
   // ─── Dark Mode ───
