@@ -43,9 +43,9 @@ const KEY = process.env.OPENAI_KEY;
 if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
-  model: "gpt-4.1-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
-  temp: .7,                     // 🌡️  Creatividad optimizada
-  top_p: 0.7,                   // 🎲 Diversidad de tokens
+  model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
+  temp: 1,                     // 🌡️  Creatividad optimizada
+  top_p: .9,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
