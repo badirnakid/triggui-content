@@ -50,7 +50,7 @@ const CFG = {
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
-  max: 10,                        // 📚 Libros por ejecución
+  max: 20,                        // 📚 Libros por ejecución
   delay: 10000,                   // ⏱️  Delay entre libros (10 segundos)
   maxReintentos: 20               // 🔄 Reintentos por libro (hasta 20x)
 };
