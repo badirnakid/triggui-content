@@ -44,15 +44,15 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
   model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
-  temp: 1,                     // 🌡️  Creatividad optimizada
-  top_p: .9,                   // 🎲 Diversidad de tokens
+  temp: 1.1,                     // 🌡️  Creatividad optimizada
+  top_p: 0.95,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
-  max: 20,                        // 📚 Libros por ejecución
-  delay: 10000,                   // ⏱️  Delay entre libros (10 segundos)
-  maxReintentos: 20               // 🔄 Reintentos por libro (hasta 20x)
+  max: 5,                        // 📚 Libros por ejecución
+  delay: 3000,                   // ⏱️  Delay entre libros (3 segundos)
+  maxReintentos: 3               // 🔄 Reintentos por libro (hasta 3x)
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -155,7 +155,7 @@ function crono() {
    MODIFICAR AQUÍ para cambiar la calidad/estilo del contenido.
 ═══════════════════════════════════════════════════════════════ */
 
-function prompt(libro, tipo, c) {
+function prompt(libro, tipo, c, extra = null) {
   const seed = crypto.randomUUID();
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
@@ -190,16 +190,22 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100, relacionadas específicamente al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa, súper específica al libro
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, primero desarrolla, luego acción CONCRETA con contexto previo detallado
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
 ✅ Cada color: imposible confundir con paletas anteriores
+
+MAPA HAWKINS BAJO (USA ESTE RANGO):
+20  → Vergüenza (humillación, deshonra, autorechazo)
+30  → Culpa (remordimiento, autoacusación, arrepentimiento)
+50  → Apatía (desesperanza, indiferencia, desconexión)
+75  → Duelo (pesar, melancolía, pérdida)
 
 SOLO JSON.`,
 
@@ -207,24 +213,43 @@ SOLO JSON.`,
        PROMPT 2: TARJETA
        
        Genera: título, parrafoTop, subtitulo, parrafoBot
+       
+       🎯 CRITICAL: Longitud exacta para evitar desborde en móvil
+       🔗 JOURNEY: Coherencia total con palabras/frases anteriores
     ───────────────────────────────────────────────────────── */
     tarjeta: base + `
-Escribe contenido editorial:
+${extra ? `
+CONTEXTO EMOCIONAL PREVIO GENERADO:
+Palabras: ${extra.palabras.join(", ")}
+Frases: ${extra.frases.map((f, i) => `${i + 1}. ${f}`).join(" ")}
 
-TÍTULO (≤50 chars): Concepto único del libro
-PÁRRAFO 1 (≤130 chars): Insight específico del libro + autor en 1ra persona
-SUBTÍTULO (≤48 chars): Bisagra provocadora
-PÁRRAFO 2 (≤130 chars): Acción específica derivada del libro, la mejor, primero desarrolla, luego acción CONCRETA con contexto previo detallado (15-60 seg)
+El contenido editorial debe CONTINUAR este journey emocional.
+` : ""}
 
-TONO: Sobrio, directo, humano, sin adornos, utilidad inmediata
+Escribe contenido editorial específico al libro:
 
-Devuelve SOLO entre @@BODY y @@ENDBODY:
-@@BODY
-[Título]
-[Párrafo 1]
-[Subtítulo]
-[Párrafo 2]
-@@ENDBODY`,
+TÍTULO (30-45 chars): Concepto único del libro, directo, sin frases genéricas
+PÁRRAFO 1 (80-120 chars): Insight del libro en 1ra persona, específico, sin metadata
+SUBTÍTULO (25-40 chars): Frase que conecta emocionalmente, NO genérica
+PÁRRAFO 2 (70-110 chars): Acción concreta 15-30seg que eleva desde emociones previas
+
+REGLAS CRÍTICAS:
+❌ NO uses: corchetes [], "Bisagra provocadora", "Reflexión activa", metadata, @@tags
+❌ NO excedas límites: P1 max 120 chars, P2 max 110 chars
+✅ Contenido DIRECTO sin adornos ni corchetes
+✅ Journey continuo: de palabras bajas → frases acción → insight → transformación
+
+FORMATO (4 líneas sin tags):
+[Título del concepto]
+[Insight en 1ra persona del autor]
+[Subtítulo provocador específico]
+[Acción concreta breve]
+
+EJEMPLO:
+El arte de no hacer nada
+Descubrí que el Niksen transforma mi relación con el estrés y la productividad diaria.
+¿Qué pasaría si parar fuera avanzar?
+Dedica 5 minutos hoy a sentarte sin hacer nada y observa tus pensamientos sin juzgar.`,
 
     /* ─────────────────────────────────────────────────────────
        PROMPT 3: ESTILO (DARK MODE)
@@ -373,21 +398,32 @@ async function enrich(libro, openai, c) {
       extra.textColors = extra.colores.map(utils.txt);
 
       // ─────────────────────────────────────────────────────────
-      // PASO 7: TARJETA CONTENIDO
+      // PASO 7: TARJETA CONTENIDO (CON VALIDACIÓN DE LONGITUD)
       // ─────────────────────────────────────────────────────────
       console.log(`   🔧 Paso 7: Generando tarjeta de contenido...`);
-      const pT = prompt(libro, "tarjeta", c);
+      const pT = prompt(libro, "tarjeta", c, extra);
       let rawT = await call(openai, pT, "Genera tarjeta");
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-      const lineas = rawT.split(/\n+/).filter(Boolean);
+      const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
+        // Limpiar corchetes, metadata y frases genéricas
+        return l
+          .replace(/^\[|\]$/g, "")  // Eliminar corchetes al inicio/fin
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")  // Eliminar metadata
+          .replace(/^(Concepto único del libro|Insight específico|Bisagra provocadora|Acción específica)[:.\s]*/gi, "")  // Eliminar labels
+          .trim();
+      }).filter(l => l.length > 0);  // Eliminar líneas vacías
       
       extra.tarjeta = {
-        titulo: lineas[0] || "",
-        parrafoTop: lineas[1] || "",
-        subtitulo: lineas[2] || "",
-        parrafoBot: lineas.slice(3).join(" "),
+        titulo: (lineas[0] || "").substring(0, 45),  // Max 45 chars
+        parrafoTop: (lineas[1] || "").substring(0, 120),  // Max 120 chars
+        subtitulo: (lineas[2] || "").substring(0, 40),  // Max 40 chars
+        parrafoBot: (lineas.slice(3).join(" ") || "").substring(0, 110),  // Max 110 chars
         style: {}
       };
+      
+      // Log si hubo truncado
+      if (lineas[1] && lineas[1].length > 120) console.warn(`   ⚠️  P1 truncado: ${lineas[1].length} → 120 chars`);
+      if (lineas.slice(3).join(" ").length > 110) console.warn(`   ⚠️  P2 truncado: ${lineas.slice(3).join(" ").length} → 110 chars`);
 
       // ─────────────────────────────────────────────────────────
       // PASO 8: TARJETA ESTILO (CON FORZADO DARK MODE)
@@ -397,27 +433,41 @@ async function enrich(libro, openai, c) {
       let rawE = await call(openai, pE, "Genera estilo");
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       
-      try {
-        extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-        
-        // 🌑 FORZAR DARK MODE si IA se equivocó
-        if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
-          console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
-          extra.tarjeta.style.paper = "#1a1a1a";
+      let styleParsed = false;
+      let styleAttempts = 0;
+      
+      while (!styleParsed && styleAttempts < 2) {
+        try {
+          extra.tarjeta.style = JSON.parse(utils.clean(rawE));
+          styleParsed = true;
+          
+          // 🌑 FORZAR DARK MODE si IA se equivocó
+          if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
+            console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
+            extra.tarjeta.style.paper = "#1a1a1a";
+          }
+          if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
+            console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
+            extra.tarjeta.style.ink = "#f0f0f0";
+          }
+        } catch (e) {
+          styleAttempts++;
+          if (styleAttempts < 2) {
+            console.warn(`   ⚠️  Style parse error, reintentando... (${styleAttempts}/2)`);
+            rawE = await call(openai, pE, "Genera SOLO JSON válido");
+            rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
+          } else {
+            console.warn(`   ⚠️  Style error final: ${e.message}, usando fallback`);
+            // Fallback dark mode
+            extra.tarjeta.style = {
+              accent: "#ff6b6b",
+              ink: "#f0f0f0",
+              paper: "#1a1a1a",
+              border: "#333333"
+            };
+            styleParsed = true;
+          }
         }
-        if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
-          console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
-          extra.tarjeta.style.ink = "#f0f0f0";
-        }
-      } catch (e) {
-        console.warn(`   ⚠️  Style error: ${e.message}`);
-        // Fallback dark mode
-        extra.tarjeta.style = {
-          accent: "#ff6b6b",
-          ink: "#f0f0f0",
-          paper: "#1a1a1a",
-          border: "#333333"
-        };
       }
 
       // ─────────────────────────────────────────────────────────
@@ -471,9 +521,9 @@ async function enrich(libro, openai, c) {
     portada: libro.portada || `📚 ${libro.titulo}`,
     tarjeta: {
       titulo: "Empieza pequeño",
-      parrafoTop: "La acción más importante es la más simple.",
-      subtitulo: "Un paso basta",
-      parrafoBot: "No necesitas claridad total para moverte.",
+      parrafoTop: "La acción más importante es la que puedes hacer ahora mismo, sin esperar el momento perfecto.",
+      subtitulo: "Un paso basta para avanzar",
+      parrafoBot: "Identifica una acción de 15 segundos que te acerque a tu objetivo y hazla ahora.",
       style: {
         accent: "#ff6b6b",
         ink: "#f0f0f0",
