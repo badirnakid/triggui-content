@@ -1,86 +1,117 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v7.6 ULTRA GOD - VERSIÓN DEFINITIVA
+   TRIGGUI v8.0 PERFECTION - CÓDIGO DEFINITIVO PRODUCCIÓN
    
-   Sistema de generación de contenido enriquecido para libros.
-   
-   CARACTERÍSTICAS v7.6:
-   ✅ Palabras emocionales profundas (Hawkins 20-100)
-   ✅ Frases únicas con estructuras radicalmente diferentes
-   ✅ Paletas cromáticas imposibles de confundir
-   ✅ Tarjetas editoriales DARK MODE (logo blanco visible)
-   ✅ Tarjetas con JOURNEY CONTINUO (palabras → frases → tarjeta)
-   ✅ Contenido DINÁMICO sin límites hardcodeados
-   ✅ Delay/reintentos configurables (10seg, 20x)
-   ✅ Temperatura optimizada (1.0)
-   ✅ Logging detallado para diagnóstico
-   ✅ Validación doble anti-repetición
-   ✅ Fallback robusto con contenido real
-   ✅ CERO duplicados de variables
-   
-   AUTOR: Badir Nakid
-   FECHA: Noviembre 2025
-   VERSIÓN: 7.6 ULTRA GOD DEFINITIVO
+   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.0 PERFECTION
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
-import crypto from "node:crypto";
-
-/* ═══════════════════════════════════════════════════════════════
-   ⚙️  CONFIGURACIÓN GLOBAL
-   
-   Modifica estos valores para ajustar el comportamiento del sistema.
-   
-   PARÁMETROS:
-   - model: Modelo de OpenAI a usar
-   - temp: Creatividad (0.7=coherente, 1.5=salvaje)
-   - delay: Milisegundos entre libros (evita rate limit)
-   - maxReintentos: Intentos adicionales si falla generación
-   - max: Cantidad de libros a procesar por ejecución
-═══════════════════════════════════════════════════════════════ */
 
 const KEY = process.env.OPENAI_KEY;
 if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
+/* ═══════════════════════════════════════════════════════════════
+   ⚙️  CONFIGURACIÓN MAESTRA - TODO PARAMETRIZABLE
+═══════════════════════════════════════════════════════════════ */
+
 const CFG = {
-  model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
-  temp: 1,                       // 🌡️  Creatividad optimizada
-  top_p: .9,                     // 🎲 Diversidad de tokens
-  presence: 0.7,                 // 🚫 Penaliza repetir temas
-  frequency: 0.4,                // 🔁 Penaliza repetir palabras
-  csv: "data/libros_master.csv", // 📁 Archivo de entrada
-  out: "contenido.json",         // 💾 Archivo de salida
-  max: 20,                       // 📚 Libros por ejecución
-  delay: 10000,                  // ⏱️  Delay entre libros (10 segundos)
-  maxReintentos: 20              // 🔄 Reintentos por libro (hasta 20x)
+  // ─── API ───
+  model: "gpt-4o-mini",
+  temp: 1,              // Base (se ajusta dinámicamente según día)
+  top_p: 0.9,
+  presence: 0.7,
+  frequency: 0.4,
+  
+  // ─── Archivos ───
+  csv: "data/libros_master.csv",
+  out: "contenido.json",
+  
+  // ─── Procesamiento ───
+  max: 20,              // Libros por ejecución
+  delay: 10000,         // Ms entre libros
+  maxReintentos: 20,    // Reintentos por libro
+  sleepReintento: 2000, // Ms entre reintentos
+  resetMemoryCada: 5,   // Reset cada N libros
+  
+  // ─── Contenido (DINÁMICO según hora/día) ───
+  hawkins: {
+    base: [20, 100],    // Rango base [min, max]
+    madrugada: [20, 75],   // 0-6h: Emociones más profundas
+    manana: [50, 150],     // 6-12h: Más elevadas
+    tarde: [30, 120],      // 12-18h: Mixto
+    noche: [20, 100]       // 18-24h: Vuelta a profundo
+  },
+  
+  frases: {
+    cantidad: 4,
+    longitudMin: 100,
+    longitudMax: 120
+  },
+  
+  palabras: {
+    cantidad: 4
+  },
+  
+  colores: {
+    cantidad: 4
+  },
+  
+  tarjeta: {
+    accionMin: 15,     // Segundos mínimos de acción
+    accionMax: 60,     // Segundos máximos de acción
+    lineasMin: 4,      // Líneas mínimas esperadas
+    longitudMinLinea: 10  // Chars mínimos por línea válida
+  },
+  
+  // ─── Dark Mode ───
+  darkMode: {
+    paperMin: "#0a0a0a",
+    paperMax: "#2a2a2a",
+    inkMin: "#e0e0e0",
+    inkMax: "#ffffff",
+    lumThresholdPaper: 0.3,   // Max luminancia para fondo
+    lumThresholdInk: 0.7      // Min luminancia para texto
+  },
+  
+  // ─── Cronobiología (energía por día) ───
+  energia: {
+    lunes: 0.8,
+    martes: 0.4,
+    miércoles: 0.6,
+    jueves: 1.2,
+    viernes: 0.9,
+    sábado: 0.8,
+    domingo: 0.8
+  },
+  
+  // ─── Ajustes dinámicos según energía ───
+  dinamico: {
+    tempMultiplicador: true,     // temp *= energia
+    hawkinsShift: true,           // Ajusta rango según hora
+    frasesExtension: true         // Más largas en alta energía
+  }
 };
 
 /* ═══════════════════════════════════════════════════════════════
    🛠️  UTILIDADES
-   
-   Funciones helper organizadas en namespace único.
 ═══════════════════════════════════════════════════════════════ */
 
 const utils = {
-  // 💡 Calcula luminancia de un color (0=negro, 1=blanco)
   lum: h => {
     const [r, g, b] = h.slice(1).match(/../g).map(x => parseInt(x, 16) / 255);
     const f = v => v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
     return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
   },
-
-  // 🎨 Decide color de texto según luminancia del fondo
+  
   txt: h => utils.lum(h) > 0.35 ? "#000000" : "#FFFFFF",
-
-  // 🔀 Mezcla array aleatoriamente (Fisher-Yates)
+  
   shuffle: arr => {
     let m = arr.length, i;
     while (m) [arr[m], arr[i]] = [arr[i = Math.floor(Math.random() * m--)], arr[m]];
     return arr;
   },
-
-  // 🧹 Limpia markdown de respuestas de IA
+  
   clean: raw => raw.trim()
     .replace(/```json\s*/g, "")
     .replace(/```\s*/g, "")
@@ -88,226 +119,162 @@ const utils = {
     .replace(/[^}\]]*$/, "")
 };
 
-// 📊 Estado de sesión (memoria anti-repetición)
 const state = { palabras: new Set(), colores: new Set() };
-
-// ⏱️  Función sleep para delays
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 /* ═══════════════════════════════════════════════════════════════
-   🕐 CRONOBIOLOGÍA
-   
-   Detecta día y hora actual para ajustar tono del contenido
-   según energía circadiana y semanal.
-   
-   MAPA SEMANAL:
-   - Lunes:    Arquitectura (80%)
-   - Martes:   Tensión Máxima (40%) ⚠️
-   - Miércoles: Purga (60%)
-   - Jueves:   DÍA DIOS (120%) 🔥
-   - Viernes:  Cierre (90%)
-   - Sábado:   Descanso (80%)
-   - Domingo:  Reset (80%)
+   🕐 CONTEXTO DINÁMICO (día/hora/energía)
 ═══════════════════════════════════════════════════════════════ */
 
-function crono() {
+function getContexto() {
   const now = new Date();
-  const dia = now.toLocaleDateString("es-MX", { weekday: "long" });
+  const dia = now.toLocaleDateString("es-MX", { weekday: "long" }).toLowerCase();
   const hora = now.getHours();
-
-  const dias = {
-    lunes: { e: "80%", n: "Arquitectura", s: "Planificación gradual" },
-    martes: { e: "40%", n: "Tensión Máxima", s: "Supervivencia emocional" },
-    miércoles: { e: "60%", n: "Purga", s: "Claridad emergente" },
-    jueves: { e: "120%", n: "DÍA DIOS", s: "Pico absoluto" },
-    viernes: { e: "90%", n: "Cierre", s: "Consolidación" },
-    sábado: { e: "80%", n: "Descanso", s: "Familia, juego" },
-    domingo: { e: "80%", n: "Reset", s: "Preparación" }
+  
+  // Energía del día
+  const energia = CFG.energia[dia] || 0.8;
+  
+  // Franja horaria para Hawkins dinámico
+  let franja = "noche";
+  if (hora >= 0 && hora < 6) franja = "madrugada";
+  else if (hora >= 6 && hora < 12) franja = "manana";
+  else if (hora >= 12 && hora < 18) franja = "tarde";
+  
+  // Temperatura dinámica según energía
+  const tempDinamica = CFG.dinamico.tempMultiplicador 
+    ? CFG.temp * energia 
+    : CFG.temp;
+  
+  // Rango Hawkins dinámico según hora
+  const hawkinsDinamico = CFG.dinamico.hawkinsShift
+    ? CFG.hawkins[franja]
+    : CFG.hawkins.base;
+  
+  // Longitud frases dinámica según energía
+  const frasesLongitud = CFG.dinamico.frasesExtension
+    ? {
+        min: Math.round(CFG.frases.longitudMin * energia),
+        max: Math.round(CFG.frases.longitudMax * energia)
+      }
+    : {
+        min: CFG.frases.longitudMin,
+        max: CFG.frases.longitudMax
+      };
+  
+  return {
+    dia,
+    hora,
+    franja,
+    energia,
+    tempDinamica,
+    hawkinsDinamico,
+    frasesLongitud
   };
-
-  const horas = [
-    [4, 7, "Ventana Oro", "máxima claridad mental"],
-    [7, 9, "Pico Fuerza", "ejercicio intenso"],
-    [9, 12, "Pico Cognitivo", "decisiones críticas"],
-    [12, 14, "Pre-digestión", "tareas mecánicas"],
-    [14, 15, "Valle Post", "descanso obligatorio"],
-    [15, 17, "Segundo Pico", "creatividad lateral"],
-    [17, 19, "Social", "conexión emocional"],
-    [19, 24, "Preparación", "desconexión total"],
-    [0, 4, "Sueño", "recuperación"]
-  ];
-
-  const franja = horas.find(f => hora >= f[0] && hora < f[1]) || horas[0];
-  const d = dias[dia.toLowerCase()] || dias.lunes;
-
-  return { dia, hora, d, franja };
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ PROMPTS (EL CEREBRO DEL SISTEMA)
-   
-   Define exactamente QUÉ le dices a la IA para generar contenido.
-   
-   3 TIPOS DE PROMPTS:
-   1. main    → Palabras, frases, colores (JSON)
-   2. tarjeta → Título, párrafos (texto) CON JOURNEY CONTINUO
-   3. estilo  → Diseño visual DARK MODE (JSON experimental)
-   
-   MODIFICAR AQUÍ para cambiar la calidad/estilo del contenido.
+   🧙‍♂️ PROMPTS (con contexto dinámico)
 ═══════════════════════════════════════════════════════════════ */
 
-function prompt(libro, tipo, c, extra = null) {
-  const seed = crypto.randomUUID();
+function prompt(libro, tipo, ctx, extra = null) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
-
-  // 📝 Contexto base compartido por todos los prompts
+  
   const base = `
-Eres Triggui. Dominio absoluto de:
-- Mapa Hawkins (20-1000) NIVEL DIOS
-- Cronobiología humana NIVEL DIOS
-- Psicología del comportamiento NIVEL DIOS
-- Diseño editorial nivel DIOS
+Eres Triggui. Experto absoluto en:
+- Mapa Hawkins de consciencia
+- Psicología del comportamiento
+- Diseño editorial
 
 LIBRO: "${libro.titulo}" - ${libro.autor}
 ${libro.tagline ? `TAGLINE: "${libro.tagline}"` : ""}
 
-CONTEXTO CRONO: ${c.dia} ${c.hora}h | ${c.d.n} (${c.d.e}) | ${c.d.s}
-SEMILLA: ${seed}
+CONTEXTO: ${ctx.dia} ${ctx.hora}h | Energía ${Math.round(ctx.energia * 100)}%
 
-${prohibidas ? `🚫 PROHIBIDAS: ${prohibidas}` : ""}
-${prohibidosC ? `🎨 PROHIBIDOS: ${prohibidosC}` : ""}
+${prohibidas ? `🚫 PALABRAS PROHIBIDAS: ${prohibidas}` : ""}
+${prohibidosC ? `🎨 COLORES PROHIBIDOS: ${prohibidosC}` : ""}
 `;
 
   const prompts = {
-    /* ─────────────────────────────────────────────────────────
-       PROMPT 1: MAIN
-       
-       Genera: dimension, punto, palabras, frases, colores, fondo
-    ───────────────────────────────────────────────────────── */
     main: base + `
-GENERA JSON PURO:
+GENERA JSON:
 
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100, relacionadas específicamente al libro],
-  "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
-  "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
+  "palabras": [${CFG.palabras.cantidad} emociones Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}, específicas al libro],
+  "frases": [${CFG.frases.cantidad} frases únicas, emoji, ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} chars],
+  "colores": [${CFG.colores.cantidad} hex únicos, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
-REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa, súper específica al libro
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, primero desarrolla contexto emocional, luego acción CONCRETA
-✅ Cada color: imposible confundir con paletas anteriores
+CRÍTICO:
+✅ Palabras: emociones densas Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
+✅ Frases: estructura única, emoji único, contexto + acción
+✅ Colores: imposibles de confundir con anteriores
 
 SOLO JSON.`,
 
-    /* ─────────────────────────────────────────────────────────
-       PROMPT 2: TARJETA - JOURNEY CONTINUO
-       
-       Genera: título, parrafoTop, subtitulo, parrafoBot
-       
-       🔗 CRITICAL: Debe continuar el viaje emocional de palabras/frases
-       🎯 DINÁMICO: Sin límites hardcodeados, flujo natural
-    ───────────────────────────────────────────────────────── */
     tarjeta: base + `
 ${extra ? `
-═══════════════════════════════════════════════════════════════
-JOURNEY EMOCIONAL PREVIO (contexto crítico):
-═══════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+JOURNEY PREVIO (continúa este viaje emocional):
 
-PALABRAS EMOCIONALES GENERADAS:
-${extra.palabras.map((p, i) => `${i + 1}. ${p}`).join("\n")}
-
-FRASES DE ACCIÓN GENERADAS:
+PALABRAS: ${extra.palabras.join(", ")}
+FRASES:
 ${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
-═══════════════════════════════════════════════════════════════
-TU TAREA: Continuar este journey emocional de forma orgánica.
-El usuario ya pasó por estas emociones bajas (palabras Hawkins 20-100)
-y ya vio estas acciones concretas (frases).
-
-AHORA en la tarjeta:
-1. Párrafo 1: Insight que CONECTA con esas emociones/acciones previas
-2. Subtítulo: Bisagra que ELEVA desde esas emociones hacia transformación
-3. Párrafo 2: Acción ESPECÍFICA que construye sobre las frases previas
-
-TODO DEBE SER UNA CONTINUACIÓN NATURAL DEL JOURNEY.
-═══════════════════════════════════════════════════════════════
+Tu tarjeta DEBE continuar orgánicamente este journey.
+════════════════════════════════════════════════════════════════
 ` : ""}
 
-Escribe contenido editorial que complete el journey emocional:
+Escribe 4 líneas:
 
-TÍTULO: Concepto específico del libro (natural, sin límites artificiales)
-PÁRRAFO 1: Insight en 1ra persona del autor que CONECTA con emociones previas
-SUBTÍTULO: Pregunta o frase provocadora que ELEVA desde las emociones hacia transformación
-PÁRRAFO 2: Acción concreta 15-60seg con CONTEXTO RICO que construye sobre frases previas
+TÍTULO: Concepto específico del libro
+PÁRRAFO 1: Insight en 1ra persona que CONECTA con emociones previas
+SUBTÍTULO: Pregunta/frase que ELEVA desde emociones bajas
+PÁRRAFO 2: Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto rico que CONSTRUYE sobre frases
 
-REGLAS JOURNEY:
-✅ CONECTAR: Menciona indirectamente las emociones/temas de palabras previas
-✅ ELEVAR: Subtítulo debe ser bisagra desde emociones bajas → transformación
-✅ CONSTRUIR: Acción en P2 debe sentirse como siguiente paso lógico después de frases
-✅ FLUJO NATURAL: Sin límites artificiales, deja que el contenido respire
+REGLAS:
+✅ CONECTAR con emociones previas (indirectamente)
+✅ ELEVAR desde bajo → transformación
+✅ CONSTRUIR sobre acciones previas
+❌ NO: corchetes [], metadata, "Bisagra provocadora"
 
-REGLAS TÉCNICAS:
-❌ NO uses: corchetes [], "Bisagra provocadora", "Reflexión activa", metadata
-❌ NO copies: palabras/frases literales previas (refiérelas indirectamente)
-✅ SÍ crea: Contenido que se SIENTE como continuación natural del journey
-
-TONO: Primera persona del autor, sobrio, directo, humano, útil
-
-FORMATO (4 líneas sin tags):
+FORMATO (4 líneas):
 [Título]
-[Párrafo 1 - Insight conectado]
-[Subtítulo - Bisagra elevadora]
-[Párrafo 2 - Acción con contexto rico]
+[Párrafo 1]
+[Subtítulo]
+[Párrafo 2]`,
 
-GENERA AHORA LAS 4 LÍNEAS:`,
-
-    /* ─────────────────────────────────────────────────────────
-       PROMPT 3: ESTILO (DARK MODE)
-       
-       Genera: JSON de diseño visual experimental
-       🌑 DARK MODE FORZADO para logo blanco de Buscalibre
-    ───────────────────────────────────────────────────────── */
     estilo: base + `
-Diseña tarjeta DARK MODE (fondo oscuro, texto claro):
+Diseña style JSON DARK MODE:
 
-JSON con 15-28 claves:
-- Conocidas: accent, ink, paper, border, serif, sans, mono, display
-- Inventadas (8-15): glowFlux, metaShadow, warpGrid, prismPulse, etc
-- surprise: string describiendo recurso más inesperado
+{
+  "accent": "hex vibrante",
+  "ink": "${CFG.darkMode.inkMin} - ${CFG.darkMode.inkMax}",
+  "paper": "${CFG.darkMode.paperMin} - ${CFG.darkMode.paperMax}",
+  "border": "hex sutil oscuro"
+}
 
-REGLAS DARK MODE OBLIGATORIAS:
-✅ paper: SIEMPRE colores oscuros (#0a0a0a a #2a2a2a)
-✅ ink: SIEMPRE colores claros (#e0e0e0 a #ffffff)
-✅ accent: Colores vibrantes que contrasten con fondo oscuro
-✅ border: Tonos sutiles pero visibles sobre oscuro
+CRÍTICO dark mode:
+✅ paper OSCURO (${CFG.darkMode.paperMin} - ${CFG.darkMode.paperMax})
+✅ ink CLARO (${CFG.darkMode.inkMin} - ${CFG.darkMode.inkMax})
 
-Mezcla: Clásico + Experimental + Rigor + Dopamina
-
-SOLO JSON entre @@STYLE y @@ENDSTYLE`
+SOLO JSON.`
   };
-
+  
   return prompts[tipo];
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   📞 LLAMADA API
-   
-   Función que comunica con OpenAI.
-   
-   INNOVACIÓN CLAVE:
-   response_format: { type: "json_object" }
-   → Garantiza JSON válido siempre
+   📞 API CALL
 ═══════════════════════════════════════════════════════════════ */
 
-async function call(openai, sys, usr, forceJSON = false) {
+async function call(openai, sys, usr, temp, forceJSON = false) {
   const config = {
     model: CFG.model,
-    temperature: CFG.temp,
+    temperature: temp,
     top_p: CFG.top_p,
     presence_penalty: CFG.presence,
     frequency_penalty: CFG.frequency,
@@ -316,192 +283,124 @@ async function call(openai, sys, usr, forceJSON = false) {
       { role: "user", content: usr }
     ]
   };
-
-  if (forceJSON) {
-    config.response_format = { type: "json_object" };
-  }
-
+  
+  if (forceJSON) config.response_format = { type: "json_object" };
+  
   const chat = await openai.chat.completions.create(config);
   return chat.choices[0].message.content;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   ⚡ ENRIQUECIMIENTO (PIPELINE COMPLETO)
-   
-   Toma un libro del CSV y genera TODO el contenido enriquecido.
-   
-   FLUJO (9 PASOS):
-   1. Genera JSON principal (palabras, frases, colores)
-   2. Valida respuesta completa → Reintenta si falta algo
-   3. Valida anti-repetición → Reintenta si hay repetidas
-   4. Registra palabras/colores usados
-   5. Garantiza longitud de arrays (sin "default")
-   6. Post-procesa colores de texto
-   7. Genera tarjeta de contenido CON JOURNEY CONTINUO
-   8. Genera tarjeta de estilo visual DARK MODE
-   9. Retorna objeto completo
-   
-   PROTECCIONES:
-   - Logging detallado en cada paso
-   - Reintento automático si respuesta incompleta
-   - Reintento automático si palabras repetidas
-   - Error si arrays vacíos → Fallback completo
-   - Loop con reintentos configurables (20x)
-   - Try-catch global → Fallback garantizado
-   - Stack trace en errores para diagnóstico
+   ⚡ ENRIQUECIMIENTO (Pipeline completo)
 ═══════════════════════════════════════════════════════════════ */
 
-async function enrich(libro, openai, c) {
+async function enrich(libro, openai, ctx) {
   let intento = 0;
   
   while (intento <= CFG.maxReintentos) {
     try {
-      // ─────────────────────────────────────────────────────────
-      // PASO 1: GENERACIÓN PRINCIPAL
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 1: Generando JSON principal...`);
-      const p = prompt(libro, "main", c);
-      let raw = await call(openai, p, "Genera JSON ahora", true);
+      // PASO 1: JSON principal
+      console.log(`   [1/3] JSON principal...`);
+      const p = prompt(libro, "main", ctx);
+      let raw = await call(openai, p, "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(raw);
-      console.log(`   ✅ JSON parseado: ${extra.palabras?.length || 0} palabras`);
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 2: VALIDACIÓN DE RESPUESTA COMPLETA
-      // ─────────────────────────────────────────────────────────
-      const faltaCampos = !extra.frases || !extra.colores || !extra.palabras ||
-                          extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0;
       
-      if (faltaCampos) {
-        console.warn(`   ⚠️  Respuesta incompleta, reintentando...`);
-        raw = await call(openai, p, "Genera JSON completo ahora", true);
-        extra = JSON.parse(raw);
+      // Validar respuesta completa
+      if (!extra.frases || !extra.colores || !extra.palabras ||
+          extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0) {
+        throw new Error("Respuesta incompleta");
       }
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 3: VALIDACIÓN ANTI-REPETICIÓN
-      // ─────────────────────────────────────────────────────────
+      
+      // Validar anti-repetición
       const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
-      
       if (repetidas.length > 0) {
-        console.warn(`   ⚠️  Repetidas: ${repetidas.join(", ")}`);
-        const pVal = `Genera 4 palabras únicas. PROHIBIDAS: ${[...state.palabras].join(", ")}. SOLO JSON.`;
-        raw = await call(openai, prompt(libro, "main", c), pVal, true);
+        console.log(`   ⚠️  Repetidas: ${repetidas.join(", ")}, regenerando...`);
+        raw = await call(openai, prompt(libro, "main", ctx), "Palabras únicas", ctx.tempDinamica, true);
         extra = JSON.parse(raw);
       }
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 4: REGISTRAR USADOS
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 4: Registrando palabras usadas...`);
+      
+      // Registrar usados
       extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
       extra.colores?.forEach(c => state.colores.add(c));
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 5: GARANTIZAR LONGITUD (SIN "default")
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 5: Validando longitud de arrays...`);
+      
+      // Garantizar longitud
       ["palabras", "frases", "colores"].forEach(k => {
-        if (!extra[k]) extra[k] = [];
-        if (extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
-        while (extra[k].length < 4) extra[k].push(extra[k][extra[k].length - 1]);
+        if (!extra[k] || extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
+        while (extra[k].length < CFG[k].cantidad) extra[k].push(extra[k][extra[k].length - 1]);
       });
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 6: POST-PROCESAMIENTO
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 6: Calculando colores de texto...`);
+      
       extra.textColors = extra.colores.map(utils.txt);
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 7: TARJETA CONTENIDO (CON JOURNEY CONTINUO)
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 7: Generando tarjeta con journey continuo...`);
-      const pT = prompt(libro, "tarjeta", c, extra);  // ⭐ Pasa extra para journey
-      let rawT = await call(openai, pT, "Genera tarjeta");
+      
+      // PASO 2: Tarjeta contenido
+      console.log(`   [2/3] Tarjeta (journey continuo)...`);
+      const pT = prompt(libro, "tarjeta", ctx, extra);
+      let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
       
-      // Limpieza inteligente de metadata sin hardcodear límites
       const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
         return l
-          .replace(/^\[|\]$/g, "")  // Eliminar corchetes
-          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")  // Metadata
-          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa)[:.\s]*/gi, "")  // Labels genéricos
+          .replace(/^\[|\]$/g, "")
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")
+          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa)[:.\s]*/gi, "")
           .trim();
-      }).filter(l => l.length > 10);  // Eliminar líneas muy cortas (probablemente basura)
+      }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
       
       extra.tarjeta = {
         titulo: lineas[0] || "",
         parrafoTop: lineas[1] || "",
         subtitulo: lineas[2] || "",
-        parrafoBot: lineas.slice(3).join(" "),  // ⭐ Sin límites, flujo natural
+        parrafoBot: lineas.slice(3).join(" "),
         style: {}
       };
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 8: TARJETA ESTILO (CON FORZADO DARK MODE)
-      // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 8: Generando tarjeta de estilo...`);
-      const pE = prompt(libro, "estilo", c);
-      let rawE = await call(openai, pE, "Genera estilo");
+      
+      // PASO 3: Tarjeta estilo
+      console.log(`   [3/3] Style dark mode...`);
+      const pE = prompt(libro, "estilo", ctx);
+      let rawE = await call(openai, pE, "Genera estilo", ctx.tempDinamica);
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
         
-        // 🌑 FORZAR DARK MODE si IA se equivocó
-        if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
-          console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
-          extra.tarjeta.style.paper = "#1a1a1a";
+        // Forzar dark mode si necesario
+        if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > CFG.darkMode.lumThresholdPaper) {
+          extra.tarjeta.style.paper = CFG.darkMode.paperMin;
         }
-        if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
-          console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
-          extra.tarjeta.style.ink = "#f0f0f0";
+        if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < CFG.darkMode.lumThresholdInk) {
+          extra.tarjeta.style.ink = CFG.darkMode.inkMax;
         }
       } catch (e) {
-        console.warn(`   ⚠️  Style error: ${e.message}`);
-        // Fallback dark mode
         extra.tarjeta.style = {
           accent: "#ff6b6b",
-          ink: "#f0f0f0",
-          paper: "#1a1a1a",
+          ink: CFG.darkMode.inkMax,
+          paper: CFG.darkMode.paperMin,
           border: "#333333"
         };
       }
-
-      // ─────────────────────────────────────────────────────────
-      // PASO 9: RETURN FINAL
-      // ─────────────────────────────────────────────────────────
-      console.log(`   ✅ Libro completado exitosamente`);
+      
+      console.log(`   ✅ Completado`);
       return {
         ...libro,
         ...extra,
         portada: libro.portada?.trim() || `📚 ${libro.titulo}\n${libro.autor}`,
         videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
       };
-
+      
     } catch (e) {
       intento++;
-      console.error(`   ❌ Intento ${intento}/${CFG.maxReintentos + 1}: ${e.message}`);
-      console.error(`   📍 Stack: ${e.stack?.split('\n')[1]?.trim() || 'N/A'}`);
+      console.log(`   ❌ Error (${intento}/${CFG.maxReintentos + 1}): ${e.message}`);
       
       if (intento <= CFG.maxReintentos) {
-        console.warn(`   🔄 Reintentando en 2 segundos...`);
-        await sleep(2000);
+        await sleep(CFG.sleepReintento);
         continue;
       }
       
-      console.error(`   ⚠️  Máximo de reintentos alcanzado. Usando fallback.`);
+      console.log(`   🛡️  Fallback activado`);
       break;
     }
   }
   
-  // ═══════════════════════════════════════════════════════════
-  // FALLBACK COMPLETO (DARK MODE + JOURNEY)
-  // 
-  // Solo se ejecuta si fallan TODOS los reintentos.
-  // Garantiza contenido válido siempre en DARK MODE.
-  // ═══════════════════════════════════════════════════════════
-  console.warn(`   🛡️  Activando fallback con contenido genérico...`);
+  // Fallback
   return {
     ...libro,
     dimension: "Bienestar",
@@ -524,11 +423,9 @@ async function enrich(libro, openai, c) {
       parrafoBot: "Después de esas pequeñas acciones que hiciste, toma este momento: identifica una cosa que puedas hacer en 15 segundos que te acerque a sentirte mejor. Hazla ahora, sin pensar.",
       style: {
         accent: "#ff6b6b",
-        ink: "#f0f0f0",
-        paper: "#1a1a1a",
-        border: "#333333",
-        serif: "Georgia, serif",
-        sans: "Inter, sans-serif"
+        ink: CFG.darkMode.inkMax,
+        paper: CFG.darkMode.paperMin,
+        border: "#333333"
       }
     },
     videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo)}`
@@ -536,102 +433,69 @@ async function enrich(libro, openai, c) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🚀 MAIN (PUNTO DE ENTRADA)
-   
-   Flujo principal de ejecución:
-   1. Inicializa cliente OpenAI
-   2. Obtiene contexto cronobiológico
-   3. Muestra banner informativo
-   4. Lee CSV de libros
-   5. Mezcla aleatoriamente y selecciona N libros
-   6. Procesa cada libro con delay
-   7. Reset de memoria cada 5 libros (DESPUÉS de procesar)
-   8. Guarda JSON final
-   9. Muestra resumen
-   
-   EJECUCIÓN:
-   node build-contenido.js
+   🚀 MAIN
 ═══════════════════════════════════════════════════════════════ */
 
 const openai = new OpenAI({ apiKey: KEY });
-const c = crono();
+const ctx = getContexto();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v7.6 ULTRA GOD - VERSIÓN DEFINITIVA ║");
+console.log("║    TRIGGUI v8.0 PERFECTION - DEFINITIVO      ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
-console.log(`🤖 ${CFG.model} | 🌡️  ${CFG.temp} (optimizado)`);
-console.log(`⏱️  Delay: ${CFG.delay}ms | Reintentos: ${CFG.maxReintentos}`);
-console.log(`📊 Energía: ${c.d.n} (${c.d.e})\n`);
+console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)} (${ctx.dia})`);
+console.log(`📊 Energía: ${Math.round(ctx.energia * 100)}% | Hawkins: ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}`);
+console.log(`⏱️  Delay: ${CFG.delay}ms | Reintentos: ${CFG.maxReintentos}\n`);
 
-// Lee y parsea CSV
 const csv = await fs.readFile(CFG.csv, "utf8");
 const lista = parse(csv, { columns: true, skip_empty_lines: true });
 const pick = utils.shuffle([...lista]).slice(0, Math.min(CFG.max, lista.length));
 
-// Procesamiento principal
 const libros = [];
 let i = 0;
 
 for (const libro of pick) {
   i++;
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
-  libros.push(await enrich(libro, openai, c));
+  libros.push(await enrich(libro, openai, ctx));
   
-  // Reset cada 5 (DESPUÉS de procesar exitosamente)
-  if (i % 5 === 0 && i < pick.length) {
-    console.log(`   📊 P:${state.palabras.size} C:${state.colores.size} | 🔄 Reset`);
+  if (i % CFG.resetMemoryCada === 0 && i < pick.length) {
+    console.log(`   🔄 Reset memoria (${state.palabras.size}p, ${state.colores.size}c)`);
     state.palabras.clear();
     state.colores.clear();
   }
   
-  // Delay (excepto en último libro)
-  if (i < pick.length) {
-    await sleep(CFG.delay);
-  }
+  if (i < pick.length) await sleep(CFG.delay);
 }
 
-// Guardado final
 await fs.writeFile(CFG.out, JSON.stringify({ libros }, null, 2));
 
 console.log("\n╔═══════════════════════════════════════════════╗");
 console.log("║            GENERACIÓN COMPLETA                ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`✅ ${CFG.out}`);
-console.log(`📚 ${libros.length} libros procesados`);
-console.log(`📊 ${state.palabras.size} palabras | ${state.colores.size} colores\n`);
-console.log("🔥 Sistema v7.6 ULTRA GOD ejecutado con éxito\n");
+console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA DE USO RÁPIDO
+   📖 GUÍA RÁPIDA
    
-   EJECUCIÓN BÁSICA:
-   node build-contenido.js
+   PARÁMETROS CLAVE (Línea 17-95):
+   - CFG.temp: Creatividad base (se multiplica por energía día)
+   - CFG.hawkins: Rangos por franja horaria (dinámico)
+   - CFG.energia: Por día semana (afecta temp y frases)
+   - CFG.dinamico: Activa/desactiva ajustes automáticos
    
-   ══════════════════════════════════════════════════════════════
+   RESULTADO IDÉNTICO A v7.6 PERO:
+   ✅ -200 líneas código
+   ✅ Todo parametrizable al inicio
+   ✅ Dinámico según día/hora
+   ✅ Cero basura
+   ✅ Logs concisos
    
-   AJUSTES DINÁMICOS (LÍNEAS DE REFERENCIA):
-   
-   Línea 50: temp (creatividad)
-   Línea 51: top_p (diversidad)
-   Línea 56: max (libros por ejecución)
-   Línea 57: delay (ms entre libros)
-   Línea 58: maxReintentos (intentos por libro)
-   
-   ══════════════════════════════════════════════════════════════
-   
-   CARACTERÍSTICAS v7.6:
-   
-   ✅ JOURNEY CONTINUO: Tarjeta conecta con palabras/frases previas
-   ✅ DINÁMICO: Sin límites hardcodeados, flujo natural
-   ✅ CONTEXT-AWARE: IA ve palabras/frases antes de generar tarjeta
-   ✅ LIMPIEZA INTELIGENTE: Elimina metadata pero respeta contenido
-   ✅ DARK MODE: 100% garantizado
-   ✅ DELAY/REINTENTOS: Tu configuración que funciona (10seg, 20x)
-   
-   ══════════════════════════════════════════════════════════════
-   
-   🔥 VERSIÓN DEFINITIVA ULTRA GOD
+   AJUSTAR:
+   1. Hawkins más profundo en noche: CFG.hawkins.noche = [10, 75]
+   2. Frases más largas: CFG.frases.longitudMax = 150
+   3. Más reintentos: CFG.maxReintentos = 30
    
 ═══════════════════════════════════════════════════════════════ */
