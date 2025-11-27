@@ -51,8 +51,8 @@ const CFG = {
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
   max: 10,                        // 📚 Libros por ejecución
-  delay: 5000,                   // ⏱️  Delay entre libros (3 segundos)
-  maxReintentos: 5               // 🔄 Reintentos por libro (hasta 3x)
+  delay: 10000,                   // ⏱️  Delay entre libros (10 segundos)
+  maxReintentos: 10               // 🔄 Reintentos por libro (hasta 10x)
 };
 
 /* ═══════════════════════════════════════════════════════════════
