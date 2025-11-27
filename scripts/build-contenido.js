@@ -1,16 +1,17 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v7.4 GOD MODE - CÓDIGO DEFINITIVO PRODUCCIÓN
+   TRIGGUI v7.6 ULTRA GOD - VERSIÓN DEFINITIVA
    
    Sistema de generación de contenido enriquecido para libros.
    
-   CARACTERÍSTICAS v7.4:
-   ✅ Palabras emocionales profundas (Hawkins 20-75)
+   CARACTERÍSTICAS v7.6:
+   ✅ Palabras emocionales profundas (Hawkins 20-100)
    ✅ Frases únicas con estructuras radicalmente diferentes
    ✅ Paletas cromáticas imposibles de confundir
    ✅ Tarjetas editoriales DARK MODE (logo blanco visible)
-   ✅ Delay 3 segundos entre libros (anti rate limit)
-   ✅ Reintentos automáticos 3x
-   ✅ Temperatura optimizada (1.1)
+   ✅ Tarjetas con JOURNEY CONTINUO (palabras → frases → tarjeta)
+   ✅ Contenido DINÁMICO sin límites hardcodeados
+   ✅ Delay/reintentos configurables (10seg, 20x)
+   ✅ Temperatura optimizada (1.0)
    ✅ Logging detallado para diagnóstico
    ✅ Validación doble anti-repetición
    ✅ Fallback robusto con contenido real
@@ -18,7 +19,7 @@
    
    AUTOR: Badir Nakid
    FECHA: Noviembre 2025
-   VERSIÓN: 7.4 GOD MODE
+   VERSIÓN: 7.6 ULTRA GOD DEFINITIVO
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -44,15 +45,15 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
   model: "gpt-4o-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
-  temp: 1.1,                     // 🌡️  Creatividad optimizada
-  top_p: 0.95,                   // 🎲 Diversidad de tokens
+  temp: 1,                       // 🌡️  Creatividad optimizada
+  top_p: .9,                     // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
   csv: "data/libros_master.csv", // 📁 Archivo de entrada
   out: "contenido.json",         // 💾 Archivo de salida
-  max: 5,                        // 📚 Libros por ejecución
-  delay: 3000,                   // ⏱️  Delay entre libros (3 segundos)
-  maxReintentos: 3               // 🔄 Reintentos por libro (hasta 3x)
+  max: 20,                       // 📚 Libros por ejecución
+  delay: 10000,                  // ⏱️  Delay entre libros (10 segundos)
+  maxReintentos: 20              // 🔄 Reintentos por libro (hasta 20x)
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -149,7 +150,7 @@ function crono() {
    
    3 TIPOS DE PROMPTS:
    1. main    → Palabras, frases, colores (JSON)
-   2. tarjeta → Título, párrafos (texto)
+   2. tarjeta → Título, párrafos (texto) CON JOURNEY CONTINUO
    3. estilo  → Diseño visual DARK MODE (JSON experimental)
    
    MODIFICAR AQUÍ para cambiar la calidad/estilo del contenido.
@@ -190,66 +191,90 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100, relacionadas específicamente al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa, súper específica al libro
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, primero desarrolla contexto emocional, luego acción CONCRETA
 ✅ Cada color: imposible confundir con paletas anteriores
-
-MAPA HAWKINS BAJO (USA ESTE RANGO):
-20  → Vergüenza (humillación, deshonra, autorechazo)
-30  → Culpa (remordimiento, autoacusación, arrepentimiento)
-50  → Apatía (desesperanza, indiferencia, desconexión)
-75  → Duelo (pesar, melancolía, pérdida)
 
 SOLO JSON.`,
 
     /* ─────────────────────────────────────────────────────────
-       PROMPT 2: TARJETA
+       PROMPT 2: TARJETA - JOURNEY CONTINUO
        
        Genera: título, parrafoTop, subtitulo, parrafoBot
        
-       🎯 CRITICAL: Longitud exacta para evitar desborde en móvil
-       🔗 JOURNEY: Coherencia total con palabras/frases anteriores
+       🔗 CRITICAL: Debe continuar el viaje emocional de palabras/frases
+       🎯 DINÁMICO: Sin límites hardcodeados, flujo natural
     ───────────────────────────────────────────────────────── */
     tarjeta: base + `
 ${extra ? `
-CONTEXTO EMOCIONAL PREVIO GENERADO:
-Palabras: ${extra.palabras.join(", ")}
-Frases: ${extra.frases.map((f, i) => `${i + 1}. ${f}`).join(" ")}
+═══════════════════════════════════════════════════════════════
+JOURNEY EMOCIONAL PREVIO (contexto crítico):
+═══════════════════════════════════════════════════════════════
 
-El contenido editorial debe CONTINUAR este journey emocional.
+PALABRAS EMOCIONALES GENERADAS:
+${extra.palabras.map((p, i) => `${i + 1}. ${p}`).join("\n")}
+
+FRASES DE ACCIÓN GENERADAS:
+${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+
+═══════════════════════════════════════════════════════════════
+TU TAREA: Continuar este journey emocional de forma orgánica.
+El usuario ya pasó por estas emociones bajas (palabras Hawkins 20-100)
+y ya vio estas acciones concretas (frases).
+
+AHORA en la tarjeta:
+1. Párrafo 1: Insight que CONECTA con esas emociones/acciones previas
+2. Subtítulo: Bisagra que ELEVA desde esas emociones hacia transformación
+3. Párrafo 2: Acción ESPECÍFICA que construye sobre las frases previas
+
+TODO DEBE SER UNA CONTINUACIÓN NATURAL DEL JOURNEY.
+═══════════════════════════════════════════════════════════════
 ` : ""}
 
-Escribe contenido editorial específico al libro:
+Escribe contenido editorial que complete el journey emocional:
 
-TÍTULO (30-45 chars): Concepto único del libro, directo, sin frases genéricas
-PÁRRAFO 1 (80-120 chars): Insight del libro en 1ra persona, específico, sin metadata
-SUBTÍTULO (25-40 chars): Frase que conecta emocionalmente, NO genérica
-PÁRRAFO 2 (70-110 chars): Acción concreta 15-30seg que eleva desde emociones previas
+TÍTULO: Concepto específico del libro (natural, sin límites artificia les)
+PÁRRAFO 1: Insight en 1ra persona del autor que CONECTA con emociones previas
+SUBTÍTULO: Pregunta o frase provocadora que ELEVA desde las emociones hacia transformación
+PÁRRAFO 2: Acción concreta 15-60seg con CONTEXTO RICO que construye sobre frases previas
 
-REGLAS CRÍTICAS:
-❌ NO uses: corchetes [], "Bisagra provocadora", "Reflexión activa", metadata, @@tags
-❌ NO excedas límites: P1 max 120 chars, P2 max 110 chars
-✅ Contenido DIRECTO sin adornos ni corchetes
-✅ Journey continuo: de palabras bajas → frases acción → insight → transformación
+REGLAS JOURNEY:
+✅ CONECTAR: Menciona indirectamente las emociones/temas de palabras previas
+✅ ELEVAR: Subtítulo debe ser bisagra desde emociones bajas → transformación
+✅ CONSTRUIR: Acción en P2 debe sentirse como siguiente paso lógico después de frases
+✅ FLUJO NATURAL: Sin límites artificiales, deja que el contenido respire
+
+REGLAS TÉCNICAS:
+❌ NO uses: corchetes [], "Bisagra provocadora", "Reflexión activa", metadata
+❌ NO copies: palabras/frases literales previas (refiérelas indirectamente)
+✅ SÍ crea: Contenido que se SIENTE como continuación natural del journey
+
+TONO: Primera persona del autor, sobrio, directo, humano, útil
 
 FORMATO (4 líneas sin tags):
-[Título del concepto]
-[Insight en 1ra persona del autor]
-[Subtítulo provocador específico]
-[Acción concreta breve]
+[Título]
+[Párrafo 1 - Insight conectado]
+[Subtítulo - Bisagra elevadora]
+[Párrafo 2 - Acción con contexto rico]
 
-EJEMPLO:
-El arte de no hacer nada
-Descubrí que el Niksen transforma mi relación con el estrés y la productividad diaria.
-¿Qué pasaría si parar fuera avanzar?
-Dedica 5 minutos hoy a sentarte sin hacer nada y observa tus pensamientos sin juzgar.`,
+EJEMPLO CON JOURNEY:
+PALABRAS: desesperanza, confusión, frustración, vacío
+FRASES: "🌱 Da un paso...", "🔍 Observa sin juzgar...", etc.
+
+TARJETA RESULTANTE:
+El poder de la pausa consciente
+Cuando experimenté el Niksen, descubrí que esos momentos de aparente vacío eran en realidad espacios de claridad profunda.
+¿Y si detenerte fuera el movimiento más poderoso?
+Después de observar tus pensamientos sin juzgar, dedica 10 minutos a simplemente ser: sin agenda, sin objetivo, solo presencia plena con lo que surge.
+
+GENERA AHORA LAS 4 LÍNEAS:`,
 
     /* ─────────────────────────────────────────────────────────
        PROMPT 3: ESTILO (DARK MODE)
@@ -322,7 +347,7 @@ async function call(openai, sys, usr, forceJSON = false) {
    4. Registra palabras/colores usados
    5. Garantiza longitud de arrays (sin "default")
    6. Post-procesa colores de texto
-   7. Genera tarjeta de contenido
+   7. Genera tarjeta de contenido CON JOURNEY CONTINUO
    8. Genera tarjeta de estilo visual DARK MODE
    9. Retorna objeto completo
    
@@ -331,7 +356,7 @@ async function call(openai, sys, usr, forceJSON = false) {
    - Reintento automático si respuesta incompleta
    - Reintento automático si palabras repetidas
    - Error si arrays vacíos → Fallback completo
-   - Loop con reintentos configurables (3x)
+   - Loop con reintentos configurables (20x)
    - Try-catch global → Fallback garantizado
    - Stack trace en errores para diagnóstico
 ═══════════════════════════════════════════════════════════════ */
@@ -398,32 +423,29 @@ async function enrich(libro, openai, c) {
       extra.textColors = extra.colores.map(utils.txt);
 
       // ─────────────────────────────────────────────────────────
-      // PASO 7: TARJETA CONTENIDO (CON VALIDACIÓN DE LONGITUD)
+      // PASO 7: TARJETA CONTENIDO (CON JOURNEY CONTINUO)
       // ─────────────────────────────────────────────────────────
-      console.log(`   🔧 Paso 7: Generando tarjeta de contenido...`);
-      const pT = prompt(libro, "tarjeta", c, extra);
+      console.log(`   🔧 Paso 7: Generando tarjeta con journey continuo...`);
+      const pT = prompt(libro, "tarjeta", c, extra);  // ⭐ Pasa extra para journey
       let rawT = await call(openai, pT, "Genera tarjeta");
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
+      
+      // Limpieza inteligente de metadata sin hardcodear límites
       const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
-        // Limpiar corchetes, metadata y frases genéricas
         return l
-          .replace(/^\[|\]$/g, "")  // Eliminar corchetes al inicio/fin
-          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")  // Eliminar metadata
-          .replace(/^(Concepto único del libro|Insight específico|Bisagra provocadora|Acción específica)[:.\s]*/gi, "")  // Eliminar labels
+          .replace(/^\[|\]$/g, "")  // Eliminar corchetes
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")  // Metadata
+          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa)[:.\s]*/gi, "")  // Labels genéricos
           .trim();
-      }).filter(l => l.length > 0);  // Eliminar líneas vacías
+      }).filter(l => l.length > 10);  // Eliminar líneas muy cortas (probablemente basura)
       
       extra.tarjeta = {
-        titulo: (lineas[0] || "").substring(0, 45),  // Max 45 chars
-        parrafoTop: (lineas[1] || "").substring(0, 120),  // Max 120 chars
-        subtitulo: (lineas[2] || "").substring(0, 40),  // Max 40 chars
-        parrafoBot: (lineas.slice(3).join(" ") || "").substring(0, 110),  // Max 110 chars
+        titulo: lineas[0] || "",
+        parrafoTop: lineas[1] || "",
+        subtitulo: lineas[2] || "",
+        parrafoBot: lineas.slice(3).join(" "),  // ⭐ Sin límites, flujo natural
         style: {}
       };
-      
-      // Log si hubo truncado
-      if (lineas[1] && lineas[1].length > 120) console.warn(`   ⚠️  P1 truncado: ${lineas[1].length} → 120 chars`);
-      if (lineas.slice(3).join(" ").length > 110) console.warn(`   ⚠️  P2 truncado: ${lineas.slice(3).join(" ").length} → 110 chars`);
 
       // ─────────────────────────────────────────────────────────
       // PASO 8: TARJETA ESTILO (CON FORZADO DARK MODE)
@@ -433,41 +455,27 @@ async function enrich(libro, openai, c) {
       let rawE = await call(openai, pE, "Genera estilo");
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       
-      let styleParsed = false;
-      let styleAttempts = 0;
-      
-      while (!styleParsed && styleAttempts < 2) {
-        try {
-          extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-          styleParsed = true;
-          
-          // 🌑 FORZAR DARK MODE si IA se equivocó
-          if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
-            console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
-            extra.tarjeta.style.paper = "#1a1a1a";
-          }
-          if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
-            console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
-            extra.tarjeta.style.ink = "#f0f0f0";
-          }
-        } catch (e) {
-          styleAttempts++;
-          if (styleAttempts < 2) {
-            console.warn(`   ⚠️  Style parse error, reintentando... (${styleAttempts}/2)`);
-            rawE = await call(openai, pE, "Genera SOLO JSON válido");
-            rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
-          } else {
-            console.warn(`   ⚠️  Style error final: ${e.message}, usando fallback`);
-            // Fallback dark mode
-            extra.tarjeta.style = {
-              accent: "#ff6b6b",
-              ink: "#f0f0f0",
-              paper: "#1a1a1a",
-              border: "#333333"
-            };
-            styleParsed = true;
-          }
+      try {
+        extra.tarjeta.style = JSON.parse(utils.clean(rawE));
+        
+        // 🌑 FORZAR DARK MODE si IA se equivocó
+        if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > 0.3) {
+          console.warn(`   ⚠️  Fondo claro detectado, forzando dark mode...`);
+          extra.tarjeta.style.paper = "#1a1a1a";
         }
+        if (extra.tarjeta.style.ink && utils.lum(extra.tarjeta.style.ink) < 0.7) {
+          console.warn(`   ⚠️  Texto oscuro detectado, forzando claro...`);
+          extra.tarjeta.style.ink = "#f0f0f0";
+        }
+      } catch (e) {
+        console.warn(`   ⚠️  Style error: ${e.message}`);
+        // Fallback dark mode
+        extra.tarjeta.style = {
+          accent: "#ff6b6b",
+          ink: "#f0f0f0",
+          paper: "#1a1a1a",
+          border: "#333333"
+        };
       }
 
       // ─────────────────────────────────────────────────────────
@@ -498,7 +506,7 @@ async function enrich(libro, openai, c) {
   }
   
   // ═══════════════════════════════════════════════════════════
-  // FALLBACK COMPLETO (DARK MODE)
+  // FALLBACK COMPLETO (DARK MODE + JOURNEY)
   // 
   // Solo se ejecuta si fallan TODOS los reintentos.
   // Garantiza contenido válido siempre en DARK MODE.
@@ -521,9 +529,9 @@ async function enrich(libro, openai, c) {
     portada: libro.portada || `📚 ${libro.titulo}`,
     tarjeta: {
       titulo: "Empieza pequeño",
-      parrafoTop: "La acción más importante es la que puedes hacer ahora mismo, sin esperar el momento perfecto.",
-      subtitulo: "Un paso basta para avanzar",
-      parrafoBot: "Identifica una acción de 15 segundos que te acerque a tu objetivo y hazla ahora.",
+      parrafoTop: "Cuando el peso de las emociones difíciles aparece, he aprendido que la acción más simple es la más poderosa.",
+      subtitulo: "¿Y si un paso bastara para cambiar todo?",
+      parrafoBot: "Después de esas pequeñas acciones que hiciste, toma este momento: identifica una cosa que puedas hacer en 15 segundos que te acerque a sentirte mejor. Hazla ahora, sin pensar.",
       style: {
         accent: "#ff6b6b",
         ink: "#f0f0f0",
@@ -559,7 +567,7 @@ const openai = new OpenAI({ apiKey: KEY });
 const c = crono();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║   TRIGGUI v7.4 GOD MODE - ANTI-FALLBACK MAX  ║");
+console.log("║  TRIGGUI v7.6 ULTRA GOD - VERSIÓN DEFINITIVA ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -603,7 +611,7 @@ console.log("╚═════════════════════�
 console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros procesados`);
 console.log(`📊 ${state.palabras.size} palabras | ${state.colores.size} colores\n`);
-console.log("🔥 Sistema v7.4 GOD MODE ejecutado con éxito\n");
+console.log("🔥 Sistema v7.6 ULTRA GOD ejecutado con éxito\n");
 
 /* ═══════════════════════════════════════════════════════════════
    📖 GUÍA DE USO RÁPIDO
@@ -613,94 +621,27 @@ console.log("🔥 Sistema v7.4 GOD MODE ejecutado con éxito\n");
    
    ══════════════════════════════════════════════════════════════
    
-   AJUSTES COMUNES (LÍNEAS DE REFERENCIA):
+   AJUSTES DINÁMICOS (LÍNEAS DE REFERENCIA):
    
-   Más creatividad:
-   → Línea 50: temp: 1.3
-   
-   Más estabilidad:
-   → Línea 50: temp: 0.9
-   
-   Más delay (si hay fallbacks):
-   → Línea 57: delay: 5000
-   
-   Más reintentos:
-   → Línea 58: maxReintentos: 5
-   
-   Más libros:
-   → Línea 56: max: 20
-   
-   Modelo más robusto:
-   → Línea 49: model: "gpt-4o"
-   
-   Palabras menos profundas:
-   → Línea 225: "Hawkins 50-150"
-   
-   Frases más cortas:
-   → Línea 226: "80-100 chars"
+   Línea 50: temp (creatividad)
+   Línea 51: top_p (diversidad)
+   Línea 56: max (libros por ejecución)
+   Línea 57: delay (ms entre libros)
+   Línea 58: maxReintentos (intentos por libro)
    
    ══════════════════════════════════════════════════════════════
    
-   MÉTRICAS DE CALIDAD:
+   CARACTERÍSTICAS v7.6:
    
-   BUENO:
-   - 0-2 palabras repetidas en 20 libros
-   - 0-1 fallbacks
-   - Dark mode en 95% de tarjetas
-   
-   EXCELENTE:
-   - 0 palabras repetidas
-   - 0 fallbacks
-   - Dark mode al 100%
-   - Paletas imposibles de confundir
-   
-   GOD MODE:
-   - Cada palabra específica al libro
-   - Cada frase única en estructura
-   - Cada paleta memorable
-   - 0 fallbacks en 100 libros
-   - Dark mode perfecto siempre
+   ✅ JOURNEY CONTINUO: Tarjeta conecta con palabras/frases previas
+   ✅ DINÁMICO: Sin límites hardcodeados, flujo natural
+   ✅ CONTEXT-AWARE: IA ve palabras/frases antes de generar tarjeta
+   ✅ LIMPIEZA INTELIGENTE: Elimina metadata pero respeta contenido
+   ✅ DARK MODE: 100% garantizado
+   ✅ DELAY/REINTENTOS: Tu configuración que funciona (10seg, 20x)
    
    ══════════════════════════════════════════════════════════════
    
-   TROUBLESHOOTING:
-   
-   Si hay fallbacks:
-   1. Revisa logs: busca "❌ Intento"
-   2. Aumenta delay a 5000ms
-   3. Baja temp a 0.9
-   4. Prueba gpt-4o
-   5. Aumenta reintentos a 5
-   
-   Si palabras repetidas:
-   1. Aumenta presence a 0.8
-   2. Aumenta frequency a 0.5
-   
-   Si frases muy similares:
-   1. Revisa prompt main (línea 220)
-   2. Enfatiza "estructuras RADICALMENTE diferentes"
-   
-   Si tarjetas no dark mode:
-   1. El código ya fuerza dark mode automáticamente
-   2. Verifica logs: "⚠️  Fondo claro detectado"
-   3. Si persiste, reporta bug
-   
-   ══════════════════════════════════════════════════════════════
-   
-   LOGS DETALLADOS INCLUIDOS:
-   
-   Ahora verás en cada libro:
-   - 🔧 Paso X: [acción]
-   - ✅ [éxito]
-   - ⚠️  [advertencia]
-   - ❌ [error con stack trace]
-   - 🔄 [reintento]
-   - 🛡️  [fallback]
-   
-   Esto permite diagnosticar exactamente dónde falla.
-   
-   ══════════════════════════════════════════════════════════════
-   
-   🔥 NIVEL DIOS MÁXIMO ACTIVADO
+   🔥 VERSIÓN DEFINITIVA ULTRA GOD
    
 ═══════════════════════════════════════════════════════════════ */
