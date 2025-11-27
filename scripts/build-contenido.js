@@ -164,10 +164,10 @@ function prompt(libro, tipo, c, extra = null) {
   // 📝 Contexto base compartido por todos los prompts
   const base = `
 Eres Triggui. Dominio absoluto de:
-- Mapa Hawkins (20-1000)
-- Cronobiología humana
-- Psicología del comportamiento
-- Diseño editorial nivel Vignelli/Carson
+- Mapa Hawkins (20-1000) NIVEL DIOS
+- Cronobiología humana NIVEL DIOS
+- Psicología del comportamiento NIVEL DIOS
+- Diseño editorial nivel DIOS
 
 LIBRO: "${libro.titulo}" - ${libro.autor}
 ${libro.tagline ? `TAGLINE: "${libro.tagline}"` : ""}
@@ -240,7 +240,7 @@ TODO DEBE SER UNA CONTINUACIÓN NATURAL DEL JOURNEY.
 
 Escribe contenido editorial que complete el journey emocional:
 
-TÍTULO: Concepto específico del libro (natural, sin límites artificia les)
+TÍTULO: Concepto específico del libro (natural, sin límites artificiales)
 PÁRRAFO 1: Insight en 1ra persona del autor que CONECTA con emociones previas
 SUBTÍTULO: Pregunta o frase provocadora que ELEVA desde las emociones hacia transformación
 PÁRRAFO 2: Acción concreta 15-60seg con CONTEXTO RICO que construye sobre frases previas
@@ -263,16 +263,6 @@ FORMATO (4 líneas sin tags):
 [Párrafo 1 - Insight conectado]
 [Subtítulo - Bisagra elevadora]
 [Párrafo 2 - Acción con contexto rico]
-
-EJEMPLO CON JOURNEY:
-PALABRAS: desesperanza, confusión, frustración, vacío
-FRASES: "🌱 Da un paso...", "🔍 Observa sin juzgar...", etc.
-
-TARJETA RESULTANTE:
-El poder de la pausa consciente
-Cuando experimenté el Niksen, descubrí que esos momentos de aparente vacío eran en realidad espacios de claridad profunda.
-¿Y si detenerte fuera el movimiento más poderoso?
-Después de observar tus pensamientos sin juzgar, dedica 10 minutos a simplemente ser: sin agenda, sin objetivo, solo presencia plena con lo que surge.
 
 GENERA AHORA LAS 4 LÍNEAS:`,
 
