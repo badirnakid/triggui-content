@@ -45,8 +45,8 @@ const CFG = {
   
   frases: {
     cantidad: 4,
-    longitudMin: 100,
-    longitudMax: 120
+    longitudMin: 80,
+    longitudMax: 100
   },
   
   palabras: {
@@ -64,9 +64,9 @@ const CFG = {
     longitudMinLinea: 10,  // Chars mínimos por línea válida
     // ─── Límites GUÍA (no truncan, solo orientan a la IA) ───
     tituloGuia: 60,      // Guía para IA (flujo natural)
-    parrafo1Guia: 80,   // Guía para IA (flujo natural)
+    parrafo1Guia: 60,   // Guía para IA (flujo natural)
     subtituloGuia: 80,   // Guía para IA (flujo natural)
-    parrafo2Guia: 120    // Guía para IA (flujo natural, contexto rico)
+    parrafo2Guia: 100    // Guía para IA (flujo natural, contexto rico)
   },
   
   // ─── Dark Mode ───
