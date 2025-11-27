@@ -1,31 +1,222 @@
 {
   "libros": [
     {
-      "titulo": "Timeboxing",
-      "autor": "Marc Zao-Sanders",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/26/c3/4b/26c34bb3-e2c4-edb2-92a0-d437e210e268/9788410159792.jpeg/626x0w.jpg",
-      "tagline": "The Power of Doing One Thing at a Time",
+      "titulo": "El viaje al amor",
+      "autor": "Eduardo Punset",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication7/v4/ee/a3/a1/eea3a1af-faac-5aa9-383a-575712ca0184/9788423343720.jpg/626x0w.jpg",
+      "tagline": "Una aproximación revolucionaria a la más poderosa de todas las emociones: el amor.Los secretos del amor se habían interpretado siempre desde los campos de la moral o la literatura. El amor es ciego se decía pero hoy empezamos a saber que se mueve por razones evolutivas y biológicas extremadamente precisas. La revolución tecnológica está permitiendo por primera vez en la historia de la evolución que la ciencia aborde los secretos del amor.Ahora resulta que los ciegos éramos nosotros.",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero",
       "palabras": [
-        "vergüenza",
-        "culpa",
-        "apatía",
-        "duelo"
+        "desilusión",
+        "anhelo",
+        "rechazo",
+        "melancolía"
       ],
       "frases": [
-        "Enfrenta tu vergüenza y transforma el dolor en fuerza, descubre tu luz interior. 🌟",
-        "Deja atrás la culpa, permite que cada error sea un ladrillo en tu camino hacia el éxito. 🚀",
-        "Afronta la apatía, cada pequeño paso te acerca a una vida llena de propósito y pasión. 🎯",
-        "Permite que el duelo te enseñe, resurgirás más fuerte y sabio que antes. 🌈"
+        "El amor, un laberinto de anhelos perdidos, nos conduce a descubrirnos. 💔",
+        "Entre susurros y desencuentros, el amor emerge, invitándonos a la transformación. 🌱",
+        "Cuando el rechazo deja huella, renace la fuerza del amor verdadero. ✨",
+        "La melancolía del pasado forja los puentes hacia nuevas conexiones. 🌉"
       ],
       "colores": [
-        "#8B3E3E",
-        "#A84D3B",
-        "#7B7D6D",
-        "#4F5D75"
+        "#FF6B6B",
+        "#FFD93D",
+        "#4A90E2",
+        "#9B59B6"
       ],
-      "fondo": "#2E2E2E",
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Concepto único del libro  ",
+        "parrafoTop": "El amor, más que un sentimiento, es un complejo fenómeno biológico y evolutivo, una revelación en mis indagaciones.  ",
+        "subtitulo": "Amor: ciencia y evolución  ",
+        "parrafoBot": "Investiga tus propias emociones. Reflexiona sobre cómo influyen los procesos biológicos en tus relaciones y abre la puerta a nuevas comprensiones.",
+        "style": {
+          "accent": "#FF6B81",
+          "ink": "#FFFFFF",
+          "paper": "#1A1A1A",
+          "border": "#333333",
+          "serif": "Georgia, serif",
+          "sans": "Helvetica, sans-serif",
+          "mono": "Courier New, monospace",
+          "display": "Playfair Display, serif",
+          "glowFlux": "#F9E79F",
+          "metaShadow": {
+            "x-offset": 2,
+            "y-offset": 2,
+            "blur-radius": 5,
+            "color": "#000000"
+          },
+          "warpGrid": {
+            "grid-size": [
+              8,
+              8
+            ],
+            "line-color": "#444444"
+          },
+          "prismPulse": {
+            "frequency": 1.5,
+            "colors": [
+              "#FFDD57",
+              "#29CC97",
+              "#55C8D7"
+            ]
+          },
+          "echoBeat": {
+            "amplitude": 0.6,
+            "speed-factor": 1.2
+          },
+          "novaFlash": {
+            "duration-ms": 300,
+            "opacity-start-end": [
+              0.2,
+              1
+            ]
+          },
+          "vectorGlowEffect": true,
+          "surprise": "<Un efecto de paralaje que hace que el texto se mueva ligeramente al hacer scroll para dar una sensación de profundidad>"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20viaje%20al%20amor%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El líder que no tenía cargo",
+      "autor": "Robin Sharma",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/aa/fe/04/aafe04af-1d29-ec58-3719-66bb23f693ea/9788425346224.jpg/626x0w.jpg",
+      "tagline": "el mejor en tu campo a la vez que contribuirás con tu talento a que tu empresa alcance las metas más altas",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Creativo",
+      "palabras": [
+        "desesperanza",
+        "remordimiento",
+        "autorechazo",
+        "pesar"
+      ],
+      "frases": [
+        "En cada error, el líder se descubre y transforma la culpa en aprendizaje. 🌱 Sé la chispa que ilumina el camino.",
+        "El acto de compartir tus dones nos une y eleva; deja atrás la apatía para brillar juntos. ✨ Contribuye hoy.",
+        "Reconocer tu propia vulnerabilidad es el primer paso hacia la grandeza; abandona el duelo y abraza tu fuerza. 💪 Sé tú mismo.",
+        "La deshonra te ata, pero el poder de cambiar comienza cuando decides actuar; no te quedes en el remordimiento. 🚀 Avanza."
+      ],
+      "colores": [
+        "#F8A3B0",
+        "#9ED2E9",
+        "#FFBB77",
+        "#A2D97B"
+      ],
+      "fondo": "#181818",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Concepto único del libro  ",
+        "parrafoTop": "\"El verdadero liderazgo no se basa en el título, sino en el impacto que generamos a través de nuestro trabajo.\" - Robin Sharma  ",
+        "subtitulo": "Bisagra provocadora  ",
+        "parrafoBot": "Dedica 15 minutos al día a identificar cómo puedes aplicar tu talento para inspirar a otros y contribuir al éxito de tu equipo.",
+        "style": {
+          "accent": "#FF6F20",
+          "ink": "#E0E0E0",
+          "paper": "#1A1A1A",
+          "border": "#3C3C3C",
+          "serif": "Georgia, serif",
+          "sans": "Helvetica, sans-serif",
+          "mono": "Courier New, monospace",
+          "display": "Impact, display",
+          "glowFlux": "#FF8C00",
+          "metaShadow": "rgba(255, 140, 0, 0.5)",
+          "warpGrid": "#121212",
+          "prismPulse": "#FFEA00",
+          "vividEcho": "#00BFFF",
+          "depthWave": "#32CD32",
+          "contrastLift": "#FFD700",
+          "colorVeil": "#555555",
+          "translucentMist": "#B22222",
+          "surprise": "Incorporar un borde animado que resalta al pasar el mouse."
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20l%C3%ADder%20que%20no%20ten%C3%ADa%20cargo%20Robin%20Sharma%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Espejos del tiempo",
+      "autor": "Brian Weiss",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/7d/cf/23/7dcf233a-18d3-db6e-47ef-b37741231247/9788490195154.jpg/626x0w.jpg",
+      "tagline": "Retroceder al pasado y recordar sucesos que podrían ser el origen de las dificultades que experimenta en la actualidad. A través de la terapia de la regresión es posible alcanzar la sanación física emocional y espiritual.",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "curiosidad",
+        "integración",
+        "expansión",
+        "energía"
+      ],
+      "frases": [
+        "Explora tu interior con curiosidad, descubre lo que realmente deseas. 🌱",
+        "Integra tus experiencias pasadas para crear un presente más pleno. 🔗",
+        "Expande tu conciencia hacia nuevas posibilidades y oportunidades. ✨",
+        "Recarga tu energía vital conectando con la esencia de tu ser. ⚡"
+      ],
+      "colores": [
+        "#F1C40F",
+        "#2ECC71",
+        "#E67E22",
+        "#3498DB"
+      ],
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Concepto único del libro  ",
+        "parrafoTop": "En \"Espejos del tiempo\", Brian Weiss comparte que al retroceder en el pasado podemos descubrir raíces de nuestros conflictos actuales.  ",
+        "subtitulo": "Apertura a lo desconocido  ",
+        "parrafoBot": "Te invito a realizar un ejercicio breve: siéntate en calma y reflexiona sobre un recuerdo que aún te afecta. Escribe lo que sientes y observa cómo eso puede iluminar tu presente.",
+        "style": {
+          "accent": "#ff6b6b",
+          "ink": "#f0f0f0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Espejos%20del%20tiempo%20Brian%20Weiss%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Sin filtro",
+      "autor": "Sarah Frier",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/22/19/01/221901bb-8836-7a74-5ad2-e6bd055f10be/9788417992217.jpg/626x0w.jpg",
+      "tagline": "La historia secreta de Instagram",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "deshonra",
+        "autoacusación",
+        "indiferencia",
+        "pérdida"
+      ],
+      "frases": [
+        "Explora cómo la imagen puede ser el arma de deshonra en manos equivocadas. 📸✨",
+        "Las autoacusaciones pueden apoderarse de tu voz si no vigilas el pulso digital. 🎤⚡️",
+        "En un mundo de filtros, la indiferencia puede convertirse en la norma más trágica. 🖤🌫️",
+        "La pérdida de conexión auténtica redefine nuestra experiencia social y personal. 🥀🌀"
+      ],
+      "colores": [
+        "#3A1E24",
+        "#B45D4C",
+        "#6E8B83",
+        "#4F636C"
+      ],
+      "fondo": "#1C1C1C",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -34,159 +225,9 @@
       ],
       "tarjeta": {
         "titulo": "Concepto único del libro",
-        "parrafoTop": "El tiempo no se gestiona; se estructura. Así lo sostiene Marc Zao-Sanders en \"Timeboxing\", donde la productividad florece.",
-        "subtitulo": "Reorganiza tu enfoque",
-        "parrafoBot": "Dedica 25 minutos a una tarea específica. Luego, tómate 5 para descansar. Repite. Este es el ciclo que cambia el juego.",
-        "style": {
-          "accent": "#FF5722",
-          "ink": "#E0E0E0",
-          "paper": "#1A1A1A",
-          "border": "#3C3C3C",
-          "serif": "Times New Roman, serif",
-          "sans": "Roboto, sans-serif",
-          "mono": "Courier New, monospace",
-          "display": "Impact, sans-serif",
-          "glowFlux": "#FFEA00",
-          "metaShadow": "#BDBDBD",
-          "warpGrid": {
-            "type": "squares",
-            "size": [
-              10,
-              10
-            ],
-            "opacity": 0.2
-          },
-          "prismPulse": {
-            "colors": [
-              "#FFC107",
-              "#03A9F4"
-            ],
-            "animationSpeed": ".5s"
-          },
-          "fluxHueShift": {
-            "range": [
-              180,
-              -180
-            ],
-            "transitionDuration": ".3s"
-          },
-          "waveformEffect": {
-            "frequency": [
-              5,
-              15
-            ],
-            "amplitudeRange": [
-              0,
-              8
-            ]
-          },
-          "codeSnippetHighlighting": {
-            "backgroundColor": "#212121",
-            "highlightColor": "#FF9800"
-          },
-          "surpriseTextEffect": {
-            "description": "[Dopamina] Un sutil efecto de rebote en el texto al pasar el ratón que invita a la interacción."
-          }
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Timeboxing%20Marc%20Zao-Sanders%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Viaje a las emociones",
-      "autor": "Eduardo Punset",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/75/ba/f6/75baf65a-33da-86ea-5550-32b63c234d70/9788423327935.jpg/626x0w.jpg",
-      "tagline": "La trilogía que ha apasionado a más de medio millón de lectores en un solo volumen. Un recorrido por la felicidad el amor y el poder: las tres claves que mueven el mundo.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Creativo",
-      "palabras": [
-        "humillación",
-        "remordimiento",
-        "indiferencia",
-        "melancolía"
-      ],
-      "frases": [
-        "La alegría genuina florece cuando liberamos nuestro corazón de humillaciones pasadas. 🌼",
-        "El remordimiento nos invita a aprender y sanar, construyendo un futuro más brillante. 🔮",
-        "Dejemos atrás la indiferencia; el amor requiere conexión auténtica con nosotros mismos. 💞",
-        "El duelo transforma nuestro ser, abriendo las puertas hacia nuevas comprensiones del amor. 🌈"
-      ],
-      "colores": [
-        "#F6D0C3",
-        "#A4E1D9",
-        "#FFCBA4",
-        "#FFEDDA"
-      ],
-      "fondo": "#232323",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Concepto único del libro  ",
-        "parrafoTop": "La felicidad, el amor y el poder son motores que transforman nuestra vida; así lo descubrí en mi investigación.  ",
-        "subtitulo": "Bisagra provocadora  ",
-        "parrafoBot": "Pregúntate: ¿Qué emociones guían tus decisiones?   Identifica una emoción clave hoy y actúa conforme a ella para vivir con mayor propósito.",
-        "style": {
-          "paper": "#1a1a1a",
-          "ink": "#ffffff",
-          "accent": "#ff4d00",
-          "border": "#3a3a3a",
-          "serif": "Georgia, serif",
-          "sans": "Helvetica, sans-serif",
-          "mono": "Courier New, monospace",
-          "display": "Impact, display",
-          "glowFlux": "#ffcc00",
-          "metaShadow": "#444444",
-          "warpGrid": "#0077ff",
-          "prismPulse": "#ff007f",
-          "neonHighlight": "#00ffcc",
-          "darkOverlay": "#00000080",
-          "vibrantEdge": "#ff1493",
-          "shadowBlend": "#222222",
-          "luminosityBoost": "#ffa500"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Viaje%20a%20las%20emociones%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El viaje a la vida",
-      "autor": "Eduardo Punset",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/cc/43/58/cc4358ee-140c-a645-a2ed-570ab33feed0/9788423348626.jpg/626x0w.jpg",
-      "tagline": "Cómo la empatía y la intuición cambiarán nuestro futuro.Gradualmente la sociedad está aprendiendo gracias a las redes sociales y a la propagación de la empatía a cuidar de sí misma y a no necesitar de las ayudas interesadas de terceros. Algún día ya nadie dudará de que la mejor manera de ser feliz será haciendo feliz a los demás.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Máximo",
-      "palabras": [
-        "satisfacción",
-        "confianza",
-        "crecimiento",
-        "empatía"
-      ],
-      "frases": [
-        "Cuando entendemos a los demás, creamos un entorno donde todos prosperan. 🌍",
-        "El verdadero viaje hacia la felicidad empieza al hacer felices a los que nos rodean. 💫",
-        "Conectar con otros abre puertas hacia un futuro compartido y brillante. 🌈",
-        "La intuición se convierte en nuestra brújula para generar empatía genuina. 🧭"
-      ],
-      "colores": [
-        "#D9A124",
-        "#26A65B",
-        "#6BAFDE",
-        "#EAB8B7"
-      ],
-      "fondo": "#1C1C1C",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "[Concepto único del libro]",
-        "parrafoTop": "El viaje hacia la felicidad comienza al hacer felices a los demás. - Eduardo Punset",
-        "subtitulo": "[Bisagra provocadora]",
-        "parrafoBot": "La revolución de la felicidad compartida [Acción específica derivada del libro] Conéctate con alguien hoy y ofrece tu apoyo sincero. Comparte una sonrisa, escucha activamente, haz que su día sea mejor.",
+        "parrafoTop": "Instagram transformó la comunicación visual. Sarah Frier nos narra cómo lo hizo desde dentro.",
+        "subtitulo": "Ecos de influencia digital",
+        "parrafoBot": "Reflexiona sobre tu uso de Instagram: ¿lo usas para conectar o consumir? Haz una lista de tus motivaciones al compartir.",
         "style": {
           "accent": "#ff6b6b",
           "ink": "#f0f0f0",
@@ -194,111 +235,74 @@
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20viaje%20a%20la%20vida%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Sin%20filtro%20Sarah%20Frier%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El libro de los cinco anillos",
-      "autor": " Miyamoto Musashi",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/32/67/f1/3267f102-8071-7ffe-ecbc-c631440c7436/1038831457.jpg/626x0w.jpg",
-      "tagline": "mantenga las artes marciales en su espíritu y practique diligentemente; y puesto que su espíritu está preparado para combatir en cualquier terreno podrá vencer a los demás por medio del espíritu. Cuando alcance este punto ¿cómo podría ser derrotado por los demás?Musashi se da cuenta desde muy joven de la verdadera potencia de su técnica y comienza a estudiar con más profundidad su propio estilo y el de sus contrincantes desarrollando una técnica superior. Escrito no sólo para los hombres de armas pretende de manera explícita simbolizar procesos de lucha y de maestría en todos los campos de la vida; por ello se ha mantenido como lectura obligatoria para líderes y grandes estrategas.",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "humillación",
-        "culpabilidad",
-        "desesperanza",
-        "duelo"
-      ],
-      "frases": [
-        "🚶 Camina 10 pasos lentos sin pensar en nada más",
-        "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada",
-        "🧠 Anota 3 palabras que resuman este momento exacto",
-        "✨ Abre el libro en página random, lee 1 línea completa"
-      ],
-      "colores": [
-        "#ff8a8a",
-        "#ffb56b",
-        "#8cabff",
-        "#d288ff"
-      ],
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "fondo": "#0a0a0a",
-      "tarjeta": {
-        "titulo": "Empieza pequeño",
-        "parrafoTop": "La acción más importante es la más simple.",
-        "subtitulo": "Un paso basta",
-        "parrafoBot": "No necesitas claridad total para moverte.",
-        "style": {
-          "accent": "#ff6b6b",
-          "ink": "#f0f0f0",
-          "paper": "#1a1a1a",
-          "border": "#333333",
-          "serif": "Georgia, serif",
-          "sans": "Inter, sans-serif"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20de%20los%20cinco%20anillos"
-    },
-    {
-      "titulo": "Reconecta con tu cuerpo",
-      "autor": "Anna Sólyom",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/00/89/32/008932dc-2388-509d-40b2-3dda6e26dc86/9788491181897.jpg/626x0w.jpg",
-      "tagline": "En el cuerpo se manifiesta todo lo que vives piensas y sientes en forma de dolor rigidez calambres y bloqueos o de una sensación de fatiga general. Si aprendes a leer sus señales descubrirás el más poderoso instrumento para liberarte de todo aquello que sobre carga tu vida física psiquíca y espiritual",
-      "dimension": "Bienestar",
-      "punto": "Cero",
-      "palabras": [
-        "humillación",
-        "culpabilidad",
-        "desesperanza",
-        "duelo"
-      ],
-      "frases": [
-        "🚶 Camina 10 pasos lentos sin pensar en nada más",
-        "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada",
-        "🧠 Anota 3 palabras que resuman este momento exacto",
-        "✨ Abre el libro en página random, lee 1 línea completa"
-      ],
-      "colores": [
-        "#ff8a8a",
-        "#ffb56b",
-        "#8cabff",
-        "#d288ff"
-      ],
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "fondo": "#0a0a0a",
-      "tarjeta": {
-        "titulo": "Empieza pequeño",
-        "parrafoTop": "La acción más importante es la más simple.",
-        "subtitulo": "Un paso basta",
-        "parrafoBot": "No necesitas claridad total para moverte.",
-        "style": {
-          "accent": "#ff6b6b",
-          "ink": "#f0f0f0",
-          "paper": "#1a1a1a",
-          "border": "#333333",
-          "serif": "Georgia, serif",
-          "sans": "Inter, sans-serif"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Reconecta%20con%20tu%20cuerpo"
-    },
-    {
-      "titulo": "Las 6 hormonas que van a revolucionar tu vida",
-      "autor": "David JP Phillips",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/09/27/1c/09271c7d-6da9-79ed-d06d-a26cbcbe77a1/9786073917995.jpg/626x0w.jpg",
-      "tagline": "Dopamina Oxitocina Serotonina Cortisol Endorfinas Testosterona",
+      "titulo": "Tu momento es ahora",
+      "autor": "Victor Hugo Manzanilla",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/626x0w.jpg",
+      "tagline": "Este libro te guiará por un proceso de tres pasos sencillos cuya aplicación garantizan que alcances tus sueños y metas El éxito es una ciencia y un arte a la vez es un arte un proceso de descubrirte a ti mismo y encontrar plenitud y significado para tu vida",
       "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "miedo a fracasar",
+        "culpa por inacción",
+        "apatía ante oportunidades",
+        "duelo por sueños perdidos"
+      ],
+      "frases": [
+        "Afronta el miedo y transforma cada tropiezo en una lección. 🚀",
+        "Deja atrás la culpa, cada decisión te acerca a tu propósito. 🔄",
+        "Rompe la apatía y despierta con acciones diarias hacia tus metas. 🌅",
+        "Honra el duelo, pues de él brota la sabiduría para avanzar. 🌱"
+      ],
+      "colores": [
+        "#7E1B3D",
+        "#5F832D",
+        "#0C4B8E",
+        "#BF620D"
+      ],
+      "fondo": "#1B1C22",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "[Concepto único del libro]",
+        "parrafoTop": "\"El verdadero éxito radica en conocerte a ti mismo.\" - Victor Hugo Manzanilla  ",
+        "subtitulo": "[Bisagra provocadora]",
+        "parrafoBot": "\"Descubre la ciencia de tus sueños.\"   \"Inicia hoy un pequeño paso hacia la meta que anhelas; cada acción cuenta y puede transformar tu realidad.\"",
+        "style": {
+          "accent": "#FF5733",
+          "ink": "#FFFFFF",
+          "paper": "#1A1A1A",
+          "border": "#4C4C4C",
+          "serif": "Georgia, serif",
+          "sans": "Arial, sans-serif",
+          "mono": "'Courier New', monospace",
+          "display": "'Oswald', sans-serif",
+          "glowFlux": "#00FF57",
+          "metaShadow": "#808080",
+          "warpGrid": "#2B2B2B",
+          "prismPulse": "#F39C12",
+          "neonDreams": "#8E44AD",
+          "depthLayer": "#2980B9",
+          "lightBurst": "#D35400",
+          "chromaVibe": "#C0392B",
+          "surprise": "Un toque de textura en el fondo que simula la superficie de una piedra pulida"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Tu%20momento%20es%20ahora%20Victor%20Hugo%20Manzanilla%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Si no eres el primero; Eres el último",
+      "autor": "Grant Cardone",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication62/v4/a2/5a/da/a25adad3-0def-2d29-62e5-8351b635f9a9/mzm.bhpauauc.jpg/626x0w.jpg",
+      "tagline": "Olvídate de pretextos este libro te dará estrategias comprobadas que te harán un mejor vendedor empresario y persona al tiempo que te lleva hacia una nueva libertad financiera.En estos tiempos se ha vuelto más complicado vender cualquier producto mantener contentos a los clientes y obtener hasta la más mínima ventaja.Imagina que puedas venderte a ti mismo de manera efectiva y contundente que tengas la gran capacidad de robar mercado a tus competidores a través de una fórmula precisa para aumentar tus ventas y conseguir tus objetivos. ",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
         "vergüenza",
         "culpa",
@@ -306,187 +310,177 @@
         "duelo"
       ],
       "frases": [
-        "Transforma la vergüenza en motivación, ¡tu bienestar está al alcance! 🌱",
-        "Deja atrás la culpa y abraza el perdón; regálate paz mental. 💫",
-        "Rompe con la apatía, comienza hoy a conectar con tus pasiones. 🎨",
-        "Enfrenta el duelo, cada lágrima es una huella hacia tu renacimiento. 🌈"
+        "Despierta tu potencial, rompe cadenas y siente la libertad. 💪 Encuentra en el esfuerzo un camino hacia tu éxito.",
+        "El miedo a fracasar te paraliza; actúa ahora, cada paso cuenta en el viaje al triunfo. 🚀 Domina tus temores y avanza.",
+        "No dejes que la culpa te consuma; aprende de cada error y transforma tu vida con decisiones firmes. ✨ Conviértete en tu mejor versión.",
+        "El duelo por oportunidades perdidas no debe frenarte; levántate y persigue tus sueños sin mirar atrás. 🌟 Tu tiempo es ahora."
       ],
       "colores": [
-        "#4B0082",
-        "#FF4500",
-        "#1E90FF",
-        "#32CD32"
+        "#D9534F",
+        "#5BC0DE",
+        "#F0AD4E",
+        "#5CB85C"
       ],
-      "fondo": "#333333",
+      "fondo": "#2C3E50",
       "textColors": [
         "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
+        "#000000",
+        "#000000",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "Las hormonas que transforman tu vida",
-        "parrafoTop": "En \"Las 6 hormonas que van a revolucionar tu vida\", descubro cómo influir positivamente en nuestro bienestar.",
-        "subtitulo": "Activa tu bienestar hormonal",
-        "parrafoBot": "Dedica unos minutos diarios a practicar la gratitud; esto puede incrementar tus niveles de dopamina y oxitocina, mejorando tu estado de ánimo.",
+        "titulo": "Concepto único del libro",
+        "parrafoTop": "En \"Si no eres el primero; Eres el último\", Grant Cardone me enseña a transformar cada rechazo en una oportunidad de ventas.",
+        "subtitulo": "Cambia tu mentalidad hoy",
+        "parrafoBot": "Aplica la regla de los 10 contactos diarios: establece un objetivo claro y persiste hasta que lo logres. ¡Empieza ahora!",
         "style": {
-          "accent": "#FFD700",
-          "ink": "#E0E0E0",
+          "accent": "#FF5733",
+          "ink": "#FFFFFF",
           "paper": "#1A1A1A",
-          "border": "#555555",
+          "border": "#4B4B4B",
           "serif": "Georgia, serif",
-          "sans": "Helvetica, sans-serif",
-          "mono": "Courier New, monospace",
-          "display": "Impact, display",
-          "glowFlux": "#FF5733",
-          "metaShadow": "#2a2a2a",
-          "warpGrid": {
-            "rows": 4,
-            "columns": 4,
-            "spacing": "5px"
-          },
-          "prismPulse": {
-            "colorStart": "#00ff99",
-            "colorEnd": "#cc33ff"
-          },
-          "neonEcho": {
-            "radius": "8px",
-            "opacity": 0.6
-          },
-          "depthLayering": {
-            "lightnessAdjustments": [
-              {
-                "_layerIndex_0": {
-                  "value": "-20%"
-                },
-                "_layerIndex_1": {
-                  "value": "+10%"
-                },
-                "_layerIndex_2": {
-                  "value": "+30%"
-                }
-              }
-            ]
-          },
-          "surprise": "Incorporación de patrones cinéticos en la tipografía que reaccionan a la interacción del usuario."
+          "sans": "Roboto, sans-serif",
+          "mono": "'Courier New', monospace",
+          "display": "'Montserrat', sans-serif",
+          "glowFlux": "#FFD700",
+          "metaShadow": "#111111",
+          "warpGrid": "#555555",
+          "prismPulse": "#00CED1",
+          "vortexEdge": "#800080",
+          "echoStroke": "#D3D3D3",
+          "quantumLace": "#00FF7F",
+          "stellarDust": "#FF4500",
+          "surprise": "Uso de un patrón de cuadrícula sutil en el fondo para agregar profundidad visual sin distraer."
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%206%20hormonas%20que%20van%20a%20revolucionar%20tu%20vida%20David%20JP%20Phillips%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Si%20no%20eres%20el%20primero%3B%20Eres%20el%20%C3%BAltimo%20Grant%20Cardone%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Ser justo en un mundo injusto",
-      "autor": "Ryan Holiday",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/26/a7/de/26a7de85-b5ee-347e-d45e-4705dc13cc82/9788417992897.jpg/626x0w.jpg",
-      "tagline": "Para los antiguos la justicia iba mucho más allá que lo que sucedía en un tribunal. Era mucho más urgente que las ideas que se debatían en las aulas de Filosofía. Implicaba una forma de vida el compromiso personal de hacer lo correcto por difícil que fuera. Ryan Holiday afirma que la justicia es la virtud que rige todas las demás virtudes.Todo lo que vale la pena perseguir en la vida debe surgir de un compromiso con la justicia del deseo de hacer el bien en este mundo.Solo con esta virtud fundamental podrás pasar de la bondad a la grandeza.",
+      "titulo": "Esencialismo",
+      "autor": "Greg McKeown",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/626x0w.jpg",
+      "tagline": "Esencial no se trata de hacer más cosas en menos tiempo Se trata de obtener sólo cosas bien hechas No es una estrategia de gestión del tiempo o una técnica de productividad Es una disciplina sistemática para discernir lo que es absolutamente esencial y eliminar todo lo que no es para que podamos enfocarnos",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Creativo",
       "palabras": [
-        "humillación",
-        "remordimiento",
-        "desesperanza",
-        "pesar"
-      ],
-      "frases": [
-        "Enfrenta la humillación y transforma tu vida con justicia. 🦋 El cambio comienza desde adentro.",
-        "El remordimiento te limita; actúa con valentía hacia lo correcto. ⚖️ La justicia es tu guía en la vida.",
-        "Cuando sientas desesperanza, elige actuar por el bien. 🌱 Justicia es persistencia en la adversidad.",
-        "Permite que el pesar te enseñe a buscar la justicia en todos los aspectos de tu vida. 🌈 Camina hacia la luz."
-      ],
-      "colores": [
-        "#FFD700",
-        "#FF8C00",
-        "#20B2AA",
-        "#FFC0CB"
-      ],
-      "fondo": "#2F4F4F",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Concepto único del libro  ",
-        "parrafoTop": "La justicia trasciende lo legal; es un imperativo moral que propongo seguir en cada acción. - Ryan Holiday  ",
-        "subtitulo": "La virtud olvidada  ",
-        "parrafoBot": "Actúa hoy con justicia: elige hacer lo correcto, incluso cuando sea difícil. Cada pequeño paso cuenta.",
-        "style": {
-          "accent": "#FFD700",
-          "ink": "#E0E0E0",
-          "paper": "#1A1A1A",
-          "border": "#333333",
-          "serif": "'Georgia', serif",
-          "sans": "'Helvetica Neue', sans-serif",
-          "mono": "'Courier New', monospace",
-          "display": "'Oswald', sans-serif",
-          "glowFlux": {
-            "color": "#00FF7F",
-            "blurRadius": "8px",
-            "spreadRadius": "-2px"
-          },
-          "metaShadow": {
-            "xOffset": "3px",
-            "yOffset": "3px",
-            "color": "#555555"
-          },
-          "warpGrid": {
-            "opacity": "0.2",
-            "linesColor": "#999999"
-          },
-          "prismPulse": {
-            "gradientStart": "#FF1493",
-            "gradientEnd": "#32CD32"
-          },
-          "fluidMotion": {
-            "animationDuration": ".5s",
-            "animationType": "ease-in-out"
-          },
-          "textGlitchEffect": {
-            "frequency": "3px",
-            "amplitude": "1.5px"
-          },
-          "surprise": "Texto que se deforma suavemente al pasar el cursor, generando un efecto hipnótico."
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ser%20justo%20en%20un%20mundo%20injusto%20Ryan%20Holiday%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Lo que nunca cambia en un mundo cambiante",
-      "autor": "Morgan Housel",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/4b/a0/20/4ba02068-a80a-6933-5008-190ad2baef7f/9788408285502.jpg/626x0w.jpg",
-      "tagline": "23 lecciones atemporales para nuestra vida personal y financiera",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
         "deshonra",
-        "autoacusación",
+        "arrepentimiento",
         "indiferencia",
         "melancolía"
       ],
       "frases": [
-        "Recuerda que el verdadero aprendizaje nace de cada error cometido. 🌱 Avanza con la confianza en ti mismo.",
-        "La disciplina es el puente entre metas y logros. 🏗️ Comprométete a mejorar cada día, sin excusas.",
-        "El dinero no es más que un medio; úsalo sabiamente para forjar tu futuro. 💰 Empieza a invertir en ti hoy mismo.",
-        "Cada elección que tomas define tu camino. 📅 Decide con consciencia y observa cómo cambian tus resultados."
+        "🌱 Cambia el enfoque: de hacer más a hacer lo que importa. Reflexiona y escoge tus batallas con valentía.",
+        "🧭 Encuentra tu esencia: identifica lo esencial para vivir plenamente. Pregúntate, ¿qué es lo que realmente importa?",
+        "🚦 Elimina el ruido: saca de tu camino todo lo innecesario para alcanzar claridad. Concentra energía en tus pasiones.",
+        "✨ Reevalúa prioridades: cada decisión cuenta. Dedica tiempo a lo fundamental y deja atrás lo superfluo."
       ],
       "colores": [
-        "#B7C9D8",
-        "#FFC3A0",
-        "#6A0572",
-        "#ABDBD2"
+        "#2A9D8F",
+        "#E9C46A",
+        "#F4A261",
+        "#264653"
       ],
-      "fondo": "#4A4A4A",
+      "fondo": "#1B2631",
       "textColors": [
-        "#000000",
-        "#000000",
         "#FFFFFF",
-        "#000000"
+        "#000000",
+        "#000000",
+        "#FFFFFF"
       ],
       "tarjeta": {
         "titulo": "Concepto único del libro  ",
-        "parrafoTop": "A través de mis años, he aprendido que lo que nunca cambia en finanzas y vida personal son los principios atemporales.  ",
-        "subtitulo": "Descubre la esencia  ",
-        "parrafoBot": "Identifica una lección de este libro y reflexiona sobre cómo puedes aplicarla en tu vida diaria hoy mismo.",
+        "parrafoTop": "El esencialismo me enseñó que no se trata de hacer más, sino de enfocarme en lo verdaderamente importante. Greg McKeown  ",
+        "subtitulo": "Una decisión radical  ",
+        "parrafoBot": "Identifica tres tareas cruciales para hoy y elimínalas de tu lista. Concéntrate solo en completarlas.",
+        "style": {
+          "accent": "#FFB300",
+          "ink": "#E0E0E0",
+          "paper": "#1C1C1C",
+          "border": "#3A3A3A",
+          "serif": "Georgia, serif",
+          "sans": "Roboto, sans-serif",
+          "mono": "'Courier New', monospace",
+          "display": "'Playfair Display', serif",
+          "glowFlux": "#FFC107",
+          "metaShadow": "#212121",
+          "warpGrid": {
+            "gridSize": [
+              12,
+              12
+            ],
+            "gridColor": "#474747"
+          },
+          "prismPulse": {
+            "colors": [
+              "#FF4081",
+              "#7C4DFF",
+              "#64FFDA"
+            ],
+            "animationDuration": "2s"
+          },
+          "depthLayering": {
+            "layersCount": 4,
+            "layerOpacity": [
+              0.05,
+              0.15,
+              0.25,
+              0.35
+            ]
+          },
+          "dynamicTexturing": {
+            "texturePattern": [
+              "dots",
+              "stripes",
+              "waves"
+            ],
+            "textureOpacity": [
+              0.1,
+              0.2,
+              0.3
+            ]
+          },
+          "surprise": "Incorporación de un efecto de paralaje sutil que responde al desplazamiento del cursor."
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Esencialismo%20Greg%20McKeown%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El sueño de Alicia",
+      "autor": "Eduardo Punset",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/6e/ce/9c/6ece9c88-13e5-e670-0d91-dc746a2d4f9f/9788423347179.jpg/626x0w.jpg",
+      "tagline": "esta historia apasionante sobre la vida y la ciencia que reúne el legado científico y humanístico de personas sabias con la osadía de romper barreras y desvelar conocimientos que creíamos imposibles.Ésta es una obra llena de respuestas y de preguntas abiertas. Es también una apuesta de esperanza y de futuro avalada por los últimos descubrimientos científicos que Eduardo Punset nos hace llegar a través de un sueño donde a menudo ficción y realidad se dan la mano.",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "curiosidad",
+        "asombro",
+        "esperanza",
+        "resiliencia"
+      ],
+      "frases": [
+        "¡Despierta tu curiosidad! La ciencia se asoma en cada rincón de la vida. 🌌",
+        "Rompe las cadenas del miedo y abraza la magia del descubrimiento. ✨",
+        "Construye un puente entre sueños y realidades; es tiempo de explorar juntos. 🌈",
+        "La esperanza renace con cada nuevo hallazgo; no te detengas ante lo imposible. 🚀"
+      ],
+      "colores": [
+        "#FF6F61",
+        "#3F88C5",
+        "#F1C40F",
+        "#9B59B6"
+      ],
+      "fondo": "#2C3E50",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Concepto único del libro  ",
+        "parrafoTop": "En \"El sueño de Alicia\", Eduardo Punset comparte descubrimientos que transforman nuestra comprensión de la vida.  ",
+        "subtitulo": "Reflexiones que transforman  ",
+        "parrafoBot": "Aprovecha cada día para cuestionar lo conocido y buscar respuestas que enriquezcan tu perspectiva sobre el futuro.",
         "style": {
           "accent": "#ff6b6b",
           "ink": "#f0f0f0",
@@ -494,34 +488,34 @@
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Lo%20que%20nunca%20cambia%20en%20un%20mundo%20cambiante%20Morgan%20Housel%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20sue%C3%B1o%20de%20Alicia%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El almanaque de Naval Ravikant",
-      "autor": "Eric Jorgenson",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/9e/68/08/9e6808a4-e8c6-e3ca-23b8-741c9472b0b3/9781544514208.jpg/626x0w.jpg",
-      "tagline": "Getting rich is not just about luck happiness is not just a trait we are born with These aspirations may seem out of reach but building wealth and being happy are skills we can learn",
+      "titulo": "Diseña tu mente",
+      "autor": "Ryan A. Bush",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/33/c3/a0/33c3a0f3-6847-8210-8bb8-c49634d14c47/9788441442634.jpg/626x0w.jpg",
+      "tagline": "El proceso de la psiquitectura te permite desconectar de tu propia mente identificar los patrones subyacentes y convertirte en el arquitecto de tu propia iluminación",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "miedo a la inacción",
-        "culpa por no avanzar",
-        "apatía ante oportunidades",
-        "duelo de sueños perdidos"
+        "humillación",
+        "remordimiento",
+        "desesperanza",
+        "pesar"
       ],
       "frases": [
-        "Frente al miedo, elige la acción. 🔥 Encuentra tu camino y actúa sin dudar.",
-        "Deja atrás la culpa. ✨ Aprende de tus decisiones para forjar un futuro brillante.",
-        "Rompe con la apatía. 🌈 Conéctate con tus pasiones y transforma tu día a día.",
-        "Al superar el duelo, renace en fuerza. 🌱 Reconstruye tus anhelos desde las cenizas."
+        "En cada momento de reflexión, la claridad se asoma con sabiduría. ✨ La iluminación transforma tu proceso. Descúbrelo.",
+        "Transforma el peso del pasado en herramientas de crecimiento. 🌱 Acepta lo que fue y reescribe tu historia.",
+        "La conexión con tus emociones es clave para rediseñar tu mente. 🔍 Adéntrate en los matices de tus sentimientos.",
+        "Despierta a la vida que deseas creando puentes sobre el abismo del duelo. 🌉 La autenticidad espera por ti."
       ],
       "colores": [
-        "#5B2E91",
-        "#3E2A47",
-        "#701F34",
-        "#855C4D"
+        "#7D3C98",
+        "#4A6E9A",
+        "#5F4B8C",
+        "#2B3A20"
       ],
-      "fondo": "#3A3A3A",
+      "fondo": "#1F2A44",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -529,74 +523,24 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Concepto único del libro  ",
-        "parrafoTop": "El verdadero camino hacia la riqueza y la felicidad son habilidades que podemos desarrollar, afirma Eric Jorgenson.  ",
-        "subtitulo": "¿Realmente se puede aprender a ser feliz?  ",
-        "parrafoBot": "Dedica unos minutos hoy a identificar un objetivo específico y escribe los pasos necesarios para alcanzarlo. Tómate este ejercicio como una práctica diaria.",
+        "titulo": "Concepto único del libro",
+        "parrafoTop": "A través del psiquitectura, descubro patrones ocultos que transforman mi mente. - Ryan A. Bush",
+        "subtitulo": "¿Estás listo para actuar?",
+        "parrafoBot": "Dedica 15 minutos al día a reflexionar sobre tus pensamientos recurrentes y anota cómo moldear tu realidad.",
         "style": {
-          "accent": "#FF6347",
-          "ink": "#EAEAEA",
-          "paper": "#1A1A1A",
-          "border": "#333333",
-          "serif": {
-            "fontFamily": "'Merriweather', serif",
-            "fontSize": "16px",
-            "lineHeight": "1.5"
-          },
-          "sans": {
-            "fontFamily": "'Roboto', sans-serif",
-            "fontSize": "16px",
-            "lineHeight": "1.5"
-          },
-          "mono": {
-            "fontFamily": "'Courier New', monospace",
-            "fontSize": "14px",
-            "lineHeight": "1.4"
-          },
-          "display": {
-            "fontFamily": "'Oswald', sans-serif",
-            "fontSize": "24px",
-            "lineHeight": "1.2"
-          },
-          "glowFlux": {
-            "effectType": "shadow",
-            "color": "#FF4500",
-            "blurRadius": "10px",
-            "spreadRadius": "-2px"
-          },
-          "metaShadow": {
-            "colorVariationLow": "#000000",
-            "colorVariationHigh": "#444444",
-            "_position_offset_X": "4px",
-            "_position_offset_Y": "4px"
-          },
-          "warpGrid": {
-            "_grid_size": "8px",
-            "_curvature": "15%",
-            "_displacement_vector_X": "-2px",
-            "_displacement_vector_Y": "+3px"
-          },
-          "prismPulse": {
-            "_frequency": "0.5s",
-            "_amplitude": "3%",
-            "_color_shift": [
-              "#FF79C6",
-              "#8BE9FD"
-            ]
-          },
-          "_mood_light_effect": {
-            "_intensity": "60%",
-            "_blend_mode": "overlay"
-          }
+          "accent": "#ff6b6b",
+          "ink": "#f0f0f0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20almanaque%20de%20Naval%20Ravikant%20Eric%20Jorgenson%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Dise%C3%B1a%20tu%20mente%20Ryan%20A.%20Bush%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Recupera tu poder",
-      "autor": "Rut Nieves",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/2d/4b/762d4b59-2d7a-68b9-71b4-940ac0fffaf0/9788408265122.jpg/626x0w.jpg",
-      "tagline": " nuestra mente ha sido condicionada con creencias muy limitantes que nos han llevado a olvidar nuestras verdaderas capacidades y a desconectarnos de nuestra sabiduría interior intuición e instinto. Las herramientas que contiene Recupera tu poder te ayudarán a conectar con tu fuerza vital tu confianza interior y tu claridad para que puedas avanzar con alegría y decisión hacia la vida que de corazón deseas y mereces vivir:tu propia vida.",
+      "titulo": "Piensa como un monje",
+      "autor": "Jay Shetty",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/90/4a/2b/904a2ba7-af01-b470-5cdc-0d5d3d7ff87f/9788425358296.jpg/626x0w.jpg",
+      "tagline": " cómo desarrollar tu poder cambiando tu enfoque de la autoimagen a la autoestima. Piensa como un monje te libera de la hipnosis del condicionamiento social y te ayuda a convertirte en el arquitecto de tu propia vida",
       "dimension": "Bienestar",
       "punto": "Cero",
       "palabras": [
@@ -638,7 +582,7 @@
           "sans": "Inter, sans-serif"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Recupera%20tu%20poder"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Piensa%20como%20un%20monje"
     }
   ]
 }
