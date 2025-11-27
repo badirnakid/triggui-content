@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v8.0 PERFECTION - CÓDIGO DEFINITIVO PRODUCCIÓN
+   TRIGGUI v8.1 FINAL - CÓDIGO DEFINITIVO PRODUCCIÓN
    
-   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.0 PERFECTION
+   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.1 FINAL
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -61,7 +61,12 @@ const CFG = {
     accionMin: 15,     // Segundos mínimos de acción
     accionMax: 60,     // Segundos máximos de acción
     lineasMin: 4,      // Líneas mínimas esperadas
-    longitudMinLinea: 10  // Chars mínimos por línea válida
+    longitudMinLinea: 10,  // Chars mínimos por línea válida
+    // ─── Límites de longitud (crítico para móvil) ───
+    tituloMax: 45,     // Chars máximos título
+    parrafo1Max: 120,  // Chars máximos párrafo 1
+    subtituloMax: 40,  // Chars máximos subtítulo  
+    parrafo2Max: 110   // Chars máximos párrafo 2 (NO desbordar móvil)
   },
   
   // ─── Dark Mode ───
@@ -230,16 +235,17 @@ Tu tarjeta DEBE continuar orgánicamente este journey.
 
 Escribe 4 líneas:
 
-TÍTULO: Concepto específico del libro
-PÁRRAFO 1: Insight en 1ra persona que CONECTA con emociones previas
-SUBTÍTULO: Pregunta/frase que ELEVA desde emociones bajas
-PÁRRAFO 2: Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto rico que CONSTRUYE sobre frases
+TÍTULO (max ${CFG.tarjeta.tituloMax} chars): Concepto específico del libro
+PÁRRAFO 1 (max ${CFG.tarjeta.parrafo1Max} chars): Insight en 1ra persona que CONECTA con emociones previas
+SUBTÍTULO (max ${CFG.tarjeta.subtituloMax} chars): Pregunta/frase que ELEVA desde emociones bajas
+PÁRRAFO 2 (max ${CFG.tarjeta.parrafo2Max} chars): Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto rico que CONSTRUYE sobre frases
 
 REGLAS:
 ✅ CONECTAR con emociones previas (indirectamente)
 ✅ ELEVAR desde bajo → transformación
 ✅ CONSTRUIR sobre acciones previas
-❌ NO: corchetes [], metadata, "Bisagra provocadora"
+✅ RESPETAR límites de chars estrictamente
+❌ NO: corchetes [], metadata, "Bisagra provocadora", markdown (**, _, etc)
 
 FORMATO (4 líneas):
 [Título]
@@ -342,14 +348,17 @@ async function enrich(libro, openai, ctx) {
           .replace(/^\[|\]$/g, "")
           .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")
           .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa)[:.\s]*/gi, "")
+          .replace(/^\*\*|\*\*$/g, "")  // Eliminar ** markdown énfasis
+          .replace(/^_|_$/g, "")         // Eliminar _ markdown itálica
+          .replace(/^\*|\*$/g, "")       // Eliminar * markdown
           .trim();
       }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
       
       extra.tarjeta = {
-        titulo: lineas[0] || "",
-        parrafoTop: lineas[1] || "",
-        subtitulo: lineas[2] || "",
-        parrafoBot: lineas.slice(3).join(" "),
+        titulo: (lineas[0] || "").substring(0, CFG.tarjeta.tituloMax),
+        parrafoTop: (lineas[1] || "").substring(0, CFG.tarjeta.parrafo1Max),
+        subtitulo: (lineas[2] || "").substring(0, CFG.tarjeta.subtituloMax),
+        parrafoBot: (lineas.slice(3).join(" ") || "").substring(0, CFG.tarjeta.parrafo2Max),
         style: {}
       };
       
@@ -440,7 +449,7 @@ const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║    TRIGGUI v8.0 PERFECTION - DEFINITIVO      ║");
+console.log("║      TRIGGUI v8.1 FINAL - DEFINITIVO         ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -478,24 +487,31 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA RÁPIDA
+   📖 GUÍA RÁPIDA v8.1
+   
+   CAMBIOS v8.1:
+   ✅ Límites de longitud parametrizables (línea 63-66)
+   ✅ Limpieza markdown (**, _, *) en tarjetas
+   ✅ Truncado automático si excede límites
    
    PARÁMETROS CLAVE (Línea 17-95):
    - CFG.temp: Creatividad base (se multiplica por energía día)
    - CFG.hawkins: Rangos por franja horaria (dinámico)
    - CFG.energia: Por día semana (afecta temp y frases)
+   - CFG.tarjeta: Límites de longitud por campo ⭐ NUEVO
    - CFG.dinamico: Activa/desactiva ajustes automáticos
    
-   RESULTADO IDÉNTICO A v7.6 PERO:
-   ✅ -200 líneas código
-   ✅ Todo parametrizable al inicio
-   ✅ Dinámico según día/hora
-   ✅ Cero basura
-   ✅ Logs concisos
+   AJUSTAR LONGITUDES:
+   1. Título más corto: CFG.tarjeta.tituloMax = 35
+   2. P2 más corto (móvil): CFG.tarjeta.parrafo2Max = 100
+   3. Subtítulo más largo: CFG.tarjeta.subtituloMax = 50
    
-   AJUSTAR:
-   1. Hawkins más profundo en noche: CFG.hawkins.noche = [10, 75]
-   2. Frases más largas: CFG.frases.longitudMax = 150
-   3. Más reintentos: CFG.maxReintentos = 30
+   AJUSTAR HAWKINS:
+   1. Más profundo noche: CFG.hawkins.noche = [10, 75]
+   2. Más elevado mañana: CFG.hawkins.manana = [75, 200]
+   
+   AJUSTAR FRASES:
+   1. Más largas: CFG.frases.longitudMax = 150
+   2. Extensión dinámica: CFG.dinamico.frasesExtension = true
    
 ═══════════════════════════════════════════════════════════════ */
