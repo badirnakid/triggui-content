@@ -190,22 +190,16 @@ GENERA JSON PURO:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [4 emociones únicas, BAJAS Hawkins 20-75 (vergüenza, culpa, apatía, duelo, miedo), específicas al libro],
+  "palabras": [4 emociones únicas, BAJAS Hawkins 20-100, relacionadas específicamente al libro],
   "frases": [4 frases con estructuras RADICALMENTE diferentes, emoji único, 100-120 chars],
   "colores": [4 hex únicos, mezcla cálido/frío, valores RGB inusuales, dopaminérgicos],
   "fondo": "#hex oscuro"
 }
 
 REGLAS CRÍTICAS:
-✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa (vergüenza 20, culpa 30, apatía 50, duelo 75, miedo 100), súper específica al libro
-✅ Cada frase: estructura ÚNICA, emoji ÚNICO, acción CONCRETA con contexto previo detallado
+✅ Cada palabra: EMOCIONES DENSAS del fondo del mapa, súper específica al libro
+✅ Cada frase: estructura ÚNICA, emoji ÚNICO, primero desarrolla, luego acción CONCRETA con contexto previo detallado
 ✅ Cada color: imposible confundir con paletas anteriores
-
-MAPA HAWKINS BAJO (USA ESTE RANGO):
-20  → Vergüenza (humillación, deshonra, autorechazo)
-30  → Culpa (remordimiento, autoacusación, arrepentimiento)
-50  → Apatía (desesperanza, indiferencia, desconexión)
-75  → Duelo (pesar, melancolía, pérdida)
 
 SOLO JSON.`,
 
@@ -220,7 +214,7 @@ Escribe contenido editorial:
 TÍTULO (≤50 chars): Concepto único del libro
 PÁRRAFO 1 (≤130 chars): Insight específico del libro + autor en 1ra persona
 SUBTÍTULO (≤48 chars): Bisagra provocadora
-PÁRRAFO 2 (≤130 chars): Acción específica derivada del libro (15-60 seg)
+PÁRRAFO 2 (≤130 chars): Acción específica derivada del libro, la mejor, primero desarrolla, luego acción CONCRETA con contexto previo detallado (15-60 seg)
 
 TONO: Sobrio, directo, humano, sin adornos, utilidad inmediata
 
