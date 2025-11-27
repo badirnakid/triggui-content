@@ -52,7 +52,7 @@ const CFG = {
   out: "contenido.json",         // 💾 Archivo de salida
   max: 10,                        // 📚 Libros por ejecución
   delay: 10000,                   // ⏱️  Delay entre libros (10 segundos)
-  maxReintentos: 10               // 🔄 Reintentos por libro (hasta 10x)
+  maxReintentos: 15               // 🔄 Reintentos por libro (hasta 15x)
 };
 
 /* ═══════════════════════════════════════════════════════════════
