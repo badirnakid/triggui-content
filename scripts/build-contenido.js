@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v8.1 FINAL - CÓDIGO DEFINITIVO PRODUCCIÓN
+   TRIGGUI v8.2 ULTRA PERFECTION - CÓDIGO DEFINITIVO PRODUCCIÓN
    
-   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.1 FINAL
+   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.2 ULTRA PERFECTION
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -62,11 +62,11 @@ const CFG = {
     accionMax: 60,     // Segundos máximos de acción
     lineasMin: 4,      // Líneas mínimas esperadas
     longitudMinLinea: 10,  // Chars mínimos por línea válida
-    // ─── Límites de longitud (crítico para móvil) ───
-    tituloMax: 45,     // Chars máximos título
-    parrafo1Max: 120,  // Chars máximos párrafo 1
-    subtituloMax: 40,  // Chars máximos subtítulo  
-    parrafo2Max: 110   // Chars máximos párrafo 2 (NO desbordar móvil)
+    // ─── Límites GUÍA (no truncan, solo orientan a la IA) ───
+    tituloGuia: 45,      // Guía para IA (flujo natural)
+    parrafo1Guia: 120,   // Guía para IA (flujo natural)
+    subtituloGuia: 60,   // Guía para IA (flujo natural)
+    parrafo2Guia: 150    // Guía para IA (flujo natural, contexto rico)
   },
   
   // ─── Dark Mode ───
@@ -233,25 +233,25 @@ Tu tarjeta DEBE continuar orgánicamente este journey.
 ════════════════════════════════════════════════════════════════
 ` : ""}
 
-Escribe 4 líneas:
+Escribe 4 líneas (FLUJO NATURAL, las guías son aproximadas):
 
-TÍTULO (max ${CFG.tarjeta.tituloMax} chars): Concepto específico del libro
-PÁRRAFO 1 (max ${CFG.tarjeta.parrafo1Max} chars): Insight en 1ra persona que CONECTA con emociones previas
-SUBTÍTULO (max ${CFG.tarjeta.subtituloMax} chars): Pregunta/frase que ELEVA desde emociones bajas
-PÁRRAFO 2 (max ${CFG.tarjeta.parrafo2Max} chars): Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto rico que CONSTRUYE sobre frases
+TÍTULO (~${CFG.tarjeta.tituloGuia} chars): Concepto específico del libro
+PÁRRAFO 1 (~${CFG.tarjeta.parrafo1Guia} chars): Insight en 1ra persona que CONECTA con emociones previas
+SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars): Pregunta/frase que ELEVA desde emociones bajas
+PÁRRAFO 2 (~${CFG.tarjeta.parrafo2Guia} chars): Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto RICO que CONSTRUYE sobre frases
 
 REGLAS:
 ✅ CONECTAR con emociones previas (indirectamente)
 ✅ ELEVAR desde bajo → transformación
 ✅ CONSTRUIR sobre acciones previas
-✅ RESPETAR límites de chars estrictamente
-❌ NO: corchetes [], metadata, "Bisagra provocadora", markdown (**, _, etc)
+✅ FLUJO NATURAL: deja que el contenido respire, no te limites estrictamente
+❌ NO: corchetes [], metadata, labels (TÍTULO:, PÁRRAFO:, SUBTÍTULO:), markdown (**, _, *)
 
-FORMATO (4 líneas):
-[Título]
-[Párrafo 1]
-[Subtítulo]
-[Párrafo 2]`,
+FORMATO (4 líneas sin labels):
+[línea 1: título]
+[línea 2: párrafo 1]
+[línea 3: subtítulo]
+[línea 4: párrafo 2]`,
 
     estilo: base + `
 Diseña style JSON DARK MODE:
@@ -343,22 +343,24 @@ async function enrich(libro, openai, ctx) {
       let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
       
+      // Limpieza PERFECTA de metadata y markdown
       const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
         return l
-          .replace(/^\[|\]$/g, "")
-          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]/gi, "")
-          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa)[:.\s]*/gi, "")
-          .replace(/^\*\*|\*\*$/g, "")  // Eliminar ** markdown énfasis
-          .replace(/^_|_$/g, "")         // Eliminar _ markdown itálica
-          .replace(/^\*|\*$/g, "")       // Eliminar * markdown
+          .replace(/^\[|\]$/g, "")  // Corchetes
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")  // Metadata tags
+          .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s]*/gi, "")  // Labels mayúsculas
+          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")  // Labels genéricos
+          .replace(/^\*{1,3}|\*{1,3}$/g, "")  // Markdown * ** ***
+          .replace(/^_{1,3}|_{1,3}$/g, "")     // Markdown _ __ ___
           .trim();
       }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
       
+      // ⭐ FLUJO NATURAL: Sin truncado, sin límites
       extra.tarjeta = {
-        titulo: (lineas[0] || "").substring(0, CFG.tarjeta.tituloMax),
-        parrafoTop: (lineas[1] || "").substring(0, CFG.tarjeta.parrafo1Max),
-        subtitulo: (lineas[2] || "").substring(0, CFG.tarjeta.subtituloMax),
-        parrafoBot: (lineas.slice(3).join(" ") || "").substring(0, CFG.tarjeta.parrafo2Max),
+        titulo: lineas[0] || "",
+        parrafoTop: lineas[1] || "",
+        subtitulo: lineas[2] || "",
+        parrafoBot: lineas.slice(3).join(" "),  // Todo el contexto
         style: {}
       };
       
@@ -449,7 +451,7 @@ const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║      TRIGGUI v8.1 FINAL - DEFINITIVO         ║");
+console.log("║   TRIGGUI v8.2 ULTRA PERFECTION - DEFINITIVO ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -487,31 +489,32 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA RÁPIDA v8.1
+   📖 GUÍA RÁPIDA v8.2 ULTRA PERFECTION
    
-   CAMBIOS v8.1:
-   ✅ Límites de longitud parametrizables (línea 63-66)
-   ✅ Limpieza markdown (**, _, *) en tarjetas
-   ✅ Truncado automático si excede límites
+   CAMBIOS v8.2:
+   ✅ FLUJO NATURAL 100%: Sin truncado, contenido respira
+   ✅ Límites como GUÍA: Orientan a IA, no cortan
+   ✅ Limpieza PERFECTA: TÍTULO:, PÁRRAFO:, SUBTÍTULO:, markdown
+   ✅ Contexto rico en P2: Todo el desarrollo necesario
    
-   PARÁMETROS CLAVE (Línea 17-95):
+   PARÁMETROS CLAVE (Línea 17-97):
    - CFG.temp: Creatividad base (se multiplica por energía día)
    - CFG.hawkins: Rangos por franja horaria (dinámico)
    - CFG.energia: Por día semana (afecta temp y frases)
-   - CFG.tarjeta: Límites de longitud por campo ⭐ NUEVO
+   - CFG.tarjeta: Guías de longitud (NO truncan) ⭐
    - CFG.dinamico: Activa/desactiva ajustes automáticos
    
-   AJUSTAR LONGITUDES:
-   1. Título más corto: CFG.tarjeta.tituloMax = 35
-   2. P2 más corto (móvil): CFG.tarjeta.parrafo2Max = 100
-   3. Subtítulo más largo: CFG.tarjeta.subtituloMax = 50
+   AJUSTAR GUÍAS:
+   1. Título más corto: CFG.tarjeta.tituloGuia = 35
+   2. P2 más largo: CFG.tarjeta.parrafo2Guia = 200
+   3. Subtítulo más corto: CFG.tarjeta.subtituloGuia = 50
    
-   AJUSTAR HAWKINS:
-   1. Más profundo noche: CFG.hawkins.noche = [10, 75]
-   2. Más elevado mañana: CFG.hawkins.manana = [75, 200]
+   FILOSOFÍA v8.2:
+   - IA genera naturalmente
+   - Guías orientan, no limitan
+   - Contenido fluye sin restricciones artificiales
+   - Calidad > Rigidez
    
-   AJUSTAR FRASES:
-   1. Más largas: CFG.frases.longitudMax = 150
-   2. Extensión dinámica: CFG.dinamico.frasesExtension = true
+   🔥 MÁXIMA PERFECCIÓN ALCANZADA
    
 ═══════════════════════════════════════════════════════════════ */
