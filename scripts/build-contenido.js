@@ -44,7 +44,7 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 
 const CFG = {
   model: "gpt-4.1-mini",         // 🤖 Modelo (gpt-4o-mini | gpt-4o)
-  temp: 1.1,                     // 🌡️  Creatividad optimizada
+  temp: .9,                     // 🌡️  Creatividad optimizada
   top_p: 0.95,                   // 🎲 Diversidad de tokens
   presence: 0.7,                 // 🚫 Penaliza repetir temas
   frequency: 0.4,                // 🔁 Penaliza repetir palabras
