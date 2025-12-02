@@ -45,8 +45,8 @@ const CFG = {
   
   frases: {
     cantidad: 4,
-    longitudMin: 80,
-    longitudMax: 100
+    longitudMin: 90,
+    longitudMax: 110
   },
   
   palabras: {
@@ -60,13 +60,13 @@ const CFG = {
   tarjeta: {
     accionMin: 15,     // Segundos mínimos de acción
     accionMax: 60,     // Segundos máximos de acción
-    lineasMin: 4,      // Líneas mínimas esperadas
+    lineasMin: 3,      // Líneas mínimas esperadas
     longitudMinLinea: 10,  // Chars mínimos por línea válida
     // ─── Límites GUÍA (no truncan, solo orientan a la IA) ───
-    tituloGuia: 60,      // Guía para IA (flujo natural)
+    tituloGuia: 50,      // Guía para IA (flujo natural)
     parrafo1Guia: 60,   // Guía para IA (flujo natural)
-    subtituloGuia: 80,   // Guía para IA (flujo natural)
-    parrafo2Guia: 100    // Guía para IA (flujo natural, contexto rico)
+    subtituloGuia: 70,   // Guía para IA (flujo natural)
+    parrafo2Guia: 90    // Guía para IA (flujo natural, contexto rico)
   },
   
   // ─── Dark Mode ───
