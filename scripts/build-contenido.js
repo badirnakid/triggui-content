@@ -24,7 +24,7 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 const CFG = {
   // ─── API ───
   model: "gpt-4o-mini",
-  temp: 1,
+  temp: 1.1,
   top_p: 0.9,
   presence: 0.7,
   frequency: 0.4,
