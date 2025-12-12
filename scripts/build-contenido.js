@@ -271,7 +271,7 @@ PROCESO OBLIGATORIO:
 ═══════════════════════════════════════════════════════════════
 
 INVESTIGACIÓN OBLIGATORIA:
-→ ¿Cuáles son los 3 temas centrales de este libro específico?
+→ ¿Cuáles son los 3 temas centrales INTRÍNSECOS de este libro específico?
 → ¿Qué emociones/conflictos dominan en esta obra?
 → ¿Cuál es el arco emocional de este libro?
 → ¿Qué dicen los lectores reales en Goodreads?
@@ -295,10 +295,10 @@ Longitud: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres
 Estructura: emoji + acción 15-60 segundos
 
 PROCESO:
-→ Identifica metáforas, situaciones, momentos ESPECÍFICOS del libro
-→ Traduce esas situaciones a micro-acciones ejecutables ahora
-→ Emoji debe reflejar tono emocional de esa parte del libro
-→ Cada acción debe ser ÚNICAMENTE aplicable a este libro
+→ Identifica metáforas, situaciones, momentos ESPECÍFICOS del libro, relacionados a su respectiva palabra de COMPONENTE 1
+→ Traduce esas situaciones a acciones o micro-acciones ejecutables ahora. Relacionados a su respectiva palabra de COMPONENTE 1
+→ Emoji debe reflejar tono emocional de esa parte del libro. Relacionados a su respectiva palabra de COMPONENTE 1
+→ Cada acción debe ser ÚNICAMENTE aplicable a este libro. Relacionados a su respectiva palabra de COMPONENTE 1
 
 NEUROBIOLOGÍA:
 → Emoji = spike dopamina (recompensa visual)
@@ -411,24 +411,24 @@ LÍNEA 1 (~${CFG.tarjeta.tituloGuia} chars):
 → IMPOSIBLE de usar en otro libro
 
 LÍNEA 2 (~${CFG.tarjeta.parrafo1Guia} chars):
-→ Primera persona OBLIGATORIO ("yo he", "descubrí", "aprendí")
+→ Primera persona MAYORMENTE
 → Insight que refleje enseñanza REAL del libro
-→ Conecta con emociones Hawkins ya activadas
+→ Conecta con emociones Hawkins ya activadas EN LOS COMPONENTES.
 → Valida sin juzgar
 
 Neurobiología: primera persona = oxitocina, validación = serotonina
 
 LÍNEA 3 (~${CFG.tarjeta.subtituloGuia} chars):
-→ Pregunta provocadora O declaración elevadora
-→ Basada en tema CENTRAL del libro
+→ Pregunta provocadora O declaración elevadora INTELIGENTE BONITA
+→ Basada en tema CENTRAL O INTRÍNSECO del libro
 → Mueve de emociones bajas a altas
 
 Neurobiología: pregunta = curiosidad + shift alfa, elevación = transformación
 
 LÍNEA 4 (~${CFG.tarjeta.parrafo2Guia} chars):
-→ Referencia SUTIL a micro-acciones previas
+→ Referencia SUTIL INTELIGENTE a micro-acciones previas
 → Nueva acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos
-→ Acción inspirada en metáfora/situación ESPECÍFICA del libro
+→ Acción inspirada en metáfora/situación/dato ESPECÍFICA del libro
 → Tiempo explícito
 
 Neurobiología: referencia = validación (oxitocina), acción nueva = dopamina, tiempo = alcanzable
