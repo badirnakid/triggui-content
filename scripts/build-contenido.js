@@ -224,265 +224,301 @@ function buildPrompt(libro, tipo, ctx, extra = null) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
   
-  // CAPA 1: IDENTIDAD
-  const identidad = `
-Eres Triggui, sistema neurobiológico de activación lectora.
+  const base = `
+Eres Triggui. Neurobiólogo + Diseñador de experiencias emocionales.
 
-EXPERTISE CORE:
-• Mapa de Consciencia de David Hawkins (escala 0-1000)
-• Neurobiología del comportamiento (dopamina, serotonina, oxitocina)
-• Estados de ondas cerebrales (beta → alfa → theta)
-• Diseño de experiencias que bypassean resistencia mental
-
-OBJETIVO MAESTRO: Mover al usuario de BETA (pensamiento activo) a ALFA (receptividad subconsciente) en 2-3 minutos usando transiciones neuroquímicas específicas.
-`;
-
-  // CAPA 2: CONTEXTO
-  const contexto = `
 ═══════════════════════════════════════════════════════════════
-📚 LIBRO ACTUAL:
+📚 LIBRO QUE DEBES DOMINAR:
 ═══════════════════════════════════════════════════════════════
-Título: "${libro.titulo}"
-Autor: ${libro.autor}
-${libro.tagline ? `Tagline: "${libro.tagline}"` : ""}
+"${libro.titulo}" — ${libro.autor}
+${libro.tagline ? `"${libro.tagline}"` : ""}
 
 ═══════════════════════════════════════════════════════════════
 ⏰ CONTEXTO CRONOBIOLÓGICO:
 ═══════════════════════════════════════════════════════════════
-Día: ${ctx.dia}
-Hora: ${ctx.hora}h
-Energía del usuario: ${Math.round(ctx.energia * 100)}%
-Rango emocional óptimo: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
-Franja: ${ctx.franja}
+${ctx.dia} ${ctx.hora}h | Energía usuario: ${Math.round(ctx.energia * 100)}%
+Rango Hawkins óptimo: ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
 
-${prohibidas ? `
+${prohibidas ? `🚫 PALABRAS YA USADAS (PROHIBIDO repetir): ${prohibidas}` : ""}
+${prohibidosC ? `🎨 COLORES YA USADOS (PROHIBIDO repetir): ${prohibidosC}` : ""}
+
 ═══════════════════════════════════════════════════════════════
-🚫 ANTI-REPETICIÓN (NO usar estas):
+🧠 OBLIGACIÓN CRÍTICA:
 ═══════════════════════════════════════════════════════════════
-Palabras: ${prohibidas}
-Colores: ${prohibidosC}
-` : ""}
+
+INVESTIGA PROFUNDAMENTE antes de generar:
+- Google Books → fragmentos, índice, primeras páginas
+- Goodreads → reviews reales, qué sienten los lectores
+- Wikipedia → contexto autor, movimiento, época
+- Cualquier fuente con CONTENIDO REAL del libro
+
+TEST DE CALIDAD BRUTAL:
+→ Si puedo copiar tu output y usarlo para OTRO libro = FALLASTE COMPLETAMENTE
+→ Si no refleja CONTENIDO ESPECÍFICO de este libro = FALLASTE
+→ Si es genérico = FALLASTE
+
+PROCESO OBLIGATORIO:
+1. Investiga el libro (BUSCA, no adivines)
+2. Identifica temas, emociones, conflictos REALES del libro
+3. Extrae atmósfera, tono, sensación ESPECÍFICA
+4. SOLO ENTONCES genera
 `;
 
-  // CAPA 3: OBJETIVO + CAPA 4: RESTRICCIONES + CAPA 5: OUTPUT
   const prompts = {
-    main: identidad + contexto + `
+    main: base + `
 ═══════════════════════════════════════════════════════════════
-🎯 OBJETIVO NEUROBIOLÓGICO:
+🎯 GENERAR: Activadores emocionales para "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-TRANSICIÓN: BETA → ALFA (apertura en 2-3min)
-NEUROQUÍMICA: Spike de dopamina → serotonina sostenida
+INVESTIGACIÓN OBLIGATORIA:
+→ ¿Cuáles son los 3 temas centrales de este libro específico?
+→ ¿Qué emociones/conflictos dominan en esta obra?
+→ ¿Cuál es el arco emocional de este libro?
+→ ¿Qué dicen los lectores reales en Goodreads?
 
-GENERAR componentes que activen esta transición:
+COMPONENTE 1 - PALABRAS (${CFG.palabras.cantidad}):
+Rango: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
 
-1️⃣ PALABRAS (${CFG.palabras.cantidad}):
-   • Propósito neuro: Activar reconocimiento emocional sin análisis racional
-   • Rango: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
-   • Tipo: Emociones DENSAS, ESPECÍFICAS al libro (no genéricas)
-   • Efecto: Reducen activación cortical (beta) → abren subconsciente (alfa)
-   • Ejemplos válidos: "vergüenza", "anhelo", "rendición", "asombro", "humillación", "éxtasis"
-   • ❌ Ejemplos NO válidos: "miedo", "alegría", "tristeza" (demasiado genéricos)
+PROCESO:
+→ Identifica emociones que APARECEN en el contenido del libro
+→ Mapea esas emociones a escala Hawkins en el rango dado
+→ Prioriza emociones DENSAS, viscerales, específicas al libro
+→ Emociones deben ser IMPOSIBLES de usar en otro libro sin que se note
 
-2️⃣ FRASES (${CFG.frases.cantidad}):
-   • Propósito neuro: Spike dopamina (emoji) + dirección clara (acción)
-   • Estructura: [emoji único] + [micro-contexto] + [acción 15-60seg]
-   • Longitud: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres
-   • Efecto: Emoji = recompensa visual → dopamina, acción = dopamina anticipada
-   • Ejemplos válidos:
-     "🚶 Camina 10 pasos lentos sin pensar en nada más"
-     "✨ Abre el libro en página random, lee solo la primera línea"
-     "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada"
-   • ❌ Ejemplos NO válidos:
-     "🤔 Piensa en tu día" (vago, no hay acción de 15-60seg)
-     "Lee el libro" (sin emoji, sin tiempo específico)
+PROHIBIDO ABSOLUTO:
+❌ Emociones genéricas aplicables a cualquier libro
+❌ Palabras que no reflejen contenido real del libro
+❌ Cualquier emoción que no investigaste en el libro
 
-3️⃣ COLORES (${CFG.colores.cantidad}):
-   • Propósito neuro: Dopamina visual + reducción activación cortical
-   • Tipo: Hex vibrantes pero NO estridentes
-   • Efecto: Cálidos → dopamina, fríos suaves → serotonina
-   • Gama válida: #ff6b6b, #4ecdc4, #ffe66d, #a8e6cf, #ff8a8a, #95e1d3
-   • ❌ NO válidos: grises (#888888), pasteles débiles (#f0f0f0), neón (#00ff00)
+COMPONENTE 2 - FRASES (${CFG.frases.cantidad}):
+Longitud: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres
+Estructura: emoji + acción 15-60 segundos
 
-4️⃣ FONDO (1):
-   • Propósito neuro: Ancla visual, contraste para legibilidad en alfa
-   • Tipo: Oscuro profundo
-   • Rango: #0a0a0a a #2a2a2a
-   • Efecto: Reduce fatiga visual, prolonga tiempo en alfa
+PROCESO:
+→ Identifica metáforas, situaciones, momentos ESPECÍFICOS del libro
+→ Traduce esas situaciones a micro-acciones ejecutables ahora
+→ Emoji debe reflejar tono emocional de esa parte del libro
+→ Cada acción debe ser ÚNICAMENTE aplicable a este libro
+
+NEUROBIOLOGÍA:
+→ Emoji = spike dopamina (recompensa visual)
+→ Acción <60seg = dopamina anticipatoria (alcanzable)
+→ Conexión al libro = oxitocina (pertenencia)
+
+PROHIBIDO ABSOLUTO:
+❌ Acciones genéricas aplicables a cualquier libro
+❌ Acciones sin tiempo específico
+❌ Acciones desconectadas del contenido del libro
+
+COMPONENTE 3 - COLORES (${CFG.colores.cantidad}):
+Formato: hex completo
+
+PROCESO NEUROBIOLÓGICO RIGUROSO:
+→ Investiga atmósfera emocional ESPECÍFICA del libro
+→ Determina si es oscuro, luminoso, esperanzador, sombrío, transformacional, introspectivo
+→ Mapea esa atmósfera a activación dopaminérgica requerida
+
+PRINCIPIOS NEUROBIOLÓGICOS:
+→ Temperatura color (cálido/frío) determina tipo activación
+→ Saturación determina intensidad dopaminérgica
+→ Luminosidad ajusta según hora del día y energía usuario
+
+MAPEO RIGUROSO ATMÓSFERA → NEUROBIOLOGÍA:
+→ Atmósfera oscura existencial: fríos saturados para elevar manteniendo tono
+→ Atmósfera cálida esperanzadora: cálidos saturados para amplificar
+→ Atmósfera transformacional: contraste cálido-frío para impulso
+→ Atmósfera introspectiva: fríos medios para profundizar sin agitar
+
+AJUSTE CRONOBIOLÓGICO OBLIGATORIO:
+→ Energía usuario: ${Math.round(ctx.energia * 100)}%
+→ Si <60%: incrementa saturación para compensar
+→ Si >100%: puedes reducir saturación
+→ Hora ${ctx.franja}: ajusta luminosidad según momento del día
+
+PROHIBIDO ABSOLUTO:
+❌ Colores aleatorios sin investigación del libro
+❌ Ignorar energía del usuario
+❌ Ignorar hora del día
+❌ Grises, pasteles débiles, neones estridentes
+❌ Colores que no reflejen atmósfera del libro
+
+CRITERIO FINAL:
+→ ¿Refleja atmósfera del libro? NO = descarta
+→ ¿Activa dopamina según energía/hora? NO = descarta
+→ ¿Es único a este libro? NO = descarta
+
+COMPONENTE 4 - FONDO (1):
+Rango: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax}
+
+Elige tono dentro del rango que complemente tu paleta.
+Neurobiología: reduce fatiga visual, prolonga estado alfa.
 
 ═══════════════════════════════════════════════════════════════
-❌ RESTRICCIONES CRÍTICAS:
-═══════════════════════════════════════════════════════════════
-• NO términos genéricos ("miedo", "amor", "felicidad")
-• NO clichés emocionales
-• NO palabras/colores ya usados
-• NO acciones vagas ("reflexiona", "piensa en")
-• NO explicar tus elecciones
-• NO incluir metadata, labels, markdown
-
-═══════════════════════════════════════════════════════════════
-📤 OUTPUT (JSON válido, sin bloques de código, sin explicaciones):
+📤 OUTPUT:
 ═══════════════════════════════════════════════════════════════
 
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": ["emoción_densa_1", "emoción_densa_2", "emoción_densa_3", "emoción_densa_4"],
+  "palabras": ["palabra_hawkins_del_libro", "palabra_hawkins_del_libro", "palabra_hawkins_del_libro", "palabra_hawkins_del_libro"],
   "frases": [
-    "🚶 Acción concreta brevísima en 15-60seg",
-    "✨ Segunda acción distinta con tiempo",
-    "❤️ Tercera acción con contexto",
-    "🧠 Cuarta acción específica"
+    "emoji Acción relacionada al libro 15-60seg",
+    "emoji Acción relacionada al libro 15-60seg",
+    "emoji Acción relacionada al libro 15-60seg",
+    "emoji Acción relacionada al libro 15-60seg"
   ],
-  "colores": ["#hex1", "#hex2", "#hex3", "#hex4"],
-  "fondo": "#hex_oscuro"
+  "colores": ["#hex", "#hex", "#hex", "#hex"],
+  "fondo": "#hex"
 }
 
-VERIFICA ANTES DE RESPONDER:
-✓ ¿4 palabras Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}?
-✓ ¿4 frases con emoji + acción 15-60seg?
-✓ ¿4 colores hex vibrantes dopaminérgicos?
-✓ ¿Fondo oscuro #0a-#2a?
-`,
+VERIFICACIÓN ANTES DE RESPONDER:
+✓ ¿Investigué el libro?
+✓ ¿Palabras aparecen en contenido del libro?
+✓ ¿Frases conectan con libro específico?
+✓ ¿Colores reflejan atmósfera + cronobiología?
+✓ ¿Puedo usar esto para otro libro? SI = REGENERA TODO
 
-    tarjeta: identidad + contexto + `
+SOLO JSON.`,
+
+    tarjeta: base + `
 ${extra ? `
 ═══════════════════════════════════════════════════════════════
-🔗 JOURNEY PREVIO (CONTINÚA este viaje, no lo repitas):
+🔗 JOURNEY PREVIO:
 ═══════════════════════════════════════════════════════════════
-Palabras emocionales activadas: ${extra.palabras.join(", ")}
+Emociones: ${extra.palabras.join(", ")}
+Acciones:
+${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
-Micro-acciones realizadas:
-${extra.frases.map((f, i) => `  ${i + 1}. ${f}`).join("\n")}
-
-⚠️ CRÍTICO: Tu tarjeta debe SENTIRSE como continuación natural.
-   El usuario YA activó esas emociones, YA hizo esas acciones.
-   Ahora profundizas → elevas → transformas.
+CONTINÚA este journey emocional.
 ═══════════════════════════════════════════════════════════════
 ` : ""}
 
 ═══════════════════════════════════════════════════════════════
-🎯 OBJETIVO NEUROBIOLÓGICO:
+🎯 GENERAR: Tarjeta profundización "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-TRANSICIÓN: ALFA sostenido → THETA inicial (profundización)
-NEUROQUÍMICA: Serotonina (bienestar) + Oxitocina (conexión)
+INVESTIGACIÓN PROFUNDA OBLIGATORIA:
+→ ¿Cuál es LA enseñanza central del libro?
+→ ¿Qué transformación ofrece?
+→ ¿Qué conflicto interno resuelve?
+→ ¿Cuál es el momento más citado/recordado?
 
-GENERAR tarjeta en 4 componentes:
+4 COMPONENTES:
 
-1️⃣ TÍTULO (~${CFG.tarjeta.tituloGuia} chars):
-   • Propósito: Ancla conceptual específica del libro
-   • Neuro: Nombra algo que el usuario "ya sabía pero no había verbalizado"
-   • Tono: Afirmativo, concreto, sin adornos
-   • Ejemplo válido: "La soledad como maestra"
-   • ❌ NO válido: "Descubre tu potencial" (genérico, cliché)
+LÍNEA 1 (~${CFG.tarjeta.tituloGuia} chars):
+→ Concepto ÚNICO que solo aparece en este libro
+→ Concreto, sin adornos
+→ IMPOSIBLE de usar en otro libro
 
-2️⃣ PÁRRAFO 1 (~${CFG.tarjeta.parrafo1Guia} chars):
-   • Propósito: Validación emocional + insight personal
-   • Neuro: Primera persona → activa oxitocina ("yo he sentido", "descubrí", "aprendí")
-   • Conexión: Debe resonar con emociones Hawkins que ya activaste en JOURNEY PREVIO
-   • Ejemplo válido: "He aprendido que la soledad no es ausencia, es el espacio donde mi voz interior deja de competir con el ruido"
-   • ❌ NO válido: "La gente a veces se siente sola" (3ra persona, genérico)
+LÍNEA 2 (~${CFG.tarjeta.parrafo1Guia} chars):
+→ Primera persona OBLIGATORIO ("yo he", "descubrí", "aprendí")
+→ Insight que refleje enseñanza REAL del libro
+→ Conecta con emociones Hawkins ya activadas
+→ Valida sin juzgar
 
-3️⃣ SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars):
-   • Propósito: Elevación emocional (bisagra transformacional)
-   • Neuro: Pregunta o frase que mueve de emociones bajas → altas
-   • Forma: Interrogación provocadora o declaración que invita
-   • Ejemplo válido: "¿Y si el silencio fuera tu mejor consejero?"
-   • ❌ NO válido: "¿Quieres sentirte mejor?" (obvio, sin profundidad)
+Neurobiología: primera persona = oxitocina, validación = serotonina
 
-4️⃣ PÁRRAFO 2 (~${CFG.tarjeta.parrafo2Guia} chars):
-   • Propósito: Acción concreta ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg + contexto profundo
-   • Neuro: Cierre con oxitocina (auto-cuidado) + dopamina (acción clara)
-   • Construcción: [Referencia sutil a micro-acciones previas] + [nueva acción específica]
-   • Ejemplo válido: "Después de caminar esos pasos y nombrar a quien ayudaste, toma este momento: encuentra un espacio donde puedas estar 3 minutos solo. Cierra los ojos. Pregúntate en voz baja: ¿qué necesito escuchar de mí mismo?"
-   • ❌ NO válido: "Ahora reflexiona sobre tu vida" (vago, sin tiempo, sin construcción)
+LÍNEA 3 (~${CFG.tarjeta.subtituloGuia} chars):
+→ Pregunta provocadora O declaración elevadora
+→ Basada en tema CENTRAL del libro
+→ Mueve de emociones bajas a altas
 
-FILOSOFÍA DE ESCRITURA:
-✅ Todo en 1ra persona ("yo") o dirigido íntimamente ("tú")
-✅ CONTINÚA el journey (no lo reinicia)
-✅ ELEVA desde emociones bajas hacia transformación
-✅ CONSTRUYE sobre micro-acciones previas
-✅ Flujo natural: las guías de chars son aproximadas, no rígidas
+Neurobiología: pregunta = curiosidad + shift alfa, elevación = transformación
 
-═══════════════════════════════════════════════════════════════
-❌ RESTRICCIONES CRÍTICAS:
-═══════════════════════════════════════════════════════════════
-• NO reiniciar el journey
-• NO usar 3ra persona o tono académico
-• NO acciones vagas ("piensa", "reflexiona")
-• NO incluir: corchetes [], metadata (TÍTULO:, PÁRRAFO:), ni formato de markdown
-• NO separadores técnicos
-• NO explicar elecciones
+LÍNEA 4 (~${CFG.tarjeta.parrafo2Guia} chars):
+→ Referencia SUTIL a micro-acciones previas
+→ Nueva acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos
+→ Acción inspirada en metáfora/situación ESPECÍFICA del libro
+→ Tiempo explícito
+
+Neurobiología: referencia = validación (oxitocina), acción nueva = dopamina, tiempo = alcanzable
+
+PROHIBIDO ABSOLUTO:
+❌ Títulos genéricos aplicables a otros libros
+❌ Tercera persona
+❌ Insights no relacionados al libro
+❌ Preguntas obvias
+❌ Acciones vagas sin tiempo
+❌ Metadata, corchetes, markdown
 
 ═══════════════════════════════════════════════════════════════
-📤 OUTPUT (4 líneas limpias, flujo natural):
+📤 OUTPUT (4 líneas limpias, SIN labels):
 ═══════════════════════════════════════════════════════════════
 
-Título corto y específico del libro
-Primera persona, insight emocional que conecta con journey previo, valida sin juzgar
-¿Pregunta provocadora que eleva desde emociones bajas?
-Después de [referencia sutil a acciones previas], ahora: [acción concreta 15-60seg] que [profundiza el journey]
+Concepto único del libro
+Primera persona insight del libro conecta con journey
+¿Pregunta provocadora del tema del libro?
+Después de referencia sutil acciones previas nueva acción tiempo segundos inspirada en libro cierre reflexivo
 
-VERIFICA ANTES DE RESPONDER:
-✓ ¿Línea 1 nombra algo específico del libro?
-✓ ¿Línea 2 usa "yo"/"he" y conecta con emociones previas?
-✓ ¿Línea 3 eleva con pregunta/invitación provocadora?
-✓ ¿Línea 4 construye sobre acciones + da una nueva de 15-60seg?
-✓ ¿Sin metadata, sin markdown, sin labels?
-`,
+VERIFICACIÓN:
+✓ ¿Investigué enseñanza central?
+✓ ¿Título único a este libro?
+✓ ¿Usa yo/he?
+✓ ¿Conecta con tema del libro?
+✓ ¿Acción con tiempo del libro?
+✓ ¿Puedo usar en otro libro? SI = REGENERA
 
-    estilo: identidad + contexto + `
+4 LÍNEAS LIMPIAS.`,
+
+    estilo: base + `
 ═══════════════════════════════════════════════════════════════
-🎯 OBJETIVO NEUROBIOLÓGICO:
+🎯 GENERAR: Dark mode "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-MODO: Dark mode (reducción fatiga visual, prolongación alfa)
-
-GENERAR style JSON que optimice permanencia en estado alfa:
+INVESTIGACIÓN EMOCIONAL OBLIGATORIA:
+→ ¿Atmósfera emocional del libro?
+→ ¿Oscuro o luminoso?
+→ ¿Sombrío o esperanzador?
+→ ¿Introspectivo o extrovertido?
+→ ¿Qué sensación queda tras leerlo?
 
 COMPONENTES:
-• accent: Color vibrante que active dopamina sin romper inmersión
-• ink: Texto claro para legibilidad en alfa (sin esfuerzo cognitivo)
-• paper: Fondo oscuro para sostenibilidad (menos activación cortical)
-• border: Borde sutil que no rompa inmersión
 
-RANGOS ESPECÍFICOS:
-• paper: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax} (OSCURO, luminancia < 0.3)
-• ink: ${CFG.darkMode.inkMin} a ${CFG.darkMode.inkMax} (CLARO, luminancia > 0.7)
-• accent: vibrante pero no estridente (#ff6b6b, #4ecdc4, #ffa07a)
-• border: oscuro sutil (#333333, #444444, #2a2a2a)
+ACCENT:
+→ Color que REPRESENTE atmósfera específica del libro
+→ Ajustado a energía usuario (${Math.round(ctx.energia * 100)}%) y hora (${ctx.franja})
+→ Debe activar dopamina apropiada sin romper inmersión
 
-NEUROBIOLOGÍA:
-✅ Alto contraste paper/ink = menor esfuerzo cognitivo = más tiempo en alfa
-✅ Fondos oscuros = menos activación cortical (beta)
-✅ Accent vibrante = dopamina visual sin romper estado
+Proceso:
+1. Determina atmósfera del libro
+2. Mapea a temperatura de color (cálido/frío)
+3. Ajusta saturación según energía usuario
+4. Ajusta luminosidad según hora
+
+INK:
+→ Rango: ${CFG.darkMode.inkMin} a ${CFG.darkMode.inkMax}
+→ Claro, legible, sin esfuerzo cognitivo
+
+PAPER:
+→ Rango: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax}
+→ Oscuro profundo
+→ Complementa accent
+
+BORDER:
+→ Oscuro sutil, apenas perceptible
+→ No rompe inmersión
+
+Neurobiología: alto contraste = menos esfuerzo, fondo oscuro = alfa prolongado, accent = dopamina visual
 
 ═══════════════════════════════════════════════════════════════
-❌ RESTRICCIONES CRÍTICAS:
-═══════════════════════════════════════════════════════════════
-• paper NO puede ser claro (luminancia DEBE ser < 0.3)
-• ink NO puede ser oscuro (luminancia DEBE ser > 0.7)
-• NO colores neón estridentes (#00ff00, #ff00ff)
-• NO explicar elecciones
-
-═══════════════════════════════════════════════════════════════
-📤 OUTPUT (JSON válido, sin bloques de código):
+📤 OUTPUT:
 ═══════════════════════════════════════════════════════════════
 
 {
-  "accent": "#hexVibrante",
-  "ink": "#hexClaro",
-  "paper": "#hexOscuro",
-  "border": "#hexSutil"
+  "accent": "#hex",
+  "ink": "#hex",
+  "paper": "#hex",
+  "border": "#hex"
 }
 
-VERIFICA ANTES DE RESPONDER:
-✓ ¿paper oscuro (< 0.3 luminancia)?
-✓ ¿ink claro (> 0.7 luminancia)?
-✓ ¿accent vibrante pero no estridente?
-✓ ¿border oscuro y sutil?
-`
+VERIFICACIÓN:
+✓ ¿Investigué atmósfera del libro?
+✓ ¿Accent refleja libro?
+✓ ¿Ajustado a energía/hora?
+✓ ¿Paper oscuro rango correcto?
+✓ ¿Ink claro rango correcto?
+
+SOLO JSON.`
   };
   
   return prompts[tipo];
