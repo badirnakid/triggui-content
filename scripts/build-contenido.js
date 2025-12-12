@@ -1,7 +1,13 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v8.2 ULTRA PERFECTION - CÓDIGO DEFINITIVO PRODUCCIÓN
+   TRIGGUI v9.0 NIVEL DIOS - ARQUITECTURA PROMPT INTEGRADA
    
-   AUTOR: Badir Nakid | FECHA: Nov 2025 | VERSIÓN: 8.2 ULTRA PERFECTION
+   CAMBIOS v8.2 → v9.0:
+   ✅ Sistema de prompts en 5 CAPAS verificables
+   ✅ Variables neurobiológicas escalables
+   ✅ Verificación automática de resultados
+   ✅ Precisión nivel dios para gpt-4o-mini
+   
+   AUTOR: Badir Nakid | FECHA: Dic 2025 | VERSIÓN: 9.0
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -18,7 +24,7 @@ if (!KEY) process.exit(console.log("🔕 Sin OPENAI_KEY"));
 const CFG = {
   // ─── API ───
   model: "gpt-4o-mini",
-  temp: 1,              // Base (se ajusta dinámicamente según día)
+  temp: 1,
   top_p: 0.9,
   presence: 0.7,
   frequency: 0.4,
@@ -28,19 +34,19 @@ const CFG = {
   out: "contenido.json",
   
   // ─── Procesamiento ───
-  max: 20,              // Libros por ejecución
-  delay: 10000,         // Ms entre libros
-  maxReintentos: 20,    // Reintentos por libro
-  sleepReintento: 2000, // Ms entre reintentos
-  resetMemoryCada: 5,   // Reset cada N libros
+  max: 20,
+  delay: 10000,
+  maxReintentos: 20,
+  sleepReintento: 2000,
+  resetMemoryCada: 5,
   
   // ─── Contenido (DINÁMICO según hora/día) ───
   hawkins: {
-    base: [20, 100],    // Rango base [min, max]
-    madrugada: [20, 75],   // 0-6h: Emociones más profundas
-    manana: [50, 150],     // 6-12h: Más elevadas
-    tarde: [30, 120],      // 12-18h: Mixto
-    noche: [20, 100]       // 18-24h: Vuelta a profundo
+    base: [20, 100],
+    madrugada: [20, 75],
+    manana: [50, 150],
+    tarde: [30, 120],
+    noche: [20, 100]
   },
   
   frases: {
@@ -58,15 +64,14 @@ const CFG = {
   },
   
   tarjeta: {
-    accionMin: 15,     // Segundos mínimos de acción
-    accionMax: 60,     // Segundos máximos de acción
-    lineasMin: 3,      // Líneas mínimas esperadas
-    longitudMinLinea: 10,  // Chars mínimos por línea válida
-    // ─── Límites GUÍA (no truncan, solo orientan a la IA) ───
-    tituloGuia: 50,      // Guía para IA (flujo natural)
-    parrafo1Guia: 60,   // Guía para IA (flujo natural)
-    subtituloGuia: 70,   // Guía para IA (flujo natural)
-    parrafo2Guia: 90    // Guía para IA (flujo natural, contexto rico)
+    accionMin: 15,
+    accionMax: 60,
+    lineasMin: 3,
+    longitudMinLinea: 10,
+    tituloGuia: 50,
+    parrafo1Guia: 60,
+    subtituloGuia: 70,
+    parrafo2Guia: 90
   },
   
   // ─── Dark Mode ───
@@ -75,8 +80,8 @@ const CFG = {
     paperMax: "#2a2a2a",
     inkMin: "#e0e0e0",
     inkMax: "#ffffff",
-    lumThresholdPaper: 0.3,   // Max luminancia para fondo
-    lumThresholdInk: 0.7      // Min luminancia para texto
+    lumThresholdPaper: 0.3,
+    lumThresholdInk: 0.7
   },
   
   // ─── Cronobiología (energía por día) ───
@@ -92,9 +97,17 @@ const CFG = {
   
   // ─── Ajustes dinámicos según energía ───
   dinamico: {
-    tempMultiplicador: true,     // temp *= energia
-    hawkinsShift: true,           // Ajusta rango según hora
-    frasesExtension: true         // Más largas en alta energía
+    tempMultiplicador: true,
+    hawkinsShift: true,
+    frasesExtension: true
+  },
+  
+  // ─── Verificación (nuevo en v9.0) ───
+  verificacion: {
+    activa: true,                    // Activar verificación automática
+    logNivelBajo: true,              // Loggear cuando score < 0.8
+    reintentoSiBajo: true,           // Reintentar si verificación falla
+    umbralMinimo: 0.75              // Score mínimo aceptable
   }
 };
 
@@ -136,26 +149,21 @@ function getContexto() {
   const dia = now.toLocaleDateString("es-MX", { weekday: "long" }).toLowerCase();
   const hora = now.getHours();
   
-  // Energía del día
   const energia = CFG.energia[dia] || 0.8;
   
-  // Franja horaria para Hawkins dinámico
   let franja = "noche";
   if (hora >= 0 && hora < 6) franja = "madrugada";
   else if (hora >= 6 && hora < 12) franja = "manana";
   else if (hora >= 12 && hora < 18) franja = "tarde";
   
-  // Temperatura dinámica según energía
   const tempDinamica = CFG.dinamico.tempMultiplicador 
     ? CFG.temp * energia 
     : CFG.temp;
   
-  // Rango Hawkins dinámico según hora
   const hawkinsDinamico = CFG.dinamico.hawkinsShift
     ? CFG.hawkins[franja]
     : CFG.hawkins.base;
   
-  // Longitud frases dinámica según energía
   const frasesLongitud = CFG.dinamico.frasesExtension
     ? {
         min: Math.round(CFG.frases.longitudMin * energia),
@@ -178,103 +186,387 @@ function getContexto() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ PROMPTS (con contexto dinámico)
+   🧠 NEUROBIOLOGÍA - SISTEMA DE VARIABLES (NUEVO v9.0)
 ═══════════════════════════════════════════════════════════════ */
 
-function prompt(libro, tipo, ctx, extra = null) {
+const NEUROBIOLOGIA = {
+  estadoEntrada: {
+    ondas: {
+      actual: "beta",
+      objetivo: "alfa",
+      metodo: "Colores dopaminérgicos + palabras emocionales directas + frases rítmicas"
+    },
+    neurotransmisores: {
+      dopamina: {
+        fase: "entrada",
+        metodo: "Colores vibrantes, emojis, promesa de acción rápida (<60seg)",
+        verificacion: "Usuario siente impulso de actuar en <10seg"
+      },
+      serotonina: {
+        fase: "desarrollo",
+        metodo: "Colores cálidos suaves, palabras Hawkins 200-400, validación",
+        verificacion: "Usuario siente bienestar y permanencia"
+      },
+      oxitocina: {
+        fase: "cierre",
+        metodo: "Primera persona, preguntas reflexivas, acciones de auto-cuidado",
+        verificacion: "Usuario siente conexión y comprensión"
+      }
+    }
+  }
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   🧙‍♂️ SISTEMA DE PROMPTS v9.0 (5 CAPAS)
+═══════════════════════════════════════════════════════════════ */
+
+function buildPrompt(libro, tipo, ctx, extra = null) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
   
-  const base = `
-Eres Triggui. Experto absoluto en:
-- Mapa Hawkins de consciencia
-- Psicología del comportamiento
-- Diseño editorial
+  // CAPA 1: IDENTIDAD
+  const identidad = `
+Eres Triggui, sistema neurobiológico de activación lectora.
 
-LIBRO: "${libro.titulo}" - ${libro.autor}
-${libro.tagline ? `TAGLINE: "${libro.tagline}"` : ""}
+EXPERTISE CORE:
+• Mapa de Consciencia de David Hawkins (escala 0-1000)
+• Neurobiología del comportamiento (dopamina, serotonina, oxitocina)
+• Estados de ondas cerebrales (beta → alfa → theta)
+• Diseño de experiencias que bypassean resistencia mental
 
-CONTEXTO: ${ctx.dia} ${ctx.hora}h | Energía ${Math.round(ctx.energia * 100)}%
-
-${prohibidas ? `🚫 PALABRAS PROHIBIDAS: ${prohibidas}` : ""}
-${prohibidosC ? `🎨 COLORES PROHIBIDOS: ${prohibidosC}` : ""}
+OBJETIVO MAESTRO: Mover al usuario de BETA (pensamiento activo) a ALFA (receptividad subconsciente) en 2-3 minutos usando transiciones neuroquímicas específicas.
 `;
 
+  // CAPA 2: CONTEXTO
+  const contexto = `
+═══════════════════════════════════════════════════════════════
+📚 LIBRO ACTUAL:
+═══════════════════════════════════════════════════════════════
+Título: "${libro.titulo}"
+Autor: ${libro.autor}
+${libro.tagline ? `Tagline: "${libro.tagline}"` : ""}
+
+═══════════════════════════════════════════════════════════════
+⏰ CONTEXTO CRONOBIOLÓGICO:
+═══════════════════════════════════════════════════════════════
+Día: ${ctx.dia}
+Hora: ${ctx.hora}h
+Energía del usuario: ${Math.round(ctx.energia * 100)}%
+Rango emocional óptimo: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
+Franja: ${ctx.franja}
+
+${prohibidas ? `
+═══════════════════════════════════════════════════════════════
+🚫 ANTI-REPETICIÓN (NO usar estas):
+═══════════════════════════════════════════════════════════════
+Palabras: ${prohibidas}
+Colores: ${prohibidosC}
+` : ""}
+`;
+
+  // CAPA 3: OBJETIVO + CAPA 4: RESTRICCIONES + CAPA 5: OUTPUT
   const prompts = {
-    main: base + `
-GENERA JSON:
+    main: identidad + contexto + `
+═══════════════════════════════════════════════════════════════
+🎯 OBJETIVO NEUROBIOLÓGICO:
+═══════════════════════════════════════════════════════════════
+
+TRANSICIÓN: BETA → ALFA (apertura en 2-3min)
+NEUROQUÍMICA: Spike de dopamina → serotonina sostenida
+
+GENERAR componentes que activen esta transición:
+
+1️⃣ PALABRAS (${CFG.palabras.cantidad}):
+   • Propósito neuro: Activar reconocimiento emocional sin análisis racional
+   • Rango: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
+   • Tipo: Emociones DENSAS, ESPECÍFICAS al libro (no genéricas)
+   • Efecto: Reducen activación cortical (beta) → abren subconsciente (alfa)
+   • Ejemplos válidos: "vergüenza", "anhelo", "rendición", "asombro", "humillación", "éxtasis"
+   • ❌ Ejemplos NO válidos: "miedo", "alegría", "tristeza" (demasiado genéricos)
+
+2️⃣ FRASES (${CFG.frases.cantidad}):
+   • Propósito neuro: Spike dopamina (emoji) + dirección clara (acción)
+   • Estructura: [emoji único] + [micro-contexto] + [acción 15-60seg]
+   • Longitud: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres
+   • Efecto: Emoji = recompensa visual → dopamina, acción = dopamina anticipada
+   • Ejemplos válidos:
+     "🚶 Camina 10 pasos lentos sin pensar en nada más"
+     "✨ Abre el libro en página random, lee solo la primera línea"
+     "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada"
+   • ❌ Ejemplos NO válidos:
+     "🤔 Piensa en tu día" (vago, no hay acción de 15-60seg)
+     "Lee el libro" (sin emoji, sin tiempo específico)
+
+3️⃣ COLORES (${CFG.colores.cantidad}):
+   • Propósito neuro: Dopamina visual + reducción activación cortical
+   • Tipo: Hex vibrantes pero NO estridentes
+   • Efecto: Cálidos → dopamina, fríos suaves → serotonina
+   • Gama válida: #ff6b6b, #4ecdc4, #ffe66d, #a8e6cf, #ff8a8a, #95e1d3
+   • ❌ NO válidos: grises (#888888), pasteles débiles (#f0f0f0), neón (#00ff00)
+
+4️⃣ FONDO (1):
+   • Propósito neuro: Ancla visual, contraste para legibilidad en alfa
+   • Tipo: Oscuro profundo
+   • Rango: #0a0a0a a #2a2a2a
+   • Efecto: Reduce fatiga visual, prolonga tiempo en alfa
+
+═══════════════════════════════════════════════════════════════
+❌ RESTRICCIONES CRÍTICAS:
+═══════════════════════════════════════════════════════════════
+• NO términos genéricos ("miedo", "amor", "felicidad")
+• NO clichés emocionales
+• NO palabras/colores ya usados
+• NO acciones vagas ("reflexiona", "piensa en")
+• NO explicar tus elecciones
+• NO incluir metadata, labels, markdown
+
+═══════════════════════════════════════════════════════════════
+📤 OUTPUT (JSON válido, sin ```markdown, sin explicaciones):
+═══════════════════════════════════════════════════════════════
 
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": [${CFG.palabras.cantidad} emociones Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}, específicas al libro],
-  "frases": [${CFG.frases.cantidad} frases únicas, emoji, ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} chars],
-  "colores": [${CFG.colores.cantidad} hex únicos, dopaminérgicos],
-  "fondo": "#hex oscuro"
+  "palabras": ["emoción_densa_1", "emoción_densa_2", "emoción_densa_3", "emoción_densa_4"],
+  "frases": [
+    "🚶 Acción concreta brevísima en 15-60seg",
+    "✨ Segunda acción distinta con tiempo",
+    "❤️ Tercera acción con contexto",
+    "🧠 Cuarta acción específica"
+  ],
+  "colores": ["#hex1", "#hex2", "#hex3", "#hex4"],
+  "fondo": "#hex_oscuro"
 }
 
-CRÍTICO:
-✅ Palabras: emociones densas Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
-✅ Frases: estructura única, emoji único, contexto + acción
-✅ Colores: imposibles de confundir con anteriores
+VERIFICA ANTES DE RESPONDER:
+✓ ¿4 palabras Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}?
+✓ ¿4 frases con emoji + acción 15-60seg?
+✓ ¿4 colores hex vibrantes dopaminérgicos?
+✓ ¿Fondo oscuro #0a-#2a?
+`,
 
-SOLO JSON.`,
-
-    tarjeta: base + `
+    tarjeta: identidad + contexto + `
 ${extra ? `
-════════════════════════════════════════════════════════════════
-JOURNEY PREVIO (continúa este viaje emocional):
+═══════════════════════════════════════════════════════════════
+🔗 JOURNEY PREVIO (CONTINÚA este viaje, no lo repitas):
+═══════════════════════════════════════════════════════════════
+Palabras emocionales activadas: ${extra.palabras.join(", ")}
 
-PALABRAS: ${extra.palabras.join(", ")}
-FRASES:
-${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+Micro-acciones realizadas:
+${extra.frases.map((f, i) => `  ${i + 1}. ${f}`).join("\n")}
 
-Tu tarjeta DEBE continuar orgánicamente este journey.
-════════════════════════════════════════════════════════════════
+⚠️ CRÍTICO: Tu tarjeta debe SENTIRSE como continuación natural.
+   El usuario YA activó esas emociones, YA hizo esas acciones.
+   Ahora profundizas → elevas → transformas.
+═══════════════════════════════════════════════════════════════
 ` : ""}
 
-Escribe 4 líneas (FLUJO NATURAL, las guías son aproximadas):
+═══════════════════════════════════════════════════════════════
+🎯 OBJETIVO NEUROBIOLÓGICO:
+═══════════════════════════════════════════════════════════════
 
-TÍTULO (~${CFG.tarjeta.tituloGuia} chars): Concepto específico del libro
-PÁRRAFO 1 (~${CFG.tarjeta.parrafo1Guia} chars): Insight en 1ra persona que CONECTA con emociones previas
-SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars): Pregunta/frase que ELEVA desde emociones bajas
-PÁRRAFO 2 (~${CFG.tarjeta.parrafo2Guia} chars): Acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg con contexto RICO que CONSTRUYE sobre frases
+TRANSICIÓN: ALFA sostenido → THETA inicial (profundización)
+NEUROQUÍMICA: Serotonina (bienestar) + Oxitocina (conexión)
 
-REGLAS:
-✅ CONECTAR con emociones previas (indirectamente)
-✅ ELEVAR desde bajo → transformación
-✅ CONSTRUIR sobre acciones previas
-✅ FLUJO NATURAL: deja que el contenido respire, no te limites estrictamente
-❌ NO: corchetes [], metadata, labels (TÍTULO:, PÁRRAFO:, SUBTÍTULO:), markdown (**, _, *)
+GENERAR tarjeta en 4 componentes:
 
-FORMATO (4 líneas sin labels):
-[línea 1: título]
-[línea 2: párrafo 1]
-[línea 3: subtítulo]
-[línea 4: párrafo 2]`,
+1️⃣ TÍTULO (~${CFG.tarjeta.tituloGuia} chars):
+   • Propósito: Ancla conceptual específica del libro
+   • Neuro: Nombra algo que el usuario "ya sabía pero no había verbalizado"
+   • Tono: Afirmativo, concreto, sin adornos
+   • Ejemplo válido: "La soledad como maestra"
+   • ❌ NO válido: "Descubre tu potencial" (genérico, cliché)
 
-    estilo: base + `
-Diseña style JSON DARK MODE:
+2️⃣ PÁRRAFO 1 (~${CFG.tarjeta.parrafo1Guia} chars):
+   • Propósito: Validación emocional + insight personal
+   • Neuro: Primera persona → activa oxitocina ("yo he sentido", "descubrí", "aprendí")
+   • Conexión: Debe resonar con emociones Hawkins que ya activaste en JOURNEY PREVIO
+   • Ejemplo válido: "He aprendido que la soledad no es ausencia, es el espacio donde mi voz interior deja de competir con el ruido"
+   • ❌ NO válido: "La gente a veces se siente sola" (3ra persona, genérico)
+
+3️⃣ SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars):
+   • Propósito: Elevación emocional (bisagra transformacional)
+   • Neuro: Pregunta o frase que mueve de emociones bajas → altas
+   • Forma: Interrogación provocadora o declaración que invita
+   • Ejemplo válido: "¿Y si el silencio fuera tu mejor consejero?"
+   • ❌ NO válido: "¿Quieres sentirte mejor?" (obvio, sin profundidad)
+
+4️⃣ PÁRRAFO 2 (~${CFG.tarjeta.parrafo2Guia} chars):
+   • Propósito: Acción concreta ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg + contexto profundo
+   • Neuro: Cierre con oxitocina (auto-cuidado) + dopamina (acción clara)
+   • Construcción: [Referencia sutil a micro-acciones previas] + [nueva acción específica]
+   • Ejemplo válido: "Después de caminar esos pasos y nombrar a quien ayudaste, toma este momento: encuentra un espacio donde puedas estar 3 minutos solo. Cierra los ojos. Pregúntate en voz baja: ¿qué necesito escuchar de mí mismo?"
+   • ❌ NO válido: "Ahora reflexiona sobre tu vida" (vago, sin tiempo, sin construcción)
+
+FILOSOFÍA DE ESCRITURA:
+✅ Todo en 1ra persona ("yo") o dirigido íntimamente ("tú")
+✅ CONTINÚA el journey (no lo reinicia)
+✅ ELEVA desde emociones bajas hacia transformación
+✅ CONSTRUYE sobre micro-acciones previas
+✅ Flujo natural: las guías de chars son aproximadas, no rígidas
+
+═══════════════════════════════════════════════════════════════
+❌ RESTRICCIONES CRÍTICAS:
+═══════════════════════════════════════════════════════════════
+• NO reiniciar el journey
+• NO usar 3ra persona o tono académico
+• NO acciones vagas ("piensa", "reflexiona")
+• NO incluir: corchetes [], metadata (TÍTULO:, PÁRRAFO:), markdown (**, __, *)
+• NO separadores técnicos
+• NO explicar elecciones
+
+═══════════════════════════════════════════════════════════════
+📤 OUTPUT (4 líneas limpias, flujo natural):
+═══════════════════════════════════════════════════════════════
+
+Título corto y específico del libro
+Primera persona, insight emocional que conecta con journey previo, valida sin juzgar
+¿Pregunta provocadora que eleva desde emociones bajas?
+Después de [referencia sutil a acciones previas], ahora: [acción concreta 15-60seg] que [profundiza el journey]
+
+VERIFICA ANTES DE RESPONDER:
+✓ ¿Línea 1 nombra algo específico del libro?
+✓ ¿Línea 2 usa "yo"/"he" y conecta con emociones previas?
+✓ ¿Línea 3 eleva con pregunta/invitación provocadora?
+✓ ¿Línea 4 construye sobre acciones + da una nueva de 15-60seg?
+✓ ¿Sin metadata, sin markdown, sin labels?
+`,
+
+    estilo: identidad + contexto + `
+═══════════════════════════════════════════════════════════════
+🎯 OBJETIVO NEUROBIOLÓGICO:
+═══════════════════════════════════════════════════════════════
+
+MODO: Dark mode (reducción fatiga visual, prolongación alfa)
+
+GENERAR style JSON que optimice permanencia en estado alfa:
+
+COMPONENTES:
+• accent: Color vibrante que active dopamina sin romper inmersión
+• ink: Texto claro para legibilidad en alfa (sin esfuerzo cognitivo)
+• paper: Fondo oscuro para sostenibilidad (menos activación cortical)
+• border: Borde sutil que no rompa inmersión
+
+RANGOS ESPECÍFICOS:
+• paper: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax} (OSCURO, luminancia < 0.3)
+• ink: ${CFG.darkMode.inkMin} a ${CFG.darkMode.inkMax} (CLARO, luminancia > 0.7)
+• accent: vibrante pero no estridente (#ff6b6b, #4ecdc4, #ffa07a)
+• border: oscuro sutil (#333333, #444444, #2a2a2a)
+
+NEUROBIOLOGÍA:
+✅ Alto contraste paper/ink = menor esfuerzo cognitivo = más tiempo en alfa
+✅ Fondos oscuros = menos activación cortical (beta)
+✅ Accent vibrante = dopamina visual sin romper estado
+
+═══════════════════════════════════════════════════════════════
+❌ RESTRICCIONES CRÍTICAS:
+═══════════════════════════════════════════════════════════════
+• paper NO puede ser claro (luminancia DEBE ser < 0.3)
+• ink NO puede ser oscuro (luminancia DEBE ser > 0.7)
+• NO colores neón estridentes (#00ff00, #ff00ff)
+• NO explicar elecciones
+
+═══════════════════════════════════════════════════════════════
+📤 OUTPUT (JSON válido, sin ```markdown):
+═══════════════════════════════════════════════════════════════
 
 {
-  "accent": "hex vibrante",
-  "ink": "${CFG.darkMode.inkMin} - ${CFG.darkMode.inkMax}",
-  "paper": "${CFG.darkMode.paperMin} - ${CFG.darkMode.paperMax}",
-  "border": "hex sutil oscuro"
+  "accent": "#hexVibrante",
+  "ink": "#hexClaro",
+  "paper": "#hexOscuro",
+  "border": "#hexSutil"
 }
 
-CRÍTICO dark mode:
-✅ paper OSCURO (${CFG.darkMode.paperMin} - ${CFG.darkMode.paperMax})
-✅ ink CLARO (${CFG.darkMode.inkMin} - ${CFG.darkMode.inkMax})
-
-SOLO JSON.`
+VERIFICA ANTES DE RESPONDER:
+✓ ¿paper oscuro (< 0.3 luminancia)?
+✓ ¿ink claro (> 0.7 luminancia)?
+✓ ¿accent vibrante pero no estridente?
+✓ ¿border oscuro y sutil?
+`
   };
   
   return prompts[tipo];
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   📞 API CALL
+   ✅ VERIFICACIÓN AUTOMÁTICA (NUEVO v9.0)
+═══════════════════════════════════════════════════════════════ */
+
+const VERIFICADOR = {
+  // Verificar resultado JSON principal
+  main: (data) => {
+    const checks = {
+      tienePalabras: Array.isArray(data.palabras) && data.palabras.length === CFG.palabras.cantidad,
+      palabrasNoVacias: data.palabras?.every(p => p && p.length > 3),
+      tieneFrases: Array.isArray(data.frases) && data.frases.length === CFG.frases.cantidad,
+      frasesConEmoji: data.frases?.every(f => /[\p{Emoji}]/u.test(f)),
+      frasesLongitudOk: data.frases?.every(f => f.length >= 30 && f.length <= 150),
+      tieneColores: Array.isArray(data.colores) && data.colores.length === CFG.colores.cantidad,
+      coloresHex: data.colores?.every(c => /^#[0-9a-f]{6}$/i.test(c)),
+      tieneFondo: typeof data.fondo === "string" && /^#[0-9a-f]{6}$/i.test(data.fondo),
+      fondoOscuro: data.fondo && utils.lum(data.fondo) < CFG.darkMode.lumThresholdPaper
+    };
+    
+    const cumple = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    
+    return {
+      score: cumple / total,
+      checks,
+      nivel: cumple === total ? "PERFECTO" : cumple >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: cumple / total >= CFG.verificacion.umbralMinimo
+    };
+  },
+  
+  // Verificar tarjeta
+  tarjeta: (texto) => {
+    const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
+    
+    const checks = {
+      tiene4Lineas: lineas.length >= 4,
+      sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto),
+      sinMarkdown: !/\*\*|__|```/g.test(texto),
+      primeraPersona: /\b(yo|he|mi|descubrí|aprendí|sentido)\b/i.test(texto),
+      tieneAccion: /\d+\s*(seg|segundo|minuto|min|paso)/i.test(texto),
+      tienePregunta: /\?|¿/.test(texto)
+    };
+    
+    const cumple = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    
+    return {
+      score: cumple / total,
+      checks,
+      nivel: cumple === total ? "PERFECTO" : cumple >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: cumple / total >= CFG.verificacion.umbralMinimo
+    };
+  },
+  
+  // Verificar estilo
+  estilo: (data) => {
+    const checks = {
+      tieneAccent: typeof data.accent === "string" && /^#[0-9a-f]{6}$/i.test(data.accent),
+      tieneInk: typeof data.ink === "string" && /^#[0-9a-f]{6}$/i.test(data.ink),
+      tienePaper: typeof data.paper === "string" && /^#[0-9a-f]{6}$/i.test(data.paper),
+      tieneBorder: typeof data.border === "string" && /^#[0-9a-f]{6}$/i.test(data.border),
+      paperOscuro: data.paper && utils.lum(data.paper) < CFG.darkMode.lumThresholdPaper,
+      inkClaro: data.ink && utils.lum(data.ink) > CFG.darkMode.lumThresholdInk
+    };
+    
+    const cumple = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    
+    return {
+      score: cumple / total,
+      checks,
+      nivel: cumple === total ? "PERFECTO" : cumple >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: cumple / total >= CFG.verificacion.umbralMinimo
+    };
+  }
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   📞 API CALL (sin cambios)
 ═══════════════════════════════════════════════════════════════ */
 
 async function call(openai, sys, usr, temp, forceJSON = false) {
@@ -297,7 +589,7 @@ async function call(openai, sys, usr, temp, forceJSON = false) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   ⚡ ENRIQUECIMIENTO (Pipeline completo)
+   ⚡ ENRIQUECIMIENTO (Pipeline con verificación)
 ═══════════════════════════════════════════════════════════════ */
 
 async function enrich(libro, openai, ctx) {
@@ -307,9 +599,22 @@ async function enrich(libro, openai, ctx) {
     try {
       // PASO 1: JSON principal
       console.log(`   [1/3] JSON principal...`);
-      const p = prompt(libro, "main", ctx);
+      const p = buildPrompt(libro, "main", ctx);
       let raw = await call(openai, p, "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(raw);
+      
+      // VERIFICACIÓN v9.0
+      if (CFG.verificacion.activa) {
+        const v = VERIFICADOR.main(extra);
+        if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
+          console.log(`   ⚠️  Verificación main: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
+          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k,v]) => !v).map(([k]) => k));
+        }
+        
+        if (CFG.verificacion.reintentoSiBajo && !v.aprobado) {
+          throw new Error(`Verificación main falló: score ${v.score.toFixed(2)}`);
+        }
+      }
       
       // Validar respuesta completa
       if (!extra.frases || !extra.colores || !extra.palabras ||
@@ -321,7 +626,7 @@ async function enrich(libro, openai, ctx) {
       const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
       if (repetidas.length > 0) {
         console.log(`   ⚠️  Repetidas: ${repetidas.join(", ")}, regenerando...`);
-        raw = await call(openai, prompt(libro, "main", ctx), "Palabras únicas", ctx.tempDinamica, true);
+        raw = await call(openai, buildPrompt(libro, "main", ctx), "Palabras únicas", ctx.tempDinamica, true);
         extra = JSON.parse(raw);
       }
       
@@ -338,40 +643,60 @@ async function enrich(libro, openai, ctx) {
       extra.textColors = extra.colores.map(utils.txt);
       
       // PASO 2: Tarjeta contenido
-      console.log(`   [2/3] Tarjeta (journey continuo)...`);
-      const pT = prompt(libro, "tarjeta", ctx, extra);
+      console.log(`   [2/3] Tarjeta...`);
+      const pT = buildPrompt(libro, "tarjeta", ctx, extra);
       let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
       
-      // Limpieza PERFECTA de metadata y markdown
+      // VERIFICACIÓN v9.0
+      if (CFG.verificacion.activa) {
+        const v = VERIFICADOR.tarjeta(rawT);
+        if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
+          console.log(`   ⚠️  Verificación tarjeta: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
+          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k,v]) => !v).map(([k]) => k));
+        }
+        
+        if (CFG.verificacion.reintentoSiBajo && !v.aprobado) {
+          throw new Error(`Verificación tarjeta falló: score ${v.score.toFixed(2)}`);
+        }
+      }
+      
+      // Limpieza PERFECTA
       const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
         return l
-          .replace(/^\[|\]$/g, "")  // Corchetes
-          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")  // Metadata tags
-          .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s]*/gi, "")  // Labels mayúsculas
-          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")  // Labels genéricos
-          .replace(/^\*{1,3}|\*{1,3}$/g, "")  // Markdown * ** ***
-          .replace(/^_{1,3}|_{1,3}$/g, "")     // Markdown _ __ ___
+          .replace(/^\[|\]$/g, "")
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
+          .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s]*/gi, "")
+          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")
+          .replace(/^\*{1,3}|\*{1,3}$/g, "")
+          .replace(/^_{1,3}|_{1,3}$/g, "")
           .trim();
       }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
       
-      // ⭐ FLUJO NATURAL: Sin truncado, sin límites
       extra.tarjeta = {
         titulo: lineas[0] || "",
         parrafoTop: lineas[1] || "",
         subtitulo: lineas[2] || "",
-        parrafoBot: lineas.slice(3).join(" "),  // Todo el contexto
+        parrafoBot: lineas.slice(3).join(" "),
         style: {}
       };
       
       // PASO 3: Tarjeta estilo
-      console.log(`   [3/3] Style dark mode...`);
-      const pE = prompt(libro, "estilo", ctx);
+      console.log(`   [3/3] Style...`);
+      const pE = buildPrompt(libro, "estilo", ctx);
       let rawE = await call(openai, pE, "Genera estilo", ctx.tempDinamica);
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
+        
+        // VERIFICACIÓN v9.0
+        if (CFG.verificacion.activa) {
+          const v = VERIFICADOR.estilo(extra.tarjeta.style);
+          if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
+            console.log(`   ⚠️  Verificación estilo: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
+          }
+        }
         
         // Forzar dark mode si necesario
         if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > CFG.darkMode.lumThresholdPaper) {
@@ -451,13 +776,13 @@ const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║   TRIGGUI v8.2 ULTRA PERFECTION - DEFINITIVO ║");
+console.log("║   TRIGGUI v9.0 NIVEL DIOS - PROMPTS PERFECTOS║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
 console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)} (${ctx.dia})`);
 console.log(`📊 Energía: ${Math.round(ctx.energia * 100)}% | Hawkins: ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}`);
-console.log(`⏱️  Delay: ${CFG.delay}ms | Reintentos: ${CFG.maxReintentos}\n`);
+console.log(`✅ Verificación: ${CFG.verificacion.activa ? "ON" : "OFF"} | Umbral: ${(CFG.verificacion.umbralMinimo * 100).toFixed(0)}%\n`);
 
 const csv = await fs.readFile(CFG.csv, "utf8");
 const lista = parse(csv, { columns: true, skip_empty_lines: true });
@@ -489,32 +814,73 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA RÁPIDA v8.2 ULTRA PERFECTION
+   📖 GUÍA v9.0 NIVEL DIOS
    
-   CAMBIOS v8.2:
-   ✅ FLUJO NATURAL 100%: Sin truncado, contenido respira
-   ✅ Límites como GUÍA: Orientan a IA, no cortan
-   ✅ Limpieza PERFECTA: TÍTULO:, PÁRRAFO:, SUBTÍTULO:, markdown
-   ✅ Contexto rico en P2: Todo el desarrollo necesario
+   🔥 CAMBIOS CLAVE v8.2 → v9.0:
+   ✅ Sistema de prompts en 5 CAPAS verificables
+   ✅ Neurobiología explícita en cada componente
+   ✅ Verificación automática con scoring
+   ✅ Arquitectura escalable para nuevas variables
    
-   PARÁMETROS CLAVE (Línea 17-97):
-   - CFG.temp: Creatividad base (se multiplica por energía día)
-   - CFG.hawkins: Rangos por franja horaria (dinámico)
-   - CFG.energia: Por día semana (afecta temp y frases)
-   - CFG.tarjeta: Guías de longitud (NO truncan) ⭐
-   - CFG.dinamico: Activa/desactiva ajustes automáticos
+   🧠 AÑADIR NUEVAS VARIABLES NEUROBIOLÓGICAS:
    
-   AJUSTAR GUÍAS:
-   1. Título más corto: CFG.tarjeta.tituloGuia = 35
-   2. P2 más largo: CFG.tarjeta.parrafo2Guia = 200
-   3. Subtítulo más corto: CFG.tarjeta.subtituloGuia = 50
+   1. Define en NEUROBIOLOGIA (línea 169):
+      ```
+      nuevaVariable: {
+        fase: "cuando_activarla",
+        metodo: "cómo lo logras",
+        verificacion: "cómo sabes que funcionó"
+      }
+      ```
    
-   FILOSOFÍA v8.2:
-   - IA genera naturalmente
-   - Guías orientan, no limitan
-   - Contenido fluye sin restricciones artificiales
-   - Calidad > Rigidez
+   2. Añade en buildPrompt() dentro del objetivo relevante (línea 256):
+      ```
+      • Nueva variable: [explicación del efecto]
+        Método: [cómo implementarla]
+      ```
    
-   🔥 MÁXIMA PERFECCIÓN ALCANZADA
+   3. Añade verificación en VERIFICADOR (línea 450):
+      ```
+      nuevaCheck: [condición que verifica la variable]
+      ```
+   
+   EJEMPLO: Añadir GABA (neurotransmisor calmante)
+   
+   En NEUROBIOLOGIA:
+   ```
+   gaba: {
+     fase: "transicion_alfa",
+     metodo: "Ritmo pausado, palabras paz/confianza, colores fríos",
+     verificacion: "Usuario siente calma sin somnolencia"
+   }
+   ```
+   
+   En buildPrompt() tarjeta:
+   ```
+   2️⃣ PÁRRAFO 1:
+      ...
+      • GABA: Ritmo pausado que calma sin adormecer
+        Evitar: palabras de urgencia ("rápido", "ahora")
+        Usar: palabras de confianza ("puedes", "descansa")
+   ```
+   
+   En VERIFICADOR.tarjeta:
+   ```
+   sinUrgencia: !/urgente|rápido|ahora\s+mismo/i.test(texto)
+   ```
+   
+   🎯 VERIFICAR SI FUNCIONA:
+   - Activa CFG.verificacion.logNivelBajo = true
+   - Revisa console para ver scores por componente
+   - Score < 0.75 = necesita ajuste en prompt
+   - Score > 0.9 = nivel dios alcanzado
+   
+   💡 FILOSOFÍA v9.0:
+   - Cada prompt explica OBJETIVO (qué), MÉTODO (cómo), VERIFICACIÓN (testeo)
+   - GPT-4o-mini necesita estructura clara, no ambigüedad
+   - Verificación automática = menos debugging manual
+   - Escalable = añadir variables sin romper nada
+   
+   🔥 MÁXIMA PERFECCIÓN ALCANZADA - PROMPT ARCHITECTURE NIVEL DIOS
    
 ═══════════════════════════════════════════════════════════════ */
