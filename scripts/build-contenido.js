@@ -321,7 +321,7 @@ GENERAR componentes que activen esta transición:
 • NO incluir metadata, labels, markdown
 
 ═══════════════════════════════════════════════════════════════
-📤 OUTPUT (JSON válido, sin ```markdown, sin explicaciones):
+📤 OUTPUT (JSON válido, sin bloques de código, sin explicaciones):
 ═══════════════════════════════════════════════════════════════
 
 {
@@ -411,7 +411,7 @@ FILOSOFÍA DE ESCRITURA:
 • NO reiniciar el journey
 • NO usar 3ra persona o tono académico
 • NO acciones vagas ("piensa", "reflexiona")
-• NO incluir: corchetes [], metadata (TÍTULO:, PÁRRAFO:), markdown (**, __, *)
+• NO incluir: corchetes [], metadata (TÍTULO:, PÁRRAFO:), ni formato de markdown
 • NO separadores técnicos
 • NO explicar elecciones
 
@@ -467,7 +467,7 @@ NEUROBIOLOGÍA:
 • NO explicar elecciones
 
 ═══════════════════════════════════════════════════════════════
-📤 OUTPUT (JSON válido, sin ```markdown):
+📤 OUTPUT (JSON válido, sin bloques de código):
 ═══════════════════════════════════════════════════════════════
 
 {
