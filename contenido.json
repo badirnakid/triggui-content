@@ -1,42 +1,134 @@
 {
   "libros": [
     {
-      "titulo": "Sé tu propio CEO",
-      "autor": " Leo Piccioli",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/2c/a4/46/2ca446ef-d5ed-5fa1-309b-410c72c6a93b/1045450739.jpg/626x0w.jpg",
-      "tagline": "Aprende el método para eliminar automatizar y tercerizar tareas y lidera en la era de la inteligencia artificial",
+      "titulo": "Creatividad",
+      "autor": "Ed Catmull",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/94/a5/64/94a56452-3190-72d6-af27-fc0bb20198b9/9788416029204.jpg/626x0w.jpg",
+      "tagline": "sobre liderazgo creativo que recoge los principios que construyeron la cultura singularmente exitosa de Pixar y le permitieron conservar su creatividad sin dejar de evolucionar",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "autonomía",
-        "proactividad",
-        "transformación",
-        "responsabilidad"
+        "inspiración",
+        "resiliencia",
+        "exploración",
+        "autenticidad"
       ],
       "frases": [
-        "🚀 Asume el control de tu tiempo y prioriza tareas clave en tu día.",
-        "🌱 Reflexiona sobre tus hábitos y determina cuáles te impulsan a crecer.",
-        "💡 Visualiza tu futuro ideal y actúa hoy para convertirlo en realidad.",
-        "📈 Establece metas semanales claras y revisa tu progreso cada domingo."
+        "🌟 Visualiza tu idea más loca ahora mismo",
+        "🛠️ Crea un prototipo de tu proyecto en minutos",
+        "🔍 Investiga algo nuevo que despierte tu curiosidad",
+        "💡 Comparte una historia personal que inspire a otros"
       ],
       "colores": [
-        "#ffcc00",
-        "#007acc",
-        "#66cc66",
-        "#ff5733"
+        "#ffcc33",
+        "#ff9933",
+        "#ff6633",
+        "#ff3333"
       ],
       "fondo": "#1a1a1a",
       "textColors": [
         "#000000",
+        "#000000",
         "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "El proceso de revisión continua",
+        "parrafoTop": "He aprendido a valorar cada crítica como una oportunidad para crecer.",
+        "subtitulo": "¿Y si cada feedback se convirtiera en un peldaño hacia mi mejor versión?",
+        "parrafoBot": "Dedica 30 segundos a escribir una idea que te inspire y compártela, como lo hacen en Pixar.",
+        "style": {
+          "accent": "#007acc",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Creatividad%20Ed%20Catmull%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El libro del Niksen",
+      "autor": "Olga Mecking",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/bd/fe/5b/bdfe5b9c-ad86-4e3e-dd3f-b7316ccfe995/9788408249016.jpg/626x0w.jpg",
+      "tagline": "da las claves para que disfrutes de las pequeñas pausas de la vida y logres ser más feliz más productivo y más creativo",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "tranquilidad",
+        "desapego",
+        "reflexión",
+        "simplicidad"
+      ],
+      "frases": [
+        "🌼 Tómate un momento para observar el cielo.",
+        "☕ Disfruta de una taza de té sin distracciones.",
+        "📖 Lee una página de un libro que te inspire.",
+        "🌿 Respira profundamente y siente la naturaleza."
+      ],
+      "colores": [
+        "#ffcc99",
+        "#ffb3b3",
+        "#ffcccc",
+        "#ffe6e6"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Niksen: el arte de no hacer nada",
+        "parrafoTop": "A veces, simplemente me permito estar sin hacer nada y eso me llena.",
+        "subtitulo": "¿Cómo puedo encontrar belleza en la pausa y el silencio?",
+        "parrafoBot": "Después de observar el cielo por un momento, cierra los ojos y respira profundamente durante 30 segundos.",
+        "style": {
+          "accent": "#b3cde0",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20del%20Niksen%20Olga%20Mecking%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Charlas Ted",
+      "autor": "Chris Anderson",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/f0/30/26/f03026c2-8472-c382-734b-6f566690793f/9788498754346.jpg/626x0w.jpg",
+      "tagline": "una charla breve y cuidadosamente preparada puede ser la clave para generar empatía suscitar emoción intercambiar conocimiento y promover un sueño compartido. Una charla bien planificada puede electrizar a todo un público y transformar su visión de las cosas; su poder puede ser muchísimo mayor que cualquier palabra escrita.",
+      "dimension": "Conexión|Transformación|Empoderamiento",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "empatía",
+        "impacto",
+        "comunicación",
+        "visión"
+      ],
+      "frases": [
+        "🤝 Conecta con alguien y comparte tu historia.",
+        "💡 Reflexiona sobre un momento que te impactó.",
+        "🎤 Practica tu charla en voz alta, ¡hazla vibrar!",
+        "🌍 Comparte una idea que pueda transformar vidas."
+      ],
+      "colores": [
+        "#ffcc66",
+        "#ffb366",
+        "#ff9933",
+        "#ff6600"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
         "#000000",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Diseña tu propia estructura de trabajo",
-        "parrafoTop": "Reconozco que soy el arquitecto de mi día a día.",
-        "subtitulo": "¿Qué pasaría si cada tarea que realizo me acerca a mis metas?",
-        "parrafoBot": "Dedica 15 segundos a escribir tres tareas clave para hoy que impacten tu futuro.",
+        "titulo": "El arte de la charla breve",
+        "parrafoTop": "He aprendido que cada palabra cuenta y puede cambiar vidas.",
+        "subtitulo": "¿Estamos realmente escuchando lo que el otro tiene para compartir?",
+        "parrafoBot": "Dedica 30 segundos a escuchar atentamente a alguien, sin interrumpir; su historia podría iluminar tu día.",
         "style": {
           "accent": "#ffcc44",
           "ink": "#e0e0e0",
@@ -44,45 +136,275 @@
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+S%C3%A9%20tu%20propio%20CEO%20%20Leo%20Piccioli%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Charlas%20Ted%20Chris%20Anderson%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "La vía rápida del millonario",
-      "autor": "MJ DeMarco",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/e7/45/3d/e7453d84-b95e-adc6-b60b-87ee375a3930/1027097383.jpg/626x0w.jpg",
-      "tagline": "Hay una carretera oculta que conduce a la riqueza y la libertad financiera un atajo que puede recorrerse a una velocidad deslumbrante. Jubilarte cuatro décadas antes de lo habitual y llevar una vida que la mayoría no puede permitirse es posible. Sin embargo nos han inculcado el dogma de hazte rico poco a poco un plan asfixiante con una ligera posibilidad de obtener riquezas en nuestra vejez: Ve a la universidad saca buenas notas gradúate consigue un buen trabajo ahorra invierte contrata un plan de pensiones. Entonces algún día cuando tengas sesenta y cinco años serás rico.No permitas que tu plan financiero consista en tener esperanzas y rezar! Cambia de carril; ve por la vía rápida y haz realidad tus sueños.",
+      "titulo": "Think Again",
+      "autor": "Adam Grant",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/77/2b/28/772b28ee-2bff-dddf-312b-e6ee7fa271e8/9781984878113.d.jpg/626x0w.jpg",
+      "tagline": "The power of knowing what you don't know",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "empoderamiento",
-        "frustración",
-        "audacia",
+        "curiosidad",
+        "flexibilidad",
+        "autoevaluación",
         "desafío"
       ],
       "frases": [
-        "🚀 Atrévete a romper las cadenas de lo convencional y actúa hoy mismo.",
-        "💡 Identifica la creencia limitante que te frena, anótala y replantea tu futuro.",
-        "🔥 Desata tu potencial: visualiza la vida que deseas y crea un plan audaz.",
-        "📈 Da el primer paso hacia tu libertad financiera, invierte en tu educación ahora."
+        "🔍 Pregúntate: ¿Qué no sé aún? 15-60seg",
+        "🌱 Abre tu mente a nuevas ideas, actúa. 15-60seg",
+        "🧠 Reflexiona sobre tus creencias y ajústalas. 15-60seg",
+        "⚡ Acepta el cambio como una oportunidad. 15-60seg"
       ],
       "colores": [
-        "#ffcc33",
-        "#3399ff",
-        "#ff6699",
-        "#33cc99"
+        "#ffcc66",
+        "#ffb366",
+        "#ff9933",
+        "#ffcc00"
       ],
       "fondo": "#1a1a1a",
       "textColors": [
         "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
+        "#000000",
+        "#000000",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "La vía rápida hacia la riqueza y la libertad financiera",
-        "parrafoTop": "Hoy reconozco que el éxito no es un destino, sino un viaje audaz.",
-        "subtitulo": "¿Qué pasaría si dejaras de esperar para vivir la vida que deseas?",
-        "parrafoBot": "Dedica 30 segundos a escribir tres acciones concretas para comenzar tu camino hoy.",
+        "titulo": "Desaprender para reaprender",
+        "parrafoTop": "Me doy permiso para cuestionar mis certezas y crecer.",
+        "subtitulo": "¿Estoy realmente abierto a cambiar mi perspectiva?",
+        "parrafoBot": "Después de reflexionar sobre mis creencias, dedicaré 30 segundos a investigar una idea que siempre he dado por sentada.",
+        "style": {
+          "accent": "#007acc",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Think%20Again%20Adam%20Grant%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Hay tiempo",
+      "autor": "Jenny Blake",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/2c/ba/00/2cba0031-7acc-68f5-3a50-596fbc5a4ccf/1045156369.jpg/626x0w.jpg",
+      "tagline": "se trata de ser amable contigo y aprender a simplificar y agilizar los procesos lo más que puedas",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "autocompasión",
+        "simplificación",
+        "aprecio",
+        "adaptación"
+      ],
+      "frases": [
+        "🌱 Practica la autocompasión hoy mismo.",
+        "📝 Simplifica tu lista de tareas ahora.",
+        "💖 Aprecia un pequeño logro reciente.",
+        "🔄 Adáptate a un cambio con una acción simple."
+      ],
+      "colores": [
+        "#ffcc66",
+        "#ffb366",
+        "#f2a900",
+        "#ff9933"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "El tiempo es un recurso renovable",
+        "parrafoTop": "Hoy me permito simplificar mi agenda y ser amable conmigo.",
+        "subtitulo": "¿Estoy aprovechando cada momento para crecer y aprender?",
+        "parrafoBot": "Dedica 15 segundos a identificar una tarea que puedes dejar ir hoy.",
+        "style": {
+          "accent": "#9c27b0",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Hay%20tiempo%20Jenny%20Blake%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Cómo conocer a una persona",
+      "autor": "David Brooks",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/54/cf/51/54cf5132-06c7-d163-2a63-2f5d0ef5b9c2/1044120648.jpg/626x0w.jpg",
+      "tagline": "se nutre de la psicología y la neurociencia así como del teatro la filosofía y la historia para ofrecer un enfoque esperanzador sobre la conexión humana que nos enseña a realizar acciones concretas pequeñas pero significativas ser un buen oyente pedir y ofrecer perdón sentarse con quien sufre mirar las cosas desde la perspectiva del otro",
+      "dimension": "Bienestar|Conexión|Introspección",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "reconocimiento",
+        "reflexión",
+        "humanidad",
+        "transformación"
+      ],
+      "frases": [
+        "🕊️ Reconoce la historia de alguien hoy.",
+        "🔍 Reflexiona sobre tus propias percepciones.",
+        "🌱 Celebra la humanidad en cada encuentro.",
+        "💫 Transforma una conversación superficial en profunda."
+      ],
+      "colores": [
+        "#f6c9a8",
+        "#ffb3b3",
+        "#d4e157",
+        "#ffe0b2"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Conexión auténtica",
+        "parrafoTop": "Hoy me permito ver a los demás sin juicios.",
+        "subtitulo": "¿Estoy dispuesto a descubrir la historia detrás de cada rostro?",
+        "parrafoBot": "Dedica 30 segundos a observar y sonreír a alguien, dejando que su esencia te hable.",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+C%C3%B3mo%20conocer%20a%20una%20persona%20David%20Brooks%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Pensar rápido pensar despacio",
+      "autor": "Daniel Kahneman",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/e7/2a/a3/e72aa346-76c8-e141-2283-e7778b372069/9788499922072.jpg/626x0w.jpg",
+      "tagline": "En este libro Kahneman expone la extraordinaria capacidad los errores y los sesgos del pensamiento rápido y revela la duradera influencia de las impresiones intuitivas sobre nuestro pensamiento y nuestra conducta.Consigue revelar cuándo podemos confiar en nuestras intuiciones y cuándo no y de qué modo podemos aprovechar los beneficios del pensamiento lento. Cambiará para siempre nuestra manera de pensar sobre cómo pensamos.",
+      "dimension": "Reflexión|Intuición|Desafío",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "cognición",
+        "sesgo",
+        "intuición",
+        "análisis"
+      ],
+      "frases": [
+        "🧠 Examina tus decisiones rápidas hoy.",
+        "🔍 Identifica un sesgo en tu pensamiento.",
+        "⚖️ Contrasta una intuición con datos reales.",
+        "📊 Dedica un momento a analizar un dilema."
+      ],
+      "colores": [
+        "#f9a4a4",
+        "#ffdd6b",
+        "#77d3e7",
+        "#4b9cd3"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Sistema 1 y Sistema 2",
+        "parrafoTop": "A veces, me sorprendo al dar más valor a mis intuiciones que a los datos.",
+        "subtitulo": "¿Hasta qué punto confío en mi instinto para tomar decisiones?",
+        "parrafoBot": "Tómate 30 segundos para escribir una decisión reciente; evalúa si fue rápida o reflexiva.",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Pensar%20r%C3%A1pido%20pensar%20despacio%20Daniel%20Kahneman%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Hit Refresh",
+      "autor": "Satya Nadella",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/98/1a/52/981a52c1-399c-9f2a-aa5b-a9b67fee4a5f/9780062652515_marketingimage.jpg/626x0w.jpg",
+      "tagline": "At the core Hit Refresh is about us humans and the unique quality we call empathy which will become ever more valuable in a world where the torrent of technology will disrupt the status quo like never before.Ideas excite me Nadella explains. Empathy grounds and centers me. Hit Refresh is a set of reflections meditations and recommendations presented as algorithms from a principled deliberative leader searching for improvement for himself for a storied company and for society.",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "resiliencia",
+        "innovación",
+        "autenticidad",
+        "colaboración"
+      ],
+      "frases": [
+        "🌱 Reflexiona sobre tu camino y crece hoy.",
+        "💡 Comparte una idea innovadora con alguien.",
+        "🤝 Conéctate genuinamente con un compañero.",
+        "🔄 Reevalúa tus objetivos y ajusta el rumbo."
+      ],
+      "colores": [
+        "#f9c74f",
+        "#90be6d",
+        "#577590",
+        "#f94144"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Reiniciar el propósito personal",
+        "parrafoTop": "He aprendido que la empatía puede ser mi brújula en tiempos de cambio.",
+        "subtitulo": "¿Estoy realmente alineado con mis valores en este momento?",
+        "parrafoBot": "Después de reflexionar sobre mis objetivos, dedicaré 15 segundos a escribir una afirmación positiva que me guíe hoy.",
+        "style": {
+          "accent": "#3a86ff",
+          "ink": "#ffffff",
+          "paper": "#1d1d1d",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Hit%20Refresh%20Satya%20Nadella%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Audaz productivo y feliz",
+      "autor": "Robin Sharma",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d2/8f/a9/d28fa91e-a7e2-e802-604b-420ba8128c35/9788416029655.jpg/626x0w.jpg",
+      "tagline": "Este libro ofrece propuestas prácticas que contribuirán a un cambio rápido en los hábitos diarios para alcanzar el máximo potencial de cada uno.Conseguir un rendimiento extraordinario en tu trabajo y en tu vida.Encontrar un enfoque equilibrado del éxito.No dejar nunca de aprender.Desarrollar un entorno propicio para la excelencia.Ejercer un verdadero liderazgo.No dispones de días de más ni de días sin sentido. Hoy mismo puedes tomar la decisión de aspirar a una meta más alta de ser quien siempre has deseado ser.",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "proactividad",
+        "crecimiento",
+        "liderazgo",
+        "equilibrio"
+      ],
+      "frases": [
+        "🚀 Activa tu proactividad en un minuto",
+        "🌱 Dedica un instante a tu crecimiento personal",
+        "👑 Practica el liderazgo con una acción diaria",
+        "⚖️ Encuentra tu equilibrio en solo 60 segundos"
+      ],
+      "colores": [
+        "#f9c74f",
+        "#90be6d",
+        "#577590",
+        "#f94144"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "La grandeza de la rutina diaria",
+        "parrafoTop": "Hoy elijo ser audaz y productivo en cada acción.",
+        "subtitulo": "¿Estoy dispuesto a desafiar mis límites para alcanzar mi máximo potencial?",
+        "parrafoBot": "Dedica 15 segundos a visualizar tu día ideal, siente cómo esa imagen te impulsa hacia adelante.",
         "style": {
           "accent": "#ffcc00",
           "ink": "#ffffff",
@@ -90,375 +412,53 @@
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20v%C3%ADa%20r%C3%A1pida%20del%20millonario%20MJ%20DeMarco%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Audaz%20productivo%20y%20feliz%20Robin%20Sharma%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Sin querer queriendo",
-      "autor": " Roberto Gómez Bolaños",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a5/db/38/a5db38c8-dac8-88e3-c404-fd73ed664963/9786071110565.jpg/626x0w.jpg",
-      "tagline": "Esta autobiografía del genial Chespirito escrita con su humor inconfundible nos descubre el corazón de un hombre íntegro que ha hecho del noble oficio de entretener un auténtico arte.Sin querer queriendo es un testimonio apasionante de las andanzas; luchas y triunfos de un hombre que supo conquistar el mundo del espectáculo mediante el trabajo la tenacidad y el sentido humano. A través de innumerables anécdotas; las hay curiosas e insólitas trágicas y cómicas. Gómez Bolaños relata sus travesuras de infancia; sus pendencias de juventud; su ingreso casi fortuito al mundo de la radio y la televisión la manera en que nacieron personajes entrañables y muchos otros aspectos de su vida y su trabajo. ",
-      "dimension": "Bienestar|Prosperidad|Conexión",
+      "titulo": "El yoga de Jesús",
+      "autor": "Paramahansa Yogamanda",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/61/c6/0a/61c60a8d-bcd8-6a9c-335c-d97e5dec683e/TYOJ_S_FrontCover.jpg/626x0w.jpg",
+      "tagline": "Jesús impartió enseñanzas que a primera vista parecen simples pero que son mucho más profundas de lo que la mayoría de la gente supone.En [sus enseñanzas] se incluye toda la ciencia del yoga el camino transcendental para alcanzar la unión divina a través de la meditación.En esta extraordinaria obra Paramahansa Yogananda revela la ciencia del yoga que se halla oculta en los Evangelios y confirma que Jesús al igual que los antiguos sabios y maestros de Oriente no sólo conocía el yoga sino que enseñó a sus discípulos más cercanos esta ciencia universal cuya finalidad es alcanzar la unión con Dios. Este libro es una concisa recopilación de una obra profusamente elogiada del autor y publicada en tres volúmenes La Segunda Venida de Cristo: La resurrección del Cristo que mora en tu interior cuya profunda visión espiritual trasciende los siglos de dogmas e interpretaciones erróneas que han ensombrecido las enseñanzas originales de Jesús y muestra que él enseñó un sendero unificador por medio del cual los buscadores de todas las religiones tienen la posibilidad de entrar en el reino de Dios.",
+      "dimension": "Espiritualidad|Introspección|Trascendencia",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "nostalgia",
-        "resiliencia",
-        "humor",
-        "afecto"
+        "iluminación",
+        "meditación",
+        "sabiduría",
+        "trascendencia"
       ],
       "frases": [
-        "😂 Recuerda una travesura de tu infancia y ríe por ello en este instante.",
-        "💪 Encuentra una lección en un fracaso pasado que te hizo más fuerte hoy.",
-        "❤️ Comparte un momento divertido con alguien cercano y revivan juntos esa alegría.",
-        "🎭 Crea un pequeño personaje ficticio y escribe su historia, llenándola de humor."
+        "🧘‍♂️ Practica la meditación diaria por 20 min.",
+        "📖 Lee un pasaje del Evangelio y reflexiona.",
+        "🌌 Conéctate con tu interior en silencio total.",
+        "✨ Visualiza la unión divina durante tu día."
       ],
       "colores": [
-        "#ffcc99",
-        "#66b3ff",
-        "#ff9999",
-        "#ffd700"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "El arte de entretener sin querer",
-        "parrafoTop": "He aprendido que la autenticidad en mis travesuras conecta con mi esencia.",
-        "subtitulo": "¿De qué forma puedo redescubrir mi niño interior para reírme de nuevo?",
-        "parrafoBot": "Recuerda un momento divertido y anímate a contárselo a alguien más en los próximos 30 segundos.",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Sin%20querer%20queriendo%20%20Roberto%20G%C3%B3mez%20Bola%C3%B1os%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Rompe la barrera del no",
-      "autor": "Chris Voss",
-      "portada": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1479919650i/33114175.jpg",
-      "tagline": "Un método rompedor desarrollado sobre el terreno para negociaciones duras tanto en la oficina como en casa. Rompe la barrera del no es un manual de negociación imprescindible desarrollado y perfeccionado a lo largo de la extraordinaria carrera de Chris Voss como negociador en secuestros con rehenes y como reconocido profesor en las escuelas de negocio más prestigiosas del mundo. Voss ha puesto a prueba estas técnicas y ha comprobado su efectividad tanto en los inicios de su carrera cuando patrullaba las peligrosas calles de Kansas City como en los cursos que imparte. Entre las personas que han aplicado sus enseñanzas se encuentran desde clientes que han visto aumentar los beneficios de sus empresas hasta estudiantes de programas de MBA que han conseguido empleos mejores o incluso padres que tienen que lidiar con sus hijos.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "desconfianza",
-        "conexión",
-        "persuasión",
-        "estrategia"
-      ],
-      "frases": [
-        "🤔 Reflexiona sobre tus desconfianzas en la negociación. Tómate un momento.",
-        "🤝 Practica una técnica de conexión: escucha activa con alguien hoy.",
-        "🗣️ Aplica una estrategia de persuasión, pide algo pequeño y escucha la respuesta.",
-        "📊 Revisa una situación reciente y anota cómo podrías haber negociado mejor."
-      ],
-      "colores": [
-        "#ffcc00",
-        "#3399ff",
-        "#66b3ff",
-        "#ff9999"
+        "#f3e5ab",
+        "#ffeaa7",
+        "#ffdd93",
+        "#ffe1a8"
       ],
       "fondo": "#2a2a2a",
       "textColors": [
         "#000000",
-        "#FFFFFF",
+        "#000000",
         "#000000",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "La negociación es un proceso de descubrimiento",
-        "parrafoTop": "Reconozco que cada \"no\" me acerca más a un \"sí\" valioso",
-        "subtitulo": "¿Qué pasaría si reinterpretaras el rechazo como una oportunidad?",
-        "parrafoBot": "Hoy, en los próximos 30 segundos, practica la escucha activa con alguien y observa cómo cambia la dinámica.",
+        "titulo": "La ciencia del yoga en los Evangelios",
+        "parrafoTop": "He descubierto que las enseñanzas de Jesús son un camino hacia la unión divina.",
+        "subtitulo": "¿Estoy listo para experimentar la paz profunda que ofrece esta conexión espiritual?",
+        "parrafoBot": "Dedico 20 segundos a respirar profundamente, sintiendo cada inhalación como un abrazo del espíritu.",
         "style": {
-          "accent": "#1a73e8",
-          "ink": "#ffffff",
-          "paper": "#1c1c1c",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Rompe%20la%20barrera%20del%20no%20Chris%20Voss%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Spin selling",
-      "autor": "Neil Rackham",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/b7/01/37/b70137f5-1598-9f7d-2275-e5bee13d645c/9781260027099.jpg/626x0w.jpg",
-      "tagline": "the revolutionary SPIN (Situation Problem Implication Need payoff) strategy",
-      "dimension": "Conexión|Logro|Descubrimiento",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "satisfacción",
-        "curiosidad",
-        "intensidad",
-        "claridad"
-      ],
-      "frases": [
-        "🔍 Descubre qué necesitas realmente en tu proceso de ventas. Tómate un minuto para reflexionar.",
-        "✨ Conéctate con el dolor del cliente y genera empatía, siente la intensidad de su necesidad.",
-        "📊 Evalúa la situación actual de tus clientes en solo 60 segundos, ¡es tu momento para brillar!",
-        "💡 Reflexiona sobre las implicaciones de no satisfacer una necesidad. Dedica un instante a pensar en ello."
-      ],
-      "colores": [
-        "#ff6f61",
-        "#3cba9f",
-        "#f7b733",
-        "#d5006d"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "La venta gira en torno a la necesidad del cliente",
-        "parrafoTop": "Reconozco que escuchar profundamente me conecta con sus deseos.",
-        "subtitulo": "¿Estoy realmente entendiendo lo que mis clientes necesitan?",
-        "parrafoBot": "Después de reflexionar sobre sus inquietudes, dedica 30 segundos a formular preguntas que revelen sus verdaderas prioridades.",
-        "style": {
-          "accent": "#4b0082",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Spin%20selling%20Neil%20Rackham%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Shakespeare para enamorados",
-      "autor": "Allan Percy",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/86/21/33/86213375-5ff0-e621-26a6-35a2a084f8fb/9788490629918.jpg/626x0w.jpg",
-      "tagline": "Del flechazo al desengaño del primer beso al amor imposible del compromiso a los celos Shakespeare para enamorados saca de los escenarios y de las antologías poéticas la ciencia shakespeariana del amor para iluminar nuestra vida cotidiana y por fin dar respuesta a preguntas como: ¿Por qué hay personas que tienen mala suerte en las relaciones sentimentales? ¿Cómo se cura el mal de amores? ¿Se puede vivir un romance toda la vida? ¿Cuál es el secreto de la seducción? ¿Cómo luchar contra los celos?",
-      "dimension": "Bienestar|Conexión|Introspección",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "anhelo",
-        "desengaño",
-        "seducción",
-        "celos"
-      ],
-      "frases": [
-        "💔 Reflexiona sobre un amor perdido y siente el anhelo en tu corazón.",
-        "😞 Escribe una carta a ese amor que no fue y deja fluir el desengaño.",
-        "😍 Practica la seducción: mira a los ojos de alguien y sonríe por un momento.",
-        "👀 Reconoce tus celos, escribe tres cosas que te hacen sentir seguro en tu relación."
-      ],
-      "colores": [
-        "#E63946",
-        "#F1FAEE",
-        "#A8DADC",
-        "#457B9D"
-      ],
-      "fondo": "#2a2a2a",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "El amor es un juego de palabras y corazones",
-        "parrafoTop": "He aprendido a reconocer mis propias heridas y el peso del desamor.",
-        "subtitulo": "¿Estoy dispuesto a abrir mi corazón al verdadero romance?",
-        "parrafoBot": "Mientras reflexiono sobre ese amor que no fue, tómate un minuto para escribir una nota de gratitud a la vida por las lecciones aprendidas.",
-        "style": {
-          "accent": "#F4A261",
-          "ink": "#E0E0E0",
-          "paper": "#1F1F1F",
-          "border": "#2A2A2A"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Shakespeare%20para%20enamorados%20Allan%20Percy%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Superpoderes del éxito para gente normal",
-      "autor": "Mago More",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a7/58/65/a75865d8-5636-d11c-e673-7de8d9987d2b/9788416253470.jpg/626x0w.jpg",
-      "tagline": "En este libro cuento cómo he pasado de ser un auténtico desastre en todo a mejorar mi vida ostensiblemente O como diría mi madre cómo pasé de ser un perroflauta a convertirme en un flautista de Helín",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "autenticidad",
-        "transformación",
-        "resiliencia",
-        "motivación"
-      ],
-      "frases": [
-        "🚀 Define tu propia autenticidad en solo 15 segundos.",
-        "🌱 Aplica una pequeña transformación a tu rutina diaria hoy.",
-        "💪 Encuentra un momento para ser resiliente ante un reto inminente.",
-        "🔥 Dedica 30 segundos para motivarte con un mantra personal."
-      ],
-      "colores": [
-        "#1D3557",
-        "#F6D55C",
-        "#2A9D8F",
-        "#E9C46A"
-      ],
-      "fondo": "#0a0a0a",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Superpoderes cotidianos que todos podemos activar",
-        "parrafoTop": "He aprendido a dar pequeños pasos hacia mis metas, sin juzgarme.",
-        "subtitulo": "¿Estoy listo para descubrir mi potencial escondido?",
-        "parrafoBot": "Dedica 30 segundos a identificar una acción sencilla que desees iniciar hoy.",
-        "style": {
-          "accent": "#F77B7D",
+          "accent": "#ffcc00",
           "ink": "#ffffff",
           "paper": "#1a1a1a",
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Superpoderes%20del%20%C3%A9xito%20para%20gente%20normal%20Mago%20More%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Trabaja duro trabaja con astucia",
-      "autor": "Curtis Jackson",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir;Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo.",
-      "dimension": "Superación|Éxito|Adaptación",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "determinación",
-        "superación",
-        "estrategia",
-        "perseverancia"
-      ],
-      "frases": [
-        "💪 Enfócate en tu meta y establece un plan sólido para alcanzarla.",
-        "🔄 Aprende de tus errores, ajusta tu estrategia y vuelve más fuerte.",
-        "🎯 Visualiza el éxito y actúa con confianza en cada paso que tomas.",
-        "📈 Evalúa tus progresos constantemente; la adaptación es clave."
-      ],
-      "colores": [
-        "#F9AFAE",
-        "#FFB4A2",
-        "#D5AAFF",
-        "#B9FBC0"
-      ],
-      "fondo": "#2a2a2a",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "El éxito es un viaje de adaptaciones constantes. He aprendido que, en cada caída, la clave está en cómo vuelvo a levantarme. ¿Cómo puedo transformar mis fracasos en oportunidades? Después de evaluar mis progresos, dedico 30 segundos para visualizar mi próximo objetivo y crear un plan claro para alcanzarlo.",
-        "parrafoTop": "",
-        "subtitulo": "",
-        "parrafoBot": "",
-        "style": {
-          "accent": "#F15BB5",
-          "ink": "#FFFFFF",
-          "paper": "#1A1A1A",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Trabaja%20duro%20trabaja%20con%20astucia%20Curtis%20Jackson%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Tus zonas mágicas",
-      "autor": "Wayne W. Dyer",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/5d/1f/9c/5d1f9c93-5e9d-3881-f3d5-abd14a1c5041/9788466341752.jpg/626x0w.jpg",
-      "tagline": "¿Solo existe la realidad tangible la que reconocemos por nuestros sentidos? ¿No existirá también una realidad «subyacente» sin desarrollar en la mayoría de los seres pero que daría a estos un ilimitado poder para realizar sus vidas con plenitud? Afirma la existencia de una realidad mágica en cada uno para ser utilizada como un único fin posible: lograr lo mejor para uno mismo y para los otros.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "expansión",
-        "autodeterminación",
-        "potencialidad",
-        "sintonía"
-      ],
-      "frases": [
-        "🌟 Reconoce tu magia interior y expande tus horizontes en este momento.",
-        "✨ Toma decisiones que reflejen tu auténtico ser, ¡solo por hoy!",
-        "🌈 Conéctate con lo profundo de ti mismo y despierta tu verdadero potencial.",
-        "💖 Siéntete en sintonía con el universo; respira y actúa desde el corazón."
-      ],
-      "colores": [
-        "#FF6F61",
-        "#6B5B95",
-        "#88B04B",
-        "#F7CAC9"
-      ],
-      "fondo": "#1A1A1A",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "La magia de tu ser interior",
-        "parrafoTop": "Hoy reconozco y valoro mi esencia única sin juicios.",
-        "subtitulo": "¿Estoy dispuesto a explorar la realidad ilimitada que reside en mí?",
-        "parrafoBot": "Dedico 30 segundos a cerrar los ojos, respirar profundamente y visualizar mi luz interior brillando.",
-        "style": {
-          "accent": "#FFD700",
-          "ink": "#E0E0E0",
-          "paper": "#1A1A1A",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Tus%20zonas%20m%C3%A1gicas%20Wayne%20W.%20Dyer%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Insanely Simple: The Obsession That Drives Apple's Success",
-      "autor": " Ken Segall",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/05/ef/af/05efafa4-10d5-53fc-0985-2c38154be882/9781101572047.jpg/626x0w.jpg",
-      "tagline": "Simplicity isn’t just a design principle at Apple—it’s a value that permeates every level of the organization. The obsession with Simplicity is what separates Apple from other technology companies. It’s what helped Apple recover from near death in 1997 to become the most valuable company on Earth in 2011.Segall has a unique perspective given his years of experience creating campaigns for other iconic tech companies including IBM Intel and Dell. It was the stark contrast of Apple’s ways that made Segall appreciate the power of Simplicity and inspired him to help others benefit from it.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "claridad",
-        "simplicidad",
-        "innovación",
-        "focalización"
-      ],
-      "frases": [
-        "🌟 Simplifica tu vida: Elimina lo innecesario y enfócate en lo esencial.",
-        "🚀 Acelera tus ideas: Aplica la innovación de Apple para mejorar tu día a día.",
-        "💡 Encuentra claridad: Dedica un momento a identificar qué es realmente importante para ti.",
-        "📏 Define tus límites: Aprende a decir 'no' para mantener tu enfoque en lo que importa."
-      ],
-      "colores": [
-        "#00A3E0",
-        "#FF6F61",
-        "#F9AFAE",
-        "#FFD700"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Menos es más en la búsqueda de la grandeza",
-        "parrafoTop": "He aprendido que simplificar mis decisiones me acerca a lo esencial.",
-        "subtitulo": "¿Estoy realmente priorizando lo que importa o solo llenando mi vida de ruido?",
-        "parrafoBot": "En los próximos 30 segundos, elige un compromiso diario y elimínalo de tu agenda para abrir espacio a lo verdaderamente relevante.",
-        "style": {
-          "accent": "#F8B400",
-          "ink": "#E0E0E0",
-          "paper": "#1A1A1A",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Insanely%20Simple%3A%20The%20Obsession%20That%20Drives%20Apple's%20Success%20%20Ken%20Segall%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20yoga%20de%20Jes%C3%BAs%20Paramahansa%20Yogamanda%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Padres brillantes maestros fascinantes",
@@ -468,38 +468,38 @@
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "inteligencia emocional",
+        "empoderamiento",
         "empatía",
-        "autonomía",
-        "pensamiento crítico"
+        "reflexión",
+        "creatividad"
       ],
       "frases": [
-        "🧠 Practica la empatía en tu hogar con una conversación profunda hoy.",
-        "🌱 Fomenta la autonomía permitiendo que tus hijos tomen decisiones pequeñas.",
-        "📚 Promueve el pensamiento crítico, cuestionando juntos una noticia actual.",
-        "❤️ Inicia un diálogo emocional, comparte tus sentimientos y escucha atentamente."
+        "🌱 Fomenta el empoderamiento en tus hijos hoy.",
+        "🤝 Practica la empatía escuchando sin juzgar.",
+        "💭 Dedica un momento a reflexionar sobre tu impacto.",
+        "🎨 Estimula la creatividad con juegos de imaginación."
       ],
       "colores": [
-        "#f2d6c5",
-        "#a3e1d4",
-        "#ffcb47",
-        "#e57373"
+        "#f5e6b3",
+        "#a4d7e1",
+        "#ffcc99",
+        "#ffe0b2"
       ],
-      "fondo": "#1a1a1a",
+      "fondo": "#2a2a2a",
       "textColors": [
         "#000000",
         "#000000",
         "#000000",
-        "#FFFFFF"
+        "#000000"
       ],
       "tarjeta": {
-        "titulo": "El líder educativo emocional",
-        "parrafoTop": "Hoy me siento más consciente de cómo mis palabras afectan a los jóvenes que educamos.",
-        "subtitulo": "¿Cómo puedo ser un faro de luz en el camino hacia su felicidad?",
-        "parrafoBot": "Dedica 15 segundos a observar cómo reacciona tu hijo ante una pequeña crítica; luego, ofrece un comentario positivo.",
+        "titulo": "La inteligencia emocional como brújula educativa",
+        "parrafoTop": "Hoy reconozco que cada emoción tiene un propósito en el aprendizaje.",
+        "subtitulo": "¿Cómo puedo cultivar la curiosidad para que mis hijos crezcan?",
+        "parrafoBot": "Dedico 30 segundos a observar cómo se sienten mis hijos al aprender, creando un espacio seguro para su desarrollo.",
         "style": {
-          "accent": "#8bc34a",
-          "ink": "#ffffff",
+          "accent": "#7f9c9f",
+          "ink": "#e0e0e0",
           "paper": "#1a1a1a",
           "border": "#333333"
         }
@@ -507,134 +507,180 @@
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Padres%20brillantes%20maestros%20fascinantes%20Augusto%20Cury%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "No me puedes lastimar",
-      "autor": "David Goggins",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/20/ee/fb/20eefb8b-6bb2-5c6a-70c6-8a31b46f2655/9781544529134.jpg/626x0w.jpg",
-      "tagline": "La pobreza los prejuicios y los malos tratos físicos colorearon sus días y atormentaron sus noches. Pero gracias a su autodisciplina su fortaleza mental y trabajo duro Goggins pasó de ser un joven con sobrepeso deprimido y sin futuro a convertirse en uno de los mejores atletas de resistencia del mundo. Su historia ilumina un camino que cualquiera puede seguir para superar el dolor vencer al miedo y alcanzar su máximo potencial.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
+      "titulo": "Confía en mí estoy mintiendo",
+      "autor": "Ryan Holiday",
+      "portada": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1446044977i/18295340.jpg",
+      "tagline": "Hoy en día: un rumor malicioso por Internet puede costarle millones a una empresa. Un producto o una persona se convierten en celebridades de la nada. Un político puede ver truncada su carrera por algo nimio que hizo en algún momento. Estas cosas suceden todos los días lo que muchos no saben es quienes son que esto suceda. Normalmente es alguien como el autor Soy un manipulador de los medios en un mundo en el que los blogs controlan y distorsionan las noticias. Mi trabajo es controlar los blogs al menos tanto como una persona pueda; esa es la premisa de Ryan Holiday y sigue. En nuestra cultura actual: 1) Algunos grandes blogs manejas la agenda de los medios 2) Los blogueros son escalos del dinero la tecnología y las fechas límites 3) los manipuladores aprovechan estas necesidades para modificar todo lo que lee  escuchas y ves on y offline",
+      "dimension": "Conexión|Manipulación|Desconfianza",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "resiliencia",
-        "superación",
-        "determinación",
-        "autodisciplina"
+        "manipulación",
+        "desconfianza",
+        "estrategia",
+        "control"
       ],
       "frases": [
-        "🏃‍♂️ Corre una milla más, desafía tus límites y siente la fuerza en ti.",
-        "🔥 Enfrenta tu mayor miedo hoy, transforma ese dolor en motivación.",
-        "💪 Practica la autodisciplina: despierta 15 minutos antes y comienza a entrenar.",
-        "🌄 Medita por 10 minutos, visualiza tu éxito superando obstáculos."
+        "🕵️‍♂️ Investiga rumores antes de creer.",
+        "🤔 Cuestiona la veracidad de las noticias.",
+        "📊 Analiza cómo se difunden las mentiras.",
+        "🔍 Busca fuentes confiables para informarte."
       ],
       "colores": [
-        "#ff6f61",
-        "#6ab04c",
-        "#e58e26",
-        "#2d98da"
+        "#2e6e9e",
+        "#c94c4c",
+        "#7b9a5d",
+        "#f1a65d"
       ],
-      "fondo": "#1c1c1c",
+      "fondo": "#1a1a1a",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ],
       "tarjeta": {
-        "titulo": "Superación del dolor como motor de cambio",
-        "parrafoTop": "Hoy reconozco que cada dificultad me acerca a mi mejor versión.",
-        "subtitulo": "¿Estoy dispuesto a transformar mis luchas en oportunidades?",
-        "parrafoBot": "Recuerda: mientras meditas, enfócate en un pequeño desafío y resuélvelo en 30 segundos.",
+        "titulo": "Rumores como armas de doble filo",
+        "parrafoTop": "He aprendido a cuestionar lo que veo y escucho.",
+        "subtitulo": "¿Hasta qué punto nuestras creencias están moldeadas por las mentiras?",
+        "parrafoBot": "Dedica 30 segundos a investigar la fuente de una noticia antes de compartirla.",
+        "style": {
+          "accent": "#4a2c2a",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#3d3d3d"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Conf%C3%ADa%20en%20m%C3%AD%20estoy%20mintiendo%20Ryan%20Holiday%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "La magia de la concentración",
+      "autor": "Daigo",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/eb/a8/56/eba85611-fb88-bcbb-f0af-f87aac877f5a/9786073192934.jpg/626x0w.jpg",
+      "tagline": "presenta técnicas y estrategias para incrementar tu fuerza de voluntad evitar el cansancio mental y fortalecer tus hábitos Entiende cómo funciona tu mente aumenta la concentración el rendimiento y la productividad en tu vida profesional y personal",
+      "dimension": "Concentración|Progreso|Autodisciplina",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "determinación",
+        "enfoque",
+        "resiliencia",
+        "autoconciencia"
+      ],
+      "frases": [
+        "🧠 Enfócate en una tarea por 15 minutos.",
+        "🔄 Repite un mantra para mantenerte presente.",
+        "⏳ Establece un temporizador y respira profundo.",
+        "📅 Planifica tu día con bloques de tiempo."
+      ],
+      "colores": [
+        "#d1e7dd",
+        "#ffeeba",
+        "#f8d7da",
+        "#cfe2ff"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Entrenamiento de la mente en bloques de tiempo",
+        "parrafoTop": "He aprendido a dividir mis tareas en segmentos cortos y manejables.",
+        "subtitulo": "¿Estoy dispuesto a transformar mi concentración en un superpoder?",
+        "parrafoBot": "Mientras respiro profundamente, me comprometo a dedicar 20 segundos a visualizar mi próximo bloque de trabajo.",
         "style": {
           "accent": "#4a90e2",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+No%20me%20puedes%20lastimar%20David%20Goggins%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20magia%20de%20la%20concentraci%C3%B3n%20Daigo%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Las leyes de la naturaleza humana",
-      "autor": "Robert Greene",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/8f/8f/1c/8f8f1c54-1b11-61b1-f16c-6f027cc77bef/1029110002.jpg/626x0w.jpg",
-      "tagline": "Como animales sociales nuestras vidas dependen de las relaciones que forjamos.Por eso no bastan nuestro talento cono-cimiento y formación: saber por qué la gente hace lo que hace es la herramienta más importante que podemos dominar. Robert Greene nos enseña cómo controlar nuestras emociones cómo leer mejor las intenciones de los demás cómo desarrollar la empatía para servir a nuestros propósitos cómo ver detrás de las máscaras y cómo modificar nuestros comportamientos negativos.Un tratado indispensable para aprender las mejores tácticas del autoconocimiento el éxito y la autodefensa.",
-      "dimension": "Conexión|Autoconocimiento|Transformación",
-      "punto": "Creativo|Activo|Máximo",
-      "palabras": [
-        "manipulación",
-        "vulnerabilidad",
-        "estrategia",
-        "intencionalidad"
-      ],
-      "frases": [
-        "🎭 Descubre cómo las máscaras que usamos ocultan nuestras verdaderas intenciones. ¡Sé consciente! (15 seg)",
-        "🧩 Reflexiona sobre tu vulnerabilidad: ¿te acerca o te aleja de los demás? Conéctate a ti mismo. (30 seg)",
-        "🔍 Analiza tus interacciones: ¿estás actuando con estrategia en lugar de reactuar? Sé intencional. (45 seg)",
-        "📖 Lee las señales ocultas en las palabras de otros. Comprenderlos transforma tu comunicación. (60 seg)"
-      ],
-      "colores": [
-        "#1c2833",
-        "#d35400",
-        "#2980b9",
-        "#f39c12"
-      ],
-      "fondo": "#2c3e50",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Desenmascarar intenciones ocultas",
-        "parrafoTop": "Reconozco que mis interacciones a menudo esconden verdades.",
-        "subtitulo": "¿Cómo puedo deshacerme de las máscaras que limitan mis conexiones?",
-        "parrafoBot": "Después de reflexionar sobre mi vulnerabilidad, practicaré la honestidad en mis palabras durante 30 segundos.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#2a2a2a"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20leyes%20de%20la%20naturaleza%20humana%20Robert%20Greene%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Timeboxing",
-      "autor": "Marc Zao-Sanders",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/26/c3/4b/26c34bb3-e2c4-edb2-92a0-d437e210e268/9788410159792.jpeg/626x0w.jpg",
-      "tagline": "The Power of Doing One Thing at a Time",
+      "titulo": "La psicología del dinero",
+      "autor": "Morgan Housel",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/af/91/e6/af91e624-1850-7aef-661a-dc9f390922c7/9788408247265.jpg/626x0w.jpg",
+      "tagline": "En cuestiones de dinero lo que importa no es lo listo que seas sino cómo te comportas.Tendemos a pensar en la inversión o la gestión de las finanzas personales como una disciplina matemática en la que los datos y las fórmulas nos dicen exactamente qué hacer. Sin embargo el rasgo que define a las personas que logran enriquecerse no es su destreza con los números ni su salario o su talento sino su historia personal sus motivaciones y su visión única del mundo.Este libro llamado a convertirse en un clásico de las finanzas personales nos provee del conocimiento esencial para entender la psicología del dinero y nos invita a hacernos una pregunta fundamental que raramente nos hacemos cuál es nuestra relación con el dinero y qué queremos realmente de él.",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "enfoque",
-        "productividad",
-        "organización",
-        "equilibrio"
+        "vulnerabilidad",
+        "historias",
+        "anhelo",
+        "perspectiva"
       ],
       "frases": [
-        "⏰ Establece un bloque de tiempo para una tarea específica y comienza a trabajar.",
-        "🗒️ Organiza tu día con horarios definidos para cada actividad clave.",
-        "🔄 Evalúa cómo pasaste tu tiempo ayer y ajusta tus bloques hoy.",
-        "🌟 Dedica 15 minutos a planificar tu semana con claridad y propósito."
+        "💭 Reflexiona sobre tus experiencias pasadas.",
+        "📈 Visualiza tu futuro financiero ideal ahora.",
+        "🔍 Examina cómo tus creencias afectan tus decisiones.",
+        "📝 Escribe una carta a tu yo del pasado sobre dinero."
       ],
       "colores": [
-        "#f9caa0",
-        "#7ed957",
-        "#ff6b81",
-        "#00b894"
+        "#e0f7fa",
+        "#ffe0b2",
+        "#ffccbc",
+        "#c8e6c9"
       ],
-      "fondo": "#1c1c1c",
+      "fondo": "#1a1a1a",
       "textColors": [
         "#000000",
         "#000000",
-        "#FFFFFF",
+        "#000000",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "Dividir el tiempo en bloques intencionados",
-        "parrafoTop": "Hoy decidí priorizar mi bienestar y ser más eficiente.",
-        "subtitulo": "¿Cómo puedo transformar mis días al asignar tiempo específico a cada tarea?",
-        "parrafoBot": "Dedico 30 segundos ahora para visualizar la tarea más importante del día y planificar su bloque de tiempo.",
+        "titulo": "La narrativa del dinero",
+        "parrafoTop": "A través de mi historia personal, he aprendido que el dinero es más que números.",
+        "subtitulo": "¿Estoy realmente en sintonía con lo que el dinero significa para mí?",
+        "parrafoBot": "Después de reflexionar sobre mis decisiones pasadas, tomaré 30 segundos para escribir un objetivo financiero claro y específico.",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20psicolog%C3%ADa%20del%20dinero%20Morgan%20Housel%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Tu momento es ahora",
+      "autor": "Victor Hugo Manzanilla",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/626x0w.jpg",
+      "tagline": "Este libro te guiará por un proceso de tres pasos sencillos cuya aplicación garantizan que alcances tus sueños y metas El éxito es una ciencia y un arte a la vez es un arte un proceso de descubrirte a ti mismo y encontrar plenitud y significado para tu vida",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "iluminación",
+        "descubrimiento",
+        "transformación",
+        "motivación"
+      ],
+      "frases": [
+        "💡 Descubre tu propósito en el día a día.",
+        "🌱 Da un paso hacia tus sueños ahora mismo.",
+        "🚀 Transforma tus metas en acciones tangibles.",
+        "✨ Encuentra inspiración en cada pequeño logro."
+      ],
+      "colores": [
+        "#ffecb3",
+        "#ffe082",
+        "#ffd54f",
+        "#ffb300"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "El momento decisivo es ahora",
+        "parrafoTop": "Reconozco que cada pequeño paso cuenta en mi camino.",
+        "subtitulo": "¿Qué pasaría si hoy decidiera actuar y no esperar más?",
+        "parrafoBot": "Dedica 15 segundos a escribir una meta sencilla que quieras alcanzar y compártela con alguien.",
         "style": {
           "accent": "#4a90e2",
           "ink": "#ffffff",
@@ -642,283 +688,237 @@
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Timeboxing%20Marc%20Zao-Sanders%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Tu%20momento%20es%20ahora%20Victor%20Hugo%20Manzanilla%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Come muévete y duerme",
-      "autor": "Tom Rath",
-      "portada": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1475862037i/32202374.jpg",
-      "tagline": "The decisions you make on a daily basis are important because eventually those decisions if correct increase your changes of living longer and healthier lives. If you eat exercise and sleep better today; tomorrow you will have more energy you will treat your family and friends better you will have more success at work and you will contribute more to your community. This book is an invitation to adopt healthier habits. Each of the thirty chapters of this volume bring together scientific findings about diet exercise and sleep.",
+      "titulo": "Extreme ownership",
+      "autor": "Jocko Willink",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/af/2b/a9/af2ba9d3-b21f-ed60-16f2-a4fe2a4501b7/9781250184726.jpg/626x0w.jpg",
+      "tagline": "demonstrate how to apply powerful leadership principles from the battlefield to business and life",
       "dimension": "Bienestar|Prosperidad|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "renovación",
-        "motivación",
-        "conciencia",
-        "vitalidad"
+        "responsabilidad",
+        "liderazgo",
+        "resiliencia",
+        "disciplina"
       ],
       "frases": [
-        "🌱 Descubre una nueva forma de alimentarte en solo 15 segundos.",
-        "🏃‍♂️ Activa tu cuerpo: mueve tus músculos con un ejercicio breve ahora.",
-        "😴 Regenera tu mente: cierra los ojos y respira profundamente por 30 segundos.",
-        "🥗 Elige un snack saludable y hazlo en menos de un minuto."
+        "💪 Asume tu responsabilidad en cada acción",
+        "🚀 Lidera con el ejemplo y transforma equipos",
+        "🌱 Cultiva resiliencia ante los desafíos diarios",
+        "⏳ Practica la disciplina para alcanzar tus metas"
       ],
       "colores": [
-        "#70c1b3",
-        "#f9f7f7",
-        "#ff6b6b",
-        "#ffcc29"
+        "#2E7D32",
+        "#FFB300",
+        "#0288D1",
+        "#F57F17"
       ],
-      "fondo": "#1a1a1a",
+      "fondo": "#1A1A1A",
       "textColors": [
-        "#000000",
+        "#FFFFFF",
         "#000000",
         "#FFFFFF",
-        "#000000"
+        "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Movimiento intencional en cada decisión diaria",
-        "parrafoTop": "Hoy he decidido priorizar mi bienestar y el de quienes me rodean.",
-        "subtitulo": "¿Cómo pequeñas elecciones hoy pueden transformar mi vida mañana?",
-        "parrafoBot": "Haz una pausa de 30 segundos para estirarte y sentir la energía fluir por tu cuerpo.",
+        "titulo": "Asumir la propiedad extrema de cada resultado",
+        "parrafoTop": "He aprendido que cada error es una oportunidad para crecer.",
+        "subtitulo": "¿Estoy dispuesto a transformar mis fracasos en lecciones valiosas?",
+        "parrafoBot": "En los próximos 30 segundos, reflexiona sobre un desafío reciente y anota cómo podrías haberlo abordado diferente.",
         "style": {
-          "accent": "#4CAF50",
+          "accent": "#8B0000",
           "ink": "#E0E0E0",
           "paper": "#1C1C1C",
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Come%20mu%C3%A9vete%20y%20duerme%20Tom%20Rath%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Extreme%20ownership%20Jocko%20Willink%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El viaje al poder de la mente",
-      "autor": "Eduardo Punset",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/78/7c/20/787c2003-a178-7bd3-8e71-c4f196e488c8/9788423343652.jpg/626x0w.jpg",
-      "tagline": "Un fascinante viaje a los enigmas de nuestra mente y de nuestras emociones.Con este libro Eduardo Punset cierra una trilogía dedicada a la felicidad al amor y al poder las tres claves que mueven el mundo.",
-      "dimension": "Bienestar|Prosperidad|Conexión",
+      "titulo": "101 reflexiones que cambiarán tu forma de pensar",
+      "autor": "Brianna Wiest",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
+      "tagline": "why you should pursue purpose over passion embrace negative thinking see the wisdom in daily routine and become aware of the cognitive biases that are creating the way you see your life",
+      "dimension": "Reflexión|Transformación|Conexión",
       "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "autorrealización",
-        "curiosidad",
-        "empoderamiento",
+        "introspección",
+        "desapego",
+        "claridad",
         "autenticidad"
       ],
       "frases": [
-        "🔍 Explora tu mente, sumérgete en lo desconocido por 15 segundos.",
-        "💪 Toma una decisión que impulse tu autenticidad en solo 30 segundos.",
-        "🌟 Permítete sentir curiosidad por tus emociones durante un minuto.",
-        "🤔 Reflexiona sobre un desafío personal por 45 segundos y empodérate."
+        "🔍 Reflexiona sobre tus creencias limitantes.",
+        "🌱 Suelta lo que no te sirve y avanza.",
+        "💡 Busca momentos de claridad en tu rutina.",
+        "🤝 Conéctate con tu autenticidad interior."
       ],
       "colores": [
-        "#ffcc00",
-        "#0099cc",
-        "#66cc66",
-        "#ff6699"
+        "#4CAF50",
+        "#FF9800",
+        "#2196F3",
+        "#FFC107"
       ],
-      "fondo": "#1a1a1a",
+      "fondo": "#1A1A1A",
       "textColors": [
-        "#000000",
         "#FFFFFF",
         "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "La mente como un laberinto de posibilidades",
-        "parrafoTop": "Al explorar mis emociones, descubro caminos ocultos.",
-        "subtitulo": "¿Qué pasaría si cada pensamiento es una oportunidad para cambiar mi vida?",
-        "parrafoBot": "Tras reflexionar sobre mis desafíos, tomo 30 segundos para escribir una nueva meta que me inspire.",
-        "style": {
-          "accent": "#cc3300",
-          "ink": "#ffffff",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20viaje%20al%20poder%20de%20la%20mente%20Eduardo%20Punset%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "LIT Life ignition tools",
-      "autor": "Jeff Karp",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/21/9e/74/219e74c0-0074-2855-fd9e-2995c19f9245/9788417992361.jpg/626x0w.jpg",
-      "tagline": "Cómo puedes lograr un mayor rendimiento mental y creatividad en un mundo lleno de distracciones de fechas límite constantes de tiempo perdido en las redes",
-      "dimension": "Creatividad|Conexión|Desarrollo",
-      "punto": "Cero|Activo|Máximo",
-      "palabras": [
-        "inspiración",
-        "transformación",
-        "resiliencia",
-        "optimismo"
-      ],
-      "frases": [
-        "💡 Tómate un momento para reflexionar sobre tus metas y anótalas en papel. ⏳",
-        "🌱 Dedica unos minutos a meditar, liberando tu mente de distracciones del día. 🧘‍♂️",
-        "🚀 Realiza una breve lista de acciones que te acerquen a tus objetivos hoy. ✍️",
-        "✨ Conéctate con alguien que te inspire y compártelo a través de un mensaje. 📱"
-      ],
-      "colores": [
-        "#ff9933",
-        "#66b3ff",
-        "#ffcc66",
-        "#ff6699"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Ignición de la vida: herramientas que despiertan potencial",
-        "parrafoTop": "Hoy elijo abrazar mis distracciones como oportunidades para crear.",
-        "subtitulo": "¿Y si las limitaciones son simplemente pasos hacia mi grandeza?",
-        "parrafoBot": "Dedica 15 segundos a identificar una distracción y transformarla en un instante creativo hoy.",
-        "style": {
-          "accent": "#ffcc00",
-          "ink": "#ffffff",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+LIT%20Life%20ignition%20tools%20Jeff%20Karp%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Bruce Lee",
-      "autor": " John Little",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
-      "tagline": "un artista de la vida",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "consciencia",
-        "vitalidad",
-        "enfrentamiento",
-        "adaptación"
-      ],
-      "frases": [
-        "🧘‍♂️ Practica la consciencia en cada movimiento, siente tu cuerpo en acción.",
-        "⚡️ Desata tu vitalidad: haz una serie de saltos y siente la energía fluir.",
-        "🥋 Enfréntate a un desafío hoy; realiza una nueva técnica de combate o arte marcial.",
-        "🌱 Adáptate a lo inesperado; prueba algo nuevo en tu rutina diaria durante 15 minutos."
-      ],
-      "colores": [
-        "#ffcc00",
-        "#ff9933",
-        "#66b3ff",
-        "#66cc66"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#000000",
+        "#FFFFFF",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "El camino del agua",
-        "parrafoTop": "Reconozco mi fluidez ante cada desafío que enfrento.",
-        "subtitulo": "¿Cómo puedo adaptarme como el agua para fluir en mis circunstancias?",
-        "parrafoBot": "Toma 15 segundos para respirar profundamente y permitir que tu mente se relaje, así como el agua toma la forma de su entorno.",
+        "titulo": "La búsqueda de propósito transforma mi percepción diaria.",
+        "parrafoTop": "Reconozco que mis pensamientos negativos pueden ser aliados en el crecimiento.",
+        "subtitulo": "¿Estoy dispuesto a ver la sabiduría oculta en mis rutinas?",
+        "parrafoBot": "Dedico 30 segundos a anotar un pensamiento negativo y reflexionar sobre su lección.",
         "style": {
-          "accent": "#c4a000",
-          "ink": "#ffffff",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Bruce%20Lee%20%20John%20Little%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Sincrodestino",
-      "autor": "Deepak Chopra",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication71/v4/04/34/c1/0434c104-10c2-bb88-f033-016e3b55d000/9786073150552.jpg/626x0w.jpg",
-      "tagline": "De vez en cuando suceden coincidencias que a primera vista no tienen el menor significado o alguna razón de ser en especial pero que llaman la atención.Deepak Chopra presenta ahora Sincrodestino obra en donde muestra el poder de las coincidencias significativas y la manera de identificarlas en medio del cúmulo de sucesos cotidianos con la finalidad de utilizarlas e interpretar los mensajes que ofrecen. Una vez que se dominan los principios de las sincronías y se encuentra su lazo con el propio destino se pueden utilizar para crear abundancia en todas las áreas de la vida.Cada una de ellas esas coincidencias transmite un potencial milagroso. Sólo hay que entender las fuerzas que las provocan y lograremos vivir en un nivel más profundo y acceder al núcleo de nuestra existencia",
-      "dimension": "Bienestar|Prosperidad|Conexión",
-      "punto": "Cero|Creativo|Activo|Máximo",
-      "palabras": [
-        "sincronía",
-        "coincidencia",
-        "intención",
-        "abundancia"
-      ],
-      "frases": [
-        "🔮 Reflexiona sobre las coincidencias en tu vida en los últimos días.",
-        "🌌 Escribe tres intenciones que te gustaría manifestar hoy.",
-        "✨ Observa las señales a tu alrededor y anota lo que resuene contigo.",
-        "💫 Dedica un momento a visualizar cómo sería vivir con abundancia."
-      ],
-      "colores": [
-        "#ffcc33",
-        "#ff6699",
-        "#66ccff",
-        "#ff9933"
-      ],
-      "fondo": "#1a1a1a",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Las fuerzas de la sincronía",
-        "parrafoTop": "Reconozco las señales en mi vida que me guían hacia el destino.",
-        "subtitulo": "¿Estoy dispuesto a abrirme a los mensajes ocultos del universo?",
-        "parrafoBot": "Dedico un minuto para anotar una coincidencia significativa de hoy y reflexionar sobre su mensaje.",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#ffffff",
+          "accent": "#616161",
+          "ink": "#e0e0e0",
           "paper": "#1c1c1c",
           "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Sincrodestino%20Deepak%20Chopra%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+101%20reflexiones%20que%20cambiar%C3%A1n%20tu%20forma%20de%20pensar%20Brianna%20Wiest%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Las casualidades no existen",
-      "autor": "Borja Vilaseca",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/c7/ba/50/c7ba5092-be1c-8c4a-ba2d-2893a9221b1b/9788418045929.jpg/626x0w.jpg",
-      "tagline": " espiritualidad para escépticos",
-      "dimension": "Conexión|Propósito|Apertura",
-      "punto": "Creativo|Activo|Máximo",
+      "titulo": "The creators code",
+      "autor": "Amy Wilkinson",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication49/v4/9a/d3/8d/9ad38d0b-b8ba-4c4c-e374-5f6e49120be8/9781451666090.jpg/626x0w.jpg",
+      "tagline": " unlocks the six essential skills that turn small notions into big companies This landmark book is based on 200 interviews with todays leading entrepreneurs",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "interconexión",
-        "destino",
-        "revelación",
-        "posibilidad"
+        "innovación",
+        "colaboración",
+        "adaptabilidad",
+        "inspiración"
       ],
       "frases": [
-        "🔗 Reconoce las conexiones ocultas en tu vida, actúa con asombro por ellas.",
-        "🌌 Reflexiona sobre cómo cada elección te ha llevado a este instante presente.",
-        "✨ Abre tu mente a nuevas revelaciones; dedica un momento a meditar en silencio.",
-        "🚀 Imagina lo que es posible si decides actuar hoy hacia tus sueños más profundos."
+        "🚀 Conéctate con tus ideas creativas ahora.",
+        "🤝 Forma un equipo diverso y colabora hoy.",
+        "🌱 Adáptate a los cambios del entorno rápidamente.",
+        "✨ Inspírate en historias de emprendedores exitosos."
       ],
       "colores": [
-        "#ffcc33",
-        "#6699cc",
-        "#ff3366",
-        "#99cc66"
+        "#FF5722",
+        "#8BC34A",
+        "#3F51B5",
+        "#FFC107"
       ],
-      "fondo": "#1a1a1a",
+      "fondo": "#1A1A1A",
       "textColors": [
-        "#000000",
         "#FFFFFF",
+        "#000000",
         "#FFFFFF",
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "Las conexiones invisibles nos guían.",
-        "parrafoTop": "He aprendido a reconocer que cada paso que doy me lleva a una revelación.",
-        "subtitulo": "¿Estoy realmente dispuesto a ver las lecciones ocultas en mis experiencias?",
-        "parrafoBot": "Dedica 30 segundos hoy para escribir una conexión inesperada que te haya impactado y reflexiona sobre ella.",
+        "titulo": "El código de los creadores",
+        "parrafoTop": "Valido mis ideas y busco conexiones en cada paso.",
+        "subtitulo": "¿Estoy realmente aprovechando mi potencial creativo?",
+        "parrafoBot": "Dedica 30 segundos a escribir una idea innovadora que te inspire hoy.",
         "style": {
-          "accent": "#9933cc",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#2a2a2a"
+          "accent": "#FF6F00",
+          "ink": "#E0E0E0",
+          "paper": "#1A1A1A",
+          "border": "#333333"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20casualidades%20no%20existen%20Borja%20Vilaseca%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20creators%20code%20Amy%20Wilkinson%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Empieza con el porqué",
+      "autor": "Simon Sinek",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/07/69/ca/0769ca6b-80bf-4898-d12f-5c4b7610a752/9788417180805.jpeg/626x0w.jpg",
+      "tagline": "Para Sinek lo importante no es tanto qué es lo que haces como el porqué lo haces. Lo esencial es saber por qué haces lo que haces por qué existes. Aprender a formular las preguntas adecuadas te permitirá tener una empresa inspiradora proyectos innovadores y gente comprometida para desarrollarlos. Sinek explica cómo crear el marco adecuado en una organización para conseguir esos propósitos. ",
+      "dimension": "Conexión|Propósito|Transformación",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "convicción",
+        "motivación",
+        "significado",
+        "identidad"
+      ],
+      "frases": [
+        "🔍 Reflexiona sobre tu propósito vital ahora.",
+        "💡 Define qué te mueve a actuar hoy mismo.",
+        "🌱 Identifica tus valores fundamentales en 1 min.",
+        "🚀 Conecta con alguien que comparta tu visión."
+      ],
+      "colores": [
+        "#FF6F00",
+        "#FFAB40",
+        "#FFD54F",
+        "#FFE082"
+      ],
+      "fondo": "#1A1A1A",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "El Círculo Dorado",
+        "parrafoTop": "He comprendido que mi propósito debe guiar cada acción que tomo.",
+        "subtitulo": "¿Estoy realmente alineado con el porqué de mis decisiones?",
+        "parrafoBot": "Dedica 30 segundos a escribir tu razón más profunda para actuar hoy.",
+        "style": {
+          "accent": "#FFCC00",
+          "ink": "#E0E0E0",
+          "paper": "#1A1A1A",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Empieza%20con%20el%20porqu%C3%A9%20Simon%20Sinek%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "El poder de la integridad",
+      "autor": "Kelley Kosow",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/e4/5f/dd/e45fdd97-7753-972b-5154-1c8530608684/1032894287.jpg/626x0w.jpg",
+      "tagline": "Como afirma Kelley Kosow: ¿Recuerdas la última vez que te prometiste decir lo que pensabas en una reunión de trabajo pero permaneciste sentado en silencio? Cada vez que te muerdes la lengua ahogas tu integridad. Integridad no significa perfección. No es una estrategia sino una manera de vivir en consonancia con quien realmente somos.El poder de la integridad te enseña a empezar a vivir la vida a tu manera a enfrentarte al miedo a la vergüenza y a las creencias erróneas para a partir de ahí empezar a vivir la vida según tus principios y desde tu verdadera esencia.Transforma tus limitaciones y conecta con tus capacidades infinitas.Tu integridad es tu poder.",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "integridad",
+        "autovaloración",
+        "valentía",
+        "transformación"
+      ],
+      "frases": [
+        "💬 Expresa tus pensamientos en voz alta.",
+        "🌱 Acepta tus limitaciones y sigue adelante.",
+        "🔥 Enfrenta el miedo a la vergüenza ahora mismo.",
+        "✨ Conéctate con tu esencia auténtica hoy."
+      ],
+      "colores": [
+        "#FFEB3B",
+        "#FF9800",
+        "#8BC34A",
+        "#FF5722"
+      ],
+      "fondo": "#1E1E1E",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Desbloqueando mi esencia auténtica",
+        "parrafoTop": "Hoy elijo hablar con sinceridad y sin miedo.",
+        "subtitulo": "¿Estoy listo para enfrentar mis propios juicios internos?",
+        "parrafoBot": "Dedico 30 segundos a escribir lo que realmente siento, sin censura.",
+        "style": {
+          "accent": "#FFEB3B",
+          "ink": "#FFFFFF",
+          "paper": "#1C1C1C",
+          "border": "#4A4A4A"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20de%20la%20integridad%20Kelley%20Kosow%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
