@@ -811,6 +811,45 @@ async function enrich(libro, openai, ctx) {
 const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
 
+// ─── MODO SINGLE (workflow_dispatch) ──────────────────────────
+if (process.env.SINGLE_MODE === "true") {
+  const bookJSON = process.env.SINGLE_BOOK;
+  if (!bookJSON) { console.error("❌ SINGLE_BOOK vacío"); process.exit(1); }
+
+  const bookData = JSON.parse(bookJSON);
+
+  console.log("╔═══════════════════════════════════════════════╗");
+  console.log("║   TRIGGUI v8.2 — MODO SINGLE (1 libro)       ║");
+  console.log("╚═══════════════════════════════════════════════╝\n");
+  console.log(`📖 ${bookData.titulo} — ${bookData.autor}`);
+  console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}\n`);
+
+  const libroSingle = {
+    titulo: bookData.titulo,
+    autor: bookData.autor,
+    portada: bookData.portada || "",
+    tagline: bookData.tagline || "",
+    isbn: bookData.isbn || ""
+  };
+
+  const enriched = await enrich(libroSingle, openai, ctx);
+
+  let existing = { libros: [] };
+  try {
+    const raw = await fs.readFile(CFG.out, "utf8");
+    existing = JSON.parse(raw);
+  } catch { }
+
+  existing.libros.unshift(enriched);
+  await fs.writeFile(CFG.out, JSON.stringify(existing, null, 2));
+
+  console.log("\n✅ Modo SINGLE completado");
+  console.log(`📚 ${CFG.out} actualizado — "${bookData.titulo}" en posición [0]`);
+  process.exit(0);
+}
+// ─── FIN MODO SINGLE ──────────────────────────────────────────
+
+
 console.log("╔═══════════════════════════════════════════════╗");
 console.log("║   TRIGGUI v9.0 NIVEL DIOS - PROMPTS PERFECTOS║");
 console.log("╚═══════════════════════════════════════════════╝\n");
