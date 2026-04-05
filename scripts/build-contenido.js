@@ -1,13 +1,14 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.0 NIVEL DIOS - ARQUITECTURA PROMPT INTEGRADA
+   TRIGGUI v9.1 NIVEL DIOS - CONTENIDO EDITORIAL UNIFICADO
    
-   CAMBIOS v8.2 → v9.0:
-   ✅ Sistema de prompts en 5 CAPAS verificables
-   ✅ Variables neurobiológicas escalables
-   ✅ Verificación automática de resultados
-   ✅ Precisión nivel dios para gpt-4o-mini
+   CAMBIOS v9.0 → v9.1:
+   ✅ Tarjeta con contenido RICO (~250 chars por párrafo, no ~60)
+   ✅ Prompt tarjeta fusionado con esencia del prompt sagrado de Apps Script
+   ✅ Highlights [H]...[/H] generados desde build-contenido (no solo en Apps Script)
+   ✅ Verificador: pregunta ya no obligatoria
+   ✅ Una sola fuente de contenido para PNG + edición viva + correo
    
-   AUTOR: Badir Nakid | FECHA: Dic 2025 | VERSIÓN: 9.0
+   AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.1
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -68,10 +69,13 @@ const CFG = {
     accionMax: 60,
     lineasMin: 3,
     longitudMinLinea: 10,
-    tituloGuia: 50,
-    parrafo1Guia: 60,
-    subtituloGuia: 70,
-    parrafo2Guia: 90
+    // ─── v9.1: Guías LARGAS para contenido editorial rico ───
+    // Antes: 50/60/70/90 (para cards de app 320px)
+    // Ahora: 50/250/70/250 (para tarjeta PNG 1080px + correo editorial)
+    tituloGuia: 50,       // Título SÍ corto — concepto que intriga
+    parrafo1Guia: 250,    // ~40-50 palabras — párrafo editorial real
+    subtituloGuia: 70,    // Subtítulo SÍ corto — bisagra emocional
+    parrafo2Guia: 250     // ~40-50 palabras — acción con contexto rico
   },
   
   // ─── Dark Mode ───
@@ -104,10 +108,10 @@ const CFG = {
   
   // ─── Verificación (nuevo en v9.0) ───
   verificacion: {
-    activa: true,                    // Activar verificación automática
-    logNivelBajo: true,              // Loggear cuando score < 0.8
-    reintentoSiBajo: true,           // Reintentar si verificación falla
-    umbralMinimo: 0.75              // Score mínimo aceptable
+    activa: true,
+    logNivelBajo: true,
+    reintentoSiBajo: true,
+    umbralMinimo: 0.75
   }
 };
 
@@ -217,7 +221,7 @@ const NEUROBIOLOGIA = {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ SISTEMA DE PROMPTS v9.0 (5 CAPAS)
+   🧙‍♂️ SISTEMA DE PROMPTS v9.1 (5 CAPAS + TARJETA EDITORIAL)
 ═══════════════════════════════════════════════════════════════ */
 
 function buildPrompt(libro, tipo, ctx, extra = null) {
@@ -394,67 +398,72 @@ CONTINÚA este journey emocional.
 ` : ""}
 
 ═══════════════════════════════════════════════════════════════
-🎯 GENERAR: Tarjeta profundización "${libro.titulo}"
+🎯 GENERAR: Tarjeta editorial "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-INVESTIGACIÓN PROFUNDA OBLIGATORIA:
-→ ¿Cuál es LA enseñanza central del libro?
-→ ¿Qué transformación ofrece?
-→ ¿Qué conflicto interno resuelve?
-→ ¿Cuál es el momento más citado/recordado?
+Eres Badir Nakid. 21 años leyendo diario a las 4 AM. Ingeniero de sistemas con MBA.
+Escribes como persona real: sobrio, claro, directo, cálido. Cero adornos.
 
-4 COMPONENTES:
+INVESTIGA el libro ANTES de escribir. No inventes datos. Resume en tus palabras.
 
-LÍNEA 1 (~${CFG.tarjeta.tituloGuia} chars):
+4 COMPONENTES (esto es una tarjeta editorial coleccionable, NO un tweet):
+
+LÍNEA 1 — TÍTULO (~${CFG.tarjeta.tituloGuia} chars):
 → Concepto ÚNICO que solo aparece en este libro
-→ Concreto, sin adornos
-→ IMPOSIBLE de usar en otro libro
+→ Concreto, sin adornos, IMPOSIBLE de usar en otro libro
+→ NO es el título del libro. NO es el autor. Es un concepto que intriga.
 
-LÍNEA 2 (~${CFG.tarjeta.parrafo1Guia} chars):
-→ Primera persona MAYORMENTE
-→ Insight que refleje enseñanza REAL del libro
-→ Conecta con emociones Hawkins ya activadas EN LOS COMPONENTES.
-→ Valida sin juzgar
+LÍNEA 2 — PÁRRAFO (~${CFG.tarjeta.parrafo1Guia} chars, ~40-50 palabras):
+→ Escrito en primera persona. Sobrio, claro, directo, cálido.
+→ Incluye mención NATURAL del libro y autor donde fluya mejor.
+→ Un dato real, un concepto útil, un mecanismo ESPECÍFICO del libro.
+→ Marca con [H]...[/H] la frase más transformadora del párrafo.
+→ Que la persona que lea se quede con algo ÚTIL DE VERDAD, no relleno.
+→ Varía radicalmente el inicio — nunca "He aprendido que...", nunca "Me hizo pensar..."
+→ Busca armonía visual en la longitud de las líneas.
 
-Neurobiología: primera persona = oxitocina, validación = serotonina
-
-LÍNEA 3 (~${CFG.tarjeta.subtituloGuia} chars):
-→ Pregunta provocadora O declaración elevadora INTELIGENTE BONITA
-→ Basada en tema CENTRAL O INTRÍNSECO del libro
+LÍNEA 3 — SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars):
+→ Frase poderosa O pregunta provocadora — varía, no siempre pregunta
+→ Basada en tema CENTRAL del libro
 → Mueve de emociones bajas a altas
 
-Neurobiología: pregunta = curiosidad + shift alfa, elevación = transformación
-
-LÍNEA 4 (~${CFG.tarjeta.parrafo2Guia} chars):
-→ Referencia SUTIL INTELIGENTE a micro-acciones previas
-→ Nueva acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos
-→ Acción inspirada en metáfora/situación/dato ESPECÍFICA del libro
-→ Tiempo explícito
-
-Neurobiología: referencia = validación (oxitocina), acción nueva = dopamina, tiempo = alcanzable
+LÍNEA 4 — PÁRRAFO (~${CFG.tarjeta.parrafo2Guia} chars, ~40-50 palabras):
+→ Acción concreta ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos con tiempo explícito.
+→ Inspirada en metáfora/situación/dato ESPECÍFICO del libro.
+→ Marca con [H]...[/H] la frase más importante de este párrafo.
+→ Referencia SUTIL a micro-acciones del journey previo.
+→ Que después de leer esto, sepa QUÉ DEBE HACER. Su verdadero siguiente paso.
 
 PROHIBIDO ABSOLUTO:
 ❌ Títulos genéricos aplicables a otros libros
-❌ Tercera persona
+❌ Párrafos de menos de 30 palabras (son tarjetas editoriales, no tweets)
 ❌ Insights no relacionados al libro
-❌ Preguntas obvias
 ❌ Acciones vagas sin tiempo
-❌ Metadata, corchetes, markdown
+❌ Metadata, corchetes, markdown, HTML, rótulos ("Título:", "Párrafo:")
+❌ Emojis ni símbolos decorativos
+❌ Muletillas: "reflexionar", "resuena", "me hizo pensar", "genuino", "profundo"
+❌ Siempre la misma estructura — varía RADICALMENTE inicio, desarrollo y cierre
+
+VARIACIÓN OBLIGATORIA:
+→ Cada tarjeta la escribe una persona distinta un día distinto.
+→ Si detectas que vas a repetir un patrón, CÁMBIALO antes de escribir.
+→ Piensa: "¿Cómo puedo decir esto de otra manera única, fresca y natural?" Y hazlo.
 
 ═══════════════════════════════════════════════════════════════
-📤 OUTPUT (4 líneas limpias, SIN labels):
+📤 OUTPUT (4 líneas limpias, SIN labels, con [H]...[/H]):
 ═══════════════════════════════════════════════════════════════
 
 Concepto único del libro
-Primera persona insight del libro conecta con journey
-¿Pregunta provocadora del tema del libro?
-Después de referencia sutil acciones previas nueva acción tiempo segundos inspirada en libro cierre reflexivo
+Párrafo editorial en primera persona con dato real del libro y mención natural de título/autor. [H]La frase más transformadora del párrafo.[/H] Continúa con insight conectado al journey emocional previo.
+Frase poderosa o pregunta provocadora del tema central
+Acción concreta con tiempo explícito inspirada en el libro. [H]La frase más importante que active al lector.[/H] Referencia sutil a acciones previas y cierre que deje pensando.
 
 VERIFICACIÓN:
 ✓ ¿Investigué enseñanza central?
 ✓ ¿Título único a este libro?
-✓ ¿Usa yo/he?
-✓ ¿Conecta con tema del libro?
+✓ ¿Párrafos de ~40-50 palabras cada uno?
+✓ ¿Hay [H]...[/H] en cada párrafo?
+✓ ¿Menciona libro y autor naturalmente?
 ✓ ¿Acción con tiempo del libro?
 ✓ ¿Puedo usar en otro libro? SI = REGENERA
 
@@ -525,11 +534,10 @@ SOLO JSON.`
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   ✅ VERIFICACIÓN AUTOMÁTICA (NUEVO v9.0)
+   ✅ VERIFICACIÓN AUTOMÁTICA (v9.1 — pregunta ya no obligatoria)
 ═══════════════════════════════════════════════════════════════ */
 
 const VERIFICADOR = {
-  // Verificar resultado JSON principal
   main: (data) => {
     const checks = {
       tienePalabras: Array.isArray(data.palabras) && data.palabras.length === CFG.palabras.cantidad,
@@ -554,7 +562,7 @@ const VERIFICADOR = {
     };
   },
   
-  // Verificar tarjeta
+  // v9.1: verificación tarjeta con contenido RICO
   tarjeta: (texto) => {
     const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
     
@@ -562,9 +570,10 @@ const VERIFICADOR = {
       tiene4Lineas: lineas.length >= 4,
       sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto),
       sinMarkdown: !/\*\*|__|```/g.test(texto),
-      primeraPersona: /\b(yo|he|mi|descubrí|aprendí|sentido)\b/i.test(texto),
+      primeraPersona: /\b(yo|he|mi|descubrí|aprendí|sentido|reconozco|noté|encontré|comprendí)\b/i.test(texto),
       tieneAccion: /\d+\s*(seg|segundo|minuto|min|paso)/i.test(texto),
-      tienePregunta: /\?|¿/.test(texto)
+      tieneHighlights: /\[H\]/i.test(texto),
+      parrafosRicos: lineas.length >= 4 && lineas[1]?.length >= 100 && lineas[3]?.length >= 100
     };
     
     const cumple = Object.values(checks).filter(Boolean).length;
@@ -578,7 +587,6 @@ const VERIFICADOR = {
     };
   },
   
-  // Verificar estilo
   estilo: (data) => {
     const checks = {
       tieneAccent: typeof data.accent === "string" && /^#[0-9a-f]{6}$/i.test(data.accent),
@@ -684,7 +692,7 @@ async function enrich(libro, openai, ctx) {
       let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
       
-      // VERIFICACIÓN v9.0
+      // VERIFICACIÓN v9.1
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.tarjeta(rawT);
         if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
@@ -819,7 +827,7 @@ if (process.env.SINGLE_MODE === "true") {
   const bookData = JSON.parse(bookJSON);
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v8.2 — MODO SINGLE (1 libro)       ║");
+  console.log("║   TRIGGUI v9.1 — MODO SINGLE (1 libro)       ║");
   console.log("╚═══════════════════════════════════════════════╝\n");
   console.log(`📖 ${bookData.titulo} — ${bookData.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}\n`);
@@ -851,7 +859,7 @@ if (process.env.SINGLE_MODE === "true") {
 
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║   TRIGGUI v9.0 NIVEL DIOS - PROMPTS PERFECTOS║");
+console.log("║   TRIGGUI v9.1 NIVEL DIOS - EDITORIAL UNIF.  ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -889,73 +897,19 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA v9.0 NIVEL DIOS
+   📖 GUÍA v9.1 NIVEL DIOS
    
-   🔥 CAMBIOS CLAVE v8.2 → v9.0:
-   ✅ Sistema de prompts en 5 CAPAS verificables
-   ✅ Neurobiología explícita en cada componente
-   ✅ Verificación automática con scoring
-   ✅ Arquitectura escalable para nuevas variables
+   🔥 CAMBIOS v9.0 → v9.1:
+   ✅ Tarjeta con contenido RICO (~250 chars por párrafo)
+   ✅ Prompt tarjeta fusionado con esencia del prompt sagrado de Apps Script
+   ✅ [H]...[/H] highlights generados desde aquí (una sola fuente)
+   ✅ Verificador: pregunta opcional, párrafos ricos obligatorios
+   ✅ contenido.json alimenta: tarjeta PNG + edición viva + correo
    
-   🧠 AÑADIR NUEVAS VARIABLES NEUROBIOLÓGICAS:
-   
-   1. Define en NEUROBIOLOGIA (línea 169):
-      ```
-      nuevaVariable: {
-        fase: "cuando_activarla",
-        metodo: "cómo lo logras",
-        verificacion: "cómo sabes que funcionó"
-      }
-      ```
-   
-   2. Añade en buildPrompt() dentro del objetivo relevante (línea 256):
-      ```
-      • Nueva variable: [explicación del efecto]
-        Método: [cómo implementarla]
-      ```
-   
-   3. Añade verificación en VERIFICADOR (línea 450):
-      ```
-      nuevaCheck: [condición que verifica la variable]
-      ```
-   
-   EJEMPLO: Añadir GABA (neurotransmisor calmante)
-   
-   En NEUROBIOLOGIA:
-   ```
-   gaba: {
-     fase: "transicion_alfa",
-     metodo: "Ritmo pausado, palabras paz/confianza, colores fríos",
-     verificacion: "Usuario siente calma sin somnolencia"
-   }
-   ```
-   
-   En buildPrompt() tarjeta:
-   ```
-   2️⃣ PÁRRAFO 1:
-      ...
-      • GABA: Ritmo pausado que calma sin adormecer
-        Evitar: palabras de urgencia ("rápido", "ahora")
-        Usar: palabras de confianza ("puedes", "descansa")
-   ```
-   
-   En VERIFICADOR.tarjeta:
-   ```
-   sinUrgencia: !/urgente|rápido|ahora\s+mismo/i.test(texto)
-   ```
-   
-   🎯 VERIFICAR SI FUNCIONA:
-   - Activa CFG.verificacion.logNivelBajo = true
-   - Revisa console para ver scores por componente
-   - Score < 0.75 = necesita ajuste en prompt
-   - Score > 0.9 = nivel dios alcanzado
-   
-   💡 FILOSOFÍA v9.0:
-   - Cada prompt explica OBJETIVO (qué), MÉTODO (cómo), VERIFICACIÓN (testeo)
-   - GPT-4o-mini necesita estructura clara, no ambigüedad
-   - Verificación automática = menos debugging manual
-   - Escalable = añadir variables sin romper nada
-   
-   🔥 MÁXIMA PERFECCIÓN ALCANZADA - PROMPT ARCHITECTURE NIVEL DIOS
+   FILOSOFÍA v9.1:
+   - Una sola fuente de contenido para tres salidas
+   - Contenido editorial rico (no tweets para app)
+   - Prompt tarjeta = fusión de lo mejor de Apps Script + build-contenido
+   - Apps Script lee contenido.json en vez de llamar a GPT
    
 ═══════════════════════════════════════════════════════════════ */
