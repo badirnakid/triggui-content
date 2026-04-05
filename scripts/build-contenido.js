@@ -142,6 +142,7 @@ const utils = {
 };
 
 const state = { palabras: new Set(), colores: new Set() };
+
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 /* ═══════════════════════════════════════════════════════════════
@@ -154,20 +155,19 @@ function getContexto() {
   const hora = now.getHours();
   
   const energia = CFG.energia[dia] || 0.8;
-  
   let franja = "noche";
   if (hora >= 0 && hora < 6) franja = "madrugada";
   else if (hora >= 6 && hora < 12) franja = "manana";
   else if (hora >= 12 && hora < 18) franja = "tarde";
-  
+
   const tempDinamica = CFG.dinamico.tempMultiplicador 
     ? CFG.temp * energia 
     : CFG.temp;
-  
+    
   const hawkinsDinamico = CFG.dinamico.hawkinsShift
     ? CFG.hawkins[franja]
     : CFG.hawkins.base;
-  
+    
   const frasesLongitud = CFG.dinamico.frasesExtension
     ? {
         min: Math.round(CFG.frases.longitudMin * energia),
@@ -177,7 +177,7 @@ function getContexto() {
         min: CFG.frases.longitudMin,
         max: CFG.frases.longitudMax
       };
-  
+
   return {
     dia,
     hora,
@@ -385,89 +385,124 @@ VERIFICACIÓN ANTES DE RESPONDER:
 SOLO JSON.`,
 
     tarjeta: base + `
-${extra ? `
+${extra ?
+`
 ═══════════════════════════════════════════════════════════════
 🔗 JOURNEY PREVIO:
 ═══════════════════════════════════════════════════════════════
 Emociones: ${extra.palabras.join(", ")}
 Acciones:
-${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+${extra.frases.map((f, i) => \`${i + 1}. \${f}\`).join("\\n")}
 
 CONTINÚA este journey emocional.
 ═══════════════════════════════════════════════════════════════
 ` : ""}
 
-═══════════════════════════════════════════════════════════════
-🎯 GENERAR: Tarjeta editorial "${libro.titulo}"
-═══════════════════════════════════════════════════════════════
+[Eres Badir. Escribe como persona real, en primera persona, sobrio, claro y directo. Sin emojis.] 
+Semilla interna (no mostrar): ${Math.random().toString(36).substring(2, 15)} 
+Libro: "${libro.titulo}" de ${libro.autor} 
+Idea semilla (no tan literal, NO tanto citar, NO usar comillas, NO decir tal cual "la frase"): ${extra && extra.frases ? extra.frases.join(" | ") : (libro.tagline || libro.titulo)}
 
-Eres Badir Nakid. 21 años leyendo diario a las 4 AM. Ingeniero de sistemas con MBA.
-Escribes como persona real: sobrio, claro, directo, cálido. Cero adornos.
+REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, dale peso a valores y virtudes, esencia, cimientos sólidos, fundamentos (sin necesariamente mencionar explícitamente estas palabras, es decir, intrínsecamente).
+QUE LA PERSONA QUE LEA SE QUEDE CON UN BUEN dato, hecho o concepto interesante y útil, fragmento, accionable proveniente del libro, QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER!
+SU VERDADERO SIGUIENTE PASO. 
+QUE SIENTA ESA LLAMA QUE SE PRENDIÓ QUE SEA ÚTIL DE VERDAD NO SOLO RELLENO.
+ES VITAL. NECESITO INTELIGENCIA NIVEL DIOS EN TU RESULTADO.
+AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES YA QUE LA GENTE QUE LEERÁ EL RESULTADO NO QUIERO QUE VEA CONTENIDO REPETIDO CADA SEMANA 
+EN GENERAL TODO EL TEXTO DEBE SER DIFERENTE CADA VEZ.
+COMO NO VAS GUARDANDO HISTORIAL NO PUEDES SABER SI ESTE RESULTADO LO VAS A REPETIR PERO NECESITO QUE PARTAS DE LA DUDA Y QUE ESO QUE IBAS A PONER NO LO PONGAS, LO CAMBIES!
+ES DECIR QUIERO QUE HAGAS COMO SI FUERAS UNA INTELIGENCIA ARTIFICIAL QUE VERDADERAMENTE ESTÁ APRENDIENDO, HAS COMO SI TUVIERAS MUCHO HISTORIAL DE DONDE APRENDER PARA QUE NO REPITAS TEXTO.
 
-INVESTIGA el libro ANTES de escribir. No inventes datos. Resume en tus palabras.
+⚡ Instrucción extra: 
+Debes elegir exactamente frases completas, breves y poderosas, las más cruciales y transformadoras de todo el texto.
+Usa el formato [H]…[/H] para rodear esas frases.
+No uses jamás formatos como **negritas**, _cursivas_, <b>, <i> u otras etiquetas.
+Solo [H] y [/H]. 
+(El formato [H] será transformado luego en un estilo visual, pero tú no debes generar ningún <span> ni HTML).
+Está absolutamente prohibido devolver etiquetas HTML, CSS, estilos inline, atributos style, colores, clases o cualquier otro tipo de marcado adicional.
+Solo devuelve texto plano con las marcas [H] y [/H].
+Piensa como si tuvieras que escoger el único fragmento que hará que el lector cambie su forma de pensar o actuar, que lo deje pensando para bien 
+No marques palabras aisladas, nunca.
+No marques adornos. Solo subraya una frase completa que sea un verdadero game changer.
 
-4 COMPONENTES (esto es una tarjeta editorial coleccionable, NO un tweet):
+PROHIBIDO usar siempre, es decir que no caigas en muletillas repetitivas en cada iteración las palabras "reflexionar", "reflexión", "me llevó a pensar", "me hizo reflexionar", "resuena", "me resuena", "resonar" entre muchas otras que no quiero que estés repitiendo, usalas una vez e intuye si ya las usaste para que uses otras en cada iteración.
+Cada vez que intentes usar esas expresiones, sustitúyelas por verbos o giros distintos que transmitan variación natural, PERO IGUAL NO QUIERO QUE SEAN MULETILLAS QUE REPITAS, SIEMPRE DUDA DE QUE SEGURAMENTE YA LA USASTE MUCHO Y CAMBIA por ejemplo muchas variaciones de: 
+"me dejó pensando", "me quedó rondando", "me hizo cuestionar", "me movió la idea", "me dejó en silencio", "me dio vueltas", "me quedó dando vueltas", 
+"me sorprendió", "me hizo mirar distinto", "me cambió la forma de verlo", "me dejó incómodo", "me despertó otra mirada".
+Varía SIEMPRE los verbos, no repitas la misma fórmula. 
+Cada mensaje debe sonar como si viniera de una persona distinta en días distintos Y HORARIOS DISTINTOS.
 
-LÍNEA 1 — TÍTULO (~${CFG.tarjeta.tituloGuia} chars):
-→ Concepto ÚNICO que solo aparece en este libro
-→ Concreto, sin adornos, IMPOSIBLE de usar en otro libro
-→ NO es el título del libro. NO es el autor. Es un concepto que intriga.
+Objetivo: Correo breve, claro, directo y humano con dato, fragmento explicado, hecho o concepto, accionable. Natural. Nada rebuscado.
+Sin tono literario artificioso. A veces puedes ser técnico o decerlo tal cual si el libro lo es 
+Que transmita algo muy valioso IMPRESIONANTEMENTE VALIOSO sublime megaútil
+Cero frases hechas.
+Cero "marketing". Precisión, decisión y honestidad. 
 
-LÍNEA 2 — PÁRRAFO (~${CFG.tarjeta.parrafo1Guia} chars, ~40-50 palabras):
-→ Escrito en primera persona. Sobrio, claro, directo, cálido.
-→ Incluye mención NATURAL del libro y autor donde fluya mejor.
-→ Un dato real, un concepto útil, un mecanismo ESPECÍFICO del libro.
-→ Marca con [H]...[/H] la frase más transformadora del párrafo.
-→ Que la persona que lea se quede con algo ÚTIL DE VERDAD, no relleno.
-→ Varía radicalmente el inicio — nunca "He aprendido que...", nunca "Me hizo pensar..."
-→ Busca armonía visual en la longitud de las líneas.
+Reglas críticas para NO inducir a error: 
+- La "idea semilla" NO es una cita textual. Trátala como inspiración personal. Profundiza de manera clara, directa pero MUY elegante perfecto
+- NO escribas "la frase…", "según el libro…", "dice…", "como cita…".
+- NO uses comillas alrededor de la idea semilla ni la presentes como cita literal.
 
-LÍNEA 3 — SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars):
-→ Frase poderosa O pregunta provocadora — varía, no siempre pregunta
-→ Basada en tema CENTRAL del libro
-→ Mueve de emociones bajas a altas
+Guía de estilo: 
+- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, consciente como adjetivo, extraordinario, entrañable, vibrante, radiante).
+- No inventes escenarios como "viejo libro en mi estantería" u objetos decorativos; no adornes el origen.
+- NO empieces de la misma manera siempre varía mucho sé creativo pero congruente y que te entienda cualquiera (parte de la idea de que no vale repetir nada).
+Varía SIEMPRE todo. 
 
-LÍNEA 4 — PÁRRAFO (~${CFG.tarjeta.parrafo2Guia} chars, ~40-50 palabras):
-→ Acción concreta ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos con tiempo explícito.
-→ Inspirada en metáfora/situación/dato ESPECÍFICO del libro.
-→ Marca con [H]...[/H] la frase más importante de este párrafo.
-→ Referencia SUTIL a micro-acciones del journey previo.
-→ Que después de leer esto, sepa QUÉ DEBE HACER. Su verdadero siguiente paso.
+Estructura: 
+1) donde tú creas conveniente, menciona explícitamente el título del libro y el autor de forma natural.
+2) qué te hizo pensar o ver o variantes de eso(pero no digas siempre tal cual "me hizo pensar")el libro usando la idea semilla como punto de partida (a veces déjala al final y empieza con otra cosa).
+Varía tus palabras, que nunca se repita nada asegúrate 
+- Mantén adjetivos calificativos al mínimo.
+- Puedes incluir, sólo si encaja de forma natural, UNO de estos recursos (y no siempre): eco fantasma, fragmento incompleto, instrucción imposible aquí, palabra inventada sugerente, pregunta con respuesta codificada, sensación temporal, instrucción física mínima con un libro, mención indirecta.
+- Referencias internas intrínsecas sutiles: Pilares (Bienestar/Prosperidad/Conexión), estados Triggui (Punto Cero/Creativo/Activo/Máximo), mapa de conciencia David Hawkins.
+- CLAVE Mete metáfora de vez en cuando, fábula, o historia pero con mucho cuidado de que sean realmente para sumar a un ser excepcional 
+- Incluye en el párrafo final una acción concreta con un tiempo explícito (ej. 15 segundos, 1 minuto) relacionada al contenido.
 
-PROHIBIDO ABSOLUTO:
-❌ Títulos genéricos aplicables a otros libros
-❌ Párrafos de menos de 30 palabras (son tarjetas editoriales, no tweets)
-❌ Insights no relacionados al libro
-❌ Acciones vagas sin tiempo
-❌ Metadata, corchetes, markdown, HTML, rótulos ("Título:", "Párrafo:")
-❌ Emojis ni símbolos decorativos
-❌ Muletillas: "reflexionar", "resuena", "me hizo pensar", "genuino", "profundo"
-❌ Siempre la misma estructura — varía RADICALMENTE inicio, desarrollo y cierre
+Reglas duras: 
+- Extensión total: 3–5 líneas.
+- Sin emojis ni símbolos raros. 
+- Nada de "publicidad".
+- Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana. 
+- Varía la forma de iniciar SIEMPRE.
+- A veces empieza directamente con la idea central y después menciona el libro.
+- A veces deja la idea central en el segundo párrafo.
+- A veces empieza mencionando el libro y autor en la primera línea.
+- A veces empieza con una instrucción mínima, una sensación, un detalle suelto o una pregunta.
+- A veces retrasa el nombre del libro hasta la mitad o el final.
+- Nunca uses estructuras fijas es decir no exageres como "me hizo reflexionar", "he estado pensando" o "me dejó reflexionando".
+- La extensión total del texto debe adaptarse al espacio visual (máximo 50–60 palabras).
+- busca balance visual en el texto mucha armonía visual
+- El texto debe sonar atemporal y universal, nunca localista.
 
-VARIACIÓN OBLIGATORIA:
-→ Cada tarjeta la escribe una persona distinta un día distinto.
-→ Si detectas que vas a repetir un patrón, CÁMBIALO antes de escribir.
-→ Piensa: "¿Cómo puedo decir esto de otra manera única, fresca y natural?" Y hazlo.
+VARIACIÓN OBLIGATORIA: 
+- Nunca uses la misma expresión ni la misma estructura en correos distintos.
+- Si detectas que vas a repetir un patrón de inicio, verbo, giro o cierre, cámbialo de inmediato antes de escribir.
+- No caigas en fórmulas fijas como "me hizo…", "esto me…", "me dejó…", ni variantes.
+- Genera tus propias formas al vuelo, como si cada correo fuera inventado por una persona distinta en un día distinto.
+- Piensa siempre: "¿Cómo puedo decir esto de otra manera única, fresca y natural?" y hazlo.
 
-═══════════════════════════════════════════════════════════════
-📤 OUTPUT (4 líneas limpias, SIN labels, con [H]...[/H]):
-═══════════════════════════════════════════════════════════════
+TONO: 
+Mantén siempre el tono Badir: sobrio, claro, humano, directo, cálido. Nada rebuscado.
+Siempre queriendo aportar a la dinámica
+Imagina que cada correo lo escribe una persona distinta un día distinto en distintos horarios, estados de animo de preferencia de neutrales a positivos: cada inicio, desarrollo y cierre debe sonar distinto en ritmo, orden y estilo.
 
-Concepto único del libro
-Párrafo editorial en primera persona con dato real del libro y mención natural de título/autor. [H]La frase más transformadora del párrafo.[/H] Continúa con insight conectado al journey emocional previo.
-Frase poderosa o pregunta provocadora del tema central
-Acción concreta con tiempo explícito inspirada en el libro. [H]La frase más importante que active al lector.[/H] Referencia sutil a acciones previas y cierre que deje pensando.
+IMPORTANTE: 
+Antes de escribir, INVESTIGA contenido exacto del mismo en Google Books, Wikipedia, Open Library y absolutamente toda la web sobre el libro.
+No inventes datos. Resume en tus palabras. 
 
-VERIFICACIÓN:
-✓ ¿Investigué enseñanza central?
-✓ ¿Título único a este libro?
-✓ ¿Párrafos de ~40-50 palabras cada uno?
-✓ ¿Hay [H]...[/H] en cada párrafo?
-✓ ¿Menciona libro y autor naturalmente?
-✓ ¿Acción con tiempo del libro?
-✓ ¿Puedo usar en otro libro? SI = REGENERA
+⚠️ Reglas críticas adicionales: 
+- Debes insertar OBLIGATORIAMENTE 2 o 3 marcas [H]…[/H] en el texto.
+- Nunca devuelvas el bloque sin al menos esas [H]…[/H]. Una en el primer párrafo y otra en el segundo , las mas relevantes de cada uno
+- Detecta frases, si o si dentro del texto y márcalas.
+- Debes variar el subrayado siempre, puede ser al inicio, en medio final o donde quieras pero asegura que sean las frases MAS IMPORTANTES
 
-4 LÍNEAS LIMPIAS.`,
+@@BODY OBLIGATORIO (SIEMPRE UN TÍTULO, UN PÁRRAFO, UN SUBTÍTULO Y OTRO PÁRRAFO, SIEMPRE)
+1) Una línea de título. MUY Breve pero perfecto (pero no pongas nunca literal "Una línea de título" ni nada parecido, recuerda siempre todo natural, tampoco el título del libro lo pongas como título, ni el autor tampoco lo pongas en el título)
+2) Un párrafo breve. (pero no pongas nunca literal "Un párrafo breve" ni nada parecido, recuerda siempre todo natural)
+3) Un subtítulo. Breve pero perfecto (pero no pongas nunca literal "Un subtítulo" ni nada parecido, recuerda siempre todo natural)
+4) Un párrafo breve. (pero no pongas nunca literal "Un párrafo breve" ni nada parecido, recuerda siempre todo natural)
+@@ENDBODY`,
 
     estilo: base + `
 ═══════════════════════════════════════════════════════════════
@@ -550,7 +585,6 @@ const VERIFICADOR = {
       tieneFondo: typeof data.fondo === "string" && /^#[0-9a-f]{6}$/i.test(data.fondo),
       fondoOscuro: data.fondo && utils.lum(data.fondo) < CFG.darkMode.lumThresholdPaper
     };
-    
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
     
@@ -565,7 +599,6 @@ const VERIFICADOR = {
   // v9.1: verificación tarjeta con contenido RICO
   tarjeta: (texto) => {
     const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
-    
     const checks = {
       tiene4Lineas: lineas.length >= 4,
       sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto),
@@ -575,7 +608,6 @@ const VERIFICADOR = {
       tieneHighlights: /\[H\]/i.test(texto),
       parrafosRicos: lineas.length >= 4 && lineas[1]?.length >= 100 && lineas[3]?.length >= 100
     };
-    
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
     
@@ -596,7 +628,6 @@ const VERIFICADOR = {
       paperOscuro: data.paper && utils.lum(data.paper) < CFG.darkMode.lumThresholdPaper,
       inkClaro: data.ink && utils.lum(data.ink) > CFG.darkMode.lumThresholdInk
     };
-    
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
     
@@ -625,7 +656,6 @@ async function call(openai, sys, usr, temp, forceJSON = false) {
       { role: "user", content: usr }
     ]
   };
-  
   if (forceJSON) config.response_format = { type: "json_object" };
   
   const chat = await openai.chat.completions.create(config);
@@ -638,7 +668,6 @@ async function call(openai, sys, usr, temp, forceJSON = false) {
 
 async function enrich(libro, openai, ctx) {
   let intento = 0;
-  
   while (intento <= CFG.maxReintentos) {
     try {
       // PASO 1: JSON principal
@@ -646,7 +675,6 @@ async function enrich(libro, openai, ctx) {
       const p = buildPrompt(libro, "main", ctx);
       let raw = await call(openai, p, "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(raw);
-      
       // VERIFICACIÓN v9.0
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.main(extra);
@@ -683,7 +711,6 @@ async function enrich(libro, openai, ctx) {
         if (!extra[k] || extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
         while (extra[k].length < CFG[k].cantidad) extra[k].push(extra[k][extra[k].length - 1]);
       });
-      
       extra.textColors = extra.colores.map(utils.txt);
       
       // PASO 2: Tarjeta contenido
@@ -691,7 +718,6 @@ async function enrich(libro, openai, ctx) {
       const pT = buildPrompt(libro, "tarjeta", ctx, extra);
       let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-      
       // VERIFICACIÓN v9.1
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.tarjeta(rawT);
@@ -730,10 +756,8 @@ async function enrich(libro, openai, ctx) {
       const pE = buildPrompt(libro, "estilo", ctx);
       let rawE = await call(openai, pE, "Genera estilo", ctx.tempDinamica);
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
-      
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-        
         // VERIFICACIÓN v9.0
         if (CFG.verificacion.activa) {
           const v = VERIFICADOR.estilo(extra.tarjeta.style);
@@ -765,11 +789,9 @@ async function enrich(libro, openai, ctx) {
         portada: libro.portada?.trim() || `📚 ${libro.titulo}\n${libro.autor}`,
         videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
       };
-      
     } catch (e) {
       intento++;
       console.log(`   ❌ Error (${intento}/${CFG.maxReintentos + 1}): ${e.message}`);
-      
       if (intento <= CFG.maxReintentos) {
         await sleep(CFG.sleepReintento);
         continue;
@@ -818,7 +840,6 @@ async function enrich(libro, openai, ctx) {
 
 const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
-
 // ─── MODO SINGLE (workflow_dispatch) ──────────────────────────
 if (process.env.SINGLE_MODE === "true") {
   const bookJSON = process.env.SINGLE_BOOK;
@@ -831,7 +852,7 @@ if (process.env.SINGLE_MODE === "true") {
   console.log("╚═══════════════════════════════════════════════╝\n");
   console.log(`📖 ${bookData.titulo} — ${bookData.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}\n`);
-
+  
   const libroSingle = {
     titulo: bookData.titulo,
     autor: bookData.autor,
@@ -839,7 +860,7 @@ if (process.env.SINGLE_MODE === "true") {
     tagline: bookData.tagline || "",
     isbn: bookData.isbn || ""
   };
-
+  
   const enriched = await enrich(libroSingle, openai, ctx);
 
   let existing = { libros: [] };
@@ -873,7 +894,6 @@ const pick = utils.shuffle([...lista]).slice(0, Math.min(CFG.max, lista.length))
 
 const libros = [];
 let i = 0;
-
 for (const libro of pick) {
   i++;
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
