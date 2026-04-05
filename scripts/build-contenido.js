@@ -392,7 +392,7 @@ ${extra ?
 ═══════════════════════════════════════════════════════════════
 Emociones: ${extra.palabras.join(", ")}
 Acciones:
-${extra.frases.map((f, i) => \`${i + 1}. \${f}\`).join("\\n")}
+${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
 CONTINÚA este journey emocional.
 ═══════════════════════════════════════════════════════════════
