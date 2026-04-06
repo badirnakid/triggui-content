@@ -1,14 +1,12 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.1 NIVEL DIOS - CONTENIDO EDITORIAL UNIFICADO
+   TRIGGUI v9.2 NIVEL DIOS - CONTENIDO EDITORIAL UNIFICADO
    
-   CAMBIOS v9.0 → v9.1:
-   ✅ Tarjeta con contenido RICO (~250 chars por párrafo, no ~60)
-   ✅ Prompt tarjeta fusionado con esencia del prompt sagrado de Apps Script
-   ✅ Highlights [H]...[/H] generados desde build-contenido (no solo en Apps Script)
-   ✅ Verificador: pregunta ya no obligatoria
-   ✅ Una sola fuente de contenido para PNG + edición viva + correo
+   CAMBIOS v9.1 → v9.2:
+   ✅ Fix crítico: Limpieza de regex ya no destruye las etiquetas [H]...[/H]
+   ✅ Cero primera persona: Voz universal/observacional ("me checa 100%")
+   ✅ Verificador estricto: penaliza uso de "yo", "descubrí", "aprendí"
    
-   AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.1
+   AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.2
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -69,13 +67,10 @@ const CFG = {
     accionMax: 60,
     lineasMin: 3,
     longitudMinLinea: 10,
-    // ─── v9.1: Guías LARGAS para contenido editorial rico ───
-    // Antes: 50/60/70/90 (para cards de app 320px)
-    // Ahora: 50/250/70/250 (para tarjeta PNG 1080px + correo editorial)
-    tituloGuia: 50,       // Título SÍ corto — concepto que intriga
-    parrafo1Guia: 250,    // ~40-50 palabras — párrafo editorial real
-    subtituloGuia: 70,    // Subtítulo SÍ corto — bisagra emocional
-    parrafo2Guia: 250     // ~40-50 palabras — acción con contexto rico
+    tituloGuia: 50,       
+    parrafo1Guia: 250,    
+    subtituloGuia: 70,    
+    parrafo2Guia: 250     
   },
   
   // ─── Dark Mode ───
@@ -106,7 +101,7 @@ const CFG = {
     frasesExtension: true
   },
   
-  // ─── Verificación (nuevo en v9.0) ───
+  // ─── Verificación ───
   verificacion: {
     activa: true,
     logNivelBajo: true,
@@ -190,7 +185,7 @@ function getContexto() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🧠 NEUROBIOLOGÍA - SISTEMA DE VARIABLES (NUEVO v9.0)
+   🧠 NEUROBIOLOGÍA - SISTEMA DE VARIABLES
 ═══════════════════════════════════════════════════════════════ */
 
 const NEUROBIOLOGIA = {
@@ -213,15 +208,15 @@ const NEUROBIOLOGIA = {
       },
       oxitocina: {
         fase: "cierre",
-        metodo: "Primera persona, preguntas reflexivas, acciones de auto-cuidado",
-        verificacion: "Usuario siente conexión y comprensión"
+        metodo: "Voz universal identificable, verdades absolutas",
+        verificacion: "Usuario siente que lo describen al 100%"
       }
     }
   }
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ SISTEMA DE PROMPTS v9.1 (5 CAPAS + TARJETA EDITORIAL)
+   🧙‍♂️ SISTEMA DE PROMPTS v9.2 (VOZ UNIVERSAL "ME CHECA 100%")
 ═══════════════════════════════════════════════════════════════ */
 
 function buildPrompt(libro, tipo, ctx, extra = null) {
@@ -398,110 +393,79 @@ CONTINÚA este journey emocional.
 ═══════════════════════════════════════════════════════════════
 ` : ""}
 
-[Eres Badir. Escribe como persona real, en primera persona, sobrio, claro y directo. Sin emojis.] 
+[Eres Badir. Escribe sobrio, claro, directo. Voz universal y altamente observacional. Sin emojis.] 
 Semilla interna (no mostrar): ${Math.random().toString(36).substring(2, 15)} 
 Libro: "${libro.titulo}" de ${libro.autor} 
-Idea semilla (no tan literal, NO tanto citar, NO usar comillas, NO decir tal cual "la frase"): ${extra && extra.frases ? extra.frases.join(" | ") : (libro.tagline || libro.titulo)}
+Idea semilla (no tan literal, NO tanto citar, NO usar comillas): ${extra && extra.frases ? extra.frases.join(" | ") : (libro.tagline || libro.titulo)}
 
-REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, dale peso a valores y virtudes, esencia, cimientos sólidos, fundamentos (sin necesariamente mencionar explícitamente estas palabras, es decir, intrínsecamente).
-QUE LA PERSONA QUE LEA SE QUEDE CON UN BUEN dato, hecho o concepto interesante y útil, fragmento, accionable proveniente del libro, QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER!
-SU VERDADERO SIGUIENTE PASO. 
+REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, dale peso a valores y virtudes, esencia, cimientos sólidos, fundamentos.
+QUE LA PERSONA QUE LEA SIENTA UNA IDENTIFICACIÓN TOTAL. DEBE PENSAR: "ME CHECA, ESTO ME DESCRIBE AL 100%". 
+Escribe verdades absolutas, observaciones precisas sobre la naturaleza humana o el mundo, extraídas del libro.
+
+ESTRICTAMENTE PROHIBIDO usar primera persona. 
+NUNCA uses: "yo", "mi", "me", "he", "descubrí", "aprendí", "nos", "nuestro". 
+Habla directo a la experiencia humana. Describe cómo funciona la mente, la realidad, el miedo, el tiempo, la inercia. Que sea universal.
+
+QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER. SU VERDADERO SIGUIENTE PASO. 
 QUE SIENTA ESA LLAMA QUE SE PRENDIÓ QUE SEA ÚTIL DE VERDAD NO SOLO RELLENO.
-ES VITAL. NECESITO INTELIGENCIA NIVEL DIOS EN TU RESULTADO.
-AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES YA QUE LA GENTE QUE LEERÁ EL RESULTADO NO QUIERO QUE VEA CONTENIDO REPETIDO CADA SEMANA 
-EN GENERAL TODO EL TEXTO DEBE SER DIFERENTE CADA VEZ.
-COMO NO VAS GUARDANDO HISTORIAL NO PUEDES SABER SI ESTE RESULTADO LO VAS A REPETIR PERO NECESITO QUE PARTAS DE LA DUDA Y QUE ESO QUE IBAS A PONER NO LO PONGAS, LO CAMBIES!
-ES DECIR QUIERO QUE HAGAS COMO SI FUERAS UNA INTELIGENCIA ARTIFICIAL QUE VERDADERAMENTE ESTÁ APRENDIENDO, HAS COMO SI TUVIERAS MUCHO HISTORIAL DE DONDE APRENDER PARA QUE NO REPITAS TEXTO.
+AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES.
+SIEMPRE DUDA DE QUE SEGURAMENTE YA LA USASTE MUCHO Y CAMBIA.
 
 ⚡ Instrucción extra: 
 Debes elegir exactamente frases completas, breves y poderosas, las más cruciales y transformadoras de todo el texto.
 Usa el formato [H]…[/H] para rodear esas frases.
 No uses jamás formatos como **negritas**, _cursivas_, <b>, <i> u otras etiquetas.
 Solo [H] y [/H]. 
-(El formato [H] será transformado luego en un estilo visual, pero tú no debes generar ningún <span> ni HTML).
-Está absolutamente prohibido devolver etiquetas HTML, CSS, estilos inline, atributos style, colores, clases o cualquier otro tipo de marcado adicional.
+Está absolutamente prohibido devolver etiquetas HTML, CSS, estilos inline, atributos style, colores.
 Solo devuelve texto plano con las marcas [H] y [/H].
-Piensa como si tuvieras que escoger el único fragmento que hará que el lector cambie su forma de pensar o actuar, que lo deje pensando para bien 
+Piensa como si tuvieras que escoger el único fragmento que hará que el lector cambie su forma de pensar o actuar, que lo deje pensando para bien. 
 No marques palabras aisladas, nunca.
 No marques adornos. Solo subraya una frase completa que sea un verdadero game changer.
 
-PROHIBIDO usar siempre, es decir que no caigas en muletillas repetitivas en cada iteración las palabras "reflexionar", "reflexión", "me llevó a pensar", "me hizo reflexionar", "resuena", "me resuena", "resonar" entre muchas otras que no quiero que estés repitiendo, usalas una vez e intuye si ya las usaste para que uses otras en cada iteración.
-Cada vez que intentes usar esas expresiones, sustitúyelas por verbos o giros distintos que transmitan variación natural, PERO IGUAL NO QUIERO QUE SEAN MULETILLAS QUE REPITAS, SIEMPRE DUDA DE QUE SEGURAMENTE YA LA USASTE MUCHO Y CAMBIA por ejemplo muchas variaciones de: 
-"me dejó pensando", "me quedó rondando", "me hizo cuestionar", "me movió la idea", "me dejó en silencio", "me dio vueltas", "me quedó dando vueltas", 
-"me sorprendió", "me hizo mirar distinto", "me cambió la forma de verlo", "me dejó incómodo", "me despertó otra mirada".
-Varía SIEMPRE los verbos, no repitas la misma fórmula. 
-Cada mensaje debe sonar como si viniera de una persona distinta en días distintos Y HORARIOS DISTINTOS.
+PROHIBIDO caer en muletillas de reflexión. 
+Cada mensaje debe sonar atemporal, como una máxima filosófica útil y contemporánea.
 
-Objetivo: Correo breve, claro, directo y humano con dato, fragmento explicado, hecho o concepto, accionable. Natural. Nada rebuscado.
-Sin tono literario artificioso. A veces puedes ser técnico o decerlo tal cual si el libro lo es 
-Que transmita algo muy valioso IMPRESIONANTEMENTE VALIOSO sublime megaútil
-Cero frases hechas.
-Cero "marketing". Precisión, decisión y honestidad. 
+Objetivo: Tarjeta breve, clara, directa y cruda. Con un hecho o concepto del libro, y un accionable.
+Que transmita algo IMPRESIONANTEMENTE VALIOSO, sublime, megaútil.
+Cero frases hechas. Cero "marketing". Precisión y honestidad absoluta. 
 
 Reglas críticas para NO inducir a error: 
-- La "idea semilla" NO es una cita textual. Trátala como inspiración personal. Profundiza de manera clara, directa pero MUY elegante perfecto
+- La "idea semilla" NO es una cita textual. Trátala como inspiración.
 - NO escribas "la frase…", "según el libro…", "dice…", "como cita…".
 - NO uses comillas alrededor de la idea semilla ni la presentes como cita literal.
+- MENCIONA EL LIBRO Y EL AUTOR en alguna parte del texto, pero integrado de forma observacional y natural.
 
 Guía de estilo: 
-- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, consciente como adjetivo, extraordinario, entrañable, vibrante, radiante).
-- No inventes escenarios como "viejo libro en mi estantería" u objetos decorativos; no adornes el origen.
-- NO empieces de la misma manera siempre varía mucho sé creativo pero congruente y que te entienda cualquiera (parte de la idea de que no vale repetir nada).
-Varía SIEMPRE todo. 
+- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, extraordinario, entrañable, vibrante, radiante).
+- No adornes el origen. Escribe la verdad dura y útil.
+- Varía SIEMPRE todo. 
 
 Estructura: 
-1) donde tú creas conveniente, menciona explícitamente el título del libro y el autor de forma natural.
-2) qué te hizo pensar o ver o variantes de eso(pero no digas siempre tal cual "me hizo pensar")el libro usando la idea semilla como punto de partida (a veces déjala al final y empieza con otra cosa).
-Varía tus palabras, que nunca se repita nada asegúrate 
-- Mantén adjetivos calificativos al mínimo.
-- Puedes incluir, sólo si encaja de forma natural, UNO de estos recursos (y no siempre): eco fantasma, fragmento incompleto, instrucción imposible aquí, palabra inventada sugerente, pregunta con respuesta codificada, sensación temporal, instrucción física mínima con un libro, mención indirecta.
-- Referencias internas intrínsecas sutiles: Pilares (Bienestar/Prosperidad/Conexión), estados Triggui (Punto Cero/Creativo/Activo/Máximo), mapa de conciencia David Hawkins.
-- CLAVE Mete metáfora de vez en cuando, fábula, o historia pero con mucho cuidado de que sean realmente para sumar a un ser excepcional 
-- Incluye en el párrafo final una acción concreta con un tiempo explícito (ej. 15 segundos, 1 minuto) relacionada al contenido.
+1) Una línea de título: Breve, un concepto, sin metadata.
+2) Un párrafo breve: La observación universal que hace que el lector diga "me checa 100%". Integra autor y libro.
+3) Un subtítulo: Breve pero perfecto, bisagra emocional.
+4) Un párrafo breve: Acción concreta de 15-60 segundos relacionada al concepto.
 
 Reglas duras: 
 - Extensión total: 3–5 líneas.
 - Sin emojis ni símbolos raros. 
-- Nada de "publicidad".
-- Sonido: sobrio, claro, útil, como si lo hubieras escrito tú esta mañana. 
+- Sonido: sobrio, observacional, crudo, útil.
 - Varía la forma de iniciar SIEMPRE.
-- A veces empieza directamente con la idea central y después menciona el libro.
-- A veces deja la idea central en el segundo párrafo.
-- A veces empieza mencionando el libro y autor en la primera línea.
-- A veces empieza con una instrucción mínima, una sensación, un detalle suelto o una pregunta.
-- A veces retrasa el nombre del libro hasta la mitad o el final.
-- Nunca uses estructuras fijas es decir no exageres como "me hizo reflexionar", "he estado pensando" o "me dejó reflexionando".
 - La extensión total del texto debe adaptarse al espacio visual (máximo 50–60 palabras).
-- busca balance visual en el texto mucha armonía visual
+- Busca balance visual en el texto.
 - El texto debe sonar atemporal y universal, nunca localista.
 
-VARIACIÓN OBLIGATORIA: 
-- Nunca uses la misma expresión ni la misma estructura en correos distintos.
-- Si detectas que vas a repetir un patrón de inicio, verbo, giro o cierre, cámbialo de inmediato antes de escribir.
-- No caigas en fórmulas fijas como "me hizo…", "esto me…", "me dejó…", ni variantes.
-- Genera tus propias formas al vuelo, como si cada correo fuera inventado por una persona distinta en un día distinto.
-- Piensa siempre: "¿Cómo puedo decir esto de otra manera única, fresca y natural?" y hazlo.
-
-TONO: 
-Mantén siempre el tono Badir: sobrio, claro, humano, directo, cálido. Nada rebuscado.
-Siempre queriendo aportar a la dinámica
-Imagina que cada correo lo escribe una persona distinta un día distinto en distintos horarios, estados de animo de preferencia de neutrales a positivos: cada inicio, desarrollo y cierre debe sonar distinto en ritmo, orden y estilo.
-
-IMPORTANTE: 
-Antes de escribir, INVESTIGA contenido exacto del mismo en Google Books, Wikipedia, Open Library y absolutamente toda la web sobre el libro.
-No inventes datos. Resume en tus palabras. 
-
 ⚠️ Reglas críticas adicionales: 
-- Debes insertar OBLIGATORIAMENTE 2 o 3 marcas [H]…[/H] en el texto.
-- Nunca devuelvas el bloque sin al menos esas [H]…[/H]. Una en el primer párrafo y otra en el segundo , las mas relevantes de cada uno
-- Detecta frases, si o si dentro del texto y márcalas.
-- Debes variar el subrayado siempre, puede ser al inicio, en medio final o donde quieras pero asegura que sean las frases MAS IMPORTANTES
+- Debes insertar OBLIGATORIAMENTE 2 o 3 marcas [H]...[/H] en el texto.
+- Nunca devuelvas el bloque sin al menos esas [H]...[/H]. Una en el primer párrafo y otra en el segundo, las mas relevantes.
+- Debes variar el subrayado siempre.
 
-@@BODY OBLIGATORIO (SIEMPRE UN TÍTULO, UN PÁRRAFO, UN SUBTÍTULO Y OTRO PÁRRAFO, SIEMPRE)
-1) Una línea de título. MUY Breve pero perfecto (pero no pongas nunca literal "Una línea de título" ni nada parecido, recuerda siempre todo natural, tampoco el título del libro lo pongas como título, ni el autor tampoco lo pongas en el título)
-2) Un párrafo breve. (pero no pongas nunca literal "Un párrafo breve" ni nada parecido, recuerda siempre todo natural)
-3) Un subtítulo. Breve pero perfecto (pero no pongas nunca literal "Un subtítulo" ni nada parecido, recuerda siempre todo natural)
-4) Un párrafo breve. (pero no pongas nunca literal "Un párrafo breve" ni nada parecido, recuerda siempre todo natural)
+@@BODY
+(Instrucción estricta: Imprime SOLO las 4 líneas limpias. ESTÁ PROHIBIDO escribir rótulos como "1)", "2)", "Título:", "Párrafo:", o usar viñetas. Solo escribe el texto directo).
+[Línea 1 del título aquí]
+[Línea 2 del primer párrafo aquí]
+[Línea 3 del subtítulo aquí]
+[Línea 4 del segundo párrafo aquí]
 @@ENDBODY`,
 
     estilo: base + `
@@ -569,7 +533,7 @@ SOLO JSON.`
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   ✅ VERIFICACIÓN AUTOMÁTICA (v9.1 — pregunta ya no obligatoria)
+   ✅ VERIFICACIÓN AUTOMÁTICA
 ═══════════════════════════════════════════════════════════════ */
 
 const VERIFICADOR = {
@@ -596,17 +560,18 @@ const VERIFICADOR = {
     };
   },
   
-  // v9.1: verificación tarjeta con contenido RICO
+  // v9.2: verificación con CERO primera persona
   tarjeta: (texto) => {
     const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
     const checks = {
       tiene4Lineas: lineas.length >= 4,
       sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto),
       sinMarkdown: !/\*\*|__|```/g.test(texto),
-      primeraPersona: /\b(yo|he|mi|descubrí|aprendí|sentido|reconozco|noté|encontré|comprendí)\b/i.test(texto),
+      // Se penaliza fuertemente el uso de primera persona
+      sinPrimeraPersona: !/\b(yo|descubrí|aprendí|reconozco|noté|encontré|comprendí|hemos|nuestro)\b/i.test(texto),
       tieneAccion: /\d+\s*(seg|segundo|minuto|min|paso)/i.test(texto),
       tieneHighlights: /\[H\]/i.test(texto),
-      parrafosRicos: lineas.length >= 4 && lineas[1]?.length >= 100 && lineas[3]?.length >= 100
+      parrafosRicos: lineas.length >= 4 && lineas[1]?.length >= 80 && lineas[3]?.length >= 80
     };
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
@@ -675,6 +640,7 @@ async function enrich(libro, openai, ctx) {
       const p = buildPrompt(libro, "main", ctx);
       let raw = await call(openai, p, "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(raw);
+      
       // VERIFICACIÓN v9.0
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.main(extra);
@@ -718,9 +684,24 @@ async function enrich(libro, openai, ctx) {
       const pT = buildPrompt(libro, "tarjeta", ctx, extra);
       let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-      // VERIFICACIÓN v9.1
+      
+      // Limpieza PERFECTA v9.2 - Ya NO destruye las [H] al inicio/fin
+      const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
+        return l
+          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
+          .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s]*/gi, "")
+          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")
+          .replace(/^\d+[\)\.]\s*(?:Una línea de título|Un párrafo breve|Un subtítulo|Párrafo)?[:.\s]*/gi, "")
+          .replace(/^\*{1,3}|\*{1,3}$/g, "")
+          .replace(/^_{1,3}|_{1,3}$/g, "")
+          .trim();
+      }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
+
+      const textoLimpio = lineas.join("\n");
+
+      // VERIFICACIÓN v9.2 - Cero primera persona
       if (CFG.verificacion.activa) {
-        const v = VERIFICADOR.tarjeta(rawT);
+        const v = VERIFICADOR.tarjeta(textoLimpio);
         if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
           console.log(`   ⚠️  Verificación tarjeta: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
           console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k,v]) => !v).map(([k]) => k));
@@ -730,18 +711,6 @@ async function enrich(libro, openai, ctx) {
           throw new Error(`Verificación tarjeta falló: score ${v.score.toFixed(2)}`);
         }
       }
-      
-      // Limpieza PERFECTA
-      const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
-        return l
-          .replace(/^\[|\]$/g, "")
-          .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
-          .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s]*/gi, "")
-          .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")
-          .replace(/^\*{1,3}|\*{1,3}$/g, "")
-          .replace(/^_{1,3}|_{1,3}$/g, "")
-          .trim();
-      }).filter(l => l.length > CFG.tarjeta.longitudMinLinea);
       
       extra.tarjeta = {
         titulo: lineas[0] || "",
@@ -758,7 +727,7 @@ async function enrich(libro, openai, ctx) {
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-        // VERIFICACIÓN v9.0
+        
         if (CFG.verificacion.activa) {
           const v = VERIFICADOR.estilo(extra.tarjeta.style);
           if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
@@ -802,12 +771,12 @@ async function enrich(libro, openai, ctx) {
     }
   }
   
-  // Fallback
+  // Fallback Universal (v9.2)
   return {
     ...libro,
     dimension: "Bienestar",
     punto: "Cero",
-    palabras: ["humillación", "culpabilidad", "desesperanza", "duelo"],
+    palabras: ["inercia", "estancamiento", "claridad", "foco"],
     frases: [
       "🚶 Camina 10 pasos lentos sin pensar en nada más",
       "❤️ Nombra en voz baja a quién ayudaste hoy sin esperar nada",
@@ -819,10 +788,10 @@ async function enrich(libro, openai, ctx) {
     fondo: "#0a0a0a",
     portada: libro.portada || `📚 ${libro.titulo}`,
     tarjeta: {
-      titulo: "Empieza pequeño",
-      parrafoTop: "Cuando el peso de las emociones difíciles aparece, he aprendido que la acción más simple es la más poderosa.",
-      subtitulo: "¿Y si un paso bastara para cambiar todo?",
-      parrafoBot: "Después de esas pequeñas acciones que hiciste, toma este momento: identifica una cosa que puedas hacer en 15 segundos que te acerque a sentirte mejor. Hazla ahora, sin pensar.",
+      titulo: "El poder de la inacción consciente",
+      parrafoTop: "La mente humana está diseñada para el movimiento perpetuo. Sin embargo, [H]el verdadero impacto nace en las pausas estructuradas[/H].",
+      subtitulo: "¿Qué sucede cuando el ruido se apaga?",
+      parrafoBot: "Toma el control inmediato del ritmo. [H]Detén cualquier actividad durante 15 segundos exactos[/H] y observa qué pensamiento domina el silencio.",
       style: {
         accent: "#ff6b6b",
         ink: CFG.darkMode.inkMax,
@@ -848,7 +817,7 @@ if (process.env.SINGLE_MODE === "true") {
   const bookData = JSON.parse(bookJSON);
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.1 — MODO SINGLE (1 libro)       ║");
+  console.log("║   TRIGGUI v9.2 — MODO SINGLE (1 libro)       ║");
   console.log("╚═══════════════════════════════════════════════╝\n");
   console.log(`📖 ${bookData.titulo} — ${bookData.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}\n`);
@@ -880,7 +849,7 @@ if (process.env.SINGLE_MODE === "true") {
 
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║   TRIGGUI v9.1 NIVEL DIOS - EDITORIAL UNIF.  ║");
+console.log("║   TRIGGUI v9.2 NIVEL DIOS - EDITORIAL UNIF.  ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -917,19 +886,15 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA v9.1 NIVEL DIOS
+   📖 GUÍA v9.2 NIVEL DIOS
    
-   🔥 CAMBIOS v9.0 → v9.1:
-   ✅ Tarjeta con contenido RICO (~250 chars por párrafo)
-   ✅ Prompt tarjeta fusionado con esencia del prompt sagrado de Apps Script
-   ✅ [H]...[/H] highlights generados desde aquí (una sola fuente)
-   ✅ Verificador: pregunta opcional, párrafos ricos obligatorios
-   ✅ contenido.json alimenta: tarjeta PNG + edición viva + correo
+   🔥 CAMBIOS v9.1 → v9.2:
+   ✅ Fix agresivo regex (preserva [H])
+   ✅ Cero primera persona, puro "me checa 100%" universal
    
-   FILOSOFÍA v9.1:
+   FILOSOFÍA v9.2:
    - Una sola fuente de contenido para tres salidas
    - Contenido editorial rico (no tweets para app)
    - Prompt tarjeta = fusión de lo mejor de Apps Script + build-contenido
-   - Apps Script lee contenido.json en vez de llamar a GPT
    
 ═══════════════════════════════════════════════════════════════ */
