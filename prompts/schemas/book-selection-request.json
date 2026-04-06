@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triggui Book Selection Request",
+  "description": "Esquema de entrada para el motor selector de libros de Triggui. Parte de un detonante humano real y pide libros candidatos según lente, actualidad, profundidad, contexto temporal y restricciones opcionales.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "selection_mode",
+    "trigger",
+    "selection_preferences",
+    "lens"
+  ],
+  "properties": {
+    "selection_mode": {
+      "type": "string",
+      "enum": [
+        "catalog_only",
+        "discover_allowed"
+      ],
+      "description": "Define si el selector puede elegir solo del catálogo o también descubrir libros fuera del catálogo."
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw",
+        "moment_type",
+        "desired_outcome"
+      ],
+      "properties": {
+        "raw": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Detonante original expresado en lenguaje natural."
+        },
+        "moment_type": {
+          "type": "string",
+          "enum": [
+            "body",
+            "mind",
+            "relationships",
+            "work",
+            "spirit",
+            "money",
+            "family",
+            "other"
+          ]
+        },
+        "desired_outcome": {
+          "type": "string",
+          "description": "Qué tipo de ayuda se busca del libro: claridad, confrontación, estructura, regulación, comprensión, estrategia, etc."
+        }
+      }
+    },
+    "selection_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recency_preference",
+        "depth_preference",
+        "book_type_preference",
+        "language_preference",
+        "era_preference",
+        "max_candidates"
+      ],
+      "properties": {
+        "recency_preference": {
+          "type": "string",
+          "enum": [
+            "latest",
+            "modern",
+            "any",
+            "classic"
+          ],
+          "description": "Nivel de actualidad deseado."
+        },
+        "depth_preference": {
+          "type": "string",
+          "enum": [
+            "practical",
+            "balanced",
+            "deep",
+            "foundational"
+          ],
+          "description": "Qué tan aplicado o profundo debe ser el libro."
+        },
+        "book_type_preference": {
+          "type": "string",
+          "enum": [
+            "nonfiction",
+            "fiction",
+            "essay",
+            "philosophy",
+            "psychology",
+            "business",
+            "health",
+            "any"
+          ],
+          "description": "Tipo de obra preferida."
+        },
+        "language_preference": {
+          "type": "string",
+          "enum": [
+            "spanish",
+            "english",
+            "any"
+          ]
+        },
+        "era_preference": {
+          "type": "string",
+          "enum": [
+            "contemporary",
+            "20th_century",
+            "19th_century_or_older",
+            "any"
+          ]
+        },
+        "max_candidates": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 5
+        }
+      }
+    },
+    "lens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary",
+        "secondary",
+        "bias_strength"
+      ],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Lente principal que sesga la selección."
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "bias_strength": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Cuánto debe influir el lente en la selección final."
+        }
+      }
+    },
+    "time_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "weekday",
+        "hour",
+        "energy",
+        "chronobiology_mode"
+      ],
+      "properties": {
+        "weekday": {
+          "type": "string",
+          "enum": [
+            "lunes",
+            "martes",
+            "miércoles",
+            "jueves",
+            "viernes",
+            "sábado",
+            "domingo"
+          ]
+        },
+        "hour": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 23
+        },
+        "energy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Escala flexible de energía percibida. 1.0 es neutro."
+        },
+        "chronobiology_mode": {
+          "type": "string",
+          "enum": [
+            "madrugada",
+            "manana",
+            "mediodia",
+            "tarde",
+            "noche"
+          ]
+        }
+      }
+    },
+    "recent_history": {
+      "type": "array",
+      "description": "Historial reciente de libros enviados o usados para evitar repetición.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "author"],
+        "properties": {
+          "title": { "type": "string" },
+          "author": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "catalog_candidates": {
+      "type": "array",
+      "description": "Catálogo disponible cuando el modo exige o favorece selección interna.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "author"],
+        "properties": {
+          "title": { "type": "string" },
+          "author": { "type": "string" },
+          "tagline": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      },
+      "default": []
+    },
+    "restrictions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exclude_authors",
+        "exclude_books",
+        "avoid_repetition_with_recent_history"
+      ],
+      "properties": {
+        "exclude_authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "exclude_books": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "avoid_repetition_with_recent_history": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "default": {
+        "exclude_authors": [],
+        "exclude_books": [],
+        "avoid_repetition_with_recent_history": true
+      }
+    }
+  }
+}

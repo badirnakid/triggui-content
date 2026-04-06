@@ -1,0 +1,43 @@
+{
+  "selection_mode": "discover_allowed",
+  "trigger": {
+    "raw": "Comí ciertas cosas el fin de semana y hoy lunes temprano noto con bastante claridad mi nivel de inflamación y cómo se irá reduciendo según mi rutina. Qué importante es el autoconocimiento.",
+    "moment_type": "body",
+    "desired_outcome": "Quiero un libro que ayude a traducir una observación corporal concreta en comprensión útil, disciplina práctica y autoconocimiento real, sin caer en wellness genérico."
+  },
+  "selection_preferences": {
+    "recency_preference": "any",
+    "depth_preference": "deep",
+    "book_type_preference": "health",
+    "language_preference": "any",
+    "era_preference": "any",
+    "max_candidates": 5
+  },
+  "lens": {
+    "primary": "self-knowledge",
+    "secondary": ["chronobiology"],
+    "bias_strength": 0.82
+  },
+  "time_context": {
+    "weekday": "lunes",
+    "hour": 6,
+    "energy": 0.78,
+    "chronobiology_mode": "manana"
+  },
+  "recent_history": [
+    {
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg"
+    },
+    {
+      "title": "Atomic Habits",
+      "author": "James Clear"
+    }
+  ],
+  "catalog_candidates": [],
+  "restrictions": {
+    "exclude_authors": [],
+    "exclude_books": [],
+    "avoid_repetition_with_recent_history": true
+  }
+}

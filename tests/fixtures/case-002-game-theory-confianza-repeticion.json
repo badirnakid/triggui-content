@@ -1,0 +1,43 @@
+{
+  "selection_mode": "discover_allowed",
+  "trigger": {
+    "raw": "Veo un patrón repetido: cuando alguien responde tarde, entrega poco o deja ambigüedad, los demás compensan, absorben el costo y todo sigue. Luego todos se quejan del resultado, pero el juego real nunca cambia. Aquí hay incentivos, señales y reputación, no solo frustración.",
+    "moment_type": "work",
+    "desired_outcome": "Quiero un libro que ayude a leer mejor un patrón repetido de incentivos, cooperación rota y costos ocultos, para pensar con más estructura y menos ingenuidad."
+  },
+  "selection_preferences": {
+    "recency_preference": "any",
+    "depth_preference": "deep",
+    "book_type_preference": "business",
+    "language_preference": "any",
+    "era_preference": "any",
+    "max_candidates": 5
+  },
+  "lens": {
+    "primary": "game-theory",
+    "secondary": ["self-knowledge"],
+    "bias_strength": 0.86
+  },
+  "time_context": {
+    "weekday": "jueves",
+    "hour": 9,
+    "energy": 1.18,
+    "chronobiology_mode": "manana"
+  },
+  "recent_history": [
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman"
+    },
+    {
+      "title": "Influence",
+      "author": "Robert Cialdini"
+    }
+  ],
+  "catalog_candidates": [],
+  "restrictions": {
+    "exclude_authors": [],
+    "exclude_books": [],
+    "avoid_repetition_with_recent_history": true
+  }
+}

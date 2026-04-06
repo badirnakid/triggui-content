@@ -1,0 +1,74 @@
+{
+  "selection_mode": "catalog_only",
+  "trigger": {
+    "raw": "Noto una inercia muy concreta: agarro el celular sin necesitar nada, la atención se me fragmenta y luego me cuesta volver a una presencia real. No quiero solo productividad. Quiero recuperar fricción sana con las pantallas y capacidad de estar completo en una sola cosa.",
+    "moment_type": "mind",
+    "desired_outcome": "Quiero un libro del catálogo que ayude a entender la degradación de la atención y a recuperar una relación menos reactiva con las pantallas, con potencia editorial real y sin caer en productividad plana."
+  },
+  "selection_preferences": {
+    "recency_preference": "any",
+    "depth_preference": "balanced",
+    "book_type_preference": "any",
+    "language_preference": "any",
+    "era_preference": "any",
+    "max_candidates": 5
+  },
+  "lens": {
+    "primary": "self-knowledge",
+    "secondary": ["chronobiology"],
+    "bias_strength": 0.74
+  },
+  "time_context": {
+    "weekday": "miércoles",
+    "hour": 22,
+    "energy": 0.46,
+    "chronobiology_mode": "noche"
+  },
+  "recent_history": [
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport"
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "author": "Oliver Burkeman"
+    }
+  ],
+  "catalog_candidates": [
+    {
+      "title": "Stolen Focus",
+      "author": "Johann Hari",
+      "tagline": "Por qué no puedes poner atención y cómo recuperarla.",
+      "notes": "Amplio, cultural, contemporáneo, fuerte para hablar de atención fragmentada y entorno."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "tagline": "Cómo controlar tu atención y elegir tu vida.",
+      "notes": "Más conductual y práctico; puede derivar en acciones concretas, pero corre riesgo de sonar demasiado productivo si se usa mal."
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "tagline": "Reglas para el enfoque concentrado en un mundo distraído.",
+      "notes": "Muy fuerte para foco y trabajo profundo, pero puede sesgar demasiado hacia rendimiento profesional."
+    },
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "tagline": "Qué está haciendo internet con nuestros cerebros.",
+      "notes": "Más cerebral y estructural; potente para entender degradación cognitiva, menos inmediato para acción breve."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "author": "Oliver Burkeman",
+      "tagline": "Time management for mortals.",
+      "notes": "Útil para tiempo, finitud y relación con control, pero aquí puede abrir demasiado el ángulo y perder el foco atencional específico."
+    }
+  ],
+  "restrictions": {
+    "exclude_authors": [],
+    "exclude_books": [],
+    "avoid_repetition_with_recent_history": true
+  }
+}

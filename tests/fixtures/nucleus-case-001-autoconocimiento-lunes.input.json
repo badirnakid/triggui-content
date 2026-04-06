@@ -1,0 +1,39 @@
+{
+  "trigger": {
+    "raw": "Comí ciertas cosas el fin de semana y hoy lunes temprano noto con bastante claridad mi nivel de inflamación y cómo se irá reduciendo según mi rutina. Qué importante es el autoconocimiento.",
+    "source": "badir",
+    "moment_type": "body",
+    "time_context": {
+      "weekday": "lunes",
+      "hour": 6,
+      "energy": 0.78,
+      "chronobiology_mode": "manana"
+    }
+  },
+  "lens": {
+    "primary": "self-knowledge",
+    "secondary": ["chronobiology"],
+    "bias_strength": 0.82
+  },
+  "book_selection": {
+    "title": "Why We Get Sick",
+    "author": "Benjamin Bikman",
+    "why_this_book": "Este libro encaja porque permite leer una señal corporal concreta no solo como molestia pasajera, sino como información útil sobre desajuste fisiológico, hábito y conciencia práctica. Ayuda a convertir una percepción física en comprensión accionable sin caer en wellness genérico.",
+    "confidence": 0.79,
+    "alternatives": [
+      {
+        "title": "Outlive",
+        "author": "Peter Attia",
+        "reason": "Aporta marco amplio sobre salud y prevención, pero para este caso puede abrir demasiado el espectro y perder el filo concreto del detonante."
+      },
+      {
+        "title": "Good Energy",
+        "author": "Casey Means",
+        "reason": "Tiene afinidad con energía, cuerpo y señales, pero aquí pierde por precisión frente a una lógica más enfocada en mecanismos y lectura del desajuste."
+      }
+    ]
+  },
+  "book_context": "La pieza no debe sonar clínica ni wellness. Debe sonar sobria, útil y precisa. El cuerpo importa como señal. La rutina importa como mecanismo de corrección. El autoconocimiento importa como lectura fina del patrón.",
+  "book_notes": "Evitar moralizar la comida. Evitar biohacking inflado. Priorizar señal, patrón, fricción, claridad y ajuste realista.",
+  "allow_first_person": false
+}
