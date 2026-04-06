@@ -5,6 +5,7 @@
    ✅ Fix crítico: Limpieza de regex ya no destruye las etiquetas [H]...[/H]
    ✅ Cero primera persona: Voz universal/observacional ("me checa 100%")
    ✅ Verificador estricto: penaliza uso de "yo", "descubrí", "aprendí"
+   ✅ Fix Verificador: sinMetadata ignora [H] y [/H] para no causar falsos positivos
    
    AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.2
 ═══════════════════════════════════════════════════════════════════════════════ */
@@ -560,12 +561,13 @@ const VERIFICADOR = {
     };
   },
   
-  // v9.2: verificación con CERO primera persona
+  // v9.2: verificación con CERO primera persona y regex ignorando [H]
   tarjeta: (texto) => {
     const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
     const checks = {
       tiene4Lineas: lineas.length >= 4,
-      sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto),
+      // CIRUGÍA: Reemplaza temporalmente [H] y [/H] por vacío SOLO para evaluar esta regla
+      sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto.replace(/\[\/?H\]/gi, "")),
       sinMarkdown: !/\*\*|__|```/g.test(texto),
       // Se penaliza fuertemente el uso de primera persona
       sinPrimeraPersona: !/\b(yo|descubrí|aprendí|reconozco|noté|encontré|comprendí|hemos|nuestro)\b/i.test(texto),
@@ -891,6 +893,7 @@ console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colo
    🔥 CAMBIOS v9.1 → v9.2:
    ✅ Fix agresivo regex (preserva [H])
    ✅ Cero primera persona, puro "me checa 100%" universal
+   ✅ Fix Verificador: sinMetadata ignora [H] y [/H] para no causar falsos positivos
    
    FILOSOFÍA v9.2:
    - Una sola fuente de contenido para tres salidas
