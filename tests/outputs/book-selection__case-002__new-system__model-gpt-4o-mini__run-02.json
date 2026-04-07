@@ -1,0 +1,41 @@
+{
+  "detected_theme": {
+    "core": "patrones de incentivos y cooperación rota",
+    "subtheme": "costos ocultos en la dinámica de trabajo",
+    "why_it_matters_now": "Entender estos patrones puede ayudar a evitar la frustración y mejorar la colaboración en entornos laborales."
+  },
+  "selected_book": {
+    "title": "The Advantage: Why Organizational Health Trumps Everything Else in Business",
+    "author": "Patrick Lencioni",
+    "why_this_book": "This book wins because it frames the problem of organizational dysfunction as a failure of cooperation and accountability, which fits the trigger better than other business books because it directly addresses how hidden costs and lack of clear signals undermine team effectiveness.",
+    "confidence": 0.9,
+    "fit": {
+      "trigger_fit": "Aborda la dinámica de equipos y cómo los patrones de comportamiento afectan los resultados.",
+      "lens_fit": "Proporciona una estructura clara para entender incentivos y señales en un contexto organizacional.",
+      "timing_fit": "El enfoque en la salud organizacional es relevante para el momento actual en el trabajo."
+    },
+    "selection_source": "external"
+  },
+  "alternatives": [
+    {
+      "title": "The Five Dysfunctions of a Team",
+      "author": "Patrick Lencioni",
+      "reason": "Es un análisis profundo sobre las dinámicas de equipo y cómo la falta de confianza y responsabilidad afecta el rendimiento, pero no aborda tan directamente los costos ocultos como lo hace 'The Advantage'."
+    },
+    {
+      "title": "Drive: The Surprising Truth About What Motivates Us",
+      "author": "Daniel H. Pink",
+      "reason": "Explora la motivación en el trabajo y cómo los incentivos pueden ser mal diseñados, pero no se centra tanto en la cooperación rota y la dinámica de costos ocultos como el libro seleccionado."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Good to Great",
+      "reason": "Se centra en las características de empresas exitosas, pero no aborda la dinámica de cooperación y costos ocultos en la misma medida, lo que podría llevar a una comprensión superficial del problema."
+    },
+    {
+      "title": "The Lean Startup",
+      "reason": "Se enfoca en la innovación y el desarrollo de productos, pero no trata las dinámicas de cooperación y los costos ocultos que surgen en entornos de trabajo, desviándose del enfoque requerido por el detonante."
+    }
+  ]
+}

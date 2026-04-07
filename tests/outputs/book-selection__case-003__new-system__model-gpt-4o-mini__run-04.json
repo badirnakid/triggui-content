@@ -1,0 +1,41 @@
+{
+  "detected_theme": {
+    "core": "Degradación de la atención y relación con las pantallas.",
+    "subtheme": "Inercia y fragmentación atencional.",
+    "why_it_matters_now": "La búsqueda de una relación menos reactiva con la tecnología es crucial en un momento donde la atención está constantemente fragmentada."
+  },
+  "selected_book": {
+    "title": "Stolen Focus",
+    "author": "Johann Hari",
+    "why_this_book": "Este libro gana porque aborda la degradación de la atención como un fenómeno cultural y ambiental, lo que es más relevante para este detonante que 'The Shallows', que se centra más en el aspecto cognitivo sin ofrecer una conexión práctica con la experiencia diaria del lector.",
+    "confidence": 0.85,
+    "fit": {
+      "trigger_fit": "El libro se enfoca en la pérdida de atención y ofrece un análisis de las causas, alineándose con el deseo de entender la inercia atencional.",
+      "lens_fit": "La obra permite una reflexión profunda sobre la relación con las pantallas, facilitando el autoconocimiento en este contexto.",
+      "timing_fit": "La lectura se adapta bien a la noche, cuando se busca una comprensión más introspectiva y menos inmediata."
+    },
+    "selection_source": "catalog"
+  },
+  "alternatives": [
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "reason": "Es útil para entender la degradación cognitiva, pero su enfoque es más cerebral y menos práctico para la acción inmediata que se busca con este detonante."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "reason": "Ofrece estrategias concretas para controlar la atención, pero puede desviar la atención hacia la productividad, en lugar de explorar la relación emocional con las pantallas."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Deep Work",
+      "reason": "Se centra demasiado en el rendimiento profesional y la productividad, lo que no se alinea con la necesidad de recuperar una relación más saludable con las pantallas."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "reason": "Aunque útil para el manejo del tiempo, su enfoque es demasiado amplio y podría desviar la atención del problema específico de la fragmentación atencional."
+    }
+  ]
+}

@@ -1,14 +1,13 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.3.1 NIVEL DIOS - CONTENIDO EDITORIAL UNIFICADO
-
-   CAMBIOS v9.3 → v9.3.1:
-   ✅ Integración segura de prompts externos (constitución + tarea editorial)
-   ✅ Modo seguro: por default sigue usando el prompt legacy estable
-   ✅ Activación explícita con USE_EXTERNAL_EDITORIAL_PROMPTS=true
-   ✅ Fallback automático al prompt legacy si faltan archivos o están mal formados
-   ✅ Fix crítico de rutas: build-contenido.js vive en /scripts y ahora resuelve prompts robustamente
-
-   AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.3.1
+   TRIGGUI v9.2 NIVEL DIOS - CONTENIDO EDITORIAL UNIFICADO
+   
+   CAMBIOS v9.1 → v9.2:
+   ✅ Fix crítico: Limpieza de regex ya no destruye las etiquetas [H]...[/H]
+   ✅ Cero primera persona: Voz universal/observacional ("me checa 100%")
+   ✅ Verificador estricto: penaliza uso de "yo", "descubrí", "aprendí"
+   ✅ Fix Verificador: sinMetadata ignora [H] y [/H] para no causar falsos positivos
+   
+   AUTOR: Badir Nakid | FECHA: Abr 2026 | VERSIÓN: 9.2
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -29,25 +28,18 @@ const CFG = {
   top_p: 0.9,
   presence: 0.7,
   frequency: 0.4,
-
+  
   // ─── Archivos ───
   csv: "data/libros_master.csv",
   out: "contenido.json",
-
-  // ─── Prompts externos (v9.3.1) ───
-  prompts: {
-    useExternalEditorial: process.env.USE_EXTERNAL_EDITORIAL_PROMPTS === "true",
-    constitution: "prompts/constitution/triggui-core.md",
-    editorial: "prompts/tasks/generate-editorial.md"
-  },
-
+  
   // ─── Procesamiento ───
   max: 20,
   delay: 10000,
   maxReintentos: 20,
   sleepReintento: 2000,
   resetMemoryCada: 5,
-
+  
   // ─── Contenido (DINÁMICO según hora/día) ───
   hawkins: {
     base: [20, 100],
@@ -56,32 +48,32 @@ const CFG = {
     tarde: [30, 120],
     noche: [20, 100]
   },
-
+  
   frases: {
     cantidad: 4,
     longitudMin: 90,
     longitudMax: 110
   },
-
+  
   palabras: {
     cantidad: 4
   },
-
+  
   colores: {
     cantidad: 4
   },
-
+  
   tarjeta: {
     accionMin: 15,
     accionMax: 60,
     lineasMin: 3,
     longitudMinLinea: 10,
-    tituloGuia: 50,
-    parrafo1Guia: 250,
-    subtituloGuia: 70,
-    parrafo2Guia: 250
+    tituloGuia: 50,       
+    parrafo1Guia: 250,    
+    subtituloGuia: 70,    
+    parrafo2Guia: 250     
   },
-
+  
   // ─── Dark Mode ───
   darkMode: {
     paperMin: "#0a0a0a",
@@ -91,7 +83,7 @@ const CFG = {
     lumThresholdPaper: 0.3,
     lumThresholdInk: 0.7
   },
-
+  
   // ─── Cronobiología (energía por día) ───
   energia: {
     lunes: 0.8,
@@ -102,14 +94,14 @@ const CFG = {
     sábado: 0.8,
     domingo: 0.8
   },
-
+  
   // ─── Ajustes dinámicos según energía ───
   dinamico: {
     tempMultiplicador: true,
     hawkinsShift: true,
     frasesExtension: true
   },
-
+  
   // ─── Verificación ───
   verificacion: {
     activa: true,
@@ -129,15 +121,15 @@ const utils = {
     const f = v => v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
     return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
   },
-
+  
   txt: h => utils.lum(h) > 0.35 ? "#000000" : "#FFFFFF",
-
+  
   shuffle: arr => {
     let m = arr.length, i;
     while (m) [arr[m], arr[i]] = [arr[i = Math.floor(Math.random() * m--)], arr[m]];
     return arr;
   },
-
+  
   clean: raw => raw.trim()
     .replace(/```json\s*/g, "")
     .replace(/```\s*/g, "")
@@ -146,10 +138,6 @@ const utils = {
 };
 
 const state = { palabras: new Set(), colores: new Set() };
-const promptState = {
-  editorial: null,
-  warnedFallback: false
-};
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -161,21 +149,21 @@ function getContexto() {
   const now = new Date();
   const dia = now.toLocaleDateString("es-MX", { weekday: "long" }).toLowerCase();
   const hora = now.getHours();
-
+  
   const energia = CFG.energia[dia] || 0.8;
   let franja = "noche";
   if (hora >= 0 && hora < 6) franja = "madrugada";
   else if (hora >= 6 && hora < 12) franja = "manana";
   else if (hora >= 12 && hora < 18) franja = "tarde";
 
-  const tempDinamica = CFG.dinamico.tempMultiplicador
-    ? CFG.temp * energia
+  const tempDinamica = CFG.dinamico.tempMultiplicador 
+    ? CFG.temp * energia 
     : CFG.temp;
-
+    
   const hawkinsDinamico = CFG.dinamico.hawkinsShift
     ? CFG.hawkins[franja]
     : CFG.hawkins.base;
-
+    
   const frasesLongitud = CFG.dinamico.frasesExtension
     ? {
         min: Math.round(CFG.frases.longitudMin * energia),
@@ -229,99 +217,14 @@ const NEUROBIOLOGIA = {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   📂 PROMPTS EXTERNOS v9.3.1 (SAFE MODE + FALLBACK + RUTAS ROBUSTAS)
+   🧙‍♂️ SISTEMA DE PROMPTS v9.2 (VOZ UNIVERSAL "ME CHECA 100%")
 ═══════════════════════════════════════════════════════════════ */
 
-async function readPromptFile(relativePath) {
-  const candidates = [
-    new URL(`../${relativePath}`, import.meta.url), // scripts/build-contenido.js -> repo root/prompts/...
-    new URL(`./${relativePath}`, import.meta.url)   // fallback si algún día el archivo se mueve
-  ];
-
-  let lastError = null;
-
-  for (const fileUrl of candidates) {
-    try {
-      return await fs.readFile(fileUrl, "utf8");
-    } catch (error) {
-      lastError = error;
-    }
-  }
-
-  throw lastError || new Error(`No se pudo leer el prompt: ${relativePath}`);
-}
-
-function extractMarkdownSection(markdown, heading) {
-  const source = String(markdown || "");
-  const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const startRegex = new RegExp(`^##\\s+${escapedHeading}\\s*$`, "m");
-  const startMatch = startRegex.exec(source);
-
-  if (!startMatch) {
-    throw new Error(`No se encontró la sección "${heading}" en el prompt editorial`);
-  }
-
-  const sectionStart = startMatch.index + startMatch[0].length;
-  const tail = source.slice(sectionStart).replace(/^\s+/, "");
-  const nextHeading = /^##\s+/m.exec(tail);
-  const content = nextHeading ? tail.slice(0, nextHeading.index).trim() : tail.trim();
-
-  if (!content) {
-    throw new Error(`La sección "${heading}" está vacía en el prompt editorial`);
-  }
-
-  return content;
-}
-
-function renderPromptTemplate(template, variables) {
-  let out = String(template || "");
-
-  for (const [token, value] of Object.entries(variables)) {
-    out = out.split(token).join(String(value ?? ""));
-  }
-
-  return out.replace(/\n{3,}/g, "\n\n").trim();
-}
-
-async function loadEditorialPromptArtifacts() {
-  if (promptState.editorial) return promptState.editorial;
-
-  try {
-    const [constitution, task] = await Promise.all([
-      readPromptFile(CFG.prompts.constitution),
-      readPromptFile(CFG.prompts.editorial)
-    ]);
-
-    const systemSection = extractMarkdownSection(task, "SYSTEM MESSAGE");
-    const userSection = extractMarkdownSection(task, "USER PROMPT TEMPLATE");
-
-    promptState.editorial = {
-      available: true,
-      constitution: constitution.trim(),
-      systemSection: systemSection.trim(),
-      userSection: userSection.trim()
-    };
-
-    return promptState.editorial;
-  } catch (error) {
-    promptState.editorial = {
-      available: false,
-      error: error instanceof Error ? error.message : String(error)
-    };
-
-    return promptState.editorial;
-  }
-}
-
-/* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ SISTEMA DE PROMPTS
-═══════════════════════════════════════════════════════════════ */
-
-function buildBasePrompt(libro, ctx) {
+function buildPrompt(libro, tipo, ctx, extra = null) {
   const prohibidas = [...state.palabras].join(", ");
   const prohibidosC = [...state.colores].join(", ");
-
-  return `
+  
+  const base = `
 Eres Triggui. Neurobiólogo + Diseñador de experiencias emocionales.
 
 ═══════════════════════════════════════════════════════════════
@@ -360,166 +263,6 @@ PROCESO OBLIGATORIO:
 3. Extrae atmósfera, tono, sensación ESPECÍFICA
 4. SOLO ENTONCES genera
 `;
-}
-
-function buildLegacyTarjetaPrompt(libro, ctx, extra = null) {
-  const base = buildBasePrompt(libro, ctx);
-
-  return base + `
-${extra ?
-`
-═══════════════════════════════════════════════════════════════
-🔗 JOURNEY PREVIO:
-═══════════════════════════════════════════════════════════════
-Emociones: ${extra.palabras.join(", ")}
-Acciones:
-${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
-
-CONTINÚA este journey emocional.
-═══════════════════════════════════════════════════════════════
-` : ""}
-
-[Eres Badir. Escribe sobrio, claro, directo. Voz universal y altamente observacional. Sin emojis.]
-Semilla interna (no mostrar): ${Math.random().toString(36).substring(2, 15)}
-Libro: "${libro.titulo}" de ${libro.autor}
-Idea semilla (no tan literal, NO tanto citar, NO usar comillas): ${extra && extra.frases ? extra.frases.join(" | ") : (libro.tagline || libro.titulo)}
-
-REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, dale peso a valores y virtudes, esencia, cimientos sólidos, fundamentos.
-QUE LA PERSONA QUE LEA SIENTA UNA IDENTIFICACIÓN TOTAL. DEBE PENSAR: "ME CHECA, ESTO ME DESCRIBE AL 100%".
-Escribe verdades absolutas, observaciones precisas sobre la naturaleza humana o el mundo, extraídas del libro.
-
-ESTRICTAMENTE PROHIBIDO usar primera persona.
-NUNCA uses: "yo", "mi", "me", "he", "descubrí", "aprendí", "nos", "nuestro".
-Habla directo a la experiencia humana. Describe cómo funciona la mente, la realidad, el miedo, el tiempo, la inercia. Que sea universal.
-
-QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER. SU VERDADERO SIGUIENTE PASO.
-QUE SIENTA ESA LLAMA QUE SE PRENDIÓ QUE SEA ÚTIL DE VERDAD NO SOLO RELLENO.
-AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES.
-SIEMPRE DUDA DE QUE SEGURAMENTE YA LA USASTE MUCHO Y CAMBIA.
-
-⚡ Instrucción extra:
-Debes elegir exactamente frases completas, breves y poderosas, las más cruciales y transformadoras de todo el texto.
-Usa el formato [H]…[/H] para rodear esas frases.
-No uses jamás formatos como **negritas**, _cursivas_, <b>, <i> u otras etiquetas.
-Solo [H] y [/H].
-Está absolutamente prohibido devolver etiquetas HTML, CSS, estilos inline, atributos style, colores.
-Solo devuelve texto plano con las marcas [H] y [/H].
-Piensa como si tuvieras que escoger el único fragmento que hará que el lector cambie su forma de pensar o actuar, que lo deje pensando para bien.
-No marques palabras aisladas, nunca.
-No marques adornos. Solo subraya una frase completa que sea un verdadero game changer.
-
-PROHIBIDO caer en muletillas de reflexión.
-Cada mensaje debe sonar atemporal, como una máxima filosófica útil y contemporánea.
-
-Objetivo: Tarjeta breve, clara, directa y cruda. Con un hecho o concepto del libro, y un accionable.
-Que transmita algo IMPRESIONANTEMENTE VALIOSO, sublime, megaútil.
-Cero frases hechas. Cero "marketing". Precisión y honestidad absoluta.
-
-Reglas críticas para NO inducir a error:
-- La "idea semilla" NO es una cita textual. Trátala como inspiración.
-- NO escribas "la frase…", "según el libro…", "dice…", "como cita…".
-- NO uses comillas alrededor de la idea semilla ni la presentes como cita literal.
-- MENCIONA EL LIBRO Y EL AUTOR en alguna parte del texto, pero integrado de forma observacional y natural.
-
-Guía de estilo:
-- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, extraordinario, entrañable, vibrante, radiante).
-- No adornes el origen. Escribe la verdad dura y útil.
-- Varía SIEMPRE todo.
-
-Estructura:
-1) Una línea de título: Breve, un concepto, sin metadata.
-2) Un párrafo breve: La observación universal que hace que el lector diga "me checa 100%". Integra autor y libro.
-3) Un subtítulo: Breve pero perfecto, bisagra emocional.
-4) Un párrafo breve: Acción concreta de 15-60 segundos relacionada al concepto.
-
-Reglas duras:
-- Extensión total: 3–5 líneas.
-- Sin emojis ni símbolos raros.
-- Sonido: sobrio, observacional, crudo, útil.
-- Varía la forma de iniciar SIEMPRE.
-- La extensión total del texto debe adaptarse al espacio visual (máximo 50–60 palabras).
-- Busca balance visual en el texto.
-- El texto debe sonar atemporal y universal, nunca localista.
-
-⚠️ Reglas críticas adicionales:
-- Debes insertar OBLIGATORIAMENTE 2 o 3 marcas [H]...[/H] en el texto.
-- Nunca devuelvas el bloque sin al menos esas [H]...[/H]. Una en el primer párrafo y otra en el segundo, las mas relevantes.
-- Debes variar el subrayado siempre.
-
-@@BODY
-(Instrucción estricta: Imprime SOLO las 4 líneas limpias. ESTÁ PROHIBIDO escribir rótulos como "1)", "2)", "Título:", "Párrafo:", o usar viñetas. Solo escribe el texto directo).
-[Línea 1 del título aquí]
-[Línea 2 del primer párrafo aquí]
-[Línea 3 del subtítulo aquí]
-[Línea 4 del segundo párrafo aquí]
-@@ENDBODY`;
-}
-
-async function buildTarjetaMessages(libro, ctx, extra = null) {
-  const legacySystem = buildLegacyTarjetaPrompt(libro, ctx, extra);
-
-  if (!CFG.prompts.useExternalEditorial) {
-    return {
-      system: legacySystem,
-      user: "Genera tarjeta",
-      source: "legacy"
-    };
-  }
-
-  const artifacts = await loadEditorialPromptArtifacts();
-
-  if (!artifacts.available) {
-    if (!promptState.warnedFallback) {
-      console.log(`   ⚠️  Prompt editorial externo no disponible. Fallback legacy: ${artifacts.error}`);
-      promptState.warnedFallback = true;
-    }
-
-    return {
-      system: legacySystem,
-      user: "Genera tarjeta",
-      source: "legacy-fallback"
-    };
-  }
-
-  const ideaSemilla = extra?.frases?.length
-    ? extra.frases.join(" | ")
-    : (libro.tagline || libro.titulo || "");
-
-  const palabrasProhibidas = [...state.palabras].join(", ");
-  const contextoBadirHoy = libro?.contexto_2026?.aplicacion_badir_hoy || "";
-  const lenteActivo = libro?.lente_activo || extra?.lente_activo || "";
-
-  const variables = {
-    "${libro.titulo}": libro.titulo || "",
-    "${libro.autor}": libro.autor || "",
-    "${libro.tagline}": libro.tagline || "",
-    "${ctx.dia}": ctx.dia || "",
-    "${ctx.hora}": String(ctx.hora ?? ""),
-    "${ctx.energia}": `${Math.round((ctx.energia || 0) * 100)}%`,
-    "${ctx.hawkins}": `${ctx.hawkinsDinamico?.[0] ?? ""}-${ctx.hawkinsDinamico?.[1] ?? ""}`,
-    "${idea_semilla}": ideaSemilla,
-    "${palabras_prohibidas}": palabrasProhibidas,
-    "${libro.contexto_2026?.aplicacion_badir_hoy ?? ''}": contextoBadirHoy,
-    "${lente_activo ?? ''}": lenteActivo
-  };
-
-  const system = [
-    artifacts.systemSection,
-    "CONSTITUCIÓN EDITORIAL DE TRIGGUI:",
-    artifacts.constitution
-  ].join("\n\n").trim();
-
-  const user = renderPromptTemplate(artifacts.userSection, variables);
-
-  return {
-    system,
-    user,
-    source: "external"
-  };
-}
-
-function buildPrompt(libro, tipo, ctx, extra = null) {
-  const base = buildBasePrompt(libro, ctx);
 
   const prompts = {
     main: base + `
@@ -637,6 +380,95 @@ VERIFICACIÓN ANTES DE RESPONDER:
 
 SOLO JSON.`,
 
+    tarjeta: base + `
+${extra ?
+`
+═══════════════════════════════════════════════════════════════
+🔗 JOURNEY PREVIO:
+═══════════════════════════════════════════════════════════════
+Emociones: ${extra.palabras.join(", ")}
+Acciones:
+${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+
+CONTINÚA este journey emocional.
+═══════════════════════════════════════════════════════════════
+` : ""}
+
+[Eres Badir. Escribe sobrio, claro, directo. Voz universal y altamente observacional. Sin emojis.] 
+Semilla interna (no mostrar): ${Math.random().toString(36).substring(2, 15)} 
+Libro: "${libro.titulo}" de ${libro.autor} 
+Idea semilla (no tan literal, NO tanto citar, NO usar comillas): ${extra && extra.frases ? extra.frases.join(" | ") : (libro.tagline || libro.titulo)}
+
+REALMENTE QUIERO QUE DIGA ALGO IMPORTANTE, dale peso a valores y virtudes, esencia, cimientos sólidos, fundamentos.
+QUE LA PERSONA QUE LEA SIENTA UNA IDENTIFICACIÓN TOTAL. DEBE PENSAR: "ME CHECA, ESTO ME DESCRIBE AL 100%". 
+Escribe verdades absolutas, observaciones precisas sobre la naturaleza humana o el mundo, extraídas del libro.
+
+ESTRICTAMENTE PROHIBIDO usar primera persona. 
+NUNCA uses: "yo", "mi", "me", "he", "descubrí", "aprendí", "nos", "nuestro". 
+Habla directo a la experiencia humana. Describe cómo funciona la mente, la realidad, el miedo, el tiempo, la inercia. Que sea universal.
+
+QUE DESPUES DE LEER ESO SEPA QUE DEBE DE HACER. SU VERDADERO SIGUIENTE PASO. 
+QUE SIENTA ESA LLAMA QUE SE PRENDIÓ QUE SEA ÚTIL DE VERDAD NO SOLO RELLENO.
+AQUELLO QUE YA HAYAS ELEGIDO PARA DAR COMO RESULTADO HAZLE UN SCRAMBLE REVUELVELO PARA ASEGURAR QUE DE MANERA ALEATORIA NO REPITES.
+SIEMPRE DUDA DE QUE SEGURAMENTE YA LA USASTE MUCHO Y CAMBIA.
+
+⚡ Instrucción extra: 
+Debes elegir exactamente frases completas, breves y poderosas, las más cruciales y transformadoras de todo el texto.
+Usa el formato [H]…[/H] para rodear esas frases.
+No uses jamás formatos como **negritas**, _cursivas_, <b>, <i> u otras etiquetas.
+Solo [H] y [/H]. 
+Está absolutamente prohibido devolver etiquetas HTML, CSS, estilos inline, atributos style, colores.
+Solo devuelve texto plano con las marcas [H] y [/H].
+Piensa como si tuvieras que escoger el único fragmento que hará que el lector cambie su forma de pensar o actuar, que lo deje pensando para bien. 
+No marques palabras aisladas, nunca.
+No marques adornos. Solo subraya una frase completa que sea un verdadero game changer.
+
+PROHIBIDO caer en muletillas de reflexión. 
+Cada mensaje debe sonar atemporal, como una máxima filosófica útil y contemporánea.
+
+Objetivo: Tarjeta breve, clara, directa y cruda. Con un hecho o concepto del libro, y un accionable.
+Que transmita algo IMPRESIONANTEMENTE VALIOSO, sublime, megaútil.
+Cero frases hechas. Cero "marketing". Precisión y honestidad absoluta. 
+
+Reglas críticas para NO inducir a error: 
+- La "idea semilla" NO es una cita textual. Trátala como inspiración.
+- NO escribas "la frase…", "según el libro…", "dice…", "como cita…".
+- NO uses comillas alrededor de la idea semilla ni la presentes como cita literal.
+- MENCIONA EL LIBRO Y EL AUTOR en alguna parte del texto, pero integrado de forma observacional y natural.
+
+Guía de estilo: 
+- Español latam neutro, cotidiano. Sin adornos ni palabras rimbombantes (p.ej. profundamente, genuino, ligero, extraordinario, entrañable, vibrante, radiante).
+- No adornes el origen. Escribe la verdad dura y útil.
+- Varía SIEMPRE todo. 
+
+Estructura: 
+1) Una línea de título: Breve, un concepto, sin metadata.
+2) Un párrafo breve: La observación universal que hace que el lector diga "me checa 100%". Integra autor y libro.
+3) Un subtítulo: Breve pero perfecto, bisagra emocional.
+4) Un párrafo breve: Acción concreta de 15-60 segundos relacionada al concepto.
+
+Reglas duras: 
+- Extensión total: 3–5 líneas.
+- Sin emojis ni símbolos raros. 
+- Sonido: sobrio, observacional, crudo, útil.
+- Varía la forma de iniciar SIEMPRE.
+- La extensión total del texto debe adaptarse al espacio visual (máximo 50–60 palabras).
+- Busca balance visual en el texto.
+- El texto debe sonar atemporal y universal, nunca localista.
+
+⚠️ Reglas críticas adicionales: 
+- Debes insertar OBLIGATORIAMENTE 2 o 3 marcas [H]...[/H] en el texto.
+- Nunca devuelvas el bloque sin al menos esas [H]...[/H]. Una en el primer párrafo y otra en el segundo, las mas relevantes.
+- Debes variar el subrayado siempre.
+
+@@BODY
+(Instrucción estricta: Imprime SOLO las 4 líneas limpias. ESTÁ PROHIBIDO escribir rótulos como "1)", "2)", "Título:", "Párrafo:", o usar viñetas. Solo escribe el texto directo).
+[Línea 1 del título aquí]
+[Línea 2 del primer párrafo aquí]
+[Línea 3 del subtítulo aquí]
+[Línea 4 del segundo párrafo aquí]
+@@ENDBODY`,
+
     estilo: base + `
 ═══════════════════════════════════════════════════════════════
 🎯 GENERAR: Dark mode "${libro.titulo}"
@@ -697,7 +529,7 @@ VERIFICACIÓN:
 
 SOLO JSON.`
   };
-
+  
   return prompts[tipo];
 }
 
@@ -720,7 +552,7 @@ const VERIFICADOR = {
     };
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-
+    
     return {
       score: cumple / total,
       checks,
@@ -728,13 +560,16 @@ const VERIFICADOR = {
       aprobado: cumple / total >= CFG.verificacion.umbralMinimo
     };
   },
-
+  
+  // v9.2: verificación con CERO primera persona y regex ignorando [H]
   tarjeta: (texto) => {
     const lineas = texto.split("\n").filter(l => l.trim().length > CFG.tarjeta.longitudMinLinea);
     const checks = {
       tiene4Lineas: lineas.length >= 4,
+      // CIRUGÍA: Reemplaza temporalmente [H] y [/H] por vacío SOLO para evaluar esta regla
       sinMetadata: !/\[|\]|TÍTULO:|PÁRRAFO:|SUBTÍTULO:/i.test(texto.replace(/\[\/?H\]/gi, "")),
       sinMarkdown: !/\*\*|__|```/g.test(texto),
+      // Se penaliza fuertemente el uso de primera persona
       sinPrimeraPersona: !/\b(yo|descubrí|aprendí|reconozco|noté|encontré|comprendí|hemos|nuestro)\b/i.test(texto),
       tieneAccion: /\d+\s*(seg|segundo|minuto|min|paso)/i.test(texto),
       tieneHighlights: /\[H\]/i.test(texto),
@@ -742,7 +577,7 @@ const VERIFICADOR = {
     };
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-
+    
     return {
       score: cumple / total,
       checks,
@@ -750,7 +585,7 @@ const VERIFICADOR = {
       aprobado: cumple / total >= CFG.verificacion.umbralMinimo
     };
   },
-
+  
   estilo: (data) => {
     const checks = {
       tieneAccent: typeof data.accent === "string" && /^#[0-9a-f]{6}$/i.test(data.accent),
@@ -762,7 +597,7 @@ const VERIFICADOR = {
     };
     const cumple = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-
+    
     return {
       score: cumple / total,
       checks,
@@ -789,7 +624,7 @@ async function call(openai, sys, usr, temp, forceJSON = false) {
     ]
   };
   if (forceJSON) config.response_format = { type: "json_object" };
-
+  
   const chat = await openai.chat.completions.create(config);
   return chat.choices[0].message.content;
 }
@@ -802,49 +637,57 @@ async function enrich(libro, openai, ctx) {
   let intento = 0;
   while (intento <= CFG.maxReintentos) {
     try {
+      // PASO 1: JSON principal
       console.log(`   [1/3] JSON principal...`);
       const p = buildPrompt(libro, "main", ctx);
       let raw = await call(openai, p, "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(raw);
-
+      
+      // VERIFICACIÓN v9.0
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.main(extra);
         if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
           console.log(`   ⚠️  Verificación main: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
-          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k, ok]) => !ok).map(([k]) => k));
+          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k,v]) => !v).map(([k]) => k));
         }
-
+        
         if (CFG.verificacion.reintentoSiBajo && !v.aprobado) {
           throw new Error(`Verificación main falló: score ${v.score.toFixed(2)}`);
         }
       }
-
+      
+      // Validar respuesta completa
       if (!extra.frases || !extra.colores || !extra.palabras ||
           extra.frases.length === 0 || extra.colores.length === 0 || extra.palabras.length === 0) {
         throw new Error("Respuesta incompleta");
       }
-
+      
+      // Validar anti-repetición
       const repetidas = extra.palabras?.filter(p => state.palabras.has(p.toLowerCase())) || [];
       if (repetidas.length > 0) {
         console.log(`   ⚠️  Repetidas: ${repetidas.join(", ")}, regenerando...`);
         raw = await call(openai, buildPrompt(libro, "main", ctx), "Palabras únicas", ctx.tempDinamica, true);
         extra = JSON.parse(raw);
       }
-
+      
+      // Registrar usados
       extra.palabras?.forEach(p => state.palabras.add(p.toLowerCase()));
       extra.colores?.forEach(c => state.colores.add(c));
-
+      
+      // Garantizar longitud
       ["palabras", "frases", "colores"].forEach(k => {
         if (!extra[k] || extra[k].length === 0) throw new Error(`Array vacío: ${k}`);
         while (extra[k].length < CFG[k].cantidad) extra[k].push(extra[k][extra[k].length - 1]);
       });
       extra.textColors = extra.colores.map(utils.txt);
-
+      
+      // PASO 2: Tarjeta contenido
       console.log(`   [2/3] Tarjeta...`);
-      const tarjetaMessages = await buildTarjetaMessages(libro, ctx, extra);
-      let rawT = await call(openai, tarjetaMessages.system, tarjetaMessages.user, ctx.tempDinamica);
+      const pT = buildPrompt(libro, "tarjeta", ctx, extra);
+      let rawT = await call(openai, pT, "Genera tarjeta", ctx.tempDinamica);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-
+      
+      // Limpieza PERFECTA v9.2 - Ya NO destruye las [H] al inicio/fin
       const lineas = rawT.split(/\n+/).filter(Boolean).map(l => {
         return l
           .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
@@ -858,18 +701,19 @@ async function enrich(libro, openai, ctx) {
 
       const textoLimpio = lineas.join("\n");
 
+      // VERIFICACIÓN v9.2 - Cero primera persona
       if (CFG.verificacion.activa) {
         const v = VERIFICADOR.tarjeta(textoLimpio);
         if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
           console.log(`   ⚠️  Verificación tarjeta: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
-          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k, ok]) => !ok).map(([k]) => k));
+          console.log(`      Checks fallidos:`, Object.entries(v.checks).filter(([k,v]) => !v).map(([k]) => k));
         }
-
+        
         if (CFG.verificacion.reintentoSiBajo && !v.aprobado) {
           throw new Error(`Verificación tarjeta falló: score ${v.score.toFixed(2)}`);
         }
       }
-
+      
       extra.tarjeta = {
         titulo: lineas[0] || "",
         parrafoTop: lineas[1] || "",
@@ -877,21 +721,23 @@ async function enrich(libro, openai, ctx) {
         parrafoBot: lineas.slice(3).join(" "),
         style: {}
       };
-
+      
+      // PASO 3: Tarjeta estilo
       console.log(`   [3/3] Style...`);
       const pE = buildPrompt(libro, "estilo", ctx);
       let rawE = await call(openai, pE, "Genera estilo", ctx.tempDinamica);
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       try {
         extra.tarjeta.style = JSON.parse(utils.clean(rawE));
-
+        
         if (CFG.verificacion.activa) {
           const v = VERIFICADOR.estilo(extra.tarjeta.style);
           if (CFG.verificacion.logNivelBajo && v.score < 0.8) {
             console.log(`   ⚠️  Verificación estilo: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
           }
         }
-
+        
+        // Forzar dark mode si necesario
         if (extra.tarjeta.style.paper && utils.lum(extra.tarjeta.style.paper) > CFG.darkMode.lumThresholdPaper) {
           extra.tarjeta.style.paper = CFG.darkMode.paperMin;
         }
@@ -906,7 +752,7 @@ async function enrich(libro, openai, ctx) {
           border: "#333333"
         };
       }
-
+      
       console.log(`   ✅ Completado`);
       return {
         ...libro,
@@ -921,12 +767,13 @@ async function enrich(libro, openai, ctx) {
         await sleep(CFG.sleepReintento);
         continue;
       }
-
+      
       console.log(`   🛡️  Fallback activado`);
       break;
     }
   }
-
+  
+  // Fallback Universal (v9.2)
   return {
     ...libro,
     dimension: "Bienestar",
@@ -964,7 +811,7 @@ async function enrich(libro, openai, ctx) {
 
 const openai = new OpenAI({ apiKey: KEY });
 const ctx = getContexto();
-
+// ─── MODO SINGLE (workflow_dispatch) ──────────────────────────
 if (process.env.SINGLE_MODE === "true") {
   const bookJSON = process.env.SINGLE_BOOK;
   if (!bookJSON) { console.error("❌ SINGLE_BOOK vacío"); process.exit(1); }
@@ -972,29 +819,26 @@ if (process.env.SINGLE_MODE === "true") {
   const bookData = JSON.parse(bookJSON);
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.3.1 — MODO SINGLE (1 libro)      ║");
+  console.log("║   TRIGGUI v9.2 — MODO SINGLE (1 libro)       ║");
   console.log("╚═══════════════════════════════════════════════╝\n");
   console.log(`📖 ${bookData.titulo} — ${bookData.autor}`);
-  console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
-  console.log(`🧾 Prompt editorial: ${CFG.prompts.useExternalEditorial ? "EXTERNO (si disponible)" : "LEGACY estable"}\n`);
-
+  console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}\n`);
+  
   const libroSingle = {
     titulo: bookData.titulo,
     autor: bookData.autor,
     portada: bookData.portada || "",
     tagline: bookData.tagline || "",
-    isbn: bookData.isbn || "",
-    contexto_2026: bookData.contexto_2026 || {},
-    lente_activo: bookData.lente_activo || ""
+    isbn: bookData.isbn || ""
   };
-
+  
   const enriched = await enrich(libroSingle, openai, ctx);
 
   let existing = { libros: [] };
   try {
     const raw = await fs.readFile(CFG.out, "utf8");
     existing = JSON.parse(raw);
-  } catch {}
+  } catch { }
 
   existing.libros.unshift(enriched);
   await fs.writeFile(CFG.out, JSON.stringify(existing, null, 2));
@@ -1003,15 +847,16 @@ if (process.env.SINGLE_MODE === "true") {
   console.log(`📚 ${CFG.out} actualizado — "${bookData.titulo}" en posición [0]`);
   process.exit(0);
 }
+// ─── FIN MODO SINGLE ──────────────────────────────────────────
+
 
 console.log("╔═══════════════════════════════════════════════╗");
-console.log("║  TRIGGUI v9.3.1 NIVEL DIOS - EDITORIAL UNIF. ║");
+console.log("║   TRIGGUI v9.2 NIVEL DIOS - EDITORIAL UNIF.  ║");
 console.log("╚═══════════════════════════════════════════════╝\n");
 console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
 console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
 console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)} (${ctx.dia})`);
 console.log(`📊 Energía: ${Math.round(ctx.energia * 100)}% | Hawkins: ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}`);
-console.log(`🧾 Prompt editorial: ${CFG.prompts.useExternalEditorial ? "EXTERNO (si disponible)" : "LEGACY estable"}`);
 console.log(`✅ Verificación: ${CFG.verificacion.activa ? "ON" : "OFF"} | Umbral: ${(CFG.verificacion.umbralMinimo * 100).toFixed(0)}%\n`);
 
 const csv = await fs.readFile(CFG.csv, "utf8");
@@ -1024,13 +869,13 @@ for (const libro of pick) {
   i++;
   console.log(`📖 [${i}/${pick.length}] ${libro.titulo}`);
   libros.push(await enrich(libro, openai, ctx));
-
+  
   if (i % CFG.resetMemoryCada === 0 && i < pick.length) {
     console.log(`   🔄 Reset memoria (${state.palabras.size}p, ${state.colores.size}c)`);
     state.palabras.clear();
     state.colores.clear();
   }
-
+  
   if (i < pick.length) await sleep(CFG.delay);
 }
 
@@ -1043,12 +888,16 @@ console.log(`✅ ${CFG.out}`);
 console.log(`📚 ${libros.length} libros | ${state.palabras.size}p ${state.colores.size}c\n`);
 
 /* ═══════════════════════════════════════════════════════════════
-   📖 GUÍA v9.3.1 NIVEL DIOS
-
-   🔥 CAMBIOS v9.3 → v9.3.1:
-   ✅ Prompt editorial externo opcional
-   ✅ Fallback legacy automático
-   ✅ Fix de rutas para /scripts
-   ✅ Sin tocar pipeline estable
-
+   📖 GUÍA v9.2 NIVEL DIOS
+   
+   🔥 CAMBIOS v9.1 → v9.2:
+   ✅ Fix agresivo regex (preserva [H])
+   ✅ Cero primera persona, puro "me checa 100%" universal
+   ✅ Fix Verificador: sinMetadata ignora [H] y [/H] para no causar falsos positivos
+   
+   FILOSOFÍA v9.2:
+   - Una sola fuente de contenido para tres salidas
+   - Contenido editorial rico (no tweets para app)
+   - Prompt tarjeta = fusión de lo mejor de Apps Script + build-contenido
+   
 ═══════════════════════════════════════════════════════════════ */

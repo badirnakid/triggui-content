@@ -1,0 +1,42 @@
+{
+  "detected_theme": {
+    "core": "Degradación de la atención y relación con las pantallas.",
+    "subtheme": "Inercia y fragmentación de la atención.",
+    "why_it_matters_now": "La saturación digital y la dificultad para mantener la presencia plena son cada vez más comunes, especialmente en momentos de baja energía como la noche."
+  },
+  "selected_book": {
+    "title": "Stolen Focus",
+    "author": "Johann Hari",
+    "why_this_book": "Este libro aborda de manera amplia y cultural por qué la atención se fragmenta en el entorno actual y ofrece una perspectiva rica que ayuda a entender la relación con las pantallas sin caer en la trampa de la productividad vacía.",
+    "confidence": 0.85,
+    "fit": {
+      "trigger_fit": "Responde directamente a la experiencia de fragmentación y la necesidad de recuperar la atención plena.",
+      "lens_fit": "Permite ver patrones internos de atención y fricción con el uso de pantallas.",
+      "timing_fit": "Es adecuado para la noche, cuando la energía es baja y se busca una reflexión más profunda."
+    },
+    "selection_source": "catalog"
+  },
+  "alternatives": [
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "reason": "Ofrece un análisis profundo sobre cómo internet afecta la cognición, pero es más cerebral y menos inmediato para la acción que se busca en este momento."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "reason": "Proporciona estrategias prácticas para controlar la atención, pero puede caer en un enfoque demasiado productivo, lo que no se alinea con el deseo de recuperar una relación más sana con las pantallas."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "author": "Oliver Burkeman",
+      "reason": "Aborda la gestión del tiempo y la finitud, pero podría abrir demasiado el ángulo y desviar la atención del foco específico en la atención fragmentada."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Deep Work",
+      "reason": "Aunque es fuerte en el enfoque, se centra en el rendimiento profesional y puede desviar la atención de la necesidad de una relación más consciente con las pantallas."
+    }
+  ]
+}

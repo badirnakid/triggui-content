@@ -1,0 +1,41 @@
+{
+  "detected_theme": {
+    "core": "Degradación de la atención y relación con las pantallas.",
+    "subtheme": "Recuperación de la presencia y fricción sana con la tecnología.",
+    "why_it_matters_now": "En un momento de alta fragmentación atencional, es crucial entender cómo las pantallas afectan nuestra capacidad de estar presentes."
+  },
+  "selected_book": {
+    "title": "Stolen Focus",
+    "author": "Johann Hari",
+    "why_this_book": "Este libro gana porque aborda la atención fragmentada como un problema cultural y ambiental, lo que se alinea mejor con la necesidad de recuperar una relación menos reactiva con las pantallas que 'The Shallows', que aunque es potente en la comprensión de la degradación cognitiva, no ofrece un enfoque práctico para la acción inmediata.",
+    "confidence": 0.85,
+    "fit": {
+      "trigger_fit": "El libro se centra en la atención y cómo recuperarla, resonando con la experiencia de inercia y fragmentación.",
+      "lens_fit": "Proporciona un marco claro sobre cómo los factores externos afectan la atención, alineándose con el autoconocimiento.",
+      "timing_fit": "La energía baja y la noche sugieren una necesidad de reflexión más que de acción inmediata, lo que este libro ofrece."
+    },
+    "selection_source": "catalog"
+  },
+  "alternatives": [
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "reason": "Es útil para entender la degradación cognitiva, pero se enfoca más en el análisis que en la recuperación de la atención, lo que puede no ser tan práctico en este momento."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "reason": "Ofrece tácticas para controlar la atención, pero puede caer en un enfoque demasiado productivo, desviándose del deseo de una relación más consciente con las pantallas."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Deep Work",
+      "reason": "Se centra en el rendimiento profesional y la productividad, lo que no aborda la necesidad de una relación más saludable con las pantallas, desviándose del enfoque en la fricción sana."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "reason": "Aunque útil para la gestión del tiempo, puede abrir demasiado el ángulo y perder el foco en la atención específica que se busca recuperar."
+    }
+  ]
+}

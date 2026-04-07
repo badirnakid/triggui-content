@@ -1,0 +1,41 @@
+{
+  "detected_theme": {
+    "core": "Degradación de la atención y relación con las pantallas.",
+    "subtheme": "Recuperar una presencia completa y menos reactiva.",
+    "why_it_matters_now": "La inercia digital actual afecta la capacidad de concentración y presencia, especialmente en momentos de baja energía."
+  },
+  "selected_book": {
+    "title": "Stolen Focus",
+    "author": "Johann Hari",
+    "why_this_book": "Este libro aborda de manera amplia y cultural la fragmentación de la atención en el entorno digital, ofreciendo una perspectiva que ayuda a entender la problemática sin caer en un enfoque meramente productivo.",
+    "confidence": 0.85,
+    "fit": {
+      "trigger_fit": "El libro se centra en la atención fragmentada, que es el núcleo del detonante.",
+      "lens_fit": "Permite una exploración interna de los patrones de atención y la relación con las pantallas.",
+      "timing_fit": "La energía baja de la noche sugiere una lectura que no demande acción inmediata, sino reflexión."
+    },
+    "selection_source": "catalog"
+  },
+  "alternatives": [
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "reason": "Ofrece un análisis profundo sobre cómo internet afecta nuestros cerebros, pero es más cerebral y menos inmediato en cuanto a acciones prácticas, lo que puede no resonar con la necesidad de recuperar una relación activa con las pantallas."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "reason": "Proporciona estrategias prácticas para controlar la atención, pero corre el riesgo de ser percibido como un enfoque de productividad que no se alinea con el deseo de una relación más saludable con las pantallas."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Deep Work",
+      "reason": "Aunque es fuerte en el enfoque, se centra demasiado en el rendimiento profesional y puede no abordar adecuadamente la degradación de la atención en el contexto digital que se busca explorar."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "reason": "Si bien trata sobre la gestión del tiempo y la finitud, puede abrir demasiado el ángulo y desviar la atención del problema específico de la fragmentación atencional que se desea abordar."
+    }
+  ]
+}

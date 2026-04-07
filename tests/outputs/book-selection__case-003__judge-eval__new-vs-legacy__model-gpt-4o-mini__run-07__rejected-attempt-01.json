@@ -1,0 +1,88 @@
+{
+  "attempt": 1,
+  "validation_error": "Judge inválido: new_system tiene criterios <7 pero no reporta primary_gaps_in_new.",
+  "judge_result": {
+    "winner": "new_system",
+    "criteria": [
+      {
+        "criterion": "Specificity of why_it_matters_now",
+        "new_score": 4,
+        "legacy_score": 2,
+        "winner": "new_system",
+        "rationale": "El nuevo sistema proporciona un contexto claro sobre la importancia de la relación con la tecnología en el presente, mientras que el legado es más vago.",
+        "evidence": [
+          "New: 'La búsqueda de una relación menos reactiva con la tecnología es crucial en un momento donde la atención está constantemente fragmentada.'",
+          "Legacy: No se menciona un contexto temporal específico."
+        ]
+      },
+      {
+        "criterion": "Real lens imprint",
+        "new_score": 4,
+        "legacy_score": 1,
+        "winner": "new_system",
+        "rationale": "El nuevo sistema utiliza el lente de autoconocimiento de manera efectiva, mientras que el legado no aplica ningún lente.",
+        "evidence": [
+          "New: 'La obra permite una reflexión profunda sobre la relación con las pantallas, facilitando el autoconocimiento en este contexto.'",
+          "Legacy: No se menciona el uso de un lente."
+        ]
+      },
+      {
+        "criterion": "Timing fit quality",
+        "new_score": 4,
+        "legacy_score": 1,
+        "winner": "new_system",
+        "rationale": "El nuevo sistema considera el momento del día y sugiere que la lectura se adapta bien a la noche, mientras que el legado no tiene en cuenta el timing.",
+        "evidence": [
+          "New: 'La lectura se adapta bien a la noche, cuando se busca una comprensión más introspectiva y menos inmediata.'",
+          "Legacy: No se menciona el timing."
+        ]
+      },
+      {
+        "criterion": "Non-interchangeable book justification",
+        "new_score": 5,
+        "legacy_score": 3,
+        "winner": "new_system",
+        "rationale": "La justificación del nuevo sistema es sólida y específica, mientras que el legado es más general.",
+        "evidence": [
+          "New: 'Este libro gana porque aborda la degradación de la atención como un fenómeno cultural y ambiental...'",
+          "Legacy: 'Amplio, cultural, contemporáneo, fuerte para hablar de atención fragmentada y entorno.'"
+        ]
+      },
+      {
+        "criterion": "Alternatives and rejections quality",
+        "new_score": 4,
+        "legacy_score": 2,
+        "winner": "new_system",
+        "rationale": "El nuevo sistema ofrece alternativas bien justificadas y rechazos claros, mientras que el legado presenta opciones sin un análisis profundo.",
+        "evidence": [
+          "New: 'Es útil para entender la degradación cognitiva, pero su enfoque es más cerebral y menos práctico...'",
+          "Legacy: No se presentan rechazos ni análisis de alternativas."
+        ]
+      }
+    ],
+    "overall_assessment": {
+      "new_total": 21,
+      "legacy_total": 9,
+      "does_new_beat_legacy": true,
+      "strongest_advantages_of_new": [
+        "Contexto temporal específico",
+        "Uso efectivo del lente",
+        "Justificación sólida del libro elegido"
+      ],
+      "primary_gaps_in_new": []
+    },
+    "recommended_prompt_change": {
+      "should_edit": true,
+      "target_file": "prompts/tasks/select-book.md",
+      "change_type": "tighten_justification",
+      "exact_problem": "La justificación del libro podría ser más específica en relación a las alternativas.",
+      "why_this_change": "Mejorar la conexión entre el libro elegido y las alternativas para fortalecer la defensa de la selección.",
+      "instruction_block": "Proporciona una comparación más detallada entre el libro seleccionado y las alternativas, explicando por qué el primero es superior en este contexto.",
+      "guardrails": [
+        "Evitar justificaciones genéricas",
+        "Incluir análisis de alternativas"
+      ]
+    },
+    "final_decision": "El nuevo sistema supera al legado en todos los criterios evaluados, mostrando una comprensión más profunda del detonante y una selección más precisa."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "detected_theme": {
+    "core": "La degradación de la atención y la relación reactiva con las pantallas.",
+    "subtheme": "La necesidad de recuperar una atención plena y consciente.",
+    "why_it_matters_now": "En un momento de alta fragmentación atencional, es crucial entender los mecanismos internos que nos llevan a la inercia digital."
+  },
+  "selected_book": {
+    "title": "Stolen Focus",
+    "author": "Johann Hari",
+    "why_this_book": "Este libro gana porque aborda la atención fragmentada como un problema cultural y ambiental, no solo como un fallo personal, lo que se alinea mejor con el deseo de entender la degradación de la atención en lugar de simplemente buscar productividad, a diferencia de 'Indistractable', que se enfoca más en tácticas de control personal.",
+    "confidence": 0.85,
+    "fit": {
+      "trigger_fit": "El libro se centra en la pérdida de atención y ofrece un análisis profundo de sus causas, lo que se alinea con la experiencia de inercia mencionada.",
+      "lens_fit": "Proporciona una visión clara de los patrones internos que llevan a la fragmentación de la atención, lo que se ajusta bien al lente de autoconocimiento.",
+      "timing_fit": "La lectura de este libro en la noche, cuando la energía es baja, puede ofrecer una reflexión profunda sin exigir demasiado esfuerzo cognitivo."
+    },
+    "selection_source": "catalog"
+  },
+  "alternatives": [
+    {
+      "title": "The Shallows",
+      "author": "Nicholas Carr",
+      "reason": "Es un análisis profundo sobre cómo internet afecta nuestros cerebros, lo que podría ser relevante, pero se centra más en la teoría que en la acción práctica inmediata que se busca aquí."
+    },
+    {
+      "title": "Indistractable",
+      "author": "Nir Eyal",
+      "reason": "Ofrece tácticas para controlar la atención, pero podría desviar el enfoque hacia la productividad, lo que no es el objetivo principal del detonante."
+    }
+  ],
+  "rejections": [
+    {
+      "title": "Deep Work",
+      "reason": "Se centra demasiado en el rendimiento profesional y puede no abordar adecuadamente la relación con las pantallas y la atención fragmentada que se busca entender."
+    },
+    {
+      "title": "Four Thousand Weeks",
+      "reason": "Aunque es útil para reflexionar sobre el tiempo, se aleja del foco específico en la atención y la relación con las pantallas, abriendo demasiado el ángulo del tema."
+    }
+  ]
+}
