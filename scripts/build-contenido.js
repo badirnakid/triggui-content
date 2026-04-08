@@ -182,12 +182,6 @@ const utils = {
 
 /* ═══════════════════════════════════════════════════════════════
    🟨 HIGHLIGHTS CANÓNICOS
-   Entrada tolerada:
-   - [H]texto[/H]
-   - [H]texto[H]
-   - {{H}}texto{{/H}}
-   Salida:
-   - [H]texto[/H]
 ═══════════════════════════════════════════════════════════════ */
 
 function normalizeHighlightSyntax(input) {
@@ -248,12 +242,6 @@ function stripHighlightTags(text) {
   return normalizeHighlightSyntax(String(text || "")).replace(/\[H\]|\[\/H\]/gi, "");
 }
 
-function stripEmojiPrefix(text) {
-  return String(text || "")
-    .replace(/^[^\p{L}\p{N}]+/gu, "")
-    .trim();
-}
-
 function normalizeSentence(text) {
   const value = String(text || "").trim();
   if (!value) return "";
@@ -272,6 +260,27 @@ function sanitizeTitleText(text) {
     .trim();
 
   return normalizeSentence(clean);
+}
+
+function sanitizeSubtitleText(text) {
+  const clean = stripHighlightTags(String(text || ""))
+    .replace(/@@BODY|@@ENDBODY/gi, "")
+    .replace(/\n+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
+    .replace(/[.!?…]+$/g, "")
+    .trim();
+
+  const normalized = normalizeSentence(clean);
+  if (!normalized) return "Hazlo ahora";
+
+  const words = normalized.split(/\s+/).filter(Boolean);
+  if (words.length > 8 || normalized.length > 72) {
+    return words.slice(0, 8).join(" ");
+  }
+
+  return normalized;
 }
 
 function isLikelyEditorialTitle(text) {
@@ -314,6 +323,31 @@ function tooSimilarText(a, b) {
   return jaccard >= 0.78;
 }
 
+function splitIntoSentences(text) {
+  const raw = normalizeHighlightSyntax(String(text || ""))
+    .replace(/\n+/g, " ")
+    .replace(/[ \t]{2,}/g, " ")
+    .trim();
+
+  if (!raw) return [];
+  return raw.match(/[^.!?…]+[.!?…]?/g)?.map((s) => s.trim()).filter(Boolean) || [raw];
+}
+
+function removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo = "") {
+  const comparePool = [
+    parrafoTop,
+    subtitulo,
+    ...splitIntoSentences(parrafoTop)
+  ].filter(Boolean);
+
+  const bottomSentences = splitIntoSentences(parrafoBot);
+  const filtered = bottomSentences.filter(
+    (sentence) => !comparePool.some((base) => tooSimilarText(sentence, base))
+  );
+
+  return normalizeHighlightSyntax(filtered.join(" ").replace(/[ \t]{2,}/g, " ").trim());
+}
+
 function pickFirstDistinct(base, candidates) {
   for (const candidate of candidates) {
     const clean = String(candidate || "").trim();
@@ -321,6 +355,24 @@ function pickFirstDistinct(base, candidates) {
     if (!tooSimilarText(base, clean)) return clean;
   }
   return "";
+}
+
+function stripEmojiPrefix(text) {
+  return String(text || "")
+    .replace(/^[^\p{L}\p{N}]+/gu, "")
+    .trim();
+}
+
+function cleanGuidance(text) {
+  let value = normalizeSentence(stripEmojiPrefix(text));
+  if (!value) return "";
+  value = value
+    .replace(/^\s*(?:[\(\[]?\d+[\)\]]?[\.\-:]?\s*)+/, "")
+    .replace(/^\s*\[?\s*(t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*\]?\s*[:\-–]?\s*/i, "")
+    .replace(/^\s*(?:una\s+l[ií]nea\s+de\s+)?(?:t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*[:\-–]\s*/i, "")
+    .trim();
+
+  return value;
 }
 
 function buildActionFallbackFromFrases(frases = []) {
@@ -365,13 +417,24 @@ function normalizeTarjetaObject(tarjeta = {}) {
   const clean = {
     titulo: sanitizeTitleText(String(tarjeta.titulo || "").trim()),
     parrafoTop: normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()),
-    subtitulo: String(tarjeta.subtitulo || "").trim(),
+    subtitulo: sanitizeSubtitleText(String(tarjeta.subtitulo || "").trim()),
     parrafoBot: normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()),
     style: tarjeta.style || {}
   };
 
   clean.parrafoTop = ensureMinimumHighlights(clean.parrafoTop, 1);
   clean.parrafoBot = ensureMinimumHighlights(clean.parrafoBot, 1);
+
+  if (tooSimilarText(clean.parrafoTop, clean.parrafoBot)) {
+    clean.parrafoBot = removeRepeatedSentences(clean.parrafoBot, clean.parrafoTop, clean.subtitulo);
+  }
+
+  if (!clean.parrafoBot || tooSimilarText(clean.parrafoTop, clean.parrafoBot)) {
+    clean.parrafoBot = ensureMinimumHighlights(
+      "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
+      1
+    );
+  }
 
   return clean;
 }
@@ -602,6 +665,7 @@ FORMATO OBLIGATORIO:
 - Debe haber mínimo 2 highlights en total: uno en parrafoTop y uno en parrafoBot
 - Nunca marques una palabra aislada; marca una frase útil completa
 - El highlight debe sentirse como subrayado editorial, no decoración
+- El subtítulo jamás lleva [H] ni [/H]
 
 REGLAS:
 - Sin primera persona
@@ -619,7 +683,7 @@ Idea semilla: ${ideaSemilla}
 DEVUELVE SOLO 4 LÍNEAS:
 [Línea 1: título]
 [Línea 2: primer párrafo]
-[Línea 3: subtítulo]
+[Línea 3: subtítulo limpio, sin highlights]
 [Línea 4: segundo párrafo]
 `;
 }
@@ -725,9 +789,11 @@ function coerceSecondPassStructure(raw, libro) {
     parrafoTop: line0LooksLikeTitle
       ? (lines[1] || compact[0] || "")
       : (compact[0] || line0 || ""),
-    subtitulo: line0LooksLikeTitle
-      ? (lines[2] || "Hazlo ahora")
-      : (lines[1] || "Hazlo ahora"),
+    subtitulo: sanitizeSubtitleText(
+      line0LooksLikeTitle
+        ? (lines[2] || "Hazlo ahora")
+        : (lines[1] || "Hazlo ahora")
+    ),
     parrafoBot: line0LooksLikeTitle
       ? (lines.slice(3).join(" ").trim() || compact.slice(1).join(" ").trim() || "")
       : (lines.slice(2).join(" ").trim() || compact.slice(1).join(" ").trim() || "")
@@ -794,6 +860,7 @@ REGLAS OBLIGATORIAS:
 - Nunca resaltes una sola palabra suelta si puedes resaltar una frase útil completa.
 - El primer párrafo debe sentirse como claridad.
 - El segundo párrafo debe sentirse como movimiento.
+- El subtítulo jamás lleva [H] ni [/H].
 - Máximo total aproximado: ${CFG.secondPass.maxWords} palabras.
 
 DEVUELVE SOLO 4 LÍNEAS.
@@ -810,7 +877,7 @@ function coerceStructureLikeAppsScript(candidate, libro, tarjetaBase) {
     1
   );
 
-  const subtitulo = normalizeSentence(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora");
+  const subtitulo = sanitizeSubtitleText(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora");
 
   const parrafoBot = ensureMinimumHighlights(
     ensurePeriod(normalizeSentence(candidate.parrafoBot || tarjetaBase?.parrafoBot || "")),
@@ -836,7 +903,7 @@ function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
     1
   );
 
-  const subtitulo = normalizeSentence(String(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora").trim()) || "Hazlo ahora";
+  const subtitulo = sanitizeSubtitleText(String(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora").trim()) || "Hazlo ahora";
 
   let titulo = sanitizeTitleText(candidate.titulo);
 
@@ -857,6 +924,8 @@ function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
       pickFirstDistinct(parrafoTop, fallbackTitles.filter(isLikelyEditorialTitle)) ||
       sanitizeTitleText(`Lo que ${libro?.autor || "este libro"} corrige`);
   }
+
+  parrafoBot = removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo) || parrafoBot;
 
   if (!parrafoBot || tooSimilarText(parrafoTop, parrafoBot)) {
     const fallbackBotCandidates = [
@@ -985,8 +1054,8 @@ const VERIFICADOR = {
     const totalHighlights = countHighlights(`${safe.parrafoTop}\n${safe.parrafoBot}`);
 
     const checks = {
-      tituloOk: safe.titulo.length >= 8,
-      subtituloOk: safe.subtitulo.length >= 6,
+      tituloOk: safe.titulo.length >= 8 && isLikelyEditorialTitle(safe.titulo),
+      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0,
       parrafoTopRico: topPlain.length >= 80,
       parrafoBotRico: botPlain.length >= 80,
       sinMetadata: !/(^|\n)\s*(título|parrafo|párrafo|subtítulo|accion|acción)\s*[:\-]/i.test(
@@ -999,6 +1068,8 @@ const VERIFICADOR = {
       highlightsMinimos: totalHighlights >= CFG.tarjeta.minHighlights,
       highlightTop: countHighlights(safe.parrafoTop) >= 1,
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
+      subtituloSinHighlights: countHighlights(safe.subtitulo) === 0,
+      botDistintoTop: !tooSimilarText(safe.parrafoTop, safe.parrafoBot),
       accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain)
     };
 
@@ -1270,18 +1341,6 @@ async function fileExists(filePath) {
   } catch {
     return false;
   }
-}
-
-function cleanGuidance(text) {
-  let value = normalizeSentence(stripEmojiPrefix(text));
-  if (!value) return "";
-  value = value
-    .replace(/^\s*(?:[\(\[]?\d+[\)\]]?[\.\-:]?\s*)+/, "")
-    .replace(/^\s*\[?\s*(t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*\]?\s*[:\-–]?\s*/i, "")
-    .replace(/^\s*(?:una\s+l[ií]nea\s+de\s+)?(?:t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*[:\-–]\s*/i, "")
-    .trim();
-
-  return value;
 }
 
 function uniqueStrings(values) {
