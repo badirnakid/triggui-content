@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "Autobiografia de un yogui",
+      "autor": "Paramahansa",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/3b/89/cb/3b89cb15-04f9-cc93-d768-3b19a072586b/Cover.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication118/v4/3b/89/cb/3b89cb15-04f9-cc93-d768-3b19a072586b/Cover.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "1424708419",
+      "slug": "autobiografia-de-un-yogui",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "personal",
+      "punto": "autoconocimiento",
+      "palabras": [
+        "trascendencia",
+        "meditación",
+        "iluminación",
+        "sabiduría"
+      ],
+      "frases": [
+        "🧘‍♂️ Dedica un momento para cerrar los ojos y respirar profundamente.",
+        "📖 Abre el libro en una página al azar y permite que las palabras te hablen.",
+        "🌌 Reflexiona sobre un instante de paz que has experimentado recientemente.",
+        "🌿 Realiza una breve caminata, sintiendo cada paso como una conexión con la tierra."
+      ],
+      "colores": [
+        "#2E3440",
+        "#3B4252",
+        "#434C5E",
+        "#D8DEE9"
+      ],
+      "fondo": "#1C1F24",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "La esencia de la meditación reside en su capacidad para transformar la percepción y llevar a la [H]trascendencia espiritual[/H]. Dedicar un momento para cerrar los ojos y respirar profundamente abre nuevas dimensiones de conciencia. Permite que este libro sea una guía hacia tu propia [H]iluminación personal[/H]. Comienza hoy: abre el libro en una página al azar y deja que las palabras te hablen.",
+        "parrafoTop": "La esencia de la meditación reside en su capacidad para transformar la percepción y llevar a la [H]trascendencia espiritual[/H].",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Dedicar un momento para cerrar los ojos y respirar profundamente abre nuevas dimensiones de conciencia. Permite que este libro sea una guía hacia tu propia [H]iluminación personal[/H]. Comienza hoy: abre el libro en una página al azar y deja que las palabras te hablen.",
+        "style": {
+          "accent": "#ff9800",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#757575"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar un instante para cerrar los ojos y respirar profundamente puede abrir nuevas dimensiones; seguir con una lectura aleatoria de este libro permitirá que las palabras resuenen y guíen."
+      },
+      "tarjeta_base": {
+        "titulo": "Autobiografía de un yogui",
+        "parrafoTop": "[H]La obra de Paramahansa Yogananda invita a explorar la conexión entre el ser humano y lo divino, revelando experiencias profundas que van más allá del entendimiento convencional.[/H]",
+        "subtitulo": "Conexiones espirituales",
+        "parrafoBot": "Dedicar un instante para [H]cerrar los ojos y respirar profundamente[/H] puede abrir nuevas dimensiones; seguir con una lectura aleatoria de este libro permitirá que las palabras resuenen y guíen.",
+        "style": {
+          "accent": "#ff9800",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#757575"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La esencia de la meditación reside en su capacidad para transformar la percepción y llevar a la [H]trascendencia espiritual[/H]. Dedicar un momento para cerrar los ojos y respirar profundamente abre nuevas dimensiones de conciencia. Permite que este libro sea una guía hacia tu propia [H]iluminación personal[/H]. Comienza hoy: abre el libro en una página al azar y deja que las palabras te hablen.",
+        "parrafoTop": "La esencia de la meditación reside en su capacidad para transformar la percepción y llevar a la [H]trascendencia espiritual[/H].",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Dedicar un momento para cerrar los ojos y respirar profundamente abre nuevas dimensiones de conciencia. Permite que este libro sea una guía hacia tu propia [H]iluminación personal[/H]. Comienza hoy: abre el libro en una página al azar y deja que las palabras te hablen.",
+        "style": {
+          "accent": "#ff9800",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#757575"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar un instante para cerrar los ojos y respirar profundamente puede abrir nuevas dimensiones; seguir con una lectura aleatoria de este libro permitirá que las palabras resuenen y guíen."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Autobiografia%20de%20un%20yogui%20Paramahansa%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Trust & Inspire",
       "autor": "Stephen Covey",
       "tagline": "",
@@ -979,56 +1059,6 @@
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ansiedad%20Augusto%20Cury%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Grit",
-      "autor": "Angela Duckworth",
-      "tagline": "El poder de la pasión y la perseverancia",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/26/fe/71/26fe7112-1523-0907-371c-9d5080db8387/9788416715381.jpeg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/26/fe/71/26fe7112-1523-0907-371c-9d5080db8387/9788416715381.jpeg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "personal",
-      "punto": "perseverancia",
-      "palabras": [
-        "determinación",
-        "pasión",
-        "esfuerzo",
-        "crecimiento"
-      ],
-      "frases": [
-        "🔍 Identifica una meta que te apasione y anótala en un lugar visible.",
-        "✍️ Dedica cinco minutos a escribir sobre un desafío que has superado.",
-        "⏳ Establece un temporizador de 10 minutos y trabaja sin distracciones en esa tarea importante.",
-        "📈 Reflexiona sobre lo que has aprendido de tus fracasos recientes."
-      ],
-      "colores": [
-        "#3e2723",
-        "#ffffff",
-        "#ffcdd2",
-        "#ffccbc"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Grit: El poder de la pasión y la perseverancia",
-        "parrafoTop": "Angela Duckworth explora cómo la [H]constancia y el interés sostenido[/H] son fundamentales para alcanzar metas significativas.",
-        "subtitulo": "Pasos hacia un futuro resolutivo",
-        "parrafoBot": "[H]Identificar una meta que realmente motive, escribir sobre desafíos superados y dedicar tiempo a esa tarea importante permitirá transformar intenciones en logros concretos.[/H]",
-        "style": {
-          "accent": "#ffcc00",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#424242"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
