@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.4.0 — CONTENIDO EDITORIAL UNIFICADO + HIGHLIGHTS CANÓNICOS
+   TRIGGUI v9.5.0 — DOBLE DESTILACIÓN EDITORIAL + HIGHLIGHTS CANÓNICOS
 
-   CAMBIOS v9.4.0:
+   CAMBIOS v9.5.0:
    ✅ Highlight canónico único: [H]...[/H]
    ✅ Compatibilidad legacy: [H]...[H] y {{H}}...{{/H}}
    ✅ Verificador alineado: mínimo 2 highlights reales
@@ -9,6 +9,9 @@
    ✅ Mantiene SINGLE + BATCH
    ✅ Mantiene prompts externos con fallback automático
    ✅ Mantiene GPT-4o-mini
+   ✅ Segunda destilación editorial estilo Apps Script dentro de build-contenido
+   ✅ contenido_edicion.json sale ya con tarjeta final canónica + variante presentación
+   ✅ Sin tocar arquitectura downstream ni romper SINGLE/BATCH
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -85,6 +88,14 @@ const CFG = {
     longitudMinLinea: 10,
     minHighlights: 2
   },
+
+  secondPass: {
+    enabled: true,
+    temperature: 1.5,
+    topP: 0.9,
+    maxWords: 60
+  },
+
 
   darkMode: {
     paperMin: "#0a0a0a",
@@ -251,7 +262,6 @@ function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
   let normalized = normalizeHighlightSyntax(text);
   if (countHighlights(normalized) >= minimum) return normalized;
 
-  // estrategia conservadora: marcar frases completas separadas por puntuación
   const plain = stripHighlightTags(normalized);
   const segments = plain
     .split(/(?<=[\.\!\?])\s+/)
@@ -410,7 +420,7 @@ async function loadEditorialPromptArtifacts() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🧠 PROMPTS
+   🧠 PROMPTS BASE DEL PIPELINE
 ═══════════════════════════════════════════════════════════════ */
 
 function buildBasePrompt(libro, ctx) {
@@ -585,6 +595,203 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
     ].join("\n\n").trim(),
     user: renderPromptTemplate(artifacts.userSection, variables),
     source: "external"
+  };
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   🧠 SEGUNDA DESTILACIÓN ESTILO APPS SCRIPT
+═══════════════════════════════════════════════════════════════ */
+
+function cleanSecondPassRaw(raw) {
+  return String(raw || "")
+    .replace(/```[a-z]*\s*/gi, "")
+    .replace(/```/g, "")
+    .replace(/@@BODY|@@ENDBODY/g, "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function splitSemanticLines(text) {
+  return String(text || "")
+    .split(/\n+/)
+    .map((line) =>
+      line
+        .replace(/^\s*[-•*]\s*/, "")
+        .replace(/^\s*\d+[\)\.]\s*/, "")
+        .replace(/^(TÍTULO|PÁRRAFO\s*1|PÁRRAFO\s*2|SUBTÍTULO|ACCIÓN|TEXTO)[:\-\s]*/i, "")
+        .trim()
+    )
+    .filter((line) => line.length >= CFG.tarjeta.longitudMinLinea);
+}
+
+function coerceSecondPassStructure(raw, libro) {
+  const lines = splitSemanticLines(raw);
+  const fallbackTitle = libro?.titulo ? `Lo que este libro corrige` : "Lo que aquí se corrige";
+
+  const compact = cleanSecondPassRaw(raw)
+    .split(/(?<=[\.!?])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+
+  return {
+    titulo: lines[0] || fallbackTitle,
+    parrafoTop: lines[1] || compact[0] || "",
+    subtitulo: lines[2] || "Hazlo ahora",
+    parrafoBot: lines.slice(3).join(" ").trim() || compact.slice(1).join(" ").trim() || ""
+  };
+}
+
+function normalizeSentence(text) {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  const clean = value.replace(/\s+/g, " ").trim();
+  return clean.charAt(0).toUpperCase() + clean.slice(1);
+}
+
+function ensurePeriod(text) {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  return /[.!?…]$/.test(value) ? value : `${value}.`;
+}
+
+function pickSeedForSecondPass(libro, extra, tarjetaBase) {
+  const candidates = [
+    tarjetaBase?.parrafoBot,
+    tarjetaBase?.parrafoTop,
+    ...(extra?.frases || []),
+    libro?.tagline,
+    libro?.titulo
+  ]
+    .map((s) => stripHighlightTags(String(s || "")).trim())
+    .filter(Boolean);
+
+  return candidates[0] || libro?.titulo || "";
+}
+
+function buildAppsScriptSecondPassPrompt(libro, ctx, extra, tarjetaBase) {
+  const seed = pickSeedForSecondPass(libro, extra, tarjetaBase);
+  const frases = (extra?.frases || []).join(" | ");
+  const palabras = (extra?.palabras || []).join(", ");
+
+  return `
+Eres un editor brutalmente preciso. Vas a hacer una segunda destilación.
+No escribes reseña. No escribes resumen. No escribes copy publicitario.
+Escribes una tarjeta editorial que haga que alguien quiera abrir el libro y además se lleve una acción real.
+
+LIBRO:
+${libro.titulo} — ${libro.autor}
+${libro.tagline ? `Tagline: ${libro.tagline}` : ""}
+
+CONTEXTO:
+${ctx.dia} ${ctx.hora}h
+Palabras activadas: ${palabras}
+Frases activadas: ${frases}
+Semilla central: ${seed}
+
+OBJETIVO:
+Regresa EXACTAMENTE 4 líneas y nada más:
+1. Un título editorial breve, humano, memorable, no genérico.
+2. Un párrafo informativo que diga algo importante, específico y útil.
+3. Un subtítulo breve que abra el siguiente paso.
+4. Un párrafo accionable que se pueda ejecutar hoy.
+
+REGLAS OBLIGATORIAS:
+- Nada de “invita a”, “explora”, “reflexiona”, “nos recuerda”, “habla de”, “trata de”.
+- Nada de tono académico.
+- Nada de primera persona.
+- No pongas comillas.
+- No pongas rótulos.
+- No pongas emojis.
+- No describas el libro; destílalo.
+- Debes usar highlights con este formato exacto: [H]...[/H]
+- Debe haber al menos 2 highlights reales en total.
+- Nunca resaltes una sola palabra suelta si puedes resaltar una frase útil completa.
+- El primer párrafo debe sentirse como claridad.
+- El segundo párrafo debe sentirse como movimiento.
+- Máximo total aproximado: ${CFG.secondPass.maxWords} palabras.
+
+DEVUELVE SOLO 4 LÍNEAS.
+`.trim();
+}
+
+function coerceStructureLikeAppsScript(candidate, libro, tarjetaBase) {
+  const titulo = normalizeSentence(candidate.titulo || tarjetaBase?.titulo || `Lo que ${libro?.autor || "este libro"} corrige`);
+  const parrafoTop = ensureMinimumHighlights(
+    ensurePeriod(normalizeSentence(candidate.parrafoTop || tarjetaBase?.parrafoTop || "")),
+    1
+  );
+  const subtitulo = normalizeSentence(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora");
+  const parrafoBot = ensureMinimumHighlights(
+    ensurePeriod(normalizeSentence(candidate.parrafoBot || tarjetaBase?.parrafoBot || "")),
+    1
+  );
+
+  return {
+    titulo,
+    parrafoTop,
+    subtitulo,
+    parrafoBot
+  };
+}
+
+function ensureOneToken(text, tokenOpen = "[H]", tokenClose = "[/H]") {
+  let value = String(text || "");
+  const openCount = (value.match(new RegExp(tokenOpen.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length;
+  const closeCount = (value.match(new RegExp(tokenClose.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length;
+
+  if (openCount === 0 && closeCount === 0) {
+    const plain = stripHighlightTags(value).trim();
+    if (!plain) return value;
+    const firstSentence = plain.split(/(?<=[\.!?])\s+/)[0] || plain;
+    return value.replace(firstSentence, `${tokenOpen}${firstSentence}${tokenClose}`);
+  }
+
+  return normalizeHighlightSyntax(value);
+}
+
+async function callSecondPass(prompt, temp) {
+  const chat = await openai.chat.completions.create({
+    model: CFG.model,
+    temperature: temp,
+    top_p: CFG.secondPass.topP,
+    presence_penalty: CFG.presence,
+    frequency_penalty: CFG.frequency,
+    messages: [{ role: "user", content: prompt }]
+  });
+  return chat.choices[0].message.content;
+}
+
+async function runAppsScriptSecondPass(libro, ctx, extra, tarjetaBase) {
+  const prompt = buildAppsScriptSecondPassPrompt(libro, ctx, extra, tarjetaBase);
+  const raw = await callSecondPass(prompt, CFG.secondPass.temperature);
+  const shaped = coerceSecondPassStructure(cleanSecondPassRaw(raw), libro);
+  const coerced = coerceStructureLikeAppsScript(shaped, libro, tarjetaBase);
+
+  coerced.parrafoTop = ensureOneToken(coerced.parrafoTop);
+  coerced.parrafoBot = ensureOneToken(coerced.parrafoBot);
+
+  const tarjetaFinal = normalizeTarjetaObject({
+    ...coerced,
+    style: tarjetaBase?.style || {}
+  });
+
+  tarjetaFinal.promptFlavor = "appscript-second-pass";
+  tarjetaFinal.seed = pickSeedForSecondPass(libro, extra, tarjetaBase);
+
+  const tarjetaPresentacion = {
+    ...tarjetaFinal,
+    titulo: tarjetaFinal.titulo,
+    parrafoTop: tarjetaFinal.parrafoTop,
+    subtitulo: tarjetaFinal.subtitulo,
+    parrafoBot: tarjetaFinal.parrafoBot
+  };
+
+  return {
+    raw,
+    tarjetaFinal,
+    tarjetaPresentacion
   };
 }
 
@@ -785,20 +992,20 @@ async function enrich(libro, ctx) {
       extra.palabras.forEach((p) => state.palabras.add(String(p).toLowerCase()));
       extra.colores.forEach((c) => state.colores.add(String(c).toLowerCase()));
 
-      console.log("   [2/3] Tarjeta...");
+      console.log("   [2/3] Tarjeta base...");
       const tarjetaMessages = await buildTarjetaMessages(libro, ctx, extra);
       const rawTarjeta = await call(tarjetaMessages.system, tarjetaMessages.user, ctx.tempDinamica, false);
-      let tarjeta = parseTarjetaLines(rawTarjeta);
-      tarjeta = normalizeTarjetaObject(tarjeta);
+      let tarjetaBase = parseTarjetaLines(rawTarjeta);
+      tarjetaBase = normalizeTarjetaObject(tarjetaBase);
 
       if (CFG.verification.enabled) {
-        const v = VERIFICADOR.tarjeta(tarjeta);
+        const v = VERIFICADOR.tarjeta(tarjetaBase);
         if (CFG.verification.logLowScore && v.score < 0.8) {
-          console.log(`   ⚠️  Verificación tarjeta: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
+          console.log(`   ⚠️  Verificación tarjeta base: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
           console.log("      Checks fallidos:", Object.entries(v.checks).filter(([, ok]) => !ok).map(([k]) => k));
         }
         if (CFG.verification.retryIfLowScore && !v.aprobado) {
-          throw new Error(`Verificación tarjeta falló: score ${v.score.toFixed(2)}`);
+          throw new Error(`Verificación tarjeta base falló: score ${v.score.toFixed(2)}`);
         }
       }
 
@@ -826,7 +1033,18 @@ async function enrich(libro, ctx) {
         style.ink = CFG.darkMode.inkMax;
       }
 
-      tarjeta.style = style;
+      tarjetaBase.style = style;
+
+      let tarjeta = tarjetaBase;
+      let tarjetaPresentacion = tarjetaBase;
+
+      if (CFG.secondPass.enabled) {
+        const secondPass = await runAppsScriptSecondPass(libro, ctx, extra, tarjetaBase);
+        tarjeta = secondPass.tarjetaFinal;
+        tarjetaPresentacion = secondPass.tarjetaPresentacion;
+        tarjeta.style = style;
+        tarjetaPresentacion.style = style;
+      }
 
       console.log("   ✅ Completado");
       return {
@@ -834,6 +1052,8 @@ async function enrich(libro, ctx) {
         ...extra,
         portada: String(libro.portada || libro.portada_url || "").trim() || `📚 ${libro.titulo}\n${libro.autor}`,
         tarjeta,
+        tarjeta_base: tarjetaBase,
+        tarjeta_presentacion: tarjetaPresentacion,
         videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
       };
     } catch (error) {
@@ -864,6 +1084,20 @@ async function enrich(libro, ctx) {
     fondo: "#0a0a0a",
     portada: libro.portada || `📚 ${libro.titulo}`,
     tarjeta: {
+      titulo: "El gesto que rompe la inercia",
+      parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
+      subtitulo: "Un siguiente paso pequeño",
+      parrafoBot: "Hazlo hoy: [H]abre el libro físico más cercano y lee una sola línea completa.[/H] Ese gesto basta para cambiar el ritmo del momento.",
+      style: defaultStyle()
+    },
+    tarjeta_base: {
+      titulo: "El gesto que rompe la inercia",
+      parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
+      subtitulo: "Un siguiente paso pequeño",
+      parrafoBot: "Hazlo hoy: [H]abre el libro físico más cercano y lee una sola línea completa.[/H] Ese gesto basta para cambiar el ritmo del momento.",
+      style: defaultStyle()
+    },
+    tarjeta_presentacion: {
       titulo: "El gesto que rompe la inercia",
       parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
       subtitulo: "Un siguiente paso pequeño",
@@ -989,11 +1223,12 @@ async function runSingle(ctx) {
   }
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.4.0 — MODO SINGLE (1 libro)      ║");
+  console.log("║  TRIGGUI v9.5.0 — MODO SINGLE (1 libro)      ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
   console.log(`🧾 Prompt editorial: ${CFG.prompts.useExternalEditorial ? "EXTERNAL" : "LEGACY estable"}`);
+  console.log(`🧪 Second pass Apps Script: ${CFG.secondPass.enabled ? "ON" : "OFF"}`);
 
   const enriched = await enrich(bookMeta, ctx);
   await writeSingleOutputs(bookMeta, enriched);
@@ -1004,7 +1239,7 @@ async function runBatch(ctx) {
   const selected = books.slice(0, CFG.processing.maxBatch);
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.4.0 — MODO BATCH (contenido)    ║");
+  console.log("║   TRIGGUI v9.5.0 — MODO BATCH (contenido)    ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📚 Fuente: ${CFG.files.csv}`);
   console.log(`📦 Libros a enriquecer: ${selected.length}`);
