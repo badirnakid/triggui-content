@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "Trust & Inspire",
+      "autor": "Stephen Covey",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "1543749687",
+      "slug": "trust-inspire",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "medium",
+      "punto": "relación",
+      "palabras": [
+        "confianza",
+        "inspirar",
+        "conexión",
+        "crecimiento"
+      ],
+      "frases": [
+        "🌱 Dedica un minuto a reflexionar sobre cómo puedes inspirar a alguien hoy.",
+        "💬 Comparte un elogio genuino con un compañero de trabajo o amigo.",
+        "🔗 Haz una lista de tres personas en tu vida que te inspiran y envíales un mensaje.",
+        "📖 Lee una página de un libro que te motive y escribe una idea clave."
+      ],
+      "colores": [
+        "#4A90E2",
+        "#50E3C2",
+        "#F5A623",
+        "#BFBFBF"
+      ],
+      "fondo": "#1D1D1D",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Conectar y crecer juntos",
+        "parrafoTop": "La confianza se construye a través de gestos sinceros que inspiran a otros. [H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#34495e"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Hoy es un buen momento para reflexionar sobre quién puede beneficiarse de un gesto sincero; dedica tiempo a reconocer los logros de quienes te rodean."
+      },
+      "tarjeta_base": {
+        "titulo": "Cultivar el potencial humano",
+        "parrafoTop": "El enfoque de Stephen Covey en [H]eliminar la mentalidad de control[/H] transforma la manera en que se lidera y se colabora.",
+        "subtitulo": "Redefiniendo el liderazgo",
+        "parrafoBot": "Hoy es un buen momento para [H]reflexionar sobre quién puede beneficiarse de un gesto sincero[/H]; dedica tiempo a reconocer los logros de quienes te rodean.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#34495e"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Conectar y crecer juntos",
+        "parrafoTop": "La confianza se construye a través de gestos sinceros que inspiran a otros. [H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#34495e"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Hoy es un buen momento para reflexionar sobre quién puede beneficiarse de un gesto sincero; dedica tiempo a reconocer los logros de quienes te rodean."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Trust%20%26%20Inspire%20Stephen%20Covey%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Los hábitos secretos de los genios",
       "autor": "Craig Wright",
       "tagline": "Los 14 rasgos de las mentes más brillantes de la historia",
@@ -949,56 +1029,6 @@
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El gato que amaba los libros",
-      "autor": "Sosuke Natsukawa",
-      "tagline": "Un homenaje a las librerías a los libros y a todos aquellos que los aman",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "libro",
-      "punto": "lectura",
-      "palabras": [
-        "literatura",
-        "sabiduría",
-        "conexión",
-        "refugio"
-      ],
-      "frases": [
-        "📖 Busca un rincón acogedor y sumérgete en las páginas de un libro.",
-        "🌟 Comparte con alguien tu pasaje favorito y escucha su interpretación.",
-        "☕ Tómate un momento para disfrutar de una taza de té mientras hojeas las páginas.",
-        "🛍️ Visita tu librería local y descubre nuevas historias que te esperan."
-      ],
-      "colores": [
-        "#000000",
-        "#2c3e50",
-        "#ecf0f1",
-        "#95a5a6"
-      ],
-      "fondo": "dark",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "El gato que amaba los libros",
-        "parrafoTop": "[H]Una celebración de la magia que reside en cada página, donde un felino curioso se convierte en el guardián de historias.[/H]",
-        "subtitulo": "Un viaje hacia el amor por las librerías",
-        "parrafoBot": "[H]Visita tu librería local y descubre nuevas historias que te esperan.[/H] Permítete perderte entre sus estantes y compartir con alguien tu pasaje favorito.",
-        "style": {
-          "accent": "#6a994e",
-          "ink": "#f8f9fa",
-          "paper": "#2b2d42",
-          "border": "#8d99ae"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20gato%20que%20amaba%20los%20libros%20Sosuke%20Natsukawa%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
