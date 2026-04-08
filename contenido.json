@@ -1,6 +1,58 @@
 {
   "libros": [
     {
+      "titulo": "The Creative Act: A Way of Being",
+      "autor": "Rick Rubin",
+      "tagline": "Transforma tu vida a través de la creatividad.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a3/c3/73/a3c37376-b40b-d71f-9f18-78c2f9d08831/9780593653425.d.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/a3/c3/73/a3c37376-b40b-d71f-9f18-78c2f9d08831/9780593653425.d.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "1621808272",
+      "slug": "the-creative-act-a-way-of-being",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "medium",
+      "punto": "creatividad",
+      "palabras": [
+        "transformación",
+        "inspiración",
+        "expresión",
+        "autenticidad"
+      ],
+      "frases": [
+        "🎨 Dedica cinco minutos a garabatear tus pensamientos en una hoja.",
+        "🌱 Busca un lugar tranquilo y respira profundamente, sintiendo cada inspiración.",
+        "📝 Escribe tres cosas que te inspiran y cómo puedes integrarlas hoy.",
+        "✨ Observa a tu alrededor; encuentra algo cotidiano y reinterpreta su significado."
+      ],
+      "colores": [
+        "#1F1F1F",
+        "#C0C0C0",
+        "#FF5733",
+        "#4CAF50"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "El acto creativo: un camino hacia el ser",
+        "parrafoTop": "[H]Rick Rubin invita a reconocer que la creatividad es una forma de vida que puede enriquecer cada momento.[/H]",
+        "subtitulo": "Cultiva tu esencia",
+        "parrafoBot": "Dedicar unos minutos a [H]garabatear pensamientos en una hoja[/H] puede abrir nuevas perspectivas; busca un espacio tranquilo y permite que surjan ideas.",
+        "style": {
+          "accent": "#2e2e2e",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#444444"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Creative%20Act%3A%20A%20Way%20of%20Being%20Rick%20Rubin%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Todo el tiempo del mundo",
       "autor": "Lisa Broderick",
       "tagline": "",
@@ -951,56 +1003,6 @@
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ansiedad%20Augusto%20Cury%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Grit",
-      "autor": "Angela Duckworth",
-      "tagline": "El poder de la pasión y la perseverancia",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/26/fe/71/26fe7112-1523-0907-371c-9d5080db8387/9788416715381.jpeg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/26/fe/71/26fe7112-1523-0907-371c-9d5080db8387/9788416715381.jpeg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "Grit",
-      "punto": "Pasión y perseverancia",
-      "palabras": [
-        "determinación",
-        "compromiso",
-        "esfuerzo",
-        "persistencia"
-      ],
-      "frases": [
-        "🌱 Dedica cinco minutos a escribir tus metas a largo plazo.",
-        "📅 Establece un pequeño objetivo diario y cúmplelo hoy mismo.",
-        "📝 Reflexiona sobre un desafío reciente y anota lo que aprendiste.",
-        "💪 Encuentra una persona que te inspire y envíale un mensaje de agradecimiento."
-      ],
-      "colores": [
-        "#e91e63",
-        "#3f51b5",
-        "#ff9800",
-        "#9c27b0"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Grit: El poder de la pasión y la perseverancia",
-        "parrafoTop": "Angela Duckworth explora cómo [H]la combinación de pasión y tenacidad[/H] puede llevar al éxito en cualquier ámbito.",
-        "subtitulo": "Pasión y tenacidad en acción",
-        "parrafoBot": "[H]Dedicar cinco minutos a escribir metas a largo plazo puede ser el primer paso hacia un cambio significativo; establece un pequeño objetivo diario y cúmplelo hoy mismo.[/H]",
-        "style": {
-          "accent": "#f9a825",
-          "ink": "#e0e0e0",
-          "paper": "#212121",
-          "border": "#424242"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
