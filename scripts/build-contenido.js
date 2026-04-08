@@ -96,7 +96,6 @@ const CFG = {
     maxWords: 60
   },
 
-
   darkMode: {
     paperMin: "#0a0a0a",
     paperMax: "#2a2a2a",
@@ -196,18 +195,14 @@ function normalizeHighlightSyntax(input) {
 
   if (!text.trim()) return "";
 
-  // 1) Normaliza variantes moustache
   text = text
     .replace(/\{\{H\}\}/gi, "[H]")
     .replace(/\{\{\/H\}\}/gi, "[/H]");
 
-  // 2) Unifica etiquetas a mayúsculas consistentes
   text = text
     .replace(/\[h\]/g, "[H]")
     .replace(/\[\/h\]/g, "[/H]");
 
-  // 3) Convierte caso legacy [H]...[H] en alternancia open/close
-  //    Recorremos etiquetas [H] y alternamos: open, close, open, close...
   let toggleOpen = true;
   text = text.replace(/\[H\]/g, () => {
     const token = toggleOpen ? "[H]" : "[/H]";
@@ -215,14 +210,12 @@ function normalizeHighlightSyntax(input) {
     return token;
   });
 
-  // 4) Si quedó un [H] abierto sin cerrar, ciérralo al final
   const opens = (text.match(/\[H\]/g) || []).length;
   const closes = (text.match(/\[\/H\]/g) || []).length;
   if (opens > closes) {
     text += "[/H]".repeat(opens - closes);
   }
 
-  // 5) Si hay más cierres que aperturas, removemos sobrantes del final hacia atrás
   let excessClose = (text.match(/\[\/H\]/g) || []).length - (text.match(/\[H\]/g) || []).length;
   if (excessClose > 0) {
     const parts = text.split("");
@@ -237,10 +230,7 @@ function normalizeHighlightSyntax(input) {
     text = parts.join("");
   }
 
-  // 6) Limpia highlights vacíos
   text = text.replace(/\[H\]\s*\[\/H\]/g, "");
-
-  // 7) Limpia dobles espacios
   text = text.replace(/[ \t]{2,}/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 
   return text;
@@ -255,7 +245,97 @@ function countHighlights(text) {
 }
 
 function stripHighlightTags(text) {
-  return String(text || "").replace(/\[H\]|\[\/H\]/gi, "");
+  return normalizeHighlightSyntax(String(text || "")).replace(/\[H\]|\[\/H\]/gi, "");
+}
+
+function stripEmojiPrefix(text) {
+  return String(text || "")
+    .replace(/^[^\p{L}\p{N}]+/gu, "")
+    .trim();
+}
+
+function normalizeSentence(text) {
+  const value = String(text || "").trim();
+  if (!value) return "";
+  const clean = value.replace(/\s+/g, " ").trim();
+  return clean.charAt(0).toUpperCase() + clean.slice(1);
+}
+
+function sanitizeTitleText(text) {
+  const clean = stripHighlightTags(String(text || ""))
+    .replace(/@@BODY|@@ENDBODY/gi, "")
+    .replace(/\n+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
+    .replace(/[.!?…]+$/g, "")
+    .trim();
+
+  return normalizeSentence(clean);
+}
+
+function isLikelyEditorialTitle(text) {
+  const value = sanitizeTitleText(text);
+  if (!value) return false;
+  if (value.length < 6 || value.length > 72) return false;
+  if ((value.match(/[.!?]/g) || []).length > 0) return false;
+  const words = value.split(/\s+/).filter(Boolean);
+  if (words.length > 8) return false;
+  return true;
+}
+
+function comparableText(text) {
+  return stripHighlightTags(String(text || ""))
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tooSimilarText(a, b) {
+  const aa = comparableText(a);
+  const bb = comparableText(b);
+
+  if (!aa || !bb) return false;
+  if (aa === bb) return true;
+
+  if ((aa.includes(bb) || bb.includes(aa)) && Math.min(aa.length, bb.length) > 42) {
+    return true;
+  }
+
+  const tokensA = new Set(aa.split(" ").filter(Boolean));
+  const tokensB = new Set(bb.split(" ").filter(Boolean));
+  const intersection = [...tokensA].filter((token) => tokensB.has(token)).length;
+  const union = new Set([...tokensA, ...tokensB]).size || 1;
+  const jaccard = intersection / union;
+
+  return jaccard >= 0.78;
+}
+
+function pickFirstDistinct(base, candidates) {
+  for (const candidate of candidates) {
+    const clean = String(candidate || "").trim();
+    if (!clean) continue;
+    if (!tooSimilarText(base, clean)) return clean;
+  }
+  return "";
+}
+
+function buildActionFallbackFromFrases(frases = []) {
+  const cleaned = uniqueStrings(
+    frases
+      .map((frase) => stripEmojiPrefix(frase))
+      .map((frase) => cleanGuidance(frase))
+      .map((frase) => ensurePeriod(frase))
+      .filter(Boolean)
+  );
+
+  if (cleaned.length === 0) return "";
+  if (cleaned.length === 1) return cleaned[0];
+
+  return ensurePeriod(`${cleaned[0]} ${cleaned[1]}`);
 }
 
 function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
@@ -283,7 +363,7 @@ function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
 
 function normalizeTarjetaObject(tarjeta = {}) {
   const clean = {
-    titulo: String(tarjeta.titulo || "").trim(),
+    titulo: sanitizeTitleText(String(tarjeta.titulo || "").trim()),
     parrafoTop: normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()),
     subtitulo: String(tarjeta.subtitulo || "").trim(),
     parrafoBot: normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()),
@@ -628,26 +708,30 @@ function splitSemanticLines(text) {
 
 function coerceSecondPassStructure(raw, libro) {
   const lines = splitSemanticLines(raw);
-  const fallbackTitle = libro?.titulo ? `Lo que este libro corrige` : "Lo que aquí se corrige";
+  const fallbackTitle = libro?.autor
+    ? `Lo que ${libro.autor} corrige`
+    : "Lo que aquí se corrige";
 
   const compact = cleanSecondPassRaw(raw)
     .split(/(?<=[\.!?])\s+/)
     .map((s) => s.trim())
     .filter(Boolean);
 
-  return {
-    titulo: lines[0] || fallbackTitle,
-    parrafoTop: lines[1] || compact[0] || "",
-    subtitulo: lines[2] || "Hazlo ahora",
-    parrafoBot: lines.slice(3).join(" ").trim() || compact.slice(1).join(" ").trim() || ""
-  };
-}
+  const line0 = lines[0] || "";
+  const line0LooksLikeTitle = isLikelyEditorialTitle(line0);
 
-function normalizeSentence(text) {
-  const value = String(text || "").trim();
-  if (!value) return "";
-  const clean = value.replace(/\s+/g, " ").trim();
-  return clean.charAt(0).toUpperCase() + clean.slice(1);
+  return {
+    titulo: line0LooksLikeTitle ? sanitizeTitleText(line0) : fallbackTitle,
+    parrafoTop: line0LooksLikeTitle
+      ? (lines[1] || compact[0] || "")
+      : (compact[0] || line0 || ""),
+    subtitulo: line0LooksLikeTitle
+      ? (lines[2] || "Hazlo ahora")
+      : (lines[1] || "Hazlo ahora"),
+    parrafoBot: line0LooksLikeTitle
+      ? (lines.slice(3).join(" ").trim() || compact.slice(1).join(" ").trim() || "")
+      : (lines.slice(2).join(" ").trim() || compact.slice(1).join(" ").trim() || "")
+  };
 }
 
 function ensurePeriod(text) {
@@ -717,16 +801,82 @@ DEVUELVE SOLO 4 LÍNEAS.
 }
 
 function coerceStructureLikeAppsScript(candidate, libro, tarjetaBase) {
-  const titulo = normalizeSentence(candidate.titulo || tarjetaBase?.titulo || `Lo que ${libro?.autor || "este libro"} corrige`);
+  const titulo = sanitizeTitleText(
+    candidate.titulo || tarjetaBase?.titulo || `Lo que ${libro?.autor || "este libro"} corrige`
+  );
+
   const parrafoTop = ensureMinimumHighlights(
     ensurePeriod(normalizeSentence(candidate.parrafoTop || tarjetaBase?.parrafoTop || "")),
     1
   );
+
   const subtitulo = normalizeSentence(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora");
+
   const parrafoBot = ensureMinimumHighlights(
     ensurePeriod(normalizeSentence(candidate.parrafoBot || tarjetaBase?.parrafoBot || "")),
     1
   );
+
+  return {
+    titulo,
+    parrafoTop,
+    subtitulo,
+    parrafoBot
+  };
+}
+
+function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
+  const parrafoTop = ensureMinimumHighlights(
+    normalizeHighlightSyntax(String(candidate.parrafoTop || tarjetaBase?.parrafoTop || "").trim()),
+    1
+  );
+
+  let parrafoBot = ensureMinimumHighlights(
+    normalizeHighlightSyntax(String(candidate.parrafoBot || tarjetaBase?.parrafoBot || "").trim()),
+    1
+  );
+
+  const subtitulo = normalizeSentence(String(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora").trim()) || "Hazlo ahora";
+
+  let titulo = sanitizeTitleText(candidate.titulo);
+
+  const fallbackTitles = [
+    sanitizeTitleText(tarjetaBase?.titulo),
+    sanitizeTitleText(libro?.tagline),
+    sanitizeTitleText(`Lo que ${libro?.autor || "este libro"} corrige`)
+  ].filter(Boolean);
+
+  const tituloInvalido =
+    !isLikelyEditorialTitle(titulo) ||
+    countHighlights(titulo) > 0 ||
+    tooSimilarText(titulo, parrafoTop) ||
+    tooSimilarText(titulo, parrafoBot);
+
+  if (tituloInvalido) {
+    titulo =
+      pickFirstDistinct(parrafoTop, fallbackTitles.filter(isLikelyEditorialTitle)) ||
+      sanitizeTitleText(`Lo que ${libro?.autor || "este libro"} corrige`);
+  }
+
+  if (!parrafoBot || tooSimilarText(parrafoTop, parrafoBot)) {
+    const fallbackBotCandidates = [
+      tarjetaBase?.parrafoBot,
+      buildActionFallbackFromFrases(extra?.frases || []),
+      tarjetaBase?.parrafoTop
+    ]
+      .filter(Boolean)
+      .map((text) => ensureMinimumHighlights(normalizeHighlightSyntax(ensurePeriod(String(text).trim())), 1));
+
+    const replacement = pickFirstDistinct(parrafoTop, fallbackBotCandidates);
+    if (replacement) parrafoBot = replacement;
+  }
+
+  if (!parrafoBot || tooSimilarText(parrafoTop, parrafoBot)) {
+    parrafoBot = ensureMinimumHighlights(
+      "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
+      1
+    );
+  }
 
   return {
     titulo,
@@ -768,12 +918,13 @@ async function runAppsScriptSecondPass(libro, ctx, extra, tarjetaBase) {
   const raw = await callSecondPass(prompt, CFG.secondPass.temperature);
   const shaped = coerceSecondPassStructure(cleanSecondPassRaw(raw), libro);
   const coerced = coerceStructureLikeAppsScript(shaped, libro, tarjetaBase);
+  const repaired = repairSecondPassTarjeta(coerced, libro, tarjetaBase, extra);
 
-  coerced.parrafoTop = ensureOneToken(coerced.parrafoTop);
-  coerced.parrafoBot = ensureOneToken(coerced.parrafoBot);
+  repaired.parrafoTop = ensureOneToken(repaired.parrafoTop);
+  repaired.parrafoBot = ensureOneToken(repaired.parrafoBot);
 
   const tarjetaFinal = normalizeTarjetaObject({
-    ...coerced,
+    ...repaired,
     style: tarjetaBase?.style || {}
   });
 
@@ -1119,6 +1270,32 @@ async function fileExists(filePath) {
   } catch {
     return false;
   }
+}
+
+function cleanGuidance(text) {
+  let value = normalizeSentence(stripEmojiPrefix(text));
+  if (!value) return "";
+  value = value
+    .replace(/^\s*(?:[\(\[]?\d+[\)\]]?[\.\-:]?\s*)+/, "")
+    .replace(/^\s*\[?\s*(t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*\]?\s*[:\-–]?\s*/i, "")
+    .replace(/^\s*(?:una\s+l[ií]nea\s+de\s+)?(?:t[ií]tulo|subt[ií]tulo|p[aá]rrafo(?:\s+breve)?|acci[oó]n)\s*[:\-–]\s*/i, "")
+    .trim();
+
+  return value;
+}
+
+function uniqueStrings(values) {
+  const seen = new Set();
+  const output = [];
+  for (const value of values) {
+    const clean = String(value || "").trim();
+    if (!clean) continue;
+    const key = clean.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    output.push(clean);
+  }
+  return output;
 }
 
 async function loadCSVBooks() {
