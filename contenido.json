@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "EDUCACIÓN EN LA ERA DIGITAL: INTELIGENCIA ARTIFICIAL Y METODOLOGÍA CUANTITATIVA PARA LA INVESTIGACIÓN",
+      "autor": "Ángel Yasmil Echeverría Guzmán, Ramon Guzmán Hernández, Dayron Rumbaut Rangel, Julia Orlenda Robinson Aguirre, Segress García Hevia, Gabriela Nicole Tolozano Lapierre",
+      "tagline": "En la sinergia entre la educación y la tecnología, la Inteligencia Artificial (IA) ha emergido como una fuerza transformadora que redefine las prácticas académicas y met…",
+      "portada": "https://books.google.com/books/content?id=bO9XEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=bO9XEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_source": "google_books",
+      "isbn": "9789942739605",
+      "slug": "educacion-en-la-era-digital-inteligencia-artificial-y-metodo",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "A4",
+      "punto": "3",
+      "palabras": [
+        "transformación",
+        "metodología",
+        "inteligencia",
+        "educación"
+      ],
+      "frases": [
+        "📖 Abre el libro para descubrir cómo la IA impacta tu práctica educativa.",
+        "🔍 Examina las metodologías cuantitativas que transforman la investigación académica.",
+        "💡 Reflexiona sobre el papel de la tecnología en la evolución de los procesos educativos.",
+        "🛠️ Aplica estrategias innovadoras que integran la inteligencia artificial en tu enseñanza."
+      ],
+      "colores": [
+        "#1E1E1E",
+        "#F5C03A",
+        "#2B2B2B",
+        "#A0A0A0"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Revoluciona tu enseñanza hoy",
+        "parrafoTop": "La integración de la [H]inteligencia artificial[/H] está redefiniendo la educación. Métodos cuantitativos aplicables ofrecen nuevas perspectivas en investigación académica, elevando el aprendizaje. Aprende a aplicar estrategias innovadoras que transformen tus prácticas educativas. Incorpora una herramienta tecnológica esta semana y observa su impacto inmediato en tu aula.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H].",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria."
+      },
+      "tarjeta_base": {
+        "titulo": "La interacción entre educación y tecnología",
+        "parrafoTop": "En un mundo donde [H]la IA redefine las prácticas académicas[/H], es crucial comprender cómo estas herramientas pueden enriquecer la enseñanza. Los autores analizan su influencia en los métodos de investigación.",
+        "subtitulo": "Implicaciones de la investigación contemporánea",
+        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H]",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Revoluciona tu enseñanza hoy",
+        "parrafoTop": "La integración de la [H]inteligencia artificial[/H] está redefiniendo la educación. Métodos cuantitativos aplicables ofrecen nuevas perspectivas en investigación académica, elevando el aprendizaje. Aprende a aplicar estrategias innovadoras que transformen tus prácticas educativas. Incorpora una herramienta tecnológica esta semana y observa su impacto inmediato en tu aula.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H].",
+        "style": {
+          "accent": "#4a90e2",
+          "ink": "#ffffff",
+          "paper": "#121212",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+EDUCACI%C3%93N%20EN%20LA%20ERA%20DIGITAL%3A%20INTELIGENCIA%20ARTIFICIAL%20Y%20METODOLOG%C3%8DA%20CUANTITATIVA%20PARA%20LA%20INVESTIGACI%C3%93N%20%C3%81ngel%20Yasmil%20Echeverr%C3%ADa%20Guzm%C3%A1n%2C%20Ramon%20Guzm%C3%A1n%20Hern%C3%A1ndez%2C%20Dayron%20Rumbaut%20Rangel%2C%20Julia%20Orlenda%20Robinson%20Aguirre%2C%20Segress%20Garc%C3%ADa%20Hevia%2C%20Gabriela%20Nicole%20Tolozano%20Lapierre%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Integración de la inteligencia artificial en el estudio científico del maridaje vino-chocolate",
       "autor": "Dionisio Navarro García",
       "tagline": "Este estudio aborda el maridaje vino-chocolate desde un enfoque multifactorial, integrando variables químicas, sensoriales, tecnológicas y contextuales.",
@@ -1485,84 +1565,6 @@
         "seed": "Implementa un momento cada mañana para identificar tus tres objetivos más relevantes y da una breve caminata para activar tu mente antes de comenzar."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+M%C3%A1ximo%20Rendimiento%20Brad%20Stulberg%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Ansiedad",
-      "autor": "Augusto Cury",
-      "tagline": "Cómo enfrentar el mal del siglo",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/4b/79/63/4b796311-7a4d-be38-8f4b-a6815ba3ac7b/1027936184.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/4b/79/63/4b796311-7a4d-be38-8f4b-a6815ba3ac7b/1027936184.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "cuerpo",
-      "punto": "mente",
-      "palabras": [
-        "angustia",
-        "estrés",
-        "autocontrol",
-        "superación"
-      ],
-      "frases": [
-        "🧘‍♂️ Dedica un momento a la respiración consciente y siente cada inhalación.",
-        "📖 Lee una página del libro, observa cómo resonan sus ideas en tu interior.",
-        "📝 Anota tres pensamientos que te causen inquietud y reflexiona sobre ellos.",
-        "🚶 Da un paseo breve mientras piensas en lo que has aprendido hoy."
-      ],
-      "colores": [
-        "#ffffff",
-        "#000000",
-        "#ff4500",
-        "#008080"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Ansiedad: la puerta hacia la paz mental",
-        "parrafoTop": "Aprender a [H]controlar la angustia y el estrés[/H] es esencial para enfrentar el mal del siglo. Iniciar un viaje de autocontrol y superación transforma las emociones y mejora la calidad de vida.",
-        "subtitulo": "Transforma tu día con respiración consciente",
-        "parrafoBot": "[H]Dedica unos minutos a respirar profundamente, lee una página del libro y anota tres pensamientos inquietantes. [/H]",
-        "style": {
-          "accent": "#c0392b",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar unos minutos a la respiración consciente puede ser el primer paso para transformar tu relación con las emociones. Invierte tiempo en leer una página del libro y anota lo que te provoca inquietud."
-      },
-      "tarjeta_base": {
-        "titulo": "Ansiedad: Cómo enfrentar el mal del siglo",
-        "parrafoTop": "Augusto Cury ofrece herramientas para reconocer y manejar los [H]trastornos que provocan la ansiedad en nuestra vida diaria.[/H] A través de sus reflexiones, invita a desmitificar el sufrimiento y aprender a gestionar emociones.",
-        "subtitulo": "Acciones concretas para vivir sin angustia",
-        "parrafoBot": "Dedicar unos minutos a la [H]respiración consciente puede ser el primer paso para transformar tu relación con las emociones.[/H] Invierte tiempo en leer una página del libro y anota lo que te provoca inquietud.",
-        "style": {
-          "accent": "#c0392b",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Ansiedad: la puerta hacia la paz mental",
-        "parrafoTop": "Aprender a [H]controlar la angustia y el estrés[/H] es esencial para enfrentar el mal del siglo. Iniciar un viaje de autocontrol y superación transforma las emociones y mejora la calidad de vida.",
-        "subtitulo": "Transforma tu día con respiración consciente",
-        "parrafoBot": "[H]Dedica unos minutos a respirar profundamente, lee una página del libro y anota tres pensamientos inquietantes. [/H]",
-        "style": {
-          "accent": "#c0392b",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar unos minutos a la respiración consciente puede ser el primer paso para transformar tu relación con las emociones. Invierte tiempo en leer una página del libro y anota lo que te provoca inquietud."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ansiedad%20Augusto%20Cury%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
