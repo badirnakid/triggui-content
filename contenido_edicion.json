@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "La Conquista del Ego",
+      "autor": "ALEX. M. RIVER",
+      "tagline": "¿Te has preguntado alguna vez quién está realmente tomando las decisiones dentro de ti?",
+      "portada": "https://books.google.com/books/content?id=EIFH0QEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=EIFH0QEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_source": "google_books",
+      "isbn": "9798280255906",
+      "slug": "la-conquista-del-ego",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "A5",
+      "punto": "Conexión",
+      "palabras": [
+        "autoexploración",
+        "decisiones",
+        "conciencia",
+        "transformación"
+      ],
+      "frases": [
+        "👁️ Reflexiona sobre una decisión reciente y pregúntate: ¿quién la tomó realmente?",
+        "🪞 Escribe en un diario cómo tu ego influye en tus acciones diarias.",
+        "📚 Lee un capítulo de 'La Conquista del Ego' y anota lo que te resuena.",
+        "💡 Habla con alguien de confianza sobre un aspecto de ti que has estado evitando."
+      ],
+      "colores": [
+        "#1E1E1E",
+        "#D9D9D9",
+        "#FF6F61",
+        "#6B5B93"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Desnudando al Ego",
+        "parrafoTop": "Las decisiones cotidianas a menudo son guiadas por un ego que distorsiona la realidad y limita el crecimiento personal. Al reconocer [H]cómo el ego influye en cada elección[/H], se abre la puerta a una transformación auténtica.",
+        "subtitulo": "¿Qué pasaría si hoy tomas el control",
+        "parrafoBot": "[H]Dedica unos minutos para escribir cómo tu ego afectó una decisión reciente y observa lo que emerge de esa autoexploración. [/H]",
+        "style": {
+          "accent": "#3e4b59",
+          "ink": "#e0e0e0",
+          "paper": "#1c1c1c",
+          "border": "#5a6268"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate qué papel jugó tu ego en esa elección y escribe tus hallazgos."
+      },
+      "tarjeta_base": {
+        "titulo": "La Conquista del Ego",
+        "parrafoTop": "El autor Alex M. River invita a cuestionar [H]quién está realmente tomando las decisiones dentro de ti[/H]. Un viaje hacia el entendimiento profundo de la naturaleza del ego se despliega en cada página.",
+        "subtitulo": "Profundiza en tu interior",
+        "parrafoBot": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate [H]qué papel jugó tu ego en esa elección[/H] y escribe tus hallazgos.",
+        "style": {
+          "accent": "#3e4b59",
+          "ink": "#e0e0e0",
+          "paper": "#1c1c1c",
+          "border": "#5a6268"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Desnudando al Ego",
+        "parrafoTop": "Las decisiones cotidianas a menudo son guiadas por un ego que distorsiona la realidad y limita el crecimiento personal. Al reconocer [H]cómo el ego influye en cada elección[/H], se abre la puerta a una transformación auténtica.",
+        "subtitulo": "¿Qué pasaría si hoy tomas el control",
+        "parrafoBot": "[H]Dedica unos minutos para escribir cómo tu ego afectó una decisión reciente y observa lo que emerge de esa autoexploración. [/H]",
+        "style": {
+          "accent": "#3e4b59",
+          "ink": "#e0e0e0",
+          "paper": "#1c1c1c",
+          "border": "#5a6268"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate qué papel jugó tu ego en esa elección y escribe tus hallazgos."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20Conquista%20del%20Ego%20ALEX.%20M.%20RIVER%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "El Gran Propósito de la Vida",
       "autor": "Juan Benavides Ávila",
       "tagline": "¿Qué es la vida?",
@@ -1489,84 +1569,6 @@
         "seed": "Inicia una práctica diaria donde cada táctica se aplique a tu vida cotidiana como un guerrero moderno. Dedica tiempo a visualizar obstáculos y construir un plan claro para enfrentarlos."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20de%20los%205%20anillos%20Miyamoto%20Musashi%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Einstein para despistados",
-      "autor": "Allan Percy",
-      "tagline": "Soluciones atómicas para problemas relativamente graves",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4f/d4/33/4fd43350-abcd-6548-a29c-e6989b7a5a55/9786073180825.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4f/d4/33/4fd43350-abcd-6548-a29c-e6989b7a5a55/9786073180825.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "medio",
-      "punto": "exploración",
-      "palabras": [
-        "invención",
-        "descubrimiento",
-        "revolución",
-        "pensamiento"
-      ],
-      "frases": [
-        "🔍 Abre el libro y busca esa frase que desafía lo convencional.",
-        "📖 Lee la primera página, siente cómo las ideas se despliegan ante ti.",
-        "🧠 Reflexiona por un instante sobre cómo una mente diferente cambia nuestra visión del mundo.",
-        "✏️ Toma nota de cualquier concepto que resuene contigo, podría cambiar tu forma de pensar."
-      ],
-      "colores": [
-        "#f0e68c",
-        "#ff8c42",
-        "#6a5acd",
-        "#7fffd4"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#000000",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Cambia el lente, transforma tu mundo",
-        "parrafoTop": "Pensar como Einstein permite [H]desafiar lo convencional[/H] y abordar problemas desde ángulos inesperados. Un nuevo enfoque puede iniciar una revolución en tu forma de ver la realidad.",
-        "subtitulo": "Abre el libro y busca esa frase que",
-        "parrafoBot": "[H]Toma nota; tus ideas más audaces pueden surgir de este instante.[/H]",
-        "style": {
-          "accent": "#e76f51",
-          "ink": "#ffffff",
-          "paper": "#2a2d34",
-          "border": "#c1c1c1"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Iniciar esta exploración es sencillo: abre el libro y sumérgete en sus páginas. Presta atención a las frases que desafían tu visión, son semillas que pueden florecer en nuevas perspectivas."
-      },
-      "tarjeta_base": {
-        "titulo": "Einstein para despistados",
-        "parrafoTop": "La mente de Einstein puede ser un [H]espejo que refleja la curiosidad humana[/H]. En este libro, Allan Percy descompone conceptos complejos en fragmentos accesibles, facilitando una conexión íntima con ideas que a menudo se sienten lejanas.",
-        "subtitulo": "Soluciones atómicas para problemas relativamente graves",
-        "parrafoBot": "[H]Iniciar esta exploración es sencillo: abre el libro y sumérgete en sus páginas.[/H] Presta atención a las frases que desafían tu visión, son semillas que pueden florecer en nuevas perspectivas.",
-        "style": {
-          "accent": "#e76f51",
-          "ink": "#ffffff",
-          "paper": "#2a2d34",
-          "border": "#c1c1c1"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Cambia el lente, transforma tu mundo",
-        "parrafoTop": "Pensar como Einstein permite [H]desafiar lo convencional[/H] y abordar problemas desde ángulos inesperados. Un nuevo enfoque puede iniciar una revolución en tu forma de ver la realidad.",
-        "subtitulo": "Abre el libro y busca esa frase que",
-        "parrafoBot": "[H]Toma nota; tus ideas más audaces pueden surgir de este instante.[/H]",
-        "style": {
-          "accent": "#e76f51",
-          "ink": "#ffffff",
-          "paper": "#2a2d34",
-          "border": "#c1c1c1"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Iniciar esta exploración es sencillo: abre el libro y sumérgete en sus páginas. Presta atención a las frases que desafían tu visión, son semillas que pueden florecer en nuevas perspectivas."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Einstein%20para%20despistados%20Allan%20Percy%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
