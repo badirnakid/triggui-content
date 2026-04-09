@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "La felicidad es el camino",
+      "autor": "Jorge Bucay",
+      "tagline": "Un viaje hacia el autoconocimiento y la felicidad.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/d2/40/8c/d2408c84-aa2a-d400-7c02-01bddf4827d7/1038934319.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/d2/40/8c/d2408c84-aa2a-d400-7c02-01bddf4827d7/1038934319.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "6444294018",
+      "slug": "la-felicidad-es-el-camino",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "720x1280",
+      "punto": "descubrir la felicidad",
+      "palabras": [
+        "autoconocimiento",
+        "reflexión",
+        "intención",
+        "crecimiento"
+      ],
+      "frases": [
+        "💭 Dedica un minuto a pensar en lo que realmente te hace feliz.",
+        "📖 Abre una página del libro y busca una frase que resuene contigo.",
+        "📝 Escribe tres cosas por las que te sientes agradecido hoy.",
+        "🚶‍♂️ Da un breve paseo mientras reflexionas sobre tu camino hacia la felicidad."
+      ],
+      "colores": [
+        "#2C3E50",
+        "#2980B9",
+        "#E74C3C",
+        "#ECF0F1"
+      ],
+      "fondo": "#34495E",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Lo que Jorge Bucay corrige",
+        "parrafoTop": "El camino hacia la felicidad comienza en el interior, donde el [H]autoconocimiento y la reflexión[/H] abren las puertas al crecimiento personal.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Identificar lo que realmente genera alegría transforma la rutina en una experiencia significativa. [/H] Anota tres acciones pequeñas que puedas realizar hoy para acercarte a esos momentos felices. La intención marca la diferencia en cada paso.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ffffff",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar unos minutos a identificar lo que genera alegría permite una conexión genuina con uno mismo. Escribe hoy tres acciones pequeñas que puedan acercarte a esos momentos felices."
+      },
+      "tarjeta_base": {
+        "titulo": "La búsqueda de la felicidad",
+        "parrafoTop": "Jorge Bucay invita a explorar cómo construir un camino hacia el bienestar, abordando las experiencias y decisiones que marcan la vida. [H]Reflexionar sobre lo que nos brinda satisfacción es fundamental[/H].",
+        "subtitulo": "Camino personal y decisiones",
+        "parrafoBot": "[H]Dedicar unos minutos a identificar lo que genera alegría permite una conexión genuina con uno mismo.[/H] Escribe hoy tres acciones pequeñas que puedan acercarte a esos momentos felices.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ffffff",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Lo que Jorge Bucay corrige",
+        "parrafoTop": "El camino hacia la felicidad comienza en el interior, donde el [H]autoconocimiento y la reflexión[/H] abren las puertas al crecimiento personal.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Identificar lo que realmente genera alegría transforma la rutina en una experiencia significativa. [/H] Anota tres acciones pequeñas que puedas realizar hoy para acercarte a esos momentos felices. La intención marca la diferencia en cada paso.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ffffff",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar unos minutos a identificar lo que genera alegría permite una conexión genuina con uno mismo. Escribe hoy tres acciones pequeñas que puedan acercarte a esos momentos felices."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20felicidad%20es%20el%20camino%20Jorge%20Bucay%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "La vía rápida del millonario",
       "autor": "MJ DeMarco",
       "tagline": "Hay una carretera oculta que conduce a la riqueza y la libertad financiera un atajo que puede recorrerse a una velocidad deslumbrante. Jubilarte cuatro décadas antes de lo habitual y llevar una vida que la mayoría no puede permitirse es posible. Sin embargo nos han inculcado el dogma de hazte rico poco a poco un plan asfixiante con una ligera posibilidad de obtener riquezas en nuestra vejez: Ve a la universidad saca buenas notas gradúate consigue un buen trabajo ahorra invierte contrata un plan de pensiones. Entonces algún día cuando tengas sesenta y cinco años serás rico.No permitas que tu plan financiero consista en tener esperanzas y rezar! Cambia de carril; ve por la vía rápida y haz realidad tus sueños.",
@@ -1069,56 +1149,6 @@
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20libro%20de%20los%205%20anillos%20Miyamoto%20Musashi%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Einstein para despistados",
-      "autor": "Allan Percy",
-      "tagline": "Soluciones atómicas para problemas relativamente graves",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4f/d4/33/4fd43350-abcd-6548-a29c-e6989b7a5a55/9786073180825.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4f/d4/33/4fd43350-abcd-6548-a29c-e6989b7a5a55/9786073180825.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "media",
-      "punto": "reflexión",
-      "palabras": [
-        "relatividad",
-        "energía",
-        "cuántica",
-        "paradoja"
-      ],
-      "frases": [
-        "🔍 Dedica un momento a pensar cómo la relatividad afecta tu percepción del tiempo.",
-        "⚛️ Investiga un concepto de energía que no conocías y anota tus hallazgos.",
-        "📚 Busca una paradoja cuántica y discútela con alguien en cinco minutos.",
-        "🧠 Reflexiona sobre cómo los principios de Einstein pueden aplicarse a tu vida diaria."
-      ],
-      "colores": [
-        "#1F1F1F",
-        "#D3D3D3",
-        "#FF5722",
-        "#2196F3"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Einstein y el tiempo: una mirada distinta",
-        "parrafoTop": "El pensamiento de Einstein invita a replantear la percepción del tiempo y su relación con el entorno. [H]Considerar cómo cada instante puede ser un espacio para la reflexión[/H] abre nuevas posibilidades en la vida cotidiana.",
-        "subtitulo": "Más allá de lo teórico",
-        "parrafoBot": "[H]Dedicar unos minutos a explorar cómo estos conceptos pueden impactar las decisiones diarias permite conectar ideas abstractas con acciones concretas.[/H]",
-        "style": {
-          "accent": "#7e57c2",
-          "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#424242"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Einstein%20para%20despistados%20Allan%20Percy%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
