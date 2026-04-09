@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "Coreografías didácticas en Educación Superior",
+      "autor": "Miguel Ángel Zabalza Beraza, Ma Ainoha Zabalza Cerdeiriña",
+      "tagline": "Se atribuye a Marcel Proust aquella frase de que \"el verdadero viaje de descubrimiento empieza con una nueva mirada\".",
+      "portada": "https://books.google.com/books/content?id=t3aXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=t3aXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_source": "google_books",
+      "isbn": "9788427729186",
+      "slug": "coreografias-didacticas-en-educacion-superior",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "A5",
+      "punto": "Educar con movimiento",
+      "palabras": [
+        "dinámica",
+        "interacción",
+        "reflexión",
+        "aprendizaje"
+      ],
+      "frases": [
+        "💡 Reflexiona sobre una técnica de enseñanza que te impactó y escríbela.",
+        "🧩 Diseña una actividad que combine movimiento y aprendizaje en tu aula.",
+        "📚 Investiga un nuevo enfoque pedagógico que fomente la colaboración entre estudiantes.",
+        "🎭 Crea un breve guion para una dinámica grupal que potencie el aprendizaje activo."
+      ],
+      "colores": [
+        "#2E3A48",
+        "#4A6D7C",
+        "#BAC1C9",
+        "#E3F2F1"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Coreografías de aprendizaje",
+        "parrafoTop": "Las dinámicas interactivas son clave para que los estudiantes asimilen y conecten conocimientos. Diseñar actividades que fomenten la [H]movilidad[/H] y la colaboración transforma el aula en un espacio vibrante.",
+        "subtitulo": "Conecta arte y materia en tu próxima clase",
+        "parrafoBot": "[H]Crea hoy una dinámica grupal que active el aprendizaje y el movimiento entre tus alumnos. [/H]",
+        "style": {
+          "accent": "#b59c56",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia."
+      },
+      "tarjeta_base": {
+        "titulo": "Coreografías en Educación Superior",
+        "parrafoTop": "Zabalza y Zabalza exploran cómo [H]nuevas formas de enseñar pueden transformar el aprendizaje[/H]. La creatividad en la enseñanza superior se convierte en un vehículo para redescubrir conocimientos y prácticas.",
+        "subtitulo": "Innovación pedagógica práctica",
+        "parrafoBot": "[H]Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia.[/H]",
+        "style": {
+          "accent": "#b59c56",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Coreografías de aprendizaje",
+        "parrafoTop": "Las dinámicas interactivas son clave para que los estudiantes asimilen y conecten conocimientos. Diseñar actividades que fomenten la [H]movilidad[/H] y la colaboración transforma el aula en un espacio vibrante.",
+        "subtitulo": "Conecta arte y materia en tu próxima clase",
+        "parrafoBot": "[H]Crea hoy una dinámica grupal que active el aprendizaje y el movimiento entre tus alumnos. [/H]",
+        "style": {
+          "accent": "#b59c56",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Coreograf%C3%ADas%20did%C3%A1cticas%20en%20Educaci%C3%B3n%20Superior%20Miguel%20%C3%81ngel%20Zabalza%20Beraza%2C%20Ma%20Ainoha%20Zabalza%20Cerdeiri%C3%B1a%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Los hábitos secretos de los genios",
       "autor": "Craig Wright",
       "tagline": "Los 14 rasgos de las mentes más brillantes de la historia",
@@ -1481,84 +1561,6 @@
         "seed": "Identificar objetivos claros es esencial; dedica unos minutos a escribir tres pasos concretos que puedas dar hoy mismo hacia lo que anhelas."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El gato que amaba los libros",
-      "autor": "Sosuke Natsukawa",
-      "tagline": "Un homenaje a las librerías a los libros y a todos aquellos que los aman",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "medium",
-      "punto": "lector apasionado",
-      "palabras": [
-        "librería",
-        "historias",
-        "personajes",
-        "lectura"
-      ],
-      "frases": [
-        "📖 Busca una librería cercana y date el tiempo de explorar sus estantes.",
-        "📚 Elige un libro que te intrigue y sumérgete en sus páginas hoy mismo.",
-        "🐾 Observa cómo un gato se acomoda entre libros y deja que eso inspire tu momento de lectura.",
-        "💭 Reflexiona sobre por qué cada libro cuenta una historia única en tu vida."
-      ],
-      "colores": [
-        "#c8d1f0",
-        "#ff6f61",
-        "#5dca78",
-        "#f9b7a0"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#000000",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que Sosuke Natsukawa corrige",
-        "parrafoTop": "La magia de los libros vive en cada librería, donde [H]las historias esperan a ser descubiertas[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Permitir que un libro te elija transforma la experiencia de lectura. Visita una librería cercana y deja que [H]el aroma de las páginas nuevas inspire tu elección[/H]. Dedica tiempo hoy para encontrar esa obra que resonará contigo.",
-        "style": {
-          "accent": "#c2b280",
-          "ink": "#ffffff",
-          "paper": "#1f1f1f",
-          "border": "#4d4d4d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Visita una librería cercana, respira su esencia, y permite que un libro te elija. Regálate tiempo para explorar sus páginas y descubrir lo que tienen para ofrecerte."
-      },
-      "tarjeta_base": {
-        "titulo": "El gato que amaba los libros",
-        "parrafoTop": "Sosuke Natsukawa evoca la conexión entre seres humanos y libros a través de un felino cuya vida se transforma en el refugio literario. [H]Este relato resalta cómo un libro puede convertirse en compañía fiel[/H] y guía hacia nuevas perspectivas.",
-        "subtitulo": "Un homenaje a las librerías, a los libros",
-        "parrafoBot": "Visita una librería cercana, respira su esencia, y permite que un libro te elija. [H]Regálate tiempo para explorar sus páginas y descubrir lo que tienen para ofrecerte[/H].",
-        "style": {
-          "accent": "#c2b280",
-          "ink": "#ffffff",
-          "paper": "#1f1f1f",
-          "border": "#4d4d4d"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que Sosuke Natsukawa corrige",
-        "parrafoTop": "La magia de los libros vive en cada librería, donde [H]las historias esperan a ser descubiertas[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Permitir que un libro te elija transforma la experiencia de lectura. Visita una librería cercana y deja que [H]el aroma de las páginas nuevas inspire tu elección[/H]. Dedica tiempo hoy para encontrar esa obra que resonará contigo.",
-        "style": {
-          "accent": "#c2b280",
-          "ink": "#ffffff",
-          "paper": "#1f1f1f",
-          "border": "#4d4d4d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Visita una librería cercana, respira su esencia, y permite que un libro te elija. Regálate tiempo para explorar sus páginas y descubrir lo que tienen para ofrecerte."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20gato%20que%20amaba%20los%20libros%20Sosuke%20Natsukawa%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
