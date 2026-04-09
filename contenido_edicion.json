@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "Trust & Inspire",
+      "autor": "Stephen Covey",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "1543749687",
+      "slug": "trust-inspire",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "A4",
+      "punto": "1.5",
+      "palabras": [
+        "confianza",
+        "inspirar",
+        "liderazgo",
+        "empatía"
+      ],
+      "frases": [
+        "💬 Practica la escucha activa con tu equipo por 15 minutos, observa sus necesidades.",
+        "🌱 Dedica un momento a compartir un reconocimiento genuino hacia alguien que admires.",
+        "🔄 Reflexiona sobre cómo puedes delegar más responsabilidades, fomenta la autonomía.",
+        "📚 Inicia una conversación sobre valores compartidos en tu entorno laboral."
+      ],
+      "colores": [
+        "#2E7D32",
+        "#FFB300",
+        "#0D47A1",
+        "#BF360C"
+      ],
+      "fondo": "#121212",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Construyendo confianza auténtica",
+        "parrafoTop": "La clave del liderazgo efectivo radica en la [H]empatía y la escucha activa[/H], permitiendo a los equipos sentirse valorados. Iniciar conversaciones sobre valores compartidos fomenta un ambiente de colaboración.",
+        "subtitulo": "Dedicar tiempo hoy a reconocer sinceramente a un",
+        "parrafoBot": "Iniciar conversaciones sobre [H]valores compartidos[/H] fomenta un ambiente de colaboración. Dedicar tiempo hoy a reconocer sinceramente a un colega fortalece relaciones y crea un entorno inspirador.",
+        "style": {
+          "accent": "#f9a825",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Iniciar una conversación sobre valores compartidos puede abrir la puerta a nuevas dinámicas; dedica tiempo hoy a compartir un reconocimiento sincero hacia un colega."
+      },
+      "tarjeta_base": {
+        "titulo": "Transformación del trabajo en equipo",
+        "parrafoTop": "El enfoque de Stephen Covey se centra en crear un entorno donde [H]cada miembro se sienta valorado y escuchado[/H]. Esto implica dejar atrás enfoques autoritarios para cultivar una colaboración genuina.",
+        "subtitulo": "Desarrollo de relaciones efectivas",
+        "parrafoBot": "[H]Iniciar una conversación sobre valores compartidos puede abrir la puerta a nuevas dinámicas; dedica tiempo hoy a compartir un reconocimiento sincero hacia un colega.[/H]",
+        "style": {
+          "accent": "#f9a825",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Construyendo confianza auténtica",
+        "parrafoTop": "La clave del liderazgo efectivo radica en la [H]empatía y la escucha activa[/H], permitiendo a los equipos sentirse valorados. Iniciar conversaciones sobre valores compartidos fomenta un ambiente de colaboración.",
+        "subtitulo": "Dedicar tiempo hoy a reconocer sinceramente a un",
+        "parrafoBot": "Iniciar conversaciones sobre [H]valores compartidos[/H] fomenta un ambiente de colaboración. Dedicar tiempo hoy a reconocer sinceramente a un colega fortalece relaciones y crea un entorno inspirador.",
+        "style": {
+          "accent": "#f9a825",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Iniciar una conversación sobre valores compartidos puede abrir la puerta a nuevas dinámicas; dedica tiempo hoy a compartir un reconocimiento sincero hacia un colega."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Trust%20%26%20Inspire%20Stephen%20Covey%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "La felicidad es el camino",
       "autor": "Jorge Bucay",
       "tagline": "Un viaje hacia el autoconocimiento y la felicidad.",
@@ -319,86 +399,6 @@
         "seed": "Tomarse un momento para inhalar y exhalar conscientemente puede abrir la puerta a nuevas perspectivas. Abrir el libro en cualquier página revelará enseñanzas que pueden enriquecer esa experiencia."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Autobiografia%20de%20un%20yogui%20Paramahansa%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Trust & Inspire",
-      "autor": "Stephen Covey",
-      "tagline": "",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/bb/66/f8/bb66f87d-70c3-80a8-3acc-2cfca177a1bb/9781471195945.jpg/600x600bb.jpg",
-      "portada_source": "apple_books",
-      "isbn": "1543749687",
-      "slug": "trust-inspire",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "medium",
-      "punto": "relación",
-      "palabras": [
-        "confianza",
-        "inspirar",
-        "conexión",
-        "crecimiento"
-      ],
-      "frases": [
-        "🌱 Dedica un minuto a reflexionar sobre cómo puedes inspirar a alguien hoy.",
-        "💬 Comparte un elogio genuino con un compañero de trabajo o amigo.",
-        "🔗 Haz una lista de tres personas en tu vida que te inspiran y envíales un mensaje.",
-        "📖 Lee una página de un libro que te motive y escribe una idea clave."
-      ],
-      "colores": [
-        "#4A90E2",
-        "#50E3C2",
-        "#F5A623",
-        "#BFBFBF"
-      ],
-      "fondo": "#1D1D1D",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Conectar y crecer juntos",
-        "parrafoTop": "La confianza se construye a través de gestos sinceros que inspiran a otros. [H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#2c3e50",
-          "border": "#34495e"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hoy es un buen momento para reflexionar sobre quién puede beneficiarse de un gesto sincero; dedica tiempo a reconocer los logros de quienes te rodean."
-      },
-      "tarjeta_base": {
-        "titulo": "Cultivar el potencial humano",
-        "parrafoTop": "El enfoque de Stephen Covey en [H]eliminar la mentalidad de control[/H] transforma la manera en que se lidera y se colabora.",
-        "subtitulo": "Redefiniendo el liderazgo",
-        "parrafoBot": "Hoy es un buen momento para [H]reflexionar sobre quién puede beneficiarse de un gesto sincero[/H]; dedica tiempo a reconocer los logros de quienes te rodean.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#2c3e50",
-          "border": "#34495e"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Conectar y crecer juntos",
-        "parrafoTop": "La confianza se construye a través de gestos sinceros que inspiran a otros. [H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Reconocer los logros de quienes nos rodean genera un ambiente positivo[/H] que fomenta el crecimiento mutuo. Comparte un elogio genuino con alguien que aprecies hoy. Este pequeño acto puede transformar una relación y fortalecer la confianza..",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#2c3e50",
-          "border": "#34495e"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hoy es un buen momento para reflexionar sobre quién puede beneficiarse de un gesto sincero; dedica tiempo a reconocer los logros de quienes te rodean."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Trust%20%26%20Inspire%20Stephen%20Covey%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Los hábitos secretos de los genios",
