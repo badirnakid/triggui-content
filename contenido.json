@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "tagline": "Viviendo el momento presente",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/58/94/48/58944837-a079-5e0e-371a-a559e0deabb1/9786073119276.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/58/94/48/58944837-a079-5e0e-371a-a559e0deabb1/9786073119276.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "698946532",
+      "slug": "el-poder-del-ahora",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "300x500",
+      "punto": "meditación",
+      "palabras": [
+        "presencia",
+        "conciencia",
+        "silencio",
+        "ahora"
+      ],
+      "frases": [
+        "🧘‍♂️ Cierra los ojos y enfoca tu atención en la respiración por un minuto.",
+        "🌱 Observa el entorno: los sonidos, olores y sensaciones del momento actual.",
+        "✨ Practica la gratitud recordando tres cosas simples que valoras hoy.",
+        "🌌 Siente cada parte de tu cuerpo, desde la cabeza hasta los pies, durante medio minuto."
+      ],
+      "colores": [
+        "#2C3E50",
+        "#34495E",
+        "#1ABC9C",
+        "#E74C3C"
+      ],
+      "fondo": "#000000",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Viviendo en el Ahora",
+        "parrafoTop": "La conexión con la [H]presencia[/H] y el silencio interior transforma la vida cotidiana en un viaje significativo. Reconocer las pequeñas cosas que generan gratitud abre puertas a una existencia plena.",
+        "subtitulo": "Prueba esto: dedica un minuto a sentir tu",
+        "parrafoBot": "[H]Prueba esto: dedica un minuto a sentir tu respiración y luego enumera tres cosas simples que valoras hoy.[/H]",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar un minuto a observar la respiración permite reconectar con lo fundamental. Después, reconocer tres cosas simples que aporten gratitud puede profundizar esta experiencia transformadora."
+      },
+      "tarjeta_base": {
+        "titulo": "La esencia del instante",
+        "parrafoTop": "Explorar el [H]momento presente[/H] es abrir una puerta a la transformación interior. Eckhart Tolle guía hacia un entendimiento profundo de lo que realmente significa vivir sin distracciones, apreciando la vida tal como se despliega.",
+        "subtitulo": "Viviendo el momento cotidiano",
+        "parrafoBot": "[H]Dedicar un minuto a observar la respiración permite reconectar con lo fundamental.[/H] Después, reconocer tres cosas simples que aporten gratitud puede profundizar esta experiencia transformadora.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#7f8c8d"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Viviendo en el Ahora",
+        "parrafoTop": "La conexión con la [H]presencia[/H] y el silencio interior transforma la vida cotidiana en un viaje significativo. Reconocer las pequeñas cosas que generan gratitud abre puertas a una existencia plena.",
+        "subtitulo": "Prueba esto: dedica un minuto a sentir tu",
+        "parrafoBot": "[H]Prueba esto: dedica un minuto a sentir tu respiración y luego enumera tres cosas simples que valoras hoy.[/H]",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#2c3e50",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar un minuto a observar la respiración permite reconectar con lo fundamental. Después, reconocer tres cosas simples que aporten gratitud puede profundizar esta experiencia transformadora."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20del%20ahora%20Eckhart%20Tolle%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "La inteligencia emocional",
       "autor": "Daniel Goleman",
       "tagline": "Descubre el poder de la inteligencia emocional en tu vida.",
@@ -1159,56 +1239,6 @@
         }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Suficiente%20John%20C.%20Bogle%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Steve Jobs",
-      "autor": "Walter Isaacson",
-      "tagline": "La Biografía",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "12x18",
-      "punto": "biografía",
-      "palabras": [
-        "innovación",
-        "perseverancia",
-        "visionario",
-        "liderazgo"
-      ],
-      "frases": [
-        "📖 Abre el libro y descubre la mente de un pionero.",
-        "🔍 Investiga su enfoque hacia la creatividad en cada página.",
-        "💡 Reflexiona sobre cómo sus decisiones han moldeado la tecnología actual.",
-        "✍️ Toma notas sobre las lecciones que puedes aplicar en tu vida."
-      ],
-      "colores": [
-        "#e67e22",
-        "#c0392b",
-        "#16a085",
-        "#f1c40f"
-      ],
-      "fondo": "#1e1e1e",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Steve Jobs: La Biografía",
-        "parrafoTop": "Walter Isaacson explora la vida de un individuo que [H]desafió las normas establecidas[/H] y dejó una marca indeleble en el mundo tecnológico. A través de su narrativa, se revela un retrato complejo de la ambición y la creatividad.",
-        "subtitulo": "La búsqueda de respuestas",
-        "parrafoBot": "Adentrarse en estas páginas permite [H]descubrir lecciones aplicables a los retos diarios[/H]. Tomar un cuaderno y anotar reflexiones sobre sus decisiones puede abrir nuevas perspectivas en el propio camino.",
-        "style": {
-          "accent": "#d35400",
-          "ink": "#ecf0f1",
-          "paper": "#2c3e50",
-          "border": "#7f8c8d"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Steve%20Jobs%20Walter%20Isaacson%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
