@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "El Gran Propósito de la Vida",
+      "autor": "Juan Benavides Ávila",
+      "tagline": "¿Qué es la vida?",
+      "portada": "https://books.google.com/books/content?id=YjcW0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=YjcW0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_source": "google_books",
+      "isbn": "9798854639019",
+      "slug": "el-gran-proposito-de-la-vida",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "512x512",
+      "punto": "0.8",
+      "palabras": [
+        "significado",
+        "conexión",
+        "destino",
+        "trascendencia"
+      ],
+      "frases": [
+        "🔍 Reflexiona sobre tu propósito: escribe en un cuaderno lo que la vida significa para ti.",
+        "💬 Habla con alguien cercano sobre tus sueños y metas, comparte tus pensamientos.",
+        "📖 Dedica cinco minutos a leer una página de un libro que te inspire.",
+        "🌱 Realiza una acción positiva hoy: ayuda a alguien o da las gracias."
+      ],
+      "colores": [
+        "#1F1F1F",
+        "#4B0082",
+        "#FFD700",
+        "#00BFFF"
+      ],
+      "fondo": "#000000",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Lo que Juan Benavides Ávila corrige",
+        "parrafoTop": "[H]El propósito se revela en la conexión con uno mismo y con los demás.[/H]",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara[/H]. Abre un diálogo significativo con alguien cercano y compartan sueños. Realiza hoy una acción positiva: ayuda a alguien o simplemente da las gracias.",
+        "style": {
+          "accent": "#ff4500",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos."
+      },
+      "tarjeta_base": {
+        "titulo": "El propósito de existir",
+        "parrafoTop": "Explorar [H]lo que representa la vida[/H] lleva a reflexiones profundas. El texto de Juan Benavides Ávila invita a cuestionar el papel personal en un contexto mayor y a descubrir pasiones auténticas.",
+        "subtitulo": "Una acción que transforma",
+        "parrafoBot": "Dedicar tiempo para [H]anotar lo que la vida significa para ti[/H] es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos.",
+        "style": {
+          "accent": "#ff4500",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Lo que Juan Benavides Ávila corrige",
+        "parrafoTop": "[H]El propósito se revela en la conexión con uno mismo y con los demás.[/H]",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "[H]Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara[/H]. Abre un diálogo significativo con alguien cercano y compartan sueños. Realiza hoy una acción positiva: ayuda a alguien o simplemente da las gracias.",
+        "style": {
+          "accent": "#ff4500",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#333333"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20Gran%20Prop%C3%B3sito%20de%20la%20Vida%20Juan%20Benavides%20%C3%81vila%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "EDUCACIÓN EN LA ERA DIGITAL: INTELIGENCIA ARTIFICIAL Y METODOLOGÍA CUANTITATIVA PARA LA INVESTIGACIÓN",
       "autor": "Ángel Yasmil Echeverría Guzmán, Ramon Guzmán Hernández, Dayron Rumbaut Rangel, Julia Orlenda Robinson Aguirre, Segress García Hevia, Gabriela Nicole Tolozano Lapierre",
       "tagline": "En la sinergia entre la educación y la tecnología, la Inteligencia Artificial (IA) ha emergido como una fuerza transformadora que redefine las prácticas académicas y met…",
@@ -1487,84 +1567,6 @@
         "seed": "Iniciar esta exploración es sencillo: abre el libro y sumérgete en sus páginas. Presta atención a las frases que desafían tu visión, son semillas que pueden florecer en nuevas perspectivas."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Einstein%20para%20despistados%20Allan%20Percy%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Máximo Rendimiento",
-      "autor": "Brad Stulberg",
-      "tagline": "Sube de nivel evita el agotamiento y prospera con la nueva ciencia del éxito",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/e7/de/87/e7de8764-4c77-ead7-ef8b-8da06b2e4ce6/1029631734.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/e7/de/87/e7de8764-4c77-ead7-ef8b-8da06b2e4ce6/1029631734.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "480x320",
-      "punto": "6.5",
-      "palabras": [
-        "progreso",
-        "equilibrio",
-        "resiliencia",
-        "rendimiento"
-      ],
-      "frases": [
-        "🔄 Respira profundamente y permite que cada exhalación te relaje.",
-        "📝 Toma un momento para escribir tus tres objetivos más importantes del día.",
-        "💧 Hidrátate con un vaso de agua para reiniciar tu mente.",
-        "🚶‍♂️ Da una caminata breve, incluso si son solo cinco minutos."
-      ],
-      "colores": [
-        "#4caf50",
-        "#ffeb3b",
-        "#2196f3",
-        "#ff5722"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Rinde sin agotarte",
-        "parrafoTop": "Identificar [H]tus tres objetivos más relevantes cada mañana[/H] te permite enfocarte y progresar. Comienza el día con una breve caminata para activar tu mente y crear equilibrio entre tus metas y bienestar.",
-        "subtitulo": "Desbloquea tu potencial",
-        "parrafoBot": "[H]Hoy, tómate un momento para escribir esos objetivos y da una caminata de cinco minutos para energizarte. [/H]",
-        "style": {
-          "accent": "#ff8c42",
-          "ink": "#d8dee9",
-          "paper": "#2e3440",
-          "border": "#4c566a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Implementa un momento cada mañana para identificar tus tres objetivos más relevantes y da una breve caminata para activar tu mente antes de comenzar."
-      },
-      "tarjeta_base": {
-        "titulo": "Máximo Rendimiento",
-        "parrafoTop": "Este texto de Brad Stulberg ofrece herramientas prácticas para [H]evitar el agotamiento y maximizar la productividad[/H].",
-        "subtitulo": "Navega por tus prioridades diarias",
-        "parrafoBot": "[H]Implementa un momento cada mañana para identificar tus tres objetivos más relevantes y da una breve caminata para activar tu mente antes de comenzar.[/H]",
-        "style": {
-          "accent": "#ff8c42",
-          "ink": "#d8dee9",
-          "paper": "#2e3440",
-          "border": "#4c566a"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Rinde sin agotarte",
-        "parrafoTop": "Identificar [H]tus tres objetivos más relevantes cada mañana[/H] te permite enfocarte y progresar. Comienza el día con una breve caminata para activar tu mente y crear equilibrio entre tus metas y bienestar.",
-        "subtitulo": "Desbloquea tu potencial",
-        "parrafoBot": "[H]Hoy, tómate un momento para escribir esos objetivos y da una caminata de cinco minutos para energizarte. [/H]",
-        "style": {
-          "accent": "#ff8c42",
-          "ink": "#d8dee9",
-          "paper": "#2e3440",
-          "border": "#4c566a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Implementa un momento cada mañana para identificar tus tres objetivos más relevantes y da una breve caminata para activar tu mente antes de comenzar."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+M%C3%A1ximo%20Rendimiento%20Brad%20Stulberg%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
