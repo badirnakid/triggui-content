@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "El arte de la acción",
+      "autor": "Rafael Echeverría",
+      "tagline": "Actuar con propósito y claridad.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/31/cb/fb/31cbfb3c-424d-8d6f-1eef-8095766b8d98/9789563061239.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/31/cb/fb/31cbfb3c-424d-8d6f-1eef-8095766b8d98/9789563061239.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "979195164",
+      "slug": "el-arte-de-la-accion",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "2D",
+      "punto": "3.5",
+      "palabras": [
+        "intencionalidad",
+        "claridad",
+        "acción",
+        "propósito"
+      ],
+      "frases": [
+        "🌱 Dedica un minuto a reflexionar sobre tu intención antes de actuar.",
+        "🔍 Escribe una frase clara que describa lo que quieres lograr hoy.",
+        "✋ Haz una pausa y respira profundamente, enfócate en la claridad de tus acciones.",
+        "📅 Planifica un pequeño paso que puedas dar en la dirección de tu propósito."
+      ],
+      "colores": [
+        "#1E1E1E",
+        "#FFFFFF",
+        "#FFCC00",
+        "#FF5733"
+      ],
+      "fondo": "#000000",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Con propósito",
+        "parrafoTop": "Dedicar un minuto a establecer [H]una intención clara[/H] antes de actuar transforma cada día en una oportunidad tangible. Un enfoque intencional facilita resultados concretos y significativos. Establece hoy lo que realmente quieres lograr. Escribe una frase sencilla que resuma tu meta y da el primer paso hacia ella.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H].",
+        "style": {
+          "accent": "#5c6bc0",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta."
+      },
+      "tarjeta_base": {
+        "titulo": "El instante decisivo",
+        "parrafoTop": "Rafael Echeverría invita a reflexionar sobre cómo los pequeños actos pueden tener un impacto significativo en la vida diaria. [H]Detenerse un momento puede ser la clave para una dirección más efectiva.[/H]",
+        "subtitulo": "Cultivar la presencia",
+        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H]",
+        "style": {
+          "accent": "#5c6bc0",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Con propósito",
+        "parrafoTop": "Dedicar un minuto a establecer [H]una intención clara[/H] antes de actuar transforma cada día en una oportunidad tangible. Un enfoque intencional facilita resultados concretos y significativos. Establece hoy lo que realmente quieres lograr. Escribe una frase sencilla que resuma tu meta y da el primer paso hacia ella.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H].",
+        "style": {
+          "accent": "#5c6bc0",
+          "ink": "#e0e0e0",
+          "paper": "#121212",
+          "border": "#424242"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20arte%20de%20la%20acci%C3%B3n%20Rafael%20Echeverr%C3%ADa%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "El arte de empezar 2.0",
       "autor": "Guy Kawasaki",
       "tagline": "Todo lo que necesitas saber para empezar tu negocio.",
@@ -1495,84 +1575,6 @@
         "seed": "Detenerse un momento para identificar tres elementos esenciales que aportan valor a la vida puede facilitar un camino hacia decisiones financieras más acertadas."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Suficiente%20John%20C.%20Bogle%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Steve Jobs",
-      "autor": "Walter Isaacson",
-      "tagline": "La Biografía",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/59/7e/03/597e0370-4d18-cc3d-09e3-3e7c6434e168/9781451648553.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "2D",
-      "punto": "8",
-      "palabras": [
-        "innovación",
-        "visión",
-        "creatividad",
-        "perseverancia"
-      ],
-      "frases": [
-        "🌟 Investiga la vida de Steve Jobs y descubre qué lo impulsó a crear Apple.",
-        "📚 Toma un tiempo para reflexionar sobre cómo sus ideas impactan en tu propia trayectoria.",
-        "🛠️ Crea una lista de tus objetivos a corto plazo inspirada en su enfoque en la excelencia.",
-        "💡 Piensa en un proyecto personal que quieras comenzar, aplicando los principios que él defendió."
-      ],
-      "colores": [
-        "#4b0082",
-        "#ff4500",
-        "#3cb371",
-        "#ffd700"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que Walter Isaacson corrige",
-        "parrafoTop": "El legado de Steve Jobs no es solo tecnología; es [H]un viaje de innovación y perseverancia[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Abrazar su enfoque en la creatividad permite transformar ideas en realidades tangibles. [/H] Conviértete en el arquitecto de tu futuro. Hoy, anota tres metas específicas que resalten tu visión personal y define un proyecto que refleje la excelencia que él practicó.",
-        "style": {
-          "accent": "#6c757d",
-          "ink": "#e9ecef",
-          "paper": "#1c1c1c",
-          "border": "#343a40"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica tiempo a analizar cómo sus principios pueden aplicarse en tu vida diaria; crea una lista concreta de tus metas y plantea un proyecto personal que refleje estos valores."
-      },
-      "tarjeta_base": {
-        "titulo": "La esencia de un pionero",
-        "parrafoTop": "Walter Isaacson revela la trayectoria de Steve Jobs, un personaje que redefine el concepto de liderazgo en tecnología, resaltando su enfoque incansable por alcanzar [H]la excelencia en cada detalle[/H].",
-        "subtitulo": "Inspírate y actúa",
-        "parrafoBot": "[H]Dedica tiempo a analizar cómo sus principios pueden aplicarse en tu vida diaria; crea una lista concreta de tus metas y plantea un proyecto personal que refleje estos valores.[/H]",
-        "style": {
-          "accent": "#6c757d",
-          "ink": "#e9ecef",
-          "paper": "#1c1c1c",
-          "border": "#343a40"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que Walter Isaacson corrige",
-        "parrafoTop": "El legado de Steve Jobs no es solo tecnología; es [H]un viaje de innovación y perseverancia[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Abrazar su enfoque en la creatividad permite transformar ideas en realidades tangibles. [/H] Conviértete en el arquitecto de tu futuro. Hoy, anota tres metas específicas que resalten tu visión personal y define un proyecto que refleje la excelencia que él practicó.",
-        "style": {
-          "accent": "#6c757d",
-          "ink": "#e9ecef",
-          "paper": "#1c1c1c",
-          "border": "#343a40"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica tiempo a analizar cómo sus principios pueden aplicarse en tu vida diaria; crea una lista concreta de tus metas y plantea un proyecto personal que refleje estos valores."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Steve%20Jobs%20Walter%20Isaacson%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
