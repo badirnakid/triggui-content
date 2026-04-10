@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "Osho",
+      "autor": "Autor desconocido",
+      "tagline": "",
+      "portada": "📚 Osho\nAutor desconocido",
+      "portada_url": "",
+      "portada_source": "none",
+      "isbn": "",
+      "slug": "osho",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "cuerpo",
+      "punto": "consciencia",
+      "palabras": [
+        "meditación",
+        "iluminación",
+        "presencia",
+        "amor"
+      ],
+      "frases": [
+        "✨ Respira profundamente, siente cada inhalación y exhalación.",
+        "🧘‍♂️ Dedica un momento a observar tus pensamientos sin juzgarlos.",
+        "💖 Abre tu corazón al amor que te rodea y compártelo con alguien cercano.",
+        "🌌 Permítete estar presente en este instante, soltando preocupaciones del futuro."
+      ],
+      "colores": [
+        "#2E3440",
+        "#D8DEE9",
+        "#5E81AC",
+        "#BF616A"
+      ],
+      "fondo": "#2E3440",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Conexión interna",
+        "parrafoTop": "Respirar profundamente y [H]observar los pensamientos sin juzgarlos[/H] revela un camino hacia la claridad emocional. La presencia se cultiva en momentos sencillos y transformadores. Descubre el poder de abrir el corazón al amor compartido. Dedica hoy unos minutos a escribir sobre lo que sientes; cada palabra es un paso hacia un nuevo entendimiento.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
+        "style": {
+          "accent": "#4a5568",
+          "ink": "#e2e8f0",
+          "paper": "#1a202c",
+          "border": "#2d3748"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Tomarse unos minutos hoy para detenerse y observar sin juicio ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento."
+      },
+      "tarjeta_base": {
+        "titulo": "Osho y el arte de soltar",
+        "parrafoTop": "Una invitación a descubrir el potencial transformador del instante. El autor, a través de sus enseñanzas, sugiere que [H]abrazar la impermanencia[/H] permite liberar cargas emocionales.",
+        "subtitulo": "Prácticas para un cambio interno",
+        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
+        "style": {
+          "accent": "#4a5568",
+          "ink": "#e2e8f0",
+          "paper": "#1a202c",
+          "border": "#2d3748"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Conexión interna",
+        "parrafoTop": "Respirar profundamente y [H]observar los pensamientos sin juzgarlos[/H] revela un camino hacia la claridad emocional. La presencia se cultiva en momentos sencillos y transformadores. Descubre el poder de abrir el corazón al amor compartido. Dedica hoy unos minutos a escribir sobre lo que sientes; cada palabra es un paso hacia un nuevo entendimiento.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
+        "style": {
+          "accent": "#4a5568",
+          "ink": "#e2e8f0",
+          "paper": "#1a202c",
+          "border": "#2d3748"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Tomarse unos minutos hoy para detenerse y observar sin juicio ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Osho%20Autor%20desconocido%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "El Jesús histórico",
       "autor": "John Dominic Crossan",
       "tagline": "Desentrañando la figura de Jesús más allá de la fe.",
@@ -1499,84 +1579,6 @@
         "seed": "Es hora de aplicar estos principios: identifica un mensaje clave y escribe un texto que capture su esencia en menos de 50 palabras."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+En%20pocas%20palabras%20Ben%20Guttmann%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Las cuatro puertas",
-      "autor": "Jorge Benito",
-      "tagline": "Cómo encontrar el coraje y el sentido en un mundo cada vez más delirante",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d6/36/5e/d6365e07-f9fc-3b70-0e13-2220db0fde41/9786070794339.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d6/36/5e/d6365e07-f9fc-3b70-0e13-2220db0fde41/9786070794339.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "480x320",
-      "punto": "4",
-      "palabras": [
-        "coraje",
-        "sentido",
-        "delirio",
-        "conexión"
-      ],
-      "frases": [
-        "💡 Reflexiona sobre un momento en tu vida donde enfrentaste el miedo.",
-        "📝 Escribe una carta a tu futuro yo, compartiendo tus esperanzas y miedos.",
-        "🌱 Practica la gratitud, menciona tres cosas por las que estás agradecido hoy.",
-        "📖 Dedica cinco minutos a abrir un libro que no has leído y comienza su primera página."
-      ],
-      "colores": [
-        "#1F1F1F",
-        "#D4AF37",
-        "#FFFFFF",
-        "#FF5733"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que Jorge Benito corrige",
-        "parrafoTop": "[H]Encuentra el coraje en medio del caos.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Cada página ofrece herramientas para descubrir [H]el sentido oculto en los momentos difíciles[/H], cultivando una conexión profunda contigo mismo y los demás. Abre la puerta a nuevas experiencias. Dedica cinco minutos hoy a leer las primeras páginas de un libro que te llame la atención.",
-        "style": {
-          "accent": "#4b6f89",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#2a2a2a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es momento de reflexionar sobre las experiencias que han marcado el camino personal; abre un libro inexplorado hoy y permite que sus páginas despierten nuevas perspectivas."
-      },
-      "tarjeta_base": {
-        "titulo": "Las cuatro puertas",
-        "parrafoTop": "En un mundo lleno de desafíos y ruido, Jorge Benito ofrece herramientas prácticas para navegar por la incertidumbre. [H]La búsqueda de claridad se convierte en una necesidad fundamental[/H].",
-        "subtitulo": "Superar el vacío cotidiano",
-        "parrafoBot": "[H]Es momento de reflexionar sobre las experiencias que han marcado el camino personal; abre un libro inexplorado hoy y permite que sus páginas despierten nuevas perspectivas.[/H]",
-        "style": {
-          "accent": "#4b6f89",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#2a2a2a"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que Jorge Benito corrige",
-        "parrafoTop": "[H]Encuentra el coraje en medio del caos.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Cada página ofrece herramientas para descubrir [H]el sentido oculto en los momentos difíciles[/H], cultivando una conexión profunda contigo mismo y los demás. Abre la puerta a nuevas experiencias. Dedica cinco minutos hoy a leer las primeras páginas de un libro que te llame la atención.",
-        "style": {
-          "accent": "#4b6f89",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#2a2a2a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es momento de reflexionar sobre las experiencias que han marcado el camino personal; abre un libro inexplorado hoy y permite que sus páginas despierten nuevas perspectivas."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20cuatro%20puertas%20Jorge%20Benito%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
