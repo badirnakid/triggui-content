@@ -1,6 +1,86 @@
 {
   "libros": [
     {
+      "titulo": "El mundo de Sofía",
+      "autor": "Jostein Gaarder",
+      "tagline": "Un viaje a través de la historia del pensamiento.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/5a/09/83/5a09833f-fba2-a7a1-dfcd-1d7cd5b6427c/9788498415384.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/5a/09/83/5a09833f-fba2-a7a1-dfcd-1d7cd5b6427c/9788498415384.jpg/600x600bb.jpg",
+      "portada_source": "apple_books",
+      "isbn": "490078380",
+      "slug": "el-mundo-de-sofia",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "480x320",
+      "punto": "Navegación filosófica",
+      "palabras": [
+        "existencia",
+        "conocimiento",
+        "misterio",
+        "reflexión"
+      ],
+      "frases": [
+        "🔍 Abre el libro y encuentra la esencia del pensamiento.",
+        "📚 Lee las primeras páginas para sumergirte en el misterio de Sofía.",
+        "💭 Reflexiona sobre tu propia existencia tras cada capítulo.",
+        "🌀 Comparte tus ideas con alguien y despierta un diálogo."
+      ],
+      "colores": [
+        "#2C3E50",
+        "#18BC9C",
+        "#E74C3C",
+        "#F1C40F"
+      ],
+      "fondo": "#1B1B1B",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Un viaje de preguntas esenciales",
+        "parrafoTop": "La curiosidad se enciende al descubrir [H]la historia del pensamiento[/H] a través de Sofía, que te lleva a cuestionar la propia existencia y conocimiento. El diálogo es el primer paso para conectar ideas. Abre las páginas hoy y comparte tus descubrimientos con alguien cercano.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Sumérgete en las páginas iniciales y deja que cada pregunta despierte una nueva curiosidad; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea."
+      },
+      "tarjeta_base": {
+        "titulo": "El pensamiento en viaje",
+        "parrafoTop": "La obra de Jostein Gaarder ofrece un recorrido por [H]las grandes ideas que han moldeado la historia[/H], invitando a cuestionar las bases del entendimiento humano.",
+        "subtitulo": "Explorando las raíces del saber",
+        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Un viaje de preguntas esenciales",
+        "parrafoTop": "La curiosidad se enciende al descubrir [H]la historia del pensamiento[/H] a través de Sofía, que te lleva a cuestionar la propia existencia y conocimiento. El diálogo es el primer paso para conectar ideas. Abre las páginas hoy y comparte tus descubrimientos con alguien cercano.",
+        "subtitulo": "Hazlo ahora",
+        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
+        "style": {
+          "accent": "#8e44ad",
+          "ink": "#ecf0f1",
+          "paper": "#34495e",
+          "border": "#7f8c8d"
+        },
+        "promptFlavor": "appscript-second-pass",
+        "seed": "Sumérgete en las páginas iniciales y deja que cada pregunta despierte una nueva curiosidad; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea."
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20mundo%20de%20Sof%C3%ADa%20Jostein%20Gaarder%20entrevista%20espa%C3%B1ol"
+    },
+    {
       "titulo": "Osho",
       "autor": "Autor desconocido",
       "tagline": "",
@@ -1501,84 +1581,6 @@
         "seed": "Dedica unos minutos a observar tu respiración y reflexionar sobre el equilibrio en tu vida; anota tus pensamientos para profundizar en este proceso de autoexploración."
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Conciencia%20Osho%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "En pocas palabras",
-      "autor": "Ben Guttmann",
-      "tagline": "Por qué los mensajes claros ganan y cómo diseñarlos",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/9e/e5/10/9ee5108e-27f8-b9a3-c350-56662b551ebb/9786073849791.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/9e/e5/10/9ee5108e-27f8-b9a3-c350-56662b551ebb/9786073849791.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "mediana",
-      "punto": "comunicación efectiva",
-      "palabras": [
-        "concisión",
-        "estructura",
-        "impacto",
-        "audiencia"
-      ],
-      "frases": [
-        "📋 Escribe un mensaje corto y claro para un amigo hoy.",
-        "🔍 Analiza un texto publicitario: ¿es directo y atractivo?",
-        "✍️ Redacta una propuesta de una página sobre tu proyecto favorito.",
-        "🗣️ Practica explicar un concepto complejo en solo dos minutos."
-      ],
-      "colores": [
-        "#f472b6",
-        "#4ade80",
-        "#3b82f6",
-        "#ffed4a"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Mensajes que impactan",
-        "parrafoTop": "[H]La concisión y la estructura son claves para comunicar eficazmente.[/H] La claridad en el mensaje genera conexión y resonancia con la audiencia, transformando ideas complejas en mensajes accesibles. Captura tu idea principal en 50 palabras o menos. Escribe un texto claro hoy: contacta a un amigo o presenta tu proyecto.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Es hora de aplicar estos principios: identifica un mensaje clave y [H]escribe un texto que capture su esencia en menos de 50 palabras[/H].",
-        "style": {
-          "accent": "#f472b6",
-          "ink": "#e3e3e3",
-          "paper": "#1a1a2e",
-          "border": "#3f1c34"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es hora de aplicar estos principios: identifica un mensaje clave y escribe un texto que capture su esencia en menos de 50 palabras."
-      },
-      "tarjeta_base": {
-        "titulo": "Comunicación efectiva",
-        "parrafoTop": "La obra de Ben Guttmann se centra en cómo [H]los mensajes claros destacan entre el ruido[/H] y ofrecen una ventaja decisiva.",
-        "subtitulo": "Simplifica tu expresión, mejora tus resultados",
-        "parrafoBot": "Es hora de aplicar estos principios: identifica un mensaje clave y [H]escribe un texto que capture su esencia en menos de 50 palabras[/H].",
-        "style": {
-          "accent": "#f472b6",
-          "ink": "#e3e3e3",
-          "paper": "#1a1a2e",
-          "border": "#3f1c34"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Mensajes que impactan",
-        "parrafoTop": "[H]La concisión y la estructura son claves para comunicar eficazmente.[/H] La claridad en el mensaje genera conexión y resonancia con la audiencia, transformando ideas complejas en mensajes accesibles. Captura tu idea principal en 50 palabras o menos. Escribe un texto claro hoy: contacta a un amigo o presenta tu proyecto.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Es hora de aplicar estos principios: identifica un mensaje clave y [H]escribe un texto que capture su esencia en menos de 50 palabras[/H].",
-        "style": {
-          "accent": "#f472b6",
-          "ink": "#e3e3e3",
-          "paper": "#1a1a2e",
-          "border": "#3f1c34"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es hora de aplicar estos principios: identifica un mensaje clave y escribe un texto que capture su esencia en menos de 50 palabras."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+En%20pocas%20palabras%20Ben%20Guttmann%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
