@@ -1,993 +1,407 @@
 {
   "libros": [
     {
-      "titulo": "El mundo de Sofía",
-      "autor": "Jostein Gaarder",
-      "tagline": "Un viaje a través de la historia del pensamiento.",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/5a/09/83/5a09833f-fba2-a7a1-dfcd-1d7cd5b6427c/9788498415384.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/5a/09/83/5a09833f-fba2-a7a1-dfcd-1d7cd5b6427c/9788498415384.jpg/600x600bb.jpg",
-      "portada_source": "apple_books",
-      "isbn": "490078380",
-      "slug": "el-mundo-de-sofia",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "480x320",
-      "punto": "Navegación filosófica",
-      "palabras": [
-        "existencia",
-        "conocimiento",
-        "misterio",
-        "reflexión"
-      ],
-      "frases": [
-        "🔍 Abre el libro y encuentra la esencia del pensamiento.",
-        "📚 Lee las primeras páginas para sumergirte en el misterio de Sofía.",
-        "💭 Reflexiona sobre tu propia existencia tras cada capítulo.",
-        "🌀 Comparte tus ideas con alguien y despierta un diálogo."
-      ],
-      "colores": [
-        "#2C3E50",
-        "#18BC9C",
-        "#E74C3C",
-        "#F1C40F"
-      ],
-      "fondo": "#1B1B1B",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Un viaje de preguntas esenciales",
-        "parrafoTop": "La curiosidad se enciende al descubrir [H]la historia del pensamiento[/H] a través de Sofía, que te lleva a cuestionar la propia existencia y conocimiento. El diálogo es el primer paso para conectar ideas. Abre las páginas hoy y comparte tus descubrimientos con alguien cercano.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Sumérgete en las páginas iniciales y deja que cada pregunta despierte una nueva curiosidad; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea."
-      },
-      "tarjeta_base": {
-        "titulo": "El pensamiento en viaje",
-        "parrafoTop": "La obra de Jostein Gaarder ofrece un recorrido por [H]las grandes ideas que han moldeado la historia[/H], invitando a cuestionar las bases del entendimiento humano.",
-        "subtitulo": "Explorando las raíces del saber",
-        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Un viaje de preguntas esenciales",
-        "parrafoTop": "La curiosidad se enciende al descubrir [H]la historia del pensamiento[/H] a través de Sofía, que te lleva a cuestionar la propia existencia y conocimiento. El diálogo es el primer paso para conectar ideas. Abre las páginas hoy y comparte tus descubrimientos con alguien cercano.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Sumérgete en las páginas iniciales y [H]deja que cada pregunta despierte una nueva curiosidad[/H]; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea.",
-        "style": {
-          "accent": "#8e44ad",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Sumérgete en las páginas iniciales y deja que cada pregunta despierte una nueva curiosidad; comparte tus hallazgos con otros y amplía la conversación sobre el mundo que nos rodea."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20mundo%20de%20Sof%C3%ADa%20Jostein%20Gaarder%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Osho",
-      "autor": "Autor desconocido",
+      "titulo": "La guerra del arte",
+      "autor": "Steven Pressfield",
       "tagline": "",
-      "portada": "📚 Osho\nAutor desconocido",
-      "portada_url": "",
-      "portada_source": "none",
-      "isbn": "",
-      "slug": "osho",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "cuerpo",
-      "punto": "consciencia",
-      "palabras": [
-        "meditación",
-        "iluminación",
-        "presencia",
-        "amor"
-      ],
-      "frases": [
-        "✨ Respira profundamente, siente cada inhalación y exhalación.",
-        "🧘‍♂️ Dedica un momento a observar tus pensamientos sin juzgarlos.",
-        "💖 Abre tu corazón al amor que te rodea y compártelo con alguien cercano.",
-        "🌌 Permítete estar presente en este instante, soltando preocupaciones del futuro."
-      ],
-      "colores": [
-        "#2E3440",
-        "#D8DEE9",
-        "#5E81AC",
-        "#BF616A"
-      ],
-      "fondo": "#2E3440",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Conexión interna",
-        "parrafoTop": "Respirar profundamente y [H]observar los pensamientos sin juzgarlos[/H] revela un camino hacia la claridad emocional. La presencia se cultiva en momentos sencillos y transformadores. Descubre el poder de abrir el corazón al amor compartido. Dedica hoy unos minutos a escribir sobre lo que sientes; cada palabra es un paso hacia un nuevo entendimiento.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
-        "style": {
-          "accent": "#4a5568",
-          "ink": "#e2e8f0",
-          "paper": "#1a202c",
-          "border": "#2d3748"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Tomarse unos minutos hoy para detenerse y observar sin juicio ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento."
-      },
-      "tarjeta_base": {
-        "titulo": "Osho y el arte de soltar",
-        "parrafoTop": "Una invitación a descubrir el potencial transformador del instante. El autor, a través de sus enseñanzas, sugiere que [H]abrazar la impermanencia[/H] permite liberar cargas emocionales.",
-        "subtitulo": "Prácticas para un cambio interno",
-        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
-        "style": {
-          "accent": "#4a5568",
-          "ink": "#e2e8f0",
-          "paper": "#1a202c",
-          "border": "#2d3748"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Conexión interna",
-        "parrafoTop": "Respirar profundamente y [H]observar los pensamientos sin juzgarlos[/H] revela un camino hacia la claridad emocional. La presencia se cultiva en momentos sencillos y transformadores. Descubre el poder de abrir el corazón al amor compartido. Dedica hoy unos minutos a escribir sobre lo que sientes; cada palabra es un paso hacia un nuevo entendimiento.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Tomarse unos minutos hoy para [H]detenerse y observar sin juicio[/H] ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento.",
-        "style": {
-          "accent": "#4a5568",
-          "ink": "#e2e8f0",
-          "paper": "#1a202c",
-          "border": "#2d3748"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Tomarse unos minutos hoy para detenerse y observar sin juicio ofrece claridad sobre las propias emociones. Escribir estas reflexiones puede ser el primer paso hacia un nuevo entendimiento."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Osho%20Autor%20desconocido%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El Jesús histórico",
-      "autor": "John Dominic Crossan",
-      "tagline": "Desentrañando la figura de Jesús más allá de la fe.",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/d7/5b/78/mzi.xaqaxabo.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication/d7/5b/78/mzi.xaqaxabo.jpg/600x600bb.jpg",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/76/e8/7a/76e87a25-2897-ec53-6fb3-291b0f2ab225/cover.jpg/600x600bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/76/e8/7a/76e87a25-2897-ec53-6fb3-291b0f2ab225/cover.jpg/600x600bb.jpg",
       "portada_source": "apple_books",
-      "isbn": "360623007",
-      "slug": "el-jesus-historico",
+      "isbn": "660616868",
+      "slug": "la-guerra-del-arte",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "mediano",
-      "punto": "reflexión profunda",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "contexto",
-        "historia",
-        "crítica",
-        "humanidad"
-      ],
-      "frases": [
-        "📖 Dedica un momento a revisar cómo las fuentes históricas moldean la imagen de Jesús.",
-        "🧠 Piensa en las implicaciones de considerar a Jesús como un hombre más que como un ícono divino.",
-        "🔍 Investiga sobre las enseñanzas sociales de Jesús y su relevancia en el mundo actual.",
-        "💬 Comparte con alguien tus reflexiones sobre la figura histórica de Jesús y su impacto."
-      ],
-      "colores": [
-        "#1E1E1E",
-        "#F0F0F0",
-        "#FF5722",
-        "#4CAF50"
-      ],
-      "fondo": "dark",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que John Dominic Crossan corrige",
-        "parrafoTop": "Jesús como figura histórica se sostiene en [H]fuentes críticas[/H] que desafían la narrativa religiosa tradicional.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Considerar a Jesús como un ser humano permite [H]entender su impacto social[/H] en la historia y actualidad. Acción: abre el libro al azar, elige una frase clave y comparte su significado con alguien cercano.",
-        "style": {
-          "accent": "#6a1b9a",
-          "ink": "#e0e0e0",
-          "paper": "#212121",
-          "border": "#757575"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hazlo hoy: abre el libro en una página al azar y ejecuta una sola acción concreta."
-      },
-      "tarjeta_base": {
-        "titulo": "El Jesús histórico",
-        "parrafoTop": "John Dominic Crossan ofrece una perspectiva innovadora al explorar [H]las fuentes históricas que moldean la imagen de Jesús[/H]. Desentrañando su figura, invita a reconsiderar el impacto de su enseñanza más allá de la fe.",
-        "subtitulo": "Reflexiona sobre las enseñanzas sociales de Jesús y",
-        "parrafoBot": "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
-        "style": {
-          "accent": "#6a1b9a",
-          "ink": "#e0e0e0",
-          "paper": "#212121",
-          "border": "#757575"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que John Dominic Crossan corrige",
-        "parrafoTop": "Jesús como figura histórica se sostiene en [H]fuentes críticas[/H] que desafían la narrativa religiosa tradicional.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Considerar a Jesús como un ser humano permite [H]entender su impacto social[/H] en la historia y actualidad. Acción: abre el libro al azar, elige una frase clave y comparte su significado con alguien cercano.",
-        "style": {
-          "accent": "#6a1b9a",
-          "ink": "#e0e0e0",
-          "paper": "#212121",
-          "border": "#757575"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hazlo hoy: abre el libro en una página al azar y ejecuta una sola acción concreta."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20Jes%C3%BAs%20hist%C3%B3rico%20John%20Dominic%20Crossan%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El arte de la acción",
-      "autor": "Rafael Echeverría",
-      "tagline": "Actuar con propósito y claridad.",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/31/cb/fb/31cbfb3c-424d-8d6f-1eef-8095766b8d98/9789563061239.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/31/cb/fb/31cbfb3c-424d-8d6f-1eef-8095766b8d98/9789563061239.jpg/600x600bb.jpg",
-      "portada_source": "apple_books",
-      "isbn": "979195164",
-      "slug": "el-arte-de-la-accion",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "2D",
-      "punto": "3.5",
-      "palabras": [
-        "intencionalidad",
-        "claridad",
-        "acción",
-        "propósito"
-      ],
-      "frases": [
-        "🌱 Dedica un minuto a reflexionar sobre tu intención antes de actuar.",
-        "🔍 Escribe una frase clara que describa lo que quieres lograr hoy.",
-        "✋ Haz una pausa y respira profundamente, enfócate en la claridad de tus acciones.",
-        "📅 Planifica un pequeño paso que puedas dar en la dirección de tu propósito."
-      ],
-      "colores": [
-        "#1E1E1E",
-        "#FFFFFF",
-        "#FFCC00",
-        "#FF5733"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Con propósito",
-        "parrafoTop": "Dedicar un minuto a establecer [H]una intención clara[/H] antes de actuar transforma cada día en una oportunidad tangible. Un enfoque intencional facilita resultados concretos y significativos. Establece hoy lo que realmente quieres lograr. Escribe una frase sencilla que resuma tu meta y da el primer paso hacia ella.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H].",
-        "style": {
-          "accent": "#5c6bc0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#424242"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta."
-      },
-      "tarjeta_base": {
-        "titulo": "El instante decisivo",
-        "parrafoTop": "Rafael Echeverría invita a reflexionar sobre cómo los pequeños actos pueden tener un impacto significativo en la vida diaria. [H]Detenerse un momento puede ser la clave para una dirección más efectiva.[/H]",
-        "subtitulo": "Cultivar la presencia",
-        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H]",
-        "style": {
-          "accent": "#5c6bc0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#424242"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Con propósito",
-        "parrafoTop": "Dedicar un minuto a establecer [H]una intención clara[/H] antes de actuar transforma cada día en una oportunidad tangible. Un enfoque intencional facilita resultados concretos y significativos. Establece hoy lo que realmente quieres lograr. Escribe una frase sencilla que resuma tu meta y da el primer paso hacia ella.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. [H]Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta.[/H].",
-        "style": {
-          "accent": "#5c6bc0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#424242"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar tiempo a establecer qué se busca lograr hoy abre el camino hacia resultados tangibles. Escribir una frase que defina esa meta es el primer paso hacia la ejecución concreta."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20arte%20de%20la%20acci%C3%B3n%20Rafael%20Echeverr%C3%ADa%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El arte de empezar 2.0",
-      "autor": "Guy Kawasaki",
-      "tagline": "Todo lo que necesitas saber para empezar tu negocio.",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/5f/a1/35/5fa13513-91e3-7da8-de7f-f8fe53f23124/9788423425068.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/5f/a1/35/5fa13513-91e3-7da8-de7f-f8fe53f23124/9788423425068.jpg/600x600bb.jpg",
-      "portada_source": "apple_books",
-      "isbn": "1069502573",
-      "slug": "el-arte-de-empezar-2-0",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "2.0",
-      "punto": "Emprendimiento",
-      "palabras": [
-        "ejecución",
-        "oportunidad",
-        "resiliencia",
-        "creatividad"
-      ],
-      "frases": [
-        "📚 Revisa tu idea y escribe un resumen claro de tu propuesta.",
-        "🚀 Realiza una búsqueda de mercado en cinco minutos; identifica a tus competidores.",
-        "📝 Diseña un borrador de tu plan financiero; define costos iniciales y fuentes de ingresos.",
-        "💬 Contacta a cinco personas que puedan darte retroalimentación sobre tu proyecto."
-      ],
-      "colores": [
-        "#008080",
-        "#ffb300",
-        "#5c6bc0",
-        "#4caf50"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que Guy Kawasaki corrige",
-        "parrafoTop": "[H]Luz en la incierta senda del emprendimiento.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "La clave para iniciar un negocio radica en [H]revisar tu idea y escribir un resumen claro[/H], ajustando constantemente según lo que encuentres en el mercado. Define tu estrategia financiera y evalúa a tus competidores para no dejar nada al azar. Contacta hoy mismo a cinco personas que puedan dar retroalimentación valiosa sobre tu proyecto.",
-        "style": {
-          "accent": "#3a6ea5",
-          "ink": "#e1e1e1",
-          "paper": "#121212",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Revisa tu idea, elabora un resumen claro y realiza una búsqueda de mercado; identifica competidores y ajusta tu enfoque según la información recopilada."
-      },
-      "tarjeta_base": {
-        "titulo": "El inicio sin límites",
-        "parrafoTop": "Construir un negocio requiere claridad y acción. Guy Kawasaki resalta la importancia de tener [H]una propuesta bien definida[/H] que resuene en el mercado y entre los clientes.",
-        "subtitulo": "Convierte ideas en realidad",
-        "parrafoBot": "[H]Revisa tu idea, elabora un resumen claro y realiza una búsqueda de mercado; identifica competidores y ajusta tu enfoque según la información recopilada.[/H]",
-        "style": {
-          "accent": "#3a6ea5",
-          "ink": "#e1e1e1",
-          "paper": "#121212",
-          "border": "#444444"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que Guy Kawasaki corrige",
-        "parrafoTop": "[H]Luz en la incierta senda del emprendimiento.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "La clave para iniciar un negocio radica en [H]revisar tu idea y escribir un resumen claro[/H], ajustando constantemente según lo que encuentres en el mercado. Define tu estrategia financiera y evalúa a tus competidores para no dejar nada al azar. Contacta hoy mismo a cinco personas que puedan dar retroalimentación valiosa sobre tu proyecto.",
-        "style": {
-          "accent": "#3a6ea5",
-          "ink": "#e1e1e1",
-          "paper": "#121212",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Revisa tu idea, elabora un resumen claro y realiza una búsqueda de mercado; identifica competidores y ajusta tu enfoque según la información recopilada."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20arte%20de%20empezar%202.0%20Guy%20Kawasaki%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El cisne negro",
-      "autor": "nassim taken",
-      "tagline": "",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/bf/05/29/bf052975-7092-ce71-db39-5660f32a0282/9788449328176.jpg/600x600bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/bf/05/29/bf052975-7092-ce71-db39-5660f32a0282/9788449328176.jpg/600x600bb.jpg",
-      "portada_source": "apple_books",
-      "isbn": "577216258",
-      "slug": "el-cisne-negro",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "300x400",
-      "punto": "Enfrentarse a lo inesperado.",
-      "palabras": [
-        "azar",
-        "impredecible",
-        "sorpresa",
-        "transición"
-      ],
-      "frases": [
-        "🌌 Busca un momento del día para reflexionar sobre una sorpresa reciente.",
-        "🔍 Investiga un evento histórico que alteró el rumbo de la historia de forma inesperada.",
-        "📝 Escribe un breve relato sobre una decisión que cambió tu vida sin planearlo.",
-        "⚖️ Compara dos situaciones: una controlada y otra donde todo fue impredecible."
-      ],
-      "colores": [
-        "#000000",
-        "#FFFFFF",
-        "#FF5733",
-        "#C70039"
-      ],
-      "fondo": "#1E1E1E",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que nassim taken corrige",
-        "parrafoTop": "El azar define el rumbo de la vida, revelando cómo lo [H]impredecible puede transformar realidades[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Decisiones y eventos surgen de la nada, haciendo que cada elección tenga peso. [/H] Captura la esencia de esta incertidumbre. Abre el libro en una página al azar y selecciona un pasaje que resuene; escribe una breve acción a partir de él.",
-        "style": {
-          "accent": "#4b0082",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#3a3a3a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hazlo hoy: abre el libro en una página al azar y ejecuta una sola acción concreta."
-      },
-      "tarjeta_base": {
-        "titulo": "El cisne negro",
-        "parrafoTop": "Explorar la obra de Nassim Taleb permite adentrarse en [H]los eventos que moldean nuestra realidad sin aviso previo[/H]. La comprensión de cómo interactúan las limitaciones humanas con la incertidumbre es esencial en el contexto actual.",
-        "subtitulo": "Inicia una investigación personal: anota un acontecimiento significativo",
-        "parrafoBot": "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
-        "style": {
-          "accent": "#4b0082",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#3a3a3a"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que nassim taken corrige",
-        "parrafoTop": "El azar define el rumbo de la vida, revelando cómo lo [H]impredecible puede transformar realidades[/H].",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Decisiones y eventos surgen de la nada, haciendo que cada elección tenga peso. [/H] Captura la esencia de esta incertidumbre. Abre el libro en una página al azar y selecciona un pasaje que resuene; escribe una breve acción a partir de él.",
-        "style": {
-          "accent": "#4b0082",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#3a3a3a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Hazlo hoy: abre el libro en una página al azar y ejecuta una sola acción concreta."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20cisne%20negro%20nassim%20taken%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "La Conquista del Ego",
-      "autor": "ALEX. M. RIVER",
-      "tagline": "¿Te has preguntado alguna vez quién está realmente tomando las decisiones dentro de ti?",
-      "portada": "https://books.google.com/books/content?id=EIFH0QEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_url": "https://books.google.com/books/content?id=EIFH0QEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_source": "google_books",
-      "isbn": "9798280255906",
-      "slug": "la-conquista-del-ego",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "A5",
-      "punto": "Conexión",
-      "palabras": [
-        "autoexploración",
-        "decisiones",
-        "conciencia",
-        "transformación"
-      ],
-      "frases": [
-        "👁️ Reflexiona sobre una decisión reciente y pregúntate: ¿quién la tomó realmente?",
-        "🪞 Escribe en un diario cómo tu ego influye en tus acciones diarias.",
-        "📚 Lee un capítulo de 'La Conquista del Ego' y anota lo que te resuena.",
-        "💡 Habla con alguien de confianza sobre un aspecto de ti que has estado evitando."
-      ],
-      "colores": [
-        "#1E1E1E",
-        "#D9D9D9",
-        "#FF6F61",
-        "#6B5B93"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Desnudando al Ego",
-        "parrafoTop": "Las decisiones cotidianas a menudo son guiadas por un ego que distorsiona la realidad y limita el crecimiento personal. Al reconocer [H]cómo el ego influye en cada elección[/H], se abre la puerta a una transformación auténtica.",
-        "subtitulo": "¿Qué pasaría si hoy tomas el control",
-        "parrafoBot": "[H]Dedica unos minutos para escribir cómo tu ego afectó una decisión reciente y observa lo que emerge de esa autoexploración. [/H]",
-        "style": {
-          "accent": "#3e4b59",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#5a6268"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate qué papel jugó tu ego en esa elección y escribe tus hallazgos."
-      },
-      "tarjeta_base": {
-        "titulo": "La Conquista del Ego",
-        "parrafoTop": "El autor Alex M. River invita a cuestionar [H]quién está realmente tomando las decisiones dentro de ti[/H]. Un viaje hacia el entendimiento profundo de la naturaleza del ego se despliega en cada página.",
-        "subtitulo": "Profundiza en tu interior",
-        "parrafoBot": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate [H]qué papel jugó tu ego en esa elección[/H] y escribe tus hallazgos.",
-        "style": {
-          "accent": "#3e4b59",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#5a6268"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Desnudando al Ego",
-        "parrafoTop": "Las decisiones cotidianas a menudo son guiadas por un ego que distorsiona la realidad y limita el crecimiento personal. Al reconocer [H]cómo el ego influye en cada elección[/H], se abre la puerta a una transformación auténtica.",
-        "subtitulo": "¿Qué pasaría si hoy tomas el control",
-        "parrafoBot": "[H]Dedica unos minutos para escribir cómo tu ego afectó una decisión reciente y observa lo que emerge de esa autoexploración. [/H]",
-        "style": {
-          "accent": "#3e4b59",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#5a6268"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos minutos hoy para reflexionar sobre una decisión reciente; pregúntate qué papel jugó tu ego en esa elección y escribe tus hallazgos."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20Conquista%20del%20Ego%20ALEX.%20M.%20RIVER%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "El Gran Propósito de la Vida",
-      "autor": "Juan Benavides Ávila",
-      "tagline": "¿Qué es la vida?",
-      "portada": "https://books.google.com/books/content?id=YjcW0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_url": "https://books.google.com/books/content?id=YjcW0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_source": "google_books",
-      "isbn": "9798854639019",
-      "slug": "el-gran-proposito-de-la-vida",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "512x512",
-      "punto": "0.8",
-      "palabras": [
-        "significado",
-        "conexión",
-        "destino",
-        "trascendencia"
-      ],
-      "frases": [
-        "🔍 Reflexiona sobre tu propósito: escribe en un cuaderno lo que la vida significa para ti.",
-        "💬 Habla con alguien cercano sobre tus sueños y metas, comparte tus pensamientos.",
-        "📖 Dedica cinco minutos a leer una página de un libro que te inspire.",
-        "🌱 Realiza una acción positiva hoy: ayuda a alguien o da las gracias."
-      ],
-      "colores": [
-        "#1F1F1F",
-        "#4B0082",
-        "#FFD700",
-        "#00BFFF"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que Juan Benavides Ávila corrige",
-        "parrafoTop": "[H]El propósito se revela en la conexión con uno mismo y con los demás.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara[/H]. Abre un diálogo significativo con alguien cercano y compartan sueños. Realiza hoy una acción positiva: ayuda a alguien o simplemente da las gracias.",
-        "style": {
-          "accent": "#ff4500",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos."
-      },
-      "tarjeta_base": {
-        "titulo": "El propósito de existir",
-        "parrafoTop": "Explorar [H]lo que representa la vida[/H] lleva a reflexiones profundas. El texto de Juan Benavides Ávila invita a cuestionar el papel personal en un contexto mayor y a descubrir pasiones auténticas.",
-        "subtitulo": "Una acción que transforma",
-        "parrafoBot": "Dedicar tiempo para [H]anotar lo que la vida significa para ti[/H] es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos.",
-        "style": {
-          "accent": "#ff4500",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#333333"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que Juan Benavides Ávila corrige",
-        "parrafoTop": "[H]El propósito se revela en la conexión con uno mismo y con los demás.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara[/H]. Abre un diálogo significativo con alguien cercano y compartan sueños. Realiza hoy una acción positiva: ayuda a alguien o simplemente da las gracias.",
-        "style": {
-          "accent": "#ff4500",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar tiempo para anotar lo que la vida significa para ti es el primer paso hacia una comprensión más clara. Comparte tus pensamientos con alguien cercano y descubre nuevas perspectivas juntos."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20Gran%20Prop%C3%B3sito%20de%20la%20Vida%20Juan%20Benavides%20%C3%81vila%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "EDUCACIÓN EN LA ERA DIGITAL: INTELIGENCIA ARTIFICIAL Y METODOLOGÍA CUANTITATIVA PARA LA INVESTIGACIÓN",
-      "autor": "Ángel Yasmil Echeverría Guzmán, Ramon Guzmán Hernández, Dayron Rumbaut Rangel, Julia Orlenda Robinson Aguirre, Segress García Hevia, Gabriela Nicole Tolozano Lapierre",
-      "tagline": "En la sinergia entre la educación y la tecnología, la Inteligencia Artificial (IA) ha emergido como una fuerza transformadora que redefine las prácticas académicas y met…",
-      "portada": "https://books.google.com/books/content?id=bO9XEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_url": "https://books.google.com/books/content?id=bO9XEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_source": "google_books",
-      "isbn": "9789942739605",
-      "slug": "educacion-en-la-era-digital-inteligencia-artificial-y-metodo",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "A4",
-      "punto": "3",
-      "palabras": [
-        "transformación",
-        "metodología",
-        "inteligencia",
-        "educación"
-      ],
-      "frases": [
-        "📖 Abre el libro para descubrir cómo la IA impacta tu práctica educativa.",
-        "🔍 Examina las metodologías cuantitativas que transforman la investigación académica.",
-        "💡 Reflexiona sobre el papel de la tecnología en la evolución de los procesos educativos.",
-        "🛠️ Aplica estrategias innovadoras que integran la inteligencia artificial en tu enseñanza."
-      ],
-      "colores": [
-        "#1E1E1E",
-        "#F5C03A",
-        "#2B2B2B",
-        "#A0A0A0"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Revoluciona tu enseñanza hoy",
-        "parrafoTop": "La integración de la [H]inteligencia artificial[/H] está redefiniendo la educación. Métodos cuantitativos aplicables ofrecen nuevas perspectivas en investigación académica, elevando el aprendizaje. Aprende a aplicar estrategias innovadoras que transformen tus prácticas educativas. Incorpora una herramienta tecnológica esta semana y observa su impacto inmediato en tu aula.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H].",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria."
-      },
-      "tarjeta_base": {
-        "titulo": "La interacción entre educación y tecnología",
-        "parrafoTop": "En un mundo donde [H]la IA redefine las prácticas académicas[/H], es crucial comprender cómo estas herramientas pueden enriquecer la enseñanza. Los autores analizan su influencia en los métodos de investigación.",
-        "subtitulo": "Implicaciones de la investigación contemporánea",
-        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H]",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#333333"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Revoluciona tu enseñanza hoy",
-        "parrafoTop": "La integración de la [H]inteligencia artificial[/H] está redefiniendo la educación. Métodos cuantitativos aplicables ofrecen nuevas perspectivas en investigación académica, elevando el aprendizaje. Aprende a aplicar estrategias innovadoras que transformen tus prácticas educativas. Incorpora una herramienta tecnológica esta semana y observa su impacto inmediato en tu aula.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria.[/H].",
-        "style": {
-          "accent": "#4a90e2",
-          "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Este libro ofrece estrategias aplicables para incorporar tecnologías avanzadas en entornos de aprendizaje; es hora de integrar lo aprendido en la práctica diaria."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+EDUCACI%C3%93N%20EN%20LA%20ERA%20DIGITAL%3A%20INTELIGENCIA%20ARTIFICIAL%20Y%20METODOLOG%C3%8DA%20CUANTITATIVA%20PARA%20LA%20INVESTIGACI%C3%93N%20%C3%81ngel%20Yasmil%20Echeverr%C3%ADa%20Guzm%C3%A1n%2C%20Ramon%20Guzm%C3%A1n%20Hern%C3%A1ndez%2C%20Dayron%20Rumbaut%20Rangel%2C%20Julia%20Orlenda%20Robinson%20Aguirre%2C%20Segress%20Garc%C3%ADa%20Hevia%2C%20Gabriela%20Nicole%20Tolozano%20Lapierre%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Integración de la inteligencia artificial en el estudio científico del maridaje vino-chocolate",
-      "autor": "Dionisio Navarro García",
-      "tagline": "Este estudio aborda el maridaje vino-chocolate desde un enfoque multifactorial, integrando variables químicas, sensoriales, tecnológicas y contextuales.",
-      "portada": "https://books.google.com/books/content?id=IUyMEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_url": "https://books.google.com/books/content?id=IUyMEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_source": "google_books",
-      "isbn": "9788413737294",
-      "slug": "integracion-de-la-inteligencia-artificial-en-el-estudio-cien",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "A5",
-      "punto": "Enlace entre vino y chocolate.",
-      "palabras": [
-        "maridaje",
-        "sensaciones",
-        "químicas",
-        "tecnología"
-      ],
-      "frases": [
-        "🍷 Explora las notas del vino elegido, analiza sus matices y estructura.",
-        "🍫 Selecciona un chocolate que complemente o contraste esos sabores.",
-        "🧪 Investiga las reacciones químicas que se producen durante la combinación.",
-        "📊 Registra tus experiencias y resultados para futuras degustaciones."
-      ],
-      "colores": [
-        "#4B3D6C",
-        "#BF5B35",
-        "#F2E0B0",
-        "#4C4D51"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
-      ],
-      "tarjeta": {
-        "titulo": "Maridaje Perfecto: Ciencia y Sabor",
-        "parrafoTop": "El estudio descompone el maridaje vino-chocolate, revelando cómo [H]las interacciones químicas[/H] y los matices sensoriales enriquecen la experiencia. Conectar sabores crea descubrimientos únicos.",
-        "subtitulo": "Experimenta hoy seleccionando un vino y un chocolate",
-        "parrafoBot": "[H]Conectar sabores crea descubrimientos únicos.[/H] Experimenta hoy seleccionando un vino y un chocolate; anota sus características y tu reacción para perfeccionar futuras elecciones.",
-        "style": {
-          "accent": "#8c5a90",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4a4a4a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Analizar los sabores presentes en el vino y elegir un chocolate adecuado facilitará descubrimientos. Registra cada combinación para perfeccionar futuras elecciones y resultados."
-      },
-      "tarjeta_base": {
-        "titulo": "Integración de vino y chocolate",
-        "parrafoTop": "Este estudio presenta un enfoque integral que conecta distintos factores relevantes en la combinación de vino y chocolate, abarcando aspectos [H]químicos y sensoriales del proceso.[/H]",
-        "subtitulo": "Estrategias para una experiencia única",
-        "parrafoBot": "[H]Analizar los sabores presentes en el vino y elegir un chocolate adecuado facilitará descubrimientos.[/H] Registra cada combinación para perfeccionar futuras elecciones y resultados.",
-        "style": {
-          "accent": "#8c5a90",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4a4a4a"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Maridaje Perfecto: Ciencia y Sabor",
-        "parrafoTop": "El estudio descompone el maridaje vino-chocolate, revelando cómo [H]las interacciones químicas[/H] y los matices sensoriales enriquecen la experiencia. Conectar sabores crea descubrimientos únicos.",
-        "subtitulo": "Experimenta hoy seleccionando un vino y un chocolate",
-        "parrafoBot": "[H]Conectar sabores crea descubrimientos únicos.[/H] Experimenta hoy seleccionando un vino y un chocolate; anota sus características y tu reacción para perfeccionar futuras elecciones.",
-        "style": {
-          "accent": "#8c5a90",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4a4a4a"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Analizar los sabores presentes en el vino y elegir un chocolate adecuado facilitará descubrimientos. Registra cada combinación para perfeccionar futuras elecciones y resultados."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Integraci%C3%B3n%20de%20la%20inteligencia%20artificial%20en%20el%20estudio%20cient%C3%ADfico%20del%20maridaje%20vino-chocolate%20Dionisio%20Navarro%20Garc%C3%ADa%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Coreografías didácticas en Educación Superior",
-      "autor": "Miguel Ángel Zabalza Beraza, Ma Ainoha Zabalza Cerdeiriña",
-      "tagline": "Se atribuye a Marcel Proust aquella frase de que \"el verdadero viaje de descubrimiento empieza con una nueva mirada\".",
-      "portada": "https://books.google.com/books/content?id=t3aXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_url": "https://books.google.com/books/content?id=t3aXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "portada_source": "google_books",
-      "isbn": "9788427729186",
-      "slug": "coreografias-didacticas-en-educacion-superior",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "A5",
-      "punto": "Educar con movimiento",
-      "palabras": [
-        "dinámica",
-        "interacción",
-        "reflexión",
-        "aprendizaje"
-      ],
-      "frases": [
-        "💡 Reflexiona sobre una técnica de enseñanza que te impactó y escríbela.",
-        "🧩 Diseña una actividad que combine movimiento y aprendizaje en tu aula.",
-        "📚 Investiga un nuevo enfoque pedagógico que fomente la colaboración entre estudiantes.",
-        "🎭 Crea un breve guion para una dinámica grupal que potencie el aprendizaje activo."
-      ],
-      "colores": [
-        "#2E3A48",
-        "#4A6D7C",
-        "#BAC1C9",
-        "#E3F2F1"
-      ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Coreografías de aprendizaje",
-        "parrafoTop": "Las dinámicas interactivas son clave para que los estudiantes asimilen y conecten conocimientos. Diseñar actividades que fomenten la [H]movilidad[/H] y la colaboración transforma el aula en un espacio vibrante.",
-        "subtitulo": "Conecta arte y materia en tu próxima clase",
-        "parrafoBot": "[H]Crea hoy una dinámica grupal que active el aprendizaje y el movimiento entre tus alumnos. [/H]",
-        "style": {
-          "accent": "#b59c56",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia."
-      },
-      "tarjeta_base": {
-        "titulo": "Coreografías en Educación Superior",
-        "parrafoTop": "Zabalza y Zabalza exploran cómo [H]nuevas formas de enseñar pueden transformar el aprendizaje[/H]. La creatividad en la enseñanza superior se convierte en un vehículo para redescubrir conocimientos y prácticas.",
-        "subtitulo": "Innovación pedagógica práctica",
-        "parrafoBot": "[H]Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia.[/H]",
-        "style": {
-          "accent": "#b59c56",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Coreografías de aprendizaje",
-        "parrafoTop": "Las dinámicas interactivas son clave para que los estudiantes asimilen y conecten conocimientos. Diseñar actividades que fomenten la [H]movilidad[/H] y la colaboración transforma el aula en un espacio vibrante.",
-        "subtitulo": "Conecta arte y materia en tu próxima clase",
-        "parrafoBot": "[H]Crea hoy una dinámica grupal que active el aprendizaje y el movimiento entre tus alumnos. [/H]",
-        "style": {
-          "accent": "#b59c56",
-          "ink": "#e0e0e0",
-          "paper": "#1a1a1a",
-          "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Iniciar un proyecto que integre métodos innovadores permitirá activar la curiosidad en los estudiantes; prueba diseñar una actividad que mezcle el arte con la materia."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Coreograf%C3%ADas%20did%C3%A1cticas%20en%20Educaci%C3%B3n%20Superior%20Miguel%20%C3%81ngel%20Zabalza%20Beraza%2C%20Ma%20Ainoha%20Zabalza%20Cerdeiri%C3%B1a%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "Los hábitos secretos de los genios",
-      "autor": "Craig Wright",
-      "tagline": "Los 14 rasgos de las mentes más brillantes de la historia",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/85/77/b0/8577b0f2-3a45-e840-f08e-638cbd60818a/9780062892720.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/85/77/b0/8577b0f2-3a45-e840-f08e-638cbd60818a/9780062892720.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "medium",
-      "punto": "concentración",
-      "palabras": [
-        "genios",
-        "hábitos",
+        "resistencia",
         "creatividad",
-        "disciplina"
+        "autenticidad",
+        "auto-sabotaje"
       ],
       "frases": [
-        "🧠 Dedica cinco minutos a reflexionar sobre tu rutina diaria.",
-        "📖 Escoge un libro inspirador y lee al menos una página.",
-        "✍️ Anota tres cosas que aprendiste hoy que pueden cambiar tu perspectiva.",
-        "🚶‍♂️ Da un breve paseo y observa tu entorno desde una nueva óptica."
+        "🎨 Dedica 15 minutos a crear sin preocuparte por el resultado.",
+        "💪 Reconoce una resistencia y da un pequeño paso hacia ella ahora.",
+        "📝 Escribe un párrafo sobre lo que realmente te apasiona hoy.",
+        "🚀 Visualiza tu obra terminada, siente la emoción de haberla completado."
       ],
       "colores": [
-        "#4B0082",
-        "#00FF7F",
-        "#FFD700",
-        "#FF4500"
+        "#f4a261",
+        "#2a9d8f",
+        "#e76f51",
+        "#264653"
       ],
-      "fondo": "#121212",
+      "fondo": "#0a0a0a",
       "textColors": [
+        "#000000",
         "#FFFFFF",
-        "#000000",
-        "#000000",
+        "#FFFFFF",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Lo que Craig Wright corrige",
-        "parrafoTop": "Descubre la conexión entre [H]hábitos y creatividad[/H] que impulsan a los grandes genios de la historia.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Transformar la rutina diaria en una plataforma de innovación comienza con [H]cinco minutos de reflexión[/H] sobre tus acciones actuales. Toma el primer paso. Anota tres aprendizajes del día que puedan abrir nuevas perspectivas y evalúa su impacto en una semana.",
+        "titulo": "La batalla diaria del artista",
+        "parrafoTop": "[H]La lucha interna para superar bloqueos es un proceso esencial.[/H] Transformar la resistencia en acción requiere coraje.",
+        "subtitulo": "¿Es posible encontrar la fuerza en el desafío creativo?",
+        "parrafoBot": "Reflexiona sobre tu pasión actual y [H]dedica 5 minutos a escribir sin juzgar.[/H] La práctica constante puede liberar tu voz interior.",
         "style": {
-          "accent": "#6a0dad",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
+          "accent": "#f9c74f",
+          "ink": "#ffffff",
+          "paper": "#1d1d1d",
           "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es posible iniciar el cambio personal dedicando tiempo a analizar las rutinas diarias. Propósito: adoptar al menos una nueva acción diaria y evaluar su impacto en una semana."
+        }
       },
       "tarjeta_base": {
-        "titulo": "El camino de los iluminados",
-        "parrafoTop": "Craig Wright explora las prácticas cotidianas que han definido [H]la vida de quienes han dejado huella[/H] en la historia.",
-        "subtitulo": "Cualidades compartidas",
-        "parrafoBot": "Es posible iniciar el cambio personal dedicando tiempo a analizar las rutinas diarias. Propósito: [H]adoptar al menos una nueva acción diaria[/H] y evaluar su impacto en una semana.",
+        "titulo": "La batalla diaria del artista",
+        "parrafoTop": "[H]La lucha interna para superar bloqueos es un proceso esencial.[/H] Transformar la resistencia en acción requiere coraje.",
+        "subtitulo": "¿Es posible encontrar la fuerza en el desafío creativo?",
+        "parrafoBot": "Reflexiona sobre tu pasión actual y [H]dedica 5 minutos a escribir sin juzgar.[/H] La práctica constante puede liberar tu voz interior.",
         "style": {
-          "accent": "#6a0dad",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
+          "accent": "#f9c74f",
+          "ink": "#ffffff",
+          "paper": "#1d1d1d",
           "border": "#333333"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Lo que Craig Wright corrige",
-        "parrafoTop": "Descubre la conexión entre [H]hábitos y creatividad[/H] que impulsan a los grandes genios de la historia.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Transformar la rutina diaria en una plataforma de innovación comienza con [H]cinco minutos de reflexión[/H] sobre tus acciones actuales. Toma el primer paso. Anota tres aprendizajes del día que puedan abrir nuevas perspectivas y evalúa su impacto en una semana.",
+        "titulo": "La batalla diaria del artista",
+        "parrafoTop": "[H]La lucha interna para superar bloqueos es un proceso esencial.[/H] Transformar la resistencia en acción requiere coraje.",
+        "subtitulo": "¿Es posible encontrar la fuerza en el desafío creativo?",
+        "parrafoBot": "Reflexiona sobre tu pasión actual y [H]dedica 5 minutos a escribir sin juzgar.[/H] La práctica constante puede liberar tu voz interior.",
         "style": {
-          "accent": "#6a0dad",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
+          "accent": "#f9c74f",
+          "ink": "#ffffff",
+          "paper": "#1d1d1d",
           "border": "#333333"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Es posible iniciar el cambio personal dedicando tiempo a analizar las rutinas diarias. Propósito: adoptar al menos una nueva acción diaria y evaluar su impacto en una semana."
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Los%20h%C3%A1bitos%20secretos%20de%20los%20genios%20Craig%20Wright%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20guerra%20del%20arte%20Steven%20Pressfield%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Think Again",
-      "autor": "Adam Grant",
-      "tagline": "The power of knowing what you don't know",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/77/2b/28/772b28ee-2bff-dddf-312b-e6ee7fa271e8/9781984878113.d.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/77/2b/28/772b28ee-2bff-dddf-312b-e6ee7fa271e8/9781984878113.d.jpg/626x0w.jpg",
+      "titulo": "Saber de libros sin leer",
+      "autor": "Henry Hitchings",
+      "tagline": "Si hay un libro que deberías encontrar tiempo para leer es éste. Henry Hitchings aborda con ingenio los libros más destacados que se supone todo el mundo debería haber leído.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/a3/89/63/a3896365-dfeb-5d5e-3b79-e6e785783207/9788408101130.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/a3/89/63/a3896365-dfeb-5d5e-3b79-e6e785783207/9788408101130.jpg/626x0w.jpg",
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "mediana",
-      "punto": "reflexión",
+      "dimension": "Conocimiento|Reflexión|Curiosidad",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "duda",
-        "exploración",
         "curiosidad",
-        "adaptabilidad"
+        "reflexión",
+        "desasosiego",
+        "descubrimiento"
       ],
       "frases": [
-        "🔍 Tómate un momento para cuestionar tus certezas sobre un tema que te interesa.",
-        "📝 Haz una lista de cosas que no sabes y elige una para investigar hoy.",
-        "🤝 Comparte tus opiniones con alguien que tenga una perspectiva diferente y escucha con atención.",
-        "💡 Dedica unos minutos a reflexionar sobre cómo podrías cambiar de opinión respecto a un tema importante."
+        "📚 Explora un libro que nunca leíste y reflexiona sobre su esencia en minutos.",
+        "🔍 Investiga la historia de un autor, siente la conexión con su viaje literario.",
+        "💭 Anota tus pensamientos sobre un concepto del libro que te cause desasosiego.",
+        "✨ Descubre las conexiones entre diferentes obras, sumando tu propio entendimiento."
       ],
       "colores": [
-        "#1e90ff",
-        "#ff69b4",
-        "#ffd700",
-        "#4682b4"
+        "#F6E58D",
+        "#FF7979",
+        "#A29BFE",
+        "#74B9FF"
       ],
-      "fondo": "dark",
+      "fondo": "#2D3436",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "La esencia del conocimiento literario",
+        "parrafoTop": "[H]El libro revela cómo la erudición puede ser accesible sin la lectura completa.[/H] Aporta una nueva perspectiva sobre el valor de las ideas.",
+        "subtitulo": "¿Es posible comprender profundamente sin haber leído cada palabra?",
+        "parrafoBot": "Tras reflexionar sobre conexiones, [H]explora resúmenes o reseñas de obras clásicas en 30 segundos.[/H] Conecta con el mundo literario.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La esencia del conocimiento literario",
+        "parrafoTop": "[H]El libro revela cómo la erudición puede ser accesible sin la lectura completa.[/H] Aporta una nueva perspectiva sobre el valor de las ideas.",
+        "subtitulo": "¿Es posible comprender profundamente sin haber leído cada palabra?",
+        "parrafoBot": "Tras reflexionar sobre conexiones, [H]explora resúmenes o reseñas de obras clásicas en 30 segundos.[/H] Conecta con el mundo literario.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La esencia del conocimiento literario",
+        "parrafoTop": "[H]El libro revela cómo la erudición puede ser accesible sin la lectura completa.[/H] Aporta una nueva perspectiva sobre el valor de las ideas.",
+        "subtitulo": "¿Es posible comprender profundamente sin haber leído cada palabra?",
+        "parrafoBot": "Tras reflexionar sobre conexiones, [H]explora resúmenes o reseñas de obras clásicas en 30 segundos.[/H] Conecta con el mundo literario.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Saber%20de%20libros%20sin%20leer%20Henry%20Hitchings%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Shakespeare para enamorados",
+      "autor": "Allan Percy",
+      "tagline": "Del flechazo al desengaño del primer beso al amor imposible del compromiso a los celos Shakespeare para enamorados saca de los escenarios y de las antologías poéticas la ciencia shakespeariana del amor para iluminar nuestra vida cotidiana y por fin dar respuesta a preguntas como: ¿Por qué hay personas que tienen mala suerte en las relaciones sentimentales? ¿Cómo se cura el mal de amores? ¿Se puede vivir un romance toda la vida? ¿Cuál es el secreto de la seducción? ¿Cómo luchar contra los celos?",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/86/21/33/86213375-5ff0-e621-26a6-35a2a084f8fb/9788490629918.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/86/21/33/86213375-5ff0-e621-26a6-35a2a084f8fb/9788490629918.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "anhelo",
+        "nostalgia",
+        "suscitación",
+        "empoderamiento"
+      ],
+      "frases": [
+        "❤️ Explora el significado del amor en un poema de Shakespeare en 30 segundos.",
+        "💔 Reflexiona sobre tus experiencias de celos y escribe un breve texto ahora.",
+        "🌹 Tómate un minuto para recordar un primer beso que te hizo sentir vivo.",
+        "✨ Imagina cómo sería vivir una vida llena de romance y compártelo con alguien."
+      ],
+      "colores": [
+        "#ffcc5c",
+        "#d8e2dc",
+        "#4a4e69",
+        "#f72585"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "El amor en su esencia más pura",
+        "parrafoTop": "[H]Las dinámicas del amor revelan nuestras inseguridades y deseos.[/H] Shakespeare ilumina el camino hacia la comprensión emocional.",
+        "subtitulo": "¿Cómo se transforma un flechazo en un amor duradero?",
+        "parrafoBot": "Recuerda un instante de conexión profunda, [H]y tómate 30 segundos para escribir sobre ese momento.[/H] Un viaje al corazón.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El amor en su esencia más pura",
+        "parrafoTop": "[H]Las dinámicas del amor revelan nuestras inseguridades y deseos.[/H] Shakespeare ilumina el camino hacia la comprensión emocional.",
+        "subtitulo": "¿Cómo se transforma un flechazo en un amor duradero?",
+        "parrafoBot": "Recuerda un instante de conexión profunda, [H]y tómate 30 segundos para escribir sobre ese momento.[/H] Un viaje al corazón.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El amor en su esencia más pura",
+        "parrafoTop": "[H]Las dinámicas del amor revelan nuestras inseguridades y deseos.[/H] Shakespeare ilumina el camino hacia la comprensión emocional.",
+        "subtitulo": "¿Cómo se transforma un flechazo en un amor duradero?",
+        "parrafoBot": "Recuerda un instante de conexión profunda, [H]y tómate 30 segundos para escribir sobre ese momento.[/H] Un viaje al corazón.",
+        "style": {
+          "accent": "#ffeaa7",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Shakespeare%20para%20enamorados%20Allan%20Percy%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Homo creativus",
+      "autor": "Juan Carlos Chavez",
+      "tagline": "5 virtudes biológicas que te representan potencia privilegiada 3 intenciones que marcan una dirección inteligentemente benéfica 3 medios que adicionan suma fortaleza a cada paso 11 peligros inminentes que debes evitar a toda costa y 11 posibilidades que te mostrarán un puerto fértil y profundamente cautivador",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/5c/3f/c25c3fcf-3d93-66d4-f634-b512c3a4b6ec/rm_image.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/5c/3f/c25c3fcf-3d93-66d4-f634-b512c3a4b6ec/rm_image.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "potencial",
+        "vitalidad",
+        "intención",
+        "abundancia"
+      ],
+      "frases": [
+        "💡 Despierta tu creatividad dedicando 15 minutos a escribir sin parar.",
+        "🌱 Cultiva la vitalidad: haz una caminata breve y conecta con la naturaleza.",
+        "🔍 Establece tu intención: escribe tres objetivos que desees alcanzar hoy.",
+        "✨ Imagina abundancia: cierra los ojos y visualiza tus logros durante un minuto."
+      ],
+      "colores": [
+        "#fffa65",
+        "#b8e1fd",
+        "#f6d8a7",
+        "#74c69d"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Creatividad biológica como motor de vida",
+        "parrafoTop": "[H]El despertar de la creatividad impulsa un viaje interno hacia el autoconocimiento y la realización.[/H] La capacidad creativa se convierte en una herramienta esencial para transformar la realidad.",
+        "subtitulo": "¿Es posible que nuestra naturaleza biológica nos impulse a crear?",
+        "parrafoBot": "Luego de conectar con tu entorno, [H]dedica 30 segundos a escribir una idea innovadora que desees explorar.[/H] Cada pequeño paso alimenta tu esencia creativa.",
+        "style": {
+          "accent": "#1abc9c",
+          "ink": "#ffffff",
+          "paper": "#2a2a2a",
+          "border": "#444444"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Creatividad biológica como motor de vida",
+        "parrafoTop": "[H]El despertar de la creatividad impulsa un viaje interno hacia el autoconocimiento y la realización.[/H] La capacidad creativa se convierte en una herramienta esencial para transformar la realidad.",
+        "subtitulo": "¿Es posible que nuestra naturaleza biológica nos impulse a crear?",
+        "parrafoBot": "Luego de conectar con tu entorno, [H]dedica 30 segundos a escribir una idea innovadora que desees explorar.[/H] Cada pequeño paso alimenta tu esencia creativa.",
+        "style": {
+          "accent": "#1abc9c",
+          "ink": "#ffffff",
+          "paper": "#2a2a2a",
+          "border": "#444444"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Creatividad biológica como motor de vida",
+        "parrafoTop": "[H]El despertar de la creatividad impulsa un viaje interno hacia el autoconocimiento y la realización.[/H] La capacidad creativa se convierte en una herramienta esencial para transformar la realidad.",
+        "subtitulo": "¿Es posible que nuestra naturaleza biológica nos impulse a crear?",
+        "parrafoBot": "Luego de conectar con tu entorno, [H]dedica 30 segundos a escribir una idea innovadora que desees explorar.[/H] Cada pequeño paso alimenta tu esencia creativa.",
+        "style": {
+          "accent": "#1abc9c",
+          "ink": "#ffffff",
+          "paper": "#2a2a2a",
+          "border": "#444444"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Homo%20creativus%20Juan%20Carlos%20Chavez%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Millonario en un fin de semana",
+      "autor": "Noah Kagan",
+      "tagline": "Es hora de saltar el único obstáculo entre tú y una empresa de un millón de dólares",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/84/56/ab/8456ab8e-fb24-ee10-2af1-38caa59ba179/9781529192711.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "exuberancia",
+        "motivación",
+        "prospección",
+        "estrategia"
+      ],
+      "frases": [
+        "🚀 Visualiza tu negocio ideal en menos de un minuto.",
+        "💡 Escribe una idea de producto que resolvería un gran problema ahora mismo.",
+        "📈 Planifica los próximos pasos para lanzar tu proyecto en este fin de semana.",
+        "📝 Anota las tres personas que pueden ayudarte a alcanzar tus metas empresariales."
+      ],
+      "colores": [
+        "#ff6b81",
+        "#f8c291",
+        "#e77f67",
+        "#dcdde1"
+      ],
+      "fondo": "#2a2a2a",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Rápido cambio de mentalidad hacia el éxito financiero",
+        "parrafoTop": "[H]La clave es entender que se puede alcanzar un gran objetivo en poco tiempo.[/H] El enfoque directo y audaz para lograrlo inspira a la acción.",
+        "subtitulo": "¿Está listo para actuar y no solo planear?",
+        "parrafoBot": "Después de definir tu producto ideal, [H]diseña un prototipo simple en menos de 30 segundos.[/H] La práctica lleva a la perfección.",
+        "style": {
+          "accent": "#fffa65",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Rápido cambio de mentalidad hacia el éxito financiero",
+        "parrafoTop": "[H]La clave es entender que se puede alcanzar un gran objetivo en poco tiempo.[/H] El enfoque directo y audaz para lograrlo inspira a la acción.",
+        "subtitulo": "¿Está listo para actuar y no solo planear?",
+        "parrafoBot": "Después de definir tu producto ideal, [H]diseña un prototipo simple en menos de 30 segundos.[/H] La práctica lleva a la perfección.",
+        "style": {
+          "accent": "#fffa65",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Rápido cambio de mentalidad hacia el éxito financiero",
+        "parrafoTop": "[H]La clave es entender que se puede alcanzar un gran objetivo en poco tiempo.[/H] El enfoque directo y audaz para lograrlo inspira a la acción.",
+        "subtitulo": "¿Está listo para actuar y no solo planear?",
+        "parrafoBot": "Después de definir tu producto ideal, [H]diseña un prototipo simple en menos de 30 segundos.[/H] La práctica lleva a la perfección.",
+        "style": {
+          "accent": "#fffa65",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Millonario%20en%20un%20fin%20de%20semana%20Noah%20Kagan%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Conecta con la motivación",
+      "autor": "Brian Tracy",
+      "tagline": "La mayoría de las personas afirma que quiere ser exitosa y feliz. Sin embargo son pocos los capaces de sostener esfuerzos prolongados para lograr sus metas. El problema central radica en mantener la motivación sin importar cuántas dificultades surjan en el camino. Brian Tracy experto mundial en desarrollopersonal nos muestra cómo salvar la brecha entre lo que decimos que queremos y lo que debemos hacer para lograrlo que a menudo requiere retrasar la gratificación temporal y las soluciones rápidas para obtener una felicidad y un éxito duraderos.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/1e/05/db/1e05dbe3-8c52-861b-70ab-0f45aad36af9/9786073820035.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/1e/05/db/1e05dbe3-8c52-861b-70ab-0f45aad36af9/9786073820035.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Conexión|Propósito",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "determinación",
+        "perspectiva",
+        "responsabilidad",
+        "persistencia"
+      ],
+      "frases": [
+        "💪 Elige un objetivo y define tus acciones en solo 30 segundos.",
+        "🔍 Revisa tu semana: identifica un obstáculo y busca una solución rápida.",
+        "🚀 Establece un micro-hábito que puedas comenzar ahora mismo, ¡hazlo hoy!",
+        "📅 Planifica tus próximos pasos para esta semana en menos de un minuto."
+      ],
+      "colores": [
+        "#ff6f61",
+        "#6ab04c",
+        "#f9ca24",
+        "#e84393"
+      ],
+      "fondo": "#2a2a2a",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
@@ -995,46 +409,560 @@
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Desmantelando las certezas",
-        "parrafoTop": "La capacidad de cuestionar lo conocido abre puertas a nuevas ideas. Dedicar tiempo a [H]identificar áreas de confianza[/H] y buscar información contradictoria potencia la adaptabilidad y el crecimiento personal. Da un paso hoy: haz una lista de cosas que no sabes y selecciona una para investigar. Encuentra a alguien con opiniones distintas y discútelo.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedica tiempo hoy a [H]identificar un área en la que te sientas seguro y busca información que la contradiga[/H]. Invita a alguien con una visión opuesta a discutirlo contigo.",
+        "titulo": "Conexión entre metas y esfuerzo",
+        "parrafoTop": "[H]El desafío está en mantener el enfoque hacia lo que realmente se desea.[/H] La verdadera satisfacción proviene de superar los obstáculos.",
+        "subtitulo": "¿Cómo se sostiene el esfuerzo cuando las dificultades aparecen?",
+        "parrafoBot": "Después de identificar un obstáculo, [H]elige una acción concreta que puedas implementar en 30 segundos.[/H] Este es el primer paso hacia la superación.",
         "style": {
-          "accent": "#3c3c3c",
-          "ink": "#e0e0e0",
+          "accent": "#f8c291",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
-          "border": "#555555"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica tiempo hoy a identificar un área en la que te sientas seguro y busca información que la contradiga. Invita a alguien con una visión opuesta a discutirlo contigo."
+          "border": "#2a2a2a"
+        }
       },
       "tarjeta_base": {
-        "titulo": "Piensa de nuevo",
-        "parrafoTop": "El aprendizaje no termina en las certezas, sino en [H]el poder de cuestionar lo conocido[/H]. Adam Grant propone desafiar creencias y opiniones para descubrir nuevas verdades que pueden enriquecer la perspectiva.",
-        "subtitulo": "Reflexiones para el crecimiento",
-        "parrafoBot": "Dedica tiempo hoy a [H]identificar un área en la que te sientas seguro y busca información que la contradiga[/H]. Invita a alguien con una visión opuesta a discutirlo contigo.",
+        "titulo": "Conexión entre metas y esfuerzo",
+        "parrafoTop": "[H]El desafío está en mantener el enfoque hacia lo que realmente se desea.[/H] La verdadera satisfacción proviene de superar los obstáculos.",
+        "subtitulo": "¿Cómo se sostiene el esfuerzo cuando las dificultades aparecen?",
+        "parrafoBot": "Después de identificar un obstáculo, [H]elige una acción concreta que puedas implementar en 30 segundos.[/H] Este es el primer paso hacia la superación.",
         "style": {
-          "accent": "#3c3c3c",
-          "ink": "#e0e0e0",
+          "accent": "#f8c291",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
-          "border": "#555555"
+          "border": "#2a2a2a"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Desmantelando las certezas",
-        "parrafoTop": "La capacidad de cuestionar lo conocido abre puertas a nuevas ideas. Dedicar tiempo a [H]identificar áreas de confianza[/H] y buscar información contradictoria potencia la adaptabilidad y el crecimiento personal. Da un paso hoy: haz una lista de cosas que no sabes y selecciona una para investigar. Encuentra a alguien con opiniones distintas y discútelo.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedica tiempo hoy a [H]identificar un área en la que te sientas seguro y busca información que la contradiga[/H]. Invita a alguien con una visión opuesta a discutirlo contigo.",
+        "titulo": "Conexión entre metas y esfuerzo",
+        "parrafoTop": "[H]El desafío está en mantener el enfoque hacia lo que realmente se desea.[/H] La verdadera satisfacción proviene de superar los obstáculos.",
+        "subtitulo": "¿Cómo se sostiene el esfuerzo cuando las dificultades aparecen?",
+        "parrafoBot": "Después de identificar un obstáculo, [H]elige una acción concreta que puedas implementar en 30 segundos.[/H] Este es el primer paso hacia la superación.",
         "style": {
-          "accent": "#3c3c3c",
+          "accent": "#f8c291",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Conecta%20con%20la%20motivaci%C3%B3n%20Brian%20Tracy%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Eutanasia para vivir",
+      "autor": "Martín Achirica",
+      "tagline": "realizaremos un viaje de muerte y vida nos sorprenderemos ante la vinculación entre la ciencia y la espiritualidad aquello que se ve y no se ve como parte de un todo encaminado al nuevo paradigma del bienestar y la salud integrativa. Un nuevo arquetipo para el sentido de la existencia",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/02/99/9a/02999a3a-82d5-4ec7-06da-461285320963/9788419251367.jpeg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/02/99/9a/02999a3a-82d5-4ec7-06da-461285320963/9788419251367.jpeg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Conexión|Comprensión|Introspección",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "suscitación",
+        "iluminación",
+        "revelación",
+        "sanación"
+      ],
+      "frases": [
+        "💡 Explora tus creencias sobre la vida y la muerte en este instante. 🧘‍♂️",
+        "🌌 Conéctate con tu esencia, medita por un momento y escucha tu interior. ⏳",
+        "🕊️ Reflexiona sobre un ser querido y envíale amor a través de tus pensamientos. ❤️",
+        "🌱 Piensa en un cambio que deseas hacer y escribe una pequeña acción hoy. ✍️"
+      ],
+      "colores": [
+        "#6a1b9a",
+        "#f06292",
+        "#ba68c8",
+        "#d32f2f"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Eutanasia como nuevo comienzo",
+        "parrafoTop": "[H]La conexión entre la vida y la muerte se revela en el viaje de sanación.[/H] Este proceso transforma percepciones limitadas.",
+        "subtitulo": "¿Cómo se redefine el propósito a través de la comprensión del ciclo?",
+        "parrafoBot": "A partir de las acciones previas, [H]dedica 30 segundos a escribir un mensaje de gratitud hacia una experiencia vivida.[/H] Esto abrirá nuevas perspectivas.",
+        "style": {
+          "accent": "#00bfff",
           "ink": "#e0e0e0",
           "paper": "#1a1a1a",
-          "border": "#555555"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica tiempo hoy a identificar un área en la que te sientas seguro y busca información que la contradiga. Invita a alguien con una visión opuesta a discutirlo contigo."
+          "border": "#444444"
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Think%20Again%20Adam%20Grant%20entrevista%20espa%C3%B1ol"
+      "tarjeta_base": {
+        "titulo": "Eutanasia como nuevo comienzo",
+        "parrafoTop": "[H]La conexión entre la vida y la muerte se revela en el viaje de sanación.[/H] Este proceso transforma percepciones limitadas.",
+        "subtitulo": "¿Cómo se redefine el propósito a través de la comprensión del ciclo?",
+        "parrafoBot": "A partir de las acciones previas, [H]dedica 30 segundos a escribir un mensaje de gratitud hacia una experiencia vivida.[/H] Esto abrirá nuevas perspectivas.",
+        "style": {
+          "accent": "#00bfff",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#444444"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Eutanasia como nuevo comienzo",
+        "parrafoTop": "[H]La conexión entre la vida y la muerte se revela en el viaje de sanación.[/H] Este proceso transforma percepciones limitadas.",
+        "subtitulo": "¿Cómo se redefine el propósito a través de la comprensión del ciclo?",
+        "parrafoBot": "A partir de las acciones previas, [H]dedica 30 segundos a escribir un mensaje de gratitud hacia una experiencia vivida.[/H] Esto abrirá nuevas perspectivas.",
+        "style": {
+          "accent": "#00bfff",
+          "ink": "#e0e0e0",
+          "paper": "#1a1a1a",
+          "border": "#444444"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Eutanasia%20para%20vivir%20Mart%C3%ADn%20Achirica%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "No me hagas pensar",
+      "autor": "Steve Krug",
+      "tagline": "understand the principles of intuitive navigation and information design Witty commonsensical and eminently practical",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/62/78/b9/6278b988-3aa4-171d-5f9b-50d07fab5b47/9780133597264.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/62/78/b9/6278b988-3aa4-171d-5f9b-50d07fab5b47/9780133597264.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Conexión|Claridad",
+      "punto": "Creativo|Activo|Máximo",
+      "palabras": [
+        "claridad",
+        "intuitividad",
+        "accesibilidad",
+        "simplicidad"
+      ],
+      "frases": [
+        "🔍 Observa la interfaz de tu web y elimina lo innecesario en 15 seg.",
+        "💡 Rediseña un elemento de tu página para hacerlo más intuitivo en 30 seg.",
+        "📝 Anota tres cambios que faciliten la navegación en solo 45 seg.",
+        "🎨 Experimenta con un nuevo color en tu diseño que potencie la claridad en 60 seg."
+      ],
+      "colores": [
+        "#ff5722",
+        "#00bcd4",
+        "#9c27b0",
+        "#ffeb3b"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Diseño que no confunde",
+        "parrafoTop": "[H]La efectividad de un diseño claro hace que la navegación sea intuitiva.[/H] Esto reduce la frustración del usuario.",
+        "subtitulo": "¿Está tu diseño realmente sirviendo a los usuarios?",
+        "parrafoBot": "Revisa en 30 segundos el contenido visual de tu página, [H]elimina cualquier elemento que no aporte claridad.[/H] Así potenciarás la experiencia.",
+        "style": {
+          "accent": "#ff6f61",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Diseño que no confunde",
+        "parrafoTop": "[H]La efectividad de un diseño claro hace que la navegación sea intuitiva.[/H] Esto reduce la frustración del usuario.",
+        "subtitulo": "¿Está tu diseño realmente sirviendo a los usuarios?",
+        "parrafoBot": "Revisa en 30 segundos el contenido visual de tu página, [H]elimina cualquier elemento que no aporte claridad.[/H] Así potenciarás la experiencia.",
+        "style": {
+          "accent": "#ff6f61",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Diseño que no confunde",
+        "parrafoTop": "[H]La efectividad de un diseño claro hace que la navegación sea intuitiva.[/H] Esto reduce la frustración del usuario.",
+        "subtitulo": "¿Está tu diseño realmente sirviendo a los usuarios?",
+        "parrafoBot": "Revisa en 30 segundos el contenido visual de tu página, [H]elimina cualquier elemento que no aporte claridad.[/H] Así potenciarás la experiencia.",
+        "style": {
+          "accent": "#ff6f61",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+No%20me%20hagas%20pensar%20Steve%20Krug%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "La seducción de las palabras",
+      "autor": "Alex Grijelmo",
+      "tagline": "Un recorrido por las manipulaciones del pensamiento.Según qué palabras utilicemos así formaremos nuestro pensamiento. Desde la política la publicidad hasta el amor y la literatura muchos intentan dominar los mecanismos de seducción verbal para así manipular el pensamiento ajeno.Esta obra analiza con innumerables ejemplos cómo se manipulan hoy en día los vocablos para alterar la percepción que tenemos de la realidad cómo se emplea su fuerza o su sutileza para engatusar a los demás.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/26/36/8f/26368f9c-5389-32fd-6440-5e660bf03b73/9788430615827.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/26/36/8f/26368f9c-5389-32fd-6440-5e660bf03b73/9788430615827.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Conexión|Introspección|Persuasión",
+      "punto": "Creativo|Activo|Máximo",
+      "palabras": [
+        "persuasión",
+        "manipulación",
+        "seducción",
+        "connotación"
+      ],
+      "frases": [
+        "📖 Reflexiona sobre las connotaciones de tus palabras en una conversación diaria. ⏳",
+        "🔍 Examina un anuncio publicitario y analiza sus estrategias de persuasión. 📝",
+        "💬 Comparte una frase que te haya seducido y cuenta cómo te hizo sentir. 🤔",
+        "🗣️ Prueba reescribir un mensaje para ver cómo cambia su impacto emocional. 🔄"
+      ],
+      "colores": [
+        "#f8bbd0",
+        "#ffab91",
+        "#e1f5fe",
+        "#ffe082"
+      ],
+      "fondo": "#2a2a2a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "El poder de las palabras en la percepción",
+        "parrafoTop": "[H]Las elecciones lingüísticas impactan profundamente la realidad.[/H] La manera en que nos expresamos puede moldear emociones y pensamientos.",
+        "subtitulo": "¿Hasta qué punto son nuestras decisiones verbales una forma de arte?",
+        "parrafoBot": "Revisa tu último mensaje y [H]rediseña una frase para maximizar su efecto emocional.[/H] La sutileza está en los detalles.",
+        "style": {
+          "accent": "#ffeb3b",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El poder de las palabras en la percepción",
+        "parrafoTop": "[H]Las elecciones lingüísticas impactan profundamente la realidad.[/H] La manera en que nos expresamos puede moldear emociones y pensamientos.",
+        "subtitulo": "¿Hasta qué punto son nuestras decisiones verbales una forma de arte?",
+        "parrafoBot": "Revisa tu último mensaje y [H]rediseña una frase para maximizar su efecto emocional.[/H] La sutileza está en los detalles.",
+        "style": {
+          "accent": "#ffeb3b",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El poder de las palabras en la percepción",
+        "parrafoTop": "[H]Las elecciones lingüísticas impactan profundamente la realidad.[/H] La manera en que nos expresamos puede moldear emociones y pensamientos.",
+        "subtitulo": "¿Hasta qué punto son nuestras decisiones verbales una forma de arte?",
+        "parrafoBot": "Revisa tu último mensaje y [H]rediseña una frase para maximizar su efecto emocional.[/H] La sutileza está en los detalles.",
+        "style": {
+          "accent": "#ffeb3b",
+          "ink": "#ffffff",
+          "paper": "#1c1c1c",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20seducci%C3%B3n%20de%20las%20palabras%20Alex%20Grijelmo%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Diseña tu mente",
+      "autor": "Ryan A. Bush",
+      "tagline": "El proceso de la psiquitectura te permite desconectar de tu propia mente identificar los patrones subyacentes y convertirte en el arquitecto de tu propia iluminación",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/33/c3/a0/33c3a0f3-6847-8210-8bb8-c49634d14c47/9788441442634.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/33/c3/a0/33c3a0f3-6847-8210-8bb8-c49634d14c47/9788441442634.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "resonancia",
+        "sintonización",
+        "creación",
+        "ilusión"
+      ],
+      "frases": [
+        "🔍 Explora tus pensamientos para descubrir la resonancia en tu mente.",
+        "🎶 Dedica un momento a sintonizar tus emociones con tu entorno.",
+        "🛠️ Crea una lista de intenciones que guíen tu camino personal hoy.",
+        "🌌 Permítete imaginar nuevas posibilidades y dar vida a tus ilusiones."
+      ],
+      "colores": [
+        "#3f51b5",
+        "#e57373",
+        "#64b5f6",
+        "#ffe0b2"
+      ],
+      "fondo": "#1c1c1c",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Arquitectura de la mente",
+        "parrafoTop": "[H]La capacidad de rediseñar patrones mentales permite nuevas experiencias.[/H] Al reconocer esto, se abre un espacio para el crecimiento.",
+        "subtitulo": "¿Es posible reprogramar nuestras emociones y pensamientos?",
+        "parrafoBot": "Al revisar tus intenciones, [H]dedica 30 segundos a visualizar una nueva perspectiva.[/H] Cierra con una intención renovada.",
+        "style": {
+          "accent": "#00e676",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Arquitectura de la mente",
+        "parrafoTop": "[H]La capacidad de rediseñar patrones mentales permite nuevas experiencias.[/H] Al reconocer esto, se abre un espacio para el crecimiento.",
+        "subtitulo": "¿Es posible reprogramar nuestras emociones y pensamientos?",
+        "parrafoBot": "Al revisar tus intenciones, [H]dedica 30 segundos a visualizar una nueva perspectiva.[/H] Cierra con una intención renovada.",
+        "style": {
+          "accent": "#00e676",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Arquitectura de la mente",
+        "parrafoTop": "[H]La capacidad de rediseñar patrones mentales permite nuevas experiencias.[/H] Al reconocer esto, se abre un espacio para el crecimiento.",
+        "subtitulo": "¿Es posible reprogramar nuestras emociones y pensamientos?",
+        "parrafoBot": "Al revisar tus intenciones, [H]dedica 30 segundos a visualizar una nueva perspectiva.[/H] Cierra con una intención renovada.",
+        "style": {
+          "accent": "#00e676",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Dise%C3%B1a%20tu%20mente%20Ryan%20A.%20Bush%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "La vida bien vivida",
+      "autor": "Gladys McGarey",
+      "tagline": "La salud no requiere vivir en un cuerpo libre de problemas así como la felicidad no requiere que vivamos una vida libre de dificultades.La doctora Gladys McGarey madre de la medicina holística es una de las médicas más activas y reconocidas en el mundo. A sus 102 años revela los secretos sobre cómo vivir con alegría vitalidad y con un propósito a cualquier edad. Su enfoque parece opuesto a la intuición: para vivir una vida plena y sin enfermedades no conserves energía empléala sin restricciones; en lugar de buscar reconocimientos individuales trabaja en equipo; permanecer en tu zona de confort te atará a tus dolores solo el movimiento te ayudará a superarlos.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/8d/53/bf/8d53bfba-60e6-412d-1100-629eae4279a6/9786073902199.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/8d/53/bf/8d53bfba-60e6-412d-1100-629eae4279a6/9786073902199.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "vitalidad",
+        "propósito",
+        "colaboración",
+        "movimiento"
+      ],
+      "frases": [
+        "🌱 Activa tu energía: realiza una caminata consciente y siente el momento. 🏃‍♂️",
+        "✨ Redefine tu propósito: escribe tres cosas que te apasionen y compártelas. 📜",
+        "🤝 Conecta con otros: organiza una charla virtual sobre un tema de interés común. 💬",
+        "🚶‍♀️ Muévete sin restricciones: prueba una nueva actividad física por 15 minutos. 🎶"
+      ],
+      "colores": [
+        "#ffb74d",
+        "#64b5f6",
+        "#ffa726",
+        "#81c784"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "La energía de la vida plena",
+        "parrafoTop": "[H]Cada elección consciente lleva a una experiencia enriquecedora.[/H] La interacción con el entorno y los demás puede revitalizar nuestro camino.",
+        "subtitulo": "¿Está la búsqueda de un propósito más allá del éxito personal?",
+        "parrafoBot": "Después de conectar con otros, [H]dedica 15 segundos para respirar profundamente y sentir tu cuerpo en este momento.[/H] Cierra el ciclo de conexión contigo mismo.",
+        "style": {
+          "accent": "#ffcc80",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La energía de la vida plena",
+        "parrafoTop": "[H]Cada elección consciente lleva a una experiencia enriquecedora.[/H] La interacción con el entorno y los demás puede revitalizar nuestro camino.",
+        "subtitulo": "¿Está la búsqueda de un propósito más allá del éxito personal?",
+        "parrafoBot": "Después de conectar con otros, [H]dedica 15 segundos para respirar profundamente y sentir tu cuerpo en este momento.[/H] Cierra el ciclo de conexión contigo mismo.",
+        "style": {
+          "accent": "#ffcc80",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La energía de la vida plena",
+        "parrafoTop": "[H]Cada elección consciente lleva a una experiencia enriquecedora.[/H] La interacción con el entorno y los demás puede revitalizar nuestro camino.",
+        "subtitulo": "¿Está la búsqueda de un propósito más allá del éxito personal?",
+        "parrafoBot": "Después de conectar con otros, [H]dedica 15 segundos para respirar profundamente y sentir tu cuerpo en este momento.[/H] Cierra el ciclo de conexión contigo mismo.",
+        "style": {
+          "accent": "#ffcc80",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20vida%20bien%20vivida%20Gladys%20McGarey%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Una nueva Tierra",
+      "autor": "Eckhart Tolle",
+      "tagline": "Si usted ya se ha iniciado en el proceso del despertar éste se acelerará y se intensificará con la lectura de este maravilloso libro.El despertar espiritual no es ya una opción sino una necesidad si queremos que la humanidad y el planeta sobrevivan.Eckhart Tolle nos enseña en Una nueva Tierra que tenemos la oportunidad de construir un mundo nuevo y mejor. Esto supone una revisión radical del papel de la conciencia identificada con el propio ego que debería convertirse en el instrumento para una comprensión distinta y profunda sobre quiénes somos.Para que esto ocurra las estructuras de la mente humana necesitarían experimentar una transformación. En Una nueva Tierra Tolle muestra cómo puede producirse dicha transformación no sólo en nosotros sino en el mundo que nos rodea. Cuando revela la naturaleza de este cambio Tolle describe minuciosamente cómo actúa nuestro ego y a partir de ese conocimiento el autor nos guía de forma muy práctica hacia la nueva conciencia que nos llevará a la experiencia de nuestro ser más profundo y nos permitirá descubrir que somos infinitamente mejores de lo que pensamos.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/a3/27/eb/a327eb4f-076c-c371-03e5-8e4fcf243741/9786073119801.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/a3/27/eb/a327eb4f-076c-c371-03e5-8e4fcf243741/9786073119801.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Transformación|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "trascendencia",
+        "reconciliación",
+        "autenticidad",
+        "presencia"
+      ],
+      "frases": [
+        "🌱 Practica la presencia enfocándote en cada respiración durante un minuto.",
+        "💡 Reflexiona sobre tus acciones y encuentra un momento donde actuaste auténticamente.",
+        "🔍 Observa tus pensamientos, identificando uno que limite tu expresión genuina.",
+        "🌀 Haz una pausa para sentir tu conexión con el entorno, valorando lo que te rodea."
+      ],
+      "colores": [
+        "#8bc34a",
+        "#ff9800",
+        "#ffc107",
+        "#ffeb3b"
+      ],
+      "fondo": "#1f1f1f",
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "La identificación del ego",
+        "parrafoTop": "[H]La transformación comienza cuando se reconoce el poder del momento presente.[/H] Al abordar la naturaleza de la mente, se abre un camino hacia una nueva percepción.",
+        "subtitulo": "¿Es posible construir una vida sin la carga de la identificación personal?",
+        "parrafoBot": "Tras observar tu conexión con el entorno, [H]dedica 30 segundos a notar tus pensamientos y su origen.[/H] La observación trae claridad.",
+        "style": {
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La identificación del ego",
+        "parrafoTop": "[H]La transformación comienza cuando se reconoce el poder del momento presente.[/H] Al abordar la naturaleza de la mente, se abre un camino hacia una nueva percepción.",
+        "subtitulo": "¿Es posible construir una vida sin la carga de la identificación personal?",
+        "parrafoBot": "Tras observar tu conexión con el entorno, [H]dedica 30 segundos a notar tus pensamientos y su origen.[/H] La observación trae claridad.",
+        "style": {
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La identificación del ego",
+        "parrafoTop": "[H]La transformación comienza cuando se reconoce el poder del momento presente.[/H] Al abordar la naturaleza de la mente, se abre un camino hacia una nueva percepción.",
+        "subtitulo": "¿Es posible construir una vida sin la carga de la identificación personal?",
+        "parrafoBot": "Tras observar tu conexión con el entorno, [H]dedica 30 segundos a notar tus pensamientos y su origen.[/H] La observación trae claridad.",
+        "style": {
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Una%20nueva%20Tierra%20Eckhart%20Tolle%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Los Fundadores",
+      "autor": "Jimmy Soni",
+      "tagline": "A través de cientos de entrevistas y acceso a material nunca antes compartido Jimmy Soni nos relata la historia de los primeros empleados de Paypal (Elon Musk Amy Rowe Klement Peter Thiel y Julie Anderson entre otros) considerados la red más poderosa de la industria tecnológica y fundadores de gran parte de lo que conforma nuestro mundo actual.Jimmy Soni explora los primeros días turbulentos de PayPal. Con cientos de entrevistas y acceso sin precedentes a miles de páginas de material interno muestra cómo las semillas de gran parte de lo que da forma a nuestro mundo actual (empresas emergentes digitales de rápido crecimiento las criptomonedas transferencia de dinero móvil) se plantaron hace dos décadas atrás.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/91/20/77/912077f5-6ac7-b066-8839-065e1889868d/1040091942.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/91/20/77/912077f5-6ac7-b066-8839-065e1889868d/1040091942.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Innovación|Resiliencia|Colaboración",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "desafío",
+        "creatividad",
+        "camaradería",
+        "frustración"
+      ],
+      "frases": [
+        "🚀 Imagina una solución innovadora para un reto diario que enfrentas.",
+        "💡 Escribe una idea creativa inspirada en un fracaso personal y cómo aprendiste de él.",
+        "🤝 Conecta con alguien que comparta tus aspiraciones; organiza una charla para intercambiar ideas.",
+        "😤 Reflexiona sobre un momento de frustración y anota tres lecciones aprendidas de esa experiencia."
+      ],
+      "colores": [
+        "#673ab7",
+        "#3f51b5",
+        "#ff4081",
+        "#03a9f4"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "El espíritu del emprendimiento colaborativo",
+        "parrafoTop": "[H]La historia de PayPal revela cómo la adversidad fomenta la innovación.[/H] La colaboración entre sus fundadores fue clave en su éxito.",
+        "subtitulo": "¿Es posible que los fracasos iniciales sean la base de futuros triunfos?",
+        "parrafoBot": "Tras las acciones previas, [H]dedica 30 segundos a identificar un obstáculo y piensa en cómo convertirlo en una oportunidad.[/H] La transformación comienza hoy.",
+        "style": {
+          "accent": "#00bcd4",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El espíritu del emprendimiento colaborativo",
+        "parrafoTop": "[H]La historia de PayPal revela cómo la adversidad fomenta la innovación.[/H] La colaboración entre sus fundadores fue clave en su éxito.",
+        "subtitulo": "¿Es posible que los fracasos iniciales sean la base de futuros triunfos?",
+        "parrafoBot": "Tras las acciones previas, [H]dedica 30 segundos a identificar un obstáculo y piensa en cómo convertirlo en una oportunidad.[/H] La transformación comienza hoy.",
+        "style": {
+          "accent": "#00bcd4",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El espíritu del emprendimiento colaborativo",
+        "parrafoTop": "[H]La historia de PayPal revela cómo la adversidad fomenta la innovación.[/H] La colaboración entre sus fundadores fue clave en su éxito.",
+        "subtitulo": "¿Es posible que los fracasos iniciales sean la base de futuros triunfos?",
+        "parrafoBot": "Tras las acciones previas, [H]dedica 30 segundos a identificar un obstáculo y piensa en cómo convertirlo en una oportunidad.[/H] La transformación comienza hoy.",
+        "style": {
+          "accent": "#00bcd4",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#2a2a2a"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Los%20Fundadores%20Jimmy%20Soni%20entrevista%20espa%C3%B1ol"
     },
     {
       "titulo": "Rejection Proof",
@@ -1045,417 +973,249 @@
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "5x7",
-      "punto": "Estrategia de confrontación",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "rechazo",
+        "vulnerabilidad",
         "resiliencia",
-        "oportunidad",
-        "valentía"
+        "valentía",
+        "empatía"
       ],
       "frases": [
-        "🌟 Pide algo inusual a un extraño y observa su reacción.",
-        "💬 Pregunta por una oportunidad en tu lugar de trabajo que parezca fuera de tu alcance.",
-        "🗣️ Ofrece un cumplido sincero a alguien que nunca has conocido.",
-        "🤝 Propón una colaboración inesperada con alguien en tu comunidad."
+        "💔 Acepta el rechazo como parte del viaje emocional que te fortalece.",
+        "🌱 Practica la resiliencia enfrentando pequeñas negativas cada día.",
+        "🔥 Desata tu valentía al solicitar lo que deseas, sin miedo al 'no'.",
+        "🤝 Conéctate con otros compartiendo tus experiencias de rechazo y superación."
       ],
       "colores": [
-        "#a52a2a",
-        "#4682b4",
-        "#8fbc8f",
-        "#d2691e"
+        "#d32f2f",
+        "#1976d2",
+        "#388e3c",
+        "#fbc02d"
       ],
-      "fondo": "#121212",
+      "fondo": "#1c1c1c",
       "textColors": [
         "#FFFFFF",
         "#FFFFFF",
-        "#000000",
-        "#FFFFFF"
+        "#FFFFFF",
+        "#000000"
       ],
       "tarjeta": {
-        "titulo": "Lo que Jia Jiang corrige",
-        "parrafoTop": "[H]Desbloquea tu valentía a través del rechazo.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Al solicitar lo inesperado, cada \"no\" se transforma en una oportunidad de aprendizaje y conexión. [/H] Descubre cómo el coraje puede cambiar tu vida. Hoy, pide algo inusual a un extraño y observa su reacción; esa interacción podría abrirte puertas que nunca imaginaste.",
+        "titulo": "La fuerza del rechazo como motor de crecimiento",
+        "parrafoTop": "[H]Aceptar el rechazo permite transformar cada \"no\" en una oportunidad.[/H] La experiencia se convierte en un catalizador.",
+        "subtitulo": "¿El rechazo es realmente un final o una puerta a nuevas posibilidades?",
+        "parrafoBot": "Refleja sobre los rechazos previos, [H]y desafía a solicitar algo que deseas en los próximos 30 segundos.[/H] Fortalece tu camino.",
         "style": {
-          "accent": "#7c4dff",
+          "accent": "#76ff03",
           "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#1e1e1e"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Al salir de la zona cómoda, solicite algo fuera de lo común a un extraño y observe atentamente sus reacciones; cada respuesta abre nuevas puertas."
+          "paper": "#1c1c1c",
+          "border": "#424242"
+        }
       },
       "tarjeta_base": {
-        "titulo": "Poder en el rechazo",
-        "parrafoTop": "Jia Jiang presenta una travesía de 100 días que desafía las limitaciones personales a través de [H]interacciones inesperadas y respuestas desafiantes[/H].",
-        "subtitulo": "Transitar la incomodidad como motor de crecimiento",
-        "parrafoBot": "[H]Al salir de la zona cómoda, solicite algo fuera de lo común a un extraño y observe atentamente sus reacciones; cada respuesta abre nuevas puertas.[/H]",
+        "titulo": "La fuerza del rechazo como motor de crecimiento",
+        "parrafoTop": "[H]Aceptar el rechazo permite transformar cada \"no\" en una oportunidad.[/H] La experiencia se convierte en un catalizador.",
+        "subtitulo": "¿El rechazo es realmente un final o una puerta a nuevas posibilidades?",
+        "parrafoBot": "Refleja sobre los rechazos previos, [H]y desafía a solicitar algo que deseas en los próximos 30 segundos.[/H] Fortalece tu camino.",
         "style": {
-          "accent": "#7c4dff",
+          "accent": "#76ff03",
           "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#1e1e1e"
+          "paper": "#1c1c1c",
+          "border": "#424242"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Lo que Jia Jiang corrige",
-        "parrafoTop": "[H]Desbloquea tu valentía a través del rechazo.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Al solicitar lo inesperado, cada \"no\" se transforma en una oportunidad de aprendizaje y conexión. [/H] Descubre cómo el coraje puede cambiar tu vida. Hoy, pide algo inusual a un extraño y observa su reacción; esa interacción podría abrirte puertas que nunca imaginaste.",
+        "titulo": "La fuerza del rechazo como motor de crecimiento",
+        "parrafoTop": "[H]Aceptar el rechazo permite transformar cada \"no\" en una oportunidad.[/H] La experiencia se convierte en un catalizador.",
+        "subtitulo": "¿El rechazo es realmente un final o una puerta a nuevas posibilidades?",
+        "parrafoBot": "Refleja sobre los rechazos previos, [H]y desafía a solicitar algo que deseas en los próximos 30 segundos.[/H] Fortalece tu camino.",
         "style": {
-          "accent": "#7c4dff",
+          "accent": "#76ff03",
           "ink": "#ffffff",
-          "paper": "#121212",
-          "border": "#1e1e1e"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Al salir de la zona cómoda, solicite algo fuera de lo común a un extraño y observe atentamente sus reacciones; cada respuesta abre nuevas puertas."
+          "paper": "#1c1c1c",
+          "border": "#424242"
+        }
       },
       "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Rejection%20Proof%20Jia%20Jiang%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Can't Hurt Me",
-      "autor": "David Goggins",
-      "tagline": "Domina tu mente y desafía las probabilidades",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/f5/b5/88/f5b58852-0ca0-090d-23f7-852f49263755/9781544512266.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/f5/b5/88/f5b58852-0ca0-090d-23f7-852f49263755/9781544512266.jpg/626x0w.jpg",
+      "titulo": "Las casualidades no existen",
+      "autor": "Borja Vilaseca",
+      "tagline": "espiritualidad para escépticos",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/c7/ba/50/c7ba5092-be1c-8c4a-ba2d-2893a9221b1b/9788418045929.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/c7/ba/50/c7ba5092-be1c-8c4a-ba2d-2893a9221b1b/9788418045929.jpg/626x0w.jpg",
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "personal",
-      "punto": "superación",
+      "dimension": "Conexión|Entendimiento|Posibilidad",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "intensidad",
-        "miedo",
-        "comportamiento",
-        "potencial"
+        "sincronicidad",
+        "intencionalidad",
+        "interconexión",
+        "propósito"
       ],
       "frases": [
-        "🔥 Da el primer paso, enfrenta un miedo pequeño hoy mismo.",
-        "💪 Establece una meta desafiante para esta semana y anota los pasos a seguir.",
-        "🚀 Dedica unos minutos a visualizar tu mejor versión en acción.",
-        "⚡ Encuentra una fuente de inspiración, ya sea un libro o un video, y sumérgete en ella."
+        "🌌 Observa una sincronicidad en tu día y anótala. ¿Qué significa para ti?",
+        "🔍 Reflexiona sobre tus intenciones hoy y cómo influyen en tus decisiones.",
+        "🌿 Conéctate con la naturaleza, respira profundamente y siente la interconexión.",
+        "🚀 Visualiza un propósito claro para esta semana; escribe una acción concreta."
       ],
       "colores": [
-        "#000000",
-        "#ffffff",
-        "#ffcc00",
-        "#00cccc"
+        "#00bcd4",
+        "#f44336",
+        "#ffc107",
+        "#8e24aa"
       ],
-      "fondo": "#121212",
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Lo que David Goggins corrige",
-        "parrafoTop": "[H]Domina tu mente, transforma tu vida.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Realizar un pequeño reto hoy puede liberar una fuerza oculta en ti, iniciando el camino hacia tus [H]verdaderos potenciales[/H]. Establece una meta desafiante para esta semana y escribe pasos concretos hacia ella. Da el primer paso ahora enfrentando un miedo pequeño; actúa antes de que se disipe la motivación.",
-        "style": {
-          "accent": "#c0c0c0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Realiza un pequeño reto hoy que despierte una parte latente de ti, y luego establece una meta desafiante para esta semana con pasos claros hacia su consecución."
-      },
-      "tarjeta_base": {
-        "titulo": "Domina tu mente y desafía las probabilidades",
-        "parrafoTop": "En \"Can't Hurt Me\", David Goggins revela [H]cómo confrontar lo que parece inalcanzable[/H] para forjar un camino hacia el logro personal.",
-        "subtitulo": "Asume el control de tu vida",
-        "parrafoBot": "Realiza un pequeño reto hoy que despierte una parte latente de ti, y luego establece [H]una meta desafiante para esta semana con pasos claros hacia su consecución[/H].",
-        "style": {
-          "accent": "#c0c0c0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#444444"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Lo que David Goggins corrige",
-        "parrafoTop": "[H]Domina tu mente, transforma tu vida.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Realizar un pequeño reto hoy puede liberar una fuerza oculta en ti, iniciando el camino hacia tus [H]verdaderos potenciales[/H]. Establece una meta desafiante para esta semana y escribe pasos concretos hacia ella. Da el primer paso ahora enfrentando un miedo pequeño; actúa antes de que se disipe la motivación.",
-        "style": {
-          "accent": "#c0c0c0",
-          "ink": "#e0e0e0",
-          "paper": "#121212",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Realiza un pequeño reto hoy que despierte una parte latente de ti, y luego establece una meta desafiante para esta semana con pasos claros hacia su consecución."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Can't%20Hurt%20Me%20David%20Goggins%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "La Buena Vida",
-      "autor": "Robert Waldinger",
-      "tagline": "El mayor estudio mundial para responder a la pregunta más importante de todas: ¿Qué nos hace felices?",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d3/8c/25/d38c2571-313b-0169-2957-927fcefe9737/9788408271536.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d3/8c/25/d38c2571-313b-0169-2957-927fcefe9737/9788408271536.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "personal",
-      "punto": "felicidad en las relaciones",
-      "palabras": [
-        "conexión",
-        "aprecio",
-        "satisfacción",
-        "compromiso"
-      ],
-      "frases": [
-        "🌱 Envía un mensaje a alguien que valoras y exprésale tu agradecimiento.",
-        "🤝 Dedica un minuto a sonreírle a una persona cercana, crea ese momento de conexión.",
-        "💬 Inicia una conversación sincera con un ser querido sobre sus sueños y metas.",
-        "🎉 Planifica una pequeña sorpresa para alguien especial; el gesto cuenta."
-      ],
-      "colores": [
-        "#ff8c00",
-        "#7b68ee",
-        "#ffa500",
-        "#adff2f"
-      ],
-      "fondo": "#121212",
+      "fondo": "#1c1c1c",
       "textColors": [
         "#000000",
         "#FFFFFF",
         "#000000",
-        "#000000"
-      ],
-      "tarjeta": {
-        "titulo": "Conexiones que transforman vidas",
-        "parrafoTop": "La felicidad radica en la calidad de las relaciones y el aprecio sincero. La investigación muestra que [H]cultivar conexiones profundas[/H] es esencial para una vida satisfactoria. Comparte hoy un mensaje de agradecimiento con alguien especial; reconocer lo positivo crea momentos significativos. Una simple acción puede abrir la puerta a un vínculo más fuerte.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Inicia una conversación sincera con alguien que valoras y expresa tu agradecimiento; el simple acto de reconocer lo positivo genera conexiones profundas.[/H].",
-        "style": {
-          "accent": "#6a994e",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4f4f4f"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Inicia una conversación sincera con alguien que valoras y expresa tu agradecimiento; el simple acto de reconocer lo positivo genera conexiones profundas."
-      },
-      "tarjeta_base": {
-        "titulo": "La esencia de la felicidad",
-        "parrafoTop": "En un profundo análisis de relaciones humanas, Robert Waldinger revela que [H]el verdadero bienestar se encuentra en nuestras interacciones significativas[/H]. A través de un extenso estudio, se ha demostrado que los lazos afectivos son fundamentales para vivir con plenitud.",
-        "subtitulo": "Transforma tus vínculos hoy",
-        "parrafoBot": "[H]Inicia una conversación sincera con alguien que valoras y expresa tu agradecimiento; el simple acto de reconocer lo positivo genera conexiones profundas.[/H]",
-        "style": {
-          "accent": "#6a994e",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4f4f4f"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "Conexiones que transforman vidas",
-        "parrafoTop": "La felicidad radica en la calidad de las relaciones y el aprecio sincero. La investigación muestra que [H]cultivar conexiones profundas[/H] es esencial para una vida satisfactoria. Comparte hoy un mensaje de agradecimiento con alguien especial; reconocer lo positivo crea momentos significativos. Una simple acción puede abrir la puerta a un vínculo más fuerte.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Inicia una conversación sincera con alguien que valoras y expresa tu agradecimiento; el simple acto de reconocer lo positivo genera conexiones profundas.[/H].",
-        "style": {
-          "accent": "#6a994e",
-          "ink": "#e0e0e0",
-          "paper": "#1c1c1c",
-          "border": "#4f4f4f"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Inicia una conversación sincera con alguien que valoras y expresa tu agradecimiento; el simple acto de reconocer lo positivo genera conexiones profundas."
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20Buena%20Vida%20Robert%20Waldinger%20entrevista%20espa%C3%B1ol"
-    },
-    {
-      "titulo": "La ciencia del éxito",
-      "autor": "Napoleon Hill",
-      "tagline": "El curso magistral de Napoleón Hill",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/23/4f/0b/234f0bcd-6265-5ee3-8dc3-d84fc463292d/9786073817684.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/23/4f/0b/234f0bcd-6265-5ee3-8dc3-d84fc463292d/9786073817684.jpg/626x0w.jpg",
-      "isbn": "",
-      "contexto_2026": {},
-      "lente_activo": "",
-      "dimension": "3D",
-      "punto": "1.5",
-      "palabras": [
-        "autodisciplina",
-        "persistencia",
-        "visualización",
-        "motivación"
-      ],
-      "frases": [
-        "✨ Dedica 15 segundos a imaginar tu éxito, sintiendo cada emoción asociada.",
-        "📅 Escribe tus metas específicas y léelas en voz alta durante 30 segundos.",
-        "🔍 Revisa una historia de alguien que superó obstáculos, enfócate en la persistencia por 60 segundos.",
-        "💭 Reflexiona durante 20 segundos sobre lo que realmente quieres lograr en tu vida."
-      ],
-      "colores": [
-        "#1A1A2E",
-        "#16213E",
-        "#0F3460",
-        "#E94560"
-      ],
-      "fondo": "#000000",
-      "textColors": [
-        "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Diseña tu destino",
-        "parrafoTop": "Dedica tiempo a [H]delinear lo que realmente deseas alcanzar[/H]. Especifica tus metas y haz que se conviertan en parte de tu rutina diaria. Dale forma a tu futuro y siente la emoción de lograrlo. Escribe tus objetivos, léelos en voz alta durante 30 segundos y activa esa energía hoy mismo.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedica unos momentos a delinear lo que realmente deseas alcanzar y asegúrate de que sean metas específicas. [H]Lee esas metas en voz alta cada día, sintiendo la energía de su realización.[/H].",
+        "titulo": "Las conexiones invisibles de la vida",
+        "parrafoTop": "[H]Cada evento significativo es una oportunidad para aprender y crecer.[/H] Reconocer las interacciones sutiles puede transformar la percepción del mundo.",
+        "subtitulo": "¿Es posible que todo lo que experimentamos tenga un propósito más profundo?",
+        "parrafoBot": "Después de notar una sincronicidad, [H]dedica 30 segundos a escribir lo que aprendiste de esa experiencia.[/H] La reflexión potencia el entendimiento.",
         "style": {
-          "accent": "#f9c74f",
+          "accent": "#81c784",
           "ink": "#ffffff",
-          "paper": "#333333",
-          "border": "#b7b7b7"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos momentos a delinear lo que realmente deseas alcanzar y asegúrate de que sean metas específicas. Lee esas metas en voz alta cada día, sintiendo la energía de su realización."
+          "paper": "#1b1b1b",
+          "border": "#2a2a2a"
+        }
       },
       "tarjeta_base": {
-        "titulo": "La mente como herramienta de éxito",
-        "parrafoTop": "La comprensión de la relación entre el pensamiento y los resultados es clave en las enseñanzas de Napoleón Hill. [H]El enfoque consciente en tus metas atraerá oportunidades y recursos[/H] que facilitan el progreso.",
-        "subtitulo": "Un camino hacia el logro",
-        "parrafoBot": "Dedica unos momentos a delinear lo que realmente deseas alcanzar y asegúrate de que sean metas específicas. [H]Lee esas metas en voz alta cada día, sintiendo la energía de su realización.[/H]",
+        "titulo": "Las conexiones invisibles de la vida",
+        "parrafoTop": "[H]Cada evento significativo es una oportunidad para aprender y crecer.[/H] Reconocer las interacciones sutiles puede transformar la percepción del mundo.",
+        "subtitulo": "¿Es posible que todo lo que experimentamos tenga un propósito más profundo?",
+        "parrafoBot": "Después de notar una sincronicidad, [H]dedica 30 segundos a escribir lo que aprendiste de esa experiencia.[/H] La reflexión potencia el entendimiento.",
         "style": {
-          "accent": "#f9c74f",
+          "accent": "#81c784",
           "ink": "#ffffff",
-          "paper": "#333333",
-          "border": "#b7b7b7"
+          "paper": "#1b1b1b",
+          "border": "#2a2a2a"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Diseña tu destino",
-        "parrafoTop": "Dedica tiempo a [H]delinear lo que realmente deseas alcanzar[/H]. Especifica tus metas y haz que se conviertan en parte de tu rutina diaria. Dale forma a tu futuro y siente la emoción de lograrlo. Escribe tus objetivos, léelos en voz alta durante 30 segundos y activa esa energía hoy mismo.",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "Dedica unos momentos a delinear lo que realmente deseas alcanzar y asegúrate de que sean metas específicas. [H]Lee esas metas en voz alta cada día, sintiendo la energía de su realización.[/H].",
+        "titulo": "Las conexiones invisibles de la vida",
+        "parrafoTop": "[H]Cada evento significativo es una oportunidad para aprender y crecer.[/H] Reconocer las interacciones sutiles puede transformar la percepción del mundo.",
+        "subtitulo": "¿Es posible que todo lo que experimentamos tenga un propósito más profundo?",
+        "parrafoBot": "Después de notar una sincronicidad, [H]dedica 30 segundos a escribir lo que aprendiste de esa experiencia.[/H] La reflexión potencia el entendimiento.",
         "style": {
-          "accent": "#f9c74f",
+          "accent": "#81c784",
           "ink": "#ffffff",
-          "paper": "#333333",
-          "border": "#b7b7b7"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos momentos a delinear lo que realmente deseas alcanzar y asegúrate de que sean metas específicas. Lee esas metas en voz alta cada día, sintiendo la energía de su realización."
+          "paper": "#1b1b1b",
+          "border": "#2a2a2a"
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20ciencia%20del%20%C3%A9xito%20Napoleon%20Hill%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20casualidades%20no%20existen%20Borja%20Vilaseca%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El poder de la concentración absoluta",
-      "autor": "Dandapani",
-      "tagline": "Herramientas Prácticas Para Curarse de la Distracción Y Vivir Con Alegría Y Propósito",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d9/7b/22/d97b22e5-bf04-0347-be42-e292765dca7f/9788411191036.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/d9/7b/22/d97b22e5-bf04-0347-be42-e292765dca7f/9788411191036.jpg/626x0w.jpg",
+      "titulo": "Cuestión de límites",
+      "autor": "Nedra Glover",
+      "tagline": "La falta de límites nos conduce a una cultura del burnout y a una sociedad exhausta y sobrepasada",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/9f/fd/b6/9ffdb681-b177-507c-ade6-7347e5a685a3/9786070777790.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/9f/fd/b6/9ffdb681-b177-507c-ade6-7347e5a685a3/9786070777790.jpg/626x0w.jpg",
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "personal",
-      "punto": "enfoque total",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "claridad",
-        "presencia",
-        "tranquilidad",
-        "intencionalidad"
+        "agobio",
+        "autocuidado",
+        "desbordamiento",
+        "frustración"
       ],
       "frases": [
-        "🧘‍♂️ Dedica un minuto a respirar profundamente, sintiendo cada inhalación y exhalación.",
-        "📵 Apaga todas las notificaciones de tu teléfono durante diez minutos para centrarte en el momento presente.",
-        "📝 Escribe tres cosas por las que te sientas agradecido hoy, creando un sentido de conexión con el ahora.",
-        "⏳ Establece un temporizador de cinco minutos y enfócate en una sola tarea sin distracciones."
+        "😟 Reconoce el agobio y establece un límite claro hoy mismo.",
+        "💆‍♀️ Dedica 15 minutos a practicar autocuidado en tu rutina diaria.",
+        "🌀 Identifica un desbordamiento emocional y anótalo para reflexionar después.",
+        "😤 Permítete sentir la frustración, pero define un paso pequeño para avanzar."
       ],
       "colores": [
-        "#2d132c",
-        "#3f1c34",
-        "#5a283a",
-        "#847b97"
+        "#f44336",
+        "#8bc34a",
+        "#2196f3",
+        "#ff9800"
       ],
-      "fondo": "#121212",
+      "fondo": "#1a1a1a",
       "textColors": [
         "#FFFFFF",
+        "#000000",
         "#FFFFFF",
-        "#FFFFFF",
-        "#FFFFFF"
+        "#000000"
       ],
       "tarjeta": {
-        "titulo": "Lo que Dandapani corrige",
-        "parrafoTop": "[H]Concentración que transforma.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Practicar la concentración absoluta puede llevar a un incremento notable en la productividad y satisfacción personal, ayudando a reducir el estrés diario. [/H] El primer paso es dedicar solo cinco minutos a una tarea sin distracciones, estableciendo un temporizador. Desconecta las notificaciones y sumérgete en lo que realmente importa.",
+        "titulo": "Límites sanos como práctica diaria",
+        "parrafoTop": "[H]Establecer límites claros permite transformar la vida emocional.[/H] Conduce a una existencia menos agotadora.",
+        "subtitulo": "¿Los límites son una herramienta para proteger el bienestar?",
+        "parrafoBot": "Tras reconocer el agobio, [H]dedica 15 segundos a definir un límite claro hoy.[/H] Esa acción puede ser transformadora.",
         "style": {
-          "accent": "#7f9c3b",
-          "ink": "#e0e0e0",
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
           "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar solo cinco minutos a una tarea sin distracciones puede llevar a un incremento notable en la productividad y satisfacción. Prueba a establecer un temporizador y sumérgete plenamente en lo que haces."
+        }
       },
       "tarjeta_base": {
-        "titulo": "El arte de la atención plena",
-        "parrafoTop": "Cultivar el enfoque permite transformar momentos ordinarios en experiencias significativas. Dandapani ofrece herramientas prácticas para descubrir el [H]potencial escondido de cada instante[/H].",
-        "subtitulo": "Enfoque y alegría cotidiana",
-        "parrafoBot": "[H]Dedicar solo cinco minutos a una tarea sin distracciones puede llevar a un incremento notable en la productividad y satisfacción.[/H] Prueba a establecer un temporizador y sumérgete plenamente en lo que haces.",
+        "titulo": "Límites sanos como práctica diaria",
+        "parrafoTop": "[H]Establecer límites claros permite transformar la vida emocional.[/H] Conduce a una existencia menos agotadora.",
+        "subtitulo": "¿Los límites son una herramienta para proteger el bienestar?",
+        "parrafoBot": "Tras reconocer el agobio, [H]dedica 15 segundos a definir un límite claro hoy.[/H] Esa acción puede ser transformadora.",
         "style": {
-          "accent": "#7f9c3b",
-          "ink": "#e0e0e0",
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
           "border": "#444444"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Lo que Dandapani corrige",
-        "parrafoTop": "[H]Concentración que transforma.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]Practicar la concentración absoluta puede llevar a un incremento notable en la productividad y satisfacción personal, ayudando a reducir el estrés diario. [/H] El primer paso es dedicar solo cinco minutos a una tarea sin distracciones, estableciendo un temporizador. Desconecta las notificaciones y sumérgete en lo que realmente importa.",
+        "titulo": "Límites sanos como práctica diaria",
+        "parrafoTop": "[H]Establecer límites claros permite transformar la vida emocional.[/H] Conduce a una existencia menos agotadora.",
+        "subtitulo": "¿Los límites son una herramienta para proteger el bienestar?",
+        "parrafoBot": "Tras reconocer el agobio, [H]dedica 15 segundos a definir un límite claro hoy.[/H] Esa acción puede ser transformadora.",
         "style": {
-          "accent": "#7f9c3b",
-          "ink": "#e0e0e0",
+          "accent": "#8bc34a",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
           "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedicar solo cinco minutos a una tarea sin distracciones puede llevar a un incremento notable en la productividad y satisfacción. Prueba a establecer un temporizador y sumérgete plenamente en lo que haces."
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20de%20la%20concentraci%C3%B3n%20absoluta%20Dandapani%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuesti%C3%B3n%20de%20l%C3%ADmites%20Nedra%20Glover%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "El cisne negro",
-      "autor": "Nassim Nicholas Taleb",
-      "tagline": "El impacto de lo altamente improbable",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/bf/05/29/bf052975-7092-ce71-db39-5660f32a0282/9788449328176.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/bf/05/29/bf052975-7092-ce71-db39-5660f32a0282/9788449328176.jpg/626x0w.jpg",
+      "titulo": "Pequeños hábitos grandes cambios",
+      "autor": "Steven Handel",
+      "tagline": "Repleto de consejos útiles y técnicas efectivas este libro hace que cambiar tus hábitos sea simple y divertido Se enfoca en hacer pequeños cambios que crearán mejoras duraderas en tu vida",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/1d/d6/9e/1dd69e58-ad8a-8f74-5c8d-3cbcc620d092/9786073180573.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/1d/d6/9e/1dd69e58-ad8a-8f74-5c8d-3cbcc620d092/9786073180573.jpg/626x0w.jpg",
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "210x297mm",
-      "punto": "Dewey Decimal: 001.542",
+      "dimension": "Bienestar|Prosperidad|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "incertidumbre",
-        "aleatoriedad",
-        "resiliencia",
-        "asimetría"
+        "transformación",
+        "autonomía",
+        "progreso",
+        "satisfacción"
       ],
       "frases": [
-        "📝 Reflexiona sobre una decisión reciente que resultó inesperada.",
-        "🔍 Identifica una situación en tu vida donde la incertidumbre fue clave.",
-        "💡 Haz una lista de eventos improbables que cambiaron el curso de tu historia.",
-        "🌍 Observa cómo la aleatoriedad influye en las decisiones cotidianas."
+        "🌱 Inicia un nuevo hábito pequeño, como beber un vaso de agua cada mañana.",
+        "📅 Dedica 5 minutos a planificar tu día y establece tus intenciones.",
+        "📝 Escribe tres cosas por las que estás agradecido hoy para elevar tu ánimo.",
+        "🏃‍♂️ Da una breve caminata al aire libre para revitalizar tu energía y mente."
       ],
       "colores": [
-        "#f1f1f2",
-        "#ffdd57",
-        "#007d9c",
-        "#e3e3e3"
+        "#A3D9A0",
+        "#FFE09E",
+        "#FF6F61",
+        "#B2E0F8"
       ],
-      "fondo": "#121212",
+      "fondo": "#1A1A1A",
       "textColors": [
         "#000000",
         "#000000",
@@ -1463,124 +1223,264 @@
         "#000000"
       ],
       "tarjeta": {
-        "titulo": "Desentrañando la Aleatoriedad",
-        "parrafoTop": "La vida está llena de [H]decisiones inesperadas que nos marcan[/H]. Reconocer cómo la incertidumbre y la asimetría influyen en el día a día permite construir resiliencia.",
-        "subtitulo": "Identifica momentos sorprendentes que alteraron tu camino",
-        "parrafoBot": "[H]Hoy, haz una lista de esos eventos improbables que moldearon tu historia. [/H]",
+        "titulo": "Pequeños cambios, grandes resultados",
+        "parrafoTop": "[H]Un solo pequeño hábito puede desencadenar un cambio duradero.[/H] Este principio resuena con quienes buscan mejoras en su vida.",
+        "subtitulo": "¿Es posible que lo simple tenga el poder de transformar nuestra rutina?",
+        "parrafoBot": "Tras practicar la gratitud, [H]dedica 30 segundos a identificar otro hábito pequeño que puedas incorporar hoy.[/H] Cultiva el inicio de un nuevo camino.",
         "style": {
-          "accent": "#2c3e50",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Reflexionar sobre decisiones recientes puede revelar patrones ocultos. Hacer una lista de aquellos momentos sorprendentes ayudará a identificar cómo la aleatoriedad transforma experiencias personales."
+          "accent": "#ffd700",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
       },
       "tarjeta_base": {
-        "titulo": "El impacto de lo inesperado",
-        "parrafoTop": "En un mundo donde lo que parece trivial puede tener consecuencias significativas, Nassim Nicholas Taleb explora cómo [H]los eventos altamente improbables alteran la historia y el destino[/H].",
-        "subtitulo": "La paradoja del cisne negro",
-        "parrafoBot": "Reflexionar sobre decisiones recientes puede revelar patrones ocultos. Hacer una lista de aquellos momentos sorprendentes ayudará a identificar [H]cómo la aleatoriedad transforma experiencias personales[/H].",
+        "titulo": "Pequeños cambios, grandes resultados",
+        "parrafoTop": "[H]Un solo pequeño hábito puede desencadenar un cambio duradero.[/H] Este principio resuena con quienes buscan mejoras en su vida.",
+        "subtitulo": "¿Es posible que lo simple tenga el poder de transformar nuestra rutina?",
+        "parrafoBot": "Tras practicar la gratitud, [H]dedica 30 segundos a identificar otro hábito pequeño que puedas incorporar hoy.[/H] Cultiva el inicio de un nuevo camino.",
         "style": {
-          "accent": "#2c3e50",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
+          "accent": "#ffd700",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Desentrañando la Aleatoriedad",
-        "parrafoTop": "La vida está llena de [H]decisiones inesperadas que nos marcan[/H]. Reconocer cómo la incertidumbre y la asimetría influyen en el día a día permite construir resiliencia.",
-        "subtitulo": "Identifica momentos sorprendentes que alteraron tu camino",
-        "parrafoBot": "[H]Hoy, haz una lista de esos eventos improbables que moldearon tu historia. [/H]",
+        "titulo": "Pequeños cambios, grandes resultados",
+        "parrafoTop": "[H]Un solo pequeño hábito puede desencadenar un cambio duradero.[/H] Este principio resuena con quienes buscan mejoras en su vida.",
+        "subtitulo": "¿Es posible que lo simple tenga el poder de transformar nuestra rutina?",
+        "parrafoBot": "Tras practicar la gratitud, [H]dedica 30 segundos a identificar otro hábito pequeño que puedas incorporar hoy.[/H] Cultiva el inicio de un nuevo camino.",
         "style": {
-          "accent": "#2c3e50",
-          "ink": "#ecf0f1",
-          "paper": "#34495e",
-          "border": "#7f8c8d"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Reflexionar sobre decisiones recientes puede revelar patrones ocultos. Hacer una lista de aquellos momentos sorprendentes ayudará a identificar cómo la aleatoriedad transforma experiencias personales."
+          "accent": "#ffd700",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20cisne%20negro%20Nassim%20Nicholas%20Taleb%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Peque%C3%B1os%20h%C3%A1bitos%20grandes%20cambios%20Steven%20Handel%20entrevista%20espa%C3%B1ol"
     },
     {
-      "titulo": "Conciencia",
-      "autor": "Osho",
-      "tagline": "La clave para vivir en equilibrio",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/7d/23/e0/7d23e0e5-321f-3470-c7da-ef731aaa2614/9788425345135.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/7d/23/e0/7d23e0e5-321f-3470-c7da-ef731aaa2614/9788425345135.jpg/626x0w.jpg",
+      "titulo": "Cómo sanar tu ansiedad cuando nadie más puede hacerlo",
+      "autor": "Amy B. Scher",
+      "tagline": "comparte sus métodos comprobados para abordar y curar la raíz de la ansiedad cambiar creencias dañinas calmar tu cuerpo y liberar la vieja energía emocional que te detiene.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a7/dd/fe/a7ddfe95-fccf-918f-a2cf-56ab37e29839/9786073182041.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a7/dd/fe/a7ddfe95-fccf-918f-a2cf-56ab37e29839/9786073182041.jpg/626x0w.jpg",
       "isbn": "",
       "contexto_2026": {},
       "lente_activo": "",
-      "dimension": "300x600",
-      "punto": "Conciencia",
+      "dimension": "Bienestar|Liberación|Empoderamiento",
+      "punto": "Cero|Creativo|Activo|Máximo",
       "palabras": [
-        "equilibrio",
-        "interioridad",
-        "sabiduría",
-        "transformación"
+        "sanación",
+        "autocompasión",
+        "liberación",
+        "calma"
       ],
       "frases": [
-        "🌿 Observa tu respiración durante un minuto.",
-        "💡 Escribe una reflexión sobre lo que significa el equilibrio para ti.",
-        "🕊️ Camina en silencio, sintiendo cada paso en el suelo.",
-        "📖 Lee una página de 'Conciencia' y anota tu impresión."
+        "🌱 Respira profundamente y suelta la tensión de tu cuerpo en solo 30 segundos.",
+        "💖 Practica la autocompasión mirando tus reflejos en un espejo durante un minuto.",
+        "🌊 Escribe una carta a tu ansiedad, desahogando tus emociones en menos de 60 segundos.",
+        "🧘‍♀️ Dedica unos instantes a meditar sobre lo que sientes y cómo quieres cambiarlo."
       ],
       "colores": [
+        "#74c69d",
+        "#ffb100",
         "#f9c74f",
-        "#90be6d",
-        "#277da1",
-        "#f3722c"
+        "#90be6d"
       ],
-      "fondo": "#000000",
+      "fondo": "#2a2a2a",
       "textColors": [
         "#000000",
         "#000000",
+        "#000000",
+        "#000000"
+      ],
+      "tarjeta": {
+        "titulo": "Liberar la energía emocional atrapada",
+        "parrafoTop": "[H]El proceso de curación comienza al afrontar creencias dañinas.[/H] Esto permite un cambio profundo en la percepción de la ansiedad.",
+        "subtitulo": "¿Es posible transformar la relación con la ansiedad y encontrar paz?",
+        "parrafoBot": "Luego de escribir tu carta a la ansiedad, [H]dedica 30 segundos a respirar profundamente y conectar con tu cuerpo.[/H] La conexión te llevará a nuevas percepciones.",
+        "style": {
+          "accent": "#5cb85c",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Liberar la energía emocional atrapada",
+        "parrafoTop": "[H]El proceso de curación comienza al afrontar creencias dañinas.[/H] Esto permite un cambio profundo en la percepción de la ansiedad.",
+        "subtitulo": "¿Es posible transformar la relación con la ansiedad y encontrar paz?",
+        "parrafoBot": "Luego de escribir tu carta a la ansiedad, [H]dedica 30 segundos a respirar profundamente y conectar con tu cuerpo.[/H] La conexión te llevará a nuevas percepciones.",
+        "style": {
+          "accent": "#5cb85c",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Liberar la energía emocional atrapada",
+        "parrafoTop": "[H]El proceso de curación comienza al afrontar creencias dañinas.[/H] Esto permite un cambio profundo en la percepción de la ansiedad.",
+        "subtitulo": "¿Es posible transformar la relación con la ansiedad y encontrar paz?",
+        "parrafoBot": "Luego de escribir tu carta a la ansiedad, [H]dedica 30 segundos a respirar profundamente y conectar con tu cuerpo.[/H] La conexión te llevará a nuevas percepciones.",
+        "style": {
+          "accent": "#5cb85c",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+C%C3%B3mo%20sanar%20tu%20ansiedad%20cuando%20nadie%20m%C3%A1s%20puede%20hacerlo%20Amy%20B.%20Scher%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Lo que nunca cambia en un mundo cambiante",
+      "autor": "Morgan Housel",
+      "tagline": "23 lecciones atemporales para nuestra vida personal y financiera",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/4b/a0/20/4ba02068-a80a-6933-5008-190ad2baef7f/9788408285502.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/4b/a0/20/4ba02068-a80a-6933-5008-190ad2baef7f/9788408285502.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Bienestar|Sabiduría|Conexión",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "resiliencia",
+        "adaptabilidad",
+        "reflexión",
+        "sabiduría"
+      ],
+      "frases": [
+        "🌱 Reflexiona sobre tus decisiones pasadas y aprende de ellas en 15 seg.",
+        "🔍 Observa cómo los cambios en tu entorno impactan tu vida en 30 seg.",
+        "💡 Identifica una lección valiosa de un desafío reciente en solo 60 seg.",
+        "🧠 Practica la gratitud reconociendo tres cosas positivas hoy mismo."
+      ],
+      "colores": [
+        "#4caf50",
+        "#2196f3",
+        "#ff9800",
+        "#9c27b0"
+      ],
+      "fondo": "#2a2a2a",
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF"
+      ],
+      "tarjeta": {
+        "titulo": "Cambio en la perspectiva de lo constante",
+        "parrafoTop": "[H]La vida está marcada por ciclos y lecciones que se repiten.[/H] Estos patrones ofrecen oportunidades para crecer.",
+        "subtitulo": "¿Qué aprendemos cuando aceptamos la inevitabilidad del cambio?",
+        "parrafoBot": "Tras reconocer los aprendizajes previos, [H]dedica 30 segundos a identificar un ciclo en tu vida y cómo puedes abordarlo de manera diferente.[/H] Reflexiona sobre el futuro.",
+        "style": {
+          "accent": "#8ecae6",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Cambio en la perspectiva de lo constante",
+        "parrafoTop": "[H]La vida está marcada por ciclos y lecciones que se repiten.[/H] Estos patrones ofrecen oportunidades para crecer.",
+        "subtitulo": "¿Qué aprendemos cuando aceptamos la inevitabilidad del cambio?",
+        "parrafoBot": "Tras reconocer los aprendizajes previos, [H]dedica 30 segundos a identificar un ciclo en tu vida y cómo puedes abordarlo de manera diferente.[/H] Reflexiona sobre el futuro.",
+        "style": {
+          "accent": "#8ecae6",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Cambio en la perspectiva de lo constante",
+        "parrafoTop": "[H]La vida está marcada por ciclos y lecciones que se repiten.[/H] Estos patrones ofrecen oportunidades para crecer.",
+        "subtitulo": "¿Qué aprendemos cuando aceptamos la inevitabilidad del cambio?",
+        "parrafoBot": "Tras reconocer los aprendizajes previos, [H]dedica 30 segundos a identificar un ciclo en tu vida y cómo puedes abordarlo de manera diferente.[/H] Reflexiona sobre el futuro.",
+        "style": {
+          "accent": "#8ecae6",
+          "ink": "#ffffff",
+          "paper": "#1a1a1a",
+          "border": "#333333"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Lo%20que%20nunca%20cambia%20en%20un%20mundo%20cambiante%20Morgan%20Housel%20entrevista%20espa%C3%B1ol"
+    },
+    {
+      "titulo": "Ser justo en un mundo injusto",
+      "autor": "Ryan Holiday",
+      "tagline": "Para los antiguos la justicia iba mucho más allá que lo que sucedía en un tribunal. Era mucho más urgente que las ideas que se debatían en las aulas de Filosofía. Implicaba una forma de vida el compromiso personal de hacer lo correcto por difícil que fuera. Ryan Holiday afirma que la justicia es la virtud que rige todas las demás virtudes.Todo lo que vale la pena perseguir en la vida debe surgir de un compromiso con la justicia del deseo de hacer el bien en este mundo.Solo con esta virtud fundamental podrás pasar de la bondad a la grandeza.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/26/a7/de/26a7de85-b5ee-347e-d45e-4705dc13cc82/9788417992897.jpg/626x0w.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/26/a7/de/26a7de85-b5ee-347e-d45e-4705dc13cc82/9788417992897.jpg/626x0w.jpg",
+      "isbn": "",
+      "contexto_2026": {},
+      "lente_activo": "",
+      "dimension": "Justicia|Ética|Compromiso",
+      "punto": "Cero|Creativo|Activo|Máximo",
+      "palabras": [
+        "integridad",
+        "coraje",
+        "empatía",
+        "honestidad"
+      ],
+      "frases": [
+        "🤝 Reflexiona sobre cómo puedes ser un agente de justicia hoy.",
+        "🛡️ Toma una decisión valiente, incluso si es difícil de afrontar.",
+        "💬 Comparte una historia donde hayas defendido lo correcto.",
+        "🌱 Haz un acto de bondad al azar por alguien que lo necesite."
+      ],
+      "colores": [
+        "#d9b310",
+        "#6a994e",
+        "#f27c00",
+        "#2e3a40"
+      ],
+      "fondo": "#1a1a1a",
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
         "#FFFFFF",
         "#FFFFFF"
       ],
       "tarjeta": {
-        "titulo": "Lo que Osho corrige",
-        "parrafoTop": "[H]Encuentra el equilibrio en tu ser.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]La respiración consciente abre las puertas a una sabiduría interior que transforma. [/H] Haz una pausa y siente cómo cada paso en silencio te conecta con el presente. Dedica un minuto hoy para observar tu respiración y anota lo que descubras sobre tu propio equilibrio.",
+        "titulo": "Justicia como virtud fundamental",
+        "parrafoTop": "[H]El compromiso con la justicia transforma cada acción en bien.[/H] Una guía para actuar con rectitud en un mundo desafiante.",
+        "subtitulo": "¿Es posible ser justo cuando todo parece injusto?",
+        "parrafoBot": "Después de realizar actos de bondad, [H]dedica 30 segundos a pensar en una decisión justa que puedas tomar hoy.[/H] La justicia comienza con pequeños pasos.",
         "style": {
-          "accent": "#ffb400",
-          "ink": "#e0e0e0",
+          "accent": "#ffcc00",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos minutos a observar tu respiración y reflexionar sobre el equilibrio en tu vida; anota tus pensamientos para profundizar en este proceso de autoexploración."
+          "border": "#333333"
+        }
       },
       "tarjeta_base": {
-        "titulo": "Explora la esencia del ser",
-        "parrafoTop": "Osho ofrece una mirada profunda hacia lo que significa realmente [H]vivir en armonía con uno mismo[/H]. La conexión entre mente y cuerpo se convierte en un viaje hacia el entendimiento personal.",
-        "subtitulo": "Prácticas para el autoconocimiento",
-        "parrafoBot": "Dedica unos minutos a [H]observar tu respiración y reflexionar sobre el equilibrio en tu vida[/H]; anota tus pensamientos para profundizar en este proceso de autoexploración.",
+        "titulo": "Justicia como virtud fundamental",
+        "parrafoTop": "[H]El compromiso con la justicia transforma cada acción en bien.[/H] Una guía para actuar con rectitud en un mundo desafiante.",
+        "subtitulo": "¿Es posible ser justo cuando todo parece injusto?",
+        "parrafoBot": "Después de realizar actos de bondad, [H]dedica 30 segundos a pensar en una decisión justa que puedas tomar hoy.[/H] La justicia comienza con pequeños pasos.",
         "style": {
-          "accent": "#ffb400",
-          "ink": "#e0e0e0",
+          "accent": "#ffcc00",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
-          "border": "#444444"
+          "border": "#333333"
         }
       },
       "tarjeta_presentacion": {
-        "titulo": "Lo que Osho corrige",
-        "parrafoTop": "[H]Encuentra el equilibrio en tu ser.[/H]",
-        "subtitulo": "Hazlo ahora",
-        "parrafoBot": "[H]La respiración consciente abre las puertas a una sabiduría interior que transforma. [/H] Haz una pausa y siente cómo cada paso en silencio te conecta con el presente. Dedica un minuto hoy para observar tu respiración y anota lo que descubras sobre tu propio equilibrio.",
+        "titulo": "Justicia como virtud fundamental",
+        "parrafoTop": "[H]El compromiso con la justicia transforma cada acción en bien.[/H] Una guía para actuar con rectitud en un mundo desafiante.",
+        "subtitulo": "¿Es posible ser justo cuando todo parece injusto?",
+        "parrafoBot": "Después de realizar actos de bondad, [H]dedica 30 segundos a pensar en una decisión justa que puedas tomar hoy.[/H] La justicia comienza con pequeños pasos.",
         "style": {
-          "accent": "#ffb400",
-          "ink": "#e0e0e0",
+          "accent": "#ffcc00",
+          "ink": "#ffffff",
           "paper": "#1a1a1a",
-          "border": "#444444"
-        },
-        "promptFlavor": "appscript-second-pass",
-        "seed": "Dedica unos minutos a observar tu respiración y reflexionar sobre el equilibrio en tu vida; anota tus pensamientos para profundizar en este proceso de autoexploración."
+          "border": "#333333"
+        }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Conciencia%20Osho%20entrevista%20espa%C3%B1ol"
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ser%20justo%20en%20un%20mundo%20injusto%20Ryan%20Holiday%20entrevista%20espa%C3%B1ol"
     }
   ]
 }
