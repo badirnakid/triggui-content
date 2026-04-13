@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.5.0 — DOBLE DESTILACIÓN EDITORIAL + HIGHLIGHTS CANÓNICOS
+   TRIGGUI v9.6.0 — FUSIÓN EDITORIAL CANÓNICA + RANDOM REAL
 
-   CAMBIOS v9.5.0:
+   CAMBIOS v9.6.0:
    ✅ Highlight canónico único: [H]...[/H]
    ✅ Compatibilidad legacy: [H]...[H] y {{H}}...{{/H}}
    ✅ Verificador alineado: mínimo 2 highlights reales
@@ -9,13 +9,13 @@
    ✅ Mantiene SINGLE + BATCH
    ✅ Mantiene prompts externos con fallback automático
    ✅ Mantiene GPT-4o-mini
-   ✅ Segunda destilación editorial estilo Apps Script dentro de build-contenido
+   ✅ Second pass conservado pero apagado por default
    ✅ contenido_edicion.json sale ya con tarjeta final canónica + variante presentación
    ✅ Sin tocar arquitectura downstream ni romper SINGLE/BATCH
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
-import path from "node:path";
+import { randomInt } from "node:crypto";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
 
@@ -90,7 +90,7 @@ const CFG = {
   },
 
   secondPass: {
-    enabled: true,
+    enabled: false,
     temperature: 1.5,
     topP: 0.9,
     maxWords: 60
@@ -160,7 +160,7 @@ const utils = {
   shuffle(arr) {
     const copy = [...arr];
     for (let i = copy.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * (i + 1));
+      const j = randomInt(i + 1);
       [copy[i], copy[j]] = [copy[j], copy[i]];
     }
     return copy;
@@ -273,7 +273,7 @@ function sanitizeSubtitleText(text) {
     .trim();
 
   const normalized = normalizeSentence(clean);
-  if (!normalized) return "Hazlo ahora";
+  if (!normalized) return "";
 
   const words = normalized.split(/\s+/).filter(Boolean);
   if (words.length > 8 || normalized.length > 72) {
@@ -429,19 +429,16 @@ function normalizeTarjetaObject(tarjeta = {}) {
     clean.parrafoBot = removeRepeatedSentences(clean.parrafoBot, clean.parrafoTop, clean.subtitulo);
   }
 
-  if (!clean.parrafoBot || tooSimilarText(clean.parrafoTop, clean.parrafoBot)) {
-    clean.parrafoBot = ensureMinimumHighlights(
-      "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
-      1
-    );
-  }
+  clean.titulo = sanitizeTitleText(clean.titulo);
+  clean.subtitulo = sanitizeSubtitleText(clean.subtitulo);
+  clean.parrafoTop = normalizeHighlightSyntax(clean.parrafoTop);
+  clean.parrafoBot = normalizeHighlightSyntax(clean.parrafoBot);
 
   return clean;
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   🕐 CONTEXTO DINÁMICO
-═══════════════════════════════════════════════════════════════ */
+   🕐 CONTEXTO DINÁMICO═══════════════════════════════════════════════════════════════ */
 
 function getContexto() {
   const now = new Date();
@@ -571,8 +568,9 @@ function buildBasePrompt(libro, ctx) {
   const prohibidosC = [...state.colores].join(", ");
 
   return `
-Eres Triggui. Sistema editorial de activación real.
-No escribes para entretener. Escribes para provocar un gesto físico: abrir un libro.
+Eres Triggui. Editor editorial de activación real.
+No escribes para entretener. No escribes reseñas. No haces marketing.
+Escribes para provocar un gesto físico: abrir un libro.
 
 LIBRO:
 "${libro.titulo}" — ${libro.autor}
@@ -582,18 +580,20 @@ CONTEXTO:
 ${ctx.dia} ${ctx.hora}h
 Energía usuario: ${Math.round(ctx.energia * 100)}%
 Rango Hawkins objetivo: ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
+Franja: ${ctx.franja}
 
-${prohibidas ? `PROHIBIDO repetir estas palabras: ${prohibidas}` : ""}
-${prohibidosC ? `PROHIBIDO repetir estos colores: ${prohibidosC}` : ""}
+${prohibidas ? `PALABRAS YA USADAS (PROHIBIDO repetir): ${prohibidas}` : ""}
+${prohibidosC ? `COLORES YA USADOS (PROHIBIDO repetir): ${prohibidosC}` : ""}
 
-REGLAS:
+VERDADES FIJAS:
 - Si esto sirve para otro libro, fracasaste.
-- No inventes citas.
+- No inventes citas, escenas, conceptos ni promesas que no puedas sostener.
+- GPT-4o-mini no navega. Trabaja con rasgos específicos que conozcas del libro.
+- Si tu base es insuficiente, reduce la ambición y ve a una verdad más sobria, concreta y honesta.
 - No uses primera persona.
-- No hagas marketing.
-- Debes sonar humano, sobrio, preciso, observacional.
-- El resultado debe sentirse curado, no algorítmico.
-`;
+- No suenes a IA, a resumen escolar ni a plantilla motivacional.
+- Debes sonar humano, sobrio, preciso, observacional y útil.
+`.trim();
 }
 
 function buildPrompt(libro, tipo, ctx) {
@@ -610,13 +610,40 @@ GENERAR JSON con:
 - colores (4)
 - fondo
 
-REGLAS:
-- palabras: emocionales, específicas al libro, no genéricas
-- frases: 4 acciones reales de 15-60 segundos, con emoji al inicio
-- colores: hex completos
-- fondo: dark mode real
-- SOLO JSON
-`,
+OBJETIVO:
+Crear activadores emocionales y visuales imposibles de reciclar para otro libro sin que se note.
+
+COMPONENTE 1 — PALABRAS (${CFG.palabras.cantidad})
+- Deben sentirse nacidas del contenido del libro, no del género general.
+- Prioriza tensiones, emociones, conflictos, impulsos o estados que sí pertenezcan a esta obra.
+- Muévelas dentro del rango Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}.
+- Prohibido usar palabras vagas o demasiado amplias.
+
+COMPONENTE 2 — FRASES (${CFG.frases.cantidad})
+- Longitud ideal: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres.
+- Formato: emoji + microacción real de ${CFG.tarjeta.accionMinSeg}-${CFG.tarjeta.accionMaxSeg} segundos.
+- Cada frase debe aterrizar una verdad, metáfora, tensión o gesto específico del libro.
+- Deben sentirse ejecutables hoy.
+- Cada frase debe conectar con una de las palabras elegidas.
+- Prohibido: frases que sirvan para cualquier libro, acciones vacías, promesas abstractas.
+
+COMPONENTE 3 — COLORES (${CFG.colores.cantidad})
+- Formato: hex completo.
+- Los colores deben traducir la atmósfera del libro a una activación visual útil.
+- Ajusta saturación y luminosidad a la energía (${Math.round(ctx.energia * 100)}%) y a la franja ${ctx.franja}.
+- Evita paletas tristes, grises muertos, neones gritones o colores desconectados del tono del libro.
+
+COMPONENTE 4 — FONDO
+- Un solo hex dark mode entre ${CFG.darkMode.paperMin} y ${CFG.darkMode.paperMax}.
+- Debe sostener contraste real y armonizar con la paleta.
+
+REGLAS DURAS:
+- No repitas palabras ni colores prohibidos.
+- No metas explicaciones en el JSON.
+- No uses comodines tipo "presencia", "claridad", "transformación" a menos que sean inevitables y realmente propias del libro.
+- Antes de responder, pregúntate: ¿esto le quedaría igual de bien a otro libro? Si sí, regenera.
+
+SOLO JSON.`,
 
     estilo: `${base}
 
@@ -626,12 +653,18 @@ GENERAR JSON de style dark mode:
 - paper
 - border
 
+OBJETIVO:
+Traducir la atmósfera real del libro a una interfaz oscura elegante, legible y específica.
+
 REGLAS:
-- accent debe reflejar la atmósfera del libro
-- paper oscuro real
-- ink claro legible
-- SOLO JSON
-`
+- accent debe capturar la atmósfera del libro y seguir siendo vibrante en móvil.
+- paper debe permanecer dentro del rango oscuro y jamás volverse gris sin intención.
+- ink debe ser claro, limpio y descansado para lectura.
+- border debe ser sutil; acompaña, no compite.
+- Piensa en contraste, tono y temperatura visual, no en decoración.
+- Si el estilo también serviría para cualquier otro libro, regenera.
+
+SOLO JSON.`
   };
 
   return prompts[tipo];
@@ -643,15 +676,23 @@ function buildLegacyTarjetaPrompt(libro, ctx, extra = null) {
     ? extra.frases.join(" | ")
     : (libro.tagline || libro.titulo || "");
 
+  const palabras = extra?.palabras?.length ? extra.palabras.join(", ") : "";
+  const frases = extra?.frases?.length ? extra.frases.join(" | ") : "";
+
   return `${base}
 
-Eres Badir escribiendo una tarjeta editorial mínima, sobria y quirúrgica.
+Eres Badir escribiendo una tarjeta editorial mínima, sobria, quirúrgica y viva.
 
 OBJETIVO:
-- Un título
-- Un primer párrafo
-- Un subtítulo
-- Un segundo párrafo con acción
+- Un título editorial breve
+- Un primer párrafo con verdad útil
+- Un subtítulo que abra el siguiente paso
+- Un segundo párrafo accionable
+
+JOURNEY PREVIO:
+${palabras ? `Palabras activadas: ${palabras}` : "Palabras activadas: n/a"}
+${frases ? `Frases activadas: ${frases}` : "Frases activadas: n/a"}
+Idea semilla: ${ideaSemilla}
 
 FORMATO OBLIGATORIO:
 - Exactamente 4 líneas útiles
@@ -663,22 +704,19 @@ FORMATO OBLIGATORIO:
 - SOLO texto plano
 - Debes usar highlights con el formato EXACTO [H]...[/H]
 - Debe haber mínimo 2 highlights en total: uno en parrafoTop y uno en parrafoBot
-- Nunca marques una palabra aislada; marca una frase útil completa
-- El highlight debe sentirse como subrayado editorial, no decoración
+- Nunca marques una palabra aislada si puedes marcar una frase útil completa
 - El subtítulo jamás lleva [H] ni [/H]
 
 REGLAS:
 - Sin primera persona
-- Sin “según el libro”
-- Sin “dice”
-- Sin “la frase”
-- Integra el libro y/o autor con naturalidad observacional
-- El segundo párrafo debe dejar un siguiente paso real y ejecutable
-- No rellenes
+- Sin “según el libro”, “dice”, “nos recuerda”, “invita a”, “reflexiona”, “trata de”
+- El título debe sentirse único para este libro
+- El primer párrafo debe nombrar una verdad concreta, no un resumen
+- El segundo párrafo debe dejar un siguiente paso real y ejecutable hoy
+- Integra el libro o al autor sólo si suma precisión
+- Si te falta base, baja la ambición pero no rellenes
 - Si suena genérico, reescribe
-
-Semilla interna: ${Math.random().toString(36).slice(2)}
-Idea semilla: ${ideaSemilla}
+- Si sirve para otro libro, fracasaste
 
 DEVUELVE SOLO 4 LÍNEAS:
 [Línea 1: título]
@@ -772,9 +810,6 @@ function splitSemanticLines(text) {
 
 function coerceSecondPassStructure(raw, libro) {
   const lines = splitSemanticLines(raw);
-  const fallbackTitle = libro?.autor
-    ? `Lo que ${libro.autor} corrige`
-    : "Lo que aquí se corrige";
 
   const compact = cleanSecondPassRaw(raw)
     .split(/(?<=[\.!?])\s+/)
@@ -785,14 +820,14 @@ function coerceSecondPassStructure(raw, libro) {
   const line0LooksLikeTitle = isLikelyEditorialTitle(line0);
 
   return {
-    titulo: line0LooksLikeTitle ? sanitizeTitleText(line0) : fallbackTitle,
+    titulo: line0LooksLikeTitle ? sanitizeTitleText(line0) : sanitizeTitleText(line0 || ""),
     parrafoTop: line0LooksLikeTitle
       ? (lines[1] || compact[0] || "")
       : (compact[0] || line0 || ""),
     subtitulo: sanitizeSubtitleText(
       line0LooksLikeTitle
-        ? (lines[2] || "Hazlo ahora")
-        : (lines[1] || "Hazlo ahora")
+        ? (lines[2] || "")
+        : (lines[1] || "")
     ),
     parrafoBot: line0LooksLikeTitle
       ? (lines.slice(3).join(" ").trim() || compact.slice(1).join(" ").trim() || "")
@@ -869,7 +904,7 @@ DEVUELVE SOLO 4 LÍNEAS.
 
 function coerceStructureLikeAppsScript(candidate, libro, tarjetaBase) {
   const titulo = sanitizeTitleText(
-    candidate.titulo || tarjetaBase?.titulo || `Lo que ${libro?.autor || "este libro"} corrige`
+    candidate.titulo || tarjetaBase?.titulo || libro?.tagline || ""
   );
 
   const parrafoTop = ensureMinimumHighlights(
@@ -877,7 +912,7 @@ function coerceStructureLikeAppsScript(candidate, libro, tarjetaBase) {
     1
   );
 
-  const subtitulo = sanitizeSubtitleText(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora");
+  const subtitulo = sanitizeSubtitleText(candidate.subtitulo || tarjetaBase?.subtitulo || "");
 
   const parrafoBot = ensureMinimumHighlights(
     ensurePeriod(normalizeSentence(candidate.parrafoBot || tarjetaBase?.parrafoBot || "")),
@@ -903,14 +938,13 @@ function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
     1
   );
 
-  const subtitulo = sanitizeSubtitleText(String(candidate.subtitulo || tarjetaBase?.subtitulo || "Hazlo ahora").trim()) || "Hazlo ahora";
+  const subtitulo = sanitizeSubtitleText(String(candidate.subtitulo || tarjetaBase?.subtitulo || "").trim());
 
   let titulo = sanitizeTitleText(candidate.titulo);
 
   const fallbackTitles = [
     sanitizeTitleText(tarjetaBase?.titulo),
-    sanitizeTitleText(libro?.tagline),
-    sanitizeTitleText(`Lo que ${libro?.autor || "este libro"} corrige`)
+    sanitizeTitleText(libro?.tagline)
   ].filter(Boolean);
 
   const tituloInvalido =
@@ -922,7 +956,7 @@ function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
   if (tituloInvalido) {
     titulo =
       pickFirstDistinct(parrafoTop, fallbackTitles.filter(isLikelyEditorialTitle)) ||
-      sanitizeTitleText(`Lo que ${libro?.autor || "este libro"} corrige`);
+      sanitizeTitleText(candidate.titulo || tarjetaBase?.titulo || libro?.tagline || "");
   }
 
   parrafoBot = removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo) || parrafoBot;
@@ -938,13 +972,6 @@ function repairSecondPassTarjeta(candidate, libro, tarjetaBase, extra) {
 
     const replacement = pickFirstDistinct(parrafoTop, fallbackBotCandidates);
     if (replacement) parrafoBot = replacement;
-  }
-
-  if (!parrafoBot || tooSimilarText(parrafoTop, parrafoBot)) {
-    parrafoBot = ensureMinimumHighlights(
-      "Hazlo hoy: [H]abre el libro en una página al azar y ejecuta una sola acción concreta.[/H]",
-      1
-    );
   }
 
   return {
@@ -1170,6 +1197,21 @@ function defaultStyle() {
   };
 }
 
+function buildEmergencyTarjeta(libro) {
+  const safeTitle = sanitizeTitleText(libro?.tagline || libro?.titulo || "Entrada mínima");
+  const shortBookTitle = sanitizeTitleText(libro?.titulo || "el libro");
+  const subtitulo = sanitizeSubtitleText(`Vuelve al libro real`) || "Vuelve al libro real";
+
+  return {
+    titulo: safeTitle || "Entrada mínima",
+    parrafoTop: `[H]Cuando una generación no alcanza el nivel del libro, no conviene fingir profundidad.[/H] La salida correcta es volver a la fuente y recuperar una verdad sobria.`,
+    subtitulo,
+    parrafoBot: `[H]Abre ${shortBookTitle} en una página cualquiera y subraya una idea que siga viva hoy.[/H] Desde ahí se reconstruye una edición mejor.`,
+    style: defaultStyle(),
+    promptFlavor: "emergency-fallback"
+  };
+}
+
 /* ═══════════════════════════════════════════════════════════════
    ⚡ ENRIQUECIMIENTO
 ═══════════════════════════════════════════════════════════════ */
@@ -1290,44 +1332,29 @@ async function enrich(libro, ctx) {
     }
   }
 
-  return {
-    ...libro,
-    dimension: "Bienestar",
-    punto: "Cero",
-    palabras: ["inercia", "claridad", "foco", "presencia"],
-    frases: [
-      "🚶 Camina 10 pasos lentos sin pensar en nada más",
-      "🧠 Nombra una idea que no debes seguir posponiendo",
-      "📖 Abre el libro en una página al azar y lee una línea",
-      "✨ Quédate 30 segundos quieto y escucha tu siguiente impulso"
-    ],
-    colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
-    textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
-    fondo: "#0a0a0a",
-    portada: libro.portada || `📚 ${libro.titulo}`,
-    tarjeta: {
-      titulo: "El gesto que rompe la inercia",
-      parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
-      subtitulo: "Un siguiente paso pequeño",
-      parrafoBot: "Hazlo hoy: [H]abre el libro físico más cercano y lee una sola línea completa.[/H] Ese gesto basta para cambiar el ritmo del momento.",
-      style: defaultStyle()
-    },
-    tarjeta_base: {
-      titulo: "El gesto que rompe la inercia",
-      parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
-      subtitulo: "Un siguiente paso pequeño",
-      parrafoBot: "Hazlo hoy: [H]abre el libro físico más cercano y lee una sola línea completa.[/H] Ese gesto basta para cambiar el ritmo del momento.",
-      style: defaultStyle()
-    },
-    tarjeta_presentacion: {
-      titulo: "El gesto que rompe la inercia",
-      parrafoTop: "[H]La lectura no empieza cuando se entiende todo.[/H] Empieza cuando se interrumpe la inercia y se abre una página.",
-      subtitulo: "Un siguiente paso pequeño",
-      parrafoBot: "Hazlo hoy: [H]abre el libro físico más cercano y lee una sola línea completa.[/H] Ese gesto basta para cambiar el ritmo del momento.",
-      style: defaultStyle()
-    },
-    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo || "")}`
-  };
+const tarjetaEmergencia = buildEmergencyTarjeta(libro);
+
+return {
+  ...libro,
+  dimension: "Bienestar",
+  punto: "Cero",
+  palabras: ["inercia", "claridad", "foco", "presencia"],
+  frases: [
+    "🚶 Camina 10 pasos lentos sin pensar en nada más",
+    "🧠 Nombra una idea que no debes seguir posponiendo",
+    "📖 Abre el libro físico y ubica una sola línea vigente",
+    "✨ Quédate 30 segundos quieto y escucha tu siguiente impulso"
+  ],
+  colores: ["#ff8a8a", "#ffb56b", "#8cabff", "#d288ff"],
+  textColors: ["#FFFFFF", "#000000", "#000000", "#FFFFFF"],
+  fondo: "#0a0a0a",
+  portada: libro.portada || `📚 ${libro.titulo}`,
+  tarjeta: tarjetaEmergencia,
+  tarjeta_base: tarjetaEmergencia,
+  tarjeta_presentacion: tarjetaEmergencia,
+  fallbackUsed: true,
+  videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo || "")}`
+};
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1459,7 +1486,7 @@ async function runSingle(ctx) {
   }
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.5.0 — MODO SINGLE (1 libro)      ║");
+  console.log("║  TRIGGUI v9.6.0 — MODO SINGLE (1 libro)      ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
@@ -1472,10 +1499,10 @@ async function runSingle(ctx) {
 
 async function runBatch(ctx) {
   const books = await loadCSVBooks();
-  const selected = books.slice(0, CFG.processing.maxBatch);
+  const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.5.0 — MODO BATCH (contenido)    ║");
+  console.log("║   TRIGGUI v9.6.0 — MODO BATCH (contenido)    ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📚 Fuente: ${CFG.files.csv}`);
   console.log(`📦 Libros a enriquecer: ${selected.length}`);
