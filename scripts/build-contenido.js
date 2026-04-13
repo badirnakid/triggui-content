@@ -1207,7 +1207,13 @@ async function runSingle(ctx) {
   const enriched = await enrich(bookMeta, ctx);
 
   if (enriched._fallback) {
-    console.log(`\n⚠️  SINGLE falló — el libro "${bookMeta.titulo}" no pasó verificación`);
+    console.log(`\n⚠️  SINGLE falló — "${bookMeta.titulo}" no pasó verificación después de ${CFG.processing.maxRetries + 1} intentos`);
+    // Escribir contenido_edicion.json para debugging, pero NO contenido.json
+    await writeSingleOutputs(bookMeta, enriched);
+    // Abortar pipeline para que GitHub Actions NO ejecute build-editions.py,
+    // build-tarjeta-png.js ni build-og-image.js con datos vacíos
+    console.log(`🛑 Pipeline detenido — no se genera edición viva con contenido fallback`);
+    process.exit(1);
   }
 
   await writeSingleOutputs(bookMeta, enriched);
