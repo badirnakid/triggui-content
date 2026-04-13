@@ -243,16 +243,35 @@ function sanitizeTitleText(text) {
 }
 
 function sanitizeSubtitleText(text) {
-  const clean = normalizeSentence(
+  let clean = normalizeSentence(
     stripHighlightTags(String(text || ""))
       .replace(/@@BODY|@@ENDBODY/gi, "")
       .replace(/\n+/g, " ").replace(/\s+/g, " ").trim()
       .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
-      .replace(/[.!?…]+$/g, "").trim()
+      .trim()
   );
   if (!clean) return "";
+
+  const isQuestion = clean.startsWith("¿");
+
+  // Preservar ? en preguntas — solo strip . y …
+  clean = isQuestion
+    ? clean.replace(/[.…]+$/g, "").trim()
+    : clean.replace(/[.!?…]+$/g, "").trim();
+
   const words = clean.split(/\s+/).filter(Boolean);
-  return (words.length > 8 || clean.length > 72) ? words.slice(0, 8).join(" ") : clean;
+  // Preguntas en español necesitan más espacio (12 palabras vs 8)
+  const maxWords = isQuestion ? 12 : 8;
+  const maxChars = isQuestion ? 90 : 72;
+
+  if (words.length > maxWords || clean.length > maxChars) {
+    let truncated = words.slice(0, maxWords).join(" ");
+    // Si truncamos una pregunta, cerrarla con ?
+    if (isQuestion && !truncated.endsWith("?")) truncated += "?";
+    return truncated;
+  }
+
+  return clean;
 }
 
 function isLikelyEditorialTitle(text) {
@@ -289,6 +308,19 @@ function removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo = "") {
 
 function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
   let norm = normalizeHighlightSyntax(text);
+
+  // Primero: eliminar highlights débiles que GPT puso mal
+  // (fragmentos cortos, frases que terminan en preposición/artículo)
+  norm = norm.replace(/\[H\](.*?)\[\/H\]/gi, (match, content) => {
+    const plain = content.trim();
+    if (plain.length < 25) return plain; // Demasiado corto para ser significativo
+    if (/\b(de|del|en|a|al|con|por|para|sin|sobre|entre|hacia|hasta|desde|tras|un|una|el|la|los|las|que|y|o)\s*$/i.test(plain)) {
+      return plain; // Termina en preposición/artículo = fragmento incompleto
+    }
+    return match; // Highlight válido, mantener
+  });
+  norm = normalizeHighlightSyntax(norm);
+
   if (countHighlights(norm) >= minimum) return norm;
 
   const segments = stripHighlightTags(norm)
