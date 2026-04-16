@@ -1,12 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.6.0 — NIVEL DIOS DEFINITIVO
+   TRIGGUI v9.6.1 — NIVEL DIOS DEFINITIVO
 
    Arquitectura v9.5 (SINGLE/BATCH, highlights [H]...[/H], prompts externos)
    + Prompts neurobiológicos v9.0 (Hawkins, dopamina, cronobiología, línea sagrada)
    − Second pass (eliminado, no sólo desactivado — cero código muerto)
    − Fallbacks editoriales (cero texto genérico — si falla, marca _fallback)
 
-   CAMBIOS v9.5 → v9.6.0:
+   CAMBIOS v9.6.0 → v9.6.1:
+   ✅ Bilingüe Paso 1: main prompt pide metadatos nativos ES/EN
+   ✅ Verificador main valida titulo_es, titulo_en, idioma_original, palabras_en, frases_en
+   ✅ Normalización defensiva de campos bilingües (sin romper backward compatibility)
    ✅ Random real: crypto.randomInt (Fisher-Yates criptográfico)
    ✅ Prompts: neurobiología completa restaurada (~110 líneas por tipo)
    ✅ Tarjeta: guías de longitud por campo (tituloGuia, parrafo1Guia, etc.)
@@ -19,7 +22,7 @@
    ✅ GPT-4o-mini (NO CAMBIAR MODELO)
    ✅ Temperatura máxima 1.2 (nunca >1.5 — Archivo Maestro)
 
-   AUTOR: Badir Nakid | VERSIÓN: 9.6.0
+   AUTOR: Badir Nakid | VERSIÓN: 9.6.1
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -279,6 +282,75 @@ function isLikelyEditorialTitle(text) {
   if (!v || v.length < 6 || v.length > 72) return false;
   if ((v.match(/[.!?]/g) || []).length > 0) return false;
   return v.split(/\s+/).filter(Boolean).length <= 8;
+}
+
+function detectLanguageHint(title = "", fallback = "es") {
+  const value = String(title || "").trim();
+  if (!value) return fallback;
+
+  if (/[¿¡áéíóúñü]/i.test(value)) return "es";
+
+  const englishSignals = /\b(the|and|of|for|to|with|without|war|art|mind|life|power|love|time|work|habit|habits|thinking|thinking,|guide|guide:|how|why|when|where|who)\b/i;
+  if (englishSignals.test(value)) return "en";
+
+  return fallback;
+}
+
+function normalizeBilingualMainData(extra = {}) {
+  const safe = { ...extra };
+
+  safe.titulo_es = String(safe.titulo_es || "").trim();
+  safe.titulo_en = String(safe.titulo_en || "").trim();
+
+  if (!safe.titulo_es && typeof safe.titulo === "string") {
+    safe.titulo_es = String(safe.titulo).trim();
+  }
+  if (!safe.titulo_en && typeof safe.titulo === "string") {
+    safe.titulo_en = String(safe.titulo).trim();
+  }
+
+  const guessedIdioma = detectLanguageHint(safe.titulo_en || safe.titulo_es || safe.titulo || "", "es");
+  safe.idioma_original = /^(es|en)$/i.test(String(safe.idioma_original || ""))
+    ? String(safe.idioma_original).trim().toLowerCase()
+    : guessedIdioma;
+
+  safe.palabras_en = Array.isArray(safe.palabras_en)
+    ? safe.palabras_en.map((p) => String(p || "").trim()).filter(Boolean)
+    : [];
+
+  safe.frases_en = Array.isArray(safe.frases_en)
+    ? safe.frases_en.map((f) => String(f || "").trim()).filter(Boolean)
+    : [];
+
+  while (safe.palabras_en.length < CFG.palabras.cantidad) {
+    const idx = safe.palabras_en.length;
+    const fallback = Array.isArray(safe.palabras)
+      ? String(safe.palabras[idx] || safe.palabras[safe.palabras.length - 1] || "").trim()
+      : "";
+    if (!fallback) break;
+    safe.palabras_en.push(fallback);
+  }
+
+  while (safe.frases_en.length < CFG.frases.cantidad) {
+    const idx = safe.frases_en.length;
+    const fallback = Array.isArray(safe.frases)
+      ? String(safe.frases[idx] || safe.frases[safe.frases.length - 1] || "").trim()
+      : "";
+    if (!fallback) break;
+    safe.frases_en.push(fallback);
+  }
+
+  safe.palabras_en = safe.palabras_en.slice(0, CFG.palabras.cantidad);
+  safe.frases_en = safe.frases_en.slice(0, CFG.frases.cantidad);
+
+  if (!safe.titulo_es && safe.idioma_original === "es" && typeof safe.titulo === "string") {
+    safe.titulo_es = String(safe.titulo).trim();
+  }
+  if (!safe.titulo_en && safe.idioma_original === "en" && typeof safe.titulo === "string") {
+    safe.titulo_en = String(safe.titulo).trim();
+  }
+
+  return safe;
 }
 
 function comparableText(text) {
@@ -614,6 +686,20 @@ Rango: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax}
 Elige tono dentro del rango que complemente tu paleta.
 Neurobiología: reduce fatiga visual, prolonga estado alfa.
 
+COMPONENTE 5 - METADATOS BILINGÜES:
+
+Detecta el idioma del título "${libro.titulo}":
+→ Si el título está en español, genera titulo_es con ese título exacto y titulo_en con el título conocido en inglés
+→ Si el título está en inglés, genera titulo_en con ese título exacto y titulo_es con el título conocido en español
+→ Si no existe traducción oficial conocida, genera una versión natural del título en el otro idioma
+→ idioma_original: "es" o "en" según el idioma original del libro
+
+Genera palabras_en: 4 palabras emocionales en inglés que representen las MISMAS emociones que "palabras" pero expresadas nativamente en inglés. NO son traducciones literales — son el equivalente emocional nativo.
+
+Genera frases_en: 4 frases con emoji en inglés que representen las MISMAS micro-acciones que "frases" pero escritas como las escribiría un angloparlante nativo. Misma estructura: emoji + acción + tiempo. El emoji puede ser el mismo o diferente si el tono cultural lo requiere.
+
+CRÍTICO: Las versiones en inglés deben sonar como si un angloparlante las hubiera escrito pensando en inglés. Si suenan a traducción de Google Translate = FALLASTE.
+
 ═══════════════════════════════════════════════════════════════
 📤 OUTPUT:
 ═══════════════════════════════════════════════════════════════
@@ -629,7 +715,17 @@ Neurobiología: reduce fatiga visual, prolonga estado alfa.
     "emoji Acción relacionada al libro ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg"
   ],
   "colores": ["#hex", "#hex", "#hex", "#hex"],
-  "fondo": "#hex"
+  "fondo": "#hex",
+  "titulo_es": "string",
+  "titulo_en": "string",
+  "idioma_original": "es|en",
+  "palabras_en": ["string", "string", "string", "string"],
+  "frases_en": [
+    "emoji string",
+    "emoji string",
+    "emoji string",
+    "emoji string"
+  ]
 }
 
 VERIFICACIÓN ANTES DE RESPONDER:
@@ -637,6 +733,8 @@ VERIFICACIÓN ANTES DE RESPONDER:
 ✓ ¿Palabras aparecen en contenido del libro?
 ✓ ¿Frases conectan con libro específico?
 ✓ ¿Colores reflejan atmósfera + cronobiología?
+✓ ¿titulo_es y titulo_en suenan naturales?
+✓ ¿palabras_en y frases_en NO suenan a traducción literal?
 ✓ ¿Puedo usar esto para otro libro? SI = REGENERA TODO
 
 SOLO JSON.`,
@@ -846,7 +944,18 @@ const VERIFICADOR = {
       tieneColores: Array.isArray(data.colores) && data.colores.length === CFG.colores.cantidad,
       coloresHex: Array.isArray(data.colores) && data.colores.every((c) => /^#[0-9a-f]{6}$/i.test(String(c || ""))),
       tieneFondo: typeof data.fondo === "string" && /^#[0-9a-f]{6}$/i.test(data.fondo),
-      fondoOscuro: typeof data.fondo === "string" && utils.lum(data.fondo) < CFG.darkMode.lumThresholdPaper
+      fondoOscuro: typeof data.fondo === "string" && utils.lum(data.fondo) < CFG.darkMode.lumThresholdPaper,
+      tieneTituloEn: typeof data.titulo_en === "string" && data.titulo_en.trim().length > 2,
+      tieneTituloEs: typeof data.titulo_es === "string" && data.titulo_es.trim().length > 2,
+      idiomaOriginalValido: /^(es|en)$/i.test(String(data.idioma_original || "").trim()),
+      tienePalabrasEn: Array.isArray(data.palabras_en) && data.palabras_en.length === CFG.palabras.cantidad,
+      palabrasEnNoVacias: Array.isArray(data.palabras_en) && data.palabras_en.every((p) => String(p || "").trim().length > 1),
+      tieneFrasesEn: Array.isArray(data.frases_en) && data.frases_en.length === CFG.frases.cantidad,
+      frasesEnConEmoji: Array.isArray(data.frases_en) && data.frases_en.every((f) => /[\p{Emoji}]/u.test(String(f || ""))),
+      frasesEnLongitudOk: Array.isArray(data.frases_en) && data.frases_en.every((f) => {
+        const len = String(f || "").trim().length;
+        return len >= 20 && len <= 180;
+      })
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
@@ -976,7 +1085,7 @@ async function enrich(libro, ctx) {
       // ─── PASO 1: JSON principal ───
       console.log("   [1/3] JSON principal...");
       const rawMain = await call(buildPrompt(libro, "main", ctx), "Genera JSON", ctx.tempDinamica, true);
-      let extra = JSON.parse(rawMain);
+      let extra = normalizeBilingualMainData(JSON.parse(rawMain));
 
       if (CFG.verification.enabled) {
         const v = VERIFICADOR.main(extra);
@@ -998,13 +1107,21 @@ async function enrich(libro, ctx) {
       if (repetidas.length > 0) {
         console.log(`   ⚠️  Repetidas: ${repetidas.join(", ")}, regenerando...`);
         const rawRetry = await call(buildPrompt(libro, "main", ctx), "Palabras únicas", ctx.tempDinamica, true);
-        extra = JSON.parse(rawRetry);
+        extra = normalizeBilingualMainData(JSON.parse(rawRetry));
       }
 
       // Garantizar longitud mínima
       while (extra.palabras.length < CFG.palabras.cantidad) extra.palabras.push(extra.palabras[extra.palabras.length - 1]);
       while (extra.frases.length < CFG.frases.cantidad) extra.frases.push(extra.frases[extra.frases.length - 1]);
       while (extra.colores.length < CFG.colores.cantidad) extra.colores.push(extra.colores[extra.colores.length - 1]);
+
+      while (Array.isArray(extra.palabras_en) && extra.palabras_en.length < CFG.palabras.cantidad) {
+        extra.palabras_en.push(extra.palabras[extra.palabras_en.length] || extra.palabras[extra.palabras.length - 1]);
+      }
+
+      while (Array.isArray(extra.frases_en) && extra.frases_en.length < CFG.frases.cantidad) {
+        extra.frases_en.push(extra.frases[extra.frases_en.length] || extra.frases[extra.frases.length - 1]);
+      }
 
       extra.textColors = extra.colores.map(utils.txt);
 
@@ -1227,7 +1344,7 @@ async function runSingle(ctx) {
   if (!bookMeta.titulo || !bookMeta.autor) throw new Error("Libro single inválido: faltan título o autor");
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.6.0 — MODO SINGLE NIVEL DIOS     ║");
+  console.log("║  TRIGGUI v9.6.1 — MODO SINGLE NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
@@ -1256,7 +1373,7 @@ async function runBatch(ctx) {
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.6.0 — MODO BATCH NIVEL DIOS     ║");
+  console.log("║   TRIGGUI v9.6.1 — MODO BATCH NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
   console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
