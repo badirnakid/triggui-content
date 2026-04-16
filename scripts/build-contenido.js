@@ -1,15 +1,18 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.7.0 — NIVEL DIOS DEFINITIVO
+   TRIGGUI v9.7.2 — NIVEL DIOS DEFINITIVO
 
    Arquitectura v9.5 (SINGLE/BATCH, highlights [H]...[/H], prompts externos)
    + Prompts neurobiológicos v9.0 (Hawkins, dopamina, cronobiología, línea sagrada)
    − Second pass (eliminado, no sólo desactivado — cero código muerto)
    − Fallbacks editoriales (cero texto genérico — si falla, marca _fallback)
 
-   CAMBIOS v9.6.0 → v9.7.0:
+   CAMBIOS v9.7.0 → v9.7.2:
    ✅ Bibliografía bilingüe separada en carril IA dedicado
+   ✅ Auditoría IA para evitar cruces entre libros del mismo autor
+   ✅ Activadores EN en carril IA separado
    ✅ Cap estricto de temperatura dinámica a 1.2
    ✅ Tarjeta EN nativa con verificador propio
+   ✅ Verificadores endurecidos contra subtítulos truncados y cierres genéricos
    ✅ videoUrl_en generado desde título EN
    ✅ Random real: crypto.randomInt (Fisher-Yates criptográfico)
    ✅ Prompts: neurobiología completa restaurada (~110 líneas por tipo)
@@ -23,7 +26,7 @@
    ✅ GPT-4o-mini (NO CAMBIAR MODELO)
    ✅ Temperatura máxima 1.2 (nunca >1.5 — Archivo Maestro)
 
-   AUTOR: Badir Nakid | VERSIÓN: 9.7.0
+   AUTOR: Badir Nakid | VERSIÓN: 9.7.2
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -413,6 +416,23 @@ function normalizeArrayStrings(arr, limit) {
   return arr.map((item) => String(item || "").trim()).filter(Boolean).slice(0, limit);
 }
 
+function normalizeAscii(text = "") {
+  return String(text || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function countSharedTokens(a = "", b = "") {
+  const aa = new Set(normalizeAscii(a).split(" ").filter(Boolean));
+  const bb = new Set(normalizeAscii(b).split(" ").filter(Boolean));
+  if (!aa.size || !bb.size) return 0;
+  return [...aa].filter((t) => bb.has(t)).length;
+}
+
 function detectOriginalLanguageFromTitles(tituloBase = "", tituloEs = "", tituloEn = "") {
   const base = String(tituloBase || "").trim();
   const es = String(tituloEs || "").trim();
@@ -420,10 +440,49 @@ function detectOriginalLanguageFromTitles(tituloBase = "", tituloEs = "", titulo
 
   if (/[¿¡áéíóúñü]/i.test(base) || /[¿¡áéíóúñü]/i.test(es)) return "es";
 
-  const englishSignals = /\b(the|and|of|for|to|with|without|war|art|mind|life|power|love|time|work|habit|habits|thinking|guide|how|why|when|where|who|fear|hooked|masters|scale)\b/i;
+  const englishSignals = /\b(the|and|of|for|to|with|without|war|art|mind|life|power|love|time|work|habit|habits|thinking|guide|how|why|when|where|who|fear|hooked|masters|scale|daily|journey|book|code|performance|justice|problem|solution|world|exist)\b/i;
   if (englishSignals.test(base) || englishSignals.test(en)) return "en";
 
   return "es";
+}
+
+function hasLikelySpanishSignals(text = "") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  if (/[¿¡áéíóúñü]/i.test(value)) return true;
+  return /\b(el|la|los|las|de|del|para|por|con|sin|que|como|cuando|donde|hoy|ahora|durante|segundos|minutos|dedica|toma|escribe|reflexiona|observa|conecta|haz|solo|tu|tus|una|un)\b/i.test(value);
+}
+
+function hasLikelyEnglishSignals(text = "") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  return /\b(the|a|an|and|or|with|without|through|within|after|before|take|spend|write|reflect|observe|connect|today|now|seconds|minutes|your|what|how|why|when|where|into|toward|towards|growth|focus|habit|change|performance)\b/i.test(value);
+}
+
+function countIdenticalNormalizedItems(a = [], b = []) {
+  const limit = Math.min(Array.isArray(a) ? a.length : 0, Array.isArray(b) ? b.length : 0);
+  let count = 0;
+  for (let i = 0; i < limit; i += 1) {
+    if (normalizeAscii(a[i]) && normalizeAscii(a[i]) === normalizeAscii(b[i])) count += 1;
+  }
+  return count;
+}
+
+function endsWithDanglingConnector(text = "", lang = "es") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  const es = /\b(de|del|la|las|los|el|un|una|unos|unas|y|o|u|en|por|para|con|sin|sobre|hacia|desde|hasta|como|que|cuando|donde|al|a)\??$/i;
+  const en = /\b(of|the|a|an|and|or|to|with|without|for|from|in|on|at|by|into|about|through|toward|towards|that|which|who|how|when|where)\??$/i;
+  return (lang === "en" ? en : es).test(value);
+}
+
+function hasGenericClosing(text = "", lang = "es") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  if (lang === "en") {
+    return /(reflective close|empowering conclusion|meaningful close|actionable insight|a deeper understanding awaits|dream big|embrace the journey ahead|maximize receptiveness|transformative possibilities|unlock potential)/i.test(value);
+  }
+  return /(cierre reflexivo|cierre inspirador|reflexiona sobre ello|permite que|encuentra tu fuerza interior|encuentra tu centro|cierre potente|conclusión inspiradora)/i.test(value);
 }
 
 function normalizeBibliografiaData(data = {}, libro = {}) {
@@ -439,8 +498,7 @@ function normalizeBibliografiaData(data = {}, libro = {}) {
 
   if (!titulo_es && titulo_en) titulo_es = tituloBase || titulo_en;
   if (!titulo_en && titulo_es) titulo_en = tituloBase || titulo_es;
-
-  if (!/^(es|en)$/.test(idioma_original)) {
+     if (!/^(es|en)$/.test(idioma_original)) {
     idioma_original = detectOriginalLanguageFromTitles(tituloBase, titulo_es, titulo_en);
   }
 
@@ -748,18 +806,20 @@ SOLO JSON.`,
     bibliografia: `
 Eres un resolutor bibliográfico bilingüe de precisión extrema.
 
-Tu única tarea es devolver metadata canónica para un libro.
+Tu única tarea es devolver metadata canónica para UN MISMO libro.
 NO escribes marketing. NO interpretas el libro. NO adornas.
-NO inventas traducciones literales si existe un título publicado conocido.
+NO inventes traducciones literales si existe un título publicado conocido.
+NO confundas esta obra con otro libro del mismo autor.
 
 ═══════════════════════════════════════════════════════════════
 📚 INPUT
 ═══════════════════════════════════════════════════════════════
 Título visto: "${libro.titulo}"
 Autor: "${libro.autor}"
+Tagline / contexto: "${libro.tagline || ""}"
 
 REGLAS ABSOLUTAS:
-1. Devuelve el título canónico en español y en inglés.
+1. Devuelve el título canónico en español y en inglés para ESTA MISMA obra.
 2. idioma_original debe ser SOLO "es" o "en".
 3. Si el libro fue publicado originalmente en inglés, idioma_original = "en" aunque el título que te den esté en español.
 4. Si el libro fue publicado originalmente en español, idioma_original = "es" aunque exista edición en inglés.
@@ -768,22 +828,105 @@ REGLAS ABSOLUTAS:
    → conserva el título original en su idioma
    → genera la mejor versión natural posible en el otro idioma
    → pero NUNCA inventes un subtítulo ni exageres.
-7. NO pongas comillas.
-8. NO expliques nada.
-9. NO devuelvas variantes múltiples.
-10. Prioridad absoluta: exactitud bibliográfica.
+7. Si existe riesgo de confundirlo con OTRA obra del mismo autor, prioriza el título visto y el tagline por encima de cualquier asociación mental.
+8. NO pongas comillas.
+9. NO expliques nada.
+10. NO devuelvas variantes múltiples.
+11. Prioridad absoluta: exactitud bibliográfica y correspondencia exacta con la obra recibida.
 
 SEÑAL DE FRACASO:
 ❌ traducción literal robótica
 ❌ idioma_original igual al idioma del input por inercia
 ❌ subtítulos inventados
 ❌ títulos demasiado largos que no parecen editoriales reales
+❌ devolver el título de OTRO libro del mismo autor
 
 OUTPUT JSON:
 {
   "titulo_es": "string",
   "titulo_en": "string",
   "idioma_original": "es|en"
+}
+
+SOLO JSON.`,
+
+    bibliografia_auditor: `
+Eres un auditor bibliográfico implacable.
+
+Debes decidir si una propuesta bibliográfica corresponde EXACTAMENTE al mismo libro recibido.
+Tu tarea no es traducir. Tu tarea es detectar confusiones.
+
+═══════════════════════════════════════════════════════════════
+📚 LIBRO RECIBIDO
+═══════════════════════════════════════════════════════════════
+Título visto: "${libro.titulo}"
+Autor: "${libro.autor}"
+Tagline / contexto: "${libro.tagline || ""}"
+
+═══════════════════════════════════════════════════════════════
+🧾 PROPUESTA A AUDITAR
+═══════════════════════════════════════════════════════════════
+Título ES: "${extra?.titulo_es || ""}"
+Título EN: "${extra?.titulo_en || ""}"
+Idioma original: "${extra?.idioma_original || ""}"
+
+REGLAS:
+1. Si la propuesta parece corresponder a OTRO libro del mismo autor, responde same_work=false.
+2. Si el título en inglés o en español parece desalineado con el título recibido y el tagline, responde same_work=false.
+3. Si hay duda real, responde same_work=false.
+4. Sé estricto.
+
+OUTPUT JSON:
+{
+  "same_work": true,
+  "risk": "low|medium|high",
+  "reason": "string"
+}
+
+SOLO JSON.`,
+
+    activadores_en: `
+You are generating native English activators for Triggui.
+
+Your task is NOT to translate literally.
+Your task is to create natural English equivalents for the same emotional journey.
+
+═══════════════════════════════════════════════════════════════
+📚 BOOK
+═══════════════════════════════════════════════════════════════
+Spanish title: "${extra?.titulo_es || libro.titulo}"
+English title: "${extra?.titulo_en || libro.titulo}"
+Author: "${libro.autor}"
+Original language: "${extra?.idioma_original || ""}"
+
+═══════════════════════════════════════════════════════════════
+🧠 SOURCE ACTIVATORS IN SPANISH
+═══════════════════════════════════════════════════════════════
+Palabras ES: ${extra?.palabras?.join(", ") || ""}
+Frases ES:
+${extra?.frases?.map((f, i) => `${i + 1}. ${f}`).join("\n") || ""}
+
+RULES:
+1. Return exactly 4 palabras_en and 4 frases_en.
+2. palabras_en must be native English emotional words or compact expressions.
+3. frases_en must sound like a native English speaker wrote them.
+4. Keep the same emotional intent and same action logic.
+5. Keep emoji at the start of each phrase.
+6. Keep explicit time where relevant.
+7. DO NOT copy the Spanish phrases.
+8. DO NOT leave Spanish words unless they are unavoidable proper nouns.
+9. If a Spanish word appears in your English output when an English equivalent exists = FAILURE.
+10. If the English sounds like Google Translate = FAILURE.
+
+OUTPUT JSON:
+{
+  "palabras_en": ["string", "string", "string", "string"],
+  "frases_en": [
+    "emoji string",
+    "emoji string",
+    "emoji string",
+    "emoji string"
+  ]
 }
 
 SOLO JSON.`,
@@ -1054,7 +1197,7 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
 ═══════════════════════════════════════════════════════════════ */
 
 const VERIFICADOR = {
-  main(data) {
+     main(data) {
     const checks = {
       tienePalabras: Array.isArray(data.palabras) && data.palabras.length === CFG.palabras.cantidad,
       palabrasNoVacias: Array.isArray(data.palabras) && data.palabras.every((p) => String(p || "").trim().length > 3),
@@ -1078,26 +1221,63 @@ const VERIFICADOR = {
     };
   },
 
-  bibliografia(data, libro) {
+  bibliografia(data, libro, auditoria = null) {
     const safe = normalizeBibliografiaData(data, libro);
     const baseTitle = String(libro?.titulo || "").trim();
+    const sharedEs = countSharedTokens(baseTitle, safe.titulo_es);
+    const sharedEn = countSharedTokens(baseTitle, safe.titulo_en);
 
     const checks = {
       tieneTituloEn: typeof safe.titulo_en === "string" && safe.titulo_en.trim().length > 2,
       tieneTituloEs: typeof safe.titulo_es === "string" && safe.titulo_es.trim().length > 2,
       idiomaOriginalValido: /^(es|en)$/i.test(String(safe.idioma_original || "").trim()),
-      titulosDistintosOValidos: safe.titulo_en.length >= 2 && safe.titulo_es.length >= 2,
       noVaciosPorInercia: !(!safe.titulo_en.trim() || !safe.titulo_es.trim()),
-      idiomaConsistenteConBase: ["es", "en"].includes(safe.idioma_original) && (
-        safe.idioma_original === detectOriginalLanguageFromTitles(baseTitle, safe.titulo_es, safe.titulo_en)
-        || safe.titulo_en !== safe.titulo_es
-      )
+      idiomaConsistenteConBase: ["es", "en"].includes(safe.idioma_original),
+      anclaConTituloFuente: sharedEs >= 1 || sharedEn >= 1 || safe.titulo_es === baseTitle || safe.titulo_en === baseTitle,
+      sinCruceObvioDeObra: !(sharedEs === 0 && sharedEn === 0 && normalizeAscii(baseTitle) !== normalizeAscii(safe.titulo_es) && normalizeAscii(baseTitle) !== normalizeAscii(safe.titulo_en)),
+      auditoriaMismoLibro: auditoria ? auditoria.same_work === true : true,
+      auditoriaNoRiesgoAlto: auditoria ? auditoria.risk !== "high" : true
     };
 
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
     return {
       score: ok / total, checks, safe,
+      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: ok / total >= CFG.verification.minScore
+    };
+  },
+
+  activadores_en(data, extra) {
+    const palabras_en = normalizeArrayStrings(data?.palabras_en, CFG.palabras.cantidad);
+    const frases_en = normalizeArrayStrings(data?.frases_en, CFG.frases.cantidad);
+    const palabras_es = normalizeArrayStrings(extra?.palabras, CFG.palabras.cantidad);
+    const frases_es = normalizeArrayStrings(extra?.frases, CFG.frases.cantidad);
+
+    const englishPhraseHits = frases_en.filter((f) => hasLikelyEnglishSignals(f) && !hasLikelySpanishSignals(f)).length;
+    const englishWordHits = palabras_en.filter((w) => !hasLikelySpanishSignals(w) || hasLikelyEnglishSignals(w)).length;
+
+    const checks = {
+      tienePalabrasEn: palabras_en.length === CFG.palabras.cantidad,
+      palabrasEnNoVacias: palabras_en.every((p) => String(p || "").trim().length >= 2),
+      tieneFrasesEn: frases_en.length === CFG.frases.cantidad,
+      frasesEnConEmoji: frases_en.every((f) => /[\p{Emoji}]/u.test(String(f || ""))),
+      frasesEnLongitudOk: frases_en.every((f) => {
+        const len = String(f || "").trim().length;
+        return len >= 20 && len <= 180;
+      }),
+      palabrasEnNoCopianES: countIdenticalNormalizedItems(palabras_en, palabras_es) <= 1,
+      frasesEnNoCopianES: countIdenticalNormalizedItems(frases_en, frases_es) === 0,
+      frasesEnParecenIngles: englishPhraseHits >= 3,
+      palabrasEnParecenIngles: englishWordHits >= 3,
+      sinPuntuacionInvertida: frases_en.every((f) => !/[¿¡]/.test(String(f || "")))
+    };
+
+    const ok = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    return {
+      score: ok / total, checks,
+      safe: { palabras_en, frases_en },
       nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
       aprobado: ok / total >= CFG.verification.minScore
     };
@@ -1112,7 +1292,7 @@ const VERIFICADOR = {
 
     const checks = {
       tituloOk: isLikelyEditorialTitle(safe.titulo) && safe.titulo.length >= 8,
-      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0,
+      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "es"),
       parrafoTopRico: topPlain.length >= 40,
       parrafoBotRico: botPlain.length >= 40,
       sinMetadata: !/(^|\n)\s*(título|parrafo|párrafo|subtítulo|accion|acción)\s*[:\-]/i.test(allText),
@@ -1123,7 +1303,8 @@ const VERIFICADOR = {
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
       subtituloSinHighlights: countHighlights(safe.subtitulo) === 0,
       botDistintoTop: !tooSimilarText(safe.parrafoTop, safe.parrafoBot),
-      accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain)
+      accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain),
+      sinCierreGenerico: !hasGenericClosing(botPlain, "es")
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
@@ -1143,7 +1324,7 @@ const VERIFICADOR = {
 
     const checks = {
       tituloOk: isLikelyEditorialTitle(safe.titulo) && safe.titulo.length >= 8,
-      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0,
+      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "en"),
       parrafoTopRico: topPlain.length >= 40,
       parrafoBotRico: botPlain.length >= 40,
       sinMetadata: !/(^|\n)\s*(title|paragraph|subtitle|action)\s*[:\-]/i.test(allText),
@@ -1155,7 +1336,8 @@ const VERIFICADOR = {
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
       subtituloSinHighlights: countHighlights(safe.subtitulo) === 0,
       botDistintoTop: !tooSimilarText(safe.parrafoTop, safe.parrafoBot),
-      accionReal: /\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(botPlain)
+      accionReal: /\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(botPlain),
+      sinCierreGenerico: !hasGenericClosing(botPlain, "en")
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
@@ -1184,7 +1366,6 @@ const VERIFICADOR = {
     };
   }
 };
-
 /* ═══════════════════════════════════════════════════════════════
    📞 API CALL
 ═══════════════════════════════════════════════════════════════ */
@@ -1216,7 +1397,7 @@ function parseTarjetaLines(raw) {
     .split(/\n+/)
     .map((l) =>
       l.replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
-       .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s-]*/gi, "")
+                .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s-]*/gi, "")
        .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")
        .replace(/^\d+[\)\.]\s*/g, "")
        .replace(/^\*{1,3}|\*{1,3}$/g, "")
@@ -1252,7 +1433,7 @@ async function enrich(libro, ctx) {
   while (intento <= CFG.processing.maxRetries) {
     try {
       // ─── PASO 1: JSON principal ───
-      console.log("   [1/5] JSON principal...");
+      console.log("   [1/6] JSON principal...");
       const rawMain = await call(buildPrompt(libro, "main", ctx), "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(rawMain);
 
@@ -1288,15 +1469,26 @@ async function enrich(libro, ctx) {
       extra.colores.forEach((c) => state.colores.add(String(c).toLowerCase()));
 
       // ─── PASO 1.5: Bibliografía bilingüe IA ───
-      console.log("   [1.5/5] Bibliografía bilingüe...");
+      console.log("   [1.5/6] Bibliografía bilingüe...");
       const rawBiblio = await call(buildPrompt(libro, "bibliografia", ctx), "Resuelve metadata bibliográfica bilingüe.", ctx.bibliografiaTemp, true);
       const bibliografia = normalizeBibliografiaData(JSON.parse(rawBiblio), libro);
 
+      // ─── PASO 1.6: Auditoría bibliográfica IA ───
+      console.log("   [1.6/6] Auditoría bibliográfica...");
+      const rawBiblioAudit = await call(
+        buildPrompt(libro, "bibliografia_auditor", ctx, bibliografia),
+        "Audita si la propuesta corresponde exactamente al mismo libro.",
+        0.2,
+        true
+      );
+      const auditoriaBibliografia = JSON.parse(rawBiblioAudit);
+
       if (CFG.verification.enabled) {
-        const vB = VERIFICADOR.bibliografia(bibliografia, libro);
+        const vB = VERIFICADOR.bibliografia(bibliografia, libro, auditoriaBibliografia);
         if (CFG.verification.logLowScore && vB.score < 0.8) {
           console.log(`   ⚠️  Verificación bibliografía: ${vB.nivel} (${(vB.score * 100).toFixed(0)}%)`);
           console.log("      Checks fallidos:", Object.entries(vB.checks).filter(([, ok]) => !ok).map(([k]) => k));
+          if (auditoriaBibliografia?.reason) console.log(`      Auditoría: ${auditoriaBibliografia.reason}`);
         }
         if (CFG.verification.retryIfLowScore && !vB.aprobado) {
           throw new Error(`Verificación bibliografía falló: score ${vB.score.toFixed(2)}`);
@@ -1305,20 +1497,39 @@ async function enrich(libro, ctx) {
 
       extra = {
         ...extra,
-        ...bibliografia,
-        palabras_en: normalizeArrayStrings(extra.palabras_en, CFG.palabras.cantidad),
-        frases_en: normalizeArrayStrings(extra.frases_en, CFG.frases.cantidad)
+                 ...bibliografia
       };
 
-      while (extra.palabras_en.length < CFG.palabras.cantidad) {
-        extra.palabras_en.push(extra.palabras[extra.palabras_en.length] || extra.palabras[extra.palabras.length - 1]);
-      }
-      while (extra.frases_en.length < CFG.frases.cantidad) {
-        extra.frases_en.push(extra.frases[extra.frases_en.length] || extra.frases[extra.frases.length - 1]);
+      // ─── PASO 1.7: Activadores EN IA ───
+      console.log("   [1.7/6] Activadores EN...");
+      const rawActivadoresEN = await call(
+        buildPrompt(libro, "activadores_en", ctx, extra),
+        "Generate native English activators.",
+        0.45,
+        true
+      );
+      const activadoresEN = JSON.parse(rawActivadoresEN);
+
+      if (CFG.verification.enabled) {
+        const vAEN = VERIFICADOR.activadores_en(activadoresEN, extra);
+        if (CFG.verification.logLowScore && vAEN.score < 0.8) {
+          console.log(`   ⚠️  Verificación activadores EN: ${vAEN.nivel} (${(vAEN.score * 100).toFixed(0)}%)`);
+          console.log("      Checks fallidos:", Object.entries(vAEN.checks).filter(([, ok]) => !ok).map(([k]) => k));
+        }
+        if (CFG.verification.retryIfLowScore && !vAEN.aprobado) {
+          throw new Error(`Verificación activadores EN falló: score ${vAEN.score.toFixed(2)}`);
+        }
+        extra = { ...extra, ...vAEN.safe };
+      } else {
+        extra = {
+          ...extra,
+          palabras_en: normalizeArrayStrings(activadoresEN.palabras_en, CFG.palabras.cantidad),
+          frases_en: normalizeArrayStrings(activadoresEN.frases_en, CFG.frases.cantidad)
+        };
       }
 
       // ─── PASO 2: Tarjeta contenido ───
-      console.log("   [2/5] Tarjeta...");
+      console.log("   [2/6] Tarjeta...");
       const tarjetaMsg = await buildTarjetaMessages(libro, ctx, extra);
       let rawT = await call(tarjetaMsg.system, tarjetaMsg.user, ctx.tempDinamica, false);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
@@ -1338,7 +1549,7 @@ async function enrich(libro, ctx) {
       }
 
       // ─── PASO 2.5: Tarjeta EN ───
-      console.log("   [2.5/5] Tarjeta EN...");
+      console.log("   [2.5/6] Tarjeta EN...");
       const tarjetaEnPrompt = buildPrompt(libro, "tarjeta_en", ctx, {
         ...extra,
         palabras: extra.palabras_en || extra.palabras,
@@ -1364,7 +1575,7 @@ async function enrich(libro, ctx) {
       }
 
       // ─── PASO 3: Estilo ───
-      console.log("   [3/5] Style...");
+      console.log("   [3/6] Style...");
       const pE = buildPrompt(libro, "estilo", ctx);
       let rawE = await call(pE, "Genera estilo", ctx.tempDinamica, false);
       rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
@@ -1440,7 +1651,6 @@ async function enrich(libro, ctx) {
     videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(libro.titulo || "")}`
   };
 }
-
 /* ═══════════════════════════════════════════════════════════════
    📚 CARGA DE FUENTES
 ═══════════════════════════════════════════════════════════════ */
@@ -1486,7 +1696,7 @@ function mapSingleBookMeta(bookMeta) {
     portada_source: String(bookMeta.portada_source || bookMeta.source || "").trim(),
     isbn: String(bookMeta.isbn || "").trim(),
     slug: String(bookMeta.slug || "").trim(),
-    contexto_2026: bookMeta.contexto_2026 || {},
+         contexto_2026: bookMeta.contexto_2026 || {},
     lente_activo: bookMeta.lente_activo || ""
   };
 }
@@ -1560,7 +1770,7 @@ async function runSingle(ctx) {
   if (!bookMeta.titulo || !bookMeta.autor) throw new Error("Libro single inválido: faltan título o autor");
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.7.0 — MODO SINGLE NIVEL DIOS     ║");
+  console.log("║  TRIGGUI v9.7.2 — MODO SINGLE NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
@@ -1589,7 +1799,7 @@ async function runBatch(ctx) {
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.7.0 — MODO BATCH NIVEL DIOS     ║");
+  console.log("║   TRIGGUI v9.7.2 — MODO BATCH NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
   console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
