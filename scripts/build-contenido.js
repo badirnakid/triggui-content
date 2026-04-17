@@ -258,7 +258,7 @@ function normalizeHighlightSyntax(input) {
   }
 
   text = text.replace(/\[H\]\s*\[\/H\]/g, "");
-  return text.replace(/[ \t]{2,}/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+     return text.replace(/[ \t]{2,}/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 }
 
 function countHighlights(text) {
@@ -445,7 +445,6 @@ function getContexto() {
       : { min: CFG.frases.longitudMin, max: CFG.frases.longitudMax }
   };
 }
-
 const NEUROBIOLOGIA = {
   estadoEntrada: {
     ondas: {
@@ -661,8 +660,7 @@ JSON:
 }
 
 SOLO JSON.`;
-
-    case "activadores_en":
+            case "activadores_en":
       return `
 You are generating native English activators for Triggui.
 
@@ -865,8 +863,7 @@ const VERIFICADOR = {
     const total = Object.keys(checks).length;
     return { score: ok / total, checks, safe: { palabras_en, frases_en }, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
   },
-
-  tarjeta(tarjeta) {
+     tarjeta(tarjeta) {
     const safe = normalizeTarjetaObject(tarjeta, "es");
     const topPlain = stripHighlightTags(safe.parrafoTop).trim();
     const botPlain = stripHighlightTags(safe.parrafoBot).trim();
@@ -882,6 +879,8 @@ const VERIFICADOR = {
       highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
       highlightTop: countHighlights(safe.parrafoTop) >= 1,
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
+      highlightTopFino: highlightCoverageRatio(safe.parrafoTop) <= 0.42 && getHighlightSegments(safe.parrafoTop).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
+      highlightBotFino: highlightCoverageRatio(safe.parrafoBot) <= 0.42 && getHighlightSegments(safe.parrafoBot).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
       accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain),
       sinCierreGenerico: !hasGenericClosing(botPlain, "es")
     };
@@ -907,6 +906,8 @@ const VERIFICADOR = {
       highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
       highlightTop: countHighlights(safe.parrafoTop) >= 1,
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
+      highlightTopFino: highlightCoverageRatio(safe.parrafoTop) <= 0.42 && getHighlightSegments(safe.parrafoTop).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
+      highlightBotFino: highlightCoverageRatio(safe.parrafoBot) <= 0.42 && getHighlightSegments(safe.parrafoBot).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
       accionReal: /\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(botPlain),
       sinCierreGenerico: !hasGenericClosing(botPlain, "en")
     };
@@ -1030,11 +1031,12 @@ function strongBottomParagraph(libro, extra, lang = "es") {
   const base = actionSource ? stripHighlightTags(actionSource) : "dedica 30 segundos a escribir una línea concreta sobre lo que harás después";
   return `Después de la primera señal de este libro, [H]${base.replace(/^[^\p{L}\p{N}]+/u, "").replace(/\.$/, "")} en 30 segundos.[/H] Hazlo ahora con calma y precisión.`;
 }
-
 function strongSubtitle(libro, lang = "es") {
-  const seed = seedFromBook(libro, lang);
-  if (lang === "en") return `What changes when ${seed.toLowerCase()} is practiced today?`;
-  return `¿Qué cambia cuando ${seed.toLowerCase()} se practica hoy?`;
+  const seed = seedFromBook(libro, lang).toLowerCase();
+  if (lang === "en") {
+    return sanitizeSubtitleText(`What becomes visible when ${seed} stops being only theory?`, "en");
+  }
+  return sanitizeSubtitleText(`¿Qué se vuelve visible cuando ${seed} deja de ser sólo teoría?`, "es");
 }
 
 function strongTitle(libro, lang = "es") {
@@ -1043,11 +1045,78 @@ function strongTitle(libro, lang = "es") {
   return sanitizeTitleText(`Uso preciso de ${seed}`);
 }
 
+function getHighlightSegments(text = "") {
+  const matches = normalizeHighlightSyntax(text).match(/\[H\](.*?)\[\/H\]/gis) || [];
+  return matches.map((m) => m.replace(/\[H\]|\[\/H\]/gi, "").trim()).filter(Boolean);
+}
+
+function highlightCoverageRatio(text = "") {
+  const plain = stripHighlightTags(text).replace(/\s+/g, " ").trim();
+  if (!plain) return 0;
+  const highlighted = getHighlightSegments(text).join(" ").replace(/\s+/g, " ").trim();
+  return highlighted ? highlighted.length / Math.max(plain.length, 1) : 0;
+}
+
+function splitSentencesSmart(text = "") {
+  return String(text || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(/(?<=[.!?…])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+function selectHighlightSpan(text = "", lang = "es") {
+  const plain = stripHighlightTags(text).replace(/\s+/g, " ").trim();
+  if (!plain) return lang === "en" ? "Take one exact step now" : "Toma un paso exacto ahora";
+
+  const sentences = splitSentencesSmart(plain);
+  let best = sentences.find((s) => s.length >= 38 && s.length <= 110) || sentences[0] || plain;
+  let words = best.split(/\s+/).filter(Boolean);
+
+  if (words.length > 14 || best.length > 96) {
+    let start = 0;
+    if (words.length > 10) {
+      const pivotWords = ["porque", "cuando", "antes", "después", "where", "when", "before", "after", "that", "which"];
+      const idx = words.findIndex((w) => pivotWords.includes(normalizeAscii(w)));
+      start = idx > 2 ? Math.max(0, idx - 2) : 0;
+    }
+    words = words.slice(start, start + 10);
+    best = words.join(" ").replace(/[,:;]+$/g, "").trim();
+  }
+
+  if (best.split(/\s+/).filter(Boolean).length < 6) {
+    const plainWords = plain.split(/\s+/).filter(Boolean);
+    best = plainWords.slice(0, Math.min(10, plainWords.length)).join(" ").replace(/[,:;]+$/g, "").trim();
+  }
+
+  return best || (lang === "en" ? "Take one exact step now" : "Toma un paso exacto ahora");
+}
+
+function applySelectiveHighlight(text = "", lang = "es") {
+  const plain = stripHighlightTags(text).replace(/\s+/g, " ").trim();
+  if (!plain) {
+    return normalizeHighlightSyntax(lang === "en" ? "[H]Take one exact step now[/H]." : "[H]Toma un paso exacto ahora[/H].");
+  }
+
+  const existing = getHighlightSegments(text);
+  const coverage = highlightCoverageRatio(text);
+  if (existing.length >= 1 && coverage > 0 && coverage <= 0.42 && existing.every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.length <= 96)) {
+    return normalizeHighlightSyntax(text);
+  }
+
+  const target = selectHighlightSpan(plain, lang);
+  const escaped = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const re = new RegExp(escaped);
+  if (re.test(plain)) {
+    return normalizeHighlightSyntax(plain.replace(re, `[H]${target}[/H]`));
+  }
+
+  return normalizeHighlightSyntax(`[H]${target}[/H] ${plain}`.trim());
+}
+
 function ensureSingleHighlight(text = "", lang = "es") {
-  let plain = stripHighlightTags(text).trim();
-  if (!plain) plain = lang === "en" ? "Take one exact action now." : "Toma una acción exacta ahora.";
-  if (countHighlights(text) >= 1) return normalizeHighlightSyntax(text);
-  return normalizeHighlightSyntax(`[H]${plain}[/H]`);
+  return applySelectiveHighlight(text, lang);
 }
 
 function coerceTarjetaDeterministic(tarjeta, libro, extra, lang = "es", failedChecks = []) {
@@ -1081,12 +1150,19 @@ function coerceTarjetaDeterministic(tarjeta, libro, extra, lang = "es", failedCh
     out.parrafoBot = strongBottomParagraph(libro, extra, lang);
   }
 
-  out.parrafoTop = ensureSingleHighlight(out.parrafoTop, lang);
-  out.parrafoBot = ensureSingleHighlight(out.parrafoBot, lang);
+  out.parrafoTop = applySelectiveHighlight(out.parrafoTop, lang);
+  out.parrafoBot = applySelectiveHighlight(out.parrafoBot, lang);
+
+  if (highlightCoverageRatio(out.parrafoTop) > 0.42) {
+    out.parrafoTop = applySelectiveHighlight(stripHighlightTags(out.parrafoTop), lang);
+  }
+  if (highlightCoverageRatio(out.parrafoBot) > 0.42) {
+    out.parrafoBot = applySelectiveHighlight(stripHighlightTags(out.parrafoBot), lang);
+  }
 
   if (countHighlights(`${out.parrafoTop}\n${out.parrafoBot}`) < CFG.tarjeta.minHighlights) {
-    out.parrafoTop = ensureMinimumHighlights(out.parrafoTop, 1);
-    out.parrafoBot = ensureMinimumHighlights(out.parrafoBot, 1);
+    out.parrafoTop = applySelectiveHighlight(out.parrafoTop, lang);
+    out.parrafoBot = applySelectiveHighlight(out.parrafoBot, lang);
   }
 
   if (lang === "en" && !/\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(stripHighlightTags(out.parrafoBot))) {
@@ -1138,6 +1214,8 @@ You must fix ONLY what failed:
 - no first person
 - no generic closing
 - at least one [H]...[/H] in top and bottom
+- each highlight must be a precise fragment, not the whole paragraph
+- each highlight should be roughly 6 to 14 words and never dominate the paragraph
 
 Return ONLY 4 lines.`;
   }
@@ -1164,10 +1242,11 @@ Debes corregir SOLO lo que falló:
 - sin primera persona
 - sin cierre genérico
 - al menos un [H]...[/H] en top y en bot
+- cada highlight debe ser un fragmento preciso, no todo el párrafo
+- cada highlight debe rondar entre 6 y 14 palabras y no dominar visualmente el párrafo
 
 Devuelve SOLO 4 líneas.`;
 }
-
 async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es", external = true }) {
   const verify = lang === "en" ? VERIFICADOR.tarjeta_en : VERIFICADOR.tarjeta;
   let candidate = null;
@@ -1211,7 +1290,7 @@ async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es", exter
   }
 
   candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, [
-    "tituloOk","subtituloOk","parrafoTopRico","parrafoBotRico","highlightsMinimos","highlightTop","highlightBot","accionReal","sinCierreGenerico"
+    "tituloOk","subtituloOk","parrafoTopRico","parrafoBotRico","highlightsMinimos","highlightTop","highlightBot","highlightTopFino","highlightBotFino","accionReal","sinCierreGenerico"
   ]);
   return candidate;
 }
@@ -1349,8 +1428,7 @@ async function enrich(libro, ctx) {
       break;
     }
   }
-
-  return {
+     return {
     ...libro,
     dimension: "",
     punto: "",
@@ -1480,7 +1558,6 @@ async function runSingle(ctx) {
   }
   await writeSingleOutputs(bookMeta, enriched);
 }
-
 async function runBatch(ctx) {
   const books = await loadCSVBooks();
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
