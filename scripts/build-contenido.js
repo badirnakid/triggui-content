@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.7.3 — NIVEL DIOS DETERMINISTA
+   TRIGGUI v9.7.4 — NIVEL DIOS ITERATIVO
 
    Principio rector:
    - El modelo puede ser probabilístico.
@@ -16,7 +16,7 @@
    ✅ Blindaje total contra undefined en prompts, validadores y pipeline
    ✅ Fallbacks marcados con _fallback para no contaminar batch
 
-   AUTOR: Badir Nakid | VERSIÓN: 9.7.3
+   AUTOR: Badir Nakid | VERSIÓN: 9.7.4
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -565,11 +565,6 @@ Si tu base sobre este libro es insuficiente, reduce la ambición.
 Ve a una verdad más sobria, concreta y honesta.
 No inventes citas, escenas ni conceptos que no puedas sostener.
 Nunca suenes convencido de algo que no verificaste.
-
-TEST DE CALIDAD BRUTAL (LÍNEA SAGRADA):
-→ Si puedo copiar tu output y usarlo para OTRO libro = FALLASTE COMPLETAMENTE
-→ Si no refleja CONTENIDO ESPECÍFICO de este libro = FALLASTE
-→ Si es genérico = FALLASTE
 `;
 }
 
@@ -984,6 +979,243 @@ function defaultStyle() {
   };
 }
 
+function listFailedChecks(validation) {
+  return Object.entries(validation?.checks || {}).filter(([, ok]) => !ok).map(([key]) => key);
+}
+
+function stripMetadataNoise(text = "") {
+  return String(text || "")
+    .replace(/^(title|paragraph|subtitle|action|line\s*\d+|línea\s*\d+|título|párrafo|subtítulo|acción)\s*[:\-–—.]*/i, "")
+    .replace(/^\s*[\[\(].*?[\]\)]\s*/g, "")
+    .trim();
+}
+
+function stripFirstPerson(text = "", lang = "es") {
+  const value = String(text || "");
+  if (lang === "en") {
+    return value
+      .replace(/\b(I|my|me|myself|we|our|ours|ourselves)\b/gi, "")
+      .replace(/\b(I'm|I've|I'll|we're|we've|we'll)\b/gi, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  return value
+    .replace(/\b(yo|mi|mí|me|conmigo|nosotros|nosotras|nuestro|nuestra|nuestros|nuestras)\b/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function seedFromBook(libro, lang = "es") {
+  const raw = sanitizeTitleText(String(libro?.titulo || "").trim()) || (lang === "en" ? "this book" : "este libro");
+  const cleaned = raw.replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
+  if (!cleaned) return lang === "en" ? "this book" : "este libro";
+  const words = cleaned.split(" ").slice(0, 5);
+  return words.join(" ");
+}
+
+function strongTopParagraph(libro, extra, lang = "es") {
+  const seed = seedFromBook(libro, lang);
+  if (lang === "en") {
+    return `[H]${seed} forces a more exact way of seeing what matters before reacting on impulse.[/H] That shift turns attention into a usable decision instead of noise.`;
+  }
+  return `[H]${seed} obliga a mirar con más precisión lo que importa antes de reaccionar por impulso.[/H] Ese giro convierte la atención en una decisión utilizable y no en ruido.`;
+}
+
+function strongBottomParagraph(libro, extra, lang = "es") {
+  const actionSource = normalizeArrayStrings(lang === "en" ? extra?.frases_en : extra?.frases, CFG.frases.cantidad)[0] || "";
+  if (lang === "en") {
+    const base = actionSource && hasLikelyEnglishSignals(actionSource) ? stripHighlightTags(actionSource) : "spend 30 seconds writing one concrete line about what you will do next";
+    return `After the first signal from this book, [H]${base.replace(/^[^\p{L}\p{N}]+/u, "").replace(/\.$/, "")} in 30 seconds.[/H] Do it now with calm focus.`;
+  }
+  const base = actionSource ? stripHighlightTags(actionSource) : "dedica 30 segundos a escribir una línea concreta sobre lo que harás después";
+  return `Después de la primera señal de este libro, [H]${base.replace(/^[^\p{L}\p{N}]+/u, "").replace(/\.$/, "")} en 30 segundos.[/H] Hazlo ahora con calma y precisión.`;
+}
+
+function strongSubtitle(libro, lang = "es") {
+  const seed = seedFromBook(libro, lang);
+  if (lang === "en") return `What changes when ${seed.toLowerCase()} is practiced today?`;
+  return `¿Qué cambia cuando ${seed.toLowerCase()} se practica hoy?`;
+}
+
+function strongTitle(libro, lang = "es") {
+  const seed = seedFromBook(libro, lang);
+  if (lang === "en") return sanitizeTitleText(`Precise use of ${seed}`);
+  return sanitizeTitleText(`Uso preciso de ${seed}`);
+}
+
+function ensureSingleHighlight(text = "", lang = "es") {
+  let plain = stripHighlightTags(text).trim();
+  if (!plain) plain = lang === "en" ? "Take one exact action now." : "Toma una acción exacta ahora.";
+  if (countHighlights(text) >= 1) return normalizeHighlightSyntax(text);
+  return normalizeHighlightSyntax(`[H]${plain}[/H]`);
+}
+
+function coerceTarjetaDeterministic(tarjeta, libro, extra, lang = "es", failedChecks = []) {
+  let out = normalizeTarjetaObject(tarjeta || {}, lang);
+
+  out.titulo = sanitizeTitleText(stripMetadataNoise(out.titulo));
+  out.subtitulo = sanitizeSubtitleText(stripMetadataNoise(out.subtitulo), lang);
+  out.parrafoTop = normalizeHighlightSyntax(stripMetadataNoise(out.parrafoTop));
+  out.parrafoBot = normalizeHighlightSyntax(stripMetadataNoise(out.parrafoBot));
+
+  if (failedChecks.includes("sinPrimeraPersona")) {
+    out.titulo = stripFirstPerson(out.titulo, lang);
+    out.subtitulo = stripFirstPerson(out.subtitulo, lang);
+    out.parrafoTop = stripFirstPerson(out.parrafoTop, lang);
+    out.parrafoBot = stripFirstPerson(out.parrafoBot, lang);
+  }
+
+  if (!out.titulo || out.titulo.length < 8) {
+    out.titulo = strongTitle(libro, lang);
+  }
+
+  if (!out.parrafoTop || stripHighlightTags(out.parrafoTop).trim().length < 40) {
+    out.parrafoTop = strongTopParagraph(libro, extra, lang);
+  }
+
+  if (!out.subtitulo || out.subtitulo.length < 6 || endsWithDanglingConnector(out.subtitulo, lang)) {
+    out.subtitulo = strongSubtitle(libro, lang);
+  }
+
+  if (!out.parrafoBot || stripHighlightTags(out.parrafoBot).trim().length < 40 || hasGenericClosing(out.parrafoBot, lang)) {
+    out.parrafoBot = strongBottomParagraph(libro, extra, lang);
+  }
+
+  out.parrafoTop = ensureSingleHighlight(out.parrafoTop, lang);
+  out.parrafoBot = ensureSingleHighlight(out.parrafoBot, lang);
+
+  if (countHighlights(`${out.parrafoTop}\n${out.parrafoBot}`) < CFG.tarjeta.minHighlights) {
+    out.parrafoTop = ensureMinimumHighlights(out.parrafoTop, 1);
+    out.parrafoBot = ensureMinimumHighlights(out.parrafoBot, 1);
+  }
+
+  if (lang === "en" && !/\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(stripHighlightTags(out.parrafoBot))) {
+    out.parrafoBot = normalizeHighlightSyntax(`${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} [H]Take 30 seconds to write one concrete next step now.[/H]`);
+  }
+
+  if (lang === "es" && !/\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(stripHighlightTags(out.parrafoBot))) {
+    out.parrafoBot = normalizeHighlightSyntax(`${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} [H]Dedica 30 segundos a escribir un siguiente paso concreto ahora.[/H]`);
+  }
+
+  out = normalizeTarjetaObject(out, lang);
+
+  if (tooSimilarText(out.parrafoTop, out.parrafoBot)) {
+    out.parrafoBot = strongBottomParagraph(libro, extra, lang);
+    out.parrafoBot = ensureMinimumHighlights(out.parrafoBot, 1);
+    out = normalizeTarjetaObject(out, lang);
+  }
+
+  return out;
+}
+
+function buildRepairPromptTarjeta(libro, extra, candidate, failedChecks, lang = "es") {
+  const checksText = failedChecks.join(", ");
+  const journeyWords = cleanJoin(lang === "en" ? (extra?.palabras_en || extra?.palabras || []) : (extra?.palabras || []));
+  const journeyPhrases = normalizeArrayStrings(lang === "en" ? (extra?.frases_en || extra?.frases || []) : (extra?.frases || []), CFG.frases.cantidad)
+    .map((f, i) => `${i + 1}. ${f}`)
+    .join("\n");
+  if (lang === "en") {
+    return `Repair this English editorial card for "${extra?.titulo_en || libro.titulo}" by "${libro.autor}".
+
+Failed checks: ${checksText}
+
+Current card:
+1. ${candidate.titulo}
+2. ${candidate.parrafoTop}
+3. ${candidate.subtitulo}
+4. ${candidate.parrafoBot}
+
+English journey:
+Emotions: ${journeyWords}
+Actions:
+${journeyPhrases}
+
+You must fix ONLY what failed:
+- subtitle must not be truncated or end in a dangling connector
+- bottom paragraph must be rich, specific, highlighted, and include an explicit time
+- keep exactly 4 clean lines
+- no metadata labels
+- no first person
+- no generic closing
+- at least one [H]...[/H] in top and bottom
+
+Return ONLY 4 lines.`;
+  }
+  return `Repara esta tarjeta editorial en español para "${libro.titulo}" de "${libro.autor}".
+
+Checks fallidos: ${checksText}
+
+Tarjeta actual:
+1. ${candidate.titulo}
+2. ${candidate.parrafoTop}
+3. ${candidate.subtitulo}
+4. ${candidate.parrafoBot}
+
+Journey:
+Emociones: ${journeyWords}
+Acciones:
+${journeyPhrases}
+
+Debes corregir SOLO lo que falló:
+- el subtítulo no debe quedar truncado ni colgar de una preposición
+- el párrafo inferior debe ser rico, específico, con highlight y tiempo explícito
+- conserva exactamente 4 líneas limpias
+- sin labels ni metadata
+- sin primera persona
+- sin cierre genérico
+- al menos un [H]...[/H] en top y en bot
+
+Devuelve SOLO 4 líneas.`;
+}
+
+async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es", external = true }) {
+  const verify = lang === "en" ? VERIFICADOR.tarjeta_en : VERIFICADOR.tarjeta;
+  let candidate = null;
+
+  for (let attempt = 0; attempt < 6; attempt += 1) {
+    if (attempt === 0) {
+      if (lang === "es") {
+        const tarjetaMsg = await buildTarjetaMessages(libro, ctx, extra);
+        let raw = await call(tarjetaMsg.system, tarjetaMsg.user, ctx.tempDinamica, false);
+        raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
+        candidate = normalizeTarjetaObject(parseTarjetaLines(raw), "es");
+      } else {
+        let raw = await call(buildPrompt(libro, "tarjeta_en", ctx, extra), "Generate the English editorial card.", ctx.tempDinamica, false);
+        raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
+        candidate = normalizeTarjetaObject(parseTarjetaLines(raw), "en");
+      }
+    } else {
+      const currentValidation = verify(candidate);
+      const failedChecks = listFailedChecks(currentValidation);
+      candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, failedChecks);
+      const afterCoerce = verify(candidate);
+      if (afterCoerce.aprobado) return candidate;
+
+      const repairPrompt = buildRepairPromptTarjeta(libro, extra, candidate, failedChecks, lang);
+      let raw = await call(
+        lang === "en" ? buildPrompt(libro, "tarjeta_en", ctx, extra) : buildPrompt(libro, "tarjeta", ctx, extra),
+        repairPrompt,
+        0.55,
+        false
+      );
+      raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
+      candidate = normalizeTarjetaObject(parseTarjetaLines(raw), lang);
+    }
+
+    const validation = verify(candidate);
+    if (validation.aprobado) return candidate;
+    if (CFG.verification.logLowScore) {
+      console.log(`   ⚠️  Verificación tarjeta${lang === "en" ? " EN" : ""}: ${validation.nivel} (${(validation.score * 100).toFixed(0)}%)`);
+      console.log("      Checks fallidos:", listFailedChecks(validation));
+    }
+  }
+
+  candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, [
+    "tituloOk","subtituloOk","parrafoTopRico","parrafoBotRico","highlightsMinimos","highlightTop","highlightBot","accionReal","sinCierreGenerico"
+  ]);
+  return candidate;
+}
+
 async function enrich(libro, ctx) {
   let intento = 0;
 
@@ -1062,34 +1294,17 @@ async function enrich(libro, ctx) {
       }
 
       console.log("   [2/6] Tarjeta...");
-      const tarjetaMsg = await buildTarjetaMessages(libro, ctx, extra);
-      let rawT = await call(tarjetaMsg.system, tarjetaMsg.user, ctx.tempDinamica, false);
-      rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-      let tarjeta = normalizeTarjetaObject(parseTarjetaLines(rawT), "es");
-
-      if (CFG.verification.enabled) {
-        const vT = VERIFICADOR.tarjeta(tarjeta);
-        if (CFG.verification.logLowScore && vT.score < 0.8) {
-          console.log(`   ⚠️  Verificación tarjeta: ${vT.nivel} (${(vT.score * 100).toFixed(0)}%)`);
-          console.log("      Checks fallidos:", Object.entries(vT.checks).filter(([, ok]) => !ok).map(([k]) => k));
-        }
-        if (CFG.verification.retryIfLowScore && !vT.aprobado) throw new Error(`Verificación tarjeta falló: score ${vT.score.toFixed(2)}`);
+      let tarjeta = await generateTarjetaWithRepair({ libro, ctx, extra, lang: "es" });
+      const vTFinal = VERIFICADOR.tarjeta(tarjeta);
+      if (!vTFinal.aprobado) {
+        throw new Error(`Tarjeta ES no alcanzó verificación después de reparación: score ${vTFinal.score.toFixed(2)}`);
       }
 
       console.log("   [2.5/6] Tarjeta EN...");
-      const rawTEN = await call(buildPrompt(libro, "tarjeta_en", ctx, extra), "Generate the English editorial card.", ctx.tempDinamica, false);
-      let tarjeta_en = normalizeTarjetaObject(parseTarjetaLines(String(rawTEN || "").replace(/@@BODY|@@ENDBODY/g, "").trim()), "en");
-
-      if (CFG.verification.enabled) {
-        const vTEN = VERIFICADOR.tarjeta_en(tarjeta_en);
-        if (CFG.verification.logLowScore && vTEN.score < 0.8) {
-          console.log(`   ⚠️  Verificación tarjeta EN: ${vTEN.nivel} (${(vTEN.score * 100).toFixed(0)}%)`);
-          console.log("      Checks fallidos:", Object.entries(vTEN.checks).filter(([, ok]) => !ok).map(([k]) => k));
-        }
-        if (!vTEN.aprobado) {
-          console.log("   ⚠️  Tarjeta EN no pasó verificación — se omitirá (fallback español en frontend)");
-          tarjeta_en = null;
-        }
+      let tarjeta_en = await generateTarjetaWithRepair({ libro, ctx, extra, lang: "en" });
+      const vTENFinal = VERIFICADOR.tarjeta_en(tarjeta_en);
+      if (!vTENFinal.aprobado) {
+        throw new Error(`Tarjeta EN no alcanzó verificación después de reparación: score ${vTENFinal.score.toFixed(2)}`);
       }
 
       console.log("   [3/6] Style...");
@@ -1247,7 +1462,7 @@ async function runSingle(ctx) {
   if (!bookMeta.titulo || !bookMeta.autor) throw new Error("Libro single inválido: faltan título o autor");
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.7.3 — MODO SINGLE NIVEL DIOS     ║");
+  console.log("║  TRIGGUI v9.7.4 — MODO SINGLE NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
@@ -1271,7 +1486,7 @@ async function runBatch(ctx) {
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.7.3 — MODO BATCH NIVEL DIOS     ║");
+  console.log("║   TRIGGUI v9.7.4 — MODO BATCH NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
   console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
