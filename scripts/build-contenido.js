@@ -1,25 +1,22 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   TRIGGUI v9.6.0 — NIVEL DIOS DEFINITIVO
+   TRIGGUI v9.7.3 — NIVEL DIOS DETERMINISTA
 
-   Arquitectura v9.5 (SINGLE/BATCH, highlights [H]...[/H], prompts externos)
-   + Prompts neurobiológicos v9.0 (Hawkins, dopamina, cronobiología, línea sagrada)
-   − Second pass (eliminado, no sólo desactivado — cero código muerto)
-   − Fallbacks editoriales (cero texto genérico — si falla, marca _fallback)
+   Principio rector:
+   - El modelo puede ser probabilístico.
+   - El código NO.
+   - Toda la arquitectura alrededor del modelo debe ser determinista, segura y total.
 
-   CAMBIOS v9.5 → v9.6.0:
-   ✅ Random real: crypto.randomInt (Fisher-Yates criptográfico)
-   ✅ Prompts: neurobiología completa restaurada (~110 líneas por tipo)
-   ✅ Tarjeta: guías de longitud por campo (tituloGuia, parrafo1Guia, etc.)
-   ✅ Highlights [H]...[/H] exigidos en el prompt de tarjeta
-   ✅ Objeto NEUROBIOLOGIA restaurado
-   ✅ Verificador alineado a prompts restaurados
-   ✅ Fallback: arrays vacíos + _fallback:true (nunca texto genérico)
-   ✅ writeBatchOutput filtra fallbacks (no se publica mediocridad)
-   ✅ Second pass eliminado completo (no código muerto)
-   ✅ GPT-4o-mini (NO CAMBIAR MODELO)
-   ✅ Temperatura máxima 1.2 (nunca >1.5 — Archivo Maestro)
+   CAMBIOS CLAVE:
+   ✅ buildPrompt reescrito con switch (evaluación selectiva real)
+   ✅ Bibliografía EN/ES en carril IA separado
+   ✅ Auditoría bibliográfica IA para evitar cruces de libros del mismo autor
+   ✅ Activadores EN en carril IA separado
+   ✅ Tarjeta EN nativa con verificador propio
+   ✅ Temperatura dinámica capada a 1.2
+   ✅ Blindaje total contra undefined en prompts, validadores y pipeline
+   ✅ Fallbacks marcados con _fallback para no contaminar batch
 
-   AUTOR: Badir Nakid | VERSIÓN: 9.6.0
+   AUTOR: Badir Nakid | VERSIÓN: 9.7.3
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -35,19 +32,13 @@ if (!KEY) {
 
 const openai = new OpenAI({ apiKey: KEY });
 
-/* ═══════════════════════════════════════════════════════════════
-   ⚙️  CONFIGURACIÓN MAESTRA
-═══════════════════════════════════════════════════════════════ */
-
 const CFG = {
-  // ─── API ───
   model: "gpt-4o-mini",
   temp: 1.2,
   top_p: 0.9,
   presence: 0.7,
   frequency: 0.4,
 
-  // ─── Archivos ───
   files: {
     csv: "data/libros_master.csv",
     outBatch: "contenido.json",
@@ -55,14 +46,12 @@ const CFG = {
     tmpBook: "/tmp/triggui-book.json"
   },
 
-  // ─── Prompts externos ───
   prompts: {
     useExternalEditorial: process.env.USE_EXTERNAL_EDITORIAL_PROMPTS === "true",
     constitution: "prompts/constitution/triggui-core.md",
     editorial: "prompts/tasks/generate-editorial.md"
   },
 
-  // ─── Procesamiento ───
   processing: {
     maxBatch: 20,
     delayBetweenBooksMs: 10000,
@@ -71,7 +60,6 @@ const CFG = {
     resetMemoryEvery: 5
   },
 
-  // ─── Hawkins por franja ───
   hawkins: {
     base: [20, 100],
     madrugada: [20, 75],
@@ -80,12 +68,10 @@ const CFG = {
     noche: [20, 100]
   },
 
-  // ─── Contenido ───
   frases: { cantidad: 4, longitudMin: 90, longitudMax: 110 },
   palabras: { cantidad: 4 },
   colores: { cantidad: 4 },
 
-  // ─── Tarjeta (guías de longitud restauradas de v9.0) ───
   tarjeta: {
     accionMin: 15,
     accionMax: 60,
@@ -98,7 +84,6 @@ const CFG = {
     minHighlights: 2
   },
 
-  // ─── Dark Mode ───
   darkMode: {
     paperMin: "#0a0a0a",
     paperMax: "#2a2a2a",
@@ -108,7 +93,6 @@ const CFG = {
     lumThresholdInk: 0.7
   },
 
-  // ─── Cronobiología ───
   energia: {
     lunes: 0.8,
     martes: 0.4,
@@ -119,14 +103,12 @@ const CFG = {
     domingo: 0.8
   },
 
-  // ─── Ajustes dinámicos ───
   dinamico: {
     tempMultiplicador: true,
     hawkinsShift: true,
     frasesExtension: true
   },
 
-  // ─── Verificación ───
   verification: {
     enabled: true,
     logLowScore: true,
@@ -135,12 +117,7 @@ const CFG = {
   }
 };
 
-/* ═══════════════════════════════════════════════════════════════
-   🧰 UTILIDADES
-═══════════════════════════════════════════════════════════════ */
-
 const state = { palabras: new Set(), colores: new Set() };
-
 const promptState = { editorial: null, warnedFallback: false };
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -179,14 +156,80 @@ const utils = {
   }
 };
 
-/* ═══════════════════════════════════════════════════════════════
-   🟨 HIGHLIGHTS CANÓNICOS [H]...[/H]
-═══════════════════════════════════════════════════════════════ */
+function safeArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function cleanJoin(arr, sep = ", ") {
+  return safeArray(arr).map((x) => String(x || "").trim()).filter(Boolean).join(sep);
+}
+
+function normalizeArrayStrings(arr, limit) {
+  return safeArray(arr).map((x) => String(x || "").trim()).filter(Boolean).slice(0, limit);
+}
+
+function normalizeAscii(text = "") {
+  return String(text || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function sharedTokenCount(a = "", b = "") {
+  const aa = new Set(normalizeAscii(a).split(" ").filter(Boolean));
+  const bb = new Set(normalizeAscii(b).split(" ").filter(Boolean));
+  if (!aa.size || !bb.size) return 0;
+  return [...aa].filter((t) => bb.has(t)).length;
+}
+
+function countEqualNormalized(a = [], b = []) {
+  const aa = safeArray(a);
+  const bb = safeArray(b);
+  let count = 0;
+  for (let i = 0; i < Math.min(aa.length, bb.length); i += 1) {
+    const av = normalizeAscii(aa[i]);
+    const bv = normalizeAscii(bb[i]);
+    if (av && av === bv) count += 1;
+  }
+  return count;
+}
+
+function hasLikelySpanishSignals(text = "") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  if (/[¿¡áéíóúñü]/i.test(value)) return true;
+  return /\b(el|la|los|las|de|del|para|por|con|sin|que|como|cuando|donde|hoy|ahora|durante|segundos|minutos|dedica|toma|escribe|reflexiona|observa|conecta|haz|solo|una|un|tu|tus)\b/i.test(value);
+}
+
+function hasLikelyEnglishSignals(text = "") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  return /\b(the|a|an|and|or|with|without|through|within|after|before|take|spend|write|reflect|observe|connect|today|now|seconds|minutes|your|what|how|why|when|where|growth|focus|habit|change|performance)\b/i.test(value);
+}
+
+function endsWithDanglingConnector(text = "", lang = "es") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  const es = /\b(de|del|la|las|los|el|un|una|unos|unas|y|o|u|en|por|para|con|sin|sobre|hacia|desde|hasta|como|que|cuando|donde|al|a)\??$/i;
+  const en = /\b(of|the|a|an|and|or|to|with|without|for|from|in|on|at|by|into|about|through|toward|towards|that|which|who|how|when|where)\??$/i;
+  return (lang === "en" ? en : es).test(value);
+}
+
+function hasGenericClosing(text = "", lang = "es") {
+  const value = String(text || "").trim();
+  if (!value) return false;
+  if (lang === "en") {
+    return /(reflective close|empowering conclusion|meaningful close|actionable insight|a deeper understanding awaits|dream big|embrace the journey ahead|maximize receptiveness|transformative possibilities|unlock potential)/i.test(value);
+  }
+  return /(cierre reflexivo|cierre inspirador|conclusión inspiradora|encuentra tu fuerza interior|encuentra tu centro)/i.test(value);
+}
 
 function normalizeHighlightSyntax(input) {
   let text = String(input || "");
   if (!text.trim()) return "";
-
   text = text.replace(/\{\{H\}\}/gi, "[H]").replace(/\{\{\/H\}\}/gi, "[/H]");
   text = text.replace(/\[h\]/g, "[H]").replace(/\[\/h\]/g, "[/H]");
 
@@ -236,49 +279,41 @@ function sanitizeTitleText(text) {
   return normalizeSentence(
     stripHighlightTags(String(text || ""))
       .replace(/@@BODY|@@ENDBODY/gi, "")
-      .replace(/\n+/g, " ").replace(/\s+/g, " ").trim()
+      .replace(/\n+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
       .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
-      .replace(/[.!?…]+$/g, "").trim()
+      .replace(/[.!?…]+$/g, "")
+      .trim()
   );
 }
 
-function sanitizeSubtitleText(text) {
+function sanitizeSubtitleText(text, lang = "es") {
   let clean = normalizeSentence(
     stripHighlightTags(String(text || ""))
       .replace(/@@BODY|@@ENDBODY/gi, "")
-      .replace(/\n+/g, " ").replace(/\s+/g, " ").trim()
+      .replace(/\n+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
       .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
       .trim()
   );
   if (!clean) return "";
 
-  const isQuestion = clean.startsWith("¿");
-
-  // Preservar ? en preguntas — solo strip . y …
-  clean = isQuestion
-    ? clean.replace(/[.…]+$/g, "").trim()
-    : clean.replace(/[.!?…]+$/g, "").trim();
+  const isQuestion = lang === "es" ? clean.startsWith("¿") : clean.endsWith("?");
+  clean = isQuestion ? clean.replace(/[.…]+$/g, "").trim() : clean.replace(/[.!?…]+$/g, "").trim();
 
   const words = clean.split(/\s+/).filter(Boolean);
-  // Preguntas en español necesitan más espacio (12 palabras vs 8)
   const maxWords = isQuestion ? 12 : 8;
   const maxChars = isQuestion ? 90 : 72;
-
   if (words.length > maxWords || clean.length > maxChars) {
     let truncated = words.slice(0, maxWords).join(" ");
-    // Si truncamos una pregunta, cerrarla con ?
-    if (isQuestion && !truncated.endsWith("?")) truncated += "?";
-    return truncated;
+    if (isQuestion && lang === "es" && !truncated.endsWith("?")) truncated += "?";
+    if (isQuestion && lang === "en" && !truncated.endsWith("?")) truncated += "?";
+    clean = truncated;
   }
 
   return clean;
-}
-
-function isLikelyEditorialTitle(text) {
-  const v = sanitizeTitleText(text);
-  if (!v || v.length < 6 || v.length > 72) return false;
-  if ((v.match(/[.!?]/g) || []).length > 0) return false;
-  return v.split(/\s+/).filter(Boolean).length <= 8;
 }
 
 function comparableText(text) {
@@ -308,43 +343,38 @@ function removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo = "") {
 
 function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
   let norm = normalizeHighlightSyntax(text);
-
-  // Primero: eliminar highlights débiles que GPT puso mal
-  // (fragmentos cortos, frases que terminan en preposición/artículo)
   norm = norm.replace(/\[H\](.*?)\[\/H\]/gi, (match, content) => {
     const plain = content.trim();
-    if (plain.length < 25) return plain; // Demasiado corto para ser significativo
-    if (/\b(de|del|en|a|al|con|por|para|sin|sobre|entre|hacia|hasta|desde|tras|un|una|el|la|los|las|que|y|o)\s*$/i.test(plain)) {
-      return plain; // Termina en preposición/artículo = fragmento incompleto
+    if (plain.length < 25) return plain;
+    if (/\b(de|del|en|a|al|con|por|para|sin|sobre|entre|hacia|hasta|desde|tras|un|una|el|la|los|las|que|y|o|of|the|and|to|with|for|in|on|at|by)\s*$/i.test(plain)) {
+      return plain;
     }
-    return match; // Highlight válido, mantener
+    return match;
   });
   norm = normalizeHighlightSyntax(norm);
 
   if (countHighlights(norm) >= minimum) return norm;
 
   const segments = stripHighlightTags(norm)
-    .split(/(?<=[\.\!\?])\s+/).map((s) => s.trim()).filter((s) => s.length >= 28);
-  if (!segments.length) return norm;
+    .split(/(?<=[\.\!\?])\s+/)
+    .map((s) => s.trim())
+    .filter((s) => s.length >= 28);
 
   for (const seg of segments.slice(0, minimum)) {
     if (countHighlights(norm) >= minimum) break;
     const escaped = seg.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     norm = norm.replace(new RegExp(escaped), `[H]${seg}[/H]`);
   }
+
   return normalizeHighlightSyntax(norm);
 }
 
-function normalizeTarjetaObject(tarjeta = {}) {
+function normalizeTarjetaObject(tarjeta = {}, lang = "es") {
   const clean = {
     titulo: sanitizeTitleText(String(tarjeta.titulo || "").trim()),
-    parrafoTop: ensureMinimumHighlights(
-      normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()), 1
-    ),
-    subtitulo: sanitizeSubtitleText(String(tarjeta.subtitulo || "").trim()),
-    parrafoBot: ensureMinimumHighlights(
-      normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()), 1
-    ),
+    parrafoTop: ensureMinimumHighlights(normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()), 1),
+    subtitulo: sanitizeSubtitleText(String(tarjeta.subtitulo || "").trim(), lang),
+    parrafoBot: ensureMinimumHighlights(normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()), 1),
     style: tarjeta.style || {}
   };
 
@@ -355,9 +385,39 @@ function normalizeTarjetaObject(tarjeta = {}) {
   return clean;
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   🕐 CONTEXTO DINÁMICO
-═══════════════════════════════════════════════════════════════ */
+function detectOriginalLanguageFromTitles(tituloBase = "", tituloEs = "", tituloEn = "") {
+  const base = String(tituloBase || "").trim();
+  const es = String(tituloEs || "").trim();
+  const en = String(tituloEn || "").trim();
+  if (/[¿¡áéíóúñü]/i.test(base) || /[¿¡áéíóúñü]/i.test(es)) return "es";
+  const englishSignals = /\b(the|and|of|for|to|with|without|war|art|mind|life|power|love|time|work|habit|habits|thinking|guide|how|why|when|where|who|fear|hooked|masters|scale|daily|journey|book|code|performance|justice|problem|solution|world|exist)\b/i;
+  if (englishSignals.test(base) || englishSignals.test(en)) return "en";
+  return "es";
+}
+
+function normalizeBibliografiaData(data = {}, libro = {}) {
+  const tituloBase = String(libro?.titulo || "").trim();
+  let titulo_es = String(data.titulo_es || "").trim();
+  let titulo_en = String(data.titulo_en || "").trim();
+  let idioma_original = String(data.idioma_original || "").trim().toLowerCase();
+
+  if (!titulo_es && !titulo_en && tituloBase) titulo_es = tituloBase;
+  if (!titulo_es && titulo_en) titulo_es = tituloBase || titulo_en;
+  if (!titulo_en && titulo_es) titulo_en = tituloBase || titulo_es;
+  if (!/^(es|en)$/.test(idioma_original)) {
+    idioma_original = detectOriginalLanguageFromTitles(tituloBase, titulo_es, titulo_en);
+  }
+  if (!titulo_es && idioma_original === "es" && tituloBase) titulo_es = tituloBase;
+  if (!titulo_en && idioma_original === "en" && tituloBase) titulo_en = tituloBase;
+  if (!titulo_es) titulo_es = tituloBase || titulo_en;
+  if (!titulo_en) titulo_en = tituloBase || titulo_es;
+
+  return {
+    titulo_es: titulo_es.trim(),
+    titulo_en: titulo_en.trim(),
+    idioma_original
+  };
+}
 
 function getContexto() {
   const now = new Date();
@@ -370,20 +430,21 @@ function getContexto() {
   else if (hora >= 12 && hora < 18) franja = "tarde";
 
   const energia = CFG.energia[dia] || 0.8;
+  const tempCalculada = CFG.dinamico.tempMultiplicador ? CFG.temp * energia : CFG.temp;
 
   return {
-    dia, hora, franja, energia,
-    tempDinamica: CFG.dinamico.tempMultiplicador ? CFG.temp * energia : CFG.temp,
+    dia,
+    hora,
+    franja,
+    energia,
+    tempDinamica: Math.max(0.2, Math.min(CFG.temp, Number(tempCalculada.toFixed(2)))),
+    bibliografiaTemp: 0.3,
     hawkinsDinamico: CFG.dinamico.hawkinsShift ? CFG.hawkins[franja] : CFG.hawkins.base,
     frasesLongitud: CFG.dinamico.frasesExtension
       ? { min: Math.round(CFG.frases.longitudMin * energia), max: Math.round(CFG.frases.longitudMax * energia) }
       : { min: CFG.frases.longitudMin, max: CFG.frases.longitudMax }
   };
 }
-
-/* ═══════════════════════════════════════════════════════════════
-   🧠 NEUROBIOLOGÍA — SISTEMA DE VARIABLES
-═══════════════════════════════════════════════════════════════ */
 
 const NEUROBIOLOGIA = {
   estadoEntrada: {
@@ -412,10 +473,6 @@ const NEUROBIOLOGIA = {
   }
 };
 
-/* ═══════════════════════════════════════════════════════════════
-   📂 PROMPTS EXTERNOS
-═══════════════════════════════════════════════════════════════ */
-
 async function readPromptFile(relativePath) {
   const candidates = [
     new URL(`../${relativePath}`, import.meta.url),
@@ -433,11 +490,11 @@ function extractMarkdownSection(markdown, heading) {
   const source = String(markdown || "");
   const re = new RegExp(`^##\\s+${heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "m");
   const match = re.exec(source);
-  if (!match) throw new Error(`Sección "${heading}" no encontrada`);
+  if (!match) throw new Error(`Sección \"${heading}\" no encontrada`);
   const tail = source.slice(match.index + match[0].length).replace(/^\s+/, "");
   const next = /^##\s+/m.exec(tail);
   const content = (next ? tail.slice(0, next.index) : tail).trim();
-  if (!content) throw new Error(`Sección "${heading}" vacía`);
+  if (!content) throw new Error(`Sección \"${heading}\" vacía`);
   return content;
 }
 
@@ -471,15 +528,10 @@ async function loadEditorialPromptArtifacts() {
   return promptState.editorial;
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   🧙‍♂️ SISTEMA DE PROMPTS NIVEL DIOS
-═══════════════════════════════════════════════════════════════ */
-
-function buildPrompt(libro, tipo, ctx, extra = null) {
-  const prohibidas = [...state.palabras].join(", ");
-  const prohibidosC = [...state.colores].join(", ");
-
-  const base = `
+function promptBase(libro, ctx) {
+  const prohibidas = cleanJoin([...state.palabras]);
+  const prohibidosC = cleanJoin([...state.colores]);
+  return `
 Eres Triggui. Neurobiólogo + Diseñador de experiencias emocionales.
 
 ═══════════════════════════════════════════════════════════════
@@ -518,250 +570,197 @@ TEST DE CALIDAD BRUTAL (LÍNEA SAGRADA):
 → Si puedo copiar tu output y usarlo para OTRO libro = FALLASTE COMPLETAMENTE
 → Si no refleja CONTENIDO ESPECÍFICO de este libro = FALLASTE
 → Si es genérico = FALLASTE
-
-PROCESO OBLIGATORIO:
-1. Recuerda lo que SABES del libro (no lo que imaginas)
-2. Identifica temas, emociones, conflictos REALES
-3. Extrae atmósfera, tono, sensación ESPECÍFICA
-4. SOLO ENTONCES genera
 `;
+}
 
-  const prompts = {
-    main: base + `
+function buildPrompt(libro, tipo, ctx, extra = null) {
+  const base = promptBase(libro, ctx);
+  const extraSafe = extra || {};
+  const palabras = normalizeArrayStrings(extraSafe.palabras, CFG.palabras.cantidad);
+  const frases = normalizeArrayStrings(extraSafe.frases, CFG.frases.cantidad);
+  const palabrasEn = normalizeArrayStrings(extraSafe.palabras_en, CFG.palabras.cantidad);
+  const frasesEn = normalizeArrayStrings(extraSafe.frases_en, CFG.frases.cantidad);
+
+  switch (tipo) {
+    case "main":
+      return base + `
 ═══════════════════════════════════════════════════════════════
 🎯 GENERAR: Activadores emocionales para "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-ANTES DE GENERAR, RESPONDE INTERNAMENTE:
-→ ¿Cuáles son los 3 temas centrales INTRÍNSECOS de este libro específico?
-→ ¿Qué emociones/conflictos dominan en esta obra?
-→ ¿Cuál es el arco emocional de este libro?
-→ ¿Qué sé sobre cómo los lectores reales reciben este libro?
+Genera SOLO JSON con:
+- dimension
+- punto
+- palabras (4)
+- frases (4)
+- colores (4)
+- fondo
 
-COMPONENTE 1 - PALABRAS (${CFG.palabras.cantidad}):
-Rango: Hawkins ${ctx.hawkinsDinamico[0]}-${ctx.hawkinsDinamico[1]}
+REGLAS:
+- Palabras específicas del libro
+- Frases con emoji + microacción concreta
+- Colores hex completos
+- Fondo oscuro
+- Nada genérico
 
-PROCESO:
-→ Identifica emociones que APARECEN en el contenido del libro
-→ Mapea esas emociones a escala Hawkins en el rango dado
-→ Prioriza emociones DENSAS, viscerales, específicas al libro
-→ Emociones deben ser IMPOSIBLES de usar en otro libro sin que se note
-
-PROHIBIDO ABSOLUTO:
-❌ Emociones genéricas aplicables a cualquier libro
-❌ Palabras que no reflejen contenido real del libro
-❌ Cualquier emoción que no investigaste en el libro
-
-COMPONENTE 2 - FRASES (${CFG.frases.cantidad}):
-Longitud: ${ctx.frasesLongitud.min}-${ctx.frasesLongitud.max} caracteres
-Estructura: emoji + acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos
-
-PROCESO:
-→ Identifica metáforas, situaciones, momentos ESPECÍFICOS del libro, relacionados a su respectiva palabra de COMPONENTE 1
-→ Traduce esas situaciones a acciones o micro-acciones ejecutables ahora. Relacionados a su respectiva palabra de COMPONENTE 1
-→ Emoji debe reflejar tono emocional de esa parte del libro. Relacionados a su respectiva palabra de COMPONENTE 1
-→ Cada acción debe ser ÚNICAMENTE aplicable a este libro. Relacionados a su respectiva palabra de COMPONENTE 1
-
-NEUROBIOLOGÍA:
-→ Emoji = spike dopamina (recompensa visual)
-→ Acción <60seg = dopamina anticipatoria (alcanzable)
-→ Conexión al libro = oxitocina (pertenencia)
-
-PROHIBIDO ABSOLUTO:
-❌ Acciones genéricas aplicables a cualquier libro
-❌ Acciones sin tiempo específico
-❌ Acciones desconectadas del contenido del libro
-
-COMPONENTE 3 - COLORES (${CFG.colores.cantidad}):
-Formato: hex completo
-
-PROCESO NEUROBIOLÓGICO RIGUROSO:
-→ Identifica la atmósfera emocional ESPECÍFICA del libro
-→ Determina si es oscuro, luminoso, esperanzador, sombrío, transformacional, introspectivo
-→ Mapea esa atmósfera a activación dopaminérgica requerida
-
-PRINCIPIOS NEUROBIOLÓGICOS:
-→ Temperatura color (cálido/frío) determina tipo activación
-→ Saturación determina intensidad dopaminérgica
-→ Luminosidad ajusta según hora del día y energía usuario
-
-MAPEO RIGUROSO ATMÓSFERA → NEUROBIOLOGÍA:
-→ Atmósfera oscura existencial: fríos saturados para elevar manteniendo tono
-→ Atmósfera cálida esperanzadora: cálidos saturados para amplificar
-→ Atmósfera transformacional: contraste cálido-frío para impulso
-→ Atmósfera introspectiva: fríos medios para profundizar sin agitar
-
-AJUSTE CRONOBIOLÓGICO OBLIGATORIO:
-→ Energía usuario: ${Math.round(ctx.energia * 100)}%
-→ Si <60%: incrementa saturación para compensar
-→ Si >100%: puedes reducir saturación
-→ Hora ${ctx.franja}: ajusta luminosidad según momento del día
-
-PROHIBIDO ABSOLUTO:
-❌ Colores aleatorios sin investigación del libro
-❌ Ignorar energía del usuario
-❌ Ignorar hora del día
-❌ Grises, pasteles débiles, neones estridentes
-❌ Colores que no reflejen atmósfera del libro
-
-CRITERIO FINAL:
-→ ¿Refleja atmósfera del libro? NO = descarta
-→ ¿Activa dopamina según energía/hora? NO = descarta
-→ ¿Es único a este libro? NO = descarta
-
-COMPONENTE 4 - FONDO (1):
-Rango: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax}
-Elige tono dentro del rango que complemente tu paleta.
-Neurobiología: reduce fatiga visual, prolonga estado alfa.
-
-═══════════════════════════════════════════════════════════════
-📤 OUTPUT:
-═══════════════════════════════════════════════════════════════
-
+JSON:
 {
   "dimension": "Bienestar|Prosperidad|Conexión",
   "punto": "Cero|Creativo|Activo|Máximo",
-  "palabras": ["palabra_hawkins_del_libro", "palabra_hawkins_del_libro", "palabra_hawkins_del_libro", "palabra_hawkins_del_libro"],
-  "frases": [
-    "emoji Acción relacionada al libro ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg",
-    "emoji Acción relacionada al libro ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg",
-    "emoji Acción relacionada al libro ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg",
-    "emoji Acción relacionada al libro ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax}seg"
-  ],
-  "colores": ["#hex", "#hex", "#hex", "#hex"],
+  "palabras": ["string","string","string","string"],
+  "frases": ["emoji string","emoji string","emoji string","emoji string"],
+  "colores": ["#hex","#hex","#hex","#hex"],
   "fondo": "#hex"
 }
 
-VERIFICACIÓN ANTES DE RESPONDER:
-✓ ¿Trabajé con rasgos reales del libro?
-✓ ¿Palabras aparecen en contenido del libro?
-✓ ¿Frases conectan con libro específico?
-✓ ¿Colores reflejan atmósfera + cronobiología?
-✓ ¿Puedo usar esto para otro libro? SI = REGENERA TODO
+SOLO JSON.`;
 
-SOLO JSON.`,
+    case "bibliografia":
+      return `
+Eres un resolutor bibliográfico bilingüe de precisión extrema.
 
-    tarjeta: base + `
-${extra ? `
-═══════════════════════════════════════════════════════════════
-🔗 JOURNEY PREVIO:
-═══════════════════════════════════════════════════════════════
-Emociones: ${extra.palabras.join(", ")}
-Acciones:
-${extra.frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+Debes devolver metadata canónica para ESTA MISMA obra.
+NO confundas esta obra con otro libro del mismo autor.
 
-CONTINÚA este journey emocional.
-═══════════════════════════════════════════════════════════════
-` : ""}
+Título visto: "${libro.titulo}"
+Autor: "${libro.autor}"
+Tagline/contexto: "${libro.tagline || ""}"
 
+Reglas:
+1. Devuelve titulo_es y titulo_en para la misma obra.
+2. idioma_original solo puede ser "es" o "en".
+3. Si conoces un título publicado real, úsalo.
+4. Si no estás seguro del otro idioma, conserva el original y da la mejor equivalencia natural sin inventar subtítulos.
+5. Si hay riesgo de confusión con otra obra del mismo autor, prioriza título visto + tagline.
+
+JSON:
+{
+  "titulo_es": "string",
+  "titulo_en": "string",
+  "idioma_original": "es|en"
+}
+
+SOLO JSON.`;
+
+    case "bibliografia_auditor":
+      return `
+Eres un auditor bibliográfico implacable.
+
+Debes decidir si la propuesta corresponde EXACTAMENTE a la misma obra recibida.
+Si hay duda real o parece otro libro del mismo autor, same_work=false.
+
+Título visto: "${libro.titulo}"
+Autor: "${libro.autor}"
+Tagline/contexto: "${libro.tagline || ""}"
+
+Propuesta:
+- titulo_es: "${String(extraSafe.titulo_es || "").trim()}"
+- titulo_en: "${String(extraSafe.titulo_en || "").trim()}"
+- idioma_original: "${String(extraSafe.idioma_original || "").trim()}"
+
+JSON:
+{
+  "same_work": true,
+  "risk": "low|medium|high",
+  "reason": "string"
+}
+
+SOLO JSON.`;
+
+    case "activadores_en":
+      return `
+You are generating native English activators for Triggui.
+
+Your task is NOT to translate literally.
+Create natural English equivalents for the same emotional journey.
+
+Book:
+Spanish title: "${String(extraSafe.titulo_es || libro.titulo).trim()}"
+English title: "${String(extraSafe.titulo_en || libro.titulo).trim()}"
+Author: "${libro.autor}"
+Original language: "${String(extraSafe.idioma_original || "").trim()}"
+
+Source activators in Spanish:
+Palabras ES: ${cleanJoin(palabras)}
+Frases ES:
+${frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
+
+Rules:
+1. Return exactly 4 palabras_en and 4 frases_en.
+2. palabras_en must be native English emotional words or compact expressions.
+3. frases_en must sound like a native English speaker wrote them.
+4. Keep the same emotional intent and action logic.
+5. Keep emoji at the start.
+6. Keep explicit time where relevant.
+7. Do not copy the Spanish text.
+8. If the output still looks Spanish when English exists = failure.
+
+JSON:
+{
+  "palabras_en": ["string","string","string","string"],
+  "frases_en": ["emoji string","emoji string","emoji string","emoji string"]
+}
+
+SOLO JSON.`;
+
+    case "tarjeta":
+      return base + `
 ═══════════════════════════════════════════════════════════════
 🎯 GENERAR: Tarjeta profundización "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-ANTES DE GENERAR, RESPONDE INTERNAMENTE:
-→ ¿Cuál es LA enseñanza central del libro?
-→ ¿Qué transformación ofrece?
-→ ¿Qué conflicto interno resuelve?
-→ ¿Cuál es el momento más citado/recordado?
+Journey previo:
+Emociones: ${cleanJoin(palabras)}
+Acciones:
+${frases.map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
-4 COMPONENTES:
+Genera SOLO 4 líneas:
+1. Título único del libro
+2. Párrafo top con [H]...[/H]
+3. Subtítulo sin [H]
+4. Párrafo bot con [H]...[/H] y tiempo explícito
 
-LÍNEA 1 — TÍTULO (~${CFG.tarjeta.tituloGuia} chars):
-→ Concepto ÚNICO que solo aparece en este libro
-→ Concreto, sin adornos
-→ IMPOSIBLE de usar en otro libro
-→ Sin primera persona
-→ JAMÁS lleva [H] ni [/H]
+Prohibido:
+- primera persona
+- frases genéricas
+- subtítulos truncados
+- cierres genéricos
 
-LÍNEA 2 — PÁRRAFO TOP (~${CFG.tarjeta.parrafo1Guia} chars):
-→ Observacional, tercera persona
-→ Insight que refleje enseñanza REAL del libro
-→ Conecta con emociones Hawkins ya activadas EN LOS COMPONENTES
-→ Valida sin juzgar
-→ OBLIGATORIO: usa highlights con formato EXACTO [H]...[/H] — mínimo 1 highlight aquí
-→ Nunca marques una palabra aislada; marca una frase útil completa
+SOLO 4 LÍNEAS.`;
 
-Neurobiología: validación = serotonina, precisión = confianza
-
-LÍNEA 3 — SUBTÍTULO (~${CFG.tarjeta.subtituloGuia} chars):
-→ Pregunta provocadora O declaración elevadora INTELIGENTE
-→ Basada en tema CENTRAL O INTRÍNSECO del libro
-→ Mueve de emociones bajas a altas
-→ JAMÁS lleva [H] ni [/H]
-
-Neurobiología: pregunta = curiosidad + shift alfa, elevación = transformación
-
-LÍNEA 4 — PÁRRAFO BOT (~${CFG.tarjeta.parrafo2Guia} chars):
-→ Referencia SUTIL INTELIGENTE a micro-acciones previas del journey
-→ Nueva acción ${CFG.tarjeta.accionMin}-${CFG.tarjeta.accionMax} segundos
-→ Acción inspirada en metáfora/situación/dato ESPECÍFICA del libro
-→ Tiempo explícito
-→ OBLIGATORIO: usa highlights con formato EXACTO [H]...[/H] — mínimo 1 highlight aquí
-
-Neurobiología: referencia = validación (oxitocina), acción nueva = dopamina, tiempo = alcanzable
-
-PROHIBIDO ABSOLUTO:
-❌ Títulos genéricos aplicables a otros libros
-❌ Primera persona (yo, mi, aprendí, descubrí, siento, creo, pienso)
-❌ "según el libro", "nos recuerda", "invita a", "reflexiona", "trata de", "habla de"
-❌ Insights no relacionados al libro
-❌ Preguntas obvias
-❌ Acciones vagas sin tiempo
-❌ Metadata, corchetes de label, markdown, emojis, comillas
-
+    case "tarjeta_en":
+      return base + `
 ═══════════════════════════════════════════════════════════════
-📤 OUTPUT (4 líneas limpias, SIN labels, SIN rótulos):
+🎯 GENERATE: English editorial card for "${String(extraSafe.titulo_en || libro.titulo).trim()}"
 ═══════════════════════════════════════════════════════════════
 
-Concepto único del libro
-[H]Insight específico observacional del libro conecta con journey.[/H] Extensión del insight.
-¿Pregunta provocadora del tema del libro?
-Después de referencia sutil acciones previas, [H]nueva acción tiempo segundos inspirada en libro.[/H] Cierre reflexivo.
+English journey:
+Emotions: ${cleanJoin(palabrasEn.length ? palabrasEn : palabras)}
+Actions:
+${(frasesEn.length ? frasesEn : frases).map((f, i) => `${i + 1}. ${f}`).join("\n")}
 
-SOLO 4 LÍNEAS. SIN rótulos. SIN markdown. SIN emojis. SIN comillas.`,
+Generate ONLY 4 clean lines:
+1. Unique title for this specific book
+2. Top paragraph with [H]...[/H]
+3. Subtitle without [H]
+4. Bottom paragraph with [H]...[/H] and explicit time
 
-    estilo: base + `
+Forbidden:
+- first person
+- generic summaries
+- dangling subtitles
+- generic endings
+- translationese
+
+ONLY 4 LINES.`;
+
+    case "estilo":
+      return base + `
 ═══════════════════════════════════════════════════════════════
 🎯 GENERAR: Estilo visual para tarjeta "${libro.titulo}"
 ═══════════════════════════════════════════════════════════════
 
-ANTES DE GENERAR:
-→ ¿Cuál es la atmósfera emocional dominante del libro?
-→ ¿Es oscuro, luminoso, denso, ligero, sombrío, esperanzador?
-→ ¿Qué sensación queda tras leerlo?
-
-COMPONENTES:
-
-ACCENT:
-→ Color que REPRESENTE atmósfera específica del libro
-→ Ajustado a energía usuario (${Math.round(ctx.energia * 100)}%) y hora (${ctx.franja})
-→ Debe activar dopamina apropiada sin romper inmersión
-
-Proceso:
-1. Determina atmósfera del libro
-2. Mapea a temperatura de color (cálido/frío)
-3. Ajusta saturación según energía usuario
-4. Ajusta luminosidad según hora
-
-INK:
-→ Rango: ${CFG.darkMode.inkMin} a ${CFG.darkMode.inkMax}
-→ Claro, legible, sin esfuerzo cognitivo
-
-PAPER:
-→ Rango: ${CFG.darkMode.paperMin} a ${CFG.darkMode.paperMax}
-→ Oscuro profundo
-→ Complementa accent
-
-BORDER:
-→ Oscuro sutil, apenas perceptible
-→ No rompe inmersión
-
-Neurobiología: alto contraste = menos esfuerzo, fondo oscuro = alfa prolongado, accent = dopamina visual
-
-═══════════════════════════════════════════════════════════════
-📤 OUTPUT:
-═══════════════════════════════════════════════════════════════
-
+Devuelve SOLO JSON:
 {
   "accent": "#hex",
   "ink": "#hex",
@@ -769,22 +768,12 @@ Neurobiología: alto contraste = menos esfuerzo, fondo oscuro = alfa prolongado,
   "border": "#hex"
 }
 
-VERIFICACIÓN:
-✓ ¿Trabajé con la atmósfera real del libro?
-✓ ¿Accent refleja libro?
-✓ ¿Ajustado a energía/hora?
-✓ ¿Paper oscuro rango correcto?
-✓ ¿Ink claro rango correcto?
+paper debe ser oscuro. ink debe ser claro. SOLO JSON.`;
 
-SOLO JSON.`
-  };
-
-  return prompts[tipo];
+    default:
+      throw new Error(`Tipo de prompt no soportado: ${tipo}`);
+  }
 }
-
-/* ═══════════════════════════════════════════════════════════════
-   📂 TARJETA: PROMPT EXTERNO (cuando USE_EXTERNAL_EDITORIAL_PROMPTS=true)
-═══════════════════════════════════════════════════════════════ */
 
 async function buildTarjetaMessages(libro, ctx, extra = null) {
   const legacySystem = buildPrompt(libro, "tarjeta", ctx, extra);
@@ -794,7 +783,6 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
   }
 
   const artifacts = await loadEditorialPromptArtifacts();
-
   if (!artifacts.available) {
     if (!promptState.warnedFallback) {
       console.log(`   ⚠️  Prompt externo no disponible. Fallback legacy: ${artifacts.error}`);
@@ -803,8 +791,8 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
     return { system: legacySystem, user: "Genera la tarjeta editorial.", source: "legacy-fallback" };
   }
 
-  const ideaSemilla = extra?.frases?.length
-    ? extra.frases.join(" | ")
+  const ideaSemilla = normalizeArrayStrings(extra?.frases, CFG.frases.cantidad).length
+    ? normalizeArrayStrings(extra?.frases, CFG.frases.cantidad).join(" | ")
     : (libro.tagline || libro.titulo || "");
 
   const variables = {
@@ -816,7 +804,7 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
     "${ctx.energia}": `${Math.round((ctx.energia || 0) * 100)}%`,
     "${ctx.hawkins}": `${ctx.hawkinsDinamico?.[0] ?? ""}-${ctx.hawkinsDinamico?.[1] ?? ""}`,
     "${idea_semilla}": ideaSemilla,
-    "${palabras_prohibidas}": [...state.palabras].join(", "),
+    "${palabras_prohibidas}": cleanJoin([...state.palabras]),
     "${libro.contexto_2026?.aplicacion_badir_hoy ?? ''}": libro?.contexto_2026?.aplicacion_badir_hoy || "",
     "${lente_activo ?? ''}": libro?.lente_activo || ""
   };
@@ -828,21 +816,13 @@ async function buildTarjetaMessages(libro, ctx, extra = null) {
   };
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   ✅ VERIFICADORES ALINEADOS AL PROMPT
-═══════════════════════════════════════════════════════════════ */
-
 const VERIFICADOR = {
   main(data) {
     const checks = {
       tienePalabras: Array.isArray(data.palabras) && data.palabras.length === CFG.palabras.cantidad,
-      palabrasNoVacias: Array.isArray(data.palabras) && data.palabras.every((p) => String(p || "").trim().length > 3),
+      palabrasNoVacias: Array.isArray(data.palabras) && data.palabras.every((p) => String(p || "").trim().length > 2),
       tieneFrases: Array.isArray(data.frases) && data.frases.length === CFG.frases.cantidad,
       frasesConEmoji: Array.isArray(data.frases) && data.frases.every((f) => /[\p{Emoji}]/u.test(String(f || ""))),
-      frasesLongitudOk: Array.isArray(data.frases) && data.frases.every((f) => {
-        const len = String(f || "").trim().length;
-        return len >= 30 && len <= 150;
-      }),
       tieneColores: Array.isArray(data.colores) && data.colores.length === CFG.colores.cantidad,
       coloresHex: Array.isArray(data.colores) && data.colores.every((c) => /^#[0-9a-f]{6}$/i.test(String(c || ""))),
       tieneFondo: typeof data.fondo === "string" && /^#[0-9a-f]{6}$/i.test(data.fondo),
@@ -850,66 +830,110 @@ const VERIFICADOR = {
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-    return {
-      score: ok / total, checks,
-      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
-      aprobado: ok / total >= CFG.verification.minScore
+    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
+  },
+
+  bibliografia(data, libro, auditoria = null) {
+    const safe = normalizeBibliografiaData(data, libro);
+    const baseTitle = String(libro?.titulo || "").trim();
+    const checks = {
+      tieneTituloEn: safe.titulo_en.length > 2,
+      tieneTituloEs: safe.titulo_es.length > 2,
+      idiomaValido: /^(es|en)$/.test(safe.idioma_original),
+      anclaConFuente: sharedTokenCount(baseTitle, safe.titulo_es) >= 1 || sharedTokenCount(baseTitle, safe.titulo_en) >= 1 || normalizeAscii(baseTitle) === normalizeAscii(safe.titulo_es) || normalizeAscii(baseTitle) === normalizeAscii(safe.titulo_en),
+      auditoriaMismoLibro: auditoria ? auditoria.same_work === true : true,
+      auditoriaNoRiesgoAlto: auditoria ? auditoria.risk !== "high" : true
     };
+    const ok = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    return { score: ok / total, checks, safe, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
+  },
+
+  activadores_en(data, extra) {
+    const palabras_en = normalizeArrayStrings(data?.palabras_en, CFG.palabras.cantidad);
+    const frases_en = normalizeArrayStrings(data?.frases_en, CFG.frases.cantidad);
+    const palabras_es = normalizeArrayStrings(extra?.palabras, CFG.palabras.cantidad);
+    const frases_es = normalizeArrayStrings(extra?.frases, CFG.frases.cantidad);
+    const englishPhraseHits = frases_en.filter((f) => hasLikelyEnglishSignals(f) && !hasLikelySpanishSignals(f)).length;
+    const englishWordHits = palabras_en.filter((w) => !hasLikelySpanishSignals(w) || hasLikelyEnglishSignals(w)).length;
+    const checks = {
+      tienePalabrasEn: palabras_en.length === CFG.palabras.cantidad,
+      tieneFrasesEn: frases_en.length === CFG.frases.cantidad,
+      frasesConEmoji: frases_en.every((f) => /[\p{Emoji}]/u.test(String(f || ""))),
+      palabrasNoCopianES: countEqualNormalized(palabras_en, palabras_es) <= 1,
+      frasesNoCopianES: countEqualNormalized(frases_en, frases_es) === 0,
+      frasesParecenIngles: englishPhraseHits >= 3,
+      palabrasParecenIngles: englishWordHits >= 3,
+      sinPuntuacionInvertida: frases_en.every((f) => !/[¿¡]/.test(String(f || "")))
+    };
+    const ok = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    return { score: ok / total, checks, safe: { palabras_en, frases_en }, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
   },
 
   tarjeta(tarjeta) {
-    const safe = normalizeTarjetaObject(tarjeta);
+    const safe = normalizeTarjetaObject(tarjeta, "es");
     const topPlain = stripHighlightTags(safe.parrafoTop).trim();
     const botPlain = stripHighlightTags(safe.parrafoBot).trim();
     const totalH = countHighlights(`${safe.parrafoTop}\n${safe.parrafoBot}`);
     const allText = [safe.titulo, safe.parrafoTop, safe.subtitulo, safe.parrafoBot].join("\n");
-
     const checks = {
-      tituloOk: isLikelyEditorialTitle(safe.titulo) && safe.titulo.length >= 8,
-      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0,
+      tituloOk: safe.titulo.length >= 8,
+      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "es"),
       parrafoTopRico: topPlain.length >= 40,
       parrafoBotRico: botPlain.length >= 40,
       sinMetadata: !/(^|\n)\s*(título|parrafo|párrafo|subtítulo|accion|acción)\s*[:\-]/i.test(allText),
-      sinMarkdown: !/```|\*\*|__/g.test(allText),
       sinPrimeraPersona: !/\b(yo|mi|me|conmigo|nosotros|nuestro|aprendí|descubrí|sentí|pienso|creo)\b/i.test(allText),
       highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
       highlightTop: countHighlights(safe.parrafoTop) >= 1,
       highlightBot: countHighlights(safe.parrafoBot) >= 1,
-      subtituloSinHighlights: countHighlights(safe.subtitulo) === 0,
-      botDistintoTop: !tooSimilarText(safe.parrafoTop, safe.parrafoBot),
-      accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain)
+      accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain),
+      sinCierreGenerico: !hasGenericClosing(botPlain, "es")
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-    return {
-      score: ok / total, checks,
-      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
-      aprobado: ok / total >= CFG.verification.minScore
+    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
+  },
+
+  tarjeta_en(tarjeta) {
+    const safe = normalizeTarjetaObject(tarjeta, "en");
+    const topPlain = stripHighlightTags(safe.parrafoTop).trim();
+    const botPlain = stripHighlightTags(safe.parrafoBot).trim();
+    const totalH = countHighlights(`${safe.parrafoTop}\n${safe.parrafoBot}`);
+    const allText = [safe.titulo, safe.parrafoTop, safe.subtitulo, safe.parrafoBot].join("\n");
+    const checks = {
+      tituloOk: safe.titulo.length >= 8,
+      subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "en"),
+      parrafoTopRico: topPlain.length >= 40,
+      parrafoBotRico: botPlain.length >= 40,
+      sinMetadata: !/(^|\n)\s*(title|paragraph|subtitle|action)\s*[:\-]/i.test(allText),
+      sinPrimeraPersona: !/\b(I|my|me|myself|we|our|ours|ourselves|learned|discovered|felt|think|believe|I'm|I've|I'll|we're|we've)\b/i.test(allText),
+      sinMetaReferencias: !/(according to the book|reminds us|invites us to|reflects on|deals with|talks about|proposes|shows us|allows us)/i.test(allText),
+      highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
+      highlightTop: countHighlights(safe.parrafoTop) >= 1,
+      highlightBot: countHighlights(safe.parrafoBot) >= 1,
+      accionReal: /\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(botPlain),
+      sinCierreGenerico: !hasGenericClosing(botPlain, "en")
     };
+    const ok = Object.values(checks).filter(Boolean).length;
+    const total = Object.keys(checks).length;
+    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
   },
 
   estilo(data) {
     const checks = {
-      tieneAccent: typeof data.accent === "string" && /^#[0-9a-f]{6}$/i.test(data.accent),
-      tieneInk: typeof data.ink === "string" && /^#[0-9a-f]{6}$/i.test(data.ink),
-      tienePaper: typeof data.paper === "string" && /^#[0-9a-f]{6}$/i.test(data.paper),
-      tieneBorder: typeof data.border === "string" && /^#[0-9a-f]{6}$/i.test(data.border),
+      accent: typeof data.accent === "string" && /^#[0-9a-f]{6}$/i.test(data.accent),
+      ink: typeof data.ink === "string" && /^#[0-9a-f]{6}$/i.test(data.ink),
+      paper: typeof data.paper === "string" && /^#[0-9a-f]{6}$/i.test(data.paper),
+      border: typeof data.border === "string" && /^#[0-9a-f]{6}$/i.test(data.border),
       paperOscuro: typeof data.paper === "string" && utils.lum(data.paper) < CFG.darkMode.lumThresholdPaper,
       inkClaro: typeof data.ink === "string" && utils.lum(data.ink) > CFG.darkMode.lumThresholdInk
     };
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-    return {
-      score: ok / total, checks,
-      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
-      aprobado: ok / total >= CFG.verification.minScore
-    };
+    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
   }
 };
-
-/* ═══════════════════════════════════════════════════════════════
-   📞 API CALL
-═══════════════════════════════════════════════════════════════ */
 
 async function call(sys, usr, temp, forceJSON = false) {
   const config = {
@@ -928,23 +952,19 @@ async function call(sys, usr, temp, forceJSON = false) {
   return chat.choices[0].message.content;
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   🪄 TARJETA PARSER
-═══════════════════════════════════════════════════════════════ */
-
 function parseTarjetaLines(raw) {
   const lines = String(raw || "")
-    .replace(/@@BODY|@@ENDBODY/g, "").trim()
+    .replace(/@@BODY|@@ENDBODY/g, "")
+    .trim()
     .split(/\n+/)
-    .map((l) =>
-      l.replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
-       .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s-]*/gi, "")
-       .replace(/^(Concepto único|Insight específico|Bisagra provocadora|Reflexión activa|Pregunta provocadora)[:.\s]*/gi, "")
-       .replace(/^\d+[\)\.]\s*/g, "")
-       .replace(/^\*{1,3}|\*{1,3}$/g, "")
-       .replace(/^_{1,3}|_{1,3}$/g, "")
-       .trim()
-    )
+    .map((l) => l
+      .replace(/\[Título\]|\[Párrafo.*?\]|\[Subtítulo\]|\[Acción.*?\]|\[línea.*?\]/gi, "")
+      .replace(/^(TÍTULO|PÁRRAFO\s*\d*|SUBTÍTULO|ACCIÓN)[:.\s-]*/gi, "")
+      .replace(/^(Title|Paragraph\s*\d*|Subtitle|Action)[:.\s-]*/gi, "")
+      .replace(/^\d+[\)\.]\s*/g, "")
+      .replace(/^\*{1,3}|\*{1,3}$/g, "")
+      .replace(/^_{1,3}|_{1,3}$/g, "")
+      .trim())
     .filter((l) => l.length > CFG.tarjeta.longitudMinLinea);
 
   return {
@@ -964,17 +984,12 @@ function defaultStyle() {
   };
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   ⚡ ENRIQUECIMIENTO — Pipeline limpio, CERO fallbacks editoriales
-═══════════════════════════════════════════════════════════════ */
-
 async function enrich(libro, ctx) {
   let intento = 0;
 
   while (intento <= CFG.processing.maxRetries) {
     try {
-      // ─── PASO 1: JSON principal ───
-      console.log("   [1/3] JSON principal...");
+      console.log("   [1/6] JSON principal...");
       const rawMain = await call(buildPrompt(libro, "main", ctx), "Genera JSON", ctx.tempDinamica, true);
       let extra = JSON.parse(rawMain);
 
@@ -984,16 +999,13 @@ async function enrich(libro, ctx) {
           console.log(`   ⚠️  Verificación main: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
           console.log("      Checks fallidos:", Object.entries(v.checks).filter(([, ok]) => !ok).map(([k]) => k));
         }
-        if (CFG.verification.retryIfLowScore && !v.aprobado) {
-          throw new Error(`Verificación main falló: score ${v.score.toFixed(2)}`);
-        }
+        if (CFG.verification.retryIfLowScore && !v.aprobado) throw new Error(`Verificación main falló: score ${v.score.toFixed(2)}`);
       }
 
-      if (!extra?.frases?.length || !extra?.palabras?.length || !extra?.colores?.length) {
+      if (!Array.isArray(extra?.frases) || !Array.isArray(extra?.palabras) || !Array.isArray(extra?.colores)) {
         throw new Error("Respuesta main incompleta");
       }
 
-      // Anti-repetición
       const repetidas = extra.palabras.filter((p) => state.palabras.has(String(p).toLowerCase()));
       if (repetidas.length > 0) {
         console.log(`   ⚠️  Repetidas: ${repetidas.join(", ")}, regenerando...`);
@@ -1001,66 +1013,99 @@ async function enrich(libro, ctx) {
         extra = JSON.parse(rawRetry);
       }
 
-      // Garantizar longitud mínima
-      while (extra.palabras.length < CFG.palabras.cantidad) extra.palabras.push(extra.palabras[extra.palabras.length - 1]);
-      while (extra.frases.length < CFG.frases.cantidad) extra.frases.push(extra.frases[extra.frases.length - 1]);
-      while (extra.colores.length < CFG.colores.cantidad) extra.colores.push(extra.colores[extra.colores.length - 1]);
-
+      while (safeArray(extra.palabras).length < CFG.palabras.cantidad) extra.palabras.push(extra.palabras[extra.palabras.length - 1]);
+      while (safeArray(extra.frases).length < CFG.frases.cantidad) extra.frases.push(extra.frases[extra.frases.length - 1]);
+      while (safeArray(extra.colores).length < CFG.colores.cantidad) extra.colores.push(extra.colores[extra.colores.length - 1]);
       extra.textColors = extra.colores.map(utils.txt);
 
-      // Registrar usados
       extra.palabras.forEach((p) => state.palabras.add(String(p).toLowerCase()));
       extra.colores.forEach((c) => state.colores.add(String(c).toLowerCase()));
 
-      // ─── PASO 2: Tarjeta contenido ───
-      console.log("   [2/3] Tarjeta...");
+      console.log("   [1.5/6] Bibliografía bilingüe...");
+      const rawBiblio = await call(buildPrompt(libro, "bibliografia", ctx), "Resuelve metadata bibliográfica bilingüe.", ctx.bibliografiaTemp, true);
+      const bibliografia = normalizeBibliografiaData(JSON.parse(rawBiblio), libro);
+
+      console.log("   [1.6/6] Auditoría bibliográfica...");
+      const rawAudit = await call(buildPrompt(libro, "bibliografia_auditor", ctx, bibliografia), "Audita si la propuesta corresponde exactamente al mismo libro.", 0.2, true);
+      const auditoria = JSON.parse(rawAudit);
+
+      if (CFG.verification.enabled) {
+        const vB = VERIFICADOR.bibliografia(bibliografia, libro, auditoria);
+        if (CFG.verification.logLowScore && vB.score < 0.8) {
+          console.log(`   ⚠️  Verificación bibliografía: ${vB.nivel} (${(vB.score * 100).toFixed(0)}%)`);
+          console.log("      Checks fallidos:", Object.entries(vB.checks).filter(([, ok]) => !ok).map(([k]) => k));
+          if (auditoria?.reason) console.log(`      Auditoría: ${auditoria.reason}`);
+        }
+        if (CFG.verification.retryIfLowScore && !vB.aprobado) throw new Error(`Verificación bibliografía falló: score ${vB.score.toFixed(2)}`);
+      }
+
+      extra = { ...extra, ...bibliografia };
+
+      console.log("   [1.7/6] Activadores EN...");
+      const rawEN = await call(buildPrompt(libro, "activadores_en", ctx, extra), "Generate native English activators.", 0.45, true);
+      const activadoresEN = JSON.parse(rawEN);
+
+      if (CFG.verification.enabled) {
+        const vAEN = VERIFICADOR.activadores_en(activadoresEN, extra);
+        if (CFG.verification.logLowScore && vAEN.score < 0.8) {
+          console.log(`   ⚠️  Verificación activadores EN: ${vAEN.nivel} (${(vAEN.score * 100).toFixed(0)}%)`);
+          console.log("      Checks fallidos:", Object.entries(vAEN.checks).filter(([, ok]) => !ok).map(([k]) => k));
+        }
+        if (CFG.verification.retryIfLowScore && !vAEN.aprobado) throw new Error(`Verificación activadores EN falló: score ${vAEN.score.toFixed(2)}`);
+        extra = { ...extra, ...vAEN.safe };
+      } else {
+        extra = {
+          ...extra,
+          palabras_en: normalizeArrayStrings(activadoresEN.palabras_en, CFG.palabras.cantidad),
+          frases_en: normalizeArrayStrings(activadoresEN.frases_en, CFG.frases.cantidad)
+        };
+      }
+
+      console.log("   [2/6] Tarjeta...");
       const tarjetaMsg = await buildTarjetaMessages(libro, ctx, extra);
       let rawT = await call(tarjetaMsg.system, tarjetaMsg.user, ctx.tempDinamica, false);
       rawT = rawT.replace(/@@BODY|@@ENDBODY/g, "").trim();
-
-      let tarjeta = parseTarjetaLines(rawT);
-      tarjeta = normalizeTarjetaObject(tarjeta);
+      let tarjeta = normalizeTarjetaObject(parseTarjetaLines(rawT), "es");
 
       if (CFG.verification.enabled) {
-        const v = VERIFICADOR.tarjeta(tarjeta);
-        if (CFG.verification.logLowScore && v.score < 0.8) {
-          console.log(`   ⚠️  Verificación tarjeta: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
-          console.log("      Checks fallidos:", Object.entries(v.checks).filter(([, ok]) => !ok).map(([k]) => k));
+        const vT = VERIFICADOR.tarjeta(tarjeta);
+        if (CFG.verification.logLowScore && vT.score < 0.8) {
+          console.log(`   ⚠️  Verificación tarjeta: ${vT.nivel} (${(vT.score * 100).toFixed(0)}%)`);
+          console.log("      Checks fallidos:", Object.entries(vT.checks).filter(([, ok]) => !ok).map(([k]) => k));
         }
-        if (CFG.verification.retryIfLowScore && !v.aprobado) {
-          throw new Error(`Verificación tarjeta falló: score ${v.score.toFixed(2)}`);
+        if (CFG.verification.retryIfLowScore && !vT.aprobado) throw new Error(`Verificación tarjeta falló: score ${vT.score.toFixed(2)}`);
+      }
+
+      console.log("   [2.5/6] Tarjeta EN...");
+      const rawTEN = await call(buildPrompt(libro, "tarjeta_en", ctx, extra), "Generate the English editorial card.", ctx.tempDinamica, false);
+      let tarjeta_en = normalizeTarjetaObject(parseTarjetaLines(String(rawTEN || "").replace(/@@BODY|@@ENDBODY/g, "").trim()), "en");
+
+      if (CFG.verification.enabled) {
+        const vTEN = VERIFICADOR.tarjeta_en(tarjeta_en);
+        if (CFG.verification.logLowScore && vTEN.score < 0.8) {
+          console.log(`   ⚠️  Verificación tarjeta EN: ${vTEN.nivel} (${(vTEN.score * 100).toFixed(0)}%)`);
+          console.log("      Checks fallidos:", Object.entries(vTEN.checks).filter(([, ok]) => !ok).map(([k]) => k));
+        }
+        if (!vTEN.aprobado) {
+          console.log("   ⚠️  Tarjeta EN no pasó verificación — se omitirá (fallback español en frontend)");
+          tarjeta_en = null;
         }
       }
 
-      // ─── PASO 3: Estilo ───
-      console.log("   [3/3] Style...");
-      const pE = buildPrompt(libro, "estilo", ctx);
-      let rawE = await call(pE, "Genera estilo", ctx.tempDinamica, false);
-      rawE = rawE.replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
-
+      console.log("   [3/6] Style...");
+      let rawE = await call(buildPrompt(libro, "estilo", ctx), "Genera estilo", ctx.tempDinamica, false);
+      rawE = String(rawE || "").replace(/@@STYLE|@@ENDSTYLE/g, "").trim();
       let style;
       try {
         style = JSON.parse(utils.cleanJSON(rawE));
-
-        if (CFG.verification.enabled) {
-          const v = VERIFICADOR.estilo(style);
-          if (CFG.verification.logLowScore && v.score < 0.8) {
-            console.log(`   ⚠️  Verificación estilo: ${v.nivel} (${(v.score * 100).toFixed(0)}%)`);
-          }
-        }
-
-        // Forzar dark mode
-        if (style.paper && utils.lum(style.paper) > CFG.darkMode.lumThresholdPaper) {
-          style.paper = CFG.darkMode.paperMin;
-        }
-        if (style.ink && utils.lum(style.ink) < CFG.darkMode.lumThresholdInk) {
-          style.ink = CFG.darkMode.inkMax;
-        }
-      } catch (e) {
+        if (style.paper && utils.lum(style.paper) > CFG.darkMode.lumThresholdPaper) style.paper = CFG.darkMode.paperMin;
+        if (style.ink && utils.lum(style.ink) < CFG.darkMode.lumThresholdInk) style.ink = CFG.darkMode.inkMax;
+      } catch {
         style = defaultStyle();
       }
 
       tarjeta.style = style;
+      if (tarjeta_en) tarjeta_en.style = style;
 
       console.log("   ✅ Completado");
       return {
@@ -1070,9 +1115,14 @@ async function enrich(libro, ctx) {
         tarjeta,
         tarjeta_base: tarjeta,
         tarjeta_presentacion: tarjeta,
-        videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`
+        ...(tarjeta_en ? {
+          tarjeta_en: { ...tarjeta_en, style },
+          tarjeta_base_en: { ...tarjeta_en, style },
+          tarjeta_presentacion_en: { ...tarjeta_en, style }
+        } : {}),
+        videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${libro.titulo} ${libro.autor} entrevista español`)}`,
+        videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${extra.titulo_en || libro.titulo} ${libro.autor} interview`)}`
       };
-
     } catch (error) {
       intento += 1;
       console.log(`   ❌ Error (${intento}/${CFG.processing.maxRetries + 1}): ${error.message}`);
@@ -1085,10 +1135,6 @@ async function enrich(libro, ctx) {
     }
   }
 
-  // ─── FALLBACK MÍNIMO ───
-  // CERO contenido editorial generado. Marcado con _fallback:true.
-  // writeBatchOutput lo excluirá automáticamente.
-  // Es mejor no publicar que publicar mediocridad.
   return {
     ...libro,
     dimension: "",
@@ -1108,10 +1154,6 @@ async function enrich(libro, ctx) {
   };
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   📚 CARGA DE FUENTES
-═══════════════════════════════════════════════════════════════ */
-
 async function fileExists(filePath) {
   try { await fs.access(filePath); return true; }
   catch { return false; }
@@ -1120,7 +1162,6 @@ async function fileExists(filePath) {
 async function loadCSVBooks() {
   const raw = await fs.readFile(CFG.files.csv, "utf8");
   const rows = parse(raw, { columns: true, skip_empty_lines: true });
-
   return rows.map((row) => ({
     titulo: String(row.titulo || row.Titulo || row.title || "").trim(),
     autor: String(row.autor || row.Autor || row.author || "").trim(),
@@ -1134,12 +1175,8 @@ async function loadCSVBooks() {
 }
 
 async function loadSingleBookSource() {
-  if (await fileExists(CFG.files.tmpBook)) {
-    return JSON.parse(await fs.readFile(CFG.files.tmpBook, "utf8"));
-  }
-  if (process.env.SINGLE_BOOK) {
-    return JSON.parse(process.env.SINGLE_BOOK);
-  }
+  if (await fileExists(CFG.files.tmpBook)) return JSON.parse(await fs.readFile(CFG.files.tmpBook, "utf8"));
+  if (process.env.SINGLE_BOOK) return JSON.parse(process.env.SINGLE_BOOK);
   return null;
 }
 
@@ -1158,10 +1195,6 @@ function mapSingleBookMeta(bookMeta) {
   };
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   💾 ESCRITURA DE SALIDAS
-═══════════════════════════════════════════════════════════════ */
-
 async function writeJSON(filePath, payload) {
   await fs.writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
@@ -1174,26 +1207,20 @@ async function writeSingleOutputs(bookMeta, enriched) {
     try {
       batchPayload = JSON.parse(await fs.readFile(CFG.files.outBatch, "utf8"));
       if (!Array.isArray(batchPayload.libros)) batchPayload.libros = [];
-    } catch { batchPayload = { libros: [] }; }
+    } catch {
+      batchPayload = { libros: [] };
+    }
   }
 
   const key = utils.uniqueKey(enriched);
   const rest = batchPayload.libros.filter((l) => utils.uniqueKey(l) !== key);
-
-  // Si el libro cayó en fallback, NO contaminar contenido.json
-  // (idea adoptada de ChatGPT v9.7.1 — genuinamente buena)
-  const merged = enriched._fallback
-    ? rest.slice(0, CFG.processing.maxBatch)
-    : [enriched, ...rest].slice(0, CFG.processing.maxBatch);
+  const merged = enriched._fallback ? rest.slice(0, CFG.processing.maxBatch) : [enriched, ...rest].slice(0, CFG.processing.maxBatch);
 
   await writeJSON(CFG.files.outBatch, { libros: merged });
 
   console.log(`\n✅ Modo SINGLE completado`);
-  if (enriched._fallback) {
-    console.log(`🛡️  ${CFG.files.outBatch} preservado — fallback de "${bookMeta.titulo}" NO insertado`);
-  } else {
-    console.log(`📚 ${CFG.files.outBatch} actualizado — "${bookMeta.titulo}" en posición [0]`);
-  }
+  if (enriched._fallback) console.log(`🛡️  ${CFG.files.outBatch} preservado — fallback de "${bookMeta.titulo}" NO insertado`);
+  else console.log(`📚 ${CFG.files.outBatch} actualizado — "${bookMeta.titulo}" en posición [0]`);
   console.log(`🧾 ${CFG.files.outSingle} actualizado — carril canónico single-book`);
 }
 
@@ -1210,24 +1237,17 @@ async function writeBatchOutput(libros) {
 
   console.log(`\n✅ Modo BATCH completado`);
   console.log(`📚 ${CFG.files.outBatch} — ${exitosos.length} libros nivel dios`);
-  if (fallidos.length > 0) {
-    console.log(`🛡️  ${fallidos.length} excluidos (no se publica mediocridad)`);
-  }
+  if (fallidos.length > 0) console.log(`🛡️  ${fallidos.length} excluidos (no se publica mediocridad)`);
 }
-
-/* ═══════════════════════════════════════════════════════════════
-   🚀 MAIN
-═══════════════════════════════════════════════════════════════ */
 
 async function runSingle(ctx) {
   const singleSource = await loadSingleBookSource();
   if (!singleSource) throw new Error("SINGLE_MODE activo pero no existe /tmp/triggui-book.json ni SINGLE_BOOK");
-
   const bookMeta = mapSingleBookMeta(singleSource);
   if (!bookMeta.titulo || !bookMeta.autor) throw new Error("Libro single inválido: faltan título o autor");
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║  TRIGGUI v9.6.0 — MODO SINGLE NIVEL DIOS     ║");
+  console.log("║  TRIGGUI v9.7.3 — MODO SINGLE NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📖 ${bookMeta.titulo} — ${bookMeta.autor}`);
   console.log(`🤖 ${CFG.model} | 🌡️  ${ctx.tempDinamica.toFixed(2)}`);
@@ -1237,17 +1257,12 @@ async function runSingle(ctx) {
   console.log(`🎲 Random: crypto.randomInt\n`);
 
   const enriched = await enrich(bookMeta, ctx);
-
   if (enriched._fallback) {
     console.log(`\n⚠️  SINGLE falló — "${bookMeta.titulo}" no pasó verificación después de ${CFG.processing.maxRetries + 1} intentos`);
-    // Escribir contenido_edicion.json para debugging, pero NO contenido.json
     await writeSingleOutputs(bookMeta, enriched);
-    // Abortar pipeline para que GitHub Actions NO ejecute build-editions.py,
-    // build-tarjeta-png.js ni build-og-image.js con datos vacíos
     console.log(`🛑 Pipeline detenido — no se genera edición viva con contenido fallback`);
     process.exit(1);
   }
-
   await writeSingleOutputs(bookMeta, enriched);
 }
 
@@ -1256,7 +1271,7 @@ async function runBatch(ctx) {
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
 
   console.log("╔═══════════════════════════════════════════════╗");
-  console.log("║   TRIGGUI v9.6.0 — MODO BATCH NIVEL DIOS     ║");
+  console.log("║   TRIGGUI v9.7.3 — MODO BATCH NIVEL DIOS     ║");
   console.log("╚═══════════════════════════════════════════════╝");
   console.log(`📅 ${new Date().toLocaleDateString("es-MX", { dateStyle: "full" })}`);
   console.log(`⏰ ${new Date().toLocaleTimeString("es-MX")}`);
@@ -1268,30 +1283,24 @@ async function runBatch(ctx) {
   console.log(`🎲 Random: crypto.randomInt (Fisher-Yates)\n`);
 
   const out = [];
-
   for (let i = 0; i < selected.length; i += 1) {
     const libro = selected[i];
     console.log(`\n📖 [${i + 1}/${selected.length}] ${libro.titulo} — ${libro.autor}`);
-
     const enriched = await enrich(libro, ctx);
     out.push(enriched);
-
     if ((i + 1) % CFG.processing.resetMemoryEvery === 0 && i < selected.length - 1) {
       console.log(`   🔄 Reset memoria (${state.palabras.size}p, ${state.colores.size}c)`);
       state.palabras.clear();
       state.colores.clear();
     }
-
     if (i < selected.length - 1) await sleep(CFG.processing.delayBetweenBooksMs);
   }
-
   await writeBatchOutput(out);
 }
 
 async function main() {
   const ctx = getContexto();
   const singleMode = process.env.SINGLE_MODE === "true" || await fileExists(CFG.files.tmpBook);
-
   if (singleMode) await runSingle(ctx);
   else await runBatch(ctx);
 }
