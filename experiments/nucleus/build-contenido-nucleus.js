@@ -1,38 +1,41 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   build-contenido-nucleus.js — EL ORQUESTADOR NIVEL DIOS
+   build-contenido-nucleus.js — ORQUESTADOR TRIGGUI
 
-   Reemplaza build-contenido.js v9.7.4 (1764 líneas).
-   Este archivo tiene ~150 líneas y hace lo mismo, pero mejor.
+   Entrada: variables de entorno del workflow_dispatch
+     OPENAI_KEY             (requerido)
+     TRIGGUI_LENS           (opcional)  Curaduría silenciosa del día
+     TRIGGUI_VISUAL_INTENT  (opcional)  Intención visual del día
+     TRIGGUI_BOOK_CONTEXT   (opcional)  Contexto específico del libro (solo SINGLE)
+     TRIGGUI_CRONO_ENABLED  (default true)  Si false, no aplica framework cronobiológico
+     SINGLE_MODE=true       Modo single libro
+     SHADOW_MODE=true       Escribe a contenido.shadow.json
+     TRIGGUI_SEED           Seed reproducible
+     TRIGGUI_MODEL          Default gpt-4o-mini
+     TRIGGUI_TEMP           Default 0.7
 
-   Flujo:
-     1. Leer libro (CSV batch o SINGLE)
-     2. extractNucleus → 1 llamada IA con schema estricto
-     3. validateNucleus → rechaza si el nucleus es mediocre
-     4. renderTarjetaES + renderTarjetaEN → determinista, sin IA
-     5. validateTarjeta → verifica que la compilación salió bien
-     6. Escribir output en formato compatible con v9.7.4
-
-   Ejecución:
-     export OPENAI_KEY=sk-...
-     node build-contenido-nucleus.js               # BATCH con CSV
-     SINGLE_MODE=true node build-contenido-nucleus.js  # SINGLE con /tmp/triggui-book.json
+   Flujo por libro:
+     1. extractNucleus (1 llamada con crono + inputs)
+     2. judgeBothVoices (2 llamadas baratas)
+     3. Si reseña alta confianza: 1 sola re-extracción (circuit breaker)
+     4. composeVisual (matemática pura)
+     5. renderTarjeta ES + EN (sin envolturas)
+     6. ensamble v9.7.4 compat
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
-import { randomInt } from "node:crypto";
+import path from "node:path";
+import { randomInt, createHash } from "node:crypto";
 import { parse } from "csv-parse/sync";
 import OpenAI from "openai";
 
-import { extractNucleus } from "./extract-nucleus.js";
-import { renderTarjetaES, renderTarjetaEN } from "./render-tarjeta.js";
-import { validateNucleus, validateTarjeta } from "./triggui-quality-engine.js";
+import { extractNucleus, cronobioContext } from "./extract-nucleus.js";
+import { judgeBothVoices } from "./voice-judge.js";
+import { composeVisual } from "./render-visual-composition.js";
+import { renderTarjetaES, renderTarjetaEN, prepareOGPhrases } from "./render-tarjeta.js";
+import { textContrastOn } from "./triggui-physics.js";
 
 const KEY = process.env.OPENAI_KEY;
-if (!KEY) {
-  console.log("🔕 Sin OPENAI_KEY");
-  process.exit(0);
-}
-
+if (!KEY) { console.log("🔕 Sin OPENAI_KEY"); process.exit(0); }
 const openai = new OpenAI({ apiKey: KEY });
 
 const CFG = {
@@ -41,133 +44,185 @@ const CFG = {
   files: {
     csv: "data/libros_master.csv",
     outBatch: "contenido.json",
+    outShadow: "contenido.shadow.json",
     outSingle: "contenido_edicion.json",
-    tmpBook: "/tmp/triggui-book.json"
+    tmpBook: "/tmp/triggui-book.json",
+    metricsDir: "metrics",
+    inputsHistoryDir: "inputs-history"
   },
   maxBatch: 20,
-  delayMs: 5000
+  delayMs: 4000,
+  shadowMode: process.env.SHADOW_MODE === "true",
+  cronoEnabled: process.env.TRIGGUI_CRONO_ENABLED !== "false"
+};
+
+const INPUTS = {
+  lens: process.env.TRIGGUI_LENS || "",
+  visualIntent: process.env.TRIGGUI_VISUAL_INTENT || "",
+  bookContext: process.env.TRIGGUI_BOOK_CONTEXT || ""
 };
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   ORQUESTACIÓN POR LIBRO
+   RANDOM
 ────────────────────────────────────────────────────────────────────────────── */
 
-async function processBook(book) {
-  console.log(`\n📖 ${book.titulo} — ${book.autor}`);
+function seededRandomInt(seed, counter) {
+  return createHash("sha256").update(`${seed}:${counter}`).digest().readUInt32BE(0);
+}
 
-  // 1. Extracción única
-  const extraction = await extractNucleus(openai, book, {
-    model: CFG.model,
-    temperature: CFG.temperature
-  });
-  console.log(`   ✓ Nucleus extraído (${extraction.usage?.total_tokens} tokens, ${extraction.elapsed_ms}ms)`);
-
-  // 2. Validación semántica del nucleus
-  const nv = validateNucleus(extraction.nucleus);
-  console.log(`   ✓ Validación nucleus: ${nv.nivel} (${nv.passed}/${nv.total})`);
-  if (!nv.aprobado) {
-    console.log(`   ⚠️  Checks fallidos: ${nv.failed.join(", ")}`);
-    return { ...book, _fallback: true, _error: `Nucleus inválido: ${nv.failed.join(", ")}` };
+function fisherYatesShuffle(arr, seed = null) {
+  const copy = [...arr];
+  if (seed === null) {
+    for (let i = copy.length - 1; i > 0; i -= 1) {
+      const j = randomInt(i + 1);
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
   }
-
-  // 3. Compilación determinista
-  const tarjetaES = renderTarjetaES(extraction.nucleus);
-  const tarjetaEN = renderTarjetaEN(extraction.nucleus);
-
-  // 4. Validación de tarjetas compiladas
-  const vES = validateTarjeta(tarjetaES, "es");
-  const vEN = validateTarjeta(tarjetaEN, "en");
-  console.log(`   ✓ Tarjeta ES: ${vES.nivel} (${vES.passed}/${vES.total})`);
-  console.log(`   ✓ Tarjeta EN: ${vEN.nivel} (${vEN.passed}/${vEN.total})`);
-
-  if (!vES.aprobado || !vEN.aprobado) {
-    console.log(`   ⚠️  Tarjeta ES fallidos: ${vES.failed.join(", ")}`);
-    console.log(`   ⚠️  Tarjeta EN fallidos: ${vEN.failed.join(", ")}`);
+  let counter = 0;
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = seededRandomInt(seed, counter++) % (i + 1);
+    [copy[i], copy[j]] = [copy[j], copy[i]];
   }
+  return copy;
+}
 
-  // 5. Output compatible con formato v9.7.4
+/* ─────────────────────────────────────────────────────────────────────────────
+   ENSAMBLE V9.7.4
+────────────────────────────────────────────────────────────────────────────── */
+
+function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validation, inputsSnapshot) {
+  const n = extraction.nucleus;
+  const style = { accent: visual.accent, paper: visual.paper, ink: visual.ink, border: visual.border };
+  const colores = visual.palette;
+
   return {
     titulo: book.titulo,
     autor: book.autor,
     tagline: book.tagline || "",
-    portada: book.portada || book.portada_url || "",
+    portada: book.portada || book.portada_url || `📚 ${book.titulo}\n${book.autor}`,
     portada_url: book.portada_url || book.portada || "",
     isbn: book.isbn || "",
 
-    // Campos canónicos del nucleus
-    titulo_es: extraction.nucleus.book_identity.titulo_es,
-    titulo_en: extraction.nucleus.book_identity.titulo_en,
-    idioma_original: extraction.nucleus.book_identity.idioma_original,
+    titulo_es: n.book_identity.titulo_es,
+    titulo_en: n.book_identity.titulo_en,
+    idioma_original: n.book_identity.idioma_original,
 
-    // Compatibilidad con v9.7.4: palabras/frases/colores derivados
-    palabras: extraction.nucleus.emotional_vector.es,
-    palabras_en: extraction.nucleus.emotional_vector.en,
-    frases: buildFrasesCompat(extraction.nucleus, "es"),
-    frases_en: buildFrasesCompat(extraction.nucleus, "en"),
-    colores: extraction.nucleus.visual_tokens.palette,
-    fondo: extraction.nucleus.visual_tokens.paper,
-    dimension: extraction.nucleus.surface_hints.dimension,
-    punto: extraction.nucleus.surface_hints.punto_hawkins,
+    dimension: n.surface_hints.dimension,
+    punto: n.surface_hints.punto_hawkins,
+    palabras: n.emotional_words_es,
+    palabras_en: n.emotional_words_en,
+    frases: prepareOGPhrases(n.key_phrases_es),
+    frases_en: prepareOGPhrases(n.key_phrases_en),
+    colores,
+    textColors: colores.map(textContrastOn),
+    fondo: visual.paper,
 
-    // Tarjetas compiladas
-    tarjeta: tarjetaES,
-    tarjeta_base: tarjetaES,
-    tarjeta_presentacion: tarjetaES,
-    tarjeta_en: tarjetaEN,
-    tarjeta_base_en: tarjetaEN,
-    tarjeta_presentacion_en: tarjetaEN,
+    tarjeta: { ...tarjetaES, style },
+    tarjeta_base: { ...tarjetaES, style },
+    tarjeta_presentacion: { ...tarjetaES, style },
+    tarjeta_en: { ...tarjetaEN, style },
+    tarjeta_base_en: { ...tarjetaEN, style },
+    tarjeta_presentacion_en: { ...tarjetaEN, style },
 
-    // Metadata auditable
-    _nucleus: extraction.nucleus,
-    _validation: {
-      nucleus: { score: nv.score, nivel: nv.nivel },
-      tarjeta_es: { score: vES.score, nivel: vES.nivel },
-      tarjeta_en: { score: vEN.score, nivel: vEN.nivel }
-    },
+    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${book.titulo} ${book.autor} entrevista español`)}`,
+    videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${n.book_identity.titulo_en || book.titulo} ${book.autor} interview`)}`,
+
+    _nucleus: n,
+    _visual: { cssVars: visual.cssVars, decisions: visual.decisions, signature: visual.signature },
+    _voice_verdict: voiceVerdict,
+    _validation: validation,
+    _inputs_snapshot: inputsSnapshot,
+    _crono: extraction.crono,
     _metrics: {
-      tokens: extraction.usage?.total_tokens,
+      tokens_prompt: extraction.usage?.prompt_tokens || 0,
+      tokens_output: extraction.usage?.completion_tokens || 0,
+      tokens_total: extraction.usage?.total_tokens || 0,
+      tokens_judge: voiceVerdict?.total_tokens || 0,
       elapsed_ms: extraction.elapsed_ms,
       model: extraction.model,
-      version: "nucleus-v1"
-    },
-
-    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${book.titulo} ${book.autor}`)}`,
-    videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${extraction.nucleus.book_identity.titulo_en} ${book.autor} interview`)}`
+      pipeline_version: "nucleus-final-v1",
+      extraction_attempts: validation.extraction_attempts,
+      inputs_applied: extraction.inputs_applied
+    }
   };
 }
 
-// Deriva frases emoji desde emotional_vector + micro_action para mantener compat
-function buildFrasesCompat(nucleus, lang = "es") {
-  const vector = lang === "en" ? nucleus.emotional_vector.en : nucleus.emotional_vector.es;
-  const emojis = ["⚡", "🎯", "📖", "✨"];
-  const { seconds, instruction_es, instruction_en } = nucleus.micro_action;
-  const instr = lang === "en" ? instruction_en : instruction_es;
-  return [
-    `${emojis[0]} ${vector[0]}`,
-    `${emojis[1]} ${vector[1]}`,
-    `${emojis[2]} ${vector[2]}`,
-    `${emojis[3]} ${seconds}s: ${instr.slice(0, 60)}`
-  ];
+/* ─────────────────────────────────────────────────────────────────────────────
+   PROCESAMIENTO
+────────────────────────────────────────────────────────────────────────────── */
+
+async function processBook(book, inputs, inputsSnapshot) {
+  console.log(`\n📖 ${book.titulo} — ${book.autor}`);
+
+  const effectiveInputs = CFG.cronoEnabled ? inputs : { ...inputs, now: new Date() };
+
+  let extraction = await extractNucleus(openai, book, effectiveInputs, {
+    model: CFG.model,
+    temperature: CFG.temperature
+  });
+  console.log(`   ✓ Nucleus (${extraction.usage?.total_tokens}t, ${extraction.elapsed_ms}ms)`);
+
+  let extractionAttempts = 1;
+  const n = extraction.nucleus;
+
+  console.log(`   ✓ Firma: ${n.visual_signature.typography_family}/${n.visual_signature.density}/${n.visual_signature.rhythm}/${n.visual_signature.genre_visual}`);
+  if (n.lens_relevance.applied) console.log(`   🔍 Lente aplicada: "${n.lens_relevance.reason}"`);
+
+  // Voice judge con circuit breaker
+  let voiceVerdict = await judgeBothVoices(openai, n.card_es, n.card_en, book, { model: CFG.model });
+  console.log(`   🎭 Voz: ${voiceVerdict.consolidated} (conf ${voiceVerdict.confidence.toFixed(2)})`);
+
+  // Re-extracción UNA vez máximo si reseña con alta confianza
+  if (voiceVerdict.should_reextract) {
+    console.log(`   🔄 Re-extract (circuit breaker: 1 máximo)`);
+    extractionAttempts += 1;
+    extraction = await extractNucleus(openai, book, effectiveInputs, {
+      model: CFG.model,
+      temperature: Math.max(0.3, CFG.temperature - 0.4)
+    });
+    voiceVerdict = await judgeBothVoices(openai, extraction.nucleus.card_es, extraction.nucleus.card_en, book, { model: CFG.model });
+    console.log(`   🎭 Post re-extract: ${voiceVerdict.consolidated}`);
+  }
+
+  const nucleus = extraction.nucleus;
+  const visual = composeVisual(nucleus.visual_signature);
+  const tarjetaES = renderTarjetaES(nucleus.card_es, visual);
+  const tarjetaEN = renderTarjetaEN(nucleus.card_en, visual);
+
+  const validation = {
+    voice_verdict: voiceVerdict.consolidated,
+    voice_warning: voiceVerdict.consolidated === "resena",
+    extraction_attempts: extractionAttempts,
+    contrast_ratio: parseFloat(visual.decisions.contrast_ratio),
+    contrast_ratio_ok: parseFloat(visual.decisions.contrast_ratio) >= 4.5,
+    confidence: nucleus.confidence,
+    lens_applied: nucleus.lens_relevance.applied,
+    circuit_tripped: voiceVerdict.circuit_tripped
+  };
+
+  const resultado = validation.voice_verdict === "pagina" && validation.contrast_ratio_ok ? "✅" : (validation.voice_verdict === "resena" ? "⚠️  voz-warning" : "⚠️  contraste");
+  console.log(`   ${resultado} contraste=${visual.decisions.contrast_ratio}:1`);
+
+  return nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validation, inputsSnapshot);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   ENTRADA: BATCH o SINGLE
+   I/O
 ────────────────────────────────────────────────────────────────────────────── */
 
-async function fileExists(p) {
-  try { await fs.access(p); return true; } catch { return false; }
-}
+async function fileExists(p) { try { await fs.access(p); return true; } catch { return false; } }
 
 async function loadCSV() {
   const raw = await fs.readFile(CFG.files.csv, "utf8");
   const rows = parse(raw, { columns: true, skip_empty_lines: true });
   return rows.map((row) => ({
-    titulo: String(row.titulo || row.title || "").trim(),
-    autor: String(row.autor || row.author || "").trim(),
-    tagline: String(row.tagline || "").trim(),
+    titulo: String(row.titulo || row.Titulo || row.title || "").trim(),
+    autor: String(row.autor || row.Autor || row.author || "").trim(),
+    tagline: String(row.tagline || row.Tagline || "").trim(),
     portada: String(row.portada || row.portada_url || "").trim(),
     portada_url: String(row.portada_url || row.portada || "").trim(),
-    isbn: String(row.isbn || "").trim()
+    isbn: String(row.isbn || row.ISBN || "").trim()
   })).filter((r) => r.titulo && r.autor);
 }
 
@@ -177,45 +232,114 @@ async function loadSingle() {
   return null;
 }
 
-function shuffle(arr) {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = randomInt(i + 1);
-    [copy[i], copy[j]] = [copy[j], copy[i]];
+async function writeJSON(p, data) { await fs.writeFile(p, `${JSON.stringify(data, null, 2)}\n`, "utf8"); }
+
+async function snapshotInputs(inputs, crono) {
+  const stamp = new Date().toISOString().replace(/[:]/g, "-").replace(/\..+$/, "");
+  try {
+    await fs.mkdir(CFG.files.inputsHistoryDir, { recursive: true });
+    const content = `# Triggui run — ${stamp}
+
+## Contexto cronobiológico automático
+- Día: ${crono.dia}
+- Hora: ${crono.hora}:00
+- Franja: ${crono.franja}
+- Energía: ${Math.round(crono.energia * 100)}%
+- Modo: ${crono.modo}
+
+## Curaduría silenciosa (lens)
+${inputs.lens || "_(vacío)_"}
+
+## Intención visual
+${inputs.visualIntent || "_(vacío)_"}
+
+## Contexto específico de libro
+${inputs.bookContext || "_(vacío)_"}
+`;
+    const p = path.join(CFG.files.inputsHistoryDir, `${stamp}.md`);
+    await fs.writeFile(p, content, "utf8");
+    console.log(`📎 Inputs snapshot: ${p}`);
+    return stamp;
+  } catch (err) {
+    console.log(`   ⚠️  No se pudo snapshot inputs: ${err.message}`);
+    return stamp;
   }
-  return copy;
 }
 
-async function writeJSON(path, data) {
-  await fs.writeFile(path, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+async function writeMetrics(run) {
+  try {
+    await fs.mkdir(CFG.files.metricsDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+    await writeJSON(`${CFG.files.metricsDir}/nucleus-${stamp}.json`, run);
+  } catch {}
 }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   MODOS
+────────────────────────────────────────────────────────────────────────────── */
 
 async function runBatch() {
+  const t0 = Date.now();
   const books = await loadCSV();
-  const selected = shuffle(books).slice(0, Math.min(CFG.maxBatch, books.length));
-  console.log(`\n🚀 BATCH: ${selected.length} libros de ${books.length} totales`);
+  const seed = process.env.TRIGGUI_SEED || null;
+  const shuffled = fisherYatesShuffle(books, seed);
+  const selected = shuffled.slice(0, Math.min(CFG.maxBatch, books.length));
+
+  const outputFile = CFG.shadowMode ? CFG.files.outShadow : CFG.files.outBatch;
+  const crono = cronobioContext();
+  const inputsSnapshot = await snapshotInputs(INPUTS, crono);
+
+  console.log(`\n🚀 BATCH ${selected.length}/${books.length}`);
+  console.log(`   Modo: ${CFG.shadowMode ? "🌒 SHADOW" : "⚡ PRODUCCIÓN"}`);
+  console.log(`   ${crono.dia} ${crono.hora}h ${crono.franja} | energía ${Math.round(crono.energia * 100)}% | modo ${crono.modo}`);
+  console.log(`   Lens: ${INPUTS.lens ? "✅" : "—"}  VisualIntent: ${INPUTS.visualIntent ? "✅" : "—"}`);
+  console.log(`   Output: ${outputFile}`);
 
   const results = [];
+  let totalTokens = 0, totalMs = 0, fallos = 0;
+
   for (let i = 0; i < selected.length; i += 1) {
-    console.log(`\n[${i + 1}/${selected.length}]`);
+    console.log(`\n━━━━━ [${i + 1}/${selected.length}] ━━━━━`);
     try {
-      results.push(await processBook(selected[i]));
+      const result = await processBook(selected[i], INPUTS, inputsSnapshot);
+      results.push(result);
+      totalTokens += (result._metrics?.tokens_total || 0) + (result._metrics?.tokens_judge || 0);
+      totalMs += result._metrics?.elapsed_ms || 0;
     } catch (error) {
       console.error(`   ❌ Error: ${error.message}`);
       results.push({ ...selected[i], _fallback: true, _error: error.message });
+      fallos += 1;
     }
     if (i < selected.length - 1) await new Promise((r) => setTimeout(r, CFG.delayMs));
   }
 
   const exitosos = results.filter((r) => !r._fallback);
-  await writeJSON(CFG.files.outBatch, { libros: exitosos });
-  console.log(`\n✅ ${exitosos.length}/${results.length} libros procesados`);
-  console.log(`📚 ${CFG.files.outBatch} actualizado`);
+  await writeJSON(outputFile, { libros: exitosos });
+
+  const runMs = Date.now() - t0;
+  await writeMetrics({
+    timestamp: new Date().toISOString(),
+    pipeline: "nucleus-final-v1",
+    mode: CFG.shadowMode ? "shadow" : "production",
+    seed, model: CFG.model, temperature: CFG.temperature,
+    crono, inputs_snapshot: inputsSnapshot,
+    requested: selected.length, exitosos: exitosos.length, fallos,
+    total_tokens: totalTokens,
+    avg_tokens_per_book: Math.round(totalTokens / Math.max(exitosos.length, 1)),
+    run_total_ms: runMs,
+    libros: selected.map((b) => `${b.titulo} — ${b.autor}`)
+  });
+
+  console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━`);
+  console.log(`✅ ${exitosos.length}/${selected.length} exitosos, ${fallos} fallos`);
+  console.log(`   ${totalTokens} tokens, ${Math.round(totalTokens / Math.max(exitosos.length, 1))}/libro`);
+  console.log(`   ${(runMs / 1000).toFixed(1)}s total`);
+  console.log(`   Output: ${outputFile}`);
 }
 
 async function runSingle() {
   const source = await loadSingle();
-  if (!source) throw new Error("SINGLE_MODE sin /tmp/triggui-book.json ni SINGLE_BOOK env");
+  if (!source) throw new Error("SINGLE_MODE sin fuente");
   const book = {
     titulo: String(source.titulo || "").trim(),
     autor: String(source.autor || "").trim(),
@@ -224,27 +348,27 @@ async function runSingle() {
     portada_url: String(source.portada_url || source.portada || "").trim(),
     isbn: String(source.isbn || "").trim()
   };
-  if (!book.titulo || !book.autor) throw new Error("Libro inválido: falta titulo/autor");
+  if (!book.titulo || !book.autor) throw new Error("Libro inválido");
+
+  const crono = cronobioContext();
+  const inputsSnapshot = await snapshotInputs(INPUTS, crono);
 
   console.log(`\n🚀 SINGLE: ${book.titulo}`);
-  const result = await processBook(book);
+  console.log(`   ${crono.dia} ${crono.hora}h ${crono.franja}`);
 
+  const result = await processBook(book, INPUTS, inputsSnapshot);
   if (result._fallback) {
     console.log(`\n❌ SINGLE falló: ${result._error}`);
+    await writeJSON(CFG.files.outSingle, { libros: [result] });
     process.exit(1);
   }
-
   await writeJSON(CFG.files.outSingle, { libros: [result] });
-  console.log(`\n✅ ${CFG.files.outSingle} actualizado`);
+  console.log(`\n✅ ${CFG.files.outSingle}`);
 }
 
 async function main() {
   const isSingle = process.env.SINGLE_MODE === "true" || await fileExists(CFG.files.tmpBook);
-  if (isSingle) await runSingle();
-  else await runBatch();
+  if (isSingle) await runSingle(); else await runBatch();
 }
 
-main().catch((err) => {
-  console.error("❌ Pipeline falló:", err);
-  process.exit(1);
-});
+main().catch((err) => { console.error("❌", err); process.exit(1); });
