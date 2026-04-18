@@ -177,7 +177,6 @@ function normalizeAscii(text = "") {
     .replace(/\s+/g, " ")
     .trim();
 }
-
 function sharedTokenCount(a = "", b = "") {
   const aa = new Set(normalizeAscii(a).split(" ").filter(Boolean));
   const bb = new Set(normalizeAscii(b).split(" ").filter(Boolean));
@@ -258,7 +257,7 @@ function normalizeHighlightSyntax(input) {
   }
 
   text = text.replace(/\[H\]\s*\[\/H\]/g, "");
-     return text.replace(/[ \t]{2,}/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+  return text.replace(/[ \t]{2,}/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 }
 
 function countHighlights(text) {
@@ -282,7 +281,7 @@ function sanitizeTitleText(text) {
       .replace(/\n+/g, " ")
       .replace(/\s+/g, " ")
       .trim()
-      .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
+      .replace(/^[\-–—:;,. ]+|[\-–—:;,. ]+$/g, "")
       .replace(/[.!?…]+$/g, "")
       .trim()
   );
@@ -295,7 +294,7 @@ function sanitizeSubtitleText(text, lang = "es") {
       .replace(/\n+/g, " ")
       .replace(/\s+/g, " ")
       .trim()
-      .replace(/^[\-\–—:;,. ]+|[\-\–—:;,. ]+$/g, "")
+      .replace(/^[\-–—:;,. ]+|[\-–—:;,. ]+$/g, "")
       .trim()
   );
   if (!clean) return "";
@@ -333,7 +332,6 @@ function tooSimilarText(a, b) {
   const union = new Set([...tA, ...tB]).size || 1;
   return (inter / union) >= 0.78;
 }
-
 function removeRepeatedSentences(parrafoBot, parrafoTop, subtitulo = "") {
   const pool = [parrafoTop, subtitulo].filter(Boolean);
   const sentences = String(parrafoBot || "").match(/[^.!?…]+[.!?…]?/g)?.map((s) => s.trim()).filter(Boolean) || [];
@@ -372,9 +370,9 @@ function ensureMinimumHighlights(text, minimum = CFG.tarjeta.minHighlights) {
 function normalizeTarjetaObject(tarjeta = {}, lang = "es") {
   const clean = {
     titulo: sanitizeTitleText(String(tarjeta.titulo || "").trim()),
-    parrafoTop: ensureMinimumHighlights(normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()), 1),
+    parrafoTop: normalizeHighlightSyntax(String(tarjeta.parrafoTop || "").trim()),
     subtitulo: sanitizeSubtitleText(String(tarjeta.subtitulo || "").trim(), lang),
-    parrafoBot: ensureMinimumHighlights(normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()), 1),
+    parrafoBot: normalizeHighlightSyntax(String(tarjeta.parrafoBot || "").trim()),
     style: tarjeta.style || {}
   };
 
@@ -445,6 +443,7 @@ function getContexto() {
       : { min: CFG.frases.longitudMin, max: CFG.frases.longitudMax }
   };
 }
+
 const NEUROBIOLOGIA = {
   estadoEntrada: {
     ondas: {
@@ -487,7 +486,7 @@ async function readPromptFile(relativePath) {
 
 function extractMarkdownSection(markdown, heading) {
   const source = String(markdown || "");
-  const re = new RegExp(`^##\\s+${heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`, "m");
+  const re = new RegExp(`^##\\s+${heading.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}\\s*$`, "m");
   const match = re.exec(source);
   if (!match) throw new Error(`Sección \"${heading}\" no encontrada`);
   const tail = source.slice(match.index + match[0].length).replace(/^\s+/, "");
@@ -537,6 +536,7 @@ Eres Triggui. Neurobiólogo + Diseñador de experiencias emocionales.
 📚 LIBRO QUE DEBES DOMINAR:
 ═══════════════════════════════════════════════════════════════
 "${libro.titulo}" — ${libro.autor}
+
 ${libro.tagline ? `"${libro.tagline}"` : ""}
 
 ═══════════════════════════════════════════════════════════════
@@ -564,6 +564,11 @@ Si tu base sobre este libro es insuficiente, reduce la ambición.
 Ve a una verdad más sobria, concreta y honesta.
 No inventes citas, escenas ni conceptos que no puedas sostener.
 Nunca suenes convencido de algo que no verificaste.
+
+TEST DE CALIDAD BRUTAL (LÍNEA SAGRADA):
+→ Si puedo copiar tu output y usarlo para OTRO libro = FALLASTE COMPLETAMENTE
+→ Si no refleja CONTENIDO ESPECÍFICO de este libro = FALLASTE
+→ Si es genérico = FALLASTE
 `;
 }
 
@@ -660,7 +665,8 @@ JSON:
 }
 
 SOLO JSON.`;
-            case "activadores_en":
+
+    case "activadores_en":
       return `
 You are generating native English activators for Triggui.
 
@@ -863,13 +869,17 @@ const VERIFICADOR = {
     const total = Object.keys(checks).length;
     return { score: ok / total, checks, safe: { palabras_en, frases_en }, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
   },
-     tarjeta(tarjeta) {
+
+  tarjeta(tarjeta) {
     const safe = normalizeTarjetaObject(tarjeta, "es");
     const topPlain = stripHighlightTags(safe.parrafoTop).trim();
     const botPlain = stripHighlightTags(safe.parrafoBot).trim();
     const totalH = countHighlights(`${safe.parrafoTop}\n${safe.parrafoBot}`);
+    const topSegments = getHighlightSegments(safe.parrafoTop);
+    const botSegments = getHighlightSegments(safe.parrafoBot);
     const allText = [safe.titulo, safe.parrafoTop, safe.subtitulo, safe.parrafoBot].join("\n");
-    const checks = {
+
+       const checks = {
       tituloOk: safe.titulo.length >= 8,
       subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "es"),
       parrafoTopRico: topPlain.length >= 40,
@@ -877,16 +887,28 @@ const VERIFICADOR = {
       sinMetadata: !/(^|\n)\s*(título|parrafo|párrafo|subtítulo|accion|acción)\s*[:\-]/i.test(allText),
       sinPrimeraPersona: !/\b(yo|mi|me|conmigo|nosotros|nuestro|aprendí|descubrí|sentí|pienso|creo)\b/i.test(allText),
       highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
-      highlightTop: countHighlights(safe.parrafoTop) >= 1,
-      highlightBot: countHighlights(safe.parrafoBot) >= 1,
-      highlightTopFino: highlightCoverageRatio(safe.parrafoTop) <= 0.42 && getHighlightSegments(safe.parrafoTop).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
-      highlightBotFino: highlightCoverageRatio(safe.parrafoBot) <= 0.42 && getHighlightSegments(safe.parrafoBot).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
+      highlightTop: topSegments.length === 1,
+      highlightBot: botSegments.length === 1,
+      highlightTopFino: topSegments.length === 1 && highlightCoverageRatio(safe.parrafoTop) <= 0.45 && topSegments.every((seg) => {
+        const words = seg.split(/\s+/).filter(Boolean).length;
+        return words >= 5 && words <= 16 && seg.length <= 110;
+      }),
+      highlightBotFino: botSegments.length === 1 && highlightCoverageRatio(safe.parrafoBot) <= 0.45 && botSegments.every((seg) => {
+        const words = seg.split(/\s+/).filter(Boolean).length;
+        return words >= 5 && words <= 16 && seg.length <= 110;
+      }),
       accionReal: /\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(botPlain),
       sinCierreGenerico: !hasGenericClosing(botPlain, "es")
     };
+
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
+    return {
+      score: ok / total,
+      checks,
+      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: ok / total >= CFG.verification.minScore
+    };
   },
 
   tarjeta_en(tarjeta) {
@@ -894,7 +916,10 @@ const VERIFICADOR = {
     const topPlain = stripHighlightTags(safe.parrafoTop).trim();
     const botPlain = stripHighlightTags(safe.parrafoBot).trim();
     const totalH = countHighlights(`${safe.parrafoTop}\n${safe.parrafoBot}`);
+    const topSegments = getHighlightSegments(safe.parrafoTop);
+    const botSegments = getHighlightSegments(safe.parrafoBot);
     const allText = [safe.titulo, safe.parrafoTop, safe.subtitulo, safe.parrafoBot].join("\n");
+
     const checks = {
       tituloOk: safe.titulo.length >= 8,
       subtituloOk: safe.subtitulo.length >= 6 && countHighlights(safe.subtitulo) === 0 && !endsWithDanglingConnector(safe.subtitulo, "en"),
@@ -902,18 +927,30 @@ const VERIFICADOR = {
       parrafoBotRico: botPlain.length >= 40,
       sinMetadata: !/(^|\n)\s*(title|paragraph|subtitle|action)\s*[:\-]/i.test(allText),
       sinPrimeraPersona: !/\b(I|my|me|myself|we|our|ours|ourselves|learned|discovered|felt|think|believe|I'm|I've|I'll|we're|we've)\b/i.test(allText),
-      sinMetaReferencias: !/(according to the book|reminds us|invites us to|reflects on|deals with|talks about|proposes|shows us|allows us)/i.test(allText),
+      sinMetaReferencias: !/(according to the book|this book talks about|the author tells us|the book says|reminds us|invites us to|reflects on|deals with|talks about|proposes|shows us|allows us)/i.test(allText),
       highlightsMinimos: totalH >= CFG.tarjeta.minHighlights,
-      highlightTop: countHighlights(safe.parrafoTop) >= 1,
-      highlightBot: countHighlights(safe.parrafoBot) >= 1,
-      highlightTopFino: highlightCoverageRatio(safe.parrafoTop) <= 0.42 && getHighlightSegments(safe.parrafoTop).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
-      highlightBotFino: highlightCoverageRatio(safe.parrafoBot) <= 0.42 && getHighlightSegments(safe.parrafoBot).every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.split(/\s+/).filter(Boolean).length <= 16),
+      highlightTop: topSegments.length === 1,
+      highlightBot: botSegments.length === 1,
+      highlightTopFino: topSegments.length === 1 && highlightCoverageRatio(safe.parrafoTop) <= 0.45 && topSegments.every((seg) => {
+        const words = seg.split(/\s+/).filter(Boolean).length;
+        return words >= 5 && words <= 16 && seg.length <= 110;
+      }),
+      highlightBotFino: botSegments.length === 1 && highlightCoverageRatio(safe.parrafoBot) <= 0.45 && botSegments.every((seg) => {
+        const words = seg.split(/\s+/).filter(Boolean).length;
+        return words >= 5 && words <= 16 && seg.length <= 110;
+      }),
       accionReal: /\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(botPlain),
       sinCierreGenerico: !hasGenericClosing(botPlain, "en")
     };
+
     const ok = Object.values(checks).filter(Boolean).length;
     const total = Object.keys(checks).length;
-    return { score: ok / total, checks, nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO", aprobado: ok / total >= CFG.verification.minScore };
+    return {
+      score: ok / total,
+      checks,
+      nivel: ok === total ? "PERFECTO" : ok >= total * 0.8 ? "BUENO" : "BAJO",
+      aprobado: ok / total >= CFG.verification.minScore
+    };
   },
 
   estilo(data) {
@@ -1031,12 +1068,13 @@ function strongBottomParagraph(libro, extra, lang = "es") {
   const base = actionSource ? stripHighlightTags(actionSource) : "dedica 30 segundos a escribir una línea concreta sobre lo que harás después";
   return `Después de la primera señal de este libro, [H]${base.replace(/^[^\p{L}\p{N}]+/u, "").replace(/\.$/, "")} en 30 segundos.[/H] Hazlo ahora con calma y precisión.`;
 }
+
 function strongSubtitle(libro, lang = "es") {
   const seed = seedFromBook(libro, lang).toLowerCase();
   if (lang === "en") {
-    return sanitizeSubtitleText(`What becomes visible when ${seed} stops being only theory?`, "en");
+    return sanitizeSubtitleText(`What changes when ${seed} becomes practice?`, "en");
   }
-  return sanitizeSubtitleText(`¿Qué se vuelve visible cuando ${seed} deja de ser sólo teoría?`, "es");
+  return sanitizeSubtitleText(`¿Qué cambia cuando ${seed} se vuelve práctica?`, "es");
 }
 
 function strongTitle(libro, lang = "es") {
@@ -1068,46 +1106,72 @@ function splitSentencesSmart(text = "") {
 
 function selectHighlightSpan(text = "", lang = "es") {
   const plain = stripHighlightTags(text).replace(/\s+/g, " ").trim();
-  if (!plain) return lang === "en" ? "Take one exact step now" : "Toma un paso exacto ahora";
 
-  const sentences = splitSentencesSmart(plain);
-  let best = sentences.find((s) => s.length >= 38 && s.length <= 110) || sentences[0] || plain;
-  let words = best.split(/\s+/).filter(Boolean);
-
-  if (words.length > 14 || best.length > 96) {
-    let start = 0;
-    if (words.length > 10) {
-      const pivotWords = ["porque", "cuando", "antes", "después", "where", "when", "before", "after", "that", "which"];
-      const idx = words.findIndex((w) => pivotWords.includes(normalizeAscii(w)));
-      start = idx > 2 ? Math.max(0, idx - 2) : 0;
-    }
-    words = words.slice(start, start + 10);
-    best = words.join(" ").replace(/[,:;]+$/g, "").trim();
+  if (!plain) {
+    return lang === "en"
+      ? "take one exact next step now"
+      : "toma un siguiente paso exacto ahora";
   }
 
-  if (best.split(/\s+/).filter(Boolean).length < 6) {
-    const plainWords = plain.split(/\s+/).filter(Boolean);
-    best = plainWords.slice(0, Math.min(10, plainWords.length)).join(" ").replace(/[,:;]+$/g, "").trim();
+  const candidates = splitSentencesSmart(plain)
+    .map((s) => {
+      const words = s.split(/\s+/).filter(Boolean);
+      return {
+        text: s.replace(/[“”"'()]/g, "").trim(),
+        words: words.length,
+        len: s.length
+      };
+    })
+    .filter((x) => x.text && x.words >= 5 && x.words <= 16 && x.len >= 28 && x.len <= 110);
+
+  if (candidates.length) {
+    return candidates.sort((a, b) => Math.abs(a.words - 10) - Math.abs(b.words - 10))[0].text;
   }
 
-  return best || (lang === "en" ? "Take one exact step now" : "Toma un paso exacto ahora");
+  const words = plain.split(/\s+/).filter(Boolean);
+  if (words.length <= 16) return plain.replace(/[“”"'()]/g, "").trim();
+
+  const pivotWords = lang === "en"
+    ? ["when", "before", "after", "because", "without", "through", "toward", "towards", "instead"]
+    : ["cuando", "antes", "después", "porque", "sin", "hacia", "hasta", "desde", "mientras"];
+
+  let start = 0;
+  const pivotIndex = words.findIndex((w) => pivotWords.includes(normalizeAscii(w)));
+  if (pivotIndex > 2) start = Math.max(0, pivotIndex - 2);
+
+  return words.slice(start, start + 10).join(" ").replace(/[,:;]+$/g, "").trim();
 }
 
 function applySelectiveHighlight(text = "", lang = "es") {
   const plain = stripHighlightTags(text).replace(/\s+/g, " ").trim();
+
   if (!plain) {
-    return normalizeHighlightSyntax(lang === "en" ? "[H]Take one exact step now[/H]." : "[H]Toma un paso exacto ahora[/H].");
+    return normalizeHighlightSyntax(
+      lang === "en"
+        ? "[H]Take one exact next step now[/H]."
+        : "[H]Toma un siguiente paso exacto ahora[/H]."
+    );
   }
 
   const existing = getHighlightSegments(text);
   const coverage = highlightCoverageRatio(text);
-  if (existing.length >= 1 && coverage > 0 && coverage <= 0.42 && existing.every((seg) => seg.split(/\s+/).filter(Boolean).length >= 4 && seg.length <= 96)) {
+
+  if (
+    existing.length === 1 &&
+    coverage > 0 &&
+    coverage <= 0.45 &&
+    existing.every((seg) => {
+      const words = seg.split(/\s+/).filter(Boolean).length;
+      return words >= 5 && words <= 16 && seg.length <= 110;
+    })
+  ) {
     return normalizeHighlightSyntax(text);
   }
 
   const target = selectHighlightSpan(plain, lang);
   const escaped = target.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const re = new RegExp(escaped);
+
   if (re.test(plain)) {
     return normalizeHighlightSyntax(plain.replace(re, `[H]${target}[/H]`));
   }
@@ -1117,6 +1181,63 @@ function applySelectiveHighlight(text = "", lang = "es") {
 
 function ensureSingleHighlight(text = "", lang = "es") {
   return applySelectiveHighlight(text, lang);
+}
+
+function localSubtitleFallback(baseText = "", lang = "es") {
+  const seed = sanitizeTitleText(String(baseText || "").trim())
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 4)
+    .join(" ")
+    .toLowerCase();
+
+  if (lang === "en") {
+    return sanitizeSubtitleText(
+      seed
+        ? `What changes when ${seed} becomes practice?`
+        : "What changes when the idea becomes practice?",
+      "en"
+    );
+  }
+
+  return sanitizeSubtitleText(
+    seed
+      ? `¿Qué cambia cuando ${seed} se vuelve práctica?`
+      : "¿Qué cambia cuando la idea se vuelve práctica?",
+    "es"
+  );
+}
+
+function extractActionSeed(extra, lang = "es") {
+  const source = normalizeArrayStrings(
+    lang === "en"
+      ? (extra?.frases_en || extra?.frases || [])
+      : (extra?.frases || extra?.frases_en || []),
+    CFG.frases.cantidad
+  )[0] || "";
+
+  let plain = stripHighlightTags(source)
+    .replace(/^[^\p{L}\p{N}]+/u, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!plain) {
+    return lang === "en"
+      ? "Take 30 seconds to write one concrete next step now."
+      : "Dedica 30 segundos a escribir un siguiente paso concreto ahora.";
+  }
+
+  if (lang === "en") {
+    if (!/\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(plain)) {
+      plain = `${plain.replace(/\.$/, "")} in 30 seconds.`;
+    }
+  } else {
+    if (!/\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(plain)) {
+      plain = `${plain.replace(/\.$/, "")} en 30 segundos.`;
+    }
+  }
+
+  return plain;
 }
 
 function coerceTarjetaDeterministic(tarjeta, libro, extra, lang = "es", failedChecks = []) {
@@ -1135,61 +1256,78 @@ function coerceTarjetaDeterministic(tarjeta, libro, extra, lang = "es", failedCh
   }
 
   if (!out.titulo || out.titulo.length < 8) {
-    out.titulo = strongTitle(libro, lang);
-  }
-
-  if (!out.parrafoTop || stripHighlightTags(out.parrafoTop).trim().length < 40) {
-    out.parrafoTop = strongTopParagraph(libro, extra, lang);
+    out.titulo = sanitizeTitleText(
+      lang === "en"
+        ? String(extra?.titulo_en || libro?.titulo || "").trim()
+        : String(libro?.titulo || "").trim()
+    );
   }
 
   if (!out.subtitulo || out.subtitulo.length < 6 || endsWithDanglingConnector(out.subtitulo, lang)) {
-    out.subtitulo = strongSubtitle(libro, lang);
+    out.subtitulo = localSubtitleFallback(out.titulo || libro?.titulo || "", lang);
   }
 
-  if (!out.parrafoBot || stripHighlightTags(out.parrafoBot).trim().length < 40 || hasGenericClosing(out.parrafoBot, lang)) {
-    out.parrafoBot = strongBottomParagraph(libro, extra, lang);
+  if (failedChecks.includes("subtituloOk")) {
+    out.subtitulo = localSubtitleFallback(out.subtitulo || out.titulo || libro?.titulo || "", lang);
+  }
+
+  if (!out.parrafoBot || stripHighlightTags(out.parrafoBot).trim().length < 40) {
+    out.parrafoBot = stripHighlightTags(out.parrafoBot).trim();
+  }
+
+  const actionSeed = extractActionSeed(extra, lang);
+
+  if (!out.parrafoBot) {
+    out.parrafoBot = actionSeed;
+  }
+
+  if (lang === "en") {
+    if (!/\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(stripHighlightTags(out.parrafoBot))) {
+      out.parrafoBot = `${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} ${actionSeed}`.trim();
+    }
+  } else {
+    if (!/\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(stripHighlightTags(out.parrafoBot))) {
+      out.parrafoBot = `${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} ${actionSeed}`.trim();
+    }
   }
 
   out.parrafoTop = applySelectiveHighlight(out.parrafoTop, lang);
   out.parrafoBot = applySelectiveHighlight(out.parrafoBot, lang);
 
-  if (highlightCoverageRatio(out.parrafoTop) > 0.42) {
+  if (highlightCoverageRatio(out.parrafoTop) > 0.45) {
     out.parrafoTop = applySelectiveHighlight(stripHighlightTags(out.parrafoTop), lang);
   }
-  if (highlightCoverageRatio(out.parrafoBot) > 0.42) {
+
+  if (highlightCoverageRatio(out.parrafoBot) > 0.45) {
     out.parrafoBot = applySelectiveHighlight(stripHighlightTags(out.parrafoBot), lang);
-  }
-
-  if (countHighlights(`${out.parrafoTop}\n${out.parrafoBot}`) < CFG.tarjeta.minHighlights) {
-    out.parrafoTop = applySelectiveHighlight(out.parrafoTop, lang);
-    out.parrafoBot = applySelectiveHighlight(out.parrafoBot, lang);
-  }
-
-  if (lang === "en" && !/\b(15|20|30|40|45|60)\b|\b(sec|seconds|min|minutes|moment|now|today)\b/i.test(stripHighlightTags(out.parrafoBot))) {
-    out.parrafoBot = normalizeHighlightSyntax(`${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} [H]Take 30 seconds to write one concrete next step now.[/H]`);
-  }
-
-  if (lang === "es" && !/\b(15|20|30|40|45|60)\b|\b(seg|segundos|min|minutos|instante|momento|ahora|hoy)\b/i.test(stripHighlightTags(out.parrafoBot))) {
-    out.parrafoBot = normalizeHighlightSyntax(`${stripHighlightTags(out.parrafoBot).replace(/\.$/, "")} [H]Dedica 30 segundos a escribir un siguiente paso concreto ahora.[/H]`);
   }
 
   out = normalizeTarjetaObject(out, lang);
 
   if (tooSimilarText(out.parrafoTop, out.parrafoBot)) {
-    out.parrafoBot = strongBottomParagraph(libro, extra, lang);
-    out.parrafoBot = ensureMinimumHighlights(out.parrafoBot, 1);
+    out.parrafoBot = applySelectiveHighlight(stripHighlightTags(out.parrafoBot), lang);
     out = normalizeTarjetaObject(out, lang);
   }
 
   return out;
 }
-
 function buildRepairPromptTarjeta(libro, extra, candidate, failedChecks, lang = "es") {
   const checksText = failedChecks.join(", ");
-  const journeyWords = cleanJoin(lang === "en" ? (extra?.palabras_en || extra?.palabras || []) : (extra?.palabras || []));
-  const journeyPhrases = normalizeArrayStrings(lang === "en" ? (extra?.frases_en || extra?.frases || []) : (extra?.frases || []), CFG.frases.cantidad)
+  const journeyWords = cleanJoin(
+    lang === "en"
+      ? (extra?.palabras_en || extra?.palabras || [])
+      : (extra?.palabras || [])
+  );
+
+  const journeyPhrases = normalizeArrayStrings(
+    lang === "en"
+      ? (extra?.frases_en || extra?.frases || [])
+      : (extra?.frases || []),
+    CFG.frases.cantidad
+  )
     .map((f, i) => `${i + 1}. ${f}`)
     .join("\n");
+
   if (lang === "en") {
     return `Repair this English editorial card for "${extra?.titulo_en || libro.titulo}" by "${libro.autor}".
 
@@ -1206,19 +1344,22 @@ Emotions: ${journeyWords}
 Actions:
 ${journeyPhrases}
 
-You must fix ONLY what failed:
-- subtitle must not be truncated or end in a dangling connector
-- bottom paragraph must be rich, specific, highlighted, and include an explicit time
+Requirements:
+- sound natural, like something a sharp person would say in a hallway, on a stage, or in a real conversation
+- never say "this book talks about", "according to the book", "the author tells us", or anything meta
 - keep exactly 4 clean lines
+- subtitle must be complete and elegant, never truncated
+- bottom paragraph must include an explicit concrete time
+- top and bottom must each contain exactly one [H]...[/H]
+- each highlight must be a precise fragment, not the whole paragraph
+- each highlight should usually be around 5 to 14 words
 - no metadata labels
 - no first person
-- no generic closing
-- at least one [H]...[/H] in top and bottom
-- each highlight must be a precise fragment, not the whole paragraph
-- each highlight should be roughly 6 to 14 words and never dominate the paragraph
+- no generic ending
 
 Return ONLY 4 lines.`;
   }
+
   return `Repara esta tarjeta editorial en español para "${libro.titulo}" de "${libro.autor}".
 
 Checks fallidos: ${checksText}
@@ -1234,20 +1375,23 @@ Emociones: ${journeyWords}
 Acciones:
 ${journeyPhrases}
 
-Debes corregir SOLO lo que falló:
-- el subtítulo no debe quedar truncado ni colgar de una preposición
-- el párrafo inferior debe ser rico, específico, con highlight y tiempo explícito
+Requisitos:
+- debe sonar natural, como algo que alguien muy lúcido diría en una conferencia, en el pasillo o en una charla real
+- nunca digas "este libro habla de", "según el libro", "el autor nos dice", ni nada meta
 - conserva exactamente 4 líneas limpias
+- el subtítulo debe quedar completo y elegante, nunca truncado
+- el párrafo inferior debe incluir tiempo explícito y concreto
+- top y bot deben llevar exactamente un [H]...[/H] cada uno
+- cada highlight debe ser un fragmento preciso, no todo el párrafo
+- cada highlight debe rondar entre 5 y 14 palabras
 - sin labels ni metadata
 - sin primera persona
 - sin cierre genérico
-- al menos un [H]...[/H] en top y en bot
-- cada highlight debe ser un fragmento preciso, no todo el párrafo
-- cada highlight debe rondar entre 6 y 14 palabras y no dominar visualmente el párrafo
 
 Devuelve SOLO 4 líneas.`;
 }
-async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es", external = true }) {
+
+async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es" }) {
   const verify = lang === "en" ? VERIFICADOR.tarjeta_en : VERIFICADOR.tarjeta;
   let candidate = null;
 
@@ -1259,40 +1403,55 @@ async function generateTarjetaWithRepair({ libro, ctx, extra, lang = "es", exter
         raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
         candidate = normalizeTarjetaObject(parseTarjetaLines(raw), "es");
       } else {
-        let raw = await call(buildPrompt(libro, "tarjeta_en", ctx, extra), "Generate the English editorial card.", ctx.tempDinamica, false);
+        let raw = await call(
+          buildPrompt(libro, "tarjeta_en", ctx, extra),
+          "Generate the English editorial card.",
+          ctx.tempDinamica,
+          false
+        );
         raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
         candidate = normalizeTarjetaObject(parseTarjetaLines(raw), "en");
       }
     } else {
       const currentValidation = verify(candidate);
       const failedChecks = listFailedChecks(currentValidation);
+
       candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, failedChecks);
       const afterCoerce = verify(candidate);
       if (afterCoerce.aprobado) return candidate;
 
       const repairPrompt = buildRepairPromptTarjeta(libro, extra, candidate, failedChecks, lang);
+
       let raw = await call(
-        lang === "en" ? buildPrompt(libro, "tarjeta_en", ctx, extra) : buildPrompt(libro, "tarjeta", ctx, extra),
+        lang === "en"
+          ? buildPrompt(libro, "tarjeta_en", ctx, extra)
+          : buildPrompt(libro, "tarjeta", ctx, extra),
         repairPrompt,
         0.55,
         false
       );
+
       raw = String(raw || "").replace(/@@BODY|@@ENDBODY/g, "").trim();
       candidate = normalizeTarjetaObject(parseTarjetaLines(raw), lang);
+      candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, failedChecks);
     }
 
     const validation = verify(candidate);
     if (validation.aprobado) return candidate;
+
     if (CFG.verification.logLowScore) {
       console.log(`   ⚠️  Verificación tarjeta${lang === "en" ? " EN" : ""}: ${validation.nivel} (${(validation.score * 100).toFixed(0)}%)`);
       console.log("      Checks fallidos:", listFailedChecks(validation));
     }
   }
 
-  candidate = coerceTarjetaDeterministic(candidate, libro, extra, lang, [
-    "tituloOk","subtituloOk","parrafoTopRico","parrafoBotRico","highlightsMinimos","highlightTop","highlightBot","highlightTopFino","highlightBotFino","accionReal","sinCierreGenerico"
-  ]);
-  return candidate;
+  return coerceTarjetaDeterministic(
+    candidate,
+    libro,
+    extra,
+    lang,
+    ["subtituloOk", "highlightsMinimos", "highlightTopFino", "highlightBotFino", "accionReal"]
+  );
 }
 
 async function enrich(libro, ctx) {
@@ -1558,6 +1717,7 @@ async function runSingle(ctx) {
   }
   await writeSingleOutputs(bookMeta, enriched);
 }
+
 async function runBatch(ctx) {
   const books = await loadCSVBooks();
   const selected = utils.shuffle(books).slice(0, Math.min(CFG.processing.maxBatch, books.length));
