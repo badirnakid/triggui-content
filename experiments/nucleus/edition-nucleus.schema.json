@@ -1,116 +1,144 @@
 {
   "name": "EditionNucleus",
-  "description": "Núcleo semántico canónico de una edición Triggui. Contiene SOLO la materia prima extraída del libro. Los renderers deterministas producen todos los artefactos (tarjeta ES, tarjeta EN, email, OG, WhatsApp) sin llamadas adicionales a IA. LÍNEA SAGRADA: si un campo pudiera aplicarse a otro libro, falló la extracción.",
+  "description": "Núcleo canónico de una edición Triggui. Triggui es un disparador: su único objetivo es que el lector abra un libro físico. Para lograrlo, el modelo produce texto que suena como si el lector acabara de abrir ese libro en una página al azar — la voz del libro, el tono del autor, el ritmo del libro. El modelo NO es crítico ni reseñista: no habla DEL libro, produce texto que podría estar EN el libro. El output se descarta si contiene frases tipo 'este libro te invita', 'el autor propone', 'a través de esta obra'. La curaduría silenciosa (lens) es una lente con la que el curador está viendo el mundo hoy: si la lente resuena con ESTE libro específico, el modelo elige la parte del libro que activa esa lente; si no resuena, el modelo marca lens_relevance=false y procede como si la lente no existiera.",
   "strict": true,
   "schema": {
     "type": "object",
     "additionalProperties": false,
     "required": [
       "book_identity",
-      "truth",
-      "tension",
-      "micro_action",
-      "emotional_vector",
-      "highlight_seeds",
-      "visual_tokens",
+      "card_es",
+      "card_en",
+      "emotional_words_es",
+      "emotional_words_en",
+      "key_phrases_es",
+      "key_phrases_en",
+      "visual_signature",
       "surface_hints",
+      "lens_relevance",
       "confidence"
     ],
     "properties": {
       "book_identity": {
         "type": "object",
-        "description": "Identidad bibliográfica canónica bilingüe. titulo_es y titulo_en deben ser la MISMA obra. idioma_original solo 'es' o 'en'. Si el libro es traducción al español de obra originalmente en inglés, idioma_original='en'.",
         "additionalProperties": false,
         "required": ["titulo_es", "titulo_en", "autor", "idioma_original"],
         "properties": {
-          "titulo_es": { "type": "string", "description": "Título publicado en español. Si no hay traducción oficial conocida, propone equivalencia natural." },
-          "titulo_en": { "type": "string", "description": "Título publicado en inglés. Si no hay traducción oficial conocida, propone equivalencia natural." },
-          "autor": { "type": "string", "description": "Nombre del autor tal como firma el libro" },
+          "titulo_es": { "type": "string" },
+          "titulo_en": { "type": "string" },
+          "autor": { "type": "string" },
           "idioma_original": { "type": "string", "enum": ["es", "en"] }
         }
       },
-      "truth": {
+
+      "card_es": {
         "type": "object",
-        "description": "La tesis operativa del libro. NO es resumen, NO es cita, NO es marketing. Es la idea central que el lector puede aplicar hoy. Debe ser específica a ESTE libro: si funciona para otro libro, falló. PROHIBIDO: primera persona ('yo', 'my'), frases genéricas ('transforma tu vida', 'encuentra tu potencial'), jerga de autoayuda vacía.",
+        "description": "Los 4 campos de la tarjeta en español. Cada uno debe sonar como si fuera texto del libro mismo, en la voz del autor en ESTE libro. NO uses 'este libro', 'el autor', 'la obra', 'a través de', 'nos invita a', 'reflexiona sobre', 'trata de'. Habla como habla el libro.",
         "additionalProperties": false,
-        "required": ["es", "en"],
+        "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
         "properties": {
-          "es": { "type": "string", "description": "Verdad central en español. 50-180 caracteres. Una oración densa." },
-          "en": { "type": "string", "description": "Central truth in English. 50-180 chars. One dense sentence. Not a translation — same insight expressed natively in English." }
+          "titulo": { "type": "string", "description": "Título de la tarjeta. Corto, denso. Puede ser una frase del libro o una formulación que el autor usaría. 3-8 palabras." },
+          "parrafoTop": { "type": "string", "description": "Primer párrafo. Debe sonar como abrir el libro en esa página. Densidad alta. 25-60 palabras." },
+          "subtitulo": { "type": "string", "description": "Pregunta o frase puente. Debe estar en la voz del libro. 6-14 palabras." },
+          "parrafoBot": { "type": "string", "description": "Párrafo de cierre. NO instrucciones de tiempo ('toma X segundos'), NO 'después de', NO envolturas narrativas. Texto directo del libro. 25-60 palabras." }
         }
       },
-      "tension": {
+
+      "card_en": {
         "type": "object",
-        "description": "La tensión emocional o cognitiva que el libro nombra y resuelve. Formato preferido: 'confundir X con Y' o 'creer Z cuando en realidad W'. Específica al libro. Sin jerga psicológica vacía.",
+        "description": "The 4 card fields in English. Native English, same voice as the book's author in this book. Do NOT write like a reviewer. Write like the book itself.",
         "additionalProperties": false,
-        "required": ["es", "en"],
+        "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
         "properties": {
-          "es": { "type": "string", "description": "Tensión en español. 20-120 caracteres." },
-          "en": { "type": "string", "description": "Tension in English. 20-120 chars. Natively phrased." }
+          "titulo": { "type": "string" },
+          "parrafoTop": { "type": "string" },
+          "subtitulo": { "type": "string" },
+          "parrafoBot": { "type": "string" }
         }
       },
-      "micro_action": {
-        "type": "object",
-        "description": "Acción concreta que el lector ejecuta en menos de 60 segundos para activar lo aprendido. OBLIGATORIO: verbo físico (escribir, respirar, observar, nombrar, tocar, caminar, marcar). PROHIBIDO: 'reflexiona', 'piensa', 'considera', 'imagina' — son verbos mentales vagos, no acciones. El tiempo DEBE estar en seconds como entero.",
-        "additionalProperties": false,
-        "required": ["seconds", "verb_es", "verb_en", "instruction_es", "instruction_en"],
-        "properties": {
-          "seconds": { "type": "integer", "description": "Tiempo exacto en segundos: 15, 20, 30, 40, 45 o 60" },
-          "verb_es": { "type": "string", "description": "Verbo físico imperativo en español: 'escribe', 'marca', 'respira', 'observa', 'nombra'. Una sola palabra." },
-          "verb_en": { "type": "string", "description": "Physical imperative verb: 'write', 'mark', 'breathe', 'observe', 'name'. Single word." },
-          "instruction_es": { "type": "string", "description": "Instrucción completa en español. 40-160 caracteres. Debe comenzar con el verbo. Específica al libro." },
-          "instruction_en": { "type": "string", "description": "Full instruction in English. 40-160 chars. Starts with verb. Specific to the book." }
-        }
+
+      "emotional_words_es": {
+        "type": "array",
+        "description": "4 palabras emocionales específicas a ESTE libro. Palabras que emergen del libro mismo, no palabras genéricas de autoayuda.",
+        "items": { "type": "string" }
       },
-      "emotional_vector": {
-        "type": "object",
-        "description": "Cuatro palabras emocionales que describen el journey emocional específico de este libro. PROHIBIDO: palabras genéricas tipo 'felicidad', 'éxito', 'bienestar'. Usa palabras que un lector real escribiría después de cerrar ESTE libro específico.",
-        "additionalProperties": false,
-        "required": ["es", "en"],
-        "properties": {
-          "es": {
-            "type": "array",
-            "description": "4 palabras emocionales en español, específicas al libro",
-            "items": { "type": "string" }
-          },
-          "en": {
-            "type": "array",
-            "description": "4 emotional words in English, specific to the book",
-            "items": { "type": "string" }
-          }
-        }
+
+      "emotional_words_en": {
+        "type": "array",
+        "items": { "type": "string" }
       },
-      "highlight_seeds": {
-        "type": "object",
-        "description": "Semillas de highlights. Cada seed es una FRASE CORTA (6-14 palabras) que será embebida por el renderer determinista. NO incluyas [H] ni [/H]. NO escribas párrafos. Solo la frase nuclear que merece highlight visual.",
-        "additionalProperties": false,
-        "required": ["top_es", "top_en", "bottom_es", "bottom_en"],
-        "properties": {
-          "top_es": { "type": "string", "description": "Seed del párrafo superior en español. Frase nuclear de 6-14 palabras." },
-          "top_en": { "type": "string", "description": "Top paragraph seed in English. 6-14 words." },
-          "bottom_es": { "type": "string", "description": "Seed del párrafo inferior en español. 6-14 palabras." },
-          "bottom_en": { "type": "string", "description": "Bottom paragraph seed in English. 6-14 words." }
-        }
+
+      "key_phrases_es": {
+        "type": "array",
+        "description": "4 frases cortas densas que podrían estar en el libro. Cada una con un emoji apropiado al tono del libro (no genérico). Estas frases alimentan el generador de OG image, que elige la más brutal. Deben ser imperativas o densas, NO descriptivas del libro.",
+        "items": { "type": "string" }
       },
-      "visual_tokens": {
+
+      "key_phrases_en": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+
+      "visual_signature": {
         "type": "object",
-        "description": "Tokens visuales hex. paper DEBE ser oscuro (rango #0a0a0a a #2a2a2a). ink DEBE ser claro (rango #e0e0e0 a #ffffff). accent es color vibrante dopaminérgico coherente con el tono del libro. palette son 4 colores coherentes.",
+        "description": "Firma visual derivada del libro y su autor. Esto NO es decoración arbitraria: es la identidad visual que emerge del libro mismo. Dos libros distintos deben tener firmas radicalmente distintas; dos extracciones del mismo libro deben tener firmas casi idénticas.",
         "additionalProperties": false,
-        "required": ["accent", "paper", "ink", "palette"],
+        "required": [
+          "palette",
+          "accent",
+          "paper",
+          "ink",
+          "typography_family",
+          "density",
+          "temperature",
+          "rhythm",
+          "era",
+          "genre_visual"
+        ],
         "properties": {
-          "accent": { "type": "string", "description": "Color vibrante hex. Formato: #rrggbb" },
-          "paper": { "type": "string", "description": "Color de fondo oscuro hex. Formato: #rrggbb. Luminancia <0.3." },
-          "ink": { "type": "string", "description": "Color de tinta claro hex. Formato: #rrggbb. Luminancia >0.7." },
           "palette": {
             "type": "array",
-            "description": "4 colores hex coherentes con el tono del libro",
+            "description": "4 colores hex coherentes con el tono emocional del libro. No paleta del logo, no paleta Triggui: paleta DEL LIBRO.",
             "items": { "type": "string" }
+          },
+          "accent": { "type": "string", "description": "Color acento principal. Hex." },
+          "paper": { "type": "string", "description": "Color de fondo. Hex. Puede ser claro o oscuro según el libro." },
+          "ink": { "type": "string", "description": "Color de tinta. Hex. Debe contrastar con paper." },
+          "typography_family": {
+            "type": "string",
+            "description": "Familia tipográfica sugerida según voz del autor.",
+            "enum": ["serif_clasico", "serif_literario", "serif_moderno", "sans_geometrico", "sans_humanista", "sans_tecnologico", "mono_precision", "mixta_editorial"]
+          },
+          "density": {
+            "type": "string",
+            "description": "Densidad tipográfica emergente del autor. Tolle es aireado; Dostoievski es denso.",
+            "enum": ["aireado", "equilibrado", "denso"]
+          },
+          "temperature": {
+            "type": "string",
+            "description": "Temperatura emocional dominante del libro.",
+            "enum": ["frio", "neutro", "calido", "ardiente"]
+          },
+          "rhythm": {
+            "type": "string",
+            "description": "Ritmo de prosa del autor en ESTE libro.",
+            "enum": ["lento", "medio", "rapido", "staccato"]
+          },
+          "era": {
+            "type": "string",
+            "description": "Época estética del libro. Puede ser distinta a la fecha de publicación.",
+            "enum": ["clasico", "moderno", "contemporaneo", "atemporal"]
+          },
+          "genre_visual": {
+            "type": "string",
+            "description": "Género visual que encaja con este libro.",
+            "enum": ["academico", "literario", "manifiesto", "poesia", "narrativa", "ensayo", "tecnico", "espiritual"]
           }
         }
       },
+
       "surface_hints": {
         "type": "object",
-        "description": "Hints mínimos para renderers. Clasificación Triggui canónica.",
         "additionalProperties": false,
         "required": ["dimension", "punto_hawkins", "franja_ideal"],
         "properties": {
@@ -119,15 +147,26 @@
           "franja_ideal": { "type": "string", "enum": ["madrugada", "manana", "tarde", "noche"] }
         }
       },
+
+      "lens_relevance": {
+        "type": "object",
+        "description": "Decisión honesta del modelo sobre si la lente de curaduría silenciosa (si fue provista) resuena con ESTE libro. Si resuena, applied=true y el contenido fue sesgado por la lente. Si no resuena, applied=false y el contenido se extrajo como si la lente no existiera. Si no se pasó lente, applied=false y reason vacío.",
+        "additionalProperties": false,
+        "required": ["applied", "reason"],
+        "properties": {
+          "applied": { "type": "boolean" },
+          "reason": { "type": "string", "description": "Breve explicación interna. No aparece en el output del usuario." }
+        }
+      },
+
       "confidence": {
         "type": "object",
-        "description": "Auto-evaluación honesta del modelo sobre su propio output. El modelo debe ser honesto: si conoce poco del libro, book_grounding debe ser bajo. risk_of_generic alto significa 'es posible que esto funcione para otro libro'. specificity alto significa 'esto solo aplica a este libro'.",
         "additionalProperties": false,
-        "required": ["book_grounding", "specificity", "risk_of_generic"],
+        "required": ["book_grounding", "voice_authenticity", "specificity"],
         "properties": {
-          "book_grounding": { "type": "number", "description": "0.0 a 1.0. Qué tan bien conoces este libro específico." },
-          "specificity": { "type": "number", "description": "0.0 a 1.0. Qué tan específico al libro es el output." },
-          "risk_of_generic": { "type": "number", "description": "0.0 a 1.0. Riesgo de que el output funcione para otro libro (alto = malo)." }
+          "book_grounding": { "type": "number", "description": "0-1. Qué tan bien conoce el modelo este libro específico." },
+          "voice_authenticity": { "type": "number", "description": "0-1. Qué tan cerca está el output de la voz real del autor en este libro." },
+          "specificity": { "type": "number", "description": "0-1. Qué tan específico al libro es el output. Bajo = podría ser cualquier libro." }
         }
       }
     }
