@@ -1,15 +1,14 @@
 {
-  "name": "triggui-god",
+  "name": "triggui-nucleus",
   "version": "1.0.0",
   "type": "module",
-  "main": "build-contenido-nucleus.js",
   "scripts": {
-    "test": "node test-pipeline-sin-ia.js",
+    "test": "node test-end-to-end.js",
     "build:batch": "node build-contenido-nucleus.js",
     "build:single": "SINGLE_MODE=true node build-contenido-nucleus.js"
   },
   "dependencies": {
-    "csv-parse": "^5.6.0",
-    "openai": "^6.0.0"
+    "openai": "^6.0.0",
+    "csv-parse": "^5.0.0"
   }
 }
