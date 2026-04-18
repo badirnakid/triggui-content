@@ -1,153 +1,102 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   render-tarjeta.js — COMPILADORES DETERMINISTAS ES + EN
+   render-tarjeta.js — RENDERER HONESTO
 
-   Input: EditionNucleus válido
-   Output: { titulo, parrafoTop, subtitulo, parrafoBot, style }
+   El LLM ya extrajo los 4 campos (titulo, parrafoTop, subtitulo, parrafoBot)
+   en la voz del libro. Este módulo NO los envuelve, NO añade "toma X segundos",
+   NO añade "después de", NO añade ninguna narración.
 
-   Cero IA. Cero probabilidad. Función pura.
-   Mismo nucleus → misma tarjeta, siempre.
+   Lo único que hace:
+   1. Aplica [H]...[/H] en el fragmento más denso (matemático, no editorial)
+   2. Ensambla el objeto en formato compatible con build-tarjeta-png.js,
+      build-og-image.js y build-editions.py
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import {
-  luminance,
-  darken,
-  lighten,
-  sanitizeTitleText,
-  sanitizeSubtitleText,
-  normalizeSentence
-} from "./triggui-quality-engine.js";
+  placeHighlightOnDensestSpan,
+  normalizeHighlightSyntax,
+  countHighlights
+} from "./triggui-physics.js";
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   TÍTULO — derivado del libro + verbo del micro_action
-────────────────────────────────────────────────────────────────────────────── */
-
-function deriveTitulo(nucleus, lang = "es") {
-  const { book_identity, micro_action } = nucleus;
-  const verbo = lang === "en" ? micro_action.verb_en : micro_action.verb_es;
-  const titulo = lang === "en" ? book_identity.titulo_en : book_identity.titulo_es;
-
-  const capitalVerbo = verbo.charAt(0).toUpperCase() + verbo.slice(1).toLowerCase();
-  const separador = lang === "en" ? "after" : "tras";
-
-  return sanitizeTitleText(`${capitalVerbo} ${separador} "${titulo}"`);
+/**
+ * Aplica highlights a un campo solo si no los tiene ya.
+ * El LLM puede producir [H][/H] naturalmente; si lo hace, respetamos.
+ * Si no, colocamos uno matemáticamente en el span más denso.
+ */
+function ensureHighlight(text) {
+  const normalized = normalizeHighlightSyntax(text || "");
+  if (!normalized) return "";
+  if (countHighlights(normalized) > 0) return normalized;
+  return placeHighlightOnDensestSpan(normalized);
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   PÁRRAFO SUPERIOR — verdad + seed como highlight
-────────────────────────────────────────────────────────────────────────────── */
+/**
+ * Renderer de tarjeta ES.
+ * @param {object} cardES - nucleus.card_es
+ * @param {object} visualComposition - salida de composeVisual()
+ * @returns {object} tarjeta compatible con build-tarjeta-png.js
+ */
+export function renderTarjetaES(cardES, visualComposition) {
+  if (!cardES) throw new Error("cardES requerido");
 
-function buildParrafoTop(nucleus, lang = "es") {
-  const truth = lang === "en" ? nucleus.truth.en : nucleus.truth.es;
-  const seed = lang === "en" ? nucleus.highlight_seeds.top_en : nucleus.highlight_seeds.top_es;
+  const style = {
+    accent: visualComposition.accent,
+    paper: visualComposition.paper,
+    ink: visualComposition.ink,
+    border: visualComposition.border
+  };
 
-  const truthClean = truth.trim().replace(/[.!?]+$/, "");
-  const seedClean = seed.trim().replace(/[.!?]+$/, "");
-
-  // La verdad va primero como contexto; el seed va como highlight al final.
-  return `${truthClean}. [H]${seedClean}[/H].`;
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   SUBTÍTULO — derivado de tension como pregunta sobria
-────────────────────────────────────────────────────────────────────────────── */
-
-function buildSubtitulo(nucleus, lang = "es") {
-  const tension = lang === "en" ? nucleus.tension.en : nucleus.tension.es;
-  const t = tension.trim().replace(/[.!?…]+$/, "");
-
-  if (lang === "en") {
-    if (/\?$/.test(t)) return sanitizeSubtitleText(t, "en");
-    return sanitizeSubtitleText(`What changes when you stop ${t.toLowerCase().replace(/^(the act of |el acto de )/, "")}?`, "en");
-  }
-
-  if (t.startsWith("¿")) {
-    return sanitizeSubtitleText(t.endsWith("?") ? t : `${t}?`, "es");
-  }
-  return sanitizeSubtitleText(`¿Qué cambia cuando dejas de ${t.toLowerCase()}?`, "es");
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   PÁRRAFO INFERIOR — micro_action con tiempo explícito + seed bottom
-────────────────────────────────────────────────────────────────────────────── */
-
-function buildParrafoBot(nucleus, lang = "es") {
-  const { seconds, instruction_es, instruction_en } = nucleus.micro_action;
-  const instruction = lang === "en" ? instruction_en : instruction_es;
-  const seedBot = lang === "en" ? nucleus.highlight_seeds.bottom_en : nucleus.highlight_seeds.bottom_es;
-
-  const instructClean = instruction.trim().replace(/[.!?]+$/, "");
-  const seedClean = seedBot.trim().replace(/[.!?]+$/, "");
-
-  if (lang === "en") {
-    return `Take ${seconds} seconds now: ${instructClean}. [H]${seedClean}[/H].`;
-  }
-  return `Toma ${seconds} segundos ahora: ${instructClean}. [H]${seedClean}[/H].`;
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   STYLE — desde visual_tokens con garantías deterministas
-────────────────────────────────────────────────────────────────────────────── */
-
-function buildStyle(nucleus) {
-  const { accent, paper, ink } = nucleus.visual_tokens;
-
-  // Garantía: paper oscuro real. Si el modelo falló aunque el schema lo pida, forzamos.
-  const paperFinal = luminance(paper) < 0.35 ? paper : "#0a0a0a";
-  const inkFinal = luminance(ink) > 0.65 ? ink : "#ffffff";
-
-  const paperLum = luminance(paperFinal);
-  const border = paperLum < 0.08
-    ? lighten(paperFinal, 0.18)
-    : darken(paperFinal, 0.35);
-
-  return { accent, paper: paperFinal, ink: inkFinal, border };
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   RENDERERS PÚBLICOS
-────────────────────────────────────────────────────────────────────────────── */
-
-export function renderTarjetaES(nucleus) {
-  if (!nucleus?.book_identity?.titulo_es) {
-    throw new Error("Nucleus inválido: falta book_identity.titulo_es");
-  }
   return {
-    titulo: deriveTitulo(nucleus, "es"),
-    parrafoTop: buildParrafoTop(nucleus, "es"),
-    subtitulo: buildSubtitulo(nucleus, "es"),
-    parrafoBot: buildParrafoBot(nucleus, "es"),
-    style: buildStyle(nucleus)
+    titulo: String(cardES.titulo || "").trim(),
+    parrafoTop: ensureHighlight(cardES.parrafoTop),
+    subtitulo: String(cardES.subtitulo || "").trim(),
+    parrafoBot: ensureHighlight(cardES.parrafoBot),
+    style
   };
 }
 
-export function renderTarjetaEN(nucleus) {
-  if (!nucleus?.book_identity?.titulo_en) {
-    throw new Error("Nucleus inválido: falta book_identity.titulo_en");
-  }
+/**
+ * Renderer de tarjeta EN.
+ */
+export function renderTarjetaEN(cardEN, visualComposition) {
+  if (!cardEN) throw new Error("cardEN requerido");
+
+  const style = {
+    accent: visualComposition.accent,
+    paper: visualComposition.paper,
+    ink: visualComposition.ink,
+    border: visualComposition.border
+  };
+
   return {
-    titulo: deriveTitulo(nucleus, "en"),
-    parrafoTop: buildParrafoTop(nucleus, "en"),
-    subtitulo: buildSubtitulo(nucleus, "en"),
-    parrafoBot: buildParrafoBot(nucleus, "en"),
-    style: buildStyle(nucleus)
+    titulo: String(cardEN.titulo || "").trim(),
+    parrafoTop: ensureHighlight(cardEN.parrafoTop),
+    subtitulo: String(cardEN.subtitulo || "").trim(),
+    parrafoBot: ensureHighlight(cardEN.parrafoBot),
+    style
   };
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   RENDERER DE SUPERFICIE EXTRA: OG preview (demuestra extensibilidad)
-────────────────────────────────────────────────────────────────────────────── */
-
-export function renderOGTitle(nucleus, lang = "es") {
-  const title = lang === "en" ? nucleus.book_identity.titulo_en : nucleus.book_identity.titulo_es;
-  const seed = lang === "en" ? nucleus.highlight_seeds.top_en : nucleus.highlight_seeds.top_es;
-  return `${title} — ${seed}`;
+/**
+ * Renderer OG: el pipeline visual existente elige la mejor frase desde key_phrases.
+ * Este helper solo garantiza que las frases lleguen limpias.
+ */
+export function prepareOGPhrases(keyPhrases) {
+  if (!Array.isArray(keyPhrases)) return [];
+  return keyPhrases
+    .map((p) => String(p || "").trim())
+    .filter(Boolean);
 }
 
-export function renderWhatsAppCopy(nucleus, lang = "es") {
-  const { seconds, instruction_es, instruction_en } = nucleus.micro_action;
-  const instruction = lang === "en" ? instruction_en : instruction_es;
-  if (lang === "en") {
-    return `📖 ${nucleus.book_identity.titulo_en}\n\n⏱ ${seconds} sec: ${instruction}`;
-  }
-  return `📖 ${nucleus.book_identity.titulo_es}\n\n⏱ ${seconds} seg: ${instruction}`;
+/**
+ * Renderer de Edición Viva: prepara el bloque de texto largo que consume
+ * build-editions.py. Combina los 4 campos como lectura lineal.
+ */
+export function prepareEditionText(card) {
+  const parts = [
+    card.titulo,
+    card.parrafoTop,
+    card.subtitulo,
+    card.parrafoBot
+  ].filter(Boolean).map((p) => String(p).trim());
+  return parts.join("\n\n");
 }
