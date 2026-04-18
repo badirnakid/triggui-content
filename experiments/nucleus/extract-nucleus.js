@@ -1,71 +1,169 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   extract-nucleus.js — EXTRACTOR SEMÁNTICO ÚNICO
+   extract-nucleus.js — EXTRACTOR SEMÁNTICO
 
-   UNA sola llamada a OpenAI con structured outputs estricto.
-   El modelo NO puede devolver nada que viole el schema (constrained decoding).
+   UNA llamada OpenAI con structured outputs strict:true.
 
-   No hay parsing defensivo.
-   No hay cleanJSON.
-   No hay reparación.
-   No hay coerceTarjeta.
-   No hay retries estructurales.
+   Recibe inputs como parámetros directos (no lee archivos):
+     - lens:            curaduría silenciosa (texto libre)
+     - visualIntent:    intención visual del día (texto libre)
+     - bookContext:     contexto específico del libro (texto libre)
 
-   Retries solo por red.
+   Aplica automáticamente:
+     - Framework cronobiológico (según fecha/hora del servidor)
+     - Todas las inyecciones al prompt del sistema (invisible al usuario)
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
-import OpenAI from "openai";
 
 const SCHEMA_URL = new URL("./edition-nucleus.schema.json", import.meta.url);
 
-const SYSTEM_PROMPT = `Eres el Extractor Semántico de Triggui.
+/* ─────────────────────────────────────────────────────────────────────────────
+   FRAMEWORK CRONOBIOLÓGICO BADIR
 
-Tu único trabajo es extraer el núcleo semántico de un libro que conoces y llenar la estructura EditionNucleus.
+   Este framework lo documentaste tú en tu Archivo Maestro durante 21 años
+   de práctica de lectura a las 4 AM. No es ciencia canónica ni necesita APIs
+   externas. Es tu calibración personal y se aplica tal como tú lo describiste.
 
-REGLAS INQUEBRANTABLES:
+   El pipeline lee fecha/hora del servidor y sesga el prompt internamente.
+   El usuario no necesita llenar nada.
+────────────────────────────────────────────────────────────────────────────── */
 
-1. LÍNEA SAGRADA: si cualquier campo pudiera aplicarse a otro libro, fallaste. Todo debe ser específico a ESTE libro. Si tu conocimiento del libro es pobre, BAJA la ambición y pon confidence.book_grounding bajo. No inventes citas ni escenas.
+function cronobioContext(now = new Date()) {
+  const dia = now.toLocaleDateString("es-MX", { weekday: "long", timeZone: "America/Mexico_City" }).toLowerCase();
+  const hora = Number(now.toLocaleString("en-US", { hour: "numeric", hour12: false, timeZone: "America/Mexico_City" }));
 
-2. NO GENERAS ARTEFACTOS FINALES: NO escribes tarjetas, NO aplicas formato [H][/H], NO compones párrafos completos. Solo llenas la materia prima del schema.
+  // Framework cronobiológico Badir (tal como está en Archivo Maestro v6)
+  const diaMap = {
+    "lunes":      { energia: 0.8, modo: "activacion_gentil",     descripcion: "Lunes requiere entrada suave. El lector está reentrando al modo productivo." },
+    "martes":     { energia: 0.4, modo: "supervivencia_maxima", descripcion: "Martes es tensión máxima de la semana. El contenido debe ser contenedor y sobrio, no exigente." },
+    "miércoles":  { energia: 0.6, modo: "meseta_media",          descripcion: "Miércoles es meseta. El contenido puede empezar a retar suavemente." },
+    "jueves":     { energia: 1.2, modo: "ejecucion_pico",        descripcion: "Jueves 9-11 AM es el peak de ejecución de la semana. El contenido puede ser directo y accionable." },
+    "viernes":    { energia: 0.9, modo: "apertura_semana",       descripcion: "Viernes baja intensidad, abre reflexión de semana. Tono más amplio, menos ejecución." },
+    "sábado":     { energia: 0.8, modo: "espacio_personal",      descripcion: "Sábado es tiempo de profundidad personal. El contenido puede ser más íntimo y contemplativo." },
+    "domingo":    { energia: 0.8, modo: "preparacion_semana",    descripcion: "Domingo prepara cuerpo y mente para lunes. Sobrio, reflexivo." }
+  };
 
-3. BILINGÜISMO NATIVO: los campos EN no son traducciones del ES. Son el MISMO insight expresado naturalmente en inglés. Si el libro es originalmente en inglés, los títulos canónicos ya existen; úsalos si los conoces.
+  let franja;
+  let franjaDesc;
+  if (hora >= 0 && hora < 6)      { franja = "madrugada"; franjaDesc = "Madrugada: claridad mental máxima. Presencia. Pocas palabras, mucho peso."; }
+  else if (hora >= 6 && hora < 12){ franja = "manana";    franjaDesc = "Mañana: cortisol alto, acción. Directo, claro, con propósito."; }
+  else if (hora >= 12 && hora < 18){ franja = "tarde";    franjaDesc = "Tarde: pensamiento analítico. Matices, profundidad, contexto."; }
+  else                             { franja = "noche";    franjaDesc = "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."; }
 
-4. VERBOS FÍSICOS: la micro_action debe usar un verbo físico concreto (escribir, marcar, respirar, observar, nombrar, tocar, caminar). PROHIBIDO: reflexiona, piensa, considera, medita, imagina.
+  const diaInfo = diaMap[dia] || diaMap.lunes;
 
-5. SEEDS ATÓMICAS: highlight_seeds son frases CORTAS de 6-14 palabras. No son párrafos. No contienen [H].
-
-6. HONESTIDAD EPISTEMOLÓGICA: Llena confidence con valores reales. Si inventas, el sistema lo detecta.
-
-7. PROHIBIDO: primera persona (yo/mi/I/my), frases genéricas de autoayuda (encuentra tu fuerza, dream big, transforma tu vida), meta-referencias (según el libro, el autor propone).`;
-
-function buildUserPrompt(book) {
-  const { titulo, autor, tagline } = book;
-  return `LIBRO:
-Título: "${titulo}"
-Autor: ${autor}
-${tagline ? `Contexto editorial: "${tagline}"` : ""}
-
-Extrae el EditionNucleus llenando el schema requerido.`;
+  return {
+    dia,
+    hora,
+    franja,
+    energia: diaInfo.energia,
+    modo: diaInfo.modo,
+    descripcion_dia: diaInfo.descripcion,
+    descripcion_franja: franjaDesc
+  };
 }
 
-/**
- * Extrae el Nucleus de un libro con UNA sola llamada.
- * @param {OpenAI} openai - Cliente OpenAI inicializado
- * @param {object} book - { titulo, autor, tagline? }
- * @param {object} options - { model?, temperature? }
- * @returns {Promise<{nucleus, usage, model, elapsed_ms}>}
- */
-export async function extractNucleus(openai, book, options = {}) {
-  if (!book?.titulo || !book?.autor) {
-    throw new Error("Book requiere titulo y autor");
+/* ─────────────────────────────────────────────────────────────────────────────
+   SCHEMA LOADER
+────────────────────────────────────────────────────────────────────────────── */
+
+async function loadSchema() {
+  const raw = await fs.readFile(SCHEMA_URL, "utf8");
+  return JSON.parse(raw);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   PROMPT BUILDERS
+────────────────────────────────────────────────────────────────────────────── */
+
+function systemPrompt(crono) {
+  return `Eres el Extractor Semántico de Triggui.
+
+Triggui tiene UN propósito: hacer que el lector abra un libro físico.
+
+LA REGLA MADRE:
+
+No eres crítico literario ni reseñador. No hablas DEL libro.
+Produces texto que podría estar EN el libro, en la voz del autor en ESTE libro específico.
+El lector debe sentir que abrió el libro en una página al azar y leyó. Nada más.
+
+PROHIBIDO:
+- "este libro", "el autor", "la obra", "a través de"
+- "nos invita a", "reflexiona sobre", "trata de", "propone"
+- Frases de autoayuda si el libro no es de autoayuda
+- Instrucciones de tiempo tipo "toma 30 segundos"
+- Cualquier envoltura narrativa sobre el libro
+
+QUÉ HACES:
+
+1. card_es y card_en (4 campos cada uno): suenan como el libro, en la voz del autor
+2. emotional_words: 4 palabras específicas al libro, no genéricas
+3. key_phrases: 4 frases densas con emoji coherente al tono
+4. visual_signature: paleta + tipografía + densidad + ritmo + era + género emergentes del libro
+5. surface_hints: dimensión, punto Hawkins, franja ideal
+6. lens_relevance: si hay lente, decides si resuena con este libro específico
+7. confidence: honestidad sobre tu conocimiento del libro
+
+CONTEXTO CRONOBIOLÓGICO DEL MOMENTO:
+- Día: ${crono.dia}
+- Hora: ${crono.hora}:00 (franja ${crono.franja})
+- Energía del lector: ${Math.round(crono.energia * 100)}%
+- Modo del día: ${crono.modo}
+- ${crono.descripcion_dia}
+- ${crono.descripcion_franja}
+
+Este contexto sesga levemente la selección de QUÉ parte del libro se activa hoy, pero el libro sigue mandando. No mencionas esto nunca en el output.`;
+}
+
+function userPrompt(book, lens, visualIntent, bookContext) {
+  const { titulo, autor, tagline } = book;
+  let p = `LIBRO:
+Título: "${titulo}"
+Autor: ${autor}`;
+
+  if (tagline) p += `\nContexto editorial: "${tagline}"`;
+
+  const hasLens = lens && lens.trim().length > 0;
+  const hasBookCtx = bookContext && bookContext.trim().length > 0;
+  const hasVisual = visualIntent && visualIntent.trim().length > 0;
+
+  if (hasLens || hasBookCtx) {
+    p += `\n\n---\nCURADURÍA SILENCIOSA DEL CURADOR HOY:\n`;
+    if (hasLens) p += `\n[Lente global — lo que el curador trae en la cabeza hoy]\n${lens}\n`;
+    if (hasBookCtx) p += `\n[Contexto específico para ESTE libro]\n${bookContext}\n`;
+    p += `\nRegla: si la lente no resuena con ESTE libro, la ignoras y marcas lens_relevance.applied=false. El usuario JAMÁS ve esto.\n---\n`;
   }
+
+  if (hasVisual) {
+    p += `\nINTENCIÓN VISUAL DEL CURADOR HOY (opcional, modificador leve):\n${visualIntent}\n`;
+    p += `Interpreta esto en lenguaje natural al componer visual_signature. Puede afectar paleta, tipografía, densidad, o radios de esquinas. El libro sigue mandando el alma.\n`;
+  }
+
+  p += `\nExtrae el EditionNucleus completo.`;
+  return p;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   EXTRACCIÓN
+────────────────────────────────────────────────────────────────────────────── */
+
+/**
+ * @param {OpenAI} openai
+ * @param {object} book - { titulo, autor, tagline? }
+ * @param {object} inputs - { lens?, visualIntent?, bookContext?, now? }
+ * @param {object} options - { model?, temperature? }
+ */
+export async function extractNucleus(openai, book, inputs = {}, options = {}) {
+  if (!book?.titulo || !book?.autor) throw new Error("Book requiere titulo y autor");
 
   const model = options.model || "gpt-4o-mini";
   const temperature = options.temperature ?? 0.7;
+  const lens = String(inputs.lens || "").trim();
+  const visualIntent = String(inputs.visualIntent || "").trim();
+  const bookContext = String(inputs.bookContext || "").trim();
+  const crono = cronobioContext(inputs.now);
 
-  const rawSchema = await fs.readFile(SCHEMA_URL, "utf8");
-  const schemaDef = JSON.parse(rawSchema);
-
+  const schemaDef = await loadSchema();
   const responseFormat = {
     type: "json_schema",
     json_schema: {
@@ -85,37 +183,40 @@ export async function extractNucleus(openai, book, options = {}) {
       const chat = await openai.chat.completions.create({
         model,
         temperature,
-        top_p: 0.9,
+        top_p: 0.92,
         messages: [
-          { role: "system", content: SYSTEM_PROMPT },
-          { role: "user", content: buildUserPrompt(book) }
+          { role: "system", content: systemPrompt(crono) },
+          { role: "user", content: userPrompt(book, lens, visualIntent, bookContext) }
         ],
         response_format: responseFormat
       });
       const elapsed_ms = Date.now() - t0;
 
       const raw = chat.choices[0]?.message?.content;
-      if (!raw) throw new Error("Respuesta vacía de OpenAI");
+      if (!raw) throw new Error("Respuesta vacía");
 
-      // Guaranteed valid JSON matching schema (strict: true)
       const nucleus = JSON.parse(raw);
-
       return {
         nucleus,
         usage: chat.usage,
         model: chat.model,
         elapsed_ms,
-        attempt
+        attempt,
+        crono,
+        inputs_applied: {
+          has_lens: lens.length > 0,
+          has_visual_intent: visualIntent.length > 0,
+          has_book_context: bookContext.length > 0
+        }
       };
     } catch (error) {
       lastError = error;
       if (attempt < maxRetries) {
-        const backoff = 2 ** attempt * 1000;
-        console.error(`   ⚠️  Intento ${attempt} falló: ${error.message}. Retry en ${backoff}ms`);
-        await new Promise((r) => setTimeout(r, backoff));
+        await new Promise((r) => setTimeout(r, 2 ** attempt * 1000));
       }
     }
   }
-
-  throw new Error(`extractNucleus falló tras ${maxRetries} intentos: ${lastError?.message}`);
+  throw new Error(`extractNucleus falló: ${lastError?.message}`);
 }
+
+export { cronobioContext };
