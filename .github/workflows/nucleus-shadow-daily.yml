@@ -1,0 +1,75 @@
+name: Triggui Nucleus — Automático diario (shadow)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Se ejecuta diario a las 06:30 AM CDMX (30 min después de tu cron actual de
+# producción v9.7.4). Produce contenido.shadow.json sin tocar producción.
+#
+# No tiene inputs. Cronobiología automática. Sin lente.
+# Si un día quieres añadir lente, usa el workflow MANUAL.
+# ═══════════════════════════════════════════════════════════════════════════
+
+on:
+  schedule:
+    - cron: '30 12 * * *'   # 06:30 CDMX = 12:30 UTC
+  workflow_dispatch: {}     # También manual sin inputs
+
+concurrency:
+  group: triggui-nucleus-auto
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      TZ: America/Mexico_City
+      OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+      SHADOW_MODE: "true"
+
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+
+      - name: Install deps
+        working-directory: experiments/nucleus
+        run: npm ci || npm install
+
+      - name: Pull latest
+        run: |
+          git config pull.rebase true
+          git pull origin main --rebase --autostash || true
+
+      - name: Linkear CSV
+        working-directory: experiments/nucleus
+        run: |
+          mkdir -p data
+          ln -sf "$GITHUB_WORKSPACE/data/libros_master.csv" data/libros_master.csv
+
+      - name: Ejecutar pipeline
+        working-directory: experiments/nucleus
+        run: node build-contenido-nucleus.js
+
+      - name: Mover outputs a raíz
+        working-directory: experiments/nucleus
+        run: |
+          [ -f contenido.shadow.json ] && mv contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json" || true
+          [ -d inputs-history ] && mkdir -p "$GITHUB_WORKSPACE/inputs-history" && cp -r inputs-history/* "$GITHUB_WORKSPACE/inputs-history/" 2>/dev/null || true
+          [ -d metrics ] && mkdir -p "$GITHUB_WORKSPACE/metrics" && cp -r metrics/* "$GITHUB_WORKSPACE/metrics/" 2>/dev/null || true
+
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: |
+            contenido.shadow.json
+            inputs-history/*.md
+            metrics/*.json
+          commit_message: "🌒 nucleus shadow diario — $(date -u +%Y-%m-%d)"
+          pull_options: '--rebase --autostash'
+          push_options: '--force-with-lease'
