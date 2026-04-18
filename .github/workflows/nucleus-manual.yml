@@ -1,0 +1,153 @@
+name: Triggui Nucleus — Manual (con formulario)
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Este workflow te deja correr el pipeline cuando tú quieras, con un
+# formulario guiado. Todos los campos son OPCIONALES.
+#
+# Si no llenas nada: se procesan 20 libros random, cronobiología automática,
+# sin lente. El libro manda completamente.
+#
+# Si llenas algo: se inyecta al prompt del extractor como sesgo silencioso.
+# El lector JAMÁS ve lo que escribes aquí.
+# ═══════════════════════════════════════════════════════════════════════════
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: '¿Qué quieres correr hoy?'
+        required: true
+        default: 'shadow_batch'
+        type: choice
+        options:
+          - shadow_batch   # 20 libros random → contenido.shadow.json (SEGURO)
+          - production_batch  # 20 libros random → contenido.json (TOCA PRODUCCIÓN)
+          - single_book    # Un libro específico
+
+      single_titulo:
+        description: '[SINGLE] Título del libro (solo si modo=single_book)'
+        required: false
+        type: string
+
+      single_autor:
+        description: '[SINGLE] Autor del libro (solo si modo=single_book)'
+        required: false
+        type: string
+
+      lens:
+        description: '🔍 LENTE del día — qué tienes hoy en la cabeza. Vacío = sin lente. Ej: "función de recompensa y teoría de juegos"'
+        required: false
+        type: string
+
+      visual_intent:
+        description: '🎨 INTENCIÓN VISUAL — lenguaje libre. Vacío = libro manda. Ej: "modo oscuro con esquinas suaves"'
+        required: false
+        type: string
+
+      book_context:
+        description: '📖 CONTEXTO DEL LIBRO — solo para SINGLE. Sesga QUÉ parte del libro se activa. Vacío = libro manda.'
+        required: false
+        type: string
+
+      seed:
+        description: '🎲 SEED opcional — número para reproducir la misma selección. Vacío = random.'
+        required: false
+        type: string
+
+concurrency:
+  group: triggui-nucleus-manual
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      TZ: America/Mexico_City
+      OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+      TRIGGUI_LENS: ${{ inputs.lens }}
+      TRIGGUI_VISUAL_INTENT: ${{ inputs.visual_intent }}
+      TRIGGUI_BOOK_CONTEXT: ${{ inputs.book_context }}
+      TRIGGUI_SEED: ${{ inputs.seed }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: experiments/nucleus
+        run: npm ci || npm install
+
+      - name: Pull latest (evita conflictos)
+        run: |
+          git config pull.rebase true
+          git pull origin main --rebase --autostash || true
+
+      - name: Linkear CSV (para que el pipeline encuentre libros_master.csv)
+        working-directory: experiments/nucleus
+        run: |
+          mkdir -p data
+          ln -sf "$GITHUB_WORKSPACE/data/libros_master.csv" data/libros_master.csv
+
+      - name: Ejecutar pipeline
+        working-directory: experiments/nucleus
+        env:
+          SINGLE_MODE: ${{ inputs.modo == 'single_book' && 'true' || '' }}
+          SHADOW_MODE: ${{ inputs.modo == 'shadow_batch' && 'true' || '' }}
+          SINGLE_BOOK: ${{ inputs.modo == 'single_book' && format('{{"titulo":"{0}","autor":"{1}"}}', inputs.single_titulo, inputs.single_autor) || '' }}
+        run: node build-contenido-nucleus.js
+
+      - name: Mover outputs a la raíz del repo
+        working-directory: experiments/nucleus
+        run: |
+          if [ -f contenido.shadow.json ]; then
+            mv contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json"
+          fi
+          if [ -f contenido.json ] && [ "${{ inputs.modo }}" = "production_batch" ]; then
+            mv contenido.json "$GITHUB_WORKSPACE/contenido.json"
+          fi
+          if [ -f contenido_edicion.json ]; then
+            mv contenido_edicion.json "$GITHUB_WORKSPACE/contenido_edicion.json"
+          fi
+          if [ -d inputs-history ]; then
+            mkdir -p "$GITHUB_WORKSPACE/inputs-history"
+            cp -r inputs-history/* "$GITHUB_WORKSPACE/inputs-history/" 2>/dev/null || true
+          fi
+          if [ -d metrics ]; then
+            mkdir -p "$GITHUB_WORKSPACE/metrics"
+            cp -r metrics/* "$GITHUB_WORKSPACE/metrics/" 2>/dev/null || true
+          fi
+
+      - name: Commit resultados
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: |
+            contenido.shadow.json
+            contenido.json
+            contenido_edicion.json
+            inputs-history/*.md
+            metrics/*.json
+          commit_message: "🌒 nucleus ${{ inputs.modo }} — ${{ inputs.lens && 'con lente' || 'sin lente' }}"
+          pull_options: '--rebase --autostash'
+          push_options: '--force-with-lease'
+
+      - name: Summary
+        run: |
+          echo "## Triggui Nucleus Run — $(date -u +%Y-%m-%d-%H:%M)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Modo:** ${{ inputs.modo }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Lens:** ${{ inputs.lens && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Visual intent:** ${{ inputs.visual_intent && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Book context:** ${{ inputs.book_context && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Seed:** ${{ inputs.seed || 'random' }}" >> $GITHUB_STEP_SUMMARY
