@@ -1,0 +1,135 @@
+{
+  "name": "EditionNucleus",
+  "description": "Núcleo semántico canónico de una edición Triggui. Contiene SOLO la materia prima extraída del libro. Los renderers deterministas producen todos los artefactos (tarjeta ES, tarjeta EN, email, OG, WhatsApp) sin llamadas adicionales a IA. LÍNEA SAGRADA: si un campo pudiera aplicarse a otro libro, falló la extracción.",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "book_identity",
+      "truth",
+      "tension",
+      "micro_action",
+      "emotional_vector",
+      "highlight_seeds",
+      "visual_tokens",
+      "surface_hints",
+      "confidence"
+    ],
+    "properties": {
+      "book_identity": {
+        "type": "object",
+        "description": "Identidad bibliográfica canónica bilingüe. titulo_es y titulo_en deben ser la MISMA obra. idioma_original solo 'es' o 'en'. Si el libro es traducción al español de obra originalmente en inglés, idioma_original='en'.",
+        "additionalProperties": false,
+        "required": ["titulo_es", "titulo_en", "autor", "idioma_original"],
+        "properties": {
+          "titulo_es": { "type": "string", "description": "Título publicado en español. Si no hay traducción oficial conocida, propone equivalencia natural." },
+          "titulo_en": { "type": "string", "description": "Título publicado en inglés. Si no hay traducción oficial conocida, propone equivalencia natural." },
+          "autor": { "type": "string", "description": "Nombre del autor tal como firma el libro" },
+          "idioma_original": { "type": "string", "enum": ["es", "en"] }
+        }
+      },
+      "truth": {
+        "type": "object",
+        "description": "La tesis operativa del libro. NO es resumen, NO es cita, NO es marketing. Es la idea central que el lector puede aplicar hoy. Debe ser específica a ESTE libro: si funciona para otro libro, falló. PROHIBIDO: primera persona ('yo', 'my'), frases genéricas ('transforma tu vida', 'encuentra tu potencial'), jerga de autoayuda vacía.",
+        "additionalProperties": false,
+        "required": ["es", "en"],
+        "properties": {
+          "es": { "type": "string", "description": "Verdad central en español. 50-180 caracteres. Una oración densa." },
+          "en": { "type": "string", "description": "Central truth in English. 50-180 chars. One dense sentence. Not a translation — same insight expressed natively in English." }
+        }
+      },
+      "tension": {
+        "type": "object",
+        "description": "La tensión emocional o cognitiva que el libro nombra y resuelve. Formato preferido: 'confundir X con Y' o 'creer Z cuando en realidad W'. Específica al libro. Sin jerga psicológica vacía.",
+        "additionalProperties": false,
+        "required": ["es", "en"],
+        "properties": {
+          "es": { "type": "string", "description": "Tensión en español. 20-120 caracteres." },
+          "en": { "type": "string", "description": "Tension in English. 20-120 chars. Natively phrased." }
+        }
+      },
+      "micro_action": {
+        "type": "object",
+        "description": "Acción concreta que el lector ejecuta en menos de 60 segundos para activar lo aprendido. OBLIGATORIO: verbo físico (escribir, respirar, observar, nombrar, tocar, caminar, marcar). PROHIBIDO: 'reflexiona', 'piensa', 'considera', 'imagina' — son verbos mentales vagos, no acciones. El tiempo DEBE estar en seconds como entero.",
+        "additionalProperties": false,
+        "required": ["seconds", "verb_es", "verb_en", "instruction_es", "instruction_en"],
+        "properties": {
+          "seconds": { "type": "integer", "description": "Tiempo exacto en segundos: 15, 20, 30, 40, 45 o 60" },
+          "verb_es": { "type": "string", "description": "Verbo físico imperativo en español: 'escribe', 'marca', 'respira', 'observa', 'nombra'. Una sola palabra." },
+          "verb_en": { "type": "string", "description": "Physical imperative verb: 'write', 'mark', 'breathe', 'observe', 'name'. Single word." },
+          "instruction_es": { "type": "string", "description": "Instrucción completa en español. 40-160 caracteres. Debe comenzar con el verbo. Específica al libro." },
+          "instruction_en": { "type": "string", "description": "Full instruction in English. 40-160 chars. Starts with verb. Specific to the book." }
+        }
+      },
+      "emotional_vector": {
+        "type": "object",
+        "description": "Cuatro palabras emocionales que describen el journey emocional específico de este libro. PROHIBIDO: palabras genéricas tipo 'felicidad', 'éxito', 'bienestar'. Usa palabras que un lector real escribiría después de cerrar ESTE libro específico.",
+        "additionalProperties": false,
+        "required": ["es", "en"],
+        "properties": {
+          "es": {
+            "type": "array",
+            "description": "4 palabras emocionales en español, específicas al libro",
+            "items": { "type": "string" }
+          },
+          "en": {
+            "type": "array",
+            "description": "4 emotional words in English, specific to the book",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "highlight_seeds": {
+        "type": "object",
+        "description": "Semillas de highlights. Cada seed es una FRASE CORTA (6-14 palabras) que será embebida por el renderer determinista. NO incluyas [H] ni [/H]. NO escribas párrafos. Solo la frase nuclear que merece highlight visual.",
+        "additionalProperties": false,
+        "required": ["top_es", "top_en", "bottom_es", "bottom_en"],
+        "properties": {
+          "top_es": { "type": "string", "description": "Seed del párrafo superior en español. Frase nuclear de 6-14 palabras." },
+          "top_en": { "type": "string", "description": "Top paragraph seed in English. 6-14 words." },
+          "bottom_es": { "type": "string", "description": "Seed del párrafo inferior en español. 6-14 palabras." },
+          "bottom_en": { "type": "string", "description": "Bottom paragraph seed in English. 6-14 words." }
+        }
+      },
+      "visual_tokens": {
+        "type": "object",
+        "description": "Tokens visuales hex. paper DEBE ser oscuro (rango #0a0a0a a #2a2a2a). ink DEBE ser claro (rango #e0e0e0 a #ffffff). accent es color vibrante dopaminérgico coherente con el tono del libro. palette son 4 colores coherentes.",
+        "additionalProperties": false,
+        "required": ["accent", "paper", "ink", "palette"],
+        "properties": {
+          "accent": { "type": "string", "description": "Color vibrante hex. Formato: #rrggbb" },
+          "paper": { "type": "string", "description": "Color de fondo oscuro hex. Formato: #rrggbb. Luminancia <0.3." },
+          "ink": { "type": "string", "description": "Color de tinta claro hex. Formato: #rrggbb. Luminancia >0.7." },
+          "palette": {
+            "type": "array",
+            "description": "4 colores hex coherentes con el tono del libro",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "surface_hints": {
+        "type": "object",
+        "description": "Hints mínimos para renderers. Clasificación Triggui canónica.",
+        "additionalProperties": false,
+        "required": ["dimension", "punto_hawkins", "franja_ideal"],
+        "properties": {
+          "dimension": { "type": "string", "enum": ["Bienestar", "Prosperidad", "Conexion"] },
+          "punto_hawkins": { "type": "string", "enum": ["Cero", "Creativo", "Activo", "Maximo"] },
+          "franja_ideal": { "type": "string", "enum": ["madrugada", "manana", "tarde", "noche"] }
+        }
+      },
+      "confidence": {
+        "type": "object",
+        "description": "Auto-evaluación honesta del modelo sobre su propio output. El modelo debe ser honesto: si conoce poco del libro, book_grounding debe ser bajo. risk_of_generic alto significa 'es posible que esto funcione para otro libro'. specificity alto significa 'esto solo aplica a este libro'.",
+        "additionalProperties": false,
+        "required": ["book_grounding", "specificity", "risk_of_generic"],
+        "properties": {
+          "book_grounding": { "type": "number", "description": "0.0 a 1.0. Qué tan bien conoces este libro específico." },
+          "specificity": { "type": "number", "description": "0.0 a 1.0. Qué tan específico al libro es el output." },
+          "risk_of_generic": { "type": "number", "description": "0.0 a 1.0. Riesgo de que el output funcione para otro libro (alto = malo)." }
+        }
+      }
+    }
+  }
+}
