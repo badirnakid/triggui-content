@@ -1,14 +1,20 @@
 {
   "name": "triggui-nucleus",
-  "version": "2.0.0",
+  "version": "3.0.0",
+  "description": "Nivel dios: grounding multi-tier + palette determinista + separacion hard ES/EN + grounding judge + observabilidad + 7 defensas contra particulas",
   "type": "module",
+  "main": "build-contenido-nucleus.js",
   "scripts": {
-    "test": "node test-end-to-end.js",
-    "build:batch": "node build-contenido-nucleus.js",
-    "build:single": "SINGLE_MODE=true node build-contenido-nucleus.js"
+    "build": "node build-contenido-nucleus.js",
+    "test": "node test-end-to-end.js && node test-particles.js",
+    "test:arch": "node test-end-to-end.js",
+    "test:particles": "node test-particles.js"
   },
   "dependencies": {
-    "csv-parse": "^5.5.6",
-    "openai": "^6.0.0"
+    "openai": "^4.67.0",
+    "csv-parse": "^5.5.6"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
