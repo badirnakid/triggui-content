@@ -11,8 +11,10 @@
       "card_en",
       "emotional_words_es",
       "emotional_words_en",
-      "key_phrases_es",
-      "key_phrases_en",
+      "og_phrases_es",
+      "og_phrases_en",
+      "edition_phrases_es",
+      "edition_phrases_en",
       "visual_signature",
       "surface_hints",
       "lens_relevance",
@@ -68,15 +70,44 @@
         "items": { "type": "string" }
       },
 
-      "key_phrases_es": {
+      "og_phrases_es": {
         "type": "array",
-        "description": "4 frases cortas densas que podrían estar en el libro. Cada una con un emoji apropiado al tono del libro (no genérico). Estas frases alimentan el generador de OG image, que elige la más brutal. Deben ser imperativas o densas, NO descriptivas del libro.",
-        "items": { "type": "string" }
+        "description": "4 frases cortas y densas para el OG image (headline del preview de WhatsApp). OBJETIVO: 40-70 caracteres por frase (incluyendo emoji al INICIO). Son el gancho que ve la gente antes de decidir abrir el link. Deben ser punzantes, autocontenidas, imperativas o declarativas con peso. Ejemplos del tono correcto: '🎲 Cada movimiento cambia el tablero entero' (44 chars), '⚓ La felicidad vive en la jugada, no en el premio' (51 chars), '♟ Lo esencial es jugar, no ganar' (33 chars). Prohibidas frases genéricas tipo 'La vida es un juego' (podría ser cualquier libro). Deben sentirse como si fueran del libro mismo, no reseña del libro.",
+        "items": {
+          "type": "string",
+          "minLength": 35,
+          "maxLength": 74
+        }
       },
 
-      "key_phrases_en": {
+      "og_phrases_en": {
         "type": "array",
-        "items": { "type": "string" }
+        "description": "4 short dense phrases for OG image headline. 40-70 characters target including emoji at START. Same rule as og_phrases_es but in native English.",
+        "items": {
+          "type": "string",
+          "minLength": 35,
+          "maxLength": 74
+        }
+      },
+
+      "edition_phrases_es": {
+        "type": "array",
+        "description": "4 frases de tono reflexivo, densas y más largas, para los 4 bloques grandes de la Edición Viva. OBJETIVO: 80-115 caracteres por frase (incluyendo emoji al INICIO). Cada frase ocupa 2 líneas en el bloque grande y se siente como abrir el libro en una página. NO son imperativas cortas, son prosa con respiración. Ejemplo del tono correcto: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad del universo a tu alrededor' (93 chars). Cada una debe hacer sentido por sí sola y resonar con una de las 4 palabras emocionales del libro. El lector debe poder leerla y sentir que ya empezó a leer el libro.",
+        "items": {
+          "type": "string",
+          "minLength": 70,
+          "maxLength": 120
+        }
+      },
+
+      "edition_phrases_en": {
+        "type": "array",
+        "description": "4 longer reflective phrases for the 4 grand blocks of the Living Edition. 80-115 characters target including emoji at START. Two-line prose, breathing, not short imperatives. Same rule as edition_phrases_es in native English.",
+        "items": {
+          "type": "string",
+          "minLength": 70,
+          "maxLength": 120
+        }
       },
 
       "visual_signature": {
