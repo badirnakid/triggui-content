@@ -1,25 +1,12 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
-   build-contenido-nucleus.js — ORQUESTADOR TRIGGUI
+   build-contenido-nucleus.js — ORQUESTADOR CANÓNICO V2
 
-   Entrada: variables de entorno del workflow_dispatch
-     OPENAI_KEY             (requerido)
-     TRIGGUI_LENS           (opcional)  Curaduría silenciosa del día
-     TRIGGUI_VISUAL_INTENT  (opcional)  Intención visual del día
-     TRIGGUI_BOOK_CONTEXT   (opcional)  Contexto específico del libro (solo SINGLE)
-     TRIGGUI_CRONO_ENABLED  (default true)  Si false, no aplica framework cronobiológico
-     SINGLE_MODE=true       Modo single libro
-     SHADOW_MODE=true       Escribe a contenido.shadow.json
-     TRIGGUI_SEED           Seed reproducible
-     TRIGGUI_MODEL          Default gpt-4o-mini
-     TRIGGUI_TEMP           Default 0.7
+   Defensa en 3 capas:
+     1. Extract con gpt-4o-mini (default)
+     2. Si validación falla → re-extract con mini temp baja
+     3. Si sigue fallando → escalar a gpt-4o
 
-   Flujo por libro:
-     1. extractNucleus (1 llamada con crono + inputs)
-     2. judgeBothVoices (2 llamadas baratas)
-     3. Si reseña alta confianza: 1 sola re-extracción (circuit breaker)
-     4. composeVisual (matemática pura)
-     5. renderTarjeta ES + EN (sin envolturas)
-     6. ensamble v9.7.4 compat
+   Política: SIEMPRE sale resultado. Calidad reportada en _quality_warning.
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import fs from "node:fs/promises";
@@ -31,7 +18,7 @@ import OpenAI from "openai";
 import { extractNucleus, cronobioContext } from "./extract-nucleus.js";
 import { judgeBothVoices } from "./voice-judge.js";
 import { composeVisual } from "./render-visual-composition.js";
-import { renderTarjetaES, renderTarjetaEN, prepareOGPhrases } from "./render-tarjeta.js";
+import { renderTarjetaES, renderTarjetaEN, prepareOGPhrases, prepareEditionPhrases } from "./render-tarjeta.js";
 import { textContrastOn } from "./triggui-physics.js";
 import { validateNucleus } from "./quality-validator.js";
 
@@ -40,7 +27,8 @@ if (!KEY) { console.log("🔕 Sin OPENAI_KEY"); process.exit(0); }
 const openai = new OpenAI({ apiKey: KEY });
 
 const CFG = {
-  model: process.env.TRIGGUI_MODEL || "gpt-4o-mini",
+  modelMini: process.env.TRIGGUI_MODEL || "gpt-4o-mini",
+  modelBig: process.env.TRIGGUI_MODEL_BIG || "gpt-4o",
   temperature: Number(process.env.TRIGGUI_TEMP || 0.7),
   files: {
     csv: "data/libros_master.csv",
@@ -64,7 +52,7 @@ const INPUTS = {
 };
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   RANDOM
+   UTILIDADES
 ────────────────────────────────────────────────────────────────────────────── */
 
 function seededRandomInt(seed, counter) {
@@ -89,24 +77,23 @@ function fisherYatesShuffle(arr, seed = null) {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   ENSAMBLE V9.7.4
+   MAPEO A FORMATO v9.7.4 (compat con build-og-image, build-editions, etc)
 ────────────────────────────────────────────────────────────────────────────── */
 
-function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, runMeta = {}) {
+function nucleusToCompat(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, runMeta = {}) {
   const n = extraction.nucleus;
   const style = { accent: visual.accent, paper: visual.paper, ink: visual.ink, border: visual.border };
   const colores = visual.palette;
-
-  // Mapeo nucleus-final-v2 → v9.7.4:
-  // edition_blocks_es[i].phrase → frases[i] (alimenta Edición Viva)
-  // og_phrases_es → frases_og (alimenta OG image)
-  const editionPhrasesES = (n.edition_blocks_es || []).map((b) => b?.phrase).filter(Boolean);
-  const editionPhrasesEN = (n.edition_blocks_en || []).map((b) => b?.phrase).filter(Boolean);
+  const editionPhrasesES = prepareEditionPhrases(n.edition_blocks_es);
+  const editionPhrasesEN = prepareEditionPhrases(n.edition_blocks_en);
   const gestureTypesES = (n.edition_blocks_es || []).map((b) => b?.gesture_type).filter(Boolean);
   const gestureTypesEN = (n.edition_blocks_en || []).map((b) => b?.gesture_type).filter(Boolean);
 
-  // _quality_warning solo se emite si hay warnings reales (no en caso "pass")
-  const qualityWarning = (validationMeta.quality_overall && validationMeta.quality_overall !== "pass")
+  // Preferir los datos enriquecidos del modelo sobre los del CSV (si corrigió autor/título)
+  const autorFinal = (n.book_identity?.autor && n.book_identity.autor.trim().length > book.autor.trim().length)
+    ? n.book_identity.autor : book.autor;
+
+  const qualityWarning = validationMeta.quality_overall && validationMeta.quality_overall !== "pass"
     ? {
         overall: validationMeta.quality_overall,
         warnings: validationMeta.quality_warnings || [],
@@ -117,9 +104,9 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
 
   return {
     titulo: book.titulo,
-    autor: book.autor,
+    autor: autorFinal,
     tagline: book.tagline || "",
-    portada: book.portada || book.portada_url || `📚 ${book.titulo}\n${book.autor}`,
+    portada: book.portada || book.portada_url || `📚 ${book.titulo}\n${autorFinal}`,
     portada_url: book.portada_url || book.portada || "",
     isbn: book.isbn || "",
 
@@ -131,8 +118,8 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
     punto: n.surface_hints.punto_hawkins,
     palabras: n.emotional_words_es,
     palabras_en: n.emotional_words_en,
-    frases: prepareOGPhrases(editionPhrasesES),
-    frases_en: prepareOGPhrases(editionPhrasesEN),
+    frases: editionPhrasesES,
+    frases_en: editionPhrasesEN,
     frases_og: prepareOGPhrases(n.og_phrases_es),
     frases_og_en: prepareOGPhrases(n.og_phrases_en),
     colores,
@@ -146,8 +133,8 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
     tarjeta_base_en: { ...tarjetaEN, style },
     tarjeta_presentacion_en: { ...tarjetaEN, style },
 
-    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${book.titulo} ${book.autor} entrevista español`)}`,
-    videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${n.book_identity.titulo_en || book.titulo} ${book.autor} interview`)}`,
+    videoUrl: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${book.titulo} ${autorFinal} entrevista español`)}`,
+    videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${n.book_identity.titulo_en || book.titulo} ${autorFinal} interview`)}`,
 
     _nucleus: n,
     _edition_meta: {
@@ -170,7 +157,7 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
       elapsed_ms: runMeta.totalElapsedMs || extraction.elapsed_ms,
       model_final: runMeta.modelUsed || extraction.model,
       escalated: runMeta.escalated || false,
-      pipeline_version: "nucleus-final-v2",
+      pipeline_version: "nucleus-canonical-v2",
       extraction_attempts: validationMeta.extraction_attempts,
       inputs_applied: extraction.inputs_applied
     }
@@ -178,117 +165,86 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   PROCESAMIENTO
+   PROCESSBOOK con defensa en 3 capas
 ────────────────────────────────────────────────────────────────────────────── */
 
 async function processBook(book, inputs, inputsSnapshot) {
   console.log(`\n📖 ${book.titulo} — ${book.autor}`);
-
   const effectiveInputs = CFG.cronoEnabled ? inputs : { ...inputs, now: new Date() };
 
-  // ═══════════════════════════════════════════════════════════════
-  // DEFENSA EN CAPAS — FLUJO GARANTÍA-DE-RESULTADO
-  //
-  // Capa 1: extract con gpt-4o-mini (default)
-  // Capa 2: si validación falla → re-extract con mini temp baja
-  // Capa 3: si sigue fallando → escalate a gpt-4o (modelo grande)
-  // Capa 4: si TODO falla → aceptar con _quality_warning, nunca abortar
-  //
-  // Política: SIEMPRE sale resultado. Calidad reportada en meta.
-  // ═══════════════════════════════════════════════════════════════
-
+  // CAPA 1: extracción inicial con mini
   let extraction = await extractNucleus(openai, book, effectiveInputs, {
-    model: "gpt-4o-mini",
+    model: CFG.modelMini,
     temperature: CFG.temperature
   });
-  let modelUsed = "gpt-4o-mini";
+  let modelUsed = CFG.modelMini;
   let extractionAttempts = 1;
   let escalated = false;
   let totalTokens = extraction.usage?.total_tokens || 0;
   let totalElapsedMs = extraction.elapsed_ms || 0;
 
-  console.log(`   ✓ Nucleus mini (${extraction.usage?.total_tokens}t, ${extraction.elapsed_ms}ms)`);
+  console.log(`   ✓ Nucleus ${modelUsed} (${extraction.usage?.total_tokens || 0}t, ${extraction.elapsed_ms}ms)`);
 
-  // ────────────── VALIDACIÓN ESTRUCTURAL ──────────────
   let validation = validateNucleus(extraction.nucleus);
 
-  // FASE A: re-extract con mini temp baja si needs_reextract
+  // CAPA 2: re-extract con mini temp baja si necesita
   if (validation.overall === "needs_reextract") {
-    console.log(`   ⚠ Validation: ${validation.overall} — re-extract mini temp baja`);
+    console.log(`   ⚠ Quality ${validation.overall} — retry mini temp baja`);
     console.log(`     Warnings: ${validation.warnings.slice(0, 3).join(" | ")}`);
     extractionAttempts += 1;
     extraction = await extractNucleus(openai, book, effectiveInputs, {
-      model: "gpt-4o-mini",
+      model: CFG.modelMini,
       temperature: 0.3
     });
     totalTokens += extraction.usage?.total_tokens || 0;
     totalElapsedMs += extraction.elapsed_ms || 0;
     validation = validateNucleus(extraction.nucleus);
-    console.log(`   ✓ Nucleus mini-retry (${extraction.usage?.total_tokens}t)`);
+    console.log(`   ✓ Retry ${CFG.modelMini} → ${validation.overall}`);
   }
 
-  // FASE B: escalate a gpt-4o si aún falla (o si confidence muy baja)
+  // CAPA 3: escalar a gpt-4o si sigue mal
   if (validation.overall === "needs_reextract" || validation.overall === "needs_escalation") {
-    console.log(`   ⚠ Validation: ${validation.overall} — escalando a gpt-4o`);
+    console.log(`   ⚠ Quality ${validation.overall} — escalate ${CFG.modelBig}`);
     console.log(`     Warnings: ${validation.warnings.slice(0, 3).join(" | ")}`);
     extractionAttempts += 1;
     escalated = true;
-    modelUsed = "gpt-4o";
+    modelUsed = CFG.modelBig;
     extraction = await extractNucleus(openai, book, effectiveInputs, {
-      model: "gpt-4o",
+      model: CFG.modelBig,
       temperature: 0.6
     });
     totalTokens += extraction.usage?.total_tokens || 0;
     totalElapsedMs += extraction.elapsed_ms || 0;
     validation = validateNucleus(extraction.nucleus);
-    console.log(`   ✓ Nucleus gpt-4o (${extraction.usage?.total_tokens}t) — validation: ${validation.overall}`);
+    console.log(`   ✓ Escalated ${CFG.modelBig} → ${validation.overall}`);
   }
 
-  // FASE C: SIEMPRE aceptamos. Si aún hay warnings, se reportan en meta.
   const nucleus = extraction.nucleus;
 
-  console.log(`   ✓ Firma: ${nucleus.visual_signature.typography_family}/${nucleus.visual_signature.density}/${nucleus.visual_signature.rhythm}/${nucleus.visual_signature.genre_visual}`);
-
-  // Anclajes del libro (visibles en logs para verificar calidad)
+  // Logs de transparencia (lo que usamos para auditar calidad en tiempo real)
   if (nucleus.book_grounding_anchors) {
-    const known = nucleus.book_grounding_anchors.book_known ? "✓" : "⚠";
-    console.log(`   ${known} Book known: ${nucleus.book_grounding_anchors.book_known}`);
-    const concepts = (nucleus.book_grounding_anchors.concepts || []).slice(0, 3);
-    if (concepts.length) console.log(`   ⚓ Anchors: ${concepts.map(c => c.slice(0, 60)).join(" | ")}`);
+    const concepts = (nucleus.book_grounding_anchors.concepts || []).slice(0, 3).map((c) => c.slice(0, 55));
+    console.log(`   ⚓ Anchors: ${concepts.join(" | ")}`);
   }
-
-  // Análisis de lente (visible)
-  if (nucleus.lens_analysis && nucleus.lens_analysis.lens_provided) {
+  if (nucleus.book_identity) {
+    console.log(`   📘 Identidad: "${nucleus.book_identity.titulo_en}" (EN) | autor="${nucleus.book_identity.autor}"`);
+  }
+  if (nucleus.lens_analysis?.lens_provided) {
     console.log(`   🔍 Lens decision: ${nucleus.lens_analysis.decision}`);
-    console.log(`   🔍 Lens analysis: ${nucleus.lens_analysis.analysis.slice(0, 120)}${nucleus.lens_analysis.analysis.length > 120 ? "..." : ""}`);
   }
-
-  if (nucleus.lens_relevance.applied) console.log(`   ✅ Lente APLICADA al contenido`);
-  else if (nucleus.lens_analysis?.lens_provided) console.log(`   ⚪ Lente NO aplicada: ${nucleus.lens_relevance.reason.slice(0, 100)}`);
-
-  // Gestos de Edición Viva (visibles para verificar variedad)
   if (Array.isArray(nucleus.edition_blocks_es)) {
     const types = nucleus.edition_blocks_es.map((b) => b.gesture_type);
-    const distinctCount = new Set(types).size;
-    console.log(`   🎭 Edition gestures: ${types.join(" • ")} (${distinctCount} distintos)`);
+    console.log(`   🎭 Gestures: ${types.join(" • ")} (${new Set(types).size} distintos)`);
   }
 
-  // Log final de validación
-  if (validation.overall === "pass") {
-    console.log(`   ✅ Quality: PASS`);
-  } else if (validation.overall === "pass_with_warnings") {
-    console.log(`   🟡 Quality: PASS_WITH_WARNINGS — ${validation.warnings.slice(0, 2).join(" | ")}`);
-  } else {
-    console.log(`   🔴 Quality: ${validation.overall} (aceptado con warning)`);
-    console.log(`     Warnings finales: ${validation.warnings.slice(0, 4).join(" | ")}`);
-  }
-
-  // Voice judge con circuit breaker (no re-extrae, solo reporta)
-  let voiceVerdict = await judgeBothVoices(openai, nucleus.card_es, nucleus.card_en, book, { model: "gpt-4o-mini" });
+  // Voice judge (no escala, solo reporta)
+  const voiceVerdict = await judgeBothVoices(openai, nucleus.card_es, nucleus.card_en, book, {
+    model: CFG.modelMini
+  });
   totalTokens += voiceVerdict.total_tokens || 0;
   console.log(`   🎭 Voz: ${voiceVerdict.consolidated} (conf ${voiceVerdict.confidence.toFixed(2)})`);
 
-  // Composición visual (determinista)
+  // Composición visual y renderizado
   const visual = composeVisual(nucleus.visual_signature);
   const tarjetaES = renderTarjetaES(nucleus.card_es, visual);
   const tarjetaEN = renderTarjetaEN(nucleus.card_en, visual);
@@ -302,19 +258,23 @@ async function processBook(book, inputs, inputsSnapshot) {
     confidence: nucleus.confidence,
     lens_applied: nucleus.lens_relevance.applied,
     circuit_tripped: voiceVerdict.circuit_tripped,
-    // Defensa en capas
     quality_overall: validation.overall,
     quality_warnings: validation.warnings,
     model_used: modelUsed,
-    escalated: escalated
+    escalated
   };
 
-  const resultado = validation.overall === "pass" && validationMeta.contrast_ratio_ok ? "✅" :
-                    validation.overall === "pass_with_warnings" ? "🟡" : "⚠️";
-  console.log(`   ${resultado} contraste=${visual.decisions.contrast_ratio}:1 | modelo=${modelUsed}${escalated ? " (escalado)" : ""}`);
+  // Log final
+  if (validation.overall === "pass") console.log(`   ✅ Quality: PASS`);
+  else if (validation.overall === "pass_with_warnings") console.log(`   🟡 PASS_WITH_WARNINGS — ${validation.warnings.slice(0, 2).join(" | ")}`);
+  else console.log(`   🔴 ${validation.overall} (aceptado con warning) — ${validation.warnings.slice(0, 3).join(" | ")}`);
 
+  const status = validation.overall === "pass" ? "✅" : validation.overall === "pass_with_warnings" ? "🟡" : "⚠️";
+  console.log(`   ${status} contraste=${visual.decisions.contrast_ratio}:1 | modelo=${modelUsed}${escalated ? " (escalado)" : ""}`);
 
-  return nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, { totalTokens, totalElapsedMs, modelUsed, escalated });
+  return nucleusToCompat(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, {
+    totalTokens, totalElapsedMs, modelUsed, escalated
+  });
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -342,13 +302,14 @@ async function loadSingle() {
   return null;
 }
 
-async function writeJSON(p, data) { await fs.writeFile(p, `${JSON.stringify(data, null, 2)}\n`, "utf8"); }
+async function writeJSON(p, data) {
+  await fs.writeFile(p, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
 
 async function snapshotInputs(inputs, crono) {
   const stamp = new Date().toISOString().replace(/[:]/g, "-").replace(/\..+$/, "");
-  try {
-    await fs.mkdir(CFG.files.inputsHistoryDir, { recursive: true });
-    const content = `# Triggui run — ${stamp}
+  await fs.mkdir(CFG.files.inputsHistoryDir, { recursive: true });
+  const content = `# Triggui run — ${stamp}
 
 ## Contexto cronobiológico automático
 - Día: ${crono.dia}
@@ -366,35 +327,27 @@ ${inputs.visualIntent || "_(vacío)_"}
 ## Contexto específico de libro
 ${inputs.bookContext || "_(vacío)_"}
 `;
-    const p = path.join(CFG.files.inputsHistoryDir, `${stamp}.md`);
-    await fs.writeFile(p, content, "utf8");
-    console.log(`📎 Inputs snapshot: ${p}`);
-    return stamp;
-  } catch (err) {
-    console.log(`   ⚠️  No se pudo snapshot inputs: ${err.message}`);
-    return stamp;
-  }
+  const p = path.join(CFG.files.inputsHistoryDir, `${stamp}.md`);
+  await fs.writeFile(p, content, "utf8");
+  console.log(`📎 Inputs snapshot: ${p}`);
+  return stamp;
 }
 
 async function writeMetrics(run) {
-  try {
-    await fs.mkdir(CFG.files.metricsDir, { recursive: true });
-    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-    await writeJSON(`${CFG.files.metricsDir}/nucleus-${stamp}.json`, run);
-  } catch {}
+  await fs.mkdir(CFG.files.metricsDir, { recursive: true });
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+  await writeJSON(`${CFG.files.metricsDir}/nucleus-${stamp}.json`, run);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   MODOS
+   RUNNERS
 ────────────────────────────────────────────────────────────────────────────── */
 
 async function runBatch() {
   const t0 = Date.now();
   const books = await loadCSV();
   const seed = process.env.TRIGGUI_SEED || null;
-  const shuffled = fisherYatesShuffle(books, seed);
-  const selected = shuffled.slice(0, Math.min(CFG.maxBatch, books.length));
-
+  const selected = fisherYatesShuffle(books, seed).slice(0, Math.min(CFG.maxBatch, books.length));
   const outputFile = CFG.shadowMode ? CFG.files.outShadow : CFG.files.outBatch;
   const crono = cronobioContext();
   const inputsSnapshot = await snapshotInputs(INPUTS, crono);
@@ -406,15 +359,17 @@ async function runBatch() {
   console.log(`   Output: ${outputFile}`);
 
   const results = [];
-  let totalTokens = 0, totalMs = 0, fallos = 0;
+  let totalTokens = 0;
+  let fallos = 0;
+  let escalated = 0;
 
   for (let i = 0; i < selected.length; i += 1) {
     console.log(`\n━━━━━ [${i + 1}/${selected.length}] ━━━━━`);
     try {
       const result = await processBook(selected[i], INPUTS, inputsSnapshot);
       results.push(result);
-      totalTokens += (result._metrics?.tokens_total || 0) + (result._metrics?.tokens_judge || 0);
-      totalMs += result._metrics?.elapsed_ms || 0;
+      totalTokens += result._metrics?.tokens_total || 0;
+      if (result._metrics?.escalated) escalated += 1;
     } catch (error) {
       console.error(`   ❌ Error: ${error.message}`);
       results.push({ ...selected[i], _fallback: true, _error: error.message });
@@ -429,11 +384,18 @@ async function runBatch() {
   const runMs = Date.now() - t0;
   await writeMetrics({
     timestamp: new Date().toISOString(),
-    pipeline: "nucleus-final-v1",
+    pipeline: "nucleus-canonical-v2",
     mode: CFG.shadowMode ? "shadow" : "production",
-    seed, model: CFG.model, temperature: CFG.temperature,
-    crono, inputs_snapshot: inputsSnapshot,
-    requested: selected.length, exitosos: exitosos.length, fallos,
+    seed,
+    model_mini: CFG.modelMini,
+    model_big: CFG.modelBig,
+    temperature: CFG.temperature,
+    crono,
+    inputs_snapshot: inputsSnapshot,
+    requested: selected.length,
+    exitosos: exitosos.length,
+    fallos,
+    escalated,
     total_tokens: totalTokens,
     avg_tokens_per_book: Math.round(totalTokens / Math.max(exitosos.length, 1)),
     run_total_ms: runMs,
@@ -441,7 +403,7 @@ async function runBatch() {
   });
 
   console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━`);
-  console.log(`✅ ${exitosos.length}/${selected.length} exitosos, ${fallos} fallos`);
+  console.log(`✅ ${exitosos.length}/${selected.length} exitosos, ${fallos} fallos, ${escalated} escalados`);
   console.log(`   ${totalTokens} tokens, ${Math.round(totalTokens / Math.max(exitosos.length, 1))}/libro`);
   console.log(`   ${(runMs / 1000).toFixed(1)}s total`);
   console.log(`   Output: ${outputFile}`);
@@ -462,23 +424,21 @@ async function runSingle() {
 
   const crono = cronobioContext();
   const inputsSnapshot = await snapshotInputs(INPUTS, crono);
-
   console.log(`\n🚀 SINGLE: ${book.titulo}`);
   console.log(`   ${crono.dia} ${crono.hora}h ${crono.franja}`);
 
   const result = await processBook(book, INPUTS, inputsSnapshot);
-  if (result._fallback) {
-    console.log(`\n❌ SINGLE falló: ${result._error}`);
-    await writeJSON(CFG.files.outSingle, { libros: [result] });
-    process.exit(1);
-  }
   await writeJSON(CFG.files.outSingle, { libros: [result] });
   console.log(`\n✅ ${CFG.files.outSingle}`);
 }
 
 async function main() {
   const isSingle = process.env.SINGLE_MODE === "true" || await fileExists(CFG.files.tmpBook);
-  if (isSingle) await runSingle(); else await runBatch();
+  if (isSingle) await runSingle();
+  else await runBatch();
 }
 
-main().catch((err) => { console.error("❌", err); process.exit(1); });
+main().catch((err) => {
+  console.error("❌", err);
+  process.exit(1);
+});
