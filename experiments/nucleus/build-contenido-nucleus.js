@@ -33,6 +33,7 @@ import { judgeBothVoices } from "./voice-judge.js";
 import { composeVisual } from "./render-visual-composition.js";
 import { renderTarjetaES, renderTarjetaEN, prepareOGPhrases } from "./render-tarjeta.js";
 import { textContrastOn } from "./triggui-physics.js";
+import { validateNucleus } from "./quality-validator.js";
 
 const KEY = process.env.OPENAI_KEY;
 if (!KEY) { console.log("🔕 Sin OPENAI_KEY"); process.exit(0); }
@@ -91,10 +92,28 @@ function fisherYatesShuffle(arr, seed = null) {
    ENSAMBLE V9.7.4
 ────────────────────────────────────────────────────────────────────────────── */
 
-function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validation, inputsSnapshot) {
+function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, runMeta = {}) {
   const n = extraction.nucleus;
   const style = { accent: visual.accent, paper: visual.paper, ink: visual.ink, border: visual.border };
   const colores = visual.palette;
+
+  // Mapeo nucleus-final-v2 → v9.7.4:
+  // edition_blocks_es[i].phrase → frases[i] (alimenta Edición Viva)
+  // og_phrases_es → frases_og (alimenta OG image)
+  const editionPhrasesES = (n.edition_blocks_es || []).map((b) => b?.phrase).filter(Boolean);
+  const editionPhrasesEN = (n.edition_blocks_en || []).map((b) => b?.phrase).filter(Boolean);
+  const gestureTypesES = (n.edition_blocks_es || []).map((b) => b?.gesture_type).filter(Boolean);
+  const gestureTypesEN = (n.edition_blocks_en || []).map((b) => b?.gesture_type).filter(Boolean);
+
+  // _quality_warning solo se emite si hay warnings reales (no en caso "pass")
+  const qualityWarning = (validationMeta.quality_overall && validationMeta.quality_overall !== "pass")
+    ? {
+        overall: validationMeta.quality_overall,
+        warnings: validationMeta.quality_warnings || [],
+        model_used: validationMeta.model_used,
+        escalated: validationMeta.escalated
+      }
+    : null;
 
   return {
     titulo: book.titulo,
@@ -112,8 +131,8 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
     punto: n.surface_hints.punto_hawkins,
     palabras: n.emotional_words_es,
     palabras_en: n.emotional_words_en,
-    frases: prepareOGPhrases(n.edition_phrases_es),
-    frases_en: prepareOGPhrases(n.edition_phrases_en),
+    frases: prepareOGPhrases(editionPhrasesES),
+    frases_en: prepareOGPhrases(editionPhrasesEN),
     frases_og: prepareOGPhrases(n.og_phrases_es),
     frases_og_en: prepareOGPhrases(n.og_phrases_en),
     colores,
@@ -131,20 +150,28 @@ function nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voi
     videoUrl_en: `https://duckduckgo.com/?q=!ducky+site:youtube.com+${encodeURIComponent(`${n.book_identity.titulo_en || book.titulo} ${book.autor} interview`)}`,
 
     _nucleus: n,
+    _edition_meta: {
+      gesture_types_es: gestureTypesES,
+      gesture_types_en: gestureTypesEN,
+      distinct_types_es: new Set(gestureTypesES).size,
+      distinct_types_en: new Set(gestureTypesEN).size
+    },
     _visual: { cssVars: visual.cssVars, decisions: visual.decisions, signature: visual.signature },
     _voice_verdict: voiceVerdict,
-    _validation: validation,
+    _validation: validationMeta,
+    _quality_warning: qualityWarning,
     _inputs_snapshot: inputsSnapshot,
     _crono: extraction.crono,
     _metrics: {
       tokens_prompt: extraction.usage?.prompt_tokens || 0,
       tokens_output: extraction.usage?.completion_tokens || 0,
-      tokens_total: extraction.usage?.total_tokens || 0,
+      tokens_total: runMeta.totalTokens || extraction.usage?.total_tokens || 0,
       tokens_judge: voiceVerdict?.total_tokens || 0,
-      elapsed_ms: extraction.elapsed_ms,
-      model: extraction.model,
-      pipeline_version: "nucleus-final-v1",
-      extraction_attempts: validation.extraction_attempts,
+      elapsed_ms: runMeta.totalElapsedMs || extraction.elapsed_ms,
+      model_final: runMeta.modelUsed || extraction.model,
+      escalated: runMeta.escalated || false,
+      pipeline_version: "nucleus-final-v2",
+      extraction_attempts: validationMeta.extraction_attempts,
       inputs_applied: extraction.inputs_applied
     }
   };
@@ -159,61 +186,114 @@ async function processBook(book, inputs, inputsSnapshot) {
 
   const effectiveInputs = CFG.cronoEnabled ? inputs : { ...inputs, now: new Date() };
 
+  // ═══════════════════════════════════════════════════════════════
+  // DEFENSA EN CAPAS — FLUJO GARANTÍA-DE-RESULTADO
+  //
+  // Capa 1: extract con gpt-4o-mini (default)
+  // Capa 2: si validación falla → re-extract con mini temp baja
+  // Capa 3: si sigue fallando → escalate a gpt-4o (modelo grande)
+  // Capa 4: si TODO falla → aceptar con _quality_warning, nunca abortar
+  //
+  // Política: SIEMPRE sale resultado. Calidad reportada en meta.
+  // ═══════════════════════════════════════════════════════════════
+
   let extraction = await extractNucleus(openai, book, effectiveInputs, {
-    model: CFG.model,
+    model: "gpt-4o-mini",
     temperature: CFG.temperature
   });
-  console.log(`   ✓ Nucleus (${extraction.usage?.total_tokens}t, ${extraction.elapsed_ms}ms)`);
-
+  let modelUsed = "gpt-4o-mini";
   let extractionAttempts = 1;
-  const n = extraction.nucleus;
+  let escalated = false;
+  let totalTokens = extraction.usage?.total_tokens || 0;
+  let totalElapsedMs = extraction.elapsed_ms || 0;
 
-  console.log(`   ✓ Firma: ${n.visual_signature.typography_family}/${n.visual_signature.density}/${n.visual_signature.rhythm}/${n.visual_signature.genre_visual}`);
+  console.log(`   ✓ Nucleus mini (${extraction.usage?.total_tokens}t, ${extraction.elapsed_ms}ms)`);
+
+  // ────────────── VALIDACIÓN ESTRUCTURAL ──────────────
+  let validation = validateNucleus(extraction.nucleus);
+
+  // FASE A: re-extract con mini temp baja si needs_reextract
+  if (validation.overall === "needs_reextract") {
+    console.log(`   ⚠ Validation: ${validation.overall} — re-extract mini temp baja`);
+    console.log(`     Warnings: ${validation.warnings.slice(0, 3).join(" | ")}`);
+    extractionAttempts += 1;
+    extraction = await extractNucleus(openai, book, effectiveInputs, {
+      model: "gpt-4o-mini",
+      temperature: 0.3
+    });
+    totalTokens += extraction.usage?.total_tokens || 0;
+    totalElapsedMs += extraction.elapsed_ms || 0;
+    validation = validateNucleus(extraction.nucleus);
+    console.log(`   ✓ Nucleus mini-retry (${extraction.usage?.total_tokens}t)`);
+  }
+
+  // FASE B: escalate a gpt-4o si aún falla (o si confidence muy baja)
+  if (validation.overall === "needs_reextract" || validation.overall === "needs_escalation") {
+    console.log(`   ⚠ Validation: ${validation.overall} — escalando a gpt-4o`);
+    console.log(`     Warnings: ${validation.warnings.slice(0, 3).join(" | ")}`);
+    extractionAttempts += 1;
+    escalated = true;
+    modelUsed = "gpt-4o";
+    extraction = await extractNucleus(openai, book, effectiveInputs, {
+      model: "gpt-4o",
+      temperature: 0.6
+    });
+    totalTokens += extraction.usage?.total_tokens || 0;
+    totalElapsedMs += extraction.elapsed_ms || 0;
+    validation = validateNucleus(extraction.nucleus);
+    console.log(`   ✓ Nucleus gpt-4o (${extraction.usage?.total_tokens}t) — validation: ${validation.overall}`);
+  }
+
+  // FASE C: SIEMPRE aceptamos. Si aún hay warnings, se reportan en meta.
+  const nucleus = extraction.nucleus;
+
+  console.log(`   ✓ Firma: ${nucleus.visual_signature.typography_family}/${nucleus.visual_signature.density}/${nucleus.visual_signature.rhythm}/${nucleus.visual_signature.genre_visual}`);
 
   // Anclajes del libro (visibles en logs para verificar calidad)
-  if (n.book_grounding_anchors) {
-    const known = n.book_grounding_anchors.book_known ? "✓" : "⚠";
-    console.log(`   ${known} Book known: ${n.book_grounding_anchors.book_known}`);
-    const concepts = (n.book_grounding_anchors.concepts || []).slice(0, 3);
+  if (nucleus.book_grounding_anchors) {
+    const known = nucleus.book_grounding_anchors.book_known ? "✓" : "⚠";
+    console.log(`   ${known} Book known: ${nucleus.book_grounding_anchors.book_known}`);
+    const concepts = (nucleus.book_grounding_anchors.concepts || []).slice(0, 3);
     if (concepts.length) console.log(`   ⚓ Anchors: ${concepts.map(c => c.slice(0, 60)).join(" | ")}`);
   }
 
   // Análisis de lente (visible)
-  if (n.lens_analysis && n.lens_analysis.lens_provided) {
-    console.log(`   🔍 Lens decision: ${n.lens_analysis.decision}`);
-    console.log(`   🔍 Lens analysis: ${n.lens_analysis.analysis.slice(0, 120)}${n.lens_analysis.analysis.length > 120 ? "..." : ""}`);
+  if (nucleus.lens_analysis && nucleus.lens_analysis.lens_provided) {
+    console.log(`   🔍 Lens decision: ${nucleus.lens_analysis.decision}`);
+    console.log(`   🔍 Lens analysis: ${nucleus.lens_analysis.analysis.slice(0, 120)}${nucleus.lens_analysis.analysis.length > 120 ? "..." : ""}`);
   }
 
-  if (n.lens_relevance.applied) console.log(`   ✅ Lente APLICADA al contenido`);
-  else if (n.lens_analysis?.lens_provided) console.log(`   ⚪ Lente NO aplicada: ${n.lens_relevance.reason.slice(0, 100)}`);
+  if (nucleus.lens_relevance.applied) console.log(`   ✅ Lente APLICADA al contenido`);
+  else if (nucleus.lens_analysis?.lens_provided) console.log(`   ⚪ Lente NO aplicada: ${nucleus.lens_relevance.reason.slice(0, 100)}`);
 
   // Gestos de Edición Viva (visibles para verificar variedad)
-  if (Array.isArray(n.edition_gestures_meta_es)) {
-    console.log(`   🎭 Edition gestures: ${n.edition_gestures_meta_es.join(" • ")}`);
+  if (Array.isArray(nucleus.edition_blocks_es)) {
+    const types = nucleus.edition_blocks_es.map((b) => b.gesture_type);
+    const distinctCount = new Set(types).size;
+    console.log(`   🎭 Edition gestures: ${types.join(" • ")} (${distinctCount} distintos)`);
   }
 
-  // Voice judge con circuit breaker
-  let voiceVerdict = await judgeBothVoices(openai, n.card_es, n.card_en, book, { model: CFG.model });
+  // Log final de validación
+  if (validation.overall === "pass") {
+    console.log(`   ✅ Quality: PASS`);
+  } else if (validation.overall === "pass_with_warnings") {
+    console.log(`   🟡 Quality: PASS_WITH_WARNINGS — ${validation.warnings.slice(0, 2).join(" | ")}`);
+  } else {
+    console.log(`   🔴 Quality: ${validation.overall} (aceptado con warning)`);
+    console.log(`     Warnings finales: ${validation.warnings.slice(0, 4).join(" | ")}`);
+  }
+
+  // Voice judge con circuit breaker (no re-extrae, solo reporta)
+  let voiceVerdict = await judgeBothVoices(openai, nucleus.card_es, nucleus.card_en, book, { model: "gpt-4o-mini" });
+  totalTokens += voiceVerdict.total_tokens || 0;
   console.log(`   🎭 Voz: ${voiceVerdict.consolidated} (conf ${voiceVerdict.confidence.toFixed(2)})`);
 
-  // Re-extracción UNA vez máximo si reseña con alta confianza
-  if (voiceVerdict.should_reextract) {
-    console.log(`   🔄 Re-extract (circuit breaker: 1 máximo)`);
-    extractionAttempts += 1;
-    extraction = await extractNucleus(openai, book, effectiveInputs, {
-      model: CFG.model,
-      temperature: Math.max(0.3, CFG.temperature - 0.4)
-    });
-    voiceVerdict = await judgeBothVoices(openai, extraction.nucleus.card_es, extraction.nucleus.card_en, book, { model: CFG.model });
-    console.log(`   🎭 Post re-extract: ${voiceVerdict.consolidated}`);
-  }
-
-  const nucleus = extraction.nucleus;
+  // Composición visual (determinista)
   const visual = composeVisual(nucleus.visual_signature);
   const tarjetaES = renderTarjetaES(nucleus.card_es, visual);
   const tarjetaEN = renderTarjetaEN(nucleus.card_en, visual);
 
-  const validation = {
+  const validationMeta = {
     voice_verdict: voiceVerdict.consolidated,
     voice_warning: voiceVerdict.consolidated === "resena",
     extraction_attempts: extractionAttempts,
@@ -221,13 +301,20 @@ async function processBook(book, inputs, inputsSnapshot) {
     contrast_ratio_ok: parseFloat(visual.decisions.contrast_ratio) >= 4.5,
     confidence: nucleus.confidence,
     lens_applied: nucleus.lens_relevance.applied,
-    circuit_tripped: voiceVerdict.circuit_tripped
+    circuit_tripped: voiceVerdict.circuit_tripped,
+    // Defensa en capas
+    quality_overall: validation.overall,
+    quality_warnings: validation.warnings,
+    model_used: modelUsed,
+    escalated: escalated
   };
 
-  const resultado = validation.voice_verdict === "pagina" && validation.contrast_ratio_ok ? "✅" : (validation.voice_verdict === "resena" ? "⚠️  voz-warning" : "⚠️  contraste");
-  console.log(`   ${resultado} contraste=${visual.decisions.contrast_ratio}:1`);
+  const resultado = validation.overall === "pass" && validationMeta.contrast_ratio_ok ? "✅" :
+                    validation.overall === "pass_with_warnings" ? "🟡" : "⚠️";
+  console.log(`   ${resultado} contraste=${visual.decisions.contrast_ratio}:1 | modelo=${modelUsed}${escalated ? " (escalado)" : ""}`);
 
-  return nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validation, inputsSnapshot);
+
+  return nucleusToV974Format(book, extraction, tarjetaES, tarjetaEN, visual, voiceVerdict, validationMeta, inputsSnapshot, { totalTokens, totalElapsedMs, modelUsed, escalated });
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
