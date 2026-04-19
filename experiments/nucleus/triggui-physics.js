@@ -2,12 +2,40 @@
    triggui-physics.js — MATEMÁTICA PURA
 ═══════════════════════════════════════════════════════════════════════════════ */
 
+/**
+ * Normaliza un string de color a formato #RRGGBB canónico.
+ * Tolera: #RGB, #RGBA, #RRGGBB, #RRGGBBAA, con o sin #, con espacios.
+ * Devuelve null si no se puede normalizar.
+ */
+export function normalizeHex(input) {
+  if (!input) return null;
+  let s = String(input).trim().replace(/^#/, "");
+  // Formatos aceptados
+  if (/^[0-9a-fA-F]{3}$/.test(s)) {
+    // #RGB → #RRGGBB
+    return `#${s[0]}${s[0]}${s[1]}${s[1]}${s[2]}${s[2]}`.toUpperCase();
+  }
+  if (/^[0-9a-fA-F]{4}$/.test(s)) {
+    // #RGBA → #RRGGBB (descartamos alpha)
+    return `#${s[0]}${s[0]}${s[1]}${s[1]}${s[2]}${s[2]}`.toUpperCase();
+  }
+  if (/^[0-9a-fA-F]{6}$/.test(s)) {
+    return `#${s}`.toUpperCase();
+  }
+  if (/^[0-9a-fA-F]{8}$/.test(s)) {
+    // #RRGGBBAA → #RRGGBB (descartamos alpha)
+    return `#${s.slice(0, 6)}`.toUpperCase();
+  }
+  return null;
+}
+
 export function isValidHex(hex) {
-  return /^#[0-9a-fA-F]{6}$/.test(String(hex || ""));
+  if (!hex) return false;
+  return normalizeHex(hex) !== null;
 }
 
 export function luminance(hex) {
-  const safe = isValidHex(hex) ? String(hex) : "#000000";
+  const safe = normalizeHex(hex) || "#000000";
   const [r, g, b] = safe.slice(1).match(/../g).map((x) => parseInt(x, 16) / 255);
   const f = (v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
   return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
@@ -22,13 +50,13 @@ export function contrastRatio(fg, bg) {
 }
 
 function hexToRGB(hex) {
-  const safe = isValidHex(hex) ? String(hex) : "#000000";
+  const safe = normalizeHex(hex) || "#000000";
   return safe.slice(1).match(/../g).map((x) => parseInt(x, 16));
 }
 
 function rgbToHex(r, g, b) {
   const c = (v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, "0");
-  return `#${c(r)}${c(g)}${c(b)}`;
+  return `#${c(r)}${c(g)}${c(b)}`.toUpperCase();
 }
 
 export function darken(hex, pct = 0.3) {
