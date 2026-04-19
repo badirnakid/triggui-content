@@ -1,6 +1,6 @@
 {
   "name": "EditionNucleus",
-  "description": "Núcleo canónico de una edición Triggui. Triggui es un disparador: su único objetivo es que el lector abra un libro físico. Para lograrlo, el modelo produce texto que suena como si el lector acabara de abrir ese libro en una página al azar — la voz del libro, el tono del autor, el ritmo del libro. El modelo NO es crítico ni reseñista: no habla DEL libro, produce texto que podría estar EN el libro.",
+  "description": "Núcleo canónico de una edición Triggui. Ver prompt del sistema para la política editorial completa.",
   "strict": true,
   "schema": {
     "type": "object",
@@ -28,16 +28,15 @@
         "additionalProperties": false,
         "required": ["titulo_es", "titulo_en", "autor", "idioma_original"],
         "properties": {
-          "titulo_es": { "type": "string" },
-          "titulo_en": { "type": "string" },
-          "autor": { "type": "string" },
-          "idioma_original": { "type": "string", "enum": ["es", "en"] }
+          "titulo_es": { "type": "string", "description": "Título del libro en español. Si fue publicado en español, usa ese título exacto. Si fue publicado en inglés, usa la traducción oficial al español si existe." },
+          "titulo_en": { "type": "string", "description": "Título ORIGINAL del libro en inglés si así fue publicado (ej. 'Peak Mind' para el libro de Amishi Jha, 'Atomic Habits' para el de James Clear). Si el libro fue publicado originalmente en español, usa una traducción funcional al inglés." },
+          "autor": { "type": "string", "description": "Nombre COMPLETO del autor (ej. 'Amishi P. Jha', no 'Amishi'; 'James Clear', no 'J. Clear')." },
+          "idioma_original": { "type": "string", "enum": ["es", "en"], "description": "Idioma en el que el libro fue escrito originalmente." }
         }
       },
 
       "book_grounding_anchors": {
         "type": "object",
-        "description": "CAMPO CRÍTICO DE ANCLAJE. Antes de producir cualquier otra cosa, llena este campo. Estos son los anclajes reales del libro — conceptos, términos, argumentos, ejemplos específicos que SOLO aparecen en ESTE libro escrito por ESTE autor. Si no puedes nombrar 3 conceptos específicos del libro, marca book_known=false y baja confidence. Si puedes, nómbralos con precisión. DESPUÉS, cada frase que produzcas (card_es, card_en, og_phrases, edition_blocks) debe usar al menos un anchor. Si una frase pudiera aparecer tal cual en cualquier libro de autoayuda genérica, la estás haciendo mal: regresa a los anchors y reescríbela. Anti-patrones a detectar en tu propio output: 'danza de decisiones', 'laberinto de la existencia', 'sueños anhelados', 'búsqueda incesante', 'esencia pura', 'horizonte de posibilidades' — esas metáforas huecas son señal de que perdiste el libro y caíste en vocabulario de post de Instagram.",
         "additionalProperties": false,
         "required": ["book_known", "concepts", "key_terms", "authorial_voice_notes"],
         "properties": {
@@ -46,38 +45,25 @@
             "type": "array",
             "minItems": 3,
             "maxItems": 5,
-            "description": "3-5 conceptos específicos del libro. Si book_known=false, usa los más probables dados título/autor.",
             "items": { "type": "string", "minLength": 10, "maxLength": 120 }
           },
           "key_terms": {
             "type": "array",
             "minItems": 3,
             "maxItems": 6,
-            "description": "3-6 palabras o frases del vocabulario propio del autor.",
             "items": { "type": "string", "minLength": 2, "maxLength": 40 }
           },
-          "authorial_voice_notes": {
-            "type": "string",
-            "description": "2-3 oraciones describiendo CÓMO escribe este autor en ESTE libro específico.",
-            "minLength": 50,
-            "maxLength": 400
-          }
+          "authorial_voice_notes": { "type": "string", "minLength": 50, "maxLength": 400 }
         }
       },
 
       "lens_analysis": {
         "type": "object",
-        "description": "Análisis obligatorio antes de decidir si la lente aplica. NO puedes marcar dont_apply sin buscar primero.",
         "additionalProperties": false,
         "required": ["lens_provided", "analysis", "decision"],
         "properties": {
           "lens_provided": { "type": "boolean" },
-          "analysis": {
-            "type": "string",
-            "description": "2-4 oraciones explicando CÓMO el libro trata el tema. Si lens_provided=false, '(sin lente provista)'.",
-            "minLength": 10,
-            "maxLength": 600
-          },
+          "analysis": { "type": "string", "minLength": 10, "maxLength": 600 },
           "decision": {
             "type": "string",
             "enum": ["apply_directly", "apply_through_adjacent_concept", "dont_apply_book_is_about_something_else"]
@@ -87,20 +73,18 @@
 
       "card_es": {
         "type": "object",
-        "description": "4 campos de la tarjeta en español. Voz del libro, no reseña del libro.",
         "additionalProperties": false,
         "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
         "properties": {
-          "titulo": { "type": "string", "minLength": 8, "maxLength": 60, "description": "Título de la tarjeta. 3-8 palabras. Debe cerrar limpio." },
-          "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320, "description": "Primer párrafo. Densidad alta. 25-60 palabras. Debe cerrar con punto." },
-          "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120, "description": "Pregunta o frase puente. 6-14 palabras. Debe cerrar limpio." },
-          "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320, "description": "Párrafo de cierre. Sin instrucciones de tiempo. 25-60 palabras. Debe cerrar con punto." }
+          "titulo": { "type": "string", "minLength": 8, "maxLength": 60 },
+          "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320 },
+          "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120 },
+          "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320 }
         }
       },
 
       "card_en": {
         "type": "object",
-        "description": "4 card fields in English. Native English, book's voice.",
         "additionalProperties": false,
         "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
         "properties": {
@@ -115,7 +99,6 @@
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTAMENTE 4 palabras emocionales específicas del libro, no genéricas.",
         "items": { "type": "string", "minLength": 3, "maxLength": 25 }
       },
 
@@ -123,7 +106,6 @@
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTLY 4 emotional words specific to the book.",
         "items": { "type": "string", "minLength": 3, "maxLength": 25 }
       },
 
@@ -131,31 +113,20 @@
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTAMENTE 4 frases cortas para OG image headline. 40-70 caracteres c/u, emoji al INICIO. Ejemplos: '🎲 Cada movimiento cambia el tablero entero', '⚓ La felicidad vive en la jugada, no en el premio'. Prohibidas frases genéricas tipo 'La vida es un juego'.",
-        "items": {
-          "type": "string",
-          "minLength": 35,
-          "maxLength": 74
-        }
+        "items": { "type": "string", "minLength": 35, "maxLength": 74 }
       },
 
       "og_phrases_en": {
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTLY 4 short OG phrases. 40-70 chars each, emoji at START.",
-        "items": {
-          "type": "string",
-          "minLength": 35,
-          "maxLength": 74
-        }
+        "items": { "type": "string", "minLength": 35, "maxLength": 74 }
       },
 
       "edition_blocks_es": {
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTAMENTE 4 bloques para la Edición Viva. Cada bloque es un objeto con tipo de gesto + frase. NO son 4 pedazos de un párrafo: son 4 VENTANAS DISTINTAS al libro. Los 4 gesture_type deben ser DIFERENTES entre sí (o repetir máximo 1). Proceso obligatorio: PRIMERO decides gesture_type de los 4 bloques, DESPUÉS escribes phrase de cada uno en la forma propia de su tipo.",
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -163,20 +134,9 @@
           "properties": {
             "gesture_type": {
               "type": "string",
-              "enum": [
-                "instruccion_sensorial",
-                "pregunta_directa",
-                "imagen_concreta",
-                "aforismo_autorial"
-              ],
-              "description": "instruccion_sensorial: micro-acción física que el libro pediría (ej: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad a tu alrededor.'). pregunta_directa: pregunta del libro al lector, cierra con '?' (ej: '♟ ¿Qué jugada eliges cuando nadie mira?'). imagen_concreta: imagen visual del libro sin imperativo (ej: '⚖ El tablero donde cada jugada se mide contra las jugadas de los demás.'). aforismo_autorial: sentencia cerrada en voz del autor (ej: '🎯 La recompensa no es el premio; es seguir jugando con intención.')."
+              "enum": ["instruccion_sensorial", "pregunta_directa", "imagen_concreta", "aforismo_autorial"]
             },
-            "phrase": {
-              "type": "string",
-              "minLength": 50,
-              "maxLength": 110,
-              "description": "La frase autónoma del gesto. Emoji al INICIO. DEBE cerrar con '.', '?', o '!' — NUNCA con 'y', 'de', 'se', coma u otra palabra conectora. Si no cabe la idea completa en 110 chars, reformula más corta. Usa al menos un concepto de book_grounding_anchors."
-            }
+            "phrase": { "type": "string", "minLength": 50, "maxLength": 110 }
           }
         }
       },
@@ -185,7 +145,6 @@
         "type": "array",
         "minItems": 4,
         "maxItems": 4,
-        "description": "EXACTLY 4 Edition Viva blocks in English. Same rules as edition_blocks_es but native English.",
         "items": {
           "type": "object",
           "additionalProperties": false,
@@ -193,26 +152,15 @@
           "properties": {
             "gesture_type": {
               "type": "string",
-              "enum": [
-                "sensory_instruction",
-                "direct_question",
-                "concrete_image",
-                "authorial_aphorism"
-              ]
+              "enum": ["sensory_instruction", "direct_question", "concrete_image", "authorial_aphorism"]
             },
-            "phrase": {
-              "type": "string",
-              "minLength": 50,
-              "maxLength": 110,
-              "description": "Autonomous phrase. Emoji at START. MUST close with '.', '?', '!'. Never with connector words."
-            }
+            "phrase": { "type": "string", "minLength": 50, "maxLength": 110 }
           }
         }
       },
 
       "visual_signature": {
         "type": "object",
-        "description": "Firma visual derivada del libro. Emergente, no decorativa.",
         "additionalProperties": false,
         "required": [
           "palette",
@@ -227,13 +175,7 @@
           "genre_visual"
         ],
         "properties": {
-          "palette": {
-            "type": "array",
-            "minItems": 4,
-            "maxItems": 4,
-            "description": "EXACTAMENTE 4 colores hex del libro.",
-            "items": { "type": "string" }
-          },
+          "palette": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "string" } },
           "accent": { "type": "string" },
           "paper": { "type": "string" },
           "ink": { "type": "string" },
@@ -245,10 +187,7 @@
           "temperature": { "type": "string", "enum": ["frio", "neutro", "calido", "ardiente"] },
           "rhythm": { "type": "string", "enum": ["lento", "medio", "rapido", "staccato"] },
           "era": { "type": "string", "enum": ["clasico", "moderno", "contemporaneo", "atemporal"] },
-          "genre_visual": {
-            "type": "string",
-            "enum": ["academico", "literario", "manifiesto", "poesia", "narrativa", "ensayo", "tecnico", "espiritual"]
-          }
+          "genre_visual": { "type": "string", "enum": ["academico", "literario", "manifiesto", "poesia", "narrativa", "ensayo", "tecnico", "espiritual"] }
         }
       },
 
@@ -265,7 +204,6 @@
 
       "lens_relevance": {
         "type": "object",
-        "description": "Resumen derivado de lens_analysis para consumo del orquestador.",
         "additionalProperties": false,
         "required": ["applied", "reason"],
         "properties": {
