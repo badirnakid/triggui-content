@@ -1,17 +1,11 @@
 name: Triggui Nucleus — Automático diario (shadow)
 
-# ═══════════════════════════════════════════════════════════════════════════
-# Se ejecuta diario a las 06:30 AM CDMX (30 min después de tu cron actual de
-# producción v9.7.4). Produce contenido.shadow.json sin tocar producción.
-#
-# No tiene inputs. Cronobiología automática. Sin lente.
-# Si un día quieres añadir lente, usa el workflow MANUAL.
-# ═══════════════════════════════════════════════════════════════════════════
+# Corre diario a 06:30 AM CDMX en modo SHADOW. No toca producción.
 
 on:
   schedule:
     - cron: '30 12 * * *'   # 06:30 CDMX = 12:30 UTC
-  workflow_dispatch: {}     # También manual sin inputs
+  workflow_dispatch: {}
 
 concurrency:
   group: triggui-nucleus-auto
@@ -39,12 +33,7 @@ jobs:
 
       - name: Install deps
         working-directory: experiments/nucleus
-        run: npm ci || npm install
-
-      - name: Pull latest
-        run: |
-          git config pull.rebase true
-          git pull origin main --rebase --autostash || true
+        run: npm install
 
       - name: Linkear CSV
         working-directory: experiments/nucleus
@@ -59,17 +48,44 @@ jobs:
       - name: Mover outputs a raíz
         working-directory: experiments/nucleus
         run: |
-          [ -f contenido.shadow.json ] && mv contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json" || true
-          [ -d inputs-history ] && mkdir -p "$GITHUB_WORKSPACE/inputs-history" && cp -r inputs-history/* "$GITHUB_WORKSPACE/inputs-history/" 2>/dev/null || true
-          [ -d metrics ] && mkdir -p "$GITHUB_WORKSPACE/metrics" && cp -r metrics/* "$GITHUB_WORKSPACE/metrics/" 2>/dev/null || true
+          if [ -f contenido.shadow.json ]; then
+            mv -f contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json"
+            echo "✅ contenido.shadow.json movido"
+          fi
+          if [ -d inputs-history ] && [ "$(ls -A inputs-history)" ]; then
+            mkdir -p "$GITHUB_WORKSPACE/inputs-history"
+            cp -rf inputs-history/. "$GITHUB_WORKSPACE/inputs-history/"
+          fi
+          if [ -d metrics ] && [ "$(ls -A metrics)" ]; then
+            mkdir -p "$GITHUB_WORKSPACE/metrics"
+            cp -rf metrics/. "$GITHUB_WORKSPACE/metrics/"
+          fi
 
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          file_pattern: |
-            contenido.shadow.json
-            inputs-history/*.md
-            metrics/*.json
-          commit_message: "🌒 nucleus shadow diario — $(date -u +%Y-%m-%d)"
-          pull_options: '--rebase --autostash'
-          push_options: '--force-with-lease'
+      - name: Commit y push
+        working-directory: ${{ github.workspace }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git pull origin main --rebase --autostash || true
+
+          [ -f contenido.shadow.json ] && git add contenido.shadow.json
+          [ -d inputs-history ] && git add inputs-history/ || true
+          [ -d metrics ] && git add metrics/ || true
+
+          if git diff --cached --quiet; then
+            echo "No hay cambios"
+            exit 0
+          fi
+
+          git commit -m "🌒 nucleus shadow diario — $(date -u +%Y-%m-%d)"
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              break
+            else
+              git pull origin main --rebase --autostash
+              [ "$i" = "3" ] && exit 1
+            fi
+          done
