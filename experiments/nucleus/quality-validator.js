@@ -12,7 +12,7 @@
    que se pueden medir objetivamente.
 ═══════════════════════════════════════════════════════════════════════════════ */
 
-import { contrastRatio, isValidHex } from "./triggui-physics.js";
+import { contrastRatio, isValidHex, normalizeHex } from "./triggui-physics.js";
 
 /* ─────────────────────────────────────────────────────────────────────────────
    DETECTORES LÉXICOS MATEMÁTICOS
