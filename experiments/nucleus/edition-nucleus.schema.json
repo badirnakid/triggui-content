@@ -15,6 +15,8 @@
       "emotional_words_en",
       "og_phrases_es",
       "og_phrases_en",
+      "edition_gestures_meta_es",
+      "edition_gestures_meta_en",
       "edition_phrases_es",
       "edition_phrases_en",
       "visual_signature",
@@ -141,21 +143,50 @@
 
       "edition_phrases_es": {
         "type": "array",
-        "description": "4 frases de tono reflexivo, densas y más largas, para los 4 bloques grandes de la Edición Viva. OBJETIVO: 80-108 caracteres por frase (incluyendo emoji al INICIO). REGLA CRÍTICA: cada frase DEBE terminar en punto, signo de interrogación, signo de admiración, o cierre natural ANTES del carácter 112. Si una frase no cabe completa, NO la empieces — piensa una frase más corta que sí cierre. PROHIBIDO dejar frases colgando tipo '...la felicidad se encuentra en a' (truncada). Cada frase debe usar al menos un concepto de book_grounding_anchors.concepts o un término de key_terms. Ejemplo correcto: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad del universo a tu alrededor.' (95 chars, cierra con punto). El lector debe poder leerla y sentir que ya empezó a leer el libro.",
+        "description": "4 GESTOS del libro en español para los 4 bloques de la Edición Viva. NO son 'frases reflexivas sobre el libro' ni 4 pedazos de un mismo párrafo — son 4 VENTANAS DISTINTAS al libro, cada una con tipo propio. El lector toca un bloque y ese gesto debería hacer que quiera abrir el libro físico. Cada item de este array corresponde al mismo índice en edition_gestures_meta_es (el primero es del tipo definido ahí, el segundo también, etc). Cada gesto es AUTÓNOMO (no continúa del anterior), usa al menos un concepto/term de book_grounding_anchors, y DEBE cerrar con punto, signo de interrogación o admiración dentro del límite de caracteres. Si tu frase termina en 'y', 'de', 'se', coma o palabra suelta, es señal de que escribiste prosa y la truncaste — reescribe esa frase como un gesto autónomo más corto. Emoji al INICIO coherente con el tipo de gesto y el tono del libro.",
         "items": {
           "type": "string",
-          "minLength": 70,
-          "maxLength": 112
+          "minLength": 50,
+          "maxLength": 110
+        }
+      },
+
+      "edition_gestures_meta_es": {
+        "type": "array",
+        "description": "Los 4 tipos de gesto que componen edition_phrases_es, EN EL MISMO ORDEN. Este campo se llena ANTES de escribir las frases — primero decides qué tipo de gesto es cada uno, después escribes cada uno en su forma propia. Las 4 posiciones deben ser DISTINTAS entre sí (no 4 aforismos ni 4 preguntas — variedad obligatoria).",
+        "items": {
+          "type": "string",
+          "enum": [
+            "instruccion_sensorial",
+            "pregunta_directa",
+            "imagen_concreta",
+            "aforismo_autorial"
+          ],
+          "description": "instruccion_sensorial: una micro-acción física o perceptual que el libro pediría al lector (ej: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad a tu alrededor.'). pregunta_directa: una pregunta que el libro hace al lector y queda abierta (ej: '♟ ¿Qué jugada eliges cuando nadie está mirando el tablero?'). imagen_concreta: una imagen visual específica extraída del libro, sin verbo imperativo (ej: '⚖ El tablero donde cada jugada se mide contra las jugadas de los demás.'). aforismo_autorial: una sentencia corta y cerrada en la voz del autor, estilo frase de libro (ej: '🎯 La recompensa no es el premio; es seguir jugando con intención.')."
         }
       },
 
       "edition_phrases_en": {
         "type": "array",
-        "description": "4 longer reflective phrases for the 4 grand blocks of the Living Edition. TARGET: 80-108 characters including emoji at START. CRITICAL RULE: each phrase MUST end with period, question mark, exclamation, or natural closure BEFORE character 112. Do NOT start phrases that cannot close. Forbidden: phrases that get truncated mid-word. Each phrase must use at least one concept from book_grounding_anchors.concepts or one term from key_terms. Native English prose.",
+        "description": "4 GESTURES from the book in English for the 4 Living Edition blocks. NOT 4 reflective phrases about the book, NOT 4 pieces of one paragraph — they are 4 DIFFERENT WINDOWS into the book. Each item corresponds to edition_gestures_meta_en at the same index. Each gesture is AUTONOMOUS, uses at least one anchor, and MUST close with period, question or exclamation within char limit. If your phrase ends mid-word or with connector words, rewrite as shorter autonomous gesture. Emoji at START.",
         "items": {
           "type": "string",
-          "minLength": 70,
-          "maxLength": 112
+          "minLength": 50,
+          "maxLength": 110
+        }
+      },
+
+      "edition_gestures_meta_en": {
+        "type": "array",
+        "description": "The 4 gesture types in edition_phrases_en, SAME ORDER. Filled BEFORE writing phrases. Must be DISTINCT from each other.",
+        "items": {
+          "type": "string",
+          "enum": [
+            "sensory_instruction",
+            "direct_question",
+            "concrete_image",
+            "authorial_aphorism"
+          ]
         }
       },
 
