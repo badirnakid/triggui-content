@@ -7,6 +7,8 @@
     "additionalProperties": false,
     "required": [
       "book_identity",
+      "book_grounding_anchors",
+      "lens_analysis",
       "card_es",
       "card_en",
       "emotional_words_es",
@@ -30,6 +32,53 @@
           "titulo_en": { "type": "string" },
           "autor": { "type": "string" },
           "idioma_original": { "type": "string", "enum": ["es", "en"] }
+        }
+      },
+
+      "book_grounding_anchors": {
+        "type": "object",
+        "description": "CAMPO CRÍTICO DE ANCLAJE. Antes de producir cualquier otra cosa, llena este campo. Estos son los anclajes reales del libro — conceptos, términos, argumentos, ejemplos específicos que SOLO aparecen en ESTE libro escrito por ESTE autor. Si no puedes nombrar 3 conceptos específicos del libro, marca book_known=false y baja confidence. Si puedes, nómbralos con precisión. DESPUÉS, cada frase que produzcas (card_es, card_en, og_phrases, edition_phrases) debe usar al menos un anchor. Si una frase pudiera aparecer tal cual en cualquier libro de autoayuda genérica, la estás haciendo mal: regresa a los anchors y reescríbela. Anti-patrones a detectar en tu propio output: 'danza de decisiones', 'laberinto de la existencia', 'sueños anhelados', 'búsqueda incesante', 'esencia pura', 'horizonte de posibilidades' — esas metáforas huecas son señal de que perdiste el libro y caíste en vocabulario de post de Instagram. Eso NO es lo que escribiría el autor real.",
+        "additionalProperties": false,
+        "required": ["book_known", "concepts", "key_terms", "authorial_voice_notes"],
+        "properties": {
+          "book_known": { "type": "boolean", "description": "true si conoces genuinamente el libro. false si solo tienes conocimiento superficial por título/autor." },
+          "concepts": {
+            "type": "array",
+            "description": "3-5 conceptos, ideas, o argumentos específicos que aparecen en ESTE libro. Deben ser cosas que un lector del libro reconocería, no genéricos. Ejemplo para 'Atomic Habits' de James Clear: ['regla 1% mejor cada día', 'hábitos atómicos como células de cambio', 'loop señal-antojo-respuesta-recompensa', 'identidad vs resultados']. Ejemplo para 'La razón de ser feliz' de Kaushik Basu: ['función de felicidad comparativa', 'dilema del prisionero aplicado a decisiones personales', 'economía del bienestar subjetivo', 'teoría de juegos y elección racional']. Si book_known=false, lista los conceptos más probables dados el título y autor, y baja confidence.",
+            "items": { "type": "string", "minLength": 10, "maxLength": 120 }
+          },
+          "key_terms": {
+            "type": "array",
+            "description": "3-6 palabras o frases cortas del vocabulario propio del autor en ESTE libro. Términos que el autor usa de forma característica. No palabras genéricas de autoayuda.",
+            "items": { "type": "string", "minLength": 2, "maxLength": 40 }
+          },
+          "authorial_voice_notes": {
+            "type": "string",
+            "description": "2-3 oraciones describiendo CÓMO escribe este autor en ESTE libro específico: tono, densidad, rítmica, si usa ejemplos cotidianos o abstractos, si es imperativo o reflexivo, etc. Este análisis guía las cards y phrases. Ejemplo: 'Basu combina humor académico con precisión económica. Frases cortas, ejemplos personales mezclados con teoría formal, evita jerga sin explicarla.'",
+            "minLength": 50,
+            "maxLength": 400
+          }
+        }
+      },
+
+      "lens_analysis": {
+        "type": "object",
+        "description": "CAMPO DE ANÁLISIS OBLIGATORIO antes de decidir si la lente del curador aplica. Si se pasó lente (lens o book_context), PRIMERO analizas cómo se relaciona con el libro, DESPUÉS decides si aplica. Si no se pasó lente, analysis='(sin lente)' y applied=false. Regla clave: NO puedes marcar applied=false sin antes haber buscado genuinamente cómo el libro trata el tema. Solo si tras buscar no encuentras conexión real, marcas applied=false con la razón específica.",
+        "additionalProperties": false,
+        "required": ["lens_provided", "analysis", "decision"],
+        "properties": {
+          "lens_provided": { "type": "boolean", "description": "true si el curador pasó una lente." },
+          "analysis": {
+            "type": "string",
+            "description": "Si lens_provided=true: 2-4 oraciones explicando CÓMO el libro trata el tema de la lente. Cita conceptos específicos de book_grounding_anchors. Si el libro genuinamente no trata el tema, explícalo con precisión ('Este libro trata X, no Y. El tema más cercano sería Z'). Si lens_provided=false: '(sin lente provista)'.",
+            "minLength": 10,
+            "maxLength": 600
+          },
+          "decision": {
+            "type": "string",
+            "enum": ["apply_directly", "apply_through_adjacent_concept", "dont_apply_book_is_about_something_else"],
+            "description": "apply_directly: el libro trata directamente el tema de la lente, extracción se sesga hacia ahí. apply_through_adjacent_concept: el libro no trata el tema pero hay un concepto cercano que resuena, extracción usa ese puente. dont_apply_book_is_about_something_else: el libro no tiene conexión genuina con la lente, extracción procede normal."
+          }
         }
       },
 
@@ -92,21 +141,21 @@
 
       "edition_phrases_es": {
         "type": "array",
-        "description": "4 frases de tono reflexivo, densas y más largas, para los 4 bloques grandes de la Edición Viva. OBJETIVO: 80-115 caracteres por frase (incluyendo emoji al INICIO). Cada frase ocupa 2 líneas en el bloque grande y se siente como abrir el libro en una página. NO son imperativas cortas, son prosa con respiración. Ejemplo del tono correcto: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad del universo a tu alrededor' (93 chars). Cada una debe hacer sentido por sí sola y resonar con una de las 4 palabras emocionales del libro. El lector debe poder leerla y sentir que ya empezó a leer el libro.",
+        "description": "4 frases de tono reflexivo, densas y más largas, para los 4 bloques grandes de la Edición Viva. OBJETIVO: 80-108 caracteres por frase (incluyendo emoji al INICIO). REGLA CRÍTICA: cada frase DEBE terminar en punto, signo de interrogación, signo de admiración, o cierre natural ANTES del carácter 112. Si una frase no cabe completa, NO la empieces — piensa una frase más corta que sí cierre. PROHIBIDO dejar frases colgando tipo '...la felicidad se encuentra en a' (truncada). Cada frase debe usar al menos un concepto de book_grounding_anchors.concepts o un término de key_terms. Ejemplo correcto: '🦋 Observa el cielo durante unos instantes, sintiendo la vastedad del universo a tu alrededor.' (95 chars, cierra con punto). El lector debe poder leerla y sentir que ya empezó a leer el libro.",
         "items": {
           "type": "string",
           "minLength": 70,
-          "maxLength": 120
+          "maxLength": 112
         }
       },
 
       "edition_phrases_en": {
         "type": "array",
-        "description": "4 longer reflective phrases for the 4 grand blocks of the Living Edition. 80-115 characters target including emoji at START. Two-line prose, breathing, not short imperatives. Same rule as edition_phrases_es in native English.",
+        "description": "4 longer reflective phrases for the 4 grand blocks of the Living Edition. TARGET: 80-108 characters including emoji at START. CRITICAL RULE: each phrase MUST end with period, question mark, exclamation, or natural closure BEFORE character 112. Do NOT start phrases that cannot close. Forbidden: phrases that get truncated mid-word. Each phrase must use at least one concept from book_grounding_anchors.concepts or one term from key_terms. Native English prose.",
         "items": {
           "type": "string",
           "minLength": 70,
-          "maxLength": 120
+          "maxLength": 112
         }
       },
 
@@ -181,12 +230,12 @@
 
       "lens_relevance": {
         "type": "object",
-        "description": "Decisión honesta del modelo sobre si la lente de curaduría silenciosa (si fue provista) resuena con ESTE libro. Si resuena, applied=true y el contenido fue sesgado por la lente. Si no resuena, applied=false y el contenido se extrajo como si la lente no existiera. Si no se pasó lente, applied=false y reason vacío.",
+        "description": "Resumen derivado de lens_analysis para consumo del orquestador. applied=true cuando lens_analysis.decision es apply_directly o apply_through_adjacent_concept. applied=false solo cuando decision=dont_apply_book_is_about_something_else o cuando no hubo lente. La razón debe ser breve, interna, no aparece en output al usuario.",
         "additionalProperties": false,
         "required": ["applied", "reason"],
         "properties": {
           "applied": { "type": "boolean" },
-          "reason": { "type": "string", "description": "Breve explicación interna. No aparece en el output del usuario." }
+          "reason": { "type": "string", "description": "Resumen breve de lens_analysis.analysis. Máx 200 chars.", "maxLength": 200 }
         }
       },
 
