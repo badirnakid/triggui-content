@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEl libro probablemente trata sobre la mentalidad emprendedora necesaria para escalar un negocio exitoso, enfatizando la importancia de la mentalidad sobre la estrategia o el talento.\n\nVOZ INFERIDA:\nLa voz del autor podría ser motivacional y práctica, orientada a emprendedores y líderes de negocios, con un enfoque en la acción y el desarrollo personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El arte de empezar\" (Guy Kawasaki): Ambos libros tratan sobre el emprendimiento y la mentalidad necesaria para iniciar y escalar un negocio.\n- \"Lean Startup\" (Eric Ries): Se centra en la metodología para crear y escalar startups, abordando la mentalidad emprendedora.\n- \"Start with Why\" (Simon Sinek): Explora la importancia de la mentalidad y el propósito en los negocios y el liderazgo.\n- \"The Innovator's Dilemma\" (Clayton Christensen): Analiza cómo las empresas pueden escalar y adaptarse a los cambios en el mercado.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Masters of Scale",
+    "autor_completo": "Reid Hoffman",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El arte de empezar",
+      "autor": "Guy Kawasaki",
+      "razon": "Ambos libros tratan sobre el emprendimiento y la mentalidad necesaria para iniciar y escalar un negocio."
+    },
+    {
+      "titulo": "Lean Startup",
+      "autor": "Eric Ries",
+      "razon": "Se centra en la metodología para crear y escalar startups, abordando la mentalidad emprendedora."
+    },
+    {
+      "titulo": "Start with Why",
+      "autor": "Simon Sinek",
+      "razon": "Explora la importancia de la mentalidad y el propósito en los negocios y el liderazgo."
+    },
+    {
+      "titulo": "The Innovator's Dilemma",
+      "autor": "Clayton Christensen",
+      "razon": "Analiza cómo las empresas pueden escalar y adaptarse a los cambios en el mercado."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 596,
+  "cached_at": "2026-04-19T22:17:57.786Z"
+}

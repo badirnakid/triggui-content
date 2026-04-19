@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nReflexiones sobre la gestión financiera, la vida y la búsqueda de un equilibrio entre el éxito material y la satisfacción personal.\n\nVOZ INFERIDA:\nPragmática y reflexiva, con un enfoque en la sabiduría práctica y la experiencia personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El hombre más rico de Babilonia\" (George S. Clason): Ofrece lecciones sobre finanzas personales y la gestión del dinero a través de parábolas.\n- \"Padre rico, padre pobre\" (Robert Kiyosaki): Explora la mentalidad sobre el dinero y la inversión, contrastando diferentes enfoques financieros.\n- \"La magia del orden\" (Marie Kondo): Aunque se centra en el orden, también toca temas de vida y prioridades que pueden relacionarse con la gestión personal.\n- \"Los secretos de la mente millonaria\" (T. Harv Eker): Aborda la mentalidad necesaria para alcanzar el éxito financiero y personal.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Suficiente",
+    "autor_completo": "John C. Bogle",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El hombre más rico de Babilonia",
+      "autor": "George S. Clason",
+      "razon": "Ofrece lecciones sobre finanzas personales y la gestión del dinero a través de parábolas."
+    },
+    {
+      "titulo": "Padre rico, padre pobre",
+      "autor": "Robert Kiyosaki",
+      "razon": "Explora la mentalidad sobre el dinero y la inversión, contrastando diferentes enfoques financieros."
+    },
+    {
+      "titulo": "La magia del orden",
+      "autor": "Marie Kondo",
+      "razon": "Aunque se centra en el orden, también toca temas de vida y prioridades que pueden relacionarse con la gestión personal."
+    },
+    {
+      "titulo": "Los secretos de la mente millonaria",
+      "autor": "T. Harv Eker",
+      "razon": "Aborda la mentalidad necesaria para alcanzar el éxito financiero y personal."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 581,
+  "cached_at": "2026-04-19T22:17:28.985Z"
+}

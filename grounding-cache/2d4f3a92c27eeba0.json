@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa importancia de la comunicación efectiva y la presentación concisa de información.\n\nVOZ INFERIDA:\nPráctica y orientada a resultados, con un enfoque en la claridad y la brevedad.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Made to Stick: Why Some Ideas Survive and Others Die\" (Chip Heath y Dan Heath): Explora cómo comunicar ideas de manera efectiva y memorable.\n- \"The Elements of Style\" (William Strunk Jr. y E.B. White): Un clásico sobre la escritura clara y concisa.\n- \"Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds\" (Carmine Gallo): Ofrece consejos sobre cómo presentar ideas de manera impactante y clara.\n- \"The Art of Public Speaking\" (Dale Carnegie): Enfocado en la comunicación efectiva y la presentación de ideas.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "El método smart brevity",
+    "autor_completo": "Jim VandeHei",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Made to Stick: Why Some Ideas Survive and Others Die",
+      "autor": "Chip Heath y Dan Heath",
+      "razon": "Explora cómo comunicar ideas de manera efectiva y memorable."
+    },
+    {
+      "titulo": "The Elements of Style",
+      "autor": "William Strunk Jr. y E.B. White",
+      "razon": "Un clásico sobre la escritura clara y concisa."
+    },
+    {
+      "titulo": "Talk Like TED: The 9 Public-Speaking Secrets of the World's Top Minds",
+      "autor": "Carmine Gallo",
+      "razon": "Ofrece consejos sobre cómo presentar ideas de manera impactante y clara."
+    },
+    {
+      "titulo": "The Art of Public Speaking",
+      "autor": "Dale Carnegie",
+      "razon": "Enfocado en la comunicación efectiva y la presentación de ideas."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 579,
+  "cached_at": "2026-04-19T22:13:38.830Z"
+}

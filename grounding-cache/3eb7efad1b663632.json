@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa búsqueda de la felicidad a través de la pausa y la atención plena en la vida cotidiana.\n\nVOZ INFERIDA:\nReflexiva y motivadora, con un enfoque en el bienestar personal y la creatividad.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El arte de la felicidad\" (Dalai Lama y Howard Cutler): Explora la búsqueda de la felicidad y el bienestar personal.\n- \"La magia del orden\" (Marie Kondo): Se centra en la simplificación y la creación de un espacio que fomente la felicidad y la productividad.\n- \"Mindfulness: Atención plena\" (Jon Kabat-Zinn): Aborda la importancia de la atención plena y la pausa en la vida diaria para mejorar el bienestar.\n- \"El poder del ahora\" (Eckhart Tolle): Se enfoca en vivir en el presente y encontrar la paz interior.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "El libro del Niksen",
+    "autor_completo": "Olga Mecking",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El arte de la felicidad",
+      "autor": "Dalai Lama y Howard Cutler",
+      "razon": "Explora la búsqueda de la felicidad y el bienestar personal."
+    },
+    {
+      "titulo": "La magia del orden",
+      "autor": "Marie Kondo",
+      "razon": "Se centra en la simplificación y la creación de un espacio que fomente la felicidad y la productividad."
+    },
+    {
+      "titulo": "Mindfulness: Atención plena",
+      "autor": "Jon Kabat-Zinn",
+      "razon": "Aborda la importancia de la atención plena y la pausa en la vida diaria para mejorar el bienestar."
+    },
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Se enfoca en vivir en el presente y encontrar la paz interior."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 574,
+  "cached_at": "2026-04-19T22:21:17.425Z"
+}

@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nComportamiento profesional y etiqueta en el entorno empresarial, con un enfoque en la mejora de habilidades interpersonales.\n\nVOZ INFERIDA:\nPráctica y directa, orientada a ofrecer consejos útiles y aplicables en situaciones cotidianas de negocios.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"La etiqueta en los negocios\" (María José Canel): Aborda el tema de la etiqueta y el comportamiento profesional en entornos empresariales.\n- \"Cómo ganar amigos e influir sobre las personas\" (Dale Carnegie): Aunque no es exclusivamente sobre etiqueta, trata sobre las relaciones interpersonales y la comunicación efectiva en el ámbito profesional.\n- \"El arte de la guerra\" (Sun Tzu): Aunque es un texto antiguo, se aplica a la estrategia y comportamiento en situaciones competitivas, similar a la etiqueta en negocios.\n- \"Los secretos de la comunicación efectiva\" (Leil Lowndes): Enfocado en mejorar la comunicación y las interacciones en el ámbito profesional.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Etiqueta y estilo en los negocios",
+    "autor_completo": "Pachter Barbara",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "La etiqueta en los negocios",
+      "autor": "María José Canel",
+      "razon": "Aborda el tema de la etiqueta y el comportamiento profesional en entornos empresariales."
+    },
+    {
+      "titulo": "Cómo ganar amigos e influir sobre las personas",
+      "autor": "Dale Carnegie",
+      "razon": "Aunque no es exclusivamente sobre etiqueta, trata sobre las relaciones interpersonales y la comunicación efectiva en el ámbito profesional."
+    },
+    {
+      "titulo": "El arte de la guerra",
+      "autor": "Sun Tzu",
+      "razon": "Aunque es un texto antiguo, se aplica a la estrategia y comportamiento en situaciones competitivas, similar a la etiqueta en negocios."
+    },
+    {
+      "titulo": "Los secretos de la comunicación efectiva",
+      "autor": "Leil Lowndes",
+      "razon": "Enfocado en mejorar la comunicación y las interacciones en el ámbito profesional."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 644,
+  "cached_at": "2026-04-19T22:22:39.511Z"
+}

@@ -1,0 +1,47 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEl impacto de la tecnología y la inteligencia artificial en la sociedad, la democracia y la identidad humana.\n\nVOZ INFERIDA:\nAnalítica, reflexiva y provocativa, con un enfoque en la historia y la filosofía contemporánea.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Sapiens: De animales a dioses\" (Yuval Noah Harari): Escrito por el mismo autor, trata sobre la historia de la humanidad y su evolución.\n- \"21 lecciones para el siglo XXI\" (Yuval Noah Harari): Otro libro del mismo autor que aborda temas contemporáneos y futuros desafíos de la humanidad.\n- \"El futuro de la humanidad\" (Michio Kaku): Explora el futuro de la humanidad y la tecnología, similar en su enfoque hacia el impacto de la tecnología en la sociedad.\n- \"La cuarta revolución industrial\" (Klaus Schwab): Analiza cómo la tecnología está transformando nuestras vidas y la economía, tocando temas de democracia y control.\n- \"La sociedad de la transparencia\" (Byung-Chul Han): Reflexiona sobre la vigilancia y el control en la era digital, temas que pueden relacionarse con el contexto del libro buscado.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.44000000000000006,
+  "verified_identity": {
+    "titulo_real": "Homo Deus",
+    "autor_completo": "Yuval Noah Harari",
+    "año": null
+  },
+  "inference_confidence": 0.8,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Sapiens: De animales a dioses",
+      "autor": "Yuval Noah Harari",
+      "razon": "Escrito por el mismo autor, trata sobre la historia de la humanidad y su evolución."
+    },
+    {
+      "titulo": "21 lecciones para el siglo XXI",
+      "autor": "Yuval Noah Harari",
+      "razon": "Otro libro del mismo autor que aborda temas contemporáneos y futuros desafíos de la humanidad."
+    },
+    {
+      "titulo": "El futuro de la humanidad",
+      "autor": "Michio Kaku",
+      "razon": "Explora el futuro de la humanidad y la tecnología, similar en su enfoque hacia el impacto de la tecnología en la sociedad."
+    },
+    {
+      "titulo": "La cuarta revolución industrial",
+      "autor": "Klaus Schwab",
+      "razon": "Analiza cómo la tecnología está transformando nuestras vidas y la economía, tocando temas de democracia y control."
+    },
+    {
+      "titulo": "La sociedad de la transparencia",
+      "autor": "Byung-Chul Han",
+      "razon": "Reflexiona sobre la vigilancia y el control en la era digital, temas que pueden relacionarse con el contexto del libro buscado."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.80"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 645,
+  "cached_at": "2026-04-19T22:21:45.500Z"
+}

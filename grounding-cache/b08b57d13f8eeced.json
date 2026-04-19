@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nSuperación personal y transformación hacia el éxito en la vida cotidiana, con un enfoque en la motivación y el desarrollo de habilidades.\n\nVOZ INFERIDA:\nConversacional y motivacional, posiblemente con un toque humorístico y accesible, dirigido a un público amplio.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Los secretos de la mente millonaria\" (T. Harv Eker): Ambos libros abordan el desarrollo personal y la superación de obstáculos en la vida.\n- \"El monje que vendió su Ferrari\" (Robin Sharma): Se centra en la transformación personal y la búsqueda del éxito.\n- \"Cómo ganar amigos e influir sobre las personas\" (Dale Carnegie): Trata sobre habilidades interpersonales y el éxito en la vida personal y profesional.\n- \"Piense y hágase rico\" (Napoleon Hill): Explora la mentalidad necesaria para alcanzar el éxito y la prosperidad.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Superpoderes del éxito para gente normal",
+    "autor_completo": "Mago More",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Los secretos de la mente millonaria",
+      "autor": "T. Harv Eker",
+      "razon": "Ambos libros abordan el desarrollo personal y la superación de obstáculos en la vida."
+    },
+    {
+      "titulo": "El monje que vendió su Ferrari",
+      "autor": "Robin Sharma",
+      "razon": "Se centra en la transformación personal y la búsqueda del éxito."
+    },
+    {
+      "titulo": "Cómo ganar amigos e influir sobre las personas",
+      "autor": "Dale Carnegie",
+      "razon": "Trata sobre habilidades interpersonales y el éxito en la vida personal y profesional."
+    },
+    {
+      "titulo": "Piense y hágase rico",
+      "autor": "Napoleon Hill",
+      "razon": "Explora la mentalidad necesaria para alcanzar el éxito y la prosperidad."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 612,
+  "cached_at": "2026-04-19T22:16:33.474Z"
+}

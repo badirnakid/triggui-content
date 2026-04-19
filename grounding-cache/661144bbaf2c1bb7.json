@@ -1,0 +1,47 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa aceptación del riesgo y la incertidumbre como elementos esenciales para el éxito y la comprensión del mundo.\n\nVOZ INFERIDA:\nProvocadora y analítica, con un enfoque en la crítica social y la filosofía práctica.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El cisne negro\" (Nassim Nicholas Taleb): Escrito por el mismo autor, trata sobre la incertidumbre y los eventos impredecibles que afectan nuestras vidas.\n- \"Antifrágil\" (Nassim Nicholas Taleb): También del mismo autor, explora cómo algunas cosas se benefician del caos y la volatilidad.\n- \"Thinking, Fast and Slow\" (Daniel Kahneman): Aborda la toma de decisiones y cómo los sesgos cognitivos influyen en nuestras elecciones.\n- \"Freakonomics\" (Steven D. Levitt y Stephen J. Dubner): Analiza la economía desde una perspectiva poco convencional, similar a la forma en que Taleb desafía el pensamiento tradicional.\n- \"La lógica del sentido\" (Gilles Deleuze): Aunque más filosófico, también explora la complejidad de la vida y la percepción del sentido en el mundo.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Jugarse la piel",
+    "autor_completo": "Nassim Nicholas Taleb",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El cisne negro",
+      "autor": "Nassim Nicholas Taleb",
+      "razon": "Escrito por el mismo autor, trata sobre la incertidumbre y los eventos impredecibles que afectan nuestras vidas."
+    },
+    {
+      "titulo": "Antifrágil",
+      "autor": "Nassim Nicholas Taleb",
+      "razon": "También del mismo autor, explora cómo algunas cosas se benefician del caos y la volatilidad."
+    },
+    {
+      "titulo": "Thinking, Fast and Slow",
+      "autor": "Daniel Kahneman",
+      "razon": "Aborda la toma de decisiones y cómo los sesgos cognitivos influyen en nuestras elecciones."
+    },
+    {
+      "titulo": "Freakonomics",
+      "autor": "Steven D. Levitt y Stephen J. Dubner",
+      "razon": "Analiza la economía desde una perspectiva poco convencional, similar a la forma en que Taleb desafía el pensamiento tradicional."
+    },
+    {
+      "titulo": "La lógica del sentido",
+      "autor": "Gilles Deleuze",
+      "razon": "Aunque más filosófico, también explora la complejidad de la vida y la percepción del sentido en el mundo."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 695,
+  "cached_at": "2026-04-19T22:16:59.115Z"
+}

@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEl libro probablemente trata sobre técnicas de ventas, manejo del rechazo y estrategias para influir y persuadir a los clientes, con un enfoque práctico y motivacional.\n\nVOZ INFERIDA:\nLa voz del autor probablemente es directa, motivacional y orientada a resultados, con un enfoque en la autoayuda y el desarrollo personal en el contexto de las ventas.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"La venta desafiante\" (Matthew Dixon y Brent Adamson): Aborda técnicas de ventas modernas y cómo desafiar al cliente para cerrar ventas efectivas.\n- \"Cómo ganar amigos e influir sobre las personas\" (Dale Carnegie): Se centra en la persuasión y la influencia, habilidades clave en el arte de vender.\n- \"Vender es humano\" (Daniel H. Pink): Explora la naturaleza de la venta en la vida cotidiana y cómo todos somos vendedores en diferentes contextos.\n- \"El arte de cerrar la venta\" (Brian Tracy): Enfocado en estrategias efectivas para cerrar ventas y manejar objeciones.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Vendes o vendes",
+    "autor_completo": "Grant Cardone",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "La venta desafiante",
+      "autor": "Matthew Dixon y Brent Adamson",
+      "razon": "Aborda técnicas de ventas modernas y cómo desafiar al cliente para cerrar ventas efectivas."
+    },
+    {
+      "titulo": "Cómo ganar amigos e influir sobre las personas",
+      "autor": "Dale Carnegie",
+      "razon": "Se centra en la persuasión y la influencia, habilidades clave en el arte de vender."
+    },
+    {
+      "titulo": "Vender es humano",
+      "autor": "Daniel H. Pink",
+      "razon": "Explora la naturaleza de la venta en la vida cotidiana y cómo todos somos vendedores en diferentes contextos."
+    },
+    {
+      "titulo": "El arte de cerrar la venta",
+      "autor": "Brian Tracy",
+      "razon": "Enfocado en estrategias efectivas para cerrar ventas y manejar objeciones."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 698,
+  "cached_at": "2026-04-19T22:14:37.888Z"
+}

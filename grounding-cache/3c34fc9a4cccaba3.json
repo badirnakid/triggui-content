@@ -1,0 +1,47 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nTransformación personal y espiritualidad a través de la filosofía oriental, específicamente el Taoísmo.\n\nVOZ INFERIDA:\nReflexiva y motivacional, con un enfoque en la autoayuda y el crecimiento personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El Tao de la Física\" (Fritjof Capra): Explora la relación entre la filosofía oriental y la física moderna, similar a la interpretación de Dyer sobre el Tao.\n- \"El poder del ahora\" (Eckhart Tolle): Se centra en la transformación personal y la espiritualidad, resonando con el enfoque de Dyer sobre el cambio de pensamiento.\n- \"Despierta tu héroe interior\" (Victor Hugo): Aborda la transformación personal y el autoconocimiento, temas que también se encuentran en la obra de Dyer.\n- \"Los cuatro acuerdos\" (Don Miguel Ruiz): Ofrece principios de vida que promueven el cambio personal y la paz interior, en línea con el mensaje de Dyer.\n- \"El camino del artista\" (Julia Cameron): Fomenta la autoexploración y el crecimiento personal, similar al enfoque de Dyer en la transformación a través de la meditación y la reflexión.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Cambie Sus Pensamientos Cambie Su Vida",
+    "autor_completo": "Dr. Wayne W. Dyer",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El Tao de la Física",
+      "autor": "Fritjof Capra",
+      "razon": "Explora la relación entre la filosofía oriental y la física moderna, similar a la interpretación de Dyer sobre el Tao."
+    },
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Se centra en la transformación personal y la espiritualidad, resonando con el enfoque de Dyer sobre el cambio de pensamiento."
+    },
+    {
+      "titulo": "Despierta tu héroe interior",
+      "autor": "Victor Hugo",
+      "razon": "Aborda la transformación personal y el autoconocimiento, temas que también se encuentran en la obra de Dyer."
+    },
+    {
+      "titulo": "Los cuatro acuerdos",
+      "autor": "Don Miguel Ruiz",
+      "razon": "Ofrece principios de vida que promueven el cambio personal y la paz interior, en línea con el mensaje de Dyer."
+    },
+    {
+      "titulo": "El camino del artista",
+      "autor": "Julia Cameron",
+      "razon": "Fomenta la autoexploración y el crecimiento personal, similar al enfoque de Dyer en la transformación a través de la meditación y la reflexión."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 872,
+  "cached_at": "2026-04-19T22:20:50.488Z"
+}

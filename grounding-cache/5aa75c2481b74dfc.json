@@ -1,0 +1,47 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nTransformación personal, búsqueda de la felicidad y realización de potencial interno.\n\nVOZ INFERIDA:\nInspiracional, reflexivo y motivacional, con un enfoque en lecciones prácticas y fábulas.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El monje que vendió su Ferrari\" (Robin Sharma): Es el libro anterior en la serie que trata sobre la transformación personal y la búsqueda de la felicidad.\n- \"Los secretos de la mente millonaria\" (T. Harv Eker): Aborda temas de desarrollo personal y mentalidad para alcanzar el éxito y la prosperidad.\n- \"La magia del orden\" (Marie Kondo): Aunque se centra en la organización, también trata sobre la transformación personal y la búsqueda de una vida más plena.\n- \"El poder del ahora\" (Eckhart Tolle): Explora la importancia de vivir en el presente y encontrar la paz interior.\n- \"Despierta tu héroe interior\" (Victor Hugo Manzanilla): Se enfoca en el autodescubrimiento y el desarrollo personal.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Descubre tu destino con el monje que vendió su Ferrari",
+    "autor_completo": "Robin Sharma",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El monje que vendió su Ferrari",
+      "autor": "Robin Sharma",
+      "razon": "Es el libro anterior en la serie que trata sobre la transformación personal y la búsqueda de la felicidad."
+    },
+    {
+      "titulo": "Los secretos de la mente millonaria",
+      "autor": "T. Harv Eker",
+      "razon": "Aborda temas de desarrollo personal y mentalidad para alcanzar el éxito y la prosperidad."
+    },
+    {
+      "titulo": "La magia del orden",
+      "autor": "Marie Kondo",
+      "razon": "Aunque se centra en la organización, también trata sobre la transformación personal y la búsqueda de una vida más plena."
+    },
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Explora la importancia de vivir en el presente y encontrar la paz interior."
+    },
+    {
+      "titulo": "Despierta tu héroe interior",
+      "autor": "Victor Hugo Manzanilla",
+      "razon": "Se enfoca en el autodescubrimiento y el desarrollo personal."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 855,
+  "cached_at": "2026-04-19T22:18:55.702Z"
+}

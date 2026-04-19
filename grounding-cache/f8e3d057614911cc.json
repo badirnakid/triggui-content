@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nSuperación personal, lucha contra adversidades, vida de un atleta en el ojo público.\n\nVOZ INFERIDA:\nReflexiva, honesta y emocional, con un enfoque en la vulnerabilidad y la resiliencia.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Open\" (Andre Agassi): Es una autobiografía de un atleta que habla sobre sus luchas personales y la presión de ser una figura pública.\n- \"I Am Zlatan Ibrahimović\" (Zlatan Ibrahimović): Una autobiografía que explora la vida de un deportista famoso, incluyendo sus desafíos y triunfos.\n- \"Becoming a Champion\" (Michael Johnson): Un relato sobre la vida de un atleta y las dificultades que enfrenta en su carrera.\n- \"The Long Walk to Freedom\" (Nelson Mandela): Aunque no es un libro de deportes, trata sobre la lucha personal y la superación, similar a las experiencias de Phelps.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Beneath the Surface",
+    "autor_completo": "Michael Phelps",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Open",
+      "autor": "Andre Agassi",
+      "razon": "Es una autobiografía de un atleta que habla sobre sus luchas personales y la presión de ser una figura pública."
+    },
+    {
+      "titulo": "I Am Zlatan Ibrahimović",
+      "autor": "Zlatan Ibrahimović",
+      "razon": "Una autobiografía que explora la vida de un deportista famoso, incluyendo sus desafíos y triunfos."
+    },
+    {
+      "titulo": "Becoming a Champion",
+      "autor": "Michael Johnson",
+      "razon": "Un relato sobre la vida de un atleta y las dificultades que enfrenta en su carrera."
+    },
+    {
+      "titulo": "The Long Walk to Freedom",
+      "autor": "Nelson Mandela",
+      "razon": "Aunque no es un libro de deportes, trata sobre la lucha personal y la superación, similar a las experiencias de Phelps."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 621,
+  "cached_at": "2026-04-19T22:19:22.270Z"
+}

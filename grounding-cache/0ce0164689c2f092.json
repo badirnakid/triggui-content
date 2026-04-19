@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEstrategias de ventas y desarrollo personal para alcanzar el éxito financiero y profesional.\n\nVOZ INFERIDA:\nMotivacional y directo, con un enfoque práctico en la mejora personal y profesional.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Vender es humano\" (Daniel H. Pink): Explora la naturaleza de la venta y cómo todos somos vendedores en diferentes aspectos de la vida.\n- \"La venta desafiante\" (Matthew Dixon y Brent Adamson): Ofrece estrategias sobre cómo desafiar a los clientes y ser un vendedor más efectivo.\n- \"Cómo ganar amigos e influir sobre las personas\" (Dale Carnegie): Clásico sobre habilidades interpersonales que son esenciales para la venta y el éxito personal.\n- \"Los secretos de la mente millonaria\" (T. Harv Eker): Aborda la mentalidad necesaria para alcanzar el éxito financiero y personal.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Si no eres el primero; Eres el último",
+    "autor_completo": "Grant Cardone",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Vender es humano",
+      "autor": "Daniel H. Pink",
+      "razon": "Explora la naturaleza de la venta y cómo todos somos vendedores en diferentes aspectos de la vida."
+    },
+    {
+      "titulo": "La venta desafiante",
+      "autor": "Matthew Dixon y Brent Adamson",
+      "razon": "Ofrece estrategias sobre cómo desafiar a los clientes y ser un vendedor más efectivo."
+    },
+    {
+      "titulo": "Cómo ganar amigos e influir sobre las personas",
+      "autor": "Dale Carnegie",
+      "razon": "Clásico sobre habilidades interpersonales que son esenciales para la venta y el éxito personal."
+    },
+    {
+      "titulo": "Los secretos de la mente millonaria",
+      "autor": "T. Harv Eker",
+      "razon": "Aborda la mentalidad necesaria para alcanzar el éxito financiero y personal."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 654,
+  "cached_at": "2026-04-19T22:18:26.077Z"
+}

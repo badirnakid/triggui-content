@@ -1,0 +1,47 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa anticipación y el uso de tecnología predictiva en los negocios para obtener ventaja competitiva.\n\nVOZ INFERIDA:\nAnalítica y empresarial, con un enfoque en la innovación y la tecnología.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"The Innovator's Dilemma\" (Clayton M. Christensen): Explora cómo las empresas pueden anticipar cambios en el mercado y adaptarse a nuevas tecnologías.\n- \"Competing on Analytics: The New Science of Winning\" (Thomas H. Davenport y Jeanne G. Harris): Se centra en cómo las empresas utilizan análisis de datos para prever tendencias y mejorar su competitividad.\n- \"Predictably Irrational\" (Dan Ariely): Investiga cómo las decisiones humanas son predecibles y cómo esto puede ser utilizado en el ámbito empresarial.\n- \"The Lean Startup\" (Eric Ries): Propone un enfoque innovador para el desarrollo de negocios que incluye la anticipación de necesidades del cliente.\n- \"Big Data: A Revolution That Will Transform How We Live, Work, and Think\" (Viktor Mayer-Schönberger y Kenneth Cukier): Analiza cómo el uso de grandes datos puede cambiar la forma en que las empresas operan y toman decisiones.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "The Two-Second Advantage",
+    "autor_completo": "Vivek Ranadive & Kevin Maney",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "The Innovator's Dilemma",
+      "autor": "Clayton M. Christensen",
+      "razon": "Explora cómo las empresas pueden anticipar cambios en el mercado y adaptarse a nuevas tecnologías."
+    },
+    {
+      "titulo": "Competing on Analytics: The New Science of Winning",
+      "autor": "Thomas H. Davenport y Jeanne G. Harris",
+      "razon": "Se centra en cómo las empresas utilizan análisis de datos para prever tendencias y mejorar su competitividad."
+    },
+    {
+      "titulo": "Predictably Irrational",
+      "autor": "Dan Ariely",
+      "razon": "Investiga cómo las decisiones humanas son predecibles y cómo esto puede ser utilizado en el ámbito empresarial."
+    },
+    {
+      "titulo": "The Lean Startup",
+      "autor": "Eric Ries",
+      "razon": "Propone un enfoque innovador para el desarrollo de negocios que incluye la anticipación de necesidades del cliente."
+    },
+    {
+      "titulo": "Big Data: A Revolution That Will Transform How We Live, Work, and Think",
+      "autor": "Viktor Mayer-Schönberger y Kenneth Cukier",
+      "razon": "Analiza cómo el uso de grandes datos puede cambiar la forma en que las empresas operan y toman decisiones."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 806,
+  "cached_at": "2026-04-19T22:15:34.574Z"
+}

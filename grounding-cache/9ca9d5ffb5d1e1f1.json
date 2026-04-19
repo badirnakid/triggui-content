@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nPsicología de ventas y manejo de objeciones en un contexto de compradores informados y escépticos.\n\nVOZ INFERIDA:\nPráctica y orientada a resultados, con un enfoque en estrategias efectivas para la venta.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"Vender es humano\" (Daniel H. Pink): Explora la psicología de la venta y cómo influir en los compradores.\n- \"La psicología de la venta\" (Brian Tracy): Ofrece estrategias sobre cómo manejar objeciones y cerrar ventas.\n- \"Cómo ganar amigos e influir sobre las personas\" (Dale Carnegie): Enfocado en la comunicación y persuasión, relevante para manejar objeciones.\n- \"El arte de cerrar la venta\" (Brian Tracy): Se centra en técnicas de cierre y manejo de objeciones en ventas.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Objections",
+    "autor_completo": "Jeb Blount",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "Vender es humano",
+      "autor": "Daniel H. Pink",
+      "razon": "Explora la psicología de la venta y cómo influir en los compradores."
+    },
+    {
+      "titulo": "La psicología de la venta",
+      "autor": "Brian Tracy",
+      "razon": "Ofrece estrategias sobre cómo manejar objeciones y cerrar ventas."
+    },
+    {
+      "titulo": "Cómo ganar amigos e influir sobre las personas",
+      "autor": "Dale Carnegie",
+      "razon": "Enfocado en la comunicación y persuasión, relevante para manejar objeciones."
+    },
+    {
+      "titulo": "El arte de cerrar la venta",
+      "autor": "Brian Tracy",
+      "razon": "Se centra en técnicas de cierre y manejo de objeciones en ventas."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 568,
+  "cached_at": "2026-04-19T22:15:04.962Z"
+}

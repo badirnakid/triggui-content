@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa transformación personal a través de la aceptación y el cuestionamiento de las creencias limitantes.\n\nVOZ INFERIDA:\nReflexiva y orientada al autoconocimiento, con un enfoque en la espiritualidad y el crecimiento personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El poder del ahora\" (Eckhart Tolle): Ambos libros abordan la importancia de vivir en el presente y cómo nuestras creencias afectan nuestra percepción de la realidad.\n- \"Los cuatro acuerdos\" (Don Miguel Ruiz): Se centra en la transformación personal y cómo nuestras creencias limitantes pueden causar sufrimiento.\n- \"Despierta tu héroe interior\" (Victor Hugo Manzanilla): Explora el autoconocimiento y la superación personal, similar a la propuesta de Byron Katie.\n- \"La sabiduría de la inseguridad\" (Alan Watts): Ambos autores reflexionan sobre la naturaleza de la mente y cómo nuestras percepciones influyen en nuestra experiencia de vida.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Amar lo que es",
+    "autor_completo": "Byron Katie",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Ambos libros abordan la importancia de vivir en el presente y cómo nuestras creencias afectan nuestra percepción de la realidad."
+    },
+    {
+      "titulo": "Los cuatro acuerdos",
+      "autor": "Don Miguel Ruiz",
+      "razon": "Se centra en la transformación personal y cómo nuestras creencias limitantes pueden causar sufrimiento."
+    },
+    {
+      "titulo": "Despierta tu héroe interior",
+      "autor": "Victor Hugo Manzanilla",
+      "razon": "Explora el autoconocimiento y la superación personal, similar a la propuesta de Byron Katie."
+    },
+    {
+      "titulo": "La sabiduría de la inseguridad",
+      "autor": "Alan Watts",
+      "razon": "Ambos autores reflexionan sobre la naturaleza de la mente y cómo nuestras percepciones influyen en nuestra experiencia de vida."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 610,
+  "cached_at": "2026-04-19T22:20:21.675Z"
+}

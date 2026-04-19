@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEl libro probablemente trata sobre el crecimiento personal, el perdón y la búsqueda de la paz mental a través de la liberación de emociones negativas.\n\nVOZ INFERIDA:\nLa voz del autor parece ser reflexiva y motivadora, orientada a la autoayuda y la sanación emocional.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El poder del ahora\" (Eckhart Tolle): Ambos libros abordan la importancia de vivir en el presente y dejar ir pensamientos negativos.\n- \"Los cuatro acuerdos\" (Don Miguel Ruiz): Se centra en la transformación personal y la búsqueda de la paz interior a través de principios sencillos.\n- \"La maestría del amor\" (Don Miguel Ruiz): Explora el amor y el perdón como herramientas para la sanación emocional.\n- \"Despierta tu héroe interior\" (Victor Hugo Manzanilla): Trata sobre el crecimiento personal y la superación de obstáculos emocionales.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Dejar ir",
+    "autor_completo": "David R. Hawkins",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Ambos libros abordan la importancia de vivir en el presente y dejar ir pensamientos negativos."
+    },
+    {
+      "titulo": "Los cuatro acuerdos",
+      "autor": "Don Miguel Ruiz",
+      "razon": "Se centra en la transformación personal y la búsqueda de la paz interior a través de principios sencillos."
+    },
+    {
+      "titulo": "La maestría del amor",
+      "autor": "Don Miguel Ruiz",
+      "razon": "Explora el amor y el perdón como herramientas para la sanación emocional."
+    },
+    {
+      "titulo": "Despierta tu héroe interior",
+      "autor": "Victor Hugo Manzanilla",
+      "razon": "Trata sobre el crecimiento personal y la superación de obstáculos emocionales."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 654,
+  "cached_at": "2026-04-19T22:14:08.696Z"
+}

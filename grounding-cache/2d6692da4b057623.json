@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa interconexión entre la vida, la muerte, la ciencia y la espiritualidad, así como la búsqueda de un nuevo paradigma de bienestar.\n\nVOZ INFERIDA:\nReflexiva y filosófica, con un enfoque integrador que busca conectar diferentes aspectos de la existencia humana.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"La muerte y la vida\" (Jorge Luis Borges): Explora la relación entre la muerte y la existencia, tocando temas filosóficos y espirituales.\n- \"El arte de morir\" (Julián Carrón): Reflexiona sobre la muerte desde una perspectiva espiritual y existencial.\n- \"La vida después de la muerte\" (Deepak Chopra): Aborda la conexión entre la ciencia y la espiritualidad en el contexto de la vida y la muerte.\n- \"La ciencia y la espiritualidad\" (Fritjof Capra): Analiza la intersección entre ciencia y espiritualidad, similar al enfoque del libro buscado.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Eutanasia para vivir",
+    "autor_completo": "Martín Achirica",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "La muerte y la vida",
+      "autor": "Jorge Luis Borges",
+      "razon": "Explora la relación entre la muerte y la existencia, tocando temas filosóficos y espirituales."
+    },
+    {
+      "titulo": "El arte de morir",
+      "autor": "Julián Carrón",
+      "razon": "Reflexiona sobre la muerte desde una perspectiva espiritual y existencial."
+    },
+    {
+      "titulo": "La vida después de la muerte",
+      "autor": "Deepak Chopra",
+      "razon": "Aborda la conexión entre la ciencia y la espiritualidad en el contexto de la vida y la muerte."
+    },
+    {
+      "titulo": "La ciencia y la espiritualidad",
+      "autor": "Fritjof Capra",
+      "razon": "Analiza la intersección entre ciencia y espiritualidad, similar al enfoque del libro buscado."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 633,
+  "cached_at": "2026-04-19T22:22:12.650Z"
+}

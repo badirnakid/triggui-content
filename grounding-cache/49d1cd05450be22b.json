@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nEl libro probablemente explora la relación entre la conciencia, las emociones y el poder personal, enfatizando la importancia de alinearse con un poder más elevado en lugar de depender de la fuerza personal.\n\nVOZ INFERIDA:\nLa voz del autor parece ser reflexiva y orientada hacia el autoconocimiento, con un enfoque en la espiritualidad y el desarrollo personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El poder del ahora\" (Eckhart Tolle): Ambos libros abordan la conciencia y el crecimiento personal, centrándose en la espiritualidad y la transformación interna.\n- \"Los secretos de la mente millonaria\" (T. Harv Eker): Explora la relación entre la mentalidad y el éxito, similar a la distinción entre poder y fuerza en el contexto personal.\n- \"Despierta tu héroe interior\" (Victor Hugo Manzanilla): Se enfoca en el autoconocimiento y el desarrollo personal, tocando temas de poder interno.\n- \"La sabiduría de las emociones\" (Norberto Levy): Trata sobre la comprensión de las emociones y su impacto en la vida, alineándose con el enfoque del libro buscado.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "El poder frente a la fuerza",
+    "autor_completo": "David R. Hawkins",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "razon": "Ambos libros abordan la conciencia y el crecimiento personal, centrándose en la espiritualidad y la transformación interna."
+    },
+    {
+      "titulo": "Los secretos de la mente millonaria",
+      "autor": "T. Harv Eker",
+      "razon": "Explora la relación entre la mentalidad y el éxito, similar a la distinción entre poder y fuerza en el contexto personal."
+    },
+    {
+      "titulo": "Despierta tu héroe interior",
+      "autor": "Victor Hugo Manzanilla",
+      "razon": "Se enfoca en el autoconocimiento y el desarrollo personal, tocando temas de poder interno."
+    },
+    {
+      "titulo": "La sabiduría de las emociones",
+      "autor": "Norberto Levy",
+      "razon": "Trata sobre la comprensión de las emociones y su impacto en la vida, alineándose con el enfoque del libro buscado."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_results",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 727,
+  "cached_at": "2026-04-19T22:16:05.807Z"
+}

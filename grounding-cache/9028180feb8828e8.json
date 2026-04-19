@@ -1,0 +1,42 @@
+{
+  "ground_truth": "TEMA INFERIDO (el modelo no conoce este libro directamente, infiere desde similares):\n\nLa exploración de la condición humana, incluyendo la infancia, el amor, el miedo y la búsqueda de significado en la vida.\n\nVOZ INFERIDA:\nReflexiva y analítica, con un enfoque en la psicología y el desarrollo personal.\n\nLIBROS SIMILARES QUE COMPARTEN ADN CON ESTE:\n- \"El hombre en busca de sentido\" (Viktor Frankl): Explora la condición humana y la búsqueda de significado en la vida.\n- \"Inteligencia emocional\" (Daniel Goleman): Aborda aspectos de la psicología humana y cómo nuestras emociones influyen en nuestro comportamiento.\n- \"Los hombres son de Marte, las mujeres son de Venus\" (John Gray): Analiza las diferencias en las relaciones humanas y la comunicación entre géneros.\n- \"La sombra del viento\" (Carlos Ruiz Zafón): Aunque es ficción, trata sobre las experiencias humanas y su impacto en la vida de las personas.",
+  "grounding_source": "model_inference",
+  "book_identity_confidence": 0.385,
+  "verified_identity": {
+    "titulo_real": "Lo que nos pasa por dentro",
+    "autor_completo": "Eduardo Punset",
+    "año": null
+  },
+  "inference_confidence": 0.7,
+  "book_known_directly": false,
+  "similar_books": [
+    {
+      "titulo": "El hombre en busca de sentido",
+      "autor": "Viktor Frankl",
+      "razon": "Explora la condición humana y la búsqueda de significado en la vida."
+    },
+    {
+      "titulo": "Inteligencia emocional",
+      "autor": "Daniel Goleman",
+      "razon": "Aborda aspectos de la psicología humana y cómo nuestras emociones influyen en nuestro comportamiento."
+    },
+    {
+      "titulo": "Los hombres son de Marte, las mujeres son de Venus",
+      "autor": "John Gray",
+      "razon": "Analiza las diferencias en las relaciones humanas y la comunicación entre géneros."
+    },
+    {
+      "titulo": "La sombra del viento",
+      "autor": "Carlos Ruiz Zafón",
+      "razon": "Aunque es ficción, trata sobre las experiencias humanas y su impacto en la vida de las personas."
+    }
+  ],
+  "resolution_path": [
+    "tier2a_miss_http_429",
+    "tier2b_miss_no_subjects",
+    "tier3_conf_0.70"
+  ],
+  "tier_reached": 3,
+  "cost_tokens": 632,
+  "cached_at": "2026-04-19T22:19:54.251Z"
+}
