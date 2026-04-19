@@ -1,14 +1,9 @@
 name: Triggui Nucleus — Manual (con formulario)
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Este workflow te deja correr el pipeline cuando tú quieras, con un
-# formulario guiado. Todos los campos son OPCIONALES.
+# Workflow manual con formulario. Todos los campos opcionales.
 #
-# Si no llenas nada: se procesan 20 libros random, cronobiología automática,
-# sin lente. El libro manda completamente.
-#
-# Si llenas algo: se inyecta al prompt del extractor como sesgo silencioso.
-# El lector JAMÁS ve lo que escribes aquí.
+# v2 FIX: git add manual para que efectivamente commitee los cambios.
 # ═══════════════════════════════════════════════════════════════════════════
 
 on:
@@ -20,9 +15,9 @@ on:
         default: 'shadow_batch'
         type: choice
         options:
-          - shadow_batch   # 20 libros random → contenido.shadow.json (SEGURO)
-          - production_batch  # 20 libros random → contenido.json (TOCA PRODUCCIÓN)
-          - single_book    # Un libro específico
+          - shadow_batch
+          - production_batch
+          - single_book
 
       single_titulo:
         description: '[SINGLE] Título del libro (solo si modo=single_book)'
@@ -35,22 +30,22 @@ on:
         type: string
 
       lens:
-        description: '🔍 LENTE del día — qué tienes hoy en la cabeza. Vacío = sin lente. Ej: "función de recompensa y teoría de juegos"'
+        description: '🔍 LENTE del día — qué tienes hoy en la cabeza. Vacío = sin lente.'
         required: false
         type: string
 
       visual_intent:
-        description: '🎨 INTENCIÓN VISUAL — lenguaje libre. Vacío = libro manda. Ej: "modo oscuro con esquinas suaves"'
+        description: '🎨 INTENCIÓN VISUAL — lenguaje libre. Vacío = libro manda.'
         required: false
         type: string
 
       book_context:
-        description: '📖 CONTEXTO DEL LIBRO — solo para SINGLE. Sesga QUÉ parte del libro se activa. Vacío = libro manda.'
+        description: '📖 CONTEXTO DEL LIBRO — solo para SINGLE. Vacío = libro manda.'
         required: false
         type: string
 
       seed:
-        description: '🎲 SEED opcional — número para reproducir la misma selección. Vacío = random.'
+        description: '🎲 SEED opcional — número para reproducir selección.'
         required: false
         type: string
 
@@ -87,18 +82,15 @@ jobs:
 
       - name: Install dependencies
         working-directory: experiments/nucleus
-        run: npm ci || npm install
+        run: npm install
 
-      - name: Pull latest (evita conflictos)
-        run: |
-          git config pull.rebase true
-          git pull origin main --rebase --autostash || true
-
-      - name: Linkear CSV (para que el pipeline encuentre libros_master.csv)
+      - name: Linkear CSV
         working-directory: experiments/nucleus
         run: |
           mkdir -p data
           ln -sf "$GITHUB_WORKSPACE/data/libros_master.csv" data/libros_master.csv
+          echo "CSV linkeado. Muestra:"
+          head -3 data/libros_master.csv || echo "CSV no accesible"
 
       - name: Ejecutar pipeline
         working-directory: experiments/nucleus
@@ -108,41 +100,132 @@ jobs:
           SINGLE_BOOK: ${{ inputs.modo == 'single_book' && format('{{"titulo":"{0}","autor":"{1}"}}', inputs.single_titulo, inputs.single_autor) || '' }}
         run: node build-contenido-nucleus.js
 
-      - name: Mover outputs a la raíz del repo
+      - name: Mover outputs a raíz del repo
         working-directory: experiments/nucleus
         run: |
+          echo "::group::Archivos generados en experiments/nucleus"
+          ls -la contenido*.json 2>/dev/null || echo "(sin archivos contenido*.json)"
+          ls -la inputs-history/ 2>/dev/null || echo "(sin inputs-history)"
+          ls -la metrics/ 2>/dev/null || echo "(sin metrics)"
+          echo "::endgroup::"
+
           if [ -f contenido.shadow.json ]; then
-            mv contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json"
+            mv -f contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json"
+            echo "✅ contenido.shadow.json movido a raíz"
           fi
           if [ -f contenido.json ] && [ "${{ inputs.modo }}" = "production_batch" ]; then
-            mv contenido.json "$GITHUB_WORKSPACE/contenido.json"
+            mv -f contenido.json "$GITHUB_WORKSPACE/contenido.json"
+            echo "✅ contenido.json movido a raíz (modo producción)"
           fi
           if [ -f contenido_edicion.json ]; then
-            mv contenido_edicion.json "$GITHUB_WORKSPACE/contenido_edicion.json"
+            mv -f contenido_edicion.json "$GITHUB_WORKSPACE/contenido_edicion.json"
+            echo "✅ contenido_edicion.json movido a raíz"
           fi
-          if [ -d inputs-history ]; then
+          if [ -d inputs-history ] && [ "$(ls -A inputs-history)" ]; then
             mkdir -p "$GITHUB_WORKSPACE/inputs-history"
-            cp -r inputs-history/* "$GITHUB_WORKSPACE/inputs-history/" 2>/dev/null || true
+            cp -rf inputs-history/. "$GITHUB_WORKSPACE/inputs-history/"
+            echo "✅ inputs-history copiado"
           fi
-          if [ -d metrics ]; then
+          if [ -d metrics ] && [ "$(ls -A metrics)" ]; then
             mkdir -p "$GITHUB_WORKSPACE/metrics"
-            cp -r metrics/* "$GITHUB_WORKSPACE/metrics/" 2>/dev/null || true
+            cp -rf metrics/. "$GITHUB_WORKSPACE/metrics/"
+            echo "✅ metrics copiado"
           fi
 
-      - name: Commit resultados
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          file_pattern: |
-            contenido.shadow.json
-            contenido.json
-            contenido_edicion.json
-            inputs-history/*.md
-            metrics/*.json
-          commit_message: "🌒 nucleus ${{ inputs.modo }} — ${{ inputs.lens && 'con lente' || 'sin lente' }}"
-          pull_options: '--rebase --autostash'
-          push_options: '--force-with-lease'
+          echo "::group::Archivos finales en raíz del repo"
+          cd "$GITHUB_WORKSPACE"
+          ls -la contenido*.json 2>/dev/null || echo "(sin archivos contenido*.json)"
+          ls -la inputs-history/ 2>/dev/null || echo "(sin inputs-history)"
+          ls -la metrics/ 2>/dev/null || echo "(sin metrics)"
+          echo "::endgroup::"
+
+      - name: Debug — estado git antes del commit
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          echo "::group::git status"
+          git status
+          echo "::endgroup::"
+          echo "::group::git diff --stat"
+          git diff --stat HEAD || true
+          echo "::endgroup::"
+
+      - name: Commit y push manual
+        working-directory: ${{ github.workspace }}
+        run: |
+          set -e
+
+          # Config git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Pull con rebase antes de add (evita conflictos con cron diario v9.7.4)
+          git pull origin main --rebase --autostash || echo "Pull falló, continúo"
+
+          # Add explícito archivo por archivo
+          ADDED_SOMETHING=false
+
+          for f in contenido.shadow.json contenido_edicion.json; do
+            if [ -f "$f" ]; then
+              git add "$f"
+              echo "Staged: $f"
+              ADDED_SOMETHING=true
+            fi
+          done
+
+          if [ "${{ inputs.modo }}" = "production_batch" ] && [ -f "contenido.json" ]; then
+            git add contenido.json
+            echo "Staged: contenido.json (modo producción)"
+            ADDED_SOMETHING=true
+          fi
+
+          if [ -d "inputs-history" ]; then
+            git add inputs-history/ || true
+            if git diff --cached --quiet -- inputs-history/; then
+              echo "No hay cambios en inputs-history"
+            else
+              echo "Staged: inputs-history/"
+              ADDED_SOMETHING=true
+            fi
+          fi
+
+          if [ -d "metrics" ]; then
+            git add metrics/ || true
+            if git diff --cached --quiet -- metrics/; then
+              echo "No hay cambios en metrics"
+            else
+              echo "Staged: metrics/"
+              ADDED_SOMETHING=true
+            fi
+          fi
+
+          # Verifica si hay algo staged
+          if git diff --cached --quiet; then
+            echo "⚠️  No hay cambios reales para commitear (contenido idéntico al anterior)"
+            echo "Esto es normal si corres el mismo libro dos veces con el mismo contexto"
+            exit 0
+          fi
+
+          # Commit
+          LENS_TAG="${{ inputs.lens && 'con-lente' || 'sin-lente' }}"
+          git commit -m "🌒 nucleus ${{ inputs.modo }} — $LENS_TAG"
+
+          # Push con retry en caso de race condition con otro workflow
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "✅ Push exitoso en intento $i"
+              break
+            else
+              echo "⚠️  Push falló en intento $i, pulling y reintentando..."
+              git pull origin main --rebase --autostash
+              if [ "$i" = "3" ]; then
+                echo "❌ Push falló 3 veces"
+                exit 1
+              fi
+            fi
+          done
 
       - name: Summary
+        if: always()
         run: |
           echo "## Triggui Nucleus Run — $(date -u +%Y-%m-%d-%H:%M)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -151,3 +234,10 @@ jobs:
           echo "**Visual intent:** ${{ inputs.visual_intent && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Book context:** ${{ inputs.book_context && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Seed:** ${{ inputs.seed || 'random' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f "$GITHUB_WORKSPACE/contenido_edicion.json" ]; then
+            echo "✅ contenido_edicion.json presente" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [ -f "$GITHUB_WORKSPACE/contenido.shadow.json" ]; then
+            echo "✅ contenido.shadow.json presente" >> $GITHUB_STEP_SUMMARY
+          fi
