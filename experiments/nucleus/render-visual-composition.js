@@ -9,6 +9,7 @@ import {
   ensureReadableContrast,
   deriveBorder,
   isValidHex,
+  normalizeHex,
   textContrastOn,
   densityToMultipliers,
   rhythmToMultipliers,
@@ -16,13 +17,15 @@ import {
 } from "./triggui-physics.js";
 
 export function composeVisual(visualSignature = {}) {
+  // Normalizar hex: el modelo puede devolver #RGB, #RGBA, #RRGGBB o #RRGGBBAA
+  // Nosotros canonizamos a #RRGGBB siempre.
   let palette = Array.isArray(visualSignature.palette) && visualSignature.palette.length === 4
-    ? visualSignature.palette.map((c) => (isValidHex(c) ? c : "#888888"))
-    : ["#888888", "#aaaaaa", "#cccccc", "#eeeeee"];
+    ? visualSignature.palette.map((c) => normalizeHex(c) || "#888888")
+    : ["#888888", "#AAAAAA", "#CCCCCC", "#EEEEEE"];
 
-  let accent = isValidHex(visualSignature.accent) ? visualSignature.accent : palette[0];
-  let paper = isValidHex(visualSignature.paper) ? visualSignature.paper : "#FFFFFF";
-  let ink = isValidHex(visualSignature.ink) ? visualSignature.ink : "#1A1A1A";
+  let accent = normalizeHex(visualSignature.accent) || palette[0];
+  let paper = normalizeHex(visualSignature.paper) || "#FFFFFF";
+  let ink = normalizeHex(visualSignature.ink) || "#1A1A1A";
 
   const readable = ensureReadableContrast(paper, ink);
   paper = readable.paper;
