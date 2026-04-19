@@ -48,8 +48,11 @@ async function judgeOne(openai, card, book, model) {
       ],
       response_format: JUDGE_SCHEMA
     });
+    const raw = chat.choices?.[0]?.message?.content || "{}";
+    let parsed = { verdict: "pagina", confidence: 0, reason: "judge_empty_response" };
+    try { parsed = { ...parsed, ...JSON.parse(raw) }; } catch { /* keep fallback */ }
     return {
-      ...JSON.parse(chat.choices[0].message.content),
+      ...parsed,
       elapsed_ms: Date.now() - t0,
       usage: chat.usage,
       error: null
