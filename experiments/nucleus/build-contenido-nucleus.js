@@ -169,7 +169,23 @@ async function processBook(book, inputs, inputsSnapshot) {
   const n = extraction.nucleus;
 
   console.log(`   ✓ Firma: ${n.visual_signature.typography_family}/${n.visual_signature.density}/${n.visual_signature.rhythm}/${n.visual_signature.genre_visual}`);
-  if (n.lens_relevance.applied) console.log(`   🔍 Lente aplicada: "${n.lens_relevance.reason}"`);
+
+  // Anclajes del libro (visibles en logs para verificar calidad)
+  if (n.book_grounding_anchors) {
+    const known = n.book_grounding_anchors.book_known ? "✓" : "⚠";
+    console.log(`   ${known} Book known: ${n.book_grounding_anchors.book_known}`);
+    const concepts = (n.book_grounding_anchors.concepts || []).slice(0, 3);
+    if (concepts.length) console.log(`   ⚓ Anchors: ${concepts.map(c => c.slice(0, 60)).join(" | ")}`);
+  }
+
+  // Análisis de lente (visible)
+  if (n.lens_analysis && n.lens_analysis.lens_provided) {
+    console.log(`   🔍 Lens decision: ${n.lens_analysis.decision}`);
+    console.log(`   🔍 Lens analysis: ${n.lens_analysis.analysis.slice(0, 120)}${n.lens_analysis.analysis.length > 120 ? "..." : ""}`);
+  }
+
+  if (n.lens_relevance.applied) console.log(`   ✅ Lente APLICADA al contenido`);
+  else if (n.lens_analysis?.lens_provided) console.log(`   ⚪ Lente NO aplicada: ${n.lens_relevance.reason.slice(0, 100)}`);
 
   // Voice judge con circuit breaker
   let voiceVerdict = await judgeBothVoices(openai, n.card_es, n.card_en, book, { model: CFG.model });
