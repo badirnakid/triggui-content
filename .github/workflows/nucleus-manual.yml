@@ -1,4 +1,4 @@
-name: Triggui Nucleus — Manual
+name: Triggui Nucleus v3 — Manual
 
 on:
   workflow_dispatch:
@@ -25,15 +25,15 @@ on:
         required: false
         type: string
       visual_intent:
-        description: '🎨 Intención visual. Vacío = libro manda.'
+        description: '🎨 Intención visual libre (no se usa en v3, el modelo elige numéricamente)'
         required: false
         type: string
       book_context:
-        description: '📖 Contexto específico del libro (solo SINGLE)'
+        description: '📖 Contexto específico del libro (Tier 1, tu curaduría gana)'
         required: false
         type: string
       seed:
-        description: '🎲 Seed opcional'
+        description: '🎲 Seed opcional para batch'
         required: false
         type: string
       crono_enabled:
@@ -43,7 +43,7 @@ on:
         type: boolean
 
 concurrency:
-  group: triggui-nucleus-manual
+  group: triggui-nucleus-v3-manual
   cancel-in-progress: false
 
 permissions:
@@ -52,7 +52,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     env:
       TZ: America/Mexico_City
       OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
@@ -99,7 +99,7 @@ jobs:
           open("/tmp/triggui-book.json", "w", encoding="utf-8").write(json.dumps(payload, ensure_ascii=False))
           PY
 
-      - name: Ejecutar pipeline
+      - name: Ejecutar pipeline v3
         working-directory: experiments/nucleus
         env:
           SINGLE_MODE: ${{ inputs.modo == 'single_book' && 'true' || '' }}
@@ -109,8 +109,10 @@ jobs:
       - name: Mover outputs a raíz
         working-directory: experiments/nucleus
         run: |
-          echo "📂 Estado de archivos en experiments/nucleus/ antes de mover:"
-          ls -la contenido*.json 2>/dev/null || echo "(sin archivos contenido*.json)"
+          echo "📂 Estado en experiments/nucleus/ antes de mover:"
+          ls -la contenido*.json 2>/dev/null || echo "(sin contenido*.json)"
+          ls -la grounding-cache/ 2>/dev/null | head -5 || true
+          ls -la quality-reports/ 2>/dev/null | head -5 || true
 
           if [ -f contenido.shadow.json ]; then
             mv -v contenido.shadow.json "$GITHUB_WORKSPACE/contenido.shadow.json"
@@ -121,20 +123,18 @@ jobs:
           if [ -f contenido_edicion.json ]; then
             mv -v contenido_edicion.json "$GITHUB_WORKSPACE/contenido_edicion.json"
           fi
-          if [ -d inputs-history ]; then
-            mkdir -p "$GITHUB_WORKSPACE/inputs-history"
-            cp -rv inputs-history/* "$GITHUB_WORKSPACE/inputs-history/" 2>/dev/null || true
-          fi
-          if [ -d metrics ]; then
-            mkdir -p "$GITHUB_WORKSPACE/metrics"
-            cp -rv metrics/* "$GITHUB_WORKSPACE/metrics/" 2>/dev/null || true
-          fi
+
+          for dir in inputs-history metrics quality-reports grounding-cache; do
+            if [ -d "$dir" ]; then
+              mkdir -p "$GITHUB_WORKSPACE/$dir"
+              cp -rv "$dir"/* "$GITHUB_WORKSPACE/$dir/" 2>/dev/null || true
+            fi
+          done
 
           echo ""
           echo "📦 Estado final en \$GITHUB_WORKSPACE:"
-          ls -la "$GITHUB_WORKSPACE"/contenido*.json 2>/dev/null || echo "(no hay contenido*.json en root)"
-          ls "$GITHUB_WORKSPACE"/inputs-history/ 2>/dev/null | head -5 || true
-          ls "$GITHUB_WORKSPACE"/metrics/ 2>/dev/null | head -5 || true
+          ls -la "$GITHUB_WORKSPACE"/contenido*.json 2>/dev/null || echo "(no contenido*.json)"
+          ls -la "$GITHUB_WORKSPACE"/quality-reports/ 2>/dev/null | head -5 || true
 
       - name: Commit resultados
         working-directory: ${{ github.workspace }}
@@ -143,32 +143,31 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Agrega lo que exista
           [ -f contenido.shadow.json ] && git add contenido.shadow.json || true
           [ -f contenido.json ] && git add contenido.json || true
           [ -f contenido_edicion.json ] && git add contenido_edicion.json || true
           [ -d inputs-history ] && git add inputs-history/ || true
           [ -d metrics ] && git add metrics/ || true
+          [ -d quality-reports ] && git add quality-reports/ || true
+          [ -d grounding-cache ] && git add grounding-cache/ || true
 
-          # Si no hay cambios, salimos limpiamente
           if git diff --cached --quiet; then
-            echo "🟡 Working tree clean — no hay cambios para commitear."
+            echo "🟡 Working tree clean — no hay cambios."
             exit 0
           fi
 
           echo "📝 Cambios staged:"
           git diff --cached --stat
 
-          git commit -m "🌒 nucleus ${{ inputs.modo }}"
+          git commit -m "🌒 nucleus-v3 ${{ inputs.modo }}"
 
-          # Retry por si hay cambios upstream
           BRANCH="${GITHUB_REF_NAME:-main}"
           for i in 1 2 3; do
             if git pull --rebase --autostash origin "$BRANCH" && git push origin "HEAD:$BRANCH"; then
               echo "✅ Push exitoso en intento $i"
               exit 0
             fi
-            echo "⚠️  Intento $i falló, reintentando en 3s..."
+            echo "⚠️  Intento $i falló, reintentando..."
             sleep 3
           done
           echo "❌ Falló el push después de 3 intentos"
@@ -177,12 +176,14 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "## Triggui Nucleus Manual" >> $GITHUB_STEP_SUMMARY
+          echo "## Triggui Nucleus v3 — Manual" >> $GITHUB_STEP_SUMMARY
           echo "**Modo:** ${{ inputs.modo }}" >> $GITHUB_STEP_SUMMARY
           echo "**Lente:** ${{ inputs.lens && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Visual intent:** ${{ inputs.visual_intent && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Book context:** ${{ inputs.book_context && 'sí' || 'vacío' }}" >> $GITHUB_STEP_SUMMARY
           echo "**Crono:** ${{ inputs.crono_enabled }}" >> $GITHUB_STEP_SUMMARY
           [ -f "$GITHUB_WORKSPACE/contenido_edicion.json" ] && echo "**contenido_edicion.json:** ✅ generado" >> $GITHUB_STEP_SUMMARY
           [ -f "$GITHUB_WORKSPACE/contenido.shadow.json" ] && echo "**contenido.shadow.json:** ✅ generado" >> $GITHUB_STEP_SUMMARY
           [ -f "$GITHUB_WORKSPACE/contenido.json" ] && echo "**contenido.json:** ✅ generado" >> $GITHUB_STEP_SUMMARY
+          if [ -d "$GITHUB_WORKSPACE/quality-reports" ]; then
+            echo "**Quality reports generados:** ✅" >> $GITHUB_STEP_SUMMARY
+          fi
