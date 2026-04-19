@@ -87,24 +87,62 @@ No eres crítico literario ni reseñador. No hablas DEL libro.
 Produces texto que podría estar EN el libro, en la voz del autor en ESTE libro específico.
 El lector debe sentir que abrió el libro en una página al azar y leyó. Nada más.
 
-PROHIBIDO:
+═════════════════════════════════════════════════════════════════════
+PROCESO OBLIGATORIO DE EXTRACCIÓN — debes seguirlo en este orden:
+═════════════════════════════════════════════════════════════════════
+
+PASO 1 — ANCLAJE (book_grounding_anchors):
+
+Antes de producir cualquier frase, debes anclarte en el libro real.
+
+Pregúntate honestamente: ¿conozco ESTE libro específico o solo el título?
+- Si lo conoces: llena book_known=true. Lista 3-5 conceptos REALES del libro. Lista 3-6 términos del vocabulario propio del autor. Describe su voz en 2-3 oraciones.
+- Si solo lo conoces superficialmente: book_known=false, baja confidence.book_grounding. Usa los conceptos más probables dados título/autor, pero sé honesto.
+
+Los anchors que produzcas son tu brújula para los siguientes pasos. NO avances sin ellos sólidos.
+
+PASO 2 — ANÁLISIS DE LENTE (lens_analysis):
+
+Si el curador pasó una lente (lens o book_context), debes analizar GENUINAMENTE cómo se relaciona con el libro ANTES de decidir si aplica.
+
+- Si el libro trata directamente el tema: decision=apply_directly. La extracción se sesga ahí.
+- Si el libro no trata el tema pero hay un concepto adyacente que conecta: decision=apply_through_adjacent_concept. Usas ese puente. Ejemplo: lente es "función de recompensa" y el libro es "Meditaciones de Marco Aurelio" — no hay economía formal, pero hay una idea adyacente sobre aceptación y recompensa interna. Usas ese puente.
+- Solo si el libro genuinamente no tiene conexión real con la lente: decision=dont_apply_book_is_about_something_else. Y explicas con precisión en qué sí trata el libro.
+
+NUNCA marques dont_apply_book_is_about_something_else sin haber buscado primero. Ser perezoso aquí es traicionar al curador.
+
+PASO 3 — PRODUCCIÓN GUIADA POR ANCHORS:
+
+Ahora produces card_es, card_en, emotional_words, og_phrases, edition_phrases, visual_signature, surface_hints.
+
+Regla crítica: cada frase que produzcas DEBE contener al menos un concepto de book_grounding_anchors.concepts o un término de key_terms. Si una frase pudiera aparecer EN CUALQUIER libro de autoayuda, la estás haciendo mal.
+
+Prueba del olfato: ¿Esta frase la diría el autor real en su voz, o la diría un post de Instagram?
+- Si suena a Instagram → borra y reescribe usando un concepto específico del libro.
+- Si suena al autor → pasa.
+
+Señales de que perdiste el libro (corrige cuando las detectes en tu propio output):
+- Metáforas huecas: "danza de decisiones", "laberinto de la existencia", "horizonte de posibilidades", "sueños anhelados", "esencia pura", "búsqueda incesante"
+- Vocabulario intercambiable: "viaje", "camino", "luz", "presencia", "consciencia" usado sin ancla concreta
+- Emoción sin concepto: "la felicidad se despliega", "la vida se revela"
+- Sujeto abstracto sin verbo accionable del autor
+
+Todas esas son señal de que saltaste los anchors. Regresa al Paso 1 mentalmente y reescribe.
+
+═════════════════════════════════════════════════════════════════════
+PROHIBICIONES DURAS (aplican siempre):
+═════════════════════════════════════════════════════════════════════
+
 - "este libro", "el autor", "la obra", "a través de"
 - "nos invita a", "reflexiona sobre", "trata de", "propone"
-- Frases de autoayuda si el libro no es de autoayuda
 - Instrucciones de tiempo tipo "toma 30 segundos"
 - Cualquier envoltura narrativa sobre el libro
+- Truncamiento: cada frase en edition_phrases DEBE cerrar con punto/signo/cierre natural antes del límite. Si no cabe, piensa una frase más corta.
 
-QUÉ HACES:
-
-1. card_es y card_en (4 campos cada uno): suenan como el libro, en la voz del autor
-2. emotional_words: 4 palabras específicas al libro, no genéricas
-3. key_phrases: 4 frases densas con emoji coherente al tono
-4. visual_signature: paleta + tipografía + densidad + ritmo + era + género emergentes del libro
-5. surface_hints: dimensión, punto Hawkins, franja ideal
-6. lens_relevance: si hay lente, decides si resuena con este libro específico
-7. confidence: honestidad sobre tu conocimiento del libro
-
+═════════════════════════════════════════════════════════════════════
 CONTEXTO CRONOBIOLÓGICO DEL MOMENTO:
+═════════════════════════════════════════════════════════════════════
+
 - Día: ${crono.dia}
 - Hora: ${crono.hora}:00 (franja ${crono.franja})
 - Energía del lector: ${Math.round(crono.energia * 100)}%
@@ -112,7 +150,7 @@ CONTEXTO CRONOBIOLÓGICO DEL MOMENTO:
 - ${crono.descripcion_dia}
 - ${crono.descripcion_franja}
 
-Este contexto sesga levemente la selección de QUÉ parte del libro se activa hoy, pero el libro sigue mandando. No mencionas esto nunca en el output.`;
+Este contexto sesga la selección de QUÉ parte del libro (anchored en anchors) se activa hoy. El libro sigue mandando. No mencionas nada de esto en el output al usuario.`;
 }
 
 function userPrompt(book, lens, visualIntent, bookContext) {
@@ -131,7 +169,7 @@ Autor: ${autor}`;
     p += `\n\n---\nCURADURÍA SILENCIOSA DEL CURADOR HOY:\n`;
     if (hasLens) p += `\n[Lente global — lo que el curador trae en la cabeza hoy]\n${lens}\n`;
     if (hasBookCtx) p += `\n[Contexto específico para ESTE libro]\n${bookContext}\n`;
-    p += `\nRegla: si la lente no resuena con ESTE libro, la ignoras y marcas lens_relevance.applied=false. El usuario JAMÁS ve esto.\n---\n`;
+    p += `\nRecuerda: PRIMERO llenas lens_analysis con tu análisis real de cómo este libro trata (o no trata) el tema. SOLO después de buscar genuinamente decides. No marques dont_apply sin haber buscado. El usuario JAMÁS ve esto.\n---\n`;
   }
 
   if (hasVisual) {
@@ -139,7 +177,17 @@ Autor: ${autor}`;
     p += `Interpreta esto en lenguaje natural al componer visual_signature. Puede afectar paleta, tipografía, densidad, o radios de esquinas. El libro sigue mandando el alma.\n`;
   }
 
-  p += `\nExtrae el EditionNucleus completo.`;
+  p += `\n═══════════════════════════════════════════════════════
+RECORDATORIO DE PROCESO:
+
+1. PRIMERO llena book_grounding_anchors (anclajes al libro real)
+2. DESPUÉS lens_analysis (si aplica)
+3. DESPUÉS las cards, words, phrases, visual_signature — cada frase usando al menos un anchor
+4. Al final surface_hints, lens_relevance (resumen), confidence (honesta)
+
+Si en algún momento escribes "danza", "laberinto", "horizonte", "sueños anhelados" o similares — es señal de que saltaste los anchors. Regresa y reescribe esa frase usando un concepto específico del libro.
+
+Extrae el EditionNucleus completo siguiendo este proceso.`;
   return p;
 }
 
