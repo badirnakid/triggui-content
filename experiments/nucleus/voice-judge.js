@@ -1,14 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
    voice-judge.js — JUEZ SEMÁNTICO RESEÑA vs PÁGINA
-
-   Segunda llamada barata (~100 tokens) que detecta si el output suena a
-   reseña (alguien hablando DEL libro) o a página (texto DEL libro mismo).
-
-   Circuit breaker explícito:
-     - El juez REPORTA, no BLOQUEA
-     - Máximo 1 re-extracción si veredicto es reseña con alta confianza
-     - Si tras re-extract sigue siendo reseña, se acepta con _voice_warning
-     - Si el juez falla, se acepta el output (no se bloquea el pipeline)
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 const JUDGE_SCHEMA = {
@@ -75,10 +66,6 @@ async function judgeOne(openai, card, book, model) {
   }
 }
 
-/**
- * Juzga ambas tarjetas ES + EN. Consolida el peor veredicto.
- * Circuit breaker: si ambos tienen confidence 0 (error), tratamos como pagina.
- */
 export async function judgeBothVoices(openai, cardES, cardEN, book, options = {}) {
   const model = options.model || "gpt-4o-mini";
   const [es, en] = await Promise.all([
