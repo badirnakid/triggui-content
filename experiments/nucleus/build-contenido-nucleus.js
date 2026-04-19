@@ -187,6 +187,11 @@ async function processBook(book, inputs, inputsSnapshot) {
   if (n.lens_relevance.applied) console.log(`   ✅ Lente APLICADA al contenido`);
   else if (n.lens_analysis?.lens_provided) console.log(`   ⚪ Lente NO aplicada: ${n.lens_relevance.reason.slice(0, 100)}`);
 
+  // Gestos de Edición Viva (visibles para verificar variedad)
+  if (Array.isArray(n.edition_gestures_meta_es)) {
+    console.log(`   🎭 Edition gestures: ${n.edition_gestures_meta_es.join(" • ")}`);
+  }
+
   // Voice judge con circuit breaker
   let voiceVerdict = await judgeBothVoices(openai, n.card_es, n.card_en, book, { model: CFG.model });
   console.log(`   🎭 Voz: ${voiceVerdict.consolidated} (conf ${voiceVerdict.confidence.toFixed(2)})`);
