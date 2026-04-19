@@ -1,21 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════════════════════
    render-visual-composition.js — COMPOSICIÓN VISUAL DETERMINISTA
-
-   CERO HARDCODING DE INTENCIONES DEL USUARIO.
-
-   Las intenciones visuales (modo oscuro, esquinas, temperatura, etc.) las
-   interpreta el LLM directamente en el extractor y se reflejan en la
-   visual_signature del nucleus. Aquí solo hacemos matemática.
-
-   Input:  visual_signature del nucleus (ya integra las intenciones del usuario)
-   Output: conjunto completo de CSS custom properties determinista
 ═══════════════════════════════════════════════════════════════════════════════ */
 
 import {
   luminance,
   contrastRatio,
-  darken,
-  lighten,
   withAlpha,
   ensureReadableContrast,
   deriveBorder,
@@ -26,39 +15,24 @@ import {
   typographyFamilyToStack
 } from "./triggui-physics.js";
 
-/**
- * Compone CSS custom properties desde la visual_signature del nucleus.
- * Garantías:
- *   - Mismo nucleus → misma composición (determinista)
- *   - Contraste WCAG AA siempre (paper vs ink)
- *   - Libros distintos → firmas distintas (emergente)
- */
-export function composeVisual(visualSignature) {
-  const sig = visualSignature || {};
-
-  // 1. PALETA
-  let palette = Array.isArray(sig.palette) && sig.palette.length === 4
-    ? sig.palette.map((c) => (isValidHex(c) ? c : "#888888"))
+export function composeVisual(visualSignature = {}) {
+  let palette = Array.isArray(visualSignature.palette) && visualSignature.palette.length === 4
+    ? visualSignature.palette.map((c) => (isValidHex(c) ? c : "#888888"))
     : ["#888888", "#aaaaaa", "#cccccc", "#eeeeee"];
 
-  let accent = isValidHex(sig.accent) ? sig.accent : palette[0];
-  let paper = isValidHex(sig.paper) ? sig.paper : "#FFFFFF";
-  let ink = isValidHex(sig.ink) ? sig.ink : "#1A1A1A";
+  let accent = isValidHex(visualSignature.accent) ? visualSignature.accent : palette[0];
+  let paper = isValidHex(visualSignature.paper) ? visualSignature.paper : "#FFFFFF";
+  let ink = isValidHex(visualSignature.ink) ? visualSignature.ink : "#1A1A1A";
 
-  // 2. GARANTÍA FÍSICA: contraste legible
   const readable = ensureReadableContrast(paper, ink);
   paper = readable.paper;
   ink = readable.ink;
 
-  // 3. Border matemático
   const border = deriveBorder(paper);
+  const typographyStack = typographyFamilyToStack(visualSignature.typography_family);
+  const densityMult = densityToMultipliers(visualSignature.density || "equilibrado");
+  const rhythmMult = rhythmToMultipliers(visualSignature.rhythm || "medio");
 
-  // 4. Tipografía desde firma
-  const typographyStack = typographyFamilyToStack(sig.typography_family);
-  const densityMult = densityToMultipliers(sig.density || "equilibrado");
-  const rhythmMult = rhythmToMultipliers(sig.rhythm || "medio");
-
-  // 5. Radios: derivados del género visual (emergente)
   const radiusByGenre = {
     academico: 8,
     literario: 20,
@@ -69,18 +43,14 @@ export function composeVisual(visualSignature) {
     tecnico: 6,
     espiritual: 28
   };
-  const cardRadius = radiusByGenre[sig.genre_visual] || 20;
+  const cardRadius = radiusByGenre[visualSignature.genre_visual] || 20;
   const highlightRadius = Math.max(4, Math.round(cardRadius * 0.3));
 
-  // 6. Highlight bg+ink con contraste físico garantizado
   const highlightBg = withAlpha(accent, 0.85);
   const highlightInk = textContrastOn(accent);
-
-  // 7. Overlays OG
   const accentSoft = withAlpha(accent, 0.22);
   const accentGlow = withAlpha(accent, 0.42);
 
-  // 8. Metadata de decisiones
   const decisions = {
     contrast_ratio: contrastRatio(ink, paper).toFixed(2),
     paper_luminance: luminance(paper).toFixed(3),
@@ -100,7 +70,6 @@ export function composeVisual(visualSignature) {
     highlightInk,
     accentSoft,
     accentGlow,
-
     typographyStack,
     fontSizeScale: rhythmMult.fontSizeScale,
     wordSpacingScale: rhythmMult.wordSpacingScale,
@@ -109,7 +78,6 @@ export function composeVisual(visualSignature) {
     paragraphGap: densityMult.paragraphGap,
     cardRadius,
     highlightRadius,
-
     cssVars: {
       "--palette-0": palette[0],
       "--palette-1": palette[1],
@@ -132,19 +100,14 @@ export function composeVisual(visualSignature) {
       "--card-radius": `${cardRadius}px`,
       "--highlight-radius": `${highlightRadius}px`
     },
-
     decisions,
     signature: {
-      typography_family: sig.typography_family,
-      density: sig.density,
-      temperature: sig.temperature,
-      rhythm: sig.rhythm,
-      era: sig.era,
-      genre_visual: sig.genre_visual
+      typography_family: visualSignature.typography_family,
+      density: visualSignature.density,
+      temperature: visualSignature.temperature,
+      rhythm: visualSignature.rhythm,
+      era: visualSignature.era,
+      genre_visual: visualSignature.genre_visual
     }
   };
-}
-
-export function cssVarsToInlineStyle(cssVars) {
-  return Object.entries(cssVars).map(([k, v]) => `${k}: ${v}`).join("; ");
 }
