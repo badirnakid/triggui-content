@@ -113,33 +113,36 @@ NUNCA marques dont_apply_book_is_about_something_else sin haber buscado primero.
 
 PASO 3 — PRODUCCIÓN GUIADA POR ANCHORS:
 
-Ahora produces card_es, card_en, emotional_words, og_phrases, edition_gestures_meta, edition_phrases, visual_signature, surface_hints.
+Ahora produces card_es, card_en, emotional_words, og_phrases, edition_blocks, visual_signature, surface_hints.
 
 Regla crítica: cada frase que produzcas DEBE contener al menos un concepto de book_grounding_anchors.concepts o un término de key_terms. Si una frase pudiera aparecer EN CUALQUIER libro de autoayuda, la estás haciendo mal.
 
-EDITION_PHRASES — REGLA ESPECIAL DE ESTRUCTURA:
+EDITION_BLOCKS — REGLA ESPECIAL DE ESTRUCTURA:
 
 Los 4 bloques de la Edición Viva NO son 4 frases reflexivas sobre el libro. NO son 4 pedazos de un párrafo largo. Son 4 VENTANAS DISTINTAS al libro — 4 gestos de tipos diferentes que el lector puede tocar por separado.
 
-Proceso obligatorio para edition_phrases:
+Cada bloque es un objeto con DOS campos: gesture_type y phrase. Proceso obligatorio para cada bloque:
 
-Sub-paso 3a — PRIMERO llenas edition_gestures_meta_es con una combinación de 4 tipos distintos entre sí. Las opciones son:
-  • instruccion_sensorial: micro-acción física/perceptual que el libro pediría
-  • pregunta_directa: pregunta del libro al lector, abierta
-  • imagen_concreta: imagen visual específica del libro, sin imperativo
-  • aforismo_autorial: sentencia corta y cerrada en voz del autor
+1. PRIMERO decides gesture_type — es el tipo de gesto que ese bloque va a ser.
+2. DESPUÉS escribes phrase en la forma propia de ese tipo.
 
-Las 4 posiciones deben ser DISTINTAS. Combinación recomendada para variedad máxima: las 4 categorías presentes, una de cada. Si el libro no da para eso (ej. no es un libro con imágenes concretas), puedes repetir UN tipo máximo.
+Los 4 tipos disponibles:
+  • instruccion_sensorial: verbo imperativo + objeto sensorial. Ej: "🦋 Observa el cielo durante unos instantes, sintiendo la vastedad a tu alrededor."
+  • pregunta_directa: pregunta del libro al lector, cierra con "?". Ej: "♟ ¿Qué jugada eliges cuando nadie está mirando el tablero?"
+  • imagen_concreta: imagen visual sin verbo imperativo. Ej: "⚖ El tablero donde cada jugada se mide contra las jugadas de los demás."
+  • aforismo_autorial: sentencia corta cerrada con punto. Ej: "🎯 La recompensa no es el premio; es seguir jugando con intención."
 
-Sub-paso 3b — DESPUÉS escribes edition_phrases_es en el mismo orden que edition_gestures_meta_es. Cada frase se escribe en la forma de su tipo:
-  • Si el tipo es instruccion_sensorial → verbo imperativo + objeto sensorial. Ej: "🦋 Observa el cielo durante unos instantes, sintiendo la vastedad a tu alrededor."
-  • Si el tipo es pregunta_directa → pregunta que cierra con "?". Ej: "♟ ¿Qué jugada eliges cuando nadie está mirando el tablero?"
-  • Si el tipo es imagen_concreta → sujeto + descripción visual, sin verbo en imperativo. Ej: "⚖ El tablero donde cada jugada se mide contra las jugadas de los demás."
-  • Si el tipo es aforismo_autorial → sentencia corta, cerrada con punto. Ej: "🎯 La recompensa no es el premio; es seguir jugando con intención."
+Los 4 gesture_type deben ser DISTINTOS entre sí (uno de cada tipo es ideal; máximo puedes repetir UN tipo si el libro no da para los 4).
 
-Cada frase se escribe COMPLETA antes de pasar a la siguiente. Si una frase se acerca al límite de 110 chars, piensa una más corta — NUNCA la trunques a mitad de idea. Si terminas una frase en "y", "de", "se", coma, o palabra conectora, la estás truncando — esa frase está MAL y hay que reescribirla como gesto autónomo.
+REGLAS DE FORMA DE phrase:
+- Emoji al INICIO (coherente con el tono del libro y el tipo de gesto)
+- 50-110 caracteres con emoji incluido
+- DEBE cerrar con ".", "?" o "!" — NUNCA con "y", "de", "se", coma o palabra conectora
+- Si la idea completa no cabe en 110 chars, reformula más corta. NO la trunques.
+- Cada phrase es AUTÓNOMA — no continúa de la anterior ni necesita contexto previo
+- Usa al menos un concepto de book_grounding_anchors
 
-Repite el mismo sub-proceso con edition_gestures_meta_en + edition_phrases_en.
+El mismo proceso para edition_blocks_en (los enums son sensory_instruction, direct_question, concrete_image, authorial_aphorism).
 
 PRUEBA DEL OLFATO (aplica a TODAS las frases):
 
@@ -209,14 +212,16 @@ RECORDATORIO DE PROCESO:
 1. PRIMERO llena book_grounding_anchors (anclajes al libro real)
 2. DESPUÉS lens_analysis (si aplica)
 3. DESPUÉS las cards, words, og_phrases — cada frase usando al menos un anchor
-4. Para edition_phrases: PRIMERO llena edition_gestures_meta (4 tipos distintos) y DESPUÉS escribe edition_phrases en el mismo orden, cada una en la forma de su tipo
+4. Para edition_blocks: cada bloque es {gesture_type, phrase}. Primero decides gesture_type, después escribes phrase en la forma de ese tipo. Los 4 gesture_type deben ser distintos entre sí (o repetir máximo 1).
 5. Al final visual_signature, surface_hints, lens_relevance, confidence
 
-Recuerda: las 4 edition_phrases son 4 VENTANAS DISTINTAS al libro (no un párrafo partido). Cada una es un gesto autónomo del tipo que decidiste en edition_gestures_meta.
+Recuerda: las 4 edition_blocks son 4 VENTANAS DISTINTAS al libro (no un párrafo partido). Cada phrase es un gesto autónomo del tipo que decidiste.
 
 Si en algún momento escribes "danza", "laberinto", "horizonte", "sueños anhelados" o similares — es señal de que saltaste los anchors. Regresa y reescribe esa frase usando un concepto específico del libro.
 
-Si una edition_phrase termina en "y", "de", "se", coma u otra palabra conectora — la truncaste. Reescríbela como gesto autónomo más corto.
+Si una phrase termina en "y", "de", "se", coma u otra palabra conectora — la truncaste. Reescríbela como gesto autónomo más corto.
+
+TODOS los arrays tienen número exacto de items (4 en la mayoría, 3-6 en algunos). NO los dejes vacíos ni incompletos.
 
 Extrae el EditionNucleus completo siguiendo este proceso.`;
   return p;
