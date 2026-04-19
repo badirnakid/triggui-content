@@ -1,226 +1,253 @@
 {
-  "name": "EditionNucleus",
-  "description": "Núcleo canónico de una edición Triggui. Ver prompt del sistema para la política editorial completa.",
-  "strict": true,
-  "schema": {
-    "type": "object",
-    "additionalProperties": false,
-    "required": [
-      "book_identity",
-      "book_grounding_anchors",
-      "lens_analysis",
-      "card_es",
-      "card_en",
-      "emotional_words_es",
-      "emotional_words_en",
-      "og_phrases_es",
-      "og_phrases_en",
-      "edition_blocks_es",
-      "edition_blocks_en",
-      "visual_signature",
-      "surface_hints",
-      "lens_relevance",
-      "confidence"
-    ],
-    "properties": {
-      "book_identity": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["titulo_es", "titulo_en", "autor", "idioma_original"],
-        "properties": {
-          "titulo_es": { "type": "string", "description": "Título del libro en español. Si fue publicado en español, usa ese título exacto. Si fue publicado en inglés, usa la traducción oficial al español si existe." },
-          "titulo_en": { "type": "string", "description": "Título ORIGINAL del libro en inglés si así fue publicado (ej. 'Peak Mind' para el libro de Amishi Jha, 'Atomic Habits' para el de James Clear). Si el libro fue publicado originalmente en español, usa una traducción funcional al inglés." },
-          "autor": { "type": "string", "description": "Nombre COMPLETO del autor (ej. 'Amishi P. Jha', no 'Amishi'; 'James Clear', no 'J. Clear')." },
-          "idioma_original": { "type": "string", "enum": ["es", "en"], "description": "Idioma en el que el libro fue escrito originalmente." }
-        }
-      },
-
-      "book_grounding_anchors": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["book_known", "concepts", "key_terms", "authorial_voice_notes"],
-        "properties": {
-          "book_known": { "type": "boolean" },
-          "concepts": {
-            "type": "array",
-            "minItems": 3,
-            "maxItems": 5,
-            "items": { "type": "string", "minLength": 10, "maxLength": 120 }
-          },
-          "key_terms": {
-            "type": "array",
-            "minItems": 3,
-            "maxItems": 6,
-            "items": { "type": "string", "minLength": 2, "maxLength": 40 }
-          },
-          "authorial_voice_notes": { "type": "string", "minLength": 50, "maxLength": 400 }
-        }
-      },
-
-      "lens_analysis": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["lens_provided", "analysis", "decision"],
-        "properties": {
-          "lens_provided": { "type": "boolean" },
-          "analysis": { "type": "string", "minLength": 10, "maxLength": 600 },
-          "decision": {
-            "type": "string",
-            "enum": ["apply_directly", "apply_through_adjacent_concept", "dont_apply_book_is_about_something_else"]
-          }
-        }
-      },
-
-      "card_es": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
-        "properties": {
-          "titulo": { "type": "string", "minLength": 8, "maxLength": 60 },
-          "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320 },
-          "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120 },
-          "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320 }
-        }
-      },
-
-      "card_en": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
-        "properties": {
-          "titulo": { "type": "string", "minLength": 8, "maxLength": 60 },
-          "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320 },
-          "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120 },
-          "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320 }
-        }
-      },
-
-      "emotional_words_es": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": { "type": "string", "minLength": 3, "maxLength": 25 }
-      },
-
-      "emotional_words_en": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": { "type": "string", "minLength": 3, "maxLength": 25 }
-      },
-
-      "og_phrases_es": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": { "type": "string", "minLength": 35, "maxLength": 74 }
-      },
-
-      "og_phrases_en": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": { "type": "string", "minLength": 35, "maxLength": 74 }
-      },
-
-      "edition_blocks_es": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": {
+  "note": "Schema v3 dividido en 3 sub-schemas para las 3 llamadas de extracción. El schema completo se arma en memoria desde estos.",
+  "anchors_and_intent": {
+    "name": "AnchorsAndIntent",
+    "description": "Extrae anchors del libro + intención visual numérica + análisis de lente. NO escribe cards ni og_phrases.",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "book_identity",
+        "book_grounding_anchors",
+        "lens_analysis",
+        "visual_intent",
+        "surface_hints"
+      ],
+      "properties": {
+        "book_identity": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["gesture_type", "phrase"],
+          "required": ["titulo_es", "titulo_en", "autor_completo", "idioma_original"],
           "properties": {
-            "gesture_type": {
-              "type": "string",
-              "enum": ["instruccion_sensorial", "pregunta_directa", "imagen_concreta", "aforismo_autorial"]
-            },
-            "phrase": { "type": "string", "minLength": 50, "maxLength": 110 }
+            "titulo_es": { "type": "string", "minLength": 2, "maxLength": 150 },
+            "titulo_en": { "type": "string", "minLength": 2, "maxLength": 150 },
+            "autor_completo": { "type": "string", "minLength": 2, "maxLength": 120 },
+            "idioma_original": { "type": "string", "enum": ["es", "en"] }
           }
-        }
-      },
+        },
 
-      "edition_blocks_en": {
-        "type": "array",
-        "minItems": 4,
-        "maxItems": 4,
-        "items": {
+        "book_grounding_anchors": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["gesture_type", "phrase"],
+          "required": ["concepts", "key_terms", "authorial_voice_notes"],
           "properties": {
-            "gesture_type": {
-              "type": "string",
-              "enum": ["sensory_instruction", "direct_question", "concrete_image", "authorial_aphorism"]
+            "concepts": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 5,
+              "items": { "type": "string", "minLength": 15, "maxLength": 150 }
             },
-            "phrase": { "type": "string", "minLength": 50, "maxLength": 110 }
+            "key_terms": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": { "type": "string", "minLength": 2, "maxLength": 40 }
+            },
+            "authorial_voice_notes": { "type": "string", "minLength": 80, "maxLength": 500 }
+          }
+        },
+
+        "lens_analysis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lens_provided", "analysis", "decision"],
+          "properties": {
+            "lens_provided": { "type": "boolean" },
+            "analysis": { "type": "string", "minLength": 5, "maxLength": 600 },
+            "decision": {
+              "type": "string",
+              "enum": ["apply_directly", "apply_through_adjacent_concept", "dont_apply_book_is_about_something_else"]
+            }
+          }
+        },
+
+        "visual_intent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hue_primary",
+            "saturation",
+            "lightness_paper",
+            "temperature_shift",
+            "palette_strategy",
+            "typography_family",
+            "density",
+            "rhythm",
+            "era",
+            "genre_visual"
+          ],
+          "properties": {
+            "hue_primary": { "type": "integer", "minimum": 0, "maximum": 359 },
+            "saturation": { "type": "string", "enum": ["muted", "balanced", "vivid"] },
+            "lightness_paper": { "type": "string", "enum": ["dark", "medium_dark", "medium_light", "light"] },
+            "temperature_shift": { "type": "integer", "minimum": -30, "maximum": 30 },
+            "palette_strategy": {
+              "type": "string",
+              "enum": ["monochromatic", "analogous", "complementary", "triadic", "split_complementary"]
+            },
+            "typography_family": {
+              "type": "string",
+              "enum": ["serif_clasico", "serif_literario", "serif_moderno", "sans_geometrico", "sans_humanista", "sans_tecnologico", "mono_precision", "mixta_editorial"]
+            },
+            "density": { "type": "string", "enum": ["aireado", "equilibrado", "denso"] },
+            "rhythm": { "type": "string", "enum": ["lento", "medio", "rapido", "staccato"] },
+            "era": { "type": "string", "enum": ["clasico", "moderno", "contemporaneo", "atemporal"] },
+            "genre_visual": { "type": "string", "enum": ["academico", "literario", "manifiesto", "poesia", "narrativa", "ensayo", "tecnico", "espiritual"] }
+          }
+        },
+
+        "surface_hints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["dimension", "punto_hawkins", "franja_ideal"],
+          "properties": {
+            "dimension": { "type": "string", "enum": ["Bienestar", "Prosperidad", "Conexion"] },
+            "punto_hawkins": { "type": "string", "enum": ["Cero", "Creativo", "Activo", "Maximo"] },
+            "franja_ideal": { "type": "string", "enum": ["madrugada", "manana", "tarde", "noche"] }
           }
         }
-      },
+      }
+    }
+  },
 
-      "visual_signature": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "palette",
-          "accent",
-          "paper",
-          "ink",
-          "typography_family",
-          "density",
-          "temperature",
-          "rhythm",
-          "era",
-          "genre_visual"
-        ],
-        "properties": {
-          "palette": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "string" } },
-          "accent": { "type": "string" },
-          "paper": { "type": "string" },
-          "ink": { "type": "string" },
-          "typography_family": {
-            "type": "string",
-            "enum": ["serif_clasico", "serif_literario", "serif_moderno", "sans_geometrico", "sans_humanista", "sans_tecnologico", "mono_precision", "mixta_editorial"]
-          },
-          "density": { "type": "string", "enum": ["aireado", "equilibrado", "denso"] },
-          "temperature": { "type": "string", "enum": ["frio", "neutro", "calido", "ardiente"] },
-          "rhythm": { "type": "string", "enum": ["lento", "medio", "rapido", "staccato"] },
-          "era": { "type": "string", "enum": ["clasico", "moderno", "contemporaneo", "atemporal"] },
-          "genre_visual": { "type": "string", "enum": ["academico", "literario", "manifiesto", "poesia", "narrativa", "ensayo", "tecnico", "espiritual"] }
+  "content_es": {
+    "name": "ContentES",
+    "description": "Contenido editorial en ESPAÑOL. Recibe anchors como input obligatorio. Sin emoji (se inyecta después). Sin newlines.",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "card_es",
+        "emotional_words_es",
+        "og_phrases_es",
+        "edition_blocks_es"
+      ],
+      "properties": {
+        "card_es": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
+          "properties": {
+            "titulo": { "type": "string", "minLength": 8, "maxLength": 60 },
+            "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320 },
+            "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120 },
+            "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320 }
+          }
+        },
+        "emotional_words_es": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 3, "maxLength": 25 }
+        },
+        "og_phrases_es": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 30, "maxLength": 70 }
+        },
+        "edition_blocks_es": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["gesture_type", "sensory_anchor", "phrase"],
+            "properties": {
+              "gesture_type": {
+                "type": "string",
+                "enum": ["instruccion_sensorial", "pregunta_directa", "imagen_concreta", "aforismo_autorial"]
+              },
+              "sensory_anchor": {
+                "type": "string",
+                "enum": ["vista", "oido", "tacto", "olfato", "gusto", "movimiento", "espacio", "luz", "respiracion", "tiempo"]
+              },
+              "phrase": { "type": "string", "minLength": 40, "maxLength": 100 }
+            }
+          }
         }
-      },
+      }
+    }
+  },
 
-      "surface_hints": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["dimension", "punto_hawkins", "franja_ideal"],
-        "properties": {
-          "dimension": { "type": "string", "enum": ["Bienestar", "Prosperidad", "Conexion"] },
-          "punto_hawkins": { "type": "string", "enum": ["Cero", "Creativo", "Activo", "Maximo"] },
-          "franja_ideal": { "type": "string", "enum": ["madrugada", "manana", "tarde", "noche"] }
+  "content_en": {
+    "name": "ContentEN",
+    "description": "Contenido editorial en INGLÉS. Recibe anchors y card_es como referencia semántica. Re-extracción, no traducción.",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "card_en",
+        "emotional_words_en",
+        "og_phrases_en",
+        "edition_blocks_en"
+      ],
+      "properties": {
+        "card_en": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["titulo", "parrafoTop", "subtitulo", "parrafoBot"],
+          "properties": {
+            "titulo": { "type": "string", "minLength": 8, "maxLength": 60 },
+            "parrafoTop": { "type": "string", "minLength": 80, "maxLength": 320 },
+            "subtitulo": { "type": "string", "minLength": 20, "maxLength": 120 },
+            "parrafoBot": { "type": "string", "minLength": 80, "maxLength": 320 }
+          }
+        },
+        "emotional_words_en": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 3, "maxLength": 25 }
+        },
+        "og_phrases_en": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": { "type": "string", "minLength": 30, "maxLength": 70 }
+        },
+        "edition_blocks_en": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["gesture_type", "sensory_anchor", "phrase"],
+            "properties": {
+              "gesture_type": {
+                "type": "string",
+                "enum": ["sensory_instruction", "direct_question", "concrete_image", "authorial_aphorism"]
+              },
+              "sensory_anchor": {
+                "type": "string",
+                "enum": ["sight", "hearing", "touch", "smell", "taste", "movement", "space", "light", "breath", "time"]
+              },
+              "phrase": { "type": "string", "minLength": 40, "maxLength": 100 }
+            }
+          }
         }
-      },
+      }
+    }
+  },
 
-      "lens_relevance": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["applied", "reason"],
-        "properties": {
-          "applied": { "type": "boolean" },
-          "reason": { "type": "string", "maxLength": 200 }
-        }
-      },
-
-      "confidence": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["book_grounding", "voice_authenticity", "specificity"],
-        "properties": {
-          "book_grounding": { "type": "number" },
-          "voice_authenticity": { "type": "number" },
-          "specificity": { "type": "number" }
-        }
+  "grounding_judge": {
+    "name": "GroundingJudge",
+    "description": "Juzga si el contenido generado está realmente anclado al ground_truth del libro.",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grounded_score", "uses_book_specific_concepts", "could_apply_to_any_book", "reason"],
+      "properties": {
+        "grounded_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "uses_book_specific_concepts": { "type": "boolean" },
+        "could_apply_to_any_book": { "type": "boolean" },
+        "reason": { "type": "string", "minLength": 30, "maxLength": 400 }
       }
     }
   }
