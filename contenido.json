@@ -1,6 +1,480 @@
 {
   "libros": [
     {
+      "titulo": "Deep Work: Rules for Focused Success in a Distracted World",
+      "autor": "Cal Newport",
+      "tagline": "Enfócate en lo que realmente importa.",
+      "portada": "https://images-na.ssl-images-amazon.com/images/P/991831052.01.LZZZZZZZ.jpg",
+      "portada_url": "https://images-na.ssl-images-amazon.com/images/P/991831052.01.LZZZZZZZ.jpg",
+      "isbn": "991831052",
+      "titulo_es": "Deep Work: Rules for Focused Success in a Distracted World",
+      "titulo_en": "Deep Work: Rules for Focused Success in a Distracted World",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "intensidad",
+        "determinación",
+        "claridad",
+        "resiliencia"
+      ],
+      "palabras_en": [
+        "valuable",
+        "powerful",
+        "enjoyable",
+        "focused"
+      ],
+      "frases": [
+        "🏛 Crea un espacio libre de distracciones. Establece tu santuario de enfoque.",
+        "🕰 ¿Cuánto tiempo dedicas realmente a tu trabajo profundo?",
+        "🌅 Imagina un día en el que cada tarea se realiza con plena atención y energía.",
+        "🌬 Respira hondo y enfócate: el éxito se encuentra en la profundidad."
+      ],
+      "frases_en": [
+        "🏛 Create a distraction-free workspace that invites deep thought.",
+        "🕰 What moments of your day could be dedicated to focused work?",
+        "🌅 Picture a mountain summit: clarity achieved through perseverance.",
+        "🌬 Breathe deeply into the task; focus sharpens the mind."
+      ],
+      "frases_og": [
+        "🔍 La concentración es el nuevo oro en la era digital.",
+        "💠 Optimiza tu entorno para minimizar las distracciones.",
+        "✨ ¿Estás dispuesto a sacrificar lo superficial por lo profundo?",
+        "⚓ Trabajo profundo: donde la magia de la productividad se manifiesta."
+      ],
+      "frases_og_en": [
+        "🔍 Concentration is your most precious resource in this age of noise.",
+        "💠 Cultivate deep work habits to transform your productivity.",
+        "✨ What distractions are stealing your focus today?",
+        "⚓ Success thrives on the foundation of unwavering concentration."
+      ],
+      "colores": [
+        "#90DFD2",
+        "#4DC1CB",
+        "#2C5896",
+        "#192457"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD2D3",
+      "tarjeta": {
+        "titulo": "El poder del trabajo profundo",
+        "parrafoTop": "En un mundo repleto de distracciones, la concentración se convierte en un recurso escaso y valioso. [H]La producción de trabajo profundo es la clave que abre las puertas[/H] del éxito en cualquier campo.",
+        "subtitulo": "¿Cómo puedes cultivar un enfoque inquebrantable?",
+        "parrafoBot": "[H]Desarrollar estrategias prácticas para mejorar el enfoque te permitirá elevar tu productividad.[/H] Al hacerlo, no solo logras más, sino que también disfrutas más de cada tarea realizada.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El poder del trabajo profundo",
+        "parrafoTop": "En un mundo repleto de distracciones, la concentración se convierte en un recurso escaso y valioso. [H]La producción de trabajo profundo es la clave que abre las puertas[/H] del éxito en cualquier campo.",
+        "subtitulo": "¿Cómo puedes cultivar un enfoque inquebrantable?",
+        "parrafoBot": "[H]Desarrollar estrategias prácticas para mejorar el enfoque te permitirá elevar tu productividad.[/H] Al hacerlo, no solo logras más, sino que también disfrutas más de cada tarea realizada.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El poder del trabajo profundo",
+        "parrafoTop": "En un mundo repleto de distracciones, la concentración se convierte en un recurso escaso y valioso. [H]La producción de trabajo profundo es la clave que abre las puertas[/H] del éxito en cualquier campo.",
+        "subtitulo": "¿Cómo puedes cultivar un enfoque inquebrantable?",
+        "parrafoBot": "[H]Desarrollar estrategias prácticas para mejorar el enfoque te permitirá elevar tu productividad.[/H] Al hacerlo, no solo logras más, sino que también disfrutas más de cada tarea realizada.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Power of Deep Work",
+        "parrafoTop": "[H]In a world overflowing with distractions, concentration becomes a scarce and invaluable resource.[/H] Producing deep work is the key that unlocks the doors to success in any field.",
+        "subtitulo": "How can you cultivate unwavering focus?",
+        "parrafoBot": "[H]Developing practical strategies to enhance focus will elevate your productivity.[/H] By doing so, you not only accomplish more but also find greater enjoyment in each task.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Power of Deep Work",
+        "parrafoTop": "[H]In a world overflowing with distractions, concentration becomes a scarce and invaluable resource.[/H] Producing deep work is the key that unlocks the doors to success in any field.",
+        "subtitulo": "How can you cultivate unwavering focus?",
+        "parrafoBot": "[H]Developing practical strategies to enhance focus will elevate your productivity.[/H] By doing so, you not only accomplish more but also find greater enjoyment in each task.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Power of Deep Work",
+        "parrafoTop": "[H]In a world overflowing with distractions, concentration becomes a scarce and invaluable resource.[/H] Producing deep work is the key that unlocks the doors to success in any field.",
+        "subtitulo": "How can you cultivate unwavering focus?",
+        "parrafoBot": "[H]Developing practical strategies to enhance focus will elevate your productivity.[/H] By doing so, you not only accomplish more but also find greater enjoyment in each task.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Deep%20Work%3A%20Rules%20for%20Focused%20Success%20in%20a%20Distracted%20World%20Cal%20Newport%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Deep%20Work%3A%20Rules%20for%20Focused%20Success%20in%20a%20Distracted%20World%20Cal%20Newport%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Deep Work: Rules for Focused Success in a Distracted World",
+          "titulo_en": "Deep Work: Rules for Focused Success in a Distracted World",
+          "autor_completo": "Cal Newport",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de la concentración en un mundo lleno de distracciones",
+            "estrategias prácticas para mejorar el enfoque",
+            "producción de trabajo profundo como clave para el éxito"
+          ],
+          "key_terms": [
+            "trabajo profundo",
+            "concentración",
+            "distracciones",
+            "productividad",
+            "enfoque"
+          ],
+          "authorial_voice_notes": "Pragmática y motivacional, centrada en ofrecer estrategias claras para mejorar la eficiencia personal."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro se centra en la concentración y la productividad, temas que son relevantes en el contexto actual de distracciones tecnológicas.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 200,
+          "saturation": "balanced",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 0,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "moderno",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "El poder del trabajo profundo",
+          "parrafoTop": "En un mundo repleto de distracciones, la concentración se convierte en un recurso escaso y valioso. La producción de trabajo profundo es la clave que abre las puertas del éxito en cualquier campo.",
+          "subtitulo": "¿Cómo puedes cultivar un enfoque inquebrantable?",
+          "parrafoBot": "Desarrollar estrategias prácticas para mejorar el enfoque te permitirá elevar tu productividad. Al hacerlo, no solo logras más, sino que también disfrutas más de cada tarea realizada."
+        },
+        "card_en": {
+          "titulo": "The Power of Deep Work",
+          "parrafoTop": "In a world overflowing with distractions, concentration becomes a scarce and invaluable resource. Producing deep work is the key that unlocks the doors to success in any field.",
+          "subtitulo": "How can you cultivate unwavering focus?",
+          "parrafoBot": "Developing practical strategies to enhance focus will elevate your productivity. By doing so, you not only accomplish more but also find greater enjoyment in each task."
+        },
+        "emotional_words_es": [
+          "intensidad",
+          "determinación",
+          "claridad",
+          "resiliencia"
+        ],
+        "emotional_words_en": [
+          "valuable",
+          "powerful",
+          "enjoyable",
+          "focused"
+        ],
+        "og_phrases_es": [
+          "🔍 La concentración es el nuevo oro en la era digital.",
+          "💠 Optimiza tu entorno para minimizar las distracciones.",
+          "✨ ¿Estás dispuesto a sacrificar lo superficial por lo profundo?",
+          "⚓ Trabajo profundo: donde la magia de la productividad se manifiesta."
+        ],
+        "og_phrases_en": [
+          "🔍 Concentration is your most precious resource in this age of noise.",
+          "💠 Cultivate deep work habits to transform your productivity.",
+          "✨ What distractions are stealing your focus today?",
+          "⚓ Success thrives on the foundation of unwavering concentration."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 Crea un espacio libre de distracciones. Establece tu santuario de enfoque."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 ¿Cuánto tiempo dedicas realmente a tu trabajo profundo?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un día en el que cada tarea se realiza con plena atención y energía."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🌬 Respira hondo y enfócate: el éxito se encuentra en la profundidad."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Create a distraction-free workspace that invites deep thought."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🕰 What moments of your day could be dedicated to focused work?"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Picture a mountain summit: clarity achieved through perseverance."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 Breathe deeply into the task; focus sharpens the mind."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.64,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 1,
+          "combined": 0.87,
+          "signals": {
+            "bookIdentityConfidence": 0.6375,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 1
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.6375,
+        "resolution_path": [
+          "evidence_fetched_0sources",
+          "tier3_conf_0.85"
+        ],
+        "verified_identity": {
+          "titulo_real": "Deep Work: Rules for Focused Success in a Distracted World",
+          "autor_completo": "Cal Newport",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "La magia del orden",
+            "autor": "Marie Kondo",
+            "razon": "Ambos libros abordan la importancia de la concentración y la organización en un mundo lleno de distracciones."
+          },
+          {
+            "titulo": "En defensa de la charla",
+            "autor": "Sherry Turkle",
+            "razon": "Explora el impacto de la tecnología en nuestra capacidad de atención y conexión."
+          },
+          {
+            "titulo": "El poder de los hábitos",
+            "autor": "Charles Duhigg",
+            "razon": "Se centra en cómo los hábitos afectan nuestra productividad y enfoque."
+          },
+          {
+            "titulo": "Mindset: La actitud del éxito",
+            "autor": "Carol S. Dweck",
+            "razon": "Habla sobre la mentalidad necesaria para alcanzar el éxito y la importancia de la dedicación."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "El contenido generado se centra en la importancia de la concentración y la productividad, conceptos que están directamente alineados con el tema inferido del libro. Frases como 'la concentración se convierte en un recurso escaso y valioso' y 'desarrollar estrategias prácticas para mejorar el enfoque' reflejan claramente la voz pragmática y motivacional del texto, además de utilizar términos que se"
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "The content is highly specific to the themes of concentration and productivity, directly reflecting the inferred theme of the book. Phrases like 'deep work' and 'distraction-free workspace' align closely with the focus on practical strategies for enhancing productivity in a distracting world. The motivational tone and practical advice further reinforce its grounding in the book's core message."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y enfoque en el contenido del libro.",
+          "elapsed_ms": 583,
+          "usage": {
+            "prompt_tokens": 373,
+            "completion_tokens": 26,
+            "total_tokens": 399,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en estrategias prácticas.",
+          "elapsed_ms": 528,
+          "usage": {
+            "prompt_tokens": 357,
+            "completion_tokens": 25,
+            "total_tokens": 382,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 781,
+        "total_ms": 583
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 200,
+          "adjusted_hue": 200,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 0,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#90DFD2",
+          "--palette-1": "#4DC1CB",
+          "--palette-2": "#2C5896",
+          "--palette-3": "#192457",
+          "--accent": "#1F99D6",
+          "--accent-soft": "#1F99D638",
+          "--accent-glow": "#1F99D66b",
+          "--paper": "#CFD2D3",
+          "--ink": "#171A1C",
+          "--border": "#7C7E7F",
+          "--highlight-bg": "#1B87BCd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-04-26T03-05-59",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 21,
+        "franja": "noche",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 9342,
+        "tokens_by_phase": {
+          "grounding": 525,
+          "anchors": 2240,
+          "palette": 0,
+          "content_es": 2415,
+          "judge_es": 804,
+          "content_en": 1822,
+          "judge_en": 755,
+          "voice": 781
+        },
+        "elapsed_ms_total": 44197,
+        "elapsed_ms_by_phase": {
+          "grounding": 27288,
+          "anchors": 4918,
+          "palette": 1,
+          "cover_fallback": 0,
+          "content_es": 4207,
+          "judge_es": 1921,
+          "content_en": 3793,
+          "judge_en": 1484,
+          "voice": 584,
+          "post_processing": 6
+        },
+        "llm_calls_count": 8,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass"
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-04-26T03:06:43.946Z"
+    },
+    {
       "titulo": "Mindfulness para principiantes",
       "autor": "Jon Kabat-Zinn",
       "tagline": "Aprende a estar presente y enfocado en el aquí y el ahora.",
