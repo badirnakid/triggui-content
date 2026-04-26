@@ -1,6 +1,468 @@
 {
   "libros": [
     {
+      "titulo": "Educación financiera",
+      "autor": "Iñaki Jiménez Largo",
+      "tagline": "¿Te gustaría dejar de preocuparte por tu dinero a final de mes?",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/56/fc/56/56fc56a6-78e0-2174-99f8-c5b95db0b5bc/1035030723.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/56/fc/56/56fc56a6-78e0-2174-99f8-c5b95db0b5bc/1035030723.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Educación financiera",
+      "titulo_en": "Educación financiera",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "empoderamiento",
+        "tranquilidad",
+        "claridad",
+        "control"
+      ],
+      "palabras_en": [
+        "empowerment",
+        "freedom",
+        "clarity",
+        "growth"
+      ],
+      "frases": [
+        "🗺 Visualiza tus metas financieras y construye un plan para alcanzarlas.",
+        "🌓 ¿Qué decisiones financieras has tomado hoy que impactarán tu futuro?",
+        "👁 Imagina un futuro donde tu dinero trabaja para ti, incluso mientras duermes.",
+        "🌊 Ahorra hoy, invierte mañana: el ciclo de la libertad financiera."
+      ],
+      "frases_en": [
+        "🌊 Take a step toward financial literacy and watch your confidence grow.",
+        "🌌 Have you considered where your money could take you?",
+        "👁 Imagine your savings blossoming into investments that flourish.",
+        "🕰 Learning to invest wisely today shapes your financial future."
+      ],
+      "frases_og": [
+        "🪞 La educación financiera es la base de unas finanzas saludables.",
+        "⚡ Aprende a distinguir entre invertir y gastar, y transforma tu economía",
+        "🌿 ¿Cuándo es el momento adecuado para endeudarse sin riesgos?",
+        "🧭 El ahorro es el primer paso hacia la inversión exitosa."
+      ],
+      "frases_og_en": [
+        "🪞 Financial education is the foundation for informed choices.",
+        "⚡ Begin your journey to financial wellness today.",
+        "🌿 What opportunities arise when money works for you?",
+        "🧭 Saving opens doors, while spending often closes them."
+      ],
+      "colores": [
+        "#90DFD2",
+        "#4DC1CB",
+        "#2C5896",
+        "#192457"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD2D3",
+      "tarjeta": {
+        "titulo": "La clave está en la educación financiera",
+        "parrafoTop": "[H]Comprender los fundamentos de la educación financiera es esencial para tomar decisiones informadas.[/H] Sin este conocimiento, el miedo y la confusión pueden dominar tu relación con el dinero, haciendo que te sientas impotente ante las circunstancias.",
+        "subtitulo": "¿Cómo puede el ahorro transformar tus finanzas?",
+        "parrafoBot": "[H]Ahorrar no solo es acumular dinero, sino prepararte para invertir de manera inteligente.[/H] Al hacerlo, tu dinero comienza a trabajar para ti, convirtiendo tus esfuerzos en oportunidades de crecimiento y libertad financiera.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La clave está en la educación financiera",
+        "parrafoTop": "[H]Comprender los fundamentos de la educación financiera es esencial para tomar decisiones informadas.[/H] Sin este conocimiento, el miedo y la confusión pueden dominar tu relación con el dinero, haciendo que te sientas impotente ante las circunstancias.",
+        "subtitulo": "¿Cómo puede el ahorro transformar tus finanzas?",
+        "parrafoBot": "[H]Ahorrar no solo es acumular dinero, sino prepararte para invertir de manera inteligente.[/H] Al hacerlo, tu dinero comienza a trabajar para ti, convirtiendo tus esfuerzos en oportunidades de crecimiento y libertad financiera.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La clave está en la educación financiera",
+        "parrafoTop": "[H]Comprender los fundamentos de la educación financiera es esencial para tomar decisiones informadas.[/H] Sin este conocimiento, el miedo y la confusión pueden dominar tu relación con el dinero, haciendo que te sientas impotente ante las circunstancias.",
+        "subtitulo": "¿Cómo puede el ahorro transformar tus finanzas?",
+        "parrafoBot": "[H]Ahorrar no solo es acumular dinero, sino prepararte para invertir de manera inteligente.[/H] Al hacerlo, tu dinero comienza a trabajar para ti, convirtiendo tus esfuerzos en oportunidades de crecimiento y libertad financiera.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Key Lies in Financial Education",
+        "parrafoTop": "[H]Understanding the fundamentals of financial education is crucial for making informed decisions.[/H] Without this knowledge, fear and confusion can dominate your relationship with money, leaving you feeling powerless in the face of circumstances.",
+        "subtitulo": "How can saving transform your finances?",
+        "parrafoBot": "[H]Saving isn't just about accumulating money; it's about preparing to invest wisely.[/H] By doing so, your money starts working for you, turning your efforts into opportunities for growth and financial freedom.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Key Lies in Financial Education",
+        "parrafoTop": "[H]Understanding the fundamentals of financial education is crucial for making informed decisions.[/H] Without this knowledge, fear and confusion can dominate your relationship with money, leaving you feeling powerless in the face of circumstances.",
+        "subtitulo": "How can saving transform your finances?",
+        "parrafoBot": "[H]Saving isn't just about accumulating money; it's about preparing to invest wisely.[/H] By doing so, your money starts working for you, turning your efforts into opportunities for growth and financial freedom.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Key Lies in Financial Education",
+        "parrafoTop": "[H]Understanding the fundamentals of financial education is crucial for making informed decisions.[/H] Without this knowledge, fear and confusion can dominate your relationship with money, leaving you feeling powerless in the face of circumstances.",
+        "subtitulo": "How can saving transform your finances?",
+        "parrafoBot": "[H]Saving isn't just about accumulating money; it's about preparing to invest wisely.[/H] By doing so, your money starts working for you, turning your efforts into opportunities for growth and financial freedom.",
+        "style": {
+          "accent": "#1F99D6",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Educaci%C3%B3n%20financiera%20I%C3%B1aki%20Jim%C3%A9nez%20Largo%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Educaci%C3%B3n%20financiera%20I%C3%B1aki%20Jim%C3%A9nez%20Largo%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Educación financiera",
+          "titulo_en": "Educación financiera",
+          "autor_completo": "Iñaki Jiménez Largo",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de la educación financiera básica",
+            "diferencia entre invertir y gastar",
+            "estrategias de ahorro e inversión",
+            "momento adecuado para endeudarse",
+            "impacto de la COVID-19 en las finanzas personales"
+          ],
+          "key_terms": [
+            "educación financiera",
+            "inversión",
+            "ahorro",
+            "endeudamiento",
+            "finanzas personales"
+          ],
+          "authorial_voice_notes": "El autor utiliza un tono didáctico y accesible, dirigido a lectores que buscan entender conceptos financieros básicos de manera clara y práctica."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "La lente del curador no se aplica directamente, ya que el libro se centra en la educación financiera y no en un tema más amplio o filosófico.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 200,
+          "saturation": "balanced",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 0,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La clave está en la educación financiera",
+          "parrafoTop": "Comprender los fundamentos de la educación financiera es esencial para tomar decisiones informadas. Sin este conocimiento, el miedo y la confusión pueden dominar tu relación con el dinero, haciendo que te sientas impotente ante las circunstancias.",
+          "subtitulo": "¿Cómo puede el ahorro transformar tus finanzas?",
+          "parrafoBot": "Ahorrar no solo es acumular dinero, sino prepararte para invertir de manera inteligente. Al hacerlo, tu dinero comienza a trabajar para ti, convirtiendo tus esfuerzos en oportunidades de crecimiento y libertad financiera."
+        },
+        "card_en": {
+          "titulo": "The Key Lies in Financial Education",
+          "parrafoTop": "Understanding the fundamentals of financial education is crucial for making informed decisions. Without this knowledge, fear and confusion can dominate your relationship with money, leaving you feeling powerless in the face of circumstances.",
+          "subtitulo": "How can saving transform your finances?",
+          "parrafoBot": "Saving isn't just about accumulating money; it's about preparing to invest wisely. By doing so, your money starts working for you, turning your efforts into opportunities for growth and financial freedom."
+        },
+        "emotional_words_es": [
+          "empoderamiento",
+          "tranquilidad",
+          "claridad",
+          "control"
+        ],
+        "emotional_words_en": [
+          "empowerment",
+          "freedom",
+          "clarity",
+          "growth"
+        ],
+        "og_phrases_es": [
+          "🪞 La educación financiera es la base de unas finanzas saludables.",
+          "⚡ Aprende a distinguir entre invertir y gastar, y transforma tu economía",
+          "🌿 ¿Cuándo es el momento adecuado para endeudarse sin riesgos?",
+          "🧭 El ahorro es el primer paso hacia la inversión exitosa."
+        ],
+        "og_phrases_en": [
+          "🪞 Financial education is the foundation for informed choices.",
+          "⚡ Begin your journey to financial wellness today.",
+          "🌿 What opportunities arise when money works for you?",
+          "🧭 Saving opens doors, while spending often closes them."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 Visualiza tus metas financieras y construye un plan para alcanzarlas."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Qué decisiones financieras has tomado hoy que impactarán tu futuro?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina un futuro donde tu dinero trabaja para ti, incluso mientras duermes."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Ahorra hoy, invierte mañana: el ciclo de la libertad financiera."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Take a step toward financial literacy and watch your confidence grow."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🌌 Have you considered where your money could take you?"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Imagine your savings blossoming into investments that flourish."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Learning to invest wisely today shapes your financial future."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.91,
+          "grounding_judge": 0.9,
+          "combined": 0.92,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9105263157894736,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "identity_sealed_with_evidence",
+        "tier_reached": 1.5,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Educación financiera",
+          "autor_completo": "Iñaki Jiménez Largo",
+          "año": "2021",
+          "editorial": null,
+          "categorias": [
+            "Finanzas",
+            "Libros",
+            "Negocios y finanzas personales"
+          ]
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "The generated content directly reflects key concepts from the book 'Educación financiera', such as the importance of financial education, the distinction between saving and investing, and the idea of making money work for you. Phrases like 'ahorrar para invertir' and 'la educación financiera es la base de unas finanzas saludables' are specific to the book's themes, demonstrating a strong alignment"
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "The content reflects key concepts from the book, such as the importance of financial education, saving, and investing. Phrases like 'your money starts working for you' and 'preparing to invest wisely' align closely with the book's focus on financial literacy and personal finance strategies. However, some phrases are somewhat generic and could apply to various financial self-help materials."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y preguntas retóricas sin referencias externas.",
+          "elapsed_ms": 1117,
+          "usage": {
+            "prompt_tokens": 379,
+            "completion_tokens": 28,
+            "total_tokens": 407,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Tono directo y enfoque en conceptos de la obra.",
+          "elapsed_ms": 999,
+          "usage": {
+            "prompt_tokens": 362,
+            "completion_tokens": 26,
+            "total_tokens": 388,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 795,
+        "total_ms": 1117
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 200,
+          "adjusted_hue": 200,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 0,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#90DFD2",
+          "--palette-1": "#4DC1CB",
+          "--palette-2": "#2C5896",
+          "--palette-3": "#192457",
+          "--accent": "#1F99D6",
+          "--accent-soft": "#1F99D638",
+          "--accent-glow": "#1F99D66b",
+          "--paper": "#CFD2D3",
+          "--ink": "#171A1C",
+          "--border": "#7C7E7F",
+          "--highlight-bg": "#1B87BCd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-04-26T13-38-26",
+      "_crono": {
+        "dia": "domingo",
+        "hora": 7,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "preparacion_semana",
+        "descripcion_dia": "Domingo prepara cuerpo y mente para lunes. Sobrio, reflexivo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 10257,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 2512,
+          "palette": 0,
+          "content_es": 2698,
+          "judge_es": 1083,
+          "content_en": 2114,
+          "judge_en": 1055,
+          "voice": 795
+        },
+        "elapsed_ms_total": 28428,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 7374,
+          "palette": 1,
+          "cover_fallback": 39,
+          "content_es": 8613,
+          "judge_es": 2684,
+          "content_en": 6234,
+          "judge_en": 2361,
+          "voice": 1117,
+          "post_processing": 6
+        },
+        "llm_calls_count": 7,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-04-26T13:38:54.589Z"
+    },
+    {
       "titulo": "Deep Work: Rules for Focused Success in a Distracted World",
       "autor": "Cal Newport",
       "tagline": "Enfócate en lo que realmente importa.",
