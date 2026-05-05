@@ -1,0 +1,10 @@
+
+# Auditorías de sesión (no commitear)
+triggui_*audit*.txt
+
+# Node deps
+node_modules/
+
+# Backups locales
+*.backup-*
+*.tmp-*

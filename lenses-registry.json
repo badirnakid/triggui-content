@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "description": "Registro de lentes activos en Triggui. Cambiar 'active' de 1 a 0 desactiva un lente sin borrarlo.",
+  "lenses": [
+    { "id": "chronobiology",  "active": 1, "type": "orchestrator+interpretive" },
+    { "id": "game-theory",    "active": 1, "type": "interpretive" },
+    { "id": "self-knowledge", "active": 1, "type": "interpretive" },
+    { "id": "pilares",        "active": 1, "type": "interpretive" },
+    { "id": "hawkins",        "active": 1, "type": "interpretive" }
+  ]
+}

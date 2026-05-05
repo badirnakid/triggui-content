@@ -1,0 +1,117 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Matriz cronobiológica de Triggui. Define cómo los pesos de cada lente cambian según día de la semana y franja horaria. Esta matriz es CONFIGURACIÓN, no código. Editarla afecta el comportamiento del sistema sin necesidad de recompilar nada.",
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-05",
+    "_changelog": {
+      "1.0.0": "Versión inicial. Construida desde pdf2_0cronobiologia.txt + MAPA_CRONOBIOLOGICO_MAESTRO_2.pdf + razonamiento sobre estados bioquímicos por franja. Pendiente afinar con uso real."
+    }
+  },
+
+  "_como_funciona": "El sistema, cada vez que un usuario consulta o se genera un libro, detecta el día y la hora actual. Luego busca en esta matriz el vector de pesos correspondiente. Cada peso entre 0 y 1 indica cuánto debería pesar ese lente en ese momento. Estos pesos son el BASELINE — después se modulan por trigger del usuario (Layer 2) y toggles del registry (Layer 3).",
+
+  "_como_modificar": "Si quieres cambiar cómo se comporta el sistema un día específico o una franja específica, simplemente edita los números aquí. Por ejemplo: si crees que self-knowledge debería pesar más los domingos en la noche, sube el valor de domingo.noche.self-knowledge. Próximo run lo respeta. NO requiere tocar código.",
+
+  "_lentes_indexados": [
+    "self-knowledge",
+    "game-theory",
+    "hawkins",
+    "pilares",
+    "chronobiology"
+  ],
+
+  "_franjas": {
+    "madrugada": "00:00–05:59 — cortisol bajo, melatonin alto, prefrontal poco activo, ventana de claridad fría sin filtro mental",
+    "manana":    "06:00–11:59 — pico cortisol, prefrontal activo, energía ejecutiva máxima, ventana de decisiones difíciles",
+    "tarde":     "12:00–17:59 — caída postprandial, energía emocional, procesamiento del día, propensión a reflexión",
+    "noche":     "18:00–23:59 — melatonin sube, sistema parasimpático activo, preparación al descanso, vulnerabilidad emocional"
+  },
+
+  "energia_por_dia": {
+    "_como_se_calcula": "Energía vital típica por día según patrones cronobiológicos observables. Usado para escalar respuestas y calibrar exigencia. Lunes: apertura. Martes: peor día (resaca de lunes). Miércoles: pivote. Jueves: pico semanal. Viernes: cierre. Sábado/Domingo: descanso.",
+    "lunes":     0.8,
+    "martes":    0.4,
+    "miércoles": 0.6,
+    "jueves":    1.2,
+    "viernes":   0.9,
+    "sábado":    0.8,
+    "domingo":   0.8
+  },
+
+  "hawkins_range_por_franja": {
+    "_explicacion": "El rango Hawkins óptimo cambia por franja del día. Madrugada favorece niveles bajos contemplativos (introspección). Mañana niveles más altos (acción, decisión). Tarde rangos medios. Noche rangos bajos preparativos al descanso.",
+    "madrugada": [20, 75],
+    "manana":    [50, 150],
+    "tarde":     [30, 120],
+    "noche":     [20, 100]
+  },
+
+  "matriz": {
+
+    "_explicacion_de_la_matriz": "Cada celda contiene los pesos baseline de los 5 lentes para ese día y franja. Valores entre 0 y 1. NO suman 1 (no es probabilidad, es magnitud absoluta). Un 0.95 significa lente dominante. Un 0.20 significa lente apenas presente.",
+
+    "lunes": {
+      "_filosofia_del_dia": "Lunes es apertura de semana. Energía 0.8. Modo 'activación gentil'. Madrugada: claridad para observación interna. Mañana: pico ejecutivo, decisiones de la semana. Tarde: ajuste y consolidación. Noche: cierre del primer empuje semanal.",
+      "madrugada": { "self-knowledge": 0.95, "game-theory": 0.20, "hawkins": 0.40, "pilares": 0.30, "chronobiology": 0.85 },
+      "manana":    { "self-knowledge": 0.65, "game-theory": 0.85, "hawkins": 0.50, "pilares": 0.75, "chronobiology": 0.55 },
+      "tarde":     { "self-knowledge": 0.55, "game-theory": 0.65, "hawkins": 0.55, "pilares": 0.55, "chronobiology": 0.45 },
+      "noche":     { "self-knowledge": 0.75, "game-theory": 0.30, "hawkins": 0.70, "pilares": 0.65, "chronobiology": 0.55 }
+    },
+
+    "martes": {
+      "_filosofia_del_dia": "Martes es el peor día (energía 0.4). Resaca acumulada del lunes, semana aún larga, sin novedad. Modo 'sostener sin exigir'. Pesos suaves en general. Self-knowledge sube en madrugada porque es el espacio honesto del día.",
+      "madrugada": { "self-knowledge": 0.85, "game-theory": 0.15, "hawkins": 0.50, "pilares": 0.30, "chronobiology": 0.80 },
+      "manana":    { "self-knowledge": 0.60, "game-theory": 0.55, "hawkins": 0.45, "pilares": 0.55, "chronobiology": 0.45 },
+      "tarde":     { "self-knowledge": 0.60, "game-theory": 0.40, "hawkins": 0.55, "pilares": 0.50, "chronobiology": 0.50 },
+      "noche":     { "self-knowledge": 0.70, "game-theory": 0.25, "hawkins": 0.65, "pilares": 0.60, "chronobiology": 0.55 }
+    },
+
+    "miércoles": {
+      "_filosofia_del_dia": "Miércoles es pivote (energía 0.6). Equilibrio entre carga semanal y horizonte de fin de semana. Pesos balanceados. Tarde tiene ligero boost de game-theory por ser ventana de re-planeación.",
+      "madrugada": { "self-knowledge": 0.90, "game-theory": 0.20, "hawkins": 0.45, "pilares": 0.35, "chronobiology": 0.80 },
+      "manana":    { "self-knowledge": 0.65, "game-theory": 0.75, "hawkins": 0.50, "pilares": 0.65, "chronobiology": 0.50 },
+      "tarde":     { "self-knowledge": 0.55, "game-theory": 0.70, "hawkins": 0.55, "pilares": 0.55, "chronobiology": 0.45 },
+      "noche":     { "self-knowledge": 0.75, "game-theory": 0.30, "hawkins": 0.65, "pilares": 0.60, "chronobiology": 0.55 }
+    },
+
+    "jueves": {
+      "_filosofia_del_dia": "Jueves es pico semanal (energía 1.2). Ventana óptima para decisiones, ejecución, libros densos. Game-theory dominante en mañana. Self-knowledge baja en mañana porque el día pide acción más que introspección.",
+      "madrugada": { "self-knowledge": 0.85, "game-theory": 0.30, "hawkins": 0.45, "pilares": 0.40, "chronobiology": 0.75 },
+      "manana":    { "self-knowledge": 0.55, "game-theory": 0.95, "hawkins": 0.55, "pilares": 0.80, "chronobiology": 0.50 },
+      "tarde":     { "self-knowledge": 0.60, "game-theory": 0.80, "hawkins": 0.55, "pilares": 0.65, "chronobiology": 0.45 },
+      "noche":     { "self-knowledge": 0.75, "game-theory": 0.40, "hawkins": 0.65, "pilares": 0.65, "chronobiology": 0.50 }
+    },
+
+    "viernes": {
+      "_filosofia_del_dia": "Viernes es cierre semanal (energía 0.9). Mañana ejecutiva pero ya con ojo en el descanso. Tarde y noche: revisión de la semana sube self-knowledge.",
+      "madrugada": { "self-knowledge": 0.85, "game-theory": 0.25, "hawkins": 0.50, "pilares": 0.35, "chronobiology": 0.75 },
+      "manana":    { "self-knowledge": 0.60, "game-theory": 0.80, "hawkins": 0.50, "pilares": 0.70, "chronobiology": 0.50 },
+      "tarde":     { "self-knowledge": 0.75, "game-theory": 0.55, "hawkins": 0.60, "pilares": 0.60, "chronobiology": 0.55 },
+      "noche":     { "self-knowledge": 0.85, "game-theory": 0.25, "hawkins": 0.75, "pilares": 0.70, "chronobiology": 0.60 }
+    },
+
+    "sábado": {
+      "_filosofia_del_dia": "Sábado es día social y de descanso (energía 0.8). Pilares.familia y pilares.relaciones suben. Game-theory baja. Hawkins en rangos altos (alegría, paz). Mañana relajada, no pico ejecutivo.",
+      "madrugada": { "self-knowledge": 0.80, "game-theory": 0.15, "hawkins": 0.55, "pilares": 0.45, "chronobiology": 0.70 },
+      "manana":    { "self-knowledge": 0.55, "game-theory": 0.30, "hawkins": 0.65, "pilares": 0.85, "chronobiology": 0.50 },
+      "tarde":     { "self-knowledge": 0.50, "game-theory": 0.25, "hawkins": 0.70, "pilares": 0.85, "chronobiology": 0.45 },
+      "noche":     { "self-knowledge": 0.65, "game-theory": 0.20, "hawkins": 0.80, "pilares": 0.80, "chronobiology": 0.55 }
+    },
+
+    "domingo": {
+      "_filosofia_del_dia": "Domingo es día de espíritu y vínculo (energía 0.8). Pilares.espíritu y pilares.familia altos. Game-theory bajo (no es día de estrategia). Hawkins favorece niveles altos: aceptación, amor, paz.",
+      "madrugada": { "self-knowledge": 0.85, "game-theory": 0.10, "hawkins": 0.65, "pilares": 0.50, "chronobiology": 0.75 },
+      "manana":    { "self-knowledge": 0.65, "game-theory": 0.20, "hawkins": 0.75, "pilares": 0.85, "chronobiology": 0.55 },
+      "tarde":     { "self-knowledge": 0.55, "game-theory": 0.20, "hawkins": 0.75, "pilares": 0.85, "chronobiology": 0.50 },
+      "noche":     { "self-knowledge": 0.75, "game-theory": 0.15, "hawkins": 0.85, "pilares": 0.80, "chronobiology": 0.60 }
+    }
+  },
+
+  "_notas_finales": {
+    "primera_version": "Esta matriz v1.0 es razonamiento informado pero NO está validada con datos reales de uso. Después de varias semanas en producción, ajustar valores donde se note desalineación entre lo que el sistema recomienda y lo que se siente correcto.",
+    "como_validar": "Llevar log de las consultas reales (Camino 3) y comparar con percepción humana de qué libro debería haberse recomendado. Donde haya divergencia consistente, ajustar la celda correspondiente.",
+    "no_tocar_a_la_ligera": "Cambios pequeños (±0.1) son seguros. Cambios grandes (±0.3 o más) pueden romper coherencia con libros ya generados que tenían _lens_compatibility calculado bajo el régimen anterior.",
+    "extensibilidad_futura": "Si en el futuro se agregan más lentes (ej: stoicism, narrative-therapy), agregar columna correspondiente a cada celda con valor inicial razonado. El sistema tolera lentes nuevos sin romperse."
+  }
+}
