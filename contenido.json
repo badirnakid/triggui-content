@@ -1,6 +1,512 @@
 {
   "libros": [
     {
+      "titulo": "Cómo leer libros",
+      "autor": "Mortimer J. Adler y Charles Van Doren",
+      "tagline": "Transforma tu experiencia de lectura.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/03/43/18/034318ed-fb6b-0c0f-9a32-5938c22c692e/9789895703364.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/03/43/18/034318ed-fb6b-0c0f-9a32-5938c22c692e/9789895703364.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Cómo leer libros",
+      "titulo_en": "How to Read a Book",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "claridad",
+        "profundidad",
+        "discernimiento",
+        "conexión"
+      ],
+      "palabras_en": [
+        "transformative",
+        "essential",
+        "invigorating",
+        "insightful"
+      ],
+      "frases": [
+        "💫 Toma un libro y pasa las páginas con atención plena.",
+        "⏳ ¿Cuándo fue la última vez que leíste con propósito?",
+        "🔭 Imagina un camino que se bifurca en distintos niveles de lectura.",
+        "💡 Leer bien es iluminar la mente con el conocimiento ajeno."
+      ],
+      "frases_en": [
+        "🌅 Observe the nuances in the text as you read.",
+        "🏛 How often do you pause to evaluate what you've read?",
+        "🌊 Imagine navigating through a rich landscape of ideas.",
+        "🌓 Each level of reading reveals the timeless dance of knowledge."
+      ],
+      "frases_og": [
+        "🕊 La lectura crítica revela más que las palabras en la página.",
+        "📖 Desarrolla tu comprensión lectora con técnicas específicas.",
+        "🌓 ¿Qué nivel de lectura has practicado hoy?",
+        "🪞 Evaluar el contenido es un arte que se cultiva."
+      ],
+      "frases_og_en": [
+        "🕊 Reading reveals layers of meaning waiting to be uncovered.",
+        "📖 Elevate your comprehension through critical analysis techniques.",
+        "🌓 What insights can a deeper reading unlock for you?",
+        "🪞 Understanding is a journey, not a destination in reading."
+      ],
+      "colores": [
+        "#7EF192",
+        "#E830C9",
+        "#13AE54",
+        "#650B40"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0EF",
+      "tarjeta": {
+        "titulo": "La importancia de los niveles de lectura",
+        "parrafoTop": "La lectura no es un acto único, sino un viaje a través de múltiples niveles que permiten una comprensión más profunda del texto. [H]Desde la lectura elementar hasta la lectura crítica, cada nivel tiene su propio propósito y técnica que potencia la experiencia lectora[/H].",
+        "subtitulo": "¿Cómo puedes elevar tu comprensión lectora?",
+        "parrafoBot": "[H]Desarrollar habilidades en lectura sistemática y profunda transforma tu relación con los libros.[/H] La evaluación de contenido se convierte en una herramienta esencial para extraer la esencia de cada obra, permitiéndote disfrutar y aprender de cada lectura.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La importancia de los niveles de lectura",
+        "parrafoTop": "La lectura no es un acto único, sino un viaje a través de múltiples niveles que permiten una comprensión más profunda del texto. [H]Desde la lectura elementar hasta la lectura crítica, cada nivel tiene su propio propósito y técnica que potencia la experiencia lectora[/H].",
+        "subtitulo": "¿Cómo puedes elevar tu comprensión lectora?",
+        "parrafoBot": "[H]Desarrollar habilidades en lectura sistemática y profunda transforma tu relación con los libros.[/H] La evaluación de contenido se convierte en una herramienta esencial para extraer la esencia de cada obra, permitiéndote disfrutar y aprender de cada lectura.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La importancia de los niveles de lectura",
+        "parrafoTop": "La lectura no es un acto único, sino un viaje a través de múltiples niveles que permiten una comprensión más profunda del texto. [H]Desde la lectura elementar hasta la lectura crítica, cada nivel tiene su propio propósito y técnica que potencia la experiencia lectora[/H].",
+        "subtitulo": "¿Cómo puedes elevar tu comprensión lectora?",
+        "parrafoBot": "[H]Desarrollar habilidades en lectura sistemática y profunda transforma tu relación con los libros.[/H] La evaluación de contenido se convierte en una herramienta esencial para extraer la esencia de cada obra, permitiéndote disfrutar y aprender de cada lectura.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Importance of Reading Levels",
+        "parrafoTop": "Reading is not a solitary act; it is a journey through multiple levels that enable a deeper understanding of the text. [H]From elementary reading to critical analysis, each level has its own purpose[/H] and technique that enhances the reading experience.",
+        "subtitulo": "How can you elevate your reading comprehension?",
+        "parrafoBot": "[H]Developing skills in systematic and deep reading transforms your relationship with books.[/H] Content evaluation becomes an essential tool to extract the essence of each work, allowing you to enjoy and learn from every reading.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Importance of Reading Levels",
+        "parrafoTop": "Reading is not a solitary act; it is a journey through multiple levels that enable a deeper understanding of the text. [H]From elementary reading to critical analysis, each level has its own purpose[/H] and technique that enhances the reading experience.",
+        "subtitulo": "How can you elevate your reading comprehension?",
+        "parrafoBot": "[H]Developing skills in systematic and deep reading transforms your relationship with books.[/H] Content evaluation becomes an essential tool to extract the essence of each work, allowing you to enjoy and learn from every reading.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Importance of Reading Levels",
+        "parrafoTop": "Reading is not a solitary act; it is a journey through multiple levels that enable a deeper understanding of the text. [H]From elementary reading to critical analysis, each level has its own purpose[/H] and technique that enhances the reading experience.",
+        "subtitulo": "How can you elevate your reading comprehension?",
+        "parrafoBot": "[H]Developing skills in systematic and deep reading transforms your relationship with books.[/H] Content evaluation becomes an essential tool to extract the essence of each work, allowing you to enjoy and learn from every reading.",
+        "style": {
+          "accent": "#12E235",
+          "paper": "#EFF0EF",
+          "ink": "#171C18",
+          "border": "#8F908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+C%C3%B3mo%20leer%20libros%20Mortimer%20J.%20Adler%20y%20Charles%20Van%20Doren%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+How%20to%20Read%20a%20Book%20Mortimer%20J.%20Adler%20y%20Charles%20Van%20Doren%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Cómo leer libros",
+          "titulo_en": "How to Read a Book",
+          "autor_completo": "Mortimer J. Adler y Charles Van Doren",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "niveles de lectura",
+            "técnicas de lectura crítica",
+            "análisis de libros",
+            "evaluación de contenido",
+            "mejora de la comprensión lectora"
+          ],
+          "key_terms": [
+            "lectura elementar",
+            "lectura sistemática",
+            "lectura profunda",
+            "lectura rápida",
+            "análisis crítico"
+          ],
+          "authorial_voice_notes": "La voz autoral de este libro es clara, educativa y orientada a la práctica, diseñada para guiar al lector a través de diversas técnicas y niveles de lectura de manera accesible y comprensible."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro \"Cómo leer libros\" se enfoca en proporcionar herramientas que permiten a los lectores aumentar su capacidad de comprensión y análisis de textos. Al abordar diferentes niveles de lectura, promueve la idea de que leer no es solo un acto pasivo, sino un proceso activo que requiere habilidades críticas. La obra sugiere que la lectura puede ser transformadora y enriquecedora, lo que se alinea con la intención de cada lector de mejorar su experiencia literaria.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 120,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La importancia de los niveles de lectura",
+          "parrafoTop": "La lectura no es un acto único, sino un viaje a través de múltiples niveles que permiten una comprensión más profunda del texto. Desde la lectura elementar hasta la lectura crítica, cada nivel tiene su propio propósito y técnica que potencia la experiencia lectora.",
+          "subtitulo": "¿Cómo puedes elevar tu comprensión lectora?",
+          "parrafoBot": "Desarrollar habilidades en lectura sistemática y profunda transforma tu relación con los libros. La evaluación de contenido se convierte en una herramienta esencial para extraer la esencia de cada obra, permitiéndote disfrutar y aprender de cada lectura."
+        },
+        "card_en": {
+          "titulo": "The Importance of Reading Levels",
+          "parrafoTop": "Reading is not a solitary act; it is a journey through multiple levels that enable a deeper understanding of the text. From elementary reading to critical analysis, each level has its own purpose and technique that enhances the reading experience.",
+          "subtitulo": "How can you elevate your reading comprehension?",
+          "parrafoBot": "Developing skills in systematic and deep reading transforms your relationship with books. Content evaluation becomes an essential tool to extract the essence of each work, allowing you to enjoy and learn from every reading."
+        },
+        "emotional_words_es": [
+          "claridad",
+          "profundidad",
+          "discernimiento",
+          "conexión"
+        ],
+        "emotional_words_en": [
+          "transformative",
+          "essential",
+          "invigorating",
+          "insightful"
+        ],
+        "og_phrases_es": [
+          "🕊 La lectura crítica revela más que las palabras en la página.",
+          "📖 Desarrolla tu comprensión lectora con técnicas específicas.",
+          "🌓 ¿Qué nivel de lectura has practicado hoy?",
+          "🪞 Evaluar el contenido es un arte que se cultiva."
+        ],
+        "og_phrases_en": [
+          "🕊 Reading reveals layers of meaning waiting to be uncovered.",
+          "📖 Elevate your comprehension through critical analysis techniques.",
+          "🌓 What insights can a deeper reading unlock for you?",
+          "🪞 Understanding is a journey, not a destination in reading."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 Toma un libro y pasa las páginas con atención plena."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Cuándo fue la última vez que leíste con propósito?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina un camino que se bifurca en distintos niveles de lectura."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "luz",
+            "phrase": "💡 Leer bien es iluminar la mente con el conocimiento ajeno."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Observe the nuances in the text as you read."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 How often do you pause to evaluate what you've read?"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Imagine navigating through a rich landscape of ideas."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Each level of reading reveals the timeless dance of knowledge."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.9,
+          "combined": 0.93,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "identity_sealed_with_evidence",
+        "tier_reached": 1.5,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Cómo leer libros",
+          "autor_completo": "Mortimer J. Adler y Charles Van Doren",
+          "año": "2024",
+          "editorial": null,
+          "categorias": [
+            "Artes y disciplinas lingüísticas",
+            "Libros",
+            "Técnicos y profesionales",
+            "Educación",
+            "Referencia",
+            "Recursos de estudio"
+          ]
+        },
+        "match_score": 0.7608823529411766,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "El contenido generado se ancla firmemente en conceptos específicos del libro, como los niveles de lectura y la evaluación crítica del contenido, que son temas centrales en 'Cómo leer libros'. Las frases reflejan directamente las técnicas y propósitos de lectura descritos por Adler y Van Doren, lo que demuestra un entendimiento profundo de la obra."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "reason": "The content specifically discusses reading levels and techniques, which are central concepts in 'Cómo leer libros'. It emphasizes critical analysis and systematic reading, aligning closely with Adler and Van Doren's teachings. However, some phrases are somewhat generic and could apply to various reading contexts, slightly reducing the score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en la experiencia lectora.",
+          "elapsed_ms": 1302,
+          "usage": {
+            "prompt_tokens": 391,
+            "completion_tokens": 27,
+            "total_tokens": 418,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Tono directo y enfoque en la experiencia de lectura.",
+          "elapsed_ms": 1286,
+          "usage": {
+            "prompt_tokens": 375,
+            "completion_tokens": 26,
+            "total_tokens": 401,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 819,
+        "total_ms": 1302
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 120,
+          "adjusted_hue": 130,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.12",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EF192",
+          "--palette-1": "#E830C9",
+          "--palette-2": "#13AE54",
+          "--palette-3": "#650B40",
+          "--accent": "#12E235",
+          "--accent-soft": "#12E23538",
+          "--accent-glow": "#12E2356b",
+          "--paper": "#EFF0EF",
+          "--ink": "#171C18",
+          "--border": "#8F908F",
+          "--highlight-bg": "#10C72Fd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-07T03-01-27",
+      "_crono": {
+        "dia": "miércoles",
+        "hora": 21,
+        "franja": "noche",
+        "energia": 0.6,
+        "modo": "meseta_media",
+        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 45196,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 14928,
+          "palette": 0,
+          "content_es": 13998,
+          "judge_es": 1018,
+          "content_en": 13436,
+          "judge_en": 997,
+          "voice": 819,
+          "highlight_judge_es_parrafoTop": 654,
+          "highlight_judge_es_parrafoTop_retry": 662,
+          "highlight_judge_es_parrafoBot": 649,
+          "highlight_judge_en_parrafoTop": 647,
+          "highlight_judge_en_parrafoBot": 641
+        },
+        "elapsed_ms_total": 26892,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 5402,
+          "palette": 0,
+          "cover_fallback": 91,
+          "content_es": 5456,
+          "judge_es": 3751,
+          "content_en": 9054,
+          "judge_en": 1831,
+          "voice": 1303,
+          "highlight_judge": 5703,
+          "lens_compatibility": 1920,
+          "post_processing": 7628
+        },
+        "llm_calls_count": 7,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.2,
+          "familia": 0.1,
+          "espiritu": 0.2,
+          "relaciones": 0.1,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-07T03:02:02.443Z"
+    },
+    {
       "titulo": "Cómo ganar amigos",
       "autor": "Dale Carnegie",
       "tagline": "Clásico absoluto de las relaciones humanas es un compendio de principios y verdades que aun hoy no han sido aún superados. Cuando inició este proyecto Dale Carnegie decidió aplicar en él su gran conocimiento sobre las personas sus dotes de observación y su experiencia profesional y el resultado fue un tratado de psicología cotidiana que no ha perdido ni un ápice de actualidad y que en buena medida es el origen del marketing moderno. Según Carnegie el éxito económico depende en un 15 por ciento del conocimiento profesional y en un 85 por ciento de la capacidad para expresar ideas asumir el liderazgo y despertar entusiasmo en los demás.Carnegie nos muestra las técnicas fundamentales para ser empáticos y gustar a los demás comprender sus puntos de vista y saber convencer de nuestras propias ideas sin causar resentimiento.",
