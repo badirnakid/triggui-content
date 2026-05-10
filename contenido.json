@@ -3,9 +3,748 @@
     "version": "4.0",
     "schema_version": "4.0",
     "total": 0,
-    "current_edition_slug": null
+    "current_edition_slug": null,
+    "next_edition_number": 37
   },
   "libros": [
+    {
+      "titulo": "Elon Musk",
+      "autor": "Walter Isaacson",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/e1/13/9e/e1139e4f-949f-f741-b070-4601aa773681/9789636201944.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/e1/13/9e/e1139e4f-949f-f741-b070-4601aa773681/9789636201944.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Elon Musk",
+      "titulo_en": "Elon Musk",
+      "idioma_original": "es",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "tensión",
+        "sacrificio",
+        "conflicto",
+        "dualidad"
+      ],
+      "palabras_en": [
+        "ambition",
+        "sacrifice",
+        "duality",
+        "innovation"
+      ],
+      "frases": [
+        "🌌 Cada decisión de Musk se siente como un terremoto que sacude el paisaje empresarial, dejando una huella indeleble en su camino hacia la innovación.",
+        "⏳ ¿Qué sacrificios estarías dispuesto a hacer por tu propia visión?",
+        "🔭 Imagina a Musk en una sala de reuniones, desafiando a sus críticos con una mirada decidida.",
+        "💫 El innovador avanza, a veces con pasos firmes, a veces tambaleándose."
+      ],
+      "frases_en": [
+        "💫 Embrace the tension within your own ambitions.",
+        "🏛 How far would you go to change the world?",
+        "🔭 Picture a future shaped by bold ideas and audacious dreams.",
+        "🌓 In the realm of innovation, time is both ally and adversary."
+      ],
+      "frases_og": [
+        "🪞 La genialidad a menudo trae consigo una carga pesada.",
+        "⚡ ¿Cuánto dolor está dispuesto a soportar un innovador?",
+        "🌿 Cada paso hacia el éxito de Musk exigía un sacrificio personal que resonaba profundamente en su vida cotidiana.",
+        "🧭 Dentro de la mente de Musk, la lucha interna se entrelaza con cada uno de sus logros, revelando la complejidad de su búsqueda por innovar."
+      ],
+      "frases_og_en": [
+        "🪞 En cada paso de su carrera, Musk se erige como un visionario, desafiando las normas establecidas con una audacia que pocos se atreven a igualar.",
+        "⚡ Challenge the conventional; embrace the extraordinary.",
+        "🌿 What is the true cost of relentless ambition?",
+        "🧭 Innovation demands both brilliance and sacrifice."
+      ],
+      "colores": [
+        "#7EB8F1",
+        "#E88C30",
+        "#133AAE",
+        "#654F0B"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD1D3",
+      "tarjeta": {
+        "titulo": "La dualidad del innovador",
+        "parrafoTop": "Elon Musk es un estudio en contrastes: un visionario empresarial que desafía las convenciones establecidas en su incansable búsqueda de innovación, pero también un hombre que enfrenta sus propios demonios. [H]Su vida es un ciclo constante de sacrificios[/H], donde cada éxito se ve empañado por las decisiones difíciles que ha,",
+        "subtitulo": "¿Qué precio paga por su genialidad?",
+        "parrafoBot": "En su afán por cambiar el mundo, Musk revela una dualidad inquietante: mientras impulsa la exploración espacial y promueve la innovación disruptiva, su carácter polarizador genera tanto admiración como rechazo. [H]Este tira y afloja entre su visión y su humanidad es lo que lo define[/H].",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La dualidad del innovador",
+        "parrafoTop": "Elon Musk es un estudio en contrastes: un visionario empresarial que desafía las convenciones establecidas en su incansable búsqueda de innovación, pero también un hombre que enfrenta sus propios demonios. [H]Su vida es un ciclo constante de sacrificios[/H], donde cada éxito se ve empañado por las decisiones difíciles que ha,",
+        "subtitulo": "¿Qué precio paga por su genialidad?",
+        "parrafoBot": "En su afán por cambiar el mundo, Musk revela una dualidad inquietante: mientras impulsa la exploración espacial y promueve la innovación disruptiva, su carácter polarizador genera tanto admiración como rechazo. [H]Este tira y afloja entre su visión y su humanidad es lo que lo define[/H].",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La dualidad del innovador",
+        "parrafoTop": "Elon Musk es un estudio en contrastes: un visionario empresarial que desafía las convenciones establecidas en su incansable búsqueda de innovación, pero también un hombre que enfrenta sus propios demonios. [H]Su vida es un ciclo constante de sacrificios[/H], donde cada éxito se ve empañado por las decisiones difíciles que ha,",
+        "subtitulo": "¿Qué precio paga por su genialidad?",
+        "parrafoBot": "En su afán por cambiar el mundo, Musk revela una dualidad inquietante: mientras impulsa la exploración espacial y promueve la innovación disruptiva, su carácter polarizador genera tanto admiración como rechazo. [H]Este tira y afloja entre su visión y su humanidad es lo que lo define[/H].",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Cost of Vision",
+        "parrafoTop": "Elon Musk represents a complex tapestry of ambition and contradiction. He is an entrepreneur who continuously challenges established norms in his unyielding quest for innovation, yet he grapples with personal demons that often shadow his achievements. [H]Every triumph is accompanied by sacrifices that weigh heavily, resh塑[/H]",
+        "subtitulo": "What price does genius demand?",
+        "parrafoBot": "In his relentless drive to reshape our world, Musk reveals a haunting duality: while he champions disruptive innovation and paves the way for space exploration, his polarizing personality elicits both admiration and disdain. [H]This intricate interplay between vision and humanity is what ultimately defines him.[/H]",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Cost of Vision",
+        "parrafoTop": "Elon Musk represents a complex tapestry of ambition and contradiction. He is an entrepreneur who continuously challenges established norms in his unyielding quest for innovation, yet he grapples with personal demons that often shadow his achievements. [H]Every triumph is accompanied by sacrifices that weigh heavily, resh塑[/H]",
+        "subtitulo": "What price does genius demand?",
+        "parrafoBot": "In his relentless drive to reshape our world, Musk reveals a haunting duality: while he champions disruptive innovation and paves the way for space exploration, his polarizing personality elicits both admiration and disdain. [H]This intricate interplay between vision and humanity is what ultimately defines him.[/H]",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Cost of Vision",
+        "parrafoTop": "Elon Musk represents a complex tapestry of ambition and contradiction. He is an entrepreneur who continuously challenges established norms in his unyielding quest for innovation, yet he grapples with personal demons that often shadow his achievements. [H]Every triumph is accompanied by sacrifices that weigh heavily, resh塑[/H]",
+        "subtitulo": "What price does genius demand?",
+        "parrafoBot": "In his relentless drive to reshape our world, Musk reveals a haunting duality: while he champions disruptive innovation and paves the way for space exploration, his polarizing personality elicits both admiration and disdain. [H]This intricate interplay between vision and humanity is what ultimately defines him.[/H]",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#CFD1D3",
+          "ink": "#171A1C",
+          "border": "#7C7D7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Elon%20Musk%20Walter%20Isaacson%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Elon%20Musk%20Walter%20Isaacson%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Elon Musk",
+          "titulo_en": "Elon Musk",
+          "autor_completo": "Walter Isaacson",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la lucha de Musk contra las convenciones establecidas en su búsqueda de la innovación",
+            "los sacrificios personales y profesionales de Musk que han acompañado su éxito",
+            "la dualidad de la personalidad de Musk, entre ser un líder visionario y una figura polarizadora"
+          ],
+          "key_terms": [
+            "innovación disruptiva",
+            "cultura de riesgo",
+            "visionario empresarial",
+            "manifiesto de Tesla",
+            "exploración espacial"
+          ],
+          "authorial_voice_notes": "Walter Isaacson emplea un tono narrativo que combina profundidad biográfica con un análisis crítico de las decisiones y el carácter de Musk, ofreciendo una visión íntima y reveladora."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro de Isaacson aborda el tema de la lucha interna y externa de Elon Musk, lo que se puede vincular a la teoría de juegos en cuanto a las decisiones que toma y cómo estas afectan su entorno. Se observa la tensión entre sus ambiciones y las consecuencias que generan en su vida personal y profesional, así como el impacto de su carácter en sus relaciones y resultados.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 200,
+          "saturation": "vivid",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Prosperidad",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La dualidad del innovador",
+          "parrafoTop": "Elon Musk es un estudio en contrastes: un visionario empresarial que desafía las convenciones establecidas en su incansable búsqueda de innovación, pero también un hombre que enfrenta sus propios demonios. Su vida es un ciclo constante de sacrificios, donde cada éxito se ve empañado por las decisiones difíciles que ha,",
+          "subtitulo": "¿Qué precio paga por su genialidad?",
+          "parrafoBot": "En su afán por cambiar el mundo, Musk revela una dualidad inquietante: mientras impulsa la exploración espacial y promueve la innovación disruptiva, su carácter polarizador genera tanto admiración como rechazo. Este tira y afloja entre su visión y su humanidad es lo que lo define."
+        },
+        "card_en": {
+          "titulo": "The Cost of Vision",
+          "parrafoTop": "Elon Musk represents a complex tapestry of ambition and contradiction. He is an entrepreneur who continuously challenges established norms in his unyielding quest for innovation, yet he grapples with personal demons that often shadow his achievements. Every triumph is accompanied by sacrifices that weigh heavily, resh塑",
+          "subtitulo": "What price does genius demand?",
+          "parrafoBot": "In his relentless drive to reshape our world, Musk reveals a haunting duality: while he champions disruptive innovation and paves the way for space exploration, his polarizing personality elicits both admiration and disdain. This intricate interplay between vision and humanity is what ultimately defines him."
+        },
+        "emotional_words_es": [
+          "tensión",
+          "sacrificio",
+          "conflicto",
+          "dualidad"
+        ],
+        "emotional_words_en": [
+          "ambition",
+          "sacrifice",
+          "duality",
+          "innovation"
+        ],
+        "og_phrases_es": [
+          "🪞 La genialidad a menudo trae consigo una carga pesada.",
+          "⚡ ¿Cuánto dolor está dispuesto a soportar un innovador?",
+          "🌿 Cada paso hacia el éxito de Musk exigía un sacrificio personal que resonaba profundamente en su vida cotidiana.",
+          "🧭 Dentro de la mente de Musk, la lucha interna se entrelaza con cada uno de sus logros, revelando la complejidad de su búsqueda por innovar."
+        ],
+        "og_phrases_en": [
+          "🪞 En cada paso de su carrera, Musk se erige como un visionario, desafiando las normas establecidas con una audacia que pocos se atreven a igualar.",
+          "⚡ Challenge the conventional; embrace the extraordinary.",
+          "🌿 What is the true cost of relentless ambition?",
+          "🧭 Innovation demands both brilliance and sacrifice."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Cada decisión de Musk se siente como un terremoto que sacude el paisaje empresarial, dejando una huella indeleble en su camino hacia la innovación."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Qué sacrificios estarías dispuesto a hacer por tu propia visión?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina a Musk en una sala de reuniones, desafiando a sus críticos con una mirada decidida."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 El innovador avanza, a veces con pasos firmes, a veces tambaleándose."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Embrace the tension within your own ambitions."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 How far would you go to change the world?"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Picture a future shaped by bold ideas and audacious dreams."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 In the realm of innovation, time is both ally and adversary."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.32,
+          "specificity": 0.95,
+          "grounding_judge": 0.7,
+          "combined": 0.75,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.31999999999999995,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.7
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Elon Musk",
+          "autor_completo": "Walter Isaacson",
+          "año": "2023",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6471654827",
+          "categorias": [
+            "Biografías y memorias",
+            "Libros"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/elon-musk/id6471654827?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content reflects key themes from the ground truth, such as Musk's duality as an innovator and his personal struggles. Phrases like 'sacrificios personales' and 'demonios' connect directly to the biography's focus on Musk's character and challenges. However, some phrases are more general and could apply to other innovators, slightly lowering the score."
+        },
+        "en": {
+          "grounded_score": 0.6,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects some specific concepts from the ground truth, such as Musk's ambition and personal demons, but it lacks direct references to his specific achievements or the detailed narrative style of Isaacson's biography. The phrases are somewhat generic and could apply to various books about innovators or entrepreneurs."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "resena",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla sobre Musk y su dualidad desde una perspectiva externa.",
+          "elapsed_ms": 736,
+          "usage": {
+            "prompt_tokens": 414,
+            "completion_tokens": 29,
+            "total_tokens": 443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla de Musk y su impacto desde una perspectiva externa.",
+          "elapsed_ms": 584,
+          "usage": {
+            "prompt_tokens": 393,
+            "completion_tokens": 28,
+            "total_tokens": 421,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": true,
+        "total_tokens": 864,
+        "total_ms": 736
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 200,
+          "adjusted_hue": 210,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "11.42",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EB8F1",
+          "--palette-1": "#E88C30",
+          "--palette-2": "#133AAE",
+          "--palette-3": "#654F0B",
+          "--accent": "#127AE2",
+          "--accent-soft": "#127AE238",
+          "--accent-glow": "#127AE26b",
+          "--paper": "#CFD1D3",
+          "--ink": "#171A1C",
+          "--border": "#7C7D7F",
+          "--highlight-bg": "#106BC7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_en_parrafoTop_uncorrectable",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge",
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-10T19-26-30",
+      "_crono": {
+        "dia": "domingo",
+        "hora": 13,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "preparacion_semana",
+        "descripcion_dia": "Domingo prepara cuerpo y mente para lunes. Sobrio, reflexivo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 64090,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15023,
+          "palette": 0,
+          "content_es": 14705,
+          "judge_es": 1316,
+          "content_en": 14129,
+          "judge_en": 1263,
+          "voice": 864,
+          "voice_extended": 16790,
+          "highlight_judge_es_parrafoTop": 649,
+          "highlight_judge_es_parrafoBot": 652,
+          "highlight_judge_es_parrafoBot_retry": 651,
+          "highlight_judge_en_parrafoTop": 647,
+          "highlight_judge_en_parrafoBot": 641,
+          "csal": 9230
+        },
+        "elapsed_ms_total": 29734,
+        "elapsed_ms_by_phase": {
+          "grounding": 8,
+          "anchors": 5135,
+          "palette": 0,
+          "cover_fallback": 50,
+          "content_es": 4897,
+          "judge_es": 2603,
+          "content_en": 4870,
+          "judge_en": 2100,
+          "voice": 736,
+          "voice_extended": 9330,
+          "highlight_judge": 3864,
+          "lens_compatibility": 2163,
+          "csal": 52540,
+          "post_processing": 58575
+        },
+        "llm_calls_count": 43,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [
+          "highlight_en_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 4,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.7,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.7,
+          "negocio": 0.9,
+          "familia": 0.2,
+          "espiritu": 0.3,
+          "relaciones": 0.4,
+          "finanzas": 0.5
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando te preguntas cómo alguien puede cambiar el mundo",
+          "antes de decidir emprender un proyecto innovador",
+          "cuando te sientes atrapado por las normas sociales",
+          "después de un fracaso profesional y buscas inspiración para seguir",
+          "cuando ves a alguien desafiar el status quo",
+          "antes de una presentación importante y necesitas inspiración",
+          "cuando sientes que tus ideas no son comprendidas por los demás",
+          "después de una discusión intensa sobre el futuro de la tecnología",
+          "cuando te cuestionas el precio del éxito personal",
+          "antes de aceptar un riesgo importante en tu carrera",
+          "cuando te sientes solo en tus ambiciones",
+          "después de asistir a una conferencia de tecnología innovadora",
+          "cuando necesitas recordar que incluso las figuras más exitosas enfrentan luchas personales",
+          "antes de enfrentarte a una decisión ética en el trabajo",
+          "cuando buscas entender cómo se desarrollan las grandes ideas",
+          "después de escuchar sobre la última innovación tecnológica",
+          "cuando necesitas ejemplos de liderazgo disruptivo",
+          "antes de una entrevista de trabajo en una empresa innovadora",
+          "cuando te enfrentas a críticas por tus ideas poco convencionales",
+          "después de ver una película sobre el futuro de la humanidad",
+          "cuando necesitas motivación para superar obstáculos personales",
+          "antes de comenzar un nuevo negocio",
+          "cuando te sientes abrumado por las expectativas sociales",
+          "después de leer sobre un avance científico importante",
+          "cuando buscas historias de resiliencia en figuras públicas",
+          "antes de tomar una decisión que podría afectar a muchos",
+          "cuando te preguntas cómo manejar situaciones de alto riesgo",
+          "después de una conversación sobre el cambio climático",
+          "cuando necesitas ejemplos de perseverancia en la adversidad",
+          "cuando reflexionas sobre el impacto de la tecnología en la sociedad"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "inspiración",
+            "frustración",
+            "ambición",
+            "determinación",
+            "duda",
+            "soledad",
+            "esperanza",
+            "ansiedad",
+            "curiosidad",
+            "conflicto"
+          ],
+          "objetos": [
+            "cohetes",
+            "autos eléctricos",
+            "acciones de Tesla",
+            "espacios de trabajo",
+            "prototipos",
+            "presentaciones",
+            "contratos",
+            "redes sociales",
+            "criptomonedas",
+            "tweets"
+          ],
+          "contextos": [
+            "sala de reuniones",
+            "centro de innovación",
+            "fábrica de Tesla",
+            "conferencia tecnológica",
+            "espacio de coworking",
+            "lanzamiento de cohetes",
+            "reunión de accionistas",
+            "oficina de diseño",
+            "incubadora de startups",
+            "espacio exterior"
+          ],
+          "verbos": [
+            "innovar",
+            "arriesgar",
+            "desafiar",
+            "crear",
+            "liderar",
+            "fallar",
+            "triunfar",
+            "proponer",
+            "negociar",
+            "criticar"
+          ]
+        },
+        "concept_tags": [
+          "liderazgo visionario",
+          "riesgo calculado",
+          "dualidad de carácter",
+          "conflictos personales",
+          "innovación disruptiva",
+          "sacrificios personales",
+          "futuro tecnológico",
+          "empresas emergentes",
+          "desafíos éticos",
+          "creatividad radical",
+          "resiliencia ante el fracaso",
+          "motivación interna",
+          "impacto global",
+          "dinámica empresarial",
+          "personalidad polarizadora"
+        ],
+        "anti_patterns": [
+          "cuando buscas una guía paso a paso sobre cómo innovar",
+          "si esperas una crítica exclusivamente positiva o negativa de",
+          "cuando necesitas técnicas específicas de autoayuda",
+          "si buscas una biografía centrada solo en la vida personal de",
+          "cuando buscas información técnica detallada sobre cohetes o",
+          "si esperas un análisis de mercado financiero detallado"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌍"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🔥"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🚀"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🦾"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una reflexión que podría formar parte del contenido del libro, sugiriendo una voz autoral introspectiva."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta reflexiva que podría estar en el contexto de un libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión sobre la vida de Musk, sugiriendo un análisis interno que podría encontrarse en el desarrollo del personaje dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una reflexión interna sobre Musk, sugiriendo un análisis profundo que podría estar presente en el contenido del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "fuera",
+              "confidence": 0.85,
+              "reason": "La frase describe las acciones de Musk desde una perspectiva externa, como un análisis de su impacto en el mundo empresarial, en lugar de ser un contenido narrativo del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta reflexiva que invita al lector a la introspección, típica de un contenido que se encuentra dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una escena que podría estar narrada en el libro, evocando una imagen vívida de un momento específico."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una voz narrativa que describe la acción de un personaje, lo que sugiere que está dentro del libro y no es una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a narrative style that reflects the author's voice, describing Musk's character and actions as if part of the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a direct call to action that feels like it could be part of the narrative or thematic exploration within the book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that suggests an introspective exploration typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a concept that could be part of the author's narrative or argument within the book, suggesting a philosophical insight."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a direct thought or insight that feels like it comes from the author's voice, suggesting a personal reflection or advice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a direct question that engages the reader, suggesting it is part of the narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase invites the reader to envision a scenario, suggesting an immersive experience typical of narrative writing."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a philosophical reflection that feels like it could be part of the narrative or thematic exploration within the book, rather than a description of the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-10T19:27:59.301Z",
+      "_edicion_numero": 36
+    },
     {
       "titulo": "Las 6 hormonas que van a revolucionar tu vida",
       "autor": "David JP Phillips",
