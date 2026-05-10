@@ -11,3 +11,9 @@ node_modules/
 
 # Backups locales pre-migracion (no commitear)
 archive/
+
+# 🌒 Archivos de auditoría/handoff temporales (Silicon Valley grade hygiene)
+AUDIT_*.txt
+TRIGGUI_*HANDOFF*.txt
+*.pre-*.bak
+*.pre-*.json
