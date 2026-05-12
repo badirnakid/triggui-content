@@ -32,24 +32,40 @@ if (!KEY) {
 
 const openai = new OpenAI({ apiKey: KEY });
 
+// ═══════════════════════════════════════════════════════════════════════
+// 🌒 CATALOG_MODE — soporte multi-catálogo Triggui Kids
+// ═══════════════════════════════════════════════════════════════════════
+// Controla qué catálogo de libros se procesa.
+// Default: "adulto" (preserva comportamiento original al 100%)
+// Alternativa: "kids" (activa Triggui Kids con catálogo + prompt infantil)
+// ═══════════════════════════════════════════════════════════════════════
+const CATALOG_MODE = (process.env.CATALOG_MODE || "adulto").toLowerCase();
+const IS_KIDS = CATALOG_MODE === "kids";
+console.log(IS_KIDS
+  ? "🌒 CATALOG_MODE=kids — Triggui Kids activado"
+  : "🌒 CATALOG_MODE=adulto — Triggui (default)");
+
 const CFG = {
   model: "gpt-4o-mini",
   temp: 1.2,
   top_p: 0.9,
   presence: 0.7,
   frequency: 0.4,
+  catalogMode: CATALOG_MODE,
 
   files: {
-    csv: "data/libros_master.csv",
-    outBatch: "contenido.json",
-    outSingle: "contenido_edicion.json",
-    tmpBook: "/tmp/triggui-book.json"
+    csv:       IS_KIDS ? "data/libros_master_kids.csv"      : "data/libros_master.csv",
+    outBatch:  IS_KIDS ? "contenido_kids.json"              : "contenido.json",
+    outSingle: IS_KIDS ? "contenido_edicion_kids.json"      : "contenido_edicion.json",
+    tmpBook:   IS_KIDS ? "/tmp/triggui-book-kids.json"      : "/tmp/triggui-book.json"
   },
 
   prompts: {
     useExternalEditorial: process.env.USE_EXTERNAL_EDITORIAL_PROMPTS === "true",
     constitution: "prompts/constitution/triggui-core.md",
-    editorial: "prompts/tasks/generate-editorial.md"
+    editorial: IS_KIDS
+      ? "prompts/tasks/generate-editorial-kids.md"
+      : "prompts/tasks/generate-editorial.md"
   },
 
   processing: {
