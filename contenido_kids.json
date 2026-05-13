@@ -1,6 +1,742 @@
 {
   "libros": [
     {
+      "titulo": "Charlie y la fábrica de chocolate",
+      "autor": "Roald Dahl",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/fc/ac/13/fcac13ef-7b32-ded4-06c4-0a37acf6d57e/e7f7ff65-b658-4abe-a493-1aa227849bbf_cover_image.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/fc/ac/13/fcac13ef-7b32-ded4-06c4-0a37acf6d57e/e7f7ff65-b658-4abe-a493-1aa227849bbf_cover_image.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Charlie y la fábrica de chocolate",
+      "titulo_en": "Charlie and the Chocolate Factory",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "esperanza",
+        "deseo",
+        "asombro",
+        "avaricia"
+      ],
+      "palabras_en": [
+        "hope",
+        "longing",
+        "greed",
+        "wonder"
+      ],
+      "frases": [
+        "👁 Imagina un mundo lleno de dulces y sorpresas escondidas.",
+        "🔔 ¿Qué harías si encontrases un billete dorado en tu chocolatina?",
+        "🌌 Visualiza la enorme puerta de la fábrica de chocolate abriéndose ante ti.",
+        "⏳ Los grandes sueños sólo se realizan cuando se persiguen con fe."
+      ],
+      "frases_en": [
+        "👁 Picture a world where chocolate rivers flow endlessly.",
+        "🗺 What if your wildest dreams lay behind a factory door?",
+        "💫 Children rush, their hearts racing with each unwrapped bar.",
+        "⏳ Desire ignites the heart, but ambition can consume the soul."
+      ],
+      "frases_og": [
+        "🌿 La ambición desmedida puede arruinar la más dulce de las aventuras.",
+        "🧭 ¿Cuánto valen realmente los sueños si se basan en la avaricia?",
+        "🔍 Un simple billete dorado, pensé, podría ser la llave que abre las puertas de un mundo completamente nuevo y asombroso.",
+        "💠 En cada bocado de chocolate, la magia de Wonka desvela secretos ocultos de la naturaleza misma."
+      ],
+      "frases_og_en": [
+        "🌿 Charlie dreams of a golden ticket to change his life.",
+        "🧭 Resist temptation. Seek the magic within.",
+        "🔍 How many dreams fade under the weight of greed?",
+        "💠 Glistening wrappers conceal not just sweets, but destinies."
+      ],
+      "colores": [
+        "#F1F17E",
+        "#3030E8",
+        "#88AE13",
+        "#220B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "El billete dorado de la esperanza",
+        "parrafoTop": "La búsqueda del billete dorado se convierte en un símbolo poderoso de los deseos infantiles, un reflejo de la esperanza que guía a Charlie a través de su vida monótona y precaria. [H]Cada niño que sueña con encontrar uno no solo anhela chocolate[/H], sino la posibilidad de cambiar su destino y vivir una aventura mágica. La av",
+        "subtitulo": "¿Cuántos niños son capaces de resistir la tentación?",
+        "parrafoBot": "[H]En un mundo donde la avaricia parece reinar, el deseo de Charlie se contrapone a la ostentación de otros niños[/H]. La fábrica de chocolate de Wonka, con sus maravillas y excesos, critica la glotonería y la falta de moderación en nuestra sociedad. Cada niño que se deja llevar por la ambición es un recordatorio de la fragil",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El billete dorado de la esperanza",
+        "parrafoTop": "La búsqueda del billete dorado se convierte en un símbolo poderoso de los deseos infantiles, un reflejo de la esperanza que guía a Charlie a través de su vida monótona y precaria. [H]Cada niño que sueña con encontrar uno no solo anhela chocolate[/H], sino la posibilidad de cambiar su destino y vivir una aventura mágica. La av",
+        "subtitulo": "¿Cuántos niños son capaces de resistir la tentación?",
+        "parrafoBot": "[H]En un mundo donde la avaricia parece reinar, el deseo de Charlie se contrapone a la ostentación de otros niños[/H]. La fábrica de chocolate de Wonka, con sus maravillas y excesos, critica la glotonería y la falta de moderación en nuestra sociedad. Cada niño que se deja llevar por la ambición es un recordatorio de la fragil",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El billete dorado de la esperanza",
+        "parrafoTop": "La búsqueda del billete dorado se convierte en un símbolo poderoso de los deseos infantiles, un reflejo de la esperanza que guía a Charlie a través de su vida monótona y precaria. [H]Cada niño que sueña con encontrar uno no solo anhela chocolate[/H], sino la posibilidad de cambiar su destino y vivir una aventura mágica. La av",
+        "subtitulo": "¿Cuántos niños son capaces de resistir la tentación?",
+        "parrafoBot": "[H]En un mundo donde la avaricia parece reinar, el deseo de Charlie se contrapone a la ostentación de otros niños[/H]. La fábrica de chocolate de Wonka, con sus maravillas y excesos, critica la glotonería y la falta de moderación en nuestra sociedad. Cada niño que se deja llevar por la ambición es un recordatorio de la fragil",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Golden Ticket of Hope",
+        "parrafoTop": "[H]The quest for the golden ticket becomes a powerful symbol of childhood[/H] desires, a reflection of the hope that guides Charlie through his monotonous and precarious life. Each child dreaming of finding one yearns not merely for chocolate, but for the possibility of changing their destiny and embarking on a magical quest.",
+        "subtitulo": "How many children can resist the temptation?",
+        "parrafoBot": "In a world where greed seems to reign, Charlie's longing stands in stark contrast to the ostentation of other children. Wonka's chocolate factory, with its wonders and excesses, critiques gluttony and the lack of moderation in our society. [H]Each child who succumbs to ambition serves as a reminder of the fragile balance.[/H]",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Golden Ticket of Hope",
+        "parrafoTop": "[H]The quest for the golden ticket becomes a powerful symbol of childhood[/H] desires, a reflection of the hope that guides Charlie through his monotonous and precarious life. Each child dreaming of finding one yearns not merely for chocolate, but for the possibility of changing their destiny and embarking on a magical quest.",
+        "subtitulo": "How many children can resist the temptation?",
+        "parrafoBot": "In a world where greed seems to reign, Charlie's longing stands in stark contrast to the ostentation of other children. Wonka's chocolate factory, with its wonders and excesses, critiques gluttony and the lack of moderation in our society. [H]Each child who succumbs to ambition serves as a reminder of the fragile balance.[/H]",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Golden Ticket of Hope",
+        "parrafoTop": "[H]The quest for the golden ticket becomes a powerful symbol of childhood[/H] desires, a reflection of the hope that guides Charlie through his monotonous and precarious life. Each child dreaming of finding one yearns not merely for chocolate, but for the possibility of changing their destiny and embarking on a magical quest.",
+        "subtitulo": "How many children can resist the temptation?",
+        "parrafoBot": "In a world where greed seems to reign, Charlie's longing stands in stark contrast to the ostentation of other children. Wonka's chocolate factory, with its wonders and excesses, critiques gluttony and the lack of moderation in our society. [H]Each child who succumbs to ambition serves as a reminder of the fragile balance.[/H]",
+        "style": {
+          "accent": "#E2E212",
+          "paper": "#F0F0EF",
+          "ink": "#1C1C17",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Charlie%20y%20la%20f%C3%A1brica%20de%20chocolate%20Roald%20Dahl%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Charlie%20and%20the%20Chocolate%20Factory%20Roald%20Dahl%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Charlie y la fábrica de chocolate",
+          "titulo_en": "Charlie and the Chocolate Factory",
+          "autor_completo": "Roald Dahl",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la búsqueda de los billetes dorados como símbolo de esperanza y deseo infantil",
+            "la crítica a la avaricia y los excesos de la industria alimentaria",
+            "la magia y el asombro en el mundo de la fantasía"
+          ],
+          "key_terms": [
+            "billetes dorados",
+            "fábrica de chocolate",
+            "señor Wonka",
+            "niños elegidos",
+            "aventura mágica"
+          ],
+          "authorial_voice_notes": "Roald Dahl utiliza un tono juguetón y sarcástico, combinando la fantasía con una crítica social sutil."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro presenta temas de ambición, deseo y las consecuencias de la avaricia, lo que lo convierte en un estudio de decisiones humanas a través de la estructura de incentivos, donde cada personaje representa distintas actitudes hacia la riqueza y la moralidad. A través de la experiencia de Charlie y los otros niños, se observa la lucha entre la inocencia y la codicia, un juego donde el resultado final depende de las elecciones personales y sus consecuencias, incorporando una narrativa que invita a reflexionar sobre el valor real de las cosas frente a la superficialidad.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 50,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "El billete dorado de la esperanza",
+          "parrafoTop": "La búsqueda del billete dorado se convierte en un símbolo poderoso de los deseos infantiles, un reflejo de la esperanza que guía a Charlie a través de su vida monótona y precaria. Cada niño que sueña con encontrar uno no solo anhela chocolate, sino la posibilidad de cambiar su destino y vivir una aventura mágica. La av",
+          "subtitulo": "¿Cuántos niños son capaces de resistir la tentación?",
+          "parrafoBot": "En un mundo donde la avaricia parece reinar, el deseo de Charlie se contrapone a la ostentación de otros niños. La fábrica de chocolate de Wonka, con sus maravillas y excesos, critica la glotonería y la falta de moderación en nuestra sociedad. Cada niño que se deja llevar por la ambición es un recordatorio de la fragil"
+        },
+        "card_en": {
+          "titulo": "The Golden Ticket of Hope",
+          "parrafoTop": "The quest for the golden ticket becomes a powerful symbol of childhood desires, a reflection of the hope that guides Charlie through his monotonous and precarious life. Each child dreaming of finding one yearns not merely for chocolate, but for the possibility of changing their destiny and embarking on a magical quest.",
+          "subtitulo": "How many children can resist the temptation?",
+          "parrafoBot": "In a world where greed seems to reign, Charlie's longing stands in stark contrast to the ostentation of other children. Wonka's chocolate factory, with its wonders and excesses, critiques gluttony and the lack of moderation in our society. Each child who succumbs to ambition serves as a reminder of the fragile balance."
+        },
+        "emotional_words_es": [
+          "esperanza",
+          "deseo",
+          "asombro",
+          "avaricia"
+        ],
+        "emotional_words_en": [
+          "hope",
+          "longing",
+          "greed",
+          "wonder"
+        ],
+        "og_phrases_es": [
+          "🌿 La ambición desmedida puede arruinar la más dulce de las aventuras.",
+          "🧭 ¿Cuánto valen realmente los sueños si se basan en la avaricia?",
+          "🔍 Un simple billete dorado, pensé, podría ser la llave que abre las puertas de un mundo completamente nuevo y asombroso.",
+          "💠 En cada bocado de chocolate, la magia de Wonka desvela secretos ocultos de la naturaleza misma."
+        ],
+        "og_phrases_en": [
+          "🌿 Charlie dreams of a golden ticket to change his life.",
+          "🧭 Resist temptation. Seek the magic within.",
+          "🔍 How many dreams fade under the weight of greed?",
+          "💠 Glistening wrappers conceal not just sweets, but destinies."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina un mundo lleno de dulces y sorpresas escondidas."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 ¿Qué harías si encontrases un billete dorado en tu chocolatina?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Visualiza la enorme puerta de la fábrica de chocolate abriéndose ante ti."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Los grandes sueños sólo se realizan cuando se persiguen con fe."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Picture a world where chocolate rivers flow endlessly."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 What if your wildest dreams lay behind a factory door?"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Children rush, their hearts racing with each unwrapped bar."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Desire ignites the heart, but ambition can consume the soul."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.32,
+          "specificity": 0.95,
+          "grounding_judge": 0.75,
+          "combined": 0.76,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.31999999999999995,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.75
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Charlie y la fábrica de chocolate",
+          "autor_completo": "Roald Dahl",
+          "titulo_api": "Charlie y la fábrica de chocolate",
+          "autor_api": "Roald Dahl",
+          "año": "2024",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6541757835",
+          "categorias": [
+            "Ciencia ficción y fantasía",
+            "Libros",
+            "Fantasía"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/charlie-y-la-f%C3%A1brica-de-chocolate/id6541757835?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido refleja conceptos específicos del libro, como la búsqueda del billete dorado y la crítica a la avaricia, pero también incluye frases que podrían aplicarse a otros contextos. La mención de Charlie y su deseo de aventura ancla el texto al libro, aunque algunas reflexiones son más generales."
+        },
+        "en": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content reflects specific themes from the book, such as Charlie's quest for the golden ticket and the contrast between his desires and the greed of other children. However, it also includes broader philosophical reflections that could apply to various narratives, which slightly dilutes its specificity to the book."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "resena",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla del libro y sus temas desde una perspectiva externa.",
+          "elapsed_ms": 1888,
+          "usage": {
+            "prompt_tokens": 446,
+            "completion_tokens": 28,
+            "total_tokens": 474,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Analiza el simbolismo y critica la obra desde afuera.",
+          "elapsed_ms": 3043,
+          "usage": {
+            "prompt_tokens": 414,
+            "completion_tokens": 28,
+            "total_tokens": 442,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": true,
+        "total_tokens": 916,
+        "total_ms": 3043
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 50,
+          "adjusted_hue": 60,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.00",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1F17E",
+          "--palette-1": "#3030E8",
+          "--palette-2": "#88AE13",
+          "--palette-3": "#220B65",
+          "--accent": "#E2E212",
+          "--accent-soft": "#E2E21238",
+          "--accent-glow": "#E2E2126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1C1C17",
+          "--border": "#90908F",
+          "--highlight-bg": "#C7C710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-13T22-29-28",
+      "_crono": {
+        "dia": "miércoles",
+        "hora": 16,
+        "franja": "tarde",
+        "energia": 0.6,
+        "modo": "meseta_media",
+        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 64649,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15692,
+          "palette": 0,
+          "content_es": 15524,
+          "judge_es": 954,
+          "content_en": 14922,
+          "judge_en": 907,
+          "voice": 916,
+          "voice_extended": 15734,
+          "highlight_judge_es_parrafoTop": 643,
+          "highlight_judge_es_parrafoBot": 645,
+          "highlight_judge_es_parrafoBot_retry": 659,
+          "highlight_judge_en_parrafoTop": 642,
+          "highlight_judge_en_parrafoBot": 647,
+          "csal": 7030
+        },
+        "elapsed_ms_total": 63133,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 16425,
+          "palette": 1,
+          "cover_fallback": 89,
+          "content_es": 18635,
+          "judge_es": 1768,
+          "content_en": 14338,
+          "judge_en": 1880,
+          "voice": 3043,
+          "voice_extended": 6951,
+          "highlight_judge": 4212,
+          "lens_compatibility": 3947,
+          "csal": 52451,
+          "post_processing": 60616
+        },
+        "llm_calls_count": 41,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 2,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.7,
+          "negocio": 0.3,
+          "familia": 0.5,
+          "espiritu": 0.5,
+          "relaciones": 0.6,
+          "finanzas": 0.4
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sueñas con encontrar un tesoro escondido",
+          "después de recibir una sorpresa inesperada",
+          "cuando te sientes afortunado por un golpe de suerte",
+          "antes de visitar un lugar lleno de misterio",
+          "cuando te preguntas cómo sería entrar a un mundo de fantasía",
+          "al recordar un dulce favorito de la infancia",
+          "cuando deseas escapar de la rutina diaria",
+          "al ver una fábrica y preguntarte cómo funcionan las cosas por dentro",
+          "cuando piensas en los regalos más deseados",
+          "antes de abrir un regalo con emoción",
+          "cuando te sientes curioso sobre lo que hay detrás de una puerta cerrada",
+          "al escuchar historias de personas que consiguen lo imposible",
+          "cuando te sientes pequeño en un mundo grande y sorprendente",
+          "después de leer sobre alguien que cambió su vida con una oportunidad única",
+          "cuando ves a alguien recibir una gran oportunidad y te preguntas cómo reaccionarías",
+          "al soñar despierto con lugares mágicos y extravagantes",
+          "cuando piensas en la justicia y la recompensa merecida",
+          "después de ver a alguien ser recompensado por ser humilde y bueno",
+          "cuando recuerdas una experiencia inolvidable de la niñez",
+          "al escuchar cuentos donde los niños son los verdaderos héroes",
+          "cuando te fascina el funcionamiento de las fábricas",
+          "al imaginar el sabor de un chocolate que nunca has probado",
+          "cuando te preguntas qué hace especial a una persona excéntrica",
+          "después de ver una película o leer un libro sobre aventuras fantásticas",
+          "cuando te sientes atrapado por la monotonía y buscas algo emocionante",
+          "al ver un arcoíris y pensar en lo que hay al final",
+          "cuando te preguntas cómo sería vivir una historia extraordinaria",
+          "al pensar en la magia que puede estar escondida en lo cotidiano",
+          "cuando te fascina la creatividad y la innovación",
+          "al ver algo ordinario transformarse en algo extraordinario"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "esperanza",
+            "sorpresa",
+            "curiosidad",
+            "emoción",
+            "maravilla",
+            "ansiedad",
+            "intriga",
+            "alegría",
+            "deseo",
+            "satisfacción"
+          ],
+          "objetos": [
+            "billete dorado",
+            "chocolatina",
+            "fábrica",
+            "puerta",
+            "máquinas",
+            "chocolate",
+            "dulces",
+            "regalos",
+            "tesoro",
+            "sorpresas"
+          ],
+          "contextos": [
+            "fábrica de chocolate",
+            "infancia",
+            "mundo de fantasía",
+            "aventura",
+            "misterio",
+            "sueños",
+            "industria alimentaria",
+            "rutina diaria",
+            "experiencias inolvidables",
+            "lugares mágicos"
+          ],
+          "verbos": [
+            "encontrar",
+            "imaginar",
+            "soñar",
+            "descubrir",
+            "abrir",
+            "sorprenderse",
+            "escapar",
+            "deseo",
+            "visualizar",
+            "curiosear"
+          ]
+        },
+        "concept_tags": [
+          "billete dorado",
+          "Wonka",
+          "Oompa Loompas",
+          "chocolatinas mágicas",
+          "fábrica de chocolate",
+          "Charlie Bucket",
+          "crítica a la avaricia",
+          "mundo de fantasía",
+          "sorpresas escondidas",
+          "aventura infantil",
+          "deseo y esperanza",
+          "excentricidad de Wonka",
+          "humildad recompensada",
+          "máquinas asombrosas",
+          "juegos de palabras de Dahl"
+        ],
+        "anti_patterns": [
+          "cuando buscas una guía de autoayuda",
+          "si necesitas información sobre la industria del chocolate",
+          "para aprender recetas de chocolate",
+          "cuando buscas una novela realista",
+          "si prefieres historias sin elementos fantásticos"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🍬"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🎟️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🚪"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌟"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte de la narrativa o el desarrollo de un personaje, sugiriendo un mensaje o tema del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que podría estar en el desarrollo de un personaje o en la narrativa del libro, sugiriendo voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja un pensamiento interno del personaje, sugiriendo una voz narrativa que se encuentra dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una experiencia sensorial y emocional que parece ser parte de la narrativa del libro, sugiriendo una voz autoral que describe un momento dentro de la historia."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar un escenario, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una situación imaginativa que invita a la reflexión, típica de un diálogo o narración dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar una escena específica, lo que sugiere que es parte del contenido narrativo del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión que podría estar en el contexto de un libro, mostrando voz autoral y un mensaje inspirador."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a character's internal desire, suggesting a narrative moment that feels like it belongs within the story."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like advice or insight from the author, suggesting an internal journey, typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that feels like an introspective thought from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes imagery and emotion, suggesting a narrative style typical of an author's voice within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to imagine a vivid scene, suggesting it is part of the narrative or descriptive content within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a hypothetical scenario that invites the reader into the narrative, suggesting an internal exploration typical of a story's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase describes a scene with vivid imagery, suggesting it is part of the narrative within the book rather than a commentary about it."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like it could be part of the narrative or thematic exploration within a book, rather than a commentary about the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-13T22:31:31.850Z",
+      "_edicion_numero": 47
+    },
+    {
       "titulo": "Fantastic Mr. Fox",
       "autor": "Autor desconocido",
       "tagline": "",
@@ -749,731 +1485,6 @@
       "_manual": true,
       "_manual_generated_at": "2026-05-13T22:02:23.715Z",
       "_edicion_numero": 48
-    },
-    {
-      "titulo": "Charlie y la fábrica de chocolate",
-      "autor": "Roald Dahl",
-      "tagline": "",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/fc/ac/13/fcac13ef-7b32-ded4-06c4-0a37acf6d57e/e7f7ff65-b658-4abe-a493-1aa227849bbf_cover_image.jpg/3000x3000bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/fc/ac/13/fcac13ef-7b32-ded4-06c4-0a37acf6d57e/e7f7ff65-b658-4abe-a493-1aa227849bbf_cover_image.jpg/3000x3000bb.jpg",
-      "isbn": "",
-      "titulo_es": "Charlie y la fábrica de chocolate",
-      "titulo_en": "Charlie and the Chocolate Factory",
-      "idioma_original": "en",
-      "dimension": "Prosperidad",
-      "punto": "Creativo",
-      "palabras": [
-        "esperanza",
-        "asombro",
-        "intriga",
-        "deseo"
-      ],
-      "palabras_en": [
-        "hopeful",
-        "curious",
-        "greedy",
-        "wonder"
-      ],
-      "frases": [
-        "🍎 Muerde un trozo de chocolate y deja que el sabor te lleve a la fábrica.",
-        "🗺 ¿Te imaginas qué sentirías al encontrar un billete dorado?",
-        "🌅 La fábrica de chocolate brillaba bajo el sol, como una joya de dulzura y sorpresas.",
-        "⏳ La aventura comienza donde termina la rutina."
-      ],
-      "frases_en": [
-        "👁 Imagine standing before the grand factory gates, eyes wide with anticipation.",
-        "🗺 What wonders would you expect to find behind those towering walls?",
-        "💫 Picture a world where chocolate rivers flow and candy trees bloom.",
-        "⏳ In the quest for sweetness, the journey often holds the richest flavors."
-      ],
-      "frases_og": [
-        "🌿 El billete dorado transforma la vida de quien lo encuentra.",
-        "🧭 Busca la dulzura en cada chocolate que pruebas.",
-        "🔍 ¿Qué te detiene de perseguir tus sueños más locos?",
-        "💠 El verdadero tesoro se encuentra en la experiencia compartida."
-      ],
-      "frases_og_en": [
-        "🌿 Charlie dreams of a golden ticket to a world of wonders.",
-        "🧭 Find your golden ticket and embrace the adventure.",
-        "🔍 As Charlie stepped through the giant gates, his heart raced with the thrill of what hidden secrets awaited him inside the wondrous chocolate factory!",
-        "💠 True value lies in the experience, not just the prize."
-      ],
-      "colores": [
-        "#AE7EF1",
-        "#9CE830",
-        "#7B13AE",
-        "#29650B"
-      ],
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "fondo": "#F0EFF0",
-      "tarjeta": {
-        "titulo": "El billete dorado: un sueño hecho realidad",
-        "parrafoTop": "Charlie Bucket miraba con ojos brillantes cada vez que pasaba junto a la fábrica de chocolate de Mr. Willy Wonka. [H]La dulzura de su sueño de encontrar un billete dorado lo llenaba de esperanza.[/H] Cada tableta de chocolate en su pequeño hogar era un océano de posibilidades, un posible pasaporte a un mundo de maravillas que",
-        "subtitulo": "¿Qué harías por un billete dorado?",
-        "parrafoBot": "[H]Mientras otros niños se dejaban llevar por la avaricia, Charlie aprendió que el verdadero valor reside no solo en ganar[/H]. La visita a la misteriosa fábrica de chocolate se convierte en un viaje de descubrimiento, donde cada rincón revela secretos ocultos y cada sabor despierta la curiosidad",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_base": {
-        "titulo": "El billete dorado: un sueño hecho realidad",
-        "parrafoTop": "Charlie Bucket miraba con ojos brillantes cada vez que pasaba junto a la fábrica de chocolate de Mr. Willy Wonka. [H]La dulzura de su sueño de encontrar un billete dorado lo llenaba de esperanza.[/H] Cada tableta de chocolate en su pequeño hogar era un océano de posibilidades, un posible pasaporte a un mundo de maravillas que",
-        "subtitulo": "¿Qué harías por un billete dorado?",
-        "parrafoBot": "[H]Mientras otros niños se dejaban llevar por la avaricia, Charlie aprendió que el verdadero valor reside no solo en ganar[/H]. La visita a la misteriosa fábrica de chocolate se convierte en un viaje de descubrimiento, donde cada rincón revela secretos ocultos y cada sabor despierta la curiosidad",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "El billete dorado: un sueño hecho realidad",
-        "parrafoTop": "Charlie Bucket miraba con ojos brillantes cada vez que pasaba junto a la fábrica de chocolate de Mr. Willy Wonka. [H]La dulzura de su sueño de encontrar un billete dorado lo llenaba de esperanza.[/H] Cada tableta de chocolate en su pequeño hogar era un océano de posibilidades, un posible pasaporte a un mundo de maravillas que",
-        "subtitulo": "¿Qué harías por un billete dorado?",
-        "parrafoBot": "[H]Mientras otros niños se dejaban llevar por la avaricia, Charlie aprendió que el verdadero valor reside no solo en ganar[/H]. La visita a la misteriosa fábrica de chocolate se convierte en un viaje de descubrimiento, donde cada rincón revela secretos ocultos y cada sabor despierta la curiosidad",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_en": {
-        "titulo": "The Golden Ticket: A Dream Come True",
-        "parrafoTop": "[H]Charlie Bucket gazed with wide eyes each time he passed by Mr[/H]. Willy Wonka's chocolate factory. The sweetness of his dream to find a golden ticket filled him with hope. Each chocolate bar in his small home was an ocean of possibilities, a potential passport to a world of wonders that beckoned him with a tantalizing gli",
-        "subtitulo": "What would you do for a golden ticket?",
-        "parrafoBot": "While other children succumbed to greed, Charlie learned that true value lies not merely in winning, but in the experience itself. [H]The visit to the mysterious chocolate factory became a journey of discovery[/H], where every nook revealed hidden secrets and every flavor awakened curiosity.",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_base_en": {
-        "titulo": "The Golden Ticket: A Dream Come True",
-        "parrafoTop": "[H]Charlie Bucket gazed with wide eyes each time he passed by Mr[/H]. Willy Wonka's chocolate factory. The sweetness of his dream to find a golden ticket filled him with hope. Each chocolate bar in his small home was an ocean of possibilities, a potential passport to a world of wonders that beckoned him with a tantalizing gli",
-        "subtitulo": "What would you do for a golden ticket?",
-        "parrafoBot": "While other children succumbed to greed, Charlie learned that true value lies not merely in winning, but in the experience itself. [H]The visit to the mysterious chocolate factory became a journey of discovery[/H], where every nook revealed hidden secrets and every flavor awakened curiosity.",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_presentacion_en": {
-        "titulo": "The Golden Ticket: A Dream Come True",
-        "parrafoTop": "[H]Charlie Bucket gazed with wide eyes each time he passed by Mr[/H]. Willy Wonka's chocolate factory. The sweetness of his dream to find a golden ticket filled him with hope. Each chocolate bar in his small home was an ocean of possibilities, a potential passport to a world of wonders that beckoned him with a tantalizing gli",
-        "subtitulo": "What would you do for a golden ticket?",
-        "parrafoBot": "While other children succumbed to greed, Charlie learned that true value lies not merely in winning, but in the experience itself. [H]The visit to the mysterious chocolate factory became a journey of discovery[/H], where every nook revealed hidden secrets and every flavor awakened curiosity.",
-        "style": {
-          "accent": "#6912E2",
-          "paper": "#F0EFF0",
-          "ink": "#19171C",
-          "border": "#908F90"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Charlie%20y%20la%20f%C3%A1brica%20de%20chocolate%20Roald%20Dahl%20entrevista%20espa%C3%B1ol",
-      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Charlie%20and%20the%20Chocolate%20Factory%20Roald%20Dahl%20interview",
-      "_nucleus": {
-        "book_identity": {
-          "titulo_es": "Charlie y la fábrica de chocolate",
-          "titulo_en": "Charlie and the Chocolate Factory",
-          "autor_completo": "Roald Dahl",
-          "idioma_original": "en"
-        },
-        "book_grounding_anchors": {
-          "concepts": [
-            "el sueño de Charlie de encontrar un billete dorado",
-            "la exploración de la fábrica de chocolate como un viaje de descubrimiento",
-            "los personajes como representaciones de diferentes virtudes y defectos"
-          ],
-          "key_terms": [
-            "billete dorado",
-            "fábrica de chocolate",
-            "Mr. Willy Wonka",
-            "niños elegidos",
-            "disfrute del chocolate"
-          ],
-          "authorial_voice_notes": "La voz de Roald Dahl es juguetona y audaz, combinando humor negro y fantasía a través de un relato vibrante que capta la imaginación de los niños y adultos."
-        },
-        "lens_analysis": {
-          "lens_provided": false,
-          "analysis": "El libro de Roald Dahl se puede analizar desde varios lentes, aunque no se proporciona uno específico. Sin embargo, se puede argumentar que la historia invita a explorar temas como la recompensa por el esfuerzo, la curiosidad infantil, y las lecciones sobre el comportamiento y las consecuencias. Dahl utiliza la narrativa para mostrar cómo diferentes personajes responden a la codicia, la humildad y el deseo, lo que podría enlazar con principios de teoría de juegos al evaluar las decisiones y comportamientos de los niños en la búsqueda de los billetes dorados.",
-          "decision": "dont_apply_book_is_about_something_else"
-        },
-        "visual_intent": {
-          "hue_primary": 250,
-          "saturation": "vivid",
-          "lightness_paper": "light",
-          "temperature_shift": 15,
-          "palette_strategy": "complementary",
-          "typography_family": "serif_literario",
-          "density": "aireado",
-          "rhythm": "medio",
-          "era": "contemporaneo",
-          "genre_visual": "literario"
-        },
-        "surface_hints": {
-          "dimension": "Prosperidad",
-          "punto_hawkins": "Creativo",
-          "franja_ideal": "manana"
-        },
-        "card_es": {
-          "titulo": "El billete dorado: un sueño hecho realidad",
-          "parrafoTop": "Charlie Bucket miraba con ojos brillantes cada vez que pasaba junto a la fábrica de chocolate de Mr. Willy Wonka. La dulzura de su sueño de encontrar un billete dorado lo llenaba de esperanza. Cada tableta de chocolate en su pequeño hogar era un océano de posibilidades, un posible pasaporte a un mundo de maravillas que",
-          "subtitulo": "¿Qué harías por un billete dorado?",
-          "parrafoBot": "Mientras otros niños se dejaban llevar por la avaricia, Charlie aprendió que el verdadero valor reside no solo en ganar, sino en la experiencia misma. La visita a la misteriosa fábrica de chocolate se convierte en un viaje de descubrimiento, donde cada rincón revela secretos ocultos y cada sabor despierta la curiosidad"
-        },
-        "card_en": {
-          "titulo": "The Golden Ticket: A Dream Come True",
-          "parrafoTop": "Charlie Bucket gazed with wide eyes each time he passed by Mr. Willy Wonka's chocolate factory. The sweetness of his dream to find a golden ticket filled him with hope. Each chocolate bar in his small home was an ocean of possibilities, a potential passport to a world of wonders that beckoned him with a tantalizing gli",
-          "subtitulo": "What would you do for a golden ticket?",
-          "parrafoBot": "While other children succumbed to greed, Charlie learned that true value lies not merely in winning, but in the experience itself. The visit to the mysterious chocolate factory became a journey of discovery, where every nook revealed hidden secrets and every flavor awakened curiosity."
-        },
-        "emotional_words_es": [
-          "esperanza",
-          "asombro",
-          "intriga",
-          "deseo"
-        ],
-        "emotional_words_en": [
-          "hopeful",
-          "curious",
-          "greedy",
-          "wonder"
-        ],
-        "og_phrases_es": [
-          "🌿 El billete dorado transforma la vida de quien lo encuentra.",
-          "🧭 Busca la dulzura en cada chocolate que pruebas.",
-          "🔍 ¿Qué te detiene de perseguir tus sueños más locos?",
-          "💠 El verdadero tesoro se encuentra en la experiencia compartida."
-        ],
-        "og_phrases_en": [
-          "🌿 Charlie dreams of a golden ticket to a world of wonders.",
-          "🧭 Find your golden ticket and embrace the adventure.",
-          "🔍 As Charlie stepped through the giant gates, his heart raced with the thrill of what hidden secrets awaited him inside the wondrous chocolate factory!",
-          "💠 True value lies in the experience, not just the prize."
-        ],
-        "edition_blocks_es": [
-          {
-            "gesture_type": "instruccion_sensorial",
-            "sensory_anchor": "gusto",
-            "phrase": "🍎 Muerde un trozo de chocolate y deja que el sabor te lleve a la fábrica."
-          },
-          {
-            "gesture_type": "pregunta_directa",
-            "sensory_anchor": "espacio",
-            "phrase": "🗺 ¿Te imaginas qué sentirías al encontrar un billete dorado?"
-          },
-          {
-            "gesture_type": "imagen_concreta",
-            "sensory_anchor": "vista",
-            "phrase": "🌅 La fábrica de chocolate brillaba bajo el sol, como una joya de dulzura y sorpresas."
-          },
-          {
-            "gesture_type": "aforismo_autorial",
-            "sensory_anchor": "tiempo",
-            "phrase": "⏳ La aventura comienza donde termina la rutina."
-          }
-        ],
-        "edition_blocks_en": [
-          {
-            "gesture_type": "sensory_instruction",
-            "sensory_anchor": "sight",
-            "phrase": "👁 Imagine standing before the grand factory gates, eyes wide with anticipation."
-          },
-          {
-            "gesture_type": "direct_question",
-            "sensory_anchor": "space",
-            "phrase": "🗺 What wonders would you expect to find behind those towering walls?"
-          },
-          {
-            "gesture_type": "concrete_image",
-            "sensory_anchor": "movement",
-            "phrase": "💫 Picture a world where chocolate rivers flow and candy trees bloom."
-          },
-          {
-            "gesture_type": "authorial_aphorism",
-            "sensory_anchor": "time",
-            "phrase": "⏳ In the quest for sweetness, the journey often holds the richest flavors."
-          }
-        ],
-        "confidence": {
-          "book_grounding": 0.95,
-          "voice_authenticity": 0.93,
-          "specificity": 0.91,
-          "grounding_judge": 0.75,
-          "combined": 0.88,
-          "signals": {
-            "bookIdentityConfidence": 0.95,
-            "voiceSignal": 0.9249999999999999,
-            "specificitySignal": 0.9105263157894736,
-            "judgeScore": 0.75
-          }
-        }
-      },
-      "_grounding": {
-        "source": "apple_books",
-        "tier_reached": 2,
-        "book_identity_confidence": 0.95,
-        "resolution_path": [
-          "evidence_preloaded"
-        ],
-        "verified_identity": {
-          "titulo_real": "Charlie y la fábrica de chocolate",
-          "autor_completo": "Roald Dahl",
-          "titulo_api": "Charlie y la fábrica de chocolate",
-          "autor_api": "Roald Dahl",
-          "año": "2024",
-          "editorial": null,
-          "isbn": "",
-          "apple_track_id": "6541757835",
-          "categorias": [
-            "Ciencia ficción y fantasía",
-            "Libros",
-            "Fantasía"
-          ],
-          "track_view_url": "https://books.apple.com/mx/book/charlie-y-la-f%C3%A1brica-de-chocolate/id6541757835?uo=4"
-        },
-        "match_score": 1,
-        "from_cache": false
-      },
-      "_grounding_judge": {
-        "es": {
-          "grounded_score": 0.8,
-          "uses_book_specific_concepts": true,
-          "could_apply_to_any_book": false,
-          "feels_like_back_cover_meta_description": true,
-          "reason": "El contenido refleja conceptos específicos del libro, como el 'billete dorado' y la 'fábrica de chocolate', además de la experiencia de Charlie. Sin embargo, algunas frases son más generales y podrían aplicarse a otros contextos, aunque están ancladas en la narrativa de la historia."
-        },
-        "en": {
-          "grounded_score": 0.7,
-          "uses_book_specific_concepts": true,
-          "could_apply_to_any_book": false,
-          "feels_like_back_cover_meta_description": true,
-          "reason": "The content reflects specific elements from the ground truth, such as Charlie's dream of finding a golden ticket and the mysterious chocolate factory. However, it also includes more generic themes about experiences and values that could apply to various narratives, slightly reducing its specificity."
-        }
-      },
-      "_voice_verdict": {
-        "consolidated": "pagina",
-        "confidence": 0.9,
-        "es": {
-          "verdict": "pagina",
-          "confidence": 0.9,
-          "reason": "Voz directa y enfoque en la experiencia de Charlie.",
-          "elapsed_ms": 961,
-          "usage": {
-            "prompt_tokens": 437,
-            "completion_tokens": 26,
-            "total_tokens": 463,
-            "prompt_tokens_details": {
-              "cached_tokens": 0,
-              "audio_tokens": 0
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "audio_tokens": 0,
-              "accepted_prediction_tokens": 0,
-              "rejected_prediction_tokens": 0
-            }
-          },
-          "error": null
-        },
-        "en": {
-          "verdict": "pagina",
-          "confidence": 0.9,
-          "reason": "Voz directa y enfoque en la experiencia de Charlie.",
-          "elapsed_ms": 907,
-          "usage": {
-            "prompt_tokens": 410,
-            "completion_tokens": 26,
-            "total_tokens": 436,
-            "prompt_tokens_details": {
-              "cached_tokens": 0,
-              "audio_tokens": 0
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "audio_tokens": 0,
-              "accepted_prediction_tokens": 0,
-              "rejected_prediction_tokens": 0
-            }
-          },
-          "error": null
-        },
-        "circuit_tripped": false,
-        "should_reextract": false,
-        "total_tokens": 899,
-        "total_ms": 961
-      },
-      "_visual": {
-        "synthesis_inputs": {
-          "hue_primary": 250,
-          "adjusted_hue": 265,
-          "saturation": "vivid",
-          "saturation_value": 0.8,
-          "lightness_paper": "light",
-          "paper_lightness_value": 0.94,
-          "temperature_shift": 15,
-          "palette_strategy": "complementary"
-        },
-        "contrast_ratio": "15.51",
-        "paper_is_dark": false,
-        "cssVars": {
-          "--palette-0": "#AE7EF1",
-          "--palette-1": "#9CE830",
-          "--palette-2": "#7B13AE",
-          "--palette-3": "#29650B",
-          "--accent": "#6912E2",
-          "--accent-soft": "#6912E238",
-          "--accent-glow": "#6912E26b",
-          "--paper": "#F0EFF0",
-          "--ink": "#19171C",
-          "--border": "#908F90",
-          "--highlight-bg": "#5C10C7d9",
-          "--highlight-ink": "#FFFFFF",
-          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
-          "--line-height": 1.85,
-          "--letter-spacing": 0.4,
-          "--paragraph-gap": 1.4,
-          "--font-size-scale": 1,
-          "--word-spacing-scale": 1,
-          "--card-radius": "10px",
-          "--highlight-radius": "5px"
-        }
-      },
-      "_edition_meta": {
-        "gesture_types_es": [
-          "instruccion_sensorial",
-          "pregunta_directa",
-          "imagen_concreta",
-          "aforismo_autorial"
-        ],
-        "gesture_types_en": [
-          "sensory_instruction",
-          "direct_question",
-          "concrete_image",
-          "authorial_aphorism"
-        ],
-        "distinct_types_es": 4,
-        "distinct_types_en": 4
-      },
-      "_quality_warning": {
-        "overall": "pass_with_warnings",
-        "warnings": [
-          "highlight_en_parrafoTop_residual_warning",
-          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
-        ]
-      },
-      "_inputs_snapshot": "2026-05-13T21-19-01",
-      "_crono": {
-        "dia": "miércoles",
-        "hora": 15,
-        "franja": "tarde",
-        "energia": 0.6,
-        "modo": "meseta_media",
-        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
-        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
-      },
-      "_metrics": {
-        "tokens_total": 63831,
-        "tokens_by_phase": {
-          "grounding": 0,
-          "anchors": 15701,
-          "palette": 0,
-          "content_es": 15361,
-          "judge_es": 935,
-          "content_en": 14814,
-          "judge_en": 899,
-          "voice": 899,
-          "voice_extended": 15222,
-          "highlight_judge_es_parrafoTop": 640,
-          "highlight_judge_es_parrafoBot": 646,
-          "highlight_judge_es_parrafoBot_retry": 658,
-          "highlight_judge_en_parrafoTop": 651,
-          "highlight_judge_en_parrafoTop_retry": 646,
-          "highlight_judge_en_parrafoBot": 641,
-          "csal": 2726
-        },
-        "elapsed_ms_total": 45106,
-        "elapsed_ms_by_phase": {
-          "grounding": 2,
-          "anchors": 7138,
-          "palette": 1,
-          "cover_fallback": 56,
-          "content_es": 23786,
-          "judge_es": 3006,
-          "content_en": 4646,
-          "judge_en": 1296,
-          "voice": 961,
-          "voice_extended": 4212,
-          "highlight_judge": 4818,
-          "lens_compatibility": 7783,
-          "csal": 13093,
-          "post_processing": 25700
-        },
-        "llm_calls_count": 40,
-        "models_used": [
-          "gpt-4o-mini-2024-07-18"
-        ],
-        "pipeline_version": "nucleus-canonical-v3",
-        "final_validation": "pass_with_warnings",
-        "judge_degradations": [],
-        "portada_auto_healed": false,
-        "highlights_auto_corrected": 2,
-        "highlight_degradations": [
-          "highlight_en_parrafoTop_residual_warning"
-        ],
-        "lens_compat_degraded": false,
-        "voice_judge_extended_degraded": false,
-        "voice_judge_extended_regenerations": 1,
-        "csal_degraded": false
-      },
-      "_lens_compatibility": {
-        "chronobiology": 0.3,
-        "game-theory": 0.7,
-        "self-knowledge": 0.5,
-        "pilares": {
-          "cuerpo": 0.3,
-          "mente": 0.5,
-          "negocio": 0.2,
-          "familia": 0.4,
-          "espiritu": 0.6,
-          "relaciones": 0.5,
-          "finanzas": 0.1
-        },
-        "hawkins": 0.6
-      },
-      "_hawkins_range": [
-        150,
-        250
-      ],
-      "_chronobiology_optimal": {
-        "preferred_franjas": [
-          "manana"
-        ],
-        "preferred_dias": [],
-        "energy_minimum_required": 0.4
-      },
-      "_csal": {
-        "trigger_situations": [
-          "cuando sueñas con algo que parece imposible",
-          "cuando te sientes atrapado en tu vida diaria",
-          "antes de un gran evento que podría cambiar tu vida",
-          "después de recibir una noticia inesperada sobre un concurso",
-          "cuando deseas escapar a un lugar mágico lleno de sorpresas",
-          "al compartir un momento especial con tu familia",
-          "cuando quieres descubrir algo nuevo sobre ti mismo",
-          "cuando te sientes desanimado y necesitas un poco de magia en tu vida",
-          "cuando imaginas lo que harías si tuvieras una oportunidad única",
-          "antes de enfrentarte a un reto que podría cambiar tu futuro.",
-          "cuando esperas algo bueno que podría llegar en cualquier momento",
-          "cuando un amigo comparte un sueño con el que te identificas.",
-          "cuando te das cuenta de que a veces las cosas más simples pueden ser las más sorprendentes.",
-          "cuando te preguntas si realmente hay magia en el mundo.",
-          "cuando un niño tiene un sueño y está dispuesto a hacer lo que sea para lograrlo.",
-          "cuando la curiosidad te lleva a explorar lo desconocido.",
-          "cuando un pequeño gesto puede cambiar el rumbo de tu vida.",
-          "cuando observas a los demás y te preguntas qué los hace especiales.",
-          "cuando un desafío te empuja a ser más valiente de lo que pensabas.",
-          "cuando la familia es el motor que impulsa tus sueños.",
-          "cuando un desconocido puede convertirse en tu héroe.",
-          "cuando la esperanza brilla más que la adversidad.",
-          "cuando un viaje inesperado se convierte en la aventura de tu vida.",
-          "cuando descubres que la amistad puede ser más dulce que el chocolate.",
-          "cuando un simple deseo se convierte en una búsqueda mágica.",
-          "cuando un objeto cotidiano se transforma en una fuente de felicidad.",
-          "cuando un sueño compartido puede unir a las personas.",
-          "cuando la creatividad te lleva a hacer lo imposible.",
-          "cuando te das cuenta de que la vida está llena de sorpresas.",
-          "cuando un momento de alegría simple puede marcar la diferencia.",
-          "cuando te enfrentas a tus miedos y descubres que eres más fuerte de lo que pensabas."
-        ],
-        "trigger_keywords": {
-          "emociones": [
-            "sueño",
-            "esperanza",
-            "alegría",
-            "frustración",
-            "curiosidad",
-            "asombro",
-            "deseo",
-            "valentía",
-            "sorpresa",
-            "tristeza"
-          ],
-          "objetos": [
-            "chocolate",
-            "billete dorado",
-            "fábrica",
-            "dulces",
-            "caramelo"
-          ],
-          "contextos": [
-            "tienda de chocolates",
-            "casa de Charlie",
-            "fábrica de Willy Wonka",
-            "escuela",
-            "parque"
-          ],
-          "verbos": [
-            "soñar",
-            "buscar",
-            "encontrar",
-            "explorar",
-            "compartir",
-            "sentir",
-            "imaginar",
-            "descubrir",
-            "disfrutar",
-            "desear"
-          ]
-        },
-        "concept_tags": [
-          "billetes dorados",
-          "fábrica mágica",
-          "personajes arquetípicos",
-          "sueños y aspiraciones",
-          "aventura y descubrimiento",
-          "valores familiares",
-          "humor negro",
-          "fantasía infantil",
-          "magia en lo cotidiano",
-          "cuidado del medio ambiente"
-        ],
-        "anti_patterns": [
-          "no es un libro sobre la vida adulta",
-          "no ofrece soluciones prácticas a problemas reales",
-          "no es un manual sobre éxito personal",
-          "no trata sobre la educación formal"
-        ],
-        "bloques": [
-          {
-            "index": 0,
-            "emoji_specific": "🍫"
-          },
-          {
-            "index": 1,
-            "emoji_specific": "🎟️"
-          },
-          {
-            "index": 2,
-            "emoji_specific": "🏭"
-          },
-          {
-            "index": 3,
-            "emoji_specific": "⏳"
-          }
-        ]
-      },
-      "_voice_judge_extended_verdicts": {
-        "es": {
-          "og_phrases": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase presenta un evento que ocurre en la narrativa, sugiriendo un momento clave en la historia."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase suena como un consejo o reflexión que podría estar en el texto del libro, invitando al lector a una experiencia personal."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o un monólogo del autor, lo que sugiere que está dentro del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "La frase expresa una reflexión que podría ser parte del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
-            }
-          ],
-          "edition_blocks": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase describe una acción sensorial que el lector puede experimentar, sugiriendo una inmersión en la narrativa del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase invita al lector a imaginar una experiencia, lo que sugiere que es parte de la narrativa del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase describe una escena de manera vívida, lo que sugiere que es parte del contenido narrativo del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "La frase tiene un tono reflexivo y poético que sugiere una voz autoral, como si fuera parte de la narrativa del libro."
-            }
-          ]
-        },
-        "en": {
-          "og_phrases": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase presents a character's internal desire, suggesting a narrative moment that feels like it belongs within the story."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "The phrase encourages action and evokes a sense of personal journey, suggesting it is part of the narrative or message within the book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.95,
-              "reason": "The phrase describes a moment in the story with vivid imagery and character emotion, indicating it is part of the narrative."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within the book, rather than a commentary about the book itself."
-            }
-          ],
-          "edition_blocks": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase evokes a vivid scene, suggesting direct engagement with the narrative, typical of an author's voice within the book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase invites the reader to imagine and explore within the narrative, suggesting an immersive experience typical of the author's voice."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase evokes a vivid image and imaginative scenario, suggesting it is part of a narrative or descriptive passage within the book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "The phrase reflects a poetic expression that feels like it could be part of the narrative or thematic exploration within the book, rather than a commentary about it."
-            }
-          ]
-        }
-      },
-      "_manual": true,
-      "_manual_generated_at": "2026-05-13T21:20:12.186Z",
-      "_edicion_numero": 47
     },
     {
       "titulo": "Coraline",
