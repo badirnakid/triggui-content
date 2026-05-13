@@ -1,6 +1,756 @@
 {
   "libros": [
     {
+      "titulo": "Fantastic Mr. Fox",
+      "autor": "Autor desconocido",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJGYW50YXN0aWMgTXIuIEZveCDigJQgQXV0b3IgZGVzY29ub2NpZG8iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZGMEYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MUIxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOTA5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxwYXRoIGQ9Ik0gMjQwIDM1MS43IFEgMjcwIDMzOS43LCAzMDAgMzUxLjcgVCAzNjAgMzUxLjciIAogICAgICAgIHN0cm9rZT0iIzEyQzBFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNTEuNyIgcj0iMi41IiBmaWxsPSIjMTJDMEUyIiAvPgogIDxwYXRoIGQ9Ik0gMjQwIDU4OC4zIFEgMjcwIDYwMC4zLCAzMDAgNTg4LjMgVCAzNjAgNTg4LjMiIAogICAgICAgIHN0cm9rZT0iIzEyQzBFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSI1ODguMyIgcj0iMi41IiBmaWxsPSIjMTJDMEUyIiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxQjFDIiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9Ijg0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+RmFudGFzdGljIE1yLiBGb3g8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iIzEyQzBFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5BdXRvciBkZXNjb25vY2lkbzwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE3MUIxQyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJGYW50YXN0aWMgTXIuIEZveCDigJQgQXV0b3IgZGVzY29ub2NpZG8iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZGMEYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MUIxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOTA5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxwYXRoIGQ9Ik0gMjQwIDM1MS43IFEgMjcwIDMzOS43LCAzMDAgMzUxLjcgVCAzNjAgMzUxLjciIAogICAgICAgIHN0cm9rZT0iIzEyQzBFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNTEuNyIgcj0iMi41IiBmaWxsPSIjMTJDMEUyIiAvPgogIDxwYXRoIGQ9Ik0gMjQwIDU4OC4zIFEgMjcwIDYwMC4zLCAzMDAgNTg4LjMgVCAzNjAgNTg4LjMiIAogICAgICAgIHN0cm9rZT0iIzEyQzBFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSI1ODguMyIgcj0iMi41IiBmaWxsPSIjMTJDMEUyIiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxQjFDIiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9Ijg0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+RmFudGFzdGljIE1yLiBGb3g8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iIzEyQzBFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5BdXRvciBkZXNjb25vY2lkbzwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE3MUIxQyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Fantastic Mr. Fox",
+      "titulo_en": "Fantastic Mr. Fox",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "intriga",
+        "valentía",
+        "astucia",
+        "solidaridad"
+      ],
+      "palabras_en": [
+        "cleverness",
+        "loyalty",
+        "adversity",
+        "family"
+      ],
+      "frases": [
+        "🚶 Observa cómo cada paso de Mr. Fox es una danza entre el peligro y la astucia.",
+        "🕰 ¿Qué harías tú para proteger a tu familia de un peligro inminente?",
+        "🌅 Imagina el brillo de los ojos de Mr. Fox, iluminado por la luna mientras planea su próximo golpe.",
+        "🏛 La astucia y la valentía marcan el compás del que desafía la adversidad."
+      ],
+      "frases_en": [
+        "🚶 Picture Mr. Fox darting through the underbrush, always one step ahead.",
+        "🕰 Consider what it takes to outsmart those who mean you harm.",
+        "🌅 Imagine the glint of mischief in Mr. Fox's eye as he plots his next move.",
+        "🏛 In the dance of minds, cleverness often trumps brute strength."
+      ],
+      "frases_og": [
+        "⚓ La astucia es el camino hacia la libertad.",
+        "🔁 ¿Cuántas veces se puede engañar a un granjero antes de que se dé por v?",
+        "🛡 En la unión de amigos, el ingenio florece.",
+        "🎯 Un zorro astuto siempre encuentra la salida."
+      ],
+      "frases_og_en": [
+        "⚓ Cunning is the best weapon against foolishness.",
+        "🔁 Embrace the challenge. Let your cleverness thrive.",
+        "🛡 How many victories hinge on the smallest of plans?",
+        "🎯 In the shadows of hardship, loyalty shines brightest."
+      ],
+      "colores": [
+        "#7EDEF1",
+        "#E84F30",
+        "#136EAE",
+        "#65310B"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "El ingenio sobre la adversidad",
+        "parrafoTop": "La vida de un zorro no es sencilla, especialmente cuando se enfrenta a los malignos planes de tres granjeros decididos a atraparlo. A lo largo de esta historia, el ingenio brilla como una antorcha en la oscuridad, mostrando que la astucia puede superar incluso las circunstancias más adversas. [H]La familia y la amistad se[/H]",
+        "subtitulo": "¿Qué papel juega la astucia en la supervivencia?",
+        "parrafoBot": "En cada movimiento, la astucia de Mr. Fox no solo lo mantiene a salvo, sino que también fortalece los lazos con su familia y amigos. [H]En la lucha entre la adversidad y el ingenio, siempre se revela la importancia de un buen plan y un corazón leal[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El ingenio sobre la adversidad",
+        "parrafoTop": "La vida de un zorro no es sencilla, especialmente cuando se enfrenta a los malignos planes de tres granjeros decididos a atraparlo. A lo largo de esta historia, el ingenio brilla como una antorcha en la oscuridad, mostrando que la astucia puede superar incluso las circunstancias más adversas. [H]La familia y la amistad se[/H]",
+        "subtitulo": "¿Qué papel juega la astucia en la supervivencia?",
+        "parrafoBot": "En cada movimiento, la astucia de Mr. Fox no solo lo mantiene a salvo, sino que también fortalece los lazos con su familia y amigos. [H]En la lucha entre la adversidad y el ingenio, siempre se revela la importancia de un buen plan y un corazón leal[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El ingenio sobre la adversidad",
+        "parrafoTop": "La vida de un zorro no es sencilla, especialmente cuando se enfrenta a los malignos planes de tres granjeros decididos a atraparlo. A lo largo de esta historia, el ingenio brilla como una antorcha en la oscuridad, mostrando que la astucia puede superar incluso las circunstancias más adversas. [H]La familia y la amistad se[/H]",
+        "subtitulo": "¿Qué papel juega la astucia en la supervivencia?",
+        "parrafoBot": "En cada movimiento, la astucia de Mr. Fox no solo lo mantiene a salvo, sino que también fortalece los lazos con su familia y amigos. [H]En la lucha entre la adversidad y el ingenio, siempre se revela la importancia de un buen plan y un corazón leal[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Cunning Over Adversity",
+        "parrafoTop": "Life as a fox is no simple game, particularly when faced with the wicked schemes of three farmers determined to catch him. Throughout this tale, cunning shines like a beacon in the dark, proving that cleverness can conquer even the direst circumstances. [H]Family and friendship weave a tapestry of loyalty that uplifts[/H] in",
+        "subtitulo": "What role does cunning play in survival?",
+        "parrafoBot": "Every clever move Mr. Fox makes not only keeps him safe but also strengthens the bonds with his family and friends. [H]In the struggle between adversity and wits, the value of a good plan and a loyal heart is always revealed[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Cunning Over Adversity",
+        "parrafoTop": "Life as a fox is no simple game, particularly when faced with the wicked schemes of three farmers determined to catch him. Throughout this tale, cunning shines like a beacon in the dark, proving that cleverness can conquer even the direst circumstances. [H]Family and friendship weave a tapestry of loyalty that uplifts[/H] in",
+        "subtitulo": "What role does cunning play in survival?",
+        "parrafoBot": "Every clever move Mr. Fox makes not only keeps him safe but also strengthens the bonds with his family and friends. [H]In the struggle between adversity and wits, the value of a good plan and a loyal heart is always revealed[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Cunning Over Adversity",
+        "parrafoTop": "Life as a fox is no simple game, particularly when faced with the wicked schemes of three farmers determined to catch him. Throughout this tale, cunning shines like a beacon in the dark, proving that cleverness can conquer even the direst circumstances. [H]Family and friendship weave a tapestry of loyalty that uplifts[/H] in",
+        "subtitulo": "What role does cunning play in survival?",
+        "parrafoBot": "Every clever move Mr. Fox makes not only keeps him safe but also strengthens the bonds with his family and friends. [H]In the struggle between adversity and wits, the value of a good plan and a loyal heart is always revealed[/H].",
+        "style": {
+          "accent": "#12C0E2",
+          "paper": "#EFF0F0",
+          "ink": "#171B1C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Fantastic%20Mr.%20Fox%20Autor%20desconocido%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Fantastic%20Mr.%20Fox%20Autor%20desconocido%20interview",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Fantastic Mr. Fox",
+          "titulo_en": "Fantastic Mr. Fox",
+          "autor_completo": "Roald Dahl",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la lucha entre ingenio y adversidad",
+            "la importancia de la familia y la amistad",
+            "la astucia como herramienta de supervivencia",
+            "la conexión con la naturaleza",
+            "el humor frente a los desafíos"
+          ],
+          "key_terms": [
+            "ingenio",
+            "adversidad",
+            "familia",
+            "amistad",
+            "astucia",
+            "supervivencia"
+          ],
+          "authorial_voice_notes": "La voz es humorística, ingeniosa y mágica, diseñada para captar la atención de los jóvenes lectores y ofrecerles una perspectiva encantadora y dinámica sobre la vida."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro presenta una narrativa en la que el protagonista, Mr. Fox, emplea su ingenio y astucia para proteger a su familia, enfrentándose a adversarios mucho más poderosos. Esto refleja una lucha constante entre la inteligencia y la adversidad, llevando al lector a apreciar el valor de la familia y la amistad en tiempos difíciles. Además, se integra un tono humorístico y lleno de imaginación que estimula la creatividad, haciendo del libro una herramienta eficaz para explorar temas de ingenio y resiliencia en contextos desafiantes, muy en línea con la narrativa infantil que promueve el amor por",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 180,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "El ingenio sobre la adversidad",
+          "parrafoTop": "La vida de un zorro no es sencilla, especialmente cuando se enfrenta a los malignos planes de tres granjeros decididos a atraparlo. A lo largo de esta historia, el ingenio brilla como una antorcha en la oscuridad, mostrando que la astucia puede superar incluso las circunstancias más adversas. La familia y la amistad se",
+          "subtitulo": "¿Qué papel juega la astucia en la supervivencia?",
+          "parrafoBot": "En cada movimiento, la astucia de Mr. Fox no solo lo mantiene a salvo, sino que también fortalece los lazos con su familia y amigos. En la lucha entre la adversidad y el ingenio, siempre se revela la importancia de un buen plan y un corazón leal."
+        },
+        "card_en": {
+          "titulo": "Cunning Over Adversity",
+          "parrafoTop": "Life as a fox is no simple game, particularly when faced with the wicked schemes of three farmers determined to catch him. Throughout this tale, cunning shines like a beacon in the dark, proving that cleverness can conquer even the direst circumstances. Family and friendship weave a tapestry of loyalty that uplifts in ",
+          "subtitulo": "What role does cunning play in survival?",
+          "parrafoBot": "Every clever move Mr. Fox makes not only keeps him safe but also strengthens the bonds with his family and friends. In the struggle between adversity and wits, the value of a good plan and a loyal heart is always revealed."
+        },
+        "emotional_words_es": [
+          "intriga",
+          "valentía",
+          "astucia",
+          "solidaridad"
+        ],
+        "emotional_words_en": [
+          "cleverness",
+          "loyalty",
+          "adversity",
+          "family"
+        ],
+        "og_phrases_es": [
+          "⚓ La astucia es el camino hacia la libertad.",
+          "🔁 ¿Cuántas veces se puede engañar a un granjero antes de que se dé por v?",
+          "🛡 En la unión de amigos, el ingenio florece.",
+          "🎯 Un zorro astuto siempre encuentra la salida."
+        ],
+        "og_phrases_en": [
+          "⚓ Cunning is the best weapon against foolishness.",
+          "🔁 Embrace the challenge. Let your cleverness thrive.",
+          "🛡 How many victories hinge on the smallest of plans?",
+          "🎯 In the shadows of hardship, loyalty shines brightest."
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Observa cómo cada paso de Mr. Fox es una danza entre el peligro y la astucia."
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 ¿Qué harías tú para proteger a tu familia de un peligro inminente?"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina el brillo de los ojos de Mr. Fox, iluminado por la luna mientras planea su próximo golpe."
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 La astucia y la valentía marcan el compás del que desafía la adversidad."
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Picture Mr. Fox darting through the underbrush, always one step ahead."
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Consider what it takes to outsmart those who mean you harm."
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Imagine the glint of mischief in Mr. Fox's eye as he plots his next move."
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "space",
+            "phrase": "🏛 In the dance of minds, cleverness often trumps brute strength."
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.6,
+          "voice_authenticity": 0.9,
+          "specificity": 0.95,
+          "grounding_judge": 0.95,
+          "combined": 0.84,
+          "signals": {
+            "bookIdentityConfidence": 0.6000000000000001,
+            "voiceSignal": 0.8999999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.6000000000000001,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.80"
+        ],
+        "verified_identity": {
+          "titulo_real": "Fantastic Mr. Fox",
+          "autor_completo": "Autor desconocido",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El jardín secreto",
+            "autor": "Frances Hodgson Burnett",
+            "razon": "Ambos libros presentan una narrativa que involucra la naturaleza y la relación entre los personajes y su entorno."
+          },
+          {
+            "titulo": "Charlie y la fábrica de chocolate",
+            "autor": "Roald Dahl",
+            "razon": "Ambos libros son de Roald Dahl y comparten un tono humorístico y fantasioso, además de involucrar personajes peculiares."
+          },
+          {
+            "titulo": "La telaraña de Charlotte",
+            "autor": "E.B. White",
+            "razon": "Ambos libros tratan sobre la amistad entre animales y presentan un enfoque tierno hacia la vida en el campo."
+          },
+          {
+            "titulo": "Matilda",
+            "autor": "Roald Dahl",
+            "razon": "Similar en estilo y tono, ambos libros de Dahl abordan temas de ingenio y la lucha contra la adversidad."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja de manera precisa los temas de ingenio, adversidad, amistad y familia presentes en el ground truth. Utiliza conceptos específicos como 'ingenio', 'familia', y 'adversidad', además de evocar la lucha del zorro contra los granjeros, lo que se alinea con la narrativa del libro. La voz humorística y la fantasía también están presentes, lo que refuerza su anclaje al libro."
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content closely reflects the themes of cunning, adversity, family, and friendship found in the inferred ground truth. Phrases like 'cunning shines like a beacon' and 'strengthens the bonds with his family and friends' directly relate to the book's focus on cleverness and loyalty in the face of challenges. The humor and fantasy elements are also present, making it feel like a back cover meta. A"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.8,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre el contenido del libro.",
+          "elapsed_ms": 2832,
+          "usage": {
+            "prompt_tokens": 423,
+            "completion_tokens": 27,
+            "total_tokens": 450,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre el personaje sin referencias externas.",
+          "elapsed_ms": 2057,
+          "usage": {
+            "prompt_tokens": 396,
+            "completion_tokens": 28,
+            "total_tokens": 424,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 874,
+        "total_ms": 2832
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 180,
+          "adjusted_hue": 190,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.20",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EDEF1",
+          "--palette-1": "#E84F30",
+          "--palette-2": "#136EAE",
+          "--palette-3": "#65310B",
+          "--accent": "#12C0E2",
+          "--accent-soft": "#12C0E238",
+          "--accent-glow": "#12C0E26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#171B1C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#10A9C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_uncorrectable",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-13T22-00-59",
+      "_crono": {
+        "dia": "miércoles",
+        "hora": 16,
+        "franja": "tarde",
+        "energia": 0.6,
+        "modo": "meseta_media",
+        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 57047,
+        "tokens_by_phase": {
+          "grounding": 539,
+          "anchors": 15787,
+          "palette": 0,
+          "content_es": 15454,
+          "judge_es": 1072,
+          "content_en": 14891,
+          "judge_en": 1031,
+          "voice": 874,
+          "voice_extended": 7399,
+          "highlight_judge_es_parrafoTop": 639,
+          "highlight_judge_es_parrafoBot": 645,
+          "highlight_judge_es_parrafoBot_retry": 664,
+          "highlight_judge_en_parrafoTop": 638,
+          "highlight_judge_en_parrafoBot": 649,
+          "highlight_judge_en_parrafoBot_retry": 653,
+          "csal": 2756
+        },
+        "elapsed_ms_total": 58122,
+        "elapsed_ms_by_phase": {
+          "grounding": 7070,
+          "anchors": 9411,
+          "palette": 1,
+          "cover_fallback": 1,
+          "content_es": 14686,
+          "judge_es": 2556,
+          "content_en": 14921,
+          "judge_en": 4514,
+          "voice": 2832,
+          "voice_extended": 2128,
+          "highlight_judge": 12047,
+          "lens_compatibility": 3804,
+          "csal": 10466,
+          "post_processing": 26324
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.3,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.5,
+          "negocio": 0,
+          "familia": 0.9,
+          "espiritu": 0.3,
+          "relaciones": 0.7,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que las cosas no van bien en casa",
+          "antes de un desafío que parece imposible",
+          "después de una discusión con tus amigos",
+          "cuando necesitas encontrar una solución rápida ante un problema",
+          "mientras imaginas aventuras en el bosque con tus amigos",
+          "cuando tienes que cuidar de tu familia y protegerlos de los peligros",
+          "antes de un gran cambio en tu vida",
+          "cuando sientes que el mundo está en tu contra y necesitas un plan",
+          "cuando quieres demostrar que puedes superar cualquier obstáculo",
+          "después de un día frustrante y buscas consuelo en tus seres queridos.",
+          "cuando planeas una sorpresa para alguien especial",
+          "antes de una aventura emocionante con tus amigos",
+          "cuando te sientes diferente y quieres encontrar tu lugar en el mundo",
+          "cuando buscas un sentido de pertenencia en un grupo.",
+          "cuando intentas hacer las paces con alguien que te importa.",
+          "cuando te enfrentas a un enemigo que parece más fuerte.",
+          "cuando sientes que no puedes seguir adelante.",
+          "cuando te das cuenta de que la amistad puede salir de los lugares más inesperados.",
+          "cuando te sientes pequeño ante un gran desafío.",
+          "cuando te das cuenta de que la astucia puede ser más poderosa que la fuerza.",
+          "cuando experimentas un momento de valentía en medio del caos.",
+          "cuando descubres que no estás solo en tus luchas.",
+          "cuando encuentras alegría en las pequeñas cosas de la vida.",
+          "cuando el amor y la familia son lo más importante.",
+          "cuando la risa se convierte en tu mejor herramienta.",
+          "cuando necesitas un poco de magia en tu vida.",
+          "cuando quieres demostrar que puedes ser más de lo que los demás piensan.",
+          "cuando el ingenio y la creatividad son tu mejor defensa.",
+          "cuando el peligro acecha y necesitas ser astuto.",
+          "cuando la naturaleza te inspira a ser valiente.",
+          "cuando la vida se siente como una aventura.",
+          "cuando sueñas con cosas imposibles."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "alegría",
+            "valentía",
+            "miedo",
+            "sorpresa",
+            "confianza",
+            "diversión",
+            "tristeza",
+            "esperanza",
+            "amor"
+          ],
+          "objetos": [
+            "nido",
+            "familia",
+            "bosque",
+            "peligro",
+            "plan",
+            "amigos",
+            "luz de luna",
+            "comida",
+            "cueva",
+            "animales"
+          ],
+          "contextos": [
+            "casa",
+            "bosque",
+            "noche",
+            "campo",
+            "aventura",
+            "escuela",
+            "fiesta",
+            "desierto",
+            "jardín",
+            "cerca del río"
+          ],
+          "verbos": [
+            "proteger",
+            "planear",
+            "huir",
+            "luchar",
+            "reír",
+            "resolver",
+            "correr",
+            "esconder",
+            "explorar",
+            "conectar"
+          ]
+        },
+        "concept_tags": [
+          "ingenio",
+          "familia",
+          "aventura",
+          "naturaleza",
+          "astucia",
+          "humor",
+          "supervivencia",
+          "valentía",
+          "amistad",
+          "desafío"
+        ],
+        "anti_patterns": [
+          "no es una guía para el autoayuda personal",
+          "no aborda problemas psicológicos profundos",
+          "no es una novela de terror",
+          "no trata sobre la vida urbana moderna"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🦊"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌕"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "✨"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión o idea que podría ser parte del contenido del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser parte de un diálogo o reflexión dentro de la narrativa, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una idea que podría ser parte de la narrativa o reflexión del autor, sugiriendo un pensamiento íntimo y personal."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una afirmación que podría ser parte de la narrativa o reflexión del autor, sugiriendo un contenido que se encuentra dentro del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una descripción poética y visual que sugiere una voz narrativa, típica de un texto literario."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta directa que invita a la reflexión, típica de un diálogo o monólogo interno en un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una escena específica con detalles visuales, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un estilo reflexivo y poético que sugiere que es parte de la narrativa del libro, en lugar de una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a philosophical statement that feels like it could be a direct quote or insight from the narrative, reflecting the author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a motivational message that feels like direct advice or encouragement from the author, suggesting it is part of the narrative or thematic content of the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that suggests an introspective moment within the narrative, typical of an author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a poetic thought that feels like it could be part of the narrative or thematic exploration within the book, rather than a commentary about it."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid image and engages the reader's imagination, suggesting it is part of the narrative within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct thought or reflection that feels like it belongs to the narrative or voice of the author within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid image and engages the reader's imagination, suggesting it is part of the narrative rather than a description about the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a metaphorical idea that feels like a reflection or insight from the narrative, suggesting it is part of the author's voice within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-13T22:02:23.715Z",
+      "_edicion_numero": 48
+    },
+    {
       "titulo": "Charlie y la fábrica de chocolate",
       "autor": "Roald Dahl",
       "tagline": "",
@@ -2213,6 +2963,6 @@
     "generated_at": "2026-05-13T16:43:15Z",
     "total": 0,
     "note": "Catálogo vacío — listo para generación",
-    "next_edition_number": 48
+    "next_edition_number": 49
   }
 }
