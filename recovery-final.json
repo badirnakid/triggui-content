@@ -1,0 +1,1246 @@
+[
+  {
+    "catalog": "adulto",
+    "titulo_json": "Rompe con tu zona de confort: 52 propuestas para tomar las riendas de tu vida",
+    "autor_json": "Gregory Cajina",
+    "isbn_json": "",
+    "autor_csv": "Gregory Cajina",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Gregory Cajina",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "openlib_search",
+        "title": "Rompe con tu zona de confort",
+        "author": "Gregory Cajina Heinzkill",
+        "url": "https://covers.openlibrary.org/b/id/14040624-L.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2_sin_subtitulo",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 36431
+        }
+      },
+      {
+        "source": "openlib_search",
+        "title": "Rompe con tu zona de confort",
+        "author": "Gregory Cajina Heinzkill",
+        "url": "https://covers.openlibrary.org/b/id/14040623-L.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2_sin_subtitulo",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 36431
+        }
+      },
+      {
+        "source": "openlib_isbn_lookup",
+        "title": "(via ISBN 9788497546577)",
+        "author": "Gregory Cajina",
+        "url": "https://covers.openlibrary.org/b/isbn/9788497546577-L.jpg",
+        "isbn": "9788497546577",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 0.99,
+        "variant": "isbn_lookup",
+        "passes": true,
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 36431
+        }
+      }
+    ],
+    "elapsed_ms": 6300
+  },
+  {
+    "catalog": "adulto",
+    "titulo_json": "Pequeno Libro De Instrucciones Para La Vida",
+    "autor_json": "Jackson H. Brown Jr.",
+    "isbn_json": "",
+    "autor_csv": "Jackson H. Brown Jr.",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Jackson H. Brown Jr.",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "The Complete Life's Little Instruction Book",
+        "author": "H. Jackson Brown",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/73/3e/21/733e214d-af8d-e4f2-550e-03fd17f06244/9781418571290.jpg/2400x2400bb.jpg",
+        "isbn": "9781418571290",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 980405
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Life's Little Instruction Book",
+        "author": "H. Jackson Brown",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/3a/ca/4c/3aca4caf-878d-7b17-f2d1-29fffde58a1f/9781400320530.jpg/2400x2400bb.jpg",
+        "isbn": "9781400320530",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 370729
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Life's Little Instruction Book",
+        "author": "H. Jackson Brown",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/41/ad/b9/41adb92b-d9d3-175a-d777-b5579291115b/9781418573652.jpg/2400x2400bb.jpg",
+        "isbn": "9781418573652",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1248501
+        }
+      }
+    ],
+    "elapsed_ms": 5146
+  },
+  {
+    "catalog": "adulto",
+    "titulo_json": "Play Nice But Win: A CEO's Journey from Founder to Leader",
+    "autor_json": "Michael Dell",
+    "isbn_json": "",
+    "autor_csv": "Michael Dell",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Michael Dell",
+    "apple": {
+      "ok": true,
+      "n_covers": 1,
+      "isbn": "1552134072",
+      "match": 0.3333333333333333,
+      "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/3f/88/21/3f8821a2-0147-bac5-ce46-1c5a27c4cfd3/9780593087756.d.jpg/2400x2400bb.jpg"
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [
+      {
+        "source": "apple_books",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/3f/88/21/3f8821a2-0147-bac5-ce46-1c5a27c4cfd3/9780593087756.d.jpg/2400x2400bb.jpg",
+        "match": 0.3333333333333333,
+        "ok": true,
+        "status": 200,
+        "contentLength": 808659
+      }
+    ],
+    "valid_covers": 1,
+    "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/3f/88/21/3f8821a2-0147-bac5-ce46-1c5a27c4cfd3/9780593087756.d.jpg/2400x2400bb.jpg",
+    "best_source": "apple_books",
+    "conclusion": "HIPOTESIS_C_CONFIRMADA:cache_o_run_estocastico_anterior",
+    "candidates": [
+      {
+        "source": "openlib_search",
+        "title": "Play Nice but Win",
+        "author": "Michael Dell",
+        "url": "https://covers.openlibrary.org/b/id/12372949-L.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2_sin_subtitulo",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 11137
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Summary of Michael Dell’s Play Nice But Win",
+        "author": "Falcon Press",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/64/30/be/6430be01-084f-5e0a-a5e3-5a3806685f00/8c3b39a9-28c6-44df-b231-4bffb54a55ba_cover_image.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 0,
+        "finalScore": 0.65,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2_sin_subtitulo",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 151902
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Summary of Michael Dell & James Kaplan's Play Nice But Win",
+        "author": "Everest Media",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/43/36/41/433641f2-35ae-d0e8-596e-ffdfe384baf4/9781669386865.jpg/2400x2400bb.jpg",
+        "isbn": "9781669386865",
+        "matchTitulo": 1,
+        "matchAutor": 0,
+        "finalScore": 0.65,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2_sin_subtitulo",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 209274
+        }
+      }
+    ],
+    "elapsed_ms": 4066
+  },
+  {
+    "catalog": "adulto",
+    "titulo_json": "Gracias. El arte de comunicar malas noticias con humanidad",
+    "autor_json": "Juana Erice",
+    "isbn_json": "",
+    "autor_csv": "Juana Erice",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Juana Erice",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "Gracias",
+        "author": "Juana Erice",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/14/20/75/14207588-35de-3a4a-9b4d-cadf8b6b519f/9788417545994.jpeg/2400x2400bb.jpg",
+        "isbn": "9788417545994",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2b_sin_frase_final",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 160063
+        }
+      },
+      {
+        "source": "google_strict",
+        "title": "Gracias",
+        "author": "Juana Erice",
+        "url": "https://books.google.com/books/content?id=NZvQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9788417545994",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v2b_sin_frase_final",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 5167
+        }
+      },
+      {
+        "source": "google_strict",
+        "title": "Gracias",
+        "author": "Juana Erice",
+        "url": "https://books.google.com/books/content?id=OtJKwwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "8416997128",
+        "matchTitulo": 0.5,
+        "matchAutor": 1,
+        "finalScore": 0.675,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v3_primeras_4",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 5039
+        }
+      }
+    ],
+    "elapsed_ms": 3911
+  },
+  {
+    "catalog": "adulto",
+    "titulo_json": "El VERDADERO ARTE DEL MASTER COACH: Colección de Coaching Sistémico",
+    "autor_json": "Alain Cardon",
+    "isbn_json": "",
+    "autor_csv": "Alain Cardon",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Alain Cardon",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "google_strict",
+        "title": "El VERDADERO ARTE DEL MASTER COACH",
+        "author": "Alain Cardon MCC",
+        "url": "https://books.google.com/books/content?id=hsGBzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9798639300233",
+        "matchTitulo": 0.5714285714285714,
+        "matchAutor": 1,
+        "finalScore": 0.7214285714285714,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 8166
+        }
+      },
+      {
+        "source": "google_relaxed",
+        "title": "La Vera Arte del Master Coach",
+        "author": "Alain Cardon MCC",
+        "url": "https://books.google.com/books/content?id=VgfjzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9798692001764",
+        "matchTitulo": 0.42857142857142855,
+        "matchAutor": 1,
+        "finalScore": 0.6285714285714286,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 14812
+        }
+      },
+      {
+        "source": "google_relaxed",
+        "title": "Perspectivas Cuánticas En El Coaching Sistémico",
+        "author": "Alain Cardon MCC",
+        "url": "https://books.google.com/books/content?id=ntGUzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9798651917914",
+        "matchTitulo": 0.42857142857142855,
+        "matchAutor": 1,
+        "finalScore": 0.6285714285714286,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 8113
+        }
+      }
+    ],
+    "elapsed_ms": 4783
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "Buenas noches luna",
+    "autor_json": "Margaret Wise Brown",
+    "isbn_json": "",
+    "autor_csv": "Margaret Wise Brown",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Margaret Wise Brown",
+    "apple": {
+      "ok": true,
+      "n_covers": 1,
+      "isbn": "1269267674",
+      "match": 0.6666666666666666,
+      "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/bd/25/e5/bd25e5a6-f437-e9c7-0f7c-9158fed2dd6b/9781418598891.jpg/2400x2400bb.jpg"
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [
+      {
+        "source": "apple_books",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/bd/25/e5/bd25e5a6-f437-e9c7-0f7c-9158fed2dd6b/9781418598891.jpg/2400x2400bb.jpg",
+        "match": 0.6666666666666666,
+        "ok": true,
+        "status": 200,
+        "contentLength": 2017043
+      }
+    ],
+    "valid_covers": 1,
+    "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication128/v4/bd/25/e5/bd25e5a6-f437-e9c7-0f7c-9158fed2dd6b/9781418598891.jpg/2400x2400bb.jpg",
+    "best_source": "apple_books",
+    "conclusion": "HIPOTESIS_C_CONFIRMADA:cache_o_run_estocastico_anterior",
+    "candidates": [
+      {
+        "source": "google_strict",
+        "title": "Goodnight Moon 123/Buenas Noches, Luna 123 Board Book",
+        "author": "Margaret Wise Brown",
+        "url": "https://books.google.com/books/content?id=a2qfxQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "0062971247",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 11443
+        }
+      },
+      {
+        "source": "google_relaxed",
+        "title": "Buenas noches, Luna",
+        "author": "Margaret Wise Brown, Clement Hurd",
+        "url": "https://books.google.com/books/content?id=Z6kGAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "0613099613",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 11297
+        }
+      },
+      {
+        "source": "google_relaxed",
+        "title": "Goodnight Moon/Buenas noches, Luna",
+        "author": "Margaret Wise Brown",
+        "url": "https://books.google.com/books/content?id=uLjpoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "0062367919",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 9624
+        }
+      }
+    ],
+    "elapsed_ms": 1342
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "La materia oscura La brújula dorada",
+    "autor_json": "Philip Pullman",
+    "isbn_json": "",
+    "autor_csv": "Philip Pullman",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Philip Pullman",
+    "apple": {
+      "ok": true,
+      "n_covers": 1,
+      "isbn": "6470358814",
+      "match": 1,
+      "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/e5/30/1ae530f4-e416-1587-5022-3af8c948940a/9788417092610.jpg/2400x2400bb.jpg"
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [
+      {
+        "source": "apple_books",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/e5/30/1ae530f4-e416-1587-5022-3af8c948940a/9788417092610.jpg/2400x2400bb.jpg",
+        "match": 1,
+        "ok": true,
+        "status": 200,
+        "contentLength": 1109346
+      }
+    ],
+    "valid_covers": 1,
+    "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/e5/30/1ae530f4-e416-1587-5022-3af8c948940a/9788417092610.jpg/2400x2400bb.jpg",
+    "best_source": "apple_books",
+    "conclusion": "HIPOTESIS_C_CONFIRMADA:cache_o_run_estocastico_anterior",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "La brújula dorada (La Materia Oscura 1)",
+        "author": "Philip Pullman",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/e5/30/1ae530f4-e416-1587-5022-3af8c948940a/9788417092610.jpg/2400x2400bb.jpg",
+        "isbn": "9788417092610",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1109346
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "La Materia Oscura (pack con: La brújula dorada  La daga  El catalejo lacado) (La Materia Oscura)",
+        "author": "Philip Pullman",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/72/e7/6b/72e76bfc-4849-e284-ee13-c28989fdfead/9788418870101.jpg/2400x2400bb.jpg",
+        "isbn": "9788418870101",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 761727
+        }
+      },
+      {
+        "source": "google_relaxed",
+        "title": "La brújula dorada. La materia oscura I",
+        "author": "Philip Pullman",
+        "url": "https://books.google.com/books/content?id=Vc44AwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9788466645638",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 13347
+        }
+      }
+    ],
+    "elapsed_ms": 2453
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "La pequeña casa en la pradera",
+    "autor_json": "Laura Ingalls Wilder",
+    "isbn_json": "",
+    "autor_csv": "Laura Ingalls Wilder",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Laura Ingalls Wilder",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "Little House on the Prairie",
+        "author": "Laura Ingalls Wilder",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/a7/8e/48/a78e4836-726d-c344-4ad2-59abf2f639bc/Little_House_3.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1140125
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Little House on the Prairie",
+        "author": "Laura Ingalls Wilder",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/7f/78/41/7f78419f-0ed5-7b4e-50ff-d3f2b6c683b9/9780062094889.jpg/2400x2400bb.jpg",
+        "isbn": "9780062094889",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 989928
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Little House on the Prairie",
+        "author": "Laura Ingalls Wilder",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/fe/0a/1f/fe0a1f60-0230-ba3a-2cf6-b2ebf0893a92/Little_House_on_the_Prairie_Cover.jpeg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 590685
+        }
+      }
+    ],
+    "elapsed_ms": 3329
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "La sastrería de Gloucester",
+    "autor_json": "Beatrix Potter",
+    "isbn_json": "",
+    "autor_csv": "Beatrix Potter",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Beatrix Potter",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "The Tailor of Gloucester",
+        "author": "Beatrix Potter",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication/ef/97/93/mzi.fkyckusv.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 258857
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "The Tailor of Gloucester",
+        "author": "Beatrix Potter",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/20/35/f3/2035f379-6621-e25b-609c-9bcc8d8ca75b/9788028306106.jpg/2400x2400bb.jpg",
+        "isbn": "9788028306106",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 895404
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "The Tailor of Gloucester",
+        "author": "Beatrix Potter",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/8b/f4/20/8bf42078-6040-203b-ffa5-a95a5a5653dc/cover.png/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 406294
+        }
+      }
+    ],
+    "elapsed_ms": 2401
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "La telaraña de Carlota",
+    "autor_json": "E.B. White",
+    "isbn_json": "",
+    "autor_csv": "E.B. White",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "E.B. White",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "google_strict",
+        "title": "La Telaraña de Carlota. Finalista de la Medalla Newbery / Charlotte's Web. Newbery Medal Finalist",
+        "author": "E. B. White",
+        "url": "https://books.google.com/books/content?id=02Te0QEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "6073939973",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 15414
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Charlotte’s Web",
+        "author": "E. B. White",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/02/c7/08/02c708bf-bc01-df13-57a4-2463bf386ff4/cover.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1133131
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Charlotte's Web",
+        "author": "E. B. White, Garth Williams & Rosemary Wells",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication3/v4/99/42/ce/9942cef6-04ed-87ec-81e9-abcb609d993f/cover.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1361058
+        }
+      }
+    ],
+    "elapsed_ms": 2029
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "La casa del árbol El valle de los dinosaurios",
+    "autor_json": "Mary Pope Osborne",
+    "isbn_json": "",
+    "autor_csv": "Mary Pope Osborne",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Mary Pope Osborne",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "Magic Tree House: Dinosaurs Before Dark",
+        "author": "Mary Pope Osborne & Jenny Laird",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/3f/f7/7f/3ff77ffd-049f-9484-c16c-f8585b300b7d/9780241712009.jpg/2400x2400bb.jpg",
+        "isbn": "9780241712009",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 715466
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Magic Tree House Fact Tracker Graphic Novel: Dinosaurs",
+        "author": "Mary Pope Osborne, Jenny Laird & Jomike Tejido",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/12/ec/84/12ec8426-a496-a041-380a-b0b050e25d92/9780593705872.d.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1081566
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Magic Tree House Fact & Fiction: Dinosaurs",
+        "author": "Mary Pope Osborne, Will Osborne & Sal Murdocca",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/98/2d/5e/982d5e15-0781-fc6a-51f0-bd6b89d617e0/9780553521566.d.jpg/2400x2400bb.jpg",
+        "isbn": null,
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v4_titulo_ingles",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 984527
+        }
+      }
+    ],
+    "elapsed_ms": 3359
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "Las brujas",
+    "autor_json": "Roald Dahl",
+    "isbn_json": "",
+    "autor_csv": "Roald Dahl",
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Roald Dahl",
+    "apple": {
+      "ok": true,
+      "n_covers": 1,
+      "isbn": "1547505561",
+      "match": 1,
+      "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/81/58/eb/8158eb9e-7a56-a995-a7fa-ac745cf7461b/9788420459196.jpg/2400x2400bb.jpg"
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": true,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 1,
+      "best_url": null
+    },
+    "covers_validated": [
+      {
+        "source": "apple_books",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/81/58/eb/8158eb9e-7a56-a995-a7fa-ac745cf7461b/9788420459196.jpg/2400x2400bb.jpg",
+        "match": 1,
+        "ok": true,
+        "status": 200,
+        "contentLength": 634525
+      }
+    ],
+    "valid_covers": 1,
+    "best_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/81/58/eb/8158eb9e-7a56-a995-a7fa-ac745cf7461b/9788420459196.jpg/2400x2400bb.jpg",
+    "best_source": "apple_books",
+    "conclusion": "HIPOTESIS_C_CONFIRMADA:cache_o_run_estocastico_anterior",
+    "candidates": [
+      {
+        "source": "apple_mx",
+        "title": "Las Brujas (Colección Alfaguara Clásicos)",
+        "author": "Roald Dahl",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/81/58/eb/8158eb9e-7a56-a995-a7fa-ac745cf7461b/9788420459196.jpg/2400x2400bb.jpg",
+        "isbn": "9788420459196",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 634525
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Las brujas (edición cómic) (Colección Alfaguara Clásicos)",
+        "author": "Roald Dahl & Pénélope Bagieu",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/10/06/5b/10065bfd-943a-da25-59ab-af251cb138a7/9788420441467.jpg/2400x2400bb.jpg",
+        "isbn": "9788420441467",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1026578
+        }
+      },
+      {
+        "source": "google_strict",
+        "title": "Las brujas",
+        "author": "Roald Dahl",
+        "url": "https://books.google.com/books/content?id=_GAHAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9582401001",
+        "matchTitulo": 1,
+        "matchAutor": 1,
+        "finalScore": 1,
+        "threshold": 0.55,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 12056
+        }
+      }
+    ],
+    "elapsed_ms": 1624
+  },
+  {
+    "catalog": "kids",
+    "titulo_json": "Fantastic Mr. Fox",
+    "autor_json": "Autor desconocido",
+    "isbn_json": "",
+    "autor_csv": null,
+    "isbn_csv": null,
+    "portada_csv": null,
+    "autor_for_fetch": "Autor desconocido",
+    "apple": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "google": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "openlib": {
+      "ok": false,
+      "n_covers": 0,
+      "isbn": null,
+      "match": 0,
+      "best_url": null
+    },
+    "covers_validated": [],
+    "valid_covers": 0,
+    "best_url": null,
+    "best_source": null,
+    "conclusion": "HIPOTESIS_E:ninguna_api_responde_con_match_solido",
+    "candidates": [
+      {
+        "source": "google_relaxed",
+        "title": "Fantastic Mr. Fox Lit Link Gr. 4-6",
+        "author": "",
+        "url": "https://books.google.com/books/content?id=GrE5A21urHoC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "isbn": "9781770722194",
+        "matchTitulo": 1,
+        "matchAutor": null,
+        "finalScore": 1,
+        "threshold": 0.7,
+        "passes": true,
+        "variant": "v1_original",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 12878
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Fantastic Mr Fox",
+        "author": "Roald Dahl",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/97/b6/1a/97b61a6e-b36a-d414-3b7d-f1b86869425a/9780141929842.jpg/2400x2400bb.jpg",
+        "isbn": "9780141929842",
+        "matchTitulo": 1,
+        "matchAutor": null,
+        "finalScore": 1,
+        "threshold": 0.7,
+        "passes": true,
+        "variant": "v5_solo_titulo_sin_autor",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 977635
+        }
+      },
+      {
+        "source": "apple_mx",
+        "title": "Fantastic Mr. Fox",
+        "author": "Roald Dahl",
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Publication62/v4/c3/19/24/c319241c-3546-f3b3-49cf-1eb96762b9c3/9780141378503.jpg/2400x2400bb.jpg",
+        "isbn": "9780141378503",
+        "matchTitulo": 1,
+        "matchAutor": null,
+        "finalScore": 1,
+        "threshold": 0.7,
+        "passes": true,
+        "variant": "v5_solo_titulo_sin_autor",
+        "validation": {
+          "ok": true,
+          "status": 200,
+          "bytes": 1283477
+        }
+      }
+    ],
+    "elapsed_ms": 2439
+  }
+]
