@@ -21,10 +21,28 @@
 
 import fs from 'node:fs/promises';
 
-const TARGETS = [
+// CLI args > defaults. Permite uso programatico desde workflow.
+//   node sanitize-catalog.mjs                    -> usa defaults
+//   node sanitize-catalog.mjs file1.json file2   -> sanitiza esos paths
+const CLI_ARGS = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const TARGETS = CLI_ARGS.length > 0 ? CLI_ARGS : [
   '/workspaces/triggui-content/contenido.json',
   '/workspaces/triggui-content/contenido_kids.json'
 ];
+
+// Skip backup en modo CI/CD (no queremos archivos .backup-* en el runner)
+const SKIP_BACKUP = process.env.SANITIZE_NO_BACKUP === '1' || process.argv.includes('--no-backup');
+
+// Help flag
+if (process.argv.includes('--help') || process.argv.includes('-h')) {
+  console.log('Usage:');
+  console.log('  node sanitize-catalog.mjs [--no-backup] [path1.json] [path2.json] ...');
+  console.log('  SANITIZE_NO_BACKUP=1 node sanitize-catalog.mjs ...');
+  console.log('');
+  console.log('Sin paths -> usa defaults (contenido.json, contenido_kids.json).');
+  console.log('Con paths -> sanitiza solo esos archivos.');
+  process.exit(0);
+}
 
 // Walker recursivo: aplica fn a cada string del árbol JSON
 function walk(obj, fn) {
@@ -99,10 +117,12 @@ for (const path of TARGETS) {
   try { await fs.access(path); }
   catch { console.log('  (no existe — skip)\n'); continue; }
 
-  // Backup
-  const backup = `${path}.backup-sanitize-${Date.now()}.json`;
-  await fs.copyFile(path, backup);
-  console.log(`  backup: ${backup.split('/').pop()}`);
+  // Backup (skip en modo CI/CD)
+  if (!SKIP_BACKUP) {
+    const backup = `${path}.backup-sanitize-${Date.now()}.json`;
+    await fs.copyFile(path, backup);
+    console.log(`  backup: ${backup.split('/').pop()}`);
+  }
 
   // Read + parse
   const raw = await fs.readFile(path, 'utf8');
@@ -128,8 +148,22 @@ for (const path of TARGETS) {
   const post = (out.match(/\\u00[01][0-9a-fA-F]/g) || []).length;
 
   if (post > 0) {
-    console.error(`  FAIL: aún quedan ${post} control chars tras sanitize. Restaurando backup...`);
-    await fs.copyFile(backup, path);
+    console.error(`  FAIL: aún quedan ${post} control chars tras sanitize.`);
+    if (!SKIP_BACKUP) {
+      const backupPath = `${path}.backup-sanitize-`;
+      // Restaurar del backup mas reciente
+      try {
+        const dir = path.substring(0, path.lastIndexOf('/'));
+        const files = await fs.readdir(dir);
+        const backups = files.filter(f => f.startsWith(path.split('/').pop() + '.backup-sanitize-')).sort();
+        if (backups.length > 0) {
+          await fs.copyFile(`${dir}/${backups[backups.length-1]}`, path);
+          console.log(`  ✓ backup restaurado`);
+        }
+      } catch (_) {}
+    } else {
+      console.error(`  (sin backup en modo CI/CD — git restaura)`);
+    }
     totalErrors++;
     continue;
   }
