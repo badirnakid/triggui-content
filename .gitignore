@@ -18,3 +18,7 @@ TRIGGUI_*HANDOFF*.txt
 *.pre-*.bak
 *.pre-*.json
 .env
+
+# Sanitize backups (no versionar)
+*.backup-sanitize-*.json
+*.tmp-*
