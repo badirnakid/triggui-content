@@ -1,6 +1,830 @@
 {
   "libros": [
     {
+      "titulo": "Donde viven los monstruos",
+      "autor": "Maurice Sendak",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a4/31/56/a43156e3-9acd-b8a9-c351-089bd5214ad6/cfab64dc-233d-478e-ab3a-d4a2920a0f3d_cover_image.png/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/a4/31/56/a43156e3-9acd-b8a9-c351-089bd5214ad6/cfab64dc-233d-478e-ab3a-d4a2920a0f3d_cover_image.png/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Donde viven los monstruos",
+      "titulo_en": "Where the Wild Things Are",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "nostalgia",
+        "asombro",
+        "ternura",
+        "pertenencia"
+      ],
+      "palabras_en": [
+        "longing",
+        "imagination",
+        "belonging",
+        "warmth"
+      ],
+      "frases": [
+        "🌊 Cierra los ojos y recuerda un momento en que tu imaginación te llevó lejos.",
+        "🌓 ¿Cuándo fue la última vez que te sentiste como un rey en tu propia vida?",
+        "👁 Imagina una isla llena de criaturas extrañas, donde cada una refleja un deseo oculto.",
+        "🗺 El hogar no es un lugar, sino un sentimiento que llevamos dentro."
+      ],
+      "frases_en": [
+        "🌊 Imagine walking through a forest where the trees whisper secrets.",
+        "🌌 What would you do if you faced your greatest fears today?",
+        "👁 Picture a crown made of wildflowers, resting on the head of a joyful child.",
+        "🕰 Home is where the heart finds its true adventure."
+      ],
+      "frases_og": [
+        "🧭 En el rincón más lejano de la imaginación, donde los monstruos danzan y las sombras susurran secretos, descubrí que los gritos de mi corazón eran tan reales como la luz de la luna.",
+        "🔍 En un rincón del mundo donde los monstruos danzan y los sueños cobran vida, Max se enfrenta a la realidad de su propia soledad y la profunda necesidad de ser comprendido.",
+        "💠 Los monstruos no son solo criaturas que habitan en la oscuridad, sino también las sombras de nuestros miedos y deseos que danzan en el rincón de nuestra imaginación.",
+        "✨ Los monstruos no son solo criaturas de la noche; son los ecos de nuestros miedos y deseos, danzando entre la realidad y la fantasía."
+      ],
+      "frases_og_en": [
+        "🧭 Max sailed across the wild, untamed sea of his imagination, where monsters danced and roared, reminding him that sometimes, the most chaotic worlds are where we truly find ourselves.",
+        "🔍 Max roared his terrible roars and gnashed his terrible teeth, feeling the wildness swell inside him, a storm of emotions that made him both king and lost boy in a world where he could belong.",
+        "💠 And the wild things roared their terrible roars and gnashed their terrible teeth, but in that moment, Max felt a fierce belonging that made the chaos of the world fade away.",
+        "✨ In the wild places where monsters roam, I found a world that was both mine and not mine, a place where my heart could dance in the chaos of my own making."
+      ],
+      "colores": [
+        "#7EAAF1",
+        "#E8A230",
+        "#1328AE",
+        "#65590B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "La batalla entre la imaginación y la realidad",
+        "parrafoTop": "[H]Max, en su travesía hacia la isla de los monstruos[/H], no solo busca escapar de su hogar, sino también enfrentarse a la realidad de sus propios miedos y deseos. La frontera entre lo que imagina y lo que vive se desdibuja, revelando que la verdadera aventura ocurre en su interior.",
+        "subtitulo": "¿Qué significa ser rey en un mundo de monstruos?",
+        "parrafoBot": "La búsqueda de pertenencia es un hilo conductor en la vida de Max. Al convertirse en rey de los monstruos, descubre que la libertad sin amor no es suficiente. [H]La verdadera realeza reside en el hogar, donde el amor y la calidez lo esperan[/H]. Es un recordatorio de que, a veces, los monstruos más grandes son los que llevas.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La batalla entre la imaginación y la realidad",
+        "parrafoTop": "[H]Max, en su travesía hacia la isla de los monstruos[/H], no solo busca escapar de su hogar, sino también enfrentarse a la realidad de sus propios miedos y deseos. La frontera entre lo que imagina y lo que vive se desdibuja, revelando que la verdadera aventura ocurre en su interior.",
+        "subtitulo": "¿Qué significa ser rey en un mundo de monstruos?",
+        "parrafoBot": "La búsqueda de pertenencia es un hilo conductor en la vida de Max. Al convertirse en rey de los monstruos, descubre que la libertad sin amor no es suficiente. [H]La verdadera realeza reside en el hogar, donde el amor y la calidez lo esperan[/H]. Es un recordatorio de que, a veces, los monstruos más grandes son los que llevas.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La batalla entre la imaginación y la realidad",
+        "parrafoTop": "[H]Max, en su travesía hacia la isla de los monstruos[/H], no solo busca escapar de su hogar, sino también enfrentarse a la realidad de sus propios miedos y deseos. La frontera entre lo que imagina y lo que vive se desdibuja, revelando que la verdadera aventura ocurre en su interior.",
+        "subtitulo": "¿Qué significa ser rey en un mundo de monstruos?",
+        "parrafoBot": "La búsqueda de pertenencia es un hilo conductor en la vida de Max. Al convertirse en rey de los monstruos, descubre que la libertad sin amor no es suficiente. [H]La verdadera realeza reside en el hogar, donde el amor y la calidez lo esperan[/H]. Es un recordatorio de que, a veces, los monstruos más grandes son los que llevas.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Battle Between Imagination and Reality",
+        "parrafoTop": "As Max embarks on his journey to the land of the wild things, he is not just escaping his home; he is confronting the reality of his own fears and desires. [H]The line between his imagination and his lived experience blurs[/H], revealing that the true adventure unfolds within.",
+        "subtitulo": "What does it mean to be king in a world of monsters?",
+        "parrafoBot": "Max's quest for belonging is a thread woven throughout his life. As he becomes the king of the monsters, he discovers that freedom without love is not enough. [H]True royalty resides at home, where love and warmth await.[/H] Sometimes, the greatest monsters are those we carry within.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Battle Between Imagination and Reality",
+        "parrafoTop": "As Max embarks on his journey to the land of the wild things, he is not just escaping his home; he is confronting the reality of his own fears and desires. [H]The line between his imagination and his lived experience blurs[/H], revealing that the true adventure unfolds within.",
+        "subtitulo": "What does it mean to be king in a world of monsters?",
+        "parrafoBot": "Max's quest for belonging is a thread woven throughout his life. As he becomes the king of the monsters, he discovers that freedom without love is not enough. [H]True royalty resides at home, where love and warmth await.[/H] Sometimes, the greatest monsters are those we carry within.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Battle Between Imagination and Reality",
+        "parrafoTop": "As Max embarks on his journey to the land of the wild things, he is not just escaping his home; he is confronting the reality of his own fears and desires. [H]The line between his imagination and his lived experience blurs[/H], revealing that the true adventure unfolds within.",
+        "subtitulo": "What does it mean to be king in a world of monsters?",
+        "parrafoBot": "Max's quest for belonging is a thread woven throughout his life. As he becomes the king of the monsters, he discovers that freedom without love is not enough. [H]True royalty resides at home, where love and warmth await.[/H] Sometimes, the greatest monsters are those we carry within.",
+        "style": {
+          "accent": "#1262E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Donde%20viven%20los%20monstruos%20Maurice%20Sendak%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Where%20the%20Wild%20Things%20Are%20Maurice%20Sendak%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-15T17:42:25.605Z",
+        "workflow_run_id": "25932429127",
+        "catalog_mode": "kids",
+        "modo": "single_book",
+        "punto_ciclo": "1 — Creativo (pienso, no hago — insight)",
+        "pilar": "familia",
+        "hawkins_target": "coraje (200)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "Joya de Maurice Sendak — para subscritores en duelo",
+        "sentimiento": "tristeza, ganas de imaginar otra vida"
+      },
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Donde viven los monstruos",
+          "titulo_en": "Where the Wild Things Are",
+          "autor_completo": "Maurice Sendak",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la batalla entre la imaginación y la realidad",
+            "la búsqueda de pertenencia en un mundo caótico",
+            "la exploración de emociones complejas a través del juego"
+          ],
+          "key_terms": [
+            "imaginación",
+            "monstruos",
+            "rey",
+            "hogar",
+            "niñez"
+          ],
+          "authorial_voice_notes": "Sendak utiliza un lenguaje sencillo pero poético que evoca la complejidad emocional de la infancia, creando un puente entre la fantasía y la realidad."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la complejidad emocional de la niñez, donde los monstruos representan tanto la libertad como los miedos internos que surgen en la exploración de la identidad y los límites. La historia de Max subraya la tensión entre la independencia y el deseo de amor familiar.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 207,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La batalla entre la imaginación y la realidad",
+          "parrafoTop": "Max, en su travesía hacia la isla de los monstruos, no solo busca escapar de su hogar, sino también enfrentarse a la realidad de sus propios miedos y deseos. La frontera entre lo que imagina y lo que vive se desdibuja, revelando que la verdadera aventura ocurre en su interior. Enfrentar a los monstruos es, en última, a",
+          "subtitulo": "¿Qué significa ser rey en un mundo de monstruos?",
+          "parrafoBot": "La búsqueda de pertenencia es un hilo conductor en la vida de Max. Al convertirse en rey de los monstruos, descubre que la libertad sin amor no es suficiente. La verdadera realeza reside en el hogar, donde el amor y la calidez lo esperan. Es un recordatorio de que, a veces, los monstruos más grandes son los que llevas."
+        },
+        "card_en": {
+          "titulo": "The Battle Between Imagination and Reality",
+          "parrafoTop": "As Max embarks on his journey to the land of the wild things, he is not just escaping his home; he is confronting the reality of his own fears and desires. The line between his imagination and his lived experience blurs, revealing that the true adventure unfolds within. Facing the monsters is, ultimately, a battle with",
+          "subtitulo": "What does it mean to be king in a world of monsters?",
+          "parrafoBot": "Max's quest for belonging is a thread woven throughout his life. As he becomes the king of the monsters, he discovers that freedom without love is not enough. True royalty resides at home, where love and warmth await. Sometimes, the greatest monsters are those we carry within."
+        },
+        "emotional_words_es": [
+          "nostalgia",
+          "asombro",
+          "ternura",
+          "pertenencia"
+        ],
+        "emotional_words_en": [
+          "longing",
+          "imagination",
+          "belonging",
+          "warmth"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🧭 En el rincón más lejano de la imaginación, donde los monstruos danzan y las sombras susurran secretos, descubrí que los gritos de mi corazón eran tan reales como la luz de la luna."
+          },
+          {
+            "phrase": "🔍 En un rincón del mundo donde los monstruos danzan y los sueños cobran vida, Max se enfrenta a la realidad de su propia soledad y la profunda necesidad de ser comprendido."
+          },
+          {
+            "phrase": "💠 Los monstruos no son solo criaturas que habitan en la oscuridad, sino también las sombras de nuestros miedos y deseos que danzan en el rincón de nuestra imaginación."
+          },
+          {
+            "phrase": "✨ Los monstruos no son solo criaturas de la noche; son los ecos de nuestros miedos y deseos, danzando entre la realidad y la fantasía."
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🧭 Max sailed across the wild, untamed sea of his imagination, where monsters danced and roared, reminding him that sometimes, the most chaotic worlds are where we truly find ourselves."
+          },
+          {
+            "phrase": "🔍 Max roared his terrible roars and gnashed his terrible teeth, feeling the wildness swell inside him, a storm of emotions that made him both king and lost boy in a world where he could belong."
+          },
+          {
+            "phrase": "💠 And the wild things roared their terrible roars and gnashed their terrible teeth, but in that moment, Max felt a fierce belonging that made the chaos of the world fade away."
+          },
+          {
+            "phrase": "✨ In the wild places where monsters roam, I found a world that was both mine and not mine, a place where my heart could dance in the chaos of my own making."
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Cierra los ojos y recuerda un momento en que tu imaginación te llevó lejos.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "imaginacion"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Cuándo fue la última vez que te sentiste como un rey en tu propia vida?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": "pertenencia"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina una isla llena de criaturas extrañas, donde cada una refleja un deseo oculto.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": "asombro"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 El hogar no es un lugar, sino un sentimiento que llevamos dentro.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": "ternura"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Imagine walking through a forest where the trees whisper secrets.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🌌 What would you do if you faced your greatest fears today?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Picture a crown made of wildflowers, resting on the head of a joyful child.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Home is where the heart finds its true adventure.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.32,
+          "specificity": 0.95,
+          "grounding_judge": 0.85,
+          "combined": 0.79,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.31999999999999995,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.85
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Donde viven los monstruos",
+          "autor_completo": "Maurice Sendak",
+          "titulo_api": "Donde Viven Los Monstruos",
+          "autor_api": "Maurice Sendak",
+          "año": "2022",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6751375140",
+          "categorias": [
+            "Fantasía",
+            "Libros",
+            "Ciencia ficción y fantasía"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/donde-viven-los-monstruos/id6751375140?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja de manera específica los temas centrales del libro, como la lucha de Max con sus miedos y deseos, su transformación en rey de los monstruos, y la importancia del hogar y el amor. Utiliza conceptos clave del ground_truth, como la imaginación y la búsqueda de pertenencia, lo que lo ancla firmemente a la obra de Sendak."
+        },
+        "en": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects themes from the book, such as Max's journey and the contrast between imagination and reality, which are central to the story. It also touches on the idea of belonging and the importance of love, which aligns with the book's message. However, it lacks specific references to the characters and events in the original synopsis, making it feel somewhat generic despite its relevance"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "resena",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Analiza el libro y reflexiona sobre sus temas.",
+          "elapsed_ms": 1147,
+          "usage": {
+            "prompt_tokens": 450,
+            "completion_tokens": 27,
+            "total_tokens": 477,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla del libro y sus temas desde una perspectiva externa.",
+          "elapsed_ms": 1244,
+          "usage": {
+            "prompt_tokens": 417,
+            "completion_tokens": 28,
+            "total_tokens": 445,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": true,
+        "total_tokens": 922,
+        "total_ms": 1244
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 207,
+          "adjusted_hue": 217,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EAAF1",
+          "--palette-1": "#E8A230",
+          "--palette-2": "#1328AE",
+          "--palette-3": "#65590B",
+          "--accent": "#1262E2",
+          "--accent-soft": "#1262E238",
+          "--accent-glow": "#1262E26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#17191C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#1056C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-15T17-42-25",
+      "_crono": {
+        "dia": "viernes",
+        "hora": 11,
+        "franja": "manana",
+        "energia": 0.9,
+        "modo": "apertura_semana",
+        "descripcion_dia": "Viernes baja intensidad, abre reflexión de semana. Tono amplio.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 92261,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 16290,
+          "palette": 0,
+          "content_es": 18023,
+          "judge_es": 1030,
+          "content_es_retry": 18049,
+          "judge_es_retry": 1036,
+          "content_en": 17242,
+          "judge_en": 1003,
+          "voice": 922,
+          "voice_extended": 18666,
+          "highlight_judge_es_parrafoTop": 655,
+          "highlight_judge_es_parrafoTop_retry": 654,
+          "highlight_judge_es_parrafoBot": 654,
+          "highlight_judge_es_parrafoBot_retry": 650,
+          "highlight_judge_en_parrafoTop": 641,
+          "highlight_judge_en_parrafoBot": 643,
+          "csal": 2977
+        },
+        "elapsed_ms_total": 65567,
+        "elapsed_ms_by_phase": {
+          "grounding": 9,
+          "anchors": 5616,
+          "palette": 1,
+          "cover_fallback": 109,
+          "content_es": 9154,
+          "judge_es": 3149,
+          "content_es_retry": 9496,
+          "content_en": 14171,
+          "judge_en": 3279,
+          "voice": 1244,
+          "voice_extended": 17243,
+          "highlight_judge": 7401,
+          "lens_compatibility": 3147,
+          "csal": 97373,
+          "post_processing": 107928
+        },
+        "llm_calls_count": 49,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 8,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0,
+          "familia": 0.8,
+          "espiritu": 0.6,
+          "relaciones": 0.7,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando mis hijos tienen una rabieta y no sé cómo calmarlos",
+          "antes de dormir, cuando a mi hijo le cuesta cerrar los ojos por la imaginación",
+          "cuando me siento abrumado y quiero escapar a un mundo diferente",
+          "después de una discusión familiar, cuando busco reconfortar a mi hijo",
+          "cuando veo que mi hijo inventa historias y quiero fomentar su creatividad",
+          "cuando me siento solo y extraño la calidez de mi hogar",
+          "cuando mis hijos temen a la oscuridad y a los 'monstruos'",
+          "antes de una noche de cuentos, buscando historias que conecten con emociones profundas",
+          "cuando me pregunto cómo equilibrar la libertad y las reglas con mis hijos",
+          "cuando veo que mi hijo necesita expresar emociones complejas",
+          "después de una travesura de mis hijos, cuando intento entender su perspectiva",
+          "cuando busco libros que enseñen sobre la importancia de la familia",
+          "cuando mis hijos preguntan sobre sentimientos difíciles de explicar",
+          "al intentar enseñar a mis hijos sobre la empatía y la conexión",
+          "cuando quiero recordar mi propia infancia y las aventuras de entonces",
+          "cuando mis hijos juegan solos y me pregunto qué mundos imaginan",
+          "antes de una reunión familiar, al recordar la importancia del hogar",
+          "cuando busco una historia que hable sobre la aventura y el regreso",
+          "cuando quiero mostrar a mis hijos que está bien ser diferente",
+          "cuando me pregunto sobre la importancia de los sueños y la imaginación",
+          "cuando siento que he perdido el sentido de pertenencia",
+          "cuando mis hijos buscan un refugio seguro tras un mal día",
+          "cuando intento enseñar a mis hijos a manejar sus emociones",
+          "cuando veo a mis hijos crecer y quiero preservar su inocencia",
+          "cuando busco una conexión más profunda con mis hijos a través de la lectura",
+          "cuando quiero explicar a mis hijos que está bien tener miedo",
+          "cuando busco una historia que hable sobre la importancia de regresar a casa",
+          "cuando quiero mostrar a mis hijos que el amor siempre nos espera",
+          "cuando mis hijos se sienten incomprendidos y busco consuelo en un cuento",
+          "cuando reflexiono sobre cómo la imaginación puede ser un escape y una solución",
+          "cuando me siento nostálgico por los juegos de mi infancia",
+          "cuando busco maneras de enseñar a mis hijos sobre la responsabilidad emocional",
+          "cuando quiero que mis hijos comprendan que pueden ser ellos mismos",
+          "cuando me pregunto sobre el balance entre autoridad y amor en la crianza"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "nostalgia",
+            "soledad",
+            "rebeldía",
+            "curiosidad",
+            "miedo",
+            "amor",
+            "anhelo",
+            "frustración",
+            "travesura",
+            "alegría",
+            "imaginación",
+            "desafío",
+            "paz",
+            "seguridad",
+            "confusión"
+          ],
+          "objetos": [
+            "monstruos",
+            "barco",
+            "isla",
+            "corona",
+            "bosque",
+            "hogar",
+            "cama",
+            "libros",
+            "juguetes",
+            "traje de lobo"
+          ],
+          "contextos": [
+            "habitación de niños",
+            "hora de dormir",
+            "discusión familiar",
+            "noche de cuentos",
+            "aventura imaginaria",
+            "regreso a casa",
+            "juego solitario",
+            "reunión familiar",
+            "mundo de fantasía",
+            "hogar cálido"
+          ],
+          "verbos": [
+            "imaginar",
+            "explorar",
+            "escapar",
+            "regresar",
+            "jugar",
+            "soñar",
+            "navegar",
+            "reinar",
+            "abrazar",
+            "calmar",
+            "contar cuentos",
+            "conectar",
+            "enseñar",
+            "comprender",
+            "acompañar"
+          ]
+        },
+        "concept_tags": [
+          "imaginación desbordante",
+          "rey de los monstruos",
+          "viaje solitario",
+          "regreso al hogar",
+          "sentimiento de pertenencia",
+          "monstruos amigables",
+          "rebeldía infantil",
+          "isla fantástica",
+          "creatividad infantil",
+          "conflicto emocional",
+          "azar y travesura",
+          "equilibrio entre libertad y reglas",
+          "poder de la fantasía",
+          "refugio emocional",
+          "transformación personal",
+          "perspectiva infantil",
+          "viaje emocional",
+          "búsqueda de amor",
+          "complejidad de la infancia"
+        ],
+        "anti_patterns": [
+          "situaciones adultas complejas como el trabajo",
+          "relaciones románticas",
+          "problemas financieros",
+          "crisis existenciales profundas",
+          "filosofía adulta compleja",
+          "consejos de crianza específicos",
+          "historias de terror realistas",
+          "aventuras adultas sin componentes fantásticos",
+          "guías de autoayuda para adultos"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🚪"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "👑"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌴"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🏡"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "La frase presenta una voz poética y personal que sugiere una experiencia interna del autor, evocando imágenes y emociones que parecen formar parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una narrativa que parece ser parte de la historia, con un enfoque en el personaje y sus emociones, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión poética que parece ser parte del contenido del libro, evocando imágenes y emociones que el autor podría explorar en su narrativa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión poética que parece ser parte del contenido del libro, evocando una voz autoral que explora temas internos."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a una experiencia introspectiva, típica de la voz autoral dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar un escenario específico, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión íntima y personal que podría pertenecer a la voz del autor dentro del libro, en lugar de ser una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "The phrase presents a vivid scene and internal reflection, suggesting it is part of the narrative rather than a description of the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "The phrase captures a vivid moment from the character's perspective, reflecting his internal emotions and experiences, which indicates it is part of the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "The phrase captures a moment from the narrative, reflecting the character's feelings and experiences directly, indicating it is part of the story."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "The phrase expresses a personal experience and emotional reflection, suggesting it is written from the author's perspective within the narrative."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and engages the reader's imagination, suggesting it is part of the narrative within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a direct question that invites introspection, suggesting it is part of a narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid image and feels like a direct description from the narrative, suggesting it is part of the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a poetic sentiment that feels like an introspective thought from the author, fitting within the narrative of a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-15T17:45:19.101Z",
+      "_edicion_numero": 51
+    },
+    {
       "titulo": "Charlie y la fábrica de chocolate",
       "autor": "Roald Dahl",
       "tagline": "",
@@ -2978,8 +3802,10 @@
   "meta": {
     "version": "1.0.0",
     "generated_at": "2026-05-13T16:43:15Z",
-    "total": 0,
+    "total": 4,
     "note": "Catálogo vacío — listo para generación",
-    "next_edition_number": 49
+    "next_edition_number": 52,
+    "last_reset": "2026-05-15T15:54:23.015Z",
+    "last_reset_reason": "sprint-v12-sinfonia-clean-start"
   }
 }
