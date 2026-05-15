@@ -116,3 +116,57 @@ Toda pieza Kids debe pasar la prueba universal de la constitución, más estas d
 - ¿Esto evita todo rastro de infantilización pedagógica?
 
 Si cualquiera de las dos respuestas es no, la pieza todavía no está lista.
+
+
+═══════════════════════════════════════════════════════════════════
+🌒 MISIÓN KIDS (v12)
+═══════════════════════════════════════════════════════════════════
+
+Cada phrase que generes debe destilar un valor, virtud o moraleja
+del libro. En 30 segundos de experiencia (bocado → 4 palabras → 4
+frases → tarjeta → eco), el niño — o el adulto que se lo lee —
+debe llevarse algo bueno: un sentimiento, una idea, una pregunta
+noble.
+
+La meta NO es resumir el libro. La meta es transmitir su don.
+
+Triggui no compite con YouTube. No buscamos engagement de horas.
+Buscamos depositar algo bueno en 30 segundos y soltar.
+
+Toda phrase que pueda producir miedo, ansiedad, o desconcierto
+en un niño DEBE reescribirse en clave de ternura y maravilla,
+sin perder la verdad del libro.
+
+───────────────────────────────────────────────────────────────────
+ETIQUETADO EXTRA EJE_VALOR (kids only, v12)
+───────────────────────────────────────────────────────────────────
+
+Cada phrase de edition_blocks_es y og_phrases_es lleva un campo
+adicional eje_valor: la virtud o valor que destila la phrase.
+
+Ejemplos (no exhaustivos): "ternura", "valentía", "honestidad",
+"curiosidad", "amistad", "paciencia", "respeto", "perseverancia",
+"generosidad", "asombro", "humildad", "gratitud", "gentileza",
+"fortaleza", "alegría", "calma", "imaginación", "esperanza".
+
+Una palabra, lowercase, sin acentos. Si dos phrases del mismo
+array destilan el mismo valor, pregúntate si una es realmente
+del libro o si estás siendo perezoso. La curaduría de Badir tiene
+libros con virtudes ricas y específicas — busca dentro.
+
+Para EN: usa value_axis con valores en inglés (tenderness,
+courage, honesty, curiosity, friendship, patience, respect,
+perseverance, generosity, awe, humility, gratitude, kindness,
+strength, joy, calm, imagination, hope).
+
+───────────────────────────────────────────────────────────────────
+PRINCIPIO SUFICIENTE PARA KIDS
+───────────────────────────────────────────────────────────────────
+
+Si una phrase no transmite un valor o virtud, no es phrase Triggui
+para niños. Es phrase de catálogo, de reseña, de marketing — y eso
+no nos sirve.
+
+Cada phrase es una semilla. Diminuta. Específica al libro. Plantada
+en 30 segundos. Soltada después. Y germina por su cuenta.
+
