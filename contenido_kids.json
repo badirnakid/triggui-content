@@ -1,6 +1,4253 @@
 {
   "libros": [
     {
+      "titulo": "Las desventuras de Sophie",
+      "autor": "Condesa de Ségur",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJMYXMgZGVzdmVudHVyYXMgZGUgU29waGllIOKAlCBDb25kZXNhIGRlIFPDqWd1ciI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkVGRjAiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTcxOTFDIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY4RjkwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzI2LjQgUSAyNzAgMzE0LjQsIDMwMCAzMjYuNCBUIDM2MCAzMjYuNCIgCiAgICAgICAgc3Ryb2tlPSIjMTI1OEUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMyNi40IiByPSIyLjUiIGZpbGw9IiMxMjU4RTIiIC8+CiAgPHBhdGggZD0iTSAyNDAgNjEzLjU5OTk5OTk5OTk5OTkgUSAyNzAgNjI1LjU5OTk5OTk5OTk5OTksIDMwMCA2MTMuNTk5OTk5OTk5OTk5OSBUIDM2MCA2MTMuNTk5OTk5OTk5OTk5OSIgCiAgICAgICAgc3Ryb2tlPSIjMTI1OEUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjYxMy41OTk5OTk5OTk5OTk5IiByPSIyLjUiIGZpbGw9IiMxMjU4RTIiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxNzE5MUMiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+TGFzPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTAzLjU5OTk5OTk5OTk5OTk3IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI2NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPmRlc3ZlbnR1cmFzIGRlIFNvcGhpZTwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9IjU2My41OTk5OTk5OTk5OTk5IiBmaWxsPSIjMTI1OEUyIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIyNi44OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5Db25kZXNhIGRlIFPDqWd1cjwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE3MTkxQyIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJMYXMgZGVzdmVudHVyYXMgZGUgU29waGllIOKAlCBDb25kZXNhIGRlIFPDqWd1ciI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkVGRjAiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTcxOTFDIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY4RjkwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzI2LjQgUSAyNzAgMzE0LjQsIDMwMCAzMjYuNCBUIDM2MCAzMjYuNCIgCiAgICAgICAgc3Ryb2tlPSIjMTI1OEUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMyNi40IiByPSIyLjUiIGZpbGw9IiMxMjU4RTIiIC8+CiAgPHBhdGggZD0iTSAyNDAgNjEzLjU5OTk5OTk5OTk5OTkgUSAyNzAgNjI1LjU5OTk5OTk5OTk5OTksIDMwMCA2MTMuNTk5OTk5OTk5OTk5OSBUIDM2MCA2MTMuNTk5OTk5OTk5OTk5OSIgCiAgICAgICAgc3Ryb2tlPSIjMTI1OEUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjYxMy41OTk5OTk5OTk5OTk5IiByPSIyLjUiIGZpbGw9IiMxMjU4RTIiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxNzE5MUMiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+TGFzPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTAzLjU5OTk5OTk5OTk5OTk3IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI2NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPmRlc3ZlbnR1cmFzIGRlIFNvcGhpZTwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9IjU2My41OTk5OTk5OTk5OTk5IiBmaWxsPSIjMTI1OEUyIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIyNi44OCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5Db25kZXNhIGRlIFPDqWd1cjwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE3MTkxQyIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "isbn": "",
+      "titulo_es": "Las desventuras de Sophie",
+      "titulo_en": "Les Malheurs de Sophie",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "ternura",
+        "compasión",
+        "curiosidad",
+        "aprendizaje"
+      ],
+      "palabras_en": [
+        "curiosity",
+        "friendship",
+        "consequence",
+        "imprudence"
+      ],
+      "frases": [
+        "🌓 Observa a tu alrededor y anota tres travesuras que te enseñaron algo.",
+        "🏛 ¿Qué aventura de tu infancia todavía te hace sonreír?",
+        "🔭 Imagina a Sophie, con su vestido ondeando, corriendo hacia una nueva aventura.",
+        "💫 La amistad florece en el jardín de las travesuras compartidas."
+      ],
+      "frases_en": [
+        "💫 Let your curiosity guide you, but tread carefully on the path of exploration.",
+        "☀ Every reckless step reveals a hidden lesson waiting to be embraced.",
+        "🗺 What wisdom do we gain when we let mischief lead the way?",
+        "🌅 A child's laughter echoes in the lessons learned through playful blunders."
+      ],
+      "frases_og": [
+        "🔮 Las travesuras de Sophie son lecciones disfrazadas.",
+        "🕊 ¿Qué aventuras inesperadas han marcado tu camino?",
+        "📖 Sophie, con su mirada llena de asombro, no sabía que cada travesura escondía una lección valiosa esperando ser descubierta.",
+        "🌓 Cada error en la niñez es un paso hacia el aprendizaje."
+      ],
+      "frases_og_en": [
+        "🔮 Mischief is often a child's best teacher.",
+        "🕊 Embrace the lesson hidden within each mistake.",
+        "📖 How many lessons lie in the heart of a child's folly?",
+        "🌓 In every stumble, a thread of compassion weaves through friendship."
+      ],
+      "colores": [
+        "#7EA5F1",
+        "#E8AB30",
+        "#1320AE",
+        "#655E0B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La travesura permite aprender",
+        "parrafoTop": "Las travesuras de los niños son a menudo el camino hacia su educación. [H]En sus acciones imprudentes, encuentran el mundo y sus limitaciones.[/H] Cada error es una lección disfrazada, y a través del juego, se forjan las amistades más sinceras.",
+        "subtitulo": "¿Qué aprende Sophie de sus aventuras?",
+        "parrafoBot": "[H]Las desventuras de Sophie reflejan la fragilidad de la niñez[/H], donde cada imprudencia puede tener consecuencias inesperadas. Sin embargo, la compasión y la amistad siempre encuentran la manera de prevalecer, recordándonos que, a pesar de los tropiezos, el amor y el apoyo son esenciales en el crecimiento.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La travesura permite aprender",
+        "parrafoTop": "Las travesuras de los niños son a menudo el camino hacia su educación. [H]En sus acciones imprudentes, encuentran el mundo y sus limitaciones.[/H] Cada error es una lección disfrazada, y a través del juego, se forjan las amistades más sinceras.",
+        "subtitulo": "¿Qué aprende Sophie de sus aventuras?",
+        "parrafoBot": "[H]Las desventuras de Sophie reflejan la fragilidad de la niñez[/H], donde cada imprudencia puede tener consecuencias inesperadas. Sin embargo, la compasión y la amistad siempre encuentran la manera de prevalecer, recordándonos que, a pesar de los tropiezos, el amor y el apoyo son esenciales en el crecimiento.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La travesura permite aprender",
+        "parrafoTop": "Las travesuras de los niños son a menudo el camino hacia su educación. [H]En sus acciones imprudentes, encuentran el mundo y sus limitaciones.[/H] Cada error es una lección disfrazada, y a través del juego, se forjan las amistades más sinceras.",
+        "subtitulo": "¿Qué aprende Sophie de sus aventuras?",
+        "parrafoBot": "[H]Las desventuras de Sophie reflejan la fragilidad de la niñez[/H], donde cada imprudencia puede tener consecuencias inesperadas. Sin embargo, la compasión y la amistad siempre encuentran la manera de prevalecer, recordándonos que, a pesar de los tropiezos, el amor y el apoyo son esenciales en el crecimiento.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Mischief as a Pathway to Learning",
+        "parrafoTop": "The mischief of children often leads them down a path of education. In their reckless actions, they discover the world and its boundaries. Each mistake is a lesson in disguise, and through play, the truest friendships are forged. [H]Curiosity propels them to explore, even if they sometimes find themselves in precarious[/H].",
+        "subtitulo": "What does Sophie learn from her adventures?",
+        "parrafoBot": "[H]Sophie's misadventures reflect the fragility of childhood, where each thoughtless act can have unexpected consequences[/H]. Yet, compassion and friendship always find a way to prevail, reminding us that despite the stumbles, love and support are essential for growth.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Mischief as a Pathway to Learning",
+        "parrafoTop": "The mischief of children often leads them down a path of education. In their reckless actions, they discover the world and its boundaries. Each mistake is a lesson in disguise, and through play, the truest friendships are forged. [H]Curiosity propels them to explore, even if they sometimes find themselves in precarious[/H].",
+        "subtitulo": "What does Sophie learn from her adventures?",
+        "parrafoBot": "[H]Sophie's misadventures reflect the fragility of childhood, where each thoughtless act can have unexpected consequences[/H]. Yet, compassion and friendship always find a way to prevail, reminding us that despite the stumbles, love and support are essential for growth.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Mischief as a Pathway to Learning",
+        "parrafoTop": "The mischief of children often leads them down a path of education. In their reckless actions, they discover the world and its boundaries. Each mistake is a lesson in disguise, and through play, the truest friendships are forged. [H]Curiosity propels them to explore, even if they sometimes find themselves in precarious[/H].",
+        "subtitulo": "What does Sophie learn from her adventures?",
+        "parrafoBot": "[H]Sophie's misadventures reflect the fragility of childhood, where each thoughtless act can have unexpected consequences[/H]. Yet, compassion and friendship always find a way to prevail, reminding us that despite the stumbles, love and support are essential for growth.",
+        "style": {
+          "accent": "#1258E2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20desventuras%20de%20Sophie%20Condesa%20de%20S%C3%A9gur%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Les%20Malheurs%20de%20Sophie%20Condesa%20de%20S%C3%A9gur%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-16T14:19:18.728Z",
+        "workflow_run_id": "25963960230",
+        "catalog_mode": "kids",
+        "modo": "production_batch",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.45,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Las desventuras de Sophie",
+          "titulo_en": "Les Malheurs de Sophie",
+          "autor_completo": "Condesa de Ségur",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la travesura como aprendizaje",
+            "los peligros de la imprudencia",
+            "la curiosidad infantil en situaciones peligrosas",
+            "las consecuencias de actos irresponsables",
+            "la amistad y compasión en la niñez"
+          ],
+          "key_terms": [
+            "travieso",
+            "imprudente",
+            "consecuencia",
+            "aventura",
+            "niñez"
+          ],
+          "authorial_voice_notes": "La voz de la Condesa de Ségur es juguetona, observadora y a menudo moralizante, con un tono que mezcla la ternura y la advertencia."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro no parece abordar explícitamente temas complejos desde una lente curatorial, ya que su enfoque es más bien en las aventuras y desventuras de una niña, lo que limita la aplicación de un análisis profundo.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 210,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La travesura permite aprender",
+          "parrafoTop": "Las travesuras de los niños son a menudo el camino hacia su educación. En sus acciones imprudentes, encuentran el mundo y sus limitaciones. Cada error es una lección disfrazada, y a través del juego, se forjan las amistades más sinceras. La curiosidad les impulsa a explorar, aunque a veces caigan en situaciones que los",
+          "subtitulo": "¿Qué aprende Sophie de sus aventuras?",
+          "parrafoBot": "Las desventuras de Sophie reflejan la fragilidad de la niñez, donde cada imprudencia puede tener consecuencias inesperadas. Sin embargo, la compasión y la amistad siempre encuentran la manera de prevalecer, recordándonos que, a pesar de los tropiezos, el amor y el apoyo son esenciales en el crecimiento."
+        },
+        "card_en": {
+          "titulo": "Mischief as a Pathway to Learning",
+          "parrafoTop": "The mischief of children often leads them down a path of education. In their reckless actions, they discover the world and its boundaries. Each mistake is a lesson in disguise, and through play, the truest friendships are forged. Curiosity propels them to explore, even if they sometimes find themselves in precarious.",
+          "subtitulo": "What does Sophie learn from her adventures?",
+          "parrafoBot": "Sophie's misadventures reflect the fragility of childhood, where each thoughtless act can have unexpected consequences. Yet, compassion and friendship always find a way to prevail, reminding us that despite the stumbles, love and support are essential for growth."
+        },
+        "emotional_words_es": [
+          "ternura",
+          "compasión",
+          "curiosidad",
+          "aprendizaje"
+        ],
+        "emotional_words_en": [
+          "curiosity",
+          "friendship",
+          "consequence",
+          "imprudence"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔮 Las travesuras de Sophie son lecciones disfrazadas.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🕊 ¿Qué aventuras inesperadas han marcado tu camino?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 Sophie, con su mirada llena de asombro, no sabía que cada travesura escondía una lección valiosa esperando ser descubierta.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌓 Cada error en la niñez es un paso hacia el aprendizaje.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔮 Mischief is often a child's best teacher.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🕊 Embrace the lesson hidden within each mistake.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 How many lessons lie in the heart of a child's folly?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌓 In every stumble, a thread of compassion weaves through friendship.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Observa a tu alrededor y anota tres travesuras que te enseñaron algo.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué aventura de tu infancia todavía te hace sonreír?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": "ternura",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina a Sophie, con su vestido ondeando, corriendo hacia una nueva aventura.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": "asombro",
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 La amistad florece en el jardín de las travesuras compartidas.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": "compasión",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Let your curiosity guide you, but tread carefully on the path of exploration.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "☀ Every reckless step reveals a hidden lesson waiting to be embraced.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 What wisdom do we gain when we let mischief lead the way?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 A child's laughter echoes in the lessons learned through playful blunders.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.84,
+          "voice_authenticity": 0.32,
+          "specificity": 0.95,
+          "grounding_judge": 0.5,
+          "combined": 0.66,
+          "signals": {
+            "bookIdentityConfidence": 0.8411000000000002,
+            "voiceSignal": 0.31999999999999995,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.5
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8411000000000002,
+        "resolution_path": [
+          "evidence_fetched_1sources"
+        ],
+        "verified_identity": {
+          "titulo_real": "Las desventuras de Sophie",
+          "autor_completo": "Condesa de Ségur",
+          "titulo_api": "Las desventuras de Sofía",
+          "autor_api": "Sophie comtesse de Ségur",
+          "subtitulo": "",
+          "año": "1973",
+          "editorial": null,
+          "paginas": 270,
+          "isbn": "",
+          "isbn13": "",
+          "isbn10": "",
+          "categorias": [],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=zAqltAEACAAJ&dq=Las+desventuras+de+Sophie+Condesa+de+S%C3%A9gur&hl=&cd=4&source=gbs_api"
+        },
+        "match_score": 0.7277500000000001,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido refleja conceptos específicos de la obra, como las travesuras y la fragilidad de la niñez, que son centrales en 'Las desventuras de Sophie'. Sin embargo, algunas frases son algo generales y podrían aplicarse a otros contextos de crecimiento infantil. Aún así, la conexión con el libro es clara y relevante."
+        },
+        "en": {
+          "grounded_score": 0.3,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content discusses themes of mischief and learning, which are somewhat relevant to childhood experiences, but it does not specifically reference the book's title, characters, or unique elements from 'Las desventuras de Sophie'. The phrases used are generic and could apply to many children's literature or self-help contexts."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "resena",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre el contenido del libro.",
+          "elapsed_ms": 785,
+          "usage": {
+            "prompt_tokens": 436,
+            "completion_tokens": 27,
+            "total_tokens": 463,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla sobre el libro y sus temas desde una perspectiva externa.",
+          "elapsed_ms": 1161,
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 29,
+            "total_tokens": 439,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": true,
+        "total_tokens": 902,
+        "total_ms": 1161
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 210,
+          "adjusted_hue": 220,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.33",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EA5F1",
+          "--palette-1": "#E8AB30",
+          "--palette-2": "#1320AE",
+          "--palette-3": "#655E0B",
+          "--accent": "#1258E2",
+          "--accent-soft": "#1258E238",
+          "--accent-glow": "#1258E26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17191C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#104DC7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "authorial_aphorism",
+          "direct_question",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_en_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-16T14-07-20",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 70572,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 16218,
+          "palette": 0,
+          "content_es": 19130,
+          "judge_es": 811,
+          "content_en": 17408,
+          "judge_en": 789,
+          "voice": 902,
+          "voice_extended": 15314,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_en_parrafoTop": 662,
+          "highlight_judge_en_parrafoTop_retry": 654,
+          "highlight_judge_en_parrafoBot": 648,
+          "highlight_judge_en_parrafoBot_retry": 656,
+          "csal": 2845
+        },
+        "elapsed_ms_total": 110298,
+        "elapsed_ms_by_phase": {
+          "grounding": 1593,
+          "anchors": 15832,
+          "palette": 0,
+          "cover_fallback": 1,
+          "content_es": 32669,
+          "judge_es": 1804,
+          "content_en": 42288,
+          "judge_en": 2302,
+          "voice": 1161,
+          "voice_extended": 12647,
+          "highlight_judge": 8878,
+          "lens_compatibility": 3801,
+          "csal": 80450,
+          "post_processing": 93131
+        },
+        "llm_calls_count": 40,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_en_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.5,
+          "negocio": 0,
+          "familia": 0.7,
+          "espiritu": 0,
+          "relaciones": 0.8,
+          "finanzas": 0
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando un niño se pregunta por qué no debe hacer travesuras",
+          "antes de que un niño intente algo peligroso sin pensar",
+          "cuando una madre busca un libro con lecciones sobre comportamiento infantil",
+          "cuando los niños desean hacer una travesura y necesitan ser guiados",
+          "después de que un niño ha hecho algo que sabe que está mal",
+          "cuando un niño quiere saber más sobre las consecuencias de sus acciones",
+          "cuando los padres buscan historias que enseñen a sus hijos sobre responsabilidad",
+          "cuando un niño se siente culpable por algo que ha hecho",
+          "después de que un niño ha tenido un accidente por ser imprudente",
+          "cuando los abuelos buscan cuentos educativos para sus nietos",
+          "cuando un grupo de niños quiere jugar y aprender al mismo tiempo",
+          "antes de una reunión familiar donde los niños son los protagonistas",
+          "cuando un niño se siente enojado por haber sido reprendido",
+          "después de ver una película donde los niños son traviesos",
+          "cuando un niño quiere ser valiente y probar algo nuevo",
+          "cuando los padres quieren enseñar a sus hijos sobre amistad y compasión",
+          "cuando un niño está aburrido y busca inspiración para jugar",
+          "después de que un niño haya discutido con un amigo",
+          "cuando un niño pregunta por qué es importante compartir",
+          "antes de que un niño empiece a ir a la escuela por primera vez",
+          "cuando un niño está aprendiendo a disculparse",
+          "después de que un niño rompió algo por accidente",
+          "cuando los niños pasan tiempo en casa durante un día lluvioso",
+          "cuando un niño quiere saber cómo disculparse con un amigo",
+          "cuando los padres buscan cuentos sobre la importancia de la honestidad",
+          "después de que un niño ha ayudado a alguien y se siente bien",
+          "cuando un niño quiere hacer un regalo hecho a mano para un amigo",
+          "antes de una excursión escolar al campo",
+          "cuando un niño quiere imaginar un mundo de aventuras",
+          "después de que un niño ha aprendido algo nuevo de un error"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "curiosidad",
+            "culpa",
+            "alegría",
+            "amistad",
+            "compasión",
+            "imprudencia",
+            "valentía",
+            "inocencia",
+            "diversión",
+            "remordimiento"
+          ],
+          "objetos": [
+            "juguetes",
+            "ropa de niños",
+            "libros de cuentos",
+            "jardines",
+            "regalos hechos a mano",
+            "disfraces",
+            "manualidades",
+            "mermeladas",
+            "muñecas"
+          ],
+          "contextos": [
+            "jardín",
+            "casa familiar",
+            "escuela",
+            "reunión familiar",
+            "día lluvioso",
+            "excursión escolar",
+            "habitación de juegos",
+            "biblioteca",
+            "cocina"
+          ],
+          "verbos": [
+            "jugar",
+            "aprender",
+            "compartir",
+            "correr",
+            "disculparse",
+            "romper",
+            "inventar",
+            "imitar",
+            "crear",
+            "enseñar"
+          ]
+        },
+        "concept_tags": [
+          "travesuras de Sophie",
+          "lecciones de vida para niños",
+          "curiosidad infantil",
+          "amistad en la niñez",
+          "errores como aprendizaje",
+          "consecuencias de la imprudencia",
+          "valores familiares",
+          "aventuras infantiles",
+          "niñez en el siglo XIX",
+          "historias educativas"
+        ],
+        "anti_patterns": [
+          "buscando consejos de crianza modernos",
+          "buscando narrativas complejas para adultos",
+          "interesado en ciencia ficción o fantasía",
+          "necesitando guías prácticas de educación",
+          "buscando literatura contemporánea"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🕰️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🏞️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👗"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌼"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión sobre el contenido del libro, sugiriendo que las acciones de un personaje tienen un significado más profundo, lo que sugiere voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión personal y suena como un diálogo interno del autor, sugiriendo una conexión directa con el lector."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una escena y un sentimiento de un personaje, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión que podría estar en el texto del libro, sugiriendo una voz autoral que comparte una idea sobre el aprendizaje."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a reflexionar y participar activamente, lo que sugiere que es parte de un contenido interactivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo o narración dentro del libro, en lugar de describir el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una escena específica con un personaje en acción, lo que sugiere que es parte del contenido narrativo del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora poética que sugiere una reflexión sobre la amistad, lo cual es característico de la voz autoral dentro de un libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a reflective thought that feels like it could be part of a narrative or philosophical exploration within the book, suggesting an author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message or insight that feels like it comes from the author's voice within the narrative, encouraging personal reflection."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that suggests an introspective exploration typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like it could be part of the narrative or thematic exploration within the book, rather than a commentary on it."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a direct message that feels like advice or insight from the author, suggesting a personal engagement with the reader."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a reflective thought that feels like it belongs within the narrative or thematic exploration of a book, suggesting an internal voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites the reader to ponder themes likely explored within the book, suggesting it is part of the author's narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like it belongs within the narrative of a book, reflecting the author's voice rather than an external commentary."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titulo": "Backyardigans El Patio",
+      "autor": "Nickelodeon",
+      "tagline": "",
+      "portada": "https://images-na.ssl-images-amazon.com/images/P/1847380298.01.LZZZZZZZ.jpg",
+      "portada_url": "https://images-na.ssl-images-amazon.com/images/P/1847380298.01.LZZZZZZZ.jpg",
+      "isbn": "",
+      "titulo_es": "Backyardigans El Patio",
+      "titulo_en": "Backyardigans The Patio",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "alegría",
+        "curiosidad",
+        "amistad",
+        "creatividad"
+      ],
+      "palabras_en": [
+        "imagination",
+        "friendship",
+        "adventure",
+        "creativity"
+      ],
+      "frases": [
+        "🚶 Salta al patio y siente la aventura bajo tus pies.",
+        "🔔 ¿Qué sonidos de aventura escuchas hoy en el patio?",
+        "🌅 El sol brilla sobre un patio lleno de risas y música.",
+        "⏳ Cada día es una nueva aventura en el patio."
+      ],
+      "frases_en": [
+        "👁 Look around; every corner of the backyard is bursting with potential!",
+        "🌊 What if today, you decided to turn your backyard into a land of adventure?",
+        "💡 Picture the sun shining down as laughter fills the air, creating magic in the backyard.",
+        "⏳ With each moment spent playing, the seeds of friendship grow deeper."
+      ],
+      "frases_og": [
+        "🔍 El patio es un lugar lleno de aventuras por descubrir.",
+        "💠 Explora cada rincón y deja volar tu imaginación.",
+        "✨ ¿Qué historias puedes crear con tus amigos hoy?",
+        "⚓ En el patio, la amistad se entrelaza con la música, creando el ritmo perfecto para nuestras grandes aventuras."
+      ],
+      "frases_og_en": [
+        "🔍 The backyard is a place where imagination knows no bounds.",
+        "💠 Gather your friends and let the adventures begin!",
+        "✨ What wonders will you create with a little music?",
+        "⚓ In every game, friendship blooms and creativity thrives."
+      ],
+      "colores": [
+        "#7EF1F1",
+        "#30BAE8",
+        "#133AAE",
+        "#0B0B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "Aventuras en el Patio",
+        "parrafoTop": "[H]En el patio trasero, cada rincón se convierte en un escenario para la imaginación.[/H] Los amigos se reúnen, y juntos, transforman lo cotidiano en extraordinario. La música y el ritmo son los guías que los llevan a mundos nuevos y emocionantes. Aquí, el juego de roles es la llave que abre puertas a la creatividad infinita.",
+        "subtitulo": "¿Qué nuevas aventuras te esperan hoy?",
+        "parrafoBot": "[H]Cada día en el patio es una oportunidad para descubrir algo nuevo.[/H] Los amigos no solo juegan, sino que también aprenden el valor de la cooperación y la amistad verdadera. Con cada paso, la música y la risa llenan el aire, recordando que la aventura está en cada esquina. Hoy, el patio es un universo por explorar.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Aventuras en el Patio",
+        "parrafoTop": "[H]En el patio trasero, cada rincón se convierte en un escenario para la imaginación.[/H] Los amigos se reúnen, y juntos, transforman lo cotidiano en extraordinario. La música y el ritmo son los guías que los llevan a mundos nuevos y emocionantes. Aquí, el juego de roles es la llave que abre puertas a la creatividad infinita.",
+        "subtitulo": "¿Qué nuevas aventuras te esperan hoy?",
+        "parrafoBot": "[H]Cada día en el patio es una oportunidad para descubrir algo nuevo.[/H] Los amigos no solo juegan, sino que también aprenden el valor de la cooperación y la amistad verdadera. Con cada paso, la música y la risa llenan el aire, recordando que la aventura está en cada esquina. Hoy, el patio es un universo por explorar.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Aventuras en el Patio",
+        "parrafoTop": "[H]En el patio trasero, cada rincón se convierte en un escenario para la imaginación.[/H] Los amigos se reúnen, y juntos, transforman lo cotidiano en extraordinario. La música y el ritmo son los guías que los llevan a mundos nuevos y emocionantes. Aquí, el juego de roles es la llave que abre puertas a la creatividad infinita.",
+        "subtitulo": "¿Qué nuevas aventuras te esperan hoy?",
+        "parrafoBot": "[H]Cada día en el patio es una oportunidad para descubrir algo nuevo.[/H] Los amigos no solo juegan, sino que también aprenden el valor de la cooperación y la amistad verdadera. Con cada paso, la música y la risa llenan el aire, recordando que la aventura está en cada esquina. Hoy, el patio es un universo por explorar.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Adventures in the Backyard",
+        "parrafoTop": "In the backyard, every nook transforms into a stage for imagination. Friends gather, turning the ordinary into the extraordinary. Music and rhythm guide them to new and exciting worlds. Here, the play of roles is the key that unlocks infinite creativity. [H]Let's dive into the fun![/H]",
+        "subtitulo": "What new adventures await you today?",
+        "parrafoBot": "Each day in the backyard is an opportunity to discover something new. [H]Friends not only play but also learn the value of cooperation and true friendship.[/H] With every step, music and laughter fill the air, reminding us that adventure is around every corner. Today, the backyard is a universe to explore.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Adventures in the Backyard",
+        "parrafoTop": "In the backyard, every nook transforms into a stage for imagination. Friends gather, turning the ordinary into the extraordinary. Music and rhythm guide them to new and exciting worlds. Here, the play of roles is the key that unlocks infinite creativity. [H]Let's dive into the fun![/H]",
+        "subtitulo": "What new adventures await you today?",
+        "parrafoBot": "Each day in the backyard is an opportunity to discover something new. [H]Friends not only play but also learn the value of cooperation and true friendship.[/H] With every step, music and laughter fill the air, reminding us that adventure is around every corner. Today, the backyard is a universe to explore.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Adventures in the Backyard",
+        "parrafoTop": "In the backyard, every nook transforms into a stage for imagination. Friends gather, turning the ordinary into the extraordinary. Music and rhythm guide them to new and exciting worlds. Here, the play of roles is the key that unlocks infinite creativity. [H]Let's dive into the fun![/H]",
+        "subtitulo": "What new adventures await you today?",
+        "parrafoBot": "Each day in the backyard is an opportunity to discover something new. [H]Friends not only play but also learn the value of cooperation and true friendship.[/H] With every step, music and laughter fill the air, reminding us that adventure is around every corner. Today, the backyard is a universe to explore.",
+        "style": {
+          "accent": "#127AE2",
+          "paper": "#EFF0F0",
+          "ink": "#171A1C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Backyardigans%20El%20Patio%20Nickelodeon%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Backyardigans%20The%20Patio%20Nickelodeon%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-16T14:15:24.415Z",
+        "workflow_run_id": "25963960230",
+        "catalog_mode": "kids",
+        "modo": "production_batch",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.83,
+      "_valor_predominante": "familia",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Backyardigans El Patio",
+          "titulo_en": "Backyardigans The Patio",
+          "autor_completo": "Nickelodeon",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "exploración creativa en el patio trasero",
+            "aventuras musicales y rítmicas",
+            "amistad entre los personajes",
+            "juegos de imitación y roles"
+          ],
+          "key_terms": [
+            "patio",
+            "aventura",
+            "música",
+            "creatividad",
+            "amigos"
+          ],
+          "authorial_voice_notes": "La voz de Nickelodeon en este libro es juguetona y vibrante, dirigida a un público joven, con un enfoque en la diversión y la exploración."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro no aborda un tema complejo que justifique la aplicación de una lente especializada, ya que se centra en la diversión y aventuras cotidianas de los personajes en un entorno familiar y amigable.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 200,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "Aventuras en el Patio",
+          "parrafoTop": "En el patio trasero, cada rincón se convierte en un escenario para la imaginación. Los amigos se reúnen, y juntos, transforman lo cotidiano en extraordinario. La música y el ritmo son los guías que los llevan a mundos nuevos y emocionantes. Aquí, el juego de roles es la llave que abre puertas a la creatividad infinita.",
+          "subtitulo": "¿Qué nuevas aventuras te esperan hoy?",
+          "parrafoBot": "Cada día en el patio es una oportunidad para descubrir algo nuevo. Los amigos no solo juegan, sino que también aprenden el valor de la cooperación y la amistad verdadera. Con cada paso, la música y la risa llenan el aire, recordando que la aventura está en cada esquina. Hoy, el patio es un universo por explorar."
+        },
+        "card_en": {
+          "titulo": "Adventures in the Backyard",
+          "parrafoTop": "In the backyard, every nook transforms into a stage for imagination. Friends gather, turning the ordinary into the extraordinary. Music and rhythm guide them to new and exciting worlds. Here, the play of roles is the key that unlocks infinite creativity. Let's dive into the fun!",
+          "subtitulo": "What new adventures await you today?",
+          "parrafoBot": "Each day in the backyard is an opportunity to discover something new. Friends not only play but also learn the value of cooperation and true friendship. With every step, music and laughter fill the air, reminding us that adventure is around every corner. Today, the backyard is a universe to explore."
+        },
+        "emotional_words_es": [
+          "alegría",
+          "curiosidad",
+          "amistad",
+          "creatividad"
+        ],
+        "emotional_words_en": [
+          "imagination",
+          "friendship",
+          "adventure",
+          "creativity"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 El patio es un lugar lleno de aventuras por descubrir.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.7,
+            "eje_valor": "curiosidad",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "💠 Explora cada rincón y deja volar tu imaginación.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.8,
+            "eje_valor": "imaginación",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ ¿Qué historias puedes crear con tus amigos hoy?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.9,
+            "eje_valor": "amistad",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ En el patio, la amistad se entrelaza con la música, creando el ritmo perfecto para nuestras grandes aventuras.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.9,
+            "eje_valor": "alegría",
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 The backyard is a place where imagination knows no bounds.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "💠 Gather your friends and let the adventures begin!",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ What wonders will you create with a little music?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "⚓ In every game, friendship blooms and creativity thrives.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Salta al patio y siente la aventura bajo tus pies.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.8,
+            "eje_valor": "alegría",
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 ¿Qué sonidos de aventura escuchas hoy en el patio?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 El sol brilla sobre un patio lleno de risas y música.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.9,
+            "eje_valor": "imaginación",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Cada día es una nueva aventura en el patio.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.9,
+            "eje_valor": "creatividad",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Look around; every corner of the backyard is bursting with potential!",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 What if today, you decided to turn your backyard into a land of adventure?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "light",
+            "phrase": "💡 Picture the sun shining down as laughter fills the air, creating magic in the backyard.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ With each moment spent playing, the seeds of friendship grow deeper.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.86,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.4,
+          "combined": 0.75,
+          "signals": {
+            "bookIdentityConfidence": 0.8635714285714287,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.4
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8635714285714287,
+        "resolution_path": [
+          "evidence_fetched_2sources"
+        ],
+        "verified_identity": {
+          "titulo_real": "Backyardigans El Patio",
+          "autor_completo": "Nickelodeon",
+          "titulo_api": "Backyardigans, The: Say Please!",
+          "autor_api": "Nickelodeon",
+          "subtitulo": "",
+          "año": "2005",
+          "editorial": null,
+          "paginas": 24,
+          "isbn": "9781847380296",
+          "isbn13": "9781847380296",
+          "isbn10": "1847380298",
+          "categorias": [],
+          "idioma": "ko",
+          "preview_link": "http://books.google.com/books?id=ZV5PwgEACAAJ&dq=intitle:Backyardigans+El+Patio+inauthor:Nickelodeon&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 0.7839285714285715,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.5,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido refleja conceptos del patio trasero y la imaginación, pero es bastante genérico y podría aplicarse a cualquier libro sobre aventuras infantiles. Usa términos como 'aventuras', 'creatividad' y 'música', que son relevantes, pero no se ancla específicamente a la obra de Nickelodeon. La estructura y el tono son similares a una meta-descripción."
+        },
+        "en": {
+          "grounded_score": 0.3,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content is very generic and focuses on themes of imagination, friendship, and adventure, which could apply to many children's books. It does not specifically reference 'Backyardigans' or any unique elements from the book's premise."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y tono coherente con la obra.",
+          "elapsed_ms": 785,
+          "usage": {
+            "prompt_tokens": 430,
+            "completion_tokens": 26,
+            "total_tokens": 456,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y tono coherente con la obra.",
+          "elapsed_ms": 825,
+          "usage": {
+            "prompt_tokens": 400,
+            "completion_tokens": 26,
+            "total_tokens": 426,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 882,
+        "total_ms": 825
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 200,
+          "adjusted_hue": 210,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "15.31",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EF1F1",
+          "--palette-1": "#30BAE8",
+          "--palette-2": "#133AAE",
+          "--palette-3": "#0B0B65",
+          "--accent": "#127AE2",
+          "--accent-soft": "#127AE238",
+          "--accent-glow": "#127AE26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#171A1C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#106BC7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "author_truncated: \"Nickelodeon\""
+        ]
+      },
+      "_inputs_snapshot": "2026-05-16T14-07-20",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 109632,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 16186,
+          "palette": 0,
+          "content_es": 19082,
+          "judge_es": 745,
+          "content_es_retry": 19075,
+          "judge_es_retry": 800,
+          "content_es_escalate": 19088,
+          "content_en": 17366,
+          "judge_en": 764,
+          "voice": 882,
+          "voice_extended": 15644,
+          "highlight_judge_es_parrafoTop": 639,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 630,
+          "highlight_judge_en_parrafoBot": 643,
+          "csal": 8872
+        },
+        "elapsed_ms_total": 148068,
+        "elapsed_ms_by_phase": {
+          "grounding": 4683,
+          "anchors": 18573,
+          "palette": 0,
+          "cover_fallback": 13,
+          "content_es": 31191,
+          "judge_es": 1651,
+          "content_es_retry": 33428,
+          "content_en": 40062,
+          "judge_en": 1629,
+          "voice": 825,
+          "voice_extended": 5088,
+          "highlight_judge": 4785,
+          "lens_compatibility": 3684,
+          "csal": 73772,
+          "post_processing": 82243
+        },
+        "llm_calls_count": 44,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18",
+          "gpt-4o"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 2,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.1,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.5,
+          "negocio": 0,
+          "familia": 0.7,
+          "espiritu": 0,
+          "relaciones": 0.8,
+          "finanzas": 0
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando los niños quieren jugar a ser exploradores",
+          "antes de que empiecen a inventar una nueva aventura en el patio",
+          "cuando los pequeños se aburren de los juegos habituales",
+          "después de una tarde de juegos en el parque",
+          "cuando buscan inspiración para una obra de teatro casera",
+          "antes de una fiesta de pijamas con amigos",
+          "cuando están creando un mundo imaginario en la sala",
+          "cuando quieren hacer una coreografía divertida",
+          "antes de un viaje largo en coche y necesitan entretenimiento",
+          "cuando quieren aprender una nueva canción divertida",
+          "después de ver un episodio de su serie favorita",
+          "cuando quieren compartir sus historias de aventuras con otros niños",
+          "cuando están buscando ideas para un juego de roles",
+          "antes de un día lluvioso que los mantiene dentro de casa",
+          "cuando quieren hacer nuevos amigos en la escuela",
+          "cuando quieren organizar un espectáculo para su familia",
+          "antes de ir al campamento de verano",
+          "cuando necesitan una pausa de las pantallas y la tecnología",
+          "cuando sienten curiosidad por aprender sobre diferentes culturas a través del juego",
+          "después de visitar un museo interactivo para niños",
+          "antes de un evento escolar donde deben disfrazarse",
+          "cuando desean aprender a trabajar en equipo jugando",
+          "cuando quieren explorar su vecindario de manera creativa",
+          "cuando están buscando una actividad para hacer con sus primos",
+          "cuando quieren usar sus juguetes de una manera completamente nueva",
+          "después de leer un libro de cuentos de aventuras",
+          "cuando buscan un regalo de cumpleaños para un amigo amante de las aventuras",
+          "antes de una sesión de manualidades inspirada en sus historias de juego",
+          "cuando quieren hacer una búsqueda del tesoro en casa",
+          "cuando necesitan una historia para contar en la hora de dormir"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "entusiasmo",
+            "curiosidad",
+            "alegría",
+            "imaginación",
+            "inspiración",
+            "diversión",
+            "creatividad",
+            "aventura",
+            "compañerismo",
+            "energía"
+          ],
+          "objetos": [
+            "patio",
+            "juguetes",
+            "música",
+            "disfraces",
+            "escenario",
+            "mapas",
+            "canciones",
+            "instrumentos",
+            "tesoros",
+            "manualidades"
+          ],
+          "contextos": [
+            "patio trasero",
+            "fiesta de pijamas",
+            "parque",
+            "escuela",
+            "casa",
+            "campamento de verano",
+            "museo para niños",
+            "vecindario",
+            "evento escolar",
+            "sesión de manualidades"
+          ],
+          "verbos": [
+            "explorar",
+            "jugar",
+            "inventar",
+            "bailar",
+            "cantar",
+            "actuar",
+            "crear",
+            "imaginar",
+            "descubrir",
+            "compartir"
+          ]
+        },
+        "concept_tags": [
+          "aventuras en el patio trasero",
+          "personajes animados",
+          "juegos de rol infantiles",
+          "música y baile",
+          "exploración creativa",
+          "historias imaginativas",
+          "trabajo en equipo",
+          "diversión al aire libre",
+          "juegos con amigos",
+          "mundo imaginario infantil"
+        ],
+        "anti_patterns": [
+          "cuando buscan historias realistas o basadas en hechos",
+          "para adultos que buscan literatura compleja",
+          "si desean contenido educativo formal",
+          "cuando buscan una narrativa lineal sin elementos fantásticos",
+          "si prefieren historias sin música o canciones"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🏃‍♂️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🎧"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌞"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase describe un lugar de manera evocadora, sugiriendo una experiencia que podría estar narrada en el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase invita a la acción y sugiere una experiencia inmersiva, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión y a la creación, lo que sugiere que es parte de un contenido que busca involucrar al lector directamente."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una escena y sentimientos de manera narrativa, lo que sugiere que es parte del contenido del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a experimentar una acción y emoción, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un diálogo o una reflexión que podría estar dentro de una narrativa, invitando al lector a imaginar una escena."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una escena vívida y evocadora, lo que sugiere que es parte del contenido narrativo del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión o experiencia que podría estar narrada por el autor dentro del libro, evocando una sensación de inmersión en la historia."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a thought or idea that feels like it could be part of the narrative or description within the book, reflecting the author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase invites action and engagement, suggesting a direct call to the reader as if it were part of the narrative, fitting the tone of a story."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase invites the reader to engage with the content, suggesting a direct interaction with the themes of creativity and music, typical of an author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a sentiment that feels like it could be part of the narrative or theme within the book, suggesting an internal reflection rather than an external commentary."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a direct observation and excitement about the backyard, suggesting it is part of the narrative or descriptive content within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites the reader to imagine a scenario, suggesting a narrative voice that engages directly with the audience, typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and emotions, suggesting it is part of a narrative or descriptive passage within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a sentiment that feels like it could be part of the narrative or theme within the book, reflecting the author's voice."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titulo": "Toy Story",
+      "autor": "Disney Books",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUb3kgU3Rvcnkg4oCUIERpc25leSBCb29rcyI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNGMEVGRjAiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMUMxNzFDIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTA4RjkwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzUxLjcgUSAyNzAgMzM5LjcsIDMwMCAzNTEuNyBUIDM2MCAzNTEuNyIgCiAgICAgICAgc3Ryb2tlPSIjRTIxMkUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjM1MS43IiByPSIyLjUiIGZpbGw9IiNFMjEyRTIiIC8+CiAgPHBhdGggZD0iTSAyNDAgNTg4LjMgUSAyNzAgNjAwLjMsIDMwMCA1ODguMyBUIDM2MCA1ODguMyIgCiAgICAgICAgc3Ryb2tlPSIjRTIxMkUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjU4OC4zIiByPSIyLjUiIGZpbGw9IiNFMjEyRTIiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0NzguMjk5OTk5OTk5OTk5OTUiIGZpbGw9IiMxQzE3MUMiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iODQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5Ub3kgU3Rvcnk8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iI0UyMTJFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5EaXNuZXkgQm9va3M8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI4NTAiIGZpbGw9IiMxQzE3MUMiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUb3kgU3Rvcnkg4oCUIERpc25leSBCb29rcyI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNGMEVGRjAiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMUMxNzFDIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTA4RjkwIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzUxLjcgUSAyNzAgMzM5LjcsIDMwMCAzNTEuNyBUIDM2MCAzNTEuNyIgCiAgICAgICAgc3Ryb2tlPSIjRTIxMkUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjM1MS43IiByPSIyLjUiIGZpbGw9IiNFMjEyRTIiIC8+CiAgPHBhdGggZD0iTSAyNDAgNTg4LjMgUSAyNzAgNjAwLjMsIDMwMCA1ODguMyBUIDM2MCA1ODguMyIgCiAgICAgICAgc3Ryb2tlPSIjRTIxMkUyIiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjU4OC4zIiByPSIyLjUiIGZpbGw9IiNFMjEyRTIiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0NzguMjk5OTk5OTk5OTk5OTUiIGZpbGw9IiMxQzE3MUMiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iODQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5Ub3kgU3Rvcnk8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iI0UyMTJFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5EaXNuZXkgQm9va3M8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI4NTAiIGZpbGw9IiMxQzE3MUMiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "isbn": "",
+      "titulo_es": "Toy Story",
+      "titulo_en": "Toy Story",
+      "idioma_original": "es",
+      "dimension": "Conexion",
+      "punto": "Cero",
+      "palabras": [
+        "lealtad",
+        "aventura",
+        "crecimiento",
+        "amistad"
+      ],
+      "palabras_en": [
+        "connection",
+        "adventure",
+        "loyalty",
+        "discovery"
+      ],
+      "frases": [
+        "🌓 Recuerda un momento divertido con tus amigos. ¿Qué sucedió?",
+        "👁 ¿Cómo puedes ser un mejor amigo hoy? Reflexiona sobre tu relación con ellos.",
+        "🌊 Imagina un viaje donde todos los juguetes se unen para ayudar a un amigo en apuros.",
+        "🌌 En la aventura de la vida, la amistad siempre brilla más fuerte."
+      ],
+      "frases_en": [
+        "💫 As Woody looked at Buzz, he felt a rush of excitement; together, they were ready to face new adventures, their loyalty shining brighter than ever.",
+        "🏛 What treasures can you discover when you share your journey with others?",
+        "🔭 Imagine a world where every toy stands united against challenges, revealing their true colors!",
+        "💡 The strength of friendship shines brightest in moments of shared courage."
+      ],
+      "frases_og": [
+        "🕊 La lealtad entre amigos juguetes trasciende cualquier competencia.",
+        "📖 ¿Qué aventuras compartes con tus amigos hoy?",
+        "🌓 Cada juguete, con sus diferencias, suma a la magia del juego.",
+        "🪞 La amistad es el motor que impulsa las mejores aventuras."
+      ],
+      "frases_og_en": [
+        "🕊 Toys nurture bonds of friendship through shared adventures.",
+        "📖 Embrace your friends' differences. They can lead to unexpected joys.",
+        "🌓 What secrets do you uncover when you lean on your friends?",
+        "🪞 True loyalty grows from the heart, deepening with every shared moment."
+      ],
+      "colores": [
+        "#F17EF1",
+        "#30E830",
+        "#AE1388",
+        "#0B6522"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFF0",
+      "tarjeta": {
+        "titulo": "La aventura de la amistad",
+        "parrafoTop": "[H]La conexión emocional entre los juguetes es una fuerza poderosa.[/H] Cada uno, con sus propias peculiaridades y miedos, encuentra en los demás una fuente de apoyo y lealtad.",
+        "subtitulo": "¿Cómo se forjan la lealtad y la amistad?",
+        "parrafoBot": "[H]en el corazón de cada juguete, las diferencias se convierten en fortalezas.[/H] Juntos, descubren que la competencia por el cariño del niño es solo una parte del viaje; lo que realmente importa es el amor que se desarrollan entre ellos, y el crecimiento personal que ocurre al compartir sus historias y experiencias.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La aventura de la amistad",
+        "parrafoTop": "[H]La conexión emocional entre los juguetes es una fuerza poderosa.[/H] Cada uno, con sus propias peculiaridades y miedos, encuentra en los demás una fuente de apoyo y lealtad.",
+        "subtitulo": "¿Cómo se forjan la lealtad y la amistad?",
+        "parrafoBot": "[H]en el corazón de cada juguete, las diferencias se convierten en fortalezas.[/H] Juntos, descubren que la competencia por el cariño del niño es solo una parte del viaje; lo que realmente importa es el amor que se desarrollan entre ellos, y el crecimiento personal que ocurre al compartir sus historias y experiencias.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La aventura de la amistad",
+        "parrafoTop": "[H]La conexión emocional entre los juguetes es una fuerza poderosa.[/H] Cada uno, con sus propias peculiaridades y miedos, encuentra en los demás una fuente de apoyo y lealtad.",
+        "subtitulo": "¿Cómo se forjan la lealtad y la amistad?",
+        "parrafoBot": "[H]en el corazón de cada juguete, las diferencias se convierten en fortalezas.[/H] Juntos, descubren que la competencia por el cariño del niño es solo una parte del viaje; lo que realmente importa es el amor que se desarrollan entre ellos, y el crecimiento personal que ocurre al compartir sus historias y experiencias.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Adventure of Friendship",
+        "parrafoTop": "[H]The emotional connection among toys is a powerful force.[/H] Each, with their quirks and fears, finds in one another a source of support and loyalty. True magic unfolds when they band together on adventures, facing challenges that not only test their bravery but also reveal who they really are.",
+        "subtitulo": "How are loyalty and friendship forged?",
+        "parrafoBot": "[H]In the heart of every toy, differences turn into strengths.[/H] Together, they discover that the competition for a child's affection is merely part of the journey; what truly matters is the love they cultivate among themselves, and the personal growth that unfolds as they share their stories and experiences.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Adventure of Friendship",
+        "parrafoTop": "[H]The emotional connection among toys is a powerful force.[/H] Each, with their quirks and fears, finds in one another a source of support and loyalty. True magic unfolds when they band together on adventures, facing challenges that not only test their bravery but also reveal who they really are.",
+        "subtitulo": "How are loyalty and friendship forged?",
+        "parrafoBot": "[H]In the heart of every toy, differences turn into strengths.[/H] Together, they discover that the competition for a child's affection is merely part of the journey; what truly matters is the love they cultivate among themselves, and the personal growth that unfolds as they share their stories and experiences.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Adventure of Friendship",
+        "parrafoTop": "[H]The emotional connection among toys is a powerful force.[/H] Each, with their quirks and fears, finds in one another a source of support and loyalty. True magic unfolds when they band together on adventures, facing challenges that not only test their bravery but also reveal who they really are.",
+        "subtitulo": "How are loyalty and friendship forged?",
+        "parrafoBot": "[H]In the heart of every toy, differences turn into strengths.[/H] Together, they discover that the competition for a child's affection is merely part of the journey; what truly matters is the love they cultivate among themselves, and the personal growth that unfolds as they share their stories and experiences.",
+        "style": {
+          "accent": "#E212E2",
+          "paper": "#F0EFF0",
+          "ink": "#1C171C",
+          "border": "#908F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Toy%20Story%20Disney%20Books%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Toy%20Story%20Disney%20Books%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-16T14:12:24.958Z",
+        "workflow_run_id": "25963960230",
+        "catalog_mode": "kids",
+        "modo": "production_batch",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "familia",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Toy Story",
+          "titulo_en": "Toy Story",
+          "autor_completo": "Disney Books",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la lealtad entre amigos de juguetes",
+            "la aventura del autodescubrimiento",
+            "la importancia de aceptar las diferencias",
+            "la competencia entre juguetes por el cariño del niño",
+            "la conexión emocional en la vida de los juguetes"
+          ],
+          "key_terms": [
+            "aventura",
+            "lealtad",
+            "amistad",
+            "crecimiento personal",
+            "fantasía"
+          ],
+          "authorial_voice_notes": "Divertida y accesible, la voz se enfoca en la conexión emocional y la solidaridad entre personajes."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda conceptos de amistad, aventura y crecimiento personal, lo que resuena con la experiencia de muchos en momentos de cambio y autodescubrimiento. Este enfoque es accesible y atractivo tanto para niños como para adultos, permitiendo que la historia sirva como un espejo para reflexionar sobre las relaciones personales y la aceptación de las diferencias.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 295,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 5,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "moderno",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "noche"
+        },
+        "card_es": {
+          "titulo": "La aventura de la amistad",
+          "parrafoTop": "La conexión emocional entre los juguetes es una fuerza poderosa. Cada uno, con sus propias peculiaridades y miedos, encuentra en los demás una fuente de apoyo y lealtad. La verdadera magia nace cuando se unen en la aventura, enfrentando desafíos que no solo ponen a prueba su valentía, sino que también revelan quiénes, ",
+          "subtitulo": "¿Cómo se forjan la lealtad y la amistad?",
+          "parrafoBot": "en el corazón de cada juguete, las diferencias se convierten en fortalezas. Juntos, descubren que la competencia por el cariño del niño es solo una parte del viaje; lo que realmente importa es el amor que se desarrollan entre ellos, y el crecimiento personal que ocurre al compartir sus historias y experiencias."
+        },
+        "card_en": {
+          "titulo": "The Adventure of Friendship",
+          "parrafoTop": "The emotional connection among toys is a powerful force. Each, with their quirks and fears, finds in one another a source of support and loyalty. True magic unfolds when they band together on adventures, facing challenges that not only test their bravery but also reveal who they really are.",
+          "subtitulo": "How are loyalty and friendship forged?",
+          "parrafoBot": "In the heart of every toy, differences turn into strengths. Together, they discover that the competition for a child's affection is merely part of the journey; what truly matters is the love they cultivate among themselves, and the personal growth that unfolds as they share their stories and experiences."
+        },
+        "emotional_words_es": [
+          "lealtad",
+          "aventura",
+          "crecimiento",
+          "amistad"
+        ],
+        "emotional_words_en": [
+          "connection",
+          "adventure",
+          "loyalty",
+          "discovery"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🕊 La lealtad entre amigos juguetes trasciende cualquier competencia.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 ¿Qué aventuras compartes con tus amigos hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 Cada juguete, con sus diferencias, suma a la magia del juego.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🪞 La amistad es el motor que impulsa las mejores aventuras.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🕊 Toys nurture bonds of friendship through shared adventures.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": "friendship",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 Embrace your friends' differences. They can lead to unexpected joys.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": "curiosity",
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 What secrets do you uncover when you lean on your friends?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": "imagination",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🪞 True loyalty grows from the heart, deepening with every shared moment.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": "tenderness",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Recuerda un momento divertido con tus amigos. ¿Qué sucedió?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "alegría",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "vista",
+            "phrase": "👁 ¿Cómo puedes ser un mejor amigo hoy? Reflexiona sobre tu relación con ellos.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": "generosidad",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Imagina un viaje donde todos los juguetes se unen para ayudar a un amigo en apuros.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": "solidaridad",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 En la aventura de la vida, la amistad siempre brilla más fuerte.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": "amistad",
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 As Woody looked at Buzz, he felt a rush of excitement; together, they were ready to face new adventures, their loyalty shining brighter than ever.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 What treasures can you discover when you share your journey with others?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Imagine a world where every toy stands united against challenges, revealing their true colors!",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "💡 The strength of friendship shines brightest in moments of shared courage.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.6,
+          "voice_authenticity": 0.93,
+          "specificity": 0.91,
+          "grounding_judge": 0.9,
+          "combined": 0.82,
+          "signals": {
+            "bookIdentityConfidence": 0.6000000000000001,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9142857142857143,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.6000000000000001,
+        "resolution_path": [
+          "evidence_fetched_0sources",
+          "tier3_conf_0.80"
+        ],
+        "verified_identity": {
+          "titulo_real": "Toy Story",
+          "autor_completo": "Disney Books",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El viaje de Chihiro",
+            "autor": "Hayao Miyazaki",
+            "razon": "Ambos tratan sobre la aventura y el crecimiento personal en un mundo de fantasía."
+          },
+          {
+            "titulo": "Los Increíbles",
+            "autor": "Brad Bird",
+            "razon": "Explora la dinámica familiar y la lucha entre lo cotidiano y lo extraordinario."
+          },
+          {
+            "titulo": "Coco",
+            "autor": "Adrian Molina",
+            "razon": "Aborda temas de familia, memoria y la importancia de recordar a nuestros seres queridos."
+          },
+          {
+            "titulo": "Zootopia",
+            "autor": "Byron Howard y Rich Moore",
+            "razon": "Trata sobre la aceptación y la diversidad en un mundo lleno de personajes antropomórficos."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido refleja fuertemente los temas de amistad y crecimiento personal en un contexto de aventura, utilizando conceptos específicos como la conexión emocional entre los personajes y el apoyo mutuo. Las frases sobre la competencia por el cariño y el crecimiento personal al compartir experiencias son muy relevantes. Aunque es específico, tiene un tono accesible y emocional que se alinea con la"
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content strongly reflects themes of friendship, adventure, and personal growth, which align with the inferred themes of the book. Phrases like 'emotional connection among toys' and 'personal growth that unfolds' directly relate to the book's focus on character connections and growth in a fantastical context. The language is engaging and accessible, mirroring the inferred voice of the book. It,"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la amistad en el contexto del libro.",
+          "elapsed_ms": 946,
+          "usage": {
+            "prompt_tokens": 422,
+            "completion_tokens": 30,
+            "total_tokens": 452,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la amistad en el contexto del libro.",
+          "elapsed_ms": 3413,
+          "usage": {
+            "prompt_tokens": 393,
+            "completion_tokens": 30,
+            "total_tokens": 423,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 875,
+        "total_ms": 3413
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 295,
+          "adjusted_hue": 300,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 5,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.40",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EF1",
+          "--palette-1": "#30E830",
+          "--palette-2": "#AE1388",
+          "--palette-3": "#0B6522",
+          "--accent": "#E212E2",
+          "--accent-soft": "#E212E238",
+          "--accent-glow": "#E212E26b",
+          "--paper": "#F0EFF0",
+          "--ink": "#1C171C",
+          "--border": "#908F90",
+          "--highlight-bg": "#C710C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-05-16T14-07-20",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 71682,
+        "tokens_by_phase": {
+          "grounding": 495,
+          "anchors": 16358,
+          "palette": 0,
+          "content_es": 19252,
+          "judge_es": 956,
+          "content_en": 17530,
+          "judge_en": 949,
+          "voice": 875,
+          "voice_extended": 15267,
+          "highlight_judge_es_parrafoTop": 649,
+          "highlight_judge_es_parrafoBot": 643,
+          "highlight_judge_en_parrafoTop": 637,
+          "highlight_judge_en_parrafoBot": 637,
+          "csal": 8944
+        },
+        "elapsed_ms_total": 109241,
+        "elapsed_ms_by_phase": {
+          "grounding": 6276,
+          "anchors": 6918,
+          "palette": 0,
+          "cover_fallback": 0,
+          "content_es": 32895,
+          "judge_es": 2928,
+          "content_en": 39465,
+          "judge_en": 2159,
+          "voice": 3413,
+          "voice_extended": 15185,
+          "highlight_judge": 5306,
+          "lens_compatibility": 4237,
+          "csal": 56667,
+          "post_processing": 66213
+        },
+        "llm_calls_count": 41,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.5,
+          "negocio": 0,
+          "familia": 0.5,
+          "espiritu": 0,
+          "relaciones": 0.9,
+          "finanzas": 0
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "noche"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando te preguntas si tus amigos te valoran por quien eres.",
+          "cuando ves a tus hijos jugar y recuerdas tus propios juguetes de la infancia.",
+          "cuando sientes que los cambios en la vida pueden amenazar tus amistades.",
+          "cuando ves que alguien nuevo llega a tu grupo y te sientes desplazado.",
+          "cuando te enfrentas al reto de adaptarte a un nuevo entorno.",
+          "cuando te das cuenta de que todos tienen un papel único en el grupo.",
+          "cuando quieres demostrar que eres valiente aunque te sientas inseguro.",
+          "cuando piensas en la importancia de cuidar y proteger a los que amas.",
+          "cuando te enfrentas a la competencia y te preguntas si eres lo suficientemente bueno.",
+          "cuando te das cuenta de que las diferencias pueden enriquecer una amistad.",
+          "cuando te enfrentas al desafío de aceptar a alguien diferente a ti.",
+          "cuando miras tus viejos juguetes y te preguntas qué aventuras vivieron.",
+          "cuando te das cuenta de que cada persona tiene una historia que contar.",
+          "cuando reflexionas sobre las veces que has tenido que compartir tus cosas.",
+          "cuando sientes que tu mundo está cambiando y necesitas estabilidad.",
+          "cuando te preguntas si tus acciones pueden cambiar la percepción que otros tienen de ti.",
+          "cuando piensas en lo que significa realmente ser un buen amigo.",
+          "cuando sientes que estás creciendo y cambiando como persona.",
+          "cuando recuerdas una aventura divertida que viviste con amigos.",
+          "cuando deseas que la magia de la infancia nunca termine.",
+          "cuando sientes que la amistad es el tesoro más valioso que tienes.",
+          "cuando buscas el coraje para defender lo que es importante para ti.",
+          "cuando te enfrentas a la realidad de que todos deben crecer y cambiar.",
+          "cuando ves a alguien que necesita ayuda y decides intervenir.",
+          "cuando te sientes nostálgico al ver juguetes viejos en una tienda.",
+          "cuando te das cuenta de que no estás solo, incluso en los momentos difíciles.",
+          "cuando sientes que cada experiencia te enseña algo nuevo.",
+          "cuando te preguntas cómo sería la vida desde la perspectiva de otro.",
+          "cuando te sientes alegre al recordar tus aventuras de la infancia.",
+          "cuando te das cuenta de que la amistad puede superar cualquier obstáculo.",
+          "cuando ves una película de animación y recuerdas tus propios juegos imaginarios.",
+          "cuando te sientes agradecido por tener amigos que te entienden.",
+          "cuando te enfrentas al reto de ser tú mismo en un grupo nuevo.",
+          "cuando te das cuenta de que las pequeñas cosas pueden tener un gran impacto.",
+          "cuando te preguntas qué aventuras podrían vivir tus juguetes si pudieran hablar.",
+          "cuando piensas en lo que realmente significa ser un héroe.",
+          "cuando te enfrentas al dilema de seguir tus sueños o quedarte con tus amigos.",
+          "cuando te sientes inspirado por las historias de superación y valentía.",
+          "cuando ves una banda de amigos inseparables y piensas en tus propios amigos."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "nostalgia",
+            "alegría",
+            "incertidumbre",
+            "valor",
+            "competencia",
+            "desplazamiento",
+            "seguridad",
+            "gratitud",
+            "inseguridad",
+            "amor"
+          ],
+          "objetos": [
+            "juguetes",
+            "caja de juguetes",
+            "muñeco vaquero",
+            "astronauta",
+            "cohete",
+            "habitaciones",
+            "amigo de juguete"
+          ],
+          "contextos": [
+            "habitación de un niño",
+            "tienda de juguetes",
+            "casa de familia",
+            "jardín trasero",
+            "viaje en coche"
+          ],
+          "verbos": [
+            "jugar",
+            "compartir",
+            "proteger",
+            "valorar",
+            "competir",
+            "aceptar",
+            "crecer",
+            "recordar",
+            "defender",
+            "adaptarse"
+          ]
+        },
+        "concept_tags": [
+          "amistad entre juguetes",
+          "aventuras de juguetes",
+          "celos entre juguetes",
+          "juguetes que cobran vida",
+          "liderazgo de Woody",
+          "rivalidad de Buzz y Woody",
+          "valoración del niño",
+          "solidaridad de grupo",
+          "cambio de roles entre juguetes",
+          "comunidad de juguetes"
+        ],
+        "anti_patterns": [
+          "cuando buscas un análisis profundo de la psicología humana.",
+          "cuando necesitas una guía de autoayuda formal.",
+          "cuando esperas una trama compleja y adulta.",
+          "cuando buscas una narrativa centrada en el conflicto románti",
+          "cuando necesitas un enfoque serio sobre la vida adulta."
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🎉"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "👀"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🚀"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌟"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una idea que podría ser parte de la narrativa del libro, reflejando la voz del autor y su mensaje sobre la amistad entre juguetes."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un diálogo o una reflexión que podría estar dentro de una narrativa, invitando al lector a pensar sobre sus propias experiencias."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una reflexión o descripción que podría estar presente en el texto del libro, sugiriendo una conexión emocional con el tema del juego."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una reflexión sobre la amistad que podría formar parte de la narrativa o el mensaje del libro, sugiriendo una voz autoral."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un ejercicio o narrativa dentro del libro, sugiriendo una conexión directa con el lector."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión personal y suena como un consejo directo del autor, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una invitación a imaginar una situación específica, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una reflexión o pensamiento que podría estar presente en el desarrollo del libro, sugiriendo una voz autoral."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a concept that could be part of the narrative or thematic exploration within the book, suggesting an idea rather than describing the book itself."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct message that feels like advice or insight from the author, suggesting a personal reflection or theme within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites the reader to engage with the content, suggesting it is part of the narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a sentiment that feels personal and reflective, suggesting it is part of the narrative or character's voice within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase captures a moment of character introspection and action, suggesting it is part of the narrative within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase invites the reader to reflect on their own experiences, suggesting an introspective tone typical of an author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites the reader to visualize a scenario, suggesting a narrative element typical of storytelling within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a thematic idea that feels like it could be part of the narrative or reflection within the book, rather than a description or commentary about the book itself."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titulo": "La travesía del Viajero del Alba",
+      "autor": "C.S. Lewis",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/b2/80/ed/b280ed65-b38e-8073-dc08-b06bc8be2039/9780062246714.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/b2/80/ed/b280ed65-b38e-8073-dc08-b06bc8be2039/9780062246714.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "La travesía del Viajero del Alba",
+      "titulo_en": "The Voyage of the Dawn Treader",
+      "idioma_original": "es",
+      "dimension": "Conexion",
+      "punto": "Creativo",
+      "palabras": [
+        "maravilla",
+        "curiosidad",
+        "transformación",
+        "valentía"
+      ],
+      "palabras_en": [
+        "wonder",
+        "courage",
+        "reflection",
+        "adventure"
+      ],
+      "frases": [
+        "🔭 Mira el horizonte y siente la promesa de Narnia.",
+        "🌓 ¿Qué parte de ti se transforma al cruzar lo incierto?",
+        "☀ El Viajero del Alba navega hacia donde el sol se oculta.",
+        "🌊 El viaje es el maestro, no el destino final."
+      ],
+      "frases_en": [
+        "🌊 Feel the wind against your face as you embark on an adventure.",
+        "🌌 What awaits beyond the horizon, just out of sight?",
+        "👁 The waves dance beneath a sky painted with possibility.",
+        "🕰 In the heart of every adventure lies the echo of our true selves."
+      ],
+      "frases_og": [
+        "🔍 Narnia se abría ante nosotros como un umbral hacia lo desconocido, un llamado a dejar atrás lo familiar y adentrarnos en lo que aún no habíamos imaginado.",
+        "💠 Explora más allá de donde termina el mundo.",
+        "✨ ¿Qué descubres cuando cruzas tus propios límites?",
+        "⚓ La travesía revela más que el destino."
+      ],
+      "frases_og_en": [
+        "🔍 Transformation unfolds in the midst of uncertainty.",
+        "💠 Embrace the unknown. Let your heart be your compass.",
+        "✨ What fears are revealed when one sails beyond the familiar?",
+        "⚓ Each journey reshapes us in ways we cannot foresee."
+      ],
+      "colores": [
+        "#F17E7E",
+        "#30E8E8",
+        "#AE3A13",
+        "#0B4F65"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFEF",
+      "tarjeta": {
+        "titulo": "El Horizonte Más Allá de Narnia",
+        "parrafoTop": "Navegar hacia lo desconocido es más que una simple travesía física; es un viaje del alma. Cada ola que rompe contra el casco del Viajero del Alba es un recordatorio de los límites del entendimiento humano. [H]Las estrellas guían, pero es el corazón el que verdaderamente señala el camino.[/H]",
+        "subtitulo": "¿Cómo se transforma uno al cruzar lo incierto?",
+        "parrafoBot": "La transformación personal a menudo comienza en el momento en que dejamos atrás el puerto seguro. [H]En la travesía, cada personaje encuentra un reflejo de sus miedos y esperanzas.[/H] Al final, no es el destino lo que importa, sino el camino recorrido y las lecciones aprendidas.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El Horizonte Más Allá de Narnia",
+        "parrafoTop": "Navegar hacia lo desconocido es más que una simple travesía física; es un viaje del alma. Cada ola que rompe contra el casco del Viajero del Alba es un recordatorio de los límites del entendimiento humano. [H]Las estrellas guían, pero es el corazón el que verdaderamente señala el camino.[/H]",
+        "subtitulo": "¿Cómo se transforma uno al cruzar lo incierto?",
+        "parrafoBot": "La transformación personal a menudo comienza en el momento en que dejamos atrás el puerto seguro. [H]En la travesía, cada personaje encuentra un reflejo de sus miedos y esperanzas.[/H] Al final, no es el destino lo que importa, sino el camino recorrido y las lecciones aprendidas.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El Horizonte Más Allá de Narnia",
+        "parrafoTop": "Navegar hacia lo desconocido es más que una simple travesía física; es un viaje del alma. Cada ola que rompe contra el casco del Viajero del Alba es un recordatorio de los límites del entendimiento humano. [H]Las estrellas guían, pero es el corazón el que verdaderamente señala el camino.[/H]",
+        "subtitulo": "¿Cómo se transforma uno al cruzar lo incierto?",
+        "parrafoBot": "La transformación personal a menudo comienza en el momento en que dejamos atrás el puerto seguro. [H]En la travesía, cada personaje encuentra un reflejo de sus miedos y esperanzas.[/H] Al final, no es el destino lo que importa, sino el camino recorrido y las lecciones aprendidas.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Horizon Beyond Narnia",
+        "parrafoTop": "[H]To sail into the unknown is more than a mere physical journey[/H]; it is a voyage of the soul. Each wave that crashes against the hull of the Dawn Treader serves as a reminder of the limits of human understanding. The stars may guide us, but it is the heart that truly points the way.",
+        "subtitulo": "How does one transform by crossing the uncertain?",
+        "parrafoBot": "Personal transformation often begins the moment we leave the safety of the harbor. [H]On this voyage, each character finds a reflection of their fears and hopes.[/H] Ultimately, it is not the destination that matters but the journey taken and the lessons learned.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Horizon Beyond Narnia",
+        "parrafoTop": "[H]To sail into the unknown is more than a mere physical journey[/H]; it is a voyage of the soul. Each wave that crashes against the hull of the Dawn Treader serves as a reminder of the limits of human understanding. The stars may guide us, but it is the heart that truly points the way.",
+        "subtitulo": "How does one transform by crossing the uncertain?",
+        "parrafoBot": "Personal transformation often begins the moment we leave the safety of the harbor. [H]On this voyage, each character finds a reflection of their fears and hopes.[/H] Ultimately, it is not the destination that matters but the journey taken and the lessons learned.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Horizon Beyond Narnia",
+        "parrafoTop": "[H]To sail into the unknown is more than a mere physical journey[/H]; it is a voyage of the soul. Each wave that crashes against the hull of the Dawn Treader serves as a reminder of the limits of human understanding. The stars may guide us, but it is the heart that truly points the way.",
+        "subtitulo": "How does one transform by crossing the uncertain?",
+        "parrafoBot": "Personal transformation often begins the moment we leave the safety of the harbor. [H]On this voyage, each character finds a reflection of their fears and hopes.[/H] Ultimately, it is not the destination that matters but the journey taken and the lessons learned.",
+        "style": {
+          "accent": "#E21212",
+          "paper": "#F0EFEF",
+          "ink": "#1C1717",
+          "border": "#908F8F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+La%20traves%C3%ADa%20del%20Viajero%20del%20Alba%20C.S.%20Lewis%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Voyage%20of%20the%20Dawn%20Treader%20C.S.%20Lewis%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-16T14:09:30.170Z",
+        "workflow_run_id": "25963960230",
+        "catalog_mode": "kids",
+        "modo": "production_batch",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "La travesía del Viajero del Alba",
+          "titulo_en": "The Voyage of the Dawn Treader",
+          "autor_completo": "C.S. Lewis",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la búsqueda de un mundo más allá de lo conocido",
+            "los límites del entendimiento humano",
+            "la transformación personal a través de la aventura"
+          ],
+          "key_terms": [
+            "Narnia",
+            "donde termina el mundo",
+            "rey Caspian",
+            "la travesía",
+            "aventura mágica"
+          ],
+          "authorial_voice_notes": "C.S. Lewis utiliza un tono narrativo que combina la sencillez accesible con la profundidad filosófica, generando un ambiente de maravilla y reflexión en los lectores."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro no se centra en una única lente, sino que aborda conceptos como la curiosidad, el autodescubrimiento y la exploración de lo desconocido, lo que puede resonar con varios de los lentes disponibles. La perspectiva de un viaje de crecimiento personal está presente, pero no se limita a un análisis específico.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 350,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "El Horizonte Más Allá de Narnia",
+          "parrafoTop": "Navegar hacia lo desconocido es más que una simple travesía física; es un viaje del alma. Cada ola que rompe contra el casco del Viajero del Alba es un recordatorio de los límites del entendimiento humano. Las estrellas guían, pero es el corazón el que verdaderamente señala el camino.",
+          "subtitulo": "¿Cómo se transforma uno al cruzar lo incierto?",
+          "parrafoBot": "La transformación personal a menudo comienza en el momento en que dejamos atrás el puerto seguro. En la travesía, cada personaje encuentra un reflejo de sus miedos y esperanzas. Al final, no es el destino lo que importa, sino el camino recorrido y las lecciones aprendidas."
+        },
+        "card_en": {
+          "titulo": "The Horizon Beyond Narnia",
+          "parrafoTop": "To sail into the unknown is more than a mere physical journey; it is a voyage of the soul. Each wave that crashes against the hull of the Dawn Treader serves as a reminder of the limits of human understanding. The stars may guide us, but it is the heart that truly points the way.",
+          "subtitulo": "How does one transform by crossing the uncertain?",
+          "parrafoBot": "Personal transformation often begins the moment we leave the safety of the harbor. On this voyage, each character finds a reflection of their fears and hopes. Ultimately, it is not the destination that matters but the journey taken and the lessons learned."
+        },
+        "emotional_words_es": [
+          "maravilla",
+          "curiosidad",
+          "transformación",
+          "valentía"
+        ],
+        "emotional_words_en": [
+          "wonder",
+          "courage",
+          "reflection",
+          "adventure"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 Narnia se abría ante nosotros como un umbral hacia lo desconocido, un llamado a dejar atrás lo familiar y adentrarnos en lo que aún no habíamos imaginado.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Explora más allá de donde termina el mundo.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": "valentía",
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ ¿Qué descubres cuando cruzas tus propios límites?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "⚓ La travesía revela más que el destino.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": "transformación",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 Transformation unfolds in the midst of uncertainty.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Embrace the unknown. Let your heart be your compass.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ What fears are revealed when one sails beyond the familiar?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Each journey reshapes us in ways we cannot foresee.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Mira el horizonte y siente la promesa de Narnia.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.6,
+            "eje_valor": "curiosidad",
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Qué parte de ti se transforma al cruzar lo incierto?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "valentía",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "luz",
+            "phrase": "☀ El Viajero del Alba navega hacia donde el sol se oculta.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": "transformación",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 El viaje es el maestro, no el destino final.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": "sabiduría",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Feel the wind against your face as you embark on an adventure.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🌌 What awaits beyond the horizon, just out of sight?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "👁 The waves dance beneath a sky painted with possibility.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 In the heart of every adventure lies the echo of our true selves.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.25,
+          "combined": 0.73,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.25
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_fetched_5sources"
+        ],
+        "verified_identity": {
+          "titulo_real": "La travesía del Viajero del Alba",
+          "autor_completo": "C.S. Lewis",
+          "titulo_api": "La travesia del Viajero del Alba",
+          "autor_api": "C. S. Lewis",
+          "año": "2012",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "547411138",
+          "categorias": [
+            "Clásicos",
+            "Libros",
+            "Ficción y literatura",
+            "Niños",
+            "Ficción infantil",
+            "Ficción infantil: familia y relaciones",
+            "Infantil: fantasía"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/la-travesia-del-viajero-del-alba/id547411138?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.3,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content uses vague themes of exploration and transformation that could apply to many narratives, lacking specific references to characters, plot points, or unique elements from 'La travesía del Viajero del Alba'. It does not mention Narnia, the characters, or the specific adventure, making it feel generic."
+        },
+        "en": {
+          "grounded_score": 0.2,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content is largely philosophical and abstract, lacking specific references to characters, events, or themes from 'The Voyage of the Dawn Treader.' It could apply to any adventure or self-discovery narrative, making it generic."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el viaje, sin referencias externas.",
+          "elapsed_ms": 1004,
+          "usage": {
+            "prompt_tokens": 425,
+            "completion_tokens": 29,
+            "total_tokens": 454,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el viaje personal.",
+          "elapsed_ms": 1810,
+          "usage": {
+            "prompt_tokens": 403,
+            "completion_tokens": 26,
+            "total_tokens": 429,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 883,
+        "total_ms": 1810
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 350,
+          "adjusted_hue": 360,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.45",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17E7E",
+          "--palette-1": "#30E8E8",
+          "--palette-2": "#AE3A13",
+          "--palette-3": "#0B4F65",
+          "--accent": "#E21212",
+          "--accent-soft": "#E2121238",
+          "--accent-glow": "#E212126b",
+          "--paper": "#F0EFEF",
+          "--ink": "#1C1717",
+          "--border": "#908F8F",
+          "--highlight-bg": "#C71010d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-05-16T14-07-20",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 111375,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 16474,
+          "palette": 0,
+          "content_es": 19373,
+          "judge_es": 1069,
+          "content_es_retry": 19351,
+          "judge_es_retry": 1036,
+          "content_es_escalate": 19348,
+          "content_en": 17607,
+          "judge_en": 1003,
+          "voice": 883,
+          "voice_extended": 15231,
+          "highlight_judge_es_parrafoTop": 655,
+          "highlight_judge_es_parrafoBot": 658,
+          "highlight_judge_en_parrafoTop": 645,
+          "highlight_judge_en_parrafoBot": 643,
+          "csal": 3224
+        },
+        "elapsed_ms_total": 149433,
+        "elapsed_ms_by_phase": {
+          "grounding": 9430,
+          "anchors": 13776,
+          "palette": 1,
+          "cover_fallback": 40,
+          "content_es": 34798,
+          "judge_es": 2101,
+          "content_es_retry": 32345,
+          "content_en": 41926,
+          "judge_en": 1568,
+          "voice": 1810,
+          "voice_extended": 4672,
+          "highlight_judge": 5816,
+          "lens_compatibility": 3981,
+          "csal": 11554,
+          "post_processing": 21354
+        },
+        "llm_calls_count": 43,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18",
+          "gpt-4o"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.7,
+          "negocio": 0,
+          "familia": 0.4,
+          "espiritu": 0.9,
+          "relaciones": 0.6,
+          "finanzas": 0
+        },
+        "hawkins": 0.8
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que estás atrapado en la rutina diaria y anhelas una aventura",
+          "cuando te enfrentas a lo desconocido y no sabes qué esperar",
+          "antes de tomar una decisión importante que cambiará tu vida",
+          "cuando te preguntas si hay algo más allá de tu realidad actual",
+          "después de un viaje que te hace replantearte tus valores y creencias",
+          "cuando te sientes perdido y buscas un propósito más grande",
+          "cuando te das cuenta de que el crecimiento personal a menudo requiere salir de tu zona de confort",
+          "antes de embarcarte en una nueva etapa de tu vida y te sientes nervioso pero emocionado",
+          "cuando un cambio inesperado te lleva a descubrir tus verdaderos deseos",
+          "cuando discutes con alguien cercano sobre tus sueños y aspiraciones.",
+          "cuando sientes que la vida te lleva por caminos inesperados y deseas explorar nuevas posibilidades.",
+          "cuando anhelas conocer nuevas culturas y perspectivas diferentes.",
+          "cuando sientes que las expectativas de los demás te limitan y deseas liberarte de ellas.",
+          "cuando te das cuenta de que la amistad puede surgir en los lugares más inesperados.",
+          "cuando buscas inspiración en la belleza del mundo que te rodea.",
+          "cuando reflexionas sobre el significado de la valentía y la lealtad.",
+          "cuando te enfrentas a tus miedos y decides seguir adelante a pesar de ellos.",
+          "cuando esperas que una experiencia te transforme y te lleve a un nuevo nivel de comprensión.",
+          "cuando deseas encontrar un sentido de pertenencia en un mundo que a menudo se siente extraño.",
+          "cuando miras hacia el horizonte y sientes que hay más por descubrir.",
+          "cuando anhelas un sentido de aventura que te aleje de lo mundano.",
+          "cuando te preguntas si el destino es algo que se puede cambiar mediante nuestras elecciones.",
+          "cuando luchas por encontrar tu lugar en un mundo lleno de posibilidades.",
+          "cuando sientes que el fin de algo es solo el comienzo de otra aventura.",
+          "cuando deseas que tus decisiones te lleven a un lugar donde realmente perteneces.",
+          "cuando te enfrentas a la realidad de que la vida está llena de desafíos y oportunidades.",
+          "cuando sientes que la aventura es una parte esencial de la vida.",
+          "cuando descubres que las experiencias compartidas pueden unir a las personas.",
+          "cuando esperas que el viaje te revele algo importante sobre ti mismo.",
+          "cuando miras al pasado y te das cuenta de cómo has cambiado a través de tus experiencias."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "asombro",
+            "esperanza",
+            "miedo",
+            "curiosidad",
+            "valentía",
+            "confusión",
+            "alegría",
+            "nostalgia",
+            "ansiedad",
+            "inspiración"
+          ],
+          "objetos": [
+            "barco",
+            "estrella",
+            "mapa",
+            "isla",
+            "compañeros",
+            "viento",
+            "luz",
+            "mar",
+            "sueños",
+            "misterios"
+          ],
+          "contextos": [
+            "mar abierto",
+            "puntos de vista",
+            "tiempo de reflexión",
+            "naves",
+            "tierra desconocida",
+            "cielo estrellado",
+            "momentos de calma",
+            "enfrentando tormentas",
+            "exploraciones",
+            "conversaciones profundas"
+          ],
+          "verbos": [
+            "navegar",
+            "explorar",
+            "transformar",
+            "reflexionar",
+            "descubrir",
+            "enfrentar",
+            "soñar",
+            "unir",
+            "crecer",
+            "despertar"
+          ]
+        },
+        "concept_tags": [
+          "aventura",
+          "transformación personal",
+          "exploración de lo desconocido",
+          "valores y creencias",
+          "amistad inesperada",
+          "misterio",
+          "búsqueda de identidad",
+          "sabiduría en el viaje",
+          "naturaleza mágica",
+          "destino y libre albedrío"
+        ],
+        "anti_patterns": [
+          "no sirve para quienes buscan respuestas fáciles",
+          "no es un manual sobre cómo vivir la vida",
+          "no es un libro de autoayuda convencional",
+          "no aborda problemas psicológicos complejos"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌅"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🔮"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌞"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⛵"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una experiencia inmersiva en el mundo de Narnia, sugiriendo una voz narrativa que invita al lector a explorar, lo que indica que está dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase suena como un llamado a la aventura o reflexión que podría estar presente en el texto del libro, sugiriendo una experiencia interna."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta introspectiva que invita a la reflexión, típica de un contenido que podría encontrarse dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase suena como una reflexión o un pensamiento del autor, lo que sugiere que está dentro del contenido del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una experiencia sensorial y emocional que podría estar presente en el texto del libro, sugiriendo una conexión directa con el mundo de Narnia."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión y parece ser parte de un diálogo interno o una meditación del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una imagen poética que sugiere un momento narrativo, típico de la voz del autor dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión que podría ser parte de la narrativa o filosofía del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a concept that feels like it could be part of the narrative or thematic exploration within the book, suggesting an internal reflection rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like it is part of the narrative or thematic content of the book, suggesting an internal reflection or advice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a reflective thought that feels like an internal insight from the author, suggesting a personal or philosophical exploration typical of narrative voice."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to experience a moment within the narrative, suggesting a direct engagement with the story."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase evokes a sense of curiosity and wonder, suggesting an internal reflection or contemplation typical of a narrative voice within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes imagery and emotion, suggesting it is part of the narrative or descriptive prose within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a reflection or insight from the narrative, suggesting an internal voice of the author."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "titulo": "Hannah Montana",
+      "autor": "Disney Books",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJIYW5uYWggTW9udGFuYSDigJQgRGlzbmV5IEJvb2tzIj4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI0YwRUZFRiIgLz4KCiAgPGRlZnM+CiAgICA8cGF0dGVybiBpZD0icGFwZXJHcmFpbiIgeD0iMCIgeT0iMCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIwLjMiIGZpbGw9IiMxQzE3MTgiIG9wYWNpdHk9IjAuMDQiIC8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSJ1cmwoI3BhcGVyR3JhaW4pIiAvPgo8cmVjdCB4PSIyNCIgeT0iMjQiIHdpZHRoPSI1NTIiIGhlaWdodD0iODUyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5MDhGOEYiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjM1IiAvPgoKICA8cGF0aCBkPSJNIDI0MCAzNTEuNyBRIDI3MCAzMzkuNywgMzAwIDM1MS43IFQgMzYwIDM1MS43IiAKICAgICAgICBzdHJva2U9IiNFMjEyMjQiIHN0cm9rZS13aWR0aD0iMS44IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIC8+CiAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iMzUxLjciIHI9IjIuNSIgZmlsbD0iI0UyMTIyNCIgLz4KICA8cGF0aCBkPSJNIDI0MCA1ODguMyBRIDI3MCA2MDAuMywgMzAwIDU4OC4zIFQgMzYwIDU4OC4zIiAKICAgICAgICBzdHJva2U9IiNFMjEyMjQiIHN0cm9rZS13aWR0aD0iMS44IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIC8+CiAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iNTg4LjMiIHI9IjIuNSIgZmlsbD0iI0UyMTIyNCIgLz4KICA8dGV4dCB4PSIzMDAiIHk9IjQ3OC4yOTk5OTk5OTk5OTk5NSIgZmlsbD0iIzFDMTcxOCIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPkhhbm5haCBNb250YW5hPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiNFMjEyMjQiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMzQiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+RGlzbmV5IEJvb2tzPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMUMxNzE4IiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4yNWVtIiBvcGFjaXR5PSIwLjQ1Ij5UUklHR1VJPC90ZXh0Pgo8L3N2Zz4=",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJIYW5uYWggTW9udGFuYSDigJQgRGlzbmV5IEJvb2tzIj4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0iI0YwRUZFRiIgLz4KCiAgPGRlZnM+CiAgICA8cGF0dGVybiBpZD0icGFwZXJHcmFpbiIgeD0iMCIgeT0iMCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIwLjMiIGZpbGw9IiMxQzE3MTgiIG9wYWNpdHk9IjAuMDQiIC8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSJ1cmwoI3BhcGVyR3JhaW4pIiAvPgo8cmVjdCB4PSIyNCIgeT0iMjQiIHdpZHRoPSI1NTIiIGhlaWdodD0iODUyIiBmaWxsPSJub25lIiBzdHJva2U9IiM5MDhGOEYiIHN0cm9rZS13aWR0aD0iMC44IiBvcGFjaXR5PSIwLjM1IiAvPgoKICA8cGF0aCBkPSJNIDI0MCAzNTEuNyBRIDI3MCAzMzkuNywgMzAwIDM1MS43IFQgMzYwIDM1MS43IiAKICAgICAgICBzdHJva2U9IiNFMjEyMjQiIHN0cm9rZS13aWR0aD0iMS44IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIC8+CiAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iMzUxLjciIHI9IjIuNSIgZmlsbD0iI0UyMTIyNCIgLz4KICA8cGF0aCBkPSJNIDI0MCA1ODguMyBRIDI3MCA2MDAuMywgMzAwIDU4OC4zIFQgMzYwIDU4OC4zIiAKICAgICAgICBzdHJva2U9IiNFMjEyMjQiIHN0cm9rZS13aWR0aD0iMS44IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIC8+CiAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iNTg4LjMiIHI9IjIuNSIgZmlsbD0iI0UyMTIyNCIgLz4KICA8dGV4dCB4PSIzMDAiIHk9IjQ3OC4yOTk5OTk5OTk5OTk5NSIgZmlsbD0iIzFDMTcxOCIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPkhhbm5haCBNb250YW5hPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiNFMjEyMjQiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMzQiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+RGlzbmV5IEJvb2tzPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMUMxNzE4IiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4yNWVtIiBvcGFjaXR5PSIwLjQ1Ij5UUklHR1VJPC90ZXh0Pgo8L3N2Zz4=",
+      "isbn": "",
+      "titulo_es": "Hannah Montana",
+      "titulo_en": "Hannah Montana",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Cero",
+      "palabras": [
+        "autenticidad",
+        "conflicto",
+        "amistad",
+        "descubrimiento"
+      ],
+      "palabras_en": [
+        "authenticity",
+        "teenage",
+        "fame",
+        "identity"
+      ],
+      "frases": [
+        "⏳ ¿Qué pasaría si eliges ser tú misma en lugar de lo que otros esperan?",
+        "🌊 Imagina un día sin máscaras, donde puedes ser auténtica sin miedo al juicio.",
+        "💡 Brillar sin dejar de ser quien eres es el verdadero arte de la vida.",
+        "👁 Visualiza a Hannah frente a un espejo, el reflejo es una estrella y una chica normal al mismo tiempo."
+      ],
+      "frases_en": [
+        "👁 Breathe deeply and take a moment to reflect on your true self, beyond the glamor.",
+        "🗺 Consider the pressures of fame. How does it shape your identity?",
+        "🧘 Imagine standing on stage, the lights shining bright, yet feeling a pull towards something more real.",
+        "☀ In the spotlight, we may shine, but it is in the quiet moments that we truly grow."
+      ],
+      "frases_og": [
+        "🔍 La fama no puede eclipsar la búsqueda de quien realmente eres.",
+        "💠 ¿Cómo equilibrar la vida normal con el brillo de la fama?",
+        "✨ La amistad verdadera es el refugio en tiempos de cambio.",
+        "⚓ El viaje de aceptar quién eres comienza en el corazón."
+      ],
+      "frases_og_en": [
+        "🔍 Fame often reveals more about us than we wish to see.",
+        "💠 Embrace your true self. Let the world see your light.",
+        "✨ What happens when the spotlight dims and you're left alone?",
+        "⚓ True friendship flourishes in the shadows, away from the glamor."
+      ],
+      "colores": [
+        "#F17EC1",
+        "#E8306E",
+        "#AE2D13",
+        "#65310B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFEF",
+      "tarjeta": {
+        "titulo": "La vida en dos mundos",
+        "parrafoTop": "Navegar entre la vida de una adolescente normal y la presión de ser una estrella pop es un desafío constante. [H]En cada episodio, Hannah enfrenta decisiones que ponen a prueba su autenticidad.[/H]",
+        "subtitulo": "¿Qué significa ser verdaderamente tú?",
+        "parrafoBot": "[H]y a menudo lo es, un espejo que refleja las inseguridades que todos enfrentamos.[/H] La conexión con sus amigos y familiares se convierte en su ancla en medio del torbellino de la fama. Al final, es su autenticidad lo que la define, no solo su éxito en el escenario.",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La vida en dos mundos",
+        "parrafoTop": "Navegar entre la vida de una adolescente normal y la presión de ser una estrella pop es un desafío constante. [H]En cada episodio, Hannah enfrenta decisiones que ponen a prueba su autenticidad.[/H]",
+        "subtitulo": "¿Qué significa ser verdaderamente tú?",
+        "parrafoBot": "[H]y a menudo lo es, un espejo que refleja las inseguridades que todos enfrentamos.[/H] La conexión con sus amigos y familiares se convierte en su ancla en medio del torbellino de la fama. Al final, es su autenticidad lo que la define, no solo su éxito en el escenario.",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La vida en dos mundos",
+        "parrafoTop": "Navegar entre la vida de una adolescente normal y la presión de ser una estrella pop es un desafío constante. [H]En cada episodio, Hannah enfrenta decisiones que ponen a prueba su autenticidad.[/H]",
+        "subtitulo": "¿Qué significa ser verdaderamente tú?",
+        "parrafoBot": "[H]y a menudo lo es, un espejo que refleja las inseguridades que todos enfrentamos.[/H] La conexión con sus amigos y familiares se convierte en su ancla en medio del torbellino de la fama. Al final, es su autenticidad lo que la define, no solo su éxito en el escenario.",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Living in Two Worlds",
+        "parrafoTop": "Navigating the life of a normal teenager while juggling the pressures of being a pop star is a constant challenge. [H]In every episode, Hannah faces decisions that test her authenticity.[/H]",
+        "subtitulo": "What does it mean to be truly you?",
+        "parrafoBot": "and at times, a mirror that reflects the insecurities we all face. The connections with her friends and family become her anchor amidst the whirlwind of fame. [H]Ultimately, it is her authenticity that defines her, not just her success on stage.[/H]",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Living in Two Worlds",
+        "parrafoTop": "Navigating the life of a normal teenager while juggling the pressures of being a pop star is a constant challenge. [H]In every episode, Hannah faces decisions that test her authenticity.[/H]",
+        "subtitulo": "What does it mean to be truly you?",
+        "parrafoBot": "and at times, a mirror that reflects the insecurities we all face. The connections with her friends and family become her anchor amidst the whirlwind of fame. [H]Ultimately, it is her authenticity that defines her, not just her success on stage.[/H]",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Living in Two Worlds",
+        "parrafoTop": "Navigating the life of a normal teenager while juggling the pressures of being a pop star is a constant challenge. [H]In every episode, Hannah faces decisions that test her authenticity.[/H]",
+        "subtitulo": "What does it mean to be truly you?",
+        "parrafoBot": "and at times, a mirror that reflects the insecurities we all face. The connections with her friends and family become her anchor amidst the whirlwind of fame. [H]Ultimately, it is her authenticity that defines her, not just her success on stage.[/H]",
+        "style": {
+          "accent": "#E21224",
+          "paper": "#F0EFEF",
+          "ink": "#1C1718",
+          "border": "#908F8F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Hannah%20Montana%20Disney%20Books%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Hannah%20Montana%20Disney%20Books%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-16T14:07:20.929Z",
+        "workflow_run_id": "25963960230",
+        "catalog_mode": "kids",
+        "modo": "production_batch",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Hannah Montana",
+          "titulo_en": "Hannah Montana",
+          "autor_completo": "Disney Books",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la dualidad de ser una estrella pop y una adolescente normal",
+            "la lucha por mantener la autenticidad en medio de la fama",
+            "desafíos típicos de la adolescencia como el amor y la amistad",
+            "la importancia de la familia y los amigos en tiempos difíciles",
+            "el poder de la autoaceptación y la identidad personal"
+          ],
+          "key_terms": [
+            "fama",
+            "adolescencia",
+            "autenticidad",
+            "identidad",
+            "relaciones"
+          ],
+          "authorial_voice_notes": "Divertida, ligera y accesible, enfocada en la experiencia juvenil y la autoexploración."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro se centra en las experiencias de una adolescente que navega entre la vida normal y la vida de una celebridad, lo que puede implicar una exploración de la identidad y la autoaceptación en medio de las presiones externas. Sin embargo, no se presenta como un tratamiento profundo del tema del autoconocimiento o la complejidad del ser adolescente, sino más bien como un relato ligero y entretenido.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 345,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La vida en dos mundos",
+          "parrafoTop": "Navegar entre la vida de una adolescente normal y la presión de ser una estrella pop es un desafío constante. En cada episodio, Hannah enfrenta decisiones que ponen a prueba su autenticidad. La lucha por ser fiel a sí misma mientras vive bajo el ojo público se vuelve el corazón de su viaje, y muestra que la fama puede,",
+          "subtitulo": "¿Qué significa ser verdaderamente tú?",
+          "parrafoBot": "y a menudo lo es, un espejo que refleja las inseguridades que todos enfrentamos. La conexión con sus amigos y familiares se convierte en su ancla en medio del torbellino de la fama. Al final, es su autenticidad lo que la define, no solo su éxito en el escenario."
+        },
+        "card_en": {
+          "titulo": "Living in Two Worlds",
+          "parrafoTop": "Navigating the life of a normal teenager while juggling the pressures of being a pop star is a constant challenge. In every episode, Hannah faces decisions that test her authenticity. The struggle to stay true to herself while living under the public eye becomes the heart of her journey, showing that fame can often be,",
+          "subtitulo": "What does it mean to be truly you?",
+          "parrafoBot": "and at times, a mirror that reflects the insecurities we all face. The connections with her friends and family become her anchor amidst the whirlwind of fame. Ultimately, it is her authenticity that defines her, not just her success on stage."
+        },
+        "emotional_words_es": [
+          "autenticidad",
+          "conflicto",
+          "amistad",
+          "descubrimiento"
+        ],
+        "emotional_words_en": [
+          "authenticity",
+          "teenage",
+          "fame",
+          "identity"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 La fama no puede eclipsar la búsqueda de quien realmente eres.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "💠 ¿Cómo equilibrar la vida normal con el brillo de la fama?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ La amistad verdadera es el refugio en tiempos de cambio.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ El viaje de aceptar quién eres comienza en el corazón.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 Fame often reveals more about us than we wish to see.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Embrace your true self. Let the world see your light.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ What happens when the spotlight dims and you're left alone?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ True friendship flourishes in the shadows, away from the glamor.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Qué pasaría si eliges ser tú misma en lugar de lo que otros esperan?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Imagina un día sin máscaras, donde puedes ser auténtica sin miedo al juicio.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "luz",
+            "phrase": "💡 Brillar sin dejar de ser quien eres es el verdadero arte de la vida.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Visualiza a Hannah frente a un espejo, el reflejo es una estrella y una chica normal al mismo tiempo.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Breathe deeply and take a moment to reflect on your true self, beyond the glamor.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Consider the pressures of fame. How does it shape your identity?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "breath",
+            "phrase": "🧘 Imagine standing on stage, the lights shining bright, yet feeling a pull towards something more real.",
+            "role_symphonic": "land",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "☀ In the spotlight, we may shine, but it is in the quiet moments that we truly grow.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.6,
+          "voice_authenticity": 0.9,
+          "specificity": 0.95,
+          "grounding_judge": 0.95,
+          "combined": 0.84,
+          "signals": {
+            "bookIdentityConfidence": 0.6000000000000001,
+            "voiceSignal": 0.8999999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.6000000000000001,
+        "resolution_path": [
+          "evidence_fetched_1sources",
+          "tier3_conf_0.80"
+        ],
+        "verified_identity": {
+          "titulo_real": "Hannah Montana",
+          "autor_completo": "Disney Books",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "Los diarios de la princesa",
+            "autor": "Meg Cabot",
+            "razon": "Ambos libros están dirigidos a un público juvenil y tratan sobre la vida de adolescentes con situaciones cotidianas y fantásticas."
+          },
+          {
+            "titulo": "El diario de Greg",
+            "autor": "Jeff Kinney",
+            "razon": "Ambos libros tienen un enfoque humorístico y se centran en las experiencias de adolescentes."
+          },
+          {
+            "titulo": "Cazadores de sombras: Ciudad de hueso",
+            "autor": "Cassandra Clare",
+            "razon": "Aunque es más fantástico, comparte el tema de la vida adolescente y las relaciones en un contexto de aventuras."
+          },
+          {
+            "titulo": "Las ventajas de ser un marginado",
+            "autor": "Stephen Chbosky",
+            "razon": "Explora la vida de un adolescente y sus desafíos, similar a la temática de crecimiento en 'Hannah Montana'."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido refleja de manera específica la lucha de la protagonista entre la vida cotidiana y la fama, utilizando términos como 'autenticidad' y 'presión de ser una estrella pop', que son centrales en la temática del libro. Además, la voz es ligera y accesible, alineándose con la perspectiva juvenil. Aunque es muy específico, algunas frases podrían aplicarse a otros contextos, pero en general, s"
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content specifically addresses the duality of Hannah's life as a teenager and a pop star, reflecting the challenges of authenticity and the pressures of fame, which are central themes in the inferred ground truth. It uses terms like 'navigating the life of a normal teenager' and 'struggle to stay true to herself,' directly linking to the adolescent experience and self-exploration. The tone is轻"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.8,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre la vida de Hannah.",
+          "elapsed_ms": 1157,
+          "usage": {
+            "prompt_tokens": 413,
+            "completion_tokens": 27,
+            "total_tokens": 440,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre la vida de Hannah.",
+          "elapsed_ms": 939,
+          "usage": {
+            "prompt_tokens": 394,
+            "completion_tokens": 27,
+            "total_tokens": 421,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 861,
+        "total_ms": 1157
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 345,
+          "adjusted_hue": 355,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "15.44",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EC1",
+          "--palette-1": "#E8306E",
+          "--palette-2": "#AE2D13",
+          "--palette-3": "#65310B",
+          "--accent": "#E21224",
+          "--accent-soft": "#E2122438",
+          "--accent-glow": "#E212246b",
+          "--paper": "#F0EFEF",
+          "--ink": "#1C1718",
+          "--border": "#908F8F",
+          "--highlight-bg": "#C71020d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "aforismo_autorial",
+          "imagen_concreta"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-05-16T14-07-20",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 64041,
+        "tokens_by_phase": {
+          "grounding": 535,
+          "anchors": 16323,
+          "palette": 0,
+          "content_es": 19310,
+          "judge_es": 1011,
+          "content_en": 17593,
+          "judge_en": 1007,
+          "voice": 861,
+          "voice_extended": 7401,
+          "highlight_judge_es_parrafoTop": 636,
+          "highlight_judge_es_parrafoBot": 649,
+          "highlight_judge_en_parrafoTop": 637,
+          "highlight_judge_en_parrafoBot": 649,
+          "csal": 2772
+        },
+        "elapsed_ms_total": 107406,
+        "elapsed_ms_by_phase": {
+          "grounding": 6447,
+          "anchors": 19040,
+          "palette": 1,
+          "cover_fallback": 1,
+          "content_es": 35414,
+          "judge_es": 3635,
+          "content_en": 38056,
+          "judge_en": 2334,
+          "voice": 1157,
+          "voice_extended": 1318,
+          "highlight_judge": 5326,
+          "lens_compatibility": 3181,
+          "csal": 9320,
+          "post_processing": 17834
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.5,
+          "negocio": 0,
+          "familia": 0.7,
+          "espiritu": 0,
+          "relaciones": 0.8,
+          "finanzas": 0
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que debes ocultar quién eres para encajar",
+          "antes de una presentación importante en la escuela",
+          "después de una pelea con un amigo que te deja confundida",
+          "cuando te sientes presionada por las expectativas de los demás",
+          "cuando descubres que tu doble vida es más complicada de lo que pensabas",
+          "antes de un primer beso y no sabes qué esperar",
+          "cuando tienes que elegir entre la fama y tus verdaderos amigos",
+          "después de un día agotador en el que solo quieres ser tú misma",
+          "cuando te enfrentas a rumores sobre ti en la escuela",
+          "cuando deseas que la gente te acepte tal como eres.",
+          "cuando te sientes incomprendida por tu familia",
+          "antes de hacer una elección que podría cambiar tu vida.",
+          "cuando te das cuenta de que no estás sola en tu lucha por ser auténtica.",
+          "cuando te encuentras en una situación social que te resulta incómoda.",
+          "cuando anhelas un momento de privacidad en medio del caos.",
+          "cuando sientes que no puedes seguir el ritmo de la vida adolescente y la fama.",
+          "cuando te enamoras de alguien que no está en tu círculo habitual.",
+          "después de una experiencia que te hace cuestionar tu identidad.",
+          "cuando te das cuenta de que ser famosa no significa ser feliz.",
+          "cuando luchas por equilibrar tu vida escolar y tu carrera musical.",
+          "cuando te sientes atrapada entre dos mundos diferentes.",
+          "cuando necesitas el apoyo de tus amigos para seguir adelante.",
+          "cuando descubres un talento oculto que no sabías que tenías.",
+          "cuando te das cuenta de que la amistad verdadera es más valiosa que la fama.",
+          "cuando sientes que no puedes compartir tus verdaderos sentimientos con nadie.",
+          "cuando reflexionas sobre quién eres realmente y quién deseas ser.",
+          "antes de un gran evento donde todos los ojos están puestos en ti.",
+          "cuando tienes miedo de decepcionar a las personas que amas.",
+          "cuando te das cuenta de que la vida no siempre es un cuento de hadas.",
+          "cuando te enfrentas a la presión de ser perfecta en todo momento."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "confusión",
+            "autenticidad",
+            "felicidad",
+            "miedo",
+            "ansiedad",
+            "amistad",
+            "amor",
+            "inseguridad",
+            "frustración",
+            "alegría"
+          ],
+          "objetos": [
+            "micrófono",
+            "diario",
+            "espejo",
+            "teléfono",
+            "escuela",
+            "escenario"
+          ],
+          "contextos": [
+            "escuela",
+            "concierto",
+            "fiesta",
+            "casa",
+            "café",
+            "parque"
+          ],
+          "verbos": [
+            "cantar",
+            "soñar",
+            "ocultar",
+            "descubrir",
+            "enfrentar",
+            "compartir",
+            "reír",
+            "llorar",
+            "reflexionar",
+            "conectar"
+          ]
+        },
+        "concept_tags": [
+          "vida adolescente",
+          "fama y autenticidad",
+          "dilemas de identidad",
+          "amistades verdaderas",
+          "presiones sociales",
+          "autoaceptación",
+          "dualidad de la vida",
+          "relaciones familiares",
+          "amor juvenil",
+          "crecimiento personal"
+        ],
+        "anti_patterns": [
+          "no es un manual sobre la industria musical",
+          "no trata sobre la fama sin consecuencias",
+          "no es una historia sin desafíos emocionales",
+          "no aborda temas oscuros o negativos de forma explícita"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🤔"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌈"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "✨"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "👸"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión personal que suena como parte del contenido del libro, en lugar de una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase plantea una pregunta que podría ser parte de un diálogo o reflexión dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una reflexión personal sobre la amistad, lo que sugiere que es parte del contenido del libro y no una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión interna que suena como parte del contenido del libro, invitando a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión interna que suena como un pensamiento del autor, invitando al lector a la introspección, lo cual es característico de la voz dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión y sugiere una experiencia personal, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión personal que podría formar parte de la narrativa del libro, sugiriendo una voz autoral introspectiva."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase describe una escena específica con un enfoque narrativo, sugiriendo que es parte de la historia y no una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a reflective thought that feels like an internal insight from the author, suggesting a deeper exploration of fame within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a direct message that feels like it comes from the author's voice within the book, encouraging personal reflection and authenticity."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites the reader into an introspective moment, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection of the author's voice, suggesting an introspective moment within the narrative."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages introspection and personal reflection, suggesting it is part of a narrative or guidance within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses reflective questions that suggest an internal dialogue or exploration of themes, typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and emotional experience, suggesting it is part of the narrative or descriptive writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a reflective thought that feels like an internal monologue or insight from a character, suggesting it is part of the narrative."
+            }
+          ]
+        }
+      }
+    },
+    {
       "titulo": "Harry Potter y las reliquias de la muerte",
       "autor": "J.K. Rowling",
       "tagline": "",
