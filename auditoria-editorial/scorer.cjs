@@ -142,7 +142,13 @@ function scoreBook(libro, idx, allLibros, rules) {
 
   const isSvg = isSVGFallback(libro.portada);
   dimensions.portada_real = isSvg ? 0 : 1;
-  if (isSvg) flags.push('SVG_FALLBACK');
+  if (isSvg) {
+    flags.push('SVG_FALLBACK');
+    // v1.2.0: veto svg_fallback si esta activo en rules
+    if (rules.veto_rules && rules.veto_rules.svg_fallback) {
+      vetos.push('svg_fallback_no_real_cover');
+    }
+  }
 
   const critKw = hasKeywordMatch(libro.titulo, rules.critical_keywords_title);
   if (critKw) {

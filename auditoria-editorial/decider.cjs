@@ -53,6 +53,20 @@ function decide(scoring, rules) {
       };
     }
 
+    // v1.2.0: SVG fallback (sin portada real) -> QUARANTINE
+    // (no REMOVE porque se puede regenerar cuando la portada exista)
+    const svgVeto = vetos.find(v => v.startsWith('svg_fallback'));
+    if (svgVeto) {
+      return {
+        decision: 'QUARANTINE',
+        reason: 'No real cover obtained (SVG fallback) - book waits for next batch to retry grounding',
+        score,
+        severity: 'high',
+        action_summary: 'Move to quarantine until cover is obtained',
+        veto_type: 'svg_fallback'
+      };
+    }
+
     return {
       decision: 'REMOVE',
       reason: 'Multiple vetos: ' + vetos.join(', '),
