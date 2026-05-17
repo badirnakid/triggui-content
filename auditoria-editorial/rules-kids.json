@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "profile": "kids",
   "description": "Reglas estrictas para audiencia infantil 4-12 anos",
   "weights": {
@@ -60,5 +60,12 @@
     "critical_keyword_in_title": "REMOVE",
     "duplicate":                  "DEDUPE_KEEP_BEST",
     "non_infantile_match":        "REMOVE"
-  }
+  },
+  "truncation_patterns": [
+    ":\\s*[?!.]?\\s*$",
+    "\\blo que\\s*[:?!.,;]?\\s*$",
+    "\\b(que|de|en|con|sin|por|para|porque|cuando|aunque|mientras|donde|quien)\\s*[:?!.,;]?\\s*$",
+    "\\b(el|la|los|las|un|una|al|del|lo)\\s*[:?!.,;]?\\s*$",
+    ",\\s*$"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "profile": "adult",
   "description": "Reglas permisivas para audiencia adulta",
   "weights": {
@@ -26,5 +26,12 @@
   "veto_rules": {
     "critical_keyword_in_title": "REMOVE",
     "duplicate":                  "DEDUPE_KEEP_BEST"
-  }
+  },
+  "truncation_patterns": [
+    ":\\s*[?!.]?\\s*$",
+    "\\blo que\\s*[:?!.,;]?\\s*$",
+    "\\b(que|de|en|con|sin|por|para|porque|cuando|aunque|mientras|donde|quien)\\s*[:?!.,;]?\\s*$",
+    "\\b(el|la|los|las|un|una|al|del|lo)\\s*[:?!.,;]?\\s*$",
+    ",\\s*$"
+  ]
 }
