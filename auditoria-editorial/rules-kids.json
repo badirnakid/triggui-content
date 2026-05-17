@@ -1,0 +1,64 @@
+{
+  "version": "1.0.0",
+  "profile": "kids",
+  "description": "Reglas estrictas para audiencia infantil 4-12 anos",
+  "weights": {
+    "portada_real":                   0.20,
+    "sin_palabra_critica_titulo":     0.25,
+    "sin_palabra_critica_phrases":    0.15,
+    "no_duplicado":                   0.15,
+    "audiencia_match":                0.10,
+    "confidence_grounding":           0.05,
+    "judges_quality":                 0.05,
+    "sin_warnings_pipeline":          0.05
+  },
+  "thresholds": {
+    "keep":               0.85,
+    "keep_with_warning":  0.70,
+    "quarantine":         0.50
+  },
+  "critical_keywords_title": [
+    "daga", "punal", "sangre", "asesin", "asesinato", "matar",
+    "matanza", "homicid", "violacion", "violar",
+    "sexo", "sexual", "erotic", "pornograf",
+    "droga", "narcotic", "cocaina", "heroina",
+    "suicid", "ahorca", "veneno", "tortura", "masacr", "esclav"
+  ],
+  "sensitive_keywords_title": [
+    "muerte", "morir", "guerra", "soldado", "arma", "pistola",
+    "satan", "diablo", "infierno", "demonio", "maldicion",
+    "borrach", "alcohol", "cigarro", "fum"
+  ],
+  "critical_keywords_phrases": [
+    "asesin", "matar", "sangre", "violacion", "violar",
+    "sexo", "sexual", "droga", "narcotic", "suicid",
+    "veneno", "tortura", "masacr"
+  ],
+  "non_infantile_patterns": [
+    "la princesa prometida",
+    "el senor de los anillos",
+    "don quijote",
+    "cien anos de soledad",
+    "la divina comedia",
+    "ulises",
+    "lolita"
+  ],
+  "allowlist_titles": [
+    "momo",
+    "muerte de tinta",
+    "muerte en el nilo",
+    "el flautista de hamelin",
+    "la cripta del miedo",
+    "el principito"
+  ],
+  "allowlist_authors": [
+    "michael ende",
+    "cornelia funke",
+    "antoine de saint-exupery"
+  ],
+  "veto_rules": {
+    "critical_keyword_in_title": "REMOVE",
+    "duplicate":                  "DEDUPE_KEEP_BEST",
+    "non_infantile_match":        "REMOVE"
+  }
+}

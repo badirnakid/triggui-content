@@ -22,3 +22,8 @@ TRIGGUI_*HANDOFF*.txt
 # Sanitize backups (no versionar)
 *.backup-sanitize-*.json
 *.tmp-*
+*.bak-audit-*
+audit-reports/
+
+# Backups pre-migration de sesiones anteriores (no commitear)
+*.bak-pre-*
