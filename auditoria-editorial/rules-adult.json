@@ -1,37 +1,43 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "profile": "adult",
   "description": "Reglas permisivas para audiencia adulta",
   "weights": {
-    "portada_real":                   0.20,
-    "sin_palabra_critica_titulo":     0.10,
-    "sin_palabra_critica_phrases":    0.05,
-    "no_duplicado":                   0.30,
-    "audiencia_match":                0.05,
-    "confidence_grounding":           0.15,
-    "judges_quality":                 0.10,
-    "sin_warnings_pipeline":          0.05
+    "portada_real": 0.2,
+    "sin_palabra_critica_titulo": 0.1,
+    "sin_palabra_critica_phrases": 0.05,
+    "no_duplicado": 0.3,
+    "audiencia_match": 0.05,
+    "confidence_grounding": 0.15,
+    "judges_quality": 0.1,
+    "sin_warnings_pipeline": 0.05
   },
   "thresholds": {
-    "keep":               0.80,
-    "keep_with_warning":  0.65,
-    "quarantine":         0.45
+    "keep": 0.8,
+    "keep_with_warning": 0.65,
+    "quarantine": 0.45
   },
-  "critical_keywords_title": ["pornograf", "pedofil", "incest"],
+  "critical_keywords_title": [
+    "pornograf",
+    "pedofil",
+    "incest"
+  ],
   "sensitive_keywords_title": [],
-  "critical_keywords_phrases": ["pornograf", "pedofil"],
+  "critical_keywords_phrases": [
+    "pornograf",
+    "pedofil"
+  ],
   "non_infantile_patterns": [],
   "allowlist_titles": [],
   "allowlist_authors": [],
   "veto_rules": {
     "critical_keyword_in_title": "REMOVE",
-    "duplicate":                  "DEDUPE_KEEP_BEST"
+    "duplicate": "DEDUPE_KEEP_BEST"
   },
   "truncation_patterns": [
+    "[:?!.,;]{2,}\\s*$",
     ":\\s*[?!.]?\\s*$",
-    "\\blo que\\s*[:?!.,;]?\\s*$",
-    "\\b(que|de|en|con|sin|por|para|porque|cuando|aunque|mientras|donde|quien)\\s*[:?!.,;]?\\s*$",
-    "\\b(el|la|los|las|un|una|al|del|lo)\\s*[:?!.,;]?\\s*$",
-    ",\\s*$"
+    "\\blo que\\s*[:?!.,;]+\\s*$",
+    "\\b(que|de|en|con|sin|por|para|porque|cuando|aunque|mientras|donde|quien)\\s*[:?!.,;]{2,}\\s*$"
   ]
 }
