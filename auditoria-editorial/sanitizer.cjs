@@ -44,7 +44,17 @@ function sanitizeLibro(libro, patterns) {
     });
   };
   
-  ['frases', 'frases_og', 'og_phrases_es', 'og_phrases_en'].forEach(k => {
+  // v1.3.2: limpia strings sueltos (parrafoTop, parrafoBot) si están truncados
+  const cleanString = (obj, key, srcName) => {
+    if (!obj || typeof obj[key] !== 'string') return;
+    if (isTruncatedPhrase(obj[key], patterns)) {
+      removed.push({ src: srcName, text: obj[key] });
+      obj[key] = '';  // limpiar (queda string vacio para no romper schema)
+    }
+  };
+  
+  // NIVEL 1: campos visibles en la app
+  ['frases', 'frases_og', 'frases_en', 'og_phrases_es', 'og_phrases_en'].forEach(k => {
     if (Array.isArray(libro[k])) {
       libro[k] = cleanArray(libro[k], k);
     }
@@ -52,9 +62,15 @@ function sanitizeLibro(libro, patterns) {
   if (Array.isArray(libro.edition_blocks_es)) {
     libro.edition_blocks_es = cleanArray(libro.edition_blocks_es, 'edition_blocks_es');
   }
+  if (Array.isArray(libro.edition_blocks_en)) {
+    libro.edition_blocks_en = cleanArray(libro.edition_blocks_en, 'edition_blocks_en');
+  }
+  
+  // NIVEL 2: campos _nucleus.* (trazabilidad — la app no los muestra pero por
+  // doctrina nivel dios cuantico-quark se limpian también)
   if (libro._nucleus) {
-    // v1.3.1: nivel dios — audita TODOS los campos de _nucleus (incluye og_phrases_*)
-    ['frases', 'frases_og', 'og_phrases_es', 'og_phrases_en'].forEach(k => {
+    // v1.3.2: TODOS los arrays de phrases en _nucleus
+    ['frases', 'frases_og', 'frases_en', 'og_phrases_es', 'og_phrases_en'].forEach(k => {
       if (Array.isArray(libro._nucleus[k])) {
         libro._nucleus[k] = cleanArray(libro._nucleus[k], '_nucleus.' + k);
       }
@@ -64,6 +80,15 @@ function sanitizeLibro(libro, patterns) {
     }
     if (Array.isArray(libro._nucleus.edition_blocks_en)) {
       libro._nucleus.edition_blocks_en = cleanArray(libro._nucleus.edition_blocks_en, '_nucleus.edition_blocks_en');
+    }
+    // v1.3.2: card_es y card_en (parrafoTop, parrafoBot son strings sueltos)
+    if (libro._nucleus.card_es) {
+      cleanString(libro._nucleus.card_es, 'parrafoTop', '_nucleus.card_es.parrafoTop');
+      cleanString(libro._nucleus.card_es, 'parrafoBot', '_nucleus.card_es.parrafoBot');
+    }
+    if (libro._nucleus.card_en) {
+      cleanString(libro._nucleus.card_en, 'parrafoTop', '_nucleus.card_en.parrafoTop');
+      cleanString(libro._nucleus.card_en, 'parrafoBot', '_nucleus.card_en.parrafoBot');
     }
   }
   
