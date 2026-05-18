@@ -53,13 +53,17 @@ function sanitizeLibro(libro, patterns) {
     libro.edition_blocks_es = cleanArray(libro.edition_blocks_es, 'edition_blocks_es');
   }
   if (libro._nucleus) {
-    ['frases', 'frases_og'].forEach(k => {
+    // v1.3.1: nivel dios — audita TODOS los campos de _nucleus (incluye og_phrases_*)
+    ['frases', 'frases_og', 'og_phrases_es', 'og_phrases_en'].forEach(k => {
       if (Array.isArray(libro._nucleus[k])) {
         libro._nucleus[k] = cleanArray(libro._nucleus[k], '_nucleus.' + k);
       }
     });
     if (Array.isArray(libro._nucleus.edition_blocks_es)) {
       libro._nucleus.edition_blocks_es = cleanArray(libro._nucleus.edition_blocks_es, '_nucleus.edition_blocks_es');
+    }
+    if (Array.isArray(libro._nucleus.edition_blocks_en)) {
+      libro._nucleus.edition_blocks_en = cleanArray(libro._nucleus.edition_blocks_en, '_nucleus.edition_blocks_en');
     }
   }
   
