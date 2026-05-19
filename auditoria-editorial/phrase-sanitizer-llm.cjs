@@ -10,6 +10,8 @@ const args = Object.fromEntries(
 const CATALOG = args.catalog;
 const MODE = (args.mode || "report").toLowerCase();
 const ONLY_LAST = args["only-last"] === "true";
+const BATCH_SIZE = Math.max(1, parseInt(args["batch-size"] || "1", 10));
+const HEALING = args.healing !== "false";
 const MIN_PRESERVE_RATIO = parseFloat(args["min-preserve"] || "0.85");
 const OPENAI_KEY = process.env.OPENAI_API_KEY;
 const MODEL = "gpt-4o-mini";
@@ -19,11 +21,58 @@ if (!OPENAI_KEY) { console.error("missing OPENAI_API_KEY"); process.exit(2); }
 if (!["report","fix"].includes(MODE)) { console.error("--mode must be report|fix"); process.exit(2); }
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"));
-const libros = ONLY_LAST ? [catalog.libros[catalog.libros.length-1]] : catalog.libros;
 
-console.log("phrase-sanitizer-llm v3.0 (with preservation guardrail)");
-console.log("  catalog:", CATALOG, "  mode:", MODE, "  libros:", libros.length);
-console.log("  min-preserve-ratio:", MIN_PRESERVE_RATIO);
+// v3.1 NIVEL DIOS — nuevos + healing rotation
+let librosToAudit;
+let healingInfo = null;
+
+if (ONLY_LAST) {
+  const total = catalog.libros.length;
+  const N = Math.min(BATCH_SIZE, total);
+  const newBooks = catalog.libros.slice(0, N);
+
+  if (HEALING && total > N) {
+    const oldPoolStart = N;
+    const oldPoolSize = total - N;
+    catalog.meta = catalog.meta || {};
+    const currentIdx = Number.isInteger(catalog.meta.healing_rotation_idx)
+      ? catalog.meta.healing_rotation_idx
+      : 0;
+    const healingBookIdx = oldPoolStart + (currentIdx % oldPoolSize);
+    const healingBook = catalog.libros[healingBookIdx];
+    librosToAudit = [...newBooks, healingBook];
+    healingInfo = {
+      idx: healingBookIdx,
+      rotation_idx: currentIdx,
+      next_rotation: (currentIdx + 1) % oldPoolSize,
+      pool_size: oldPoolSize,
+      titulo: healingBook.titulo || "?"
+    };
+  } else {
+    librosToAudit = newBooks;
+  }
+} else {
+  librosToAudit = catalog.libros;
+}
+
+console.log("phrase-sanitizer-llm v3.1 (preservation guardrail + healing rotation)");
+console.log("  catalog:        " + CATALOG);
+console.log("  mode:           " + MODE);
+console.log("  total catalog:  " + catalog.libros.length + " libros");
+if (ONLY_LAST) {
+  const N = Math.min(BATCH_SIZE, catalog.libros.length);
+  console.log("  selección:      ONLY_LAST" + (HEALING ? " + healing rotation" : " (sin healing)"));
+  console.log("  batch_size:     " + BATCH_SIZE);
+  console.log("  audit nuevos:   libros[0.." + (N-1) + "] (" + N + " libro" + (N>1?"s":"") + ")");
+  if (healingInfo) {
+    console.log("  audit healing:  libros[" + healingInfo.idx + "] = \"" + healingInfo.titulo.slice(0,50) + (healingInfo.titulo.length>50?"...":"") + "\"");
+    console.log("                  (rotation " + healingInfo.rotation_idx + " / pool " + healingInfo.pool_size + ")");
+  }
+} else {
+  console.log("  selección:      FULL CATALOG");
+}
+console.log("  min-preserve:   " + MIN_PRESERVE_RATIO);
+console.log("  libros a audit: " + librosToAudit.length);
 console.log("");
 
 const PHRASE_FIELDS = [
@@ -150,10 +199,13 @@ Responde JSON:
   const stats = { books: 0, phrases: 0, truncations: 0, fixed: 0, guardrail_skipped: 0, errors: 0 };
   const findings = [];
 
-  for (const libro of libros) {
+  for (let bookIdx = 0; bookIdx < librosToAudit.length; bookIdx++) {
+    const libro = librosToAudit[bookIdx];
+    const isHealing = healingInfo && bookIdx === librosToAudit.length - 1;
+    const labelPrefix = isHealing ? "🔁 [HEALING]" : "📖";
     stats.books++;
     const phrases = collectPhrases(libro);
-    process.stdout.write("📖 " + (libro.titulo?.slice(0,55) || "?") + " (" + phrases.length + ")... ");
+    process.stdout.write(labelPrefix + " " + (libro.titulo?.slice(0,55) || "?") + " (" + phrases.length + ")... ");
     let book_truncs = 0, book_fixed = 0, book_skipped = 0;
     for (const p of phrases) {
       stats.phrases++;
@@ -163,7 +215,6 @@ Responde JSON:
           stats.truncations++;
           book_truncs++;
 
-          // 🛡️ GUARDRAIL: si fixed_phrase es < 85% del original, sospechar
           let guardrailMsg = null;
           if (result.fixed_phrase) {
             const ratio = result.fixed_phrase.length / p.value.length;
@@ -171,14 +222,13 @@ Responde JSON:
               guardrailMsg = `fixed_phrase (${result.fixed_phrase.length} chars) is ${(ratio*100).toFixed(0)}% of original (${p.value.length} chars) — sospechoso, omitir`;
               result.fixed_phrase = null;
             }
-            // 🛡️ GUARDRAIL 2: si fixed_phrase NO empieza con los primeros 20 chars del original, sospechar
             else if (p.value.length > 30 && result.fixed_phrase.slice(0, Math.min(20, p.value.length)).trim() !== p.value.slice(0, Math.min(20, p.value.length)).trim()) {
               guardrailMsg = "fixed_phrase no empieza con el original — sospechoso, omitir";
               result.fixed_phrase = null;
             }
           }
 
-          findings.push({ libro: libro.titulo, field: p.field, idx: p.idx, original: p.value, ...result, guardrail: guardrailMsg });
+          findings.push({ libro: libro.titulo, field: p.field, idx: p.idx, original: p.value, ...result, guardrail: guardrailMsg, is_healing: isHealing });
 
           if (MODE === "fix" && result.fixed_phrase) {
             const ok = applyFix(libro, p, result.fixed_phrase);
@@ -210,7 +260,7 @@ Responde JSON:
     console.log("DETALLE (" + findings.length + " truncamientos):");
     findings.forEach((f, i) => {
       console.log("");
-      console.log((i+1) + ". 📖 " + f.libro);
+      console.log((i+1) + ". " + (f.is_healing ? "🔁 [HEALING] " : "📖 ") + f.libro);
       console.log("   campo:    " + f.field + (f.idx != null ? "[" + f.idx + "]" : ""));
       console.log("   ANTES (" + f.original.length + " chars):");
       console.log("      \"" + f.original.slice(0,160) + (f.original.length>160?"...":"") + "\"");
@@ -227,17 +277,40 @@ Responde JSON:
     const ts = new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
     const reportPath = "audit-reports/phrase-sanitizer-llm-" + ts + ".json";
     fs.mkdirSync("audit-reports", { recursive: true });
-    fs.writeFileSync(reportPath, JSON.stringify({ stats, findings, mode: MODE }, null, 2));
+    fs.writeFileSync(reportPath, JSON.stringify({ stats, findings, mode: MODE, healing: healingInfo }, null, 2));
     console.log("");
     console.log("📂 Report: " + reportPath);
   }
 
-  if (MODE === "fix" && stats.fixed > 0) {
-    const bak = CATALOG + ".bak-pre-llm-sanitizer-" + new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
-    fs.writeFileSync(bak, fs.readFileSync(CATALOG));
+  const hadFixes = MODE === "fix" && stats.fixed > 0;
+  const advanceCounter = ONLY_LAST && HEALING && healingInfo && MODE === "fix";
+
+  if (hadFixes || advanceCounter) {
+    if (advanceCounter) {
+      catalog.meta = catalog.meta || {};
+      catalog.meta.healing_rotation_idx = healingInfo.next_rotation;
+      catalog.meta.last_healing_book = healingInfo.titulo;
+      catalog.meta.last_healing_timestamp = new Date().toISOString();
+    }
+
+    if (hadFixes) {
+      const bak = CATALOG + ".bak-pre-llm-sanitizer-" + new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
+      fs.writeFileSync(bak, fs.readFileSync(CATALOG));
+      console.log("");
+      console.log("📦 Backup pre-fix:       " + bak);
+    }
+
     fs.writeFileSync(CATALOG, JSON.stringify(catalog, null, 2));
-    console.log("");
     console.log("✅ Catálogo actualizado: " + CATALOG);
-    console.log("📦 Backup pre-fix:       " + bak);
+    if (hadFixes) console.log("   • " + stats.fixed + " phrase" + (stats.fixed>1?"s":"") + " reparada" + (stats.fixed>1?"s":""));
+    if (advanceCounter) console.log("   • healing_rotation_idx: " + healingInfo.rotation_idx + " → " + healingInfo.next_rotation);
+  }
+
+  if (healingInfo) {
+    console.log("");
+    console.log("🔁 Healing rotation summary:");
+    console.log("   este run audit:  libros[" + healingInfo.idx + "] = \"" + healingInfo.titulo.slice(0,50) + "\"");
+    console.log("   próximo run idx: libros[" + (Math.min(BATCH_SIZE, catalog.libros.length) + healingInfo.next_rotation) + "]");
+    console.log("   pool healing:    " + healingInfo.pool_size + " libros (~" + healingInfo.pool_size + " runs por ciclo completo)");
   }
 })().catch(e => { console.error("Fatal:", e.message); process.exit(1); });
