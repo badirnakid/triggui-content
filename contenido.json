@@ -1,6 +1,862 @@
 {
   "libros": [
     {
+      "titulo": "The Shock Doctrine: The Rise of Disaster Capitalism",
+      "autor": "Naomi Klein",
+      "tagline": "Una crítica incisiva al capitalismo que se alimenta del sufrimiento ajeno.",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/98/0a/fd/980afdb7-4a1f-8d09-c67a-d6f132585fa0/9781429919487.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication6/v4/98/0a/fd/980afdb7-4a1f-8d09-c67a-d6f132585fa0/9781429919487.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "La doctrina del shock: el auge del capitalismo del desastre",
+      "titulo_en": "The Shock Doctrine: The Rise of Disaster Capitalism",
+      "idioma_original": "en",
+      "dimension": "Prosperidad",
+      "punto": "Cero",
+      "palabras": [
+        "indignación",
+        "frustración",
+        "desesperanza",
+        "resiliencia"
+      ],
+      "palabras_en": [
+        "exploitation",
+        "crisis",
+        "privatization",
+        "suffering"
+      ],
+      "frases": [
+        "🗺 Visualiza cómo cada crisis se convierte en un terreno de juego para el capitalismo del desastre.",
+        "🌅 Imagina una ciudad arrasada, donde las máquinas de construcción son precedidas por ejecutivos en tronos de poder.",
+        "🎧 ¿Qué intereses se benefician realmente de la desolación?",
+        "🕰 El sufrimiento se convierte en capital: en la economía del desastre, la tragedia es un activo."
+      ],
+      "frases_en": [
+        "🔭 Envision a city in ruins, where the rubble becomes a canvas for corporate interests to paint their ideas y visiones.",
+        "💫 Recognize the patterns: how does your response to crisis align with economic opportunity?",
+        "🏛 Imagine the waves of a tsunami; while lives are lost, corporations rush to capitalize on the cleanup.",
+        "🕰 In the shadow of disaster, the seeds of profit are sown, often at the expense of humanity."
+      ],
+      "frases_og": [
+        "🎯 El capitalismo del desastre transforma tragedias en beneficios.",
+        "🌱 ¿Cómo se siente tu voz en medio del caos?",
+        "🔮 Las crisis son el terreno fértil para el neoliberalismo.",
+        "🕊 Lo que se oculta tras el dolor son intereses económicos."
+      ],
+      "frases_og_en": [
+        "🎯 En medio del caos y la vulnerabilidad, el capitalismo del desastre encuentra su terreno fértil, prosperando a expensas de los más necesitados.",
+        "🌱 How many lives are reshaped by the greed hiding behind tragedy?",
+        "🔮 When crisis strikes, the market seizes the moment to transform.",
+        "🕊 Profit emerges from pain, a disturbing truth of our times."
+      ],
+      "colores": [
+        "#7ECBF1",
+        "#E86E30",
+        "#1354AE",
+        "#65400B"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD2D3",
+      "tarjeta": {
+        "titulo": "El capitalismo del desastre y su lógica",
+        "parrafoTop": "La explotación de crisis por el capitalismo no es un fenómeno nuevo, sino un patrón que se ha repetido a lo largo de la historia. [H]Desde Chile hasta Irak, las tragedias han servido como telones de fondo[/H] para implementar políticas económicas radicales bajo el manto de la necesidad.",
+        "subtitulo": "¿Qué significa realmente el capitalismo del desastre?",
+        "parrafoBot": "A medida que los desastres se convierten en oportunidades para la privatización, se revela una lógica inquietante: el sufrimiento humano es un motor de ganancias. [H]Las corporaciones no solo se benefician de la reconstrucción, sino que también redefinen lo que significa la recuperación, priorizando su propio beneficio[/H].",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El capitalismo del desastre y su lógica",
+        "parrafoTop": "La explotación de crisis por el capitalismo no es un fenómeno nuevo, sino un patrón que se ha repetido a lo largo de la historia. [H]Desde Chile hasta Irak, las tragedias han servido como telones de fondo[/H] para implementar políticas económicas radicales bajo el manto de la necesidad.",
+        "subtitulo": "¿Qué significa realmente el capitalismo del desastre?",
+        "parrafoBot": "A medida que los desastres se convierten en oportunidades para la privatización, se revela una lógica inquietante: el sufrimiento humano es un motor de ganancias. [H]Las corporaciones no solo se benefician de la reconstrucción, sino que también redefinen lo que significa la recuperación, priorizando su propio beneficio[/H].",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El capitalismo del desastre y su lógica",
+        "parrafoTop": "La explotación de crisis por el capitalismo no es un fenómeno nuevo, sino un patrón que se ha repetido a lo largo de la historia. [H]Desde Chile hasta Irak, las tragedias han servido como telones de fondo[/H] para implementar políticas económicas radicales bajo el manto de la necesidad.",
+        "subtitulo": "¿Qué significa realmente el capitalismo del desastre?",
+        "parrafoBot": "A medida que los desastres se convierten en oportunidades para la privatización, se revela una lógica inquietante: el sufrimiento humano es un motor de ganancias. [H]Las corporaciones no solo se benefician de la reconstrucción, sino que también redefinen lo que significa la recuperación, priorizando su propio beneficio[/H].",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Logic of Disaster Capitalism",
+        "parrafoTop": "The exploitation of crises by capitalism is not a new phenomenon; it is a repeating pattern throughout history. [H]From Chile to Iraq, tragedies have served as backdrops for implementing radical[/H] economic policies cloaked in necessity.",
+        "subtitulo": "What does disaster capitalism truly mean?",
+        "parrafoBot": "[H]As disasters become opportunities for privatization, an unsettling logic emerges: human suffering fuels profit.[/H] Corporations not only benefit from reconstruction efforts but also redefine what recovery means, prioritizing their profit over genuine community restoration.",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Logic of Disaster Capitalism",
+        "parrafoTop": "The exploitation of crises by capitalism is not a new phenomenon; it is a repeating pattern throughout history. [H]From Chile to Iraq, tragedies have served as backdrops for implementing radical[/H] economic policies cloaked in necessity.",
+        "subtitulo": "What does disaster capitalism truly mean?",
+        "parrafoBot": "[H]As disasters become opportunities for privatization, an unsettling logic emerges: human suffering fuels profit.[/H] Corporations not only benefit from reconstruction efforts but also redefine what recovery means, prioritizing their profit over genuine community restoration.",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Logic of Disaster Capitalism",
+        "parrafoTop": "The exploitation of crises by capitalism is not a new phenomenon; it is a repeating pattern throughout history. [H]From Chile to Iraq, tragedies have served as backdrops for implementing radical[/H] economic policies cloaked in necessity.",
+        "subtitulo": "What does disaster capitalism truly mean?",
+        "parrafoBot": "[H]As disasters become opportunities for privatization, an unsettling logic emerges: human suffering fuels profit.[/H] Corporations not only benefit from reconstruction efforts but also redefine what recovery means, prioritizing their profit over genuine community restoration.",
+        "style": {
+          "accent": "#129DE2",
+          "paper": "#CFD2D3",
+          "ink": "#171A1C",
+          "border": "#7C7E7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Shock%20Doctrine%3A%20The%20Rise%20of%20Disaster%20Capitalism%20Naomi%20Klein%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Shock%20Doctrine%3A%20The%20Rise%20of%20Disaster%20Capitalism%20Naomi%20Klein%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-19T20:05:54.920Z",
+        "workflow_run_id": "26122101275",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "2 — Activo (flow)",
+        "pilar": "negocio",
+        "hawkins_target": "voluntad (310)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "Equilibrio equidad existe?",
+        "nota_libro": "",
+        "sentimiento": "En decepción por injusticias o abusos absurdos en los negocios "
+      },
+      "_animo_promedio": 0.4,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "La doctrina del shock: el auge del capitalismo del desastre",
+          "titulo_en": "The Shock Doctrine: The Rise of Disaster Capitalism",
+          "autor_completo": "Naomi Klein",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "explotación de crisis por el capitalismo",
+            "privatización de la respuesta a desastres",
+            "capitalismo del desastre como economía emergente",
+            "el uso de momentos de shock para implementar políticas económicas",
+            "revolución económica de Milton Friedman"
+          ],
+          "key_terms": [
+            "capitalismo del desastre",
+            "privatización",
+            "crisis",
+            "shock",
+            "revolución de mercado"
+          ],
+          "authorial_voice_notes": "Naomi Klein utiliza un tono incisivo y crítico, combinando reportajes en profundidad con un análisis riguroso de las consecuencias sociales y económicas de las políticas neoliberales."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda el tema de la equidad a través de su crítica al capitalismo del desastre, que se beneficia de la desigualdad estructural y de las crisis que afectan desproporcionadamente a los más vulnerables. Klein argumenta que las políticas neoliberales implementadas en momentos de crisis intensifican la inequidad en lugar de ofrecer soluciones equitativas para la población afectada.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 210,
+          "saturation": "vivid",
+          "lightness_paper": "medium_light",
+          "temperature_shift": -10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Prosperidad",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "El capitalismo del desastre y su lógica",
+          "parrafoTop": "La explotación de crisis por el capitalismo no es un fenómeno nuevo, sino un patrón que se ha repetido a lo largo de la historia. Desde Chile hasta Irak, las tragedias han servido como telones de fondo para implementar políticas económicas radicales bajo el manto de la necesidad. Este proceso no solo transforma la geografía, sino que también afecta a las sociedades involucradas.",
+          "subtitulo": "¿Qué significa realmente el capitalismo del desastre?",
+          "parrafoBot": "A medida que los desastres se convierten en oportunidades para la privatización, se revela una lógica inquietante: el sufrimiento humano es un motor de ganancias. Las corporaciones no solo se benefician de la reconstrucción, sino que también redefinen lo que significa la recuperación, priorizando su propio beneficio."
+        },
+        "card_en": {
+          "titulo": "The Logic of Disaster Capitalism",
+          "parrafoTop": "The exploitation of crises by capitalism is not a new phenomenon; it is a repeating pattern throughout history. From Chile to Iraq, tragedies have served as backdrops for implementing radical economic policies cloaked in necessity. This process not only transforms the geographical landscape but also reshapes the lives of countless individuals affected by these changes.",
+          "subtitulo": "What does disaster capitalism truly mean?",
+          "parrafoBot": "As disasters become opportunities for privatization, an unsettling logic emerges: human suffering fuels profit. Corporations not only benefit from reconstruction efforts but also redefine what recovery means, prioritizing their profit over genuine community restoration."
+        },
+        "emotional_words_es": [
+          "indignación",
+          "frustración",
+          "desesperanza",
+          "resiliencia"
+        ],
+        "emotional_words_en": [
+          "exploitation",
+          "crisis",
+          "privatization",
+          "suffering"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🎯 El capitalismo del desastre transforma tragedias en beneficios.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 ¿Cómo se siente tu voz en medio del caos?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 Las crisis son el terreno fértil para el neoliberalismo.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.2,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🕊 Lo que se oculta tras el dolor son intereses económicos.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🎯 En medio del caos y la vulnerabilidad, el capitalismo del desastre encuentra su terreno fértil, prosperando a expensas de los más necesitados.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 How many lives are reshaped by the greed hiding behind tragedy?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 When crisis strikes, the market seizes the moment to transform.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🕊 Profit emerges from pain, a disturbing truth of our times.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.2,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 Visualiza cómo cada crisis se convierte en un terreno de juego para el capitalismo del desastre.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina una ciudad arrasada, donde las máquinas de construcción son precedidas por ejecutivos en tronos de poder.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "🎧 ¿Qué intereses se benefician realmente de la desolación?",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 El sufrimiento se convierte en capital: en la economía del desastre, la tragedia es un activo.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Envision a city in ruins, where the rubble becomes a canvas for corporate interests to paint their ideas y visiones.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Recognize the patterns: how does your response to crisis align with economic opportunity?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Imagine the waves of a tsunami; while lives are lost, corporations rush to capitalize on the cleanup.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 In the shadow of disaster, the seeds of profit are sown, often at the expense of humanity.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.9,
+          "specificity": 0.95,
+          "grounding_judge": 0.9,
+          "combined": 0.93,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.8999999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "identity_sealed_with_evidence",
+        "tier_reached": 1.5,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "The Shock Doctrine: The Rise of Disaster Capitalism",
+          "autor_completo": "Naomi Klein",
+          "año": "2010",
+          "editorial": null,
+          "categorias": [
+            "Negocios y finanzas personales",
+            "Libros",
+            "Política y actualidad",
+            "Historia"
+          ]
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content directly references key concepts from the book, such as 'capitalismo del desastre' and the exploitation of crises for economic gain. It discusses specific examples like Chile and Iraq, aligning closely with Klein's arguments. The phrases reflect the book's themes of disaster capitalism and the transformation of crises into opportunities for privatization, making it highly an-"
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content closely reflects the themes of 'The Shock Doctrine,' particularly the exploitation of crises for economic gain, which is central to Klein's argument. It uses specific concepts like 'disaster capitalism' and mentions historical contexts (Chile, Iraq) relevant to the book. However, it lacks direct quotes or detailed references to Klein's analysis, which prevents it from achieving a full "
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.8,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y análisis del concepto sin referencias meta.",
+          "elapsed_ms": 1077,
+          "usage": {
+            "prompt_tokens": 424,
+            "completion_tokens": 26,
+            "total_tokens": 450,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y análisis en primera persona sobre el tema.",
+          "elapsed_ms": 1159,
+          "usage": {
+            "prompt_tokens": 390,
+            "completion_tokens": 27,
+            "total_tokens": 417,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 867,
+        "total_ms": 1159
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 210,
+          "adjusted_hue": 200,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": -10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7ECBF1",
+          "--palette-1": "#E86E30",
+          "--palette-2": "#1354AE",
+          "--palette-3": "#65400B",
+          "--accent": "#129DE2",
+          "--accent-soft": "#129DE238",
+          "--accent-glow": "#129DE26b",
+          "--paper": "#CFD2D3",
+          "--ink": "#171A1C",
+          "--border": "#7C7E7F",
+          "--highlight-bg": "#108AC7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "pregunta_directa",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 3 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-19T20-05-54",
+      "_crono": {
+        "dia": "martes",
+        "hora": 14,
+        "franja": "tarde",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 68637,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 14983,
+          "palette": 0,
+          "content_es": 18213,
+          "judge_es": 1170,
+          "content_en": 16874,
+          "judge_en": 1169,
+          "voice": 867,
+          "voice_extended": 15361,
+          "highlight_judge_es_parrafoTop": 640,
+          "highlight_judge_es_parrafoTop_retry": 638,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_es_parrafoBot_retry": 665,
+          "highlight_judge_en_parrafoTop": 656,
+          "highlight_judge_en_parrafoTop_retry": 643,
+          "highlight_judge_en_parrafoBot": 651,
+          "csal": 3225
+        },
+        "elapsed_ms_total": 93026,
+        "elapsed_ms_by_phase": {
+          "grounding": 9,
+          "anchors": 12154,
+          "palette": 1,
+          "cover_fallback": 56,
+          "content_es": 33936,
+          "judge_es": 1990,
+          "content_en": 35838,
+          "judge_en": 2059,
+          "voice": 1159,
+          "voice_extended": 5822,
+          "highlight_judge": 7992,
+          "lens_compatibility": 2088,
+          "csal": 21055,
+          "post_processing": 31143
+        },
+        "llm_calls_count": 40,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 3,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.7,
+        "self-knowledge": 0.1,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.5,
+          "negocio": 0.9,
+          "familia": 0,
+          "espiritu": 0,
+          "relaciones": 0,
+          "finanzas": 0.8
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me doy cuenta de que las políticas económicas se aprovechan de las tragedias",
+          "después de un desastre natural, al ver cómo las empresas se instalan rápidamente en la zona",
+          "cuando escucho sobre privatizaciones en medio de crisis sociales",
+          "antes de una manifestación, al pensar en cómo se manipulan las emociones colectivas",
+          "cuando leo sobre el impacto de la guerra en la economía local y global",
+          "cuando me siento impotente ante el poder de las grandes corporaciones en situaciones de emergencia",
+          "después de ver un documental sobre la reconstrucción de una ciudad tras un desastre",
+          "cuando me pregunto quién se beneficia realmente de la pobreza en mi país",
+          "cuando reviso las noticias y veo cómo se utilizan crisis para impulsar agendas políticas",
+          "antes de votar, reflexionando sobre las implicaciones de las políticas neoliberales en mi comunidad.",
+          "cuando escucho hablar de 'reformas' en situaciones de crisis, me pregunto qué hay detrás",
+          "cuando veo la respuesta gubernamental a una crisis y dudo de su sinceridad.",
+          "cuando analizo cómo los medios informan sobre desastres y crisis económicas.",
+          "cuando me doy cuenta de que mi comunidad está siendo injustamente afectada por decisiones políticas.",
+          "cuando siento que el miedo se usa como una herramienta para implementar cambios económicos.",
+          "cuando veo que mi ciudad se transforma tras un desastre y me pregunto quiénes son los actores detrás de esa transformación.",
+          "cuando me enfrento a la realidad de que la ayuda humanitaria puede estar ligada a intereses corporativos.",
+          "cuando reflexiono sobre la desigualdad que se profundiza tras cada crisis.",
+          "cuando escucho a líderes políticos hablar de 'oportunidades' tras una catástrofe.",
+          "cuando me siento abrumado por la manipulación de la información en tiempos de crisis.",
+          "cuando discuto con amigos sobre las verdaderas intenciones detrás de las políticas económicas en tiempos de desastre.",
+          "cuando me doy cuenta de que las soluciones rápidas a los problemas complejos a menudo benefician a unos pocos.",
+          "cuando reviso los informes de organizaciones que analizan la relación entre crisis y capitalismo.",
+          "cuando me doy cuenta de que la historia se repite en cada desastre, y siempre hay quienes sacan provecho.",
+          "cuando reflexiono sobre la ética de las empresas que entran en zonas de desastre.",
+          "cuando me doy cuenta de que las promesas de reconstrucción a menudo se rompen.",
+          "cuando siento que las voces de las comunidades afectadas son ignoradas.",
+          "cuando me encuentro frustrado por la falta de responsabilidad de las corporaciones en crisis.",
+          "cuando me doy cuenta de que la respuesta a una crisis no es neutra, sino que está cargada de intereses económicos.",
+          "cuando pienso en cómo se redefinen los derechos humanos en el contexto de desastres.",
+          "cuando analizo el impacto de la globalización en las respuestas a crisis locales.",
+          "cuando veo cómo la desinformación se convierte en parte de la narrativa de una crisis.",
+          "cuando me doy cuenta de que cada desastre es una oportunidad para que algunos acumulen poder."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "ira",
+            "impotencia",
+            "tristeza",
+            "desconfianza",
+            "incredulidad",
+            "sorpresa",
+            "miedo",
+            "esperanza",
+            "resiliencia"
+          ],
+          "objetos": [
+            "crisis",
+            "desastre",
+            "capitalismo",
+            "reconstrucción",
+            "privatización",
+            "ayuda humanitaria",
+            "corporaciones",
+            "economía",
+            "gobierno",
+            "intereses"
+          ],
+          "contextos": [
+            "ciudad devastada",
+            "zona de desastre",
+            "reunión comunitaria",
+            "protesta",
+            "noticias",
+            "documental",
+            "foro político",
+            "rescate",
+            "estudio académico",
+            "conferencia"
+          ],
+          "verbos": [
+            "explotar",
+            "privatizar",
+            "reconstruir",
+            "manipular",
+            "intervenir",
+            "analizar",
+            "protestar",
+            "informar",
+            "investigar",
+            "cuestionar"
+          ]
+        },
+        "concept_tags": [
+          "capitalismo de desastre",
+          "explotación de crisis",
+          "privatización de la ayuda",
+          "intereses corporativos en desastres",
+          "impacto de la guerra en la economía",
+          "manipulación de la opinión pública",
+          "políticas neoliberales",
+          "respuesta a desastres",
+          "revolución económica",
+          "Milton Friedman"
+        ],
+        "anti_patterns": [
+          "no es un manual de autoayuda",
+          "no ofrece soluciones simples a problemas complejos",
+          "no se centra en teorías económicas abstractas sin contexto",
+          "no es un libro sobre el optimismo en tiempos de crisis"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🏚️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🏗️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🧐"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "💰"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una afirmación que podría ser parte de un argumento o reflexión del autor, sugiriendo una voz interna del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser una reflexión o pregunta que podría estar dirigida a los personajes o al lector, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una afirmación que podría ser parte de un argumento o reflexión del autor, sugiriendo que está escrita dentro del contexto del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría formar parte del contenido del libro, sugiriendo una voz autoral que explora temas profundos."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una idea que parece ser parte de un argumento o reflexión del autor, sugiriendo un análisis interno sobre el capitalismo, lo que indica que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una escena descriptiva que parece ser parte de la narrativa del libro, invitando al lector a imaginar un entorno específico."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta que invita a la reflexión, típica de un texto que se encuentra dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión profunda que parece ser parte del contenido del libro, mostrando la voz del autor y su perspectiva sobre el sufrimiento y la economía."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a narrative style that suggests it is part of the author's voice within the book, discussing themes directly related to the content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that suggests an introspective exploration typical of narrative voice, indicating it is likely part of the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a direct observation or insight that feels like it could be part of the narrative or argument within the book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a reflective thought that feels like an introspective insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase evokes imagery and sets a scene, suggesting it is part of the narrative or descriptive prose within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a direct engagement with the reader, suggesting introspection and analysis, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase evokes imagery and emotion, suggesting a narrative style typical of an author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a reflective thought that feels like it could be part of the narrative or thematic exploration within the book, rather than an external commentary."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-19T20:07:59.088Z",
+      "_edicion_numero": 56
+    },
+    {
       "titulo": "Capital in the Twenty-First Century",
       "autor": "Thomas Piketty",
       "tagline": "Un análisis profundo sobre la desigualdad económica y su evolución.",
@@ -62,7 +918,7 @@
       ],
       "fondo": "#EFEFF0",
       "tarjeta": {
-        "titulo": "Desigualdad persistente y su raíz",
+        "titulo": "Desigualdad persistente y su raíz en la sociedad actual.",
         "parrafoTop": "[H]La tendencia de los retornos sobre el capital a superar el crecimiento[/H] económico ha sido un motor constante de desigualdad. Este fenómeno no solo es un vestigio de nuestra historia económica, sino que refleja las estructuras que perpetúan la concentración de la riqueza en manos de unos pocos.",
         "subtitulo": "¿Cómo se perpetúa esta desigualdad?",
         "parrafoBot": "El análisis de datos históricos sobre desigualdad económica revela que, a pesar de los avances, seguimos atrapados en un ciclo donde la riqueza se concentra. [H]La política económica puede ser un vehículo de cambio[/H], pero requiere una comprensión profunda de estos patrones para ser efectiva.",
@@ -202,14 +1058,14 @@
           "franja_ideal": "tarde"
         },
         "card_es": {
-          "titulo": "Desigualdad persistente y su raíz",
-          "parrafoTop": "La tendencia de los retornos sobre el capital a superar el crecimiento económico ha sido un motor constante de desigualdad. Este fenómeno no solo es un vestigio de nuestra historia económica, sino que refleja las estructuras que perpetúan la concentración de la riqueza en manos de unos pocos. La inercia de estas dinám ",
+          "titulo": "Desigualdad persistente y su raíz en la sociedad actual.",
+          "parrafoTop": "La tendencia de los retornos sobre el capital a superar el crecimiento económico ha sido un motor constante de desigualdad. Este fenómeno no solo es un vestigio de nuestra historia económica, sino que refleja las estructuras que perpetúan la concentración de la riqueza en manos de unos pocos. La inercia de estas dinámicas sociales y económicas es difícil de romper.",
           "subtitulo": "¿Cómo se perpetúa esta desigualdad?",
           "parrafoBot": "El análisis de datos históricos sobre desigualdad económica revela que, a pesar de los avances, seguimos atrapados en un ciclo donde la riqueza se concentra. La política económica puede ser un vehículo de cambio, pero requiere una comprensión profunda de estos patrones para ser efectiva."
         },
         "card_en": {
           "titulo": "Persistent Inequality and Its Roots",
-          "parrafoTop": "The tendency for returns on capital to outpace economic growth has been a consistent driver of inequality. This phenomenon is not merely a relic of our economic history; it reflects the structures that perpetuate the concentration of wealth in the hands of a few. The inertia of these dynamics challenges our ability to ",
+          "parrafoTop": "The tendency for returns on capital to outpace economic growth has been a consistent driver of inequality. This phenomenon is not merely a relic of our economic history; it reflects the structures that perpetuate the concentration of wealth in the hands of a few. The inertia of these dynamics challenges our ability to address the systemic issues that contribute to this disparity.",
           "subtitulo": "How is this inequality perpetuated?",
           "parrafoBot": "Analyzing historical data on economic inequality reveals that, despite advancements, we remain trapped in a cycle where wealth continues to concentrate. Economic policy can be a vehicle for change, but it requires a deep understanding of these patterns to be effective."
         },
@@ -6808,7 +7664,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-05-19T15:38:39.420Z"
+      "_audit_timestamp": "2026-05-19T20:08:04.329Z"
     },
     {
       "titulo": "The Meaning Revolution: The Power of Transcendent Leadership",
@@ -33698,7 +34554,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-05-19T15:38:39.421Z"
+      "_audit_timestamp": "2026-05-19T20:08:04.330Z"
     },
     {
       "titulo": "Cómo ganar amigos",
@@ -36951,7 +37807,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-05-19T15:38:39.421Z"
+      "_audit_timestamp": "2026-05-19T20:08:04.330Z"
     },
     {
       "titulo": "El gato que amaba los libros",
@@ -46775,7 +47631,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-05-19T15:38:39.421Z"
+      "_audit_timestamp": "2026-05-19T20:08:04.330Z"
     },
     {
       "titulo": "La escuela de la grandeza",
@@ -51665,7 +52521,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-05-19T15:38:39.421Z"
+      "_audit_timestamp": "2026-05-19T20:08:04.330Z"
     },
     {
       "titulo": "Vida contemplativa",
@@ -52373,11 +53229,14 @@
   "meta": {
     "version": "1.0.0",
     "generated_at": "2026-05-13T23:06:31Z",
-    "total": 63,
+    "total": 64,
     "note": "Catálogo adultos — recreado tras commit ee302fc9 (2026-05-13). Listo para generación.",
-    "next_edition_number": 56,
+    "next_edition_number": 57,
     "last_reset": "2026-05-15T15:54:22.998Z",
     "last_reset_reason": "sprint-v12-sinfonia-clean-start",
-    "last_audit": "2026-05-19T15:38:39.421Z"
+    "last_audit": "2026-05-19T20:08:04.330Z",
+    "healing_rotation_idx": 1,
+    "last_healing_book": "Capital in the Twenty-First Century",
+    "last_healing_timestamp": "2026-05-19T20:11:17.092Z"
   }
 }
