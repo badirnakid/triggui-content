@@ -1,6 +1,860 @@
 {
   "libros": [
     {
+      "titulo": "Ningún problema",
+      "autor": "Liz Fosslien",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/15/54/cf/1554cf9f-ddb0-7b26-ed1f-0681b91f9150/9788411320825.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/15/54/cf/1554cf9f-ddb0-7b26-ed1f-0681b91f9150/9788411320825.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Ningún problema",
+      "titulo_en": "No Hard Feelings",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "comprensión",
+        "libertad",
+        "conexión",
+        "autenticidad"
+      ],
+      "palabras_en": [
+        "clarity",
+        "engagement",
+        "well-being",
+        "performance"
+      ],
+      "frases": [
+        "⏳ Tómate un momento para identificar cómo te sientes realmente en el trabajo.",
+        "🗺 En medio del ajetreo diario, me detengo un momento para reflexionar sobre las emociones que flotan en el ambiente de trabajo.",
+        "🌅 Imagina un equipo donde las emociones se expresan libremente y la conexión se fortalece.",
+        "🚶 Emociones reprimidas son como un río represado: la presión siempre encuentra una salida."
+      ],
+      "frases_en": [
+        "🚶 Notice how your body feels when you acknowledge your emotions at work.",
+        "🫁 What emotions have you been ignoring today?",
+        "🌌 Healthy workplaces thrive on the open expression of feelings.",
+        "☀ Imagine a team where everyone feels free to share their emotions."
+      ],
+      "frases_og": [
+        "🔁 La ansiedad puede ser un signo de que necesitas ajustar tus límites.",
+        "🛡 ¿Qué emociones has estado ignorando en tu día a día laboral?",
+        "🎯 Expresar tus emociones puede ser el primer paso hacia una mayor efecti.",
+        "🌱 Aceptar las emociones en el trabajo es un camino hacia la verdadera ef."
+      ],
+      "frases_og_en": [
+        "🔁 When we take a moment to acknowledge our emotions, we can begin to shift the dynamics of our workplace interactions.",
+        "🛡 How often do we underestimate the power of our feelings?",
+        "🎯 When we allow ourselves to express our feelings, we create an environment where our team's full potential can flourish.",
+        "🌱 When we keep our feelings bottled up, we risk creating an environment filled with misunderstandings and chaos."
+      ],
+      "colores": [
+        "#7EB8F1",
+        "#305EE8",
+        "#3A13AE",
+        "#380B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La expresión como estrategia en el trabajo",
+        "parrafoTop": "Las emociones son una parte inherente de la experiencia humana, y reprimirlas en el trabajo puede tener consecuencias negativas que van más allá de la falta de productividad. [H]Ignorarlas puede llevar a una erosión de la salud mental[/H] y una disminución de la satisfacción laboral.",
+        "subtitulo": "¿Cómo influyen las emociones en nuestra efectividad?",
+        "parrafoBot": "[H]La gestión emocional se convierte así en una herramienta clave para fomentar un ambiente laboral positivo[/H]. Cuando expresamos nuestras emociones de manera adecuada, no solo mejoramos nuestro bienestar, sino que también podemos elevar el rendimiento del equipo en su conjunto.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La expresión como estrategia en el trabajo",
+        "parrafoTop": "Las emociones son una parte inherente de la experiencia humana, y reprimirlas en el trabajo puede tener consecuencias negativas que van más allá de la falta de productividad. [H]Ignorarlas puede llevar a una erosión de la salud mental[/H] y una disminución de la satisfacción laboral.",
+        "subtitulo": "¿Cómo influyen las emociones en nuestra efectividad?",
+        "parrafoBot": "[H]La gestión emocional se convierte así en una herramienta clave para fomentar un ambiente laboral positivo[/H]. Cuando expresamos nuestras emociones de manera adecuada, no solo mejoramos nuestro bienestar, sino que también podemos elevar el rendimiento del equipo en su conjunto.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La expresión como estrategia en el trabajo",
+        "parrafoTop": "Las emociones son una parte inherente de la experiencia humana, y reprimirlas en el trabajo puede tener consecuencias negativas que van más allá de la falta de productividad. [H]Ignorarlas puede llevar a una erosión de la salud mental[/H] y una disminución de la satisfacción laboral.",
+        "subtitulo": "¿Cómo influyen las emociones en nuestra efectividad?",
+        "parrafoBot": "[H]La gestión emocional se convierte así en una herramienta clave para fomentar un ambiente laboral positivo[/H]. Cuando expresamos nuestras emociones de manera adecuada, no solo mejoramos nuestro bienestar, sino que también podemos elevar el rendimiento del equipo en su conjunto.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Expressing Emotions at Work",
+        "parrafoTop": "Emotions are an inherent part of the human experience, and suppressing them at work can lead to consequences that extend far beyond a lack of productivity. [H]Ignoring our feelings can result in declining mental health and a decrease[/H] in job satisfaction.",
+        "subtitulo": "How do emotions affect our effectiveness?",
+        "parrafoBot": "[H]Emotional management becomes a crucial tool in fostering a positive work environment.[/H] When we express our emotions appropriately, we not only enhance our well-being but also elevate the performance of the entire team.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Expressing Emotions at Work",
+        "parrafoTop": "Emotions are an inherent part of the human experience, and suppressing them at work can lead to consequences that extend far beyond a lack of productivity. [H]Ignoring our feelings can result in declining mental health and a decrease[/H] in job satisfaction.",
+        "subtitulo": "How do emotions affect our effectiveness?",
+        "parrafoBot": "[H]Emotional management becomes a crucial tool in fostering a positive work environment.[/H] When we express our emotions appropriately, we not only enhance our well-being but also elevate the performance of the entire team.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Expressing Emotions at Work",
+        "parrafoTop": "Emotions are an inherent part of the human experience, and suppressing them at work can lead to consequences that extend far beyond a lack of productivity. [H]Ignoring our feelings can result in declining mental health and a decrease[/H] in job satisfaction.",
+        "subtitulo": "How do emotions affect our effectiveness?",
+        "parrafoBot": "[H]Emotional management becomes a crucial tool in fostering a positive work environment.[/H] When we express our emotions appropriately, we not only enhance our well-being but also elevate the performance of the entire team.",
+        "style": {
+          "accent": "#1212E2",
+          "paper": "#EFEFF0",
+          "ink": "#17171C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ning%C3%BAn%20problema%20Liz%20Fosslien%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+No%20Hard%20Feelings%20Liz%20Fosslien%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-29T23:21:47.455Z",
+        "workflow_run_id": "26667177554",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "ansiedad por no terminar 100% algo que realmente reditue",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.46,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Ningún problema",
+          "titulo_en": "No Hard Feelings",
+          "autor_completo": "Liz Fosslien",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de expresar las emociones en el trabajo",
+            "estrategias para manejar la ansiedad laboral",
+            "cómo lidiar con la inseguridad y los celos en el entorno profesional",
+            "técnicas para fomentar la felicidad y la productividad mediante la gestión emocional",
+            "la conexión entre emociones y eficacia en el trabajo"
+          ],
+          "key_terms": [
+            "gestión emocional",
+            "productividad",
+            "felicidad laboral",
+            "inseguridad",
+            "ansiedad",
+            "autoexpresión"
+          ],
+          "authorial_voice_notes": "La voz de Liz Fosslien es clara, accesible y empática, ofreciendo un enfoque práctico para abordar las emociones en el lugar de trabajo, usando ejemplos relevantes y un tono alentador."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro 'Ningún problema' aborda la ansiedad por no terminar las tareas de manera 100%, enfatizando la necesidad de manejar las emociones de forma productiva para mantener la salud mental y la eficacia laboral. Al ofrecer estrategias concretas para lidiar con la ansiedad y la inseguridad, se alinea con el tema de la lucha interna que enfrentan muchos cuando sienten la presión de cumplir con las expectativas laborales.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 230,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La expresión como estrategia en el trabajo",
+          "parrafoTop": "Las emociones son una parte inherente de la experiencia humana, y reprimirlas en el trabajo puede tener consecuencias negativas que van más allá de la falta de productividad. Ignorarlas puede llevar a una erosión de la salud mental y una disminución de la satisfacción laboral. Aprender a reconocer y expresar lo que s s",
+          "subtitulo": "¿Cómo influyen las emociones en nuestra efectividad?",
+          "parrafoBot": "La gestión emocional se convierte así en una herramienta clave para fomentar un ambiente laboral positivo. Cuando expresamos nuestras emociones de manera adecuada, no solo mejoramos nuestro bienestar, sino que también podemos elevar el rendimiento del equipo en su conjunto."
+        },
+        "card_en": {
+          "titulo": "Expressing Emotions at Work",
+          "parrafoTop": "Emotions are an inherent part of the human experience, and suppressing them at work can lead to consequences that extend far beyond a lack of productivity. Ignoring our feelings can result in declining mental health and a decrease in job satisfaction. Learning to recognize and express what we feel is essential for a ",
+          "subtitulo": "How do emotions affect our effectiveness?",
+          "parrafoBot": "Emotional management becomes a crucial tool in fostering a positive work environment. When we express our emotions appropriately, we not only enhance our well-being but also elevate the performance of the entire team."
+        },
+        "emotional_words_es": [
+          "comprensión",
+          "libertad",
+          "conexión",
+          "autenticidad"
+        ],
+        "emotional_words_en": [
+          "clarity",
+          "engagement",
+          "well-being",
+          "performance"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔁 La ansiedad puede ser un signo de que necesitas ajustar tus límites.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 ¿Qué emociones has estado ignorando en tu día a día laboral?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🎯 Expresar tus emociones puede ser el primer paso hacia una mayor efecti.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 Aceptar las emociones en el trabajo es un camino hacia la verdadera ef.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔁 When we take a moment to acknowledge our emotions, we can begin to shift the dynamics of our workplace interactions.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 How often do we underestimate the power of our feelings?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 When we allow ourselves to express our feelings, we create an environment where our team's full potential can flourish.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🌱 When we keep our feelings bottled up, we risk creating an environment filled with misunderstandings and chaos.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Tómate un momento para identificar cómo te sientes realmente en el trabajo.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 En medio del ajetreo diario, me detengo un momento para reflexionar sobre las emociones que flotan en el ambiente de trabajo.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un equipo donde las emociones se expresan libremente y la conexión se fortalece.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Emociones reprimidas son como un río represado: la presión siempre encuentra una salida.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Notice how your body feels when you acknowledge your emotions at work.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "breath",
+            "phrase": "🫁 What emotions have you been ignoring today?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "space",
+            "phrase": "🌌 Healthy workplaces thrive on the open expression of feelings.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "light",
+            "phrase": "☀ Imagine a team where everyone feels free to share their emotions.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.92,
+          "grounding_judge": 0.8,
+          "combined": 0.89,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9241379310344827,
+            "judgeScore": 0.8
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Ningún problema",
+          "autor_completo": "Liz Fosslien",
+          "titulo_api": "Ningún problema",
+          "autor_api": "Liz Fosslien & Mollie West Duffy",
+          "año": "2022",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1624014582",
+          "categorias": [
+            "Psicología",
+            "Libros",
+            "Salud, mente y cuerpo"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/ning%C3%BAn-problema/id1624014582?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "El contenido generado refleja conceptos específicos del libro, como la importancia de expresar emociones en el trabajo y su impacto en la salud mental y la productividad. Sin embargo, algunas partes son algo generales y podrían aplicarse a otros libros sobre gestión emocional. Aún así, se ancla bien a la sinopsis al abordar la gestión emocional como clave para el bienestar laboral."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content closely aligns with the themes of emotional expression and management in the workplace as described in the official synopsis of 'Ningún problema.' It emphasizes the importance of recognizing and expressing emotions to improve mental health and productivity, which are key concepts from the book. However, it lacks specific references to the book's unique approach or terminology"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Tono directo y enfoque en la experiencia emocional en el trabajo.",
+          "elapsed_ms": 850,
+          "usage": {
+            "prompt_tokens": 404,
+            "completion_tokens": 28,
+            "total_tokens": 432,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Tono directo y enfoque en la experiencia emocional en el trabajo.",
+          "elapsed_ms": 872,
+          "usage": {
+            "prompt_tokens": 386,
+            "completion_tokens": 28,
+            "total_tokens": 414,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 846,
+        "total_ms": 872
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 230,
+          "adjusted_hue": 240,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "15.54",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EB8F1",
+          "--palette-1": "#305EE8",
+          "--palette-2": "#3A13AE",
+          "--palette-3": "#380B65",
+          "--accent": "#1212E2",
+          "--accent-soft": "#1212E238",
+          "--accent-glow": "#1212E26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17171C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1010C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_uncorrectable",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-05-29T23-21-47",
+      "_crono": {
+        "dia": "viernes",
+        "hora": 17,
+        "franja": "tarde",
+        "energia": 0.9,
+        "modo": "apertura_semana",
+        "descripcion_dia": "Viernes baja intensidad, abre reflexión de semana. Tono amplio.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 68396,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 14750,
+          "palette": 0,
+          "content_es": 17745,
+          "judge_es": 922,
+          "content_en": 16427,
+          "judge_en": 904,
+          "voice": 846,
+          "voice_extended": 16802,
+          "highlight_judge_es_parrafoTop": 654,
+          "highlight_judge_es_parrafoBot": 646,
+          "highlight_judge_es_parrafoBot_retry": 648,
+          "highlight_judge_en_parrafoTop": 640,
+          "highlight_judge_en_parrafoBot": 643,
+          "csal": 8809
+        },
+        "elapsed_ms_total": 92290,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 10342,
+          "palette": 1,
+          "cover_fallback": 76,
+          "content_es": 37835,
+          "judge_es": 2787,
+          "content_en": 29976,
+          "judge_en": 4694,
+          "voice": 872,
+          "voice_extended": 5702,
+          "highlight_judge": 5008,
+          "lens_compatibility": 1791,
+          "csal": 78893,
+          "post_processing": 85699
+        },
+        "llm_calls_count": 43,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 4,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.8,
+          "familia": 0.1,
+          "espiritu": 0.2,
+          "relaciones": 0.7,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando siento ansiedad antes de una reunión importante",
+          "cuando no sé cómo hablar de mis emociones en el trabajo",
+          "después de recibir críticas y sentirme inseguro",
+          "cuando los celos me abruman al ver el éxito de un compañero",
+          "antes de una evaluación de desempeño y me siento nervioso",
+          "cuando siento que mi productividad está afectada por mis emociones",
+          "cuando no puedo concentrarme por la presión emocional en el trabajo",
+          "después de un conflicto con un colega y siento enojo",
+          "cuando me siento abrumado por las expectativas en el trabajo",
+          "al lidiar con el estrés constante del entorno laboral",
+          "cuando tengo miedo de expresar mis ideas por inseguridad",
+          "después de un día laboral difícil y me siento exhausto emocionalmente",
+          "cuando me siento aislado por no poder comunicar mis emociones",
+          "cuando dudo de mis capacidades frente a un nuevo proyecto",
+          "al enfrentar un cambio organizacional que me genera ansiedad",
+          "cuando las emociones me impiden tomar decisiones claras",
+          "cuando la presión de los plazos me causa ansiedad",
+          "al sentir que mis emociones no son valoradas en el trabajo",
+          "cuando tengo que manejar un equipo y me siento inseguro",
+          "al querer mejorar mi bienestar emocional en el trabajo",
+          "antes de dar una presentación importante y siento pánico",
+          "después de una semana estresante y quiero encontrar alivio",
+          "cuando quiero aprender a manejar mejor mis emociones en el trabajo",
+          "al sentir que mis emociones me hacen menos eficiente",
+          "cuando me doy cuenta de que estoy reprimiendo mis sentimientos",
+          "al buscar formas de ser más feliz en mi entorno laboral",
+          "después de una discusión con mi jefe y no sé cómo manejarlo",
+          "cuando quiero dejar de sentirme culpable por mis emociones",
+          "al intentar balancear mi vida laboral y emocional",
+          "cuando siento que mi rendimiento está siendo afectado por mi estrés"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "inseguridad",
+            "celos",
+            "felicidad",
+            "productividad",
+            "estrés",
+            "enojo",
+            "miedo",
+            "nervios",
+            "culpa"
+          ],
+          "objetos": [
+            "críticas",
+            "evaluación de desempeño",
+            "plazos",
+            "reuniones",
+            "presentación",
+            "equipo",
+            "proyecto",
+            "conflictos",
+            "ideas",
+            "expectativas"
+          ],
+          "contextos": [
+            "reunión de trabajo",
+            "evaluación de desempeño",
+            "conflicto laboral",
+            "cambio organizacional",
+            "entorno laboral",
+            "ajetreo diario",
+            "día laboral difícil",
+            "semana estresante",
+            "presentación importante",
+            "discusión con jefe"
+          ],
+          "verbos": [
+            "expresar",
+            "manejar",
+            "sentir",
+            "hablar",
+            "concentrarse",
+            "tomar decisiones",
+            "comunicar",
+            "dudar",
+            "mejorar",
+            "balancear"
+          ]
+        },
+        "concept_tags": [
+          "gestión emocional en el trabajo",
+          "ansiedad en el entorno laboral",
+          "expresión de emociones",
+          "inseguridad profesional",
+          "celos entre colegas",
+          "mejora de la productividad emocional",
+          "bienestar emocional laboral",
+          "manejo del estrés laboral",
+          "comunicación emocional efectiva",
+          "salud emocional en el trabajo"
+        ],
+        "anti_patterns": [
+          "cuando buscas técnicas de productividad sin enfoque en las e",
+          "si necesitas estrategias de liderazgo sin considerar las em",
+          "si buscas resolver conflictos laborales sin hablar de emocio",
+          "cuando prefieres ignorar las emociones en el lugar de traba"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🏢"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👀"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌊"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro sobre salud mental, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o un ejercicio dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase suena como un consejo o reflexión que podría estar dentro de un texto, sugiriendo un proceso personal."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase parece ser parte de un argumento o reflexión del autor sobre la aceptación emocional, lo que sugiere que está escrita dentro del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser un consejo directo del autor, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una voz introspectiva y personal, típica de un autor que comparte sus pensamientos y reflexiones dentro del contexto del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase invita a imaginar una situación y sugiere un escenario emocional, lo que suena como parte de un contenido narrativo o reflexivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora que sugiere una reflexión interna, típica de la voz autoral en un texto, lo que indica que está escrita dentro del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a reflective thought that feels like it could be part of a narrative or argument within the book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites introspection, typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a direct message about emotional expression and teamwork, suggesting it is part of the author's narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a thought or insight that feels like it could be part of the narrative or thematic exploration within the book, rather than a description or commentary about the book itself."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages personal reflection and is written in a way that suggests direct engagement with the reader, typical of an author's voice within a self-help or instructional context."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase directly engages the reader, prompting introspection as if part of the narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a concept that could be part of a discussion or argument within the book, suggesting a voice that is likely to be the author's perspective."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a scenario that invites the reader to visualize a concept, suggesting it is part of the narrative or discussion within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-29T23:24:45.443Z",
+      "_edicion_numero": 63
+    },
+    {
       "titulo": "La disciplina marcará tu destino",
       "autor": "Ryan Holiday",
       "tagline": "",
@@ -27,7 +881,7 @@
       "frases": [
         "🚶 Haz un gesto consciente de autocontrol. Detente y respira antes de tomar decisiones.",
         "🕰 ¿Cuáles son los límites que has establecido para proteger tu autodisciplina?",
-        "🌅 Imagina a los grandes líderes de la historia dominando sus deseos, creando un legado basado en la ma.",
+        "🌅 Imagina a los grandes líderes de la historia dominando sus deseos, creando un legado basado en la madurez y la sabiduría.",
         "🏛 La autodisciplina es el puente entre el deseo y la realización."
       ],
       "frases_en": [
@@ -205,7 +1059,7 @@
         },
         "card_es": {
           "titulo": "El dominio de uno mismo",
-          "parrafoTop": "La autodisciplina es un arte y una ciencia, una virtud que nos permite transcender las limitaciones impuestas por nuestras emociones y deseos. En un mundo lleno de distracciones, la verdadera fuerza radica en nuestra capacidad de controlarnos a nosotros mismos, de establecer límites y de crear hábitos positivos que nos",
+          "parrafoTop": "La autodisciplina es un arte y una ciencia, una virtud que nos permite transcender las limitaciones impuestas por nuestras emociones y deseos. En un mundo lleno de distracciones, la verdadera fuerza radica en nuestra capacidad de controlarnos a nosotros mismos, de establecer límites y de crear hábitos positivos que nos ayuden a alcanzar nuestras metas.",
           "subtitulo": "¿Cómo te conviertes en la mejor versión de ti mismo?",
           "parrafoBot": "La templanza no es simplemente la ausencia de excesos; es el esplendor de una vida bien vivida. Cada gran figura histórica ha demostrado que la autodisciplina es la clave para alcanzar no solo la grandeza, sino también la paz interior. Sin ella, los logros se convierten en ilusiones pasajeras."
         },
@@ -319,7 +1173,7 @@
           {
             "gesture_type": "imagen_concreta",
             "sensory_anchor": "vista",
-            "phrase": "🌅 Imagina a los grandes líderes de la historia dominando sus deseos, creando un legado basado en la ma.",
+            "phrase": "🌅 Imagina a los grandes líderes de la historia dominando sus deseos, creando un legado basado en la madurez emocional.",
             "rol_sinfonico": "resonar",
             "eje_animo": 0.5,
             "eje_valor": null,
@@ -9197,14 +10051,14 @@
   "meta": {
     "version": "1.0.0",
     "generated_at": "2026-05-13T23:06:31Z",
-    "total": 88,
+    "total": 89,
     "note": "Catálogo adultos — recreado tras commit ee302fc9 (2026-05-13). Listo para generación.",
-    "next_edition_number": 63,
+    "next_edition_number": 64,
     "last_reset": "2026-05-15T15:54:22.998Z",
     "last_reset_reason": "sprint-v12-sinfonia-clean-start",
-    "last_audit": "2026-05-25T17:40:00.148Z",
-    "healing_rotation_idx": 7,
+    "last_audit": "2026-05-25T18:10:27.439Z",
+    "healing_rotation_idx": 8,
     "last_healing_book": "El camino a la claridad",
-    "last_healing_timestamp": "2026-05-25T17:41:49.214Z"
+    "last_healing_timestamp": "2026-05-25T18:12:28.943Z"
   }
 }
