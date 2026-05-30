@@ -1,6 +1,827 @@
 {
   "libros": [
     {
+      "titulo": "Tu momento es ahora",
+      "autor": "Victor Hugo Manzanilla",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/9c/fd/81/9cfd81fd-e53f-7d3c-fa52-5533e4b769c2/9780718089528.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Tu momento es ahora",
+      "titulo_en": "Your Moment is Now",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "motivación",
+        "claridad",
+        "conexión",
+        "empoderamiento"
+      ],
+      "palabras_en": [
+        "empowerment",
+        "clarity",
+        "fulfillment",
+        "action"
+      ],
+      "frases": [
+        "⏳ ¿Estás listo para abordar tus sueños ahora?",
+        "🔭 Imagina tu vida llena de logros y metas cumplidas, ¿cómo se siente?",
+        "🧘 Toma una respiración profunda y siente cómo la claridad te invade.",
+        "🏛 El camino hacia el éxito comienza dentro de ti, no fuera."
+      ],
+      "frases_en": [
+        "🚶 Embrace the moment, feel it in your bones; this is your time to act.",
+        "🗺 Para desatar tu verdadero potencial, es necesario que rompas con las barreras internas que te limitan.",
+        "🌅 Visualize your goals as stars; reach out and grasp them.",
+        "⏳ The path to greatness is paved with the bricks of internal conquest."
+      ],
+      "frases_og": [
+        "🎯 El éxito es un arte y una ciencia que se puede aprender.",
+        "🌱 ¿Qué sueños has dejado de lado por no creer en ti mismo?",
+        "🔮 En cada paso hacia tus sueños, es fundamental reprogramar tu mente, pues solo así podrás crear la visión que anhelas.",
+        "🕊 La acción sin reflexión es un camino sin rumbo claro."
+      ],
+      "frases_og_en": [
+        "🎯 Success is a science and an art; both must be mastered.",
+        "🌱 Conquer your internal self first. Only then can you achieve your goals.",
+        "🔮 What dreams linger in the shadows, waiting for action?",
+        "🕊 Every step taken reveals the map to your success."
+      ],
+      "colores": [
+        "#F1E77E",
+        "#3040E8",
+        "#95AE13",
+        "#1A0B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "El momento ha llegado para ti y para alcanzar tus sueños.",
+        "parrafoTop": "[H]La vida está llena de momentos decisivos.[/H] Cada día se nos presenta la oportunidad de tomar las riendas de nuestros sueños y hacerlos realidad. No se trata solo de esperar el momento perfecto, sino de reconocer que el momento ha llegado y que somos nosotros quienes debemos dar el primer paso hacia la acción.",
+        "subtitulo": "¿Cómo puedes conquistar lo interno para tener éxito?",
+        "parrafoBot": "Conquistar lo interno es el primer paso crucial en el camino hacia el éxito. [H]Necesitamos reprogramar nuestra mente y conectar con nuestro espíritu para poder avanzar.[/H] Solo al alcanzar esta conexión interna, seremos capaces de enfrentar los desafíos externos y alcanzar nuestras metas. Todo comienza aquí.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El momento ha llegado para ti",
+        "parrafoTop": "[H]La vida está llena de momentos decisivos.[/H] Cada día se nos presenta la oportunidad de tomar las riendas de nuestros sueños y hacerlos realidad. No se trata solo de esperar el momento perfecto, sino de reconocer que el momento ha llegado y que somos nosotros quienes debemos dar el primer paso hacia la acción.",
+        "subtitulo": "¿Cómo puedes conquistar lo interno para tener éxito?",
+        "parrafoBot": "Conquistar lo interno es el primer paso crucial en el camino hacia el éxito. [H]Necesitamos reprogramar nuestra mente y conectar con nuestro espíritu para poder avanzar.[/H] Solo al alcanzar esta conexión interna, seremos capaces de enfrentar los desafíos externos y alcanzar nuestras metas. Todo comienza aquí.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El momento ha llegado para ti",
+        "parrafoTop": "[H]La vida está llena de momentos decisivos.[/H] Cada día se nos presenta la oportunidad de tomar las riendas de nuestros sueños y hacerlos realidad. No se trata solo de esperar el momento perfecto, sino de reconocer que el momento ha llegado y que somos nosotros quienes debemos dar el primer paso hacia la acción.",
+        "subtitulo": "¿Cómo puedes conquistar lo interno para tener éxito?",
+        "parrafoBot": "Conquistar lo interno es el primer paso crucial en el camino hacia el éxito. [H]Necesitamos reprogramar nuestra mente y conectar con nuestro espíritu para poder avanzar.[/H] Solo al alcanzar esta conexión interna, seremos capaces de enfrentar los desafíos externos y alcanzar nuestras metas. Todo comienza aquí.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Moment Has Arrived for You",
+        "parrafoTop": "[H]Life is filled with decisive moments.[/H] Each day presents us with opportunities to seize our dreams and make them a reality. It's not just about waiting for the perfect moment; it’s about recognizing that the moment has come and that we must take the first step towards action.",
+        "subtitulo": "How can you conquer the internal to achieve success?",
+        "parrafoBot": "Conquering the internal is the first crucial step on the path to success. [H]We need to reprogram our minds and connect with our spirits to move forward.[/H] Only by achieving this internal connection can we face external challenges and reach our goals. Everything begins here.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Moment Has Arrived for You",
+        "parrafoTop": "[H]Life is filled with decisive moments.[/H] Each day presents us with opportunities to seize our dreams and make them a reality. It's not just about waiting for the perfect moment; it’s about recognizing that the moment has come and that we must take the first step towards action.",
+        "subtitulo": "How can you conquer the internal to achieve success?",
+        "parrafoBot": "Conquering the internal is the first crucial step on the path to success. [H]We need to reprogram our minds and connect with our spirits to move forward.[/H] Only by achieving this internal connection can we face external challenges and reach our goals. Everything begins here.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Moment Has Arrived for You",
+        "parrafoTop": "[H]Life is filled with decisive moments.[/H] Each day presents us with opportunities to seize our dreams and make them a reality. It's not just about waiting for the perfect moment; it’s about recognizing that the moment has come and that we must take the first step towards action.",
+        "subtitulo": "How can you conquer the internal to achieve success?",
+        "parrafoBot": "Conquering the internal is the first crucial step on the path to success. [H]We need to reprogram our minds and connect with our spirits to move forward.[/H] Only by achieving this internal connection can we face external challenges and reach our goals. Everything begins here.",
+        "style": {
+          "accent": "#E2D112",
+          "paper": "#F0F0EF",
+          "ink": "#1C1B17",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Tu%20momento%20es%20ahora%20Victor%20Hugo%20Manzanilla%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Your%20Moment%20is%20Now%20Victor%20Hugo%20Manzanilla%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-05-30T18:37:14.279Z",
+        "workflow_run_id": "26691750842",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "empatía",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Tu momento es ahora",
+          "titulo_en": "Your Moment is Now",
+          "autor_completo": "Victor Hugo Manzanilla",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "el momento ha llegado para alcanzar tus sueños",
+            "conquistar lo interno como clave del éxito",
+            "necesidad de reprogramar la mente y conectar con el espíritu",
+            "definir una visión clara de vida y metas",
+            "herramientas prácticas para alcanzar el éxito tangible"
+          ],
+          "key_terms": [
+            "arte del éxito",
+            "ciencia del éxito",
+            "reprogramar la mente",
+            "conexión interna",
+            "visibilidad de metas"
+          ],
+          "authorial_voice_notes": "La voz del autor es motivacional y práctica, enfatiza un enfoque estructurado y accesible hacia la superación personal."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la empatía al reconocer la frustración de sentir que las oportunidades no llegan, creando un puente con el lector que ha experimentado esas emociones. A través de un enfoque en la conexión interna y la autocomprensión, se muestra un respeto por la experiencia personal del lector, fomentando la identificación y la acción desde un lugar de reconocimiento emocional.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 45,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "El momento ha llegado para ti y para alcanzar tus sueños.",
+          "parrafoTop": "La vida está llena de momentos decisivos. Cada día se nos presenta la oportunidad de tomar las riendas de nuestros sueños y hacerlos realidad. No se trata solo de esperar el momento perfecto, sino de reconocer que el momento ha llegado y que somos nosotros quienes debemos dar el primer paso hacia la acción. La clave es reprogramar la mente y conectar con el espíritu para alcanzar el éxito tangible.",
+          "subtitulo": "¿Cómo puedes conquistar lo interno para tener éxito?",
+          "parrafoBot": "Conquistar lo interno es el primer paso crucial en el camino hacia el éxito. Necesitamos reprogramar nuestra mente y conectar con nuestro espíritu para poder avanzar. Solo al alcanzar esta conexión interna, seremos capaces de enfrentar los desafíos externos y alcanzar nuestras metas. Todo comienza aquí."
+        },
+        "card_en": {
+          "titulo": "The Moment Has Arrived for You",
+          "parrafoTop": "Life is filled with decisive moments. Each day presents us with opportunities to seize our dreams and make them a reality. It's not just about waiting for the perfect moment; it’s about recognizing that the moment has come and that we must take the first step towards action. The key is to conquer the internal before we reprogram our minds and conect with our spirit to achieve our goals.",
+          "subtitulo": "How can you conquer the internal to achieve success?",
+          "parrafoBot": "Conquering the internal is the first crucial step on the path to success. We need to reprogram our minds and connect with our spirits to move forward. Only by achieving this internal connection can we face external challenges and reach our goals. Everything begins here."
+        },
+        "emotional_words_es": [
+          "motivación",
+          "claridad",
+          "conexión",
+          "empoderamiento"
+        ],
+        "emotional_words_en": [
+          "empowerment",
+          "clarity",
+          "fulfillment",
+          "action"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🎯 El éxito es un arte y una ciencia que se puede aprender.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 ¿Qué sueños has dejado de lado por no creer en ti mismo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 En cada paso hacia tus sueños, es fundamental reprogramar tu mente, pues solo así podrás crear la visión que anhelas.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 La acción sin reflexión es un camino sin rumbo claro.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🎯 Success is a science and an art; both must be mastered.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 Conquer your internal self first. Only then can you achieve your goals.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔮 What dreams linger in the shadows, waiting for action?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 Every step taken reveals the map to your success.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Estás listo para abordar tus sueños ahora?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina tu vida llena de logros y metas cumplidas, ¿cómo se siente?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🧘 Toma una respiración profunda y siente cómo la claridad te invade.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 El camino hacia el éxito comienza dentro de ti, no fuera.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Embrace the moment, feel it in your bones; this is your time to act.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Para desatar tu verdadero potencial, es necesario que rompas con las barreras internas que te limitan.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your goals as stars; reach out and grasp them.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ The path to greatness is paved with the bricks of internal conquest.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.89,
+          "grounding_judge": 0.9,
+          "combined": 0.92,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.8887755102040816,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Tu momento es ahora",
+          "autor_completo": "Victor Hugo Manzanilla",
+          "titulo_api": "Tu momento es ahora",
+          "autor_api": "Victor Hugo Manzanilla",
+          "año": "2017",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1175955804",
+          "categorias": [
+            "Superación personal",
+            "Libros",
+            "Salud, mente y cuerpo"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/tu-momento-es-ahora/id1175955804?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja de manera precisa los conceptos del libro, como 'conquistar lo interno' y la idea de que el éxito es un proceso de autodescubrimiento. Utiliza frases específicas que se alinean con la sinopsis oficial, lo que demuestra que está anclado al ground_truth del libro."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content closely aligns with the book's themes of internal conquest and self-discovery, specifically mentioning 'conquering the internal' and the importance of reprogramming the mind. However, it lacks direct references to the three-step process outlined in the ground truth, which prevents it from receiving a perfect score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y motivacional, sin referencias meta.",
+          "elapsed_ms": 872,
+          "usage": {
+            "prompt_tokens": 413,
+            "completion_tokens": 26,
+            "total_tokens": 439,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y motivacional, sin referencias externas al libro.",
+          "elapsed_ms": 2549,
+          "usage": {
+            "prompt_tokens": 408,
+            "completion_tokens": 28,
+            "total_tokens": 436,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 875,
+        "total_ms": 2549
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 45,
+          "adjusted_hue": 55,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.11",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1E77E",
+          "--palette-1": "#3040E8",
+          "--palette-2": "#95AE13",
+          "--palette-3": "#1A0B65",
+          "--accent": "#E2D112",
+          "--accent-soft": "#E2D11238",
+          "--accent-glow": "#E2D1126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1C1B17",
+          "--border": "#90908F",
+          "--highlight-bg": "#C7B810d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "imagen_concreta",
+          "instruccion_sensorial",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-05-30T18-37-14",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 69997,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15255,
+          "palette": 0,
+          "content_es": 18232,
+          "judge_es": 1452,
+          "content_en": 16963,
+          "judge_en": 1467,
+          "voice": 875,
+          "voice_extended": 15753,
+          "highlight_judge_es_parrafoTop": 636,
+          "highlight_judge_es_parrafoBot": 648,
+          "highlight_judge_en_parrafoTop": 631,
+          "highlight_judge_en_parrafoBot": 648,
+          "csal": 6160
+        },
+        "elapsed_ms_total": 75072,
+        "elapsed_ms_by_phase": {
+          "grounding": 5,
+          "anchors": 6758,
+          "palette": 1,
+          "cover_fallback": 40,
+          "content_es": 41628,
+          "judge_es": 2669,
+          "content_en": 11227,
+          "judge_en": 2607,
+          "voice": 2549,
+          "voice_extended": 7585,
+          "highlight_judge": 2981,
+          "lens_compatibility": 1688,
+          "csal": 42038,
+          "post_processing": 46715
+        },
+        "llm_calls_count": 41,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 2,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.8,
+          "familia": 0.2,
+          "espiritu": 0.9,
+          "relaciones": 0.4,
+          "finanzas": 0.5
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando siento que el éxito siempre llega a los demás y no a mí",
+          "antes de dar un gran paso en mi carrera profesional",
+          "después de experimentar un fracaso y no sé cómo volver a empezar",
+          "cuando me doy cuenta de que necesito cambiar mis hábitos para lograr mis metas",
+          "cuando busco inspiración para alcanzar mis sueños y no sé por dónde comenzar",
+          "antes de una entrevista importante y me siento nervioso",
+          "cuando quiero definir mi propósito en la vida pero me siento perdido",
+          "después de una ruptura y necesito reenfocar mis expectativas",
+          "cuando me doy cuenta de que mi mentalidad está limitando mi progreso",
+          "antes de tomar decisiones importantes y busco claridad en mis metas personales",
+          "cuando quiero dejar atrás mis miedos y avanzar hacia mis objetivos",
+          "cuando siento que mis sueños son inalcanzables y busco motivación para seguir adelante",
+          "antes de comenzar un nuevo proyecto y necesito un plan claro",
+          "cuando quiero aprender a gestionar mi tiempo de manera efectiva para ser más productivo",
+          "después de escuchar historias de éxito y quiero que mi momento llegue también",
+          "cuando quiero desarrollar una mentalidad de crecimiento y no sé cómo empezar",
+          "cuando siento que tengo el potencial para más pero no sé cómo desbloquearlo",
+          "antes de un cambio significativo en mi vida y quiero prepararme mentalmente",
+          "cuando me siento abrumado por las expectativas de los demás y necesito encontrar mi propio camino",
+          "cuando quiero aprender de mis errores pasados para no repetirlos en el futuro",
+          "después de una larga búsqueda de sentido y quiero encontrar dirección en mi vida.",
+          "reprogramación mental\",\"visión de vida\",\"logros tangible\",\"superación personal\",\"desarrollo personal\",\"mentalidad positiva\",\"conexión cuerpo"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "ansiedad",
+            "esperanza",
+            "motivación",
+            "confianza",
+            "miedo",
+            "inspiración",
+            "determinación",
+            "desánimo",
+            "felicidad"
+          ],
+          "objetos": [
+            "libro",
+            "herramientas",
+            "metas",
+            "hábitos",
+            "visión"
+          ],
+          "contextos": [
+            "casa",
+            "oficina",
+            "reuniones",
+            "entrenamiento personal",
+            "conferencias"
+          ],
+          "verbos": [
+            "conquistar",
+            "definir",
+            "reprogramar",
+            "conectar",
+            "alcanzar"
+          ]
+        },
+        "concept_tags": [
+          "momento perfecto",
+          "éxito personal",
+          "reprogramación mental",
+          "visión de vida",
+          "logros tangibles",
+          "superación personal",
+          "desarrollo personal",
+          "mentalidad positiva",
+          "conexión cuerpo-espíritu",
+          "arte del éxito"
+        ],
+        "anti_patterns": [
+          "no es un libro sobre teoría abstracta",
+          "no ofrece soluciones rápidas sin esfuerzo",
+          "no es un manual de autoayuda sin práctica",
+          "no es un libro de motivación sin contenido aplicable"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🏆"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌬️"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌌"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría formar parte de un argumento o enseñanza dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o un monólogo del autor, lo que sugiere que está dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un consejo directo y motivacional que suena como parte del contenido del libro, reflejando la voz del autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita directamente al lector a reflexionar sobre sus sueños, lo que sugiere un tono personal y motivacional propio de un texto dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a reflexionar y visualizar una experiencia personal, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono introspectivo y directo, como si el autor estuviera guiando al lector en una experiencia personal dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión interna que suena como parte de un discurso motivacional dentro del libro, en lugar de ser una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a philosophical statement that feels like a direct insight from the author, suggesting a deeper exploration within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct motivational message that feels like it could be part of the author's narrative or advice within the book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a poetic and introspective tone, suggesting an internal contemplation that fits within the narrative voice of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a motivational message that feels like it could be part of the narrative or guidance within the book, rather than a description or commentary about it."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like an internal reflection or motivation from the author, suggesting it is part of the narrative or character's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a motivational idea that feels like direct advice or insight from the author, suggesting it is part of the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and action, suggesting a motivational tone typical of an author's voice within a self-help or inspirational book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection of the author's voice, suggesting a deeper meaning within the narrative."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-05-30T18:39:16.065Z",
+      "_edicion_numero": 64
+    },
+    {
       "titulo": "Ningún problema",
       "autor": "Liz Fosslien",
       "tagline": "",
@@ -10051,14 +10872,14 @@
   "meta": {
     "version": "1.0.0",
     "generated_at": "2026-05-13T23:06:31Z",
-    "total": 89,
+    "total": 90,
     "note": "Catálogo adultos — recreado tras commit ee302fc9 (2026-05-13). Listo para generación.",
-    "next_edition_number": 64,
+    "next_edition_number": 65,
     "last_reset": "2026-05-15T15:54:22.998Z",
     "last_reset_reason": "sprint-v12-sinfonia-clean-start",
-    "last_audit": "2026-05-29T23:24:51.386Z",
-    "healing_rotation_idx": 9,
+    "last_audit": "2026-05-30T18:39:16.448Z",
+    "healing_rotation_idx": 10,
     "last_healing_book": "El camino a la claridad",
-    "last_healing_timestamp": "2026-05-29T23:26:48.858Z"
+    "last_healing_timestamp": "2026-05-30T18:41:05.132Z"
   }
 }
