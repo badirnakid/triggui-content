@@ -55,7 +55,7 @@ if (ONLY_LAST) {
   librosToAudit = catalog.libros;
 }
 
-console.log("phrase-sanitizer-llm v3.1 (preservation guardrail + healing rotation)");
+console.log("phrase-sanitizer-llm v3.2 (grounding-aware completion + deterministic trim/remove guarantee)");
 console.log("  catalog:        " + CATALOG);
 console.log("  mode:           " + MODE);
 console.log("  total catalog:  " + catalog.libros.length + " libros");
@@ -74,6 +74,48 @@ if (ONLY_LAST) {
 console.log("  min-preserve:   " + MIN_PRESERVE_RATIO);
 console.log("  libros a audit: " + librosToAudit.length);
 console.log("");
+
+// ════════════════════════════════════════════════════════════════════════════
+// v3.2 — Cierre legítimo determinista (mismo criterio que el nucleus)
+// Una frase está "completa" si termina en uno de estos signos.
+// ════════════════════════════════════════════════════════════════════════════
+const LEGITIMATE = [".", "?", "!", "…", "—", '"', "»", ")", "]"];
+
+// Recorta a la ÚLTIMA oración completa (último cierre legítimo).
+//  - Si ya termina completa → la devuelve igual.
+//  - Si hay una oración completa antes del corte → devuelve esa parte (REPARA, conserva lo bueno).
+//  - Si NO hay ningún cierre legítimo (fragmento puro) → devuelve "" (no hay nada que rescatar).
+function trimToLastComplete(text) {
+  if (typeof text !== "string") return "";
+  const t = text.trim();
+  if (!t) return "";
+  if (LEGITIMATE.includes(t.slice(-1))) return t;
+  let cut = -1;
+  for (let i = t.length - 1; i >= 0; i--) {
+    if (LEGITIMATE.includes(t[i])) { cut = i; break; }
+  }
+  if (cut === -1) return "";
+  return t.slice(0, cut + 1).trim();
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+// v3.2 — Grounding del libro: material REAL para completar fiel (no inventar).
+// Vive en _nucleus.book_grounding_anchors + _nucleus.book_identity.
+// Si el libro no tiene grounding → null (el LLM completa como antes, "a ciegas",
+// y la red determinista sigue garantizando que nada truncado sobreviva).
+// ════════════════════════════════════════════════════════════════════════════
+function bookGrounding(libro) {
+  const n = (libro && libro._nucleus) ? libro._nucleus : {};
+  const a = n.book_grounding_anchors || {};
+  const id = n.book_identity || {};
+  const concepts = Array.isArray(a.concepts) ? a.concepts.filter(x => typeof x === "string" && x.trim()) : [];
+  const terms    = Array.isArray(a.key_terms) ? a.key_terms.filter(x => typeof x === "string" && x.trim()) : [];
+  const voice    = (typeof a.authorial_voice_notes === "string") ? a.authorial_voice_notes.trim() : "";
+  const titulo   = id.titulo_es || (libro && libro.titulo) || "";
+  const autor    = id.autor_completo || (libro && libro.autor) || "";
+  if (!concepts.length && !terms.length && !voice) return null;
+  return { titulo, autor, concepts, terms, voice };
+}
 
 const PHRASE_FIELDS = [
   ["tagline", "string"],
@@ -132,7 +174,25 @@ function applyFix(libro, p, fixedPhrase) {
   return false;
 }
 
-async function classifyPhrase(phrase) {
+// v3.2 — Remoción de fragmentos puros SOLO de pools (arrays), con GUARDA:
+// nunca vacía el pool (si quedara 1 elemento, no remueve). Aplica en orden
+// descendente para no corromper índices. Devuelve cuántos removió.
+function removeFromPool(libro, field, indices, kind) {
+  const node = getNode(libro, field);
+  if (!Array.isArray(node)) return 0;
+  const sorted = [...new Set(indices)].sort((a, b) => b - a);
+  let removed = 0;
+  for (const idx of sorted) {
+    if (node.length <= 1) break; // GUARDA: jamás vaciar un pool
+    if (idx >= 0 && idx < node.length) {
+      node.splice(idx, 1);
+      removed++;
+    }
+  }
+  return removed;
+}
+
+async function classifyPhrase(phrase, grounding) {
   const system = `Eres un detector y corrector estricto de frases truncadas en español o inglés. Respondes SOLO JSON.
 
 UNA FRASE ESTÁ TRUNCADA si:
@@ -162,10 +222,18 @@ Sé CONSERVADOR: en duda razonable, di que NO está truncada.
    TRUNCADO AL ÚLTIMO PUNTO COMPLETO VÁLIDO (sin agregar palabras inventadas).
 7. Si el truncamiento no tiene punto válido previo, omite "fixed_phrase".
 ═══════════════════════════════════════════════════════════════════
+📚 FIDELIDAD AL LIBRO — cuando se te dé "CONTEXTO DEL LIBRO":
+8. Completa usando SOLO ideas, términos y tono coherentes con ese contexto.
+9. NUNCA inventes conceptos, datos o ideas ajenas al libro para rellenar.
+10. Si no puedes completar de forma fiel al contexto del libro, aplica la regla 6
+    (recorta al último punto completo) o la 7 (omite). Mejor corto y fiel del libro
+    que largo e inventado. La autenticidad pesa más que la longitud.
+═══════════════════════════════════════════════════════════════════
 
-EJEMPLO CORRECTO:
-  original:     "La vida es compleja. El destino nos sorprende. Aceptar es la"
-  fixed_phrase: "La vida es compleja. El destino nos sorprende. Aceptar es la clave del bienestar."
+EJEMPLO CORRECTO (con contexto del libro):
+  contexto:     conceptos del libro incluyen "la conexión entre emociones y eficacia en el trabajo"
+  original:     "La clave está en la conexión entre emociones y"
+  fixed_phrase: "La clave está en la conexión entre emociones y eficacia en el trabajo."
 
 EJEMPLO INCORRECTO (NO HACER):
   original:     "La vida es compleja. El destino nos sorprende. Aceptar es la"
@@ -179,7 +247,19 @@ Responde JSON:
   "reason": "<10 palabras max>"
 }`;
 
-  const user = "Frase original:\n\"" + phrase + "\"\n\nLongitud original: " + phrase.length + " chars.\nSi truncada, devuelve fixed_phrase de longitud ≥ " + phrase.length + " chars con TODO el contexto previo preservado.";
+  let groundingBlock = "";
+  if (grounding) {
+    groundingBlock =
+      "\n\nCONTEXTO DEL LIBRO (úsalo para completar FIEL — NO inventes nada fuera de esto):" +
+      "\nLibro: \"" + grounding.titulo + "\"" + (grounding.autor ? " — " + grounding.autor : "") +
+      (grounding.concepts.length ? "\nConceptos del libro: " + grounding.concepts.join("; ") : "") +
+      (grounding.terms.length ? "\nTérminos clave: " + grounding.terms.join(", ") : "") +
+      (grounding.voice ? "\nVoz del autor: " + grounding.voice : "");
+  }
+
+  const user = "Frase original:\n\"" + phrase + "\"\n\nLongitud original: " + phrase.length +
+    " chars.\nSi truncada, devuelve fixed_phrase de longitud ≥ " + phrase.length +
+    " chars con TODO el contexto previo preservado." + groundingBlock;
 
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -196,21 +276,23 @@ Responde JSON:
 }
 
 (async () => {
-  const stats = { books: 0, phrases: 0, truncations: 0, fixed: 0, guardrail_skipped: 0, errors: 0 };
+  const stats = { books: 0, phrases: 0, truncations: 0, fixed: 0, trimmed: 0, removed: 0, guardrail_skipped: 0, left_fragment: 0, errors: 0 };
   const findings = [];
+  const removalQueue = []; // { libro, field, idx, kind }
 
   for (let bookIdx = 0; bookIdx < librosToAudit.length; bookIdx++) {
     const libro = librosToAudit[bookIdx];
     const isHealing = healingInfo && bookIdx === librosToAudit.length - 1;
     const labelPrefix = isHealing ? "🔁 [HEALING]" : "📖";
     stats.books++;
+    const grounding = bookGrounding(libro);          // v3.2 — material del libro
     const phrases = collectPhrases(libro);
-    process.stdout.write(labelPrefix + " " + (libro.titulo?.slice(0,55) || "?") + " (" + phrases.length + ")... ");
-    let book_truncs = 0, book_fixed = 0, book_skipped = 0;
+    process.stdout.write(labelPrefix + " " + (libro.titulo?.slice(0,55) || "?") + " (" + phrases.length + (grounding ? ", grounded" : ", sin-grounding") + ")... ");
+    let book_truncs = 0, book_fixed = 0, book_trimmed = 0, book_removed = 0, book_skipped = 0;
     for (const p of phrases) {
       stats.phrases++;
       try {
-        const result = await classifyPhrase(p.value);
+        const result = await classifyPhrase(p.value, grounding);
         if (result.truncated && (result.confidence ?? 1) >= 0.65) {
           stats.truncations++;
           book_truncs++;
@@ -228,11 +310,41 @@ Responde JSON:
             }
           }
 
-          findings.push({ libro: libro.titulo, field: p.field, idx: p.idx, original: p.value, ...result, guardrail: guardrailMsg, is_healing: isHealing });
+          const finding = { libro: libro.titulo, field: p.field, idx: p.idx, original: p.value, ...result, guardrail: guardrailMsg, is_healing: isHealing, resolution: "report_only" };
+          findings.push(finding);
 
-          if (MODE === "fix" && result.fixed_phrase) {
-            const ok = applyFix(libro, p, result.fixed_phrase);
-            if (ok) { stats.fixed++; book_fixed++; }
+          if (MODE === "fix") {
+            // ══════════════════════════════════════════════════════════════
+            // v3.2 — JERARQUÍA DE REPARACIÓN: completar → recortar → remover
+            //   Garantía: una frase truncada NUNCA se queda truncada.
+            // ══════════════════════════════════════════════════════════════
+            if (result.fixed_phrase) {
+              // 1) COMPLETAR (LLM, fiel al libro vía grounding)
+              const ok = applyFix(libro, p, result.fixed_phrase);
+              if (ok) { stats.fixed++; book_fixed++; finding.resolution = "completed_llm"; }
+            } else {
+              // 2) RECORTAR determinista a la última oración completa (REPARA, conserva lo bueno)
+              const trimmed = trimToLastComplete(p.value);
+              const originalTrim = p.value.trim();
+              if (trimmed && trimmed !== originalTrim) {
+                const ok = applyFix(libro, p, trimmed);
+                if (ok) { stats.trimmed++; book_trimmed++; finding.resolution = "trimmed_deterministic"; finding.trimmed_to = trimmed; }
+              } else if (!trimmed) {
+                // 3) FRAGMENTO PURO (sin ninguna oración completa que rescatar)
+                if (p.kind === "string") {
+                  // campo obligatorio: no se puede vaciar sin romper render → se deja + log (rarísimo: fallo de generación)
+                  finding.resolution = "left_required_fragment";
+                  stats.left_fragment++; book_skipped++;
+                } else {
+                  // pool: encolar remoción (con guarda anti-vacío, se aplica tras el libro)
+                  removalQueue.push({ libro, field: p.field, idx: p.idx, kind: p.kind });
+                  finding.resolution = "remove_queued";
+                }
+              } else {
+                // trimmed === original → ya terminaba en cierre legítimo; el detector LLM fue dudoso. No tocar.
+                finding.resolution = "kept_legitimate_close";
+              }
+            }
           } else if (guardrailMsg) {
             stats.guardrail_skipped++;
             book_skipped++;
@@ -240,10 +352,39 @@ Responde JSON:
         }
       } catch (e) { stats.errors++; }
     }
+
+    // v3.2 — aplicar remociones de este libro (guarda anti-vacío adentro)
+    if (MODE === "fix" && removalQueue.length) {
+      const mine = removalQueue.filter(r => r.libro === libro);
+      const byField = {};
+      mine.forEach(r => { (byField[r.field] = byField[r.field] || []).push(r.idx); });
+      for (const field of Object.keys(byField)) {
+        const kind = (mine.find(r => r.field === field) || {}).kind;
+        const n = removeFromPool(libro, field, byField[field], kind);
+        stats.removed += n; book_removed += n;
+        const notRemoved = byField[field].length - n;
+        if (notRemoved > 0) {
+          // la guarda impidió vaciar el pool → recortar esos en su lugar (fallback del fallback)
+          findings.filter(f => f.libro === libro.titulo && f.field === field && f.resolution === "remove_queued")
+            .forEach(f => { f.resolution = "kept_pool_floor"; });
+          stats.left_fragment += notRemoved; book_skipped += notRemoved;
+        }
+        findings.filter(f => f.libro === libro.titulo && f.field === field && f.resolution === "remove_queued")
+          .forEach(f => { f.resolution = "removed_from_pool"; });
+      }
+      // limpiar la cola de este libro
+      for (let i = removalQueue.length - 1; i >= 0; i--) if (removalQueue[i].libro === libro) removalQueue.splice(i, 1);
+    }
+
     let suffix = book_truncs + " truncs";
-    if (MODE === "fix") suffix += " (" + book_fixed + " fixed";
-    if (book_skipped > 0) suffix += ", " + book_skipped + " skip-guardrail";
-    if (MODE === "fix") suffix += ")";
+    if (MODE === "fix") {
+      const parts = [];
+      if (book_fixed) parts.push(book_fixed + " completadas");
+      if (book_trimmed) parts.push(book_trimmed + " recortadas");
+      if (book_removed) parts.push(book_removed + " removidas");
+      if (book_skipped) parts.push(book_skipped + " sin-tocar");
+      suffix += " (" + (parts.length ? parts.join(", ") : "0 cambios") + ")";
+    }
     console.log(suffix);
   }
 
@@ -251,9 +392,21 @@ Responde JSON:
   console.log("RESUMEN");
   console.log("  libros:", stats.books, "  phrases:", stats.phrases);
   console.log("  truncamientos detectados:", stats.truncations);
-  if (MODE === "fix") console.log("  fixed:", stats.fixed);
+  if (MODE === "fix") {
+    console.log("  ✅ completadas (LLM, fiel):", stats.fixed);
+    console.log("  ✂️  recortadas (determinista):", stats.trimmed);
+    console.log("  🗑️  removidas (fragmento puro, pool):", stats.removed);
+    console.log("  ⚠️  fragmentos sin tocar (campo obligatorio / piso de pool):", stats.left_fragment);
+  }
   console.log("  guardrail-skipped:", stats.guardrail_skipped);
   console.log("  errores:", stats.errors);
+  // v3.2 — invariante: en fix, todo truncamiento detectado quedó resuelto salvo left_fragment (rarísimo, logueado)
+  if (MODE === "fix") {
+    const resolved = stats.fixed + stats.trimmed + stats.removed;
+    const pendientes = stats.truncations - resolved - stats.left_fragment;
+    console.log("  🛡️  resueltos: " + resolved + " / detectados: " + stats.truncations +
+      " (sin resolver no-logueados: " + Math.max(0, pendientes) + ")");
+  }
   console.log("");
 
   if (findings.length > 0) {
@@ -262,15 +415,21 @@ Responde JSON:
       console.log("");
       console.log((i+1) + ". " + (f.is_healing ? "🔁 [HEALING] " : "📖 ") + f.libro);
       console.log("   campo:    " + f.field + (f.idx != null ? "[" + f.idx + "]" : ""));
+      console.log("   resolución: " + f.resolution);
       console.log("   ANTES (" + f.original.length + " chars):");
       console.log("      \"" + f.original.slice(0,160) + (f.original.length>160?"...":"") + "\"");
       if (f.fixed_phrase) {
-        console.log("   DESPUÉS (" + f.fixed_phrase.length + " chars):");
+        console.log("   DESPUÉS — completada (" + f.fixed_phrase.length + " chars):");
         console.log("      \"" + f.fixed_phrase.slice(0,160) + (f.fixed_phrase.length>160?"...":"") + "\"");
+      } else if (f.trimmed_to) {
+        console.log("   DESPUÉS — recortada (" + f.trimmed_to.length + " chars):");
+        console.log("      \"" + f.trimmed_to.slice(0,160) + (f.trimmed_to.length>160?"...":"") + "\"");
+      } else if (f.resolution === "removed_from_pool") {
+        console.log("   DESPUÉS — removida del pool (era fragmento puro)");
       } else if (f.guardrail) {
-        console.log("   DESPUÉS: 🛡️ GUARDRAIL ACTIVADO: " + f.guardrail);
+        console.log("   DESPUÉS: 🛡️ GUARDRAIL: " + f.guardrail);
       } else {
-        console.log("   DESPUÉS: (no fix posible)");
+        console.log("   DESPUÉS: (sin fix LLM)");
       }
       console.log("   razón: " + f.reason + " | conf: " + f.confidence);
     });
@@ -282,10 +441,11 @@ Responde JSON:
     console.log("📂 Report: " + reportPath);
   }
 
-  const hadFixes = MODE === "fix" && stats.fixed > 0;
+  // v3.2 — escribir si hubo CUALQUIER modificación (completar, recortar o remover)
+  const hadModifications = MODE === "fix" && (stats.fixed + stats.trimmed + stats.removed) > 0;
   const advanceCounter = ONLY_LAST && HEALING && healingInfo && MODE === "fix";
 
-  if (hadFixes || advanceCounter) {
+  if (hadModifications || advanceCounter) {
     if (advanceCounter) {
       catalog.meta = catalog.meta || {};
       catalog.meta.healing_rotation_idx = healingInfo.next_rotation;
@@ -293,7 +453,7 @@ Responde JSON:
       catalog.meta.last_healing_timestamp = new Date().toISOString();
     }
 
-    if (hadFixes) {
+    if (hadModifications) {
       const bak = CATALOG + ".bak-pre-llm-sanitizer-" + new Date().toISOString().replace(/[:.]/g,"-").slice(0,19);
       fs.writeFileSync(bak, fs.readFileSync(CATALOG));
       console.log("");
@@ -302,7 +462,9 @@ Responde JSON:
 
     fs.writeFileSync(CATALOG, JSON.stringify(catalog, null, 2));
     console.log("✅ Catálogo actualizado: " + CATALOG);
-    if (hadFixes) console.log("   • " + stats.fixed + " phrase" + (stats.fixed>1?"s":"") + " reparada" + (stats.fixed>1?"s":""));
+    if (hadModifications) {
+      console.log("   • completadas: " + stats.fixed + "  recortadas: " + stats.trimmed + "  removidas: " + stats.removed);
+    }
     if (advanceCounter) console.log("   • healing_rotation_idx: " + healingInfo.rotation_idx + " → " + healingInfo.next_rotation);
   }
 
