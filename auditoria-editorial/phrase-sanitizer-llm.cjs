@@ -55,7 +55,7 @@ if (ONLY_LAST) {
   librosToAudit = catalog.libros;
 }
 
-console.log("phrase-sanitizer-llm v3.2 (grounding-aware completion + deterministic trim/remove guarantee)");
+console.log("phrase-sanitizer-llm v3.3 (grounding completion + trim/remove + conservador en títulos + espejo de variantes)");
 console.log("  catalog:        " + CATALOG);
 console.log("  mode:           " + MODE);
 console.log("  total catalog:  " + catalog.libros.length + " libros");
@@ -117,21 +117,49 @@ function bookGrounding(libro) {
   return { titulo, autor, concepts, terms, voice };
 }
 
+// 🌒 v3.3 CONSERVADOR — titulo/subtitulo NO se incluyen a propósito.
+// Los títulos son dominio del nucleus (repairTruncatedField determinista, que trata
+// cierres cortos válidos como "ti" como COMPLETOS). FASE 6.6 NO debe re-evaluar títulos
+// con el LLM, porque tiende a ALARGAR un título-frase ya completo (sobre-edición =
+// reescritura, no reparación). Aquí cubrimos párrafos y pools de frases, donde el
+// truncamiento por límite de tokens es real y completar SÍ aporta. La congruencia de
+// las 3 variantes de tarjeta se garantiza con mirrorCardVariants() abajo.
 const PHRASE_FIELDS = [
   ["tagline", "string"],
   ["frases", "array_strings"], ["frases_en", "array_strings"],
   ["frases_og", "array_strings"], ["frases_og_en", "array_strings"],
   ["tarjeta.parrafoTop", "string"], ["tarjeta.parrafoBot", "string"],
-  ["tarjeta.subtitulo", "string"], ["tarjeta.titulo", "string"],
   ["_nucleus.card_es.parrafoTop", "string"], ["_nucleus.card_es.parrafoBot", "string"],
-  ["_nucleus.card_es.subtitulo", "string"], ["_nucleus.card_es.titulo", "string"],
   ["_nucleus.card_en.parrafoTop", "string"], ["_nucleus.card_en.parrafoBot", "string"],
-  ["_nucleus.card_en.subtitulo", "string"], ["_nucleus.card_en.titulo", "string"],
   ["_nucleus.edition_blocks_es", "array_objects_phrase"],
   ["_nucleus.edition_blocks_en", "array_objects_phrase"],
   ["_nucleus.og_phrases_es", "array_objects_phrase"],
   ["_nucleus.og_phrases_en", "array_objects_phrase"],
 ];
+
+// 🌒 v3.3 — Espejo de variantes de tarjeta (congruencia entre superficies).
+// La tarjeta PNG lee tarjeta_presentacion; el correo y la edición leen tarjeta.
+// DEBEN coincidir siempre. tarjeta es la canónica; base/presentacion la espejan.
+// Solo campos de TEXTO (no style/colores). Devuelve cuántos campos sincronizó.
+function mirrorCardVariants(libro) {
+  if (!libro || typeof libro !== "object") return 0;
+  let changed = 0;
+  const FIELDS = ["titulo", "subtitulo", "parrafoTop", "parrafoBot"];
+  const pairs = [
+    { src: libro.tarjeta,    base: libro.tarjeta_base,    pres: libro.tarjeta_presentacion },
+    { src: libro.tarjeta_en, base: libro.tarjeta_base_en, pres: libro.tarjeta_presentacion_en },
+  ];
+  for (const { src, base, pres } of pairs) {
+    if (!src || typeof src !== "object") continue;
+    for (const f of FIELDS) {
+      const v = src[f];
+      if (typeof v !== "string" || !v.trim()) continue;
+      if (base && typeof base === "object" && base[f] !== v) { base[f] = v; changed++; }
+      if (pres && typeof pres === "object" && pres[f] !== v) { pres[f] = v; changed++; }
+    }
+  }
+  return changed;
+}
 
 function getNode(obj, dotPath) {
   const parts = dotPath.split(".");
@@ -276,7 +304,7 @@ Responde JSON:
 }
 
 (async () => {
-  const stats = { books: 0, phrases: 0, truncations: 0, fixed: 0, trimmed: 0, removed: 0, guardrail_skipped: 0, left_fragment: 0, errors: 0 };
+  const stats = { books: 0, phrases: 0, truncations: 0, fixed: 0, trimmed: 0, removed: 0, mirrored: 0, guardrail_skipped: 0, left_fragment: 0, errors: 0 };
   const findings = [];
   const removalQueue = []; // { libro, field, idx, kind }
 
@@ -376,6 +404,13 @@ Responde JSON:
       for (let i = removalQueue.length - 1; i >= 0; i--) if (removalQueue[i].libro === libro) removalQueue.splice(i, 1);
     }
 
+    // v3.3 — espejar variantes de tarjeta (congruencia tarjeta/edición/correo) en cada libro procesado
+    let book_mirrored = 0;
+    if (MODE === "fix") {
+      book_mirrored = mirrorCardVariants(libro);
+      stats.mirrored += book_mirrored;
+    }
+
     let suffix = book_truncs + " truncs";
     if (MODE === "fix") {
       const parts = [];
@@ -383,6 +418,7 @@ Responde JSON:
       if (book_trimmed) parts.push(book_trimmed + " recortadas");
       if (book_removed) parts.push(book_removed + " removidas");
       if (book_skipped) parts.push(book_skipped + " sin-tocar");
+      if (book_mirrored) parts.push(book_mirrored + " espejadas");
       suffix += " (" + (parts.length ? parts.join(", ") : "0 cambios") + ")";
     }
     console.log(suffix);
@@ -396,6 +432,7 @@ Responde JSON:
     console.log("  ✅ completadas (LLM, fiel):", stats.fixed);
     console.log("  ✂️  recortadas (determinista):", stats.trimmed);
     console.log("  🗑️  removidas (fragmento puro, pool):", stats.removed);
+    console.log("  🪞 espejadas (congruencia tarjeta/base/presentacion):", stats.mirrored);
     console.log("  ⚠️  fragmentos sin tocar (campo obligatorio / piso de pool):", stats.left_fragment);
   }
   console.log("  guardrail-skipped:", stats.guardrail_skipped);
@@ -442,7 +479,7 @@ Responde JSON:
   }
 
   // v3.2 — escribir si hubo CUALQUIER modificación (completar, recortar o remover)
-  const hadModifications = MODE === "fix" && (stats.fixed + stats.trimmed + stats.removed) > 0;
+  const hadModifications = MODE === "fix" && (stats.fixed + stats.trimmed + stats.removed + stats.mirrored) > 0;
   const advanceCounter = ONLY_LAST && HEALING && healingInfo && MODE === "fix";
 
   if (hadModifications || advanceCounter) {
@@ -463,7 +500,7 @@ Responde JSON:
     fs.writeFileSync(CATALOG, JSON.stringify(catalog, null, 2));
     console.log("✅ Catálogo actualizado: " + CATALOG);
     if (hadModifications) {
-      console.log("   • completadas: " + stats.fixed + "  recortadas: " + stats.trimmed + "  removidas: " + stats.removed);
+      console.log("   • completadas: " + stats.fixed + "  recortadas: " + stats.trimmed + "  removidas: " + stats.removed + "  espejadas: " + stats.mirrored);
     }
     if (advanceCounter) console.log("   • healing_rotation_idx: " + healingInfo.rotation_idx + " → " + healingInfo.next_rotation);
   }
