@@ -31,27 +31,28 @@ function isTruncatedItem(item, patterns) {
 function sanitizeLibro(libro, patterns) {
   const removed = [];
   
-  const cleanArray = (arr, srcName) => {
-    if (!Array.isArray(arr)) return arr;
-    return arr.filter(item => {
-      if (isTruncatedItem(item, patterns)) {
-        const text = typeof item === 'string' ? item :
-                     (item.phrase || item.anchor || '');
-        removed.push({ src: srcName, text });
-        return false;
-      }
-      return true;
-    });
-  };
-  
-  // v1.3.2: limpia strings sueltos (parrafoTop, parrafoBot) si están truncados
-  const cleanString = (obj, key, srcName) => {
-    if (!obj || typeof obj[key] !== 'string') return;
-    if (isTruncatedPhrase(obj[key], patterns)) {
-      removed.push({ src: srcName, text: obj[key] });
-      obj[key] = '';  // limpiar (queda string vacio para no romper schema)
-    }
-  };
+  // ═══════════════════════════════════════════════════════════════════
+  // 🌒 FIX RAÍZ v2 — bug "bloque vacío" (Vende como loco) + desync og (Historias)
+  // ───────────────────────────────────────────────────────────────────
+  // ANTES este filtro DROPEABA frases truncadas con .filter(), SIN piso-de-4
+  // y SIN paridad ES↔EN. Consecuencias verificadas en producción:
+  //   • En arrays de LAYOUT FIJO (frases, palabras): al quitar un elemento,
+  //     frases quedaba en 3. La app (index.html) pinta SIEMPRE 4 bloques
+  //     (for i<4) → el bloque sin frase salía VACÍO bajo su label.
+  //   • En arrays PARALELOS (frases_og / edition_blocks / og_phrases): dropeaba
+  //     un lado (p.ej. ES) y dejaba el otro (EN) intacto → paridad rota,
+  //     pool del Eco/OG desincronizado.
+  // Aguas abajo del pipeline corre el COMPLETER LLM grounded
+  // (auditoria-editorial/phrase-sanitizer-llm.cjs), que completa FIEL cada
+  // truncamiento (jerarquía completar→recortar→remover) respetando
+  // campo-obligatorio y piso-de-pool, y espeja a tarjeta/base/presentación.
+  // Por eso el drop determinista es REDUNDANTE y DAÑINO: borra lo que el
+  // completer habría reparado correctamente.
+  // FIX: NO removemos nada aquí. Delegamos 100% al completer LLM.
+  //      `removed` queda vacío → totalRemoved=0 → 0 mutaciones al catálogo.
+  // ═══════════════════════════════════════════════════════════════════
+  const cleanArray = (arr, _srcName) => arr;
+  const cleanString = (_obj, _key, _srcName) => { /* no-op: delegado al completer LLM grounded */ };
   
   // NIVEL 1: campos visibles en la app
   ['frases', 'frases_og', 'frases_en', 'og_phrases_es', 'og_phrases_en'].forEach(k => {

@@ -239,6 +239,13 @@ Sé CONSERVADOR: en duda razonable, di que NO está truncada.
 ═══════════════════════════════════════════════════════════════════
 🛡️ REGLAS DURAS PARA "fixed_phrase" — NO LAS ROMPAS BAJO NINGUNA CIRCUNSTANCIA:
 
+0. 🌐 IDIOMA (REGLA SUPREMA, POR ENCIMA DE TODAS): "fixed_phrase" DEBE estar 100% en el
+   MISMO IDIOMA que la frase original. Original en inglés → completas en inglés; original
+   en español → completas en español. El "CONTEXTO DEL LIBRO" puede venir en OTRO idioma:
+   úsalo SOLO para las IDEAS, JAMÁS para el idioma. PROHIBIDO mezclar idiomas dentro de una
+   misma frase. Si la única forma de completar fiel sería mezclando idiomas, aplica la
+   regla 6 (recorta al último punto) o la 7 (omite).
+
 1. "fixed_phrase" DEBE empezar con LITERALMENTE las mismas palabras del original
    (incluido emoji inicial si lo tiene).
 2. Solo modificas/agregas al FINAL de la frase, corrigiendo el truncamiento.
