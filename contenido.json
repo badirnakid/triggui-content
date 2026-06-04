@@ -1,6 +1,871 @@
 {
   "libros": [
     {
+      "titulo": "The Gifts Of Imperfection",
+      "autor": "Brene Brown",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/23/4f/1a234fed-01d1-54c9-f4c0-781c033d9b1f/9781592859894.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/1a/23/4f/1a234fed-01d1-54c9-f4c0-781c033d9b1f/9781592859894.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Los regalos de la imperfección",
+      "titulo_en": "The Gifts Of Imperfection",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "vulnerabilidad",
+        "autenticidad",
+        "conexión",
+        "aceptación"
+      ],
+      "palabras_en": [
+        "vulnerability",
+        "authenticity",
+        "connection",
+        "story"
+      ],
+      "frases": [
+        "🌅 Mira tus imperfecciones como los matices que te hacen único. Encuentra belleza en lo que te hace tú.",
+        "🏛 ¿Qué historia estás listo para compartir sobre tus luchas con la imperfección?",
+        "🌊 Imagina un jardín donde cada planta imperfecta florece en su propio tiempo, creando un paisaje vibrante de autenticidad y vulnerabilidad.",
+        "🌓 Las expectativas poco realistas son cadenas que limitan nuestra autenticidad."
+      ],
+      "frases_en": [
+        "💫 Notice the weight of your expectations. How do they shape your interactions?",
+        "👁 Reflect on your story. What truths does it reveal about your journey?",
+        "🗺 Imagine a space where imperfection is celebrated. How would that feel?",
+        "🌓 To be imperfect is to be truly alive, embracing the messy beauty of existence."
+      ],
+      "frases_og": [
+        "🔮 La autenticidad es un acto de resistencia ante la perfección.",
+        "🕊 ¿Qué pasaría si comenzaras a abrazar tus imperfecciones hoy?",
+        "📖 El poder de compartir nuestra historia se encuentra en su vulnerabilidad y en la conexión que crea entre las personas.",
+        "🌓 Vivir plenamente es aceptar que la imperfección es parte de la vida."
+      ],
+      "frases_og_en": [
+        "🔮 Vulnerability is the birthplace of connection and creativity.",
+        "🕊 Embrace your imperfections. They are the essence of your story.",
+        "📖 What stories are we silencing by chasing perfection in our pursuit of authenticity and wholeheartedness?",
+        "🌓 Imperfection is not inadequacy; it is a reminder that we are all human."
+      ],
+      "colores": [
+        "#7E97F1",
+        "#E8C030",
+        "#1813AE",
+        "#62650B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD0D3",
+      "tarjeta": {
+        "titulo": "El poder de ser imperfecto",
+        "parrafoTop": "La autenticidad comienza con la aceptación de nuestra vulnerabilidad. En lugar de ocultar nuestras imperfecciones, debemos aprender a reconocerlas como parte integral de nuestra experiencia humana. [H]Esta aceptación nos permite vivir con plenitud y abrirnos al mundo de manera genuina.[/H]",
+        "subtitulo": "¿Qué pasaría si abrazáramos nuestras imperfecciones?",
+        "parrafoBot": "Cada uno de nosotros tiene una historia que contar, y es precisamente esa narrativa la que nos conecta con los demás. Al compartir nuestras vulnerabilidades, creamos lazos profundos que trascienden la superficialidad de las expectativas poco realistas. [H]Nuestras historias nos convierten en humanos.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El poder de ser imperfecto",
+        "parrafoTop": "La autenticidad comienza con la aceptación de nuestra vulnerabilidad. En lugar de ocultar nuestras imperfecciones, debemos aprender a reconocerlas como parte integral de nuestra experiencia humana. [H]Esta aceptación nos permite vivir con plenitud y abrirnos al mundo de manera genuina.[/H]",
+        "subtitulo": "¿Qué pasaría si abrazáramos nuestras imperfecciones?",
+        "parrafoBot": "Cada uno de nosotros tiene una historia que contar, y es precisamente esa narrativa la que nos conecta con los demás. Al compartir nuestras vulnerabilidades, creamos lazos profundos que trascienden la superficialidad de las expectativas poco realistas. [H]Nuestras historias nos convierten en humanos.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El poder de ser imperfecto",
+        "parrafoTop": "La autenticidad comienza con la aceptación de nuestra vulnerabilidad. En lugar de ocultar nuestras imperfecciones, debemos aprender a reconocerlas como parte integral de nuestra experiencia humana. [H]Esta aceptación nos permite vivir con plenitud y abrirnos al mundo de manera genuina.[/H]",
+        "subtitulo": "¿Qué pasaría si abrazáramos nuestras imperfecciones?",
+        "parrafoBot": "Cada uno de nosotros tiene una historia que contar, y es precisamente esa narrativa la que nos conecta con los demás. Al compartir nuestras vulnerabilidades, creamos lazos profundos que trascienden la superficialidad de las expectativas poco realistas. [H]Nuestras historias nos convierten en humanos.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Power of Being Imperfect",
+        "parrafoTop": "[H]Authenticity begins with accepting our vulnerability.[/H] Instead of hiding our imperfections, we must learn to acknowledge them as an integral part of our human experience. This acceptance allows us to live fully and connect with the world in a genuine way.",
+        "subtitulo": "What if we embraced our imperfections?",
+        "parrafoBot": "Each of us has a story to tell, and it is precisely that narrative that connects us with others. By sharing our vulnerabilities, we create deep bonds that transcend the superficiality of unrealistic expectations. [H]Our stories make us human.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Power of Being Imperfect",
+        "parrafoTop": "[H]Authenticity begins with accepting our vulnerability.[/H] Instead of hiding our imperfections, we must learn to acknowledge them as an integral part of our human experience. This acceptance allows us to live fully and connect with the world in a genuine way.",
+        "subtitulo": "What if we embraced our imperfections?",
+        "parrafoBot": "Each of us has a story to tell, and it is precisely that narrative that connects us with others. By sharing our vulnerabilities, we create deep bonds that transcend the superficiality of unrealistic expectations. [H]Our stories make us human.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Power of Being Imperfect",
+        "parrafoTop": "[H]Authenticity begins with accepting our vulnerability.[/H] Instead of hiding our imperfections, we must learn to acknowledge them as an integral part of our human experience. This acceptance allows us to live fully and connect with the world in a genuine way.",
+        "subtitulo": "What if we embraced our imperfections?",
+        "parrafoBot": "Each of us has a story to tell, and it is precisely that narrative that connects us with others. By sharing our vulnerabilities, we create deep bonds that transcend the superficiality of unrealistic expectations. [H]Our stories make us human.[/H]",
+        "style": {
+          "accent": "#1240E2",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Gifts%20Of%20Imperfection%20Brene%20Brown%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Gifts%20Of%20Imperfection%20Brene%20Brown%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-04T22:31:36.900Z",
+        "workflow_run_id": "26983482364",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Los regalos de la imperfección",
+          "titulo_en": "The Gifts Of Imperfection",
+          "autor_completo": "Brene Brown",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "los diez pilares del vivir plenamente",
+            "la autenticidad como acto de resistencia",
+            "la importancia de aceptar la vulnerabilidad",
+            "la lucha contra las expectativas poco realistas",
+            "el poder de compartir nuestra historia personal"
+          ],
+          "key_terms": [
+            "vulnerabilidad",
+            "autenticidad",
+            "wholeheartedness",
+            "imperfección",
+            "guía"
+          ],
+          "authorial_voice_notes": "Brené Brown escribe con calidez y cercanía, combinando investigación social con un tono accesible y humano, creando un espacio seguro para la reflexión personal."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda temas de autoconocimiento y aceptación que resuenan con el lente de auto-conocimiento. Ayuda a los lectores a desentrañar patrones internos de auto-crítica y a cultivar la compasión hacia uno mismo, lo cual es esencial para el crecimiento personal.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 216.875,
+          "saturation": "vivid",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "El poder de ser imperfecto",
+          "parrafoTop": "La autenticidad comienza con la aceptación de nuestra vulnerabilidad. En lugar de ocultar nuestras imperfecciones, debemos aprender a reconocerlas como parte integral de nuestra experiencia humana. Esta aceptación nos permite vivir con plenitud y abrirnos al mundo de manera genuina.",
+          "subtitulo": "¿Qué pasaría si abrazáramos nuestras imperfecciones?",
+          "parrafoBot": "Cada uno de nosotros tiene una historia que contar, y es precisamente esa narrativa la que nos conecta con los demás. Al compartir nuestras vulnerabilidades, creamos lazos profundos que trascienden la superficialidad de las expectativas poco realistas. Nuestras historias nos convierten en humanos."
+        },
+        "card_en": {
+          "titulo": "The Power of Being Imperfect",
+          "parrafoTop": "Authenticity begins with accepting our vulnerability. Instead of hiding our imperfections, we must learn to acknowledge them as an integral part of our human experience. This acceptance allows us to live fully and connect with the world in a genuine way.",
+          "subtitulo": "What if we embraced our imperfections?",
+          "parrafoBot": "Each of us has a story to tell, and it is precisely that narrative that connects us with others. By sharing our vulnerabilities, we create deep bonds that transcend the superficiality of unrealistic expectations. Our stories make us human."
+        },
+        "emotional_words_es": [
+          "vulnerabilidad",
+          "autenticidad",
+          "conexión",
+          "aceptación"
+        ],
+        "emotional_words_en": [
+          "vulnerability",
+          "authenticity",
+          "connection",
+          "story"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔮 La autenticidad es un acto de resistencia ante la perfección.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🕊 ¿Qué pasaría si comenzaras a abrazar tus imperfecciones hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 El poder de compartir nuestra historia se encuentra en su vulnerabilidad y en la conexión que crea con los demás.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌓 Vivir plenamente es aceptar que la imperfección es parte de la vida.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔮 Vulnerability is the birthplace of connection and creativity.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🕊 Embrace your imperfections. They are the essence of your story.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 What stories are we silencing by chasing perfection in our pursuit of authenticity and wholeheartedness?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌓 Imperfection is not inadequacy; it is a reminder that we are all human.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Mira tus imperfecciones como los matices que te hacen único. Encuentra belleza en lo que te hace tú.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué historia estás listo para compartir sobre tus luchas con la imperfección?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Imagina un jardín donde cada planta imperfecta florece en su propio tiempo, creando un paisaje vibrante de autenticidad y aceptación.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Las expectativas poco realistas son cadenas que limitan nuestra autenticidad.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Notice the weight of your expectations. How do they shape your interactions?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Reflect on your story. What truths does it reveal about your journey?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Imagine a space where imperfection is celebrated. How would that feel?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 To be imperfect is to be truly alive, embracing the messy beauty of existence.",
+            "role_symphonic": "land",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.8,
+          "combined": 0.9,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.8
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "The Gifts Of Imperfection",
+          "autor_completo": "Brene Brown",
+          "titulo_api": "The Gifts of Imperfection",
+          "autor_api": "Brené Brown",
+          "año": "2022",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1191986288",
+          "categorias": [
+            "Superación personal",
+            "Libros",
+            "Salud, mente y cuerpo",
+            "Espiritualidad"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/the-gifts-of-imperfection/id1191986288?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects key concepts from the book, such as authenticity, vulnerability, and the importance of sharing personal stories. Phrases like 'aceptación de nuestra vulnerabilidad' and 'nuestras historias nos convierten en humanos' are closely aligned with the themes of 'The Gifts of Imperfection.' However, the overall structure and some phrases are somewhat generic, which prevents a perfect "
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects key themes from the book, such as vulnerability and authenticity, which are central to Brené Brown's message in 'The Gifts of Imperfection.' Phrases like 'accepting our vulnerability' and 'struggle against perfectionism' align closely with the book's concepts. However, it lacks direct references to the ten guideposts and the specific invitation to a 'wholehearted revolution,' "
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones personales sobre la autenticidad.",
+          "elapsed_ms": 941,
+          "usage": {
+            "prompt_tokens": 412,
+            "completion_tokens": 27,
+            "total_tokens": 439,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones en primera persona sobre la imperfección.",
+          "elapsed_ms": 1822,
+          "usage": {
+            "prompt_tokens": 390,
+            "completion_tokens": 30,
+            "total_tokens": 420,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 859,
+        "total_ms": 1822
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 216.875,
+          "adjusted_hue": 226.875,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7E97F1",
+          "--palette-1": "#E8C030",
+          "--palette-2": "#1813AE",
+          "--palette-3": "#62650B",
+          "--accent": "#1240E2",
+          "--accent-soft": "#1240E238",
+          "--accent-glow": "#1240E26b",
+          "--paper": "#CFD0D3",
+          "--ink": "#17181C",
+          "--border": "#7C7D7F",
+          "--highlight-bg": "#1038C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-04T22-31-36",
+      "_crono": {
+        "dia": "jueves",
+        "hora": 16,
+        "franja": "tarde",
+        "energia": 1.2,
+        "modo": "ejecucion_pico",
+        "descripcion_dia": "Jueves 9-11 AM es el peak de ejecución. Contenido directo y accionable.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 60038,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15113,
+          "palette": 0,
+          "content_es": 17860,
+          "judge_es": 1134,
+          "content_en": 16547,
+          "judge_en": 1122,
+          "voice": 859,
+          "voice_extended": 7403,
+          "highlight_judge_es_parrafoTop": 646,
+          "highlight_judge_es_parrafoTop_retry": 646,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 635,
+          "highlight_judge_en_parrafoBot": 628,
+          "csal": 2943
+        },
+        "elapsed_ms_total": 58482,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 6664,
+          "palette": 0,
+          "cover_fallback": 59,
+          "content_es": 34962,
+          "judge_es": 2191,
+          "content_en": 8900,
+          "judge_en": 2216,
+          "voice": 1823,
+          "voice_extended": 1662,
+          "highlight_judge": 12259,
+          "lens_compatibility": 3137,
+          "csal": 73208,
+          "post_processing": 88611
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.5,
+          "espiritu": 0.7,
+          "relaciones": 0.9,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que no eres suficiente",
+          "después de un día en el que te has sentido juzgado",
+          "cuando estás intentando ser perfecto en todo",
+          "antes de un evento social que te pone ansioso",
+          "cuando te comparas constantemente con los demás",
+          "después de un fracaso que te afecta emocionalmente",
+          "antes de tomar una decisión importante que te hace dudar de ti mismo",
+          "cuando te cuesta aceptar un cumplido",
+          "cuando te sientes agotado emocionalmente",
+          "antes de compartir una parte vulnerable de ti con alguien",
+          "cuando te sientes atrapado por las expectativas de los demás",
+          "al enfrentarte a críticas que te afectan profundamente",
+          "cuando quieres dejar de sentirte avergonzado de tus errores",
+          "después de una discusión en la que te has sentido incomprendido",
+          "cuando te sientes desconectado de quienes amas",
+          "al buscar maneras de ser más auténtico en tus relaciones",
+          "cuando luchas por encontrar un propósito en tu vida diaria",
+          "al tratar de equilibrar trabajo y vida personal sin sentir culpa",
+          "cuando te preguntas si vales la pena tal como eres",
+          "al iniciar un nuevo capítulo en tu vida que te da miedo",
+          "cuando te cuesta decir que no a las demandas de otros",
+          "al intentar ser más amable contigo mismo",
+          "cuando te preguntas cómo dejar de lado el perfeccionismo",
+          "después de un día en que sientes que no has hecho suficiente",
+          "cuando te cuestionas tu valor personal",
+          "al querer entender cómo tus imperfecciones te hacen humano",
+          "cuando buscas maneras de ser más compasivo contigo mismo",
+          "al sentir que vives para complacer a los demás",
+          "cuando te das cuenta de que no puedes controlar todo",
+          "al querer vivir con más coraje y autenticidad",
+          "cuando necesitas perdonarte por tus errores pasados",
+          "al buscar maneras de vivir plenamente sin miedo al juicio"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "vergüenza",
+            "vulnerabilidad",
+            "miedo",
+            "alegría",
+            "ansiedad",
+            "autocompasión",
+            "coraje",
+            "incertidumbre",
+            "amor propio",
+            "culpa"
+          ],
+          "objetos": [
+            "diario",
+            "libro",
+            "espejo",
+            "nota",
+            "fotografía",
+            "regalo",
+            "luz",
+            "puerta",
+            "jardín",
+            "llave"
+          ],
+          "contextos": [
+            "cena familiar",
+            "reunión de trabajo",
+            "cita importante",
+            "conversación difícil",
+            "evento social",
+            "día de descanso",
+            "momento de reflexión",
+            "terapia",
+            "retiro",
+            "caminata solitaria"
+          ],
+          "verbos": [
+            "compartir",
+            "aceptar",
+            "dejar ir",
+            "reflexionar",
+            "perdonar",
+            "conectar",
+            "explorar",
+            "reconocer",
+            "abrazar",
+            "resistir"
+          ]
+        },
+        "concept_tags": [
+          "vulnerabilidad como fuerza",
+          "revolución del amor propio",
+          "imperfección como belleza",
+          "guía para vivir plenamente",
+          "resistencia a la vergüenza",
+          "autenticidad radical",
+          "guía para el coraje",
+          "aceptación de uno mismo",
+          "movimiento de autenticidad",
+          "narrativa personal",
+          "diez pilares de autenticidad",
+          "superación de la vergüenza",
+          "cultura de la comparación",
+          "resiliencia emocional",
+          "poder de compartir historias"
+        ],
+        "anti_patterns": [
+          "manual de autoayuda rápida",
+          "guía de perfección",
+          "soluciones rápidas para el éxito",
+          "libro de consejos empresariales",
+          "texto para superar fobias específicas",
+          "guía de meditación avanzada",
+          "manual de terapia profesional",
+          "libro de crecimiento financiero"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🔍"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "📖"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌱"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una reflexión profunda que parece ser parte del contenido del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de la narrativa del libro, sugiriendo una reflexión interna del autor sobre la vulnerabilidad en el acto de compartir historias."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión personal que podría estar en el contexto del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un mensaje reflexivo que parece ser parte de un discurso interno del autor, invitando al lector a la autoaceptación."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita al lector a reflexionar y compartir, lo que sugiere una voz íntima y personal del autor dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una imagen poética que invita a la reflexión, lo que sugiere que es parte del contenido del libro y no una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte del contenido del libro, expresando una idea profunda sobre la autenticidad."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a personal insight or reflection, suggesting it is part of the author's narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like advice or insight from the author, suggesting a personal reflection that fits within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the author's narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or theme within a book, reflecting the author's voice."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites personal reflection and engagement, suggesting an introspective voice typical of an author's writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages personal reflection and seems to be directly addressing the reader, suggesting an introspective moment within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites the reader to envision a scenario, suggesting an immersive experience typical of narrative or reflective writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like an introspective thought from the author, fitting within the narrative of a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-04T22:34:03.992Z",
+      "_edicion_numero": 66
+    },
+    {
       "titulo": "El camino al éxito",
       "autor": "Napoleon Hill",
       "tagline": "",
@@ -1712,7 +2577,7 @@
         "🌌 La lucha por la salud revela la fortaleza que no sabíamos tener."
       ],
       "frases_en": [
-        "🌅 Picture each day of treatment unfolding like a fragile flower, revealing new possibilities with each paso hacia la neurogénesis y la aceptación del tratamiento en México.",
+        "🌅 Picture each day of treatment unfolding like a fragile flower, revealing new possibilities with each paso hacia la neurogénesis y la aceptación del tratamiento en México, donde la lucha por la transformación familiar se entrelaza con la esperanza de un futuro mejor.",
         "⏳ How do we redefine our existence amidst relentless challenges?",
         "🫁 True strength emerges not from ease, but from the courage to face adversity.",
         "🌌 In the spaces between despair and hope, a new reality can be born."
@@ -1886,7 +2751,7 @@
         },
         "card_es": {
           "titulo": "La lucha por Lucca",
-          "parrafoTop": "El viaje a India no fue solo un traslado físico, sino un salto al abismo de la esperanza. En cada día de tratamiento con el Cytotron, la brutal franqueza de nuestra realidad se enfrentaba a la posibilidad de una neurogénesis que transformara la vida de mi hijo.",
+          "parrafoTop": "El viaje a India no fue solo un traslado físico, sino un salto al abismo de la esperanza. En cada día de tratamiento con el Cytotron, la brutal franqueza de nuestra realidad se enfrentaba a la posibilidad de una neurogénesis que transformara la vida de mi hijo y nos ofreciera una nueva oportunidad para soñar con un futuro diferente.",
           "subtitulo": "¿Cómo se redefine la vida ante el desafío?",
           "parrafoBot": "Las complicaciones de la parálisis cerebral infantil nos enseñaron a reconfigurar nuestras prioridades. Con cada sesión de tratamiento, aprendíamos que la esperanza no es solo un estado emocional, sino un motor que impulsa nuestra lucha por la aceptación del Cytotron en México."
         },
@@ -2022,7 +2887,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "sight",
-            "phrase": "🌅 Picture each day of treatment unfolding like a fragile flower, revealing new possibilities with each paso hacia la neurogénesis y la aceptación del tratamiento en México.",
+            "phrase": "🌅 Picture each day of treatment unfolding like a fragile flower, revealing new possibilities with each paso hacia la neurogénesis y la aceptación del tratamiento en México, donde la lucha por la transformación familiar se entrelaza con la esperanza de un futuro mejor.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -2579,7 +3444,7 @@
         "titulo": "El enfoque determina la altitud",
         "parrafoTop": "[H]La actitud determina la altitud.[/H] Al igual que el ángulo de un avión afecta su capacidad de ascender, nuestra perspectiva ante los retos diarios influye en el camino hacia nuestros objetivos. La forma en que encaramos nuestra vida y nuestro trabajo es un reflejo directo de nuestra actitud, y esta actitud, a su vez, se convierte en el manual de actitud que guía nuestro éxito.",
         "subtitulo": "¿Cómo puedes ajustar tu enfoque hoy mismo?",
-        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos.[/H]",
+        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos y nos conduzca hacia el éxito que anhelamos.[/H]",
         "style": {
           "accent": "#12E21E",
           "paper": "#EFF0EF",
@@ -2591,7 +3456,7 @@
         "titulo": "El enfoque determina la altitud",
         "parrafoTop": "[H]La actitud determina la altitud.[/H] Al igual que el ángulo de un avión afecta su capacidad de ascender, nuestra perspectiva ante los retos diarios influye en el camino hacia nuestros objetivos. La forma en que encaramos nuestra vida y nuestro trabajo es un reflejo directo de nuestra actitud, y esta actitud, a su vez, se convierte en el manual de actitud que guía nuestro éxito.",
         "subtitulo": "¿Cómo puedes ajustar tu enfoque hoy mismo?",
-        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos.[/H]",
+        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos y nos conduzca hacia el éxito que anhelamos.[/H]",
         "style": {
           "accent": "#12E21E",
           "paper": "#EFF0EF",
@@ -2603,7 +3468,7 @@
         "titulo": "El enfoque determina la altitud",
         "parrafoTop": "[H]La actitud determina la altitud.[/H] Al igual que el ángulo de un avión afecta su capacidad de ascender, nuestra perspectiva ante los retos diarios influye en el camino hacia nuestros objetivos. La forma en que encaramos nuestra vida y nuestro trabajo es un reflejo directo de nuestra actitud, y esta actitud, a su vez, se convierte en el manual de actitud que guía nuestro éxito.",
         "subtitulo": "¿Cómo puedes ajustar tu enfoque hoy mismo?",
-        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos.[/H]",
+        "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. [H]Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos y nos conduzca hacia el éxito que anhelamos.[/H]",
         "style": {
           "accent": "#12E21E",
           "paper": "#EFF0EF",
@@ -2721,13 +3586,13 @@
           "titulo": "El enfoque determina la altitud",
           "parrafoTop": "La actitud determina la altitud. Al igual que el ángulo de un avión afecta su capacidad de ascender, nuestra perspectiva ante los retos diarios influye en el camino hacia nuestros objetivos. La forma en que encaramos nuestra vida y nuestro trabajo es un reflejo directo de nuestra actitud, y esta actitud, a su vez, se traduce en nuestro enfoque hacia el éxito.",
           "subtitulo": "¿Cómo puedes ajustar tu enfoque hoy mismo?",
-          "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. Es crucial revisar nuestro enfoque constantemente."
+          "parrafoBot": "Un enfoque positivo no solo transforma la forma en que vemos los problemas, sino que también nos permite encontrar soluciones efectivas. Cuando nuestra expresión externa refleja confianza y optimismo, estamos mejor equipados para enfrentar cualquier desafío. Es crucial revisar nuestro enfoque constantemente para asegurarnos de que nuestra actitud nos lleve a la altitud que deseamos alcanzar."
         },
         "card_en": {
           "titulo": "The Angle of Flight",
           "parrafoTop": "Your altitude in life is determined by your attitude. Just as the angle of an airplane affects its ability to rise, our perspective on daily challenges influences our journey toward our goals. The way we face our life and work reflects our attitude, which in turn shapes the world we present.",
           "subtitulo": "How can you adjust your approach today?",
-          "parrafoBot": "A positive perspective not only transforms how we see problems but also enables us to find effective solutions. When our external expression reflects confidence and optimism, we are better equipped to tackle any challenge. It is crucial to continually reassess our focus and apply the principles of attitude and success outlined in the Bible as a manual of attitude."
+          "parrafoBot": "A positive perspective not only transforms how we see problems but also enables us to find effective solutions. When our external expression reflects confidence and optimism, we are better equipped to tackle any challenge. It is crucial to continually reassess our focus and apply the principles of attitude and success outlined in the Bible as a manual of actitud que nos guía hacia la altitud que deseamos alcanzar."
         },
         "emotional_words_es": [
           "determinación",
@@ -3366,7 +4231,7 @@
     {
       "titulo": "Trabaja duro trabaja con astucia",
       "autor": "Curtis Jackson",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad.",
+      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "isbn": "",
@@ -5270,7 +6135,7 @@
         },
         "card_en": {
           "titulo": "Action is the Key to Success",
-          "parrafoTop": "The key to achieving your goals lies in your ability to take action. Eliminate the negative habits that hold you back and discover how taking control of your life becomes your greatest strength. Speak less and act more, for every small step counts on your journey to success. Effective action is your best ally in la lucha contra la procrastinación y en el desarrollo de hábitos de éxito.",
+          "parrafoTop": "The key to achieving your goals lies in your ability to take action. Eliminate the negative habits that hold you back and discover how taking control of your life becomes your greatest strength. Speak less and act more, for every small step counts on your journey to success. Effective action is your best ally in la lucha contra la procrastinación y en el desarrollo de hábitos de éxito, que te permitirán alcanzar tus metas diarias y convertirte en un aprendiz de por vida.",
           "subtitulo": "What concrete steps are you willing to take today?",
           "parrafoBot": "Deciding what you really want is fundamental for progress. If you overcome procrastination and become a lifelong learner, you will be on the right track. Self-discipline is essential: every decision you make brings you closer to your objectives. Do not let fear stop you."
         },
@@ -5975,7 +6840,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Desbloqueando el Potencial Infinito",
-        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. [H]Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias.[/H]",
+        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias y nos permite canalizar experiencias de pico, expandiendo así nuestra conciencia en la vida diaria.",
         "subtitulo": "¿Cómo puedes expandir tu conciencia en el día a día?",
         "parrafoBot": "La expansión de la conciencia no es solo un concepto abstracto; se traduce en acciones concretas en la vida diaria. Al integrar prácticas que fomenten esta expansión, comenzamos a moldear nuestro entorno en lugar de ser moldeados por él. [H]La transformación es posible y comienza aquí mismo.[/H]",
         "style": {
@@ -5987,7 +6852,7 @@
       },
       "tarjeta_base": {
         "titulo": "Desbloqueando el Potencial Infinito",
-        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. [H]Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias.[/H]",
+        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias y nos permite canalizar experiencias de pico, expandiendo así nuestra conciencia en la vida diaria.",
         "subtitulo": "¿Cómo puedes expandir tu conciencia en el día a día?",
         "parrafoBot": "La expansión de la conciencia no es solo un concepto abstracto; se traduce en acciones concretas en la vida diaria. Al integrar prácticas que fomenten esta expansión, comenzamos a moldear nuestro entorno en lugar de ser moldeados por él. [H]La transformación es posible y comienza aquí mismo.[/H]",
         "style": {
@@ -5999,7 +6864,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Desbloqueando el Potencial Infinito",
-        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. [H]Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias.[/H]",
+        "parrafoTop": "La clave para acceder a estados de conciencia elevados radica en nuestra capacidad de autoobservación. Transformar nuestra vida implica liberarnos de los condicionamientos mentales que limitan nuestras experiencias y nos permite canalizar experiencias de pico, expandiendo así nuestra conciencia en la vida diaria.",
         "subtitulo": "¿Cómo puedes expandir tu conciencia en el día a día?",
         "parrafoBot": "La expansión de la conciencia no es solo un concepto abstracto; se traduce en acciones concretas en la vida diaria. Al integrar prácticas que fomenten esta expansión, comenzamos a moldear nuestro entorno en lugar de ser moldeados por él. [H]La transformación es posible y comienza aquí mismo.[/H]",
         "style": {
@@ -8674,7 +9539,7 @@
         },
         "card_en": {
           "titulo": "The Battle for Mobile's Future",
-          "parrafoTop": "The rivalry between Apple and Google transcends mere business conflict; it is a struggle for the future of mobile computing. Every move in this titanic war is crafted to shape not just their fates, but that of millions of users whose lives hinge on these innovations. In every courtroom and on every screen, the stakes—are high as they determine the direction of technological advancement and the very fabric of our digital lives.",
+          "parrafoTop": "The rivalry between Apple and Google transcends mere business conflict; it is a struggle for the future of mobile computing. Every move in this titanic war is crafted to shape not just their fates, but that of millions of users whose lives hinge on these innovations. In every courtroom and on every screen, the stakes—are high as they determine the direction of technological advancement and the very fabric of our digital lives, influencing the revolution tecnológica y la guerra de mercados que define nuestra era.",
           "subtitulo": "What does victory mean in this showdown?",
           "parrafoBot": "Both companies have forged corporate cultures that embody their philosophies and visions of the world. Apple, with its focus on design and user experience, and Google, driven by an incessant quest for information, are in a constant clash that charts the course of technology."
         },
@@ -12897,7 +13762,7 @@
         },
         "card_en": {
           "titulo": "The Catalyst of Transformation",
-          "parrafoTop": "Gaining access to profound knowledge about life is a path few dare to tread, yet those who embark on this journey discover that reading can serve as a powerful catalyst for transformation. Immersing oneself in narratives that oscillate between reality and fiction, the reader confronts questions that challenge their own identity and understanding of existence, reveling in the dualidad entre una historia ficticia y una real.",
+          "parrafoTop": "Gaining access to profound knowledge about life is a path few dare to tread, yet those who embark on this journey discover that reading can serve as a powerful catalyst for transformation. Immersing oneself in narratives that oscillate between reality and fiction, the reader confronts questions that challenge their own identity and understanding of existence, reveling in the dualidad entre una historia ficticia y una real, y así, se abre a un mundo donde la lectura se convierte en un acceso directo al conocimiento profundo sobre la vida.",
           "subtitulo": "What role does duality play in our identity?",
           "parrafoBot": "The duality between fictional stories and real-life experiences allows us to explore different facets of our identity, questioning who we believe ourselves to be. In this game of mirrors, reality blurs, enabling hidden truths to emerge."
         },
@@ -16940,7 +17805,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-03T22:45:00.450Z"
+      "_audit_timestamp": "2026-06-04T22:34:04.243Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -16973,7 +17838,7 @@
         "🌅 Imagina un negocio donde cada decisión fluye sin obstáculos innecesarios."
       ],
       "frases_en": [
-        "🌅 In the pursuit of simplicity, envision your business without the layers of unnecessary complexity; what essence still stands firm in your strategy for success in achieving effective business models and market leadership?",
+        "🌅 In the pursuit of simplicity, envision your business without the layers of unnecessary complexity; what essence still stands firm in your strategy for success in achieving effective business models and market leadership through simplification and transformational change?",
         "☀ Consider your current processes. How many can you simplify?",
         "🌊 Imagine a pathway cleared of obstacles, leading straight to your goals.",
         "🧘 In simplicity lies the strength to excel and innovate."
@@ -25399,7 +26264,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-03T22:45:00.450Z"
+      "_audit_timestamp": "2026-06-04T22:34:04.243Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -33055,7 +33920,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-03T22:45:00.450Z"
+      "_audit_timestamp": "2026-06-04T22:34:04.243Z"
     },
     {
       "titulo": "Suscritos",
@@ -34780,11 +35645,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 66,
-    "total": 41,
-    "last_audit": "2026-06-03T22:45:00.450Z",
-    "healing_rotation_idx": 1,
+    "next_edition_number": 67,
+    "total": 42,
+    "last_audit": "2026-06-04T22:34:04.243Z",
+    "healing_rotation_idx": 2,
     "last_healing_book": "Simplify: How the Best Businesses in the World Succeed",
-    "last_healing_timestamp": "2026-06-03T23:02:01.565Z"
+    "last_healing_timestamp": "2026-06-04T22:52:54.168Z"
   }
 }
