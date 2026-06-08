@@ -1,6 +1,6 @@
 {
-  "next": 67,
-  "last_assigned": 66,
+  "next": 68,
+  "last_assigned": 67,
   "_seed_note": "Bootstrap one-shot 2026-05-13: 44 carpetas adulto + 1 kids (cementerio) = 45 ediciones vivas previas. max(45,36)=45 -> counter inicia en 46. Recovery manual 2026-05-13: matilda kids fue asignada #046 por el bot correctamente (cirugias 1/3/4 funcionaron), pero el push del counter file fallo en FASE 9 por unstaged changes (cirugia 5 desplegada en triggui-app commit 6235de0 lo resuelve). Counter alineado manualmente. De aqui en adelante este archivo es la unica fuente de verdad. Solo se incrementa en !isFromBatch.",
   "history": [
     {
@@ -150,6 +150,13 @@
       "slug": null,
       "titulo": "The Gifts Of Imperfection",
       "at": "2026-06-04T22:34:04.013Z"
+    },
+    {
+      "edicion": 67,
+      "catalogo": "adulto",
+      "slug": null,
+      "titulo": "Las 25 leyes bíblicas para el éxito",
+      "at": "2026-06-08T22:39:41.719Z"
     }
   ]
 }
