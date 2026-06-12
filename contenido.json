@@ -1,6 +1,867 @@
 {
   "libros": [
     {
+      "titulo": "CEO Human",
+      "autor": "Carolina Camus",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=EBvkEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=EBvkEQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9789563388787",
+      "titulo_es": "CEO Human",
+      "titulo_en": "CEO Human",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "autenticidad",
+        "valentía",
+        "reflexión",
+        "crecimiento"
+      ],
+      "palabras_en": [
+        "courage",
+        "vulnerability",
+        "authenticity",
+        "growth"
+      ],
+      "frases": [
+        "⏳ ¿Qué decisiones has tomado esta semana que reflejen tu autenticidad?",
+        "🌊 Dedica un momento a respirar y reconocer tus emociones. Deja que fluyan sin juicio.",
+        "🌅 Imagina un círculo de líderes compartiendo sus fracasos con honestidad; ese es el futuro del liderar.",
+        "🎧 La verdadera conexión se forja en la fragilidad compartida."
+      ],
+      "frases_en": [
+        "✋ Feel the weight of your leadership responsibilities. Let it guide your actions towards authenticity.",
+        "🗺 Dare to ask yourself: what fears hold you back from leading with your true self?",
+        "🌅 Visualize your leadership as a garden. What weeds must you uproot to let your authenticity flourish?",
+        "⏳ In leadership, every stumble is a step toward greater wisdom and connection."
+      ],
+      "frases_og": [
+        "🛡 La vulnerabilidad es la base del liderazgo auténtico.",
+        "🎯 ¿Cómo puedes integrar tus caídas como parte de tu liderazgo?",
+        "🌱 Aprender de los desafíos fortalece nuestro liderazgo humano.",
+        "🔮 La autenticidad en el liderazgo se construye desde la vulnerabilidad."
+      ],
+      "frases_og_en": [
+        "🛡 Leading authentically requires embracing vulnerability.",
+        "🎯 Reflect on your leadership journey. What lessons have emerged from the challenges and experiences that shaped your growth and authenticity as a leader.",
+        "🌱 How do we connect more meaningfully through our shared struggles?",
+        "🔮 Strength grows in the soil of vulnerability; nurture it."
+      ],
+      "colores": [
+        "#E3F17E",
+        "#4730E8",
+        "#75AE13",
+        "#2D0B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "Valentía en la Vulnerabilidad",
+        "parrafoTop": "[H]El liderazgo humano y auténtico no se trata de destrezas inquebrantables[/H], sino de la valentía que encontramos al mostrarnos vulnerables. En el camino del liderazgo, cada caída es una invitación a aprender, a crecer y a conectarnos con los demás de manera más genuina.",
+        "subtitulo": "¿Qué significa ser un líder auténtico?",
+        "parrafoBot": "[H]ser humanos en nuestras imperfecciones[/H]. El reconocimiento de nuestras debilidades nos permite crear un espacio donde otros también puedan ser sinceros. Así, el liderazgo se convierte en un acto de servicio, donde la autenticidad se entrelaza con la responsabilidad y el compromiso.",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Valentía en la Vulnerabilidad",
+        "parrafoTop": "[H]El liderazgo humano y auténtico no se trata de destrezas inquebrantables[/H], sino de la valentía que encontramos al mostrarnos vulnerables. En el camino del liderazgo, cada caída es una invitación a aprender, a crecer y a conectarnos con los demás de manera más genuina.",
+        "subtitulo": "¿Qué significa ser un líder auténtico?",
+        "parrafoBot": "[H]ser humanos en nuestras imperfecciones[/H]. El reconocimiento de nuestras debilidades nos permite crear un espacio donde otros también puedan ser sinceros. Así, el liderazgo se convierte en un acto de servicio, donde la autenticidad se entrelaza con la responsabilidad y el compromiso.",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Valentía en la Vulnerabilidad",
+        "parrafoTop": "[H]El liderazgo humano y auténtico no se trata de destrezas inquebrantables[/H], sino de la valentía que encontramos al mostrarnos vulnerables. En el camino del liderazgo, cada caída es una invitación a aprender, a crecer y a conectarnos con los demás de manera más genuina.",
+        "subtitulo": "¿Qué significa ser un líder auténtico?",
+        "parrafoBot": "[H]ser humanos en nuestras imperfecciones[/H]. El reconocimiento de nuestras debilidades nos permite crear un espacio donde otros también puedan ser sinceros. Así, el liderazgo se convierte en un acto de servicio, donde la autenticidad se entrelaza con la responsabilidad y el compromiso.",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Courage in Vulnerability",
+        "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. [H]True strength manifests when we allow ourselves to be human in our imperfections.[/H]",
+        "subtitulo": "What does it mean to be an authentic leader?",
+        "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. [H]Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment.[/H]",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Courage in Vulnerability",
+        "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. [H]True strength manifests when we allow ourselves to be human in our imperfections.[/H]",
+        "subtitulo": "What does it mean to be an authentic leader?",
+        "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. [H]Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment.[/H]",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Courage in Vulnerability",
+        "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. [H]True strength manifests when we allow ourselves to be human in our imperfections.[/H]",
+        "subtitulo": "What does it mean to be an authentic leader?",
+        "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. [H]Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment.[/H]",
+        "style": {
+          "accent": "#C9E212",
+          "paper": "#F0F0EF",
+          "ink": "#1B1C17",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+CEO%20Human%20Carolina%20Camus%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+CEO%20Human%20Carolina%20Camus%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-12T15:47:23.367Z",
+        "workflow_run_id": "27426550143",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "voluntad (310)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "any person",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.51,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "CEO Human",
+          "titulo_en": "CEO Human",
+          "autor_completo": "Carolina Camus",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "liderazgo humano y auténtico",
+            "crecimiento personal consciente",
+            "hacer decisiones con sentido",
+            "aprender de las caídas y desafíos",
+            "valentía en la vulnerabilidad del liderazgo"
+          ],
+          "key_terms": [
+            "liderazgo",
+            "autenticidad",
+            "crecimiento",
+            "valentía",
+            "consciencia"
+          ],
+          "authorial_voice_notes": "La voz de Carolina Camus es cercana, inspiradora y reflexiva, invitando al lector a una introspección sobre el liderazgo y la autenticidad."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la experiencia humana desde una perspectiva de autoconocimiento y crecimiento personal, centrándose en la autenticidad en el liderazgo, lo cual sugiere un compromiso con la vulnerabilidad y la honestidad en la toma de decisiones.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 57.375,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "Valentía en la Vulnerabilidad",
+          "parrafoTop": "El liderazgo humano y auténtico no se trata de destrezas inquebrantables, sino de la valentía que encontramos al mostrarnos vulnerables. En el camino del liderazgo, cada caída es una invitación a aprender, a crecer y a conectarnos con los demás de manera más genuina.",
+          "subtitulo": "¿Qué significa ser un líder auténtico?",
+          "parrafoBot": "ser humanos en nuestras imperfecciones. El reconocimiento de nuestras debilidades nos permite crear un espacio donde otros también puedan ser sinceros. Así, el liderazgo se convierte en un acto de servicio, donde la autenticidad se entrelaza con la responsabilidad y el compromiso."
+        },
+        "card_en": {
+          "titulo": "Courage in Vulnerability",
+          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones.",
+          "subtitulo": "What does it mean to be an authentic leader?",
+          "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment."
+        },
+        "emotional_words_es": [
+          "autenticidad",
+          "valentía",
+          "reflexión",
+          "crecimiento"
+        ],
+        "emotional_words_en": [
+          "courage",
+          "vulnerability",
+          "authenticity",
+          "growth"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🛡 La vulnerabilidad es la base del liderazgo auténtico.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 ¿Cómo puedes integrar tus caídas como parte de tu liderazgo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌱 Aprender de los desafíos fortalece nuestro liderazgo humano.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔮 La autenticidad en el liderazgo se construye desde la vulnerabilidad.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🛡 Leading authentically requires embracing vulnerability.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 Reflect on your leadership journey. What lessons have emerged from the challenges and experiences that shaped your growth and authenticity as a leader.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌱 How do we connect more meaningfully through our shared struggles?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 Strength grows in the soil of vulnerability; nurture it.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Qué decisiones has tomado esta semana que reflejen tu autenticidad?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Dedica un momento a respirar y reconocer tus emociones. Deja que fluyan sin juicio.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un círculo de líderes compartiendo sus fracasos con honestidad; ese es el futuro del liderar.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "oido",
+            "phrase": "🎧 La verdadera conexión se forja en la fragilidad compartida.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "touch",
+            "phrase": "✋ Feel the weight of your leadership responsibilities. Let it guide your actions towards authenticity.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Dare to ask yourself: what fears hold you back from leading with your true self?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your leadership as a garden. What weeds must you uproot to let your authenticity flourish?",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ In leadership, every stumble is a step toward greater wisdom and connection.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.88,
+          "voice_authenticity": 0.93,
+          "specificity": 0.86,
+          "grounding_judge": 0.9,
+          "combined": 0.89,
+          "signals": {
+            "bookIdentityConfidence": 0.8823076923076925,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.85625,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8823076923076925,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "CEO Human",
+          "autor_completo": "Carolina Camus",
+          "titulo_api": "CEO H.U.M.A.N.",
+          "autor_api": "Carolina Camus Carrasco",
+          "subtitulo": "El liderazgo que el mundo necesita hoy",
+          "año": "2026",
+          "editorial": "Editorial Forja",
+          "paginas": 97,
+          "isbn": "9789563388787",
+          "isbn13": "9789563388787",
+          "isbn10": "956338878X",
+          "categorias": [
+            "Business & Economics"
+          ],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=EBvkEQAAQBAJ&pg=PT88&dq=CEO+Human+Carolina+Camus&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 0.8307692307692308,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content closely reflects the themes of vulnerability, authenticity, and learning from failures, which are central to the book's premise. It specifically mentions 'liderazgo humano y auténtico' and the importance of being human in leadership, aligning perfectly with the book's focus on real and brave leadership through authentic conversations with CEOs. The content is not generic and,"
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects key themes from the ground truth, such as vulnerability in leadership and the importance of authenticity. Phrases like 'courage in revealing our vulnerabilities' and 'leadership as an act of service' align closely with the book's focus on genuine leadership experiences shared by CEOs. However, while it is specific to the book's themes, it does not directly quote or reference '"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el liderazgo humano.",
+          "elapsed_ms": 974,
+          "usage": {
+            "prompt_tokens": 414,
+            "completion_tokens": 26,
+            "total_tokens": 440,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre liderazgo sin referencias externas.",
+          "elapsed_ms": 1460,
+          "usage": {
+            "prompt_tokens": 379,
+            "completion_tokens": 27,
+            "total_tokens": 406,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 846,
+        "total_ms": 1460
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 57.375,
+          "adjusted_hue": 67.375,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.03",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#E3F17E",
+          "--palette-1": "#4730E8",
+          "--palette-2": "#75AE13",
+          "--palette-3": "#2D0B65",
+          "--accent": "#C9E212",
+          "--accent-soft": "#C9E21238",
+          "--accent-glow": "#C9E2126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1B1C17",
+          "--border": "#90908F",
+          "--highlight-bg": "#B1C710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoBot_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-12T15-47-23",
+      "_crono": {
+        "dia": "viernes",
+        "hora": 9,
+        "franja": "manana",
+        "energia": 0.9,
+        "modo": "apertura_semana",
+        "descripcion_dia": "Viernes baja intensidad, abre reflexión de semana. Tono amplio.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 59319,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15027,
+          "palette": 0,
+          "content_es": 17738,
+          "judge_es": 939,
+          "content_en": 16425,
+          "judge_en": 932,
+          "voice": 846,
+          "voice_extended": 7412,
+          "highlight_judge_es_parrafoTop": 644,
+          "highlight_judge_es_parrafoTop_retry": 637,
+          "highlight_judge_es_parrafoBot": 649,
+          "highlight_judge_es_parrafoBot_retry": 649,
+          "highlight_judge_en_parrafoTop": 647,
+          "highlight_judge_en_parrafoBot": 652,
+          "csal": 2766
+        },
+        "elapsed_ms_total": 36974,
+        "elapsed_ms_by_phase": {
+          "grounding": 3,
+          "anchors": 7175,
+          "palette": 0,
+          "cover_fallback": 54,
+          "content_es": 10200,
+          "judge_es": 1544,
+          "content_en": 12187,
+          "judge_en": 2310,
+          "voice": 1462,
+          "voice_extended": 2036,
+          "highlight_judge": 7257,
+          "lens_compatibility": 2856,
+          "csal": 20682,
+          "post_processing": 30802
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoBot_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.2,
+          "mente": 0.9,
+          "negocio": 0.9,
+          "familia": 0.3,
+          "espiritu": 0.6,
+          "relaciones": 0.8,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.8
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que debes ser perfecto como líder",
+          "después de recibir una crítica constructiva",
+          "antes de tomar una decisión importante en tu equipo",
+          "cuando te enfrentas a un fracaso y no sabes cómo continuar",
+          "cuando te sientes abrumado por las expectativas de tu rol",
+          "cuando deseas ser más auténtico en tu forma de liderar",
+          "después de una conversación difícil con un colega",
+          "cuando te das cuenta de que no tienes todas las respuestas",
+          "cuando buscas inspiración para tu próximo paso profesional",
+          "antes de compartir tus vulnerabilidades en un entorno laboral.",
+          "cuando te enfrentas a la presión de los resultados",
+          "cuando te preguntas cómo puedes liderar con más empatía",
+          "cuando necesitas motivación para seguir adelante después de una caída",
+          "cuando quieres establecer una conexión más profunda con tu equipo",
+          "cuando sientes que el liderazgo tradicional no resuena contigo",
+          "cuando anhelas un cambio en tu estilo de liderazgo.",
+          "cuando te enfrentas a la soledad del liderazgo.",
+          "cuando quieres ser un líder que inspire a otros.",
+          "cuando te sientes perdido en tu trayectoria profesional.",
+          "cuando anhelas un espacio para compartir tus aprendizajes con otros.",
+          "cuando te preguntas si estás haciendo lo correcto en tu rol.",
+          "cuando te das cuenta de que el miedo no debe detenerte.",
+          "cuando buscas formas de ser un líder más consciente.",
+          "cuando quieres aprender de las experiencias de otros.",
+          "cuando te sientes atrapado en un enfoque rígido del liderazgo.",
+          "cuando quieres crear un ambiente de trabajo más humano.",
+          "cuando te das cuenta de que ser vulnerable puede ser una fortaleza.",
+          "cuando deseas cultivar un liderazgo más auténtico.",
+          "cuando necesitas recordar que está bien no tener todas las respuestas.",
+          "cuando quieres hacer una diferencia en tu organización.",
+          "cuando te enfrentas a la resistencia al cambio en tu equipo.",
+          "cuando deseas impulsar un liderazgo más inclusivo.",
+          "cuando sientes que tu voz no se escucha en las reuniones.",
+          "cuando te preguntas cómo puedes ser un mejor mentor.",
+          "cuando buscas formas de fomentar la creatividad en tu equipo."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "vulnerabilidad",
+            "autenticidad",
+            "miedo",
+            "frustración",
+            "esperanza",
+            "confianza",
+            "inspiración",
+            "empatía",
+            "conexión",
+            "valentía"
+          ],
+          "objetos": [
+            "decisiones",
+            "fracasos",
+            "conversaciones",
+            "desafíos",
+            "líderes",
+            "aprendizajes",
+            "resultado",
+            "equipo",
+            "metas",
+            "experiencias"
+          ],
+          "contextos": [
+            "oficina",
+            "reuniones",
+            "entornos laborales",
+            "mentoría",
+            "círculos de discusión",
+            "conferencias",
+            "talleres de liderazgo",
+            "redes profesionales",
+            "sesiones de retroalimentación",
+            "espacios de trabajo"
+          ],
+          "verbos": [
+            "liderar",
+            "compartir",
+            "aprender",
+            "decidir",
+            "inspirar",
+            "escuchar",
+            "conectar",
+            "reflexionar",
+            "dialogar",
+            "crecer"
+          ]
+        },
+        "concept_tags": [
+          "liderazgo auténtico",
+          "vulnerabilidad en el liderazgo",
+          "crecimiento consciente",
+          "decisiones significativas",
+          "fracasos como aprendizaje",
+          "empatía en el trabajo",
+          "conexiones humanas",
+          "valentía en la vulnerabilidad",
+          "mentoría efectiva",
+          "liderazgo inclusivo"
+        ],
+        "anti_patterns": [
+          "no sirve para quienes buscan un enfoque de liderazgo autorit",
+          "no es un manual de técnicas de gestión rígidas",
+          "no es un libro sobre liderazgo basado en la jerarquía",
+          "no es para quienes evitan la auto-reflexión"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🤔"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌬️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👥"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🎶"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión del autor dentro del libro, sugiriendo un concepto central."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta reflexiva que invita a la introspección, típica de un contenido que se encuentra dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una reflexión que podría estar en el contexto del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una afirmación que podría ser parte de un argumento o reflexión del autor sobre el liderazgo, sugiriendo que es un contenido del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo o una pregunta dentro del contenido del libro, no una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión y práctica personal, lo que sugiere que es parte de un contenido introspectivo del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una invitación a la reflexión y una imagen que sugiere un concepto central del libro, lo que indica que es parte del contenido escrito por el autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una idea profunda que parece ser parte de la reflexión del autor, sugiriendo una voz íntima y personal dentro del texto."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a concept that feels like a direct insight or lesson from the author's perspective, suggesting it is part of the narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase invites personal reflection and suggests an introspective exercise, typical of content found within a book, particularly in a self-help or leadership context."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that suggests an introspective exploration typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a concept that feels like it is part of the narrative or thematic exploration within the book, suggesting an introspective voice."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a direct message that feels like advice or insight from the author, suggesting an internal reflection that fits within the narrative of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites introspection and feels like a direct engagement with the reader, typical of an author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase uses a metaphor and poses a reflective question, suggesting it is part of an internal dialogue or narrative within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a reflective insight that feels like a personal observation or lesson from the author, suggesting it is part of the narrative or argument within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-12T15:48:31.143Z",
+      "_edicion_numero": 68
+    },
+    {
       "titulo": "La Vaca",
       "autor": "Camilo Cruz",
       "tagline": "",
@@ -213,7 +1074,7 @@
           "titulo": "Breaking the Chains of Conformity",
           "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche.",
           "subtitulo": "What if you could unleash your true potential?",
-          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back."
+          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones."
         },
         "emotional_words_es": [
           "libertad",
@@ -341,7 +1202,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "space",
-            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan.",
+            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -1904,9 +2765,9 @@
         },
         "card_en": {
           "titulo": "Loving What Is",
-          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento.",
+          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es.",
           "subtitulo": "How to Transform Suffering into Acceptance?",
-          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es."
+          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es."
         },
         "emotional_words_es": [
           "liberación",
@@ -6128,7 +6989,7 @@
         },
         "card_en": {
           "titulo": "Small Data: Tiny Clues, Huge Trends",
-          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra.",
+          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea.",
           "subtitulo": "What secrets lurk in our daily routines?",
           "parrafoBot": "Ethnographic observation methodology is crucial for uncovering these hidden desires. Through this lens, we can understand how every seemingly insignificant data point transforms into a key for unveiling significant market trends. Observing is not just seeing; it's about interpreting and linking."
         },
@@ -6802,8 +7663,8 @@
         "✨ La paciencia y el conocimiento son tus mejores aliados en el camino de construir riqueza a través de inversiones informadas."
       ],
       "frases_og_en": [
-        "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor.",
-        "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real.",
+        "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas.",
+        "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada.",
         "💠 What if your savings are the seed for future investments?",
         "✨ Informed decisions build lasting wealth, while impulse leads to regret."
       ],
@@ -6970,7 +7831,7 @@
         },
         "card_en": {
           "titulo": "Investing: The Path to Real Wealth",
-          "parrafoTop": "Understanding your investor profile is essential for building a suitable strategy. It's not just about randomly selecting investments; it's about knowing what risks you're willing to take. Informed investments require time, patience, and a clear focus on your financial goals. Learning to invest is a step forward towards building real wealth through informed investment strategies.",
+          "parrafoTop": "Understanding your investor profile is essential for building a suitable strategy. It's not just about randomly selecting investments; it's about knowing what risks you're willing to take. Informed investments require time, patience, and a clear focus on your financial goals. Learning to invest is a step forward towards building real wealth through informed investment strategies that align with your investor profile and help you achieve sustained returns over time.",
           "subtitulo": "How can you start building your wealth today?",
           "parrafoBot": "The relationship between risk and return is fundamental in the investment world. There are no shortcuts or miracles, and it's crucial to remember that decisions should be based on solid information. This is how sustained returns are achieved: by investing with knowledge and purpose."
         },
@@ -7022,7 +7883,7 @@
         ],
         "og_phrases_en": [
           {
-            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor.",
+            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas.",
             "role_symphonic": "land",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -7030,7 +7891,7 @@
             "punto_optimo": "activo"
           },
           {
-            "phrase": "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real.",
+            "phrase": "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -10481,7 +11342,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement.",
+            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running.",
             "role_symphonic": "resonate",
             "mood_axis": 0.4,
             "value_axis": null,
@@ -11265,7 +12126,7 @@
         },
         "card_en": {
           "titulo": "Losing Weight from Love",
-          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo.",
+          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo, cultivando así una conexión más profunda entre la mente y el cuerpo.",
           "subtitulo": "How can you find peace in your relationship with food?",
           "parrafoBot": "Eating with awareness is not just a physical path but a spiritual journey. Each bite becomes a chance to heal, to love oneself, and to recognize the transformative power of faith in your life."
         },
@@ -12929,7 +13790,7 @@
         },
         "card_en": {
           "titulo": "Effortless Success: A Shift in Perspective",
-          "parrafoTop": "When we live in harmony with the natural laws, success flows organically. This approach transforms our perception of effort, revealing that true fulfillment does not stem from struggle but from understanding and aligning with our deepest essence.",
+          "parrafoTop": "When we live in harmony with the natural laws, success flows organically. This approach transforms our perception of effort, revealing that true fulfillment does not stem from struggle but from understanding and aligning with our deepest essence, which is the essence of living in accordance with the spiritual laws that govern our existence.",
           "subtitulo": "What does it really mean to achieve success?",
           "parrafoBot": "Success is not measured by the amount of hard work put in, but by the connection to our spiritual nature and the ability to allow our intentions to manifest without resistance. In this flow, life reveals its splendor."
         },
@@ -13601,10 +14462,10 @@
         "🌌 La mente no puede sanar en un cuerpo inflamado."
       ],
       "frases_en": [
-        "🌅 Visualize the intricate dance between the immune system and mental health; it’s a choreography of biología y neurociencia que revela la conexión entre inflamación y depresión, y cómo el sistema inmunitario puede ser la raíz de trastornos mentales.",
+        "🌅 Visualize the intricate dance between the immune system and mental health; it’s a choreography of biología y neurociencia que revela la conexión entre inflamación y depresión, y cómo el sistema inmunitario puede ser la raíz de trastornos mentales, ofreciendo nuevas perspectivas sobre el tratamiento de la depresión.",
         "🚶 Health thrives when the body is understood as part of the mind's narrative.",
         "🫁 Is it possible that our understanding of depression has been too narrow?",
-        "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo."
+        "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo, así como la relación entre la inflamación y la depresión."
       ],
       "frases_og": [
         "🛡 La inflamación puede ser la clave para entender la depresión.",
@@ -13911,7 +14772,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "sight",
-            "phrase": "🌅 Visualize the intricate dance between the immune system and mental health; it’s a choreography of biología y neurociencia que revela la conexión entre inflamación y depresión, y cómo el sistema inmunitario puede ser la raíz de trastornos mentales.",
+            "phrase": "🌅 Visualize the intricate dance between the immune system and mental health; it’s a choreography of biología y neurociencia que revela la conexión entre inflamación y depresión, y cómo el sistema inmunitario puede ser la raíz de trastornos mentales, ofreciendo nuevas perspectivas sobre el tratamiento de la depresión.",
             "role_symphonic": "deepen",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -13941,7 +14802,7 @@
           {
             "gesture_type": "concrete_image",
             "sensory_anchor": "space",
-            "phrase": "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo.",
+            "phrase": "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo, así como la importancia de la inflamación en la salud mental.",
             "role_symphonic": "resonate",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -19487,7 +20348,7 @@
     {
       "titulo": "Trabaja duro trabaja con astucia",
       "autor": "Curtis Jackson",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente.",
+      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "isbn": "",
@@ -33060,7 +33921,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-10T16:32:50.648Z"
+      "_audit_timestamp": "2026-06-12T15:48:33.529Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -41519,7 +42380,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-10T16:32:50.648Z"
+      "_audit_timestamp": "2026-06-12T15:48:33.529Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -49188,7 +50049,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-10T16:32:50.648Z"
+      "_audit_timestamp": "2026-06-12T15:48:33.529Z"
     },
     {
       "titulo": "Suscritos",
@@ -50913,11 +51774,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 68,
-    "total": 60,
-    "last_audit": "2026-06-10T16:32:50.648Z",
-    "healing_rotation_idx": 4,
+    "next_edition_number": 69,
+    "total": 61,
+    "last_audit": "2026-06-12T15:48:33.530Z",
+    "healing_rotation_idx": 5,
     "last_healing_book": "Trabaja duro trabaja con astucia",
-    "last_healing_timestamp": "2026-06-10T16:54:53.487Z"
+    "last_healing_timestamp": "2026-06-12T16:06:42.954Z"
   }
 }
