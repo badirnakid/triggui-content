@@ -1,6 +1,866 @@
 {
   "libros": [
     {
+      "titulo": "el arte de la indiferencia",
+      "autor": "santiago roncagliolo",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/31/a5/38/31a53813-300a-bb03-ecc7-e0df4347f334/9788419642042.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/31/a5/38/31a53813-300a-bb03-ecc7-e0df4347f334/9788419642042.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "el arte de la indiferencia",
+      "titulo_en": "el arte de la indiferencia",
+      "idioma_original": "es",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "confusión",
+        "dualidad",
+        "misterio",
+        "revelación"
+      ],
+      "palabras_en": [
+        "identity",
+        "enigma",
+        "truth",
+        "art"
+      ],
+      "frases": [
+        "⏳ ¿Qué pasaría si la identidad no fuera más que un acto de creación?",
+        "🔭 Visualiza el monumento a Lorca y siente la historia que encierra.",
+        "🌌 Un osario oculto, un monumento a la memoria entre dos países.",
+        "⏳ La verdad se despliega entre las sombras de lo conocido."
+      ],
+      "frases_en": [
+        "👁 Imagine the moment when one stands before the monument, the weight of history pressing down.",
+        "🌊 Embrace the uncertainty of your identity. What stories do you carry?",
+        "🌓 In the interplay of public and private, we find the essence of our being.",
+        "🏛 Picture the artist, a chameleon in a world of stark realities, shifting with each encounter."
+      ],
+      "frases_og": [
+        "🔮 ¿Cómo se construye la identidad entre el arte y la vida?",
+        "🕊 La verdad en la vida de un artista es una construcción continua.",
+        "📖 ¿Qué secretos oculta la correspondencia de Amorim?",
+        "🌓 Las identidades son máscaras que a veces se convierten en piel."
+      ],
+      "frases_og_en": [
+        "🔮 Identity is a labyrinth where truths and myths intertwine.",
+        "🕊 Question everything that seems fixed. Identity is fluid, like the art of creating and understanding the complexities of identity in the context of history.",
+        "📖 How often do we hide behind the masks we create?",
+        "🌓 Art reveals what we dare not say — the heart of our truths."
+      ],
+      "colores": [
+        "#F1B57E",
+        "#3090E8",
+        "#AE8513",
+        "#0B2365"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "La búsqueda de la identidad",
+        "parrafoTop": "[H]El enigma del monumento a García Lorca no solo es un símbolo de la muerte[/H]. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá la literatura y el arte desentrañar este enigma y ofrecer una nueva perspectiva sobre la vida y la muerte?",
+        "subtitulo": "¿Qué es lo que realmente nos define?",
+        "parrafoBot": "[H]La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas[/H]. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La búsqueda de la identidad",
+        "parrafoTop": "[H]El enigma del monumento a García Lorca no solo es un símbolo de la muerte[/H]. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá la literatura y el arte desentrañar este enigma y ofrecer una nueva perspectiva sobre la vida y la muerte?",
+        "subtitulo": "¿Qué es lo que realmente nos define?",
+        "parrafoBot": "[H]La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas[/H]. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La búsqueda de la identidad",
+        "parrafoTop": "[H]El enigma del monumento a García Lorca no solo es un símbolo de la muerte[/H]. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá la literatura y el arte desentrañar este enigma y ofrecer una nueva perspectiva sobre la vida y la muerte?",
+        "subtitulo": "¿Qué es lo que realmente nos define?",
+        "parrafoBot": "[H]La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas[/H]. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Search for Identity",
+        "parrafoTop": "The enigma of García Lorca's monument stands not merely as a symbol of death but as a testament to the life that led Enrique Amorim to construct his own narrative. [H]In that liminal space, where the borders of Uruguay and Argentina intertwine, lies the search for his identity[/H].",
+        "subtitulo": "What truly defines us?",
+        "parrafoBot": "[H]Amorim's duality serves as a mirror to many twentieth-century artists[/H], who oscillate between their public and private identities. At its core, art transforms into a battleground where truths and lies are negotiated, a terrain where the perception of truth morphs into an act of creation.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Search for Identity",
+        "parrafoTop": "The enigma of García Lorca's monument stands not merely as a symbol of death but as a testament to the life that led Enrique Amorim to construct his own narrative. [H]In that liminal space, where the borders of Uruguay and Argentina intertwine, lies the search for his identity[/H].",
+        "subtitulo": "What truly defines us?",
+        "parrafoBot": "[H]Amorim's duality serves as a mirror to many twentieth-century artists[/H], who oscillate between their public and private identities. At its core, art transforms into a battleground where truths and lies are negotiated, a terrain where the perception of truth morphs into an act of creation.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Search for Identity",
+        "parrafoTop": "The enigma of García Lorca's monument stands not merely as a symbol of death but as a testament to the life that led Enrique Amorim to construct his own narrative. [H]In that liminal space, where the borders of Uruguay and Argentina intertwine, lies the search for his identity[/H].",
+        "subtitulo": "What truly defines us?",
+        "parrafoBot": "[H]Amorim's duality serves as a mirror to many twentieth-century artists[/H], who oscillate between their public and private identities. At its core, art transforms into a battleground where truths and lies are negotiated, a terrain where the perception of truth morphs into an act of creation.",
+        "style": {
+          "accent": "#E27612",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+el%20arte%20de%20la%20indiferencia%20santiago%20roncagliolo%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+el%20arte%20de%20la%20indiferencia%20santiago%20roncagliolo%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-14T18:09:16.661Z",
+        "workflow_run_id": "27507559742",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "3 — Máximo (peak)",
+        "pilar": "familia",
+        "hawkins_target": "amor (500)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "familia",
+        "nota_libro": "",
+        "sentimiento": "me frustra la indiferencia"
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "familia",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "el arte de la indiferencia",
+          "titulo_en": "el arte de la indiferencia",
+          "autor_completo": "santiago roncagliolo",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "el enigma del monumento a García Lorca",
+            "la dualidad de Enrique Amorim",
+            "la búsqueda de identidad entre artistas y su contexto histórico",
+            "la intersección entre vida pública y privada de los creativos del siglo XX",
+            "la percepción de la verdad en la narrativa personal"
+          ],
+          "key_terms": [
+            "monumento",
+            "identidad",
+            "artistas",
+            "correspondencia",
+            "literatura"
+          ],
+          "authorial_voice_notes": "Roncagliolo utiliza un tono reflexivo y observador, combinando la investigación rigurosa con un estilo narrativo que invita al lector a explorar la complejidad de las identidades y las verdades de sus personajes."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la familia en el sentido de las relaciones entre los artistas y sus contextos familiares, mostrando cómo influyen en sus identidades y decisiones artísticas. A través de la figura de Amorim, se despliega un relato que toca la conexión y desconexión con figuras familiares y de amistad en el ámbito artístico, sugiriendo una exploración de los vínculos personales entre la vida familiar y la vida profesional.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 18.875,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La búsqueda de la identidad",
+          "parrafoTop": "El enigma del monumento a García Lorca no solo es un símbolo de la muerte, sino también de la vida que llevó a Enrique Amorim a construir su propia narrativa. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá este monumento ser un testimonio de la dualidad de su vida y su obra, así como de la intersección entre su vida pública y privada, y la percepción de la verdad en su narrativa personal?",
+          "subtitulo": "¿Qué es lo que realmente nos define?",
+          "parrafoBot": "La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación."
+        },
+        "card_en": {
+          "titulo": "The Search for Identity",
+          "parrafoTop": "The enigma of García Lorca's monument stands not merely as a symbol of death but as a testament to the life that led Enrique Amorim to construct his own narrative. In that liminal space, where the borders of Uruguay and Argentina intertwine, lies the search for his identity, a reflection of the complexity of his being.",
+          "subtitulo": "What truly defines us?",
+          "parrafoBot": "Amorim's duality serves as a mirror to many twentieth-century artists, who oscillate between their public and private identities. At its core, art transforms into a battleground where truths and lies are negotiated, a terrain where the perception of truth morphs into an act of creation."
+        },
+        "emotional_words_es": [
+          "confusión",
+          "dualidad",
+          "misterio",
+          "revelación"
+        ],
+        "emotional_words_en": [
+          "identity",
+          "enigma",
+          "truth",
+          "art"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔮 ¿Cómo se construye la identidad entre el arte y la vida?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 La verdad en la vida de un artista es una construcción continua.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 ¿Qué secretos oculta la correspondencia de Amorim?",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 Las identidades son máscaras que a veces se convierten en piel.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔮 Identity is a labyrinth where truths and myths intertwine.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🕊 Question everything that seems fixed. Identity is fluid, like the art of creating and understanding the complexities of identity in the context of history.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 How often do we hide behind the masks we create?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌓 Art reveals what we dare not say — the heart of our truths.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Qué pasaría si la identidad no fuera más que un acto de creación?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Visualiza el monumento a Lorca y siente la historia que encierra.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Un osario oculto, un monumento a la memoria entre dos países.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ La verdad se despliega entre las sombras de lo conocido.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Imagine the moment when one stands before the monument, the weight of history pressing down.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Embrace the uncertainty of your identity. What stories do you carry?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 In the interplay of public and private, we find the essence of our being.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Picture the artist, a chameleon in a world of stark realities, shifting with each encounter.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.83,
+          "voice_authenticity": 0.32,
+          "specificity": 0.92,
+          "grounding_judge": 0.75,
+          "combined": 0.72,
+          "signals": {
+            "bookIdentityConfidence": 0.8277777777777778,
+            "voiceSignal": 0.31999999999999995,
+            "specificitySignal": 0.9227272727272727,
+            "judgeScore": 0.75
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8277777777777778,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "el arte de la indiferencia",
+          "autor_completo": "santiago roncagliolo",
+          "titulo_api": "El amante uruguayo",
+          "autor_api": "Santiago Roncagliolo",
+          "año": "2023",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6445675992",
+          "categorias": [
+            "Biografías y memorias",
+            "Libros"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/el-amante-uruguayo/id6445675992?uo=4"
+        },
+        "match_score": 0.6944444444444444,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja conceptos específicos del libro, como el monumento a García Lorca y la dualidad de Amorim, lo que indica un buen anclaje a la sinopsis. Sin embargo, algunas frases son más generales sobre la identidad y el arte, lo que le resta un poco de especificidad. Aún así, se siente como una descripción que podría estar en la contraportada del libro."
+        },
+        "en": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects specific themes from the book, such as the enigma of García Lorca's monument and Amorim's complex identity. It discusses the duality of Amorim and the interplay of public and private identities, which are central to the book's narrative. However, some phrases are more abstract and could apply to broader themes in literature, slightly reducing the grounded score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "resena",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Explora temas del libro sin referirse a él externamente.",
+          "elapsed_ms": 925,
+          "usage": {
+            "prompt_tokens": 436,
+            "completion_tokens": 28,
+            "total_tokens": 464,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "resena",
+          "confidence": 0.9,
+          "reason": "Habla del autor y su obra desde una perspectiva externa.",
+          "elapsed_ms": 1014,
+          "usage": {
+            "prompt_tokens": 413,
+            "completion_tokens": 28,
+            "total_tokens": 441,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": true,
+        "total_tokens": 905,
+        "total_ms": 1014
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 18.875,
+          "adjusted_hue": 28.875,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.34",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1B57E",
+          "--palette-1": "#3090E8",
+          "--palette-2": "#AE8513",
+          "--palette-3": "#0B2365",
+          "--accent": "#E27612",
+          "--accent-soft": "#E2761238",
+          "--accent-glow": "#E276126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1C1917",
+          "--border": "#90908F",
+          "--highlight-bg": "#C76810d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 3 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-14T18-09-16",
+      "_crono": {
+        "dia": "domingo",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "preparacion_semana",
+        "descripcion_dia": "Domingo prepara cuerpo y mente para lunes. Sobrio, reflexivo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 60819,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15287,
+          "palette": 0,
+          "content_es": 18151,
+          "judge_es": 1124,
+          "content_en": 16843,
+          "judge_en": 1125,
+          "voice": 905,
+          "voice_extended": 7384,
+          "highlight_judge_es_parrafoTop": 657,
+          "highlight_judge_es_parrafoTop_retry": 654,
+          "highlight_judge_es_parrafoBot": 665,
+          "highlight_judge_es_parrafoBot_retry": 659,
+          "highlight_judge_en_parrafoTop": 651,
+          "highlight_judge_en_parrafoTop_retry": 656,
+          "highlight_judge_en_parrafoBot": 641,
+          "csal": 8996
+        },
+        "elapsed_ms_total": 81129,
+        "elapsed_ms_by_phase": {
+          "grounding": 8,
+          "anchors": 10367,
+          "palette": 1,
+          "cover_fallback": 90,
+          "content_es": 31914,
+          "judge_es": 2746,
+          "content_en": 29593,
+          "judge_en": 2453,
+          "voice": 1014,
+          "voice_extended": 2941,
+          "highlight_judge": 10668,
+          "lens_compatibility": 2050,
+          "csal": 62175,
+          "post_processing": 74900
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 3,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.9,
+          "negocio": 0,
+          "familia": 0,
+          "espiritu": 0.5,
+          "relaciones": 0.7,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando te preguntas quién eras antes de ser quien eres",
+          "después de visitar una exposición sobre artistas del siglo XX",
+          "cuando lees sobre la vida de Federico García Lorca",
+          "antes de un viaje a la frontera entre Uruguay y Argentina",
+          "después de una conversación sobre la identidad personal",
+          "cuando te enfrentas a la dualidad de la vida pública y privada",
+          "antes de escribir sobre un personaje histórico complejo",
+          "cuando te sientes atraído por historias de misterio",
+          "cuando reflexionas sobre el papel de la mentira en la historia",
+          "después de asistir a una obra de teatro sobre artistas",
+          "cuando te preguntas qué es real y qué es ficción",
+          "antes de un debate sobre comunismo y arte",
+          "cuando lees una carta antigua de un escritor famoso",
+          "después de ver una película sobre la Guerra Fría",
+          "cuando intentas entender a una persona que admiras pero no comprendes",
+          "cuando exploras la influencia de artistas en la política",
+          "cuando investigas sobre un monumento histórico",
+          "antes de visitar un lugar cargado de historia personal",
+          "cuando te sientes desconectado de tus raíces",
+          "cuando buscas entender por qué alguien haría un monumento en secreto",
+          "después de escuchar una charla sobre poesía hispanoamericana",
+          "cuando te sientes atrapado entre dos culturas",
+          "antes de escribir sobre la vida de un artista",
+          "cuando te preguntas si el pasado define tu presente",
+          "después de una discusión sobre las verdades ocultas en el arte",
+          "cuando te sientes intrigado por la vida de un camaleón social",
+          "cuando te preguntas cómo se construye el legado de un artista",
+          "antes de investigar sobre las amistades de un escritor famoso",
+          "cuando te fascina la idea de enterramientos simbólicos",
+          "después de leer sobre la vida de un comunista en el siglo XX"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "intriga",
+            "curiosidad",
+            "confusión",
+            "admiración",
+            "sospecha",
+            "fascinación",
+            "perplejidad",
+            "empatía",
+            "nostalgia",
+            "escepticismo"
+          ],
+          "objetos": [
+            "monumento",
+            "osario",
+            "cartas",
+            "memorial",
+            "lápida",
+            "fotografías",
+            "libros",
+            "estatuas",
+            "documentos",
+            "mapas"
+          ],
+          "contextos": [
+            "frontera uruguayo-argentina",
+            "exposición de arte",
+            "biblioteca",
+            "archivo histórico",
+            "café literario",
+            "ruinas",
+            "museo",
+            "conversación íntima",
+            "cine",
+            "teatro"
+          ],
+          "verbos": [
+            "investigar",
+            "cuestionar",
+            "escribir",
+            "reflexionar",
+            "explorar",
+            "desenterrar",
+            "conversar",
+            "leer",
+            "viajar",
+            "interpretar"
+          ]
+        },
+        "concept_tags": [
+          "monumento a García Lorca",
+          "dualidad de Amorim",
+          "identidad artística",
+          "misterio histórico",
+          "red de amistades creativas",
+          "osario simbólico",
+          "historia política de artistas",
+          "mentiras en la narrativa",
+          "comunismo en el arte",
+          "frontera cultural Uruguay-Argentina",
+          "exploración de la verdad",
+          "legado de Federico García Lorca",
+          "vida privada de escritores",
+          "camaleonismo social",
+          "intersecciones de vida y arte"
+        ],
+        "anti_patterns": [
+          "cuando buscas un manual de autoayuda",
+          "cuando necesitas consejos prácticos para la vida diaria",
+          "cuando esperas una biografía lineal y detallada",
+          "cuando buscas información sobre técnicas artísticas",
+          "cuando necesitas una guía de viaje sobre Uruguay o Argentina"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🎭"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🗿"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "⚰️"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌘"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase plantea una pregunta que invita a la reflexión, típica de un contenido que podría estar dentro de un libro, sugiriendo un tema central de discusión."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase refleja una reflexión personal que podría estar presente en el texto del autor, sugiriendo una voz introspectiva y filosófica."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase plantea una pregunta que sugiere un contenido intrigante dentro del libro, como si el lector estuviera explorando el texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión poética que sugiere un pensamiento profundo del autor, típico de la voz interna del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que podría estar en el contexto del libro, sugiriendo una exploración de la identidad desde la voz del autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita al lector a experimentar una acción dentro del contexto del libro, sugiriendo una conexión emocional con el monumento."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase evoca una imagen y un concepto que podrían formar parte de la narrativa del libro, sugiriendo un contexto específico dentro de la historia."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono poético y reflexivo que sugiere una voz autoral, como si fuera parte de la narrativa del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical reflection on identity, suggesting a deeper exploration typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct voice from the author, suggesting a theme explored within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a profound idea that feels like a direct reflection of the author's voice, suggesting an intimate exploration of themes within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and emotional experience, suggesting it is part of the narrative or descriptive writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages introspection and personal reflection, suggesting it is part of the narrative voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection from the author's voice within the text, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase evokes imagery and engages the reader's imagination, suggesting a narrative style typical of an author's voice within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-14T18:11:52.691Z",
+      "_edicion_numero": 70
+    },
+    {
       "titulo": "La vida secreta del cerebro",
       "autor": "Lisa Feldman",
       "tagline": "",
@@ -211,7 +1071,7 @@
           "titulo": "Emotions as Momentary Constructs",
           "parrafoTop": "Emotions are not fixed entities located in specific areas of the brain; rather, they are momentary constructs woven together by accumulated experience and learning. Each emotional reaction results from the interplay of brain systems communicating in real time, forming a network of connections that shapes our responses.",
           "subtitulo": "How does our learning influence our emotions?",
-          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro."
+          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro, sino que son el resultado de procesos complejos que involucran tanto la psicología como la neurociencia."
         },
         "emotional_words_es": [
           "comprensión",
@@ -1082,7 +1942,7 @@
         },
         "card_en": {
           "titulo": "Courage in Vulnerability",
-          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano.",
+          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano, donde la valentía y la autenticidad son fundamentales para un liderazgo efectivo.",
           "subtitulo": "What does it mean to be an authentic leader?",
           "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment."
         },
@@ -1763,7 +2623,7 @@
         "⏳ Las excusas son el eco del conformismo, rompelas y hallarás tu voz."
       ],
       "frases_en": [
-        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial.",
+        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras.",
         "🕯 What would your life look like if you released all your excuses?",
         "🌓 Imagine shedding those invisible chains, stepping into a world of possibility and growth.",
         "🚶 Every excuse is a cow, but you hold the power to break free and embrace your true potential."
@@ -1943,9 +2803,9 @@
         },
         "card_en": {
           "titulo": "Breaking the Chains of Conformity",
-          "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche.",
+          "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche, impidiendo que alcancemos nuestro verdadero potencial y vivamos una vida libre de justificaciones.",
           "subtitulo": "What if you could unleash your true potential?",
-          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos."
+          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos, superando el conformismo y abrazando la libertad que nos ofrece una vida sin excusas."
         },
         "emotional_words_es": [
           "libertad",
@@ -2073,7 +2933,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "space",
-            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras.",
+            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -3636,9 +4496,9 @@
         },
         "card_en": {
           "titulo": "Loving What Is",
-          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad.",
+          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad y abrazando el proceso de El Trabajo como un camino hacia la autoinvestigación y la aceptación plena.",
           "subtitulo": "How to Transform Suffering into Acceptance?",
-          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad."
+          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad, convirtiéndonos en amantes de la realidad."
         },
         "emotional_words_es": [
           "liberación",
@@ -7860,7 +8720,7 @@
         },
         "card_en": {
           "titulo": "Small Data: Tiny Clues, Huge Trends",
-          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor.",
+          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor y cómo estos patrones se relacionan con las tendencias de mercado que emergen de la observación etnográfica de los hogares de los consumidores.",
           "subtitulo": "What secrets lurk in our daily routines?",
           "parrafoBot": "Ethnographic observation methodology is crucial for uncovering these hidden desires. Through this lens, we can understand how every seemingly insignificant data point transforms into a key for unveiling significant market trends. Observing is not just seeing; it's about interpreting and linking."
         },
@@ -8534,8 +9394,8 @@
         "✨ La paciencia y el conocimiento son tus mejores aliados en el camino de construir riqueza a través de inversiones informadas."
       ],
       "frases_og_en": [
-        "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros.",
-        "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada que te permita tomar decisiones informadas y alcanzar tus objetivos financieros.",
+        "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros, permitiéndote alcanzar un rendimiento sostenido y una riqueza real.",
+        "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada que te permita tomar decisiones informadas y alcanzar tus objetivos financieros a largo plazo, asegurando así un rendimiento sostenido en el tiempo.",
         "💠 What if your savings are the seed for future investments?",
         "✨ Informed decisions build lasting wealth, while impulse leads to regret."
       ],
@@ -8702,7 +9562,7 @@
         },
         "card_en": {
           "titulo": "Investing: The Path to Real Wealth",
-          "parrafoTop": "Understanding your investor profile is essential for building a suitable strategy. It's not just about randomly selecting investments; it's about knowing what risks you're willing to take. Informed investments require time, patience, and a clear focus on your financial goals. Learning to invest is a step forward towards building real wealth through informed investment strategies that align with your investor profile and help you achieve sustained returns over time, lo que implica un compromiso constante con la educación financiera y la adaptación a los cambios del mercado.",
+          "parrafoTop": "Understanding your investor profile is essential for building a suitable strategy. It's not just about randomly selecting investments; it's about knowing what risks you're willing to take. Informed investments require time, patience, and a clear focus on your financial goals. Learning to invest is a step forward towards building real wealth through informed investment strategies that align with your investor profile and help you achieve sustained returns over time, lo que implica un compromiso constante con la educación financiera y la adaptación a los cambios del mercado, así como la necesidad de seguir aprendiendo y ajustando tus estrategias de inversión para maximizar tus oportunidades de éxito.",
           "subtitulo": "How can you start building your wealth today?",
           "parrafoBot": "The relationship between risk and return is fundamental in the investment world. There are no shortcuts or miracles, and it's crucial to remember that decisions should be based on solid information. This is how sustained returns are achieved: by investing with knowledge and purpose."
         },
@@ -8754,7 +9614,7 @@
         ],
         "og_phrases_en": [
           {
-            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros.",
+            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros, asegurando así un rendimiento sostenido y un crecimiento real en tu patrimonio.",
             "role_symphonic": "land",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -8762,7 +9622,7 @@
             "punto_optimo": "activo"
           },
           {
-            "phrase": "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada, que te permita tomar decisiones informadas y alcanzar tus objetivos financieros.",
+            "phrase": "🔍 Start by defining your investor profile. Understand your capacity for riesgo y retorno en inversiones informadas para construir riqueza real a través de una estrategia de inversión sólida y bien fundamentada, que te permita tomar decisiones informadas y alcanzar tus objetivos financieros a largo plazo, teniendo en cuenta la importancia de la paciencia y el conocimiento en el proceso de inversión.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -9559,7 +10419,7 @@
           "titulo": "El poder de la autenticidad",
           "parrafoTop": "La autenticidad en la escritura no solo conecta al escritor con su obra, sino que también crea un puente hacia el lector. Al compartir nuestras experiencias más íntimas, permitimos que otros se vean reflejados en nuestras palabras. Es en esa vulnerabilidad donde reside el verdadero poder de la narrativa.",
           "subtitulo": "¿Cómo transformar la experiencia en narrativa significativa?",
-          "parrafoBot": "Transformar experiencias vividas en narrativas significativas requiere un acto de valentía. Al hacerlo, no solo damos sentido a nuestro pasado, sino que también brindamos a otros la oportunidad de encontrar significado en sus propias vivencias. Cada historia personal es un testimonio de resiliencia y conexión."
+          "parrafoBot": "Transformar experiencias vividas en narrativas significativas requiere un acto de valentía. Al hacerlo, no solo damos sentido a nuestro pasado, sino que también brindamos a otros la oportunidad de encontrar significado en sus propias vivencias. Cada historia personal es un testimonio de resiliencia y conexión, y refleja la autenticidad que buscamos en la escritura."
         },
         "card_en": {
           "titulo": "The Power of Authenticity",
@@ -12213,7 +13073,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice.",
+            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice of running with purpose and conscious training.",
             "role_symphonic": "resonate",
             "mood_axis": 0.4,
             "value_axis": null,
@@ -12997,7 +13857,7 @@
         },
         "card_en": {
           "titulo": "Losing Weight from Love",
-          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo, cultivando así una conexión más profunda entre la mente y el cuerpo, y reconociendo que el poder del amor puede guiarnos hacia un desarrollo espiritual que nos libere del miedo y el odio.",
+          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo, cultivando así una conexión más profunda entre la mente y el cuerpo, y reconociendo que el poder del amor puede guiarnos hacia un desarrollo espiritual que nos libere del miedo y el odio, permitiéndonos vivir en armonía con nosotros mismos y alcanzar una paz interior duradera.",
           "subtitulo": "How can you find peace in your relationship with food?",
           "parrafoBot": "Eating with awareness is not just a physical path but a spiritual journey. Each bite becomes a chance to heal, to love oneself, and to recognize the transformative power of faith in your life."
         },
@@ -14661,7 +15521,7 @@
         },
         "card_en": {
           "titulo": "Effortless Success: A Shift in Perspective",
-          "parrafoTop": "When we live in harmony with the natural laws, success flows organically. This approach transforms our perception of effort, revealing that true fulfillment does not stem from struggle but from understanding and aligning with our deepest essence, which is the essence of living in accordance with the spiritual laws that govern our existence.",
+          "parrafoTop": "When we live in harmony with the natural laws, success flows organically. This approach transforms our perception of effort, revealing that true fulfillment does not stem from struggle but from understanding and aligning with our deepest essence, which is the essence of living in accordance with the spiritual laws that govern our existence, permitiéndonos experimentar un éxito sin esfuerzo y una conexión profunda con la naturaleza.",
           "subtitulo": "What does it really mean to achieve success?",
           "parrafoBot": "Success is not measured by the amount of hard work put in, but by the connection to our spiritual nature and the ability to allow our intentions to manifest without resistance. In this flow, life reveals its splendor."
         },
@@ -15365,7 +16225,7 @@
       "fondo": "#EFEFF0",
       "tarjeta": {
         "titulo": "La inflamación y la mente: un nuevo enfoque",
-        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo.",
+        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo que pueden ser abordados desde nuevas perspectivas en la neurociencia y la psiquiatría.",
         "subtitulo": "¿Estamos ignorando el papel del cuerpo en la salud mental?",
         "parrafoBot": "[H]La perspectiva de que los trastornos mentales pueden tener raíces en la inflamación abre nuevas vías para los tratamientos[/H]. Al abordar la depresión desde un enfoque que integre mente y cuerpo, podemos diseñar intervenciones más eficaces que rompan los ciclos viciosos del estrés y la enfermedad.",
         "style": {
@@ -15377,7 +16237,7 @@
       },
       "tarjeta_base": {
         "titulo": "La inflamación y la mente: un nuevo enfoque",
-        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo.",
+        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo que pueden ser abordados desde nuevas perspectivas en la neurociencia y la psiquiatría.",
         "subtitulo": "¿Estamos ignorando el papel del cuerpo en la salud mental?",
         "parrafoBot": "[H]La perspectiva de que los trastornos mentales pueden tener raíces en la inflamación abre nuevas vías para los tratamientos[/H]. Al abordar la depresión desde un enfoque que integre mente y cuerpo, podemos diseñar intervenciones más eficaces que rompan los ciclos viciosos del estrés y la enfermedad.",
         "style": {
@@ -15389,7 +16249,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La inflamación y la mente: un nuevo enfoque",
-        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo.",
+        "parrafoTop": "[H]La conexión entre la inflamación y la depresión revela un panorama intrigante[/H] sobre cómo el sistema inmunitario puede afectar nuestra salud mental. En este contexto, la depresión no es solo un trastorno emocional, sino también una manifestación de procesos biológicos en el cuerpo que pueden ser abordados desde nuevas perspectivas en la neurociencia y la psiquiatría.",
         "subtitulo": "¿Estamos ignorando el papel del cuerpo en la salud mental?",
         "parrafoBot": "[H]La perspectiva de que los trastornos mentales pueden tener raíces en la inflamación abre nuevas vías para los tratamientos[/H]. Al abordar la depresión desde un enfoque que integre mente y cuerpo, podemos diseñar intervenciones más eficaces que rompan los ciclos viciosos del estrés y la enfermedad.",
         "style": {
@@ -15673,7 +16533,7 @@
           {
             "gesture_type": "concrete_image",
             "sensory_anchor": "space",
-            "phrase": "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo, así como la importancia de la inflamación en la salud mental, especialmente en la relación entre la inflamación y la depresión.",
+            "phrase": "🌌 Imagine a world where mental health care embraces the body's wisdom, uniting all aspects of well-being y promoviendo la conexión entre cerebro y cuerpo, así como la importancia de la inflamación en la salud mental, especialmente en la relación entre la inflamación y la depresión, y cómo el sistema inmunitario puede influir en estos trastornos.",
             "role_symphonic": "resonate",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -21219,7 +22079,7 @@
     {
       "titulo": "Trabaja duro trabaja con astucia",
       "autor": "Curtis Jackson",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo.",
+      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo, aprendiendo a adaptarte y a ser resiliente ante cada dificultad que surja.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "isbn": "",
@@ -34792,7 +35652,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-12T17:23:17.693Z"
+      "_audit_timestamp": "2026-06-14T18:12:04.893Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -43251,7 +44111,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-12T17:23:17.693Z"
+      "_audit_timestamp": "2026-06-14T18:12:04.893Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -50920,7 +51780,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-12T17:23:17.693Z"
+      "_audit_timestamp": "2026-06-14T18:12:04.893Z"
     },
     {
       "titulo": "Suscritos",
@@ -52645,11 +53505,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 70,
-    "total": 62,
-    "last_audit": "2026-06-12T17:23:17.693Z",
-    "healing_rotation_idx": 6,
+    "next_edition_number": 71,
+    "total": 63,
+    "last_audit": "2026-06-14T18:12:04.893Z",
+    "healing_rotation_idx": 7,
     "last_healing_book": "Trabaja duro trabaja con astucia",
-    "last_healing_timestamp": "2026-06-12T17:42:10.609Z"
+    "last_healing_timestamp": "2026-06-14T18:30:41.989Z"
   }
 }
