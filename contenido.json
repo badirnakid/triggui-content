@@ -1,6 +1,870 @@
 {
   "libros": [
     {
+      "titulo": "Nonzero",
+      "autor": "Robert Wright",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/9c/1e/a2/9c1ea27d-6c18-6991-2658-623c2b39856e/9780375727818.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/9c/1e/a2/9c1ea27d-6c18-6991-2658-623c2b39856e/9780375727818.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Nonzero",
+      "titulo_en": "Nonzero: The Logic of Human Destiny",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "asombro",
+        "conexión",
+        "revelación",
+        "esperanza"
+      ],
+      "palabras_en": [
+        "complexity",
+        "cooperation",
+        "morality",
+        "evolution"
+      ],
+      "frases": [
+        "📻 ¿Cómo se han transformado nuestras nociones de cooperación a lo largo de la historia?",
+        "👁 La moralidad se eleva cuando la cooperación es un destino común.",
+        "🌊 Imagina una comunidad unida en torno a un objetivo común: ahí nace la complejidad.",
+        "🌓 Reflexiona sobre cómo cada acción colectiva ha moldeado nuestro destino humano."
+      ],
+      "frases_en": [
+        "🌓 Life's trajectory is defined by our capacity to work together, revealing hidden patterns in our past.",
+        "🏛 Consider how our shared experiences shape moral frameworks across time.",
+        "🔭 In the earliest days, tribes came together, their bonds not merely a means of survival but the very foundation upon which future societies would rise.",
+        "💫 Reflect on the subtle shifts in our moral compass as we confront new challenges."
+      ],
+      "frases_og": [
+        "🛡 La cooperación es el hilo que teje nuestra historia evolutiva.",
+        "🎯 ¿Qué lecciones nos ofrece la historia sobre nuestra capacidad de unir?",
+        "🌱 El progreso humano ha sido un juego de colaboración y complejidad.",
+        "🔮 La historia es un espejo donde reflejamos nuestra moralidad en acción."
+      ],
+      "frases_og_en": [
+        "🛡 As I examined the tapestry of human history, it became evident that the flourishing of societies hinges on the intricate dance of cooperation and the emergence of complexity.",
+        "🎯 As we delve into the complexities of human history, we uncover the profound roots of our shared morality.",
+        "🌱 Can we truly understand progress without recognizing cooperation?",
+        "🔮 As I examine the tapestry of human history, it becomes clear that a steady thread of moral advancement weaves through the ages."
+      ],
+      "colores": [
+        "#F1887E",
+        "#30D9E8",
+        "#AE4713",
+        "#0B4765"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFEF",
+      "tarjeta": {
+        "titulo": "La cooperación como motor de la evolución",
+        "parrafoTop": "[H]Desde los albores de la vida, la cooperación ha sido la clave[/H] para la complejidad evolutiva. A medida que los organismos han aprendido a trabajar juntos, han creado estructuras sociales y culturales más sofisticadas, revelando un patrón que subyace a la historia humana. Esta narrativa de cooperación no solo destaca la importancia de la colaboración en la evolución cultural, sino que también ilustra cómo la moralidad ha mejorado a lo largo del tiempo, guiando el destino humano hacia un futuro más interconectado.",
+        "subtitulo": "¿Cómo la moralidad ha evolucionado con el tiempo?",
+        "parrafoBot": "[H]La moralidad, lejos de ser un concepto estático, ha evolucionado junto con nuestras sociedades.[/H] Lo que hoy consideramos ético ha sido moldeado por la necesidad de cooperación en comunidades cada vez más complejas. A medida que la historia avanza, también lo hace nuestra capacidad de entender y aplicar principios morales que fomentan la cooperación y la evolución cultural en un mundo en constante cambio.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La cooperación como motor de la evolución",
+        "parrafoTop": "[H]Desde los albores de la vida, la cooperación ha sido la clave[/H] para la complejidad evolutiva. A medida que los organismos han aprendido a trabajar juntos, han creado estructuras sociales y culturales más sofisticadas, revelando un patrón que subyace a la historia humana. Esta narrativa de cooperación no solo destaca la importancia de la colaboración en la evolución cultural, sino que también ilustra cómo la moralidad ha mejorado a lo largo del tiempo, guiando el destino humano hacia un futuro más interconectado.",
+        "subtitulo": "¿Cómo la moralidad ha evolucionado con el tiempo?",
+        "parrafoBot": "[H]La moralidad, lejos de ser un concepto estático, ha evolucionado junto con nuestras sociedades.[/H] Lo que hoy consideramos ético ha sido moldeado por la necesidad de cooperación en comunidades cada vez más complejas. A medida que la historia avanza, también lo hace nuestra capacidad de entender y aplicar principios morales que fomentan la cooperación y la evolución cultural en un mundo en constante cambio.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La cooperación como motor de la evolución",
+        "parrafoTop": "[H]Desde los albores de la vida, la cooperación ha sido la clave[/H] para la complejidad evolutiva. A medida que los organismos han aprendido a trabajar juntos, han creado estructuras sociales y culturales más sofisticadas, revelando un patrón que subyace a la historia humana. Esta narrativa de cooperación no solo destaca la importancia de la colaboración en la evolución cultural, sino que también ilustra cómo la moralidad ha mejorado a lo largo del tiempo, guiando el destino humano hacia un futuro más interconectado.",
+        "subtitulo": "¿Cómo la moralidad ha evolucionado con el tiempo?",
+        "parrafoBot": "[H]La moralidad, lejos de ser un concepto estático, ha evolucionado junto con nuestras sociedades.[/H] Lo que hoy consideramos ético ha sido moldeado por la necesidad de cooperación en comunidades cada vez más complejas. A medida que la historia avanza, también lo hace nuestra capacidad de entender y aplicar principios morales que fomentan la cooperación y la evolución cultural en un mundo en constante cambio.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Cooperation as the Engine of Evolution",
+        "parrafoTop": "Since the dawn of life, cooperation has been the key to evolutionary complexity. As organisms have learned to work together, they have created increasingly sophisticated social and cultural structures, revealing a pattern that underlies human history. [H]This narrative of cooperation highlights not only the mechanics of collaboration but also the profound impact it has had on the evolution of human morality and cultural complexity.[/H]",
+        "subtitulo": "How has morality evolved over time?",
+        "parrafoBot": "[H]Morality, far from being a static concept, has evolved alongside our societies.[/H] What we consider ethical today has been shaped by the necessity of cooperation in ever more complex communities. As history progresses, so too does our capacity to understand and apply moral principles.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Cooperation as the Engine of Evolution",
+        "parrafoTop": "Since the dawn of life, cooperation has been the key to evolutionary complexity. As organisms have learned to work together, they have created increasingly sophisticated social and cultural structures, revealing a pattern that underlies human history. [H]This narrative of cooperation highlights not only the mechanics of collaboration but also the profound impact it has had on the evolution of human morality and cultural complexity.[/H]",
+        "subtitulo": "How has morality evolved over time?",
+        "parrafoBot": "[H]Morality, far from being a static concept, has evolved alongside our societies.[/H] What we consider ethical today has been shaped by the necessity of cooperation in ever more complex communities. As history progresses, so too does our capacity to understand and apply moral principles.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Cooperation as the Engine of Evolution",
+        "parrafoTop": "Since the dawn of life, cooperation has been the key to evolutionary complexity. As organisms have learned to work together, they have created increasingly sophisticated social and cultural structures, revealing a pattern that underlies human history. [H]This narrative of cooperation highlights not only the mechanics of collaboration but also the profound impact it has had on the evolution of human morality and cultural complexity.[/H]",
+        "subtitulo": "How has morality evolved over time?",
+        "parrafoBot": "[H]Morality, far from being a static concept, has evolved alongside our societies.[/H] What we consider ethical today has been shaped by the necessity of cooperation in ever more complex communities. As history progresses, so too does our capacity to understand and apply moral principles.",
+        "style": {
+          "accent": "#E22312",
+          "paper": "#F0EFEF",
+          "ink": "#1C1817",
+          "border": "#908F8F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Nonzero%20Robert%20Wright%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Nonzero%3A%20The%20Logic%20of%20Human%20Destiny%20Robert%20Wright%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-16T15:30:00.672Z",
+        "workflow_run_id": "27628792957",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": "no sé nada"
+      },
+      "_animo_promedio": 0.45,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Nonzero",
+          "titulo_en": "Nonzero: The Logic of Human Destiny",
+          "autor_completo": "Robert Wright",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la evolución como un proceso de cooperación y complejidad",
+            "la mejora de la moralidad humana a lo largo del tiempo",
+            "el papel de la cultura en la dirección de la historia"
+          ],
+          "key_terms": [
+            "cooperación",
+            "evolución cultural",
+            "moralidad",
+            "complejidad",
+            "destino humano"
+          ],
+          "authorial_voice_notes": "La voz de Wright es reflexiva y analítica, combinando un enfoque científico con un sentido de narración histórica que invita a la reflexión sobre el progreso humano."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda temas de evolución y moralidad en un contexto histórico, destacando cómo las sociedades humanas han aprendido a colaborar y a mejorar con el tiempo. Sin embargo, no se percibe una aplicación directa de la lente del curador, ya que el foco principal es la evolución biológica y cultural diacrónica, más que una crítica contemporánea directa o un análisis de la actualidad.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 354.8125,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "La cooperación como motor de la evolución",
+          "parrafoTop": "Desde los albores de la vida, la cooperación ha sido la clave para la complejidad evolutiva. A medida que los organismos han aprendido a trabajar juntos, han creado estructuras sociales y culturales más sofisticadas, revelando un patrón que subyace a la historia humana. Esta narrativa de cooperación no solo destaca el papel fundamental de la colaboración en la evolución cultural y la mejora de la moralidad humana a lo largo del tiempo.",
+          "subtitulo": "¿Cómo la moralidad ha evolucionado con el tiempo?",
+          "parrafoBot": "La moralidad, lejos de ser un concepto estático, ha evolucionado junto con nuestras sociedades. Lo que hoy consideramos ético ha sido moldeado por la necesidad de cooperación en comunidades cada vez más complejas. A medida que la historia avanza, también lo hace nuestra capacidad de entender y aplicar principios morales que fomentan la cooperación y la evolución cultural."
+        },
+        "card_en": {
+          "titulo": "Cooperation as the Engine of Evolution",
+          "parrafoTop": "Since the dawn of life, cooperation has been the key to evolutionary complexity. As organisms have learned to work together, they have created increasingly sophisticated social and cultural structures, revealing a pattern that underlies human history. This narrative of cooperation highlights not only the mechanics of a moral evolution that shapes our cultural destiny but also the interconnectedness of human experiences.",
+          "subtitulo": "How has morality evolved over time?",
+          "parrafoBot": "Morality, far from being a static concept, has evolved alongside our societies. What we consider ethical today has been shaped by the necessity of cooperation in ever more complex communities. As history progresses, so too does our capacity to understand and apply moral principles."
+        },
+        "emotional_words_es": [
+          "asombro",
+          "conexión",
+          "revelación",
+          "esperanza"
+        ],
+        "emotional_words_en": [
+          "complexity",
+          "cooperation",
+          "morality",
+          "evolution"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🛡 La cooperación es el hilo que teje nuestra historia evolutiva.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 ¿Qué lecciones nos ofrece la historia sobre nuestra capacidad de unir en el contexto de la evolución cultural y la cooperación humana?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌱 El progreso humano ha sido un juego de colaboración y complejidad.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔮 La historia es un espejo donde reflejamos nuestra moralidad en acción.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🛡 As I examined the tapestry of human history, it became evident that the flourishing of societies hinges on the intricate dance of cooperation and the emergence of complexity.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🎯 As we delve into the complexities of human history, we uncover the profound roots of our shared morality.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌱 Can we truly understand progress without recognizing cooperation?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔮 As I examine the tapestry of human history, it becomes clear that a steady thread of moral advancement weaves through the ages.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "📻 ¿Cómo se han transformado nuestras nociones de cooperación a lo largo de la historia?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "vista",
+            "phrase": "👁 La moralidad se eleva cuando la cooperación es un destino común.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Imagina una comunidad unida en torno a un objetivo común: ahí nace la complejidad.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Reflexiona sobre cómo cada acción colectiva ha moldeado nuestro destino humano.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Life's trajectory is defined by our capacity to work together, revealing hidden patterns in our past.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Consider how our shared experiences shape moral frameworks across time.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 In the earliest days, tribes came together, their bonds not merely a means of survival but the very foundation upon which future societies would rise.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Reflect on the subtle shifts in our moral compass as we confront new challenges.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.9,
+          "specificity": 0.95,
+          "grounding_judge": 0.85,
+          "combined": 0.91,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.8999999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.8500000000000001
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Nonzero",
+          "autor_completo": "Robert Wright",
+          "titulo_api": "Nonzero",
+          "autor_api": "Robert Wright",
+          "año": "2000",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "420337399",
+          "categorias": [
+            "Ciencias de la vida",
+            "Libros",
+            "Ciencia y naturaleza",
+            "Historia",
+            "No ficción",
+            "Ciencia social"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/nonzero/id420337399?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content closely reflects the themes of cooperation and moral evolution found in the book's synopsis. It discusses the role of cooperation in complexity and the evolution of morality, which are central concepts in 'Nonzero'. The phrases used are specific to the book's ideas, making it highly relevant."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content closely aligns with the themes of cooperation and moral evolution presented in the ground truth. It specifically mentions the evolution of morality and cooperation as key concepts, which are central to Wright's arguments. However, it lacks direct references to specific examples or terms from the book, such as 'nonzero-sum' or specific historical instances mentioned in the text."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.8,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Tono directo y reflexiones sobre conceptos del libro.",
+          "elapsed_ms": 1295,
+          "usage": {
+            "prompt_tokens": 420,
+            "completion_tokens": 26,
+            "total_tokens": 446,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Tono directo y reflexivo, sin referencias externas al libro.",
+          "elapsed_ms": 1161,
+          "usage": {
+            "prompt_tokens": 390,
+            "completion_tokens": 28,
+            "total_tokens": 418,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 864,
+        "total_ms": 1295
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 354.8125,
+          "adjusted_hue": 364.8125,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.35",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1887E",
+          "--palette-1": "#30D9E8",
+          "--palette-2": "#AE4713",
+          "--palette-3": "#0B4765",
+          "--accent": "#E22312",
+          "--accent-soft": "#E2231238",
+          "--accent-glow": "#E223126b",
+          "--paper": "#F0EFEF",
+          "--ink": "#1C1817",
+          "--border": "#908F8F",
+          "--highlight-bg": "#C71F10d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "aforismo_autorial",
+          "imagen_concreta",
+          "instruccion_sensorial"
+        ],
+        "gesture_types_en": [
+          "authorial_aphorism",
+          "direct_question",
+          "concrete_image",
+          "sensory_instruction"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-16T15-30-00",
+      "_crono": {
+        "dia": "martes",
+        "hora": 9,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 69310,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15139,
+          "palette": 0,
+          "content_es": 17762,
+          "judge_es": 1011,
+          "content_en": 16458,
+          "judge_en": 1015,
+          "voice": 864,
+          "voice_extended": 17061,
+          "highlight_judge_es_parrafoTop": 639,
+          "highlight_judge_es_parrafoTop_retry": 642,
+          "highlight_judge_es_parrafoBot": 652,
+          "highlight_judge_en_parrafoTop": 637,
+          "highlight_judge_en_parrafoTop_retry": 638,
+          "highlight_judge_en_parrafoBot": 645,
+          "csal": 2778
+        },
+        "elapsed_ms_total": 70376,
+        "elapsed_ms_by_phase": {
+          "grounding": 8,
+          "anchors": 16683,
+          "palette": 0,
+          "cover_fallback": 44,
+          "content_es": 10337,
+          "judge_es": 1960,
+          "content_en": 31290,
+          "judge_en": 2104,
+          "voice": 1295,
+          "voice_extended": 6649,
+          "highlight_judge": 6976,
+          "lens_compatibility": 2482,
+          "csal": 90722,
+          "post_processing": 100187
+        },
+        "llm_calls_count": 43,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 4,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.7,
+        "self-knowledge": 0.3,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.2,
+          "familia": 0.3,
+          "espiritu": 0.4,
+          "relaciones": 0.8,
+          "finanzas": 0.2
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando te preguntas si el progreso humano es real",
+          "al reflexionar sobre el papel de la cooperación en la evolución",
+          "cuando consideras cómo la tecnología cambia la sociedad",
+          "al intentar entender por qué algunas civilizaciones prosperan",
+          "cuando exploras cómo la moralidad ha cambiado en la historia",
+          "al pensar en cómo los grupos humanos han superado desafíos",
+          "cuando buscas sentido en la historia humana",
+          "al cuestionar si la evolución tiene un propósito",
+          "cuando te sientes abrumado por los cambios tecnológicos",
+          "al considerar cómo las culturas influyen en el destino humano",
+          "cuando sientes que el mundo es cada vez más complejo",
+          "al reflexionar sobre el impacto de la globalización",
+          "cuando te preguntas sobre el futuro de la humanidad",
+          "al investigar cómo las sociedades se organizan",
+          "cuando piensas en el papel de las alianzas y los acuerdos",
+          "al buscar ejemplos históricos de cooperación exitosa",
+          "cuando te cuestionas si la moralidad humana mejora",
+          "al considerar cómo se forman las instituciones",
+          "cuando te preguntas sobre la lógica detrás de los eventos históricos",
+          "al analizar cómo los conflictos pueden llevar a la cooperación",
+          "cuando exploras cómo los avances científicos afectan la moralidad",
+          "al intentar comprender el papel de las tradiciones en el progreso",
+          "cuando te preguntas si la historia tiene un patrón",
+          "al reflexionar sobre la interdependencia en la naturaleza",
+          "cuando piensas en cómo las ideas se transmiten y evolucionan",
+          "al considerar el papel de las emociones en la historia",
+          "cuando buscas historias de éxito colectivo",
+          "al cuestionar la dirección de la evolución humana",
+          "cuando te preguntas por qué algunas ideas prevalecen",
+          "al reflexionar sobre la resistencia al cambio en las sociedades"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "curiosidad",
+            "esperanza",
+            "inquietud",
+            "asombro",
+            "interés",
+            "reflexión",
+            "fascinación",
+            "escepticismo",
+            "optimismo",
+            "duda"
+          ],
+          "objetos": [
+            "civilizaciones",
+            "tecnología",
+            "instituciones",
+            "alianzas",
+            "comunidades",
+            "culturas",
+            "conflictos",
+            "tradiciones",
+            "futuro",
+            "patrones"
+          ],
+          "contextos": [
+            "evolución humana",
+            "cambio tecnológico",
+            "historia mundial",
+            "sociedades antiguas",
+            "globalización",
+            "acuerdos internacionales",
+            "momentos de crisis",
+            "desarrollo cultural",
+            "transformaciones sociales",
+            "descubrimientos científicos"
+          ],
+          "verbos": [
+            "evolucionar",
+            "cooperar",
+            "progresar",
+            "reflexionar",
+            "analizar",
+            "cuestionar",
+            "explorar",
+            "comprender",
+            "transformar",
+            "interconectar"
+          ]
+        },
+        "concept_tags": [
+          "cooperación evolutiva",
+          "destino humano",
+          "complejidad creciente",
+          "progreso moral",
+          "cultura y evolución",
+          "patrones históricos",
+          "propósito evolutivo",
+          "globalización y cooperación",
+          "cambio tecnológico",
+          "interdependencia social",
+          "alianzas estratégicas",
+          "historia con significado moral",
+          "superación de desafíos colectivos",
+          "impacto de la globalización",
+          "transformación cultural"
+        ],
+        "anti_patterns": [
+          "cuando buscas una guía práctica para la autoayuda",
+          "al necesitar estrategias de liderazgo empresarial",
+          "cuando esperas una narrativa lineal de la historia",
+          "al buscar respuestas rápidas a problemas personales",
+          "cuando buscas una crítica social contemporánea"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "👂🔄"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌄🤝"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🏃‍♀️🤲"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳🌍"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto del libro, sugiriendo una voz autoral que explora conceptos dentro de la narrativa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase plantea una pregunta reflexiva que invita a la introspección, típica de un contenido que podría estar dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión que podría formar parte de un argumento o tema central del libro, sugiriendo voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte de la narrativa o el análisis del autor dentro del libro, sugiriendo una voz autoral."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase plantea una pregunta que invita a la reflexión, típica de un contenido que se encuentra dentro del libro, sugiriendo un análisis profundo."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión filosófica que sugiere un pensamiento del autor, típico de un contenido dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita al lector a imaginar una situación, lo que sugiere que es parte de un discurso narrativo o reflexivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión y parece ser parte de un discurso o pensamiento del autor, sugiriendo un contenido introspectivo propio del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a reflective thought that feels like an internal exploration by the author, suggesting a narrative voice that is engaged in the content of the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a reflective thought that feels like an exploration within the text, suggesting an authorial voice discussing themes directly related to the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that suggests an exploration of themes within the book, indicating it is part of the author's narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a reflective thought that feels like an introspective narrative from the author, suggesting it is part of the book's content."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within the book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase suggests a reflective thought that could be part of a narrative or argument within the book, indicating an author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a narrative style that suggests it is part of the author's storytelling within the book, reflecting on historical themes."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites the reader to engage with the content directly, suggesting an introspective moment typical of narrative or thematic exploration within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-16T15:32:51.234Z",
+      "_slug": "nonzero",
+      "_edicion_numero": 73
+    },
+    {
       "titulo": "El gran nervio",
       "autor": "Kevin Tracey",
       "tagline": "",
@@ -1055,7 +1919,7 @@
         },
         "card_en": {
           "titulo": "The Cognitive Revolution: A Historical Turn",
-          "parrafoTop": "The Cognitive Revolution marked a decisive moment in the history of Homo sapiens, enabling our species to develop complex language and share information effectively. This capacity for communication transformed social interactions, facilitating cooperation among groups and laying the groundwork for the emergence de sociedades complejas y estructuras que definirían la civilización humana, incluyendo la influencia del dinero y la burocracia en la vida moderna, así como los desafíos que enfrentamos en el futuro.",
+          "parrafoTop": "The Cognitive Revolution marked a decisive moment in the history of Homo sapiens, enabling our species to develop complex language and share information effectively. This capacity for communication transformed social interactions, facilitating cooperation among groups and laying the groundwork for the emergence de sociedades complejas y estructuras que definirían la civilización humana, incluyendo la influencia del dinero y la burocracia en la vida moderna, así como los desafíos que enfrentamos en el futuro, que incluyen la adaptación a nuevas tecnologías y la búsqueda de un equilibrio entre el progreso y la sostenibilidad.",
           "subtitulo": "How did it shape our social evolution?",
           "parrafoBot": "The ability to imagine and believe in abstract concepts, such as myths and religions, allowed us to organize complex societies. Through these shared narratives, social structures emerged that, in turn, shaped the culture, politics, and economics of human groups."
         },
@@ -1898,7 +2762,7 @@
         },
         "card_es": {
           "titulo": "La búsqueda de la identidad",
-          "parrafoTop": "El enigma del monumento a García Lorca no solo es un símbolo de la muerte, sino también de la vida que llevó a Enrique Amorim a construir su propia narrativa. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá este monumento ser un testimonio de la dualidad de su vida y su obra, así como de la intersección entre su vida pública y privada, y la percepción de la verdad en su narrativa personal, que revela la lucha constante de los artistas por encontrar su lugar en un mundo que a menudo parece indiferente a sus historias, y que invita a reflexionar sobre la correspondencia entre la literatura y la identidad en el contexto histórico del siglo XX?",
+          "parrafoTop": "El enigma del monumento a García Lorca no solo es un símbolo de la muerte, sino también de la vida que llevó a Enrique Amorim a construir su propia narrativa. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá este monumento ser un testimonio de la dualidad de su vida y su obra, así como de la intersección entre su vida pública y privada, y la percepción de la verdad en su narrativa personal, que revela la lucha constante de los artistas por encontrar su lugar en un mundo que a menudo parece indiferente a sus historias, y que invita a reflexionar sobre la correspondencia entre la literatura y la identidad en el contexto histórico del siglo XX, donde la búsqueda de significado se convierte en un acto de resistencia ante la indiferencia del tiempo?",
           "subtitulo": "¿Qué es lo que realmente nos define?",
           "parrafoBot": "La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación."
         },
@@ -2764,7 +3628,7 @@
           "titulo": "Emotions as Momentary Constructs",
           "parrafoTop": "Emotions are not fixed entities located in specific areas of the brain; rather, they are momentary constructs woven together by accumulated experience and learning. Each emotional reaction results from the interplay of brain systems communicating in real time, forming a network of connections that shapes our responses.",
           "subtitulo": "How does our learning influence our emotions?",
-          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro, sino que son el resultado de procesos complejos que involucran tanto la psicología como la neurociencia, y que nos permiten adaptarnos y responder de manera efectiva a las diversas situaciones que enfrentamos en nuestra vida diaria, reconociendo que el entendimiento de nuestras emociones es fundamental para nuestro bienestar y desarrollo personal."
+          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro, sino que son el resultado de procesos complejos que involucran tanto la psicología como la neurociencia, y que nos permiten adaptarnos y responder de manera efectiva a las diversas situaciones que enfrentamos en nuestra vida diaria, reconociendo que el entendimiento de nuestras emociones es fundamental para nuestro bienestar y desarrollo personal, y que este conocimiento nos ayuda a construir una vida más plena y satisfactoria."
         },
         "emotional_words_es": [
           "comprensión",
@@ -3635,7 +4499,7 @@
         },
         "card_en": {
           "titulo": "Courage in Vulnerability",
-          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano, donde la valentía y la autenticidad son fundamentales para un liderazgo efectivo, que nos impulsa a tomar decisiones con sentido y a vivir un crecimiento personal consciente, cultivando una conexión profunda con nosotros mismos y con los demás en cada paso del camino.",
+          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano, donde la valentía y la autenticidad son fundamentales para un liderazgo efectivo, que nos impulsa a tomar decisiones con sentido y a vivir un crecimiento personal consciente, cultivando una conexión profunda con nosotros mismos y con los demás en cada paso del camino, siempre recordando que la vulnerabilidad es una fortaleza que nos une y nos permite ser verdaderamente humanos.",
           "subtitulo": "What does it mean to be an authentic leader?",
           "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment."
         },
@@ -4316,7 +5180,7 @@
         "⏳ Las excusas son el eco del conformismo, rompelas y hallarás tu voz."
       ],
       "frases_en": [
-        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones.",
+        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad.",
         "🕯 What would your life look like if you released all your excuses?",
         "🌓 Imagine shedding those invisible chains, stepping into a world of possibility and growth.",
         "🚶 Every excuse is a cow, but you hold the power to break free and embrace your true potential."
@@ -4496,9 +5360,9 @@
         },
         "card_en": {
           "titulo": "Breaking the Chains of Conformity",
-          "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche, impidiendo que alcancemos nuestro verdadero potencial y vivamos una vida libre de justificaciones, donde podamos romper esas cadenas y alcanzar la libertad que merecemos, liberándonos del conformismo y abrazando nuestro verdadero potencial.",
+          "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche, impidiendo que alcancemos nuestro verdadero potencial y vivamos una vida libre de justificaciones, donde podamos romper esas cadenas y alcanzar la libertad que merecemos, liberándonos del conformismo y abrazando nuestro verdadero potencial, superando así las excusas que nos limitan y nos impiden vivir plenamente.",
           "subtitulo": "What if you could unleash your true potential?",
-          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos, superando el conformismo y abrazando la libertad que nos ofrece una vida sin excusas, donde cada uno de nosotros puede ser la mejor versión de sí mismo, y así, al deshacernos de estas limitaciones, podemos finalmente alcanzar nuestras metas y vivir plenamente."
+          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos, superando el conformismo y abrazando la libertad que nos ofrece una vida sin excusas, donde cada uno de nosotros puede ser la mejor versión de sí mismo, y así, al deshacernos de estas limitaciones, podemos finalmente alcanzar nuestras metas y vivir plenamente, disfrutando de una existencia sin ataduras que nos permita ser verdaderamente libres y exitosos en todos los aspectos de nuestra vida."
         },
         "emotional_words_es": [
           "libertad",
@@ -4626,7 +5490,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "space",
-            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad.",
+            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad, y donde puedas finalmente romper con la metáfora de la vaca que te ha mantenido prisionero de tus propias justificaciones.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -6189,9 +7053,9 @@
         },
         "card_en": {
           "titulo": "Loving What Is",
-          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad y abrazando el proceso de El Trabajo como un camino hacia la autoinvestigación y la aceptación plena, donde aprendemos a vivir en armonía con lo que es, y a encontrar paz en cada momento.",
+          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad y abrazando el proceso de El Trabajo como un camino hacia la autoinvestigación y la aceptación plena, donde aprendemos a vivir en armonía con lo que es, y a encontrar paz en cada momento, transformando nuestra relación con el sufrimiento y cultivando una profunda aceptación de la vida tal como se presenta.",
           "subtitulo": "How to Transform Suffering into Acceptance?",
-          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad, convirtiéndonos en amantes de la realidad, lo que nos permite experimentar la vida sin resistencia y abrazar cada momento tal como se presenta, aceptando cada experiencia y reconociendo que todo lo que sucede es parte de nuestra realidad."
+          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad, convirtiéndonos en amantes de la realidad, lo que nos permite experimentar la vida sin resistencia y abrazar cada momento tal como se presenta, aceptando cada experiencia y reconociendo que todo lo que sucede es parte de nuestra realidad, lo que nos lleva a una profunda aceptación y paz interior."
         },
         "emotional_words_es": [
           "liberación",
@@ -10413,7 +11277,7 @@
         },
         "card_en": {
           "titulo": "Small Data: Tiny Clues, Huge Trends",
-          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor y cómo estos patrones se relacionan con las tendencias de mercado que emergen de la observación etnográfica de los hogares de los consumidores, permitiéndonos descubrir la conexión entre los deseos no satisfechos y las decisiones de compra que tomamos a diario, y cómo esta metodología de observación se asemeja a la de un Sherlock Holmes moderno en el análisis de comportamientos.",
+          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor y cómo estos patrones se relacionan con las tendencias de mercado que emergen de la observación etnográfica de los hogares de los consumidores, permitiéndonos descubrir la conexión entre los deseos no satisfechos y las decisiones de compra que tomamos a diario, y cómo esta metodología de observación se asemeja a la de un Sherlock Holmes moderno en el análisis de comportamientos, ayudándonos a desentrañar los secretos que impulsan nuestras elecciones y a identificar las tendencias que surgen de la vida cotidiana.",
           "subtitulo": "What secrets lurk in our daily routines?",
           "parrafoBot": "Ethnographic observation methodology is crucial for uncovering these hidden desires. Through this lens, we can understand how every seemingly insignificant data point transforms into a key for unveiling significant market trends. Observing is not just seeing; it's about interpreting and linking."
         },
@@ -11307,7 +12171,7 @@
         ],
         "og_phrases_en": [
           {
-            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros, asegurando así un rendimiento sostenido y un crecimiento real en tu patrimonio, lo que te permitirá alcanzar tus metas financieras a largo plazo.",
+            "phrase": "🧭 Investing is not just a gamble; it's a structured journey toward your profile of investor, donde conocer tu perfil de inversionista es clave para construir riqueza a través de inversiones informadas y desarrollar una estrategia de inversión que se adapte a tus necesidades y objetivos financieros, asegurando así un rendimiento sostenido y un crecimiento real en tu patrimonio, lo que te permitirá alcanzar tus metas financieras a largo plazo y disfrutar de la libertad que brinda una buena gestión de tus recursos.",
             "role_symphonic": "land",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -14766,7 +15630,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice of running with purpose and conscious training, donde se busca integrar el ejercicio físico y mental para lograr un equilibrio que potencie tanto el cuerpo como la mente, promoviendo así un enfoque holístico que enriquezca la experiencia de correr y fortalezca la conexión entre cuerpo y mente.",
+            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice of running with purpose and conscious training, donde se busca integrar el ejercicio físico y mental para lograr un equilibrio que potencie tanto el cuerpo como la mente, promoviendo así un enfoque holístico que enriquezca la experiencia de correr y fortalezca la conexión entre cuerpo y mente, y que permita a los corredores experimentar una transformación personal a través de la práctica consciente y el desarrollo de una mentalidad positiva.",
             "role_symphonic": "resonate",
             "mood_axis": 0.4,
             "value_axis": null,
@@ -15550,7 +16414,7 @@
         },
         "card_en": {
           "titulo": "Losing Weight from Love",
-          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo, cultivando así una conexión más profunda entre la mente y el cuerpo, y reconociendo que el poder del amor puede guiarnos hacia un desarrollo espiritual que nos libere del miedo y el odio, permitiéndonos vivir en armonía con nosotros mismos y alcanzar una paz interior duradera, donde cada elección alimentaria se convierte en un acto de amor hacia nosotros mismos, y así, al abrazar esta verdad, podemos finalmente liberarnos de las cadenas que nos atan a patrones destructivos y encontrar la verdadera libertad en el amor y la aceptación.",
+          "parrafoTop": "Excess weight is a reflection of the mind, not merely the body. When we confront the fears and hates that drive us to overeat, we discover that true transformation begins within. The key lies in changing the narrative, replacing hate with love, and accepting that every bite is an opportunity for healing and self-acceptance, lo que nos permite adelgazar con consciencia y transformar nuestra relación con el propio cuerpo, cultivando así una conexión más profunda entre la mente y el cuerpo, y reconociendo que el poder del amor puede guiarnos hacia un desarrollo espiritual que nos libere del miedo y el odio, permitiéndonos vivir en armonía con nosotros mismos y alcanzar una paz interior duradera, donde cada elección alimentaria se convierte en un acto de amor hacia nosotros mismos, y así, al abrazar esta verdad, podemos finalmente liberarnos de las cadenas que nos atan a patrones destructivos y encontrar la verdadera libertad en el amor y la aceptación, lo que nos lleva a vivir plenamente y en paz con nuestro ser.",
           "subtitulo": "How can you find peace in your relationship with food?",
           "parrafoBot": "Eating with awareness is not just a physical path but a spiritual journey. Each bite becomes a chance to heal, to love oneself, and to recognize the transformative power of faith in your life."
         },
@@ -23772,7 +24636,7 @@
     {
       "titulo": "Trabaja duro trabaja con astucia",
       "autor": "Curtis Jackson",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo, aprendiendo a adaptarte y a ser resiliente ante cada dificultad que surja, y a utilizar cada experiencia como una oportunidad para crecer y mejorar en tu camino hacia el éxito, y así poder enfrentar cada nuevo desafío con la confianza y la determinación necesarias para triunfar.",
+      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo, aprendiendo a adaptarte y a ser resiliente ante cada dificultad que surja, y a utilizar cada experiencia como una oportunidad para crecer y mejorar en tu camino hacia el éxito, y así poder enfrentar cada nuevo desafío con la confianza y la determinación necesarias para triunfar, aplicando las estrategias que he aprendido y que te compartiré en este libro, para que puedas también lograr tus objetivos y mantenerte en la cima de tus metas.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "isbn": "",
@@ -37345,7 +38209,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-15T13:53:25.893Z"
+      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -45804,7 +46668,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-15T13:53:25.893Z"
+      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -53473,7 +54337,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-15T13:53:25.893Z"
+      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
     },
     {
       "titulo": "Suscritos",
@@ -55198,11 +56062,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 73,
-    "total": 65,
-    "last_audit": "2026-06-15T13:53:25.893Z",
-    "healing_rotation_idx": 9,
+    "next_edition_number": 74,
+    "total": 66,
+    "last_audit": "2026-06-16T15:33:06.174Z",
+    "healing_rotation_idx": 10,
     "last_healing_book": "Trabaja duro trabaja con astucia",
-    "last_healing_timestamp": "2026-06-15T14:12:13.725Z"
+    "last_healing_timestamp": "2026-06-16T15:53:05.426Z"
   }
 }
