@@ -1,6 +1,874 @@
 {
   "libros": [
     {
+      "titulo": "Grit",
+      "autor": "Angela Duckworth",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/19/d4/70/19d4704f-e534-4e56-2020-708363d87d4d/9781501111129.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication111/v4/19/d4/70/19d4704f-e534-4e56-2020-708363d87d4d/9781501111129.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Grit",
+      "titulo_en": "Grit",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "tenacidad",
+        "pasión",
+        "perseverancia",
+        "compromiso"
+      ],
+      "palabras_en": [
+        "dedication",
+        "resilience",
+        "strength",
+        "tenacity"
+      ],
+      "frases": [
+        "🌓 Dedica cinco minutos a reflexionar sobre tus metas a largo plazo. ¿Qué te impide avanzar?",
+        "👁 ¿Qué acciones concretas puedes tomar hoy para acercarte a tu objetivo?",
+        "🗺 Imagina un camino lleno de obstáculos. Cada paso que das te acerca más a tu meta.",
+        "💫 La pasión sin perseverancia es un sueño efímero. Cultiva ambos para el éxito."
+      ],
+      "frases_en": [
+        "🌓 Take a moment to visualize your most significant goals. What steps will you take today to move them?",
+        "🏛 In moments of adversity, we often find ourselves reflecting on our resilience; consider a time when you faced such a challenge and the lessons that emerged from it.",
+        "🌊 Picture yourself climbing a steep mountain, each step representing your perseverance. How does that relate to the combination of passion and perseverance as the key to success?",
+        "💡 True grit is the steady flame that refuses to be extinguished, even in the darkest of nights."
+      ],
+      "frases_og": [
+        "📖 El verdadero éxito se forja en la constancia del esfuerzo, día tras día, sin rendirse ante las adversidades.",
+        "🌓 ¿Cuántas veces has dejado de lado tus metas por falta de tenacidad?",
+        "🪞 La perseverancia es el puente entre la intención y el logro.",
+        "⚡ Cultiva tu pasión. La tenacidad florece en el terreno del compromiso."
+      ],
+      "frases_og_en": [
+        "📖 Grit is not just a trait; it's a muscle that can be strengthened over time through perseverance and passion.",
+        "🌓 Reflect on your passion. What long-term goals ignite your fire?",
+        "🪞 Persistence, with its unwavering resolve, often outshines even the most gifted talents over time.",
+        "⚡ Endurance in the face of adversity reveals true character and strength."
+      ],
+      "colores": [
+        "#F17ED2",
+        "#B7E830",
+        "#1385AE",
+        "#650B20"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFF0",
+      "tarjeta": {
+        "titulo": "La tenacidad como motor del éxito",
+        "parrafoTop": "La combinación de pasión y perseverancia es lo que realmente distingue a quienes logran el éxito de aquellos que se rinden. No se trata solo de talento, sino de una dedicación constante y un compromiso inquebrantable ante los desafíos. Este concepto, que se manifiesta en mi propia trayectoria, resuena profundamente con la idea de que la perseverancia y la pasión son esenciales para alcanzar el éxito en cualquier ámbito de la vida, y que el esfuerzo a largo plazo es fundamental para lograr nuestros objetivos.",
+        "subtitulo": "¿Qué significa realmente tener \"grit\"?",
+        "parrafoBot": "[H]Tener \"grit\" implica cultivar un enfoque a largo plazo hacia nuestras metas.[/H] Es reconocer que el esfuerzo sostenido, más allá de las dificultades, es lo que nos llevará a la excelencia. Esta noción se repite a lo largo de mi investigación y en diversas anécdotas, reflejando cómo la tenacidad puede cambiar vidas.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La tenacidad como motor del éxito",
+        "parrafoTop": "La combinación de pasión y perseverancia es lo que realmente distingue a quienes logran el éxito de aquellos que se rinden. No se trata solo de talento, sino de una dedicación constante y un compromiso inquebrantable ante los desafíos. Este concepto, que se manifiesta en mi propia trayectoria, resuena profundamente con la idea de que la perseverancia y la pasión son esenciales para alcanzar el éxito en cualquier ámbito de la vida, y que el esfuerzo a largo plazo es fundamental para lograr nuestros objetivos.",
+        "subtitulo": "¿Qué significa realmente tener \"grit\"?",
+        "parrafoBot": "[H]Tener \"grit\" implica cultivar un enfoque a largo plazo hacia nuestras metas.[/H] Es reconocer que el esfuerzo sostenido, más allá de las dificultades, es lo que nos llevará a la excelencia. Esta noción se repite a lo largo de mi investigación y en diversas anécdotas, reflejando cómo la tenacidad puede cambiar vidas.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La tenacidad como motor del éxito",
+        "parrafoTop": "La combinación de pasión y perseverancia es lo que realmente distingue a quienes logran el éxito de aquellos que se rinden. No se trata solo de talento, sino de una dedicación constante y un compromiso inquebrantable ante los desafíos. Este concepto, que se manifiesta en mi propia trayectoria, resuena profundamente con la idea de que la perseverancia y la pasión son esenciales para alcanzar el éxito en cualquier ámbito de la vida, y que el esfuerzo a largo plazo es fundamental para lograr nuestros objetivos.",
+        "subtitulo": "¿Qué significa realmente tener \"grit\"?",
+        "parrafoBot": "[H]Tener \"grit\" implica cultivar un enfoque a largo plazo hacia nuestras metas.[/H] Es reconocer que el esfuerzo sostenido, más allá de las dificultades, es lo que nos llevará a la excelencia. Esta noción se repite a lo largo de mi investigación y en diversas anécdotas, reflejando cómo la tenacidad puede cambiar vidas.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Power of Grit",
+        "parrafoTop": "The combination of passion and perseverance is what truly distinguishes those who achieve success from those who give up. It goes beyond mere talent, embodying a constant dedication and an unwavering commitment to face challenges. [H]This concept, reflected in my own journey, resonates through the stories of individuals I have encountered who exemplify the power of tenacity and the importance of long-term effort in achieving their goals.[/H]",
+        "subtitulo": "What does it really mean to have grit?",
+        "parrafoBot": "[H]To have grit means cultivating a long-term approach to our goals.[/H] It involves recognizing that sustained effort, despite difficulties, is what will lead us to excellence. This notion threads through my research and various anecdotes, illustrating how tenacity can transform lives.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Power of Grit",
+        "parrafoTop": "The combination of passion and perseverance is what truly distinguishes those who achieve success from those who give up. It goes beyond mere talent, embodying a constant dedication and an unwavering commitment to face challenges. [H]This concept, reflected in my own journey, resonates through the stories of individuals I have encountered who exemplify the power of tenacity and the importance of long-term effort in achieving their goals.[/H]",
+        "subtitulo": "What does it really mean to have grit?",
+        "parrafoBot": "[H]To have grit means cultivating a long-term approach to our goals.[/H] It involves recognizing that sustained effort, despite difficulties, is what will lead us to excellence. This notion threads through my research and various anecdotes, illustrating how tenacity can transform lives.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Power of Grit",
+        "parrafoTop": "The combination of passion and perseverance is what truly distinguishes those who achieve success from those who give up. It goes beyond mere talent, embodying a constant dedication and an unwavering commitment to face challenges. [H]This concept, reflected in my own journey, resonates through the stories of individuals I have encountered who exemplify the power of tenacity and the importance of long-term effort in achieving their goals.[/H]",
+        "subtitulo": "What does it really mean to have grit?",
+        "parrafoBot": "[H]To have grit means cultivating a long-term approach to our goals.[/H] It involves recognizing that sustained effort, despite difficulties, is what will lead us to excellence. This notion threads through my research and various anecdotes, illustrating how tenacity can transform lives.",
+        "style": {
+          "accent": "#E212AB",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Grit%20Angela%20Duckworth%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-17T18:28:23.031Z",
+        "workflow_run_id": "27710829076",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "3 — Máximo (peak)",
+        "pilar": "mente",
+        "hawkins_target": "coraje (200)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "tiempo",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Grit",
+          "titulo_en": "Grit",
+          "autor_completo": "Angela Duckworth",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la combinación de pasión y perseverancia como clave del éxito",
+            "el poder de la tenacidad en situaciones difíciles",
+            "la importancia del esfuerzo a largo plazo en el logro de objetivos"
+          ],
+          "key_terms": [
+            "perseverancia",
+            "pasión",
+            "cualidades de carácter",
+            "tenacidad",
+            "éxito"
+          ],
+          "authorial_voice_notes": "La voz de Duckworth es clara, motivadora y basada en investigaciones, combinando anécdotas personales con datos científicos para resaltar su argumento."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda el concepto de tiempo de manera implícita al discutir la importancia del esfuerzo sostenido y el crecimiento que requiere tiempo. Duckworth enfatiza que el éxito no es instantáneo, sino el resultado de un compromiso a largo plazo que se desarrolla con el tiempo a través de la perseverancia.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 311,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 5,
+          "palette_strategy": "triadic",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La tenacidad como motor del éxito",
+          "parrafoTop": "La combinación de pasión y perseverancia es lo que realmente distingue a quienes logran el éxito de aquellos que se rinden. No se trata solo de talento, sino de una dedicación constante y un compromiso inquebrantable ante los desafíos. Este concepto, que se manifiesta en mi propia trayectoria, resuena en las historias de aquellos que han demostrado que la tenacidad y el esfuerzo a largo plazo son fundamentales para alcanzar el éxito.",
+          "subtitulo": "¿Qué significa realmente tener \"grit\"?",
+          "parrafoBot": "Tener \"grit\" implica cultivar un enfoque a largo plazo hacia nuestras metas. Es reconocer que el esfuerzo sostenido, más allá de las dificultades, es lo que nos llevará a la excelencia. Esta noción se repite a lo largo de mi investigación y en diversas anécdotas, reflejando cómo la tenacidad puede cambiar vidas."
+        },
+        "card_en": {
+          "titulo": "The Power of Grit",
+          "parrafoTop": "The combination of passion and perseverance is what truly distinguishes those who achieve success from those who give up. It goes beyond mere talent, embodying a constant dedication and an unwavering commitment to face challenges. This concept, reflected in my own journey, resonates through the stories of individuals I have encountered who exemplify grit and determination.",
+          "subtitulo": "What does it really mean to have grit?",
+          "parrafoBot": "To have grit means cultivating a long-term approach to our goals. It involves recognizing that sustained effort, despite difficulties, is what will lead us to excellence. This notion threads through my research and various anecdotes, illustrating how tenacity can transform lives."
+        },
+        "emotional_words_es": [
+          "tenacidad",
+          "pasión",
+          "perseverancia",
+          "compromiso"
+        ],
+        "emotional_words_en": [
+          "dedication",
+          "resilience",
+          "strength",
+          "tenacity"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "📖 El verdadero éxito se forja en la constancia del esfuerzo, día tras día, sin rendirse ante las adversidades.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🌓 ¿Cuántas veces has dejado de lado tus metas por falta de tenacidad?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🪞 La perseverancia es el puente entre la intención y el logro.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚡ Cultiva tu pasión. La tenacidad florece en el terreno del compromiso.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "📖 Grit is not just a trait; it's a muscle that can be strengthened over time through perseverance and passion.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 Reflect on your passion. What long-term goals ignite your fire?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🪞 Persistence, with its unwavering resolve, often outshines even the most gifted talents over time.",
+            "role_symphonic": "land",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚡ Endurance in the face of adversity reveals true character and strength.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Dedica cinco minutos a reflexionar sobre tus metas a largo plazo. ¿Qué te impide avanzar?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "vista",
+            "phrase": "👁 ¿Qué acciones concretas puedes tomar hoy para acercarte a tu objetivo?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 Imagina un camino lleno de obstáculos. Cada paso que das te acerca más a tu meta.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 La pasión sin perseverancia es un sueño efímero. Cultiva ambos para el éxito.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Take a moment to visualize your most significant goals. What steps will you take today to move them?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 In moments of adversity, we often find ourselves reflecting on our resilience; consider a time when you faced such a challenge and the lessons that emerged from it.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Picture yourself climbing a steep mountain, each step representing your perseverance. How does that relate to the combination of passion and perseverance as the key to success?",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "💡 True grit is the steady flame that refuses to be extinguished, even in the darkest of nights.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.91,
+          "grounding_judge": 0.9,
+          "combined": 0.92,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9105263157894736,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Grit",
+          "autor_completo": "Angela Duckworth",
+          "titulo_api": "Grit",
+          "autor_api": "Angela Duckworth",
+          "año": "2016",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1013997364",
+          "categorias": [
+            "Superación personal",
+            "Libros",
+            "Salud, mente y cuerpo",
+            "Técnicos y profesionales",
+            "Educación",
+            "Negocios y finanzas personales"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/grit/id1013997364?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content explicitly references key concepts from the book, such as 'grit', 'pasión y perseverancia', and the importance of sustained effort towards long-term goals. It also aligns closely with the themes and insights presented in the official synopsis, making it feel like a meta-description that captures the essence of the book."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects key concepts from the book, such as 'passion and perseverance' and 'long-term approach to goals,' which are central to Duckworth's thesis on grit. However, it lacks specific references to the anecdotes and research mentioned in the ground truth, making it slightly less anchored. Overall, it is more than just generic filler."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones personales sobre el concepto de 'grit'.",
+          "elapsed_ms": 1666,
+          "usage": {
+            "prompt_tokens": 427,
+            "completion_tokens": 31,
+            "total_tokens": 458,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones personales sobre el concepto de 'grit'.",
+          "elapsed_ms": 1039,
+          "usage": {
+            "prompt_tokens": 391,
+            "completion_tokens": 31,
+            "total_tokens": 422,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 880,
+        "total_ms": 1666
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 311,
+          "adjusted_hue": 316,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 5,
+          "palette_strategy": "triadic"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17ED2",
+          "--palette-1": "#B7E830",
+          "--palette-2": "#1385AE",
+          "--palette-3": "#650B20",
+          "--accent": "#E212AB",
+          "--accent-soft": "#E212AB38",
+          "--accent-glow": "#E212AB6b",
+          "--paper": "#F0EFF0",
+          "--ink": "#1C171A",
+          "--border": "#908F90",
+          "--highlight-bg": "#C71096d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_uncorrectable",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge",
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-17T18-28-23",
+      "_crono": {
+        "dia": "miércoles",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.6,
+        "modo": "meseta_media",
+        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 70174,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15327,
+          "palette": 0,
+          "content_es": 18183,
+          "judge_es": 1204,
+          "content_en": 16868,
+          "judge_en": 1191,
+          "voice": 880,
+          "voice_extended": 16521,
+          "highlight_judge_es_parrafoTop": 655,
+          "highlight_judge_es_parrafoTop_retry": 656,
+          "highlight_judge_es_parrafoBot": 654,
+          "highlight_judge_en_parrafoTop": 652,
+          "highlight_judge_en_parrafoBot": 646,
+          "csal": 6593
+        },
+        "elapsed_ms_total": 48879,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6569,
+          "palette": 0,
+          "cover_fallback": 35,
+          "content_es": 12074,
+          "judge_es": 2545,
+          "content_en": 14264,
+          "judge_en": 1497,
+          "voice": 1666,
+          "voice_extended": 10221,
+          "highlight_judge": 6164,
+          "lens_compatibility": 1884,
+          "csal": 33138,
+          "post_processing": 41194
+        },
+        "llm_calls_count": 42,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 3,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.5,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.7,
+          "familia": 0.2,
+          "espiritu": 0.5,
+          "relaciones": 0.4,
+          "finanzas": 0.2
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que no estás avanzando en tus metas",
+          "después de haber fallado en un proyecto importante",
+          "cuando te comparas con personas más talentosas",
+          "antes de comenzar un nuevo desafío que parece imposible",
+          "al sentir que te falta talento para alcanzar tus sueños",
+          "cuando buscas inspiración para seguir adelante",
+          "después de una crítica que te desmotiva",
+          "cuando te preguntas si el esfuerzo vale la pena",
+          "al empezar una nueva etapa en tu carrera profesional",
+          "cuando necesitas motivación para perseverar en el gimnasio",
+          "antes de abandonar un proyecto por frustración",
+          "cuando te sientes atrapado en una rutina sin avance",
+          "al enfrentarte a un examen o competencia desafiante",
+          "cuando te preguntas cómo lograr el éxito sin talento innato",
+          "después de ver a alguien exitoso y pensar que no puedes lograrlo",
+          "al querer inculcar valores de esfuerzo en tus hijos",
+          "cuando necesitas superar una barrera mental",
+          "al buscar técnicas para aumentar tu tenacidad",
+          "cuando te enfrentas a un trabajo que te parece abrumador",
+          "al necesitar fortalecer tu resistencia emocional",
+          "cuando te propones desarrollar un nuevo hábito positivo",
+          "al querer entender cómo los demás logran sus metas",
+          "cuando reflexionas sobre tus logros personales",
+          "al intentar mejorar tu rendimiento en el trabajo",
+          "cuando buscas historias de éxito inspiradoras",
+          "al querer cambiar tu mentalidad hacia el fracaso",
+          "cuando deseas aprender a ser más perseverante",
+          "al tratar de mantener la motivación en un proyecto largo",
+          "cuando necesitas consejos para mejorar tu autodisciplina",
+          "al querer saber cómo manejar la presión del éxito"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "determinación",
+            "duda",
+            "esperanza",
+            "motivación",
+            "desaliento",
+            "inspiración",
+            "ansiedad",
+            "confianza",
+            "resiliencia"
+          ],
+          "objetos": [
+            "metas",
+            "obstáculos",
+            "esfuerzo",
+            "talento",
+            "sueños",
+            "críticas",
+            "proyectos",
+            "hábitos",
+            "rutinas",
+            "desafíos"
+          ],
+          "contextos": [
+            "trabajo",
+            "escuela",
+            "competencia",
+            "gimnasio",
+            "carrera profesional",
+            "familia",
+            "examen",
+            "proyecto",
+            "etapa de vida",
+            "rutina diaria"
+          ],
+          "verbos": [
+            "perseverar",
+            "fracasar",
+            "esforzarse",
+            "abandonar",
+            "superar",
+            "reflexionar",
+            "lograr",
+            "avanzar",
+            "motivar",
+            "desarrollar"
+          ]
+        },
+        "concept_tags": [
+          "pasión y perseverancia",
+          "esfuerzo a largo plazo",
+          "superación de obstáculos",
+          "resiliencia mental",
+          "éxito sostenible",
+          "Hard Thing Rule",
+          "motivación intrínseca",
+          "cultivo de la tenacidad",
+          "aprendizaje del fracaso",
+          "desarrollo personal",
+          "mentalidad de crecimiento",
+          "práctica deliberada",
+          "perseverancia a pesar de las críticas",
+          "auto-mejoramiento continuo",
+          "fortalecimiento de la autodisciplina"
+        ],
+        "anti_patterns": [
+          "cuando buscas una solución rápida al éxito",
+          "si esperas fórmulas mágicas para triunfar",
+          "cuando quieres evitar el esfuerzo prolongado",
+          "si buscas motivación extrínseca instantánea",
+          "cuando necesitas técnicas de relajación",
+          "si esperas mejorar sin trabajo constante",
+          "cuando buscas consuelo en lugar de acción",
+          "si no estás dispuesto a enfrentar el fracaso",
+          "si prefieres el talento sobre el esfuerzo"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🔍"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🛤️"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🔥"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión o enseñanza que podría estar directamente en el texto del libro, mostrando voz autoral y un mensaje motivacional."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta reflexiva que invita al lector a la introspección, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro, expresando una idea profunda sobre la perseverancia."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta un tono motivacional que sugiere un mensaje directo del autor, como si estuviera hablando al lector dentro del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser un consejo directo del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión y acción personal, lo que sugiere que es parte de un contenido motivacional o de autoayuda dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una voz autoral que invita al lector a imaginar y reflexionar, lo que sugiere que está escrita dentro del contexto del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta un consejo directo y reflexivo que suena como parte de un discurso o enseñanza dentro del libro, en lugar de ser una descripción externa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a concept in a direct and engaging manner, suggesting an internal voice of the author explaining an idea within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and engagement, suggesting it is part of a narrative or guidance within the book."
+            },
+            {
+              "category": "fuera",
+              "confidence": 0.85,
+              "reason": "The phrase reflects a general observation about persistence rather than being a direct excerpt from a narrative or character within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that could be part of a narrative or character development within a book, suggesting an internal reflection."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages the reader to engage in a personal reflection exercise, suggesting it is part of the book's content aimed at motivating the reader."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites personal reflection and introspection, suggesting a direct engagement with the reader, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize a scenario, suggesting an immersive experience typical of narrative writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a concept in a poetic manner, suggesting it is part of the narrative or thematic exploration within the book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-17T18:29:53.103Z",
+      "_slug": "grit",
+      "_edicion_numero": 74
+    },
+    {
       "titulo": "Nonzero",
       "autor": "Robert Wright",
       "tagline": "",
@@ -38,7 +906,7 @@
       ],
       "frases_og": [
         "🛡 La cooperación es el hilo que teje nuestra historia evolutiva.",
-        "🎯 ¿Qué lecciones nos ofrece la historia sobre nuestra capacidad de unir?",
+        "🎯 ¿Qué lecciones nos ofrece la historia sobre nuestra capacidad de unir en el contexto de la evolución cultural y la cooperación humana?",
         "🌱 El progreso humano ha sido un juego de colaboración y complejidad.",
         "🔮 La historia es un espejo donde reflejamos nuestra moralidad en acción."
       ],
@@ -1919,7 +2787,7 @@
         },
         "card_en": {
           "titulo": "The Cognitive Revolution: A Historical Turn",
-          "parrafoTop": "The Cognitive Revolution marked a decisive moment in the history of Homo sapiens, enabling our species to develop complex language and share information effectively. This capacity for communication transformed social interactions, facilitating cooperation among groups and laying the groundwork for the emergence de sociedades complejas y estructuras que definirían la civilización humana, incluyendo la influencia del dinero y la burocracia en la vida moderna, así como los desafíos que enfrentamos en el futuro, que incluyen la adaptación a nuevas tecnologías y la búsqueda de un equilibrio entre el progreso y la sostenibilidad.",
+          "parrafoTop": "The Cognitive Revolution marked a decisive moment in the history of Homo sapiens, enabling our species to develop complex language and share information effectively. This capacity for communication transformed social interactions, facilitating cooperation among groups and laying the groundwork for the emergence de sociedades complejas y estructuras que definirían la civilización humana, incluyendo la influencia del dinero y la burocracia en la vida moderna, así como los desafíos que enfrentamos en el futuro, que incluyen la adaptación a nuevas tecnologías y la búsqueda de un equilibrio entre el progreso y la sostenibilidad, lo que nos lleva a reflexionar sobre cómo estas dinámicas influirán en nuestra existencia y en la forma en que nos relacionamos con el mundo que nos rodea.",
           "subtitulo": "How did it shape our social evolution?",
           "parrafoBot": "The ability to imagine and believe in abstract concepts, such as myths and religions, allowed us to organize complex societies. Through these shared narratives, social structures emerged that, in turn, shaped the culture, politics, and economics of human groups."
         },
@@ -2762,7 +3630,7 @@
         },
         "card_es": {
           "titulo": "La búsqueda de la identidad",
-          "parrafoTop": "El enigma del monumento a García Lorca no solo es un símbolo de la muerte, sino también de la vida que llevó a Enrique Amorim a construir su propia narrativa. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá este monumento ser un testimonio de la dualidad de su vida y su obra, así como de la intersección entre su vida pública y privada, y la percepción de la verdad en su narrativa personal, que revela la lucha constante de los artistas por encontrar su lugar en un mundo que a menudo parece indiferente a sus historias, y que invita a reflexionar sobre la correspondencia entre la literatura y la identidad en el contexto histórico del siglo XX, donde la búsqueda de significado se convierte en un acto de resistencia ante la indiferencia del tiempo?",
+          "parrafoTop": "El enigma del monumento a García Lorca no solo es un símbolo de la muerte, sino también de la vida que llevó a Enrique Amorim a construir su propia narrativa. En ese espacio, donde se cruzan las fronteras de Uruguay y Argentina, se encuentra la búsqueda de su identidad, un reflejo de la complejidad de su existencia. ¿Podrá este monumento ser un testimonio de la dualidad de su vida y su obra, así como de la intersección entre su vida pública y privada, y la percepción de la verdad en su narrativa personal, que revela la lucha constante de los artistas por encontrar su lugar en un mundo que a menudo parece indiferente a sus historias, y que invita a reflexionar sobre la correspondencia entre la literatura y la identidad en el contexto histórico del siglo XX, donde la búsqueda de significado se convierte en un acto de resistencia ante la indiferencia del tiempo, y donde cada artista enfrenta su propia batalla por ser escuchado y comprendido en medio del silencio colectivo.",
           "subtitulo": "¿Qué es lo que realmente nos define?",
           "parrafoBot": "La dualidad de Amorim es un espejo de muchos artistas del siglo XX, quienes alternan entre sus identidades públicas y privadas. El arte, en su esencia, se convierte en un campo de batalla donde se negocian las verdades y las mentiras, un lugar donde la percepción de la verdad se transforma en un acto de creación."
         },
@@ -3628,7 +4496,7 @@
           "titulo": "Emotions as Momentary Constructs",
           "parrafoTop": "Emotions are not fixed entities located in specific areas of the brain; rather, they are momentary constructs woven together by accumulated experience and learning. Each emotional reaction results from the interplay of brain systems communicating in real time, forming a network of connections that shapes our responses.",
           "subtitulo": "How does our learning influence our emotions?",
-          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro, sino que son el resultado de procesos complejos que involucran tanto la psicología como la neurociencia, y que nos permiten adaptarnos y responder de manera efectiva a las diversas situaciones que enfrentamos en nuestra vida diaria, reconociendo que el entendimiento de nuestras emociones es fundamental para nuestro bienestar y desarrollo personal, y que este conocimiento nos ayuda a construir una vida más plena y satisfactoria."
+          "parrafoBot": "The brain operates as an interconnected system that reacts to stimuli based on the context and personal history of each individual. The emotion theory invites us to rethink how we understand our reactions and how we can learn to manage them through awareness and reflection, considerando que las emociones son construcciones del momento y no se localizan en áreas específicas del cerebro, sino que son el resultado de procesos complejos que involucran tanto la psicología como la neurociencia, y que nos permiten adaptarnos y responder de manera efectiva a las diversas situaciones que enfrentamos en nuestra vida diaria, reconociendo que el entendimiento de nuestras emociones es fundamental para nuestro bienestar y desarrollo personal, y que este conocimiento nos ayuda a construir una vida más plena y satisfactoria, promoviendo un enfoque consciente y reflexivo hacia nuestras experiencias emocionales y su impacto en nuestra vida cotidiana."
         },
         "emotional_words_es": [
           "comprensión",
@@ -4499,7 +5367,7 @@
         },
         "card_en": {
           "titulo": "Courage in Vulnerability",
-          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano, donde la valentía y la autenticidad son fundamentales para un liderazgo efectivo, que nos impulsa a tomar decisiones con sentido y a vivir un crecimiento personal consciente, cultivando una conexión profunda con nosotros mismos y con los demás en cada paso del camino, siempre recordando que la vulnerabilidad es una fortaleza que nos une y nos permite ser verdaderamente humanos.",
+          "parrafoTop": "Authentic human leadership is not about unbreakable skills but the courage we find in revealing our vulnerabilities. In the journey of leadership, every fall is an invitation to learn, to grow, and to connect with others more genuinely. True strength manifests when we allow ourselves to ser vulnerables y auténticos en nuestro liderazgo, abrazando nuestras imperfecciones y reconociendo que cada desafío es una oportunidad para crecer y aprender en el camino del liderazgo humano, donde la valentía y la autenticidad son fundamentales para un liderazgo efectivo, que nos impulsa a tomar decisiones con sentido y a vivir un crecimiento personal consciente, cultivando una conexión profunda con nosotros mismos y con los demás en cada paso del camino, siempre recordando que la vulnerabilidad es una fortaleza que nos une y nos permite ser verdaderamente humanos, y así, al enfrentar cada reto, descubrimos que la autenticidad en nuestro liderazgo no solo transforma nuestras vidas, sino que también inspira a otros a hacer lo mismo.",
           "subtitulo": "What does it mean to be an authentic leader?",
           "parrafoBot": "Recognizing our weaknesses creates a space where others can also be sincere. Thus, leadership becomes an act of service, where authenticity intertwines with responsibility and commitment."
         },
@@ -5180,7 +6048,7 @@
         "⏳ Las excusas son el eco del conformismo, rompelas y hallarás tu voz."
       ],
       "frases_en": [
-        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad.",
+        "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad, y donde puedas finalmente romper con la metáfora de la vaca que te ha mantenido prisionero de tus propias justificaciones.",
         "🕯 What would your life look like if you released all your excuses?",
         "🌓 Imagine shedding those invisible chains, stepping into a world of possibility and growth.",
         "🚶 Every excuse is a cow, but you hold the power to break free and embrace your true potential."
@@ -5362,7 +6230,7 @@
           "titulo": "Breaking the Chains of Conformity",
           "parrafoTop": "Excuses act like invisible chains, binding us to a life of mediocrity. Each time we say \"I can't\" or \"I'm not capable,\" we feed the conformism that becomes our worst enemy. The metaphor of the cow illustrates how we justify and accept limitations that exist only in our psyche, impidiendo que alcancemos nuestro verdadero potencial y vivamos una vida libre de justificaciones, donde podamos romper esas cadenas y alcanzar la libertad que merecemos, liberándonos del conformismo y abrazando nuestro verdadero potencial, superando así las excusas que nos limitan y nos impiden vivir plenamente.",
           "subtitulo": "What if you could unleash your true potential?",
-          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos, superando el conformismo y abrazando la libertad que nos ofrece una vida sin excusas, donde cada uno de nosotros puede ser la mejor versión de sí mismo, y así, al deshacernos de estas limitaciones, podemos finalmente alcanzar nuestras metas y vivir plenamente, disfrutando de una existencia sin ataduras que nos permita ser verdaderamente libres y exitosos en todos los aspectos de nuestra vida."
+          "parrafoBot": "When we strip away these excuses, we discover a world full of possibilities. Living a life free of cows means embracing human potential without restraints, challenging conformism, and rediscovering the freedom we all deserve. Learning to recognize the cows is the first step toward transformation and living a life free of justifications that hold us back, permitiéndonos alcanzar nuestro verdadero potencial y vivir sin limitaciones, liberándonos de las excusas que nos impiden avanzar y logrando así el éxito que merecemos, superando el conformismo y abrazando la libertad que nos ofrece una vida sin excusas, donde cada uno de nosotros puede ser la mejor versión de sí mismo, y así, al deshacernos de estas limitaciones, podemos finalmente alcanzar nuestras metas y vivir plenamente, disfrutando de una existencia sin ataduras que nos permita ser verdaderamente libres y exitosos en todos los aspectos de nuestra vida, y así, al reconocer y eliminar las vacas de nuestra vida, nos abrimos a un futuro lleno de oportunidades y logros significativos."
         },
         "emotional_words_es": [
           "libertad",
@@ -5490,7 +6358,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "space",
-            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad, y donde puedas finalmente romper con la metáfora de la vaca que te ha mantenido prisionero de tus propias justificaciones.",
+            "phrase": "🏛 Visualize a life unburdened by excuses. Picture your dreams materializing without the weight of justificaciones que te limitan y que te impiden alcanzar tu verdadero potencial humano sin ataduras, liberándote del conformismo y las excusas que te retienen, permitiéndote vivir una vida plena y libre de limitaciones, donde cada paso que des esté lleno de libertad y autenticidad, y donde puedas finalmente romper con la metáfora de la vaca que te ha mantenido prisionero de tus propias justificaciones, dejando atrás el conformismo y abrazando tu verdadero potencial.",
             "role_symphonic": "open",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -7053,9 +7921,9 @@
         },
         "card_en": {
           "titulo": "Loving What Is",
-          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad y abrazando el proceso de El Trabajo como un camino hacia la autoinvestigación y la aceptación plena, donde aprendemos a vivir en armonía con lo que es, y a encontrar paz en cada momento, transformando nuestra relación con el sufrimiento y cultivando una profunda aceptación de la vida tal como se presenta.",
+          "parrafoTop": "True suffering does not come from the problems themselves, but from what we think about them. When we accept reality as it is, we begin to dissolve the pain. The Work invites us to observe our thoughts and question them, allowing us to free ourselves from the burdens we carry. Through four simple questions, we uncover la verdad detrás de nuestros pensamientos y cómo estos afectan nuestra percepción del sufrimiento y nuestra capacidad de aceptar la realidad tal como es, convirtiéndonos en amantes de la realidad y abrazando el proceso de El Trabajo como un camino hacia la autoinvestigación y la aceptación plena, donde aprendemos a vivir en armonía con lo que es, y a encontrar paz en cada momento, transformando nuestra relación con el sufrimiento y cultivando una profunda aceptación de la vida tal como se presenta, reconociendo que cada experiencia es una oportunidad para crecer y aprender.",
           "subtitulo": "How to Transform Suffering into Acceptance?",
-          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad, convirtiéndonos en amantes de la realidad, lo que nos permite experimentar la vida sin resistencia y abrazar cada momento tal como se presenta, aceptando cada experiencia y reconociendo que todo lo que sucede es parte de nuestra realidad, lo que nos lleva a una profunda aceptación y paz interior."
+          "parrafoBot": "In The Work, the process of self-inquiry becomes our most powerful tool. The four questions are the key that opens the door to a new perception of reality and permite aceptar el sufrimiento tal como es, permitiéndonos vivir en armonía con lo que es y transformando nuestra relación con la realidad, convirtiéndonos en amantes de la realidad, lo que nos permite experimentar la vida sin resistencia y abrazar cada momento tal como se presenta, aceptando cada experiencia y reconociendo que todo lo que sucede es parte de nuestra realidad, lo que nos lleva a una profunda aceptación y paz interior, permitiéndonos ser verdaderamente libres y felices en nuestra existencia."
         },
         "emotional_words_es": [
           "liberación",
@@ -7757,7 +8625,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Despierta tu héroe interior",
-        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo.",
+        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo que nos lleve a vivir una historia digna de contar.",
         "subtitulo": "¿Cómo puedes transformar tu vida en una historia digna de contar?",
         "parrafoBot": "La clave para cambiar radicalmente tu vida radica en salir de la zona de confort. Este movimiento hacia lo desconocido no es solo un acto de valentía; es el primer paso hacia la realización de tu propósito. [H]Cuando decides tomar riesgos, abres la puerta a un mundo de posibilidades[/H] que antes parecían inalcanzables.",
         "style": {
@@ -7769,7 +8637,7 @@
       },
       "tarjeta_base": {
         "titulo": "Despierta tu héroe interior",
-        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo.",
+        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo que nos lleve a vivir una historia digna de contar.",
         "subtitulo": "¿Cómo puedes transformar tu vida en una historia digna de contar?",
         "parrafoBot": "La clave para cambiar radicalmente tu vida radica en salir de la zona de confort. Este movimiento hacia lo desconocido no es solo un acto de valentía; es el primer paso hacia la realización de tu propósito. [H]Cuando decides tomar riesgos, abres la puerta a un mundo de posibilidades[/H] que antes parecían inalcanzables.",
         "style": {
@@ -7781,7 +8649,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Despierta tu héroe interior",
-        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo.",
+        "parrafoTop": "La vida no es solo un recorrido, es un viaje épico donde cada uno de nosotros tiene el potencial de convertirse en el héroe de su propia historia. [H]Despertar al héroe interior significa reconocer que, aunque hay desafíos y adversidades, dentro de nosotros reside la fuerza para superarlos y emprender la Jornada del Héroe hacia un propósito significativo que nos lleve a vivir una historia digna de contar.",
         "subtitulo": "¿Cómo puedes transformar tu vida en una historia digna de contar?",
         "parrafoBot": "La clave para cambiar radicalmente tu vida radica en salir de la zona de confort. Este movimiento hacia lo desconocido no es solo un acto de valentía; es el primer paso hacia la realización de tu propósito. [H]Cuando decides tomar riesgos, abres la puerta a un mundo de posibilidades[/H] que antes parecían inalcanzables.",
         "style": {
@@ -11277,7 +12145,7 @@
         },
         "card_en": {
           "titulo": "Small Data: Tiny Clues, Huge Trends",
-          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor y cómo estos patrones se relacionan con las tendencias de mercado que emergen de la observación etnográfica de los hogares de los consumidores, permitiéndonos descubrir la conexión entre los deseos no satisfechos y las decisiones de compra que tomamos a diario, y cómo esta metodología de observación se asemeja a la de un Sherlock Holmes moderno en el análisis de comportamientos, ayudándonos a desentrañar los secretos que impulsan nuestras elecciones y a identificar las tendencias que surgen de la vida cotidiana.",
+          "parrafoTop": "In the quiet corners of our daily lives lie the clues that reveal unfulfilled desires. It is not merely about observation; it's about connecting the dots between these tiny data points and the market trends that shape our behavior, así como la importancia de observar pequeñas pistas en la vida cotidiana que nos llevan a entender los deseos como motor oculto detrás de las decisiones de compra, y cómo estos pequeños datos pueden influir en nuestras elecciones y en la forma en que interactuamos con el mundo que nos rodea, revelando así patrones que pueden ser analizados para comprender mejor el comportamiento del consumidor y cómo estos patrones se relacionan con las tendencias de mercado que emergen de la observación etnográfica de los hogares de los consumidores, permitiéndonos descubrir la conexión entre los deseos no satisfechos y las decisiones de compra que tomamos a diario, y cómo esta metodología de observación se asemeja a la de un Sherlock Holmes moderno en el análisis de comportamientos, ayudándonos a desentrañar los secretos que impulsan nuestras elecciones y a identificar las tendencias que surgen de la vida cotidiana, lo que nos permite entender mejor cómo los pequeños datos pueden revelar grandes verdades sobre el comportamiento del consumidor y las decisiones que tomamos en nuestra vida diaria.",
           "subtitulo": "What secrets lurk in our daily routines?",
           "parrafoBot": "Ethnographic observation methodology is crucial for uncovering these hidden desires. Through this lens, we can understand how every seemingly insignificant data point transforms into a key for unveiling significant market trends. Observing is not just seeing; it's about interpreting and linking."
         },
@@ -15630,7 +16498,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice of running with purpose and conscious training, donde se busca integrar el ejercicio físico y mental para lograr un equilibrio que potencie tanto el cuerpo como la mente, promoviendo así un enfoque holístico que enriquezca la experiencia de correr y fortalezca la conexión entre cuerpo y mente, y que permita a los corredores experimentar una transformación personal a través de la práctica consciente y el desarrollo de una mentalidad positiva.",
+            "phrase": "🔁 What if running became a journey of self-discovery rather than a mere exercise of the body, but a profound connection between mind and movement, integrating mindfulness and mental exercise to enhance the overall experience of running, allowing for a deeper understanding of oneself and fostering a constructive mindset while engaging in this mindful practice of running with purpose and conscious training, donde se busca integrar el ejercicio físico y mental para lograr un equilibrio que potencie tanto el cuerpo como la mente, promoviendo así un enfoque holístico que enriquezca la experiencia de correr y fortalezca la conexión entre cuerpo y mente, y que permita a los corredores experimentar una transformación personal a través de la práctica consciente y el desarrollo de una mentalidad positiva, alineando sus esfuerzos con los principios de mindfulness para maximizar los beneficios de cada carrera.",
             "role_symphonic": "resonate",
             "mood_axis": 0.4,
             "value_axis": null,
@@ -24636,7 +25504,7 @@
     {
       "titulo": "Trabaja duro trabaja con astucia",
       "autor": "Curtis Jackson",
-      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo, aprendiendo a adaptarte y a ser resiliente ante cada dificultad que surja, y a utilizar cada experiencia como una oportunidad para crecer y mejorar en tu camino hacia el éxito, y así poder enfrentar cada nuevo desafío con la confianza y la determinación necesarias para triunfar, aplicando las estrategias que he aprendido y que te compartiré en este libro, para que puedas también lograr tus objetivos y mantenerte en la cima de tus metas.",
+      "tagline": "Debes entender que no existe eso de lograrlo; que no importa cuánto dinero fama o éxito obtengas el futuro traerá más dificultades más drama más obstáculos; la meta no es sólo ser exitoso sino conservar ese éxito. yo lo aprendí por las malas y es una habilidad que te voy a enseñar en este libro. Jackson llegó a la cima se desplomó y volvió a subir; Comparte las reglas y estrategias que le permitieron retomar y conservar su lugar en la cima. Un libro imprescindible que te permitirá sobreponerte a las crisis adaptarte a los cambios y cumplir todas tus metas con dedicación y confianza en ti mismo, utilizando la mentalidad adecuada y las estrategias necesarias para enfrentar cualquier adversidad y mantenerte firme en el camino hacia el éxito, aprendiendo a ser resiliente y a adaptarte a cada desafío que se presente, porque la clave está en la habilidad de conservar el éxito a pesar de las caídas y los obstáculos que la vida te presente, y en cómo aplicar estas enseñanzas en tu propia vida para lograr un crecimiento constante y sostenible, enfrentando cada reto con la mentalidad adecuada y las estrategias que te ayudarán a no solo alcanzar el éxito, sino a mantenerlo a lo largo del tiempo, aprendiendo a adaptarte y a ser resiliente ante cada dificultad que surja, y a utilizar cada experiencia como una oportunidad para crecer y mejorar en tu camino hacia el éxito, y así poder enfrentar cada nuevo desafío con la confianza y la determinación necesarias para triunfar, aplicando las estrategias que he aprendido y que te compartiré en este libro, para que puedas también lograr tus objetivos y mantenerte en la cima de tus metas, siempre recordando que la resiliencia y la adaptación son claves para el éxito duradero.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication115/v4/3b/fa/61/3bfa615a-c9a6-c003-dfa5-ace6b0160036/1033773126.jpg/626x0w.jpg",
       "isbn": "",
@@ -38209,7 +39077,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
+      "_audit_timestamp": "2026-06-17T18:30:08.525Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -46668,7 +47536,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
+      "_audit_timestamp": "2026-06-17T18:30:08.525Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -54337,7 +55205,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-16T15:33:06.174Z"
+      "_audit_timestamp": "2026-06-17T18:30:08.525Z"
     },
     {
       "titulo": "Suscritos",
@@ -56062,11 +56930,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 74,
-    "total": 66,
-    "last_audit": "2026-06-16T15:33:06.174Z",
-    "healing_rotation_idx": 10,
+    "next_edition_number": 75,
+    "total": 67,
+    "last_audit": "2026-06-17T18:30:08.525Z",
+    "healing_rotation_idx": 11,
     "last_healing_book": "Trabaja duro trabaja con astucia",
-    "last_healing_timestamp": "2026-06-16T15:53:05.426Z"
+    "last_healing_timestamp": "2026-06-17T18:48:25.092Z"
   }
 }

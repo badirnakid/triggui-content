@@ -1,6 +1,6 @@
 {
-  "next": 74,
-  "last_assigned": 73,
+  "next": 75,
+  "last_assigned": 74,
   "_seed_note": "Bootstrap one-shot 2026-05-13: 44 carpetas adulto + 1 kids (cementerio) = 45 ediciones vivas previas. max(45,36)=45 -> counter inicia en 46. Recovery manual 2026-05-13: matilda kids fue asignada #046 por el bot correctamente (cirugias 1/3/4 funcionaron), pero el push del counter file fallo en FASE 9 por unstaged changes (cirugia 5 desplegada en triggui-app commit 6235de0 lo resuelve). Counter alineado manualmente. De aqui en adelante este archivo es la unica fuente de verdad. Solo se incrementa en !isFromBatch.",
   "history": [
     {
@@ -199,6 +199,13 @@
       "slug": null,
       "titulo": "Nonzero",
       "at": "2026-06-16T15:33:05.847Z"
+    },
+    {
+      "edicion": 74,
+      "catalogo": "adulto",
+      "slug": null,
+      "titulo": "Grit",
+      "at": "2026-06-17T18:30:08.196Z"
     }
   ]
 }
