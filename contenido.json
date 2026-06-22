@@ -1,6 +1,838 @@
 {
   "libros": [
     {
+      "titulo": "El poder del ahora",
+      "autor": "Eckhart Tolle",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/58/94/48/58944837-a079-5e0e-371a-a559e0deabb1/9786073119276.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/58/94/48/58944837-a079-5e0e-371a-a559e0deabb1/9786073119276.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "El poder del ahora",
+      "titulo_en": "The Power of Now",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "liberación",
+        "conciencia",
+        "presencia",
+        "tranquilidad"
+      ],
+      "palabras_en": [
+        "suffering",
+        "liberation",
+        "presence",
+        "consciousness"
+      ],
+      "frases": [
+        "⏳ Dedica un momento para observar tus pensamientos sin apegarte a ellos.",
+        "🌊 ¿Estás dispuesto a dejar ir el juicio que haces sobre tus pensamientos?",
+        "🌅 Imagina un río fluyendo serenamente, llevando tus pensamientos lejos.",
+        "🏛 El ahora es el umbral de la iluminación espiritual."
+      ],
+      "frases_en": [
+        "🌬 Breathe deeply and let your thoughts drift away like clouds in the sky.",
+        "🗺 Have you ever paused to truly feel the space around you?",
+        "💡 Illumination is not found in the answers, but in the questions we dare to ask.",
+        "🚶 Imagine your thoughts as leaves floating down a stream, gently carried away from you."
+      ],
+      "frases_og": [
+        "⚓ La mente es el origen del sufrimiento humano.",
+        "🔁 ¿Qué pasaría si dejaras de identificarse con tus pensamientos y comenzaras a vivir en el presente?",
+        "🛡 La verdadera paz se encuentra en el ahora, sin reservas.",
+        "🎯 Suelta el pensamiento, abraza la presencia: el poder reside aquí."
+      ],
+      "frases_og_en": [
+        "⚓ The mind is the architect of our suffering, not the world around us.",
+        "🔁 Release your thoughts. Embrace the stillness within you.",
+        "🛡 What if you could find peace in the chaos of your thoughts?",
+        "🎯 In silence, clarity arises — the essence of true power."
+      ],
+      "colores": [
+        "#F1BE7E",
+        "#3082E8",
+        "#AE9113",
+        "#0B1C65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "La mente como prisión",
+        "parrafoTop": "La mente, en su constante actividad, se convierte en la fuente de nuestro sufrimiento. [H]Al identificarnos con nuestros pensamientos, creamos una prisión de dolor y ansiedad.[/H] La verdadera liberación radica en el desapego de esa corriente interminable, permitiendo que la conciencia se asiente en el presente. Solo en la plena aceptación del momento presente podemos encontrar la paz y la verdadera felicidad.",
+        "subtitulo": "¿Cómo puedes soltar el peso de tus pensamientos?",
+        "parrafoBot": "Al practicar la atención plena, comenzamos a desactivar el poder de la mente sobre nosotros. [H]Aprendemos a observar nuestros pensamientos sin juzgarlos, reconociendo que no somos lo que pensamos.[/H] Esta transformación de la percepción es el paso hacia la iluminación, donde el ahora se vuelve nuestro único refugio.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La mente como prisión",
+        "parrafoTop": "La mente, en su constante actividad, se convierte en la fuente de nuestro sufrimiento. [H]Al identificarnos con nuestros pensamientos, creamos una prisión de dolor y ansiedad.[/H] La verdadera liberación radica en el desapego de esa corriente interminable, permitiendo que la conciencia se asiente en el presente. Solo en la plena aceptación del momento presente podemos encontrar la paz y la verdadera felicidad.",
+        "subtitulo": "¿Cómo puedes soltar el peso de tus pensamientos?",
+        "parrafoBot": "Al practicar la atención plena, comenzamos a desactivar el poder de la mente sobre nosotros. [H]Aprendemos a observar nuestros pensamientos sin juzgarlos, reconociendo que no somos lo que pensamos.[/H] Esta transformación de la percepción es el paso hacia la iluminación, donde el ahora se vuelve nuestro único refugio.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La mente como prisión",
+        "parrafoTop": "La mente, en su constante actividad, se convierte en la fuente de nuestro sufrimiento. [H]Al identificarnos con nuestros pensamientos, creamos una prisión de dolor y ansiedad.[/H] La verdadera liberación radica en el desapego de esa corriente interminable, permitiendo que la conciencia se asiente en el presente. Solo en la plena aceptación del momento presente podemos encontrar la paz y la verdadera felicidad.",
+        "subtitulo": "¿Cómo puedes soltar el peso de tus pensamientos?",
+        "parrafoBot": "Al practicar la atención plena, comenzamos a desactivar el poder de la mente sobre nosotros. [H]Aprendemos a observar nuestros pensamientos sin juzgarlos, reconociendo que no somos lo que pensamos.[/H] Esta transformación de la percepción es el paso hacia la iluminación, donde el ahora se vuelve nuestro único refugio.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Mind as Prison",
+        "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. [H]By identifying with our thoughts, we create a prison of pain and anxiety.[/H] True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present. Only in presence can we discover the vastness of our being and experience true illumination and freedom from suffering.",
+        "subtitulo": "How can you release the weight of your thoughts?",
+        "parrafoBot": "[H]Through the practice of mindfulness, we begin to deactivate the mind's power over us.[/H] We learn to observe our thoughts without judgment, recognizing that we are not what we think. This transformation of perception is the step towards illumination, where the now becomes our only refuge.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Mind as Prison",
+        "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. [H]By identifying with our thoughts, we create a prison of pain and anxiety.[/H] True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present. Only in presence can we discover the vastness of our being and experience true illumination and freedom from suffering.",
+        "subtitulo": "How can you release the weight of your thoughts?",
+        "parrafoBot": "[H]Through the practice of mindfulness, we begin to deactivate the mind's power over us.[/H] We learn to observe our thoughts without judgment, recognizing that we are not what we think. This transformation of perception is the step towards illumination, where the now becomes our only refuge.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Mind as Prison",
+        "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. [H]By identifying with our thoughts, we create a prison of pain and anxiety.[/H] True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present. Only in presence can we discover the vastness of our being and experience true illumination and freedom from suffering.",
+        "subtitulo": "How can you release the weight of your thoughts?",
+        "parrafoBot": "[H]Through the practice of mindfulness, we begin to deactivate the mind's power over us.[/H] We learn to observe our thoughts without judgment, recognizing that we are not what we think. This transformation of perception is the step towards illumination, where the now becomes our only refuge.",
+        "style": {
+          "accent": "#E28712",
+          "paper": "#F0F0EF",
+          "ink": "#1C1A17",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20poder%20del%20ahora%20Eckhart%20Tolle%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Power%20of%20Now%20Eckhart%20Tolle%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-22T16:04:33.980Z",
+        "workflow_run_id": "27966350877",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "0 — Cero (contemplación)",
+        "pilar": "auto",
+        "hawkins_target": "paz (600)",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "decepciones",
+        "nota_libro": "",
+        "sentimiento": "decepciones"
+      },
+      "_animo_promedio": 0.45,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "El poder del ahora",
+          "titulo_en": "The Power of Now",
+          "autor_completo": "Eckhart Tolle",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "vivir en el presente como antidoto al sufrimiento",
+            "la mente como generadora de problemas y dolor",
+            "la conexión entre el ahora y la iluminación espiritual",
+            "el desapego del pensamiento como forma de liberación",
+            "la transformación de la percepción a través de la atención plena"
+          ],
+          "key_terms": [
+            "iluminación",
+            "presencia",
+            "desapego",
+            "sufrimiento",
+            "conciencia"
+          ],
+          "authorial_voice_notes": "Eckhart Tolle utiliza un tono accesible y reflexivo, ofreciendo preguntas y respuestas que invitan a la introspección y la autoconciencia."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la decepción de manera indirecta al tratar sobre la liberación del sufrimiento mental que a menudo proviene de expectativas no cumplidas y la identificación con el pensamiento. Por lo tanto, aunque no se centra exclusivamente en decepciones, sí proporciona herramientas para reconfigurar nuestra relación con ellas al fomentar la aceptación del presente.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 28.5,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 5,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "espiritual"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La mente como prisión",
+          "parrafoTop": "La mente, en su constante actividad, se convierte en la fuente de nuestro sufrimiento. Al identificarnos con nuestros pensamientos, creamos una prisión de dolor y ansiedad. La verdadera liberación radica en el desapego de esa corriente interminable, permitiendo que la conciencia se asiente en el presente. Solo en la plena presencia podemos encontrar la paz.",
+          "subtitulo": "¿Cómo puedes soltar el peso de tus pensamientos?",
+          "parrafoBot": "Al practicar la atención plena, comenzamos a desactivar el poder de la mente sobre nosotros. Aprendemos a observar nuestros pensamientos sin juzgarlos, reconociendo que no somos lo que pensamos. Esta transformación de la percepción es el paso hacia la iluminación, donde el ahora se vuelve nuestro único refugio."
+        },
+        "card_en": {
+          "titulo": "The Mind as Prison",
+          "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. By identifying with our thoughts, we create a prison of pain and anxiety. True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present moment, where we can fully embrace the now and experience the profound peace that comes with true presence.",
+          "subtitulo": "How can you release the weight of your thoughts?",
+          "parrafoBot": "Through the practice of mindfulness, we begin to deactivate the mind's power over us. We learn to observe our thoughts without judgment, recognizing that we are not what we think. This transformation of perception is the step towards illumination, where the now becomes our only refuge."
+        },
+        "emotional_words_es": [
+          "liberación",
+          "conciencia",
+          "presencia",
+          "tranquilidad"
+        ],
+        "emotional_words_en": [
+          "suffering",
+          "liberation",
+          "presence",
+          "consciousness"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "⚓ La mente es el origen del sufrimiento humano.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔁 ¿Qué pasaría si dejaras de identificarse con tus pensamientos y comenzaras a vivir en el presente?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 La verdadera paz se encuentra en el ahora, sin reservas.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 Suelta el pensamiento, abraza la presencia: el poder reside aquí.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "⚓ The mind is the architect of our suffering, not the world around us.",
+            "role_symphonic": "land",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔁 Release your thoughts. Embrace the stillness within you.",
+            "role_symphonic": "open",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 What if you could find peace in the chaos of your thoughts?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 In silence, clarity arises — the essence of true power.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Dedica un momento para observar tus pensamientos sin apegarte a ellos.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 ¿Estás dispuesto a dejar ir el juicio que haces sobre tus pensamientos?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un río fluyendo serenamente, llevando tus pensamientos lejos.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 El ahora es el umbral de la iluminación espiritual.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 Breathe deeply and let your thoughts drift away like clouds in the sky.",
+            "role_symphonic": "open",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Have you ever paused to truly feel the space around you?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "💡 Illumination is not found in the answers, but in the questions we dare to ask.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Imagine your thoughts as leaves floating down a stream, gently carried away from you.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.92,
+          "grounding_judge": 0.95,
+          "combined": 0.94,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9232142857142857,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "El poder del ahora",
+          "autor_completo": "Eckhart Tolle",
+          "titulo_api": "El poder del ahora",
+          "autor_api": "Eckhart Tolle",
+          "año": "2014",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "698946532",
+          "categorias": [
+            "Espiritualidad",
+            "Libros",
+            "Salud, mente y cuerpo",
+            "Superación personal"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/el-poder-del-ahora/id698946532?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja conceptos específicos del libro, como la idea de la mente como fuente de sufrimiento y la práctica de la atención plena, que son centrales en 'El poder del ahora'. Además, utiliza frases que evocan la transformación hacia la iluminación y el desapego de los pensamientos, alineándose con la sinopsis oficial. Esto lo hace específico y relevante para el libro."
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content closely aligns with the themes of Eckhart Tolle's 'El poder del ahora,' particularly the concepts of the mind as a source of suffering and the importance of living in the present moment. Phrases like 'detaching from that ceaseless flow' and 'discover the vastness of our being' reflect the book's core messages. However, it does not directly quote or reference specific terms from the syn"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones en primera persona sobre la mente.",
+          "elapsed_ms": 878,
+          "usage": {
+            "prompt_tokens": 419,
+            "completion_tokens": 28,
+            "total_tokens": 447,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones en primera persona sobre el tema.",
+          "elapsed_ms": 1942,
+          "usage": {
+            "prompt_tokens": 407,
+            "completion_tokens": 28,
+            "total_tokens": 435,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 882,
+        "total_ms": 1942
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 28.5,
+          "adjusted_hue": 33.5,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 5,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.23",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1BE7E",
+          "--palette-1": "#3082E8",
+          "--palette-2": "#AE9113",
+          "--palette-3": "#0B1C65",
+          "--accent": "#E28712",
+          "--accent-soft": "#E2871238",
+          "--accent-glow": "#E287126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1C1A17",
+          "--border": "#90908F",
+          "--highlight-bg": "#C77710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "18px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-06-22T16-04-33",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 10,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 60598,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15368,
+          "palette": 0,
+          "content_es": 18034,
+          "judge_es": 1081,
+          "content_en": 16736,
+          "judge_en": 1108,
+          "voice": 882,
+          "voice_extended": 7389,
+          "highlight_judge_es_parrafoTop": 647,
+          "highlight_judge_es_parrafoBot": 650,
+          "highlight_judge_en_parrafoTop": 643,
+          "highlight_judge_en_parrafoBot": 649,
+          "csal": 2880
+        },
+        "elapsed_ms_total": 55014,
+        "elapsed_ms_by_phase": {
+          "grounding": 8,
+          "anchors": 18048,
+          "palette": 0,
+          "cover_fallback": 60,
+          "content_es": 15609,
+          "judge_es": 2207,
+          "content_en": 12062,
+          "judge_en": 2911,
+          "voice": 1943,
+          "voice_extended": 2161,
+          "highlight_judge": 6449,
+          "lens_compatibility": 1753,
+          "csal": 11454,
+          "post_processing": 19664
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.7,
+        "game-theory": 0.1,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.5,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.2,
+          "espiritu": 1,
+          "relaciones": 0.4,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.8
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me siento atrapado en mis pensamientos negativos",
+          "después de una discusión que me dejó ansioso",
+          "antes de una presentación importante y no puedo dejar de preocuparme",
+          "cuando siento que el pasado me persigue y no puedo avanzar",
+          "después de un día estresante en el trabajo y busco alivio",
+          "cuando me doy cuenta de que la ansiedad me impide disfrutar de mi vida",
+          "antes de dormir, cuando mi mente no para de divagar",
+          "cuando siento que el futuro es incierto y me causa miedo",
+          "después de perder algo importante y no sé cómo seguir",
+          "cuando busco respuestas a preguntas existenciales sobre mi vida y mi propósito.",
+          "cuando trato de meditar pero no puedo silenciar mis pensamientos.",
+          "después de una experiencia dolorosa que me dejó marcado.",
+          "cuando quiero disfrutar más de los momentos simples de la vida.",
+          "antes de tomar una decisión importante que me genera dudas.",
+          "cuando busco una manera de manejar mi estrés diario.",
+          "cuando me siento desconectado de mí mismo y de los demás.",
+          "cuando intento entender el sufrimiento que siento en mi vida.",
+          "antes de enfrentar un cambio significativo en mi vida.",
+          "cuando busco la paz interior en medio del caos.",
+          "cuando la rutina me hace sentir vacío y sin propósito.",
+          "cuando quiero aprender a vivir más plenamente.",
+          "después de leer un libro que me hizo reflexionar sobre mi vida.",
+          "cuando necesito recordar que el presente es lo único que realmente tengo.",
+          "cuando me doy cuenta de que estoy perdiendo tiempo preocupándome por cosas que no puedo controlar.",
+          "cuando quiero dejar de lado mis miedos y vivir con más autenticidad.",
+          "cuando me siento perdido y no sé a dónde ir.",
+          "cuando quiero aprender a disfrutar de la vida tal como es.",
+          "cuando me doy cuenta de que estoy aferrándome a emociones negativas.",
+          "antes de tomar un descanso y necesito centrarme.",
+          "cuando quiero encontrar claridad en medio de la confusión.",
+          "cuando la vida me parece abrumadora y busco un camino hacia la calma."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "estrés",
+            "miedo",
+            "inseguridad",
+            "confusión",
+            "tristeza",
+            "alivio",
+            "iluminación",
+            "plenitud",
+            "paz interior"
+          ],
+          "objetos": [
+            "pensamientos",
+            "presente",
+            "meditación",
+            "silencio",
+            "conciencia"
+          ],
+          "contextos": [
+            "relaciones",
+            "trabajo",
+            "hogar",
+            "naturaleza",
+            "momentos de soledad"
+          ],
+          "verbos": [
+            "observar",
+            "dejar ir",
+            "meditar",
+            "reflexionar",
+            "conectar"
+          ]
+        },
+        "concept_tags": [
+          "vivir en el presente",
+          "iluminación espiritual",
+          "desapego del pensamiento",
+          "transformación de la percepción",
+          "atención plena",
+          "liberación del sufrimiento",
+          "conexión con uno mismo",
+          "poder del ahora",
+          "ser consciente",
+          "fluir con la vida"
+        ],
+        "anti_patterns": [
+          "para resolver conflictos interpersonales",
+          "si busco consejos prácticos sobre finanzas",
+          "cuando necesito un plan de acción detallado",
+          "si busco soluciones rápidas y efectivas sin profundizar en"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🕰️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🤔"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌊"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌟"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión profunda que podría ser parte del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta introspectiva que invita a la reflexión, típica de un contenido que podría encontrarse dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión personal que suena como parte del contenido del libro, no como una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono reflexivo y parece ser un consejo o una afirmación que podría encontrarse en el texto del libro, sugiriendo una conexión directa con el contenido."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión y parece ser un consejo o instrucción que podría encontrarse en el texto del libro, en lugar de ser una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión interna y parece ser parte de un diálogo o monólogo del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una imagen poética y reflexiva que parece ser parte de la narrativa del libro, invitando al lector a una experiencia interna."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro sobre espiritualidad, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct thought from the author, fitting seamlessly within the narrative of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like it is part of the narrative or guidance within the book, inviting introspection."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites the reader into a contemplative moment, suggesting an introspective exploration typical of an author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical insight that feels like a direct thought from the author, suggesting an introspective moment within the narrative."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a meditative instruction, suggesting an immersive experience typical of a narrative or reflective passage within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites introspection and engages the reader directly, suggesting it is part of the narrative voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct thought from the author, fitting within the narrative or thematic exploration of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize a concept, suggesting an introspective exercise typical of narrative or descriptive writing within a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-22T16:05:48.657Z",
+      "_slug": "el-poder-del-ahora",
+      "_edicion_numero": 75
+    },
+    {
       "titulo": "Clockwork: Design Your Business to Run Itself",
       "autor": "Mike Michalowicz",
       "tagline": "",
@@ -329,7 +1161,7 @@
           {
             "gesture_type": "aforismo_autorial",
             "sensory_anchor": "espacio",
-            "phrase": "🗺 La clave está en identificar la función crucial y afinarla para la ultra-eficiencia del negocio, permitiendo que funcione sin ti.",
+            "phrase": "🗺 La clave está en identificar la función crucial y afinarla para la ultra-eficiencia del negocio, permitiendo que funcione sin ti, empoderando a los empleados para que tomen decisiones autónomas y se enfoquen en la cadena de valor.",
             "rol_sinfonico": "resonar",
             "eje_animo": 0.5,
             "eje_valor": null,
@@ -883,7 +1715,7 @@
         "🕯 La luz de la compasión no se apaga, se expande con cada acto de amor."
       ],
       "frases_en": [
-        "🫁 Breathe deeply and reflect on how emotions shape your decisions; they are not just reactions but the inteligencia emocional que nos permite gobernar nuestras emociones y actuar con dignidad y compasión, siguiendo el legado de Jesús como un modelo de esperanza universal.",
+        "🫁 Breathe deeply and reflect on how emotions shape your decisions; they are not just reactions but the inteligencia emocional que nos permite gobernar nuestras emociones y actuar con dignidad y compasión, siguiendo el legado de Jesús como un modelo de esperanza universal, que nos invita a cultivar la compasión y a entender el comportamiento humano en su totalidad.",
         "🌓 The legacy of compassion endures, echoing through generations; it invites us to act with kindness.",
         "🚶 Consider what it means to love unconditionally; how can you embody that today?",
         "🔭 Picture Jesus standing amidst the chaos, unyielding and serene; his calm inspires strength within us."
@@ -1193,7 +2025,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "breath",
-            "phrase": "🫁 Breathe deeply and reflect on how emotions shape your decisions; they are not just reactions but the inteligencia emocional que nos permite gobernar nuestras emociones y actuar con dignidad y compasión, siguiendo el legado de Jesús como un modelo de esperanza universal.",
+            "phrase": "🫁 Breathe deeply and reflect on how emotions shape your decisions; they are not just reactions but the inteligencia emocional que nos permite gobernar nuestras emociones y actuar con dignidad y compasión, siguiendo el legado de Jesús como un modelo de esperanza universal, que nos invita a desarrollar nuestra propia inteligencia emocional y a comprender el comportamiento humano en su totalidad.",
             "role_symphonic": "deepen",
             "mood_axis": 0.5,
             "value_axis": null,
@@ -2515,7 +3347,7 @@
     {
       "titulo": "Contagious",
       "autor": "Jonah Berger",
-      "tagline": "What makes things popular? If you said advertising think again. People don't listen to advertisements they listen to their peers. But why do people talk about certain products and ideas more than others? Why are some stories and rumors more infectious? And what makes online content go viral? Wharton marketing professor Jonah Berger has spent the last decade answering these questions. He's studied why New York Times articles make the paper's own Most E-mailed list why products get word of mouth and how social influence shapes everything from the cars we buy to the clothes we wear to the names we give our children. In Contagious Berger reveals the secret science behind word-of-mouth and social transmission. Discover how six basic principles drive all sorts of things to become contagious from consumer products and policy initiatives to workplace rumors and YouTube videos. Learn how a luxury steakhouse found popularity through the lowly cheesesteak why anti-drug commercials might have actually increased drug use and why more than 200 million consumers shared a video about one of the most boring products there is: a blender. Contagious provides specific actionable techniques for helping information spread-for designing messages advertisements and content that people will share. Whether you're a manager at a big company a small business owner trying to boost awareness a politician running for office or a health official trying to get the word out Contagious will show you how to make your product or idea catch on. Berger emphasizes the significance of social influence and the principles that govern why certain ideas and products become viral, illustrating cómo la comprensión de estos conceptos puede llevar a estrategias de marketing más efectivas.",
+      "tagline": "What makes things popular? If you said advertising think again. People don't listen to advertisements they listen to their peers. But why do people talk about certain products and ideas more than others? Why are some stories and rumors more infectious? And what makes online content go viral? Wharton marketing professor Jonah Berger has spent the last decade answering these questions. He's studied why New York Times articles make the paper's own Most E-mailed list why products get word of mouth and how social influence shapes everything from the cars we buy to the clothes we wear to the names we give our children. In Contagious Berger reveals the secret science behind word-of-mouth and social transmission. Discover how six basic principles drive all sorts of things to become contagious from consumer products and policy initiatives to workplace rumors and YouTube videos. Learn how a luxury steakhouse found popularity through the lowly cheesesteak why anti-drug commercials might have actually increased drug use and why more than 200 million consumers shared a video about one of the most boring products there is: a blender. Contagious provides specific actionable techniques for helping information spread-for designing messages advertisements and content that people will share. Whether you're a manager at a big company a small business owner trying to boost awareness a politician running for office or a health official trying to get the word out Contagious will show you how to make your product or idea catch on. Berger emphasizes the significance of social influence and the principles that govern why certain ideas and products become viral, ilustrando cómo la comprensión de estos conceptos puede llevar a estrategias de marketing más efectivas.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/d9/b6/4f/d9b64fb6-7c43-cf9c-2c0d-dc47d5ecbd96/9781451686593.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/d9/b6/4f/d9b64fb6-7c43-cf9c-2c0d-dc47d5ecbd96/9781451686593.jpg/626x0w.jpg",
       "isbn": "",
@@ -2577,7 +3409,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca?[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -2589,7 +3421,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca?[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -2601,7 +3433,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca?[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -2717,13 +3549,13 @@
           "titulo": "La viralidad de las ideas",
           "parrafoTop": "La propagación de ideas y productos depende en gran medida del boca a boca. La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
           "subtitulo": "¿Qué hace que algo se vuelva viral?",
-          "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. ¿Cuál de estos principios puede aplicar en el marketing de contenido para maximizar su viralidad y aprovechar el boca a boca en la influencia social?"
+          "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. ¿Cuál de estos principios puede aplicar en el marketing de contenido para maximizar su viralidad y aprovechar el boca a boca en la influencia social y la propagación efectiva de ideas?"
         },
         "card_en": {
           "titulo": "The Virality of Ideas",
           "parrafoTop": "The spread of ideas and products largely hinges on word of mouth. People trust what their friends say more than what brands attempt to sell. This translates to friends' recommendations being more powerful than any advertisement. The stories they share become contagious, affecting perceptions and decisions.",
           "subtitulo": "What Makes Something Go Viral?",
-          "parrafoBot": "There are six principles that determine an idea's contagiousness: triggers, emotion, social value, visibility, utility, and stories. These elements create an environment where a concept not only gets heard but also gets shared and propagated. Which of these principles can you apply today to enhance its viralidad and maximize its boca a boca?"
+          "parrafoBot": "There are six principles that determine an idea's contagiousness: triggers, emotion, social value, visibility, utility, and stories. These elements create an environment where a concept not only gets heard but also gets shared and propagated. Which of these principles can you apply today to enhance its viralidad and maximize its boca a boca in your marketing strategies?"
         },
         "emotional_words_es": [
           "conexión",
@@ -3431,7 +4263,7 @@
       "fondo": "#EFF0F0",
       "tarjeta": {
         "titulo": "Rebeldía y Creatividad: La Esencia de Jobs",
-        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida.",
+        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida, mostrando cómo su visión de un rebelde que desafía el status quo ha dejado una huella indeleble en el mundo empresarial.",
         "subtitulo": "¿Qué legado deja un innovador como Jobs?",
         "parrafoBot": "La narrativa visual de su vida, llena de momentos clave, nos recuerda que cada decisión fue parte de un viaje apasionante. Su legado no se trata solo de productos, sino de un enfoque radical hacia la tecnología y el diseño. [H]Jobs mostró que la creatividad y la tecnología pueden entrelazarse para cambiar el mundo.[/H]",
         "style": {
@@ -3443,7 +4275,7 @@
       },
       "tarjeta_base": {
         "titulo": "Rebeldía y Creatividad: La Esencia de Jobs",
-        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida.",
+        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida, mostrando cómo su visión de un rebelde que desafía el status quo ha dejado una huella indeleble en el mundo empresarial.",
         "subtitulo": "¿Qué legado deja un innovador como Jobs?",
         "parrafoBot": "La narrativa visual de su vida, llena de momentos clave, nos recuerda que cada decisión fue parte de un viaje apasionante. Su legado no se trata solo de productos, sino de un enfoque radical hacia la tecnología y el diseño. [H]Jobs mostró que la creatividad y la tecnología pueden entrelazarse para cambiar el mundo.[/H]",
         "style": {
@@ -3455,7 +4287,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Rebeldía y Creatividad: La Esencia de Jobs",
-        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida.",
+        "parrafoTop": "La historia de Steve Jobs no es solo la de un empresario, sino la de un rebelde que desafió las normas del mundo tecnológico. Su capacidad para pensar diferente le permitió transformar la industria y llevar la creatividad a un nivel nunca antes visto. Jobs nos enseña que la innovación surge de la valentía de cuestionar el status quo y de la relación entre creatividad y tecnología en su legado, un viaje apasionante y transformador que ilustra momentos clave de su vida, mostrando cómo su visión de un rebelde que desafía el status quo ha dejado una huella indeleble en el mundo empresarial.",
         "subtitulo": "¿Qué legado deja un innovador como Jobs?",
         "parrafoBot": "La narrativa visual de su vida, llena de momentos clave, nos recuerda que cada decisión fue parte de un viaje apasionante. Su legado no se trata solo de productos, sino de un enfoque radical hacia la tecnología y el diseño. [H]Jobs mostró que la creatividad y la tecnología pueden entrelazarse para cambiar el mundo.[/H]",
         "style": {
@@ -4284,7 +5116,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -4296,7 +5128,7 @@
       },
       "tarjeta_base": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -4308,7 +5140,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -5068,7 +5900,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-18T03:38:08.585Z"
+      "_audit_timestamp": "2026-06-22T16:06:02.294Z"
     },
     {
       "titulo": "El prozac de Séneca",
@@ -5101,7 +5933,7 @@
         "🌓 El compromiso con uno mismo es la raíz de toda transformación."
       ],
       "frases_en": [
-        "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma.",
+        "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica.",
         "⏳ Ask yourself: what if my suffering is a seed of my greatest strength?",
         "🗺 Suffering reveals the warrior within; choose to fight with wisdom, not despair.",
         "💫 Imagine transforming your pain into a river, flowing towards the sea of wisdom."
@@ -5409,7 +6241,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "sight",
-            "phrase": "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma.",
+            "phrase": "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica.",
             "role_symphonic": "deepen",
             "mood_axis": 0.7,
             "value_axis": null,
@@ -5921,7 +6753,7 @@
       "frases_en": [
         "🔭 Envision the impact of your choices on the world around you. Feel the weight of responsibility.",
         "🧘 Consider your freedom. Are you truly living responsibly?",
-        "🚶 Imagine a life where every decision resonates with purpose and meaning. Move with intention y reflexiona sobre la responsabilidad en el ejercicio de la libertad.",
+        "🚶 Imagine a life where every decision resonates with purpose and meaning. Move with intention y reflexiona sobre la responsabilidad en el ejercicio de la libertad, considerando siempre las consecuencias de tus decisiones diarias.",
         "🕰 In every moment, the ethics of our choices shape the future we create together."
       ],
       "frases_og": [
@@ -6249,7 +7081,7 @@
           {
             "gesture_type": "concrete_image",
             "sensory_anchor": "movement",
-            "phrase": "🚶 Imagine a life where every decision resonates with purpose and meaning. Move with intention y reflexiona sobre la responsabilidad en el ejercicio de la libertad.",
+            "phrase": "🚶 Imagine a life where every decision resonates with purpose and meaning. Move with intention y reflexiona sobre la responsabilidad en el ejercicio de la libertad, considerando siempre las consecuencias de tus decisiones diarias.",
             "role_symphonic": "land",
             "mood_axis": 0.6,
             "value_axis": null,
@@ -9335,7 +10167,7 @@
       "frases_og": [
         "⚓ El miedo puede ser el catalizador para el crecimiento personal.",
         "🔁 ¿Qué pasaría si decidieras dejar de huir de tus miedos?",
-        "🛡 Cada vez que enfrentas un miedo, creas una nueva oportunidad para tuyo y transformas tu vida hacia un propósito más significativo.",
+        "🛡 Cada vez que enfrentas un miedo, creas una nueva oportunidad para tuyo y transformas tu vida hacia un propósito más significativo y pleno.",
         "🎯 El miedo no es el enemigo, sino un aliado disfrazado."
       ],
       "frases_og_en": [
@@ -9505,7 +10337,7 @@
         },
         "card_en": {
           "titulo": "Transform Your Fear into Positive Drive",
-          "parrafoTop": "Fear can either hold us back or propel us forward. The key lies in how we choose to interpret it. Instead of allowing anxiety to paralyze our actions, we can reframe our approach and transform that fear into a positive drive that leads us to take action. This shift in perspective is essential for growth and moving past la negatividad hacia una autoimagen más fuerte y un propósito de vida claro, que nos permita vivir con autoestima y sabiduría monástica.",
+          "parrafoTop": "Fear can either hold us back or propel us forward. The key lies in how we choose to interpret it. Instead of allowing anxiety to paralyze our actions, we can reframe our approach and transform that fear into a positive drive that leads us to take action. This shift in perspective is essential for growth and moving past la negatividad hacia una autoimagen más fuerte y un propósito de vida claro, que nos permita vivir con autoestima y sabiduría monástica, cultivando así una atención plena que nos ayude a superar el condicionamiento social.",
           "subtitulo": "How can you use fear as a tool?",
           "parrafoBot": "Transforming fear into drive requires practice and mindfulness. Each time you feel that wave of apprehension, ask yourself: What is this fear teaching me? By doing this, you can start to see opportunities instead of obstacles and confidently move toward your purpose."
         },
@@ -9539,7 +10371,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "🛡 Cada vez que enfrentas un miedo, creas una nueva oportunidad para tuyo y transformas tu vida hacia un propósito más elevado.",
+            "phrase": "🛡 Cada vez que enfrentas un miedo, creas una nueva oportunidad para tuyo y transformas tu vida hacia un propósito más elevado, encontrando así la sabiduría monástica que te guía en el camino del crecimiento personal.",
             "rol_sinfonico": "profundizar",
             "eje_animo": 0.7,
             "eje_valor": null,
@@ -11030,7 +11862,7 @@
         "cues"
       ],
       "frases": [
-        "🌓 Dedica un momento a identificar cuál es el disparador de tu hábito más persistente.",
+        "🌓 Dedica un momento a identificar cuál es el disparador de tu hábito más persistente y cómo puedes transformarlo para mejorar tu vida diaria.",
         "👁 ¿Qué rutina has seguido sin cuestionarte últimamente?",
         "🌊 Imagina un ciclo: un disparador que activa una rutina, y esa rutina que culmina en una recompensa.",
         "🌌 La clave para el cambio está en el reconocimiento del disparador."
@@ -11304,7 +12136,7 @@
           {
             "gesture_type": "instruccion_sensorial",
             "sensory_anchor": "tiempo",
-            "phrase": "🌓 Dedica un momento a identificar cuál es el disparador de tu hábito más persistente.",
+            "phrase": "🌓 Dedica un momento a identificar cuál es el disparador de tu hábito más persistente y cómo puedes cambiarlo para mejorar tu vida.",
             "rol_sinfonico": "abrir",
             "eje_animo": 0.5,
             "eje_valor": null,
@@ -13744,7 +14576,7 @@
         },
         "card_en": {
           "titulo": "Signals That Speak Louder Than Words",
-          "parrafoTop": "In the expansive realm of nonverbal communication, every gesture, every hand movement or tilt of the body tells a story. Learning to interpret nonverbal signals allows us to uncover hidden intentions that might otherwise go unnoticed. By observing others, we can grasp their true feelings and intentions, which is vital, ya que estas señales no verbales son fundamentales para establecer confianza y autoridad en nuestras interacciones, y son clave para identificar señales de sinceridad y mentira en la comunicación.",
+          "parrafoTop": "In the expansive realm of nonverbal communication, every gesture, every hand movement or tilt of the body tells a story. Learning to interpret nonverbal signals allows us to uncover hidden intentions that might otherwise go unnoticed. By observing others, we can grasp their true feelings and intentions, which is vital, ya que estas señales no verbales son fundamentales para establecer confianza y autoridad en nuestras interacciones, y son clave para identificar señales de sinceridad y mentira en la comunicación, lo que nos ayuda a mejorar nuestras relaciones interpersonales y a comunicarnos de manera más efectiva.",
           "subtitulo": "What intentions lie behind a smile?",
           "parrafoBot": "Trust is built through subtle signals. When a person maintains eye contact and leans slightly forward, they are sending a message of openness and sincerity. These characteristics not only reveal the authenticity of a message but are also crucial for establishing strong relationships."
         },
@@ -55135,7 +55967,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-18T03:38:08.585Z"
+      "_audit_timestamp": "2026-06-22T16:06:02.294Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -63594,7 +64426,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-18T03:38:08.585Z"
+      "_audit_timestamp": "2026-06-22T16:06:02.294Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -71259,7 +72091,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-18T03:38:08.585Z"
+      "_audit_timestamp": "2026-06-22T16:06:02.294Z"
     },
     {
       "titulo": "Suscritos",
@@ -72984,11 +73816,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 75,
-    "total": 86,
-    "last_audit": "2026-06-18T03:38:08.585Z",
-    "healing_rotation_idx": 12,
+    "next_edition_number": 76,
+    "total": 87,
+    "last_audit": "2026-06-22T16:06:02.294Z",
+    "healing_rotation_idx": 13,
     "last_healing_book": "El viaje al poder de la mente",
-    "last_healing_timestamp": "2026-06-18T03:53:12.099Z"
+    "last_healing_timestamp": "2026-06-22T16:25:26.208Z"
   }
 }
