@@ -1,6 +1,843 @@
 {
   "libros": [
     {
+      "titulo": "Ok",
+      "autor": "Eric Jorgenson",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgRXJpYyBKb3JnZW5zb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE4MTcxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxwYXRoIGQ9Ik0gMjQwIDM1MS43IFEgMjcwIDMzOS43LCAzMDAgMzUxLjcgVCAzNjAgMzUxLjciIAogICAgICAgIHN0cm9rZT0iIzI5MTJFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNTEuNyIgcj0iMi41IiBmaWxsPSIjMjkxMkUyIiAvPgogIDxwYXRoIGQ9Ik0gMjQwIDU4OC4zIFEgMjcwIDYwMC4zLCAzMDAgNTg4LjMgVCAzNjAgNTg4LjMiIAogICAgICAgIHN0cm9rZT0iIzI5MTJFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSI1ODguMyIgcj0iMi41IiBmaWxsPSIjMjkxMkUyIiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTgxNzFDIiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9Ijg0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+T2s8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iIzI5MTJFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5FcmljIEpvcmdlbnNvbjwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MTcxQyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgRXJpYyBKb3JnZW5zb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE4MTcxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxwYXRoIGQ9Ik0gMjQwIDM1MS43IFEgMjcwIDMzOS43LCAzMDAgMzUxLjcgVCAzNjAgMzUxLjciIAogICAgICAgIHN0cm9rZT0iIzI5MTJFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzNTEuNyIgcj0iMi41IiBmaWxsPSIjMjkxMkUyIiAvPgogIDxwYXRoIGQ9Ik0gMjQwIDU4OC4zIFEgMjcwIDYwMC4zLCAzMDAgNTg4LjMgVCAzNjAgNTg4LjMiIAogICAgICAgIHN0cm9rZT0iIzI5MTJFMiIgc3Ryb2tlLXdpZHRoPSIxLjgiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgLz4KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSI1ODguMyIgcj0iMi41IiBmaWxsPSIjMjkxMkUyIiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTgxNzFDIiBmb250LWZhbWlseT0nIldvcmsgU2FucyIsICJPcGVuIFNhbnMiLCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmJyBmb250LXNpemU9Ijg0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+T2s8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MzguMyIgZmlsbD0iIzI5MTJFMiIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIzNCIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iMC4wM2VtIj5FcmljIEpvcmdlbnNvbjwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MTcxQyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Ok",
+      "titulo_en": "Ok",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "empoderamiento",
+        "claridad",
+        "optimismo",
+        "autenticidad"
+      ],
+      "palabras_en": [
+        "empowerment",
+        "clarity",
+        "potential",
+        "success"
+      ],
+      "frases": [
+        "🌊 Dedica un momento a respirar profundamente y sentir tu cuerpo. ¿Qué te dice hoy?",
+        "🌓 ¿Qué pasaría si comenzarás a ver cada desafío como una oportunidad?",
+        "👁 Imagina un camino iluminado por tus pensamientos positivos, guiando cada paso hacia el éxito.",
+        "🕯 El autoconocimiento es el faro que ilumina el camino hacia el éxito personal."
+      ],
+      "frases_en": [
+        "🫁 Breathe deeply, anchoring yourself in this moment of clarity and possibility.",
+        "💡 Consider this: what if you viewed every setback as a stepping stone?",
+        "👁 Imagine each positive thought as a brick, building a sturdy path to your dreams.",
+        "🕰 In the tapestry of life, awareness is the thread that weaves change."
+      ],
+      "frases_og": [
+        "🔍 La mentalidad positiva transforma el autoconocimiento en poder.",
+        "💠 ¿Cuántas oportunidades pierdes por no creer en ti mismo?",
+        "✨ Cada momento presente es una oportunidad para reiniciar tu historia.",
+        "⚓ Actúa como si ya fueras la persona que deseas ser."
+      ],
+      "frases_og_en": [
+        "🔍 A positive mindset redefines how we tackle obstacles.",
+        "💠 Embrace the present. Your growth begins now.",
+        "✨ What shifts occur when you choose positivity today?",
+        "⚓ Awareness fuels transformation; change starts within."
+      ],
+      "colores": [
+        "#8B7EF1",
+        "#D4E830",
+        "#4B13AE",
+        "#45650B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "El poder de la mentalidad positiva",
+        "parrafoTop": "[H]La mentalidad positiva actúa como un motor que impulsa el autoconocimiento y el éxito.[/H] Cultivar una perspectiva optimista no es solo un capricho; es una decisión estratégica que transforma la manera en que enfrentamos los desafíos cotidianos. Cada pensamiento positivo construye un puente hacia nuestras metas, permitiéndonos avanzar con confianza y determinación hacia el desarrollo personal y la creación de valor en nuestras vidas.",
+        "subtitulo": "¿Cómo puede la mentalidad cambiar tu vida?",
+        "parrafoBot": "El autoconocimiento es la clave para desbloquear nuestro potencial. Al entender quiénes somos y qué queremos, comenzamos a crear valor personal. Cada paso en este viaje de descubrimiento refuerza nuestra capacidad para lograr lo que deseamos en la vida. [H]El momento presente es donde todo ocurre.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El poder de la mentalidad positiva",
+        "parrafoTop": "[H]La mentalidad positiva actúa como un motor que impulsa el autoconocimiento y el éxito.[/H] Cultivar una perspectiva optimista no es solo un capricho; es una decisión estratégica que transforma la manera en que enfrentamos los desafíos cotidianos. Cada pensamiento positivo construye un puente hacia nuestras metas, permitiéndonos avanzar con confianza y determinación hacia el desarrollo personal y la creación de valor en nuestras vidas.",
+        "subtitulo": "¿Cómo puede la mentalidad cambiar tu vida?",
+        "parrafoBot": "El autoconocimiento es la clave para desbloquear nuestro potencial. Al entender quiénes somos y qué queremos, comenzamos a crear valor personal. Cada paso en este viaje de descubrimiento refuerza nuestra capacidad para lograr lo que deseamos en la vida. [H]El momento presente es donde todo ocurre.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El poder de la mentalidad positiva",
+        "parrafoTop": "[H]La mentalidad positiva actúa como un motor que impulsa el autoconocimiento y el éxito.[/H] Cultivar una perspectiva optimista no es solo un capricho; es una decisión estratégica que transforma la manera en que enfrentamos los desafíos cotidianos. Cada pensamiento positivo construye un puente hacia nuestras metas, permitiéndonos avanzar con confianza y determinación hacia el desarrollo personal y la creación de valor en nuestras vidas.",
+        "subtitulo": "¿Cómo puede la mentalidad cambiar tu vida?",
+        "parrafoBot": "El autoconocimiento es la clave para desbloquear nuestro potencial. Al entender quiénes somos y qué queremos, comenzamos a crear valor personal. Cada paso en este viaje de descubrimiento refuerza nuestra capacidad para lograr lo que deseamos en la vida. [H]El momento presente es donde todo ocurre.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Power of Positive Mindset",
+        "parrafoTop": "[H]A positive mindset acts as a powerful engine that drives self-awareness and success.[/H] Cultivating an optimistic perspective is not merely a whim; it's a strategic choice that transforms how we face everyday challenges. Each positive thought builds a bridge toward our goals, allowing us to navigate obstacles with purpose y a crear valor personal en el momento presente.",
+        "subtitulo": "How can mindset change your life?",
+        "parrafoBot": "Self-awareness is the key to unlocking our potential. By understanding who we are and what we want, we begin to create personal value. Every step in this journey of discovery reinforces our capacity to achieve what we desire in life. [H]The present moment is where everything happens.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Power of Positive Mindset",
+        "parrafoTop": "[H]A positive mindset acts as a powerful engine that drives self-awareness and success.[/H] Cultivating an optimistic perspective is not merely a whim; it's a strategic choice that transforms how we face everyday challenges. Each positive thought builds a bridge toward our goals, allowing us to navigate obstacles with purpose y a crear valor personal en el momento presente.",
+        "subtitulo": "How can mindset change your life?",
+        "parrafoBot": "Self-awareness is the key to unlocking our potential. By understanding who we are and what we want, we begin to create personal value. Every step in this journey of discovery reinforces our capacity to achieve what we desire in life. [H]The present moment is where everything happens.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Power of Positive Mindset",
+        "parrafoTop": "[H]A positive mindset acts as a powerful engine that drives self-awareness and success.[/H] Cultivating an optimistic perspective is not merely a whim; it's a strategic choice that transforms how we face everyday challenges. Each positive thought builds a bridge toward our goals, allowing us to navigate obstacles with purpose y a crear valor personal en el momento presente.",
+        "subtitulo": "How can mindset change your life?",
+        "parrafoBot": "Self-awareness is the key to unlocking our potential. By understanding who we are and what we want, we begin to create personal value. Every step in this journey of discovery reinforces our capacity to achieve what we desire in life. [H]The present moment is where everything happens.[/H]",
+        "style": {
+          "accent": "#2912E2",
+          "paper": "#EFEFF0",
+          "ink": "#18171C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Eric%20Jorgenson%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Eric%20Jorgenson%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-06-23T00:17:11.793Z",
+        "workflow_run_id": "27993090863",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.56,
+      "_valor_predominante": "salud_fisica",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Ok",
+          "titulo_en": "Ok",
+          "autor_completo": "Eric Jorgenson",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "mentalidad positiva",
+            "autoconocimiento como motor de éxito",
+            "creación de valor personal",
+            "la importancia del momento presente"
+          ],
+          "key_terms": [
+            "desarrollo personal",
+            "mentalidad de éxito",
+            "conciencia",
+            "autoempoderamiento"
+          ],
+          "authorial_voice_notes": "La voz es motivacional y accesible, buscando inspirar y empoderar al lector con ejemplos claros y reflexiones prácticas."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro parece alinearse con temas de autoconocimiento y desarrollo personal, sin embargo, no proporciona un marco teórico explícito para ser evaluado bajo la lente del curador. La voz motivacional y accesible refuerza la intención de inspirar acción inmediata.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 236.5625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "literario"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Cero",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "El poder de la mentalidad positiva",
+          "parrafoTop": "La mentalidad positiva actúa como un motor que impulsa el autoconocimiento y el éxito. Cultivar una perspectiva optimista no es solo un capricho; es una decisión estratégica que transforma la manera en que enfrentamos los desafíos cotidianos. Cada pensamiento positivo construye un puente hacia nuestras metas, permitiéndonos avanzar con confianza y determinación.",
+          "subtitulo": "¿Cómo puede la mentalidad cambiar tu vida?",
+          "parrafoBot": "El autoconocimiento es la clave para desbloquear nuestro potencial. Al entender quiénes somos y qué queremos, comenzamos a crear valor personal. Cada paso en este viaje de descubrimiento refuerza nuestra capacidad para lograr lo que deseamos en la vida. El momento presente es donde todo ocurre."
+        },
+        "card_en": {
+          "titulo": "The Power of Positive Mindset",
+          "parrafoTop": "A positive mindset acts as a powerful engine that drives self-awareness and success. Cultivating an optimistic perspective is not merely a whim; it's a strategic choice that transforms how we face everyday challenges. Each positive thought builds a bridge toward our goals, allowing us to navigate obstacles with purpose y a crear valor personal en el momento presente.",
+          "subtitulo": "How can mindset change your life?",
+          "parrafoBot": "Self-awareness is the key to unlocking our potential. By understanding who we are and what we want, we begin to create personal value. Every step in this journey of discovery reinforces our capacity to achieve what we desire in life. The present moment is where everything happens."
+        },
+        "emotional_words_es": [
+          "empoderamiento",
+          "claridad",
+          "optimismo",
+          "autenticidad"
+        ],
+        "emotional_words_en": [
+          "empowerment",
+          "clarity",
+          "potential",
+          "success"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 La mentalidad positiva transforma el autoconocimiento en poder.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "💠 ¿Cuántas oportunidades pierdes por no creer en ti mismo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ Cada momento presente es una oportunidad para reiniciar tu historia.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Actúa como si ya fueras la persona que deseas ser.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 A positive mindset redefines how we tackle obstacles.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "💠 Embrace the present. Your growth begins now.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ What shifts occur when you choose positivity today?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Awareness fuels transformation; change starts within.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Dedica un momento a respirar profundamente y sentir tu cuerpo. ¿Qué te dice hoy?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Qué pasaría si comenzarás a ver cada desafío como una oportunidad?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina un camino iluminado por tus pensamientos positivos, guiando cada paso hacia el éxito.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "luz",
+            "phrase": "🕯 El autoconocimiento es el faro que ilumina el camino hacia el éxito personal.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.8,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🫁 Breathe deeply, anchoring yourself in this moment of clarity and possibility.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "light",
+            "phrase": "💡 Consider this: what if you viewed every setback as a stepping stone?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Imagine each positive thought as a brick, building a sturdy path to your dreams.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 In the tapestry of life, awareness is the thread that weaves change.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.39,
+          "voice_authenticity": 0.93,
+          "specificity": 0.88,
+          "grounding_judge": 1,
+          "combined": 0.78,
+          "signals": {
+            "bookIdentityConfidence": 0.385,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.8785714285714286,
+            "judgeScore": 1
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.385,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.70"
+        ],
+        "verified_identity": {
+          "titulo_real": "Ok",
+          "autor_completo": "Eric Jorgenson",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El poder del ahora",
+            "autor": "Eckhart Tolle",
+            "razon": "Ambos libros abordan la importancia de la conciencia y el momento presente."
+          },
+          {
+            "titulo": "Los secretos de la mente millonaria",
+            "autor": "T. Harv Eker",
+            "razon": "Exploran conceptos de mentalidad y éxito personal."
+          },
+          {
+            "titulo": "Cómo ganar amigos e influir sobre las personas",
+            "autor": "Dale Carnegie",
+            "razon": "Se centran en el desarrollo personal y las relaciones interpersonales."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja claramente los temas de desarrollo personal, autoconocimiento y mentalidad positiva, utilizando términos específicos como 'mentalidad positiva', 'autoconocimiento' y 'éxito'. Además, el tono motivacional y accesible se alinea con la voz inferida del libro, lo que lo hace específico y relevante para el contexto del libro en cuestión."
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content directly addresses themes of positive mindset and self-awareness, which are central to the inferred themes of personal development and success. Phrases like 'positive mindset' and 'self-awareness' are explicitly aligned with the ground truth, making it specific to the book's focus. Additionally, the motivational tone and the emphasis on transforming challenges into opportunities mirror"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y enfoque en la mentalidad positiva sin referencias externas.",
+          "elapsed_ms": 1406,
+          "usage": {
+            "prompt_tokens": 414,
+            "completion_tokens": 29,
+            "total_tokens": 443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y reflexiones sobre el mindset sin referencias externas.",
+          "elapsed_ms": 1405,
+          "usage": {
+            "prompt_tokens": 395,
+            "completion_tokens": 28,
+            "total_tokens": 423,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 866,
+        "total_ms": 1406
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 236.5625,
+          "adjusted_hue": 246.5625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.51",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#8B7EF1",
+          "--palette-1": "#D4E830",
+          "--palette-2": "#4B13AE",
+          "--palette-3": "#45650B",
+          "--accent": "#2912E2",
+          "--accent-soft": "#2912E238",
+          "--accent-glow": "#2912E26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#18171C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#2410C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "10px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_uncorrectable"
+        ]
+      },
+      "_inputs_snapshot": "2026-06-23T00-17-11",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 18,
+        "franja": "noche",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 59641,
+        "tokens_by_phase": {
+          "grounding": 463,
+          "anchors": 15117,
+          "palette": 0,
+          "content_es": 17625,
+          "judge_es": 929,
+          "content_en": 16320,
+          "judge_en": 920,
+          "voice": 866,
+          "voice_extended": 7401,
+          "highlight_judge_es_parrafoTop": 649,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 640,
+          "highlight_judge_en_parrafoBot": 636,
+          "csal": 4650
+        },
+        "elapsed_ms_total": 51531,
+        "elapsed_ms_by_phase": {
+          "grounding": 4882,
+          "anchors": 13115,
+          "palette": 0,
+          "cover_fallback": 1,
+          "content_es": 10945,
+          "judge_es": 3044,
+          "content_en": 12895,
+          "judge_en": 2447,
+          "voice": 1406,
+          "voice_extended": 2793,
+          "highlight_judge": 6245,
+          "lens_compatibility": 1966,
+          "csal": 39458,
+          "post_processing": 47675
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.5,
+          "familia": 0.2,
+          "espiritu": 0.4,
+          "relaciones": 0.3,
+          "finanzas": 0.5
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que no estás avanzando en tu vida",
+          "antes de una gran decisión que cambiará tu rumbo",
+          "después de un fracaso que te ha dejado desanimado",
+          "cuando te comparas constantemente con los demás",
+          "antes de iniciar un nuevo proyecto que te emociona",
+          "cuando te sientes atrapado en una rutina diaria",
+          "después de una conversación difícil que te ha dejado con dudas",
+          "cuando buscas motivación para alcanzar tus metas",
+          "antes de un cambio importante en tu carrera",
+          "cuando deseas mejorar tus relaciones personales",
+          "después de una crítica que te ha afectado",
+          "cuando necesitas un impulso para seguir adelante con tus sueños",
+          "cuando te sientes abrumado por las expectativas de los demás",
+          "antes de tomar un riesgo que podría llevarte al éxito",
+          "cuando te enfrentas a un obstáculo que parece insuperable",
+          "después de haber perdido la confianza en ti mismo",
+          "cuando vuelves a creer que puedes lograr lo que te propongas",
+          "antes de enfrentar un nuevo desafío que te intimida",
+          "cuando quieres empezar a trabajar en tu desarrollo personal",
+          "cuando te das cuenta de que necesitas un cambio en tu mentalidad",
+          "después de reflexionar sobre tus logros y fracasos."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "alegría",
+            "confianza",
+            "desmotivación",
+            "esperanza",
+            "miedo",
+            "ansiedad",
+            "inseguridad",
+            "determinación",
+            "inspiración"
+          ],
+          "objetos": [
+            "decisión",
+            "meta",
+            "proyecto",
+            "fracasos",
+            "oportunidades"
+          ],
+          "contextos": [
+            "casa",
+            "trabajo",
+            "reunión",
+            "conversación",
+            "nueva experiencia"
+          ],
+          "verbos": [
+            "reflexionar",
+            "actuar",
+            "decidir",
+            "crecer",
+            "cambiar",
+            "superar",
+            "motivar",
+            "inspirar",
+            "conectar",
+            "lograr"
+          ]
+        },
+        "concept_tags": [
+          "mentalidad positiva",
+          "autoconocimiento",
+          "creación de valor personal",
+          "oportunidades en desafíos",
+          "cambio de mentalidad",
+          "desarrollo personal",
+          "éxito personal",
+          "motivación práctica",
+          "superación personal",
+          "pensamiento positivo"
+        ],
+        "anti_patterns": [
+          "situaciones de estúpido absoluto",
+          "falta de interés en el autoconocimiento",
+          "negar la necesidad de cambio",
+          "buscar soluciones rápidas sin esfuerzo"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌬️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "💡"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🔦"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión del autor, sugiriendo un concepto central del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión interna que sugiere un diálogo directo con el lector, típico de la voz autoral dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una voz reflexiva y motivacional que podría pertenecer a un pasaje del libro, sugiriendo una conexión directa con el lector."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase suena como un consejo o reflexión que podría estar presente en el contenido del libro, sugiriendo una acción o mentalidad que el autor promueve."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un ejercicio o guía dentro del libro, lo que sugiere que está escrita por el autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que podría estar en el contexto de un libro, sugiriendo una voz autoral que invita al lector a considerar una nueva perspectiva."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una imagen evocadora que invita a la reflexión, típica de un contenido narrativo o reflexivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses an idea that could be part of the author's narrative or argument within the book, reflecting a personal insight."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct message that feels like advice or insight from the author, suggesting a personal reflection or motivational tone typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that invites the reader to engage with the content, suggesting it is part of the author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a concept that feels like a direct insight or reflection from the author, suggesting a deeper understanding that aligns with the book's themes."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages a personal experience and reflection, suggesting an intimate voice that feels like part of the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a reflective thought that engages the reader directly, suggesting a perspective shift, typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical idea that feels like direct advice or insight from the author, suggesting a personal reflection or guidance within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical reflection that feels like an integral part of the narrative, suggesting a philosophical insight typical of an author's voice."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-06-23T00:18:50.999Z",
+      "_slug": "ok",
+      "_edicion_numero": 77
+    },
+    {
       "titulo": "Conciencia",
       "autor": "Osho",
       "tagline": "",
@@ -1055,7 +1892,7 @@
         },
         "card_en": {
           "titulo": "The Mind as Prison",
-          "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. By identifying with our thoughts, we create a prison of pain and anxiety. True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present moment, where we can fully embrace the now and experience the profound peace that comes with true presence, así como la iluminación que se alcanza al vivir plenamente en el presente.",
+          "parrafoTop": "The mind, in its incessant activity, becomes the source of our suffering. By identifying with our thoughts, we create a prison of pain and anxiety. True liberation lies in detaching from that ceaseless flow, allowing consciousness to settle into the present moment, where we can fully embrace the now and experience the profound peace that comes with true presence, así como la iluminación que se alcanza al vivir plenamente en el presente, lo que nos permite liberarnos del sufrimiento y conectar con nuestra verdadera esencia.",
           "subtitulo": "How can you release the weight of your thoughts?",
           "parrafoBot": "Through the practice of mindfulness, we begin to deactivate the mind's power over us. We learn to observe our thoughts without judgment, recognizing that we are not what we think. This transformation of perception is the step towards illumination, where the now becomes our only refuge."
         },
@@ -1715,7 +2552,7 @@
       "frases_og": [
         "🔍 La libertad de un empresario se encuentra en la autonomía de su equipo.",
         "💠 Imagina un negocio que opera de manera autónoma, liberándote para enfocarte en lo que realmente amas.",
-        "✨ El camino hacia la ultra-eficiencia comienza al identificar la función.",
+        "✨ El camino hacia la ultra-eficiencia comienza al identificar la función crucial que permitirá empoderar a los empleados para que tomen decisiones autónomas.",
         "⚓ Empoderar a tu equipo es sembrar la semilla de la libertad empresarial."
       ],
       "frases_og_en": [
@@ -1921,7 +2758,7 @@
             "punto_optimo": "creativo"
           },
           {
-            "phrase": "✨ El camino hacia la ultra-eficiencia comienza al identificar la función.",
+            "phrase": "✨ El camino hacia la ultra-eficiencia comienza al identificar la función crucial que permitirá empoderar a los empleados para que tomen decisiones autónomas.",
             "rol_sinfonico": "profundizar",
             "eje_animo": 0.4,
             "eje_valor": null,
@@ -2005,7 +2842,7 @@
           {
             "gesture_type": "aforismo_autorial",
             "sensory_anchor": "espacio",
-            "phrase": "🗺 La clave está en identificar la función crucial y afinarla para la ultra-eficiencia del negocio, permitiendo que funcione sin ti, empoderando a los empleados para que tomen decisiones autónomas y se enfoquen en la cadena de valor, lo que les permitirá contribuir de manera efectiva a la misión del negocio.",
+            "phrase": "🗺 La clave está en identificar la función crucial y afinarla para la ultra-eficiencia del negocio, permitiendo que funcione sin ti, empoderando a los empleados para que tomen decisiones autónomas y se enfoquen en la cadena de valor, lo que les permitirá contribuir de manera efectiva a la misión del negocio y disfrutar de la libertad para hacer lo que aman.",
             "rol_sinfonico": "resonar",
             "eje_animo": 0.5,
             "eje_valor": null,
@@ -4191,7 +5028,7 @@
     {
       "titulo": "Contagious",
       "autor": "Jonah Berger",
-      "tagline": "What makes things popular? If you said advertising think again. People don't listen to advertisements they listen to their peers. But why do people talk about certain products and ideas more than others? Why are some stories and rumors more infectious? And what makes online content go viral? Wharton marketing professor Jonah Berger has spent the last decade answering these questions. He's studied why New York Times articles make the paper's own Most E-mailed list why products get word of mouth and how social influence shapes everything from the cars we buy to the clothes we wear to the names we give our children. In Contagious Berger reveals the secret science behind word-of-mouth and social transmission. Discover how six basic principles drive all sorts of things to become contagious from consumer products and policy initiatives to workplace rumors and YouTube videos. Learn how a luxury steakhouse found popularity through the lowly cheesesteak why anti-drug commercials might have actually increased drug use and why more than 200 million consumers shared a video about one of the most boring products there is: a blender. Contagious provides specific actionable techniques for helping information spread-for designing messages advertisements and content that people will share. Whether you're a manager at a big company a small business owner trying to boost awareness a politician running for office or a health official trying to get the word out Contagious will show you how to make your product or idea catch on. Berger emphasizes the significance of social influence and the principles that govern why certain ideas and products become viral, ilustrando cómo la comprensión de estos conceptos puede llevar a estrategias de marketing más efectivas en la era digital.",
+      "tagline": "What makes things popular? If you said advertising think again. People don't listen to advertisements they listen to their peers. But why do people talk about certain products and ideas more than others? Why are some stories and rumors more infectious? And what makes online content go viral? Wharton marketing professor Jonah Berger has spent the last decade answering these questions. He's studied why New York Times articles make the paper's own Most E-mailed list why products get word of mouth and how social influence shapes everything from the cars we buy to the clothes we wear to the names we give our children. In Contagious Berger reveals the secret science behind word-of-mouth and social transmission. Discover how six basic principles drive all sorts of things to become contagious from consumer products and policy initiatives to workplace rumors and YouTube videos. Learn how a luxury steakhouse found popularity through the lowly cheesesteak why anti-drug commercials might have actually increased drug use and why more than 200 million consumers shared a video about one of the most boring products there is: a blender. Contagious provides specific actionable techniques for helping information spread-for designing messages advertisements and content that people will share. Whether you're a manager at a big company a small business owner trying to boost awareness a politician running for office or a health official trying to get the word out Contagious will show you how to make your product or idea catch on. Berger emphasizes the significance of social influence and the principles that govern why ciertas ideas y productos se vuelven virales, ilustrando cómo la comprensión de estos conceptos puede llevar a estrategias de marketing más efectivas en la era digital.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/d9/b6/4f/d9b64fb6-7c43-cf9c-2c0d-dc47d5ecbd96/9781451686593.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication30/v4/d9/b6/4f/d9b64fb6-7c43-cf9c-2c0d-dc47d5ecbd96/9781451686593.jpg/626x0w.jpg",
       "isbn": "",
@@ -4253,7 +5090,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos? En este sentido, es crucial entender cómo cada principio puede ser utilizado estratégicamente para fomentar la difusión de mensajes y productos en un entorno digital cada vez más competitivo.[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -4265,7 +5102,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos? En este sentido, es crucial entender cómo cada principio puede ser utilizado estratégicamente para fomentar la difusión de mensajes y productos en un entorno digital cada vez más competitivo.[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -4277,7 +5114,7 @@
         "titulo": "La viralidad de las ideas",
         "parrafoTop": "[H]La propagación de ideas y productos depende en gran medida del boca a boca.[/H] La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
         "subtitulo": "¿Qué hace que algo se vuelva viral?",
-        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos?[/H]",
+        "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. [H]¿Cuál de estos principios puede aplicar en el contexto del marketing de contenido y la viralidad para maximizar su impacto y efectividad en la influencia social y el boca a boca en la propagación de ideas y productos? En este sentido, es crucial entender cómo cada principio puede ser utilizado estratégicamente para fomentar la difusión de mensajes y productos en un entorno digital cada vez más competitivo.[/H]",
         "style": {
           "accent": "#124CE2",
           "paper": "#EFEFF0",
@@ -4393,13 +5230,13 @@
           "titulo": "La viralidad de las ideas",
           "parrafoTop": "La propagación de ideas y productos depende en gran medida del boca a boca. La gente confía más en lo que sus amigos dicen que en lo que las marcas pretenden vender. Esto se traduce en que las recomendaciones de amigos son más poderosas que cualquier anuncio. Las historias que comparten se vuelven contagiosas, afectan nuestras decisiones y se propagan a través de la influencia social.",
           "subtitulo": "¿Qué hace que algo se vuelva viral?",
-          "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. ¿Cuál de estos principios puede aplicar en el marketing de contenido para maximizar su viralidad y aprovechar el boca a boca en la influencia social y la propagación efectiva de ideas en el contexto actual del marketing digital?"
+          "parrafoBot": "Existen seis principios que determinan la contagiosidad de una idea: el disparador, la emoción, el valor social, la visibilidad, la utilidad y la historia. Estos elementos crean un entorno propicio para que un concepto no solo sea escuchado, sino que se comparta y se propague. ¿Cuál de estos principios puede aplicar en el marketing de contenido para maximizar su viralidad y aprovechar el boca a boca en la influencia social y la propagación efectiva de ideas en el contexto actual del marketing digital, donde la conexión emocional y la relevancia son clave?"
         },
         "card_en": {
           "titulo": "The Virality of Ideas",
           "parrafoTop": "The spread of ideas and products largely hinges on word of mouth. People trust what their friends say more than what brands attempt to sell. This translates to friends' recommendations being more powerful than any advertisement. The stories they share become contagious, affecting perceptions and decisions.",
           "subtitulo": "What Makes Something Go Viral?",
-          "parrafoBot": "There are six principles that determine an idea's contagiousness: triggers, emotion, social value, visibility, utility, and stories. These elements create an environment where a concept not only gets heard but also gets shared and propagated. Which of these principles can you apply today to enhance its viralidad and maximize its boca a boca in your marketing strategies to effectively influence your audience and drive engagement?"
+          "parrafoBot": "There are six principles that determine an idea's contagiousness: triggers, emotion, social value, visibility, utility, and stories. These elements create an environment where a concept not only gets heard but also gets shared and propagated. Which of these principles can you apply today to enhance its viralidad and maximize its boca a boca in your marketing strategies to effectively influence your audience and drive engagement in ways that lead to successful outcomes?"
         },
         "emotional_words_es": [
           "conexión",
@@ -5255,7 +6092,7 @@
         },
         "card_en": {
           "titulo": "Rebellion and Creativity: The Essence of Jobs",
-          "parrafoTop": "Steve Jobs' story is not just that of a businessman but of a rebel who defied the norms of the tech world. His ability to think differently allowed him to transform the industry and elevate creativity to unprecedented heights. Jobs teaches us that innovation arises from the courage to question everything around us.",
+          "parrafoTop": "Steve Jobs' story is not just that of a businessman but of a rebel who defied the norms of the tech world. His ability to think differently allowed him to transform the industry and elevate creativity to unprecedented heights. Jobs teaches us that innovation arises from the courage to question everything around us, y que su legado perdura como un viaje apasionante y transformador en la relación entre creatividad y tecnología.",
           "subtitulo": "What legacy does an innovator like Jobs leave behind?",
           "parrafoBot": "The visual narrative of his life, filled with key moments, reminds us that every decision was part of an exhilarating journey. His legacy is not merely about products but a radical approach to technology and design. Jobs demonstrated that creativity and technology can intertwine to change the world."
         },
@@ -5960,7 +6797,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano, y en la búsqueda constante de la autoexploración y el desarrollo personal.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -5972,7 +6809,7 @@
       },
       "tarjeta_base": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano, y en la búsqueda constante de la autoexploración y el desarrollo personal.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -5984,7 +6821,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Transformación a través del Superaprendizaje",
-        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano.",
+        "parrafoTop": "El superaprendizaje no es solo un método, es una forma de vida que integra el aprendizaje y el desarrollo personal. [H]Al aplicar técnicas transpersonales en la educación, se abre un camino[/H] hacia la expansión de la conciencia y el autoconocimiento. Este enfoque transforma el aprendizaje en un proceso espiritual y holístico, potenciando la mente a través de métodos innovadores y promoviendo la interconexión de habilidades cognitivas y emocionales, lo que permite una cognición expansiva y una metacognición efectiva, facilitando así un aprendizaje más profundo y consciente, que se traduce en un crecimiento integral y en la realización del potencial humano, y en la búsqueda constante de la autoexploración y el desarrollo personal.",
         "subtitulo": "¿Cómo puedes potenciar tu mente y emociones?",
         "parrafoBot": "La clave está en la interconexión de habilidades cognitivas y emocionales. Al potenciar la mente a través de métodos innovadores, cada individuo puede descubrir su verdadero potencial. [H]Este viaje hacia el superaprendizaje es un viaje hacia uno mismo.[/H]",
         "style": {
@@ -6744,7 +7581,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-22T16:28:15.372Z"
+      "_audit_timestamp": "2026-06-23T00:19:01.791Z"
     },
     {
       "titulo": "El prozac de Séneca",
@@ -6777,7 +7614,7 @@
         "🌓 El compromiso con uno mismo es la raíz de toda transformación."
       ],
       "frases_en": [
-        "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica, tal como lo propone el estoicismo de Séneca.",
+        "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica, tal como lo propone el estoicismo de Séneca, que nos invita a descubrir y aplicar estas fortalezas en nuestra vida diaria.",
         "⏳ Ask yourself: what if my suffering is a seed of my greatest strength?",
         "🗺 Suffering reveals the warrior within; choose to fight with wisdom, not despair.",
         "💫 Imagine transforming your pain into a river, flowing towards the sea of wisdom."
@@ -7085,7 +7922,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "sight",
-            "phrase": "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica, tal como nos enseña el estoicismo de Séneca.",
+            "phrase": "🌅 Visualize the strengths within you. Each one shines like a guiding star on a dark night, waiting to ser reconocida y utilizada en tu camino hacia la felicidad y el desarrollo de tus fortalezas del alma, que son esenciales para promover la salud y enfrentar la adversidad con sabiduría estoica, tal como nos enseña el estoicismo de Séneca, que nos invita a cultivar nuestras virtudes y a transformar el sufrimiento en una oportunidad para crecer.",
             "role_symphonic": "deepen",
             "mood_axis": 0.7,
             "value_axis": null,
@@ -11181,7 +12018,7 @@
         },
         "card_en": {
           "titulo": "Transform Your Fear into Positive Drive",
-          "parrafoTop": "Fear can either hold us back or propel us forward. The key lies in how we choose to interpret it. Instead of allowing anxiety to paralyze our actions, we can reframe our approach and transform that fear into a positive drive that leads us to take action. This shift in perspective is essential for growth and moving past la negatividad hacia una autoimagen más fuerte y un propósito de vida claro, que nos permita vivir con autoestima y sabiduría monástica, cultivando así una atención plena que nos ayude a superar el condicionamiento social y a alcanzar nuestro máximo potencial.",
+          "parrafoTop": "Fear can either hold us back or propel us forward. The key lies in how we choose to interpret it. Instead of allowing anxiety to paralyze our actions, we can reframe our approach and transform that fear into a positive drive that leads us to take action. This shift in perspective is essential for growth and moving past la negatividad hacia una autoimagen más fuerte y un propósito de vida claro, que nos permita vivir con autoestima y sabiduría monástica, cultivando así una atención plena que nos ayude a superar el condicionamiento social y a alcanzar nuestro máximo potencial en la vida.",
           "subtitulo": "How can you use fear as a tool?",
           "parrafoBot": "Transforming fear into drive requires practice and mindfulness. Each time you feel that wave of apprehension, ask yourself: What is this fear teaching me? By doing this, you can start to see opportunities instead of obstacles and confidently move toward your purpose."
         },
@@ -15420,7 +16257,7 @@
         },
         "card_en": {
           "titulo": "Signals That Speak Louder Than Words",
-          "parrafoTop": "In the expansive realm of nonverbal communication, every gesture, every hand movement or tilt of the body tells a story. Learning to interpret nonverbal signals allows us to uncover hidden intentions that might otherwise go unnoticed. By observing others, we can grasp their true feelings and intentions, which is vital, ya que estas señales no verbales son fundamentales para establecer confianza y autoridad en nuestras interacciones, y son clave para identificar señales de sinceridad y mentira en la comunicación, lo que nos ayuda a mejorar nuestras relaciones interpersonales y a comunicarnos de manera más efectiva, ya que comprender estas señales nos permite conectar mejor con los demás y fomentar un ambiente de comunicación abierta y honesta.",
+          "parrafoTop": "In the expansive realm of nonverbal communication, every gesture, every hand movement or tilt of the body tells a story. Learning to interpret nonverbal signals allows us to uncover hidden intentions that might otherwise go unnoticed. By observing others, we can grasp their true feelings and intentions, which is vital, ya que estas señales no verbales son fundamentales para establecer confianza y autoridad en nuestras interacciones, y son clave para identificar señales de sinceridad y mentira en la comunicación, lo que nos ayuda a mejorar nuestras relaciones interpersonales y a comunicarnos de manera más efectiva, ya que comprender estas señales nos permite conectar mejor con los demás y fomentar un ambiente de comunicación abierta y honesta, donde la interpretación adecuada de las señales no verbales se convierte en una herramienta esencial para el éxito en nuestras interacciones diarias.",
           "subtitulo": "What intentions lie behind a smile?",
           "parrafoBot": "Trust is built through subtle signals. When a person maintains eye contact and leans slightly forward, they are sending a message of openness and sincerity. These characteristics not only reveal the authenticity of a message but are also crucial for establishing strong relationships."
         },
@@ -56811,7 +57648,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-22T16:28:15.372Z"
+      "_audit_timestamp": "2026-06-23T00:19:01.791Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -65270,7 +66107,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-22T16:28:15.372Z"
+      "_audit_timestamp": "2026-06-23T00:19:01.791Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -72935,7 +73772,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-06-22T16:28:15.372Z"
+      "_audit_timestamp": "2026-06-23T00:19:01.791Z"
     },
     {
       "titulo": "Suscritos",
@@ -74660,11 +75497,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 77,
-    "total": 88,
-    "last_audit": "2026-06-22T16:28:15.372Z",
-    "healing_rotation_idx": 14,
+    "next_edition_number": 78,
+    "total": 89,
+    "last_audit": "2026-06-23T00:19:01.791Z",
+    "healing_rotation_idx": 15,
     "last_healing_book": "El viaje al poder de la mente",
-    "last_healing_timestamp": "2026-06-22T16:45:29.158Z"
+    "last_healing_timestamp": "2026-06-23T00:36:56.397Z"
   }
 }
