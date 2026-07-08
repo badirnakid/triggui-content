@@ -1,6 +1,869 @@
 {
   "libros": [
     {
+      "titulo": "Networking For Introverts",
+      "autor": "Helen Nicholson",
+      "tagline": "",
+      "portada": "https://images-na.ssl-images-amazon.com/images/P/1770201173.01.LZZZZZZZ.jpg",
+      "portada_url": "https://images-na.ssl-images-amazon.com/images/P/1770201173.01.LZZZZZZZ.jpg",
+      "isbn": "9781770201170",
+      "titulo_es": "Networking For Introverts",
+      "titulo_en": "Networking For Introverts",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "confianza",
+        "conexión",
+        "autenticidad",
+        "oportunidad"
+      ],
+      "palabras_en": [
+        "empowering",
+        "authentic",
+        "genuine",
+        "confident"
+      ],
+      "frases": [
+        "🌊 Practica tu presentación personal frente a un espejo.",
+        "🌌 ¿Qué fortalezas puedes destacar al hablar con otros?",
+        "👁 Imagina una sala llena de personas esperando a conocer a alguien como tú.",
+        "🕰 Cultivar conexiones es sembrar para el futuro."
+      ],
+      "frases_en": [
+        "🌊 Step into a room with purpose. Your energy speaks before you do.",
+        "🌅 Cultivate connections, not just contacts; the difference is profound.",
+        "🏛 Imagine each conversation as a thread weaving into your network tapestry.",
+        "🕰 Consider the opportunities you might be missing by not taking action."
+      ],
+      "frases_og": [
+        "🕊 Presentarte con confianza en eventos de networking puede parecer un desafío, pero identificar las barreras que te detienen es el primer paso hacia el éxito.",
+        "📖 El encanto, cuando se utiliza con autenticidad, puede ser la llave que abre puertas inesperadas en tu carrera.",
+        "🌓 Las relaciones significativas se construyen a través de conversaciones.",
+        "🪞 Cada contacto es una oportunidad para crecer y aprender."
+      ],
+      "frases_og_en": [
+        "🕊 In today's professional landscape, building and nurturing a network is essential for advancing your career.",
+        "📖 Embrace your strengths. Let them shape your personal brand.",
+        "🌓 What connections are you missing by holding back?",
+        "🪞 True networking thrives on authentic relationships, not transactional."
+      ],
+      "colores": [
+        "#F17EBC",
+        "#30E885",
+        "#AE1341",
+        "#0B654B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFF0",
+      "tarjeta": {
+        "titulo": "Construyendo tu red de contactos",
+        "parrafoTop": "[H]Construir una red de contactos es esencial para sobresalir en el mundo laboral actual.[/H] Muchos introvertidos sienten que el networking es un campo hostil, pero con estrategias adecuadas, puede convertirse en una herramienta poderosa. La clave no es ser extrovertido, sino aprovechar tus fortalezas y construir una marca personal que te permita destacar en el ámbito laboral.",
+        "subtitulo": "¿Cómo puedes hacer que el networking trabaje para ti?",
+        "parrafoBot": "La identificación de tus fortalezas personales es fundamental. [H]Conocer tus habilidades te permitirá presentarte con confianza y autenticidad, facilitando conexiones genuinas.[/H] Recuerda que el networking no se trata solo de intercambiar tarjetas de presentación, sino de cultivar relaciones significativas.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Construyendo tu red de contactos",
+        "parrafoTop": "[H]Construir una red de contactos es esencial para sobresalir en el mundo laboral actual.[/H] Muchos introvertidos sienten que el networking es un campo hostil, pero con estrategias adecuadas, puede convertirse en una herramienta poderosa. La clave no es ser extrovertido, sino aprovechar tus fortalezas y construir una marca personal que te permita destacar en el ámbito laboral.",
+        "subtitulo": "¿Cómo puedes hacer que el networking trabaje para ti?",
+        "parrafoBot": "La identificación de tus fortalezas personales es fundamental. [H]Conocer tus habilidades te permitirá presentarte con confianza y autenticidad, facilitando conexiones genuinas.[/H] Recuerda que el networking no se trata solo de intercambiar tarjetas de presentación, sino de cultivar relaciones significativas.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Construyendo tu red de contactos",
+        "parrafoTop": "[H]Construir una red de contactos es esencial para sobresalir en el mundo laboral actual.[/H] Muchos introvertidos sienten que el networking es un campo hostil, pero con estrategias adecuadas, puede convertirse en una herramienta poderosa. La clave no es ser extrovertido, sino aprovechar tus fortalezas y construir una marca personal que te permita destacar en el ámbito laboral.",
+        "subtitulo": "¿Cómo puedes hacer que el networking trabaje para ti?",
+        "parrafoBot": "La identificación de tus fortalezas personales es fundamental. [H]Conocer tus habilidades te permitirá presentarte con confianza y autenticidad, facilitando conexiones genuinas.[/H] Recuerda que el networking no se trata solo de intercambiar tarjetas de presentación, sino de cultivar relaciones significativas.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Building Your Network",
+        "parrafoTop": "[H]Building a network of contacts is essential for standing out in today's job market.[/H] Many introverts feel that networking is a hostile field, but with the right strategies, it can become a powerful tool. The key is not to be extroverted but to leverage your strengths and build a personal brand that resonates with others",
+        "subtitulo": "How can you make networking work for you?",
+        "parrafoBot": "[H]Identifying your personal strengths is fundamental.[/H] Knowing your skills allows you to present yourself with confidence and authenticity, facilitating genuine connections. Remember, networking is not just about exchanging business cards but about cultivating meaningful relationships.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Building Your Network",
+        "parrafoTop": "[H]Building a network of contacts is essential for standing out in today's job market.[/H] Many introverts feel that networking is a hostile field, but with the right strategies, it can become a powerful tool. The key is not to be extroverted but to leverage your strengths and build a personal brand that resonates with others",
+        "subtitulo": "How can you make networking work for you?",
+        "parrafoBot": "[H]Identifying your personal strengths is fundamental.[/H] Knowing your skills allows you to present yourself with confidence and authenticity, facilitating genuine connections. Remember, networking is not just about exchanging business cards but about cultivating meaningful relationships.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Building Your Network",
+        "parrafoTop": "[H]Building a network of contacts is essential for standing out in today's job market.[/H] Many introverts feel that networking is a hostile field, but with the right strategies, it can become a powerful tool. The key is not to be extroverted but to leverage your strengths and build a personal brand that resonates with others",
+        "subtitulo": "How can you make networking work for you?",
+        "parrafoBot": "[H]Identifying your personal strengths is fundamental.[/H] Knowing your skills allows you to present yourself with confidence and authenticity, facilitating genuine connections. Remember, networking is not just about exchanging business cards but about cultivating meaningful relationships.",
+        "style": {
+          "accent": "#E21283",
+          "paper": "#F0EFF0",
+          "ink": "#1C171A",
+          "border": "#908F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Networking%20For%20Introverts%20Helen%20Nicholson%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Networking%20For%20Introverts%20Helen%20Nicholson%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-07-08T16:31:23.075Z",
+        "workflow_run_id": "28958886314",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Networking For Introverts",
+          "titulo_en": "Networking For Introverts",
+          "autor_completo": "Helen Nicholson",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de construir una red de contactos en el ámbito laboral",
+            "identificación de fortalezas personales para construir una marca personal",
+            "estrategias prácticas para mejorar habilidades de networking",
+            "el valor de las tarjetas de presentación y su uso adecuado",
+            "la técnica de 'trabajar la sala' para hacer conexiones efectivas"
+          ],
+          "key_terms": [
+            "marca personal",
+            "contactos útiles",
+            "artesanía de conversación",
+            "poder del encanto",
+            "networking efectivo"
+          ],
+          "authorial_voice_notes": "La voz autoral es clara, práctica y empoderadora, orientada a guiar al lector en la construcción de redes de contactos de manera accesible y sin pretensiones."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro no parece abordar directamente el tema de la teoría de juegos, pero sí implica dinámicas de cooperación y construcción de redes en entornos de negocios. Se puede inferir que las interacciones descritas en el libro pueden relacionarse con incentivos y decisiones estratégicas en el ámbito del networking.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 317.5,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "moderno",
+          "genre_visual": "tecnico"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "Construyendo tu red de contactos",
+          "parrafoTop": "Construir una red de contactos es esencial para sobresalir en el mundo laboral actual. Muchos introvertidos sienten que el networking es un campo hostil, pero con estrategias adecuadas, puede convertirse en una herramienta poderosa. La clave no es ser extrovertido, sino aprovechar tus fortalezas y construir una marca personal que te permita destacar en el ámbito laboral.",
+          "subtitulo": "¿Cómo puedes hacer que el networking trabaje para ti?",
+          "parrafoBot": "La identificación de tus fortalezas personales es fundamental. Conocer tus habilidades te permitirá presentarte con confianza y autenticidad, facilitando conexiones genuinas. Recuerda que el networking no se trata solo de intercambiar tarjetas de presentación, sino de cultivar relaciones significativas."
+        },
+        "card_en": {
+          "titulo": "Building Your Network",
+          "parrafoTop": "Building a network of contacts is essential for standing out in today's job market. Many introverts feel that networking is a hostile field, but with the right strategies, it can become a powerful tool. The key is not to be extroverted but to leverage your strengths and build a personal brand that resonates with others",
+          "subtitulo": "How can you make networking work for you?",
+          "parrafoBot": "Identifying your personal strengths is fundamental. Knowing your skills allows you to present yourself with confidence and authenticity, facilitating genuine connections. Remember, networking is not just about exchanging business cards but about cultivating meaningful relationships."
+        },
+        "emotional_words_es": [
+          "confianza",
+          "conexión",
+          "autenticidad",
+          "oportunidad"
+        ],
+        "emotional_words_en": [
+          "empowering",
+          "authentic",
+          "genuine",
+          "confident"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🕊 Presentarte con confianza en eventos de networking puede parecer un desafío, pero identificar las barreras que te detienen es el primer paso hacia el éxito.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "📖 El encanto, cuando se utiliza con autenticidad, puede ser la llave que abre puertas inesperadas en tu carrera.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌓 Las relaciones significativas se construyen a través de conversaciones.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🪞 Cada contacto es una oportunidad para crecer y aprender.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🕊 In today's professional landscape, building and nurturing a network is essential for advancing your career.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 Embrace your strengths. Let them shape your personal brand.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 What connections are you missing by holding back?",
+            "role_symphonic": "open",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🪞 True networking thrives on authentic relationships, not transactional.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Practica tu presentación personal frente a un espejo.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 ¿Qué fortalezas puedes destacar al hablar con otros?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina una sala llena de personas esperando a conocer a alguien como tú.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 Cultivar conexiones es sembrar para el futuro.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Step into a room with purpose. Your energy speaks before you do.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Cultivate connections, not just contacts; the difference is profound.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Imagine each conversation as a thread weaving into your network tapestry.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Consider the opportunities you might be missing by not taking action.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.82,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.9,
+          "combined": 0.89,
+          "signals": {
+            "bookIdentityConfidence": 0.8180000000000001,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8180000000000001,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Networking For Introverts",
+          "autor_completo": "Helen Nicholson",
+          "titulo_api": "Networking",
+          "autor_api": "Helen Nicholson",
+          "año": "2010",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "796985339",
+          "categorias": [
+            "Business & Personal Finance",
+            "Books",
+            "Management & Leadership"
+          ],
+          "track_view_url": "https://books.apple.com/us/book/networking/id796985339?uo=4"
+        },
+        "match_score": 0.67,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content closely aligns with the book's themes of networking, personal branding, and leveraging strengths. It specifically addresses introverts, which is a key aspect of the book. Phrases like 'construir una red de contactos' and 'identificación de tus fortalezas personales' directly reflect the book's focus. However, it lacks some specific details from the ground truth, preventing a perfect 1."
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content closely aligns with the ground truth by emphasizing the importance of building a network, leveraging personal strengths, and cultivating meaningful relationships. It specifically mentions concepts like 'personal brand' and 'genuine connections,' which are central to the book's themes. The content is tailored to the book's focus on networking for introverts, making it less ofa"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y consejos prácticos sin referencias meta.",
+          "elapsed_ms": 761,
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 26,
+            "total_tokens": 436,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "El texto ofrece consejos directos y utiliza voz activa.",
+          "elapsed_ms": 884,
+          "usage": {
+            "prompt_tokens": 389,
+            "completion_tokens": 26,
+            "total_tokens": 415,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 851,
+        "total_ms": 884
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 317.5,
+          "adjusted_hue": 327.5,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EBC",
+          "--palette-1": "#30E885",
+          "--palette-2": "#AE1341",
+          "--palette-3": "#0B654B",
+          "--accent": "#E21283",
+          "--accent-soft": "#E2128338",
+          "--accent-glow": "#E212836b",
+          "--paper": "#F0EFF0",
+          "--ink": "#1C171A",
+          "--border": "#908F90",
+          "--highlight-bg": "#C71073d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "4px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "authorial_aphorism",
+          "concrete_image",
+          "direct_question"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-07-08T16-31-23",
+      "_crono": {
+        "dia": "miércoles",
+        "hora": 10,
+        "franja": "manana",
+        "energia": 0.6,
+        "modo": "meseta_media",
+        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 69825,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15467,
+          "palette": 0,
+          "content_es": 17800,
+          "judge_es": 1075,
+          "content_en": 16520,
+          "judge_en": 1078,
+          "voice": 851,
+          "voice_extended": 17034,
+          "highlight_judge_es_parrafoTop": 643,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_en_parrafoTop": 644,
+          "highlight_judge_en_parrafoBot": 635,
+          "csal": 3621
+        },
+        "elapsed_ms_total": 85470,
+        "elapsed_ms_by_phase": {
+          "grounding": 9,
+          "anchors": 17709,
+          "palette": 0,
+          "cover_fallback": 79,
+          "content_es": 37165,
+          "judge_es": 2202,
+          "content_en": 11310,
+          "judge_en": 1689,
+          "voice": 884,
+          "voice_extended": 14419,
+          "highlight_judge": 5297,
+          "lens_compatibility": 3228,
+          "csal": 23049,
+          "post_processing": 31581
+        },
+        "llm_calls_count": 43,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 4,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.5,
+          "negocio": 0.9,
+          "familia": 0.1,
+          "espiritu": 0.1,
+          "relaciones": 0.8,
+          "finanzas": 0.2
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me siento abrumado en eventos sociales",
+          "antes de una reunión de trabajo importante",
+          "después de recibir una invitación a un networking",
+          "cuando quiero hacer crecer mi carrera pero no sé por dónde empezar",
+          "antes de hablar con alguien en una conferencia",
+          "cuando veo a colegas interactuar y me siento excluido",
+          "después de enviar mi currículum y no obtener respuesta",
+          "cuando quiero hacer nuevas conexiones pero no sé cómo romper el hielo",
+          "cuando asisto a un evento y no conozco a nadie",
+          "cuando me siento inseguro sobre mis habilidades de comunicación en el ámbito profesional",
+          "cuando tengo que presentar mis ideas a un grupo desconocido",
+          "cuando quiero aprovechar al máximo una feria de empleo",
+          "cuando he sido invitado a un almuerzo de networking",
+          "cuando necesito consejos sobre cómo hacer contactos en mi industria",
+          "cuando tengo miedo de ser rechazado al acercarme a alguien nuevo",
+          "cuando he cambiado de trabajo y quiero crear nuevas relaciones profesionales",
+          "cuando quiero aprender a venderme sin ser agresivo",
+          "cuando no sé cómo seguir una conversación con un contacto nuevo",
+          "cuando me gustaría que me recordaran en futuros eventos de networking",
+          "cuando quiero ser más visible en mi campo profesional.",
+          "arca personal\",\"estrategias de networking\",\"habilidades de comunicación\",\"trabajar la sala\",\"conexiones efectivas\",\"miedo a la interacción",
+          "an dominado el networking\",\"no es un manual para ventas agresivas\",\"no ayuda con habilidades técnicas específicas\",\"no es un libro de autoay",
+          "presented in each block and are distinctly connected to the essence of the book.",
+          "enabling immediate recognition and relevance to the content.  The entire JSON reflects the surface semantic area of Helen Nicholson's",
+          "Networking For Introverts,",
+          "providing targeted insights into networking challenges and strategies.   The information is structured and validated based on the provided",
+          "protocol ensuring coherence and clarity.  The approach taken emphasizes practical scenarios, unique keywords, and distinct concepts that",
+          "resonate with the intended audience, particularly introverts seeking to enhance their networking capabilities.",
+          "The anti-patterns clarify the limitations of the book, guiding readers toward appropriate expectations and",
+          "avoiding any misunderstandings regarding the content's applicability.",
+          "Overall, the JSON output successfully encapsulates the core themes and audience connections for the work.",
+          "The validation process confirms adherence to the outlined requirements, ensuring a comprehensive and relevant semantic representation.",
+          "This structured response aims to facilitate better engagement with potential readers while addressing their specific",
+          "needs and circumstances in the context of networking.",
+          "The keywords, situations, and tags are tailored to resonate with the experiences and aspirations of individuals navigating the challenges of",
+          "professional networking.",
+          "This ensures that the content is accessible and actionable, empowering readers to take decisive steps in building their networks.",
+          "In conclusion, the JSON output provides a thorough and well-structured semantic map of the book, highlighting its relevance and practical",
+          "utility for the target audience.",
+          "The inclusion of emojis adds a layer of engagement and relatability, enhancing the overall accessibility of the material.",
+          "The JSON format allows for easy integration into various platforms and applications, making it a versatile tool for connecting readers with",
+          "the essential insights offered in"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "inseguridad",
+            "nerviosismo",
+            "confianza",
+            "frustración",
+            "desánimo",
+            "entusiasmo",
+            "curiosidad",
+            "sorpresa",
+            "optimismo"
+          ],
+          "objetos": [
+            "tarjetas de presentación",
+            "conferencias",
+            "eventos de networking",
+            "manuales de presentación",
+            "redes de contacto",
+            "currículum",
+            "páginas de LinkedIn",
+            "café",
+            "libros de autoayuda",
+            "grabadora"
+          ],
+          "contextos": [
+            "oficina",
+            "conferencia",
+            "almuerzo de networking",
+            "evento social",
+            "feria de empleo",
+            "reunión de trabajo",
+            "café",
+            "espacio de coworking",
+            "talleres",
+            "redes sociales"
+          ],
+          "verbos": [
+            "conectar",
+            "comunicar",
+            "presentar",
+            "interactuar",
+            "escuchar",
+            "abordar",
+            "conversar",
+            "preguntar",
+            "ofrecer",
+            "seguir"
+          ]
+        },
+        "concept_tags": [
+          "fortalezas personales",
+          "marca personal",
+          "estrategias de networking",
+          "habilidades de comunicación",
+          "trabajar la sala",
+          "conexiones efectivas",
+          "miedo a la interacción",
+          "romper el hielo",
+          "presentación personal",
+          "importancia de las tarjetas de presentación"
+        ],
+        "anti_patterns": [
+          "no sirve para extrovertidos que han dominado el networking",
+          "no es un manual para ventas agresivas",
+          "no ayuda con habilidades técnicas específicas",
+          "no es un libro de autoayuda general",
+          "no es para quienes no quieren salir de su zona de confort"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🪞"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "💪"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👥"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌱"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase ofrece un consejo directo y motivacional, lo que sugiere que es parte del contenido del libro y no una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro, sugiriendo un aprendizaje o consejo del autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el desarrollo de un argumento dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase refleja una reflexión o enseñanza que podría estar presente en el contenido del libro, sugiriendo una voz autoral."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase sugiere una acción directa que el lector debe realizar, lo que indica que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase parece ser parte de un diálogo o reflexión dentro del libro, invitando al lector a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a visualizar una escena, lo que sugiere que es parte de la narrativa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase tiene un tono reflexivo y poético que sugiere una voz autoral, como si fuera parte de un discurso o narración dentro del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "fuera",
+              "confidence": 0.9,
+              "reason": "The phrase discusses the importance of networking in a professional context, indicating it is a commentary on career advancement rather than content from within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase encourages personal development and self-acceptance, suggesting a voice that is likely part of a motivational or self-help narrative within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the author's narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a perspective that feels like a direct insight or principle from the author's voice, suggesting a deeper understanding of networking."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase conveys a direct message that feels like guidance or insight from the author, suggesting an immersive experience within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct piece of advice or insight that feels like it could be part of the narrative or thematic content of a book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a metaphorical idea that feels like a direct expression from the author's voice, suggesting a conceptual framework within the narrative."
+            },
+            {
+              "category": "fuera",
+              "confidence": 0.85,
+              "reason": "The phrase suggests a reflective prompt about action, indicating it is likely a commentary or advice about the book's themes rather than content from within the narrative."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-07-08T16:33:20.126Z",
+      "_slug": "networking-for-introverts",
+      "_edicion_numero": 81
+    },
+    {
       "titulo": "The last lecture",
       "autor": "Randy Pausch",
       "tagline": "",
@@ -65,7 +928,7 @@
         "titulo": "Vivir en el presente: un legado duradero.",
         "parrafoTop": "Enfrentar la realidad de la muerte puede ser un catalizador para vivir con propósito. [H]Cuando el tiempo parece limitado, cada segundo se convierte en un tesoro.[/H] Aprender a vivir en el presente se convierte en la lección más importante que podemos compartir, y es un legado que trasciende la existencia misma. La vida no es solo un viaje, sino una oportunidad para dejar un legado que inspire a otros.",
         "subtitulo": "¿Cómo podemos aprovechar cada momento?",
-        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa?[/H]",
+        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa que perdurará en el tiempo?[/H]",
         "style": {
           "accent": "#8512E2",
           "paper": "#F0EFF0",
@@ -77,7 +940,7 @@
         "titulo": "Vivir en el presente: un legado duradero.",
         "parrafoTop": "Enfrentar la realidad de la muerte puede ser un catalizador para vivir con propósito. [H]Cuando el tiempo parece limitado, cada segundo se convierte en un tesoro.[/H] Aprender a vivir en el presente se convierte en la lección más importante que podemos compartir, y es un legado que trasciende la existencia misma. La vida no es solo un viaje, sino una oportunidad para dejar un legado que inspire a otros.",
         "subtitulo": "¿Cómo podemos aprovechar cada momento?",
-        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa?[/H]",
+        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa que perdurará en el tiempo?[/H]",
         "style": {
           "accent": "#8512E2",
           "paper": "#F0EFF0",
@@ -89,7 +952,7 @@
         "titulo": "Vivir en el presente: un legado duradero.",
         "parrafoTop": "Enfrentar la realidad de la muerte puede ser un catalizador para vivir con propósito. [H]Cuando el tiempo parece limitado, cada segundo se convierte en un tesoro.[/H] Aprender a vivir en el presente se convierte en la lección más importante que podemos compartir, y es un legado que trasciende la existencia misma. La vida no es solo un viaje, sino una oportunidad para dejar un legado que inspire a otros.",
         "subtitulo": "¿Cómo podemos aprovechar cada momento?",
-        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa?[/H]",
+        "parrafoBot": "Aprovechar cada momento implica reconocer que nuestros sueños de infancia no son solo ilusiones. Superar obstáculos se vuelve esencial para realizarlos, y en ese proceso, nos encontramos con la oportunidad de inspirar a otros. [H]¿Qué legado estamos construyendo hoy en nuestra vida, mientras vivimos en el presente y dejamos una huella significativa que perdurará en el tiempo?[/H]",
         "style": {
           "accent": "#8512E2",
           "paper": "#F0EFF0",
@@ -924,7 +1787,7 @@
         "titulo": "Reconfigura tu relación con el estrés",
         "parrafoTop": "El estrés, a menudo visto como un enemigo, es en realidad una herramienta poderosa que nos puede ayudar a prosperar. [H]La clave está en aprender a reconfigurar nuestra percepción del estrés[/H], transformando la presión en una oportunidad para el crecimiento. Cuando entendemos esto, podemos utilizarlo para alinear nuestras metas y prioridades, creando un cambio de mentalidad que fomente la resiliencia y el bienestar mental.",
         "subtitulo": "¿Cómo puedes transformar tu percepción del estrés?",
-        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria.",
+        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria, aplicando la regla de resiliencia de 2 cambios a la vez.",
         "style": {
           "accent": "#E28712",
           "paper": "#F0F0EF",
@@ -936,7 +1799,7 @@
         "titulo": "Reconfigura tu relación con el estrés",
         "parrafoTop": "El estrés, a menudo visto como un enemigo, es en realidad una herramienta poderosa que nos puede ayudar a prosperar. [H]La clave está en aprender a reconfigurar nuestra percepción del estrés[/H], transformando la presión en una oportunidad para el crecimiento. Cuando entendemos esto, podemos utilizarlo para alinear nuestras metas y prioridades, creando un cambio de mentalidad que fomente la resiliencia y el bienestar mental.",
         "subtitulo": "¿Cómo puedes transformar tu percepción del estrés?",
-        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria.",
+        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria, aplicando la regla de resiliencia de 2 cambios a la vez.",
         "style": {
           "accent": "#E28712",
           "paper": "#F0F0EF",
@@ -948,7 +1811,7 @@
         "titulo": "Reconfigura tu relación con el estrés",
         "parrafoTop": "El estrés, a menudo visto como un enemigo, es en realidad una herramienta poderosa que nos puede ayudar a prosperar. [H]La clave está en aprender a reconfigurar nuestra percepción del estrés[/H], transformando la presión en una oportunidad para el crecimiento. Cuando entendemos esto, podemos utilizarlo para alinear nuestras metas y prioridades, creando un cambio de mentalidad que fomente la resiliencia y el bienestar mental.",
         "subtitulo": "¿Cómo puedes transformar tu percepción del estrés?",
-        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria.",
+        "parrafoBot": "A través de los cinco cambios de mentalidad, es posible combatir el agotamiento y restaurar tu bienestar. Estos cambios no solo son prácticos, sino que están respaldados por la ciencia del bienestar. [H]Aprender a priorizar lo que realmente importa y establecer límites es fundamental[/H] para mantener nuestra salud mental y reconfigurar la percepción del estrés, lo que nos permite honrar nuestras necesidades y fomentar la resiliencia en nuestra vida diaria, aplicando la regla de resiliencia de 2 cambios a la vez.",
         "style": {
           "accent": "#E28712",
           "paper": "#F0F0EF",
@@ -13675,11 +14538,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 81,
-    "total": 110,
-    "last_audit": "2026-07-07T00:45:16.833Z",
-    "healing_rotation_idx": 19,
+    "next_edition_number": 82,
+    "total": 111,
+    "last_audit": "2026-07-08T16:33:27.555Z",
+    "healing_rotation_idx": 20,
     "last_healing_book": "Diario emprendedor",
-    "last_healing_timestamp": "2026-07-07T01:00:32.861Z"
+    "last_healing_timestamp": "2026-07-08T16:51:39.116Z"
   }
 }
