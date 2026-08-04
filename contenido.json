@@ -1,6 +1,855 @@
 {
   "libros": [
     {
+      "titulo": "The Next Conversation",
+      "autor": "Jefferson Fisher",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/cf/ff/da/cfffdad8-4e1f-1e2e-1364-84bf56d8a3eb/9780593718964.d.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/cf/ff/da/cfffdad8-4e1f-1e2e-1364-84bf56d8a3eb/9780593718964.d.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "The Next Conversation",
+      "titulo_en": "The Next Conversation",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "conexión",
+        "confianza",
+        "claridad",
+        "control"
+      ],
+      "palabras_en": [
+        "empowerment",
+        "connection",
+        "clarity",
+        "assertiveness"
+      ],
+      "frases": [
+        "🌓 ¿Estás dispuesto a dejar de lado el deseo de ganar?",
+        "🏛 Respira profundo antes de hablar. Permite que la calma guíe tus palabras.",
+        "🔭 La claridad en la comunicación es el camino a la conexión genuina.",
+        "📻 Imagina una conversación donde cada palabra construye puentes, no muros."
+      ],
+      "frases_en": [
+        "💫 Pause before you respond. Let your words land with intention and care.",
+        "🏛 Consider this: How might your next words reshape your relationships?",
+        "🔭 Imagine a conversation where both sides feel heard and valued, a true exchange.",
+        "🌓 Words can build walls or bridges, choose wisely."
+      ],
+      "frases_og": [
+        "🕊 No ganar una discusión es el primer paso hacia la conexión.",
+        "📖 ¿Cómo puedes comunicarte desde un lugar de control y no de agresión?",
+        "🌓 Frases simples pueden abrir diálogos profundos si se usan con la debida intención y claridad.",
+        "🪞 Decir menos no es callar, es elegir las palabras que realmente importan para establecer una comunicación efectiva."
+      ],
+      "frases_og_en": [
+        "🕊 Winning an argument often makes you lose the relationship.",
+        "📖 Express your needs clearly. Build bridges, not walls.",
+        "🌓 What if the real solution is less about speaking and more about truly connecting with others.",
+        "🪞 Assertiveness is not aggression; it’s the art of standing your ground."
+      ],
+      "colores": [
+        "#F17EAB",
+        "#30E8A1",
+        "#AE1328",
+        "#0B6559"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFF0",
+      "tarjeta": {
+        "titulo": "La conversación que transforma",
+        "parrafoTop": "Cada vez que te enfrentas a una conversación difícil, recuerda que no se trata de ganar. La verdadera victoria radica en conectar, en encontrar un terreno común donde las emociones no se conviertan en barreras. [H]La comunicación intencional puede ser el puente que te permita cruzar[/H] al otro lado, donde la comprensión mutua y la confianza al comunicar se fortalecen.",
+        "subtitulo": "¿Cómo puedes establecer límites sin cerrar puertas?",
+        "parrafoBot": "[H]Establecer límites no significa ser hostil.[/H] Al contrario, se trata de comunicar tus necesidades de manera clara y asertiva, de buscar un entendimiento sin caer en la trampa de la confrontación. La clave está en decir lo que piensas, pero con un enfoque que fomente la conexión y la empatía.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La conversación que transforma",
+        "parrafoTop": "Cada vez que te enfrentas a una conversación difícil, recuerda que no se trata de ganar. La verdadera victoria radica en conectar, en encontrar un terreno común donde las emociones no se conviertan en barreras. [H]La comunicación intencional puede ser el puente que te permita cruzar[/H] al otro lado, donde la comprensión mutua y la confianza al comunicar se fortalecen.",
+        "subtitulo": "¿Cómo puedes establecer límites sin cerrar puertas?",
+        "parrafoBot": "[H]Establecer límites no significa ser hostil.[/H] Al contrario, se trata de comunicar tus necesidades de manera clara y asertiva, de buscar un entendimiento sin caer en la trampa de la confrontación. La clave está en decir lo que piensas, pero con un enfoque que fomente la conexión y la empatía.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La conversación que transforma",
+        "parrafoTop": "Cada vez que te enfrentas a una conversación difícil, recuerda que no se trata de ganar. La verdadera victoria radica en conectar, en encontrar un terreno común donde las emociones no se conviertan en barreras. [H]La comunicación intencional puede ser el puente que te permita cruzar[/H] al otro lado, donde la comprensión mutua y la confianza al comunicar se fortalecen.",
+        "subtitulo": "¿Cómo puedes establecer límites sin cerrar puertas?",
+        "parrafoBot": "[H]Establecer límites no significa ser hostil.[/H] Al contrario, se trata de comunicar tus necesidades de manera clara y asertiva, de buscar un entendimiento sin caer en la trampa de la confrontación. La clave está en decir lo que piensas, pero con un enfoque que fomente la conexión y la empatía.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Conversation That Transforms",
+        "parrafoTop": "Every time you face a tough conversation, remember that it's not about winning. [H]True victory lies in connecting, finding common ground where emotions do not become barriers.[/H] Intentional communication can be the bridge that allows you to cross to the other side, where understanding flourishes.",
+        "subtitulo": "How can you set boundaries without closing doors?",
+        "parrafoBot": "[H]Setting boundaries doesn’t mean being hostile.[/H] On the contrary, it involves communicating your needs clearly and assertively, seeking understanding without falling into the trap of confrontation. The key is to express your thoughts, but with an approach that fosters connection and empathy.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Conversation That Transforms",
+        "parrafoTop": "Every time you face a tough conversation, remember that it's not about winning. [H]True victory lies in connecting, finding common ground where emotions do not become barriers.[/H] Intentional communication can be the bridge that allows you to cross to the other side, where understanding flourishes.",
+        "subtitulo": "How can you set boundaries without closing doors?",
+        "parrafoBot": "[H]Setting boundaries doesn’t mean being hostile.[/H] On the contrary, it involves communicating your needs clearly and assertively, seeking understanding without falling into the trap of confrontation. The key is to express your thoughts, but with an approach that fosters connection and empathy.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Conversation That Transforms",
+        "parrafoTop": "Every time you face a tough conversation, remember that it's not about winning. [H]True victory lies in connecting, finding common ground where emotions do not become barriers.[/H] Intentional communication can be the bridge that allows you to cross to the other side, where understanding flourishes.",
+        "subtitulo": "How can you set boundaries without closing doors?",
+        "parrafoBot": "[H]Setting boundaries doesn’t mean being hostile.[/H] On the contrary, it involves communicating your needs clearly and assertively, seeking understanding without falling into the trap of confrontation. The key is to express your thoughts, but with an approach that fosters connection and empathy.",
+        "style": {
+          "accent": "#E21263",
+          "paper": "#F0EFF0",
+          "ink": "#1C1719",
+          "border": "#908F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Next%20Conversation%20Jefferson%20Fisher%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Next%20Conversation%20Jefferson%20Fisher%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-08-04T17:17:29.340Z",
+        "workflow_run_id": "30933133699",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.45,
+      "_valor_predominante": "relaciones_clave",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "The Next Conversation",
+          "titulo_en": "The Next Conversation",
+          "autor_completo": "Jefferson Fisher",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de no 'ganar' una discusión",
+            "estrategias para establecer límites en la comunicación",
+            "la comunicación intencional como herramienta de conexión",
+            "frases prácticas para conversaciones difíciles",
+            "la técnica de decir menos para comunicar más efectivamente"
+          ],
+          "key_terms": [
+            "control en la comunicación",
+            "confianza al comunicar",
+            "conexión interpersonal",
+            "marcos de conversación",
+            "asertividad"
+          ],
+          "authorial_voice_notes": "La voz de Jefferson Fisher es directa y accesible, enfocada en ofrecer herramientas prácticas y reales para mejorar la comunicación en situaciones cotidianas, con un tono motivacional pero sin caer en clichés."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la comunicación en situaciones de tensión y la importancia de la conexión en el diálogo, indicando que cada conversación tiene el potencial de transformar relaciones personales y profesionales. La obra se centra en cómo las palabras pueden ser herramientas de empoderamiento y conexión, en lugar de divisiones o conflictos.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 326.875,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La conversación que transforma",
+          "parrafoTop": "Cada vez que te enfrentas a una conversación difícil, recuerda que no se trata de ganar. La verdadera victoria radica en conectar, en encontrar un terreno común donde las emociones no se conviertan en barreras. La comunicación intencional puede ser el puente que te permita cruzar al otro lado, donde la comprensión mutua y la confianza al comunicar se fortalecen.",
+          "subtitulo": "¿Cómo puedes establecer límites sin cerrar puertas?",
+          "parrafoBot": "Establecer límites no significa ser hostil. Al contrario, se trata de comunicar tus necesidades de manera clara y asertiva, de buscar un entendimiento sin caer en la trampa de la confrontación. La clave está en decir lo que piensas, pero con un enfoque que fomente la conexión y la empatía."
+        },
+        "card_en": {
+          "titulo": "The Conversation That Transforms",
+          "parrafoTop": "Every time you face a tough conversation, remember that it's not about winning. True victory lies in connecting, finding common ground where emotions do not become barriers. Intentional communication can be the bridge that allows you to cross to the other side, where understanding flourishes.",
+          "subtitulo": "How can you set boundaries without closing doors?",
+          "parrafoBot": "Setting boundaries doesn’t mean being hostile. On the contrary, it involves communicating your needs clearly and assertively, seeking understanding without falling into the trap of confrontation. The key is to express your thoughts, but with an approach that fosters connection and empathy."
+        },
+        "emotional_words_es": [
+          "conexión",
+          "confianza",
+          "claridad",
+          "control"
+        ],
+        "emotional_words_en": [
+          "empowerment",
+          "connection",
+          "clarity",
+          "assertiveness"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🕊 No ganar una discusión es el primer paso hacia la conexión.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 ¿Cómo puedes comunicarte desde un lugar de control y no de agresión?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 Frases simples pueden abrir diálogos profundos si se usan con la debida intención y claridad.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🪞 Decir menos no es callar, es elegir las palabras que realmente importan para establecer una comunicación efectiva.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🕊 Winning an argument often makes you lose the relationship.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "📖 Express your needs clearly. Build bridges, not walls.",
+            "role_symphonic": "open",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 What if the real solution is less about speaking and more about truly connecting with others.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🪞 Assertiveness is not aggression; it’s the art of standing your ground.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Estás dispuesto a dejar de lado el deseo de ganar?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 Respira profundo antes de hablar. Permite que la calma guíe tus palabras.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 La claridad en la comunicación es el camino a la conexión genuina.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "oido",
+            "phrase": "📻 Imagina una conversación donde cada palabra construye puentes, no muros.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Pause before you respond. Let your words land with intention and care.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Consider this: How might your next words reshape your relationships?",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Imagine a conversation where both sides feel heard and valued, a true exchange.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Words can build walls or bridges, choose wisely.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "cero"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.9,
+          "combined": 0.93,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.9
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "The Next Conversation",
+          "autor_completo": "Jefferson Fisher",
+          "titulo_api": "The Next Conversation",
+          "autor_api": "Jefferson Fisher",
+          "año": "2025",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6505028322",
+          "categorias": [
+            "Superación personal",
+            "Libros",
+            "Salud, mente y cuerpo",
+            "Psicología",
+            "Negocios y finanzas personales",
+            "Administración y liderazgo"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/the-next-conversation/id6505028322?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content closely reflects the key concepts from the ground truth, such as the importance of connection over winning in conversations, setting boundaries, and communicating with intention. Phrases like 'no se trata de ganar' and 'comunicar tus necesidades de manera clara y asertiva' directly align with Fisher's teachings. The content feels specific to the book's themes and strategies, "
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The generated content closely aligns with the book's themes of intentional communication and connection, specifically mentioning concepts like setting boundaries and the importance of not 'winning' arguments. However, it lacks direct references to the three-part communication system outlined in the ground truth, which prevents it from being fully grounded."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y consejos prácticos sin referencias externas.",
+          "elapsed_ms": 1115,
+          "usage": {
+            "prompt_tokens": 419,
+            "completion_tokens": 27,
+            "total_tokens": 446,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y consejos prácticos sin referencias externas.",
+          "elapsed_ms": 1052,
+          "usage": {
+            "prompt_tokens": 389,
+            "completion_tokens": 26,
+            "total_tokens": 415,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 861,
+        "total_ms": 1115
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 326.875,
+          "adjusted_hue": 336.875,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.44",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EAB",
+          "--palette-1": "#30E8A1",
+          "--palette-2": "#AE1328",
+          "--palette-3": "#0B6559",
+          "--accent": "#E21263",
+          "--accent-soft": "#E2126338",
+          "--accent-glow": "#E212636b",
+          "--paper": "#F0EFF0",
+          "--ink": "#1C1719",
+          "--border": "#908F90",
+          "--highlight-bg": "#C71057d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "aforismo_autorial",
+          "imagen_concreta"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-08-04T17-17-29",
+      "_crono": {
+        "dia": "martes",
+        "hora": 11,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 60636,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15636,
+          "palette": 0,
+          "content_es": 17889,
+          "judge_es": 1146,
+          "content_en": 16580,
+          "judge_en": 1109,
+          "voice": 861,
+          "voice_extended": 7415,
+          "highlight_judge_es_parrafoTop": 648,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 648,
+          "highlight_judge_en_parrafoBot": 637,
+          "csal": 8299
+        },
+        "elapsed_ms_total": 44532,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6888,
+          "palette": 0,
+          "cover_fallback": 56,
+          "content_es": 23137,
+          "judge_es": 1964,
+          "content_en": 7006,
+          "judge_en": 1836,
+          "voice": 1116,
+          "voice_extended": 2524,
+          "highlight_judge": 5549,
+          "lens_compatibility": 1888,
+          "csal": 49314,
+          "post_processing": 56758
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.5,
+          "familia": 0.3,
+          "espiritu": 0.2,
+          "relaciones": 0.9,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me cuesta expresar lo que realmente siento",
+          "antes de enfrentar una conversación difícil con un colega",
+          "después de una discusión donde siento que no fui escuchado",
+          "cuando quiero mejorar mi relación con un ser querido",
+          "antes de negociar un aumento salarial",
+          "cuando siento que mis límites no son respetados",
+          "cuando quiero decir 'no' pero no sé cómo",
+          "cuando necesito abordar un tema sensible con mi pareja",
+          "antes de una reunión importante donde debo presentar ideas",
+          "después de recibir una crítica que me dejó inseguro",
+          "cuando quiero conectar más profundamente con alguien",
+          "antes de una conversación con alguien que siempre interrumpe",
+          "cuando me siento abrumado en una discusión acalorada",
+          "antes de hablar con un amigo que está pasando por un mal momento",
+          "cuando me doy cuenta de que hablo más de lo que escucho",
+          "después de un malentendido que quiero aclarar",
+          "cuando necesito resolver un conflicto sin crear más problemas",
+          "antes de tener 'la charla' con mi hijo adolescente",
+          "cuando quiero ser más asertivo sin ser agresivo",
+          "cuando me doy cuenta de que he estado evitando un tema importante",
+          "antes de una cena familiar donde siempre hay tensiones",
+          "cuando siento que mis palabras son malinterpretadas",
+          "cuando quiero que mis opiniones sean tomadas en serio en el trabajo",
+          "antes de responder a un mensaje que me molestó",
+          "cuando quiero mejorar mi habilidad para escuchar de verdad",
+          "después de una conversación que me dejó sintiéndome culpable",
+          "cuando estoy en desacuerdo con alguien pero quiero mantener la relación",
+          "antes de una entrevista donde necesito demostrar mi valor",
+          "cuando siento que las conversaciones con mi pareja se han vuelto monótonas",
+          "cuando quiero aprender a comunicarme de manera más efectiva"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "inseguridad",
+            "ansiedad",
+            "confianza",
+            "calma",
+            "empatía",
+            "determinación",
+            "claridad",
+            "tensión",
+            "culpa"
+          ],
+          "objetos": [
+            "límites",
+            "frases prácticas",
+            "conexiones",
+            "puentes",
+            "muros",
+            "críticas constructivas",
+            "técnicas de comunicación",
+            "palabras",
+            "tono de voz",
+            "preguntas abiertas"
+          ],
+          "contextos": [
+            "reuniones laborales",
+            "cenas familiares",
+            "conversaciones difíciles",
+            "discusiones de pareja",
+            "negociaciones",
+            "presentaciones",
+            "interacciones sociales",
+            "conflictos",
+            "malentendidos",
+            "momentos de tensión"
+          ],
+          "verbos": [
+            "expresar",
+            "escuchar",
+            "aclarar",
+            "negociar",
+            "conectar",
+            "argumentar",
+            "interrumpir",
+            "resolver",
+            "comunicar",
+            "abordar"
+          ]
+        },
+        "concept_tags": [
+          "ganar una discusión",
+          "establecer límites",
+          "comunicación intencional",
+          "frases para conversaciones difíciles",
+          "decir menos para comunicar más",
+          "assertividad en el trabajo",
+          "resolución de conflictos",
+          "conexión genuina",
+          "control emocional en diálogos",
+          "reducir la defensividad"
+        ],
+        "anti_patterns": [
+          "cuando buscas técnicas de manipulación",
+          "si quieres evitar confrontaciones a toda costa",
+          "cuando prefieres monólogos en vez de diálogos",
+          "si buscas consejos para debates políticos",
+          "cuando necesitas estrategias de comunicación digital"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🏳️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🧘‍♂️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🔍"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🔊"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión que podría ser parte del contenido del libro, sugiriendo una idea profunda sobre la comunicación y las relaciones."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta reflexiva que invita a la introspección, típica de un contenido que se encuentra dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro, sugiriendo una idea que el autor desarrolla en su obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que parece ser parte del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un diálogo o reflexión que podría estar dentro de una narrativa, invitando al lector a una introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase ofrece un consejo directo y reflexivo, lo que sugiere que es parte de un texto donde el autor se dirige al lector, creando una conexión íntima."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión del autor dentro del libro, sugiriendo un enfoque sobre la comunicación."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a imaginar una situación y utiliza un lenguaje evocador, lo que sugiere que es parte de un discurso o reflexión dentro del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a reflective insight that feels like a personal observation or lesson from the author, suggesting it is part of the narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents direct advice that feels like it could be part of a narrative or self-help guidance within a book, suggesting an internal voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a contemplative thought that feels like an internal reflection or insight from the author, suggesting a deeper exploration within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a definition and insight that feels like it could be part of a discussion or explanation within the book, reflecting the author's voice."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase feels like direct advice or reflection from the author, suggesting a moment of contemplation, which aligns with an internal voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites introspection and seems to be a direct engagement with the reader, suggesting a moment of reflection typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a scenario that invites the reader to visualize a moment within the narrative, suggesting an internal reflection or dialogue."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a reflective thought that feels like it could be part of a narrative or dialogue within a book, conveying a message directly from the author."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-08-04T17:19:10.629Z",
+      "_slug": "the-next-conversation",
+      "_edicion_numero": 88
+    },
+    {
       "titulo": "Piénsalo Otra Vez",
       "autor": "Adam Grant",
       "tagline": "",
@@ -1925,7 +2774,7 @@
         },
         "card_en": {
           "titulo": "The Power of Ganbatte",
-          "parrafoTop": "The Japanese philosophy of ganbatte teaches us that it’s not just about reaching the goal, but about valuing the effort we put into each step along the way. This perspective invites us to face challenges with a mindset of perseverance, reminding us that every small advance counts. By practicing ganbatte, we cultivate la paciencia y la conciencia necesarias para enfrentar la vida con resiliencia y autoeficacia, aplicando los principios del mindfulness en nuestra vida diaria y aprendiendo a disfrutar del proceso en lugar de enfocarnos únicamente en el resultado, lo que nos permite vivir plenamente y encontrar belleza en cada momento, siguiendo la filosofía del wabi sabi.",
+          "parrafoTop": "The Japanese philosophy of ganbatte teaches us that it’s not just about reaching the goal, but about valuing the effort we put into each step along the way. This perspective invites us to face challenges with a mindset of perseverance, reminding us that every small advance counts. By practicing ganbatte, we cultivate la paciencia y la conciencia necesarias para enfrentar la vida con resiliencia y autoeficacia, aplicando los principios del mindfulness en nuestra vida diaria y aprendiendo a disfrutar del proceso en lugar de enfocarnos únicamente en el resultado, lo que nos permite vivir plenamente y encontrar belleza en cada momento, siguiendo la filosofía del wabi sabi y aplicando estos principios en cada aspecto de nuestra existencia.",
           "subtitulo": "How can you transform your obstacles into opportunities?",
           "parrafoBot": "Overcoming obstacles in daily life is not a matter of luck; it is a matter of mindset. By embracing the ganbatte philosophy, we learn to see each setback as an opportunity to grow. Instead of getting frustrated by what we cannot control, we focus our energy on what we can do, right here and now."
         },
@@ -2787,7 +3636,7 @@
         },
         "card_en": {
           "titulo": "The Colossal Mission Mindset",
-          "parrafoTop": "The colossal mission mindset drives those who seek not only success but a lasting legacy. It is a way of thinking that transcends daily tasks, focusing on grand and complex problems, demanding maximum creativity, discipline, and tenacity. This combination of elements is what has propelled Elon Musk to the forefront of la construcción de un legado a través de decisiones audaces y un enfoque en el trabajo significativo, donde cada acción está alineada con un propósito claro y una intensa dedicación a la innovación, que refleja la mentalidad de misión colosal y la importancia de la creatividad, disciplina y obstinación en su trayectoria, así como la necesidad de mantener un enfoque constante en el propósito y la intensidad como superpoderes en la búsqueda de un impacto duradero.",
+          "parrafoTop": "The colossal mission mindset drives those who seek not only success but a lasting legacy. It is a way of thinking that transcends daily tasks, focusing on grand and complex problems, demanding maximum creativity, discipline, and tenacity. This combination of elements is what has propelled Elon Musk to the forefront of la construcción de un legado a través de decisiones audaces y un enfoque en el trabajo significativo, donde cada acción está alineada con un propósito claro y una intensa dedicación a la innovación, que refleja la mentalidad de misión colosal y la importancia de la creatividad, disciplina y obstinación en su trayectoria, así como la necesidad de mantener un enfoque constante en el propósito y la intensidad como superpoderes en la búsqueda de un impacto duradero, que se traduce en resultados tangibles y en la capacidad de inspirar a otros a seguir su ejemplo.",
           "subtitulo": "Are you ready to commit to a greater purpose?",
           "parrafoBot": "The pursuit of purpose and intensity transforms ordinary work into something extraordinary. When you align your passion with a colossal mission, every task takes on significance. It is not merely about working hard, but about working with intention and clarity. This is how dreams turn into reality."
         },
@@ -4485,7 +5334,7 @@
         },
         "card_en": {
           "titulo": "Freedom as the Path to Love",
-          "parrafoTop": "Freedom is the essence of true love. Without it, love becomes a trap, a duty that stifles individuality. To love authentically, one must be free from the shackles of the past and the expectations of others. Only when each individual finds their own freedom can they offer their true self to another, creando así relaciones basadas en la libertad y la felicidad, donde la libertad se convierte en la condición básica para el amor verdadero, permitiendo que florezcan conexiones genuinas y profundas que trascienden las limitaciones impuestas por la sociedad y fomentan un entorno donde cada persona puede explorar su ser auténtico y vivir plenamente, encontrando así la verdadera esencia de la felicidad y el amor en un mundo que a menudo nos encierra en expectativas ajenas, y donde la libertad se convierte en el pilar fundamental para construir relaciones significativas y satisfactorias.",
+          "parrafoTop": "Freedom is the essence of true love. Without it, love becomes a trap, a duty that stifles individuality. To love authentically, one must be free from the shackles of the past and the expectations of others. Only when each individual finds their own freedom can they offer their true self to another, creando así relaciones basadas en la libertad y la felicidad, donde la libertad se convierte en la condición básica para el amor verdadero, permitiendo que florezcan conexiones genuinas y profundas que trascienden las limitaciones impuestas por la sociedad y fomentan un entorno donde cada persona puede explorar su ser auténtico y vivir plenamente, encontrando así la verdadera esencia de la felicidad y el amor en un mundo que a menudo nos encierra en expectativas ajenas, y donde la libertad se convierte en el pilar fundamental para construir relaciones significativas y satisfactorias, que nos permitan ser quienes realmente somos y experimentar el amor en su forma más pura y liberadora.",
           "subtitulo": "What does it mean to be truly free in love?",
           "parrafoBot": "Love flourishes in the fertile ground of freedom. It is a space where being finds expression without the fear of losing oneself. A true relationship does not seek possessions or sacrifices, but rather a movement of souls that meet in the deep acceptance of themselves."
         },
@@ -5331,7 +6180,7 @@
         },
         "card_en": {
           "titulo": "The Power of Connection in Negotiation",
-          "parrafoTop": "Empathy stands as the cornerstone of effective negotiation. It is not merely about reaching an agreement but about creating lasting bonds that foster collaboration. When we genuinely connect with others, we open a space where differences transform into opportunities for understanding. The foundation of negotiation lies in the importance of empathy and emotional intelligence to build strong, lasting relationships, donde la conexión humana se convierte en la clave para negociar sin miedo y defender nuestras posturas con confianza, utilizando la empatía y la inteligencia emocional como herramientas fundamentales para lograr un entendimiento profundo y duradero, que nos permita construir relaciones sólidas y efectivas en cada interacción, y así, transformar la forma en que nos relacionamos y negociamos en todos los aspectos de nuestra vida, reconociendo que la empatía y la conexión son esenciales para el éxito en cualquier negociación, y que estas habilidades nos permiten abordar cada situación con una mentalidad abierta y colaborativa, promoviendo un entorno donde la cooperación y el respeto mutuo prevalecen.",
+          "parrafoTop": "Empathy stands as the cornerstone of effective negotiation. It is not merely about reaching an agreement but about creating lasting bonds that foster collaboration. When we genuinely connect with others, we open a space where differences transform into opportunities for understanding. The foundation of negotiation lies in the importance of empathy and emotional intelligence to build strong, lasting relationships, donde la conexión humana se convierte en la clave para negociar sin miedo y defender nuestras posturas con confianza, utilizando la empatía y la inteligencia emocional como herramientas fundamentales para lograr un entendimiento profundo y duradero, que nos permita construir relaciones sólidas y efectivas en cada interacción, y así, transformar la forma en que nos relacionamos y negociamos en todos los aspectos de nuestra vida, reconociendo que la empatía y la conexión son esenciales para el éxito en cualquier negociación, y que estas habilidades nos permiten abordar cada situación con una mentalidad abierta y colaborativa, promoviendo un entorno donde la cooperación y el respeto mutuo prevalecen, y donde cada negociación se convierte en una oportunidad para fortalecer nuestras relaciones y crecer juntos.",
           "subtitulo": "How can you start cultivating empathy today?",
           "parrafoBot": "Cultivating empathy is not a one-time act; it is a continuous process that requires attention and practice. Actively listen, observe the emotions of your counterpart, and allow yourself to be vulnerable. This approach not only enriches your negotiations but also transforms your personal relationships."
         },
@@ -6178,7 +7027,7 @@
         },
         "card_en": {
           "titulo": "The Journey to Fatherhood",
-          "parrafoTop": "In life, the struggle for fatherhood is riddled with obstacles, where each challenge transforms into a critical lesson. Poverty does not dictate who I am, but rather how I face each day alongside my son. Perseverance becomes the compass guiding my steps. From the streets to success, every experience shapes my resolve en la búsqueda del sueño americano, un viaje que refleja la lucha por la paternidad en circunstancias adversas, donde la perseverancia y el compromiso inquebrantable con el bienestar de mi hijo son fundamentales para alcanzar una vida plena y significativa.",
+          "parrafoTop": "In life, the struggle for fatherhood is riddled with obstacles, where each challenge transforms into a critical lesson. Poverty does not dictate who I am, but rather how I face each day alongside my son. Perseverance becomes the compass guiding my steps. From the streets to success, every experience shapes my resolve en la búsqueda del sueño americano, un viaje que refleja la lucha por la paternidad en circunstancias adversas, donde la perseverancia y el compromiso inquebrantable con el bienestar de mi hijo son fundamentales para alcanzar una vida plena y significativa, y así, seguir adelante a pesar de las dificultades que se presentan.",
           "subtitulo": "How do we confront fear and uncertainty?",
           "parrafoBot": "Our will can turn adversity into opportunity. Through every stumble, the promise of a better future resonates deeply. The pursuit of the American Dream is not merely a goal; it stands testament to the unwavering determination of a father who refuses to give up."
         },
@@ -7896,7 +8745,7 @@
           "titulo": "The Illusion of Fitting In",
           "parrafoTop": "The bed of Procrustes serves as a metaphor for our tendency to force reality into categories that we find comfortable. Life does not conform to prefabricated molds, yet we insist on fitting it into them. This self-deception provides us an illusion of control, but at the cost of truth and wisdom, y nos aleja de la sabiduría práctica que proviene de aceptar el caos y lo inesperado como parte de la experiencia humana, lo que nos lleva a cuestionar nuestras creencias y a reconocer la complejidad de la vida, así como la necesidad de liberarnos de las categorías reductivas que limitan nuestra comprensión del mundo, y abrazar la incertidumbre como una fuente de crecimiento y aprendizaje, lo que nos permite desarrollar una perspectiva más rica y matizada de nuestra existencia, y así encontrar la sabiduría práctica que surge de la aceptación del caos y la complejidad de la vida en su totalidad.",
           "subtitulo": "Are we ready to accept the unexpected?",
-          "parrafoBot": "By embracing chaos and the unexpected, we find the practical wisdom that enables us to navigate the world's complexities. The rigidity of our mental categories only distances us from reality. Accepting uncertainty is the first step toward a more authentic life, un proceso que nos libera de la ilusión reconfortante de encajar a la fuerza en categorías predefinidas, y nos permite reconocer la sabiduría práctica que surge de la aceptación del caos y lo inesperado, así como de la comprensión de que la vida no se ajusta a moldes rígidos ni a aforismos simplistas, sino que nos invita a explorar la riqueza de la experiencia humana sin limitaciones impuestas por nuestras propias creencias, y a cuestionar los paradigmas que nos han sido impuestos, permitiéndonos así vivir con mayor libertad y autenticidad, y a entender que la verdadera sabiduría radica en aceptar la complejidad de la vida en lugar de buscar simplificaciones engañosas, y en reconocer que el lecho de Procusto es una trampa que limita nuestra percepción de la realidad."
+          "parrafoBot": "By embracing chaos and the unexpected, we find the practical wisdom that enables us to navigate the world's complexities. The rigidity of our mental categories only distances us from reality. Accepting uncertainty is the first step toward a more authentic life, un proceso que nos libera de la ilusión reconfortante de encajar a la fuerza en categorías predefinidas, y nos permite reconocer la sabiduría práctica que surge de la aceptación del caos y lo inesperado, así como de la comprensión de que la vida no se ajusta a moldes rígidos ni a aforismos simplistas, sino que nos invita a explorar la riqueza de la experiencia humana sin limitaciones impuestas por nuestras propias creencias, y a cuestionar los paradigmas que nos han sido impuestos, permitiéndonos así vivir con mayor libertad y autenticidad, y a entender que la verdadera sabiduría radica en aceptar la complejidad de la vida en lugar de buscar simplificaciones engañosas, y en reconocer que el lecho de Procusto es una trampa que limita nuestra percepción de la realidad, llevándonos a una comprensión más profunda de nuestra existencia y a la capacidad de adaptarnos a lo que realmente somos."
         },
         "emotional_words_es": [
           "despertar",
@@ -8580,7 +9429,7 @@
       "fondo": "#F0F0EF",
       "tarjeta": {
         "titulo": "El asombro en lo cotidiano",
-        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria.[/H]",
+        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria, invitándonos a descubrir su esencia en cada experiencia que vivimos.",
         "subtitulo": "¿Cómo convertir lo habitual en un acto de reflexión?",
         "parrafoBot": "[H]La aplicación práctica de la filosofía reside en la habilidad de cuestionar[/H] lo que nos rodea. Al prestar atención a las experiencias sensoriales, se abre un espacio para la contemplación y el entendimiento profundo, donde cada pequeño acto puede revelar significados inesperados.",
         "style": {
@@ -8592,7 +9441,7 @@
       },
       "tarjeta_base": {
         "titulo": "El asombro en lo cotidiano",
-        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria.[/H]",
+        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria, invitándonos a descubrir su esencia en cada experiencia que vivimos.",
         "subtitulo": "¿Cómo convertir lo habitual en un acto de reflexión?",
         "parrafoBot": "[H]La aplicación práctica de la filosofía reside en la habilidad de cuestionar[/H] lo que nos rodea. Al prestar atención a las experiencias sensoriales, se abre un espacio para la contemplación y el entendimiento profundo, donde cada pequeño acto puede revelar significados inesperados.",
         "style": {
@@ -8604,7 +9453,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "El asombro en lo cotidiano",
-        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria.[/H]",
+        "parrafoTop": "La filosofía se encuentra en los pequeños detalles de la vida diaria, donde cada experiencia sensorial se convierte en una oportunidad de reflexión. La capacidad de asombro permite descubrir la profundidad en lo trivial, transformando lo cotidiano en un escenario filosófico. [H]Cada instante es una invitación a cuestionar la conexión entre lo trivial y lo profundo, y a explorar el valor del cuestionamiento en la vida diaria, así como la aplicación práctica de la filosofía en nuestras experiencias cotidianas, donde el asombro se convierte en una herramienta para entender mejor nuestra existencia y para apreciar la belleza de lo cotidiano, fomentando así una vida más plena y consciente, y permitiéndonos vivir con mayor atención y curiosidad hacia el mundo que nos rodea, donde cada momento se convierte en una nueva oportunidad para reflexionar sobre nuestra realidad y el significado de nuestras acciones, y a reconocer que la filosofía está presente en cada rincón de nuestra vida diaria, invitándonos a descubrir su esencia en cada experiencia que vivimos.",
         "subtitulo": "¿Cómo convertir lo habitual en un acto de reflexión?",
         "parrafoBot": "[H]La aplicación práctica de la filosofía reside en la habilidad de cuestionar[/H] lo que nos rodea. Al prestar atención a las experiencias sensoriales, se abre un espacio para la contemplación y el entendimiento profundo, donde cada pequeño acto puede revelar significados inesperados.",
         "style": {
@@ -8728,7 +9577,7 @@
         },
         "card_en": {
           "titulo": "Wonder in the Everyday",
-          "parrafoTop": "Philosophy resides in the small details of daily life, where each sensory experience becomes an opportunity for reflection. The capacity for wonder allows us to uncover depth in the trivial, transforming the mundane into a philosophical stage. Every moment is an invitation to question, a chance to embrace the asombro that nos rodea y a reflexionar sobre la conexión entre lo trivial y lo profundo, así como a descubrir el valor de la filosofía práctica en nuestras vidas diarias, lo que nos lleva a apreciar la belleza de lo cotidiano y a cuestionar nuestras percepciones, fomentando así un diálogo constante entre nuestra experiencia diaria y la reflexión filosófica que nos enriquece, permitiéndonos vivir con mayor profundidad y conexión con el mundo que nos rodea, y a reconocer que cada instante puede ser una lección de vida que nos invita a seguir explorando y cuestionando nuestra existencia, y a encontrar en cada experiencia cotidiana una oportunidad para aplicar la filosofía en nuestra vida diaria.",
+          "parrafoTop": "Philosophy resides in the small details of daily life, where each sensory experience becomes an opportunity for reflection. The capacity for wonder allows us to uncover depth in the trivial, transforming the mundane into a philosophical stage. Every moment is an invitation to question, a chance to embrace the asombro that nos rodea y a reflexionar sobre la conexión entre lo trivial y lo profundo, así como a descubrir el valor de la filosofía práctica en nuestras vidas diarias, lo que nos lleva a apreciar la belleza de lo cotidiano y a cuestionar nuestras percepciones, fomentando así un diálogo constante entre nuestra experiencia diaria y la reflexión filosófica que nos enriquece, permitiéndonos vivir con mayor profundidad y conexión con el mundo que nos rodea, y a reconocer que cada instante puede ser una lección de vida que nos invita a seguir explorando y cuestionando nuestra existencia, y a encontrar en cada experiencia cotidiana una oportunidad para aplicar la filosofía en nuestra vida diaria, lo que nos permite integrar la filosofía en cada aspecto de nuestra cotidianidad.",
           "subtitulo": "How to turn the ordinary into an act of reflection?",
           "parrafoBot": "The practical application of philosophy lies in the ability to question what surrounds us. By paying attention to sensory experiences, we open a space for contemplation and deep understanding, where each small act can reveal unexpected meanings."
         },
@@ -11904,7 +12753,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "Hit Refresh",
@@ -11971,7 +12820,7 @@
         "titulo": "La empatía como motor de transformación",
         "parrafoTop": "[H]En un mundo donde la tecnología avanza a pasos agigantados[/H], la empatía emerge como la habilidad crítica que define a un líder. La transformación no se trata solo de implementar nuevas tecnologías, sino de entender cómo estas impactan a las personas y sus interacciones. La capacidad de ponerse en el lugar del otro se ha convertido en un pilar fundamental para el liderazgo efectivo en la era de la inteligencia artificial y la innovación.",
         "subtitulo": "¿Por qué es esencial la empatía en el liderazgo?",
-        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto.",
+        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto, donde la empatía se convierte en el motor de la transformación y la clave para un liderazgo efectivo.",
         "style": {
           "accent": "#E2D312",
           "paper": "#F0F0EF",
@@ -11983,7 +12832,7 @@
         "titulo": "La empatía como motor de transformación",
         "parrafoTop": "[H]En un mundo donde la tecnología avanza a pasos agigantados[/H], la empatía emerge como la habilidad crítica que define a un líder. La transformación no se trata solo de implementar nuevas tecnologías, sino de entender cómo estas impactan a las personas y sus interacciones. La capacidad de ponerse en el lugar del otro se ha convertido en un pilar fundamental para el liderazgo efectivo en la era de la inteligencia artificial y la innovación.",
         "subtitulo": "¿Por qué es esencial la empatía en el liderazgo?",
-        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto.",
+        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto, donde la empatía se convierte en el motor de la transformación y la clave para un liderazgo efectivo.",
         "style": {
           "accent": "#E2D312",
           "paper": "#F0F0EF",
@@ -11995,7 +12844,7 @@
         "titulo": "La empatía como motor de transformación",
         "parrafoTop": "[H]En un mundo donde la tecnología avanza a pasos agigantados[/H], la empatía emerge como la habilidad crítica que define a un líder. La transformación no se trata solo de implementar nuevas tecnologías, sino de entender cómo estas impactan a las personas y sus interacciones. La capacidad de ponerse en el lugar del otro se ha convertido en un pilar fundamental para el liderazgo efectivo en la era de la inteligencia artificial y la innovación.",
         "subtitulo": "¿Por qué es esencial la empatía en el liderazgo?",
-        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto.",
+        "parrafoBot": "La empatía permite conectar con los demás de manera genuina, fomentando un entorno donde la innovación puede prosperar. Sin ella, la transformación empresarial se convierte en un mero ejercicio técnico, desprovisto de humanidad y propósito. [H]La búsqueda de renovación debe ir acompañada de una profunda comprensión[/H] de las necesidades y aspiraciones de las personas involucradas, así como de la importancia de la empatía en el liderazgo para lograr un cambio significativo y duradero en un mundo en constante evolución, donde la inteligencia artificial y la computación cuántica también juegan un papel crucial en la transformación de la sociedad y el futuro del trabajo, y donde cada líder debe cultivar la empatía como un pilar fundamental para guiar a sus equipos hacia el éxito, asegurando que la tecnología se utilice para mejorar la vida de las personas y fomentar un entorno de colaboración y crecimiento, que permita a todos prosperar en este nuevo contexto, donde la empatía se convierte en el motor de la transformación y la clave para un liderazgo efectivo.",
         "style": {
           "accent": "#E2D312",
           "paper": "#F0F0EF",
@@ -13849,7 +14698,7 @@
           "titulo": "Lead the Change",
           "parrafoTop": "The fear of letting go of repetitive tasks binds us to a past that no longer serves us. Instead of clinging to what we know, it's time to embrace automation and free our minds. Why continue doing what robots can do better? Leadership in the age of artificial intelligence requires audacity and a commitment to eliminating repetitive tasks for greater productivity and efficiency.",
           "subtitulo": "Are we ready to lead the change?",
-          "parrafoBot": "Conversations with future leaders teach us that being the protagonist of change means challenging the established order. It is not just about adapting; it is about innovating, seeking creative solutions to old problems. Each individual has the power to decide which tasks to leave behind and which new opportunities to explorar y aprovechar en la era de la inteligencia artificial, liderando con autonomía y eficiencia, eliminando tareas repetitivas y automatizando procesos para ser más productivos y así convertirse en agentes de cambio en un mundo disruptivo, donde la capacidad de adaptación y la innovación son esenciales para el éxito en la gestión del tiempo y el liderazgo efectivo, impulsando un cambio significativo en nuestras organizaciones y en nuestras vidas, y así contribuir a un futuro donde la automatización y la creatividad se alineen para transformar nuestras realidades."
+          "parrafoBot": "Conversations with future leaders teach us that being the protagonist of change means challenging the established order. It is not just about adapting; it is about innovating, seeking creative solutions to old problems. Each individual has the power to decide which tasks to leave behind and which new opportunities to explorar y aprovechar en la era de la inteligencia artificial, liderando con autonomía y eficiencia, eliminando tareas repetitivas y automatizando procesos para ser más productivos y así convertirse en agentes de cambio en un mundo disruptivo, donde la capacidad de adaptación y la innovación son esenciales para el éxito en la gestión del tiempo y el liderazgo efectivo, impulsando un cambio significativo en nuestras organizaciones y en nuestras vidas, y así contribuir a un futuro donde la automatización y la creatividad se alineen para transformar nuestras realidades y donde cada uno de nosotros pueda ser un líder en su propio camino hacia el éxito."
         },
         "emotional_words_es": [
           "desafío",
@@ -14516,7 +15365,7 @@
         "📻 Sin objetivos, se pierde el rumbo; con ellos, cada paso es firme."
       ],
       "frases_en": [
-        "🌅 Visualize your goals clearly. Imagine how it feels to achieve them and let that feeling guide your cada paso hacia el éxito personal y la mejora continua en tu vida, utilizando los superpoderes que te ayudarán a transformar tu realidad y alcanzar tus objetivos claros con una metodología sencilla que te permitirá avanzar con confianza y determinación, logrando así una transformación personal desde el desastre hacia el éxito.",
+        "🌅 Visualize your goals clearly. Imagine how it feels to achieve them and let that feeling guide your cada paso hacia el éxito personal y la mejora continua en tu vida, utilizando los superpoderes que te ayudarán a transformar tu realidad y alcanzar tus objetivos claros con una metodología sencilla que te permitirá avanzar con confianza y determinación, logrando así una transformación personal desde el desastre hacia el éxito, utilizando el poder de establecer objetivos claros y aplicando la metodología que te llevará a una mejora personal constante.",
         "🏛 What clear goal will you set for yourself today?",
         "🌊 Each small achievement is like a stepping stone on your path to success.",
         "🌓 Clarity in goals creates pathways to action — it’s the first step to transformation."
@@ -14694,7 +15543,7 @@
         },
         "card_en": {
           "titulo": "The Power of Clear Goals",
-          "parrafoTop": "Setting clear goals is more than just a technique; it's the first superpower that we can all activate. When you outline specific targets, the universe begins to align in your favor. It’s not merely about wishing for something, but about defining it sharply, visualizing it, and committing to reach it. Each step se convierte en una oportunidad para transformar tu vida y acercarte a tus sueños, utilizando la metodología adecuada para alcanzar el éxito y así activar tus superpoderes en la realidad aumentada, lo que te permitirá mejorar personal y profesionalmente, y vivir la vida que realmente deseas, logrando así una transformación personal desde el desastre hacia el éxito, y convirtiéndote en el arquitecto de tu propio destino, utilizando el poder de establecer objetivos claros y un método sencillo para alcanzar el éxito, que te guiará en cada decisión y te impulsará a seguir adelante con confianza y determinación.",
+          "parrafoTop": "Setting clear goals is more than just a technique; it's the first superpower that we can all activate. When you outline specific targets, the universe begins to align in your favor. It’s not merely about wishing for something, but about defining it sharply, visualizing it, and committing to reach it. Each step se convierte en una oportunidad para transformar tu vida y acercarte a tus sueños, utilizando la metodología adecuada para alcanzar el éxito y así activar tus superpoderes en la realidad aumentada, lo que te permitirá mejorar personal y profesionalmente, y vivir la vida que realmente deseas, logrando así una transformación personal desde el desastre hacia el éxito, y convirtiéndote en el arquitecto de tu propio destino, utilizando el poder de establecer objetivos claros y un método sencillo para alcanzar el éxito, que te guiará en cada decisión y te impulsará a seguir adelante con confianza y determinación, mientras te enfrentas a los desafíos y aprovechas cada oportunidad que se presente en tu camino hacia el éxito.",
           "subtitulo": "How to Define Goals That Transform You?",
           "parrafoBot": "Utilizing a simple methodology to achieve success is essential. There’s no need to complicate life with elaborate plans. The key is to break down those big objectives into smaller steps. Each of these steps turns into a victory that propels you toward the final goal."
         },
@@ -14824,7 +15673,7 @@
           {
             "gesture_type": "sensory_instruction",
             "sensory_anchor": "sight",
-            "phrase": "🌅 Visualize your goals clearly. Imagine how it feels to achieve them and let that feeling guide your cada paso hacia el éxito personal y la mejora continua en tu vida, utilizando los superpoderes que te ayudarán a transformar tu realidad y alcanzar tus objetivos claros con una metodología sencilla y efectiva que te permitirá avanzar con confianza hacia la realización de tus sueños y el cumplimiento de tus metas.",
+            "phrase": "🌅 Visualize your goals clearly. Imagine how it feels to achieve them and let that feeling guide your cada paso hacia el éxito personal y la mejora continua en tu vida, utilizando los superpoderes que te ayudarán a transformar tu realidad y alcanzar tus objetivos claros con una metodología sencilla y efectiva que te permitirá avanzar con confianza hacia la realización de tus sueños y el cumplimiento de tus metas, mientras aplicas el poder de establecer objetivos claros y te embarcas en un viaje de transformación personal desde el desastre.",
             "role_symphonic": "deepen",
             "mood_axis": 0.4,
             "value_axis": null,
@@ -15311,7 +16160,7 @@
     {
       "titulo": "Law of Success",
       "autor": "Napoleon Hill",
-      "tagline": "Whatever the mind can conceive and believe it can achieve. More than a guide to financial success. The Law of Success is a philosophy of life a system for unlocking human potential mastering your mindset and creating a life of abundance purpose and influence. With clarity conviction and timeless wisdom Hill teaches that success begins within-with thoughts habits and the courage to turn vision into reality, emphasizing the power of positive thinking, the importance of setting clear goals, and the necessity of self-discipline para alcanzar el verdadero potencial humano y vivir una vida plena de éxito, felicidad y realización personal, utilizando la mentalidad de éxito y la visualización creativa como herramientas fundamentales para lograr un futuro brillante y satisfactorio, donde cada individuo puede manifestar sus sueños y alcanzar sus metas más ambiciosas, siempre recordando que el verdadero éxito se construye desde adentro hacia afuera, cultivando una mentalidad positiva y enfocada en el crecimiento personal.",
+      "tagline": "Whatever the mind can conceive and believe it can achieve. More than a guide to financial success. The Law of Success is a philosophy of life a system for unlocking human potential mastering your mindset and creating a life of abundance purpose and influence. With clarity conviction and timeless wisdom Hill teaches that success begins within-with thoughts habits and the courage to turn vision into reality, emphasizing the power of positive thinking, the importance of setting clear goals, and the necessity of self-discipline para alcanzar el verdadero potencial humano y vivir una vida plena de éxito, felicidad y realización personal, utilizando la mentalidad de éxito y la visualización creativa como herramientas fundamentales para lograr un futuro brillante y satisfactorio, donde cada individuo puede manifestar sus sueños y alcanzar sus metas más ambiciosas, siempre recordando que el verdadero éxito se construye desde adentro hacia afuera, cultivando una mentalidad positiva y enfocada en el crecimiento personal, y aplicando los principios de autodisciplina y visualización creativa para transformar sus aspiraciones en logros concretos.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/aa/bd/2f/aabd2f82-befe-0944-9007-a9881566947c/1062335359.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/aa/bd/2f/aabd2f82-befe-0944-9007-a9881566947c/1062335359.jpg/626x0w.jpg",
       "isbn": "",
@@ -23845,7 +24694,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "El Hombre más inteligente de la historia",
@@ -28970,7 +29819,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "Encuentro",
@@ -32388,7 +33237,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "El mundo exterior no existe",
@@ -45919,7 +46768,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "El prozac de Séneca",
@@ -96015,7 +96864,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.111Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -104474,7 +105323,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.112Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -112139,7 +112988,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-07-31T20:13:51.079Z"
+      "_audit_timestamp": "2026-08-04T17:19:15.112Z"
     },
     {
       "titulo": "Suscritos",
@@ -113864,11 +114713,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 88,
-    "total": 134,
-    "last_audit": "2026-07-31T20:13:51.079Z",
-    "healing_rotation_idx": 27,
+    "next_edition_number": 89,
+    "total": 135,
+    "last_audit": "2026-08-04T17:19:15.112Z",
+    "healing_rotation_idx": 28,
     "last_healing_book": "Conciencia",
-    "last_healing_timestamp": "2026-07-31T20:29:36.151Z"
+    "last_healing_timestamp": "2026-08-04T17:36:22.410Z"
   }
 }
