@@ -1,6 +1,861 @@
 {
   "libros": [
     {
+      "titulo": "Las Conferencias De Edimburgo",
+      "autor": "Thomas Troward",
+      "tagline": "",
+      "portada": "https://covers.openlibrary.org/b/id/12407471-L.jpg",
+      "portada_url": "https://covers.openlibrary.org/b/id/12407471-L.jpg",
+      "isbn": "",
+      "titulo_es": "Las Conferencias De Edimburgo",
+      "titulo_en": "The Edinburgh Lectures",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "claridad",
+        "empoderamiento",
+        "introspección",
+        "transformación"
+      ],
+      "palabras_en": [
+        "clarity",
+        "responsibility",
+        "manifestation",
+        "understanding"
+      ],
+      "frases": [
+        "🕰 Dedica un momento a reflexionar sobre tus pensamientos diarios. ¿Qué predominan en tu Acción Mental y cómo influyen en tus Condiciones Materiales?",
+        "🌌 Al considerar cómo los Principios Naturales se manifiestan en nuestra vida diaria, es fundamental reconocer su influencia en cada pensamiento y acción que emprendemos.",
+        "👁 Imagina una semilla: en su interior, todo el potencial de un gran árbol espera ser cultivado.",
+        "🌊 La mente es el arquitecto; la acción, el constructor de la realidad."
+      ],
+      "frases_en": [
+        "🔭 Visualize your thoughts as the architects of your reality. Allow them to shape the world around you.",
+        "🌌 Consider what you are manifesting right now. Are your thoughts aligned with your true desires?",
+        "🚶 Imagine your thoughts as seeds planted in fertile soil, each one growing into the reality you wish.",
+        "🕰 The mind is a powerful tool; what it nurtures, it will eventually harvest."
+      ],
+      "frases_og": [
+        "🌓 ¿Qué realidad estás creando con tus pensamientos hoy?",
+        "🪞 La Acción Mental es el primer paso hacia la manifestación material.",
+        "⚡ ¿Cuántas oportunidades se pierden por no comprender nuestra mente?",
+        "🌿 Pensar es crear; crear es vivir en armonía con la naturaleza."
+      ],
+      "frases_og_en": [
+        "🌓 Mental Action shapes our material reality daily.",
+        "🪞 Embrace the power of your thoughts. Transform them into action.",
+        "⚡ What if your thoughts were the architects of your reality?",
+        "🌿 Thoughts are the seeds; reality is the garden — cultivate wisely."
+      ],
+      "colores": [
+        "#F17EA3",
+        "#30E8AD",
+        "#AE131F",
+        "#0B655E"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFEF",
+      "tarjeta": {
+        "titulo": "La Mente Como Fuente de Realidad",
+        "parrafoTop": "La conexión entre la Acción Mental y las Condiciones Materiales es innegable: lo que pensamos y creemos se manifiesta en nuestro mundo. Esta relación no es meramente teórica; es el fundamento sobre el cual se construye nuestra realidad. [H]Al comprender estos Principios Naturales, podemos dirigir nuestra mente hacia la materialidad y crear la realidad que deseamos.[/H]",
+        "subtitulo": "¿Cómo transformar tu pensamiento en acción material?",
+        "parrafoBot": "[H]La práctica consciente de estos principios nos brinda un punto de partida claro.[/H] Con cada pensamiento, moldeamos nuestra existencia, y es nuestra responsabilidad aprender a dirigir esa energía mental hacia la creación de las condiciones que deseamos experimentar.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La Mente Como Fuente de Realidad",
+        "parrafoTop": "La conexión entre la Acción Mental y las Condiciones Materiales es innegable: lo que pensamos y creemos se manifiesta en nuestro mundo. Esta relación no es meramente teórica; es el fundamento sobre el cual se construye nuestra realidad. [H]Al comprender estos Principios Naturales, podemos dirigir nuestra mente hacia la materialidad y crear la realidad que deseamos.[/H]",
+        "subtitulo": "¿Cómo transformar tu pensamiento en acción material?",
+        "parrafoBot": "[H]La práctica consciente de estos principios nos brinda un punto de partida claro.[/H] Con cada pensamiento, moldeamos nuestra existencia, y es nuestra responsabilidad aprender a dirigir esa energía mental hacia la creación de las condiciones que deseamos experimentar.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La Mente Como Fuente de Realidad",
+        "parrafoTop": "La conexión entre la Acción Mental y las Condiciones Materiales es innegable: lo que pensamos y creemos se manifiesta en nuestro mundo. Esta relación no es meramente teórica; es el fundamento sobre el cual se construye nuestra realidad. [H]Al comprender estos Principios Naturales, podemos dirigir nuestra mente hacia la materialidad y crear la realidad que deseamos.[/H]",
+        "subtitulo": "¿Cómo transformar tu pensamiento en acción material?",
+        "parrafoBot": "[H]La práctica consciente de estos principios nos brinda un punto de partida claro.[/H] Con cada pensamiento, moldeamos nuestra existencia, y es nuestra responsabilidad aprender a dirigir esa energía mental hacia la creación de las condiciones que deseamos experimentar.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Mind as the Source of Reality",
+        "parrafoTop": "[H]The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world[/H]. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives.",
+        "subtitulo": "How to transform thought into material action?",
+        "parrafoBot": "[H]The conscious practice of these principles gives us a clear starting point.[/H] With each thought, we shape our existence, and it is our responsibility to learn how to direct that mental energy toward creating the conditions we wish to experience.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Mind as the Source of Reality",
+        "parrafoTop": "[H]The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world[/H]. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives.",
+        "subtitulo": "How to transform thought into material action?",
+        "parrafoBot": "[H]The conscious practice of these principles gives us a clear starting point.[/H] With each thought, we shape our existence, and it is our responsibility to learn how to direct that mental energy toward creating the conditions we wish to experience.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Mind as the Source of Reality",
+        "parrafoTop": "[H]The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world[/H]. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives.",
+        "subtitulo": "How to transform thought into material action?",
+        "parrafoBot": "[H]The conscious practice of these principles gives us a clear starting point.[/H] With each thought, we shape our existence, and it is our responsibility to learn how to direct that mental energy toward creating the conditions we wish to experience.",
+        "style": {
+          "accent": "#E21256",
+          "paper": "#F0EFEF",
+          "ink": "#1C1719",
+          "border": "#908F8F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Las%20Conferencias%20De%20Edimburgo%20Thomas%20Troward%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Edinburgh%20Lectures%20Thomas%20Troward%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-08-09T04:05:46.606Z",
+        "workflow_run_id": "31293805322",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.48,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Las Conferencias De Edimburgo",
+          "titulo_en": "The Edinburgh Lectures",
+          "autor_completo": "Thomas Troward",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "Principios Naturales que rigen la relación entre Acción Mental y Condiciones Materiales",
+            "Punto de partida claro para el estudio práctico de la mente",
+            "Interacción entre la mente y la materialidad"
+          ],
+          "key_terms": [
+            "Acción Mental",
+            "Condiciones Materiales",
+            "Principios Naturales"
+          ],
+          "authorial_voice_notes": "Troward utiliza una voz reflexiva y didáctica, orientada a enseñar y guiar al lector en un entendimiento práctico de los principios mentales."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda temas de autoconocimiento y acción mental, examinando cómo estas interacciones afectan la vida material y el entorno de una persona. Sin embargo, el texto no se centra en incentivos o decisiones estratégicas, sino en una búsqueda de comprensión personal respecto a la mente y su poder. En este sentido, aplica de forma indirecta a los principios de la teoría de juegos en el contexto de decisiones personales y conciencia mental.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 330.625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_moderno",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La Mente Como Fuente de Realidad",
+          "parrafoTop": "La conexión entre la Acción Mental y las Condiciones Materiales es innegable: lo que pensamos y creemos se manifiesta en nuestro mundo. Esta relación no es meramente teórica; es el fundamento sobre el cual se construye nuestra realidad. Al comprender estos Principios Naturales, podemos dirigir nuestra mente hacia la obtención de resultados tangibles en nuestra vida.",
+          "subtitulo": "¿Cómo transformar tu pensamiento en acción material?",
+          "parrafoBot": "La práctica consciente de estos principios nos brinda un punto de partida claro. Con cada pensamiento, moldeamos nuestra existencia, y es nuestra responsabilidad aprender a dirigir esa energía mental hacia la creación de las condiciones que deseamos experimentar."
+        },
+        "card_en": {
+          "titulo": "The Mind as the Source of Reality",
+          "parrafoTop": "The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives, utilizando los principios que rigen la interacción entre la mente y la materialidad.",
+          "subtitulo": "How to transform thought into material action?",
+          "parrafoBot": "The conscious practice of these principles gives us a clear starting point. With each thought, we shape our existence, and it is our responsibility to learn how to direct that mental energy toward creating the conditions we wish to experience."
+        },
+        "emotional_words_es": [
+          "claridad",
+          "empoderamiento",
+          "introspección",
+          "transformación"
+        ],
+        "emotional_words_en": [
+          "clarity",
+          "responsibility",
+          "manifestation",
+          "understanding"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🌓 ¿Qué realidad estás creando con tus pensamientos hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🪞 La Acción Mental es el primer paso hacia la manifestación material.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚡ ¿Cuántas oportunidades se pierden por no comprender nuestra mente?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌿 Pensar es crear; crear es vivir en armonía con la naturaleza.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🌓 Mental Action shapes our material reality daily.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🪞 Embrace the power of your thoughts. Transform them into action.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "⚡ What if your thoughts were the architects of your reality?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌿 Thoughts are the seeds; reality is the garden — cultivate wisely.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 Dedica un momento a reflexionar sobre tus pensamientos diarios. ¿Qué predominan en tu Acción Mental y cómo influyen en tus Condiciones Materiales?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Al considerar cómo los Principios Naturales se manifiestan en nuestra vida diaria, es fundamental reconocer su influencia en cada pensamiento y acción que emprendemos.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina una semilla: en su interior, todo el potencial de un gran árbol espera ser cultivado.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 La mente es el arquitecto; la acción, el constructor de la realidad.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Visualize your thoughts as the architects of your reality. Allow them to shape the world around you.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🌌 Consider what you are manifesting right now. Are your thoughts aligned with your true desires?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Imagine your thoughts as seeds planted in fertile soil, each one growing into the reality you wish.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🕰 The mind is a powerful tool; what it nurtures, it will eventually harvest.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.86,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.75,
+          "combined": 0.86,
+          "signals": {
+            "bookIdentityConfidence": 0.8576000000000001,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.75
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.8576000000000001,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Las Conferencias De Edimburgo",
+          "autor_completo": "Thomas Troward",
+          "titulo_api": "Las Conferencias de Edimburgo sobre Ciencia Mental",
+          "autor_api": "THOMAS. TROWARD, Marcela Allen Herrera",
+          "subtitulo": "",
+          "año": "2017",
+          "editorial": null,
+          "paginas": 140,
+          "isbn": "9781974501342",
+          "isbn13": "9781974501342",
+          "isbn10": "1974501345",
+          "categorias": [],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=ym6ktAEACAAJ&dq=intitle:Las+Conferencias+De+Edimburgo+inauthor:Thomas+Troward&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 0.7690000000000001,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja claramente los principios de la relación entre Acción Mental y Condiciones Materiales, conceptos centrales en la sinopsis del libro. Utiliza términos específicos como 'Principios Naturales' y menciona la importancia de dirigir la mente, lo que está alineado con el propósito del libro. Sin embargo, algunas frases son un poco más generales y podrían aplicarse a otros gé"
+        },
+        "en": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects the book's themes of mental action and material conditions, aligning with the principles discussed in the official synopsis. Phrases like 'Mental Action' and 'Material Conditions' are directly related to the book's focus. However, some parts are somewhat generic and could apply to various self-help contexts, which slightly lowers the score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en la práctica personal.",
+          "elapsed_ms": 938,
+          "usage": {
+            "prompt_tokens": 404,
+            "completion_tokens": 26,
+            "total_tokens": 430,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y enfoque en la práctica de principios mentales.",
+          "elapsed_ms": 977,
+          "usage": {
+            "prompt_tokens": 393,
+            "completion_tokens": 28,
+            "total_tokens": 421,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 851,
+        "total_ms": 977
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 330.625,
+          "adjusted_hue": 340.625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EA3",
+          "--palette-1": "#30E8AD",
+          "--palette-2": "#AE131F",
+          "--palette-3": "#0B655E",
+          "--accent": "#E21256",
+          "--accent-soft": "#E2125638",
+          "--accent-glow": "#E212566b",
+          "--paper": "#F0EFEF",
+          "--ink": "#1C1719",
+          "--border": "#908F8F",
+          "--highlight-bg": "#C7104Cd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-08-09T04-05-46",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 22,
+        "franja": "noche",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 67240,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15389,
+          "palette": 0,
+          "content_es": 17578,
+          "judge_es": 866,
+          "content_en": 16300,
+          "judge_en": 873,
+          "voice": 851,
+          "voice_extended": 15383,
+          "highlight_judge_es_parrafoTop": 647,
+          "highlight_judge_es_parrafoTop_retry": 647,
+          "highlight_judge_es_parrafoBot": 639,
+          "highlight_judge_en_parrafoTop": 649,
+          "highlight_judge_en_parrafoTop_retry": 652,
+          "highlight_judge_en_parrafoBot": 642,
+          "csal": 7408
+        },
+        "elapsed_ms_total": 26674,
+        "elapsed_ms_by_phase": {
+          "grounding": 8,
+          "anchors": 4167,
+          "palette": 0,
+          "cover_fallback": 1628,
+          "content_es": 8211,
+          "judge_es": 1537,
+          "content_en": 5816,
+          "judge_en": 1505,
+          "voice": 978,
+          "voice_extended": 2819,
+          "highlight_judge": 5394,
+          "lens_compatibility": 1580,
+          "csal": 29488,
+          "post_processing": 36469
+        },
+        "llm_calls_count": 40,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.2,
+          "familia": 0.1,
+          "espiritu": 0.8,
+          "relaciones": 0.2,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.9
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que tus pensamientos no tienen impacto en tu vida diaria",
+          "después de una experiencia que te hace cuestionar la conexión entre mente y realidad",
+          "cuando deseas entender cómo tus creencias están moldeando tus experiencias",
+          "al buscar formas prácticas de aplicar la ley de atracción en tu vida",
+          "antes de tomar una decisión importante y quieres asegurarte de que estás mentalmente alineado",
+          "cuando te sientes atrapado en un ciclo de pensamientos negativos y buscas una salida",
+          "al intentar entender por qué ciertas metas no se materializan a pesar de tus esfuerzos",
+          "cuando te preguntas cómo las expectativas afectan los resultados de tus acciones",
+          "al reflexionar sobre cómo la percepción influye en la realidad que experimentas",
+          "después de un fracaso y te preguntas qué rol jugó tu mentalidad",
+          "cuando sientes curiosidad sobre cómo la mentalidad puede afectar la salud física",
+          "al buscar un entendimiento más profundo de cómo la mente y el cuerpo interactúan",
+          "antes de embarcarte en un proyecto nuevo y deseas alinear tu mente con tus objetivos",
+          "cuando quieres explorar el poder del pensamiento positivo de manera práctica",
+          "al sentir que estás en un punto muerto y buscas cambiar tu enfoque mental",
+          "después de leer sobre el poder de la mente y querer aplicarlo en situaciones reales",
+          "cuando te preguntas si tus pensamientos pueden realmente influir en tus circunstancias",
+          "al querer descubrir cómo el pensamiento creativo puede abrir nuevas posibilidades",
+          "cuando necesitas motivación y piensas en cómo tus pensamientos pueden impulsar la acción",
+          "al sentir la necesidad de un cambio de perspectiva para mejorar tu bienestar",
+          "cuando buscas entender el impacto de tus emociones en la creación de tu realidad",
+          "después de un día estresante y te cuestionas cómo mantener una mente calmada",
+          "cuando estás interesado en cómo las expectativas colectivas afectan a la sociedad",
+          "al buscar maneras de manifestar tus deseos en la realidad física",
+          "antes de una reunión importante y deseas preparar tu mentalidad para el éxito",
+          "cuando exploras cómo el pensamiento consciente puede transformar situaciones cotidianas",
+          "al intentar comprender cómo la mente subconsciente influye en tus acciones diarias",
+          "cuando te sientes desconectado de tus objetivos y quieres realinear tu enfoque mental",
+          "al buscar inspiración en la relación entre la creatividad mental y la innovación",
+          "cuando te preguntas cómo mantener una mentalidad positiva en tiempos difíciles",
+          "después de observar cómo tus pensamientos afectan tus relaciones personales",
+          "cuando quieres profundizar en el estudio de cómo la mente genera cambios tangibles"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "curiosidad",
+            "frustración",
+            "esperanza",
+            "motivación",
+            "duda",
+            "confusión",
+            "inspiración",
+            "claridad",
+            "desaliento",
+            "satisfacción"
+          ],
+          "objetos": [
+            "pensamientos",
+            "creencias",
+            "expectativas",
+            "metas",
+            "resultados",
+            "percepciones",
+            "mentalidad",
+            "cuerpo",
+            "acciones"
+          ],
+          "contextos": [
+            "vida diaria",
+            "momentos de decisión",
+            "situaciones de estrés",
+            "experiencias de fracaso",
+            "procesos creativos",
+            "momentos de reflexión",
+            "entornos laborales",
+            "relaciones personales",
+            "proyectos nuevos",
+            "tiempos difíciles"
+          ],
+          "verbos": [
+            "reflexionar",
+            "cuestionar",
+            "entender",
+            "aplicar",
+            "alinear",
+            "explorar",
+            "transformar",
+            "manifestar",
+            "influir",
+            "crear"
+          ]
+        },
+        "concept_tags": [
+          "acción mental",
+          "condiciones materiales",
+          "ley de atracción",
+          "mentalidad positiva",
+          "pensamiento creativo",
+          "mente subconsciente",
+          "percepción y realidad",
+          "mente y cuerpo",
+          "pensamiento consciente",
+          "influencia mental",
+          "creación de realidad",
+          "principios naturales"
+        ],
+        "anti_patterns": [
+          "cuando buscas consejos sobre manejo del tiempo",
+          "si necesitas información científica sobre neurociencia",
+          "si esperas técnicas de meditación específicas",
+          "para obtener instrucciones de ejercicio físico",
+          "si buscas terapia psicológica profesional"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🧭"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌱"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🛠️"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o un mensaje del autor, lo que sugiere que está dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un concepto que parece ser parte de la narrativa o enseñanza del libro, sugiriendo un enfoque autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que podría estar en el contexto del libro, sugiriendo una voz introspectiva del autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión profunda que parece ser parte del contenido del libro, mostrando la voz del autor en primera persona."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un contenido introspectivo, típico de un texto que se encuentra dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que parece ser parte del contenido del libro, sugiriendo una conexión directa con los temas tratados por el autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora que invita a la reflexión, típica de la voz autoral dentro del libro, sugiriendo un mensaje profundo."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión profunda que parece ser parte del contenido del libro, mostrando voz autoral y filosofía interna."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a concept that feels like a direct insight or assertion from the author, suggesting a philosophical idea that could be part of the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and action, suggesting a direct engagement with the reader, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or philosophical exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical idea that feels like a direct expression of the author's thoughts, fitting within the narrative or thematic content of a book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct engagement with the reader, encouraging introspection and visualization, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase engages the reader directly, prompting introspection, which is characteristic of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical concept that feels like a direct expression from the author's voice, inviting readers to visualize and engage with the content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a philosophical idea that feels like a direct expression from the author's voice, suggesting a deeper reflection within the text."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-08-09T04:06:49.747Z",
+      "_slug": "las-conferencias-de-edimburgo",
+      "_edicion_numero": 89
+    },
+    {
       "titulo": "The Next Conversation",
       "autor": "Jefferson Fisher",
       "tagline": "",
@@ -2774,7 +3629,7 @@
         },
         "card_en": {
           "titulo": "The Power of Ganbatte",
-          "parrafoTop": "The Japanese philosophy of ganbatte teaches us that it’s not just about reaching the goal, but about valuing the effort we put into each step along the way. This perspective invites us to face challenges with a mindset of perseverance, reminding us that every small advance counts. By practicing ganbatte, we cultivate la paciencia y la conciencia necesarias para enfrentar la vida con resiliencia y autoeficacia, aplicando los principios del mindfulness en nuestra vida diaria y aprendiendo a disfrutar del proceso en lugar de enfocarnos únicamente en el resultado, lo que nos permite vivir plenamente y encontrar belleza en cada momento, siguiendo la filosofía del wabi sabi y aplicando estos principios en cada aspecto de nuestra existencia.",
+          "parrafoTop": "The Japanese philosophy of ganbatte teaches us that it’s not just about reaching the goal, but about valuing the effort we put into each step along the way. This perspective invites us to face challenges with a mindset of perseverance, reminding us that every small advance counts. By practicing ganbatte, we cultivate la paciencia y la conciencia necesarias para enfrentar la vida con resiliencia y autoeficacia, aplicando los principios del mindfulness en nuestra vida diaria y aprendiendo a disfrutar del proceso en lugar de enfocarnos únicamente en el resultado, lo que nos permite vivir plenamente y encontrar belleza en cada momento, siguiendo la filosofía del wabi sabi y aplicando estos principios en cada aspecto de nuestra existencia, lo que nos ayuda a desarrollar una vida más significativa y satisfactoria.",
           "subtitulo": "How can you transform your obstacles into opportunities?",
           "parrafoBot": "Overcoming obstacles in daily life is not a matter of luck; it is a matter of mindset. By embracing the ganbatte philosophy, we learn to see each setback as an opportunity to grow. Instead of getting frustrated by what we cannot control, we focus our energy on what we can do, right here and now."
         },
@@ -3636,7 +4491,7 @@
         },
         "card_en": {
           "titulo": "The Colossal Mission Mindset",
-          "parrafoTop": "The colossal mission mindset drives those who seek not only success but a lasting legacy. It is a way of thinking that transcends daily tasks, focusing on grand and complex problems, demanding maximum creativity, discipline, and tenacity. This combination of elements is what has propelled Elon Musk to the forefront of la construcción de un legado a través de decisiones audaces y un enfoque en el trabajo significativo, donde cada acción está alineada con un propósito claro y una intensa dedicación a la innovación, que refleja la mentalidad de misión colosal y la importancia de la creatividad, disciplina y obstinación en su trayectoria, así como la necesidad de mantener un enfoque constante en el propósito y la intensidad como superpoderes en la búsqueda de un impacto duradero, que se traduce en resultados tangibles y en la capacidad de inspirar a otros a seguir su ejemplo.",
+          "parrafoTop": "The colossal mission mindset drives those who seek not only success but a lasting legacy. It is a way of thinking that transcends daily tasks, focusing on grand and complex problems, demanding maximum creativity, discipline, and tenacity. This combination of elements is what has propelled Elon Musk to the forefront de la construcción de un legado a través de decisiones audaces y un enfoque en el trabajo significativo, donde cada acción está alineada con un propósito claro y una intensa dedicación a la innovación, que refleja la mentalidad de misión colosal y la importancia de la creatividad, disciplina y obstinación en su trayectoria, así como la necesidad de mantener un enfoque constante en el propósito y la intensidad como superpoderes en la búsqueda de un impacto duradero, que se traduce en resultados tangibles y en la capacidad de inspirar a otros a seguir su ejemplo, y así dejar una huella imborrable en el mundo.",
           "subtitulo": "Are you ready to commit to a greater purpose?",
           "parrafoBot": "The pursuit of purpose and intensity transforms ordinary work into something extraordinary. When you align your passion with a colossal mission, every task takes on significance. It is not merely about working hard, but about working with intention and clarity. This is how dreams turn into reality."
         },
@@ -5334,7 +6189,7 @@
         },
         "card_en": {
           "titulo": "Freedom as the Path to Love",
-          "parrafoTop": "Freedom is the essence of true love. Without it, love becomes a trap, a duty that stifles individuality. To love authentically, one must be free from the shackles of the past and the expectations of others. Only when each individual finds their own freedom can they offer their true self to another, creando así relaciones basadas en la libertad y la felicidad, donde la libertad se convierte en la condición básica para el amor verdadero, permitiendo que florezcan conexiones genuinas y profundas que trascienden las limitaciones impuestas por la sociedad y fomentan un entorno donde cada persona puede explorar su ser auténtico y vivir plenamente, encontrando así la verdadera esencia de la felicidad y el amor en un mundo que a menudo nos encierra en expectativas ajenas, y donde la libertad se convierte en el pilar fundamental para construir relaciones significativas y satisfactorias, que nos permitan ser quienes realmente somos y experimentar el amor en su forma más pura y liberadora.",
+          "parrafoTop": "Freedom is the essence of true love. Without it, love becomes a trap, a duty that stifles individuality. To love authentically, one must be free from the shackles of the past and the expectations of others. Only when each individual finds their own freedom can they offer their true self to another, creando así relaciones basadas en la libertad y la felicidad, donde la libertad se convierte en la condición básica para el amor verdadero, permitiendo que florezcan conexiones genuinas y profundas que trascienden las limitaciones impuestas por la sociedad y fomentan un entorno donde cada persona puede explorar su ser auténtico y vivir plenamente, encontrando así la verdadera esencia de la felicidad y el amor en un mundo que a menudo nos encierra en expectativas ajenas, y donde la libertad se convierte en el pilar fundamental para construir relaciones significativas y satisfactorias, que nos permitan ser quienes realmente somos y experimentar el amor en su forma más pura y liberadora. La libertad es, por tanto, el camino hacia la autenticidad y la felicidad en nuestras vidas.",
           "subtitulo": "What does it mean to be truly free in love?",
           "parrafoBot": "Love flourishes in the fertile ground of freedom. It is a space where being finds expression without the fear of losing oneself. A true relationship does not seek possessions or sacrifices, but rather a movement of souls that meet in the deep acceptance of themselves."
         },
@@ -20507,11 +21362,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 89,
-    "total": 135,
-    "last_audit": "2026-08-04T17:19:15.112Z",
-    "healing_rotation_idx": 28,
+    "next_edition_number": 90,
+    "total": 136,
+    "last_audit": "2026-08-09T04:06:57.008Z",
+    "healing_rotation_idx": 29,
     "last_healing_book": "Conciencia",
-    "last_healing_timestamp": "2026-08-04T17:36:22.410Z"
+    "last_healing_timestamp": "2026-08-09T04:20:30.466Z"
   }
 }
