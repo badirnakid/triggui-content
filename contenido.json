@@ -1,6 +1,873 @@
 {
   "libros": [
     {
+      "titulo": "Frida para apasionados",
+      "autor": "Allan Percy",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=7BSiDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=7BSiDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9786073180962",
+      "titulo_es": "Frida para apasionados",
+      "titulo_en": "Frida for the Passionate",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "valentía",
+        "autenticidad",
+        "creatividad",
+        "intensidad"
+      ],
+      "palabras_en": [
+        "courage",
+        "intensity",
+        "authenticity",
+        "creativity"
+      ],
+      "frases": [
+        "👁 Pinta un cuadro de tu vida usando los colores que más resuenen contigo. Observa qué emociones surgen.",
+        "🗺 ¿Qué sueños has dejado de lado por miedo a ser tú mismo?",
+        "💫 Imagina cada paso que das como una pincelada en un lienzo; cada movimiento cuenta en tu obra maestra.",
+        "⏳ Cada momento vivido con intensidad es un ladrillo más en la construcción de tu legado."
+      ],
+      "frases_en": [
+        "👁 Dive into your experiences. Each moment is a brushstroke on your canvas.",
+        "🗺 What would happen if you allowed yourself to feel fully?",
+        "💫 Picture your life as a vibrant mural, each color telling your story.",
+        "🌬 In the chaos of creation, serenity finds its voice."
+      ],
+      "frases_og": [
+        "🌿 La autenticidad florece en el alma que se atreve a ser valiente.",
+        "🧭 ¿Qué colores estás eligiendo para tu propia vida?",
+        "🔍 Explora cada trazo de tu vida como lo haría Frida: con pasión.",
+        "💠 El arte de vivir se encuentra en la autenticidad y la autoexpresión."
+      ],
+      "frases_og_en": [
+        "🌿 Authenticity thrives in the courage of self-expression.",
+        "🧭 Embrace the unknown. Let your creativity flow freely.",
+        "🔍 What stories hide behind the colors of your canvas?",
+        "💠 Each stroke of life reveals the colors we dare to show."
+      ],
+      "colores": [
+        "#F17EEB",
+        "#30E83A",
+        "#AE1380",
+        "#0B6526"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0EFF0",
+      "tarjeta": {
+        "titulo": "Vivir con el color de Frida",
+        "parrafoTop": "[H]La vida de Frida Kahlo es un estallido de colores y emociones.[/H] Sus pinceladas nos enseñan que la autenticidad no se encuentra en la perfección, sino en la valentía de mostrarse tal cual somos. Cada una de sus obras es un recordatorio de que conocer nuestra verdadera esencia es el primer paso para vivir con intensidad.",
+        "subtitulo": "¿Cómo puedes liberar tu creatividad?",
+        "parrafoBot": "[H]Para liberar la creatividad interior, es fundamental atrevernos a explorar lo desconocido.[/H] Frida nos enseña que cada experiencia, incluso las más dolorosas, puede transformarse en una fuente inagotable de inspiración. La vida es un lienzo en blanco, y somos nosotros quienes decidimos los colores con los que lo pintamos",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Vivir con el color de Frida",
+        "parrafoTop": "[H]La vida de Frida Kahlo es un estallido de colores y emociones.[/H] Sus pinceladas nos enseñan que la autenticidad no se encuentra en la perfección, sino en la valentía de mostrarse tal cual somos. Cada una de sus obras es un recordatorio de que conocer nuestra verdadera esencia es el primer paso para vivir con intensidad.",
+        "subtitulo": "¿Cómo puedes liberar tu creatividad?",
+        "parrafoBot": "[H]Para liberar la creatividad interior, es fundamental atrevernos a explorar lo desconocido.[/H] Frida nos enseña que cada experiencia, incluso las más dolorosas, puede transformarse en una fuente inagotable de inspiración. La vida es un lienzo en blanco, y somos nosotros quienes decidimos los colores con los que lo pintamos",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Vivir con el color de Frida",
+        "parrafoTop": "[H]La vida de Frida Kahlo es un estallido de colores y emociones.[/H] Sus pinceladas nos enseñan que la autenticidad no se encuentra en la perfección, sino en la valentía de mostrarse tal cual somos. Cada una de sus obras es un recordatorio de que conocer nuestra verdadera esencia es el primer paso para vivir con intensidad.",
+        "subtitulo": "¿Cómo puedes liberar tu creatividad?",
+        "parrafoBot": "[H]Para liberar la creatividad interior, es fundamental atrevernos a explorar lo desconocido.[/H] Frida nos enseña que cada experiencia, incluso las más dolorosas, puede transformarse en una fuente inagotable de inspiración. La vida es un lienzo en blanco, y somos nosotros quienes decidimos los colores con los que lo pintamos",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Live with the Colors of Frida",
+        "parrafoTop": "[H]Frida Kahlo's life is an explosion of colors and emotions.[/H] Her brushstrokes teach us that authenticity is not found in perfection, but in the courage to reveal ourselves as we truly are. Each of her works serves as a reminder that knowing our true essence is the first step to living with intensity.",
+        "subtitulo": "How can you unleash your creativity?",
+        "parrafoBot": "[H]To unleash our inner creativity, we must dare to explore the unknown.[/H] Frida teaches us that every experience, even the painful ones, can be transformed into an inexhaustible source of inspiration. Life is a blank canvas, and we are the ones who decide the colors with which we paint it.",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Live with the Colors of Frida",
+        "parrafoTop": "[H]Frida Kahlo's life is an explosion of colors and emotions.[/H] Her brushstrokes teach us that authenticity is not found in perfection, but in the courage to reveal ourselves as we truly are. Each of her works serves as a reminder that knowing our true essence is the first step to living with intensity.",
+        "subtitulo": "How can you unleash your creativity?",
+        "parrafoBot": "[H]To unleash our inner creativity, we must dare to explore the unknown.[/H] Frida teaches us that every experience, even the painful ones, can be transformed into an inexhaustible source of inspiration. Life is a blank canvas, and we are the ones who decide the colors with which we paint it.",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Live with the Colors of Frida",
+        "parrafoTop": "[H]Frida Kahlo's life is an explosion of colors and emotions.[/H] Her brushstrokes teach us that authenticity is not found in perfection, but in the courage to reveal ourselves as we truly are. Each of her works serves as a reminder that knowing our true essence is the first step to living with intensity.",
+        "subtitulo": "How can you unleash your creativity?",
+        "parrafoBot": "[H]To unleash our inner creativity, we must dare to explore the unknown.[/H] Frida teaches us that every experience, even the painful ones, can be transformed into an inexhaustible source of inspiration. Life is a blank canvas, and we are the ones who decide the colors with which we paint it.",
+        "style": {
+          "accent": "#E212D8",
+          "paper": "#F0EFF0",
+          "ink": "#1C171B",
+          "border": "#908F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Frida%20para%20apasionados%20Allan%20Percy%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Frida%20for%20the%20Passionate%20Allan%20Percy%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-08-15T14:57:51.925Z",
+        "workflow_run_id": "31891332977",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.56,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Frida para apasionados",
+          "titulo_en": "Frida for the Passionate",
+          "autor_completo": "Allan Percy",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "60 inspiraciones cotidianas para vivir con color",
+            "conocer nuestra verdadera esencia",
+            "perseguir los propios sueños",
+            "vivir con intensidad el momento a momento",
+            "liberar la creatividad interior"
+          ],
+          "key_terms": [
+            "Frida Kahlo",
+            "autenticidad",
+            "creatividad",
+            "autoexpresión",
+            "valentía"
+          ],
+          "authorial_voice_notes": "La voz de Allan Percy en este libro es accesible y motivadora, invitando al lector a explorar y abrazar su verdadera esencia a través de la vida y el arte de Frida Kahlo."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la autodeterminación y la autenticidad a través de la vida de Frida Kahlo, lo cual se conecta bien con la idea de autoconocimiento y la búsqueda de los propios sueños. No hay un análisis explícito de teoría de juegos o cronobiología, pero sí toca aspectos de las emociones humanas y su expresión creativa.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 293.125,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "Vivir con el color de Frida",
+          "parrafoTop": "La vida de Frida Kahlo es un estallido de colores y emociones. Sus pinceladas nos enseñan que la autenticidad no se encuentra en la perfección, sino en la valentía de mostrarse tal cual somos. Cada una de sus obras es un recordatorio de que conocer nuestra verdadera esencia es el primer paso para vivir con intensidad.",
+          "subtitulo": "¿Cómo puedes liberar tu creatividad?",
+          "parrafoBot": "Para liberar la creatividad interior, es fundamental atrevernos a explorar lo desconocido. Frida nos enseña que cada experiencia, incluso las más dolorosas, puede transformarse en una fuente inagotable de inspiración. La vida es un lienzo en blanco, y somos nosotros quienes decidimos los colores con los que lo pintamos"
+        },
+        "card_en": {
+          "titulo": "Live with the Colors of Frida",
+          "parrafoTop": "Frida Kahlo's life is an explosion of colors and emotions. Her brushstrokes teach us that authenticity is not found in perfection, but in the courage to reveal ourselves as we truly are. Each of her works serves as a reminder that knowing our true essence is the first step to living with intensity.",
+          "subtitulo": "How can you unleash your creativity?",
+          "parrafoBot": "To unleash our inner creativity, we must dare to explore the unknown. Frida teaches us that every experience, even the painful ones, can be transformed into an inexhaustible source of inspiration. Life is a blank canvas, and we are the ones who decide the colors with which we paint it."
+        },
+        "emotional_words_es": [
+          "valentía",
+          "autenticidad",
+          "creatividad",
+          "intensidad"
+        ],
+        "emotional_words_en": [
+          "courage",
+          "intensity",
+          "authenticity",
+          "creativity"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🌿 La autenticidad florece en el alma que se atreve a ser valiente.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🧭 ¿Qué colores estás eligiendo para tu propia vida?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔍 Explora cada trazo de tu vida como lo haría Frida: con pasión.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "💠 El arte de vivir se encuentra en la autenticidad y la autoexpresión.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🌿 Authenticity thrives in the courage of self-expression.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🧭 Embrace the unknown. Let your creativity flow freely.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔍 What stories hide behind the colors of your canvas?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "💠 Each stroke of life reveals the colors we dare to show.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Pinta un cuadro de tu vida usando los colores que más resuenen contigo. Observa qué emociones surgen.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 ¿Qué sueños has dejado de lado por miedo a ser tú mismo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 Imagina cada paso que das como una pincelada en un lienzo; cada movimiento cuenta en tu obra maestra.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Cada momento vivido con intensidad es un ladrillo más en la construcción de tu legado.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Dive into your experiences. Each moment is a brushstroke on your canvas.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 What would happen if you allowed yourself to feel fully?",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Picture your life as a vibrant mural, each color telling your story.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 In the chaos of creation, serenity finds its voice.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.81,
+          "grounding_judge": 0.85,
+          "combined": 0.89,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.809375,
+            "judgeScore": 0.8500000000000001
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Frida para apasionados",
+          "autor_completo": "Allan Percy",
+          "titulo_api": "Frida para apasionados",
+          "autor_api": "Allan Percy",
+          "subtitulo": "60 píldoras para crear tu vida a tu manera",
+          "año": "2019",
+          "editorial": "DEBOLSILLO",
+          "paginas": 152,
+          "isbn": "9786073180962",
+          "isbn13": "9786073180962",
+          "isbn10": "6073180969",
+          "categorias": [
+            "Self-Help"
+          ],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=7BSiDwAAQBAJ&printsec=frontcover&dq=intitle:Frida+para+apasionados+inauthor:Allan+Percy&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content strongly reflects the themes of Frida Kahlo's life and art as described in the ground truth. It emphasizes authenticity, creativity, and living with intensity, which are key concepts from the book. The phrases about knowing one's essence and transforming experiences into inspiration are directly aligned with the book's messages. However, it is slightly more poetic and less structured, "
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content reflects specific themes from the ground truth, such as authenticity, creativity, and living with intensity, which are central to Frida Kahlo's philosophy as presented in the book. Phrases like 'knowing our true essence' and 'unleash our inner creativity' directly relate to the book's focus on personal growth and inspiration drawn from Kahlo's life. However, while it is specific to the"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y reflexiones personales sobre Frida.",
+          "elapsed_ms": 1079,
+          "usage": {
+            "prompt_tokens": 428,
+            "completion_tokens": 27,
+            "total_tokens": 455,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y tono coherente con la obra.",
+          "elapsed_ms": 1093,
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 27,
+            "total_tokens": 437,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 892,
+        "total_ms": 1093
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 293.125,
+          "adjusted_hue": 303.125,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.42",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F17EEB",
+          "--palette-1": "#30E83A",
+          "--palette-2": "#AE1380",
+          "--palette-3": "#0B6526",
+          "--accent": "#E212D8",
+          "--accent-soft": "#E212D838",
+          "--accent-glow": "#E212D86b",
+          "--paper": "#F0EFF0",
+          "--ink": "#1C171B",
+          "--border": "#908F90",
+          "--highlight-bg": "#C710BEd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-08-15T14-57-51",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 60305,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15638,
+          "palette": 0,
+          "content_es": 17780,
+          "judge_es": 1051,
+          "content_en": 16482,
+          "judge_en": 1038,
+          "voice": 892,
+          "voice_extended": 7424,
+          "highlight_judge_es_parrafoTop": 644,
+          "highlight_judge_es_parrafoBot": 643,
+          "highlight_judge_en_parrafoTop": 639,
+          "highlight_judge_en_parrafoBot": 647,
+          "csal": 3201
+        },
+        "elapsed_ms_total": 29367,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 6489,
+          "palette": 1,
+          "cover_fallback": 67,
+          "content_es": 8605,
+          "judge_es": 1931,
+          "content_en": 8103,
+          "judge_en": 1787,
+          "voice": 1094,
+          "voice_extended": 1284,
+          "highlight_judge": 4027,
+          "lens_compatibility": 2726,
+          "csal": 11388,
+          "post_processing": 18148
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.1,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.2,
+          "espiritu": 0.8,
+          "relaciones": 0.6,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando siento que mi vida se ha vuelto monótona",
+          "después de una decepción amorosa y necesito redescubrirme",
+          "cuando me cuesta tomar decisiones sobre mi futuro",
+          "antes de enfrentar un cambio importante en mi vida",
+          "cuando quiero encontrar mi pasión pero no sé por dónde empezar",
+          "después de una experiencia dolorosa que me ha dejado inseguro",
+          "cuando busco inspiración en momentos difíciles",
+          "cuando siento que debo ser auténtico pero temo el juicio ajeno",
+          "cuando quiero aprender a vivir el momento presente",
+          "antes de iniciar un proyecto creativo que me apasiona",
+          "cuando necesito salir de mi zona de confort y atreverme a más",
+          "cuando busco maneras de conectar con mis emociones y expresarlas creativamente",
+          "cuando quiero aprender a amarme y a aceptar mis imperfecciones",
+          "cuando me siento perdido y busco un propósito en mi vida",
+          "cuando anhelo seguir mis sueños pero tengo miedo al fracaso",
+          "cuando busco un nuevo enfoque para enfrentar mis problemas cotidianos",
+          "cuando quiero recordar que la vida es un arte y debo vivirla con pasión",
+          "después de ver una película o leer un libro que me inspira a ser mejor",
+          "cuando quiero aprender a dejar ir lo que no me sirve y avanzar hacia lo que deseo",
+          "cuando necesito un empujón para atreverme a ser quien realmente soy",
+          "cuando busco formas de encontrar belleza en lo cotidiano.",
+          "cuando quiero aprender a ser más valiente en mis decisiones.",
+          "cuando quiero entender cómo Frida Kahlo enfrentó sus dificultades.",
+          "cuando estoy cansado de seguir las expectativas de los demás.",
+          "cuando busco formas de expresar mis emociones a través del arte.",
+          "cuando quiero encontrar un equilibrio entre mis sueños y la realidad.",
+          "cuando deseo inspirarme en figuras históricas para potenciar mi vida.",
+          "cuando quiero explorar la relación entre el dolor y la creatividad.",
+          "cuando quiero recordar que cada experiencia cuenta en mi historia.",
+          "cuando me siento estancado y busco un cambio significativo.",
+          "cuando quiero aprender a vivir más intensamente.",
+          "cuando me doy cuenta de que la vida es un lienzo en blanco y quiero pintarlo.",
+          "cuando quiero ser más auténtico en mis relaciones.",
+          "cuando busco maneras de conectar con mi esencia.",
+          "cuando quiero aprender a disfrutar del proceso en lugar de solo enfocarme en el resultado.",
+          "cuando busco consejos sobre cómo vivir con más intensidad.",
+          "cuando quiero recordar que cada pequeño paso es importante en mi camino.",
+          "cuando anhelo ser más creativo en mi vida diaria.",
+          "cuando quiero recordar que el amor propio es esencial para una vida plena.",
+          "cuando necesito encontrar nuevas formas de ver mi realidad.",
+          "cuando busco inspiración en la vida de artistas para impulsar mis propios sueños.",
+          "cuando quiero aprender a apreciar los momentos simples de la vida.",
+          "cuando busco formas de superar obstáculos a través de la creatividad.",
+          "cuando quiero reconocer que mis experiencias me hacen quien soy.",
+          "cuando quiero aprender a vivir de acuerdo a mis propios valores.",
+          "cuando deseo encontrar significado en el sufrimiento.",
+          "cuando quiero inspirarme en la valentía de Frida Kahlo para enfrentar mis propios miedos.",
+          "cuando busco maneras de transformar mis heridas en arte.",
+          "cuando anhelo una vida llena de color y autenticidad.",
+          "cuando quiero recordar que ser diferente es una fortaleza."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "inspiración",
+            "frustración",
+            "alegría",
+            "miedo",
+            "pasión",
+            "confusión",
+            "autoaceptación",
+            "valentía",
+            "creatividad",
+            "soledad"
+          ],
+          "objetos": [
+            "pinceles",
+            "lienzos",
+            "diarios",
+            "colores",
+            "retratos",
+            "espejos",
+            "cámaras",
+            "música",
+            "flores",
+            "carteles"
+          ],
+          "contextos": [
+            "taller de arte",
+            "galería",
+            "casa de Frida Kahlo",
+            "parque",
+            "cafetería",
+            "estudio",
+            "universidad",
+            "concierto",
+            "exposición",
+            "museo"
+          ],
+          "verbos": [
+            "pintar",
+            "crear",
+            "explorar",
+            "sentir",
+            "expresar",
+            "amar",
+            "reflexionar",
+            "soñar",
+            "transformar",
+            "dejar ir"
+          ]
+        },
+        "concept_tags": [
+          "arte de vivir",
+          "inspiración diaria",
+          "autenticidad",
+          "expresión creativa",
+          "superación personal",
+          "valentía emocional",
+          "autoaceptación",
+          "búsqueda de sueños",
+          "intensidad en la vida",
+          "amor propio"
+        ],
+        "anti_patterns": [
+          "no es un manual técnico sobre arte",
+          "no trata sobre biografía detallada de Frida Kahlo",
+          "no ofrece soluciones rápidas a problemas complejos",
+          "no es un libro sobre psicología clínica"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🎨"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌈"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👣"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una reflexión profunda que parece provenir de la voz del autor, sugiriendo un mensaje filosófico que podría encontrarse en el contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una pregunta que el autor plantea en el texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase invita a la reflexión personal y sugiere una acción que el lector puede tomar, lo que suena como un consejo o una voz autoral dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase refleja una reflexión profunda que podría estar presente en el contenido del libro, sugiriendo una voz autoral."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y sugiere una actividad creativa, lo que suena como un consejo o ejercicio dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase utiliza un lenguaje evocador y metafórico que sugiere una reflexión interna del autor, como si estuviera guiando al lector a través de una experiencia personal en el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una voz reflexiva y personal, como si el autor estuviera compartiendo una idea profunda dentro del contexto del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a philosophical idea that feels like it could be part of the narrative or thematic exploration within the book, rather than a description or commentary about it."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and creativity, suggesting an internal voice that resonates with the reader as part of the book's content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites introspection and creativity, suggesting a direct engagement with the content of the book, as if it were part of the narrative or a reflective question posed by the author."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like an introspective reflection from the author, fitting within the narrative of a book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages personal reflection and uses metaphorical language, suggesting it is part of the author's narrative voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize a concept, suggesting an immersive experience typical of narrative writing within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like it belongs within the narrative of a book, reflecting the author's voice."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-08-15T14:58:39.438Z",
+      "_slug": "frida-para-apasionados",
+      "_edicion_numero": 91
+    },
+    {
       "titulo": "Supercomunicadores",
       "autor": "Charles Duhigg",
       "tagline": "los mejores comunicadores saben distinguir y emplear los tres tipos de conversaciones que existen: la práctica, la emocional y la social, para conectar con las personas de manera efectiva y construir relaciones significativas.",
@@ -4333,7 +5200,7 @@
         "☀ La estrategia es la luz que guía en la oscuridad de la incertidumbre."
       ],
       "frases_en": [
-        "🚶 Imagine each decision as a strategic move on a chessboard, where every piece has its purpose y puede influir en el resultado de la partida de manera significativa.",
+        "🚶 Imagine each decision as a strategic move on a chessboard, where every piece has its purpose y puede influir en el resultado de la partida de manera significativa, aplicando así el pensamiento estratégico en la vida cotidiana.",
         "🗺 As you stand at the crossroads of your next big decision, consider what strategic plan you can carve out to guide your path forward.",
         "🌓 In every game, we either win or learn; the key is to keep playing.",
         "👁 Visualize your goals as targets on a map, each requiring a unique route to reach."
@@ -6014,7 +6881,7 @@
     {
       "titulo": "Bruce Lee",
       "autor": "John Little",
-      "tagline": "un artista de la vida que busca autenticidad y expresión plena en su filosofía marcial y su legado cultural.",
+      "tagline": "un artista de la vida que busca autenticidad y expresión plena en su filosofía marcial y su legado cultural, reflejando la búsqueda de autenticidad en el arte marcial y en la vida.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/99/21/a4/9921a403-0f7b-b1fe-78a4-d7720d4a6cf5/9788418223167.jpg/626x0w.jpg",
       "isbn": "",
@@ -6913,7 +7780,7 @@
       "fondo": "#EFF0EF",
       "tarjeta": {
         "titulo": "El poder de lo básico en los negocios",
-        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios.",
+        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios, aplicando las 163 maneras de alcanzar la excelencia que se presentan en este libro.",
         "subtitulo": "¿Dónde ha quedado la búsqueda de la excelencia?",
         "parrafoBot": "Las empresas necesitan recordar que el lado humano de los negocios es lo que realmente las distingue. [H]La excelencia no se mide en grandes gestos[/H], sino en cómo se actúa en lo cotidiano. Las 163 maneras de brillar no son solo estrategias, son compromisos con la calidad diaria. Es ahora o nunca.",
         "style": {
@@ -6925,7 +7792,7 @@
       },
       "tarjeta_base": {
         "titulo": "El poder de lo básico en los negocios",
-        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios.",
+        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios, aplicando las 163 maneras de alcanzar la excelencia que se presentan en este libro.",
         "subtitulo": "¿Dónde ha quedado la búsqueda de la excelencia?",
         "parrafoBot": "Las empresas necesitan recordar que el lado humano de los negocios es lo que realmente las distingue. [H]La excelencia no se mide en grandes gestos[/H], sino en cómo se actúa en lo cotidiano. Las 163 maneras de brillar no son solo estrategias, son compromisos con la calidad diaria. Es ahora o nunca.",
         "style": {
@@ -6937,7 +7804,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "El poder de lo básico en los negocios",
-        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios.",
+        "parrafoTop": "La esencia de la excelencia radica en la simplicidad del día a día. Volver a lo básico en la gestión empresarial no es un retroceso, sino un avance hacia lo que realmente importa. [H]Cada acción, cada decisión, debe ser evaluada en el contexto de su impacto inmediato.[/H] Hoy es el único día que cuenta. Si no es excelente, ¿dónde queda nuestra capacidad de liderazgo y estrategia en la gestión empresarial? La excelencia se mide en la jornada laboral de hoy, y es fundamental que cada uno de nosotros se comprometa a brillar en el lado humano de los negocios, aplicando las 163 maneras de alcanzar la excelencia que se presentan en este libro.",
         "subtitulo": "¿Dónde ha quedado la búsqueda de la excelencia?",
         "parrafoBot": "Las empresas necesitan recordar que el lado humano de los negocios es lo que realmente las distingue. [H]La excelencia no se mide en grandes gestos[/H], sino en cómo se actúa en lo cotidiano. Las 163 maneras de brillar no son solo estrategias, son compromisos con la calidad diaria. Es ahora o nunca.",
         "style": {
@@ -9406,7 +10273,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "The #1 Dad Book: Be the Best Dad You Can Be in 1 Hour",
@@ -15555,7 +16422,7 @@
         },
         "card_en": {
           "titulo": "The Mind as the Source of Reality",
-          "parrafoTop": "The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives, utilizando los principios que rigen la interacción entre la mente y la materialidad, y así lograr un cambio significativo en nuestra experiencia cotidiana, aplicando los conceptos de Acción Mental y Condiciones Materiales que son fundamentales para transformar nuestra realidad.",
+          "parrafoTop": "The connection between Mental Action and Material Conditions is undeniable: what we think and believe manifests in our world. This relationship is not merely theoretical; it is the foundation upon which our reality is built. By understanding these Natural Principles, we can direct our mind toward the creation of the conditions we desire in our lives, utilizando los principios que rigen la interacción entre la mente y la materialidad, y así lograr un cambio significativo en nuestra experiencia cotidiana, aplicando los conceptos de Acción Mental y Condiciones Materiales que son fundamentales para transformar nuestra realidad y comprender cómo estos principios nos permiten influir en nuestro entorno de manera efectiva.",
           "subtitulo": "How to transform thought into material action?",
           "parrafoBot": "The conscious practice of these principles gives us a clear starting point. With each thought, we shape our existence, and it is our responsibility to learn how to direct that mental energy toward creating the conditions we wish to experience."
         },
@@ -28956,7 +29823,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "Hit Refresh",
@@ -40897,7 +41764,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "El Hombre más inteligente de la historia",
@@ -46022,7 +46889,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "Encuentro",
@@ -49440,7 +50307,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "El mundo exterior no existe",
@@ -62971,7 +63838,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "El prozac de Séneca",
@@ -113095,7 +113962,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "Simplify: How the Best Businesses in the World Succeed",
@@ -121554,7 +122421,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "El libro de los 5 anillos",
@@ -129219,7 +130086,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-13T03:53:49.053Z"
+      "_audit_timestamp": "2026-08-15T14:58:45.636Z"
     },
     {
       "titulo": "Suscritos",
@@ -130944,11 +131811,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 91,
-    "total": 154,
-    "last_audit": "2026-08-13T03:53:49.053Z",
-    "healing_rotation_idx": 31,
+    "next_edition_number": 92,
+    "total": 155,
+    "last_audit": "2026-08-15T14:58:45.636Z",
+    "healing_rotation_idx": 32,
     "last_healing_book": "¡Qué buen consejo!",
-    "last_healing_timestamp": "2026-08-13T04:12:04.735Z"
+    "last_healing_timestamp": "2026-08-15T15:14:43.872Z"
   }
 }
