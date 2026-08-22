@@ -857,24 +857,47 @@
       "_edicion_numero": 93,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de 'Espora Digital' para resonar, 'Camino a la simplicidad' para abrir y 'V. Completa' para profundizar, creando un diálogo completo sobre la simplicidad.",
         "candidatos": [
           {
             "id": "g8HFgyPKR8s",
             "titulo": "Espora Digital - Episodio 01 - Simplicidad",
             "canal": "Espora Digital Mexico",
-            "dur": 2038
+            "dur": 2038,
+            "armonia": 9,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🕊 La simplicidad no es la ausencia de complejidad, sino su manejo hábil.",
+            "pie": "Un análisis profundo de las leyes de la simplicidad que invita a reflexionar sobre su aplicación."
+          },
+          {
+            "id": "q1Er5U1r4yw",
+            "titulo": "Camino a la simplicidad — designaholic ep:86 —  The Laws of Simplicity",
+            "canal": "designaholic",
+            "dur": 1061,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "📖 ¿Qué aspectos de tu vida se beneficiarían de un enfoque más simple?",
+            "pie": "Una conversación sobre cómo aplicar las leyes de la simplicidad en el diseño y la vida diaria."
           },
           {
             "id": "BkOlrKqLwMg",
             "titulo": "V. Completa. Tecnología y diseño para un futuro humanista. John Maeda, diseñador y educado",
             "canal": "AprendemosJuntos",
-            "dur": 1796
-          },
-          {
-            "id": "zu0xFUNgi4E",
-            "titulo": "John Maeda: &quot;Educación creativa y tecnología, una fórmula ganadora&quot;",
-            "canal": "El Futuro Es Apasionante de Vodafone",
-            "dur": 313
+            "dur": 1796,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Maeda comparte su visión sobre la intersección entre tecnología y diseño, tocando la simplicidad."
           }
         ]
       }
@@ -1743,12 +1766,21 @@
       "_edicion_numero": 92,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría el video de Livingston por su conexión directa con el perdón, que es clave en la edición, aunque no es en español.",
         "candidatos": [
           {
             "id": "x0C9xyjrpIc",
             "titulo": "Dr. Gordon Livingston Featured on Why Not with Shania Twain",
             "canal": "Gordon Livingston",
-            "dur": 936
+            "dur": 936,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "⚓ Solo a través del perdón encontramos la paz que buscamos.",
+            "pie": "Livingston reflexiona sobre el perdón y su importancia en la vida, resonando con la búsqueda de paz."
           }
         ]
       }
@@ -2621,6 +2653,8 @@
       "_edicion_numero": 91,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "capa1",
+        "sinfonia": "",
         "candidatos": []
       }
     },
@@ -17973,24 +18007,47 @@
       "_edicion_numero": 90,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Mentes Brillantes, Ryan Holiday en Breakfast Club y Brian Johnson, ya que abren, profundizan y resuenan con el mensaje del libro.",
         "candidatos": [
+          {
+            "id": "6ohVUh5sIm0",
+            "titulo": "SUPERA LOS PROBLEMAS EN LA VIDA | El Obstaculo Es El Camino (Ryan Holiday)",
+            "canal": "Mentes Brillantes",
+            "dur": 189,
+            "armonia": 8,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🌊 Levanta la mirada y observa el desafío frente a ti. ¿Qué oportunidad se esconde detrás de esa adversidad?",
+            "pie": "El video invita a reflexionar sobre cómo convertir problemas en oportunidades, alineándose con el mensaje del libro."
+          },
           {
             "id": "dLGv2y7Y-ro",
             "titulo": "Heroic Interview: The Obstacle Is the Way with Ryan Holiday",
             "canal": "Brian Johnson",
-            "dur": 1719
+            "dur": 1719,
+            "armonia": 7,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Ryan Holiday comparte historias que ilustran cómo enfrentar la adversidad, complementando el mensaje del libro."
           },
           {
             "id": "zC7K-yja05M",
             "titulo": "El OBSTÁCULO es el CAMINO Audiolibro (Ryan Holiday) 🏃‍♂ | (Vale la PENA Leerlo?) 🤔",
             "canal": "Juan Ramón  | Tu vida cambia cuando decides SER",
-            "dur": 399
-          },
-          {
-            "id": "nap1LjPsSXE",
-            "titulo": "Resumen del libro // &quot;El Obstáculo es el Camino&quot; de Ryan Holiday // Libro 28 //P",
-            "canal": "EL ECO DE LAS VOCES",
-            "dur": 993
+            "dur": 399,
+            "armonia": 5,
+            "rol": "aterrizar",
+            "tipo": "resumen",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un resumen que presenta las ideas centrales del libro, pero no invita a abrirlo."
           }
         ]
       }
@@ -18851,24 +18908,47 @@
       "_edicion_numero": 89,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Marypaz y Trinidad Acosta para profundizar y aterrizar en la acción mental, resonando con el libro.",
         "candidatos": [
           {
             "id": "UTqW-thdSxg",
             "titulo": "LAS CONFERENCIAS DE DORÉ THOMAS TROWARD  CAP 6    EL PODER CREADOR DEL PENSAMIENTO",
             "canal": "Marypaz",
-            "dur": 545
+            "dur": 545,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🪞 La Acción Mental es el primer paso hacia la manifestación material.",
+            "pie": "Marypaz explica cómo la mente afecta la realidad, profundizando en la acción mental."
           },
           {
             "id": "Yyc7ckxdsfs",
             "titulo": "LAS CONFERENCIAS DE DORÉ THOMAS TROWARD CAP 2  INDIVIDUALIDAD",
             "canal": "Marypaz",
-            "dur": 1066
+            "dur": 1066,
+            "armonia": 7,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🌌 Al considerar cómo los Principios Naturales se manifiestan en nuestra vida diaria, es fundamental reconocer su influencia en cada pensamiento y acción que emprendemos.",
+            "pie": "Marypaz ilustra cómo el autocontrol es clave para diseñar nuestra vida, aterrizando conceptos de la mente."
           },
           {
-            "id": "UoWj6mINjU4",
-            "titulo": "LAS CONFERENCIAS DE DORÉ THOMAS TROWARD  CAP 12   LA SALVACION ES DE LOS JUDIOS   FINAL",
-            "canal": "Marypaz",
-            "dur": 739
+            "id": "jPwmPhrpQr4",
+            "titulo": "Thomas Troward, Conferencias de Edimburgo",
+            "canal": "Trinidad Acosta",
+            "dur": 10956,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Troward reflexiona sobre la ciencia mental y su impacto en la realidad, resonando con la acción mental."
           }
         ]
       }
@@ -19723,24 +19803,47 @@
       "_edicion_numero": 88,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Fisher y el de Mel Robbins, ya que ambos profundizan en la comunicación efectiva y la conexión genuina.",
         "candidatos": [
-          {
-            "id": "w--Bu_F65H8",
-            "titulo": "The Next Conversation | Audiobook Summary That Will Change How You Communicate | Jefferson",
-            "canal": "Mindful Wealth",
-            "dur": 2646
-          },
-          {
-            "id": "x1liTmHRA-c",
-            "titulo": "Master Workplace Communication: The Next Conversation by Jefferson Fisher",
-            "canal": "Corporate Stickman",
-            "dur": 465
-          },
           {
             "id": "uRQAhWZ1bxs",
             "titulo": "#1 Blueprint for Mastering Every Conversation (This is How to Communicate with Confidence!",
             "canal": "Jay Shetty Podcast",
-            "dur": 4686
+            "dur": 4686,
+            "armonia": 9,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🕊 No ganar una discusión es el primer paso hacia la conexión.",
+            "pie": "Fisher comparte cómo enfrentar conversaciones difíciles puede transformar nuestras relaciones."
+          },
+          {
+            "id": "J2-lC70KsbQ",
+            "titulo": "The Next Conversation Starts Here",
+            "canal": "Jefferson Fisher",
+            "dur": 949,
+            "armonia": 8,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Fisher habla sobre la importancia de la comunicación en nuestras vidas y su nuevo libro."
+          },
+          {
+            "id": "ZUCB3M_1Qp4",
+            "titulo": "Communicate with Confidence: The Blueprint for Mastering Every Conversation",
+            "canal": "Mel Robbins",
+            "dur": 3540,
+            "armonia": 7,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Mel Robbins explora técnicas de comunicación efectivas, guiadas por Fisher."
           }
         ]
       }
@@ -20588,24 +20691,47 @@
       "_edicion_numero": 87,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Luis Ramos, KENSO y el resumen animado, ya que juntos abren, profundizan y resuenan con la esencia del libro.",
         "candidatos": [
+          {
+            "id": "tLACqbCbeDk",
+            "titulo": "374 | Piénsalo otra vez, de Adam Grant",
+            "canal": "KENSO",
+            "dur": 3442,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🕊 ¿Qué creencias te están limitando hoy?",
+            "pie": "KENSO explora la importancia de cuestionar creencias, alineándose con el mensaje del libro."
+          },
           {
             "id": "R8y50TsMuys",
             "titulo": "Reseña/Resumen Piénsalo Otra Vez (Think Again) | Libros Para Cambiar de Vida",
             "canal": "Libros para Cambiar de Vida",
-            "dur": 1008
+            "dur": 1008,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "resumen",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un resumen que toca la necesidad de repensar nuestras creencias, pero no invita a abrir el libro."
           },
           {
-            "id": "yfn7mKzi0yg",
-            "titulo": "Piénsalo otra vez de Adam Grant · Vista previa del audiolibro",
-            "canal": "Google Play Libros",
-            "dur": 3176
-          },
-          {
-            "id": "lUv2wh7MvKE",
-            "titulo": "Piénsalo otra vez (Adam Grant) - Resumen Animado",
-            "canal": "Visual Ananda",
-            "dur": 434
+            "id": "32vr8qeSP1M",
+            "titulo": "Piénsalo otra vez - Adam Grant | Audiolibro resumen",
+            "canal": "Nectar Books",
+            "dur": 1086,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "audiolibro",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un audiolibro que resume el contenido, pero no genera el impulso de leer el libro."
           }
         ]
       }
@@ -21483,24 +21609,47 @@
       "_edicion_numero": 86,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de 'The Ultimate Life Reset', 'The More You Own, The Less Happy You Are?' y 'Goodbye, Things: The New Japanese Minimalism' por su capacidad de resonar, profundizar y abrir la conversación sobre el minimalismo.",
         "candidatos": [
+          {
+            "id": "s8HiVi9RB6M",
+            "titulo": "Goodbye, Things: The New Japanese Minimalism",
+            "canal": "JapanSocietyNYC",
+            "dur": 3421,
+            "armonia": 10,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "💫 Simplicidad es la clave: menos cosas, más espacio para vivir.",
+            "pie": "Sasaki explora el minimalismo en profundidad, alineándose con la esencia del libro."
+          },
           {
             "id": "LnmkreQE8UQ",
             "titulo": "The Ultimate Life Reset: How Less Stuff Changes EVERYTHING",
             "canal": "Don't Be A Lemon",
-            "dur": 2166
+            "dur": 2166,
+            "armonia": 8,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "💠 La verdadera felicidad se encuentra en lo simple, no en lo abundante.",
+            "pie": "El video comparte cómo el minimalismo transforma la vida, resonando con la búsqueda de felicidad en lo simple."
           },
           {
             "id": "XOXf8TKNliU",
             "titulo": "Meet The Most Famous Minimalist In Japan: Fumio Sasaki | EVERYDAY BOSSES #8",
             "canal": "Asian Boss",
-            "dur": 506
-          },
-          {
-            "id": "9MQle9TWIak",
-            "titulo": "The More You Own, The Less Happy You Are? Goodbye, Things – Fumio Sasaki | KaYi",
-            "canal": "KaYi",
-            "dur": 911
+            "dur": 506,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🏛 ¿Qué pasaría si vaciaras un rincón de tu casa hoy?",
+            "pie": "Sasaki habla sobre su vida minimalista, invitando a reflexionar sobre el espacio en nuestras vidas."
           }
         ]
       }
@@ -22368,7 +22517,23 @@
       "_edicion_numero": 85,
       "_video": {
         "resuelto_el": "2026-08-22",
-        "candidatos": []
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría un video que profundice en la filosofía ganbatte y otro que abra la curiosidad sobre el libro, pero solo hay uno disponible.",
+        "candidatos": [
+          {
+            "id": "GWpt3EfcEGo",
+            "titulo": "Program : BOOK SHARING@UTMKL 4/2024",
+            "canal": "UTM Library TV",
+            "dur": 2847,
+            "armonia": 4,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "La presentación sobre 'Ganbatte' ofrece un contexto sobre la filosofía de perseverancia, pero no invita a abrir el libro."
+          }
+        ]
       }
     },
     {
@@ -23216,18 +23381,20 @@
       "_edicion_numero": 84,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "capa1",
+        "sinfonia": "",
         "candidatos": [
-          {
-            "id": "mP9JUAXcgbE",
-            "titulo": "The Billionaire Operating System: How Elon Musk Actually Thinks | Eric Jorgenson",
-            "canal": "Founder's Story",
-            "dur": 1616
-          },
           {
             "id": "nqiuSshC9GA",
             "titulo": "How Elon Thinks",
             "canal": "Founders Podcast",
             "dur": 3071
+          },
+          {
+            "id": "mP9JUAXcgbE",
+            "titulo": "The Billionaire Operating System: How Elon Musk Actually Thinks | Eric Jorgenson",
+            "canal": "Founder's Story",
+            "dur": 1616
           },
           {
             "id": "lXqmPXgrvSM",
@@ -23240,7 +23407,7 @@
     },
     {
       "titulo": "The 5 Types Of Wealth",
-      "autor": "Saphil Bloom",
+      "autor": "Sahil Bloom",
       "tagline": "",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/e0/d4/5e/e0d45e8a-8b6d-5adc-ec54-d36929c6fa33/9780593723197.d.jpg/3000x3000bb.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/e0/d4/5e/e0d45e8a-8b6d-5adc-ec54-d36929c6fa33/9780593723197.d.jpg/3000x3000bb.jpg",
@@ -23371,8 +23538,8 @@
           "border": "#90908F"
         }
       },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%205%20Types%20Of%20Wealth%20Saphil%20Bloom%20entrevista%20espa%C3%B1ol",
-      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%205%20Types%20Of%20Wealth%20Saphil%20Bloom%20interview",
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%205%20Types%20Of%20Wealth%20Sahil%20Bloom%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%205%20Types%20Of%20Wealth%20Sahil%20Bloom%20interview",
       "_curator_meta": {
         "timestamp": "2026-07-14T13:03:54.065Z",
         "workflow_run_id": "29334897475",
@@ -23640,7 +23807,7 @@
         ],
         "verified_identity": {
           "titulo_real": "The 5 Types Of Wealth",
-          "autor_completo": "Saphil Bloom",
+          "autor_completo": "Sahil Bloom",
           "titulo_api": "The 5 Types of Wealth",
           "autor_api": "Sahil Bloom",
           "año": "2025",
@@ -24093,7 +24260,49 @@
       "_edicion_numero": 83,
       "_video": {
         "resuelto_el": "2026-08-22",
-        "candidatos": []
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Sahil Bloom en Talks at Google, el podcast de Nick Bare y el de TODAY, porque profundizan y aterrizan las ideas centrales del libro.",
+        "candidatos": [
+          {
+            "id": "NegTHmVuepk",
+            "titulo": "Sahil Bloom | The 5 Types of Wealth | Talks at Google",
+            "canal": "Talks at Google",
+            "dur": 3874,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🌿 La riqueza mental es la capacidad de ver el mundo con claridad y sin nublar el propósito.",
+            "pie": "Bloom profundiza en los cinco tipos de riqueza, alineándose con la búsqueda de claridad y propósito."
+          },
+          {
+            "id": "kNHtdBvgAN8",
+            "titulo": "Author Sahil Bloom shares tips on building wealth beyond money",
+            "canal": "TODAY",
+            "dur": 290,
+            "armonia": 8,
+            "rol": "aterrizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Bloom comparte consejos prácticos sobre cómo construir riqueza en la vida, alineándose con la riqueza social."
+          },
+          {
+            "id": "YNavxaDNUGQ",
+            "titulo": "The 5 Types of Wealth",
+            "canal": "Google Zeitgeist",
+            "dur": 1261,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Bloom ofrece una nueva perspectiva sobre el éxito, resonando con la idea de redefinir la riqueza."
+          }
+        ]
       }
     },
     {
@@ -24943,24 +25152,47 @@
       "_edicion_numero": 82,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Osho sobre los cuatro pasos hacia el amor, y la clave de Lao Tse, por su conexión con la libertad y el amor.",
         "candidatos": [
-          {
-            "id": "hFt47b4qxjk",
-            "titulo": "La CLAVE ÚNICA de LAO TSE que Ni BUDA Ni JESÚS ALCANZARON | OSHO",
-            "canal": "Saber y Sentido",
-            "dur": 2793
-          },
           {
             "id": "AEwXo1-oCbs",
             "titulo": "Osho ...los cuatro pasos hacia el amor....La voz del Universo",
             "canal": "La voz del universo",
-            "dur": 1170
+            "dur": 1170,
+            "armonia": 9,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🔁 ¿Por qué el amor se siente más auténtico en la soledad?",
+            "pie": "Osho explora cómo la soledad puede enriquecer la experiencia del amor, invitando a la reflexión."
+          },
+          {
+            "id": "hFt47b4qxjk",
+            "titulo": "La CLAVE ÚNICA de LAO TSE que Ni BUDA Ni JESÚS ALCANZARON | OSHO",
+            "canal": "Saber y Sentido",
+            "dur": 2793,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Reflexiones sobre la espiritualidad y la conexión, que complementan la búsqueda de libertad y amor en Osho."
           },
           {
             "id": "LS3XyMiZ3ZI",
             "titulo": "Osho – La Libertad de Ser Nada “ABANDONA LA IDENTIDAD.”",
             "canal": "EL CUERVO BLANCO",
-            "dur": 5536
+            "dur": 5536,
+            "armonia": 4,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Osho habla sobre la libertad de ser uno mismo, un eco de la búsqueda de autenticidad en el amor."
           }
         ]
       }
@@ -40245,24 +40477,47 @@
       "_edicion_numero": 81,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Helen sobre el libro y sus superpoderes en networking, ya que abren y profundizan en la temática central.",
         "candidatos": [
+          {
+            "id": "aEloTxRTpdo",
+            "titulo": "Helen Nicholson: \"You've got it all wrong about introverts and networking\"",
+            "canal": "The Right Place",
+            "dur": 2515,
+            "armonia": 9,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🕊 Presentarte con confianza en eventos de networking puede parecer un desafío, pero identificar las barreras que te detienen es el primer paso hacia el éxito.",
+            "pie": "Helen destaca las superpotencias de los introvertidos en el networking, invitando a explorar más."
+          },
           {
             "id": "lXQEVr5jpA4",
             "titulo": "Networking for Introverts - Book Launch",
             "canal": "The Networking Co",
-            "dur": 3079
-          },
-          {
-            "id": "nUPnhjKp4Ew",
-            "titulo": "The Expert Studio | Helen Nicholson",
-            "canal": "iTOO Special Risks",
-            "dur": 2079
+            "dur": 3079,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🕊 Presentarte con confianza en eventos de networking puede parecer un desafío, pero identificar las barreras que te detienen es el primer paso hacia el éxito.",
+            "pie": "Helen comparte estrategias para que los introvertidos se presenten con confianza en networking."
           },
           {
             "id": "mTPX7nOEE-k",
             "titulo": "Helen Nicholson: CEO The Networking Company - Networking for Introverts",
             "canal": "Jack Hammer Global - Executive Search",
-            "dur": 1828
+            "dur": 1828,
+            "armonia": 7,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🪞 Cada contacto es una oportunidad para crecer y aprender.",
+            "pie": "Helen habla sobre las fortalezas de los introvertidos en el networking, resonando con la idea de crecimiento."
           }
         ]
       }
@@ -41127,24 +41382,47 @@
       "_edicion_numero": 80,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de la última lección, la entrevista de Pausch y el especial de ABC, ya que juntos abren, profundizan y resuenan con el mensaje del libro.",
         "candidatos": [
+          {
+            "id": "ji5_MqicxSo",
+            "titulo": "Randy Pausch's Last Lecture: Achieving Your Childhood Dreams",
+            "canal": "Carnegie Mellon University",
+            "dur": 4587,
+            "armonia": 10,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "💡 El tiempo es un recurso precioso; úsalo sabiamente y deja huella.",
+            "pie": "Randy Pausch comparte su visión sobre la vida y el legado en su última lección, resonando con la esencia del libro."
+          },
           {
             "id": "trMSLXYjNf4",
             "titulo": "Randy Pausch - Interview Highlights - 10 Minutes - Inspirational - Meaningful - The Last L",
             "canal": "wwwgenesisprojectorg",
-            "dur": 601
+            "dur": 601,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🌊 Detente un momento. Respira y siente la gratitud por lo que has logrado hasta ahora.",
+            "pie": "En esta entrevista, Pausch reflexiona sobre su vida y cómo aprovechar cada momento, complementando el mensaje del libro."
           },
           {
             "id": "j-a7LRwqwNw",
-            "titulo": "Randy Pausch ABC Special about the &quot;Last Lecture&quot;, April 2008",
+            "titulo": "Randy Pausch ABC Special about the \"Last Lecture\", April 2008",
             "canal": "Gabriel Robins",
-            "dur": 2483
-          },
-          {
-            "id": "Z9B-qPLZKeQ",
-            "titulo": "Inspirational Speech by Dr  Randy Pausch On the Oprah Winfrey Show  The Last Lecture   Dr ",
-            "canal": "Shabbir Chowdhury",
-            "dur": 611
+            "dur": 2483,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Este especial de ABC presenta a Pausch y su legado, invitando a reflexionar sobre los sueños y la vida."
           }
         ]
       }
@@ -42002,24 +42280,47 @@
       "_edicion_numero": 79,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de TED, Big Think y Good Morning America, ya que cada uno aporta una perspectiva única sobre el estrés y su gestión, resonando con la esencia del libro.",
         "candidatos": [
           {
             "id": "Tob_DDLXImM",
-            "titulo": "Stressed? “Just Relax” Isn&#39;t the Answer | Aditi Nerurkar | TED",
+            "titulo": "Stressed? “Just Relax” Isn't the Answer | Aditi Nerurkar | TED",
             "canal": "TED",
-            "dur": 3442
+            "dur": 3442,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "⚡ Transformar el estrés en una herramienta para el crecimiento es clave.",
+            "pie": "Nerurkar explica cómo el estrés puede ser un motor de crecimiento, alineándose con la esencia del libro."
           },
           {
             "id": "CuCptHYw_-c",
             "titulo": "Harvard’s stress expert on how to be more resilient | Dr. Aditi Nerurkar",
             "canal": "Big Think",
-            "dur": 544
+            "dur": 544,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🧭 La regla de resiliencia de 2 cambios a la vez marca la diferencia.",
+            "pie": "Nerurkar detalla la diferencia entre tipos de estrés, profundizando en conceptos del libro."
           },
           {
-            "id": "vw6hVVYRPsU",
-            "titulo": "Good Morning America Featuring Dr. Aditi Nerurkar and The 5 Resets",
-            "canal": "Dr. Aditi Nerurkar",
-            "dur": 219
+            "id": "bfEg7EWtrIw",
+            "titulo": "Five Small Mental Shifts That Can Shift Your Mindset Away From Stress",
+            "canal": "Tamron Hall Show",
+            "dur": 371,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🌊 ¿Cuántas veces has sentido que el estrés te controla en lugar de ser tú quien lo maneja?",
+            "pie": "Nerurkar plantea preguntas sobre el estrés que invitan a la reflexión, alineándose con el libro."
           }
         ]
       }
@@ -58253,24 +58554,47 @@
       "_edicion_numero": 78,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Aim-aPd_cys, o1Z_PzdsFZY y ij-jvrO7Grc, ya que profundizan en la innovación y la simplificación, resonando con el mensaje del libro.",
         "candidatos": [
           {
-            "id": "edR7K-Szqj8",
-            "titulo": "The Algorithm: The Hypergrowth Formula that Transformed Tesla, Lululemon, General Motors &",
-            "canal": "New Orleans Book Festival at Tulane University",
-            "dur": 3622
+            "id": "Aim-aPd_cys",
+            "titulo": "From $2B to $20B: Jon McNeill on Tesla’s Hypergrowth Algorithm | Technoventure 16",
+            "canal": "Metis Strategy",
+            "dur": 2863,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🕊 La innovación comienza cuando eliminamos lo innecesario.",
+            "pie": "McNeill desglosa su algoritmo de cinco pasos para eliminar fricciones y acelerar el crecimiento."
           },
           {
             "id": "o1Z_PzdsFZY",
-            "titulo": "Inside the Algorithm: A Conversation with Tesla&#39;s Former President, Jon McNeill",
+            "titulo": "Inside the Algorithm: A Conversation with Tesla's Former President, Jon McNeill",
             "canal": "Tiffani Bova",
-            "dur": 2365
+            "dur": 2365,
+            "armonia": 8,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "📖 Al abordar cualquier proceso, recordar que la simplificación es el primer paso que nos conduce a la excelencia operativa.",
+            "pie": "En esta charla, McNeill revela cómo la simplicidad es clave para el crecimiento en Tesla."
           },
           {
-            "id": "DPHkMgKdnkE",
-            "titulo": "Jon McNeill | The Algorithm That Transformed Tesla",
-            "canal": "Omaid Homayun",
-            "dur": 3572
+            "id": "FV6_cWuxVmk",
+            "titulo": "Former Tesla President: The Hypergrowth Formula Behind GM and Lululemon",
+            "canal": "Front Row Seat with Ken Coleman",
+            "dur": 3827,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "McNeill comparte cómo cuestionar el status quo puede transformar tu enfoque en los negocios."
           }
         ]
       }
@@ -59113,18 +59437,47 @@
       "_edicion_numero": 77,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Eric Jorgensen, Naval Ravikant y Rashad thaPoet, ya que cada uno aporta una perspectiva sobre el autoconocimiento y el empoderamiento.",
         "candidatos": [
           {
             "id": "4AXTmL4TC6c",
             "titulo": "Naval Ravikant | The Most Important Skill To Get Rich - And Debunking The Lies [with Charl",
             "canal": "Picking Nuggets",
-            "dur": 854
+            "dur": 854,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Naval Ravikant discute habilidades para el éxito, alineándose con la mentalidad positiva."
           },
           {
-            "id": "PwLcwlco27c",
-            "titulo": "Truth-Telling Through Spoken Word (with Rashad thaPoet)",
-            "canal": "Tatiana ‘Tajci’ Cameron",
-            "dur": 1351
+            "id": "ugqVaSOfR5g",
+            "titulo": "This Will Change How You See Your Thoughts - Naval Ravikant",
+            "canal": "Chris Williamson",
+            "dur": 748,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Naval Ravikant reflexiona sobre el control de la ansiedad, un paso hacia el autoconocimiento."
+          },
+          {
+            "id": "QVfxLw8l_a4",
+            "titulo": "Lauren Presutti Talks with Eric Jorgensen, Founder of Special Needs Navigator",
+            "canal": "Lauren Presutti, MEd, EdS, LLMSW",
+            "dur": 2084,
+            "armonia": 3,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "sustituye",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Eric Jorgensen habla sobre la importancia de empoderar a las familias, un eco de la mentalidad positiva."
           }
         ]
       }
@@ -59974,24 +60327,34 @@
       "_edicion_numero": 76,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Osho sobre meditación y verdad, ya que profundizan y abren la conversación sobre la conciencia.",
         "candidatos": [
           {
             "id": "T7CSeU3YDB4",
             "titulo": "OSHO: Con la Meditación la vida será pura dicha",
             "canal": "OSHO International",
-            "dur": 596
+            "dur": 596,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🌱 La autoobservación es el camino hacia la libertad personal.",
+            "pie": "Osho habla sobre la meditación como un camino hacia la dicha, resonando con la autoobservación."
           },
           {
-            "id": "x_Zch0D7kvo",
-            "titulo": "Adquirir Conciencia | OSHO",
-            "canal": "AudioÉxito",
-            "dur": 1444
-          },
-          {
-            "id": "gmEfnX7b5uc",
-            "titulo": "Estás Dormido | OSHO | Conciencia #1",
-            "canal": "AudioÉxito",
-            "dur": 496
+            "id": "4Z3dOvEM0Kw",
+            "titulo": "OSHO: Conocer la verdad es experimentar la existencia tal como es. (Trailer)",
+            "canal": "OSHO International",
+            "dur": 1068,
+            "armonia": 7,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🕊 ¿Qué te impide estar presente en el aquí y ahora?",
+            "pie": "Osho discute la verdad y la experiencia de la existencia, invitando a la reflexión."
           }
         ]
       }
@@ -60829,24 +61192,47 @@
       "_edicion_numero": 75,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de la entrevista de Tolle y el de la aceptación del ahora, junto con el que profundiza en la mente, por su conexión directa con el libro.",
         "candidatos": [
           {
+            "id": "3x5zd7fGrPg",
+            "titulo": "ACEPTA EL AHORA | Este Es El Mayor TERROR DEL EGO | Eckhart Tolle",
+            "canal": "Universo Consciente",
+            "dur": 2020,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "⚓ La mente es el origen del sufrimiento humano.",
+            "pie": "Explora cómo el ego alimenta el sufrimiento, alineándose con la esencia del libro."
+          },
+          {
             "id": "yZbzzRXWU2Y",
-            "titulo": "✔️ECKHART TOLLE ENTREVISTA  &quot;EL PODER DEL AHORA&quot; (PARTE 1)  -  ECKHART TOLLE EN ",
+            "titulo": "✔️ECKHART TOLLE ENTREVISTA  \"EL PODER DEL AHORA\" (PARTE 1)  -  ECKHART TOLLE EN ESPAÑOL✔️",
             "canal": "Sophia Sapiencia",
-            "dur": 1321
+            "dur": 1321,
+            "armonia": 8,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🏛 El ahora es el umbral de la iluminación espiritual.",
+            "pie": "Tolle comparte su visión sobre el poder del ahora, resonando con la búsqueda de la iluminación."
           },
           {
-            "id": "nwG2Erb5Dyg",
-            "titulo": "ECKHART TOLLE  El poder del ahora español",
-            "canal": "Libros Tu Mundo",
-            "dur": 471
-          },
-          {
-            "id": "rnMn5DVdmxQ",
-            "titulo": "✔️ECKHART TOLLE ENTREVISTA  &quot;EL PODER DEL AHORA&quot; (PARTE 2)  -  ECKHART TOLLE EN ",
-            "canal": "Sophia Sapiencia",
-            "dur": 1332
+            "id": "1QsBeYUww_A",
+            "titulo": "El poder del ahora 🙌 Eckhart Tolle | Resumen audiolibro completo en español",
+            "canal": "Mensajes de sabiduria ",
+            "dur": 4951,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "audiolibro",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un resumen que ofrece técnicas para vivir en el presente, pero sustituye la lectura del libro."
           }
         ]
       }
@@ -77828,6 +78214,8 @@
       "_edicion_numero": 74,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "capa1",
+        "sinfonia": "",
         "candidatos": [
           {
             "id": "H14bBuluwB8",
@@ -77836,16 +78224,16 @@
             "dur": 373
           },
           {
-            "id": "W-ONEAcBeTk",
-            "titulo": "Grit: The Power of Passion and Perseverance | Angela Duckworth | Talks at Google",
-            "canal": "Talks at Google",
-            "dur": 3119
+            "id": "rmW3Afu9npY",
+            "titulo": "How to Create a Successful Mindset: The Science of Passion and Perseverance",
+            "canal": "Mel Robbins",
+            "dur": 5507
           },
           {
-            "id": "qaeFnxSfSC4",
-            "titulo": "TEDxBlue - Angela Lee Duckworth, Ph.D - 10/18/09",
-            "canal": "TEDx Talks",
-            "dur": 1118
+            "id": "CWCjSR8_f20",
+            "titulo": "228. dr. angela duckworth on how to be gritty + set yourself up for SUCCESS!",
+            "canal": "she persisted (mental health + psychology podcast)",
+            "dur": 3083
           }
         ]
       }
@@ -78715,24 +79103,47 @@
       "_edicion_numero": 73,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Wright sobre la lógica de la cooperación, la charla con Fukuyama y su exploración de la comunidad global, ya que todos profundizan en la esencia de 'Nonzero'.",
         "candidatos": [
           {
             "id": "wcZFIy2mfyE",
             "titulo": "Robert Wright: The logic of non-zero-sum progress",
             "canal": "TED",
-            "dur": 1197
+            "dur": 1197,
+            "armonia": 10,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🛡 La cooperación es el hilo que teje nuestra historia evolutiva.",
+            "pie": "Wright explica cómo la cooperación ha guiado nuestra evolución cultural y moral, resonando con la esencia del libro."
           },
           {
-            "id": "duaYFmURlsc",
-            "titulo": "Free Forum Q&amp;A - ROBERT WRIGHT, author,  THE MORAL ANIMAL and NON-ZERO  We talk about ",
-            "canal": "Terrence McNally",
-            "dur": 3586
+            "id": "S3FJ045uVmU",
+            "titulo": "Nonzero and The End of History | Robert Wright & Francis Fukuyama",
+            "canal": "Nonzero",
+            "dur": 3712,
+            "armonia": 7,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🔮 La historia es un espejo donde reflejamos nuestra moralidad en acción.",
+            "pie": "Wright y Fukuyama discuten el progreso humano y la cooperación, complementando las ideas del libro."
           },
           {
-            "id": "RF4K9xIXOfA",
-            "titulo": "Religious and secular reasons to do good | Robert Wright &amp; Sam Harris [The Wright Show",
+            "id": "SBbKNaFsDhI",
+            "titulo": "The Dharma of Bob 2: Nonzero | Robert Wright & Josh Summers [The Wright Show]",
             "canal": "NonzeroClips",
-            "dur": 544
+            "dur": 3732,
+            "armonia": 5,
+            "rol": "aterrizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Wright explora la cooperación y la moralidad, pero no se centra en el hilo conductor del libro."
           }
         ]
       }
@@ -79582,24 +79993,26 @@
       "_edicion_numero": 72,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "capa1",
+        "sinfonia": "",
         "candidatos": [
-          {
-            "id": "xw6y4E1f1fE",
-            "titulo": "El gran nervio: La nueva ciencia del nervio… de Dr. Kevin J. Tracey · Vista previa del aud",
-            "canal": "Google Play Libros",
-            "dur": 644
-          },
-          {
-            "id": "Z_M-5mAkPuE",
-            "titulo": "Vagus Nerve Stimulation: The Future of Mental &amp; Physical Health? — Dr. Kevin Tracey",
-            "canal": "The Weekend University",
-            "dur": 3985
-          },
           {
             "id": "fN74aMjKsC8",
             "titulo": "Neurocirujano REVELA el SECRETO Revolucionario para VIVIR MÁS y con MEJOR SALUD | Dr. Kevi",
             "canal": "Lewis Howes Español",
             "dur": 5563
+          },
+          {
+            "id": "lA9_09PgJiU",
+            "titulo": "Inflamación: El Reflejo Biológico de un Cuerpo Atrapado en Estrés Constante   | Dr. Kevin ",
+            "canal": "Lewis Howes Español",
+            "dur": 151
+          },
+          {
+            "id": "pOplfZdm4Mw",
+            "titulo": "Tu Nervio Vago y el Equilibrio Interior | Dr. Kevin Tracey",
+            "canal": "Lewis Howes Español",
+            "dur": 58
           }
         ]
       }
@@ -80454,24 +80867,47 @@
       "_edicion_numero": 71,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de VisualPolitik, TED y el resumen animado, ya que juntos profundizan en la revolución cognitiva y el poder de las narrativas.",
         "candidatos": [
           {
             "id": "nzj7Wg4DAbs",
             "titulo": "Why humans run the world | Yuval Noah Harari | TED",
             "canal": "TED",
-            "dur": 1029
-          },
-          {
-            "id": "jJjPhnPdFYo",
-            "titulo": "Sapiens: De animales a dioses de Yuval Noaḥ Harari | REVIEW (ft. VisualPolitik)",
-            "canal": "Date un Vlog",
-            "dur": 1085
+            "dur": 1029,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "📖 ¿Qué poder tiene el lenguaje para forjar sociedades complejas?",
+            "pie": "Harari explica cómo el lenguaje y las narrativas han permitido la cooperación humana a gran escala."
           },
           {
             "id": "CSbx5SI960I",
             "titulo": "Sapiens (Yuval Harari) - Resumen Animado",
             "canal": "Visual Ananda",
-            "dur": 440
+            "dur": 440,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "resumen",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un resumen animado que toca los temas centrales de 'Sapiens', aunque no invita a abrir el libro."
+          },
+          {
+            "id": "_TbJU3MgA_E",
+            "titulo": "La historia de los imparables | Yuval Noah Harari, historiador y escritor",
+            "canal": "AprendemosJuntos",
+            "dur": 4242,
+            "armonia": 5,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Harari reflexiona sobre el poder de las historias, un tema clave en 'Sapiens', aunque de forma general."
           }
         ]
       }
@@ -81337,6 +81773,8 @@
       "_edicion_numero": 70,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "capa1",
+        "sinfonia": "",
         "candidatos": []
       }
     },
@@ -82212,24 +82650,47 @@
       "_edicion_numero": 69,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Mentes en Equilibrio, Omar Navarro y Las Notas del Aprendiz, ya que cada uno aporta una perspectiva única sobre las emociones y su construcción.",
         "candidatos": [
           {
-            "id": "7STmcKCBI_0",
-            "titulo": "The brain myth that won’t die | Lisa Feldman Barrett",
-            "canal": "Big Think",
-            "dur": 434
+            "id": "2RJWgT04y4E",
+            "titulo": "No estás a MERCED de tus EMOCIONES, Tu CEREBRO las CREA | Dra. Lisa Feldman Barrett",
+            "canal": "Mentes en Equilibrio",
+            "dur": 944,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🔮 Las emociones son construcciones del momento, no reacciones predefinidas en el cerebro.",
+            "pie": "La Dra. Barrett explica cómo nuestras emociones son construcciones, alineándose con la esencia del libro."
           },
           {
-            "id": "C8I6Fu-nXgk",
-            "titulo": "Dr. Lisa Feldman Barrett: How Emotions Are Made on &quot;Come To Think Of It&quot;",
-            "canal": "GrassRoots Community Network",
-            "dur": 3576
+            "id": "rKh4ED2ldQg",
+            "titulo": "¿Quién o qué decide cómo percibes el mundo?: La simulación",
+            "canal": "Omar Navarro - Hablar en Público",
+            "dur": 408,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "📖 La mente y el cerebro colaboran en la construcción de emociones.",
+            "pie": "Omar Navarro explora la simulación y la percepción, conectando con las ideas de Barrett."
           },
           {
-            "id": "ikvrwOnay3g",
-            "titulo": "Your brain doesn’t detect reality. It creates it. | Lisa Feldman Barrett",
-            "canal": "Big Think",
-            "dur": 395
+            "id": "lKMKfCCTi0c",
+            "titulo": "Libro: La vida secreta del cerebro",
+            "canal": "Las Notas del Aprendiz",
+            "dur": 679,
+            "armonia": 6,
+            "rol": "abrir",
+            "tipo": "resumen",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Un resumen de ideas del libro que puede despertar interés, pero no profundiza."
           }
         ]
       }
@@ -83096,24 +83557,47 @@
       "_edicion_numero": 68,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Carolina Camus que profundizan y resuenan con la autenticidad en el liderazgo, activando el deseo de leer.",
         "candidatos": [
-          {
-            "id": "dGSy-xMKLWc",
-            "titulo": "Conversamos con Carolina Camus, autora de &quot;CEO H.U.M.A.N.&quot;, sobre como liderar c",
-            "canal": "Portavoz Noticias Oficial",
-            "dur": 1699
-          },
           {
             "id": "jAxEjahplQA",
             "titulo": "04 JUL 2026 Carolina Camus presenta libro “CEO H.U.M.A.N.”, una nueva mirada sobre el lide",
             "canal": "CANAL 2 / CHILENA FM San Antonio, Chile",
-            "dur": 1150
+            "dur": 1150,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🌱 Aprender de los desafíos fortalece nuestro liderazgo humano.",
+            "pie": "Camus presenta su libro y profundiza en un liderazgo basado en la humildad y autenticidad, alineado con el aprendizaje de desafíos."
+          },
+          {
+            "id": "dGSy-xMKLWc",
+            "titulo": "Conversamos con Carolina Camus, autora de \"CEO H.U.M.A.N.\", sobre como liderar con humanid",
+            "canal": "Portavoz Noticias Oficial",
+            "dur": 1699,
+            "armonia": 7,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "🔮 La autenticidad en el liderazgo se construye desde la vulnerabilidad.",
+            "pie": "Camus habla sobre la autenticidad en el liderazgo, resonando con la vulnerabilidad como base del mismo."
           },
           {
             "id": "f-dJJiQE9aY",
             "titulo": "Escritora Carolina Camus - Lunes 22 de junio 2026",
             "canal": "radio ancoa",
-            "dur": 983
+            "dur": 983,
+            "armonia": 5,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Camus comparte su visión sobre el liderazgo, abriendo la puerta a reflexiones sobre autenticidad y vulnerabilidad."
           }
         ]
       }
@@ -98419,26 +98903,9 @@
       "_edicion_numero": 67,
       "_video": {
         "resuelto_el": "2026-08-22",
-        "candidatos": [
-          {
-            "id": "S73jtVrREQ8",
-            "titulo": "As 25 Leis Bíblicas do Sucesso - William Douglas",
-            "canal": "Genebra",
-            "dur": 5074
-          },
-          {
-            "id": "Ux7yn5CXOLQ",
-            "titulo": "As 25 leis bíblicas do Sucesso #25leis #livro #williamdouglas",
-            "canal": "Débora Santarém",
-            "dur": 708
-          },
-          {
-            "id": "5UX_Ig6vjRY",
-            "titulo": "Rubens Teixeira, um dos autores, fala sobre o livro &quot;As 25 Leis Bíblicas do Sucesso&q",
-            "canal": "Dr. Rubens Teixeira",
-            "dur": 730
-          }
-        ]
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría el video de Rubens Teixeira, ya que habla sobre el libro y conecta con la esencia de las leyes bíblicas.",
+        "candidatos": []
       }
     },
     {
@@ -99307,24 +99774,47 @@
       "_edicion_numero": 66,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Brené Brown sobre autenticidad y vulnerabilidad, ya que profundizan y resuenan con el mensaje del libro.",
         "candidatos": [
+          {
+            "id": "_YeulUgWNp8",
+            "titulo": "Dr. Brené Brown on Faking It, Perfectionism and Living Wholeheartedly | SuperSoul Sunday |",
+            "canal": "OWN",
+            "dur": 289,
+            "armonia": 10,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "📖 El poder de compartir nuestra historia se encuentra en su vulnerabilidad y en la conexión que crea con los demás.",
+            "pie": "En esta charla, Brené Brown explora la conexión humana y la vulnerabilidad, resonando con el mensaje del libro."
+          },
           {
             "id": "iCvmsMzlF7o",
             "titulo": "The Power of Vulnerability | Brené Brown | TED",
             "canal": "TED",
-            "dur": 1250
+            "dur": 1250,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🔮 La autenticidad es un acto de resistencia ante la perfección.",
+            "pie": "Brown profundiza en la vulnerabilidad y la conexión, temas centrales en 'Los regalos de la imperfección'."
           },
           {
-            "id": "SLZhG90HFG8",
-            "titulo": "Brené Brown – The Gifts of Imperfect Parenting (Audio)",
-            "canal": "Sounds True",
-            "dur": 624
-          },
-          {
-            "id": "KLpg5nBjYKA",
-            "titulo": "Brené Brown on the 10th anniversary of &quot;The Gifts of Imperfection&quot;",
-            "canal": "CBS Mornings",
-            "dur": 379
+            "id": "JdtlmlkddyI",
+            "titulo": "The Real Reason You Struggle with Self-Worth - And How to Change It | Professor Brené Brow",
+            "canal": "Empowering Insights",
+            "dur": 1352,
+            "armonia": 8,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🌓 Las expectativas poco realistas son cadenas que limitan nuestra autenticidad.",
+            "pie": "Este discurso aborda la lucha con la autoestima y la autenticidad, resonando con el mensaje del libro."
           }
         ]
       }
@@ -117092,24 +117582,47 @@
       "_edicion_numero": 65,
       "_video": {
         "resuelto_el": "2026-08-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de Koch sobre simplicidad y procesos a simplificar, ya que abren y profundizan en el tema central del libro.",
         "candidatos": [
           {
             "id": "DlDrDEZCuMw",
             "titulo": "Simplify: How the Best Businesses in the World Succeed?",
             "canal": "Planet Perry",
-            "dur": 190
+            "dur": 190,
+            "armonia": 9,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🔍 En cada negocio, siempre hay procesos que se pueden simplificar, y hoy es el momento perfecto para identificarlos.",
+            "pie": "Koch comparte lecciones sobre cómo la simplicidad es clave en los negocios, invitando a reflexionar sobre procesos a simplificar."
           },
           {
             "id": "L5MQKEhRnqU",
-            "titulo": "Star Principle in Business: McDonald&#39;s Burgers &amp; IKEA Furniture",
+            "titulo": "Star Principle in Business: McDonald's Burgers & IKEA Furniture",
             "canal": "Planet Perry",
-            "dur": 437
+            "dur": 437,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Koch explica su principio de estrella en negocios, tocando la importancia de la simplicidad en el éxito empresarial."
           },
           {
-            "id": "enb3poDBWZY",
-            "titulo": "Unreasonable Success and How to Achieve It - Richard Koch Interview",
-            "canal": "Rebecca Zung",
-            "dur": 2591
+            "id": "RbBJczdJTA8",
+            "titulo": "Millionaire Richard Koch Rules to Work 1 Hour A Day!",
+            "canal": "Planet Perry",
+            "dur": 356,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Koch comparte sus reglas de vida y trabajo, resonando con la idea de simplificar para alcanzar el éxito."
           }
         ]
       }

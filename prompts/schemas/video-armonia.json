@@ -1,0 +1,33 @@
+{
+  "name": "video_armonia",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["veredictos", "sinfonia"],
+    "properties": {
+      "veredictos": {
+        "type": "array",
+        "description": "Un veredicto por video, en el mismo orden en que se recibieron.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "armonia", "rol", "tipo", "relacion", "idioma", "frase_eco", "pie", "descartar", "motivo_descarte"],
+          "properties": {
+            "id": { "type": "string", "description": "El id de YouTube tal cual se recibió (11 caracteres)." },
+            "armonia": { "type": "integer", "description": "Entero de 0 a 10 según las anclas del prompt." },
+            "rol": { "type": "string", "enum": ["abrir", "profundizar", "aterrizar", "resonar"] },
+            "tipo": { "type": "string", "enum": ["autor_habla", "tercero_habla", "resumen", "audiolibro", "otro"] },
+            "relacion": { "type": "string", "enum": ["invita", "acompana", "sustituye"] },
+            "idioma": { "type": "string", "enum": ["es", "en", "otro"] },
+            "frase_eco": { "type": "string", "description": "La frase de la edición con la que más resuena, copiada tal cual, o cadena vacía si no resuena con ninguna en particular." },
+            "pie": { "type": "string", "description": "Pie de video: una línea sobria y específica en español, máximo 140 caracteres, sin emojis." },
+            "descartar": { "type": "boolean" },
+            "motivo_descarte": { "type": "string", "description": "Vacío si descartar es false; si es true, una razón corta." }
+          }
+        }
+      },
+      "sinfonia": { "type": "string", "description": "Una frase: qué terna elegirías para esta edición y por qué. Máximo 200 caracteres." }
+    }
+  }
+}
