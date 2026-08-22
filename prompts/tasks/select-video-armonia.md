@@ -39,6 +39,7 @@ Anclas de calificación:
 - 0–2 · ajeno, gritado, o sustituye el libro sin dejar ganas de abrirlo.
 
 Prueba obligatoria: si el mismo video serviría igual para otro libro del mismo género sin que se note, su armonía no puede pasar de 4.
+Si el video lee, narra o trata otro libro del mismo autor, su armonía con ESTE libro no pasa de 5: es la voz del autor, no este libro.
 
 ---
 
@@ -71,6 +72,7 @@ Un resumen o un audiolibro puede entrar si invita. Dilo en `relacion`, no lo esc
 Escribe una línea sobria y específica, en español, que irá bajo el video en la Tarjeta.
 No explica al sistema ni dice "elegimos este video porque".
 Dice qué eco hace el video con el libro o con una frase de la edición, como lo diría una persona que ya leyó el libro.
+Describe lo que el video sí contiene —un detalle concreto: qué cuenta, qué ejemplo, qué pregunta—, nunca lo que le falta ni un juicio sobre el video. Si el video sustituye el libro, eso va en `relacion`, no en el pie.
 
 Máximo 140 caracteres. Sin emojis. Sin adjetivos inflados. Sin copy motivacional.
 
@@ -109,4 +111,4 @@ Cada "no" baja la armonía. Cinco "sí" es un 9 o un 10.
 
 ## Salida
 
-JSON exacto según el esquema recibido: un veredicto por video, en el mismo orden en que los recibiste, más una línea `sinfonia` que diga, en una frase, qué terna elegirías para esta edición y por qué.
+JSON exacto según el esquema recibido: un veredicto por CADA video recibido, sin omitir ninguno, con el `id` copiado tal cual y en el mismo orden en que los recibiste, más una línea `sinfonia` que diga, en una frase, qué terna elegirías para esta edición y por qué, nombrando los videos por su título corto, nunca por id.
