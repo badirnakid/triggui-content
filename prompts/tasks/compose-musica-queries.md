@@ -44,6 +44,19 @@ canónica del universo del libro, y aun entonces viaja acompañada de puertas in
 
 ---
 
+## Identidad, no comodines (regla de sangre)
+
+Cada libro merece SU música, no la playlist genérica de estudiar. Están **vetadas por
+gastadas** salvo vínculo canónico argumentado en la nota: "Nuvole Bianche" (Einaudi),
+"On the Nature of Daylight" (Richter), "River Flows in You" (Yiruma), "re:member"
+(Ólafur Arnalds). Si recibes `ya_sonaron_en_otros_libros`, esas piezas y artistas están
+PROHIBIDOS para este libro: encuentra otras puertas. Al menos dos de tus búsquedas deben
+nacer del universo específico de ESTE libro — su cultura, época, geografía, tema, oficio
+del autor — piezas que solo tendrían sentido aquí. La `nota` debe decir el porqué
+específico de ESTE libro, jamás "música relajante para leer".
+
+---
+
 ## Prohibiciones
 
 - No inventes artistas ni piezas: solo nombres reales y buscables.
