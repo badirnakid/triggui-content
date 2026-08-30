@@ -1,0 +1,25 @@
+{
+  "name": "musica_queries",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "queries",
+      "nota"
+    ],
+    "properties": {
+      "queries": {
+        "type": "array",
+        "description": "De 1 a 3 búsquedas literales para iTunes: artista y/o pieza con nombre propio, 2–6 palabras. Jamás el título del libro.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "nota": {
+        "type": "string",
+        "description": "Una línea (≤120) para el log: por qué estas puertas."
+      }
+    }
+  }
+}
