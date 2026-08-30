@@ -43,7 +43,7 @@ Una pieza cantada no pasa de 6 — salvo la canónica del universo del libro, qu
 llegar a 8 — y su rol solo puede ser **abrir** o **resonar**, jamás profundizar ni
 aterrizar: durante la lectura, el escenario es del instrumental.
 
-Prueba obligatoria: si la misma pieza serviría igual para otro libro del mismo género sin que se note, su armonía no puede pasar de 5 — salvo que su temperatura sea exactamente la de ESTA edición, y entonces lo dices en el pie.
+Prueba obligatoria: si la misma pieza serviría igual para otro libro del mismo género sin que se note, su armonía no puede pasar de 5. Los comodines gastados del género "música para estudiar" — Nuvole Bianche, On the Nature of Daylight, River Flows in You — no pasan de 4 salvo vínculo canónico nombrado en el pie — salvo que su temperatura sea exactamente la de ESTA edición, y entonces lo dices en el pie.
 
 ---
 
