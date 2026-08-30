@@ -1,0 +1,30 @@
+{
+  "name": "musica_armonia",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["veredictos", "sinfonia"],
+    "properties": {
+      "veredictos": {
+        "type": "array",
+        "description": "Un veredicto por pieza, en el mismo orden en que se recibieron.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "armonia", "rol", "frase_eco", "pie", "descartar", "motivo_descarte"],
+          "properties": {
+            "id": { "type": "string", "description": "El trackId tal cual se recibió." },
+            "armonia": { "type": "integer", "description": "Entero de 0 a 10 según las anclas del prompt." },
+            "rol": { "type": "string", "enum": ["abrir", "profundizar", "aterrizar", "resonar"] },
+            "frase_eco": { "type": "string", "description": "La frase de la edición con la que más resuena, tal cual, o vacía." },
+            "pie": { "type": "string", "description": "Una línea sobria en español, ≤140, sin emojis." },
+            "descartar": { "type": "boolean" },
+            "motivo_descarte": { "type": "string", "description": "Vacío si descartar es false; si es true, una razón corta." }
+          }
+        }
+      },
+      "sinfonia": { "type": "string", "description": "Una frase: qué quinteto elegirías y por qué. ≤200 caracteres." }
+    }
+  }
+}
