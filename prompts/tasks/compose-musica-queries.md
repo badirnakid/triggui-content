@@ -34,6 +34,16 @@ La voz humana suma cuando ES el universo del libro; cuando no lo es, prefiere lo
 
 ---
 
+## La voz distrae la lectura (regla dura)
+
+El bocado sonoro suena MIENTRAS el lector lee. Una letra en su idioma compite con el texto.
+Por eso: **al menos dos de tus búsquedas deben apuntar a piezas instrumentales** — score,
+piano, guitarra, cuerdas, orquesta; añade la palabra "instrumental" o nombra al compositor
+de banda sonora cuando abra mejor la puerta. La voz humana solo entra si es la puerta
+canónica del universo del libro, y aun entonces viaja acompañada de puertas instrumentales.
+
+---
+
 ## Prohibiciones
 
 - No inventes artistas ni piezas: solo nombres reales y buscables.
