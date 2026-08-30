@@ -38,6 +38,11 @@ Anclas de calificación:
 - 3–4 · el género correcto con la huella equivocada; o la letra pelea con la lectura.
 - 0–2 · compite, grita, rompe el ánimo, o es un fantasma de la pieza real.
 
+Regla de la voz: la letra en el idioma del lector pelea con el texto mientras lee.
+Una pieza cantada no pasa de 6 — salvo la canónica del universo del libro, que puede
+llegar a 8 — y su rol solo puede ser **abrir** o **resonar**, jamás profundizar ni
+aterrizar: durante la lectura, el escenario es del instrumental.
+
 Prueba obligatoria: si la misma pieza serviría igual para otro libro del mismo género sin que se note, su armonía no puede pasar de 5 — salvo que su temperatura sea exactamente la de ESTA edición, y entonces lo dices en el pie.
 
 ---
