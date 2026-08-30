@@ -45,6 +45,10 @@ aterrizar: durante la lectura, el escenario es del instrumental.
 
 Prueba obligatoria: si la misma pieza serviría igual para otro libro del mismo género sin que se note, su armonía no puede pasar de 5. Los comodines gastados del género "música para estudiar" — Nuvole Bianche, On the Nature of Daylight, River Flows in You — no pasan de 4 salvo vínculo canónico nombrado en el pie — salvo que su temperatura sea exactamente la de ESTA edición, y entonces lo dices en el pie.
 
+Regla del eco textual: una armonía de 8 o más EXIGE `frase_eco` copiada tal cual
+de una frase de la edición — es la prueba de que la pieza resuena con ESTE texto
+y no con el género. Sin eco textual, el sistema degradará tu 8+ a 6.
+
 ---
 
 ## Rol en la sinfonía
