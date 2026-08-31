@@ -97738,9 +97738,40 @@
       },
       "_musica": {
         "resuelto_el": "2026-08-31",
-        "juez": "rescate-instrumental",
-        "sinfonia": "No hay piezas que se alineen con el espíritu aventurero y curioso de Jorge, por lo que no se puede elegir un quinteto.",
-        "candidatos": []
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría 'March (From the Cuban Nutcracker Suite)' y 'The Nutcracker (Suite)' por su ritmo animado que puede abrir la lectura, aunque no conectan del todo con la curiosidad de Jorge.",
+        "candidatos": [
+          {
+            "id": "1500896701",
+            "cancion": "The Nutcracker (Suite), Op. 71a, TH 35: 2a. March. Tempo di marcia viva",
+            "artista": "Filarmónica de Viena & Herbert von Karajan",
+            "album": "Tchaikovsky: Nutcracker Suite",
+            "genero": "Clásica",
+            "dur": 159,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/a2/fc/3ca2fc70-d607-473d-5710-48fde4fec50c/mzaf_2176120315865785592.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-nutcracker-suite-op-71a-th-35-2a-march-tempo-di/1500896693?i=1500896701&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/23/ed/51/23ed51c9-57a8-f4bb-2d8c-1fcf7490a4f5/20UMGIM13660.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "abrir",
+            "pie": "La marcha tiene un ritmo animado, pero no evoca la curiosidad de Jorge.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1828159852",
+            "cancion": "March (From the Cuban Nutcracker Suite) [Arr. Davis & Lombida]",
+            "artista": "Sarah Willis & The Sarahbanda",
+            "album": "Cuban Christmas",
+            "genero": "Crossover clásica",
+            "dur": 74,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/8f/fb/258ffbfa-2490-9059-5414-e141b3db5c15/mzaf_1403905478763730841.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/march-from-the-cuban-nutcracker-suite-arr-davis-lombida/1828159631?i=1828159852&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e3/fd/cb/e3fdcb3d-47da-4fa2-f1e6-454f7ab6c666/25UMGIM47635.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "abrir",
+            "pie": "La pieza es alegre, pero no refleja la esencia de Jorge.",
+            "frase_eco": ""
+          }
+        ]
       }
     },
     {
