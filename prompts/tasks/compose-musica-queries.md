@@ -42,6 +42,15 @@ Vetadas por gastadas salvo canon argumentado: "Nuvole Bianche" (Einaudi), "On th
 
 ---
 
+## Emergencia
+
+Si recibes `emergencia`, las puertas anteriores no dieron piezas disponibles en Apple Music.
+No te rindas ni repitas: propón tres afines COMPLETAMENTE distintas y más concretas
+(compositor + pieza con nombre), instrumentales, explorando otra época, otra geografía u
+otro instrumento del mismo universo del libro. Hay millones de piezas: la puerta existe.
+
+---
+
 ## Prohibiciones
 
 - No inventes artistas ni piezas: solo nombres reales y buscables.
