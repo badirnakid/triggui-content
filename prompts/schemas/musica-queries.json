@@ -4,22 +4,19 @@
   "schema": {
     "type": "object",
     "additionalProperties": false,
-    "required": [
-      "queries",
-      "nota"
-    ],
+    "required": ["canonicas", "afines", "nota"],
     "properties": {
-      "queries": {
+      "canonicas": {
         "type": "array",
-        "description": "De 1 a 3 búsquedas literales para iTunes: artista y/o pieza con nombre propio, 2–6 palabras. Jamás el título del libro.",
-        "items": {
-          "type": "string"
-        }
+        "description": "0 a 3 búsquedas literales de piezas que pertenecen al universo propio del libro (biografiado, película, época ligada). Vacía si no hay canon real.",
+        "items": { "type": "string" }
       },
-      "nota": {
-        "type": "string",
-        "description": "Una línea (≤120) para el log: por qué estas puertas."
-      }
+      "afines": {
+        "type": "array",
+        "description": "1 a 3 búsquedas literales de cultura, época o temperatura del libro; al menos dos instrumentales.",
+        "items": { "type": "string" }
+      },
+      "nota": { "type": "string", "description": "Una línea (≤120) con el porqué específico de este libro." }
     }
   }
 }
