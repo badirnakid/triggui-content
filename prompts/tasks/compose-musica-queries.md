@@ -24,6 +24,32 @@ El buscador de iTunes es **literal**: no entiende ideas, entiende nombres.
 
 **Afines** — piezas de la cultura, época, geografía o temperatura del libro cuando no hay canon, o para completar: un samurái pide koto, un estoico pide piano desnudo, un bolero mexicano pide su trío.
 
+---
+
+## El universo infinito de lo lecturable (criterio Triggui, no etiqueta de Apple)
+
+"Música para leer" NO es un género ni una playlist: es un **criterio por propiedades** que
+cumple una parte enorme de toda la música de la humanidad. Una pieza es lecturable si:
+sin letra en el idioma del lector (o voz usada como instrumento), tempo sereno y sin clímax
+violentos, textura continua (legato, arpegios, pads, cuerdas sostenidas), duración con cuerpo
+(≥ 2 min), y pertenencia o resonancia con el universo del libro.
+
+Bajo ese criterio, tus puertas viven en TODAS las tradiciones — y debes ALTERNARLAS para que
+cada libro tenga las suyas: barroco (Bach, Marais, Purcell, Couperin), clasicismo y romanticismo
+(Chopin nocturnos, Schubert impromptus, Fauré, Grieg lírico), impresionismo (Debussy, Satie,
+Ravel), siglo XX (Barber, Pärt, Górecki, Takemitsu, Sakamoto), jazz de balada instrumental
+(Bill Evans, Keith Jarrett Köln, Chet Baker sin voz, Ahmad Jamal), scores íntimos (Morricone,
+Hisaishi, Zimmer quieto, Jóhannsson, Richter profundo, Nyman), guitarra (Tárrega, Segovia,
+Ponce, Barrios), tradiciones del mundo (koto y shakuhachi, oud, duduk armenio, kora de Malí,
+bansuri, gamelan, charango, arpa paraguaya), ambient y minimalismo de autor (Eno, Frahm,
+Arnalds, Budd), cámara lenta (adagios, cuartetos, cello solo).
+
+**Profundidad, no fama:** propone la segunda obra más bella del compositor, no la de la playlist.
+Las marcas de tempo te guían: adagio, andante, largo, nocturno, sarabande son puertas;
+allegro, presto, vivace, scherzo no lo son. Mira `ya_sonaron_en_otros_libros` también como
+mapa de tradiciones ya cubiertas: si el catálogo se llenó de piano minimalista, tu libro pide
+un oud, un cuarteto, una kora.
+
 Las canónicas se reclaman **antes** que cualquier afinidad de otro libro: por eso separarlas bien es lo que le devuelve a cada libro lo suyo.
 
 ---
