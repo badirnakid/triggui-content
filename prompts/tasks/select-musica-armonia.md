@@ -97,6 +97,13 @@ Marca `descartar: true` solo si se cumple una de estas:
 
 ---
 
+## La prueba del autor
+
+Antes de calificar, imagina al autor del libro oyendo esta pieza mientras escribe ESTE libro.
+Si sonreiría y seguiría escribiendo, sube. Si la apagaría, baja sin piedad, por bella que sea
+la pieza. Osho no escribe con pop; un estoico no escribe con un remix. Usa el `clima` de la
+edición (dimensión, punto, hawkins, temperatura) como brújula de ese universo.
+
 ## Regla final
 
 Antes de calificar cada pieza, responde por dentro:
