@@ -23,7 +23,8 @@
             "pie",
             "descartar",
             "motivo_descarte",
-            "cantada"
+            "cantada",
+            "pelea_lectura"
           ],
           "properties": {
             "id": {
@@ -61,6 +62,10 @@
             "cantada": {
               "type": "boolean",
               "description": "true si la pieza tiene letra cantada (no vocalise ni coro sin palabras)."
+            },
+            "pelea_lectura": {
+              "type": "boolean",
+              "description": "true solo si la pieza no deja leer (letra que reclama atención en el idioma del lector, gritos, agresividad)."
             }
           }
         }
