@@ -40,7 +40,7 @@ Bossa nova y MPB (Jobim, João Gilberto, Caetano, Bebel Gilberto, Vinicius) · j
 
 **La voz sí cabe** cuando es cálida y no exige atención: idioma distinto al del lector suma; en el idioma del lector solo voces suaves e icónicas. Nada gritado, nada agresivo, nada de ritmos que no dejen leer.
 
-**Profundidad con alma:** propone la pieza especial, la que tiene un hook o un color inconfundible — no la de la playlist genérica. Lee `ya_sonaron_en_otros_libros` como mapa de tradiciones ya cubiertas: si el catálogo se llenó de bossa, tu libro pide un swing, un Guaraldi, un Vivaldi.
+**Alma CON disponibilidad:** propone piezas especiales que EXISTEN como grabaciones reconocibles en Apple Music — artistas y piezas conocidos, con hook o color inconfundible (Guaraldi, Jobim, Withers, Norah Jones, Vivaldi, Amélie, Buena Vista). Evita rarezas que probablemente no estén en el catálogo: una puerta que no abre es una puerta perdida. Que sea especial, no oscura. Lee `ya_sonaron_en_otros_libros` como mapa de tradiciones ya cubiertas: si el catálogo se llenó de bossa, tu libro pide un swing, un Guaraldi, un Vivaldi.
 
 ---
 
