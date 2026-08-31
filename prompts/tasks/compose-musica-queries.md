@@ -31,7 +31,8 @@ Las canónicas se reclaman **antes** que cualquier afinidad de otro libro: por e
 ## La voz y la lectura
 
 El bocado sonoro suena MIENTRAS el lector lee. Una letra en su idioma compite con el texto.
-- En las **afines**, al menos dos de tres deben ser instrumentales (score, piano, guitarra, cuerdas, orquesta).
+- En las **afines**, las TRES son instrumentales (score, piano, guitarra, cuerdas, orquesta, tradición). El pop cantado jamás es afín.
+- Universo contemplativo: si el libro pertenece a la sabiduría, la meditación o lo espiritual (Osho, Tolle, estoicos, budismo, místicos), sus afines nacen de la tradición contemplativa — raga y sitar, shakuhachi, piano meditativo de autor, órgano o cuerdas sacras — nunca de la cultura pop del idioma del libro. El campo `clima` (dimensión, punto, hawkins, temperatura) te dice de qué universo es.
 - En las **canónicas** la voz es bienvenida cuando ES el universo del libro (Chavela en Frida): ahí la voz no distrae, encarna.
 
 ---
