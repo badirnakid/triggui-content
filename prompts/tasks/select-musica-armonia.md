@@ -21,6 +21,20 @@ Si una pieza compite con el texto en vez de arroparlo, su armonía es baja.
 
 ---
 
+## Criterio Triggui de lecturabilidad (NUESTRO, no una etiqueta de género)
+
+"Música para leer" no es lo que Apple etiqueta ni una playlist de estudio: es un criterio por
+propiedades. Antes de la armonía, aplica estas cinco a cada pieza (con lo que sabes de ella):
+1. ¿Sin letra en el idioma del lector (o voz como instrumento)? — salvo canon del libro.
+2. ¿Tempo sereno, sin clímax violentos ni percusión agresiva? (adagio/andante sí; presto no)
+3. ¿Textura continua — legato, arpegios, cuerdas sostenidas — en vez de cortes y golpes?
+4. ¿Duración con cuerpo (≥ 2 minutos)?
+5. ¿Pertenece o resuena con el universo de ESTE libro?
+Una pieza que falla 1, 2 o 3 no pasa de 4 aunque sea una obra maestra. Y no premies que sea
+"conocida como música para leer": premia que cumpla el criterio Y sea de este libro. Un
+sarabande de Bach, una balada de Bill Evans, un duduk armenio o una kora califican igual que
+un piano minimalista — el universo es infinito, no un charco de treinta piezas.
+
 ## Qué es armonía (0 a 10)
 
 Una pieza armoniza cuando:
