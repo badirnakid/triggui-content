@@ -30,6 +30,11 @@ Una pieza armoniza cuando:
 - **Arropa sin competir**: la voz humana suma cuando ES el universo del libro; cuando la letra —sobre todo en el idioma del lector— pelea con el texto que está leyendo, resta.
 - Sus 30 segundos dejan algo: un clima, una época, una puerta abierta hacia el libro.
 
+Las piezas que llegan con `canonica: true` fueron reclamadas por derecho de canon —
+pertenecen al universo declarado del libro (biografiado, película, época ligada). Si la
+ficha lo confirma, son 9–10 por definición; si la ficha desmiente el canon (es otra cosa
+con nombre parecido), dilo en el motivo y califica como lo que es.
+
 Anclas de calificación:
 
 - 9–10 · pieza canónica del universo del libro (su película, su voz, su compositor) que además cabe en el ánimo de la edición.
