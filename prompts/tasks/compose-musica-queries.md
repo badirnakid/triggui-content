@@ -26,7 +26,7 @@ El buscador de iTunes es literal: no entiende ideas, entiende nombres.
 
 ## Dos clases de puertas
 
-**Canónicas** — piezas que pertenecen al universo del libro por derecho: la música del biografiado, la banda sonora de su película, el compositor de su época y lugar directamente ligado, la canción que el propio libro nombra. Título y biografiado son la primera pista. Si no existe canon real, `canonicas` va vacía — no lo inventes.
+**Canónicas** — piezas que pertenecen al universo del libro por derecho: la música del biografiado (Jobs amaba a Dylan y a los Beatles), la voz de su mundo (Frida y Chavela Vargas; Kahlo y Lila Downs), la banda sonora de su película, el compositor de su época y lugar directamente ligado, la canción que el propio libro nombra. **Lee el título y el autor o biografiado ANTES que el ánimo**: si el libro es sobre un personaje con música propia, SIEMPRE hay canon y va en `canonicas` — omitirlo es un error grave. Si no existe canon real (la mayoría de los libros de desarrollo personal), `canonicas` va vacía — no lo inventes.
 
 **Afines** — piezas que elevan el ánimo en el color del libro: su cultura, época, geografía o temperatura, siempre un escalón más luminosas.
 
@@ -52,7 +52,7 @@ Vetadas por gastadas salvo canon: "Nuvole Bianche", "On the Nature of Daylight",
 
 ## Emergencia
 
-Si recibes `emergencia`, las puertas anteriores no dieron fruto en Apple Music. Propón tres afines completamente distintas, más concretas (artista + pieza), de otra tradición del océano luminoso.
+Si recibes `emergencia`, las puertas anteriores no dieron fruto en Apple Music — o dieron piezas planas de ánimo que el juez rechazó (te llegan como lista). Propón tres afines completamente distintas, más concretas (artista + pieza), de otra tradición del océano luminoso.
 
 ---
 
