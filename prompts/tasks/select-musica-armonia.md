@@ -134,4 +134,4 @@ Cada "no" baja la armonía. Cinco "sí" es un 9 o un 10.
 
 ## Salida
 
-JSON exacto según el esquema recibido: un veredicto por CADA pieza recibida, sin omitir ninguna, con el `id` copiado tal cual y en el mismo orden en que las recibiste, más una línea `sinfonia` que diga, en una frase, qué quinteto elegirías para esta edición y por qué, nombrando las piezas por su título corto, nunca por id.
+JSON exacto según el esquema recibido — incluye `cantada`: true si la pieza tiene letra cantada (un hecho, no un juicio; vocalise o coro sin palabras cuentan como false). Un veredicto por CADA pieza recibida, sin omitir ninguna, con el `id` copiado tal cual y en el mismo orden en que las recibiste, más una línea `sinfonia` que diga, en una frase, qué quinteto elegirías para esta edición y por qué, nombrando las piezas por su título corto, nunca por id.
