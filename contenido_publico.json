@@ -1,6 +1,811 @@
 {
   "libros": [
     {
+      "titulo": "Take nothing personally",
+      "autor": "Shubham Kumar Singh",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUYWtlIG5vdGhpbmcgcGVyc29uYWxseSDigJQgU2h1YmhhbSBLdW1hciBTaW5naCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkYwRUYiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTgxQzE3IiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY5MDhGIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjMyNi40IiB4Mj0iMzgwIiB5Mj0iMzI2LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjMzNC40IiB4Mj0iMzYwIiB5Mj0iMzM0LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjYwNS41OTk5OTk5OTk5OTk5IiB4Mj0iMzYwIiB5Mj0iNjA1LjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjYxMy41OTk5OTk5OTk5OTk5IiB4Mj0iMzgwIiB5Mj0iNjEzLjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5UYWtlIG5vdGhpbmc8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5wZXJzb25hbGx5PC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTYzLjU5OTk5OTk5OTk5OTkiIGZpbGw9IiMxOEUyMTIiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+U2h1YmhhbSBLdW1hciBTaW5naDwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MUMxNyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUYWtlIG5vdGhpbmcgcGVyc29uYWxseSDigJQgU2h1YmhhbSBLdW1hciBTaW5naCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkYwRUYiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTgxQzE3IiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY5MDhGIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjMyNi40IiB4Mj0iMzgwIiB5Mj0iMzI2LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjMzNC40IiB4Mj0iMzYwIiB5Mj0iMzM0LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjYwNS41OTk5OTk5OTk5OTk5IiB4Mj0iMzYwIiB5Mj0iNjA1LjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjYxMy41OTk5OTk5OTk5OTk5IiB4Mj0iMzgwIiB5Mj0iNjEzLjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5UYWtlIG5vdGhpbmc8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5wZXJzb25hbGx5PC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTYzLjU5OTk5OTk5OTk5OTkiIGZpbGw9IiMxOEUyMTIiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+U2h1YmhhbSBLdW1hciBTaW5naDwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MUMxNyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Take nothing personally",
+      "titulo_en": "Take nothing personally",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "serenidad",
+        "autenticidad",
+        "transformación",
+        "conciencia"
+      ],
+      "palabras_en": [
+        "transformation",
+        "serenity",
+        "self-awareness",
+        "empowerment"
+      ],
+      "frases": [
+        "⏳ Dedica un momento a observar tus emociones sin juzgar.",
+        "🫁 ¿Qué emociones te están guiando en este instante?",
+        "🌅 Imagina un río fluyendo, dejando ir las cargas emocionales.",
+        "🚶 Las emociones son olas; aprende a surfearlas."
+      ],
+      "frases_en": [
+        "🌬 Breathe deeply. Allow the stillness to settle your mind and clarify your thoughts.",
+        "🗺 Reflect on your recent interactions. How did they influence your emotional state?",
+        "🌅 Imagine your emotions as colors, painting the canvas of your daily life.",
+        "⏳ Serenity in response transforms chaos into clarity, revealing the path ahead."
+      ],
+      "frases_og": [
+        "🧭 La auto-percepción define la experiencia de la vida.",
+        "🔍 ¿Qué emociones te están guiando hoy?",
+        "💠 Reacciona desde la calma, no desde el impulso.",
+        "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+      ],
+      "frases_og_en": [
+        "🧭 Self-perception shapes the reality we experience daily.",
+        "🔍 Cultivate awareness. Let your emotions guide you toward growth.",
+        "💠 What choices do we make when faced with criticism?",
+        "✨ Emotions are the compass of our experiences, guiding us through life."
+      ],
+      "colores": [
+        "#82F17E",
+        "#E330E8",
+        "#13AE36",
+        "#650B51"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0EF",
+      "tarjeta": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Take%20nothing%20personally%20Shubham%20Kumar%20Singh%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Take%20nothing%20personally%20Shubham%20Kumar%20Singh%20interview",
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de la auto-percepción en la experiencia personal",
+            "gestión emocional en situaciones cotidianas",
+            "adopción de una perspectiva positiva ante la vida"
+          ],
+          "key_terms": [
+            "auto-percepción",
+            "gestión de emociones",
+            "perspectiva positiva",
+            "conciencia emocional",
+            "adaptación personal"
+          ],
+          "authorial_voice_notes": "La voz del autor es reflexiva y motivacional, buscando inspirar al lector a adoptar una mentalidad más consciente y positiva."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "🧭 La auto-percepción define la experiencia de la vida.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔍 ¿Qué emociones te están guiando hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Reacciona desde la calma, no desde el impulso.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🧭 Self-perception shapes the reality we experience daily.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔍 Cultivate awareness. Let your emotions guide you toward growth.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 What choices do we make when faced with criticism?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "✨ Emotions are the compass of our experiences, guiding us through life.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Dedica un momento a observar tus emociones sin juzgar.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "respiracion",
+            "phrase": "🫁 ¿Qué emociones te están guiando en este instante?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un río fluyendo, dejando ir las cargas emocionales.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Las emociones son olas; aprende a surfearlas.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 Breathe deeply. Allow the stillness to settle your mind and clarify your thoughts.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Reflect on your recent interactions. How did they influence your emotional state?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Imagine your emotions as colors, painting the canvas of your daily life.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Serenity in response transforms chaos into clarity, revealing the path ahead.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "El contenido generado se centra en la auto-percepción y la gestión emocional, conceptos que se alinean directamente con el tema inferido del libro. Frases como 'la auto-percepción actúa como un espejo' y 'la gestión emocional se convierte en un arte' reflejan la esencia del crecimiento personal y la transformación de la realidad, lo que indica que está anclado al ground_truth del libro."
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content strongly reflects the themes of self-perception and emotional management, which are central to the inferred theme of the book. Phrases like 'self-perception acts as a mirror' and 'emotional management becomes an art' directly relate to the concepts of personal experience influencing daily life. The motivational tone aligns with the inferred voice of the author, making it feel like a bl"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en la auto-percepción.",
+          "elapsed_ms": 764,
+          "usage": {
+            "prompt_tokens": 416,
+            "completion_tokens": 27,
+            "total_tokens": 443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la experiencia personal.",
+          "elapsed_ms": 1286,
+          "usage": {
+            "prompt_tokens": 395,
+            "completion_tokens": 26,
+            "total_tokens": 421,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 864,
+        "total_ms": 1286
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 108.40625,
+          "adjusted_hue": 118.40625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.10",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#82F17E",
+          "--palette-1": "#E330E8",
+          "--palette-2": "#13AE36",
+          "--palette-3": "#650B51",
+          "--accent": "#18E212",
+          "--accent-soft": "#18E21238",
+          "--accent-glow": "#18E2126b",
+          "--paper": "#EFF0EF",
+          "--ink": "#181C17",
+          "--border": "#8F908F",
+          "--highlight-bg": "#15C710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-09-11T13-48-48",
+      "_crono": {
+        "dia": "viernes",
+        "hora": 7,
+        "franja": "manana",
+        "energia": 0.9,
+        "modo": "apertura_semana",
+        "descripcion_dia": "Viernes baja intensidad, abre reflexión de semana. Tono amplio.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 68616,
+        "tokens_by_phase": {
+          "grounding": 578,
+          "anchors": 15683,
+          "palette": 0,
+          "content_es": 17709,
+          "judge_es": 1015,
+          "content_en": 16443,
+          "judge_en": 1023,
+          "voice": 864,
+          "voice_extended": 15301,
+          "highlight_judge_es_parrafoTop": 639,
+          "highlight_judge_es_parrafoBot": 648,
+          "highlight_judge_en_parrafoTop": 636,
+          "highlight_judge_en_parrafoBot": 648,
+          "csal": 6890
+        },
+        "elapsed_ms_total": 31261,
+        "elapsed_ms_by_phase": {
+          "grounding": 5040,
+          "anchors": 4142,
+          "palette": 0,
+          "cover_fallback": 109,
+          "content_es": 7162,
+          "judge_es": 2087,
+          "content_en": 6474,
+          "judge_en": 1442,
+          "voice": 1287,
+          "voice_extended": 3514,
+          "highlight_judge": 3464,
+          "lens_compatibility": 1697,
+          "csal": 23960,
+          "post_processing": 29127
+        },
+        "llm_calls_count": 41,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.4,
+          "espiritu": 0.6,
+          "relaciones": 0.8,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando alguien critica mi forma de ser",
+          "después de una discusión familiar intensa",
+          "antes de enfrentar una situación que me causa ansiedad",
+          "cuando me siento incomprendido por mis amigos",
+          "al recibir un comentario negativo en redes sociales",
+          "cuando me doy cuenta de que estoy cargando con emociones de otros",
+          "al sentir que no tengo el control de mi vida emocional",
+          "después de una ruptura amorosa",
+          "cuando me comparo constantemente con los demás",
+          "antes de hablar en público y temo el juicio de los demás",
+          "al sentir que mis emociones son un peso para mis relaciones",
+          "al experimentar una emoción que no sé cómo manejar",
+          "cuando me siento atrapado en un ciclo de pensamientos negativos",
+          "cuando quiero dejar de tomarme las cosas de manera personal",
+          "después de una experiencia laboral frustrante",
+          "al recibir un feedback negativo en el trabajo",
+          "cuando tengo miedo de lo que piensen los demás",
+          "al querer mejorar mi autoestima",
+          "cuando estoy buscando paz interior",
+          "al desear manejar mejor mis reacciones ante el estrés",
+          "después de una semana emocionalmente agotadora",
+          "cuando busco entender por qué me afecta tanto lo que otros dicen",
+          "al intentar cambiar mi perspectiva hacia una más positiva",
+          "cuando quiero dejar de ser tan autocrítico",
+          "al enfrentarme a un cambio significativo en la vida",
+          "cuando busco aprender a perdonar y dejar ir",
+          "al tratar de establecer límites emocionales con los demás",
+          "cuando me resulta difícil aceptar la crítica constructiva",
+          "al intentar encontrar la calma en medio del caos emocional",
+          "cuando necesito volver a centrarme en mí mismo"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "incomprensión",
+            "frustración",
+            "miedo",
+            "autocrítica",
+            "paz",
+            "calma",
+            "estrés",
+            "autoestima",
+            "comparación"
+          ],
+          "objetos": [
+            "comentarios negativos",
+            "críticas",
+            "redes sociales",
+            "pensamientos negativos",
+            "feedback",
+            "ruptura amorosa",
+            "cambios significativos",
+            "crítica constructiva"
+          ],
+          "contextos": [
+            "discusión familiar",
+            "situaciones laborales",
+            "redes sociales",
+            "hablar en público",
+            "ruptura amorosa",
+            "cambio de vida",
+            "semana agotadora",
+            "caos emocional"
+          ],
+          "verbos": [
+            "criticar",
+            "juzgar",
+            "comparar",
+            "manejar",
+            "controlar",
+            "perdonar",
+            "establecer límites",
+            "cambiar perspectiva",
+            "dejar ir",
+            "centrarse"
+          ]
+        },
+        "concept_tags": [
+          "auto-percepción",
+          "gestión emocional",
+          "perspectiva positiva",
+          "crítica personal",
+          "paz interior",
+          "emociones como olas",
+          "comentarios externos",
+          "carga emocional",
+          "ruptura emocional",
+          "juicio social",
+          "cambio de perspectiva",
+          "autoestima saludable",
+          "limpieza emocional"
+        ],
+        "anti_patterns": [
+          "leer como si fuera una novela de ficción",
+          "buscar técnicas de meditación avanzadas",
+          "esperar una guía detallada sobre relaciones amorosas",
+          "esperar un enfoque científico sobre las emociones"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌬️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌊"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🏄‍♂️"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal, sugiriendo un diálogo interno que podría estar presente en el texto del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un consejo o reflexión que podría estar presente en el contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora y un estilo reflexivo que sugiere que es parte de un contenido narrativo o reflexivo del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y suena como un consejo directo del autor, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una exploración emocional, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una imagen poética y reflexiva que sugiere un momento de introspección, típico de la voz autoral dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora que sugiere un aprendizaje personal, típico de la voz autoral dentro de un libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a concept that feels like it could be part of the author's exploration within the book, reflecting on self-perception."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents direct advice and introspective guidance, suggesting an internal voice typical of an author's writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that suggests an internal exploration of themes, typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within a book, rather than a description of the book itself."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct instruction and reflective tone typical of an author's voice within a book, inviting the reader to engage with the content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites personal reflection and engages the reader directly, suggesting it is part of the narrative or guidance within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize emotions in a creative way, suggesting an immersive experience typical of narrative or poetic writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within the book, rather than a description of the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-11T13:49:49.063Z",
+      "_slug": "take-nothing-personally",
+      "_edicion_numero": 98,
+      "_musica": {
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría 'Here Comes The Sun' por su mensaje de esperanza y luz, que resuena con la transformación y autenticidad del libro.",
+        "candidatos": [
+          {
+            "id": "1888309477",
+            "cancion": "Here Comes The Sun",
+            "artista": "anaiis",
+            "album": "Devotion & The Black Divine",
+            "genero": "Soul",
+            "dur": 282,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/3a/26/483a26df-2fb9-9244-0df0-874c7ded0a75/mzaf_10216782333402207063.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/here-comes-the-sun/1888308946?i=1888309477&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/4a/f6/0f4af624-2e68-446a-cd62-4bc5a1eb1b16/8721215253051.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "La luz de esta canción refleja la esperanza y la transformación que buscamos.",
+            "frase_eco": "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+          },
+          {
+            "id": "1469581442",
+            "cancion": "The Girl from Ipanema (feat. Astrud Gilberto & Antônio Carlos Jobim) [Single Version]",
+            "artista": "Stan Getz & João Gilberto",
+            "album": "Getz/Gilberto (Expanded Edition)",
+            "genero": "Jazz",
+            "dur": 167,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/e5/99/b6e599f2-db62-aead-e577-9ac4b8c31dce/mzaf_7124507397759879735.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-girl-from-ipanema-feat-astrud-gilberto-ant%C3%B4nio/1469580970?i=1469581442&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/14/c5/97/14c597a3-22c8-d2a9-dc49-0f8b1496f776/14UMGIM16822.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Un suave jazz que invita a la reflexión sobre nuestra percepción.",
+            "frase_eco": "La auto-percepción define la experiencia de la vida."
+          },
+          {
+            "id": "1676631261",
+            "cancion": "Merry Christmas, Mr. Lawrence",
+            "artista": "Pablo Sáinz-Villegas",
+            "album": "The Blue Album",
+            "genero": "Classical",
+            "dur": 343,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/0d/55/700d556d-5211-8fab-4ccf-e9a5dd311a78/mzaf_8173452552841112113.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/merry-christmas-mr-lawrence/1676631061?i=1676631261&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/76/f7/8e/76f78e9c-86e0-ccd8-7afc-be6bfd322b13/196589928115.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza clásica que envuelve en serenidad y calma.",
+            "frase_eco": "Reacciona desde la calma, no desde el impulso."
+          },
+          {
+            "id": "1773350737",
+            "cancion": "Merry Christmas Mr. Lawrence (Transcr. for Piano & Strings)",
+            "artista": "Eunike Tanzil & Scoring Berlin",
+            "album": "Merry Christmas Mr. Lawrence (Transcr. for Piano & Strings) - Single",
+            "genero": "Classical Crossover",
+            "dur": 240,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/87/53/ec875333-5197-9da6-61d5-b72fb686f0da/mzaf_1674823128868976175.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/merry-christmas-mr-lawrence-transcr-for-piano-strings/1773350734?i=1773350737&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/86/10/e286101f-3faa-c2d0-060b-acdef0b0a4b2/24UM1IM01786.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "La melodía evoca luz y esperanza, perfecta para iluminar la mente.",
+            "frase_eco": "Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "No hay videos que armonicen con la edición, todos son ajenos al contenido del libro.",
+        "candidatos": []
+      }
+    },
+    {
       "titulo": "Bruce Lee",
       "autor": "John Little",
       "tagline": "",
@@ -154,7 +959,8 @@
             "reconstrucción histórica",
             "legacy"
           ],
-          "authorial_voice_notes": "La voz de John Little es informativa y reflexiva, con un enfoque en el respeto por la obra de Bruce Lee y el deseo de honrar su verdadero legado."
+          "authorial_voice_notes": "La voz de John Little es informativa y reflexiva, con un enfoque en el respeto por la obra de Bruce Lee y el deseo de honrar su verdadero legado.",
+          "authorial_voice_notes_en": "John Little's voice is informative and reflective, with a focus on respecting Bruce Lee's work and the desire to honor his true legacy."
         },
         "og_phrases_es": [
           {
@@ -751,8 +1557,8 @@
       "_slug": "bruce-lee",
       "_edicion_numero": 97,
       "_musica": {
-        "resuelto_el": "2026-09-09",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría 'What a Wonderful World' por su mensaje de belleza y autenticidad, aunque su energía es más suave. 'Ain't No Sunshine' no encaja por su tono melancólico.",
         "candidatos": [
           {
@@ -768,6 +1574,36 @@
             "armonia": 5,
             "rol": "resonar",
             "pie": "Una reflexión sobre la belleza de la vida que resuena con la búsqueda de autenticidad.",
+            "frase_eco": ""
+          },
+          {
+            "id": "324165122",
+            "cancion": "Ain't Misbehavin' (1989 Remastered)",
+            "artista": "Fats Waller",
+            "album": "100 Ans De Jazz",
+            "genero": "Jazz",
+            "dur": 233,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ae/38/6d/ae386dd0-126b-f649-6821-653d08c41141/mzaf_5719340801864322329.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/aint-misbehavin-1989-remastered/324164750?i=324165122&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/39/ac/af/39acaf9b-2d20-7c0b-c5d6-a78e7a68057d/mzi.tdtivpwd.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Un clásico del jazz que evoca la autenticidad y el legado de un artista.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1443144347",
+            "cancion": "Misty",
+            "artista": "Erroll Garner",
+            "album": "The Original Misty",
+            "genero": "Jazz",
+            "dur": 169,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/0b/3c/7a0b3c6a-6928-a9e9-7212-9a45b93228de/mzaf_6037335216262136543.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/misty/1443144342?i=1443144347&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0f/f7/92/0ff792e5-9309-6684-f8c5-06d92bb6ed56/00042283491021.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía suave que invita a la reflexión sobre la autenticidad y el legado.",
             "frase_eco": ""
           }
         ]
@@ -788,7 +1624,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "En este podcast, Little ofrece una visión profunda sobre las peleas reales de Bruce Lee y su impacto en el arte marcial."
+            "pie": "En este podcast, Little ofrece una visión profunda sobre las peleas reales de Bruce Lee y su impacto en el arte marcial.",
+            "pie_en": "In this podcast, Little offers a deep insight into Bruce Lee's real fights and their impact on martial arts."
           },
           {
             "id": "SpqNW4uJPSQ",
@@ -801,7 +1638,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "Little comparte su experiencia y reflexiones sobre Bruce Lee, aportando contexto a su legado y filosofía."
+            "pie": "Little comparte su experiencia y reflexiones sobre Bruce Lee, aportando contexto a su legado y filosofía.",
+            "pie_en": "Little shares his experiences and reflections on Bruce Lee, providing context to his legacy and philosophy."
           },
           {
             "id": "4OzzTwH3TkY",
@@ -814,7 +1652,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "Little reflexiona sobre el legado de Bruce Lee y su influencia en el cine y las artes marciales."
+            "pie": "Little reflexiona sobre el legado de Bruce Lee y su influencia en el cine y las artes marciales.",
+            "pie_en": "Little reflects on Bruce Lee's legacy and his influence on cinema and martial arts."
           }
         ]
       }
@@ -2592,7 +3431,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -2604,7 +3443,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -2616,7 +3455,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -4154,9 +4993,9 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -4166,9 +5005,9 @@
       },
       "tarjeta_base": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -4178,9 +5017,9 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -4894,8 +5733,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su suavidad y calidez, que complementa la búsqueda de conexión en el libro.",
         "candidatos": [
           {
@@ -4912,6 +5751,51 @@
             "rol": "profundizar",
             "pie": "Una melodía suave que acompaña la búsqueda de conexión y comprensión.",
             "frase_eco": ""
+          },
+          {
+            "id": "625199597",
+            "cancion": "Café 1930",
+            "artista": "Giampaolo Bandini-Cesare Chiacchiaretta",
+            "album": "Hombres De Tango",
+            "genero": "Clásica",
+            "dur": 417,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/aa/6e/af/aa6eaf55-d473-7aea-9775-010a74899e12/mzaf_9218987033565063241.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/caf%C3%A9-1930/625199190?i=625199597&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/c7/71/aa/c771aad3-3134-91e1-c2a8-a74b6348a1e5/8055348000245.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "El tango refleja la conexión y el entendimiento en las relaciones humanas.",
+            "frase_eco": "🔁 ¿Qué señales emites cuando interactúas con mujeres?"
+          },
+          {
+            "id": "376141820",
+            "cancion": "Libertango",
+            "artista": "Piazzolla Astor Pantaleon",
+            "album": "Libertango - Buenos Aires Hora Cero",
+            "genero": "Latin",
+            "dur": 166,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/f6/92/6cf692c3-fbab-7794-0a4b-5c36e6f6bda9/mzaf_2209387271080923862.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/libertango/376141813?i=376141820&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/db/5a/96/mzi.bgdhitza.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza que evoca la complejidad de las relaciones, pero carece de un mensaje claro.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1469659224",
+            "cancion": "Miserlou",
+            "artista": "Dick Dale & His Del-Tones",
+            "album": "Surfer's Choice",
+            "genero": "Rock",
+            "dur": 137,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/56/53/3e565339-9e40-e507-1288-b3fbeb23dce0/mzaf_8282484630156565900.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/miserlou/1469659203?i=1469659224&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/70/ea/d5/70ead523-77b5-9b99-e1a1-cf3f3990217c/090771118424.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Energía vibrante que invita a la acción y a la conexión, resonando con la apertura del libro.",
+            "frase_eco": "🔁 ¿Qué señales emites cuando interactúas con mujeres?"
           }
         ]
       }
@@ -4981,7 +5865,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -4993,7 +5877,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -5005,7 +5889,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -5789,7 +6673,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -6653,7 +7537,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -6665,7 +7549,7 @@
       },
       "tarjeta_base": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -6677,7 +7561,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -8165,8 +9049,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'De Ushuaia a la Quiaca' de Santaolalla y 'De Ushuaia a la Quiaca' de Miloš Karadaglić. Ambas piezas evocan paisajes y simplicidad, aportando un fondo sonoro que acompaña la lectura sin distr",
         "candidatos": [
           {
@@ -8198,6 +9082,51 @@
             "rol": "aterrizar",
             "pie": "Una melodía que evoca paisajes, pero carece de un hook que eleve el ánimo.",
             "frase_eco": ""
+          },
+          {
+            "id": "366688278",
+            "cancion": "Morning Mood (From Peer Gynt Suite No. 1, Op. 46)",
+            "artista": "Alexander Gibson & London Festival Orchestra",
+            "album": "Reader's Digest Music: Coming Attractions: Classical Music for Movie Trailers",
+            "genero": "Clásica",
+            "dur": 235,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/43/ac/b6/43acb6a2-7012-a1e2-96ab-597d45c660a2/mzaf_149898457741345519.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/morning-mood-from-peer-gynt-suite-no-1-op-46/366687490?i=366688278&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/3f/35/a8/mzi.uyeobdbb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La suavidad de esta pieza clásica acompaña la búsqueda de claridad y equilibrio.",
+            "frase_eco": ""
+          },
+          {
+            "id": "539447333",
+            "cancion": "La Vie en rose",
+            "artista": "Louis Armstrong",
+            "album": "The Very Best of Jazz: 50 Unforgettable Tracks (Remastered)",
+            "genero": "Jazz",
+            "dur": 204,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/e3/c1/3ae3c174-b5ba-91de-f099-ed7c5d9b35ee/mzaf_8756966327673980876.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/la-vie-en-rose/539446930?i=539447333&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/be/4e/e3be4e3c-f351-f1ff-66a8-5f322b1660cd/cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Un clásico que evoca la belleza de lo simple, aunque su tono es melancólico.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1451973356",
+            "cancion": "Merry Go Round of Life (From \"Howl's Moving Castle\") [Arr. Koseki]",
+            "artista": "Kaori Muraji",
+            "album": "Cinema - Movie Themes for Classical Guitar",
+            "genero": "Clásica",
+            "dur": 242,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/b1/ad/efb1ad21-0ec4-6f97-0721-5d5d129806c6/mzaf_16063565623625226963.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/merry-go-round-of-life-from-howls-moving-castle-arr-koseki/1451973161?i=1451973356&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/38/49/39/38493925-7372-8996-55a5-73aed8c48d20/18UMGIM83951.rgb.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "aterrizar",
+            "pie": "La melodía evoca un equilibrio entre lo complejo y lo esencial, ideal para reflexionar sobre la simplicidad.",
+            "frase_eco": "🕊 La simplicidad no es la ausencia de complejidad, sino su manejo hábil."
           }
         ]
       }
@@ -8973,8 +9902,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría las piezas de Olivia Belli por su capacidad de profundizar en la reflexión, aunque ninguna logra elevar el ánimo como se requiere.",
         "candidatos": [
           {
@@ -8990,6 +9919,36 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una reimaginación de Satie que ofrece calidez, aunque no destaca en energía.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1436239150",
+            "cancion": "What a Wonderful World",
+            "artista": "Joey Ramone",
+            "album": "Don't Worry About Me",
+            "genero": "Rock",
+            "dur": 143,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/ad/a7/6cada797-2bab-321a-d3d6-b7bd84172236/mzaf_2155988686418900281.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/what-a-wonderful-world/1436239145?i=1436239150&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/7c/8e/0b/7c8e0bfb-d96a-7b7b-372c-98ded24293c2/5414939519277.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "resonar",
+            "pie": "Una canción que celebra la belleza de la vida y las conexiones humanas.",
+            "frase_eco": "💠 ¿Qué papel juegan tus relaciones en tu bienestar?"
+          },
+          {
+            "id": "1840877915",
+            "cancion": "Isn't She Lovely",
+            "artista": "Bossa Nova Covers & Mats & My",
+            "album": "Isn't She Lovely - Single",
+            "genero": "Bossa nova",
+            "dur": 215,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f5/31/41/f53141fd-4fff-4a3d-1e93-7726c542fbb6/mzaf_8236563001611947805.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/isnt-she-lovely/1840877911?i=1840877915&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/43/32/b6433252-23c3-fe43-da90-4461ead1f397/196873629803.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una melodía suave que evoca alegría, ideal para reflexionar sobre las relaciones.",
             "frase_eco": ""
           }
         ]
@@ -10561,8 +11520,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Estrellita' por su calidez y suavidad, que puede acompañar la lectura sin robar protagonismo.",
         "candidatos": [
           {
@@ -12975,8 +13934,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la concentración, creando un ambiente propicio para la lectura y reflexión.",
         "candidatos": [
           {
@@ -12993,6 +13952,21 @@
             "rol": "profundizar",
             "pie": "Una melodía que invita a la reflexión y al enfoque, ideal para momentos de concentración.",
             "frase_eco": ""
+          },
+          {
+            "id": "1440857786",
+            "cancion": "Better Together",
+            "artista": "Jack Johnson",
+            "album": "In Between Dreams (Bonus Track Version)",
+            "genero": "Rock",
+            "dur": 207,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/f7/f0/78f7f024-c299-c3d9-585b-4e5955c52cb9/mzaf_14926015658032188993.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/better-together/1440857781?i=1440857786&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/44/06/fd/4406fdc0-aab5-e300-82ba-3e5fe81a68a7/00602537868858.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La calidez de esta canción acompaña el viaje hacia la concentración y el bienestar.",
+            "frase_eco": "La práctica de la concentración es un refugio en tiempos de distracción, ayudando a dominar la capacidad de concentración para superar la ansiedad y el estrés."
           }
         ]
       }
@@ -13754,8 +14728,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría las tres piezas de Ólafur Arnalds por su atmósfera reflexiva, aunque ninguna logra elevar el ánimo como se requiere.",
         "candidatos": [
           {
@@ -13772,6 +14746,21 @@
             "rol": "abrir",
             "pie": "Una melodía más animada que puede abrir la mente a nuevas preguntas.",
             "frase_eco": ""
+          },
+          {
+            "id": "1417096682",
+            "cancion": "Meditation (feat. Anthony Kunz)",
+            "artista": "Henri Star कृष्ण & Jules Massenet",
+            "album": "The Angel One",
+            "genero": "New Age",
+            "dur": 344,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/f8/4d/70f84d20-291c-8c7b-1810-f22aab046789/mzaf_10466680220012347272.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/meditation-feat-anthony-kunz/1417096391?i=1417096682&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/32/1f/66/321f664b-1c85-7f5f-2b63-c102b0e7c697/859723519258_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a la introspección y la reflexión personal.",
+            "frase_eco": "Vacía."
           }
         ]
       }
@@ -14517,8 +15506,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría las tres piezas para crear un ambiente reflexivo, aunque no logran elevar el ánimo ni resonar con el texto.",
         "candidatos": [
           {
@@ -15300,8 +16289,8 @@
         }
       ],
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Estrellita' por su calidez y conexión emocional, que resuena con el mensaje de transformación y alegría del libro.",
         "candidatos": [
           {
@@ -15317,6 +16306,21 @@
             "armonia": 7,
             "rol": "aterrizar",
             "pie": "Una interpretación que evoca calidez y conexión, ideal para acompañar el mensaje del libro.",
+            "frase_eco": "La sabiduría del corazón te guía hacia la alegría ilimitada."
+          },
+          {
+            "id": "6776522276",
+            "cancion": "Edvard Grieg — Peer Gynt Suite, Morning Mood (Light Calm Jazz Version)",
+            "artista": "Just Jazz",
+            "album": "Jazz Covers of Classical Music",
+            "genero": "Jazz",
+            "dur": 193,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/a3/26/1da326a4-becb-706f-ce47-f6b94da58f6b/mzaf_10594776077615268700.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/edvard-grieg-peer-gynt-suite-morning-mood-light-calm/6776522272?i=6776522276&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/be/d9/69/bed9695d-5b1e-a42d-6a83-e12921d83c9a/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Esta pieza evoca la calma necesaria para conectar con la alegría del corazón.",
             "frase_eco": "La sabiduría del corazón te guía hacia la alegría ilimitada."
           }
         ]
@@ -16058,8 +17062,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Minor Swing' por su energía vibrante que resuena con la acción y la simplicidad, ideal para acompañar la lectura.",
         "candidatos": [
           {
@@ -16090,6 +17094,21 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "Una pieza instrumental que evoca la determinación y el pragmatismo en la búsqueda de la excelencia.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1484131253",
+            "cancion": "Winter Wonderland / Don't Worry Be Happy (feat. Tori Kelly)",
+            "artista": "Pentatonix",
+            "album": "The Best Of Pentatonix Christmas",
+            "genero": "Christmas: Pop",
+            "dur": 207,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/94/60/f19460e4-47b5-d88f-eac0-a5bde628ae00/mzaf_16259618864941037383.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/winter-wonderland-dont-worry-be-happy-feat-tori-kelly/1484130985?i=1484131253&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/46/7d/b8467deb-c828-1ce9-6573-2e1303608a26/886447949801.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una fusión alegre que invita a disfrutar de lo simple y lo festivo.",
             "frase_eco": ""
           }
         ]
@@ -17626,7 +18645,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -18457,8 +19476,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Better Together' de Jack Johnson por su mensaje de conexión y cercanía, que resuena con la esencia de ser un padre presente.",
         "candidatos": [
           {
@@ -18490,6 +19509,21 @@
             "rol": "profundizar",
             "pie": "Un clásico que evoca la calidez de los momentos compartidos en familia.",
             "frase_eco": "Las historias compartidas crean conexiones profundas."
+          },
+          {
+            "id": "1873594582",
+            "cancion": "Crisp Spring Breeze",
+            "artista": "Tom'sTone",
+            "album": "Vivaldi: Pulse & Seasons — Vol.01|Four Seasons: Rewired Electronic Lounge · Iconic · Playl",
+            "genero": "Músicas del mundo",
+            "dur": 243,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/18/3d/f4183dc9-a307-b12a-b74b-51f3c6bd705e/mzaf_9419180544501382085.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/crisp-spring-breeze/1873594578?i=1873594582&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/29/d8/c029d805-cffc-562e-09be-c4aa6c0439d7/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Evoca la frescura de la paternidad, aunque carece de un hook fuerte.",
+            "frase_eco": ""
           }
         ]
       }
@@ -20818,8 +21852,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría 'saman' de Ólafur Arnalds por su atmósfera envolvente, aunque no logra elevar el ánimo como se requiere para este libro.",
         "candidatos": [
           {
@@ -20836,6 +21870,21 @@
             "rol": "profundizar",
             "pie": "Una pieza que evoca calma, pero carece de la energía necesaria para acompañar la lectura.",
             "frase_eco": ""
+          },
+          {
+            "id": "1764765590",
+            "cancion": "Put It All On Me",
+            "artista": "Eli Adams",
+            "album": "Put It All On Me - Single",
+            "genero": "Rock",
+            "dur": 274,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/b3/68/b7b368db-3ba2-03f1-6355-087be876a293/mzaf_14564118008470026577.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/put-it-all-on-me/1764765318?i=1764765590&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f8/3c/e2/f83ce2b5-cd51-e566-afca-240802d44c37/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la organización y la claridad en medio del caos.",
+            "frase_eco": "🧭 En un mundo donde la complejidad y la posibilidad de error son constantes, las listas de verificación emergen como herramientas esenciales para garantizar que cada tarea se realice con precisión y e"
           }
         ]
       }
@@ -23163,8 +24212,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Estrellita' por su serenidad que acompaña la reflexión y 'Saman' por su capacidad de abrir la mente a nuevas lecciones.",
         "candidatos": [
           {
@@ -23196,6 +24245,36 @@
             "rol": "abrir",
             "pie": "El ritmo alegre de esta pieza invita a reflexionar sobre las oportunidades en los desafíos.",
             "frase_eco": "⚡ ¿Qué lecciones se esconden tras tu mayor desafío?"
+          },
+          {
+            "id": "1799291613",
+            "cancion": "La Vie En Rose",
+            "artista": "Sophie Milman",
+            "album": "Sophie Milman",
+            "genero": "Jazz",
+            "dur": 291,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/98/eb/8098eb0b-1d03-c939-7d7f-c99a51c237e1/mzaf_11510322690315645635.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/la-vie-en-rose/1799290323?i=1799291613&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/b7/61/d5b761f1-8bee-04f7-a64a-97fe5d045498/803057002924_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a reflexionar sobre las oportunidades en la adversidad.",
+            "frase_eco": "🪞 Cada obstáculo trae consigo una oportunidad oculta."
+          },
+          {
+            "id": "272298244",
+            "cancion": "Allegro",
+            "artista": "Orquesta de Cámara de Salzburgo & Alfred Scholz",
+            "album": "Antonio Vivaldi, las Cuatro Estaciones",
+            "genero": "Clásica",
+            "dur": 212,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b8/a1/d8/b8a1d8e6-0e28-eb5c-c25f-c09abbb51027/mzaf_18256162001419109044.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/allegro/272297522?i=272298244&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/f9/4f/0d/f94f0d66-9640-b945-4575-a6bb118ea410/dj.pwucpyzt.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "La música clásica de Vivaldi evoca la transformación y el crecimiento ante la adversidad.",
+            "frase_eco": "🪞 Cada obstáculo trae consigo una oportunidad oculta."
           }
         ]
       }
@@ -24833,8 +25912,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría las tres piezas de Ólafur Arnalds por su atmósfera introspectiva, aunque no logran elevar el ánimo como se requiere.",
         "candidatos": [
           {
@@ -24851,6 +25930,36 @@
             "rol": "profundizar",
             "pie": "La suavidad de esta bossa nova invita a la reflexión y la conexión en cada conversación.",
             "frase_eco": "🌓 Frases simples pueden abrir diálogos profundos si se usan con la debida intención y claridad."
+          },
+          {
+            "id": "1706219804",
+            "cancion": "Let Her Go (feat. Ed Sheeran) [Anniversary Edition Acoustic]",
+            "artista": "Passenger",
+            "album": "All The Little Lights (Anniversary Edition)",
+            "genero": "Cantautores",
+            "dur": 255,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/cb/f6/72cbf6f1-f42f-83e3-f16b-8c396e5bc40e/mzaf_10236295888113702894.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/let-her-go-feat-ed-sheeran-anniversary-edition-acoustic/1706219478?i=1706219804&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/82/52/1f8252d9-d3f1-3deb-2989-58155494ede4/067003148856.png/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una melodía suave que invita a la reflexión sobre la conexión en las conversaciones.",
+            "frase_eco": "🌓 Frases simples pueden abrir diálogos profundos si se usan con la debida intención y claridad."
+          },
+          {
+            "id": "1779009412",
+            "cancion": "Méditation (From the Opera \"Thaïs\")",
+            "artista": "André Rieu & Johann Strauss Orchestra",
+            "album": "Love Letters",
+            "genero": "Crossover clásica",
+            "dur": 316,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/82/9a/96829a62-e1c2-243f-26f6-8ff77f59e6b2/mzaf_10882453218230614501.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/m%C3%A9ditation-from-the-opera-tha%C3%AFs/1779009196?i=1779009412&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/65/da/0e65dac2-beac-c316-1e9f-b91dc9d685bc/0602537715336.png/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una pieza clásica que invita a la reflexión, pero carece de la energía necesaria para conectar con el texto.",
+            "frase_eco": ""
           }
         ]
       }
@@ -25636,8 +26745,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría piezas que abran la mente y eleven el ánimo, como música que inspire reflexión y aprendizaje.",
         "candidatos": [
           {
@@ -25654,6 +26763,51 @@
             "rol": "aterrizar",
             "pie": "Suave y tranquila, pero carece de energía para acompañar la lectura.",
             "frase_eco": "La rigidez obstaculiza el aprendizaje y la adaptación."
+          },
+          {
+            "id": "1798725116",
+            "cancion": "Canton",
+            "artista": "Nils Frahm",
+            "album": "Night",
+            "genero": "Crossover clásica",
+            "dur": 325,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/51/06/5a5106fd-cb50-623e-9240-f10096e0e451/mzaf_1952706129850439063.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/canton/1798724881?i=1798725116&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0d/59/14/0d591455-b6b1-e9d6-aca9-c0e9f5a33e43/4066004773247_3000.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Interesante mezcla de sonidos, pero no aporta la luz necesaria para acompañar la lectura.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1451143716",
+            "cancion": "My Friend the Forest",
+            "artista": "Nils Frahm",
+            "album": "All Melody",
+            "genero": "Ambient",
+            "dur": 316,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/1b/11/9d1b11a0-2605-361a-08e0-5c43ec80742e/mzaf_6952389697628064271.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/my-friend-the-forest/1451143439?i=1451143716&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/82/4f/16/824f16c4-eea7-71ef-ec3b-6b68ad3be0a0/4050486114421_cover.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Suave y envolvente, pero carece de un impulso que eleve el ánimo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1451164643",
+            "cancion": "Ambre",
+            "artista": "Nils Frahm",
+            "album": "Wintermusik - EP",
+            "genero": "Ambient",
+            "dur": 227,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/d1/94/6dd194a8-841d-5a21-5b32-f61110e390d9/mzaf_16670246815521199110.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/ambre/1451164642?i=1451164643&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a4/cc/3e/a4cc3e29-b0fd-a3c1-96c7-a8ea84bdf082/4050486010723_cover.jpg/600x600bb.jpg",
+            "armonia": 4,
+            "rol": "profundizar",
+            "pie": "Una pieza que invita a la introspección, pero no eleva el ánimo.",
+            "frase_eco": ""
           }
         ]
       }
@@ -26464,8 +27618,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Desafinado' por su suave melodía que acompaña la reflexión sobre la simplicidad y la felicidad en lo esencial.",
         "candidatos": [
           {
@@ -26482,6 +27636,51 @@
             "rol": "resonar",
             "pie": "Una melodía que evoca la serenidad de lo simple y esencial.",
             "frase_eco": "💠 La verdadera felicidad se encuentra en lo simple, no en lo abundante."
+          },
+          {
+            "id": "267756079",
+            "cancion": "ワン・ノート・サンバ",
+            "artista": "Lisa Ono",
+            "album": "The music of Antonio Carlos Jobim \"IPANEMA\"",
+            "genero": "Jazz",
+            "dur": 182,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/7f/ff/4e7fff24-7aed-02ea-c2ac-a9e57d9b8bd9/mzaf_10978862291753374125.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/%E3%83%AF%E3%83%B3-%E3%83%8E%E3%83%BC%E3%83%88-%E3%82%B5%E3%83%B3%E3%83%90/267755433?i=267756079&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/78/f3/7a/78f37a05-704e-4969-9511-c3206c09c19b/mzi.tlflbksk.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "La suavidad de esta pieza acompaña la búsqueda de la felicidad en lo simple.",
+            "frase_eco": "💠 La verdadera felicidad se encuentra en lo simple, no en lo abundante."
+          },
+          {
+            "id": "1523577004",
+            "cancion": "The Entertainer",
+            "artista": "Gautier Capuçon & Jérôme Ducros",
+            "album": "Emotions",
+            "genero": "Clásica",
+            "dur": 170,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/c1/f9/b9c1f957-c6d4-fb22-c260-f19f348dbb07/mzaf_2536299383640840519.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-entertainer/1523576564?i=1523577004&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/e5/00/3be500ed-f528-c32e-b9bd-bb6a6fcc7390/190295214043.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía que invita a la reflexión sobre lo que realmente importa en la vida.",
+            "frase_eco": "🧭 ¿Cuántas cosas realmente necesitas para ser feliz?"
+          },
+          {
+            "id": "894836477",
+            "cancion": "Samba de Uma Nota Só",
+            "artista": "Voz en Punto",
+            "album": "Del Tingo al Tango",
+            "genero": "Clásica",
+            "dur": 122,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/68/55/14/68551478-61ff-b6e4-22fd-537c81e8c0cc/mzaf_6791884597942046400.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/samba-de-uma-nota-s%C3%B3/894836435?i=894836477&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/e9/28/82/e9288237-702b-4e55-19ef-cce89c7df218/7509708004196.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Una pieza que evoca la simplicidad y la belleza de lo esencial, ideal para reflexionar.",
+            "frase_eco": ""
           }
         ]
       }
@@ -27258,8 +28457,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su calma, que puede acompañar la lectura, pero no logra elevar el ánimo como se espera.",
         "candidatos": [
           {
@@ -27276,6 +28475,51 @@
             "rol": "aterrizar",
             "pie": "Una pieza que evoca calma, pero carece de la energía necesaria para elevar el ánimo.",
             "frase_eco": "🪞 La filosofía ganbatte transforma los obstáculos en aprendizajes."
+          },
+          {
+            "id": "1596722863",
+            "cancion": "Late",
+            "artista": "Nils Frahm",
+            "album": "Old Friends New Friends",
+            "genero": "Crossover clásica",
+            "dur": 198,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/92/e3/7492e3b3-39a8-3c82-7825-b7f68c70c9cd/mzaf_2673153045376727293.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/late/1596722859?i=1596722863&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ad/4e/e9/ad4ee90a-d5a9-fdfd-d399-77727a36d6ce/4050538759662.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la reflexión, aunque no es del todo luminosa.",
+            "frase_eco": ""
+          },
+          {
+            "id": "315176326",
+            "cancion": "Concerto No. 1 In e Major - RV 269 Spring: Allegro a",
+            "artista": "Camerata Bern & Thomas Füri",
+            "album": "Vivaldi: the Four Seasons (Die Vier Jahreszeiten)",
+            "genero": "Clásica",
+            "dur": 202,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/88/d5/62/88d56205-e6c3-084b-229b-02dd956343dd/mzaf_9857055212679812118.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/concerto-no-1-in-e-major-rv-269-spring-allegro-a/315176259?i=315176326&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/3d/85/8b/mzi.vzqeoydf.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza clásica que evoca el renacer y la esperanza, ideal para reflexionar sobre el esfuerzo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "299575368",
+            "cancion": "La Primavera (Spring, RV 269): Concerto No. 1 in E Major: I. Allegro",
+            "artista": "Amsterdam Guitar Trio",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Clásica",
+            "dur": 196,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/70/7f/91707f42-9cca-9e16-3ed1-9ed4bc4f6efd/mzaf_8320060051170320682.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/la-primavera-spring-rv-269-concerto-no-1-in-e-major-i-allegro/299575365?i=299575368&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/a9/fd/c0/a9fdc089-04da-c048-9eb4-ec22103ff9e5/090266165223.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "La energía de esta obra clásica acompaña el proceso de crecimiento y perseverancia.",
+            "frase_eco": ""
           }
         ]
       }
@@ -28049,8 +29293,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su belleza clásica, aunque no logra elevar el ánimo como se espera en el contexto del libro.",
         "candidatos": [
           {
@@ -28067,6 +29311,36 @@
             "rol": "aterrizar",
             "pie": "Una melodía que evoca la determinación y el enfoque en la búsqueda de un legado.",
             "frase_eco": ""
+          },
+          {
+            "id": "1529156346",
+            "cancion": "Happy",
+            "artista": "David Garrett",
+            "album": "Alive - My Soundtrack (Deluxe)",
+            "genero": "Crossover clásica",
+            "dur": 189,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/68/e2/f5/68e2f542-3249-3189-45f2-ce1bad62ef3b/mzaf_16309432148613458536.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/happy/1529155739?i=1529156346&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/56/47/d7/5647d7f7-30a6-19cf-db3e-bd287bc8ab28/20UMGIM67084.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una melodía vibrante que invita a la acción y a la reflexión sobre el legado.",
+            "frase_eco": "🔍 La misión colosal define la grandeza de un visionario."
+          },
+          {
+            "id": "158667016",
+            "cancion": "The Four Seasons - Violin Concerto in E Major, RV 269 \"Spring\": I. Allegro",
+            "artista": "Giuliano Carmignola, Andrea Marcon & Venice Baroque Orchestra",
+            "album": "Vivaldi: The Four Seasons (Expanded Edition)",
+            "genero": "Clásica",
+            "dur": 197,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/89/d3/7289d323-3275-447e-acfd-e691c1842a1d/mzaf_10644241615847571054.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-four-seasons-violin-concerto-in-e-major-rv-269/158667012?i=158667016&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Features/ba/a1/ce/dj.dldaxifg.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La energía del violín evoca la grandeza de una misión colosal.",
+            "frase_eco": "🔍 La misión colosal define la grandeza de un visionario."
           }
         ]
       }
@@ -35899,7 +37173,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -43640,8 +44914,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su profundidad melódica, aunque su tono melancólico puede no resonar con el ánimo activo del libro.",
         "candidatos": [
           {
@@ -43658,6 +44932,36 @@
             "rol": "profundizar",
             "pie": "La melancolía de esta pieza puede contrastar con el ánimo de conexión que busca el libro.",
             "frase_eco": "Vacía."
+          },
+          {
+            "id": "668403430",
+            "cancion": "Sway",
+            "artista": "Michael Bublé",
+            "album": "Michael Bublé",
+            "genero": "Pop",
+            "dur": 188,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/cf/4a/92cf4a07-aac7-eb44-2883-87e1b5c79caa/mzaf_7230369138937167834.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sway/668403420?i=668403430&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/63/9d/97/639d9783-4ff1-806a-9900-2c92e560547e/093624942719.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía suave que invita a la conexión, ideal para un ambiente de networking.",
+            "frase_eco": ""
+          },
+          {
+            "id": "539447014",
+            "cancion": "Sway",
+            "artista": "Dean Martin",
+            "album": "The Very Best of Jazz: 50 Unforgettable Tracks (Remastered)",
+            "genero": "Jazz",
+            "dur": 164,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/39/09/1e3909f6-13c5-5cb4-29b4-280c8bdc18f4/mzaf_5395163661242197235.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sway/539446930?i=539447014&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/be/4e/e3be4e3c-f351-f1ff-66a8-5f322b1660cd/cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía suave que invita a la reflexión sobre las conexiones personales.",
+            "frase_eco": ""
           }
         ]
       }
@@ -44460,8 +45764,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de sostener el ánimo y permitir la reflexión, ideal para acompañar la lectura de un legado.",
         "candidatos": [
           {
@@ -44477,6 +45781,51 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una pieza instrumental que invita a la reflexión y acompaña el momento presente.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1586499272",
+            "cancion": "La Vie En Rose",
+            "artista": "Lucy Dacus",
+            "album": "2019",
+            "genero": "Alternative",
+            "dur": 170,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/ea/91/d5ea91fe-a011-56e9-8f52-de2658665569/mzaf_6972604130092297468.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/la-vie-en-rose/1586499270?i=1586499272&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f1/e5/c3/f1e5c36c-5e05-211d-3d47-1696671bec6a/744861145257.png/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Una interpretación que evoca la belleza de los sueños y legados.",
+            "frase_eco": "🧭 Cada sueño realizado es un legado que florece más allá de nosotros."
+          },
+          {
+            "id": "1035404554",
+            "cancion": "Méditation from Thaïs",
+            "artista": "Kathryn Stott & Yo-Yo Ma",
+            "album": "Paris - La Belle Époque (Remastered)",
+            "genero": "Clásica",
+            "dur": 346,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/b2/be/7db2be9e-fc3a-56e2-b459-e817d396f08d/mzaf_10263936258646957345.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/m%C3%A9ditation-from-tha%C3%AFs/1035404326?i=1035404554&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/b7/11/f6/b711f684-7c6e-159f-0a57-4c23271ef73f/884977495263.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza que invita a la reflexión, pero su tono es más melancólico que esperanzador.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1452825685",
+            "cancion": "Thaïs - Original Version - Act Trois: C'est Toi, Mon Père",
+            "artista": "Renée Fleming, Yves Abel, Orchestre National Bordeaux Aquitaine & Thom",
+            "album": "Massenet: Thaïs",
+            "genero": "Clásica",
+            "dur": 321,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dc/9a/ce/dc9ace18-729a-c9a4-3c52-12cedfb56cf9/mzaf_407610498636891643.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/tha%C3%AFs-original-version-act-trois-cest-toi-mon-p%C3%A8re/1452825030?i=1452825685&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/86/4e/89/864e890f-bc2d-f135-352e-8f7c1ce45281/00028946676622.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "La belleza de la música clásica puede resonar, pero carece de la energía necesaria para elevar el ánimo.",
             "frase_eco": ""
           }
         ]
@@ -45270,8 +46619,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría las tres piezas por su conexión con el tema del crecimiento personal, aunque todas son más introspectivas que energizantes.",
         "candidatos": [
           {
@@ -45303,6 +46652,21 @@
             "rol": "aterrizar",
             "pie": "Una melodía que invita a reflexionar sobre el bienestar y la transformación personal.",
             "frase_eco": "⚡ Transformar el estrés en una herramienta para el crecimiento es clave."
+          },
+          {
+            "id": "401064914",
+            "cancion": "The Entertainer",
+            "artista": "Dick Hyman",
+            "album": "Les Classiques Du Cinéma",
+            "genero": "Clásica",
+            "dur": 266,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5d/5d/e3/5d5de362-00c1-e763-8ab4-ec3e2510e2a1/mzaf_13939228268162843678.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-entertainer/401064564?i=401064914&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/40/47/3f/40473fc9-1bdd-678a-00aa-6777fb65beec/743219307927.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Una melodía clásica que evoca un sentido de ligereza y diversión, ideal para reflexionar sobre el cambio.",
+            "frase_eco": ""
           }
         ]
       }
@@ -46849,7 +48213,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -49355,7 +50719,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -49367,7 +50731,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -49379,7 +50743,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -51627,7 +52991,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -54768,7 +56132,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini+rescate",
@@ -60212,8 +61576,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'The Entertainer' por su energía vibrante que invita a la acción, resonando con la determinación y claridad del libro.",
         "candidatos": [
           {
@@ -60230,6 +61594,21 @@
             "rol": "abrir",
             "pie": "Una melodía que invita a la acción y al cambio, ideal para abrir la mente a nuevas posibilidades.",
             "frase_eco": "🌱 Una organización que no desafía su propio status quo, permanece estancada en la mediocridad y pierde oportunidades de optimización y crecimiento."
+          },
+          {
+            "id": "539447103",
+            "cancion": "Ain't Misbehavin'",
+            "artista": "Fats Waller",
+            "album": "The Very Best of Jazz: 50 Unforgettable Tracks (Remastered)",
+            "genero": "Jazz",
+            "dur": 237,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/a0/e1/a8a0e17e-a90d-3b3f-7293-c7b64d05b782/mzaf_9018469698218597086.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/aint-misbehavin/539446930?i=539447103&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/be/4e/e3be4e3c-f351-f1ff-66a8-5f322b1660cd/cover.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Un clásico que evoca la nostalgia, pero no impulsa la transformación que el texto propone.",
+            "frase_eco": "🔮 Identifica los procesos obsoletos que están frenando tu crecimiento."
           }
         ]
       }
@@ -61005,8 +62384,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en el autoconocimiento, aunque podría ser más luminosa.",
         "candidatos": [
           {
@@ -61022,6 +62401,36 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "Una pieza que invita a la reflexión y al autoconocimiento, pero carece de un pulso más vibrante.",
+            "frase_eco": ""
+          },
+          {
+            "id": "353008140",
+            "cancion": "La Primavera (Concerto n° 1 in mi maggiore) Allegro - Largo - Allegro",
+            "artista": "Italian Baroque Ensemble diretto & Jacques Bernard",
+            "album": "Momenti Musicali Vol. 4 Antonio Vivaldi Le Quattro Stagioni",
+            "genero": "Músicas del mundo",
+            "dur": 624,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/66/b0/b3/66b0b3bb-49c8-c3a0-4626-4564b5092322/mzaf_2972773278316140976.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/la-primavera-concerto-n-1-in-mi-maggiore-allegro-largo/353008110?i=353008140&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/53/9e/48/mzi.hdpgzwoa.tif/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "La energía de Vivaldi puede resonar con el mensaje de reinvención y oportunidades.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1761596153",
+            "cancion": "Swing '39",
+            "artista": "Nigel Kennedy & Peter Pettinger",
+            "album": "Nigel Kennedy Plays Jazz",
+            "genero": "Clásica",
+            "dur": 367,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/39/84/ea3984d8-9163-2c0e-9d17-e1db3b209fd1/mzaf_16274594943162655515.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/swing-39/1761595878?i=1761596153&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4b/25/48/4b2548b2-615c-58dd-09ef-ac36b1c717cf/5059864651335.png/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una interpretación clásica que aporta un toque de elegancia, aunque le falta energía.",
             "frase_eco": ""
           }
         ]
@@ -67351,7 +68760,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -78309,8 +79718,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Ninguna de las piezas elegidas logra elevar el ánimo ni resonar con el mensaje de tenacidad y perseverancia del libro.",
         "candidatos": [
           {
@@ -78341,6 +79750,21 @@
             "armonia": 3,
             "rol": "resonar",
             "pie": "La música es bella, pero su tono melancólico no se alinea con el ánimo de tenacidad del texto.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1564504204",
+            "cancion": "La Vie en rose",
+            "artista": "Grace Jones",
+            "album": "Island Life",
+            "genero": "Disco",
+            "dur": 445,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/39/99/463999c4-487a-2ae9-d8a2-03720d3ec479/mzaf_3009995685185007583.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/la-vie-en-rose/1564504203?i=1564504204&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4a/ef/38/4aef3813-fdfa-3b0f-0539-fe09cd58ed16/21UMGIM19737.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que evoca la belleza de la perseverancia, aunque no siempre brilla con luz propia.",
             "frase_eco": ""
           }
         ]
@@ -79147,8 +80571,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su mensaje esperanzador y su capacidad de resonar con la idea de cooperación y conexión en la historia humana.",
         "candidatos": [
           {
@@ -79165,6 +80589,51 @@
             "rol": "resonar",
             "pie": "La canción evoca la belleza de la vida y la conexión entre todos nosotros.",
             "frase_eco": "La cooperación es el hilo que teje nuestra historia evolutiva."
+          },
+          {
+            "id": "1448484533",
+            "cancion": "Six Pieces for Piano, Volume 2: IV. La Valse d'Amélie",
+            "artista": "Lang Lang",
+            "album": "Piano Book (Deluxe Edition)",
+            "genero": "Clásica",
+            "dur": 170,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/be/89/6b/be896b50-2f4f-7a4d-8bb4-8ccf84764ce6/mzaf_14191119822822477145.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/six-pieces-for-piano-volume-2-iv-la-valse-dam%C3%A9lie/1448483849?i=1448484533&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/20/f3/18/20f318ef-89d6-73a7-7c66-d0cd8b4d003c/18UMGIM83169.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Una pieza que acompaña la lectura con calidez y un toque de nostalgia.",
+            "frase_eco": "La cooperación es el hilo que teje nuestra historia evolutiva."
+          },
+          {
+            "id": "438892635",
+            "cancion": "Spring",
+            "artista": "The Vivaldi Philharmonic Orchestra",
+            "album": "Classic Serenades",
+            "genero": "Clásica",
+            "dur": 564,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/45/3f/dd453fc7-98ba-b1e9-924f-b24d48d14dad/mzaf_2667280841573254986.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/spring/438892478?i=438892635&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/67/26/73/mzi.pcybuyrg.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "La orquestación es hermosa, pero no logra elevar el ánimo de manera significativa.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1762061944",
+            "cancion": "Amélie - La Valse d'Amélie",
+            "artista": "Michael Van Krücker",
+            "album": "Tiersen: Amélie, EUSA, Kerber",
+            "genero": "Clásica",
+            "dur": 183,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/a0/88/d7a0881e-57f8-77a2-d12f-f6e9c097923e/mzaf_6711885066936671362.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/am%C3%A9lie-la-valse-dam%C3%A9lie/1762061937?i=1762061944&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/85/90/12/859012ba-2a0f-a524-c6c0-bbfd350f7557/QT00249017.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Evoca un sentido de asombro y conexión, ideal para abrir la mente a nuevas ideas.",
+            "frase_eco": "¿Qué lecciones nos ofrece la historia sobre nuestra capacidad de unir en el contexto de la evolución cultural y la cooperación humana?"
           }
         ]
       }
@@ -79954,8 +81423,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:enfoque",
         "candidatos": [
           {
@@ -79987,6 +81456,21 @@
             "rol": "profundizar",
             "pie": "Refugio de enfoque — pieza elegida a mano para pensar claro.",
             "frase_eco": "una idea a la vez"
+          },
+          {
+            "id": "1511831943",
+            "cancion": "Spring (Epic Trailer Version)",
+            "artista": "Alala",
+            "album": "Vivaldi's Four Seasons - EP",
+            "genero": "Classical Crossover",
+            "dur": 207,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/6a/76/326a76c2-8e25-7232-4811-b05e2d1373b7/mzaf_4644713984480284240.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/spring-epic-trailer-version/1511831942?i=1511831943&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/00/1a/79/001a7986-6c44-6968-936c-6821bab26548/dj.iqeugifg.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La pieza evoca la claridad y el bienestar que se busca en el texto.",
+            "frase_eco": "📖 La salud se restablece cuando el nervio vago habla con claridad."
           }
         ]
       }
@@ -80782,8 +82266,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'La Primavera' por su capacidad de profundizar en la conexión humana y 'Sway' para aterrizar con un ritmo alegre y social.",
         "candidatos": [
           {
@@ -80815,6 +82299,21 @@
             "rol": "aterrizar",
             "pie": "Un ritmo que evoca la conexión social y el asombro de la humanidad.",
             "frase_eco": ""
+          },
+          {
+            "id": "267756079",
+            "cancion": "Samba de Uma Nota So",
+            "artista": "Lisa Ono",
+            "album": "The music of Antonio Carlos Jobim \"IPANEMA\"",
+            "genero": "Jazz",
+            "dur": 182,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/7f/ff/4e7fff24-7aed-02ea-c2ac-a9e57d9b8bd9/mzaf_10978862291753374125.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/samba-de-uma-nota-so/267755433?i=267756079&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/78/f3/7a/78f37a05-704e-4969-9511-c3206c09c19b/mzi.tlflbksk.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La suavidad de la samba acompaña la reflexión sobre nuestra historia compartida.",
+            "frase_eco": "🕊 La revolución cognitiva transformó a Homo sapiens en un ser social sin precedentes en la historia de la humanidad."
           }
         ]
       }
@@ -81577,8 +83076,8 @@
         "candidatos": []
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Bésame Mucho' por su profundidad emocional, que complementa la exploración de la identidad y el amor en el libro.",
         "candidatos": [
           {
@@ -81595,6 +83094,36 @@
             "rol": "profundizar",
             "pie": "Una balada que evoca la complejidad del amor y la identidad en el arte.",
             "frase_eco": "🕊 La verdad en la vida de un artista es una construcción continua."
+          },
+          {
+            "id": "1468449193",
+            "cancion": "Samba de Uma Nota Só",
+            "artista": "Maria Kim",
+            "album": "FOTOGRAFIA",
+            "genero": "Classical",
+            "dur": 169,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3e/cd/97/3ecd974a-7384-242f-425b-f1a905f2abf2/mzaf_7622352792345602554.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/samba-de-uma-nota-s%C3%B3/1468448899?i=1468449193&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/1e/63/16/1e6316c3-08d7-43d7-3540-e4c81850643b/886447802120.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que evoca la complejidad de la identidad y el arte.",
+            "frase_eco": ""
+          },
+          {
+            "id": "339006495",
+            "cancion": "Thaïs: Meditation",
+            "artista": "Pieter Schoeman, London Philharmonic Orchestra & David Parry",
+            "album": "The 50 Greatest Pieces of Classical Music",
+            "genero": "Clásica",
+            "dur": 301,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/be/70/02be70c5-45c4-6519-1831-0daab65a9b8c/mzaf_11399895037214900266.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/tha%C3%AFs-meditation/339006385?i=339006495&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8d/7f/fd/8d7ffd6d-1dca-7012-1859-0241a2a86033/7340027075005.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "La meditación sugiere introspección, pero no logra conectar con la luz del texto.",
+            "frase_eco": ""
           }
         ]
       }
@@ -83259,8 +84788,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Lean On Me' por su mensaje de apoyo y crecimiento, resonando con la vulnerabilidad y autenticidad del liderazgo humano.",
         "candidatos": [
           {
@@ -83292,6 +84821,21 @@
             "rol": "profundizar",
             "pie": "Una melodía clásica que evoca la belleza de la vulnerabilidad en el liderazgo.",
             "frase_eco": ""
+          },
+          {
+            "id": "434415593",
+            "cancion": "Isn't She Lovely",
+            "artista": "Glee Cast",
+            "album": "Glee: The Music, Volume 6",
+            "genero": "Pop",
+            "dur": 98,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/09/2c/f6092c2c-299f-30aa-cb7d-3e29b4cad0d1/mzaf_17951317150153752490.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/isnt-she-lovely/434415510?i=434415593&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/c8/81/63c8811e-922c-c192-0454-3c71a8e4d815/mzi.nrfsgrlv.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "aterrizar",
+            "pie": "Una celebración de la belleza que puede surgir de la vulnerabilidad.",
+            "frase_eco": "La vulnerabilidad es la base del liderazgo auténtico."
           }
         ]
       }
@@ -97209,8 +98753,8 @@
         "candidatos": []
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:impulso",
         "candidatos": [
           {
@@ -98050,8 +99594,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -98083,6 +99627,36 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "553394354",
+            "cancion": "Gymnopédie No. 3",
+            "artista": "Mitsutaka Shiraishi",
+            "album": "Erik Satie: Gymnopédie & Other Piano Pieces",
+            "genero": "Classical",
+            "dur": 158,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/3e/8b/dc3e8ba6-cb7d-1318-98a6-8711260ad112/mzaf_4086401413850105115.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/gymnop%C3%A9die-no-3/553394351?i=553394354&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/d9/d3/9cd9d3fb-aee9-925e-c764-44253694c385/4944099212929.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una pieza que evoca reflexión, pero carece de la energía necesaria para elevar el ánimo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "553394353",
+            "cancion": "Gymnopédie No. 2",
+            "artista": "Mitsutaka Shiraishi",
+            "album": "Erik Satie: Gymnopédie & Other Piano Pieces",
+            "genero": "Classical",
+            "dur": 174,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/50/9a/14/509a14b5-0362-f647-a78d-82e64b07cae8/mzaf_101668733665691349.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/gymnop%C3%A9die-no-2/553394351?i=553394353&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/d9/d3/9cd9d3fb-aee9-925e-c764-44253694c385/4944099212929.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Su belleza es innegable, pero no logra conectar con la energía del texto.",
+            "frase_eco": ""
           }
         ]
       }
@@ -113489,7 +115063,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -114324,8 +115898,8 @@
         ]
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-10",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría las tres piezas clásicas por su energía, pero ninguna logra resonar con el mensaje de simplicidad y enfoque del libro.",
         "candidatos": [
           {
@@ -114357,6 +115931,21 @@
             "rol": "aterrizar",
             "pie": "Interesante pero genérica, no logra resonar con la simplicidad que propone el texto.",
             "frase_eco": ""
+          },
+          {
+            "id": "325613378",
+            "cancion": "Water Music - Suite #1 In F, HWV 348 - Alla Hornpipe",
+            "artista": "Jordi Savall",
+            "album": "Haendel: Water Music & Music For The Royal Fireworks",
+            "genero": "Clásica",
+            "dur": 243,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1a/3c/ec/1a3cec76-5a47-5b39-e488-33abf9a2f4bf/mzaf_823003775595939826.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/water-music-suite-1-in-f-hwv-348-alla-hornpipe/325613132?i=325613378&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/28/46/11/mzi.wkchzseb.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza clásica que aporta un sentido de orden y claridad, ideal para reflexionar sobre la simplicidad en los negocios.",
+            "frase_eco": "🧭 En el núcleo de cada innovación empresarial se encuentra la simplicidad, que actúa como el verdadero motor del cambio."
           }
         ]
       }
@@ -121289,7 +122878,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -128300,7 +129889,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-09T18:49:23.242Z",
+      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -129922,11 +131511,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 98,
-    "total": 165,
-    "last_audit": "2026-09-09T18:49:23.242Z",
-    "healing_rotation_idx": 43,
+    "next_edition_number": 99,
+    "total": 166,
+    "last_audit": "2026-09-11T13:49:52.177Z",
+    "healing_rotation_idx": 44,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-09T19:03:28.169Z"
+    "last_healing_timestamp": "2026-09-11T14:04:42.641Z"
   }
 }

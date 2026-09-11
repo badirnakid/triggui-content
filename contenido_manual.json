@@ -1,6 +1,938 @@
 {
   "libros": [
     {
+      "titulo": "Take nothing personally",
+      "autor": "Shubham Kumar Singh",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUYWtlIG5vdGhpbmcgcGVyc29uYWxseSDigJQgU2h1YmhhbSBLdW1hciBTaW5naCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkYwRUYiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTgxQzE3IiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY5MDhGIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjMyNi40IiB4Mj0iMzgwIiB5Mj0iMzI2LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjMzNC40IiB4Mj0iMzYwIiB5Mj0iMzM0LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjYwNS41OTk5OTk5OTk5OTk5IiB4Mj0iMzYwIiB5Mj0iNjA1LjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjYxMy41OTk5OTk5OTk5OTk5IiB4Mj0iMzgwIiB5Mj0iNjEzLjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5UYWtlIG5vdGhpbmc8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5wZXJzb25hbGx5PC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTYzLjU5OTk5OTk5OTk5OTkiIGZpbGw9IiMxOEUyMTIiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+U2h1YmhhbSBLdW1hciBTaW5naDwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MUMxNyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJUYWtlIG5vdGhpbmcgcGVyc29uYWxseSDigJQgU2h1YmhhbSBLdW1hciBTaW5naCI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiNFRkYwRUYiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjMTgxQzE3IiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEY5MDhGIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjMyNi40IiB4Mj0iMzgwIiB5Mj0iMzI2LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjMzNC40IiB4Mj0iMzYwIiB5Mj0iMzM0LjQiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjI0MCIgeTE9IjYwNS41OTk5OTk5OTk5OTk5IiB4Mj0iMzYwIiB5Mj0iNjA1LjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIwLjgiIC8+CiAgPGxpbmUgeDE9IjIyMCIgeTE9IjYxMy41OTk5OTk5OTk5OTk5IiB4Mj0iMzgwIiB5Mj0iNjEzLjU5OTk5OTk5OTk5OTkiIHN0cm9rZT0iIzE4RTIxMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5UYWtlIG5vdGhpbmc8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiMxODFDMTciIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iNjQiIGZvbnQtd2VpZ2h0PSI3MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSItMC4wMWVtIj5wZXJzb25hbGx5PC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTYzLjU5OTk5OTk5OTk5OTkiIGZpbGw9IiMxOEUyMTIiIGZvbnQtZmFtaWx5PSciV29yayBTYW5zIiwgIk9wZW4gU2FucyIsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+U2h1YmhhbSBLdW1hciBTaW5naDwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iIzE4MUMxNyIgZm9udC1mYW1pbHk9JyJXb3JrIFNhbnMiLCAiT3BlbiBTYW5zIiwgIlNlZ29lIFVJIiwgc2Fucy1zZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Take nothing personally",
+      "titulo_en": "Take nothing personally",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "serenidad",
+        "autenticidad",
+        "transformación",
+        "conciencia"
+      ],
+      "palabras_en": [
+        "transformation",
+        "serenity",
+        "self-awareness",
+        "empowerment"
+      ],
+      "frases": [
+        "⏳ Dedica un momento a observar tus emociones sin juzgar.",
+        "🫁 ¿Qué emociones te están guiando en este instante?",
+        "🌅 Imagina un río fluyendo, dejando ir las cargas emocionales.",
+        "🚶 Las emociones son olas; aprende a surfearlas."
+      ],
+      "frases_en": [
+        "🌬 Breathe deeply. Allow the stillness to settle your mind and clarify your thoughts.",
+        "🗺 Reflect on your recent interactions. How did they influence your emotional state?",
+        "🌅 Imagine your emotions as colors, painting the canvas of your daily life.",
+        "⏳ Serenity in response transforms chaos into clarity, revealing the path ahead."
+      ],
+      "frases_og": [
+        "🧭 La auto-percepción define la experiencia de la vida.",
+        "🔍 ¿Qué emociones te están guiando hoy?",
+        "💠 Reacciona desde la calma, no desde el impulso.",
+        "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+      ],
+      "frases_og_en": [
+        "🧭 Self-perception shapes the reality we experience daily.",
+        "🔍 Cultivate awareness. Let your emotions guide you toward growth.",
+        "💠 What choices do we make when faced with criticism?",
+        "✨ Emotions are the compass of our experiences, guiding us through life."
+      ],
+      "colores": [
+        "#82F17E",
+        "#E330E8",
+        "#13AE36",
+        "#650B51"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0EF",
+      "tarjeta": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La fuerza de la auto-percepción",
+        "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. [H]Cada pensamiento y emoción que albergamos da forma a nuestro mundo.[/H] Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+        "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+        "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás, fomentando una conciencia emocional que nos permite adaptarnos y crecer en situaciones cotidianas.",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Strength of Self-Perception",
+        "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. [H]The power to transform our reality lies within this process.[/H]",
+        "subtitulo": "How do you manage your emotions in everyday situations?",
+        "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. [H]This not only enhances our self-perception but also transforms our relationships with others.[/H]",
+        "style": {
+          "accent": "#18E212",
+          "paper": "#EFF0EF",
+          "ink": "#181C17",
+          "border": "#8F908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Take%20nothing%20personally%20Shubham%20Kumar%20Singh%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Take%20nothing%20personally%20Shubham%20Kumar%20Singh%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-11T13:48:48.676Z",
+        "workflow_run_id": "34606370163",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Take nothing personally",
+          "titulo_en": "Take nothing personally",
+          "autor_completo": "Shubham Kumar Singh",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la importancia de la auto-percepción en la experiencia personal",
+            "gestión emocional en situaciones cotidianas",
+            "adopción de una perspectiva positiva ante la vida"
+          ],
+          "key_terms": [
+            "auto-percepción",
+            "gestión de emociones",
+            "perspectiva positiva",
+            "conciencia emocional",
+            "adaptación personal"
+          ],
+          "authorial_voice_notes": "La voz del autor es reflexiva y motivacional, buscando inspirar al lector a adoptar una mentalidad más consciente y positiva.",
+          "authorial_voice_notes_en": "The author's voice is reflective and motivational, seeking to inspire the reader to adopt a more conscious and positive mindset."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda temas de auto-percepción y gestión de emociones de manera introspectiva, lo que sugiere una alineación con la idea de que nuestras reacciones y experiencias son profundamente influenciadas por nuestra percepción personal. La voz motivacional refuerza esta conexión, promoviendo un entendimiento más profundo de las emociones y su manejo en la vida cotidiana.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 108.40625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "aireado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La fuerza de la auto-percepción",
+          "parrafoTop": "La auto-percepción actúa como un espejo que refleja la forma en que vivimos nuestras experiencias. Cada pensamiento y emoción que albergamos da forma a nuestro mundo. Al despojarnos de la negatividad externa, podemos empezar a ver la belleza de nuestra propia esencia. El poder de transformar nuestra realidad radica en la gestión de nuestras emociones y en la adopción de una perspectiva positiva ante la vida.",
+          "subtitulo": "¿Cómo gestionas tus emociones en situaciones cotidianas?",
+          "parrafoBot": "La gestión emocional se convierte en un arte cuando aprendemos a no tomar nada personalmente. Cada interacción, cada crítica, nos ofrece la opción de responder desde un lugar de serenidad y no de reacción. Esto no solo mejora nuestra auto-percepción, sino que también transforma nuestras relaciones con los demás."
+        },
+        "card_en": {
+          "titulo": "The Strength of Self-Perception",
+          "parrafoTop": "Self-perception acts as a mirror reflecting how we live our experiences. Every thought and emotion we harbor shapes our world. By shedding external negativity, we can begin to see the beauty of our essence. The power to transform our reality lies within this process.",
+          "subtitulo": "How do you manage your emotions in everyday situations?",
+          "parrafoBot": "Emotional management becomes an art when we learn not to take anything personally. Each interaction, every criticism, offers us the choice to respond from a place of serenity rather than reaction. This not only enhances our self-perception but also transforms our relationships with others."
+        },
+        "emotional_words_es": [
+          "serenidad",
+          "autenticidad",
+          "transformación",
+          "conciencia"
+        ],
+        "emotional_words_en": [
+          "transformation",
+          "serenity",
+          "self-awareness",
+          "empowerment"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🧭 La auto-percepción define la experiencia de la vida.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔍 ¿Qué emociones te están guiando hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Reacciona desde la calma, no desde el impulso.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🧭 Self-perception shapes the reality we experience daily.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔍 Cultivate awareness. Let your emotions guide you toward growth.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 What choices do we make when faced with criticism?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "✨ Emotions are the compass of our experiences, guiding us through life.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Dedica un momento a observar tus emociones sin juzgar.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "respiracion",
+            "phrase": "🫁 ¿Qué emociones te están guiando en este instante?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un río fluyendo, dejando ir las cargas emocionales.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Las emociones son olas; aprende a surfearlas.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 Breathe deeply. Allow the stillness to settle your mind and clarify your thoughts.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🗺 Reflect on your recent interactions. How did they influence your emotional state?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Imagine your emotions as colors, painting the canvas of your daily life.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Serenity in response transforms chaos into clarity, revealing the path ahead.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.52,
+          "voice_authenticity": 0.93,
+          "specificity": 0.9,
+          "grounding_judge": 0.95,
+          "combined": 0.81,
+          "signals": {
+            "bookIdentityConfidence": 0.5249999999999999,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.9016129032258065,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.5249999999999999,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.70"
+        ],
+        "verified_identity": {
+          "titulo_real": "Take nothing personally",
+          "autor_completo": "Shubham Kumar Singh",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El arte de no amargarse la vida",
+            "autor": "Rafael Santandreu",
+            "razon": "Ambos libros abordan la importancia de la mentalidad y cómo nuestras percepciones afectan nuestra vida."
+          },
+          {
+            "titulo": "Los cuatro acuerdos",
+            "autor": "Don Miguel Ruiz",
+            "razon": "Explora conceptos sobre la percepción personal y la relación con uno mismo y los demás."
+          },
+          {
+            "titulo": "Cómo ganar amigos e influir sobre las personas",
+            "autor": "Dale Carnegie",
+            "razon": "Se centra en la interacción personal y la comunicación, temas que pueden relacionarse con el título del libro buscado."
+          },
+          {
+            "titulo": "La magia del orden",
+            "autor": "Marie Kondo",
+            "razon": "Aunque se centra en el orden físico, también toca la importancia de la mentalidad y la relación con los objetos y el entorno."
+          },
+          {
+            "titulo": "Despierta tu héroe interior",
+            "autor": "Victor Hugo Manzanilla",
+            "razon": "Se enfoca en el crecimiento personal y la auto-percepción."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "El contenido generado se centra en la auto-percepción y la gestión emocional, conceptos que se alinean directamente con el tema inferido del libro. Frases como 'la auto-percepción actúa como un espejo' y 'la gestión emocional se convierte en un arte' reflejan la esencia del crecimiento personal y la transformación de la realidad, lo que indica que está anclado al ground_truth del libro."
+        },
+        "en": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content strongly reflects the themes of self-perception and emotional management, which are central to the inferred theme of the book. Phrases like 'self-perception acts as a mirror' and 'emotional management becomes an art' directly relate to the concepts of personal experience influencing daily life. The motivational tone aligns with the inferred voice of the author, making it feel like a bl"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en la auto-percepción.",
+          "elapsed_ms": 764,
+          "usage": {
+            "prompt_tokens": 416,
+            "completion_tokens": 27,
+            "total_tokens": 443,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la experiencia personal.",
+          "elapsed_ms": 1286,
+          "usage": {
+            "prompt_tokens": 395,
+            "completion_tokens": 26,
+            "total_tokens": 421,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 864,
+        "total_ms": 1286
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 108.40625,
+          "adjusted_hue": 118.40625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.10",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#82F17E",
+          "--palette-1": "#E330E8",
+          "--palette-2": "#13AE36",
+          "--palette-3": "#650B51",
+          "--accent": "#18E212",
+          "--accent-soft": "#18E21238",
+          "--accent-glow": "#18E2126b",
+          "--paper": "#EFF0EF",
+          "--ink": "#181C17",
+          "--border": "#8F908F",
+          "--highlight-bg": "#15C710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-09-11T13-48-48",
+      "_crono": {
+        "dia": "viernes",
+        "hora": 7,
+        "franja": "manana",
+        "energia": 0.9,
+        "modo": "apertura_semana",
+        "descripcion_dia": "Viernes baja intensidad, abre reflexión de semana. Tono amplio.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 68616,
+        "tokens_by_phase": {
+          "grounding": 578,
+          "anchors": 15683,
+          "palette": 0,
+          "content_es": 17709,
+          "judge_es": 1015,
+          "content_en": 16443,
+          "judge_en": 1023,
+          "voice": 864,
+          "voice_extended": 15301,
+          "highlight_judge_es_parrafoTop": 639,
+          "highlight_judge_es_parrafoBot": 648,
+          "highlight_judge_en_parrafoTop": 636,
+          "highlight_judge_en_parrafoBot": 648,
+          "csal": 6890
+        },
+        "elapsed_ms_total": 31261,
+        "elapsed_ms_by_phase": {
+          "grounding": 5040,
+          "anchors": 4142,
+          "palette": 0,
+          "cover_fallback": 109,
+          "content_es": 7162,
+          "judge_es": 2087,
+          "content_en": 6474,
+          "judge_en": 1442,
+          "voice": 1287,
+          "voice_extended": 3514,
+          "highlight_judge": 3464,
+          "lens_compatibility": 1697,
+          "csal": 23960,
+          "post_processing": 29127
+        },
+        "llm_calls_count": 41,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.4,
+          "espiritu": 0.6,
+          "relaciones": 0.8,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando alguien critica mi forma de ser",
+          "después de una discusión familiar intensa",
+          "antes de enfrentar una situación que me causa ansiedad",
+          "cuando me siento incomprendido por mis amigos",
+          "al recibir un comentario negativo en redes sociales",
+          "cuando me doy cuenta de que estoy cargando con emociones de otros",
+          "al sentir que no tengo el control de mi vida emocional",
+          "después de una ruptura amorosa",
+          "cuando me comparo constantemente con los demás",
+          "antes de hablar en público y temo el juicio de los demás",
+          "al sentir que mis emociones son un peso para mis relaciones",
+          "al experimentar una emoción que no sé cómo manejar",
+          "cuando me siento atrapado en un ciclo de pensamientos negativos",
+          "cuando quiero dejar de tomarme las cosas de manera personal",
+          "después de una experiencia laboral frustrante",
+          "al recibir un feedback negativo en el trabajo",
+          "cuando tengo miedo de lo que piensen los demás",
+          "al querer mejorar mi autoestima",
+          "cuando estoy buscando paz interior",
+          "al desear manejar mejor mis reacciones ante el estrés",
+          "después de una semana emocionalmente agotadora",
+          "cuando busco entender por qué me afecta tanto lo que otros dicen",
+          "al intentar cambiar mi perspectiva hacia una más positiva",
+          "cuando quiero dejar de ser tan autocrítico",
+          "al enfrentarme a un cambio significativo en la vida",
+          "cuando busco aprender a perdonar y dejar ir",
+          "al tratar de establecer límites emocionales con los demás",
+          "cuando me resulta difícil aceptar la crítica constructiva",
+          "al intentar encontrar la calma en medio del caos emocional",
+          "cuando necesito volver a centrarme en mí mismo"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "incomprensión",
+            "frustración",
+            "miedo",
+            "autocrítica",
+            "paz",
+            "calma",
+            "estrés",
+            "autoestima",
+            "comparación"
+          ],
+          "objetos": [
+            "comentarios negativos",
+            "críticas",
+            "redes sociales",
+            "pensamientos negativos",
+            "feedback",
+            "ruptura amorosa",
+            "cambios significativos",
+            "crítica constructiva"
+          ],
+          "contextos": [
+            "discusión familiar",
+            "situaciones laborales",
+            "redes sociales",
+            "hablar en público",
+            "ruptura amorosa",
+            "cambio de vida",
+            "semana agotadora",
+            "caos emocional"
+          ],
+          "verbos": [
+            "criticar",
+            "juzgar",
+            "comparar",
+            "manejar",
+            "controlar",
+            "perdonar",
+            "establecer límites",
+            "cambiar perspectiva",
+            "dejar ir",
+            "centrarse"
+          ]
+        },
+        "concept_tags": [
+          "auto-percepción",
+          "gestión emocional",
+          "perspectiva positiva",
+          "crítica personal",
+          "paz interior",
+          "emociones como olas",
+          "comentarios externos",
+          "carga emocional",
+          "ruptura emocional",
+          "juicio social",
+          "cambio de perspectiva",
+          "autoestima saludable",
+          "limpieza emocional"
+        ],
+        "anti_patterns": [
+          "leer como si fuera una novela de ficción",
+          "buscar técnicas de meditación avanzadas",
+          "esperar una guía detallada sobre relaciones amorosas",
+          "esperar un enfoque científico sobre las emociones"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌬️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌊"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🏄‍♂️"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal, sugiriendo un diálogo interno que podría estar presente en el texto del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un consejo o reflexión que podría estar presente en el contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora y un estilo reflexivo que sugiere que es parte de un contenido narrativo o reflexivo del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y suena como un consejo directo del autor, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una exploración emocional, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una imagen poética y reflexiva que sugiere un momento de introspección, típico de la voz autoral dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una metáfora que sugiere un aprendizaje personal, típico de la voz autoral dentro de un libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a concept that feels like it could be part of the author's exploration within the book, reflecting on self-perception."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents direct advice and introspective guidance, suggesting an internal voice typical of an author's writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that suggests an internal exploration of themes, typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within a book, rather than a description of the book itself."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase conveys a direct instruction and reflective tone typical of an author's voice within a book, inviting the reader to engage with the content."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase invites personal reflection and engages the reader directly, suggesting it is part of the narrative or guidance within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize emotions in a creative way, suggesting an immersive experience typical of narrative or poetic writing within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or thematic exploration within the book, rather than a description of the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-11T13:49:49.063Z",
+      "_slug": "take-nothing-personally",
+      "_edicion_numero": 98,
+      "_musica": {
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría 'Here Comes The Sun' por su mensaje de esperanza y luz, que resuena con la transformación y autenticidad del libro.",
+        "candidatos": [
+          {
+            "id": "1888309477",
+            "cancion": "Here Comes The Sun",
+            "artista": "anaiis",
+            "album": "Devotion & The Black Divine",
+            "genero": "Soul",
+            "dur": 282,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/3a/26/483a26df-2fb9-9244-0df0-874c7ded0a75/mzaf_10216782333402207063.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/here-comes-the-sun/1888308946?i=1888309477&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0f/4a/f6/0f4af624-2e68-446a-cd62-4bc5a1eb1b16/8721215253051.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "La luz de esta canción refleja la esperanza y la transformación que buscamos.",
+            "frase_eco": "✨ Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+          },
+          {
+            "id": "1469581442",
+            "cancion": "The Girl from Ipanema (feat. Astrud Gilberto & Antônio Carlos Jobim) [Single Version]",
+            "artista": "Stan Getz & João Gilberto",
+            "album": "Getz/Gilberto (Expanded Edition)",
+            "genero": "Jazz",
+            "dur": 167,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/e5/99/b6e599f2-db62-aead-e577-9ac4b8c31dce/mzaf_7124507397759879735.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-girl-from-ipanema-feat-astrud-gilberto-ant%C3%B4nio/1469580970?i=1469581442&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/14/c5/97/14c597a3-22c8-d2a9-dc49-0f8b1496f776/14UMGIM16822.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Un suave jazz que invita a la reflexión sobre nuestra percepción.",
+            "frase_eco": "La auto-percepción define la experiencia de la vida."
+          },
+          {
+            "id": "1676631261",
+            "cancion": "Merry Christmas, Mr. Lawrence",
+            "artista": "Pablo Sáinz-Villegas",
+            "album": "The Blue Album",
+            "genero": "Classical",
+            "dur": 343,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/0d/55/700d556d-5211-8fab-4ccf-e9a5dd311a78/mzaf_8173452552841112113.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/merry-christmas-mr-lawrence/1676631061?i=1676631261&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/76/f7/8e/76f78e9c-86e0-ccd8-7afc-be6bfd322b13/196589928115.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza clásica que envuelve en serenidad y calma.",
+            "frase_eco": "Reacciona desde la calma, no desde el impulso."
+          },
+          {
+            "id": "1773350737",
+            "cancion": "Merry Christmas Mr. Lawrence (Transcr. for Piano & Strings)",
+            "artista": "Eunike Tanzil & Scoring Berlin",
+            "album": "Merry Christmas Mr. Lawrence (Transcr. for Piano & Strings) - Single",
+            "genero": "Classical Crossover",
+            "dur": 240,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/87/53/ec875333-5197-9da6-61d5-b72fb686f0da/mzaf_1674823128868976175.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/merry-christmas-mr-lawrence-transcr-for-piano-strings/1773350734?i=1773350737&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/86/10/e286101f-3faa-c2d0-060b-acdef0b0a4b2/24UM1IM01786.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "La melodía evoca luz y esperanza, perfecta para iluminar la mente.",
+            "frase_eco": "Un pensamiento positivo surge en tu mente y, como un faro, puede iluminar incluso los días más oscuros."
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-11",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "No hay videos que armonicen con la edición, todos son ajenos al contenido del libro.",
+        "candidatos": []
+      }
+    },
+    {
       "titulo": "Bruce Lee",
       "autor": "John Little",
       "tagline": "",
@@ -932,7 +1864,7 @@
             "idioma": "en",
             "frase_eco": "",
             "pie": "En este podcast, Little ofrece una visión profunda sobre las peleas reales de Bruce Lee y su impacto en el arte marcial.",
-            "pie_en": "In this podcast, Little provides a deep insight into Bruce Lee's real fights and their impact on martial arts."
+            "pie_en": "In this podcast, Little offers a deep insight into Bruce Lee's real fights and their impact on martial arts."
           },
           {
             "id": "SpqNW4uJPSQ",
@@ -31597,11 +32529,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 98,
-    "total": 165,
-    "last_audit": "2026-09-09T18:49:23.242Z",
-    "healing_rotation_idx": 43,
+    "next_edition_number": 99,
+    "total": 166,
+    "last_audit": "2026-09-11T13:49:52.177Z",
+    "healing_rotation_idx": 44,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-09T19:03:28.169Z"
+    "last_healing_timestamp": "2026-09-11T14:04:42.641Z"
   }
 }
