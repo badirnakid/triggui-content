@@ -1,6 +1,943 @@
 {
   "libros": [
     {
+      "titulo": "Despertando al Gigante Interior",
+      "autor": "Anthony Robbins",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=ic8KGgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=ic8KGgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9789707807150",
+      "titulo_es": "Despertando al Gigante Interior",
+      "titulo_en": "Awaken the Giant Within",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "empoderamiento",
+        "decisión",
+        "transformación",
+        "autoconocimiento"
+      ],
+      "palabras_en": [
+        "transformation",
+        "empowerment",
+        "opportunity",
+        "self-knowledge"
+      ],
+      "frases": [
+        "🌓 Detén un momento y respira profundo. Reflexiona sobre la última decisión que tomaste y su impacto en tu vida y en tu autoconocimiento.",
+        "🏛 ¿Qué patrones de decisión has notado que te limitan en tu vida diaria?",
+        "🔭 Imagina un camino donde cada decisión que tomas es un ladrillo que construye tu futuro ideal.",
+        "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer."
+      ],
+      "frases_en": [
+        "🌅 Visualize your future self. What choices lead you there?",
+        "⏳ Reflect on your decisions. What do they reveal about you?",
+        "🌊 Change is not a destination; it’s a journey of continuous choice.",
+        "🌌 Imagine each decision as a step on your path to greatness."
+      ],
+      "frases_og": [
+        "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+        "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?",
+        "🛡 El autoconocimiento es la brújula que guía tus decisiones.",
+        "🎯 Actuar sin reflexión es navegar sin rumbo: elige con conciencia."
+      ],
+      "frases_og_en": [
+        "⚓ The power of choice shapes your destiny.",
+        "🔁 Embrace your journey. Take decisive action today.",
+        "🛡 Are you aware of the patterns limiting your growth?",
+        "🎯 True power comes from within — harness it wisely."
+      ],
+      "colores": [
+        "#7EB5F1",
+        "#E89130",
+        "#1337AE",
+        "#65510B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Despertando%20al%20Gigante%20Interior%20Anthony%20Robbins%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Awaken%20the%20Giant%20Within%20Anthony%20Robbins%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-12T18:53:31.957Z",
+        "workflow_run_id": "34712496550",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Despertando al Gigante Interior",
+          "titulo_en": "Awaken the Giant Within",
+          "autor_completo": "Anthony Robbins",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la capacidad de transformar nuestra vida a través de decisiones conscientes",
+            "el poder de la programación neurolingüística para el cambio personal",
+            "la importancia del autoconocimiento en el desarrollo personal"
+          ],
+          "key_terms": [
+            "decisiones poderosas",
+            "programación neurolingüística (PNL)",
+            "autoconocimiento"
+          ],
+          "authorial_voice_notes": "La voz de Anthony Robbins es persuasiva y motivacional, con un enfoque en la autoeficacia y el empoderamiento personal.",
+          "authorial_voice_notes_en": "The voice of Anthony Robbins is persuasive and motivational, with a focus on self-efficacy and personal empowerment."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro no aborda directamente la lente del curador, pero su contenido de autotransformación y toma de decisiones conecta con temas de estrategias de acción y responsabilidad personal.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 201.40625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "Despierta tu poder interior",
+          "parrafoTop": "La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas. Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y alcanzar el éxito que deseamos.",
+          "subtitulo": "¿Qué decisiones estás tomando hoy?",
+          "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. ¡Es tu momento de actuar!"
+        },
+        "card_en": {
+          "titulo": "Awakening Your Inner Power",
+          "parrafoTop": "The capacity to transform our lives lies within our powerful decisions. Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment.",
+          "subtitulo": "What decisions are you making today?",
+          "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. It’s your moment to act!"
+        },
+        "emotional_words_es": [
+          "empoderamiento",
+          "decisión",
+          "transformación",
+          "autoconocimiento"
+        ],
+        "emotional_words_en": [
+          "transformation",
+          "empowerment",
+          "opportunity",
+          "self-knowledge"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 El autoconocimiento es la brújula que guía tus decisiones.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🎯 Actuar sin reflexión es navegar sin rumbo: elige con conciencia.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "⚓ The power of choice shapes your destiny.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 Embrace your journey. Take decisive action today.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 Are you aware of the patterns limiting your growth?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🎯 True power comes from within — harness it wisely.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Detén un momento y respira profundo. Reflexiona sobre la última decisión que tomaste y su impacto en tu vida y en tu autoconocimiento.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué patrones de decisión has notado que te limitan en tu vida diaria?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina un camino donde cada decisión que tomas es un ladrillo que construye tu futuro ideal.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.8,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your future self. What choices lead you there?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Reflect on your decisions. What do they reveal about you?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Change is not a destination; it’s a journey of continuous choice.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🌌 Imagine each decision as a step on your path to greatness.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.86,
+          "grounding_judge": 0.6,
+          "combined": 0.82,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.8642857142857142,
+            "judgeScore": 0.6
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Despertando al Gigante Interior",
+          "autor_completo": "Anthony Robbins",
+          "titulo_api": "Despertando Al Gigante Interior",
+          "autor_api": "Anthony Robbins",
+          "subtitulo": "Un Viaje de Autodescubrimeinto Hacia La Realizacion Personal.",
+          "año": "2007",
+          "editorial": "Grijalbo Mondadori, S.A. - Grijalbo",
+          "paginas": null,
+          "isbn": "9789707807150",
+          "isbn13": "9789707807150",
+          "isbn10": "9707807156",
+          "categorias": [
+            "Success"
+          ],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=ic8KGgAACAAJ&dq=intitle:Despertando+al+Gigante+Interior+inauthor:Anthony+Robbins&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja conceptos del libro como la transformación personal y el autoconocimiento, que son temas centrales en 'Despertando al Gigante Interior'. Sin embargo, algunas frases son algo genéricas y podrían aplicarse a otros libros de autoayuda. Aún así, el enfoque en decisiones poderosas y programación neurolingüística ancla el contenido al libro."
+        },
+        "en": {
+          "grounded_score": 0.5,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects some concepts related to personal transformation and decision-making, which aligns with the themes of Anthony Robbins' work. However, it lacks specific references to 'Despertando al Gigante Interior' and could easily apply to any self-help book, making it feel generic."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y motivacional, sin referencias externas al libro.",
+          "elapsed_ms": 577,
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 28,
+            "total_tokens": 438,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y tono motivacional propio del autor.",
+          "elapsed_ms": 1085,
+          "usage": {
+            "prompt_tokens": 396,
+            "completion_tokens": 27,
+            "total_tokens": 423,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 861,
+        "total_ms": 1085
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 201.40625,
+          "adjusted_hue": 211.40625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EB5F1",
+          "--palette-1": "#E89130",
+          "--palette-2": "#1337AE",
+          "--palette-3": "#65510B",
+          "--accent": "#1276E2",
+          "--accent-soft": "#1276E238",
+          "--accent-glow": "#1276E26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#17191C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#1068C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-09-12T18-53-31",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 59105,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15458,
+          "palette": 0,
+          "content_es": 17539,
+          "judge_es": 836,
+          "content_en": 16219,
+          "judge_en": 790,
+          "voice": 861,
+          "voice_extended": 7402,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 643,
+          "highlight_judge_en_parrafoBot": 630,
+          "csal": 2582
+        },
+        "elapsed_ms_total": 18687,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 3700,
+          "palette": 0,
+          "cover_fallback": 123,
+          "content_es": 5569,
+          "judge_es": 1614,
+          "content_en": 4405,
+          "judge_en": 894,
+          "voice": 1085,
+          "voice_extended": 1293,
+          "highlight_judge": 4459,
+          "lens_compatibility": 1199,
+          "csal": 26736,
+          "post_processing": 32399
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.7,
+          "familia": 0.2,
+          "espiritu": 0.5,
+          "relaciones": 0.4,
+          "finanzas": 0.3
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que estás estancado en tu vida",
+          "después de tomar una decisión de la que no estás seguro",
+          "cuando buscas motivación para cambiar tu estilo de vida",
+          "antes de enfrentar una conversación difícil",
+          "cuando te das cuenta de que estás repitiendo los mismos errores",
+          "cuando necesitas aumentar tu confianza personal",
+          "al querer entender por qué reaccionas de cierta manera",
+          "cuando te preguntas cómo alcanzar tus metas personales",
+          "después de sentir que has desperdiciado una oportunidad",
+          "cuando te enfrentas a un reto que parece insuperable",
+          "cuando quieres mejorar tus relaciones personales",
+          "antes de un cambio de carrera importante",
+          "cuando buscas cambiar hábitos negativos",
+          "cuando te sientes abrumado por las expectativas de otros",
+          "al querer ser más proactivo en tu vida diaria",
+          "cuando te sientes atrapado en un ciclo de auto-sabotaje",
+          "después de un fracaso personal o profesional",
+          "cuando necesitas encontrar un propósito en tu vida",
+          "al querer mejorar tu bienestar emocional",
+          "cuando te encuentras en una encrucijada y no sabes qué camino tomar",
+          "cuando quieres aprender a tomar el control de tus emociones",
+          "al sentir que no estás viviendo tu vida al máximo",
+          "cuando necesitas inspiración para superar un desafío",
+          "después de una discusión que te dejó sin energía",
+          "cuando buscas herramientas para cambiar tu mentalidad",
+          "cuando te das cuenta de que no estás siendo auténtico contigo mismo",
+          "antes de dar un paso importante hacia tus sueños",
+          "cuando quieres dejar de procrastinar",
+          "cuando necesitas romper con patrones familiares limitantes",
+          "al querer ser más asertivo en tus decisiones"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "motivación",
+            "confianza",
+            "inseguridad",
+            "determinación",
+            "esperanza",
+            "auto-sabotaje",
+            "autenticidad",
+            "inspiración",
+            "ansiedad"
+          ],
+          "objetos": [
+            "decisiones",
+            "patrones",
+            "hábitos",
+            "metas",
+            "cambios",
+            "oportunidades",
+            "puentes",
+            "camino",
+            "ladrillos",
+            "futuro"
+          ],
+          "contextos": [
+            "vida diaria",
+            "relaciones personales",
+            "carrera profesional",
+            "momentos de cambio",
+            "conversaciones difíciles",
+            "retos insuperables",
+            "ciclos de auto-sabotaje",
+            "encrucijadas",
+            "momentos de reflexión",
+            "oportunidades desperdiciadas"
+          ],
+          "verbos": [
+            "transformar",
+            "tomar decisiones",
+            "cambiar",
+            "reflexionar",
+            "construir",
+            "enfrentar",
+            "superar",
+            "romper",
+            "procrastinar",
+            "elegir"
+          ]
+        },
+        "concept_tags": [
+          "programación neurolingüística",
+          "autoconocimiento",
+          "empoderamiento personal",
+          "decisiones conscientes",
+          "patrones de decisión",
+          "cambio personal",
+          "desarrollo personal",
+          "confianza en uno mismo",
+          "motivación intrínseca",
+          "superación de obstáculos",
+          "autenticidad personal",
+          "control emocional",
+          "romper ciclos limitantes",
+          "construcción de futuro",
+          "proactividad",
+          "puentes de decisión"
+        ],
+        "anti_patterns": [
+          "cuando buscas una solución rápida sin esfuerzo",
+          "si crees que el cambio personal es instantáneo",
+          "para obtener una guía paso a paso sin flexibilidad",
+          "si no estás dispuesto a reflexionar sobre tus decisiones",
+          "cuando esperas que otros cambien por ti"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🧩"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🧱"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌉"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión dentro del libro, sugiriendo un enfoque sobre el cambio."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una narrativa, lo que sugiere que está dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un consejo directo y reflexivo que suena como parte de un discurso o narración dentro del libro, en lugar de ser una descripción externa."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un texto que guía al lector, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo o cuestionamiento dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar y reflexionar, lo que sugiere que es parte de un contenido narrativo o reflexivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono reflexivo y poético que sugiere un mensaje directo del autor, como si fuera parte de la narrativa del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a philosophical idea that could be part of a narrative or thematic exploration within the book, suggesting an internal voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and action, suggesting an internal voice that motivates the reader, typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase engages the reader directly, suggesting introspection, which is typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or theme within a book, rather than a description or commentary about the book itself."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages introspection and personal reflection, suggesting a direct engagement with the reader's thoughts, typical of an author's voice within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages introspection and feels like direct advice or reflection within the narrative, suggesting it is part of the author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like an internal reflection or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages the reader to visualize a concept, suggesting an internal reflection typical of an author's voice within the text."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-12T18:54:23.042Z",
+      "_slug": "despertando-al-gigante-interior",
+      "_edicion_numero": 99,
+      "_musica": {
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría 'Don't Worry, Be Happy' por su mensaje optimista que resuena con el empoderamiento y la decisión, ideal para abrir la lectura.",
+        "candidatos": [
+          {
+            "id": "539283410",
+            "cancion": "Don't Worry, Be Happy",
+            "artista": "The Hitsingers",
+            "album": "Best of Reggae",
+            "genero": "Reggae",
+            "dur": 296,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/a8/c0/bca8c0c2-d196-8928-be47-dd97d4b52af1/mzaf_17564863294777895637.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/dont-worry-be-happy/539283054?i=539283410&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/cb/95/ee/cb95ee9f-804d-ae39-c90d-1bb25037b3a7/887396072862.tif/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "Un himno optimista que anima a tomar decisiones con alegría y confianza.",
+            "frase_eco": "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?"
+          },
+          {
+            "id": "6796346568",
+            "cancion": "Let It Rain (feat. Pamela)",
+            "artista": "SOUL ARCHIVE ROOM",
+            "album": "Pamela | The Best Songs Collection II (feat. Pamela)",
+            "genero": "Country",
+            "dur": 253,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/f1/e6/b4f1e66b-4387-9572-9a17-49305b14ff10/mzaf_4315822555293538839.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/let-it-rain-feat-pamela/6796346567?i=6796346568&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1e/74/33/1e74334b-509e-291f-e6de-230a93aae206/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía suave que acompaña, aunque no destaca en energía.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de 'El SECRETO de Tony Robbins para TRANSFORMAR tu Vida', 'DESPERTANDO AL GIGANTE INTERIOR-ANTHONY ROBBINS-RESUMEN ANIMADO' y 'DESPERTANDO AL GIGANTE INTERIOR ( Descubriendo El Poder Interior)' por su enfoque en decision",
+        "candidatos": [
+          {
+            "id": "DYlkUX8xaRc",
+            "titulo": "El SECRETO de Tony Robbins para TRANSFORMAR tu Vida - Despierta al GIGANTE que Llevas Dent",
+            "canal": "Audioguía - Audiolibros",
+            "dur": 4086,
+            "armonia": 7,
+            "rol": "profundizar",
+            "tipo": "audiolibro",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+            "pie": "El audiolibro ofrece estrategias para transformar la vida, alineándose con la idea de decisiones poderosas.",
+            "pie_en": "The audiobook offers strategies to transform life, aligning with the idea of powerful decisions."
+          },
+          {
+            "id": "cxHE58Q2NGQ",
+            "titulo": "Despertando al Gigante Interior (Parte 1) - Un Resumen de Libros para Emprendedores Podcas",
+            "canal": "Libros para Emprendedores con Luis Ramos",
+            "dur": 4953,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "resumen",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Se presenta un resumen de lecciones sobre el dominio personal, pero carece de conexión directa con decisiones específicas.",
+            "pie_en": "A summary of lessons on personal mastery is presented, but it lacks a direct connection to specific decisions."
+          },
+          {
+            "id": "5DI3W6J8Fb0",
+            "titulo": "DESPERTANDO AL GIGANTE INTERIOR-ANTHONY ROBBINS-RESUMEN ANIMADO",
+            "canal": "Caminos de Éxito",
+            "dur": 596,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "resumen",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer.",
+            "pie": "El resumen anima a reflexionar sobre decisiones y sus consecuencias, resonando con la idea de construir puentes.",
+            "pie_en": "The summary encourages reflection on decisions and their consequences, resonating with the idea of building bridges."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "Take nothing personally",
       "autor": "Shubham Kumar Singh",
       "tagline": "",
@@ -997,7 +1934,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -1009,7 +1946,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -1021,7 +1958,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -4864,7 +5801,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -4876,7 +5813,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -4888,7 +5825,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -32529,11 +33466,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 99,
-    "total": 166,
-    "last_audit": "2026-09-11T13:49:52.177Z",
-    "healing_rotation_idx": 44,
+    "next_edition_number": 100,
+    "total": 167,
+    "last_audit": "2026-09-12T18:54:31.000Z",
+    "healing_rotation_idx": 45,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-11T14:04:42.641Z"
+    "last_healing_timestamp": "2026-09-12T19:05:36.255Z"
   }
 }

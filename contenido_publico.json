@@ -1,6 +1,827 @@
 {
   "libros": [
     {
+      "titulo": "Despertando al Gigante Interior",
+      "autor": "Anthony Robbins",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=ic8KGgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=ic8KGgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9789707807150",
+      "titulo_es": "Despertando al Gigante Interior",
+      "titulo_en": "Awaken the Giant Within",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "empoderamiento",
+        "decisión",
+        "transformación",
+        "autoconocimiento"
+      ],
+      "palabras_en": [
+        "transformation",
+        "empowerment",
+        "opportunity",
+        "self-knowledge"
+      ],
+      "frases": [
+        "🌓 Detén un momento y respira profundo. Reflexiona sobre la última decisión que tomaste y su impacto en tu vida y en tu autoconocimiento.",
+        "🏛 ¿Qué patrones de decisión has notado que te limitan en tu vida diaria?",
+        "🔭 Imagina un camino donde cada decisión que tomas es un ladrillo que construye tu futuro ideal.",
+        "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer."
+      ],
+      "frases_en": [
+        "🌅 Visualize your future self. What choices lead you there?",
+        "⏳ Reflect on your decisions. What do they reveal about you?",
+        "🌊 Change is not a destination; it’s a journey of continuous choice.",
+        "🌌 Imagine each decision as a step on your path to greatness."
+      ],
+      "frases_og": [
+        "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+        "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?",
+        "🛡 El autoconocimiento es la brújula que guía tus decisiones.",
+        "🎯 Actuar sin reflexión es navegar sin rumbo: elige con conciencia."
+      ],
+      "frases_og_en": [
+        "⚓ The power of choice shapes your destiny.",
+        "🔁 Embrace your journey. Take decisive action today.",
+        "🛡 Are you aware of the patterns limiting your growth?",
+        "🎯 True power comes from within — harness it wisely."
+      ],
+      "colores": [
+        "#7EB5F1",
+        "#E89130",
+        "#1337AE",
+        "#65510B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Despierta tu poder interior",
+        "parrafoTop": "[H]La capacidad de transformar nuestra vida radica en nuestras decisiones poderosas.[/H] Cada elección que hacemos es una oportunidad para redirigir nuestro destino hacia la grandeza, hacia el cumplimiento de nuestras aspiraciones más profundas. Al comprender y aplicar el poder de la programación neurolingüística, podemos reprogramar nuestra mente y crear un futuro que refleje nuestras verdaderas metas y deseos.",
+        "subtitulo": "¿Qué decisiones estás tomando hoy?",
+        "parrafoBot": "Cada día es un nuevo lienzo en blanco, una invitación a tomar el control de nuestra narrativa personal. La clave está en el autoconocimiento; al conocernos a nosotros mismos, podemos identificar patrones que nos limitan y transformarlos en oportunidades de crecimiento y desarrollo. [H]¡Es tu momento de actuar y tomar decisiones poderosas que transformen tu vida![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Awakening Your Inner Power",
+        "parrafoTop": "[H]The capacity to transform our lives lies within our powerful decisions.[/H] Every choice we make is an opportunity to redirect our destiny toward greatness, toward fulfilling our deepest aspirations. By understanding and applying the power of neuro-linguistic programming, we can reshape our thoughts and behaviors to create a life of purpose and fulfillment, harnessing the potential of our conscious decisions.",
+        "subtitulo": "What decisions are you making today?",
+        "parrafoBot": "Each day is a new blank canvas, an invitation to take control of our personal narrative. The key lies in self-knowledge; by knowing ourselves, we can identify limiting patterns and transform them into opportunities for growth and development. [H]It’s your moment to act![/H]",
+        "style": {
+          "accent": "#1276E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Despertando%20al%20Gigante%20Interior%20Anthony%20Robbins%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Awaken%20the%20Giant%20Within%20Anthony%20Robbins%20interview",
+      "_animo_promedio": 0.55,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "la capacidad de transformar nuestra vida a través de decisiones conscientes",
+            "el poder de la programación neurolingüística para el cambio personal",
+            "la importancia del autoconocimiento en el desarrollo personal"
+          ],
+          "key_terms": [
+            "decisiones poderosas",
+            "programación neurolingüística (PNL)",
+            "autoconocimiento"
+          ],
+          "authorial_voice_notes": "La voz de Anthony Robbins es persuasiva y motivacional, con un enfoque en la autoeficacia y el empoderamiento personal."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 El autoconocimiento es la brújula que guía tus decisiones.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🎯 Actuar sin reflexión es navegar sin rumbo: elige con conciencia.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "⚓ The power of choice shapes your destiny.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 Embrace your journey. Take decisive action today.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 Are you aware of the patterns limiting your growth?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🎯 True power comes from within — harness it wisely.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Detén un momento y respira profundo. Reflexiona sobre la última decisión que tomaste y su impacto en tu vida y en tu autoconocimiento.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué patrones de decisión has notado que te limitan en tu vida diaria?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina un camino donde cada decisión que tomas es un ladrillo que construye tu futuro ideal.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.8,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your future self. What choices lead you there?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Reflect on your decisions. What do they reveal about you?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Change is not a destination; it’s a journey of continuous choice.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🌌 Imagine each decision as a step on your path to greatness.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.7,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja conceptos del libro como la transformación personal y el autoconocimiento, que son temas centrales en 'Despertando al Gigante Interior'. Sin embargo, algunas frases son algo genéricas y podrían aplicarse a otros libros de autoayuda. Aún así, el enfoque en decisiones poderosas y programación neurolingüística ancla el contenido al libro."
+        },
+        "en": {
+          "grounded_score": 0.5,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects some concepts related to personal transformation and decision-making, which aligns with the themes of Anthony Robbins' work. However, it lacks specific references to 'Despertando al Gigante Interior' and could easily apply to any self-help book, making it feel generic."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y motivacional, sin referencias externas al libro.",
+          "elapsed_ms": 577,
+          "usage": {
+            "prompt_tokens": 410,
+            "completion_tokens": 28,
+            "total_tokens": 438,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y tono motivacional propio del autor.",
+          "elapsed_ms": 1085,
+          "usage": {
+            "prompt_tokens": 396,
+            "completion_tokens": 27,
+            "total_tokens": 423,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 861,
+        "total_ms": 1085
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 201.40625,
+          "adjusted_hue": 211.40625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EB5F1",
+          "--palette-1": "#E89130",
+          "--palette-2": "#1337AE",
+          "--palette-3": "#65510B",
+          "--accent": "#1276E2",
+          "--accent-soft": "#1276E238",
+          "--accent-glow": "#1276E26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#17191C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#1068C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-09-12T18-53-31",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 59105,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15458,
+          "palette": 0,
+          "content_es": 17539,
+          "judge_es": 836,
+          "content_en": 16219,
+          "judge_en": 790,
+          "voice": 861,
+          "voice_extended": 7402,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoBot": 638,
+          "highlight_judge_en_parrafoTop": 643,
+          "highlight_judge_en_parrafoBot": 630,
+          "csal": 2582
+        },
+        "elapsed_ms_total": 18687,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 3700,
+          "palette": 0,
+          "cover_fallback": 123,
+          "content_es": 5569,
+          "judge_es": 1614,
+          "content_en": 4405,
+          "judge_en": 894,
+          "voice": 1085,
+          "voice_extended": 1293,
+          "highlight_judge": 4459,
+          "lens_compatibility": 1199,
+          "csal": 26736,
+          "post_processing": 32399
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.5,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.7,
+          "familia": 0.2,
+          "espiritu": 0.5,
+          "relaciones": 0.4,
+          "finanzas": 0.3
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que estás estancado en tu vida",
+          "después de tomar una decisión de la que no estás seguro",
+          "cuando buscas motivación para cambiar tu estilo de vida",
+          "antes de enfrentar una conversación difícil",
+          "cuando te das cuenta de que estás repitiendo los mismos errores",
+          "cuando necesitas aumentar tu confianza personal",
+          "al querer entender por qué reaccionas de cierta manera",
+          "cuando te preguntas cómo alcanzar tus metas personales",
+          "después de sentir que has desperdiciado una oportunidad",
+          "cuando te enfrentas a un reto que parece insuperable",
+          "cuando quieres mejorar tus relaciones personales",
+          "antes de un cambio de carrera importante",
+          "cuando buscas cambiar hábitos negativos",
+          "cuando te sientes abrumado por las expectativas de otros",
+          "al querer ser más proactivo en tu vida diaria",
+          "cuando te sientes atrapado en un ciclo de auto-sabotaje",
+          "después de un fracaso personal o profesional",
+          "cuando necesitas encontrar un propósito en tu vida",
+          "al querer mejorar tu bienestar emocional",
+          "cuando te encuentras en una encrucijada y no sabes qué camino tomar",
+          "cuando quieres aprender a tomar el control de tus emociones",
+          "al sentir que no estás viviendo tu vida al máximo",
+          "cuando necesitas inspiración para superar un desafío",
+          "después de una discusión que te dejó sin energía",
+          "cuando buscas herramientas para cambiar tu mentalidad",
+          "cuando te das cuenta de que no estás siendo auténtico contigo mismo",
+          "antes de dar un paso importante hacia tus sueños",
+          "cuando quieres dejar de procrastinar",
+          "cuando necesitas romper con patrones familiares limitantes",
+          "al querer ser más asertivo en tus decisiones"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "motivación",
+            "confianza",
+            "inseguridad",
+            "determinación",
+            "esperanza",
+            "auto-sabotaje",
+            "autenticidad",
+            "inspiración",
+            "ansiedad"
+          ],
+          "objetos": [
+            "decisiones",
+            "patrones",
+            "hábitos",
+            "metas",
+            "cambios",
+            "oportunidades",
+            "puentes",
+            "camino",
+            "ladrillos",
+            "futuro"
+          ],
+          "contextos": [
+            "vida diaria",
+            "relaciones personales",
+            "carrera profesional",
+            "momentos de cambio",
+            "conversaciones difíciles",
+            "retos insuperables",
+            "ciclos de auto-sabotaje",
+            "encrucijadas",
+            "momentos de reflexión",
+            "oportunidades desperdiciadas"
+          ],
+          "verbos": [
+            "transformar",
+            "tomar decisiones",
+            "cambiar",
+            "reflexionar",
+            "construir",
+            "enfrentar",
+            "superar",
+            "romper",
+            "procrastinar",
+            "elegir"
+          ]
+        },
+        "concept_tags": [
+          "programación neurolingüística",
+          "autoconocimiento",
+          "empoderamiento personal",
+          "decisiones conscientes",
+          "patrones de decisión",
+          "cambio personal",
+          "desarrollo personal",
+          "confianza en uno mismo",
+          "motivación intrínseca",
+          "superación de obstáculos",
+          "autenticidad personal",
+          "control emocional",
+          "romper ciclos limitantes",
+          "construcción de futuro",
+          "proactividad",
+          "puentes de decisión"
+        ],
+        "anti_patterns": [
+          "cuando buscas una solución rápida sin esfuerzo",
+          "si crees que el cambio personal es instantáneo",
+          "para obtener una guía paso a paso sin flexibilidad",
+          "si no estás dispuesto a reflexionar sobre tus decisiones",
+          "cuando esperas que otros cambien por ti"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🧩"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🧱"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌉"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión dentro del libro, sugiriendo un enfoque sobre el cambio."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una narrativa, lo que sugiere que está dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto del libro, sugiriendo una voz autoral que invita a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un consejo directo y reflexivo que suena como parte de un discurso o narración dentro del libro, en lugar de ser una descripción externa."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un texto que guía al lector, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo o cuestionamiento dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar y reflexionar, lo que sugiere que es parte de un contenido narrativo o reflexivo dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono reflexivo y poético que sugiere un mensaje directo del autor, como si fuera parte de la narrativa del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a philosophical idea that could be part of a narrative or thematic exploration within the book, suggesting an internal voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages personal reflection and action, suggesting an internal voice that motivates the reader, typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase engages the reader directly, suggesting introspection, which is typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or theme within a book, rather than a description or commentary about the book itself."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages introspection and personal reflection, suggesting a direct engagement with the reader's thoughts, typical of an author's voice within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages introspection and feels like direct advice or reflection within the narrative, suggesting it is part of the author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like an internal reflection or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase encourages the reader to visualize a concept, suggesting an internal reflection typical of an author's voice within the text."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-12T18:54:23.042Z",
+      "_slug": "despertando-al-gigante-interior",
+      "_edicion_numero": 99,
+      "_musica": {
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría 'Don't Worry, Be Happy' por su mensaje optimista que resuena con el empoderamiento y la decisión, ideal para abrir la lectura.",
+        "candidatos": [
+          {
+            "id": "539283410",
+            "cancion": "Don't Worry, Be Happy",
+            "artista": "The Hitsingers",
+            "album": "Best of Reggae",
+            "genero": "Reggae",
+            "dur": 296,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/a8/c0/bca8c0c2-d196-8928-be47-dd97d4b52af1/mzaf_17564863294777895637.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/dont-worry-be-happy/539283054?i=539283410&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/cb/95/ee/cb95ee9f-804d-ae39-c90d-1bb25037b3a7/887396072862.tif/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "Un himno optimista que anima a tomar decisiones con alegría y confianza.",
+            "frase_eco": "🔁 ¿Qué historia estás escribiendo con tus decisiones hoy?"
+          },
+          {
+            "id": "6796346568",
+            "cancion": "Let It Rain (feat. Pamela)",
+            "artista": "SOUL ARCHIVE ROOM",
+            "album": "Pamela | The Best Songs Collection II (feat. Pamela)",
+            "genero": "Country",
+            "dur": 253,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/f1/e6/b4f1e66b-4387-9572-9a17-49305b14ff10/mzaf_4315822555293538839.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/let-it-rain-feat-pamela/6796346567?i=6796346568&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1e/74/33/1e74334b-509e-291f-e6de-230a93aae206/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía suave que acompaña, aunque no destaca en energía.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos de 'El SECRETO de Tony Robbins para TRANSFORMAR tu Vida', 'DESPERTANDO AL GIGANTE INTERIOR-ANTHONY ROBBINS-RESUMEN ANIMADO' y 'DESPERTANDO AL GIGANTE INTERIOR ( Descubriendo El Poder Interior)' por su enfoque en decision",
+        "candidatos": [
+          {
+            "id": "DYlkUX8xaRc",
+            "titulo": "El SECRETO de Tony Robbins para TRANSFORMAR tu Vida - Despierta al GIGANTE que Llevas Dent",
+            "canal": "Audioguía - Audiolibros",
+            "dur": 4086,
+            "armonia": 7,
+            "rol": "profundizar",
+            "tipo": "audiolibro",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "⚓ Las decisiones poderosas son el inicio de un cambio real.",
+            "pie": "El audiolibro ofrece estrategias para transformar la vida, alineándose con la idea de decisiones poderosas."
+          },
+          {
+            "id": "cxHE58Q2NGQ",
+            "titulo": "Despertando al Gigante Interior (Parte 1) - Un Resumen de Libros para Emprendedores Podcas",
+            "canal": "Libros para Emprendedores con Luis Ramos",
+            "dur": 4953,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "resumen",
+            "relacion": "sustituye",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Se presenta un resumen de lecciones sobre el dominio personal, pero carece de conexión directa con decisiones específicas."
+          },
+          {
+            "id": "5DI3W6J8Fb0",
+            "titulo": "DESPERTANDO AL GIGANTE INTERIOR-ANTHONY ROBBINS-RESUMEN ANIMADO",
+            "canal": "Caminos de Éxito",
+            "dur": 596,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "resumen",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "💫 Las decisiones construyen puentes: elige con sabiduría y verás el camino florecer.",
+            "pie": "El resumen anima a reflexionar sobre decisiones y sus consecuencias, resonando con la idea de construir puentes."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "Take nothing personally",
       "autor": "Shubham Kumar Singh",
       "tagline": "",
@@ -152,7 +973,8 @@
             "conciencia emocional",
             "adaptación personal"
           ],
-          "authorial_voice_notes": "La voz del autor es reflexiva y motivacional, buscando inspirar al lector a adoptar una mentalidad más consciente y positiva."
+          "authorial_voice_notes": "La voz del autor es reflexiva y motivacional, buscando inspirar al lector a adoptar una mentalidad más consciente y positiva.",
+          "authorial_voice_notes_en": "The author's voice is reflective and motivational, seeking to inspire the reader to adopt a more conscious and positive mindset."
         },
         "og_phrases_es": [
           {
@@ -870,7 +1692,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -882,7 +1704,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -894,7 +1716,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -3431,7 +4253,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -3443,7 +4265,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -3455,7 +4277,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -4993,9 +5815,9 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -5005,9 +5827,9 @@
       },
       "tarjeta_base": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -5017,9 +5839,9 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -5865,7 +6687,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -5877,7 +6699,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -5889,7 +6711,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -6673,7 +7495,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -7537,7 +8359,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -7549,7 +8371,7 @@
       },
       "tarjeta_base": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -7561,7 +8383,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre.[/H]",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -8320,7 +9142,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -8332,7 +9154,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -8344,7 +9166,7 @@
         "titulo": "La paradoja de la simplicidad",
         "parrafoTop": "Buscar la simplicidad en un mundo saturado de complejidad es como intentar encontrar un equilibrio en un acto de malabarismo. La clave está en aceptar que no todo puede ser simplificado y que, a veces, el verdadero diseño radica en reconocer la complejidad que subyace. La esencia de lo esencial se revela en la aceptación de lo no simplificable y en la comprensión de que la simplicidad y la complejidad pueden coexistir en armonía, tal como se explora en las diez leyes de la simplicidad de John Maeda.",
         "subtitulo": "¿Cómo se puede navegar entre lo simple y lo funcional?",
-        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. [H]Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad.[/H]",
+        "parrafoBot": "La aceptación de lo no simplificable es fundamental en este viaje. En lugar de forzar la simplicidad, debemos dejar que emerja de manera orgánica, permitiendo que los sistemas complejos se organicen en formas que sean intuitivas y útiles. Al hacerlo, descubrimos un nuevo nivel de claridad y funcionalidad que nos permite apreciar la esencia de lo esencial.",
         "style": {
           "accent": "#E212D2",
           "paper": "#F0EFF0",
@@ -18645,7 +19467,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -22620,8 +23442,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Married Life' por su capacidad de evocar emociones y su conexión con la transformación, aunque no sea completamente luminosa.",
         "candidatos": [
           {
@@ -22652,6 +23474,21 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "Una pieza que invita a la reflexión y a explorar nuevas perspectivas.",
+            "frase_eco": "💠 Cada sombrero de pensamiento es una puerta a nuevas ideas."
+          },
+          {
+            "id": "1474815897",
+            "cancion": "I Want You (She's So Heavy) [2019 Mix]",
+            "artista": "The Beatles",
+            "album": "Abbey Road (2019 Mix)",
+            "genero": "Rock",
+            "dur": 467,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/75/f5/cf75f550-6a92-a71d-d7b7-982353eebfab/mzaf_11197924861025522154.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/i-want-you-shes-so-heavy-2019-mix/1474815798?i=1474815897&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/53/43/485343e3-dd6a-0034-faec-f4b6403f8108/13UMGIM63890.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "La pieza evoca la búsqueda de nuevas ideas, pero su tono es más melancólico que el clima del libro.",
             "frase_eco": "💠 Cada sombrero de pensamiento es una puerta a nuevas ideas."
           }
         ]
@@ -23393,8 +24230,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Signed, Sealed, Delivered (I'm Yours)' por su energía vibrante y mensaje de acción, que resuena con la determinación del libro.",
         "candidatos": [
           {
@@ -23411,6 +24248,36 @@
             "rol": "abrir",
             "pie": "La energía de esta canción invita a tomar acción y avanzar hacia los objetivos.",
             "frase_eco": "📖 ¿Qué pasos estás dispuesto a dar hoy para lograr lo que anhelas?"
+          },
+          {
+            "id": "1634924144",
+            "cancion": "Uptown Funk (feat. Bruno Mars)",
+            "artista": "Mark Ronson",
+            "album": "Músicas Pop para Malhar | Academia 2022",
+            "genero": "Pop",
+            "dur": 269,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/cc/16/eacc1641-c2b8-58e2-39d9-a5b28dffd92a/mzaf_13039630650616306242.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/uptown-funk-feat-bruno-mars/1634923117?i=1634924144&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e5/b3/13/e5b313e6-e6f9-7f5b-9c9c-0921ecc381c9/196589263377.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "Una pieza vibrante que invita a la acción y al logro.",
+            "frase_eco": "📖 ¿Qué pasos estás dispuesto a dar hoy para lograr lo que anhelas?"
+          },
+          {
+            "id": "1670413058",
+            "cancion": "HAPPY",
+            "artista": "NF",
+            "album": "HOPE",
+            "genero": "Hip-Hop/Rap",
+            "dur": 242,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/96/47/8d96472d-2005-9945-0818-b08b7e0babb6/mzaf_6793386083851217863.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/happy/1670412644?i=1670413058&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/6d/1a/5a6d1a4e-ac13-c7e8-1eba-e80a35651622/23UMGIM07672.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "Un himno de superación que resuena con la búsqueda de conexiones significativas.",
+            "frase_eco": "🌓 Cada conexión que haces puede ser la clave para abrir nuevas puertas."
           }
         ]
       }
@@ -31764,8 +32631,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la conexión humana, resonando con el mensaje del libro sobre la empatía en la negociación.",
         "candidatos": [
           {
@@ -31782,6 +32649,21 @@
             "rol": "profundizar",
             "pie": "Una melodía que evoca la belleza de la conexión humana en la negociación.",
             "frase_eco": "La conexión humana es más poderosa que cualquier táctica."
+          },
+          {
+            "id": "1762668241",
+            "cancion": "Here Comes The Sun",
+            "artista": "Dylan Schneider",
+            "album": "PUZZLED",
+            "genero": "Country",
+            "dur": 164,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/1d/e3/ee1de382-0d50-533b-bbbf-a98e422914cb/mzaf_9154525682456018816.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/here-comes-the-sun/1762667826?i=1762668241&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/15/9d/b1/159db1c5-86cb-0602-3cef-4b824590b3ba/4099964119985.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía que invita a la esperanza y la conexión, perfecta para abrir la mente.",
+            "frase_eco": "🌱 La verdadera negociación comienza donde termina la agresión."
           }
         ]
       }
@@ -32533,8 +33415,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'What a Wonderful World' por su mensaje optimista y su capacidad de resonar con la lucha y la esperanza del protagonista.",
         "candidatos": [
           {
@@ -32550,6 +33432,21 @@
             "armonia": 6,
             "rol": "resonar",
             "pie": "Una celebración de la belleza de la vida que resuena con la esperanza del protagonista.",
+            "frase_eco": "La pobreza es solo un estado temporal, no un destino final."
+          },
+          {
+            "id": "6776522496",
+            "cancion": "Erik Satie — Gymnopédie No. 3 (Minimal Calm Jazz Version)",
+            "artista": "Just Jazz",
+            "album": "Jazz Covers of Classical Music",
+            "genero": "Jazz",
+            "dur": 154,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/48/32/834832b1-30b7-2f26-30bb-f9e563be1241/mzaf_3199839168481415968.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/erik-satie-gymnop%C3%A9die-no-3-minimal-calm-jazz-version/6776522272?i=6776522496&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/be/d9/69/bed9695d-5b1e-a42d-6a83-e12921d83c9a/artwork.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a la reflexión y calma en medio de la lucha.",
             "frase_eco": "La pobreza es solo un estado temporal, no un destino final."
           }
         ]
@@ -34081,8 +34978,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Ain't No Mountain High Enough' y 'Here Comes The Sun' por su capacidad de abrir y resonar con el mensaje de aceptación del caos y la superación.",
         "candidatos": [
           {
@@ -34114,6 +35011,21 @@
             "rol": "resonar",
             "pie": "La llegada de la luz tras la tormenta, un eco de aceptación.",
             "frase_eco": "🔮 Acepta el caos: allí reside la verdadera sabiduría."
+          },
+          {
+            "id": "41228215",
+            "cancion": "Here Comes the Sun",
+            "artista": "Womack & Womack",
+            "album": "Radio M.U.S.C. Man",
+            "genero": "Rock",
+            "dur": 186,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d0/30/17/d030178d-6470-eb51-ac9f-789ad0c81c72/mzaf_10695360334997234748.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/here-comes-the-sun/41228194?i=41228215&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m01/d07/h18/s06.gllmpctk.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "La canción evoca un amanecer que invita a la reflexión y al cambio.",
+            "frase_eco": "🎯 ¿Cuántas veces hemos permitido que un lecho de Procusto defina nuestro pensamiento y nuestras decisiones, limitando nuestra capacidad de aceptar el caos y lo inesperado?"
           }
         ]
       }
@@ -34850,8 +35762,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Garota de Ipanema' por su calidez y ritmo suave, que complementa la reflexión sobre la belleza en lo cotidiano.",
         "candidatos": [
           {
@@ -34883,6 +35795,21 @@
             "rol": "abrir",
             "pie": "Una melodía que invita a descubrir la belleza en lo cotidiano.",
             "frase_eco": "¿Qué detalles invisibles en tu rutina diaria pueden deslumbrarte?"
+          },
+          {
+            "id": "1699369354",
+            "cancion": "Come Away with Me",
+            "artista": "The Intermission Project",
+            "album": "Sorry - Single",
+            "genero": "Folk",
+            "dur": 269,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/f0/2d/01f02d3c-ac1f-088a-bf6f-f2bc4966e169/mzaf_17756871294566691320.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/come-away-with-me/1699369336?i=1699369354&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0f/fd/ac/0ffdac8f-5b9e-f36b-f3f4-7cdf4df65a0a/5063346101973_cover.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía que invita a explorar lo cotidiano con asombro.",
+            "frase_eco": "🕊 ¿Qué detalles invisibles en tu rutina diaria pueden deslumbrarte?"
           }
         ]
       }
@@ -36426,8 +37353,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría solo 'Estrellita' por su belleza, pero su tono melancólico no se alinea con el ánimo de transformación del libro.",
         "candidatos": [
           {
@@ -36444,6 +37371,21 @@
             "rol": "profundizar",
             "pie": "La melancolía de esta pieza invita a la reflexión sobre la vida y la muerte.",
             "frase_eco": ""
+          },
+          {
+            "id": "1452514510",
+            "cancion": "Meditation from Thaïs",
+            "artista": "Michel Schwalbé, Berliner Philharmoniker & Herbert von Karajan",
+            "album": "Herbert von Karajan: Adagio",
+            "genero": "Clásica",
+            "dur": 361,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/03/b4/3503b48c-a0d7-536e-43b5-c4f12ec8741e/mzaf_6744363396833893977.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/meditation-from-tha%C3%AFs/1452514311?i=1452514510&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/af/46/29/af4629e5-1a0c-14e0-f94f-683fcd828c57/06UMGIM32651.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza que invita a la reflexión sobre la vida y la muerte, en un tono sereno y profundo.",
+            "frase_eco": "🔮 La interconexión entre ciencia y espiritualidad transforma nuestra vida y nos ofrece una nueva perspectiva de la existencia."
           }
         ]
       }
@@ -37173,10 +38115,10 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'So Nice (Summer Samba)' por su capacidad de abrir el ánimo y conectar con el deseo de transformación, mientras que 'Minor Swing' aporta una profundidad reflexiva.",
         "candidatos": [
           {
@@ -37207,6 +38149,21 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "Un jazz que invita a la reflexión, ideal para profundizar en el aprendizaje.",
+            "frase_eco": ""
+          },
+          {
+            "id": "696885670",
+            "cancion": "Here Comes the Sun (Glee Cast Version) [feat. Demi Lovato]",
+            "artista": "Glee Cast",
+            "album": "Glee Sings the Beatles",
+            "genero": "Pop",
+            "dur": 180,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/3d/f9/653df90b-1a46-f3e3-62f6-d4db8f2bbd5b/mzaf_14402031321545394737.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/here-comes-the-sun-glee-cast-version-feat-demi-lovato/696884325?i=696885670&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2a/90/0d/2a900d07-6369-262b-2166-b37c9643d44c/886444201421.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una melodía optimista que invita a la transformación personal.",
             "frase_eco": ""
           }
         ]
@@ -38754,8 +39711,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-12",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'La Valse d'Amélie' por su capacidad de abrir el corazón y conectar con la autenticidad, mientras que 'Almost Blue' es más introspectiva y menos luminosa.",
         "candidatos": [
           {
@@ -48213,7 +49170,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -50719,7 +51676,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -50731,7 +51688,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -50743,7 +51700,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -52991,7 +53948,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -56132,7 +57089,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini+rescate",
@@ -68760,7 +69717,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -115063,7 +116020,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -122878,7 +123835,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -129889,7 +130846,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-11T13:49:52.177Z",
+      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -131511,11 +132468,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 99,
-    "total": 166,
-    "last_audit": "2026-09-11T13:49:52.177Z",
-    "healing_rotation_idx": 44,
+    "next_edition_number": 100,
+    "total": 167,
+    "last_audit": "2026-09-12T18:54:31.000Z",
+    "healing_rotation_idx": 45,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-11T14:04:42.641Z"
+    "last_healing_timestamp": "2026-09-12T19:05:36.255Z"
   }
 }
