@@ -1,6 +1,953 @@
 {
   "libros": [
     {
+      "titulo": "Words that work",
+      "autor": "Frank Luntz",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/1b/0c/7a/1b0c7afe-d992-1e7f-5c80-67adb5b036ea/1063493496.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication211/v4/1b/0c/7a/1b0c7afe-d992-1e7f-5c80-67adb5b036ea/1063493496.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Words that work",
+      "titulo_en": "Words that Work",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "poder",
+        "claridad",
+        "estrategia",
+        "influencia"
+      ],
+      "palabras_en": [
+        "powerful",
+        "strategic",
+        "effective",
+        "perception"
+      ],
+      "frases": [
+        "👁 Visualiza cómo cambia la reacción de tu audiencia al cambiar una sola palabra.",
+        "🕰 ¿Qué efecto tiene tu elección de palabras en los resultados que buscas?",
+        "📻 Escucha el eco de cada palabra en la conversación que estás teniendo.",
+        "🚶 Las palabras son la brújula que guía la percepción y la acción de los demás."
+      ],
+      "frases_en": [
+        "☀ What difference can a single word make in your message?",
+        "🔭 The right phrase can be the key that opens doors to success.",
+        "🌓 Communication is not just about what you say, but how you say it.",
+        "🌬 Pause and consider the weight of your words before you speak."
+      ],
+      "frases_og": [
+        "⚡ Cuando eliges las palabras adecuadas, puedes cambiar radicalmente cómo la gente percibe una idea o una propuesta.",
+        "🌿 ¿Cuál es la palabra que elegiste hoy?",
+        "🧭 Cada palabra que elijas resonará en la mente de quienes te escuchan.",
+        "🔍 En el mundo de las campañas, una palabra mal escogida puede ser el principio del fin."
+      ],
+      "frases_og_en": [
+        "⚡ Words can create or destroy trust in an instant.",
+        "🌿 Choose your words carefully; they shape reality.",
+        "🧭 What impact do your words have on those around you?",
+        "🔍 When you master the art of communication, you pave the way to achieving your goals."
+      ],
+      "colores": [
+        "#7EA1F1",
+        "#E8B130",
+        "#131BAE",
+        "#65610B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD0D3",
+      "tarjeta": {
+        "titulo": "La clave está en las palabras",
+        "parrafoTop": "[H]Las palabras que elegimos no son solo una forma de comunicación[/H]; son herramientas de poder que moldean la percepción pública. En un mundo donde la primera impresión puede definir el resultado de una campaña, elegir el término correcto puede ser la diferencia entre el éxito y el fracaso. La comunicación estratégica no es solo un concepto, sino una práctica esencial que permite influir en la percepción del consumidor y alcanzar los objetivos deseados.",
+        "subtitulo": "¿Qué palabras son las que realmente importan?",
+        "parrafoBot": "[H]En el siglo XXI, ciertas palabras y frases tienen un peso significativo.[/H] Por ejemplo, en lugar de hablar de \"tratamientos\", los expertos en salud han optado por \"prevención\" y \"bienestar\", que resuenan mejor con el público. La clave es entender estas sutilezas y aplicarlas en cada interacción.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La clave está en las palabras",
+        "parrafoTop": "[H]Las palabras que elegimos no son solo una forma de comunicación[/H]; son herramientas de poder que moldean la percepción pública. En un mundo donde la primera impresión puede definir el resultado de una campaña, elegir el término correcto puede ser la diferencia entre el éxito y el fracaso. La comunicación estratégica no es solo un concepto, sino una práctica esencial que permite influir en la percepción del consumidor y alcanzar los objetivos deseados.",
+        "subtitulo": "¿Qué palabras son las que realmente importan?",
+        "parrafoBot": "[H]En el siglo XXI, ciertas palabras y frases tienen un peso significativo.[/H] Por ejemplo, en lugar de hablar de \"tratamientos\", los expertos en salud han optado por \"prevención\" y \"bienestar\", que resuenan mejor con el público. La clave es entender estas sutilezas y aplicarlas en cada interacción.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La clave está en las palabras",
+        "parrafoTop": "[H]Las palabras que elegimos no son solo una forma de comunicación[/H]; son herramientas de poder que moldean la percepción pública. En un mundo donde la primera impresión puede definir el resultado de una campaña, elegir el término correcto puede ser la diferencia entre el éxito y el fracaso. La comunicación estratégica no es solo un concepto, sino una práctica esencial que permite influir en la percepción del consumidor y alcanzar los objetivos deseados.",
+        "subtitulo": "¿Qué palabras son las que realmente importan?",
+        "parrafoBot": "[H]En el siglo XXI, ciertas palabras y frases tienen un peso significativo.[/H] Por ejemplo, en lugar de hablar de \"tratamientos\", los expertos en salud han optado por \"prevención\" y \"bienestar\", que resuenan mejor con el público. La clave es entender estas sutilezas y aplicarlas en cada interacción.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Power of Words",
+        "parrafoTop": "The words we choose are not merely tools for communication; they are powerful instruments that shape public perception. In a world where first impressions can dictate the outcome of a campaign, selecting the right term can mean the difference between success and failure. [H]Strategic communication is paramount for achieving effective results in both politics and business.[/H]",
+        "subtitulo": "Which words truly matter?",
+        "parrafoBot": "[H]In the 21st century, certain words and phrases carry significant weight.[/H] For instance, health experts have shifted from discussing \"treatments\" to promoting \"prevention\" and \"wellness,\" which resonate more effectively with the public. The essence lies in understanding these subtleties and applying them in every single aspect of communication to enhance influence and effectiveness.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Power of Words",
+        "parrafoTop": "The words we choose are not merely tools for communication; they are powerful instruments that shape public perception. In a world where first impressions can dictate the outcome of a campaign, selecting the right term can mean the difference between success and failure. [H]Strategic communication is paramount for achieving effective results in both politics and business.[/H]",
+        "subtitulo": "Which words truly matter?",
+        "parrafoBot": "[H]In the 21st century, certain words and phrases carry significant weight.[/H] For instance, health experts have shifted from discussing \"treatments\" to promoting \"prevention\" and \"wellness,\" which resonate more effectively with the public. The essence lies in understanding these subtleties and applying them in every single aspect of communication to enhance influence and effectiveness.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Power of Words",
+        "parrafoTop": "The words we choose are not merely tools for communication; they are powerful instruments that shape public perception. In a world where first impressions can dictate the outcome of a campaign, selecting the right term can mean the difference between success and failure. [H]Strategic communication is paramount for achieving effective results in both politics and business.[/H]",
+        "subtitulo": "Which words truly matter?",
+        "parrafoBot": "[H]In the 21st century, certain words and phrases carry significant weight.[/H] For instance, health experts have shifted from discussing \"treatments\" to promoting \"prevention\" and \"wellness,\" which resonate more effectively with the public. The essence lies in understanding these subtleties and applying them in every single aspect of communication to enhance influence and effectiveness.",
+        "style": {
+          "accent": "#1251E2",
+          "paper": "#CFD0D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Words%20that%20work%20Frank%20Luntz%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Words%20that%20Work%20Frank%20Luntz%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-15T23:43:20.359Z",
+        "workflow_run_id": "35036840875",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.45,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Words that work",
+          "titulo_en": "Words that Work",
+          "autor_completo": "Frank Luntz",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la influencia del lenguaje en la percepción pública",
+            "la comunicación estratégica en política y negocios",
+            "la importancia de elegir las palabras adecuadas",
+            "las reglas para una comunicación efectiva",
+            "palabras clave para el éxito en el siglo XXI"
+          ],
+          "key_terms": [
+            "comunicación táctica",
+            "influencia lingüística",
+            "percepción del consumidor",
+            "estrategia comunicativa",
+            "palabras de poder"
+          ],
+          "authorial_voice_notes": "La voz de Luntz es persuasiva y práctica, centrada en la aplicación táctica del lenguaje en el ámbito empresarial y político, ofreciendo ejemplos concretos y consejos directos.",
+          "authorial_voice_notes_en": "Luntz's voice is persuasive and practical, focused on the tactical application of language in the business and political realm, offering concrete examples and direct advice."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro se enfoca en cómo el uso del lenguaje afecta decisiones y percepciones, lo que se alinea con la teoría de juegos en la medida que expone las dinámicas de comunicación y los incentivos detrás de las palabras elegidas.",
+          "decision": "apply_through_adjacent_concept"
+        },
+        "visual_intent": {
+          "hue_primary": 207.03125,
+          "saturation": "vivid",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 15,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La clave está en las palabras",
+          "parrafoTop": "Las palabras que elegimos no son solo una forma de comunicación; son herramientas de poder que moldean la percepción pública. En un mundo donde la primera impresión puede definir el resultado de una campaña, elegir el término correcto puede ser la diferencia entre el éxito y el fracaso. La comunicación estratégica no es solo importante, sino esencial para lograr una influencia efectiva en la percepción del consumidor.",
+          "subtitulo": "¿Qué palabras son las que realmente importan?",
+          "parrafoBot": "En el siglo XXI, ciertas palabras y frases tienen un peso significativo. Por ejemplo, en lugar de hablar de \"tratamientos\", los expertos en salud han optado por \"prevención\" y \"bienestar\", que resuenan mejor con el público. La clave es entender estas sutilezas y aplicarlas en cada interacción."
+        },
+        "card_en": {
+          "titulo": "The Power of Words",
+          "parrafoTop": "The words we choose are not merely tools for communication; they are powerful instruments that shape public perception. In a world where first impressions can dictate the outcome of a campaign, selecting the right term can mean the difference between success and failure. Strategic communication is paramount in today's political and business landscape, where the right words can influence decisions and drive results.",
+          "subtitulo": "Which words truly matter?",
+          "parrafoBot": "In the 21st century, certain words and phrases carry significant weight. For instance, health experts have shifted from discussing \"treatments\" to promoting \"prevention\" and \"wellness,\" which resonate more effectively with the public. The essence lies in understanding these subtleties and applying them in every single aspect of communication to enhance influence and effectiveness."
+        },
+        "emotional_words_es": [
+          "poder",
+          "claridad",
+          "estrategia",
+          "influencia"
+        ],
+        "emotional_words_en": [
+          "powerful",
+          "strategic",
+          "effective",
+          "perception"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "⚡ Cuando eliges las palabras adecuadas, puedes cambiar radicalmente cómo la gente percibe una idea o una propuesta.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌿 ¿Cuál es la palabra que elegiste hoy?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🧭 Cada palabra que elijas resonará en la mente de quienes te escuchan.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🔍 En el mundo de las campañas, una palabra mal escogida puede ser el principio del fin.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "⚡ Words can create or destroy trust in an instant.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌿 Choose your words carefully; they shape reality.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🧭 What impact do your words have on those around you?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔍 When you master the art of communication, you pave the way to achieving your goals.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Visualiza cómo cambia la reacción de tu audiencia al cambiar una sola palabra.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 ¿Qué efecto tiene tu elección de palabras en los resultados que buscas?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "oido",
+            "phrase": "📻 Escucha el eco de cada palabra en la conversación que estás teniendo.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Las palabras son la brújula que guía la percepción y la acción de los demás.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "light",
+            "phrase": "☀ What difference can a single word make in your message?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 The right phrase can be the key that opens doors to success.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Communication is not just about what you say, but how you say it.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🌬 Pause and consider the weight of your words before you speak.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.85,
+          "combined": 0.91,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.8500000000000001
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Words that work",
+          "autor_completo": "Frank Luntz",
+          "titulo_api": "Words That Work",
+          "autor_api": "Frank Luntz",
+          "año": "2007",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6756797356",
+          "categorias": [
+            "Artes y disciplinas lingüísticas",
+            "Libros",
+            "Técnicos y profesionales",
+            "Educación",
+            "Negocios y finanzas personales"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/words-that-work/id6756797356?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content closely reflects the themes and concepts from the official synopsis of 'Words That Work.' It discusses the power of word choice in communication, specifically mentioning the shift from 'treatment' to 'prevention' and 'wellness,' which aligns with Luntz's examples. The phrases used are specific enough to connect directly to the book's content, making it feel like a meta-descrp"
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content closely reflects the themes and concepts from the ground truth, particularly the emphasis on the power of words in communication and their impact on public perception. It mentions the shift from 'treatment' to 'prevention' and 'wellness,' which is a specific example from the book. However, some phrases are slightly generic and could apply to other contexts, preventing a perfect score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Uso de voz directa y enfoque en la comunicación.",
+          "elapsed_ms": 623,
+          "usage": {
+            "prompt_tokens": 416,
+            "completion_tokens": 25,
+            "total_tokens": 441,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Tono directo y enfoque en el contenido del libro.",
+          "elapsed_ms": 1115,
+          "usage": {
+            "prompt_tokens": 401,
+            "completion_tokens": 26,
+            "total_tokens": 427,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 868,
+        "total_ms": 1115
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 207.03125,
+          "adjusted_hue": 222.03125,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 15,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "11.42",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EA1F1",
+          "--palette-1": "#E8B130",
+          "--palette-2": "#131BAE",
+          "--palette-3": "#65610B",
+          "--accent": "#1251E2",
+          "--accent-soft": "#1251E238",
+          "--accent-glow": "#1251E26b",
+          "--paper": "#CFD0D3",
+          "--ink": "#17191C",
+          "--border": "#7C7D7F",
+          "--highlight-bg": "#1047C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism",
+          "sensory_instruction"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_uncorrectable",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge",
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-09-15T23-43-20",
+      "_crono": {
+        "dia": "martes",
+        "hora": 17,
+        "franja": "tarde",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 70396,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15708,
+          "palette": 0,
+          "content_es": 17748,
+          "judge_es": 1039,
+          "content_en": 16465,
+          "judge_en": 1036,
+          "voice": 868,
+          "voice_extended": 17532,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoBot": 640,
+          "highlight_judge_en_parrafoTop": 639,
+          "highlight_judge_en_parrafoTop_retry": 633,
+          "highlight_judge_en_parrafoBot": 640,
+          "csal": 2787
+        },
+        "elapsed_ms_total": 28915,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 4169,
+          "palette": 0,
+          "cover_fallback": 51,
+          "content_es": 5651,
+          "judge_es": 1870,
+          "content_en": 5091,
+          "judge_en": 1787,
+          "voice": 1116,
+          "voice_extended": 9176,
+          "highlight_judge": 5592,
+          "lens_compatibility": 1195,
+          "csal": 4626,
+          "post_processing": 11420
+        },
+        "llm_calls_count": 44,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_uncorrectable"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 5,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.7,
+        "self-knowledge": 0.3,
+        "pilares": {
+          "cuerpo": 0,
+          "mente": 0.5,
+          "negocio": 0.9,
+          "familia": 0,
+          "espiritu": 0,
+          "relaciones": 0.5,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando necesito convencer a alguien de una idea",
+          "antes de dar una presentación importante",
+          "después de recibir críticas sobre mi forma de comunicarme",
+          "cuando quiero mejorar mis habilidades de negociación",
+          "antes de lanzar un nuevo producto al mercado",
+          "cuando me siento incomprendido en una conversación",
+          "después de un debate político y quiero expresar mi opinión",
+          "cuando quiero expresar una opinión polémica sin generar confrontación",
+          "cuando busco mejorar mi influencia en el trabajo",
+          "antes de escribir un discurso para un evento especial",
+          "cuando quiero cambiar la percepción que otros tienen de mí",
+          "después de una reunión donde no logré comunicar mis puntos",
+          "cuando busco ser más persuasivo en mis interacciones diarias",
+          "antes de hacer una solicitud importante a un superior",
+          "cuando quiero aprender a manejar críticas constructivas",
+          "después de un malentendido con un amigo o colega",
+          "cuando me enfrento a una audiencia difícil",
+          "cuando quiero motivar a mi equipo en una reunión",
+          "antes de una entrevista de trabajo",
+          "cuando busco que mi marca resuene mejor con los consumidores",
+          "cuando quiero que mi mensaje sea más claro y directo.",
+          "cuando me doy cuenta que mis palabras no están siendo bien recibidas",
+          "cuando quiero evitar malentendidos en un proyecto de equipo",
+          "cuando busco destacar en un mercado competitivo",
+          "cuando me preparo para un debate o discusión importante.",
+          "cuando quiero aprender a argumentar mejor mis puntos de vista.",
+          "cuando siento que mis mensajes no están logrando impacto.",
+          "cuando quiero remodelar la imagen de mi negocio.",
+          "cuando estoy buscando el tono adecuado para un mensaje.",
+          "cuando me doy cuenta que la forma en que hablo afecta mis relaciones.",
+          "cuando quiero adaptar mi comunicación a diferentes públicos.",
+          "cuando me doy cuenta que el lenguaje puede abrir o cerrar puertas."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "frustración",
+            "confusión",
+            "ansiedad",
+            "confianza",
+            "convicción",
+            "motivación",
+            "sorpresa",
+            "entusiasmo",
+            "alivio",
+            "desesperación"
+          ],
+          "objetos": [
+            "presentación",
+            "discurso",
+            "mensaje",
+            "palabras",
+            "audiencia",
+            "argumentos",
+            "negociación",
+            "marca",
+            "producto",
+            "estrategia"
+          ],
+          "contextos": [
+            "reunión",
+            "debate",
+            "conversación",
+            "entrevista",
+            "presentación",
+            "lanzamiento",
+            "negociación",
+            "discusión política",
+            "entorno laboral",
+            "evento especial"
+          ],
+          "verbos": [
+            "convencer",
+            "persuadir",
+            "comunicar",
+            "negociar",
+            "expresar",
+            "escuchar",
+            "influenciar",
+            "presentar",
+            "argumentar",
+            "motivar"
+          ]
+        },
+        "concept_tags": [
+          "persuasión",
+          "comunicación efectiva",
+          "estrategias de lenguaje",
+          "influencia en negocios",
+          "tácticas de negociación",
+          "percepción pública",
+          "elección de palabras",
+          "comunicación política",
+          "construcción de discursos",
+          "impacto del lenguaje"
+        ],
+        "anti_patterns": [
+          "situaciones donde el lenguaje no tiene impacto",
+          "contextos donde la comunicación no es relevante",
+          "momentos donde se requiere acción y no palabras",
+          "situaciones de crisis donde el lenguaje no puede cambiar la",
+          "contextos informales donde no se busca persuasión"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "👁️"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👂"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🧭"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro sobre comunicación o persuasión, sugiriendo que es parte del contenido del autor."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase parece ser un diálogo o una reflexión interna del autor, lo que sugiere que está dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase parece ser un consejo o reflexión que podría estar presente en el texto del libro, sugiriendo una conexión directa con el contenido."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría estar dentro del contenido del libro, sugiriendo una voz autoral que comparte una idea sobre las campañas."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase invita al lector a imaginar una situación específica, lo que sugiere que está dentro del contexto del libro y no es una descripción externa."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase parece ser una reflexión o pregunta que podría estar dirigida al lector dentro del contexto del libro, invitando a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a una reflexión íntima y personal, sugiriendo una experiencia directa del lector, lo que indica que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión que podría estar en el contexto del libro, sugiriendo una voz autoral que explora ideas sobre el lenguaje."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a thought that feels like it belongs within the narrative or argument of a book, reflecting the author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct statement that feels like a piece of advice or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of a narrative or dialogue within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase presents a direct insight or lesson that feels like it could be part of the narrative or advice within the book, rather than an external commentary."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that invites readers to consider the impact of language, suggesting an introspective tone typical of an author's voice within the text."
+            },
+            {
+              "category": "fuera",
+              "confidence": 0.85,
+              "reason": "The phrase discusses the concept of success in a general way, suggesting a metaphor rather than presenting content from within a narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a reflective insight that feels like a direct thought from the author, fitting within the narrative of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase feels like direct advice or reflection that could be found within the narrative of a book, suggesting an introspective moment."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-15T23:44:00.693Z",
+      "_slug": "words-that-work",
+      "_edicion_numero": 100,
+      "_musica": {
+        "resuelto_el": "2026-09-15",
+        "juez": "pool-emergencia",
+        "sinfonia": "pool:luz",
+        "candidatos": [
+          {
+            "id": "1650319530",
+            "cancion": "Linus And Lucy",
+            "artista": "Vince Guaraldi Trio",
+            "album": "A Charlie Brown Christmas (Original 1965 TV Soundtrack) [2022 Mix]",
+            "genero": "Época festiva",
+            "dur": 185,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/0f/27/d20f271c-0b0a-2f33-399a-517d7a00544c/mzaf_7482065445527904681.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/linus-and-lucy/1650319526?i=1650319530&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/69/09/b6/6909b604-c967-e6cf-6b9b-dba54e42a2f2/22CRGIM33543.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          },
+          {
+            "id": "1575400467",
+            "cancion": "Comptine d'un autre été, l'après-midi",
+            "artista": "Yann Tiersen",
+            "album": "Le Fabuleux destin d'Amélie Poulain (Bande originale du film)",
+            "genero": "Pop",
+            "dur": 140,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/54/5e/62545ee7-29dc-5b25-345a-976d2be8ad6e/mzaf_13593239243179866678.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/comptine-dun-autre-%C3%A9t%C3%A9-lapr%C3%A8s-midi/1575400412?i=1575400467&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ff/df/d9/ffdfd915-749b-85d1-d63b-158d9c197927/5099909117358.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Power of Words', 'Words That Work by Dr. Frank Luntz' y 'Words That Work by Frank Luntz' para ofrecer una mezcla de profundidad, resonancia y aterrizaje en la temática del libro.",
+        "candidatos": [
+          {
+            "id": "GtWKEq-anao",
+            "titulo": "Power of Words w/ Dr. Frank Luntz",
+            "canal": "The Dr. Phil Podcast",
+            "dur": 426,
+            "armonia": 7,
+            "rol": "aterrizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "⚡ Cuando eliges las palabras adecuadas, puedes cambiar radicalmente cómo la gente percibe una idea o una propuesta.",
+            "pie": "Luntz comparte su experiencia sobre cómo las palabras pueden cambiar la percepción, alineándose con la esencia del libro.",
+            "pie_en": "Luntz shares his experience on how words can change perception, aligning with the essence of the book."
+          },
+          {
+            "id": "COcVcMRu5x4",
+            "titulo": "Words That Work by Dr. Frank Luntz [Book Review]",
+            "canal": "Ross Palmer",
+            "dur": 582,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Palmer analiza el impacto de las palabras en la comunicación, tocando el enfoque de Luntz sobre la percepción pública.",
+            "pie_en": "Palmer analyzes the impact of words on communication, touching on Luntz's approach to public perception."
+          },
+          {
+            "id": "Hv2MVQQUDKQ",
+            "titulo": "Words that Work by Frank Luntz",
+            "canal": "Omar M. Khateeb",
+            "dur": 513,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "El video explora cómo las palabras influyen en la percepción, resonando con la idea de Luntz sobre la comunicación efectiva.",
+            "pie_en": "The video explores how words influence perception, resonating with Luntz's idea of effective communication."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "Despertando al Gigante Interior",
       "autor": "Anthony Robbins",
       "tagline": "",
@@ -1894,7 +2841,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "💠 Reacciona desde la calma, no desde el impulso.",
-            "pie": "Desglose de la oración de la serenidad, enfatizando la paz emocional y la aceptación."
+            "pie": "Desglose de la oración de la serenidad, enfatizando la paz emocional y la aceptación.",
+            "pie_en": "Breakdown of the serenity prayer, emphasizing emotional peace and acceptance."
           },
           {
             "id": "gUV5DJb6KGs",
@@ -1907,7 +2855,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "🧭 La auto-percepción define la experiencia de la vida.",
-            "pie": "Karen Faith comparte su experiencia sobre la autoaceptación y cómo hablar con las partes difíciles de uno mismo."
+            "pie": "Karen Faith comparte su experiencia sobre la autoaceptación y cómo hablar con las partes difíciles de uno mismo.",
+            "pie_en": "Karen Faith shares her experience on self-acceptance and how to talk to the difficult parts of oneself."
           },
           {
             "id": "9DtcSCFwDdw",
@@ -1920,7 +2869,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "💠 Reacciona desde la calma, no desde el impulso.",
-            "pie": "Katarina Blom explica cómo cultivar la felicidad al hacer las paces con nuestra mente."
+            "pie": "Katarina Blom explica cómo cultivar la felicidad al hacer las paces con nuestra mente.",
+            "pie_en": "Katarina Blom explains how to cultivate happiness by making peace with our mind."
           }
         ]
       }
@@ -4884,7 +5834,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -4896,7 +5846,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -4908,7 +5858,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -5572,7 +6522,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "",
-            "pie": "Riso explora cómo los pensamientos tóxicos afectan el bienestar, relevante para la salud física y mental."
+            "pie": "Riso explora cómo los pensamientos tóxicos afectan el bienestar, relevante para la salud física y mental.",
+            "pie_en": "Riso explores how toxic thoughts affect well-being, relevant to physical and mental health."
           },
           {
             "id": "lMQqIAl2MUE",
@@ -5585,7 +6536,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "La verdadera salud comienza con el reconocimiento de lo que nos rodea.",
-            "pie": "Marian Rojas enseña a transformar la preocupación en acción, un paso hacia la autoconciencia sobre la salud."
+            "pie": "Marian Rojas enseña a transformar la preocupación en acción, un paso hacia la autoconciencia sobre la salud.",
+            "pie_en": "Marian Rojas teaches how to transform worry into action, a step towards self-awareness about health."
           },
           {
             "id": "tbV3QwWb_f4",
@@ -5598,7 +6550,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "",
-            "pie": "La charla aborda la ansiedad y la preocupación, temas que pueden relacionarse con la salud y el bienestar."
+            "pie": "La charla aborda la ansiedad y la preocupación, temas que pueden relacionarse con la salud y el bienestar.",
+            "pie_en": "The talk addresses anxiety and worry, topics that can relate to health and well-being."
           }
         ]
       },
@@ -6706,7 +7659,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -6718,7 +7671,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -6730,7 +7683,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -7685,7 +8638,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -7697,7 +8650,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -7709,7 +8662,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -8605,7 +9558,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -9581,7 +10534,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -9593,7 +10546,7 @@
       },
       "tarjeta_base": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -9605,7 +10558,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -12289,7 +13242,8 @@
             "relacion": "invita",
             "idioma": "en",
             "frase_eco": "💠 ¿Qué papel juegan tus relaciones en tu bienestar?",
-            "pie": "Livingston plantea preguntas sobre lo que realmente valoramos en nuestras relaciones y su impacto en nuestra felicidad."
+            "pie": "Livingston plantea preguntas sobre lo que realmente valoramos en nuestras relaciones y su impacto en nuestra felicidad.",
+            "pie_en": "Livingston raises questions about what we truly value in our relationships and their impact on our happiness."
           },
           {
             "id": "YVpytJezSKo",
@@ -12302,7 +13256,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "El video analiza la historia de adopción de Livingston, tocando temas de identidad y emociones complejas."
+            "pie": "El video analiza la historia de adopción de Livingston, tocando temas de identidad y emociones complejas.",
+            "pie_en": "The video analyzes Livingston's adoption story, touching on themes of identity and complex emotions."
           }
         ]
       },
@@ -13242,7 +14197,8 @@
             "relacion": "invita",
             "idioma": "es",
             "frase_eco": "🗺 ¿Qué sueños has dejado de lado por miedo a ser tú mismo?",
-            "pie": "Percy habla sobre la importancia de aprovechar el momento y soñar con lo que queremos hacer en la vida."
+            "pie": "Percy habla sobre la importancia de aprovechar el momento y soñar con lo que queremos hacer en la vida.",
+            "pie_en": "Percy talks about the importance of seizing the moment and dreaming about what we want to do in life."
           }
         ]
       },
@@ -22301,7 +23257,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -33508,7 +34464,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "🪞 La filosofía ganbatte transforma los obstáculos en aprendizajes.",
-            "pie": "Mancini comparte su viaje de superación, resaltando cómo los fracasos pueden ser aprendizajes valiosos."
+            "pie": "Mancini comparte su viaje de superación, resaltando cómo los fracasos pueden ser aprendizajes valiosos.",
+            "pie_en": "Mancini shares his journey of overcoming, highlighting how failures can be valuable lessons."
           }
         ]
       },
@@ -34468,7 +35425,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "🔍 La misión colosal define la grandeza de un visionario.",
-            "pie": "Jorgenson comparte lecciones sobre la mentalidad de misión colosal y cómo aplicarlas en la vida diaria."
+            "pie": "Jorgenson comparte lecciones sobre la mentalidad de misión colosal y cómo aplicarlas en la vida diaria.",
+            "pie_en": "Jorgenson shares lessons on the colossal mission mindset and how to apply it in daily life."
           }
         ]
       },
@@ -43541,7 +44499,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-09-12",
         "juez": "gpt-4o-mini+completar",
@@ -46251,8 +47209,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría solo 'Estrellita' por su belleza, pero no logra elevar el ánimo ni acompaña el mensaje de liberación del libro.",
         "candidatos": [
           {
@@ -46268,6 +47226,21 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una melodía suave que acompaña, pero carece de un hook que inspire.",
+            "frase_eco": ""
+          },
+          {
+            "id": "956597860",
+            "cancion": "The Entertaner",
+            "artista": "Scott Joplin",
+            "album": "The Entertainer Scott Joplin",
+            "genero": "Traditional Pop",
+            "dur": 186,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/90/9d/f3909dcd-0547-efee-2df5-d1a33639cb60/mzaf_469770392892122804.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-entertaner/956597859?i=956597860&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/a8/63/a1/a863a13a-6260-c3ef-38df-e5d3c2ed7329/AIR031.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza clásica que evoca un sentido de movimiento y cambio, ideal para reflexionar sobre la automatización.",
             "frase_eco": ""
           }
         ]
@@ -47097,8 +48070,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría solo 'Estrellita' por su belleza, pero no logra elevar el ánimo ni acompaña la lectura de manera efectiva.",
         "candidatos": [
           {
@@ -47115,6 +48088,21 @@
             "rol": "aterrizar",
             "pie": "Una pieza clásica que, aunque hermosa, no eleva el ánimo como se espera.",
             "frase_eco": "⚡ Cuando decides establecer objetivos claros, te das la oportunidad de transformar tu vida de maneras que nunca imaginaste."
+          },
+          {
+            "id": "967523189",
+            "cancion": "La valse d'Amélie",
+            "artista": "Lavinia Meijer",
+            "album": "Voyage",
+            "genero": "Clásica",
+            "dur": 158,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cc/a9/46/cca9468d-04ab-0705-9891-ac2ec1240dfc/mzaf_9569241626122415174.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/la-valse-dam%C3%A9lie/967523112?i=967523189&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/91/a3/c7/91a3c762-e3d4-46c6-9c77-ff5df5a4a563/dj.tunrbvsi.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a la reflexión y al enfoque en los objetivos.",
+            "frase_eco": ""
           }
         ]
       }
@@ -47953,8 +48941,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Sir Duke' por su energía vibrante y optimista, que complementa la filosofía de acción y autodisciplina del libro.",
         "candidatos": [
           {
@@ -48844,8 +49832,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Minor Swing' por su energía alegre y su capacidad de abrir espacios creativos, ideal para inspirar claridad en la comunicación.",
         "candidatos": [
           {
@@ -50629,8 +51617,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría solo esta pieza por su capacidad de acompañar la reflexión, aunque no logra elevar el ánimo como se espera.",
         "candidatos": [
           {
@@ -50646,6 +51634,36 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una versión épica que sugiere grandeza, aunque no logra conectar emocionalmente con el texto.",
+            "frase_eco": ""
+          },
+          {
+            "id": "678318479",
+            "cancion": "Mediterranean Sundance",
+            "artista": "Paco DeLucia & Al Di Meola",
+            "album": "Paraggelies, Vol. 1",
+            "genero": "Músicas del mundo",
+            "dur": 63,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6a/b7/3b/6ab73b8d-517d-1edd-d044-00fe61f4d192/mzaf_18358565458588566120.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/mediterranean-sundance/678315941?i=678318479&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/72/f8/a2/72f8a266-c455-5dfb-1db7-9447c8c75811/888002195821.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "La fusión de guitarras evoca el cuestionamiento y la búsqueda de autenticidad.",
+            "frase_eco": "🌓 Cuestiona tus pensamientos, construye tu realidad: la esencia del estoicismo y su aplicación en la vida moderna."
+          },
+          {
+            "id": "1215654628",
+            "cancion": "Entre dos Aguas / Mediterranean Sundance",
+            "artista": "Michaelangelo Toumanidis",
+            "album": "Influencias",
+            "genero": "Clásica",
+            "dur": 277,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview111/v4/d2/3d/cb/d23dcbae-8dfb-c0ca-40e8-158825670071/mzaf_1808199301320808306.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/entre-dos-aguas-mediterranean-sundance/1215654169?i=1215654628&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/dd/4d/cc/dd4dcc5f-f1b1-2f53-0c79-94adb9d5a4d0/191018888053.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza que evoca la calma necesaria para reflexionar, aunque le falta un poco de energía.",
             "frase_eco": ""
           }
         ]
@@ -51500,8 +52518,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Ninguna de las piezas elegidas logra elevar el ánimo ni acompaña el mensaje de transformación del libro.",
         "candidatos": [
           {
@@ -51517,6 +52535,36 @@
             "armonia": 6,
             "rol": "abrir",
             "pie": "Una pieza más luminosa que las anteriores, pero aún distante del mensaje de liberación.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1630379506",
+            "cancion": "Café 1930 (Arr. Horsch for Recorder and Guitar)",
+            "artista": "Lucie Horsch & Sean Shibe",
+            "album": "Origins",
+            "genero": "Crossover clásica",
+            "dur": 373,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/5e/85/a05e8505-740c-c8ba-0253-568dfa0ee8c9/mzaf_18150180337907082565.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/caf%C3%A9-1930-arr-horsch-for-recorder-and-guitar/1630378109?i=1630379506&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ef/c8/14/efc81476-ee09-fcb9-4dc0-476589f0ab8f/22UMGIM63348.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la reflexión y al autoconocimiento.",
+            "frase_eco": "💠 La liberación del grito interior comienza con la autoevaluación."
+          },
+          {
+            "id": "1459444222",
+            "cancion": "Misterioso",
+            "artista": "Thelonious Monk",
+            "album": "Genius of Modern Music, Vol. 1",
+            "genero": "Jazz",
+            "dur": 200,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/a6/7f/a0a67f6c-70ca-1ce8-db79-d8f26477e350/mzaf_5743854181241832947.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/misterioso/1459444209?i=1459444222&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/97/e1/c1/97e1c140-2264-41d8-ec84-281a0152c5a2/00602577697326.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Un jazz que invita a la reflexión, pero no eleva el ánimo como se busca.",
             "frase_eco": ""
           }
         ]
@@ -55283,8 +56331,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Garota de Ipanema' por su suave melodía que acompaña la reflexión y el autoconocimiento, ideal para el clima de bienestar del libro.",
         "candidatos": [
           {
@@ -55316,6 +56364,36 @@
             "rol": "abrir",
             "pie": "Una melodía que invita a la reflexión y al despertar personal.",
             "frase_eco": "⚓ El vacío existencial puede ser el primer paso hacia la plenitud."
+          },
+          {
+            "id": "6812283669",
+            "cancion": "Dream A Little Dream Of Me",
+            "artista": "Louis Armstrong and His All Stars",
+            "album": "What A Wonderful World",
+            "genero": "Jazz",
+            "dur": 196,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/ab/63/2dab6373-b3e5-8188-b219-bb6d50f4dbb5/mzaf_16409399633393711718.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dream-a-little-dream-of-me/6812283421?i=6812283669&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/6b/90/b56b90ca-2f8d-7317-c9da-43f9904dea29/06UMGIM03789.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Un clásico que invita a la reflexión sobre los sueños y el autoconocimiento.",
+            "frase_eco": "🔁 ¿Qué tan lejos estás dispuesto a ir para encontrar tu verdadero yo?"
+          },
+          {
+            "id": "6812283672",
+            "cancion": "The Sunshine Of Love (Single Version)",
+            "artista": "Louis Armstrong and His Orchestra",
+            "album": "What A Wonderful World",
+            "genero": "Jazz",
+            "dur": 173,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/c8/f8/61c8f8ee-bb3b-0dac-1a71-15a55d2d063d/mzaf_9753529768859541117.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-sunshine-of-love-single-version/6812283421?i=6812283672&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/6b/90/b56b90ca-2f8d-7317-c9da-43f9904dea29/06UMGIM03789.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que evoca la calidez del amor y la paz interior.",
+            "frase_eco": ""
           }
         ]
       }
@@ -56191,7 +57269,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -58048,8 +59126,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Near Light' por su capacidad de profundizar en la calma y la claridad, acompañando la lectura sin distraer.",
         "candidatos": [
           {
@@ -58924,8 +60002,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-15",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Lean On Me' por su mensaje de apoyo y conexión, que complementa la idea de la escucha activa en el libro.",
         "candidatos": [
           {
@@ -58956,6 +60034,21 @@
             "armonia": 7,
             "rol": "aterrizar",
             "pie": "La melodía evoca la calma necesaria para escuchar con atención.",
+            "frase_eco": "La escucha activa es el primer paso hacia un consejo efectivo."
+          },
+          {
+            "id": "1517111568",
+            "cancion": "Chega De Saudade",
+            "artista": "Stan Getz & João Gilberto",
+            "album": "Trip to Brazil: The Best of Brazilian Jazz on Resonance",
+            "genero": "Jazz",
+            "dur": 223,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/09/06/c0/0906c0cb-e031-ec64-74d5-b1e2a9484846/mzaf_18309058695037323822.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/chega-de-saudade/1517111562?i=1517111568&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/a7/df/2a/a7df2a96-b364-bc38-08ac-daeaccdca633/617270122549_Cover.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "El jazz suave invita a la reflexión y a la conexión emocional en el proceso de escucha.",
             "frase_eco": "La escucha activa es el primer paso hacia un consejo efectivo."
           }
         ]
@@ -59026,7 +60119,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía. En definitiva, la inteligencia se convierte en una herramienta esencial para navegar en la complejidad de la vida y para enfrentar los retos que nos presenta la realidad.",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -59038,7 +60131,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía. En definitiva, la inteligencia se convierte en una herramienta esencial para navegar en la complejidad de la vida y para enfrentar los retos que nos presenta la realidad.",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -59050,7 +60143,7 @@
         "titulo": "La inteligencia como integración social",
         "parrafoTop": "Las emociones son el hilo conductor de nuestras vidas, y es a través de ellas que se forjan las decisiones cotidianas. [H]Comprender que la mayor parte de la realidad es invisible nos permite[/H] mirar más allá de lo superficial. Al integrar nuestras emociones con la racionalidad, no solo sobrevivimos, sino que también florecemos y desarrollamos una inteligencia que nos ayuda a adaptarnos a la marea de la vida.",
         "subtitulo": "¿Cuán conscientes somos de nuestros procesos emocionales?",
-        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía.[/H]",
+        "parrafoBot": "La inteligencia, lejos de ser un atributo individual, surge de la interacción con los demás. Las teorías de Darwin nos enseñan que nuestra supervivencia no depende solo de la competencia, sino de la capacidad de cooperar e integrarnos. [H]¿Estamos aprovechando esta fuente de sabiduría social para mejorar nuestra inteligencia y nuestras conductas en la vida cotidiana y así adaptarnos mejor a la marea de la realidad que nos rodea, que a menudo es invisible y está llena de emociones que influyen en nuestras decisiones y en nuestra capacidad de sobrevivir en un mundo complejo? La integración con otros es fundamental para nuestra adaptación y supervivencia en un entorno que cambia constantemente. En este sentido, debemos reconocer que nuestras emociones juegan un papel crucial en la forma en que nos relacionamos y enfrentamos los desafíos diarios. La inteligencia, por lo tanto, no es solo un atributo individual, sino un proceso colectivo que se nutre de nuestras interacciones y de la comprensión de nuestras emociones, lo que nos permite adaptarnos y prosperar en un mundo que constantemente nos desafía. En definitiva, la inteligencia se convierte en una herramienta esencial para navegar en la complejidad de la vida y para enfrentar los retos que nos presenta la realidad.",
         "style": {
           "accent": "#12E2C8",
           "paper": "#EFF0F0",
@@ -59175,7 +60268,7 @@
           "titulo": "The Invisible Threads of Emotion",
           "parrafoTop": "Emotions are the invisible threads that weave through our lives, shaping our daily decisions and interactions. By recognizing that much of reality remains unseen, we can look beyond superficial appearances. When we integrate our emotions with rational thought, we not only survive but also thrive in a complex world.",
           "subtitulo": "How aware are we of our emotional processes?",
-          "parrafoBot": "Intelligence is not merely an individual attribute; it arises from our interactions with others. Darwin's theories remind us that survival hinges not just on competition, but on our capacity to cooperate and integrate. Are we truly harnessing this profound source of social wisdom to enhance our understanding of emotions and conduct in everyday life, considerando que la inteligencia surge de la integración con otros y que las emociones están en el origen de todas nuestras conductas? La clave está en reconocer que la inteligencia y las emociones son fundamentales para nuestra supervivencia cotidiana, y que al integrar estos conceptos, podemos mejorar nuestra calidad de vida y nuestras relaciones interpersonales, lo que nos permitirá adaptarnos mejor a la marea de la vida, y así, vivir de manera más plena y consciente en un mundo que a menudo parece caótico y desafiante, donde la comprensión de nuestras emociones y la colaboración con los demás son esenciales para navegar los desafíos que enfrentamos diariamente, y así, construir un futuro más armonioso y resiliente."
+          "parrafoBot": "Intelligence is not merely an individual attribute; it arises from our interactions with others. Darwin's theories remind us that survival hinges not just on competition, but on our capacity to cooperate and integrate. Are we truly harnessing this profound source of social wisdom to enhance our understanding of emotions and conduct in everyday life, considerando que la inteligencia surge de la integración con otros y que las emociones están en el origen de todas nuestras conductas? La clave está en reconocer que la inteligencia y las emociones son fundamentales para nuestra supervivencia cotidiana, y que al integrar estos conceptos, podemos mejorar nuestra calidad de vida y nuestras relaciones interpersonales, lo que nos permitirá adaptarnos mejor a la marea de la vida, y así, vivir de manera más plena y consciente en un mundo que a menudo parece caótico y desafiante, donde la comprensión de nuestras emociones y la colaboración con los demás son esenciales para navegar los desafíos que enfrentamos diariamente, y así, construir un futuro más armonioso y resiliente, donde la inteligencia y la integración de nuestras emociones nos guíen hacia una vida más significativa y satisfactoria."
         },
         "emotional_words_es": [
           "reflexión",
@@ -61634,7 +62727,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -65249,7 +66342,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini+rescate",
@@ -73348,7 +74441,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "",
-            "pie": "El video aborda la conciencia desde un enfoque analítico, pero no se centra en la autoobservación."
+            "pie": "El video aborda la conciencia desde un enfoque analítico, pero no se centra en la autoobservación.",
+            "pie_en": "The video addresses awareness from an analytical approach, but does not focus on self-observation."
           }
         ]
       },
@@ -79670,7 +80764,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -132484,7 +133578,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -141402,7 +142496,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -149424,7 +150518,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-12T18:54:31.000Z",
+      "_audit_timestamp": "2026-09-15T23:44:12.741Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -151277,11 +152371,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 100,
-    "total": 167,
-    "last_audit": "2026-09-12T18:54:31.000Z",
-    "healing_rotation_idx": 45,
+    "next_edition_number": 101,
+    "total": 168,
+    "last_audit": "2026-09-15T23:44:12.741Z",
+    "healing_rotation_idx": 46,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-12T19:05:36.255Z"
+    "last_healing_timestamp": "2026-09-15T23:57:14.066Z"
   }
 }
