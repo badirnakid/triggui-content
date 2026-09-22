@@ -1,6 +1,925 @@
 {
   "libros": [
     {
+      "titulo": "Ok",
+      "autor": "Scott Simon",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgU2NvdHQgU2ltb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MTkxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxsaW5lIHgxPSIyMjAiIHkxPSIzNTEuNyIgeDI9IjM4MCIgeTI9IjM1MS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSIzNTkuNyIgeDI9IjM2MCIgeTI9IjM1OS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSI1ODAuMyIgeDI9IjM2MCIgeTI9IjU4MC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSI1ODguMyIgeDI9IjM4MCIgeTI9IjU4OC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPk9rPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiMxMjRGRTIiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjM0IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI0MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjAzZW0iPlNjb3R0IFNpbW9uPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgU2NvdHQgU2ltb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MTkxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxsaW5lIHgxPSIyMjAiIHkxPSIzNTEuNyIgeDI9IjM4MCIgeTI9IjM1MS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSIzNTkuNyIgeDI9IjM2MCIgeTI9IjM1OS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSI1ODAuMyIgeDI9IjM2MCIgeTI9IjU4MC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSI1ODguMyIgeDI9IjM4MCIgeTI9IjU4OC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPk9rPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiMxMjRGRTIiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjM0IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI0MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjAzZW0iPlNjb3R0IFNpbW9uPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Ok",
+      "titulo_en": "Ok",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "intimidad",
+        "reflexividad",
+        "empatía",
+        "conexión emocional"
+      ],
+      "palabras_en": [
+        "intimacy",
+        "reflection",
+        "connection",
+        "humor"
+      ],
+      "frases": [
+        "🏛 ¿Qué significado encuentras en los pequeños momentos de tu vida?",
+        "🔔 Escucha atentamente las conversaciones a tu alrededor. Permite que las historias resuenen en ti.",
+        "🌅 Imagina un café en una tarde lluviosa, donde la calidez de una taza se convierte en refugio.",
+        "⏳ Lo que se comparte en la intimidad, se transforma en eternidad."
+      ],
+      "frases_en": [
+        "👁 Notice the details in your surroundings; they often tell a deeper story than you realize.",
+        "🕰 Pause for a moment. What emotions surface when you think of your daily life?",
+        "💫 Imagine a shared laugh echoing in a quiet room, filling the silence with warmth.",
+        "🏛 In the tapestry of our lives, the threads of kindness often shine the brightest."
+      ],
+      "frases_og": [
+        "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+        "⚓ ¿Qué momentos cotidianos podrían revelarte más sobre ti mismo?",
+        "🔁 La risa compartida es el puente hacia la conexión.",
+        "🛡 En la intimidad de un diálogo, se revela lo que somos."
+      ],
+      "frases_og_en": [
+        "✨ True meaning often hides in the simplest moments of life.",
+        "⚓ Reflect on your daily interactions. What do they reveal about you?",
+        "🔁 How often do we overlook the beauty in everyday encounters?",
+        "🛡 Life's richness is found not in grand gestures, but in small, sincere moments of connection and empathy."
+      ],
+      "colores": [
+        "#7EA0F1",
+        "#E8B330",
+        "#1319AE",
+        "#65610B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Scott%20Simon%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Scott%20Simon%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-22T16:10:21.966Z",
+        "workflow_run_id": "35752173448",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Ok",
+          "titulo_en": "Ok",
+          "autor_completo": "Scott Simon",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la búsqueda de significado en lo cotidiano",
+            "introspección en las relaciones humanas",
+            "reflexión sobre la vida diaria"
+          ],
+          "key_terms": [
+            "intimidad",
+            "reflexividad",
+            "humor sutil",
+            "empatía",
+            "conexión emocional"
+          ],
+          "authorial_voice_notes": "Una voz reflexiva y accesible que invita a la introspección y la conexión emocional.",
+          "authorial_voice_notes_en": "A reflective and accessible voice that invites introspection and emotional connection."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la búsqueda de significado en la vida cotidiana y las relaciones humanas, pero no a través de una estructura de decisiones o incentivos, sino más bien en un tono introspectivo y reflexivo.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 212.65625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La búsqueda en lo cotidiano",
+          "parrafoTop": "El arte de encontrar significado radica en la capacidad de observar lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la emotividad que nos conecta con los demás.",
+          "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+          "parrafoBot": "Cada encuentro, cada conversación, es una invitación a la intimidad. La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas."
+        },
+        "card_en": {
+          "titulo": "Finding Meaning in Everyday Life",
+          "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. In every instant, life offers an opportunity for reflection and emotional connection.",
+          "subtitulo": "How do we transform the simple into the significant?",
+          "parrafoBot": "Each encounter, each conversation, serves as an invitation to intimacy. Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships."
+        },
+        "emotional_words_es": [
+          "intimidad",
+          "reflexividad",
+          "empatía",
+          "conexión emocional"
+        ],
+        "emotional_words_en": [
+          "intimacy",
+          "reflection",
+          "connection",
+          "humor"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ ¿Qué momentos cotidianos podrían revelarte más sobre ti mismo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 La risa compartida es el puente hacia la conexión.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🛡 En la intimidad de un diálogo, se revela lo que somos.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "✨ True meaning often hides in the simplest moments of life.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ Reflect on your daily interactions. What do they reveal about you?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 How often do we overlook the beauty in everyday encounters?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 Life's richness is found not in grand gestures, but in small, sincere moments of connection and empathy.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué significado encuentras en los pequeños momentos de tu vida?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 Escucha atentamente las conversaciones a tu alrededor. Permite que las historias resuenen en ti.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un café en una tarde lluviosa, donde la calidez de una taza se convierte en refugio.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Lo que se comparte en la intimidad, se transforma en eternidad.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Notice the details in your surroundings; they often tell a deeper story than you realize.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Pause for a moment. What emotions surface when you think of your daily life?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Imagine a shared laugh echoing in a quiet room, filling the silence with warmth.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "space",
+            "phrase": "🏛 In the tapestry of our lives, the threads of kindness often shine the brightest.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.52,
+          "voice_authenticity": 0.93,
+          "specificity": 0.89,
+          "grounding_judge": 0.95,
+          "combined": 0.81,
+          "signals": {
+            "bookIdentityConfidence": 0.5249999999999999,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.8899999999999999,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.5249999999999999,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.70"
+        ],
+        "verified_identity": {
+          "titulo_real": "Ok",
+          "autor_completo": "Scott Simon",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El arte de la felicidad",
+            "autor": "Dalai Lama y Howard Cutler",
+            "razon": "Ambos libros abordan temas de la vida cotidiana y la búsqueda de la felicidad."
+          },
+          {
+            "titulo": "La vida es sueño",
+            "autor": "Pedro Calderón de la Barca",
+            "razon": "Explora la naturaleza de la realidad y la percepción, temas que pueden resonar en 'Ok'."
+          },
+          {
+            "titulo": "La soledad del corredor de fondo",
+            "autor": "Alan Sillitoe",
+            "razon": "Trata sobre la lucha personal y la búsqueda de significado en la vida."
+          },
+          {
+            "titulo": "Las cosas que perdimos en el fuego",
+            "autor": "Mariana Enriquez",
+            "razon": "Ofrece una mirada profunda a la vida y las experiencias humanas, aunque desde una perspectiva más oscura."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja de manera clara la búsqueda de significado en la vida cotidiana y las relaciones humanas, conceptos centrales en el ground truth. Frases como 'la capacidad de observar lo cotidiano' y 'la conexión emocional se teje en la vulnerabilidad' están directamente alineadas con la introspección y la reflexión personal. Aunque es específico, no se siente como un relleno genérco"
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content directly addresses themes of finding meaning in everyday life and emotional connections, which align closely with the inferred themes of introspection and personal reflection from the ground truth. Phrases like 'shared laughter' and 'vulnerability of opening up' specifically resonate with the exploration of human relationships and the search for significance, making it feel tailored to"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre lo cotidiano sin referencias externas.",
+          "elapsed_ms": 2674,
+          "usage": {
+            "prompt_tokens": 408,
+            "completion_tokens": 28,
+            "total_tokens": 436,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la vida cotidiana sin referencias externas.",
+          "elapsed_ms": 2516,
+          "usage": {
+            "prompt_tokens": 395,
+            "completion_tokens": 29,
+            "total_tokens": 424,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 860,
+        "total_ms": 2674
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 212.65625,
+          "adjusted_hue": 222.65625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.33",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EA0F1",
+          "--palette-1": "#E8B330",
+          "--palette-2": "#1319AE",
+          "--palette-3": "#65610B",
+          "--accent": "#124FE2",
+          "--accent-soft": "#124FE238",
+          "--accent-glow": "#124FE26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17191C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1046C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-09-22T16-10-21",
+      "_crono": {
+        "dia": "martes",
+        "hora": 10,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 60458,
+        "tokens_by_phase": {
+          "grounding": 529,
+          "anchors": 15608,
+          "palette": 0,
+          "content_es": 17671,
+          "judge_es": 994,
+          "content_en": 16390,
+          "judge_en": 986,
+          "voice": 860,
+          "voice_extended": 7420,
+          "highlight_judge_es_parrafoTop": 654,
+          "highlight_judge_es_parrafoTop_retry": 651,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_en_parrafoTop": 641,
+          "highlight_judge_en_parrafoBot": 639,
+          "csal": 2704
+        },
+        "elapsed_ms_total": 30695,
+        "elapsed_ms_by_phase": {
+          "grounding": 6584,
+          "anchors": 4469,
+          "palette": 0,
+          "cover_fallback": 1,
+          "content_es": 6499,
+          "judge_es": 2130,
+          "content_en": 5521,
+          "judge_en": 1535,
+          "voice": 2674,
+          "voice_extended": 1279,
+          "highlight_judge": 6655,
+          "lens_compatibility": 1206,
+          "csal": 5693,
+          "post_processing": 13561
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0,
+          "familia": 0.7,
+          "espiritu": 0.6,
+          "relaciones": 0.9,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me siento perdido en la rutina diaria",
+          "antes de una conversación importante con alguien cercano",
+          "después de un día agotador en el trabajo",
+          "cuando busco consuelo en momentos de soledad",
+          "cuando quiero entender mejor mis relaciones",
+          "antes de tomar una decisión que cambiará mi vida",
+          "cuando me doy cuenta de que los pequeños momentos cuentan más de lo que pensaba",
+          "después de una discusión con un amigo o familiar",
+          "cuando reflexiono sobre mis sueños y aspiraciones",
+          "cuando necesito recordar lo que realmente importa en la vida.",
+          "cuando me siento abrumado por mis emociones",
+          "cuando busco maneras de conectar más profundamente con los demás",
+          "antes de una celebración que me hace cuestionar mi lugar en el mundo",
+          "cuando me doy cuenta de que el tiempo pasa rápido y quiero aprovecharlo mejor",
+          "cuando estoy en un lugar familiar y noto algo nuevo en él",
+          "cuando pienso en las palabras que no dije en el pasado.",
+          "cuando el silencio me invita a reflexionar sobre mi vida",
+          "cuando una experiencia cotidiana me hace sonreír",
+          "cuando el recuerdo de un momento feliz me llena de nostalgia",
+          "cuando quiero aprender a apreciar más mi entorno.",
+          "cuando siento que la felicidad es esquiva y quiero entender por qué.",
+          "cuando me pregunto si estoy viviendo la vida que realmente quiero.",
+          "cuando el amor y la amistad se sienten complicados.",
+          "cuando me doy cuenta de que a veces necesito estar solo.",
+          "cuando busco la belleza en lo simple.",
+          "cuando me siento agradecido por las pequeñas cosas.",
+          "cuando la vida me da una lección inesperada.",
+          "cuando quiero ser más presente en el aquí y el ahora.",
+          "cuando quiero comprender mejor el significado de mis emociones.",
+          "cuando busco formas de sanar mis heridas emocionales."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "nostalgia",
+            "soledad",
+            "reflexión",
+            "alegría",
+            "ansiedad",
+            "conexión",
+            "gratitud",
+            "frustración",
+            "sorpresa",
+            "esperanza"
+          ],
+          "objetos": [
+            "café",
+            "taza",
+            "recuerdos",
+            "conversaciones",
+            "silencio",
+            "fotos",
+            "naturaleza",
+            "escritorio",
+            "libros",
+            "cartas"
+          ],
+          "contextos": [
+            "casa",
+            "trabajo",
+            "cafetería",
+            "parque",
+            "momentos de soledad",
+            "reuniones familiares",
+            "viajes",
+            "tiempo libre",
+            "conversaciones profundas",
+            "celebraciones"
+          ],
+          "verbos": [
+            "reflexionar",
+            "escuchar",
+            "conectar",
+            "recordar",
+            "apreciar",
+            "disfrutar",
+            "compartir",
+            "hablar",
+            "sentir",
+            "sanar"
+          ]
+        },
+        "concept_tags": [
+          "significado cotidiano",
+          "introspección emocional",
+          "conexión humana",
+          "reflexiones sobre la vida",
+          "pequeños momentos",
+          "relaciones interpersonales",
+          "sanación emocional",
+          "aprecio por lo simple",
+          "la búsqueda de la felicidad",
+          "vivir el presente"
+        ],
+        "anti_patterns": [
+          "no es un manual de autoayuda con soluciones rápidas",
+          "no aborda problemas psicológicos profundos",
+          "no es un libro de autoayuda tradicional",
+          "no ofrece fórmulas mágicas para la felicidad"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌅"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "👂"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "☕"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una reflexión que podría estar presente en el desarrollo del contenido del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una pregunta que el autor plantea en el texto, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea reflexiva que podría estar en el contexto de un relato o ensayo, sugiriendo una voz autoral que invita a la reflexión."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión que podría formar parte de un texto narrativo o ensayístico, sugiriendo una voz autoral que explora el tema del diálogo y la identidad."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una meditación del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a una acción y reflexión personal, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una escena íntima y descriptiva, típica de la voz autoral que se encuentra dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono reflexivo y poético que sugiere una voz autoral, como si fuera parte de un discurso o narración dentro del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a reflective thought that feels like an introspective insight from the author, fitting within the narrative of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites personal reflection and engages the reader directly, suggesting an introspective exercise typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical insight that feels like a direct thought from the author, suggesting a personal reflection rather than an external commentary."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages introspection and observation, suggesting a direct engagement with the reader, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to reflect personally, suggesting an introspective moment typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and emotional imagery, suggesting it is part of the narrative or descriptive prose within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a poetic reflection that feels like an introspective thought from the author, fitting seamlessly within the narrative of a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-22T16:11:06.222Z",
+      "_slug": "ok",
+      "_edicion_numero": 102,
+      "_musica": {
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-emergencia",
+        "sinfonia": "pool:luz",
+        "candidatos": [
+          {
+            "id": "402259583",
+            "cancion": "Peace Piece",
+            "artista": "Bill Evans",
+            "album": "Everybody Digs Bill Evans",
+            "genero": "Jazz",
+            "dur": 401,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/08/4e/58/084e5814-d206-adc0-30e8-0e68a42ad45c/mzaf_14629403309325918452.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peace-piece/402259545?i=402259583&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/68/c2/ab/68c2ab75-159a-60cc-1c9a-73c63bf7e12e/885686254943.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          },
+          {
+            "id": "1650319533",
+            "cancion": "Skating",
+            "artista": "Vince Guaraldi Trio",
+            "album": "A Charlie Brown Christmas (Original 1965 TV Soundtrack) [2022 Mix]",
+            "genero": "Época festiva",
+            "dur": 145,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/f8/69/f4f8696f-ef9b-8c77-f2c1-12100f8570b9/mzaf_17756882722954647706.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/skating/1650319526?i=1650319533&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/69/09/b6/6909b604-c967-e6cf-6b9b-dba54e42a2f2/22CRGIM33543.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
+        "sinfonia": "Elegiría los videos de \"The Wayman Tisdale Story\" y \"The rules of cowboy cooking\" para resonar y profundizar en la búsqueda de significado en lo cotidiano.",
+        "candidatos": [
+          {
+            "id": "-At94Iqg_W4",
+            "titulo": "The rules of cowboy cooking",
+            "canal": "CBS Sunday Morning",
+            "dur": 373,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+            "pie": "Scott Simon reporta sobre la cocina vaquera, mostrando la conexión con la vida simple y cotidiana.",
+            "pie_en": "Scott Simon reports on cowboy cooking, showcasing the connection to simple, everyday life."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "A Random Walk Down Wall Street",
       "autor": "Burton Malkiel",
       "tagline": "",
@@ -30661,10 +31580,53 @@
       "_manual_generated_at": "2026-06-14T18:11:52.691Z",
       "_edicion_numero": 70,
       "_video": {
-        "resuelto_el": "2026-08-22",
-        "juez": "capa1",
-        "sinfonia": "",
-        "candidatos": []
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Santiago Roncagliolo: \"He visto usar la fe para destruir la vida de niños\"', 'LA LUCHA ENTRE OVEJAS Y LOBOS EN LA IGLESIA' y '¿QUÉ HAY DETRÁS DE LA FE, EL SENTIDO DE HUMANIDAD Y EL PERDÓN?' porque juntos abordan la búsq",
+        "candidatos": [
+          {
+            "id": "1davnhWqMTI",
+            "titulo": "¿QUÉ HAY DETRÁS DE LA FE, EL SENTIDO DE HUMANIDAD Y EL PERDÓN? #entrevista",
+            "canal": "La Verdad a Fondo con Pedro Salinas",
+            "dur": 2943,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🕊 La verdad en la vida de un artista es una construcción continua.",
+            "pie": "Roncagliolo revela cómo su investigación sobre el papa transformó su propia vida, tocando la verdad y la identidad.",
+            "pie_en": "Roncagliolo reveals how his research on the pope transformed his own life, touching on truth and identity."
+          },
+          {
+            "id": "YIs1Uy_zh1c",
+            "titulo": "LA LUCHA ENTRE OVEJAS Y LOBOS EN LA IGLESIA: ENTREVISTA A SANTIAGO RONCAGLIOLO | LA VERDAD",
+            "canal": "La República - LR+",
+            "dur": 2943,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🕊 La verdad en la vida de un artista es una construcción continua.",
+            "pie": "Roncagliolo analiza las tensiones en la Iglesia, revelando su propia historia familiar y la búsqueda de verdad.",
+            "pie_en": "Roncagliolo analyzes the tensions within the Church, revealing his own family history and the search for truth."
+          },
+          {
+            "id": "CqronZlz2wo",
+            "titulo": "📚🧐 ‘El pastor y los lobos’: La lucha entre el bien y el mal en la elección de un Papa.",
+            "canal": "RPP Noticias",
+            "dur": 2772,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Se exploran las luchas de poder en el Vaticano, tocando la dualidad de la identidad en el contexto religioso.",
+            "pie_en": "The power struggles in the Vatican are explored, touching on the duality of identity in a religious context."
+          }
+        ]
       },
       "_musica": {
         "resuelto_el": "2026-09-10",
@@ -33504,10 +34466,25 @@
       "_manual_generated_at": "2026-06-08T22:39:40.657Z",
       "_edicion_numero": 67,
       "_video": {
-        "resuelto_el": "2026-08-22",
+        "resuelto_el": "2026-09-22",
         "juez": "gpt-4o-mini",
-        "sinfonia": "Elegiría el video de Rubens Teixeira, ya que habla sobre el libro y conecta con la esencia de las leyes bíblicas.",
-        "candidatos": []
+        "sinfonia": "Elegiría los videos de Rubens Teixeira y el de Fortis Mental, ya que ofrecen perspectivas sobre el éxito y los obstáculos que se relacionan con la dedicación y el esfuerzo del libro.",
+        "candidatos": [
+          {
+            "id": "PB_fyhFZ2oM",
+            "titulo": "SIETE PECADOS QUE TE IMPIDEN SER EXITOSO | Fortis Mental",
+            "canal": "Fortis Mental",
+            "dur": 823,
+            "armonia": 6,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "¿Qué te impide dedicarte plenamente a tus objetivos?",
+            "pie": "El video explora los pecados que impiden el éxito, invitando a reflexionar sobre obstáculos personales.",
+            "pie_en": "The video explores the sins that hinder success, inviting reflection on personal obstacles."
+          }
+        ]
       },
       "_musica": {
         "resuelto_el": "2026-09-10",
@@ -35491,11 +36468,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 102,
-    "total": 169,
-    "last_audit": "2026-09-19T17:33:59.378Z",
-    "healing_rotation_idx": 47,
+    "next_edition_number": 103,
+    "total": 170,
+    "last_audit": "2026-09-22T16:11:10.336Z",
+    "healing_rotation_idx": 48,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-19T17:45:52.896Z"
+    "last_healing_timestamp": "2026-09-22T16:26:31.599Z"
   }
 }

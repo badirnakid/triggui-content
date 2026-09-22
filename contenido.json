@@ -1,6 +1,925 @@
 {
   "libros": [
     {
+      "titulo": "Ok",
+      "autor": "Scott Simon",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgU2NvdHQgU2ltb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MTkxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxsaW5lIHgxPSIyMjAiIHkxPSIzNTEuNyIgeDI9IjM4MCIgeTI9IjM1MS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSIzNTkuNyIgeDI9IjM2MCIgeTI9IjM1OS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSI1ODAuMyIgeDI9IjM2MCIgeTI9IjU4MC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSI1ODguMyIgeDI9IjM4MCIgeTI9IjU4OC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPk9rPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiMxMjRGRTIiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjM0IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI0MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjAzZW0iPlNjb3R0IFNpbW9uPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJPayDigJQgU2NvdHQgU2ltb24iPgogIDxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjRUZFRkYwIiAvPgoKICA8ZGVmcz4KICAgIDxwYXR0ZXJuIGlkPSJwYXBlckdyYWluIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjAuMyIgZmlsbD0iIzE3MTkxQyIgb3BhY2l0eT0iMC4wNCIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjcGFwZXJHcmFpbikiIC8+CjxyZWN0IHg9IjI0IiB5PSIyNCIgd2lkdGg9IjU1MiIgaGVpZ2h0PSI4NTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhGOEY5MCIgc3Ryb2tlLXdpZHRoPSIwLjgiIG9wYWNpdHk9IjAuMzUiIC8+CgogIDxsaW5lIHgxPSIyMjAiIHkxPSIzNTEuNyIgeDI9IjM4MCIgeTI9IjM1MS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSIzNTkuNyIgeDI9IjM2MCIgeTI9IjM1OS43IiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSI1ODAuMyIgeDI9IjM2MCIgeTI9IjU4MC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMC44IiAvPgogIDxsaW5lIHgxPSIyMjAiIHkxPSI1ODguMyIgeDI9IjM4MCIgeTI9IjU4OC4zIiBzdHJva2U9IiMxMjRGRTIiIHN0cm9rZS13aWR0aD0iMS41IiAvPgogIDx0ZXh0IHg9IjMwMCIgeT0iNDc4LjI5OTk5OTk5OTk5OTk1IiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSI4NCIgZm9udC13ZWlnaHQ9IjcwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjAxZW0iPk9rPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iNTM4LjMiIGZpbGw9IiMxMjRGRTIiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjM0IiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI0MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjAzZW0iPlNjb3R0IFNpbW9uPC90ZXh0PgogIDx0ZXh0IHg9IjMwMCIgeT0iODUwIiBmaWxsPSIjMTcxOTFDIiBmb250LWZhbWlseT0nIkxvcmEiLCAiTWVycml3ZWF0aGVyIiwgIkdlb3JnaWEiLCBzZXJpZicgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMjVlbSIgb3BhY2l0eT0iMC40NSI+VFJJR0dVSTwvdGV4dD4KPC9zdmc+",
+      "isbn": "",
+      "titulo_es": "Ok",
+      "titulo_en": "Ok",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "intimidad",
+        "reflexividad",
+        "empatía",
+        "conexión emocional"
+      ],
+      "palabras_en": [
+        "intimacy",
+        "reflection",
+        "connection",
+        "humor"
+      ],
+      "frases": [
+        "🏛 ¿Qué significado encuentras en los pequeños momentos de tu vida?",
+        "🔔 Escucha atentamente las conversaciones a tu alrededor. Permite que las historias resuenen en ti.",
+        "🌅 Imagina un café en una tarde lluviosa, donde la calidez de una taza se convierte en refugio.",
+        "⏳ Lo que se comparte en la intimidad, se transforma en eternidad."
+      ],
+      "frases_en": [
+        "👁 Notice the details in your surroundings; they often tell a deeper story than you realize.",
+        "🕰 Pause for a moment. What emotions surface when you think of your daily life?",
+        "💫 Imagine a shared laugh echoing in a quiet room, filling the silence with warmth.",
+        "🏛 In the tapestry of our lives, the threads of kindness often shine the brightest."
+      ],
+      "frases_og": [
+        "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+        "⚓ ¿Qué momentos cotidianos podrían revelarte más sobre ti mismo?",
+        "🔁 La risa compartida es el puente hacia la conexión.",
+        "🛡 En la intimidad de un diálogo, se revela lo que somos."
+      ],
+      "frases_og_en": [
+        "✨ True meaning often hides in the simplest moments of life.",
+        "⚓ Reflect on your daily interactions. What do they reveal about you?",
+        "🔁 How often do we overlook the beauty in everyday encounters?",
+        "🛡 Life's richness is found not in grand gestures, but in small, sincere moments of connection and empathy."
+      ],
+      "colores": [
+        "#7EA0F1",
+        "#E8B330",
+        "#1319AE",
+        "#65610B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La búsqueda en lo cotidiano",
+        "parrafoTop": "[H]El arte de encontrar significado radica en la capacidad de observar[/H] lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la conexión emocional con los demás.",
+        "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+        "parrafoBot": "[H]Cada encuentro, cada conversación, es una invitación a la intimidad.[/H] La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Finding Meaning in Everyday Life",
+        "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. [H]In every instant, life offers an opportunity for reflection and emotional connection.[/H]",
+        "subtitulo": "How do we transform the simple into the significant?",
+        "parrafoBot": "[H]Each encounter, each conversation, serves as an invitation to intimacy.[/H] Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships.",
+        "style": {
+          "accent": "#124FE2",
+          "paper": "#EFEFF0",
+          "ink": "#17191C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Scott%20Simon%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Ok%20Scott%20Simon%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-22T16:10:21.966Z",
+        "workflow_run_id": "35752173448",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Ok",
+          "titulo_en": "Ok",
+          "autor_completo": "Scott Simon",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la búsqueda de significado en lo cotidiano",
+            "introspección en las relaciones humanas",
+            "reflexión sobre la vida diaria"
+          ],
+          "key_terms": [
+            "intimidad",
+            "reflexividad",
+            "humor sutil",
+            "empatía",
+            "conexión emocional"
+          ],
+          "authorial_voice_notes": "Una voz reflexiva y accesible que invita a la introspección y la conexión emocional.",
+          "authorial_voice_notes_en": "A reflective and accessible voice that invites introspection and emotional connection."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la búsqueda de significado en la vida cotidiana y las relaciones humanas, pero no a través de una estructura de decisiones o incentivos, sino más bien en un tono introspectivo y reflexivo.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 212.65625,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "ensayo"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La búsqueda en lo cotidiano",
+          "parrafoTop": "El arte de encontrar significado radica en la capacidad de observar lo cotidiano con ojos renovados. Tal vez sea en la risa compartida, en un gesto amable o en esos momentos de simple silencio, donde descubrimos la profundidad de lo que somos. En cada instante, la vida ofrece una oportunidad para la reflexión y la emotividad que nos conecta con los demás.",
+          "subtitulo": "¿Cómo transformamos lo simple en lo significativo?",
+          "parrafoBot": "Cada encuentro, cada conversación, es una invitación a la intimidad. La conexión emocional se teje en la vulnerabilidad de abrirse y escuchar, en la sutileza de compartir no solo palabras, sino también experiencias y sentimientos. Esa es la esencia de nuestras relaciones humanas."
+        },
+        "card_en": {
+          "titulo": "Finding Meaning in Everyday Life",
+          "parrafoTop": "The art of uncovering significance lies in our ability to observe the mundane with renewed eyes. Perhaps it’s in the shared laughter, a kind gesture, or those moments of simple silence that we discover the depth of who we are. In every instant, life offers an opportunity for reflection and emotional connection.",
+          "subtitulo": "How do we transform the simple into the significant?",
+          "parrafoBot": "Each encounter, each conversation, serves as an invitation to intimacy. Emotional connection weaves through the vulnerability of opening up and listening, in the subtlety of sharing not just words but also experiences and feelings. This is the essence of our human relationships."
+        },
+        "emotional_words_es": [
+          "intimidad",
+          "reflexividad",
+          "empatía",
+          "conexión emocional"
+        ],
+        "emotional_words_en": [
+          "intimacy",
+          "reflection",
+          "connection",
+          "humor"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ ¿Qué momentos cotidianos podrían revelarte más sobre ti mismo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 La risa compartida es el puente hacia la conexión.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🛡 En la intimidad de un diálogo, se revela lo que somos.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "✨ True meaning often hides in the simplest moments of life.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ Reflect on your daily interactions. What do they reveal about you?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 How often do we overlook the beauty in everyday encounters?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 Life's richness is found not in grand gestures, but in small, sincere moments of connection and empathy.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 ¿Qué significado encuentras en los pequeños momentos de tu vida?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 Escucha atentamente las conversaciones a tu alrededor. Permite que las historias resuenen en ti.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Imagina un café en una tarde lluviosa, donde la calidez de una taza se convierte en refugio.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ Lo que se comparte en la intimidad, se transforma en eternidad.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "👁 Notice the details in your surroundings; they often tell a deeper story than you realize.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🕰 Pause for a moment. What emotions surface when you think of your daily life?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "💫 Imagine a shared laugh echoing in a quiet room, filling the silence with warmth.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "space",
+            "phrase": "🏛 In the tapestry of our lives, the threads of kindness often shine the brightest.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.52,
+          "voice_authenticity": 0.93,
+          "specificity": 0.89,
+          "grounding_judge": 0.95,
+          "combined": 0.81,
+          "signals": {
+            "bookIdentityConfidence": 0.5249999999999999,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.8899999999999999,
+            "judgeScore": 0.95
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.5249999999999999,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.70"
+        ],
+        "verified_identity": {
+          "titulo_real": "Ok",
+          "autor_completo": "Scott Simon",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "El arte de la felicidad",
+            "autor": "Dalai Lama y Howard Cutler",
+            "razon": "Ambos libros abordan temas de la vida cotidiana y la búsqueda de la felicidad."
+          },
+          {
+            "titulo": "La vida es sueño",
+            "autor": "Pedro Calderón de la Barca",
+            "razon": "Explora la naturaleza de la realidad y la percepción, temas que pueden resonar en 'Ok'."
+          },
+          {
+            "titulo": "La soledad del corredor de fondo",
+            "autor": "Alan Sillitoe",
+            "razon": "Trata sobre la lucha personal y la búsqueda de significado en la vida."
+          },
+          {
+            "titulo": "Las cosas que perdimos en el fuego",
+            "autor": "Mariana Enriquez",
+            "razon": "Ofrece una mirada profunda a la vida y las experiencias humanas, aunque desde una perspectiva más oscura."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.9,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "El contenido generado refleja de manera clara la búsqueda de significado en la vida cotidiana y las relaciones humanas, conceptos centrales en el ground truth. Frases como 'la capacidad de observar lo cotidiano' y 'la conexión emocional se teje en la vulnerabilidad' están directamente alineadas con la introspección y la reflexión personal. Aunque es específico, no se siente como un relleno genérco"
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content directly addresses themes of finding meaning in everyday life and emotional connections, which align closely with the inferred themes of introspection and personal reflection from the ground truth. Phrases like 'shared laughter' and 'vulnerability of opening up' specifically resonate with the exploration of human relationships and the search for significance, making it feel tailored to"
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre lo cotidiano sin referencias externas.",
+          "elapsed_ms": 2674,
+          "usage": {
+            "prompt_tokens": 408,
+            "completion_tokens": 28,
+            "total_tokens": 436,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la vida cotidiana sin referencias externas.",
+          "elapsed_ms": 2516,
+          "usage": {
+            "prompt_tokens": 395,
+            "completion_tokens": 29,
+            "total_tokens": 424,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 860,
+        "total_ms": 2674
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 212.65625,
+          "adjusted_hue": 222.65625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.33",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EA0F1",
+          "--palette-1": "#E8B330",
+          "--palette-2": "#1319AE",
+          "--palette-3": "#65610B",
+          "--accent": "#124FE2",
+          "--accent-soft": "#124FE238",
+          "--accent-glow": "#124FE26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17191C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1046C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-09-22T16-10-21",
+      "_crono": {
+        "dia": "martes",
+        "hora": 10,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 60458,
+        "tokens_by_phase": {
+          "grounding": 529,
+          "anchors": 15608,
+          "palette": 0,
+          "content_es": 17671,
+          "judge_es": 994,
+          "content_en": 16390,
+          "judge_en": 986,
+          "voice": 860,
+          "voice_extended": 7420,
+          "highlight_judge_es_parrafoTop": 654,
+          "highlight_judge_es_parrafoTop_retry": 651,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_en_parrafoTop": 641,
+          "highlight_judge_en_parrafoBot": 639,
+          "csal": 2704
+        },
+        "elapsed_ms_total": 30695,
+        "elapsed_ms_by_phase": {
+          "grounding": 6584,
+          "anchors": 4469,
+          "palette": 0,
+          "cover_fallback": 1,
+          "content_es": 6499,
+          "judge_es": 2130,
+          "content_en": 5521,
+          "judge_en": 1535,
+          "voice": 2674,
+          "voice_extended": 1279,
+          "highlight_judge": 6655,
+          "lens_compatibility": 1206,
+          "csal": 5693,
+          "post_processing": 13561
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0,
+          "familia": 0.7,
+          "espiritu": 0.6,
+          "relaciones": 0.9,
+          "finanzas": 0
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando me siento perdido en la rutina diaria",
+          "antes de una conversación importante con alguien cercano",
+          "después de un día agotador en el trabajo",
+          "cuando busco consuelo en momentos de soledad",
+          "cuando quiero entender mejor mis relaciones",
+          "antes de tomar una decisión que cambiará mi vida",
+          "cuando me doy cuenta de que los pequeños momentos cuentan más de lo que pensaba",
+          "después de una discusión con un amigo o familiar",
+          "cuando reflexiono sobre mis sueños y aspiraciones",
+          "cuando necesito recordar lo que realmente importa en la vida.",
+          "cuando me siento abrumado por mis emociones",
+          "cuando busco maneras de conectar más profundamente con los demás",
+          "antes de una celebración que me hace cuestionar mi lugar en el mundo",
+          "cuando me doy cuenta de que el tiempo pasa rápido y quiero aprovecharlo mejor",
+          "cuando estoy en un lugar familiar y noto algo nuevo en él",
+          "cuando pienso en las palabras que no dije en el pasado.",
+          "cuando el silencio me invita a reflexionar sobre mi vida",
+          "cuando una experiencia cotidiana me hace sonreír",
+          "cuando el recuerdo de un momento feliz me llena de nostalgia",
+          "cuando quiero aprender a apreciar más mi entorno.",
+          "cuando siento que la felicidad es esquiva y quiero entender por qué.",
+          "cuando me pregunto si estoy viviendo la vida que realmente quiero.",
+          "cuando el amor y la amistad se sienten complicados.",
+          "cuando me doy cuenta de que a veces necesito estar solo.",
+          "cuando busco la belleza en lo simple.",
+          "cuando me siento agradecido por las pequeñas cosas.",
+          "cuando la vida me da una lección inesperada.",
+          "cuando quiero ser más presente en el aquí y el ahora.",
+          "cuando quiero comprender mejor el significado de mis emociones.",
+          "cuando busco formas de sanar mis heridas emocionales."
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "nostalgia",
+            "soledad",
+            "reflexión",
+            "alegría",
+            "ansiedad",
+            "conexión",
+            "gratitud",
+            "frustración",
+            "sorpresa",
+            "esperanza"
+          ],
+          "objetos": [
+            "café",
+            "taza",
+            "recuerdos",
+            "conversaciones",
+            "silencio",
+            "fotos",
+            "naturaleza",
+            "escritorio",
+            "libros",
+            "cartas"
+          ],
+          "contextos": [
+            "casa",
+            "trabajo",
+            "cafetería",
+            "parque",
+            "momentos de soledad",
+            "reuniones familiares",
+            "viajes",
+            "tiempo libre",
+            "conversaciones profundas",
+            "celebraciones"
+          ],
+          "verbos": [
+            "reflexionar",
+            "escuchar",
+            "conectar",
+            "recordar",
+            "apreciar",
+            "disfrutar",
+            "compartir",
+            "hablar",
+            "sentir",
+            "sanar"
+          ]
+        },
+        "concept_tags": [
+          "significado cotidiano",
+          "introspección emocional",
+          "conexión humana",
+          "reflexiones sobre la vida",
+          "pequeños momentos",
+          "relaciones interpersonales",
+          "sanación emocional",
+          "aprecio por lo simple",
+          "la búsqueda de la felicidad",
+          "vivir el presente"
+        ],
+        "anti_patterns": [
+          "no es un manual de autoayuda con soluciones rápidas",
+          "no aborda problemas psicológicos profundos",
+          "no es un libro de autoayuda tradicional",
+          "no ofrece fórmulas mágicas para la felicidad"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌅"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "👂"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "☕"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "⏳"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una reflexión que podría estar presente en el desarrollo del contenido del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una pregunta que el autor plantea en el texto, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea reflexiva que podría estar en el contexto de un relato o ensayo, sugiriendo una voz autoral que invita a la reflexión."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase expresa una reflexión que podría formar parte de un texto narrativo o ensayístico, sugiriendo una voz autoral que explora el tema del diálogo y la identidad."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno o una meditación del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a una acción y reflexión personal, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase evoca una escena íntima y descriptiva, típica de la voz autoral que se encuentra dentro de un libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono reflexivo y poético que sugiere una voz autoral, como si fuera parte de un discurso o narración dentro del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a reflective thought that feels like an introspective insight from the author, fitting within the narrative of a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites personal reflection and engages the reader directly, suggesting an introspective exercise typical of content found within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical insight that feels like a direct thought from the author, suggesting a personal reflection rather than an external commentary."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase encourages introspection and observation, suggesting a direct engagement with the reader, typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to reflect personally, suggesting an introspective moment typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase evokes a vivid scene and emotional imagery, suggesting it is part of the narrative or descriptive prose within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a poetic reflection that feels like an introspective thought from the author, fitting seamlessly within the narrative of a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-22T16:11:06.222Z",
+      "_slug": "ok",
+      "_edicion_numero": 102,
+      "_musica": {
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-emergencia",
+        "sinfonia": "pool:luz",
+        "candidatos": [
+          {
+            "id": "402259583",
+            "cancion": "Peace Piece",
+            "artista": "Bill Evans",
+            "album": "Everybody Digs Bill Evans",
+            "genero": "Jazz",
+            "dur": 401,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/08/4e/58/084e5814-d206-adc0-30e8-0e68a42ad45c/mzaf_14629403309325918452.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peace-piece/402259545?i=402259583&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/68/c2/ab/68c2ab75-159a-60cc-1c9a-73c63bf7e12e/885686254943.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          },
+          {
+            "id": "1650319533",
+            "cancion": "Skating",
+            "artista": "Vince Guaraldi Trio",
+            "album": "A Charlie Brown Christmas (Original 1965 TV Soundtrack) [2022 Mix]",
+            "genero": "Época festiva",
+            "dur": 145,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/f8/69/f4f8696f-ef9b-8c77-f2c1-12100f8570b9/mzaf_17756882722954647706.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/skating/1650319526?i=1650319533&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/69/09/b6/6909b604-c967-e6cf-6b9b-dba54e42a2f2/22CRGIM33543.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "resonar",
+            "pie": "Refugio de luz — pieza elegida a mano para sonreír leyendo.",
+            "frase_eco": "qué bonito es leer esto"
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
+        "sinfonia": "Elegiría los videos de \"The Wayman Tisdale Story\" y \"The rules of cowboy cooking\" para resonar y profundizar en la búsqueda de significado en lo cotidiano.",
+        "candidatos": [
+          {
+            "id": "-At94Iqg_W4",
+            "titulo": "The rules of cowboy cooking",
+            "canal": "CBS Sunday Morning",
+            "dur": 373,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "✨ La búsqueda de significado se encuentra en lo cotidiano.",
+            "pie": "Scott Simon reporta sobre la cocina vaquera, mostrando la conexión con la vida simple y cotidiana.",
+            "pie_en": "Scott Simon reports on cowboy cooking, showcasing the connection to simple, everyday life."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "A Random Walk Down Wall Street",
       "autor": "Burton Malkiel",
       "tagline": "",
@@ -6768,7 +7687,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -6780,7 +7699,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -6792,7 +7711,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -8593,7 +9512,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -8605,7 +9524,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -8617,7 +9536,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -9572,7 +10491,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -9584,7 +10503,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -9596,7 +10515,7 @@
         "titulo": "La música como estrategia de ventas",
         "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
-        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan.",
+        "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo.",
         "style": {
           "accent": "#E212BD",
           "paper": "#F0EFF0",
@@ -10492,7 +11411,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -11468,7 +12387,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -11480,7 +12399,7 @@
       },
       "tarjeta_base": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -11492,7 +12411,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -24191,7 +25110,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -25181,6 +26100,55 @@
             "rol": "aterrizar",
             "pie": "Evoca la frescura de la paternidad, aunque carece de un hook fuerte.",
             "frase_eco": ""
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'How to be a better dad in 1 hour', 'Dad's Wake-Up Call' y 'Bestselling author James Patterson on the voices that keep him up at night' por su enfoque en la paternidad y la conexión emocional.",
+        "candidatos": [
+          {
+            "id": "vzVEk3_RQmA",
+            "titulo": "How to be a better dad in 1 hour: James Patterson’s new guide",
+            "canal": "Graham Bensinger",
+            "dur": 367,
+            "armonia": 8,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🔁 ¿Estás presente en la vida de tus hijos?",
+            "pie": "Patterson reflexiona sobre la paternidad y la importancia de estar presente en la vida de los hijos.",
+            "pie_en": "Patterson reflects on fatherhood and the importance of being present in his children's lives."
+          },
+          {
+            "id": "D9vTDXksqYg",
+            "titulo": "Dad's Wake-Up Call: James Patterson's Life-Changing Advice",
+            "canal": "Motivate Now Hub",
+            "dur": 3249,
+            "armonia": 7,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🛡 Las historias compartidas crean conexiones profundas.",
+            "pie": "Patterson comparte lecciones sobre la paternidad y la importancia de la conexión emocional con los hijos.",
+            "pie_en": "Patterson shares lessons on fatherhood and the importance of emotional connection with children."
+          },
+          {
+            "id": "gh34qhgiYNA",
+            "titulo": "Bestselling author James Patterson on the voices that keep him up at night | Fresh Air",
+            "canal": "Fresh Air",
+            "dur": 1207,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🌱 Cada abrazo es una inversión en el futuro emocional de tus hijos.",
+            "pie": "Patterson habla sobre su libro y la importancia de la paternidad en su vida.",
+            "pie_en": "Patterson talks about his book and the significance of fatherhood in his life."
           }
         ]
       }
@@ -45433,7 +46401,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-09-12",
         "juez": "gpt-4o-mini+completar",
@@ -58203,7 +59171,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -60095,6 +61063,55 @@
             "frase_eco": ""
           }
         ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Financial Lessons Unshakeable', 'Tony Robbins On \"UNSHAKEABLE: Your Financial Freedom Playbook\"' y 'Arianna Huffington interviews Tony Robbins' para ofrecer una mezcla de profundidad, apertura y resonancia sobre el libr",
+        "candidatos": [
+          {
+            "id": "7vbknEycmcA",
+            "titulo": "Financial Lessons Unshakeable by Tony Robbins",
+            "canal": "SG Investment",
+            "dur": 270,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🌓 Cuando te enfrentas a la incertidumbre financiera, la preparación se convierte en tu mejor aliada para tomar decisiones acertadas y avanzar con confianza.",
+            "pie": "Lecciones financieras de 'Unshakeable' que destacan la importancia de la diversificación y la planificación.",
+            "pie_en": "Financial lessons from 'Unshakeable' that highlight the importance of diversification and planning."
+          },
+          {
+            "id": "1VHjX1CdNmk",
+            "titulo": "Tony Robbins On \"UNSHAKEABLE: Your Financial Freedom Playbook\"",
+            "canal": "BUILD Series",
+            "dur": 2261,
+            "armonia": 8,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "📖 Los mitos de Wall Street son como cadenas invisibles que nos frenan, impidiendo que alcancemos la libertad financiera que anhelamos.",
+            "pie": "Tony Robbins presenta su libro y comparte cómo transformar tu estado financiero hacia la libertad.",
+            "pie_en": "Tony Robbins presents his book and shares how to transform your financial state towards freedom."
+          },
+          {
+            "id": "b5t57Rkp9nw",
+            "titulo": "Tony Robbins - Unshakeable (Audiobook)",
+            "canal": "Self-help Audiobooks",
+            "dur": 26361,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "audiolibro",
+            "relacion": "sustituye",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Audiolibro completo de 'Unshakeable', que ofrece la visión del autor sobre la libertad financiera.",
+            "pie_en": "Complete audiobook of 'Unshakeable', offering the author's vision on financial freedom."
+          }
+        ]
       }
     },
     {
@@ -61202,7 +62219,7 @@
           "titulo": "The Invisible Threads of Emotion",
           "parrafoTop": "Emotions are the invisible threads that weave through our lives, shaping our daily decisions and interactions. By recognizing that much of reality remains unseen, we can look beyond superficial appearances. When we integrate our emotions with rational thought, we not only survive but also thrive in a complex world.",
           "subtitulo": "How aware are we of our emotional processes?",
-          "parrafoBot": "Intelligence is not merely an individual attribute; it arises from our interactions with others. Darwin's theories remind us that survival hinges not just on competition, but on our capacity to cooperate and integrate. Are we truly harnessing this profound source of social wisdom to enhance our understanding of emotions and conduct in everyday life, considerando que la inteligencia surge de la integración con otros y que las emociones están en el origen de todas nuestras conductas? La clave está en reconocer que la inteligencia y las emociones son fundamentales para nuestra supervivencia cotidiana, y que al integrar estos conceptos, podemos mejorar nuestra calidad de vida y nuestras relaciones interpersonales, lo que nos permitirá adaptarnos mejor a la marea de la vida, y así, vivir de manera más plena y consciente en un mundo que a menudo parece caótico y desafiante, donde la comprensión de nuestras emociones y la colaboración con los demás son esenciales para navegar los desafíos que enfrentamos diariamente, y así, construir un futuro más armonioso y resiliente, donde la inteligencia y la integración de nuestras emociones nos guíen hacia una vida más significativa y satisfactoria, y donde cada interacción se convierta en una oportunidad para crecer y aprender juntos."
+          "parrafoBot": "Intelligence is not merely an individual attribute; it arises from our interactions with others. Darwin's theories remind us that survival hinges not just on competition, but on our capacity to cooperate and integrate. Are we truly harnessing this profound source of social wisdom to enhance our understanding of emotions and conduct in everyday life, considerando que la inteligencia surge de la integración con otros y que las emociones están en el origen de todas nuestras conductas? La clave está en reconocer que la inteligencia y las emociones son fundamentales para nuestra supervivencia cotidiana, y que al integrar estos conceptos, podemos mejorar nuestra calidad de vida y nuestras relaciones interpersonales, lo que nos permitirá adaptarnos mejor a la marea de la vida, y así, vivir de manera más plena y consciente en un mundo que a menudo parece caótico y desafiante, donde la comprensión de nuestras emociones y la colaboración con los demás son esenciales para navegar los desafíos que enfrentamos diariamente, y así, construir un futuro más armonioso y resiliente, donde la inteligencia y la integración de nuestras emociones nos guíen hacia una vida más significativa y satisfactoria, y donde cada interacción se convierta en una oportunidad para crecer y aprender juntos, reconociendo que la verdadera inteligencia se manifiesta en nuestra capacidad de conectar y colaborar con los demás."
         },
         "emotional_words_es": [
           "reflexión",
@@ -63676,7 +64693,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -67336,7 +68353,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -78282,8 +79299,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría ambas piezas clásicas por su capacidad de evocar emociones de renovación y reflexión, acompañando el mensaje del libro.",
         "candidatos": [
           {
@@ -78315,6 +79332,21 @@
             "rol": "aterrizar",
             "pie": "La interpretación al piano de esta obra clásica sugiere un viaje introspectivo y esperanzador.",
             "frase_eco": ""
+          },
+          {
+            "id": "1066019883",
+            "cancion": "Tamacun (Arr. for Percussion Ensemble)",
+            "artista": "The Wave Quartet",
+            "album": "Loco",
+            "genero": "Clásica",
+            "dur": 276,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/a2/c9/27a2c9ea-9dc5-ef2e-1c0a-e6dd6aa60044/mzaf_1353833245624220589.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/tamacun-arr-for-percussion-ensemble/1066019613?i=1066019883&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/a7/92/7d/a7927d79-8e67-7987-aa68-1fd5b26cae82/4260036254037.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza instrumental que invita a la reflexión y el bienestar emocional.",
+            "frase_eco": "La compasión que emanaba de Jesús se convertía en un faro capaz de transformar no solo corazones, sino también destinos."
           }
         ]
       }
@@ -79148,8 +80180,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -79181,6 +80213,21 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1090608588",
+            "cancion": "Rise Up",
+            "artista": "Smooth Jazz All Stars",
+            "album": "Smooth Jazz All Stars Cover Andra Day",
+            "genero": "R&B/Soul",
+            "dur": 248,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/28/82/eb/2882ebe1-2aaa-dc4b-7fc5-69d33ba3f92e/mzaf_17856804559619658695.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/rise-up/1090608586?i=1090608588&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/f4/a9/84/f4a98460-cb76-a7a1-307a-a843358d8fa1/707541046930.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la reflexión y al empoderamiento personal.",
+            "frase_eco": "La fortaleza personal es el primer paso hacia la seguridad."
           }
         ]
       }
@@ -80948,8 +81995,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza para profundizar en la creatividad, aunque no logra elevar el ánimo como se espera en este contexto.",
         "candidatos": [
           {
@@ -80966,6 +82013,54 @@
             "rol": "abrir",
             "pie": "Un clásico que invita a moverse y disfrutar, ideal para despertar la creatividad.",
             "frase_eco": ""
+          },
+          {
+            "id": "1440853776",
+            "cancion": "Imagine",
+            "artista": "John Lennon",
+            "album": "Imagine",
+            "genero": "Rock",
+            "dur": 186,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/4e/8c/7d4e8ced-a37b-fab9-c66a-f3b4d6f043cb/mzaf_1566428042492234227.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/imagine/1440853752?i=1440853776&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/21/e3/b0/21e3b048-c917-92c4-bd7d-ace44797b388/13UABIM52808.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 10,
+            "rol": "resonar",
+            "pie": "Una llamada a la paz y la creatividad que resuena con la vida de Jobs.",
+            "frase_eco": "🔮 La creatividad florece donde hay rebeldía."
+          },
+          {
+            "id": "1043784091",
+            "cancion": "Shelter from the Storm",
+            "artista": "Bob Dylan",
+            "album": "Steve Jobs (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 302,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/b6/71/26b67151-7de7-a67a-2f95-c3be6d361e17/mzaf_1109646778899172905.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/shelter-from-the-storm/1043783612?i=1043784091&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/40/30/21/4030219f-8e72-6e44-5d02-ec3db245c47e/SteveJobs_Cover_3000pxl.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "Una reflexión sobre la tormenta que enfrenta la creatividad en el mundo.",
+            "frase_eco": "📖 La tecnología sin creatividad es como un lienzo sin color."
+          },
+          {
+            "id": "1043784068",
+            "cancion": "Rainy Day Woman #12 & 35",
+            "artista": "Bob Dylan",
+            "album": "Steve Jobs (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 277,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/14/8c/a8148c0f-3c49-5361-a223-cf87e0e3944a/mzaf_17533183467610369642.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/rainy-day-woman-12-35/1043783612?i=1043784068&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/40/30/21/4030219f-8e72-6e44-5d02-ec3db245c47e/SteveJobs_Cover_3000pxl.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía que invita a la reflexión sobre el cambio y la innovación.",
+            "frase_eco": "🕊 ¿Cuántas ideas brillantes se han olvidado por miedo a desafiar el status quo y perder la oportunidad de innovar?"
           }
         ]
       }
@@ -81818,7 +82913,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -83620,8 +84715,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de evocar reflexión, aunque su tono melancólico puede no ser el más adecuado para elevar el ánimo.",
         "candidatos": [
           {
@@ -84494,8 +85589,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la curiosidad y el cuestionamiento, resonando con el espíritu rebelde de Einstein.",
         "candidatos": [
           {
@@ -84512,6 +85607,21 @@
             "rol": "profundizar",
             "pie": "Una pieza que invita a la reflexión y al cuestionamiento, como lo hizo Einstein.",
             "frase_eco": "🌱 La curiosidad de Einstein lo llevó a romper barreras. ¿Qué barreras te llevaron a cuestionar verdades aceptadas?"
+          },
+          {
+            "id": "1844426292",
+            "cancion": "Einstein on the Beach (Concert Version, 2022): Knee 2",
+            "artista": "Ictus, Suzanne Vega, Collegium Vocale Gent & Tom De Cock",
+            "album": "Philip Glass: Einstein on the Beach",
+            "genero": "Clásica",
+            "dur": 334,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/30/fc/9d30fc52-2715-7037-7a69-d9274727ad1a/mzaf_4632392893800213062.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/einstein-on-the-beach-concert-version-2022-knee-2/1844426284?i=1844426292&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ec/95/8f/ec958f97-0290-91ab-667c-c2de22370ea4/5056688852658.png/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una pieza que sugiere un viaje introspectivo, aunque no logra elevar el ánimo.",
+            "frase_eco": ""
           }
         ]
       }
@@ -86273,8 +87383,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la reflexión, aunque no logra elevar el ánimo como se espera.",
         "candidatos": [
           {
@@ -86291,6 +87401,21 @@
             "rol": "profundizar",
             "pie": "Una pieza clásica que invita a la reflexión, pero carece de la energía necesaria para elevar el ánimo.",
             "frase_eco": ""
+          },
+          {
+            "id": "577319378",
+            "cancion": "Don't Worry Be Happy (feat. Si Señor)",
+            "artista": "Sie7e",
+            "album": "Mucha Cosa Buena",
+            "genero": "Pop en español",
+            "dur": 236,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/45/9b/9e459b5f-2a67-eadc-feeb-1ccf8d1ea3a0/mzaf_13707980885945579531.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dont-worry-be-happy-feat-si-se%C3%B1or/577318574?i=577319378&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/74/1d/75/741d752b-e54a-ba77-2688-349e54f2e74c/825646541508.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía optimista que invita a enfrentar los desafíos con una sonrisa.",
+            "frase_eco": "🌱 Cuando enfrentes un desafío, recuerda que la mentalidad que elijas adoptar determinará tu capacidad para alcanzar el alto rendimiento."
           }
         ]
       }
@@ -87143,8 +88268,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:enfoque",
         "candidatos": [
           {
@@ -87176,6 +88301,21 @@
             "rol": "profundizar",
             "pie": "Refugio de enfoque — pieza elegida a mano para pensar claro.",
             "frase_eco": "una idea a la vez"
+          },
+          {
+            "id": "625199599",
+            "cancion": "Night Club 1960",
+            "artista": "Giampaolo Bandini-Cesare Chiacchiaretta",
+            "album": "Hombres De Tango",
+            "genero": "Clásica",
+            "dur": 347,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/a4/a5/9d/a4a59dd9-778e-e45b-ac32-33c3df756737/mzaf_2096819761264672036.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/night-club-1960/625199190?i=625199599&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/c7/71/aa/c771aad3-3134-91e1-c2a8-a74b6348a1e5/8055348000245.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una pieza que evoca nostalgia, pero carece de la energía necesaria para elevar el ánimo.",
+            "frase_eco": ""
           }
         ]
       }
@@ -88943,8 +90083,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -89831,8 +90971,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Upside Down' de Jack Johnson por su mensaje optimista y su ritmo suave, que inspira a dar el primer paso en el emprendimiento.",
         "candidatos": [
           {
@@ -98116,10 +99256,53 @@
       "_manual_generated_at": "2026-06-14T18:11:52.691Z",
       "_edicion_numero": 70,
       "_video": {
-        "resuelto_el": "2026-08-22",
-        "juez": "capa1",
-        "sinfonia": "",
-        "candidatos": []
+        "resuelto_el": "2026-09-22",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Santiago Roncagliolo: \"He visto usar la fe para destruir la vida de niños\"', 'LA LUCHA ENTRE OVEJAS Y LOBOS EN LA IGLESIA' y '¿QUÉ HAY DETRÁS DE LA FE, EL SENTIDO DE HUMANIDAD Y EL PERDÓN?' porque juntos abordan la búsq",
+        "candidatos": [
+          {
+            "id": "1davnhWqMTI",
+            "titulo": "¿QUÉ HAY DETRÁS DE LA FE, EL SENTIDO DE HUMANIDAD Y EL PERDÓN? #entrevista",
+            "canal": "La Verdad a Fondo con Pedro Salinas",
+            "dur": 2943,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🕊 La verdad en la vida de un artista es una construcción continua.",
+            "pie": "Roncagliolo revela cómo su investigación sobre el papa transformó su propia vida, tocando la verdad y la identidad.",
+            "pie_en": "Roncagliolo reveals how his research on the pope transformed his own life, touching on truth and identity."
+          },
+          {
+            "id": "YIs1Uy_zh1c",
+            "titulo": "LA LUCHA ENTRE OVEJAS Y LOBOS EN LA IGLESIA: ENTREVISTA A SANTIAGO RONCAGLIOLO | LA VERDAD",
+            "canal": "La República - LR+",
+            "dur": 2943,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "🕊 La verdad en la vida de un artista es una construcción continua.",
+            "pie": "Roncagliolo analiza las tensiones en la Iglesia, revelando su propia historia familiar y la búsqueda de verdad.",
+            "pie_en": "Roncagliolo analyzes the tensions within the Church, revealing his own family history and the search for truth."
+          },
+          {
+            "id": "CqronZlz2wo",
+            "titulo": "📚🧐 ‘El pastor y los lobos’: La lucha entre el bien y el mal en la elección de un Papa.",
+            "canal": "RPP Noticias",
+            "dur": 2772,
+            "armonia": 5,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Se exploran las luchas de poder en el Vaticano, tocando la dualidad de la identidad en el contexto religioso.",
+            "pie_en": "The struggles for power in the Vatican are explored, touching on the duality of identity in a religious context."
+          }
+        ]
       },
       "_musica": {
         "resuelto_el": "2026-09-10",
@@ -115997,10 +117180,25 @@
       "_manual_generated_at": "2026-06-08T22:39:40.657Z",
       "_edicion_numero": 67,
       "_video": {
-        "resuelto_el": "2026-08-22",
+        "resuelto_el": "2026-09-22",
         "juez": "gpt-4o-mini",
-        "sinfonia": "Elegiría el video de Rubens Teixeira, ya que habla sobre el libro y conecta con la esencia de las leyes bíblicas.",
-        "candidatos": []
+        "sinfonia": "Elegiría los videos de Rubens Teixeira y el de Fortis Mental, ya que ofrecen perspectivas sobre el éxito y los obstáculos que se relacionan con la dedicación y el esfuerzo del libro.",
+        "candidatos": [
+          {
+            "id": "PB_fyhFZ2oM",
+            "titulo": "SIETE PECADOS QUE TE IMPIDEN SER EXITOSO | Fortis Mental",
+            "canal": "Fortis Mental",
+            "dur": 823,
+            "armonia": 6,
+            "rol": "abrir",
+            "tipo": "tercero_habla",
+            "relacion": "invita",
+            "idioma": "es",
+            "frase_eco": "¿Qué te impide dedicarte plenamente a tus objetivos?",
+            "pie": "El video explora los pecados que impiden el éxito, invitando a reflexionar sobre obstáculos personales.",
+            "pie_en": "The video explores the sins that hinder success, inviting reflection on personal obstacles."
+          }
+        ]
       },
       "_musica": {
         "resuelto_el": "2026-09-10",
@@ -125747,6 +126945,49 @@
             "frase_eco": "un paso más"
           }
         ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-22",
+        "juez": "pool-video",
+        "sinfonia": "Del cajón de charlas eternas (eje luz): nada del libro armonizó; esta charla acompaña el ánimo de la edición.",
+        "candidatos": [
+          {
+            "id": "iCvmsMzlF7o",
+            "titulo": "The Power of Vulnerability | Brené Brown | TED",
+            "canal": "TED",
+            "dur": 0,
+            "pie": "Una charla luminosa sobre lo que de verdad importa: el eco de esta edición.",
+            "pie_en": "A luminous talk about what truly matters: this edition's echo.",
+            "armonia": 5,
+            "rol": "acompañar",
+            "tipo": "charla",
+            "relacion": "tema"
+          },
+          {
+            "id": "8KkKuTCFvzI",
+            "titulo": "What Makes a Good Life? Lessons from the Longest Study on Happiness | Robert Waldinger | T",
+            "canal": "TED",
+            "dur": 0,
+            "pie": "Una charla luminosa sobre lo que de verdad importa: el eco de esta edición.",
+            "pie_en": "A luminous talk about what truly matters: this edition's echo.",
+            "armonia": 5,
+            "rol": "acompañar",
+            "tipo": "charla",
+            "relacion": "tema"
+          },
+          {
+            "id": "RcGyVTAoXEU",
+            "titulo": "How to Make Stress Your Friend | Kelly McGonigal | TED",
+            "canal": "TED",
+            "dur": 0,
+            "pie": "Una charla luminosa sobre lo que de verdad importa: el eco de esta edición.",
+            "pie_en": "A luminous talk about what truly matters: this edition's echo.",
+            "armonia": 5,
+            "rol": "acompañar",
+            "tipo": "charla",
+            "relacion": "tema"
+          }
+        ]
       }
     },
     {
@@ -134632,7 +135873,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -143550,7 +144791,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -151572,7 +152813,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-19T17:33:59.378Z",
+      "_audit_timestamp": "2026-09-22T16:11:10.336Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -153425,11 +154666,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 102,
-    "total": 169,
-    "last_audit": "2026-09-19T17:33:59.378Z",
-    "healing_rotation_idx": 47,
+    "next_edition_number": 103,
+    "total": 170,
+    "last_audit": "2026-09-22T16:11:10.336Z",
+    "healing_rotation_idx": 48,
     "last_healing_book": "Adaptarse a la marea",
-    "last_healing_timestamp": "2026-09-19T17:45:52.896Z"
+    "last_healing_timestamp": "2026-09-22T16:26:31.599Z"
   }
 }
