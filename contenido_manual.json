@@ -1,6 +1,964 @@
 {
   "libros": [
     {
+      "titulo": "Don't Believe Everything You Think",
+      "autor": "Joseph Nguyen",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=jYE4zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=jYE4zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9798986406503",
+      "titulo_es": "Don't Believe Everything You Think",
+      "titulo_en": "Don't Believe Everything You Think",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "libertad",
+        "transformación",
+        "conciencia",
+        "sufrimiento"
+      ],
+      "palabras_en": [
+        "freedom",
+        "suffering",
+        "understanding",
+        "pain"
+      ],
+      "frases": [
+        "🌓 ¿Cuánto tiempo pasas sufriendo por pensamientos que no reflejan la realidad?",
+        "🌬 Respira hondo y pregunta: ¿qué creencias me están limitando en este momento?",
+        "🔭 Imagina un espacio donde el dolor existe, pero el sufrimiento no tiene cabida.",
+        "🌓 Liberarse del sufrimiento es el primer paso hacia una vida plena."
+      ],
+      "frases_en": [
+        "🌅 Visualize your suffering as a cloud. It blocks the sun but can drift away.",
+        "🏛 Challenge your thoughts. What if they are not the truth?",
+        "🌊 Imagine letting go of the weight of your thoughts, feeling lighter and freer.",
+        "🌓 In every moment, we hold the power to choose how we feel."
+      ],
+      "frases_og": [
+        "✨ El sufrimiento emocional es una elección, no una condena.",
+        "⚓ ¿Qué pasaría si dejaras de creer todo lo que piensas?",
+        "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+        "🛡 El dolor puede ser inevitable, pero el sufrimiento es opcional: elige."
+      ],
+      "frases_og_en": [
+        "✨ Pain is inevitable, but suffering is a choice we make.",
+        "⚓ Recognize your patterns. Transform your pain into purpose.",
+        "🔁 How often do we let pain dictate our emotions instead of understanding how to transform the way we feel?",
+        "🛡 Freedom of mind is not a destination but a continuous journey."
+      ],
+      "colores": [
+        "#7E95F1",
+        "#E8C430",
+        "#1C13AE",
+        "#60650B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Don't%20Believe%20Everything%20You%20Think%20Joseph%20Nguyen%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Don't%20Believe%20Everything%20You%20Think%20Joseph%20Nguyen%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-09-29T14:06:08.136Z",
+        "workflow_run_id": "36579927067",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.4,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Don't Believe Everything You Think",
+          "titulo_en": "Don't Believe Everything You Think",
+          "autor_completo": "Joseph Nguyen",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la raíz del sufrimiento emocional y psicológico",
+            "libertad mental para crear la vida deseada",
+            "el dolor es inevitable, pero el sufrimiento es opcional",
+            "un nuevo paradigma de la experiencia humana",
+            "cómo transformar la manera en que nos sentimos"
+          ],
+          "key_terms": [
+            "sufrimiento",
+            "libertad mental",
+            "dolor",
+            "paradigma",
+            "experiencia humana"
+          ],
+          "authorial_voice_notes": "La voz de Joseph Nguyen es clara y directa, enfocándose en ofrecer una nueva comprensión de la mente humana y su relación con el sufrimiento. Utiliza un tono accesible y práctico, invitando al lector a reflexionar y aplicar sus enseñanzas.",
+          "authorial_voice_notes_en": "Joseph Nguyen's voice is clear and direct, focusing on offering a new understanding of the human mind and its relationship with suffering. He uses an accessible and practical tone, inviting the reader to reflect and apply his teachings."
+        },
+        "lens_analysis": {
+          "lens_provided": false,
+          "analysis": "El libro aborda la comprensión de los procesos mentales relacionados con el sufrimiento y ofrece herramientas para transformar la experiencia humana. Sin embargo, no parece que aborde directamente la teoría de juegos ni se concentre en la estructura de decisiones, aunque sí sugiere un cambio en la mentalidad que puede influir en las decisiones personales. En este sentido, el libro no se adentra tanto en la dinámica de incentivos y costos, sino en la transformación interna del lector.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 218.28125,
+          "saturation": "vivid",
+          "lightness_paper": "light",
+          "temperature_shift": 10,
+          "palette_strategy": "complementary",
+          "typography_family": "sans_humanista",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "espiritual"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "La raíz del sufrimiento: entender y transformar",
+          "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental y transformar nuestra experiencia humana.",
+          "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+          "parrafoBot": "Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo."
+        },
+        "card_en": {
+          "titulo": "Understanding Emotional Suffering",
+          "parrafoTop": "The human mind is a battleground where pain is inevitable, yet suffering is optional. This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+          "subtitulo": "How can we achieve mental freedom?",
+          "parrafoBot": "By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world."
+        },
+        "emotional_words_es": [
+          "libertad",
+          "transformación",
+          "conciencia",
+          "sufrimiento"
+        ],
+        "emotional_words_en": [
+          "freedom",
+          "suffering",
+          "understanding",
+          "pain"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "✨ El sufrimiento emocional es una elección, no una condena.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ ¿Qué pasaría si dejaras de creer todo lo que piensas?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 El dolor puede ser inevitable, pero el sufrimiento es opcional: elige.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "✨ Pain is inevitable, but suffering is a choice we make.",
+            "role_symphonic": "land",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Recognize your patterns. Transform your pain into purpose.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 How often do we let pain dictate our emotions instead of understanding how to transform the way we feel and create the life we desire.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 Freedom of mind is not a destination but a continuous journey.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Cuánto tiempo pasas sufriendo por pensamientos que no reflejan la realidad?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🌬 Respira hondo y pregunta: ¿qué creencias me están limitando en este momento?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina un espacio donde el dolor existe, pero el sufrimiento no tiene cabida.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Liberarse del sufrimiento es el primer paso hacia una vida plena.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your suffering as a cloud. It blocks the sun but can drift away.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Challenge your thoughts. What if they are not the truth?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Imagine letting go of the weight of your thoughts, feeling lighter and freer.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 In every moment, we hold the power to choose how we feel.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.92,
+          "grounding_judge": 1,
+          "combined": 0.95,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.917391304347826,
+            "judgeScore": 1
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Don't Believe Everything You Think",
+          "autor_completo": "Joseph Nguyen",
+          "titulo_api": "Don't Believe Everything You Think",
+          "autor_api": "Joseph Nguyen",
+          "subtitulo": "Why Your Thinking Is The Beginning & End Of Suffering",
+          "año": "2022",
+          "editorial": null,
+          "paginas": 126,
+          "isbn": "9798986406503",
+          "isbn13": "9798986406503",
+          "isbn10": "",
+          "categorias": [],
+          "idioma": "en",
+          "preview_link": "http://books.google.com/books?id=jYE4zwEACAAJ&dq=intitle:Don%27t+Believe+Everything+You+Think+inauthor:Joseph+Nguyen&hl=&cd=2&source=gbs_api"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content directly reflects key concepts from the ground truth, such as the distinction between pain and suffering, and the idea that suffering is a mental construct. Phrases like 'el sufrimiento es opcional' and 'liberarse del sufrimiento' are specific to the book's themes, making it highly relevant and not generic."
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content directly reflects the core concepts of the book, such as the distinction between pain and suffering, and the idea of mental freedom. Phrases like 'suffering is a mental construct' and 'we have the power to create our desired life' are explicitly aligned with the book's themes. This specificity makes it feel like a back cover description rather than generic content."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la experiencia personal.",
+          "elapsed_ms": 1114,
+          "usage": {
+            "prompt_tokens": 409,
+            "completion_tokens": 26,
+            "total_tokens": 435,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el sufrimiento sin referencias externas.",
+          "elapsed_ms": 934,
+          "usage": {
+            "prompt_tokens": 390,
+            "completion_tokens": 29,
+            "total_tokens": 419,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 854,
+        "total_ms": 1114
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 218.28125,
+          "adjusted_hue": 228.28125,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.44",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7E95F1",
+          "--palette-1": "#E8C430",
+          "--palette-2": "#1C13AE",
+          "--palette-3": "#60650B",
+          "--accent": "#123BE2",
+          "--accent-soft": "#123BE238",
+          "--accent-glow": "#123BE26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17181C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1034C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "18px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 3 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-09-29T14-06-08",
+      "_crono": {
+        "dia": "martes",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 59589,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15628,
+          "palette": 0,
+          "content_es": 17634,
+          "judge_es": 860,
+          "content_en": 16316,
+          "judge_en": 863,
+          "voice": 854,
+          "voice_extended": 7434,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoTop_retry": 645,
+          "highlight_judge_es_parrafoBot": 646,
+          "highlight_judge_es_parrafoBot_retry": 661,
+          "highlight_judge_en_parrafoTop": 644,
+          "highlight_judge_en_parrafoBot": 648,
+          "highlight_judge_en_parrafoBot_retry": 655,
+          "csal": 2642
+        },
+        "elapsed_ms_total": 33115,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6065,
+          "palette": 0,
+          "cover_fallback": 108,
+          "content_es": 10712,
+          "judge_es": 2266,
+          "content_en": 9823,
+          "judge_en": 1411,
+          "voice": 1115,
+          "voice_extended": 1609,
+          "highlight_judge": 7649,
+          "lens_compatibility": 1724,
+          "csal": 6455,
+          "post_processing": 15835
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 3,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.2,
+          "espiritu": 0.7,
+          "relaciones": 0.4,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando siento que mis pensamientos me controlan",
+          "antes de enfrentar una situación dolorosa",
+          "después de una discusión que me dejó angustiado",
+          "cuando me pregunto por qué no puedo dejar de preocuparme",
+          "cuando me doy cuenta de que mis miedos son infundados",
+          "antes de intentar cambiar un hábito que me causa sufrimiento",
+          "cuando me siento atrapado en un ciclo de pensamientos negativos",
+          "cuando busco la manera de ser más feliz en mi día a día",
+          "antes de tomar una decisión importante que me genera ansiedad",
+          "cuando me doy cuenta de que el dolor no tiene que definir mi vida",
+          "cuando quiero aprender a manejar mis emociones de manera más efectiva",
+          "cuando siento que no puedo controlar mis pensamientos",
+          "antes de intentar perdonar a alguien que me hirió",
+          "cuando me doy cuenta de que mis creencias limitantes me detienen",
+          "cuando quiero entender la raíz de mi sufrimiento emocional",
+          "antes de buscar ayuda profesional para mis problemas",
+          "cuando siento que no puedo ser yo mismo por el miedo al juicio",
+          "después de una experiencia que me generó dolor emocional",
+          "cuando quiero aprender a vivir en el presente y dejar ir el pasado",
+          "cuando me siento abrumado por las expectativas de los demás",
+          "cuando quiero cambiar mi perspectiva sobre mis problemas y sufrimientos",
+          "cuando busco herramientas para mejorar mi salud mental",
+          "después de un fracaso que me ha dejado desanimado",
+          "cuando busco formas de ser más compasivo conmigo mismo",
+          "cuando quiero aprender a no creer todo lo que pienso",
+          "cuando me siento desconectado de mis emociones y pensamientos",
+          "cuando quiero encontrar paz en medio del caos de mi vida",
+          "cuando me doy cuenta de que el sufrimiento es opcional",
+          "cuando quiero aprender a gestionar mejor mi ansiedad",
+          "cuando me doy cuenta de que mis pensamientos no son la verdad"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "depresión",
+            "frustración",
+            "miedo",
+            "tristeza",
+            "confusión",
+            "alivio",
+            "esperanza",
+            "felicidad",
+            "compasión",
+            "desesperación"
+          ],
+          "objetos": [
+            "pensamientos",
+            "creencias",
+            "hábitos",
+            "situaciones",
+            "experiencias",
+            "decisiones",
+            "miedos",
+            "percepciones",
+            "expectativas"
+          ],
+          "contextos": [
+            "en casa",
+            "en el trabajo",
+            "en una relación",
+            "en terapia",
+            "en momentos de soledad",
+            "en discusiones familiares",
+            "en situaciones sociales",
+            "en momentos de crisis",
+            "en actividades diarias",
+            "en un entorno de apoyo"
+          ],
+          "verbos": [
+            "pensar",
+            "sentir",
+            "reflexionar",
+            "actuar",
+            "liberarse",
+            "perdonar",
+            "entender",
+            "explorar",
+            "cambiar",
+            "crear"
+          ]
+        },
+        "concept_tags": [
+          "sufrimiento emocional",
+          "libertad mental",
+          "transformación personal",
+          "creencias limitantes",
+          "miedo al juicio",
+          "viviendo en el presente",
+          "gestión emocional",
+          "nuevo paradigma de la mente",
+          "paz interior",
+          "autocompasión"
+        ],
+        "anti_patterns": [
+          "si buscas soluciones rápidas sin reflexión",
+          "si necesitas una guía estricta y normativa",
+          "si no estás dispuesto a cuestionar tus pensamientos",
+          "si prefieres seguir en la zona de confort sin cambios"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌀"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "💭"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌅"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "✊"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una afirmación reflexiva que podría ser parte de un argumento o desarrollo del autor dentro del libro, sugiriendo una voz interna."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que invita al lector a cuestionar sus propios pensamientos, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un consejo directo y reflexivo, típico de la voz autoral que se encuentra dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte de un discurso o un capítulo del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta introspectiva que invita a la reflexión, típica de un autor que escribe directamente en el texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser un consejo directo del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una invitación a imaginar un escenario, lo que sugiere que es parte de la narrativa o reflexión del autor dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de la reflexión o enseñanza del autor dentro del libro, sugiriendo un concepto central en la narrativa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection of the author's thoughts, suggesting it is part of the narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct call to action and introspection, suggesting it is part of the author's voice within the book, encouraging readers to engage with their own experiences."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a reflective thought that feels like an internal dialogue or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like an internal reflection or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical concept directly, suggesting a visualization technique, which feels like an internal reflection or guidance from the author."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct engagement with the reader, suggesting introspection and reflection, which is characteristic of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize a personal experience, suggesting an internal dialogue typical of the author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or reflection within the book, rather than a commentary about the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-29T14:06:57.085Z",
+      "_slug": "don-t-believe-everything-you-think",
+      "_edicion_numero": 104,
+      "_musica": {
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
+        "sinfonia": "pool:calma",
+        "candidatos": [
+          {
+            "id": "847718927",
+            "cancion": "Gymnopedie No.1",
+            "artista": "Erik Satie",
+            "album": "Gymnopedie No.1 - Single",
+            "genero": "Alternativa",
+            "dur": 190,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/3f/57/e83f57f3-68a1-f88f-d7ad-741e12e48c6d/mzaf_14596551055740884645.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnopedie-no-1/847714522?i=847718927&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/fe/23/fdfe23c0-ed10-4485-a8e1-702a99a8336c/859712317261_cover.tif/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "aterrizar",
+            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
+            "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1597454856",
+            "cancion": "Spiegel im Spiegel",
+            "artista": "Duo Cassadó",
+            "album": "Arvo Pärt: Spiegel im Spiegel - Single",
+            "genero": "Clásica",
+            "dur": 434,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/46/af/93/46af93c3-afc0-14af-8a82-5dbdbe531b74/mzaf_10824783644429950310.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/spiegel-im-spiegel/1597454542?i=1597454856&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b8/3d/09/b83d09d2-019c-8b88-34a6-9c7d10df33be/190296323201.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "aterrizar",
+            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
+            "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "508378566",
+            "cancion": "Peer Gynt Suite No. 1, Op. 46. Incidental music to Peer Gynt by Ibsen: Peer Gynt Suite n.º",
+            "artista": "WDR Sinfonieorchester Köln & Eivind Aadland",
+            "album": "Grieg: Complete Symphonic Works, Vol. I",
+            "genero": "Clásica",
+            "dur": 244,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/8e/08/068e0886-ebda-9143-00b4-9547d07de54f/mzaf_7803377125337725950.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peer-gynt-suite-no-1-op-46-incidental-music-to-peer/508378315?i=508378566&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/b7/34/c7/b734c7f6-1f61-91b3-0ace-962ce4a55211/cover.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "La música clásica puede acompañar la reflexión sobre el sufrimiento y la libertad.",
+            "frase_eco": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte."
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Why Thought Is Not Reality & How To Let Go', 'Escape Negative Thoughts' y 'Don't Believe Everything You Think' por su enfoque en la liberación del sufrimiento y la transformación personal.",
+        "candidatos": [
+          {
+            "id": "nKJtqys0pEs",
+            "titulo": "Why Thought Is Not Reality & How To Let Go",
+            "canal": "Joseph Nguyen",
+            "dur": 935,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "✨ El sufrimiento emocional es una elección, no una condena.",
+            "pie": "Nguyen explora cómo nuestras creencias sobre los pensamientos moldean nuestra realidad y cómo liberarnos de ellas.",
+            "pie_en": "Nguyen explores how our beliefs about thoughts shape our reality and how to free ourselves from them."
+          },
+          {
+            "id": "2rD2BpeKY2o",
+            "titulo": "Escape Negative Thoughts | The Secret to Instant Calm",
+            "canal": "Dr. Mayim Bialik",
+            "dur": 4653,
+            "armonia": 7,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+            "pie": "Nguyen comparte consejos prácticos para dejar de sobrepensar y encontrar la paz interior en una conversación con Mayim Bialik.",
+            "pie_en": "Nguyen shares practical tips for stopping overthinking and finding inner peace in a conversation with Mayim Bialik."
+          },
+          {
+            "id": "FtsKCkOR0Wc",
+            "titulo": "Don't Believe Everything You Think ⎹ Joseph Nguyen",
+            "canal": "James Brackin IV",
+            "dur": 3229,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Nguyen habla sobre la importancia de no creer todo lo que pensamos, un eco de la liberación del sufrimiento.",
+            "pie_en": "Nguyen talks about the importance of not believing everything we think, echoing the liberation from suffering."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "The Importance of Being Little",
       "autor": "Erika Christakis",
       "tagline": "",
@@ -915,7 +1873,7 @@
             "idioma": "en",
             "frase_eco": "💫 El juego es el lenguaje de los niños; escucharles es el primer paso hacia una educación efectiva.",
             "pie": "En este panel, Christakis discute la importancia del juego en la crianza y la educación de los niños.",
-            "pie_en": "In this panel, Christakis discusses the importance of play in the upbringing and education of children."
+            "pie_en": "In this panel, Christakis discusses the importance of play in child-rearing and education."
           },
           {
             "id": "8xTC3UjRUSA",
@@ -37455,11 +38413,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 104,
-    "total": 171,
-    "last_audit": "2026-09-26T18:49:42.263Z",
-    "healing_rotation_idx": 50,
+    "next_edition_number": 105,
+    "total": 172,
+    "last_audit": "2026-09-29T14:07:00.684Z",
+    "healing_rotation_idx": 51,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
-    "last_healing_timestamp": "2026-09-26T19:01:09.238Z"
+    "last_healing_timestamp": "2026-09-29T14:20:53.551Z"
   }
 }

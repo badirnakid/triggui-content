@@ -1,6 +1,850 @@
 {
   "libros": [
     {
+      "titulo": "Don't Believe Everything You Think",
+      "autor": "Joseph Nguyen",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=jYE4zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "portada_url": "https://books.google.com/books/content?id=jYE4zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "isbn": "9798986406503",
+      "titulo_es": "Don't Believe Everything You Think",
+      "titulo_en": "Don't Believe Everything You Think",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "libertad",
+        "transformación",
+        "conciencia",
+        "sufrimiento"
+      ],
+      "palabras_en": [
+        "freedom",
+        "suffering",
+        "understanding",
+        "pain"
+      ],
+      "frases": [
+        "🌓 ¿Cuánto tiempo pasas sufriendo por pensamientos que no reflejan la realidad?",
+        "🌬 Respira hondo y pregunta: ¿qué creencias me están limitando en este momento?",
+        "🔭 Imagina un espacio donde el dolor existe, pero el sufrimiento no tiene cabida.",
+        "🌓 Liberarse del sufrimiento es el primer paso hacia una vida plena."
+      ],
+      "frases_en": [
+        "🌅 Visualize your suffering as a cloud. It blocks the sun but can drift away.",
+        "🏛 Challenge your thoughts. What if they are not the truth?",
+        "🌊 Imagine letting go of the weight of your thoughts, feeling lighter and freer.",
+        "🌓 In every moment, we hold the power to choose how we feel."
+      ],
+      "frases_og": [
+        "✨ El sufrimiento emocional es una elección, no una condena.",
+        "⚓ ¿Qué pasaría si dejaras de creer todo lo que piensas?",
+        "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+        "🛡 El dolor puede ser inevitable, pero el sufrimiento es opcional: elige."
+      ],
+      "frases_og_en": [
+        "✨ Pain is inevitable, but suffering is a choice we make.",
+        "⚓ Recognize your patterns. Transform your pain into purpose.",
+        "🔁 How often do we let pain dictate our emotions instead of understanding how to transform the way we feel?",
+        "🛡 Freedom of mind is not a destination but a continuous journey."
+      ],
+      "colores": [
+        "#7E95F1",
+        "#E8C430",
+        "#1C13AE",
+        "#60650B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La raíz del sufrimiento: entender y transformar",
+        "parrafoTop": "La mente humana es un campo de batalla donde el dolor es inevitable, pero el sufrimiento es opcional. Esto significa que, aunque la experiencia del dolor puede ser parte de nuestra vida, la manera en que respondemos a ese dolor define nuestro sufrimiento. [H]Aprender a distinguir entre ambos es fundamental para alcanzar la libertad mental[/H] y transformar nuestra experiencia humana.",
+        "subtitulo": "¿Cómo podemos lograr la libertad mental?",
+        "parrafoBot": "[H]Al reconocer que el sufrimiento es un constructo mental y no un estado impuesto por la realidad, comenzamos a liberarnos[/H]. La verdadera libertad mental reside en la comprensión de que tenemos el poder de crear nuestra vida como deseamos, transformando así nuestra experiencia del mundo.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Understanding Emotional Suffering",
+        "parrafoTop": "[H]The human mind is a battleground where pain is inevitable, yet suffering is optional.[/H] This means that while the experience of pain may be a part of our lives, how we respond to that pain defines our suffering. Learning to distinguish between the two is crucial for achieving true freedom of mind.",
+        "subtitulo": "How can we achieve mental freedom?",
+        "parrafoBot": "[H]By recognizing that suffering is a mental construct rather than a state imposed by reality, we begin to free ourselves[/H]. True mental freedom lies in understanding that we have the power to create our desired life, thus transforming our experience of the world.",
+        "style": {
+          "accent": "#123BE2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Don't%20Believe%20Everything%20You%20Think%20Joseph%20Nguyen%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Don't%20Believe%20Everything%20You%20Think%20Joseph%20Nguyen%20interview",
+      "_animo_promedio": 0.4,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "la raíz del sufrimiento emocional y psicológico",
+            "libertad mental para crear la vida deseada",
+            "el dolor es inevitable, pero el sufrimiento es opcional",
+            "un nuevo paradigma de la experiencia humana",
+            "cómo transformar la manera en que nos sentimos"
+          ],
+          "key_terms": [
+            "sufrimiento",
+            "libertad mental",
+            "dolor",
+            "paradigma",
+            "experiencia humana"
+          ],
+          "authorial_voice_notes": "La voz de Joseph Nguyen es clara y directa, enfocándose en ofrecer una nueva comprensión de la mente humana y su relación con el sufrimiento. Utiliza un tono accesible y práctico, invitando al lector a reflexionar y aplicar sus enseñanzas."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "✨ El sufrimiento emocional es una elección, no una condena.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ ¿Qué pasaría si dejaras de creer todo lo que piensas?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 El dolor puede ser inevitable, pero el sufrimiento es opcional: elige.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "✨ Pain is inevitable, but suffering is a choice we make.",
+            "role_symphonic": "land",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Recognize your patterns. Transform your pain into purpose.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 How often do we let pain dictate our emotions instead of understanding how to transform the way we feel and create the life we desire.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.3,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🛡 Freedom of mind is not a destination but a continuous journey.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 ¿Cuánto tiempo pasas sufriendo por pensamientos que no reflejan la realidad?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🌬 Respira hondo y pregunta: ¿qué creencias me están limitando en este momento?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Imagina un espacio donde el dolor existe, pero el sufrimiento no tiene cabida.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Liberarse del sufrimiento es el primer paso hacia una vida plena.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Visualize your suffering as a cloud. It blocks the sun but can drift away.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 Challenge your thoughts. What if they are not the truth?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Imagine letting go of the weight of your thoughts, feeling lighter and freer.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 In every moment, we hold the power to choose how we feel.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content directly reflects key concepts from the ground truth, such as the distinction between pain and suffering, and the idea that suffering is a mental construct. Phrases like 'el sufrimiento es opcional' and 'liberarse del sufrimiento' are specific to the book's themes, making it highly relevant and not generic."
+        },
+        "en": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content directly reflects the core concepts of the book, such as the distinction between pain and suffering, and the idea of mental freedom. Phrases like 'suffering is a mental construct' and 'we have the power to create our desired life' are explicitly aligned with the book's themes. This specificity makes it feel like a back cover description rather than generic content."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la experiencia personal.",
+          "elapsed_ms": 1114,
+          "usage": {
+            "prompt_tokens": 409,
+            "completion_tokens": 26,
+            "total_tokens": 435,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el sufrimiento sin referencias externas.",
+          "elapsed_ms": 934,
+          "usage": {
+            "prompt_tokens": 390,
+            "completion_tokens": 29,
+            "total_tokens": 419,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 854,
+        "total_ms": 1114
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 218.28125,
+          "adjusted_hue": 228.28125,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.44",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7E95F1",
+          "--palette-1": "#E8C430",
+          "--palette-2": "#1C13AE",
+          "--palette-3": "#60650B",
+          "--accent": "#123BE2",
+          "--accent-soft": "#123BE238",
+          "--accent-glow": "#123BE26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17181C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1034C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "18px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlights_auto_corrected_v3.7: 3 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-09-29T14-06-08",
+      "_crono": {
+        "dia": "martes",
+        "hora": 8,
+        "franja": "manana",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 59589,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15628,
+          "palette": 0,
+          "content_es": 17634,
+          "judge_es": 860,
+          "content_en": 16316,
+          "judge_en": 863,
+          "voice": 854,
+          "voice_extended": 7434,
+          "highlight_judge_es_parrafoTop": 645,
+          "highlight_judge_es_parrafoTop_retry": 645,
+          "highlight_judge_es_parrafoBot": 646,
+          "highlight_judge_es_parrafoBot_retry": 661,
+          "highlight_judge_en_parrafoTop": 644,
+          "highlight_judge_en_parrafoBot": 648,
+          "highlight_judge_en_parrafoBot_retry": 655,
+          "csal": 2642
+        },
+        "elapsed_ms_total": 33115,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6065,
+          "palette": 0,
+          "cover_fallback": 108,
+          "content_es": 10712,
+          "judge_es": 2266,
+          "content_en": 9823,
+          "judge_en": 1411,
+          "voice": 1115,
+          "voice_extended": 1609,
+          "highlight_judge": 7649,
+          "lens_compatibility": 1724,
+          "csal": 6455,
+          "post_processing": 15835
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 3,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.3,
+        "self-knowledge": 0.9,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.2,
+          "espiritu": 0.7,
+          "relaciones": 0.4,
+          "finanzas": 0.1
+        },
+        "hawkins": 0.7
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando siento que mis pensamientos me controlan",
+          "antes de enfrentar una situación dolorosa",
+          "después de una discusión que me dejó angustiado",
+          "cuando me pregunto por qué no puedo dejar de preocuparme",
+          "cuando me doy cuenta de que mis miedos son infundados",
+          "antes de intentar cambiar un hábito que me causa sufrimiento",
+          "cuando me siento atrapado en un ciclo de pensamientos negativos",
+          "cuando busco la manera de ser más feliz en mi día a día",
+          "antes de tomar una decisión importante que me genera ansiedad",
+          "cuando me doy cuenta de que el dolor no tiene que definir mi vida",
+          "cuando quiero aprender a manejar mis emociones de manera más efectiva",
+          "cuando siento que no puedo controlar mis pensamientos",
+          "antes de intentar perdonar a alguien que me hirió",
+          "cuando me doy cuenta de que mis creencias limitantes me detienen",
+          "cuando quiero entender la raíz de mi sufrimiento emocional",
+          "antes de buscar ayuda profesional para mis problemas",
+          "cuando siento que no puedo ser yo mismo por el miedo al juicio",
+          "después de una experiencia que me generó dolor emocional",
+          "cuando quiero aprender a vivir en el presente y dejar ir el pasado",
+          "cuando me siento abrumado por las expectativas de los demás",
+          "cuando quiero cambiar mi perspectiva sobre mis problemas y sufrimientos",
+          "cuando busco herramientas para mejorar mi salud mental",
+          "después de un fracaso que me ha dejado desanimado",
+          "cuando busco formas de ser más compasivo conmigo mismo",
+          "cuando quiero aprender a no creer todo lo que pienso",
+          "cuando me siento desconectado de mis emociones y pensamientos",
+          "cuando quiero encontrar paz en medio del caos de mi vida",
+          "cuando me doy cuenta de que el sufrimiento es opcional",
+          "cuando quiero aprender a gestionar mejor mi ansiedad",
+          "cuando me doy cuenta de que mis pensamientos no son la verdad"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "ansiedad",
+            "depresión",
+            "frustración",
+            "miedo",
+            "tristeza",
+            "confusión",
+            "alivio",
+            "esperanza",
+            "felicidad",
+            "compasión",
+            "desesperación"
+          ],
+          "objetos": [
+            "pensamientos",
+            "creencias",
+            "hábitos",
+            "situaciones",
+            "experiencias",
+            "decisiones",
+            "miedos",
+            "percepciones",
+            "expectativas"
+          ],
+          "contextos": [
+            "en casa",
+            "en el trabajo",
+            "en una relación",
+            "en terapia",
+            "en momentos de soledad",
+            "en discusiones familiares",
+            "en situaciones sociales",
+            "en momentos de crisis",
+            "en actividades diarias",
+            "en un entorno de apoyo"
+          ],
+          "verbos": [
+            "pensar",
+            "sentir",
+            "reflexionar",
+            "actuar",
+            "liberarse",
+            "perdonar",
+            "entender",
+            "explorar",
+            "cambiar",
+            "crear"
+          ]
+        },
+        "concept_tags": [
+          "sufrimiento emocional",
+          "libertad mental",
+          "transformación personal",
+          "creencias limitantes",
+          "miedo al juicio",
+          "viviendo en el presente",
+          "gestión emocional",
+          "nuevo paradigma de la mente",
+          "paz interior",
+          "autocompasión"
+        ],
+        "anti_patterns": [
+          "si buscas soluciones rápidas sin reflexión",
+          "si necesitas una guía estricta y normativa",
+          "si no estás dispuesto a cuestionar tus pensamientos",
+          "si prefieres seguir en la zona de confort sin cambios"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌀"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "💭"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌅"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "✊"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una afirmación reflexiva que podría ser parte de un argumento o desarrollo del autor dentro del libro, sugiriendo una voz interna."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que invita al lector a cuestionar sus propios pensamientos, lo que sugiere que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta un consejo directo y reflexivo, típico de la voz autoral que se encuentra dentro del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión que podría ser parte de un discurso o un capítulo del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una pregunta introspectiva que invita a la reflexión, típica de un autor que escribe directamente en el texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita a la reflexión personal y parece ser un consejo directo del autor, lo que sugiere que está escrita dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una invitación a imaginar un escenario, lo que sugiere que es parte de la narrativa o reflexión del autor dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase expresa una idea que podría ser parte de la reflexión o enseñanza del autor dentro del libro, sugiriendo un concepto central en la narrativa."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection of the author's thoughts, suggesting it is part of the narrative or argument within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct call to action and introspection, suggesting it is part of the author's voice within the book, encouraging readers to engage with their own experiences."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a reflective thought that feels like an internal dialogue or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like an internal reflection or insight from the author, suggesting it is part of the narrative or thematic exploration within the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a metaphorical concept directly, suggesting a visualization technique, which feels like an internal reflection or guidance from the author."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct engagement with the reader, suggesting introspection and reflection, which is characteristic of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to visualize a personal experience, suggesting an internal dialogue typical of the author's voice within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like it could be part of the narrative or reflection within the book, rather than a commentary about the book itself."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-09-29T14:06:57.085Z",
+      "_slug": "don-t-believe-everything-you-think",
+      "_edicion_numero": 104,
+      "_musica": {
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
+        "sinfonia": "pool:calma",
+        "candidatos": [
+          {
+            "id": "847718927",
+            "cancion": "Gymnopedie No.1",
+            "artista": "Erik Satie",
+            "album": "Gymnopedie No.1 - Single",
+            "genero": "Alternativa",
+            "dur": 190,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/3f/57/e83f57f3-68a1-f88f-d7ad-741e12e48c6d/mzaf_14596551055740884645.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnopedie-no-1/847714522?i=847718927&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/fe/23/fdfe23c0-ed10-4485-a8e1-702a99a8336c/859712317261_cover.tif/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "aterrizar",
+            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
+            "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1597454856",
+            "cancion": "Spiegel im Spiegel",
+            "artista": "Duo Cassadó",
+            "album": "Arvo Pärt: Spiegel im Spiegel - Single",
+            "genero": "Clásica",
+            "dur": 434,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/46/af/93/46af93c3-afc0-14af-8a82-5dbdbe531b74/mzaf_10824783644429950310.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/spiegel-im-spiegel/1597454542?i=1597454856&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b8/3d/09/b83d09d2-019c-8b88-34a6-9c7d10df33be/190296323201.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "aterrizar",
+            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
+            "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "508378566",
+            "cancion": "Peer Gynt Suite No. 1, Op. 46. Incidental music to Peer Gynt by Ibsen: Peer Gynt Suite n.º",
+            "artista": "WDR Sinfonieorchester Köln & Eivind Aadland",
+            "album": "Grieg: Complete Symphonic Works, Vol. I",
+            "genero": "Clásica",
+            "dur": 244,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/8e/08/068e0886-ebda-9143-00b4-9547d07de54f/mzaf_7803377125337725950.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peer-gynt-suite-no-1-op-46-incidental-music-to-peer/508378315?i=508378566&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/b7/34/c7/b734c7f6-1f61-91b3-0ace-962ce4a55211/cover.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "La música clásica puede acompañar la reflexión sobre el sufrimiento y la libertad.",
+            "frase_eco": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte."
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'Why Thought Is Not Reality & How To Let Go', 'Escape Negative Thoughts' y 'Don't Believe Everything You Think' por su enfoque en la liberación del sufrimiento y la transformación personal.",
+        "candidatos": [
+          {
+            "id": "nKJtqys0pEs",
+            "titulo": "Why Thought Is Not Reality & How To Let Go",
+            "canal": "Joseph Nguyen",
+            "dur": 935,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "✨ El sufrimiento emocional es una elección, no una condena.",
+            "pie": "Nguyen explora cómo nuestras creencias sobre los pensamientos moldean nuestra realidad y cómo liberarnos de ellas."
+          },
+          {
+            "id": "2rD2BpeKY2o",
+            "titulo": "Escape Negative Thoughts | The Secret to Instant Calm",
+            "canal": "Dr. Mayim Bialik",
+            "dur": 4653,
+            "armonia": 7,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
+            "pie": "Nguyen comparte consejos prácticos para dejar de sobrepensar y encontrar la paz interior en una conversación con Mayim Bialik."
+          },
+          {
+            "id": "FtsKCkOR0Wc",
+            "titulo": "Don't Believe Everything You Think ⎹ Joseph Nguyen",
+            "canal": "James Brackin IV",
+            "dur": 3229,
+            "armonia": 5,
+            "rol": "resonar",
+            "tipo": "autor_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Nguyen habla sobre la importancia de no creer todo lo que pensamos, un eco de la liberación del sufrimiento."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "The Importance of Being Little",
       "autor": "Erika Christakis",
       "tagline": "",
@@ -154,7 +998,8 @@
             "aprendizaje basado en la experiencia",
             "expectativas educativas"
           ],
-          "authorial_voice_notes": "La voz de Christakis es persuasiva y accesible, fusionando investigación académica con relatos personales, lo que hace que su mensaje sobre la educación infantil sea tanto informativo como emocionalmente resonante."
+          "authorial_voice_notes": "La voz de Christakis es persuasiva y accesible, fusionando investigación académica con relatos personales, lo que hace que su mensaje sobre la educación infantil sea tanto informativo como emocionalmente resonante.",
+          "authorial_voice_notes_en": "Christakis's voice is persuasive and accessible, blending academic research with personal stories, making his message about childhood education both informative and emotionally resonant."
         },
         "og_phrases_es": [
           {
@@ -788,7 +1633,8 @@
             "relacion": "invita",
             "idioma": "en",
             "frase_eco": "📖 ¿Qué aprendizaje se pierde cuando priorizamos las calificaciones?",
-            "pie": "Christakis plantea la necesidad de permitir que los niños sean niños, cuestionando la presión educativa."
+            "pie": "Christakis plantea la necesidad de permitir que los niños sean niños, cuestionando la presión educativa.",
+            "pie_en": "Christakis raises the need to allow children to be children, questioning educational pressure."
           },
           {
             "id": "a-nZPTde6Us",
@@ -801,7 +1647,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "💫 El juego es el lenguaje de los niños; escucharles es el primer paso hacia una educación efectiva.",
-            "pie": "En este panel, Christakis discute la importancia del juego en la crianza y la educación de los niños."
+            "pie": "En este panel, Christakis discute la importancia del juego en la crianza y la educación de los niños.",
+            "pie_en": "In this panel, Christakis discusses the importance of play in child-rearing and education."
           },
           {
             "id": "8xTC3UjRUSA",
@@ -814,7 +1661,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "🌓 El juego no es un lujo, es una necesidad vital para el desarrollo.",
-            "pie": "Christakis explora tendencias educativas actuales y la educación impulsada por la curiosidad en esta conversación."
+            "pie": "Christakis explora tendencias educativas actuales y la educación impulsada por la curiosidad en esta conversación.",
+            "pie_en": "Christakis explores current educational trends and curiosity-driven education in this conversation."
           }
         ]
       }
@@ -7637,7 +8485,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -7649,7 +8497,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -7661,7 +8509,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -9244,7 +10092,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -9256,7 +10104,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -9268,7 +10116,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -10112,7 +10960,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La música como estrategia de ventas",
-        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
+        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente y transformando la experiencia de compra en un viaje memorable que celebra la esencia de Apple.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
         "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo, y que cada historia que contamos es un recordatorio de cómo la música y la narración han sido el alma de nuestra estrategia de ventas, guiándonos hacia un futuro donde la creatividad y la conexión emocional son la clave del éxito.",
         "style": {
@@ -10124,7 +10972,7 @@
       },
       "tarjeta_base": {
         "titulo": "La música como estrategia de ventas",
-        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
+        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente y transformando la experiencia de compra en un viaje memorable que celebra la esencia de Apple.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
         "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo, y que cada historia que contamos es un recordatorio de cómo la música y la narración han sido el alma de nuestra estrategia de ventas, guiándonos hacia un futuro donde la creatividad y la conexión emocional son la clave del éxito.",
         "style": {
@@ -10136,7 +10984,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La música como estrategia de ventas",
-        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente.",
+        "parrafoTop": "[H]La cultura de ventas en Apple no es solo un proceso comercial[/H], es una forma de arte. En cada interacción, cada vendedor se convierte en un narrador, utilizando la música como hilo conductor para conectar emocionalmente con el cliente. No se trata solo de vender productos, sino de contar historias que resuenen en el oyó y que reflejen la narrativa de la marca, creando una conexión emocional profunda con el cliente y transformando la experiencia de compra en un viaje memorable que celebra la esencia de Apple.",
         "subtitulo": "¿Cómo la música transforma la venta en Apple?",
         "parrafoBot": "Cada producto icónico de Apple tiene detrás una narrativa poderosa, construida a partir de la pasión por la música y la creatividad. [H]Desde el iPod hasta el iPhone, cada lanzamiento es un acto[/H] de interpretación en el escenario del mercado. Esta conexión emocional es clave en la cultura de ventas que nos permitió no solo transformar la experiencia del consumidor, sino también contar historias que resonaran profundamente con nuestra audiencia, reflejando la esencia de la música como estrategia en nuestras narrativas de marca y cómo estas historias han sido fundamentales para el éxito de Apple en un mercado competitivo, donde la cultura de ventas se convierte en una forma de arte que trasciende lo comercial y se adentra en lo emocional, creando un vínculo único entre la marca y sus consumidores, y demostrando que la música y la narración son herramientas poderosas en la construcción de relaciones duraderas con los clientes, lo que ha permitido a Apple no solo sobrevivir, sino prosperar en un entorno desafiante, donde cada historia se convierte en un testimonio de la conexión entre la música y la experiencia del consumidor, y cómo esta conexión ha sido esencial para el crecimiento y la innovación continua de la empresa, permitiendo que cada producto no solo sea un objeto, sino una experiencia que resuena en el corazón de quienes lo utilizan, y que cada narrativa construida en torno a estos productos se convierte en un reflejo de la pasión y el compromiso de Apple por ofrecer no solo tecnología, sino también emociones que perduran en el tiempo, y que cada historia que contamos es un recordatorio de cómo la música y la narración han sido el alma de nuestra estrategia de ventas, guiándonos hacia un futuro donde la creatividad y la conexión emocional son la clave del éxito.",
         "style": {
@@ -10922,7 +11770,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas, y donde cada reflexión te acerque más a tu propósito y a la vida que realmente deseas vivir.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -11786,7 +12634,7 @@
       "fondo": "#F0EFF0",
       "tarjeta": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico, y donde la capacidad de adaptarse y aprender continuamente se convierte en la esencia de una negociación exitosa, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -11798,7 +12646,7 @@
       },
       "tarjeta_base": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico, y donde la capacidad de adaptarse y aprender continuamente se convierte en la esencia de una negociación exitosa, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -11810,7 +12658,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La improvisación como arte de la negociación",
-        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico.",
+        "parrafoTop": "La negociación no es un simple intercambio de propuestas, sino un proceso dinámico donde la adaptación y la improvisación son fundamentales. Enfrentarse al caos y a la incertidumbre requiere que los negociadores estén dispuestos a dejar de lado sus planes rígidos y a explorar nuevas posibilidades. [H]Es en la flexibilidad y apertura a posibilidades donde se encuentra la clave para una negociación exitosa, que implica un aprendizaje constante y la capacidad de influir en el proceso de toma de decisiones, adaptándose a las circunstancias cambiantes y utilizando la improvisación como herramienta esencial en un entorno caótico, donde la habilidad de adaptarse y aprender continuamente se convierte en un factor decisivo para alcanzar acuerdos efectivos, y donde la influencia y el movimiento estratégico son cruciales para navegar en la complejidad de las interacciones humanas, lo que permite a los negociadores no solo sobrevivir, sino prosperar en situaciones de incertidumbre, donde la improvisación y la flexibilidad son esenciales para el éxito en la negociación, y donde cada decisión se convierte en una oportunidad para aprender y mejorar en el arte de negociar, lo que refuerza la importancia de la adaptación y el aprendizaje continuo en el proceso de negociación, y donde la capacidad de improvisar y adaptarse a lo inesperado se convierte en la esencia de una negociación efectiva, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales, lo que demuestra que la improvisación y la flexibilidad son herramientas clave para navegar en un mundo caótico, y donde la capacidad de adaptarse y aprender continuamente se convierte en la esencia de una negociación exitosa, permitiendo a los negociadores enfrentar los desafíos con confianza y creatividad, y así lograr resultados que superen las expectativas iniciales.",
         "subtitulo": "¿Cómo puedes transformar la incertidumbre en oportunidad?",
         "parrafoBot": "La clave está en aprender continuamente y en permitir que la influencia de los demás moldee el resultado. Así como un jazzista improvisa sobre una melodía, un negociador exitoso debe estar atento a las señales del entorno y de su contraparte. La esencia de la negociación reside en saber moverse estratégicamente y adaptarse a las circunstancias cambiantes del proceso.",
         "style": {
@@ -22937,7 +23785,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -41662,7 +42510,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-09-12",
         "juez": "gpt-4o-mini+completar",
@@ -52837,7 +53685,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -57694,7 +58542,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -60880,7 +61728,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -73660,7 +74508,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -107119,8 +107967,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Garota de Ipanema' por su calidez y ritmo optimista, que acompaña la lucha y esperanza del libro sin robar protagonismo.",
         "candidatos": [
           {
@@ -107879,8 +108727,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su mensaje optimista, que resuena con la idea de que la actitud es clave en el camino hacia el éxito.",
         "candidatos": [
           {
@@ -108619,8 +109467,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini+rescate",
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su resonancia con la lucha y la estrategia, aunque no eleva el ánimo como se espera.",
         "candidatos": [
           {
@@ -108636,6 +109484,21 @@
             "armonia": 5,
             "rol": "resonar",
             "pie": "Una melodía icónica que evoca la lucha y la estrategia, pero carece de luz y calidez.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1590485879",
+            "cancion": "Don’t Worry Be Happy",
+            "artista": "Sol3 Mio",
+            "album": "Coming Home",
+            "genero": "Classical Crossover",
+            "dur": 238,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/55/b5/8a55b586-7541-a92f-28c1-9fbd99ac53ca/mzaf_6785436469799699810.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/dont-worry-be-happy/1590485870?i=1590485879&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d5/82/31/d58231c2-f678-fcd8-e905-530d391ee427/21UM1IM29361.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la calma y a la reflexión sobre los desafíos de la vida.",
             "frase_eco": ""
           }
         ]
@@ -109362,8 +110225,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:impulso",
         "candidatos": [
           {
@@ -110142,8 +111005,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -110175,6 +111038,21 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1466877829",
+            "cancion": "All On Me",
+            "artista": "Chris Brown",
+            "album": "Indigo",
+            "genero": "R&B/Soul",
+            "dur": 231,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/61/bc/2a61bc99-39a4-40d3-ace9-7c10d1cde0eb/mzaf_11952090811315345332.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/all-on-me/1466876988?i=1466877829&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6d/73/b7/6d73b73e-dc59-cb79-8322-39842a57aa93/886447789421.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que invita a la acción, pero su ritmo es algo genérico.",
+            "frase_eco": ""
           }
         ]
       }
@@ -110917,8 +111795,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -111687,8 +112565,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Vie en Rose' por su calidez y humor, que complementan la curiosidad y el asombro del libro.",
         "candidatos": [
           {
@@ -111704,6 +112582,36 @@
             "armonia": 7,
             "rol": "aterrizar",
             "pie": "La calidez del jazz acompaña la curiosidad y el asombro de la física.",
+            "frase_eco": "La curiosidad de un perro puede iluminar la complejidad cuántica."
+          },
+          {
+            "id": "219394007",
+            "cancion": "Dreams (with Deep Dish)",
+            "artista": "Stevie Nicks",
+            "album": "Crystal Visions... The Very Best of Stevie Nicks (Bonus Version)",
+            "genero": "Rock",
+            "dur": 226,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/62/ce/0062ce03-6647-5f86-7ea5-ffb356ee0dd6/mzaf_1381660603466448260.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dreams-with-deep-dish/219393903?i=219394007&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/8f/84/9f/8f849f4f-87e5-ca68-5512-ff0770332f25/dj.lfupbdzm.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía que evoca sueños, pero carece de la chispa necesaria para conectar con la curiosidad del libro.",
+            "frase_eco": ""
+          },
+          {
+            "id": "693711975",
+            "cancion": "The Four Seasons, Concerto No. 1 in E Major, RV 269 \"Spring\": I. Allegro",
+            "artista": "London Philharmonic Orchestra & Itzhak Perlman",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Classical",
+            "dur": 202,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/29/fe/3c29fef6-7e94-0b52-a0f2-00894fea903d/mzaf_4677941432090407905.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-four-seasons-concerto-no-1-in-e-major-rv-269/693711974?i=693711975&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/13/5c/00/135c005f-1913-2471-6930-389de64e0bde/dj.hmhugpix.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La música clásica puede acompañar la exploración de ideas complejas con ligereza.",
             "frase_eco": "La curiosidad de un perro puede iluminar la complejidad cuántica."
           }
         ]
@@ -112440,8 +113348,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-09-29",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:impulso",
         "candidatos": [
           {
@@ -113270,8 +114178,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-09-29",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Superstition' y 'Get Lucky' por su energía vibrante que refleja la intensidad y el conflicto de la rivalidad entre Apple y Google.",
         "candidatos": [
           {
@@ -113303,6 +114211,21 @@
             "rol": "abrir",
             "pie": "La energía de esta canción refleja la intensidad de la competencia entre titanes.",
             "frase_eco": "💠 ¿Qué costos ocultos se están pagando en esta lucha titánica?"
+          },
+          {
+            "id": "1445668114",
+            "cancion": "Feeling Good",
+            "artista": "Nina Simone",
+            "album": "I Put a Spell On You",
+            "genero": "Jazz",
+            "dur": 177,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/1e/4a/371e4a5b-e1ad-2538-b3ad-51ba97ba1927/mzaf_408951216543324718.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/feeling-good/1445667726?i=1445668114&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/18/db/05/18db0507-f276-d93d-a4a7-e856a3f1590a/13UAAIM08283.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "La fuerza de esta canción refleja la lucha y el renacer en el ámbito tecnológico.",
+            "frase_eco": "✨ La innovación a menudo nace del conflicto, y en este caso, es evidente."
           }
         ]
       }
@@ -120304,7 +121227,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -128119,7 +129042,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -135130,7 +136053,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-26T18:49:42.263Z",
+      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -136752,11 +137675,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 104,
-    "total": 171,
-    "last_audit": "2026-09-26T18:49:42.263Z",
-    "healing_rotation_idx": 50,
+    "next_edition_number": 105,
+    "total": 172,
+    "last_audit": "2026-09-29T14:07:00.684Z",
+    "healing_rotation_idx": 51,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
-    "last_healing_timestamp": "2026-09-26T19:01:09.238Z"
+    "last_healing_timestamp": "2026-09-29T14:20:53.551Z"
   }
 }
