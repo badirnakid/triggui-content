@@ -1,6 +1,845 @@
 {
   "libros": [
     {
+      "titulo": "Natural questions",
+      "autor": "Seneca the Younger",
+      "tagline": "",
+      "portada": "https://images-na.ssl-images-amazon.com/images/P/0674994957.01.LZZZZZZZ.jpg",
+      "portada_url": "https://images-na.ssl-images-amazon.com/images/P/0674994957.01.LZZZZZZZ.jpg",
+      "isbn": "",
+      "titulo_es": "Natural questions",
+      "titulo_en": "Naturales Quaestiones",
+      "idioma_original": "es",
+      "dimension": "Bienestar",
+      "punto": "Cero",
+      "palabras": [
+        "reflexión",
+        "serenidad",
+        "conexión",
+        "claridad"
+      ],
+      "palabras_en": [
+        "insightful",
+        "transcendent",
+        "impermanence",
+        "harmony"
+      ],
+      "frases": [
+        "🌅 Contempla el cielo y siente la vastedad del cosmos.",
+        "⏳ ¿Qué enseña la paciencia del río que fluye constante?",
+        "🗺 El bosque en calma revela secretos de armonía eterna.",
+        "🌓 La naturaleza es el espejo de nuestra existencia moral."
+      ],
+      "frases_en": [
+        "🌅 Gaze at the stars and ponder your place in the vast universe.",
+        "🏛 How does observing clouds shift your understanding of change?",
+        "🌊 See the river flow; it does not resist change, but embraces it.",
+        "🌓 Nature's lessons are timeless; we must learn to listen to them."
+      ],
+      "frases_og": [
+        "🛡 La naturaleza refleja el orden moral del universo.",
+        "🎯 Observa cómo la naturaleza enseña sin palabras.",
+        "🌱 ¿Qué nos susurra el viento sobre la vida humana?",
+        "🔮 El universo es un maestro; la moralidad, su lección."
+      ],
+      "frases_og_en": [
+        "🛡 Nature reveals truths about the universe and ourselves.",
+        "🎯 Observe nature's cycles. Embrace the lessons it offers.",
+        "🌱 What wisdom lies within the changing seasons?",
+        "🔮 In the chaos of nature, find your order."
+      ],
+      "colores": [
+        "#7EB6F1",
+        "#E89030",
+        "#1337AE",
+        "#65500B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFF0F0",
+      "tarjeta": {
+        "titulo": "La naturaleza como guía estoica",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La naturaleza como guía estoica",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La naturaleza como guía estoica",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Nature as Stoic Guide",
+        "parrafoTop": "[H]Nature, in its vastness and mystery, teaches us lessons that transcend mere observation of phenomena[/H]. It reveals the underlying order of the universe, an order that, if we learn to discern, can guide our actions and decisions. Nature is a silent teacher that reminds us of our insignificance, yet also encourages us to seek wisdom and align our lives with the moral principles that govern the cosmos.",
+        "subtitulo": "What can we learn from natural phenomena?",
+        "parrafoBot": "[H]They show us the impermanence of things, the inevitability of change[/H], and the necessity of accepting what we cannot control. Through the observation of nature, we find an analogy with our own existence, an invitation to live in harmony with the world around us.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Nature as Stoic Guide",
+        "parrafoTop": "[H]Nature, in its vastness and mystery, teaches us lessons that transcend mere observation of phenomena[/H]. It reveals the underlying order of the universe, an order that, if we learn to discern, can guide our actions and decisions. Nature is a silent teacher that reminds us of our insignificance, yet also encourages us to seek wisdom and align our lives with the moral principles that govern the cosmos.",
+        "subtitulo": "What can we learn from natural phenomena?",
+        "parrafoBot": "[H]They show us the impermanence of things, the inevitability of change[/H], and the necessity of accepting what we cannot control. Through the observation of nature, we find an analogy with our own existence, an invitation to live in harmony with the world around us.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Nature as Stoic Guide",
+        "parrafoTop": "[H]Nature, in its vastness and mystery, teaches us lessons that transcend mere observation of phenomena[/H]. It reveals the underlying order of the universe, an order that, if we learn to discern, can guide our actions and decisions. Nature is a silent teacher that reminds us of our insignificance, yet also encourages us to seek wisdom and align our lives with the moral principles that govern the cosmos.",
+        "subtitulo": "What can we learn from natural phenomena?",
+        "parrafoBot": "[H]They show us the impermanence of things, the inevitability of change[/H], and the necessity of accepting what we cannot control. Through the observation of nature, we find an analogy with our own existence, an invitation to live in harmony with the world around us.",
+        "style": {
+          "accent": "#1277E2",
+          "paper": "#EFF0F0",
+          "ink": "#17191C",
+          "border": "#8F9090"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Natural%20questions%20Seneca%20the%20Younger%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Naturales%20Quaestiones%20Seneca%20the%20Younger%20interview",
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "la conexión entre el universo y la moralidad",
+            "la consideración de la naturaleza como un maestro de vida",
+            "la exploración de la experiencia humana a través de fenómenos naturales"
+          ],
+          "key_terms": [
+            "estoicismo",
+            "naturaleza",
+            "moralidad",
+            "filosofía",
+            "episteme"
+          ],
+          "authorial_voice_notes": "La voz de Séneca es reflexiva, profunda y a menudo se mueve entre lo personal y lo universal. Su estilo es directo a la vez que filosófico, invitando al lector a la introspección."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "🛡 La naturaleza refleja el orden moral del universo.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🎯 Observa cómo la naturaleza enseña sin palabras.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌱 ¿Qué nos susurra el viento sobre la vida humana?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 El universo es un maestro; la moralidad, su lección.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🛡 Nature reveals truths about the universe and ourselves.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 Observe nature's cycles. Embrace the lessons it offers.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌱 What wisdom lies within the changing seasons?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔮 In the chaos of nature, find your order.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Contempla el cielo y siente la vastedad del cosmos.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Qué enseña la paciencia del río que fluye constante?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 El bosque en calma revela secretos de armonía eterna.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 La naturaleza es el espejo de nuestra existencia moral.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 Gaze at the stars and ponder your place in the vast universe.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🏛 How does observing clouds shift your understanding of change?",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 See the river flow; it does not resist change, but embraces it.",
+            "role_symphonic": "land",
+            "mood_axis": 0.8,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 Nature's lessons are timeless; we must learn to listen to them.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.5,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects some themes from Seneca's work, particularly the connection between nature and moral lessons, which aligns with his philosophical essays. However, it lacks specific references to Seneca's concepts, such as 'providence' or 'tranquility,' making it somewhat generic. It could apply to various philosophical texts, thus reducing its uniqueness to Seneca's work."
+        },
+        "en": {
+          "grounded_score": 0.3,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content discusses themes of nature and Stoicism, which are relevant to Seneca's philosophy, but it lacks specific references to his works or concepts from the ground truth. The phrases are generic and could apply to any philosophical or self-help book."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la naturaleza sin referencias meta.",
+          "elapsed_ms": 1125,
+          "usage": {
+            "prompt_tokens": 423,
+            "completion_tokens": 28,
+            "total_tokens": 451,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "El texto presenta ideas en primera persona sobre la naturaleza.",
+          "elapsed_ms": 1090,
+          "usage": {
+            "prompt_tokens": 404,
+            "completion_tokens": 26,
+            "total_tokens": 430,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 881,
+        "total_ms": 1125
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 221.09375,
+          "adjusted_hue": 211.09375,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": -10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.43",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7EB6F1",
+          "--palette-1": "#E89030",
+          "--palette-2": "#1337AE",
+          "--palette-3": "#65500B",
+          "--accent": "#1277E2",
+          "--accent-soft": "#1277E238",
+          "--accent-glow": "#1277E26b",
+          "--paper": "#EFF0F0",
+          "--ink": "#17191C",
+          "--border": "#8F9090",
+          "--highlight-bg": "#1069C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-10-06T18-40-10",
+      "_crono": {
+        "dia": "martes",
+        "hora": 12,
+        "franja": "tarde",
+        "energia": 0.4,
+        "modo": "supervivencia_maxima",
+        "descripcion_dia": "Martes es tensión máxima de la semana. Contenido contenedor y sobrio, no exigente.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 97600,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15810,
+          "palette": 0,
+          "content_es": 17871,
+          "judge_es": 1125,
+          "content_es_retry": 17871,
+          "judge_es_retry": 1149,
+          "content_es_escalate": 17838,
+          "content_en": 16574,
+          "judge_en": 1109,
+          "voice": 881,
+          "voice_extended": 7372,
+          "highlight_judge_es_parrafoTop": 643,
+          "highlight_judge_es_parrafoBot": 643,
+          "highlight_judge_es_parrafoBot_retry": 651,
+          "highlight_judge_en_parrafoTop": 649,
+          "highlight_judge_en_parrafoTop_retry": 651,
+          "highlight_judge_en_parrafoBot": 648,
+          "csal": 3545
+        },
+        "elapsed_ms_total": 47976,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6767,
+          "palette": 0,
+          "cover_fallback": 2306,
+          "content_es": 7958,
+          "judge_es": 1729,
+          "content_es_retry": 7437,
+          "content_en": 6682,
+          "judge_en": 1994,
+          "voice": 1125,
+          "voice_extended": 1339,
+          "highlight_judge": 6668,
+          "lens_compatibility": 1491,
+          "csal": 15107,
+          "post_processing": 23273
+        },
+        "llm_calls_count": 26,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18",
+          "gpt-4o"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.5,
+        "game-theory": 0.3,
+        "self-knowledge": 0.7,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.9,
+          "negocio": 0.1,
+          "familia": 0.1,
+          "espiritu": 0.8,
+          "relaciones": 0.2,
+          "finanzas": 0.1
+        },
+        "hawkins": 0
+      },
+      "_hawkins_range": [
+        20,
+        125
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "noche"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.3
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando busco respuestas a mis preguntas más profundas",
+          "antes de tomar una decisión importante",
+          "después de una experiencia que me ha marcado",
+          "cuando la naturaleza me inspira a reflexionar",
+          "cuando siento la necesidad de conectar con algo más grande que yo",
+          "después de una pérdida significativa",
+          "antes de enfrentar mis miedos",
+          "cuando el ruido del mundo me abruma y busco tranquilidad",
+          "cuando quiero entender mi lugar en el universo",
+          "cuando la vida me presenta dilemas morales y éticos",
+          "cuando siento que el tiempo se me escapa",
+          "cuando contemplo las maravillas de la naturaleza y su significado",
+          "después de un conflicto emocional que me deja reflexionando",
+          "cuando me siento perdido en la vida y busco dirección",
+          "antes de enfrentar una crisis personal o existencial",
+          "cuando la belleza de un paisaje me hace cuestionar la vida misma",
+          "cuando la rutina diaria me hace olvidar lo esencial",
+          "después de leer un texto que me ha impactado profundamente",
+          "cuando miro a las estrellas y me siento pequeño pero conectado al cosmos",
+          "cuando el cambio de estaciones me recuerda la impermanencia de la vida",
+          "cuando reflexiono sobre la muerte y la trascendencia.",
+          "lenguaje natural del usuario (no del libro). Ejemplo: 'cuando lo social te abruma', 'cuando no sabes cómo decir lo que sientes'. Forma t",
+          "categorizadas que un usuario usaría al escribir sobre su situación. Incluye variantes regionales (mexicano coloquial), inglés americano c",
+          "solo estos tags sin saber el título, deberías reconocer la obra. PROHIBIDO: tags genéricos como 'filosofía oriental', 'auto-ayuda', 'mindful",
+          "ados (índices 0-3), un emoji_specific que conecte con la phrase específica de ese bloque y con la obra. PROHIBIDO emojis genéricos (📘✨📊🌌). E"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "asombro",
+            "tristeza",
+            "reflexión",
+            "inspiración",
+            "confusión",
+            "tranquilidad",
+            "miedo",
+            "esperanza",
+            "soledad",
+            "curiosidad"
+          ],
+          "objetos": [
+            "cielo",
+            "río",
+            "bosque",
+            "estrella",
+            "montaña"
+          ],
+          "contextos": [
+            "naturaleza",
+            "atardecer",
+            "meditación",
+            "contemplación",
+            "soledad"
+          ],
+          "verbos": [
+            "contemplar",
+            "reflexionar",
+            "preguntar",
+            "escuchar",
+            "sentir"
+          ]
+        },
+        "concept_tags": [
+          "naturaleza y moralidad",
+          "conexión cósmica",
+          "sabiduría de la naturaleza",
+          "experiencia humana y fenómenos naturales",
+          "reflexión personal",
+          "moralidad y ética",
+          "impermanencia de la vida",
+          "sabiduría a través de la observación",
+          "contemplación del universo",
+          "existencialismo"
+        ],
+        "anti_patterns": [
+          "no sirve para quienes buscan respuestas simples y rápidas",
+          "no es un manual de autoayuda convencional",
+          "no se centra en la acción inmediata sin reflexión profunda"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌌"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌊"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌳"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🔍"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una afirmación filosófica que podría ser parte de un argumento o reflexión dentro del texto, sugiriendo voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase refleja una voz autoral que invita a la reflexión, sugiriendo una experiencia directa del autor con la naturaleza, lo que la hace parecer parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión poética que sugiere un diálogo interno del autor, típico de la voz dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase presenta una reflexión filosófica que suena como parte del contenido del libro, mostrando voz autoral y pensamiento interno."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono poético y reflexivo que sugiere una experiencia interna del personaje, lo que indica que es parte del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que parece surgir del contenido del libro, invitando a la introspección y a la conexión con el tema tratado."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase tiene un tono poético y descriptivo que sugiere una voz narrativa dentro del libro, evocando imágenes y sensaciones."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase presenta una reflexión filosófica que podría ser parte del contenido del libro, sugiriendo una voz autoral que invita a la introspección."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase expresses a philosophical insight that could be part of the narrative or thematic exploration within the book, suggesting an author's voice."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase presents a direct instruction or reflection that feels like it is part of the narrative or thematic content of a book, rather than an external commentary."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase poses a reflective question that suggests an introspective exploration typical of an author's voice within the text."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a direct message that feels like a guiding principle or insight from the author, suggesting it is part of the narrative or thematic content of the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase invites the reader to engage in a reflective moment, suggesting an introspective tone typical of narrative or poetic writing within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites the reader to engage with the content, suggesting it is part of the author's narrative or exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a poetic thought that feels like it belongs to the narrative or thematic content of a book, rather than being a commentary about the book itself."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct reflection from the author's voice, suggesting a deeper insight within the narrative."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-10-06T18:41:22.113Z",
+      "_slug": "natural-questions",
+      "_edicion_numero": 105,
+      "_musica": {
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
+        "sinfonia": "Elegiría 'The Girl from Ipanema' por su suave melodía que acompaña la reflexión sobre la naturaleza y la vida, sin robar la atención.",
+        "candidatos": [
+          {
+            "id": "1440810022",
+            "cancion": "The Girl from Ipanema",
+            "artista": "Amy Winehouse",
+            "album": "Lioness: Hidden Treasures",
+            "genero": "Pop",
+            "dur": 168,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/3e/1a/1a3e1af9-cd64-6b25-dfde-07ab073d468c/mzaf_15892471367999308755.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-girl-from-ipanema/1440809772?i=1440810022&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ec/72/7d/ec727d2b-fd16-e9ac-141a-878c1d460e28/00602527920542.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que evoca la serenidad de la naturaleza y su enseñanza sutil.",
+            "frase_eco": "🎯 Observa cómo la naturaleza enseña sin palabras."
+          },
+          {
+            "id": "6803625985",
+            "cancion": "Metamorphosis Two",
+            "artista": "Olivia Belli",
+            "album": "Philip Glass: Metamorphosis Two - Single",
+            "genero": "Crossover clásica",
+            "dur": 416,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/f3/d2/9ff3d297-33ea-3e5b-92ae-ca8141c237d0/mzaf_17232233187114986425.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/metamorphosis-two/6803625984?i=6803625985&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2c/39/09/2c390937-f9b3-f848-f176-f3ec6a7b95c7/196874697801.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "Una pieza que invita a la reflexión sobre el orden natural y la serenidad.",
+            "frase_eco": "🎯 Observa cómo la naturaleza enseña sin palabras."
+          },
+          {
+            "id": "1527347782",
+            "cancion": "3 Gymnopédies: No. 1, Lent et douloureux",
+            "artista": "Khatia Buniatishvili",
+            "album": "Labyrinth",
+            "genero": "Clásica",
+            "dur": 210,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/50/39/25503967-05be-4307-2a21-7db595056002/mzaf_2214626154528752652.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/3-gymnop%C3%A9dies-no-1-lent-et-douloureux/1527347771?i=1527347782&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f3/3b/99/f33b9926-b31a-34f7-1f2f-805f688b5bf8/886448587316.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una pieza que evoca la serenidad, pero su tono es más melancólico que el ánimo del texto.",
+            "frase_eco": ""
+          },
+          {
+            "id": "554877874",
+            "cancion": "Gymnopédies: No. 3",
+            "artista": "Valérie Milot",
+            "album": "Aquarelles (Watercolours)",
+            "genero": "Clásica",
+            "dur": 156,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2f/78/2c/2f782c82-a297-85ae-54bc-ecbd8e768c40/mzaf_17719572066560545689.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnop%C3%A9dies-no-3/554877687?i=554877874&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/12/7e/f6/127ef6cd-a1de-5486-316c-a1fbabaa4aee/887396243064.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía suave que acompaña, pero no logra iluminar el ánimo como se espera.",
+            "frase_eco": ""
+          },
+          {
+            "id": "827785257",
+            "cancion": "Gymnopedies",
+            "artista": "Joao Paulo Santos",
+            "album": "Satie: Piano Works",
+            "genero": "Clásica",
+            "dur": 745,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4a/ed/b9/4aedb9fc-cfc5-69ed-762b-808926964b49/mzaf_18036969174779739062.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnopedies/827785190?i=827785257&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/28/7c/36/287c364c-8fd3-3a37-85d2-d4b97a3af617/8712177013180.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Su belleza es innegable, pero carece de la energía necesaria para elevar el ánimo.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
+        "sinfonia": "Elegiría los videos 'El Arte de la Serenidad', '7 Principios Estoicos' y 'LA CALMA ES EL SECRETO DEL ÉXITO' para ofrecer una mezcla de aterrizaje, profundización y resonancia en torno a la filosofía de Séneca.",
+        "candidatos": [
+          {
+            "id": "9e1mqaa4vto",
+            "titulo": "7 Principios Estoicos para MANTENER La Calma | Estoicismo",
+            "canal": "Diario Estoico",
+            "dur": 1456,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "Se presentan principios estoicos que ayudan a cultivar la calma y resiliencia, resonando con la enseñanza de Séneca."
+          },
+          {
+            "id": "0inllcVApS0",
+            "titulo": "El Arte de la Serenidad: Cómo Séneca Enfrentaba la Adversidad con Fortaleza Estoica / Ciud",
+            "canal": "Ciudad Estoica ",
+            "dur": 905,
+            "armonia": 5,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "es",
+            "frase_eco": "",
+            "pie": "El video explora cómo Séneca enfrentó adversidades con serenidad, reflejando su filosofía estoica."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "Don't Believe Everything You Think",
       "autor": "Joseph Nguyen",
       "tagline": "",
@@ -154,7 +993,8 @@
             "paradigma",
             "experiencia humana"
           ],
-          "authorial_voice_notes": "La voz de Joseph Nguyen es clara y directa, enfocándose en ofrecer una nueva comprensión de la mente humana y su relación con el sufrimiento. Utiliza un tono accesible y práctico, invitando al lector a reflexionar y aplicar sus enseñanzas."
+          "authorial_voice_notes": "La voz de Joseph Nguyen es clara y directa, enfocándose en ofrecer una nueva comprensión de la mente humana y su relación con el sufrimiento. Utiliza un tono accesible y práctico, invitando al lector a reflexionar y aplicar sus enseñanzas.",
+          "authorial_voice_notes_en": "Joseph Nguyen's voice is clear and direct, focusing on offering a new understanding of the human mind and its relationship with suffering. He uses an accessible and practical tone, inviting the reader to reflect and apply his teachings."
         },
         "og_phrases_es": [
           {
@@ -813,7 +1653,8 @@
             "relacion": "invita",
             "idioma": "en",
             "frase_eco": "✨ El sufrimiento emocional es una elección, no una condena.",
-            "pie": "Nguyen explora cómo nuestras creencias sobre los pensamientos moldean nuestra realidad y cómo liberarnos de ellas."
+            "pie": "Nguyen explora cómo nuestras creencias sobre los pensamientos moldean nuestra realidad y cómo liberarnos de ellas.",
+            "pie_en": "Nguyen explores how our beliefs about thoughts shape our reality and how to free ourselves from them."
           },
           {
             "id": "2rD2BpeKY2o",
@@ -826,7 +1667,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "🔁 Identifica la raíz de tu sufrimiento. Solo así podrás liberarte.",
-            "pie": "Nguyen comparte consejos prácticos para dejar de sobrepensar y encontrar la paz interior en una conversación con Mayim Bialik."
+            "pie": "Nguyen comparte consejos prácticos para dejar de sobrepensar y encontrar la paz interior en una conversación con Mayim Bialik.",
+            "pie_en": "Nguyen shares practical tips for stopping overthinking and finding inner peace in a conversation with Mayim Bialik."
           },
           {
             "id": "FtsKCkOR0Wc",
@@ -839,7 +1681,8 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "Nguyen habla sobre la importancia de no creer todo lo que pensamos, un eco de la liberación del sufrimiento."
+            "pie": "Nguyen habla sobre la importancia de no creer todo lo que pensamos, un eco de la liberación del sufrimiento.",
+            "pie_en": "Nguyen talks about the importance of not believing everything we think, echoing the liberation from suffering."
           }
         ]
       },
@@ -8489,7 +9332,7 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud, y así lograr un entendimiento profundo de cómo manejar nuestra relación con la tecnología de manera que favorezca nuestra salud y bienestar a largo plazo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -8501,7 +9344,7 @@
       },
       "tarjeta_base": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud, y así lograr un entendimiento profundo de cómo manejar nuestra relación con la tecnología de manera que favorezca nuestra salud y bienestar a largo plazo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -8513,7 +9356,7 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Reducir la exposición a ondas electromagnéticas",
-        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud.",
+        "parrafoTop": "Las ondas electromagnéticas están presentes en cada rincón de nuestro entorno, desde los dispositivos que usamos hasta la infraestructura que nos rodea. [H]Es crucial comprender cómo estos campos pueden afectar nuestra salud para poder[/H] tomar decisiones informadas sobre nuestra exposición. Este conocimiento no solo nos empodera para entender los riesgos, sino que también nos permite implementar estrategias para reducir la exposición a la tecnología en nuestra vida cotidiana y mejorar nuestra salud y bienestar, lo que es fundamental para vivir de manera más saludable y consciente en un mundo lleno de tecnología y minimizar los efectos negativos de las ondas electromagnéticas en nuestra salud, así como adoptar hábitos que promuevan un entorno más seguro y saludable, y así lograr un equilibrio que favorezca nuestro bienestar general, lo que incluye la práctica de técnicas de reducción de exposición y la creación de espacios más saludables en nuestros hogares y lugares de trabajo, así como la importancia de educarnos sobre los efectos de las ondas electromagnéticas y cómo podemos protegernos de manera efectiva en nuestra vida diaria, lo que nos permitirá vivir con mayor tranquilidad y salud en un entorno cada vez más tecnológico, y así contribuir a un futuro donde la tecnología y la salud coexistan de manera armónica, lo que implica un compromiso constante con nuestra salud y la búsqueda de un equilibrio entre el uso de la tecnología y el bienestar personal, así como la necesidad de estar informados sobre las mejores prácticas para mitigar los riesgos asociados a la exposición a las ondas electromagnéticas en nuestra vida diaria, y así poder disfrutar de los beneficios de la tecnología sin comprometer nuestra salud, y así lograr un entendimiento profundo de cómo manejar nuestra relación con la tecnología de manera que favorezca nuestra salud y bienestar a largo plazo.",
         "subtitulo": "¿Cómo podemos atenuar su impacto diario?",
         "parrafoBot": "[H]Identificar las fuentes de estas ondas y ser conscientes de su efecto es el primer paso[/H]. Reducir nuestra exposición en el hogar y en el trabajo no solo es posible, sino necesario para mantener nuestro bienestar integral.",
         "style": {
@@ -10096,7 +10939,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -10108,7 +10951,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -10120,7 +10963,7 @@
         "titulo": "Decodificando la Atracción Femenina",
         "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -11774,7 +12617,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas, y donde cada reflexión te acerque más a tu propósito y a la vida que realmente deseas vivir.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas, y donde cada reflexión te acerque más a tu propósito y a la vida que realmente deseas vivir, permitiéndote así vivir plenamente y con propósito en cada instante.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -23789,7 +24632,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -42514,7 +43357,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-09-12",
         "juez": "gpt-4o-mini+completar",
@@ -53689,7 +54532,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -58546,7 +59389,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -61732,7 +62575,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -74512,7 +75355,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -116575,8 +117418,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-06",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -116608,6 +117451,36 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "308217788",
+            "cancion": "What a Wonderful World",
+            "artista": "John Temple",
+            "album": "Saxophone Favourites, Vol. 1",
+            "genero": "Jazz",
+            "dur": 141,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/c9/46/a6c946c9-42e2-a0f7-d47e-20be78fe68eb/mzaf_18026628845661465015.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/what-a-wonderful-world/308217760?i=308217788&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/32/74/5332747a-0793-ac43-37fe-878aae5c36fe/mzi.dqgiiztz.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "resonar",
+            "pie": "La belleza de la vida se revela en cada paso hacia nuestros sueños.",
+            "frase_eco": "✨ Reconoce el poder de la autodisciplina: es tu aliado en la búsqueda de oportunidades de éxito y el cumplimiento de tus propósitos."
+          },
+          {
+            "id": "1281651238",
+            "cancion": "The Four Seasons - Violin Concerto in E Major, Op. 8, No. 1, RV 269 \"La primavera\": I. All",
+            "artista": "Passionata Symphony Orchestra",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Era barroca",
+            "dur": 215,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/9f/9e/339f9e87-bf3e-d7bb-be09-08c407e5cdb6/mzaf_11238152910359272548.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-four-seasons-violin-concerto-in-e-major-op-8-no-1/1281651235?i=1281651238&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fe/0c/c5/fe0cc550-939c-4569-6970-ad6fd804e3cc/4050215296190.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La energía de esta pieza acompaña el proceso de autodisciplina y crecimiento personal.",
+            "frase_eco": "🧭 Cuando decides cultivar la autodisciplina, comienzas a ver cómo tus sueños toman forma y se convierten en realidades palpables."
           }
         ]
       }
@@ -117350,8 +118223,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-06",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -117383,6 +118256,36 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1700436093",
+            "cancion": "String Quartet in G Minor, Op. 27: III. Intermezzo. Allegro molto marcato - Piu vivo e sch",
+            "artista": "Hagen Quartett",
+            "album": "introspective | retrospective",
+            "genero": "Clásica",
+            "dur": 381,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3d/ec/5c/3dec5c56-f19c-5c99-fbdb-036af4200dc4/mzaf_10791489189240181088.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/string-quartet-in-g-minor-op-27-iii-intermezzo-allegro/1700436045?i=1700436093&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ca/39/db/ca39dbf5-fe9f-faa0-1bee-861ca4caa39c/23UMGIM82711.rgb.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Intermezzo que suena bello, pero carece de la energía necesaria para acompañar el texto.",
+            "frase_eco": ""
+          },
+          {
+            "id": "6765696879",
+            "cancion": "Sonata for Violin and Piano No. 3 in C Minor, Op. 45: 2. Allegretto Espressivo Alla Romanz",
+            "artista": "Florian Verweij & Emma Roijackers",
+            "album": "VIRTUOOS | Emma Roijackers & Florian Verweij | AVROTROS - Single",
+            "genero": "Clásica",
+            "dur": 418,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/6a/44/476a4497-874b-8c75-d9bf-27acf0a911b2/mzaf_14778832798090438969.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sonata-for-violin-and-piano-no-3-in-c-minor-op-45-2/1896040995?i=6765696879&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/05/9f/82059f58-96d7-67ef-840b-d2b6a14a36de/8718521150648.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una sonata que, aunque emotiva, no logra conectar con el ánimo de la obra.",
+            "frase_eco": ""
           }
         ]
       }
@@ -118131,8 +119034,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Better Together' por su tono cálido y reflexivo, que acompaña la introspección del libro sin robar protagonismo.",
         "candidatos": [
           {
@@ -118890,8 +119793,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Put It All on Me' por su mensaje de conexión y compromiso, que resuena con la idea de fortalecer la marca personal en LinkedIn.",
         "candidatos": [
           {
@@ -118923,6 +119826,21 @@
             "rol": "profundizar",
             "pie": "Una melodía que invita a reflexionar sobre las conexiones que creamos.",
             "frase_eco": "🔁 Cada interacción que tengas en esta plataforma es una oportunidad para fortalecer tu marca personal."
+          },
+          {
+            "id": "1440098716",
+            "cancion": "Take The \"A\" Train (feat. Duke Ellington and His Orchestra)",
+            "artista": "Ella Fitzgerald",
+            "album": "Ella Fitzgerald Sings: The Duke Ellington Songbook (Expanded Edition)",
+            "genero": "Jazz",
+            "dur": 402,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/84/06/a4840696-0c78-1fec-13f5-7d872ebcd4c4/mzaf_1738834269256272654.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/take-the-a-train-feat-duke-ellington-and-his-orchestra/1440098385?i=1440098716&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5d/72/0c/5d720c85-aea2-5389-e372-56118febe10e/00602567848943.rgb.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "La energía del jazz invita a reflexionar sobre nuestra autenticidad profesional.",
+            "frase_eco": "⚓ ¿Tu perfil habla de quién eres realmente?"
           }
         ]
       }
@@ -119654,8 +120572,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Upside Down' por su energía positiva y su capacidad de abrir el ánimo, perfecta para acompañar la lectura.",
         "candidatos": [
           {
@@ -119687,6 +120605,21 @@
             "rol": "resonar",
             "pie": "Un jazz vibrante que invita a aprovechar cada oportunidad en el camino hacia el éxito.",
             "frase_eco": "Las oportunidades son para quienes se preparan y saben cerrar tratos."
+          },
+          {
+            "id": "1818888779",
+            "cancion": "HAPPY",
+            "artista": "Ye",
+            "album": "DONDA 2",
+            "genero": "Hip-Hop/Rap",
+            "dur": 211,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/26/5c/bd265cef-ed84-8a28-d809-0ecfeeef71df/mzaf_2528311099705781610.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/happy/1818888557?i=1818888779&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/fd/7f/befd7f1d-9764-766f-f041-7a7f8654892a/749912.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una celebración de la felicidad que invita a dar pasos audaces hacia el éxito.",
+            "frase_eco": "🌓 Hoy es el día perfecto para reiniciar tu momentum y dar ese gran paso adelante."
           }
         ]
       }
@@ -120431,8 +121364,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-06",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -120464,6 +121397,36 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "376076608",
+            "cancion": "Café 1930",
+            "artista": "José Cristian Garreffa & Eduardo Isaac",
+            "album": "Astor Piazzolla Historia del Tango",
+            "genero": "Música latina",
+            "dur": 412,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/63/8c/36/638c3693-089c-daa5-6e3c-a3d10056c86f/mzaf_397910029837374171.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/caf%C3%A9-1930/376076541?i=376076608&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/42/1d/02/mzi.ejdlodaq.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "El tango tiene un ritmo vibrante que puede inspirar, aunque no sea el enfoque principal del libro.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1501586617",
+            "cancion": "Spring - Frühlingserwachen",
+            "artista": "Florian Christl",
+            "album": "Episodes",
+            "genero": "Crossover clásica",
+            "dur": 183,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/78/38/d578382b-1822-3458-f446-c729724fd625/mzaf_9840480527118338786.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/spring-fr%C3%BChlingserwachen/1501586496?i=1501586617&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/88/eb/d9/88ebd9f6-74cb-fe37-303b-2e4cacd56753/886447941706.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Una melodía suave que acompaña, pero carece de la energía transformadora que se busca.",
+            "frase_eco": ""
           }
         ]
       }
@@ -121231,10 +122194,10 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-06",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -122837,8 +123800,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-06",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:impulso",
         "candidatos": [
           {
@@ -123619,8 +124582,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-06",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'The 59th Street Bridge Song (Feelin' Groovy)' por su tono optimista y su capacidad de evocar conexiones significativas, alineándose con el mensaje del libro.",
         "candidatos": [
           {
@@ -129046,7 +130009,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -136057,7 +137020,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-09-29T14:07:00.684Z",
+      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -137679,11 +138642,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 105,
-    "total": 172,
-    "last_audit": "2026-09-29T14:07:00.684Z",
-    "healing_rotation_idx": 51,
+    "next_edition_number": 106,
+    "total": 173,
+    "last_audit": "2026-10-06T18:41:55.930Z",
+    "healing_rotation_idx": 52,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
-    "last_healing_timestamp": "2026-09-29T14:20:53.551Z"
+    "last_healing_timestamp": "2026-10-06T18:57:04.023Z"
   }
 }
