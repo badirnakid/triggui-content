@@ -1,6 +1,839 @@
 {
   "libros": [
     {
+      "titulo": "What We Owe the Future",
+      "autor": "William MacAskill",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/dc/13/ff/dc13ff11-6f05-9ad6-048e-54c562af4b43/9781541618633.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/dc/13/ff/dc13ff11-6f05-9ad6-048e-54c562af4b43/9781541618633.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "What We Owe the Future",
+      "titulo_en": "What We Owe the Future",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "urgencia",
+        "responsabilidad",
+        "esperanza",
+        "progreso"
+      ],
+      "palabras_en": [
+        "urgent",
+        "responsibility",
+        "hope",
+        "legacy"
+      ],
+      "frases": [
+        "🕰 Reflexiona sobre el impacto de una acción pequeña hoy que altere el futuro.",
+        "🌌 ¿Qué legado deseas dejar para las generaciones futuras?",
+        "👁 Imagina un mundo lleno de inteligencia digital coexistiendo con la humanidad.",
+        "🔔 Las decisiones de hoy son las semillas del mañana."
+      ],
+      "frases_en": [
+        "🔭 Visualize a future where your choices today build a better world.",
+        "🌓 How will your decisions today echo in the lives of generations yet to come?",
+        "🚶 Imagine a civilization resilient in the face of collapse, thriving in moral progress.",
+        "🗺 The future is shaped by the choices we make today, not just the ones we avoid."
+      ],
+      "frases_og": [
+        "🔍 La prioridad moral es garantizar un futuro donde todos prosperen.",
+        "💠 ¿Cuántas decisiones tomamos sin pensar en su impacto a largo plazo?",
+        "✨ Preparar a las futuras generaciones es el legado que debemos construir.",
+        "⚓ Actúa ahora, porque el futuro es una construcción colectiva."
+      ],
+      "frases_og_en": [
+        "🔍 We find ourselves at a crossroads where embracing longtermism becomes not just a choice, but an ethical obligation we owe to generations yet unborn.",
+        "💠 Embrace the challenge of shaping a better tomorrow.",
+        "✨ What world do we want to leave for our descendants?",
+        "⚓ Every action today sends ripples into the future."
+      ],
+      "colores": [
+        "#7E8AF1",
+        "#E8D530",
+        "#2A13AE",
+        "#58650B"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#EFEFF0",
+      "tarjeta": {
+        "titulo": "La moral del futuro que construimos",
+        "parrafoTop": "[H]El longtermism no solo es una teoría, es una necesidad imperiosa[/H] ante el colapso potencial de nuestra civilización. Cada decisión que tomamos hoy tiene el poder de moldear el futuro y garantizar que las generaciones venideras no solo sobrevivan, sino que prosperen. Este enfoque ético radical nos invita a ampliar nuestra perspectiva y considerar cómo nuestras acciones pueden influir en el progreso moral y tecnológico que beneficiará a las generaciones futuras.",
+        "subtitulo": "¿Estamos listos para asumir la responsabilidad?",
+        "parrafoBot": "La idea de que nuestras acciones hoy determinan el destino de la humanidad en el futuro debe convertirnos en agentes activos del progreso moral. No se trata simplemente de evitar catástrofes, sino de fomentar un mundo donde la justicia y el longtermism sean prioridades morales clave para garantizar un futuro donde la inteligencia digital coexista con la humanidad.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "La moral del futuro que construimos",
+        "parrafoTop": "[H]El longtermism no solo es una teoría, es una necesidad imperiosa[/H] ante el colapso potencial de nuestra civilización. Cada decisión que tomamos hoy tiene el poder de moldear el futuro y garantizar que las generaciones venideras no solo sobrevivan, sino que prosperen. Este enfoque ético radical nos invita a ampliar nuestra perspectiva y considerar cómo nuestras acciones pueden influir en el progreso moral y tecnológico que beneficiará a las generaciones futuras.",
+        "subtitulo": "¿Estamos listos para asumir la responsabilidad?",
+        "parrafoBot": "La idea de que nuestras acciones hoy determinan el destino de la humanidad en el futuro debe convertirnos en agentes activos del progreso moral. No se trata simplemente de evitar catástrofes, sino de fomentar un mundo donde la justicia y el longtermism sean prioridades morales clave para garantizar un futuro donde la inteligencia digital coexista con la humanidad.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "La moral del futuro que construimos",
+        "parrafoTop": "[H]El longtermism no solo es una teoría, es una necesidad imperiosa[/H] ante el colapso potencial de nuestra civilización. Cada decisión que tomamos hoy tiene el poder de moldear el futuro y garantizar que las generaciones venideras no solo sobrevivan, sino que prosperen. Este enfoque ético radical nos invita a ampliar nuestra perspectiva y considerar cómo nuestras acciones pueden influir en el progreso moral y tecnológico que beneficiará a las generaciones futuras.",
+        "subtitulo": "¿Estamos listos para asumir la responsabilidad?",
+        "parrafoBot": "La idea de que nuestras acciones hoy determinan el destino de la humanidad en el futuro debe convertirnos en agentes activos del progreso moral. No se trata simplemente de evitar catástrofes, sino de fomentar un mundo donde la justicia y el longtermism sean prioridades morales clave para garantizar un futuro donde la inteligencia digital coexista con la humanidad.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Morality of Our Future",
+        "parrafoTop": "Longtermism is not merely a theory; it is an urgent necessity in the face of potential collapse of our civilization. Every decision we make today holds the power to shape the future and ensure that upcoming generations not only survive but thrive. [H]This radical ethical approach invites us to expand the circle of our moral responsibility towards future generations, emphasizing the importance of longtermism as a priority moral key in preparing for the challenges ahead.[/H]",
+        "subtitulo": "Are we ready to take responsibility?",
+        "parrafoBot": "[H]The notion that our actions today determine the fate of humanity in the future should compel us to become active agents of moral progress.[/H]. It is not merely about preventing catastrophes; it is about nurturing a world where justice, hope, and beauty are legacies inherited by our descendants.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Morality of Our Future",
+        "parrafoTop": "Longtermism is not merely a theory; it is an urgent necessity in the face of potential collapse of our civilization. Every decision we make today holds the power to shape the future and ensure that upcoming generations not only survive but thrive. [H]This radical ethical approach invites us to expand the circle of our moral responsibility towards future generations, emphasizing the importance of longtermism as a priority moral key in preparing for the challenges ahead.[/H]",
+        "subtitulo": "Are we ready to take responsibility?",
+        "parrafoBot": "[H]The notion that our actions today determine the fate of humanity in the future should compel us to become active agents of moral progress.[/H]. It is not merely about preventing catastrophes; it is about nurturing a world where justice, hope, and beauty are legacies inherited by our descendants.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Morality of Our Future",
+        "parrafoTop": "Longtermism is not merely a theory; it is an urgent necessity in the face of potential collapse of our civilization. Every decision we make today holds the power to shape the future and ensure that upcoming generations not only survive but thrive. [H]This radical ethical approach invites us to expand the circle of our moral responsibility towards future generations, emphasizing the importance of longtermism as a priority moral key in preparing for the challenges ahead.[/H]",
+        "subtitulo": "Are we ready to take responsibility?",
+        "parrafoBot": "[H]The notion that our actions today determine the fate of humanity in the future should compel us to become active agents of moral progress.[/H]. It is not merely about preventing catastrophes; it is about nurturing a world where justice, hope, and beauty are legacies inherited by our descendants.",
+        "style": {
+          "accent": "#1227E2",
+          "paper": "#EFEFF0",
+          "ink": "#17181C",
+          "border": "#8F8F90"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+What%20We%20Owe%20the%20Future%20William%20MacAskill%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+What%20We%20Owe%20the%20Future%20William%20MacAskill%20interview",
+      "_animo_promedio": 0.46,
+      "_valor_predominante": "espiritualidad",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "longtermism como prioridad moral clave",
+            "la importancia de influir positivamente en el futuro lejano",
+            "la necesidad de preparar a las generaciones futuras ante colapsos y retos éticos",
+            "nuestra responsabilidad en el avance del progreso moral y tecnológico",
+            "la visión de un futuro donde la inteligencia digital coexiste con la humanidad"
+          ],
+          "key_terms": [
+            "longtermism",
+            "moral progress",
+            "civilization resilience",
+            "future generations",
+            "digital beings"
+          ],
+          "authorial_voice_notes": "William MacAskill utiliza un tono filosófico y analítico, abarcando implicaciones éticas complejas y un enfoque racional sobre las decisiones que debemos tomar hoy para influir positivamente en el futuro."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 La prioridad moral es garantizar un futuro donde todos prosperen.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "💠 ¿Cuántas decisiones tomamos sin pensar en su impacto a largo plazo?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ Preparar a las futuras generaciones es el legado que debemos construir.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Actúa ahora, porque el futuro es una construcción colectiva.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 We find ourselves at a crossroads where embracing longtermism becomes not just a choice, but an ethical obligation we owe to generations yet unborn.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Embrace the challenge of shaping a better tomorrow.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ What world do we want to leave for our descendants?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Every action today sends ripples into the future.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 Reflexiona sobre el impacto de una acción pequeña hoy que altere el futuro.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 ¿Qué legado deseas dejar para las generaciones futuras?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.3,
+            "eje_valor": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Imagina un mundo lleno de inteligencia digital coexistiendo con la humanidad.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 Las decisiones de hoy son las semillas del mañana.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Visualize a future where your choices today build a better world.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "🌓 How will your decisions today echo in the lives of generations yet to come?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_financiera",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "movement",
+            "phrase": "🚶 Imagine a civilization resilient in the face of collapse, thriving in moral progress.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "space",
+            "phrase": "🗺 The future is shaped by the choices we make today, not just the ones we avoid.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 1,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The generated content directly reflects key concepts from the book, such as longtermism, the moral implications of our actions today, and the focus on ensuring a thriving future for generations to come. Phrases like 'cada decisión que tomamos hoy' and 'legados heredados por nuestros descendientes' are specific to the book's themes, making it clear that the content is anchored to the ground truth."
+        },
+        "en": {
+          "grounded_score": 0.8,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": true,
+          "reason": "The content closely aligns with the themes of longtermism and moral responsibility highlighted in the ground truth. It emphasizes the impact of present decisions on future generations, echoing the book's core message. However, it lacks some specific terminology from the original synopsis, which prevents a perfect score."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre el futuro sin referencias externas.",
+          "elapsed_ms": 883,
+          "usage": {
+            "prompt_tokens": 425,
+            "completion_tokens": 28,
+            "total_tokens": 453,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa y reflexiones sobre la moralidad del futuro.",
+          "elapsed_ms": 873,
+          "usage": {
+            "prompt_tokens": 406,
+            "completion_tokens": 28,
+            "total_tokens": 434,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 887,
+        "total_ms": 883
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 223.90625,
+          "adjusted_hue": 233.90625,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 10,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.44",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#7E8AF1",
+          "--palette-1": "#E8D530",
+          "--palette-2": "#2A13AE",
+          "--palette-3": "#58650B",
+          "--accent": "#1227E2",
+          "--accent-soft": "#1227E238",
+          "--accent-glow": "#1227E26b",
+          "--paper": "#EFEFF0",
+          "--ink": "#17181C",
+          "--border": "#8F8F90",
+          "--highlight-bg": "#1022C7d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_es_parrafoBot_residual_warning",
+          "highlights_auto_corrected_v3.7: 4 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-10-11T04-34-02",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 22,
+        "franja": "noche",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 68356,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 15796,
+          "palette": 0,
+          "content_es": 17779,
+          "judge_es": 1038,
+          "content_en": 16509,
+          "judge_en": 1030,
+          "voice": 887,
+          "voice_extended": 15317,
+          "highlight_judge_es_parrafoTop": 648,
+          "highlight_judge_es_parrafoTop_retry": 643,
+          "highlight_judge_es_parrafoBot": 653,
+          "highlight_judge_es_parrafoBot_retry": 661,
+          "highlight_judge_en_parrafoTop": 665,
+          "highlight_judge_en_parrafoTop_retry": 636,
+          "highlight_judge_en_parrafoBot": 647,
+          "highlight_judge_en_parrafoBot_retry": 658,
+          "csal": 2840
+        },
+        "elapsed_ms_total": 32085,
+        "elapsed_ms_by_phase": {
+          "grounding": 3,
+          "anchors": 5604,
+          "palette": 0,
+          "cover_fallback": 1695,
+          "content_es": 9296,
+          "judge_es": 1958,
+          "content_en": 8099,
+          "judge_en": 1232,
+          "voice": 883,
+          "voice_extended": 3311,
+          "highlight_judge": 6268,
+          "lens_compatibility": 1679,
+          "csal": 39808,
+          "post_processing": 47763
+        },
+        "llm_calls_count": 40,
+        "models_used": [
+          "gpt-4o-mini-2024-07-18"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 4,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_es_parrafoBot_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0.7,
+        "self-knowledge": 0.3,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.2,
+          "familia": 0.3,
+          "espiritu": 0.6,
+          "relaciones": 0.4,
+          "finanzas": 0.2
+        },
+        "hawkins": 0.5
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando piensas en el impacto que tus decisiones tienen en el futuro",
+          "antes de tomar una decisión importante que podría afectar a tus hijos o nietos",
+          "cuando te preguntas si estás haciendo lo suficiente para combatir el cambio climático",
+          "después de leer sobre avances tecnológicos que podrían cambiar la sociedad",
+          "cuando sientes que el ritmo del progreso moral se está estancando",
+          "antes de una conversación sobre el futuro del planeta",
+          "cuando te preocupas por cómo será el mundo dentro de cien años",
+          "después de ver una película sobre el futuro de la humanidad",
+          "cuando te sientes impotente ante los grandes problemas globales",
+          "cuando reflexionas sobre el legado que dejarás",
+          "después de un evento climático extremo que te hace pensar en el cambio climático",
+          "cuando te enfrentas a dilemas éticos en tu carrera profesional",
+          "después de una charla inspiradora sobre sostenibilidad",
+          "cuando te sientes responsable de contribuir a un futuro mejor",
+          "antes de participar en una manifestación por el medio ambiente",
+          "cuando lees sobre inteligencia artificial y su impacto en el empleo",
+          "cuando te preguntas sobre la posibilidad de un colapso social",
+          "después de una discusión sobre la ética de la biotecnología",
+          "cuando sientes que la sociedad no avanza moralmente",
+          "cuando reflexionas sobre la posibilidad de la extinción humana",
+          "cuando te preocupa la desigualdad intergeneracional",
+          "después de un debate sobre el futuro de la democracia",
+          "cuando te preguntas cómo se verá la educación en el futuro",
+          "antes de invertir en proyectos de energía renovable",
+          "cuando discutes sobre el equilibrio entre tecnología y ética",
+          "cuando te preocupa la pérdida de biodiversidad en el planeta",
+          "cuando piensas en el desarrollo de ciudades sostenibles",
+          "después de un desastre natural que te hace pensar en la resiliencia",
+          "cuando te sientes inspirado por líderes que promueven el progreso moral",
+          "cuando te preguntas si la humanidad está en el camino correcto"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "preocupación",
+            "esperanza",
+            "responsabilidad",
+            "ansiedad",
+            "inspiración",
+            "temor",
+            "determinación",
+            "culpa",
+            "curiosidad",
+            "alivio"
+          ],
+          "objetos": [
+            "futuro",
+            "legado",
+            "inteligencia artificial",
+            "cambio climático",
+            "éticas",
+            "civilización",
+            "tecnología",
+            "colapso",
+            "progreso moral",
+            "generaciones futuras"
+          ],
+          "contextos": [
+            "reuniones familiares",
+            "debates políticos",
+            "conferencias sobre sosteniblid",
+            "aulas universitarias",
+            "manifestaciones ambientales",
+            "charlas de TED",
+            "sesiones de planeación",
+            "documentales",
+            "discusiones filosóficas",
+            "foros sobre tecnología"
+          ],
+          "verbos": [
+            "reflexionar",
+            "influir",
+            "preparar",
+            "asegurar",
+            "proteger",
+            "coexistir",
+            "decidir",
+            "imaginar",
+            "anticipar",
+            "prevenir"
+          ]
+        },
+        "concept_tags": [
+          "longtermism",
+          "progreso moral",
+          "inteligencia digital",
+          "colapso civilizacional",
+          "influencia en el futuro",
+          "responsabilidad intergeneracional",
+          "ética del futuro",
+          "resiliencia social",
+          "avances tecnológicos",
+          "supervivencia humana"
+        ],
+        "anti_patterns": [
+          "cuando buscas una guía práctica para la vida diaria",
+          "cuando necesitas consejos sobre relaciones personales",
+          "si buscas historias de ficción",
+          "si esperas una crítica política inmediata",
+          "cuando buscas técnicas de meditación"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🏛️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🤖"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🌱"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una idea que podría ser parte de un argumento o reflexión dentro del libro, sugiriendo una voz autoral."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase plantea una reflexión que podría estar en el contexto de un libro, invitando al lector a considerar sus decisiones."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase expresa una reflexión que podría estar en el contexto del libro, sugiriendo una voz autoral que invita a la acción."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta un mensaje directo y reflexivo que sugiere una voz autoral, como si el autor estuviera hablando directamente al lector dentro del contexto del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase invita a la reflexión y parece ser un consejo o pensamiento que podría estar presente en el desarrollo del contenido del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase plantea una reflexión personal que podría estar en el contexto de un diálogo o monólogo dentro del libro, invitando al lector a la introspección."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase invita al lector a imaginar un escenario, lo que sugiere que es parte de una narrativa o reflexión dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase presenta una reflexión que podría ser parte de un discurso o narración dentro del libro, sugiriendo una voz autoral."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical reflection that feels like a direct voice from the author, discussing a concept within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase encourages action and reflects a motivational tone typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase poses a reflective question that suggests an introspective thought typical of an author's voice within the narrative."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The phrase expresses a philosophical idea that feels like a direct thought from the author, fitting within the narrative or thematic content of a book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase encourages the reader to imagine a scenario, suggesting an introspective moment typical of narrative or motivational writing within a book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase poses a reflective question that invites introspection, suggesting it is part of the narrative or thematic exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a vivid scenario that feels like a direct thought or description from the narrative, suggesting an imaginative exploration within the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The phrase presents a philosophical reflection that feels like a direct thought from the author, fitting within the narrative of a book."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-10-11T04:35:22.672Z",
+      "_slug": "what-we-owe-the-future",
+      "_edicion_numero": 106,
+      "_musica": {
+        "resuelto_el": "2026-10-10",
+        "juez": "gpt-4o-mini+completar",
+        "sinfonia": "Elegiría 'Spring' de Vivaldi por su energía vibrante que invita a la reflexión, y 'Dance of the Knights' por su grandeza, aunque menos cálida.",
+        "candidatos": [
+          {
+            "id": "351405232",
+            "cancion": "Spring (\"La Primavera\") Concerto In e Major, Op. 8, No. 1: I. Allegro",
+            "artista": "Pinchas Zukerman & The Saint Paul Chamber Orchestra",
+            "album": "Vivaldi: the Four Seasons",
+            "genero": "Clásica",
+            "dur": 218,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/ae/5a/46ae5af3-528b-3b2d-7f98-b032227401eb/mzaf_4915139058691040429.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/spring-la-primavera-concerto-in-e-major-op-8-no-1-i-allegro/351405227?i=351405232&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/6e/d3/c6/mzi.ktgleyse.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "La energía vibrante de esta pieza invita a reflexionar sobre el futuro que construimos hoy.",
+            "frase_eco": "💠 ¿Cuántas decisiones tomamos sin pensar en su impacto a largo plazo?"
+          },
+          {
+            "id": "1477160662",
+            "cancion": "Peer Gynt Suite n.º 1 op. 46: I. La mañana",
+            "artista": "WDR Sinfonieorchester Köln & Eivind Aadland",
+            "album": "Grieg: Complete Symphonic Works",
+            "genero": "Clásica",
+            "dur": 244,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/53/fa/9c/53fa9c47-6137-36f9-bf0f-b4d6a59d762e/mzaf_11161459170386639982.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peer-gynt-suite-n-%C2%BA-1-op-46-i-la-ma%C3%B1ana/1477160638?i=1477160662&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/51/05/de/5105de80-5621-cc3c-7083-6e29b4cb3172/cover.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "aterrizar",
+            "pie": "La música evoca un nuevo amanecer, ideal para reflexionar sobre el futuro que queremos construir.",
+            "frase_eco": "🔍 La prioridad moral es garantizar un futuro donde todos prosperen."
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-10-10",
+        "juez": "gpt-4o-mini",
+        "sinfonia": "Elegiría los videos 'What We Owe the Future: In Conversation with William MacAskill', 'Moral Philosopher Will MacAskill on What We Owe The Future' y 'BetterPod episode 14' por su enfoque en el longtermism y la reflexión sobre el impacto de",
+        "candidatos": [
+          {
+            "id": "shGhMUbdDc4",
+            "titulo": "What We Owe the Future: In Conversation with William MacAskill | LSE Event",
+            "canal": "LSE",
+            "dur": 5430,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🔍 La prioridad moral es garantizar un futuro donde todos prosperen.",
+            "pie": "MacAskill discute su libro y la importancia del longtermism, enfatizando decisiones morales que afectan a generaciones futuras."
+          },
+          {
+            "id": "YkdI8ztqWZc",
+            "titulo": "Moral Philosopher Will MacAskill on What We Owe The Future",
+            "canal": "Ali Abdaal – Lifestyle Business Academy",
+            "dur": 10365,
+            "armonia": 8,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "💠 ¿Cuántas decisiones tomamos sin pensar en su impacto a largo plazo?",
+            "pie": "MacAskill explora cómo nuestras decisiones actuales impactan a las futuras generaciones, invitando a reflexionar sobre el legado que…"
+          },
+          {
+            "id": "TiT981Ula1o",
+            "titulo": "BetterPod episode 14: William MacAskill explains what we owe the future [PODCAST]",
+            "canal": "Big Issue",
+            "dur": 1706,
+            "armonia": 7,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "✨ Preparar a las futuras generaciones es el legado que debemos construir.",
+            "pie": "En este podcast, se reflexiona sobre cómo el libro de MacAskill está moldeando debates éticos sobre el futuro y nuestras acciones hoy."
+          }
+        ]
+      }
+    },
+    {
       "titulo": "Natural questions",
       "autor": "Seneca the Younger",
       "tagline": "",
@@ -63,9 +896,9 @@
       "fondo": "#EFF0F0",
       "tarjeta": {
         "titulo": "La naturaleza como guía estoica",
-        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma y nos invita a reflexionar sobre nuestra conexión con el universo y la filosofía estoica que nos guía en nuestra búsqueda de significado.",
         "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
-        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad, que nos enseña a vivir en armonía con lo que es y a entender que la naturaleza es un maestro de vida en nuestra búsqueda de la verdad y la moralidad.",
         "style": {
           "accent": "#1277E2",
           "paper": "#EFF0F0",
@@ -75,9 +908,9 @@
       },
       "tarjeta_base": {
         "titulo": "La naturaleza como guía estoica",
-        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma y nos invita a reflexionar sobre nuestra conexión con el universo y la filosofía estoica que nos guía en nuestra búsqueda de significado.",
         "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
-        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad, que nos enseña a vivir en armonía con lo que es y a entender que la naturaleza es un maestro de vida en nuestra búsqueda de la verdad y la moralidad.",
         "style": {
           "accent": "#1277E2",
           "paper": "#EFF0F0",
@@ -87,9 +920,9 @@
       },
       "tarjeta_presentacion": {
         "titulo": "La naturaleza como guía estoica",
-        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma.",
+        "parrafoTop": "La naturaleza, en su vastedad y misterio, nos enseña lecciones que trascienden la mera observación de fenómenos. Nos revela el orden subyacente del universo, un orden que, si aprendemos a discernir, puede guiar nuestras acciones y decisiones. [H]La naturaleza es un maestro silencioso que nos recuerda la insignificancia[/H] de nuestra existencia en el vasto cosmos y la importancia de vivir en armonía con sus principios, ya que al hacerlo, nos alineamos con la moralidad que emana de la naturaleza misma y nos invita a reflexionar sobre nuestra conexión con el universo y la filosofía estoica que nos guía en nuestra búsqueda de significado.",
         "subtitulo": "¿Qué podemos aprender de los fenómenos naturales?",
-        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad.",
+        "parrafoBot": "Ellos nos muestran la impermanencia de las cosas, la inevitabilidad del cambio y la necesidad de aceptar lo que no podemos controlar. A través de la observación de la naturaleza, encontramos una analogía con nuestra propia existencia y la conexión entre el universo y la moralidad, que nos enseña a vivir en armonía con lo que es y a entender que la naturaleza es un maestro de vida en nuestra búsqueda de la verdad y la moralidad.",
         "style": {
           "accent": "#1277E2",
           "paper": "#EFF0F0",
@@ -152,7 +985,8 @@
             "filosofía",
             "episteme"
           ],
-          "authorial_voice_notes": "La voz de Séneca es reflexiva, profunda y a menudo se mueve entre lo personal y lo universal. Su estilo es directo a la vez que filosófico, invitando al lector a la introspección."
+          "authorial_voice_notes": "La voz de Séneca es reflexiva, profunda y a menudo se mueve entre lo personal y lo universal. Su estilo es directo a la vez que filosófico, invitando al lector a la introspección.",
+          "authorial_voice_notes_en": "Seneca's voice is reflective, profound, and often moves between the personal and the universal. His style is both direct and philosophical, inviting the reader to introspection."
         },
         "og_phrases_es": [
           {
@@ -236,7 +1070,7 @@
           {
             "gesture_type": "pregunta_directa",
             "sensory_anchor": "tiempo",
-            "phrase": "⏳ ¿Qué enseña la paciencia del río que fluye constante?",
+            "phrase": "⏳ ¿Qué enseña la paciencia del río que fluye constante sobre la conexión entre el universo y la moralidad?",
             "rol_sinfonico": "profundizar",
             "eje_animo": 0.4,
             "eje_valor": null,
@@ -821,7 +1655,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "",
-            "pie": "Se presentan principios estoicos que ayudan a cultivar la calma y resiliencia, resonando con la enseñanza de Séneca."
+            "pie": "Se presentan principios estoicos que ayudan a cultivar la calma y resiliencia, resonando con la enseñanza de Séneca.",
+            "pie_en": "Stoic principles are presented that help cultivate calmness and resilience, resonating with Seneca's teachings."
           },
           {
             "id": "0inllcVApS0",
@@ -834,7 +1669,8 @@
             "relacion": "acompana",
             "idioma": "es",
             "frase_eco": "",
-            "pie": "El video explora cómo Séneca enfrentó adversidades con serenidad, reflejando su filosofía estoica."
+            "pie": "El video explora cómo Séneca enfrentó adversidades con serenidad, reflejando su filosofía estoica.",
+            "pie_en": "The video explores how Seneca faced adversities with serenity, reflecting his stoic philosophy."
           }
         ]
       }
@@ -3418,7 +4254,7 @@
       "frases_og_en": [
         "🎯 As we navigate the unpredictable waters of the market, we find that diversification serves as a shield against volatility, allowing our investments to thrive amidst uncertainty.",
         "🌱 Diversifying your investments across asset classes is a prudent strategy that can help mitigate risk and enhance potential returns.",
-        "🔮 How can one truly measure the risk of a concentrated portfolio?",
+        "🔮 How can one truly measure the risk of a concentrated portfolio in the context of market efficiency and the importance of diversification?",
         "🕊 A diversified portfolio, much like a finely tuned engine, operates with efficiency and stability, navigating the unpredictable landscape of the financial markets."
       ],
       "colores": [
@@ -6771,7 +7607,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra, que busca honrar su verdadero legado y su filosofía marcial.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -6783,7 +7619,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra, que busca honrar su verdadero legado y su filosofía marcial.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -6795,7 +7631,7 @@
         "titulo": "La reconstrucción de un legado",
         "parrafoTop": "La búsqueda de la verdad en la representación cinematográfica de Bruce Lee es un viaje que va más allá de la simple narrativa. [H]Cada fotograma perdido, cada nota original, revela no solo la maestría[/H] del artista, sino también su filosofía marcial. La autenticidad en la reconstrucción de su visión se convierte en un compromiso con la verdad y el respeto por su legado.",
         "subtitulo": "¿Qué significa realmente honrar su legado?",
-        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra.",
+        "parrafoBot": "La controversia en torno a Game of Death no solo es un eco de los desafíos de la industria, sino un reflejo de la lucha interna entre la visibilidad y la verdad. [H]Cada decisión tomada en la remasterización de este filme es una declaración[/H] de respeto hacia la filosofía personal de Bruce Lee, buscando alinear su arte con la autenticidad y la reconstrucción histórica de su legado, así como el compromiso con la verdad en la representación cinematográfica de su vida y su obra, que busca honrar su verdadero legado y su filosofía marcial.",
         "style": {
           "accent": "#1293E2",
           "paper": "#EFF0F0",
@@ -7584,7 +8420,7 @@
         "fame"
       ],
       "frases": [
-        "💫 Cierra los ojos y respira profundamente. Imagina la fuerza de tus raíces familiares.",
+        "💫 Cierra los ojos y respira profundamente. Imagina la fuerza de tus raíces familiares y cómo te apoyan en cada paso de tu carrera.",
         "⏳ ¿Cómo los momentos difíciles te han hecho más fuerte?",
         "🔭 Visualiza a Nadal en la cancha, rodeado de su familia, celebrando cada victoria.",
         "🌌 La fama es efímera, pero los valores perduran."
@@ -7788,7 +8624,7 @@
           {
             "gesture_type": "instruccion_sensorial",
             "sensory_anchor": "movimiento",
-            "phrase": "💫 Cierra los ojos y respira profundamente. Imagina la fuerza de tus raíces familiares.",
+            "phrase": "💫 Cierra los ojos y respira profundamente. Imagina la fuerza de tus raíces familiares, que te impulsan a superar cualquier adversidad en tu carrera.",
             "rol_sinfonico": "profundizar",
             "eje_animo": 0.5,
             "eje_valor": null,
@@ -10937,9 +11773,9 @@
       "fondo": "#F0EFEF",
       "tarjeta": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción, lo que permite a los hombres convertirse en expertos en el arte de la seducción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales, y en la capacidad de enfrentar los desafíos de la seducción con confianza y eficacia.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -10949,9 +11785,9 @@
       },
       "tarjeta_base": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción, lo que permite a los hombres convertirse en expertos en el arte de la seducción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales, y en la capacidad de enfrentar los desafíos de la seducción con confianza y eficacia.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -10961,9 +11797,9 @@
       },
       "tarjeta_presentacion": {
         "titulo": "Decodificando la Atracción Femenina",
-        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción.[/H]",
+        "parrafoTop": "Entender el comportamiento femenino es clave para cualquier hombre que busque mejorar su capacidad de atracción. La decodificación permite identificar patrones de conducta y señales que las mujeres emiten, creando un mapa del deseo y la conexión emocional. [H]Cada interacción se convierte en una oportunidad de aplicar estrategias de seducción basadas en la ciencia, que se enseñan en talleres y seminarios sobre seducción, donde se profundiza en la decodificación del comportamiento femenino y se desarrollan sistemas de atracción efectiva, proporcionando herramientas prácticas y científicas para mejorar las habilidades de seducción y conexión con el sexo opuesto, y así lograr un aumento significativo en la capacidad de atracción, lo que permite a los hombres convertirse en expertos en el arte de la seducción.[/H]",
         "subtitulo": "¿Cómo puedes aplicar la ciencia a la seducción?",
-        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales.",
+        "parrafoBot": "Las estrategias de seducción basadas en la ciencia no sólo son efectivas, sino que además proporcionan un marco claro para comprender el complejo mundo de las relaciones. Conocer los sistemas de atracción efectiva transforma la incertidumbre en confianza, aumentando la capacidad de atracción y permitiendo que cada hombre desarrolle su propio estilo único en el arte de la seducción, lo que se puede aprender en talleres y seminarios sobre seducción, donde se enseñan técnicas prácticas y científicas para mejorar la conexión con el sexo opuesto y decodificar el comportamiento femenino, lo que resulta en una mayor comprensión y éxito en las interacciones románticas, y en la habilidad de aplicar estas estrategias en diversas situaciones sociales, lo que lleva a una vida amorosa más satisfactoria y plena, y a la posibilidad de construir relaciones significativas y duraderas, utilizando las herramientas y conocimientos adquiridos en estos espacios de aprendizaje, que son fundamentales para el desarrollo personal y la mejora continua en el ámbito de la seducción, y que permiten a cada individuo convertirse en un maestro de la seducción, logrando así una conexión auténtica y duradera con el sexo opuesto, y aplicando las estrategias aprendidas en su vida diaria, lo que resulta en un crecimiento personal y emocional significativo en el ámbito de las relaciones interpersonales, y en la capacidad de enfrentar los desafíos de la seducción con confianza y eficacia.",
         "style": {
           "accent": "#E21238",
           "paper": "#F0EFEF",
@@ -12617,7 +13453,7 @@
     {
       "titulo": "101 reflexiones que cambiarán tu forma de pensar",
       "autor": "Brianna Wiest",
-      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas, y donde cada reflexión te acerque más a tu propósito y a la vida que realmente deseas vivir, permitiéndote así vivir plenamente y con propósito en cada instante.",
+      "tagline": "why you should pursue purpose over passion, embrace negative thinking, see the wisdom in daily routine, and become aware of the cognitive biases that are creating the way you see your life, transformando tu perspectiva a través de reflexiones profundas que te llevarán a una transformación personal significativa y duradera, que te permitirá vivir con mayor autenticidad y conexión con tu verdadero ser, y así alcanzar un estado de plenitud y satisfacción en tu existencia, lo que te llevará a una vida más plena y consciente, donde cada experiencia se convierte en una oportunidad para crecer y aprender, y donde la verdadera felicidad se encuentra en la aceptación de uno mismo y en el viaje hacia el autoconocimiento, lo que te permitirá descubrir tu verdadero propósito y vivir de manera más intencional, lo que te llevará a una vida llena de significado y realización personal, y a encontrar la paz interior que tanto anhelas, lo que te permitirá abrazar cada momento con gratitud y vivir en armonía con tus valores más profundos, mientras te sumerges en un proceso continuo de autodescubrimiento y crecimiento personal que enriquecerá cada aspecto de tu vida, y te ayudará a construir un futuro donde cada decisión esté alineada con tu esencia y tus aspiraciones más profundas, y donde cada reflexión te acerque más a tu propósito y a la vida que realmente deseas vivir, permitiéndote así vivir plenamente y con propósito en cada instante, mientras te enfrentas a los desafíos con una nueva perspectiva que te empodera y te guía hacia un futuro lleno de posibilidades.",
       "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication122/v4/6a/9e/ac/6a9eac06-f838-9296-efc8-8eb9af4d20e6/e-book_cover_1600x2400.jpg/626x0w.jpg",
       "isbn": "",
@@ -24632,7 +25468,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -43357,7 +44193,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-09-12",
         "juez": "gpt-4o-mini+completar",
@@ -54532,7 +55368,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -59389,7 +60225,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -62575,7 +63411,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -75355,7 +76191,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -122194,7 +123030,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-10-06",
         "juez": "pool-emergencia+completar",
@@ -125351,8 +126187,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'A Sky Full of Stars' por su capacidad de abrir la mente a lo desconocido y 'Breezin'' para aterrizar la experiencia con su suave ritmo jazzístico.",
         "candidatos": [
           {
@@ -125383,6 +126219,51 @@
             "armonia": 7,
             "rol": "aterrizar",
             "pie": "Una melodía que invita a reflexionar sobre la conexión entre lo tangible y lo cuántico.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1452568181",
+            "cancion": "Meditation from Thais",
+            "artista": "London Symphony Orchestra, Nicola Benedetti & Daniel Harding",
+            "album": "Nicola Benedetti - Szymanowski - Chausson - Saint-Saëns (Bonus Version)",
+            "genero": "Classical",
+            "dur": 337,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/0a/3f/480a3fee-857f-08ff-aebc-7981f80af768/mzaf_5361758197193164243.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/meditation-from-thais/1452568176?i=1452568181&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/25/51/9b255182-b328-8fd3-6c31-27597b2582c1/06UMGIM20799.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "La melodía es hermosa, pero no logra elevar el ánimo en el contexto de la curiosidad cuántica.",
+            "frase_eco": ""
+          },
+          {
+            "id": "554877873",
+            "cancion": "Gymnopédies: No. 2",
+            "artista": "Valérie Milot",
+            "album": "Aquarelles (Watercolours)",
+            "genero": "Clásica",
+            "dur": 169,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/61/43/366143bd-1040-b506-fba4-1e6a322df6be/mzaf_13381030682775105833.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnop%C3%A9dies-no-2/554877687?i=554877873&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/12/7e/f6/127ef6cd-a1de-5486-316c-a1fbabaa4aee/887396243064.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Suave y melódica, acompaña la lectura, aunque no eleva el ánimo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "557586491",
+            "cancion": "Gymnopédies",
+            "artista": "Giancarlo Chiaramello",
+            "album": "Pop Symphonic",
+            "genero": "Clásica",
+            "dur": 192,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music5/v4/d5/cf/f3/d5cff3f3-d33f-635d-0932-fb4d6d5eb06d/mzaf_5259414184374190207.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gymnop%C3%A9dies/557586302?i=557586491&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/c4/8e/13/c48e13ec-fd71-1111-9b21-192080b41c4d/887396323612.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Melodía que asienta, pero no logra elevar el ánimo ni acompaña con fuerza.",
             "frase_eco": ""
           }
         ]
@@ -126104,8 +126985,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -126137,6 +127018,51 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "300887808",
+            "cancion": "Trois Gymnopédies: No. 1, Lent et douloureux",
+            "artista": "Alexandre Tharaud",
+            "album": "Satie: Avant-dernières pensées",
+            "genero": "Clásica",
+            "dur": 204,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/3a/81/cc3a81ff-5f94-b39f-41d1-cca5bf640bf6/mzaf_6624373636647094928.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/trois-gymnop%C3%A9dies-no-1-lent-et-douloureux/300887793?i=300887808&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8a/cb/fb/8acbfbbe-27c4-846a-f226-a17d9416b28f/mzi.snatfdoj.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La suavidad de esta pieza acompaña la búsqueda de equilibrio emocional.",
+            "frase_eco": "🛡 La energía de un color puede cambiar tu estado emocional y físico."
+          },
+          {
+            "id": "664443974",
+            "cancion": "Meditation",
+            "artista": "Shelley Beaumont",
+            "album": "The Classical Great Series, Vol. 9: Chill Out Classics 2 (Deluxe Edition)",
+            "genero": "Clásica",
+            "dur": 269,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d7/5c/0b/d75c0b9e-1009-b58d-24de-eb04047cf627/mzaf_7114630668368562943.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/meditation/664443954?i=664443974&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/56/0a/38/560a3806-1ffe-8410-2283-48f26a7b8764/888002682499.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a la introspección y a la conexión con uno mismo.",
+            "frase_eco": "🔁 ¿Qué color necesitas en este momento para sanar tu ser?"
+          },
+          {
+            "id": "1463834820",
+            "cancion": "Dawn (From 'Pride And Prejudice')",
+            "artista": "Amy Mary Collins",
+            "album": "Música Clásica",
+            "genero": "Crossover clásica",
+            "dur": 178,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/8f/e6/4b8fe646-6675-0f7e-edf2-8e37d14cf5e6/mzaf_6968922818281300366.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dawn-from-pride-and-prejudice/1463834567?i=1463834820&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b6/0d/c0/b60dc0fb-6a64-7277-34d0-694aac8f8fc3/9008798295432_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Una melodía que evoca emociones, aunque no es del todo luminosa.",
+            "frase_eco": ""
           }
         ]
       }
@@ -126874,8 +127800,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -126907,6 +127833,21 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1594430653",
+            "cancion": "here comes the sun",
+            "artista": "Christina Perri",
+            "album": "songs for rosie",
+            "genero": "Children's Music",
+            "dur": 167,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/4f/f5/5b4ff51f-cda9-0471-2341-1ff036bbc747/mzaf_14669690505594284301.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/here-comes-the-sun/1594430395?i=1594430653&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/27/8e/de/278ede2b-7bec-fba3-b5e9-12afaeb0daa8/075679769558.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Una melodía que invita a ver la luz tras la adversidad.",
+            "frase_eco": "🔮 La resiliencia permite que cada fracaso se convierta en un escalón."
           }
         ]
       }
@@ -127655,8 +128596,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:luz",
         "candidatos": [
           {
@@ -130009,10 +130950,10 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'here comes the sun' por su mensaje optimista que invita a abrirse a nuevas experiencias, resonando con el propósito del libro.",
         "candidatos": [
           {
@@ -130783,8 +131724,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -130816,6 +131757,51 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "570524323",
+            "cancion": "Cherry Blossoms in Winter (Fuyo No Sakura)",
+            "artista": "Yoshida Brothers",
+            "album": "Yoshida Brothers Best, Vol. Two",
+            "genero": "Músicas del mundo",
+            "dur": 282,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/53/8d/96/538d967f-2d3c-4251-d0e4-329d27823bf5/mzaf_3807781265941682834.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/cherry-blossoms-in-winter-fuyo-no-sakura/570524320?i=570524323&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ae/a8/30/aea830c2-fd90-922c-71eb-fa85bbd07e6e/Cover.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "resonar",
+            "pie": "La melodía evoca la calma necesaria para enfrentar el caos con claridad.",
+            "frase_eco": "✨ En la lucha, la mente clara es el mejor arma del guerrero."
+          },
+          {
+            "id": "471809664",
+            "cancion": "Fuyuno Sakura",
+            "artista": "Yoshida Brothers",
+            "album": "World Tour - Sushi Club",
+            "genero": "Músicas del mundo",
+            "dur": 279,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/2e/79/822e79da-7169-f749-80ea-9680726f8d00/mzaf_15825492102033065194.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/fuyuno-sakura/471809318?i=471809664&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/8b/50/a1/8b50a1bd-ada1-f7f5-e435-4847e2b64396/dj.bvohabid.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La serenidad de la música acompaña la búsqueda de claridad en la lucha.",
+            "frase_eco": "🧭 El guerrero sereno encuentra claridad en el caos."
+          },
+          {
+            "id": "485318947",
+            "cancion": "The Four Seasons, \"Spring\", RV 269: I. Allegro",
+            "artista": "Pieter Schoeman, London Philharmonic Orchestra & David Parry",
+            "album": "The Best Baroque Allegros",
+            "genero": "Clásica",
+            "dur": 192,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/18/85/9a/18859a26-4171-2747-6adf-024fb6156e21/mzaf_8400275553482306516.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-four-seasons-spring-rv-269-i-allegro/485318946?i=485318947&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/ad/ea/6d/mzi.fhovyrqy.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "El Allegro de Vivaldi tiene un ritmo animado, aunque no es del todo resonante con el texto.",
+            "frase_eco": ""
           }
         ]
       }
@@ -132335,8 +133321,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
           {
@@ -132368,6 +133354,21 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "6765696881",
+            "cancion": "Romeo & Juliet, Op. 64, Act I: Scene XIII, Dance of the Knights (Version for Violin and Pi",
+            "artista": "Florian Verweij & Emma Roijackers",
+            "album": "VIRTUOOS | Emma Roijackers & Florian Verweij | AVROTROS - Single",
+            "genero": "Clásica",
+            "dur": 204,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/44/36/d5443665-24ec-7999-f56a-1b1068a62511/mzaf_16908887596156148679.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/romeo-juliet-op-64-act-i-scene-xiii-dance-of-the/1896040995?i=6765696881&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/05/9f/82059f58-96d7-67ef-840b-d2b6a14a36de/8718521150648.jpg/600x600bb.jpg",
+            "armonia": 5,
+            "rol": "profundizar",
+            "pie": "Una pieza clásica que invita a la reflexión, pero carece de la calidez necesaria para elevar el ánimo.",
+            "frase_eco": ""
           }
         ]
       }
@@ -133114,8 +134115,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "gpt-4o-mini",
+        "resuelto_el": "2026-10-10",
+        "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'HAPPY' de Forrest Frank por su energía positiva y mensaje inspirador, que resuena con el llamado a ser un agente de cambio.",
         "candidatos": [
           {
@@ -134713,8 +135714,8 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-08-31",
-        "juez": "pool-emergencia",
+        "resuelto_el": "2026-10-10",
+        "juez": "pool-emergencia+completar",
         "sinfonia": "pool:impulso",
         "candidatos": [
           {
@@ -134746,6 +135747,36 @@
             "rol": "abrir",
             "pie": "Refugio de impulso — pieza elegida a mano para arrancar.",
             "frase_eco": "un paso más"
+          },
+          {
+            "id": "1440800545",
+            "cancion": "Sway (Bonus Track)",
+            "artista": "The Pussycat Dolls",
+            "album": "PCD (Bonus Track Version)",
+            "genero": "Pop",
+            "dur": 190,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/ab/e3/e3abe3e7-47f1-ad2b-1e25-c4b8eb63a42f/mzaf_12438894495886074531.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sway-bonus-track/1440799528?i=1440800545&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5f/52/46/5f52469a-61b3-5604-f7c8-84eb0cdb19a8/06UMGIM26943.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "La energía de esta canción invita a explorar nuevas posibilidades.",
+            "frase_eco": "📖 Cada pregunta que formulamos tiene el potencial de abrir nuevas puertas hacia oportunidades inexploradas."
+          },
+          {
+            "id": "165041075",
+            "cancion": "Cafe 1930",
+            "artista": "Beau Bledsoe & Gregory Sandomirsky",
+            "album": "Café Sacre",
+            "genero": "Classical",
+            "dur": 424,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music1/v4/0b/74/95/0b74955a-f442-1203-7b15-903f02f66953/mzaf_7582920421566192239.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/cafe-1930/165041056?i=165041075&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/2d/ec/34/mzi.fpvfmlhi.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Una melodía que invita a la reflexión, ideal para profundizar en el arte de preguntar.",
+            "frase_eco": "Vacía."
           }
         ]
       }
@@ -137020,7 +138051,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-06T18:41:55.930Z",
+      "_audit_timestamp": "2026-10-11T04:35:33.833Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "pool-emergencia",
@@ -138642,11 +139673,11 @@
     }
   ],
   "meta": {
-    "next_edition_number": 106,
-    "total": 173,
-    "last_audit": "2026-10-06T18:41:55.930Z",
-    "healing_rotation_idx": 52,
+    "next_edition_number": 107,
+    "total": 174,
+    "last_audit": "2026-10-11T04:35:33.833Z",
+    "healing_rotation_idx": 53,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
-    "last_healing_timestamp": "2026-10-06T18:57:04.023Z"
+    "last_healing_timestamp": "2026-10-11T04:49:52.859Z"
   }
 }
