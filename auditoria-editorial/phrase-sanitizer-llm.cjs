@@ -13,11 +13,18 @@ const ONLY_LAST = args["only-last"] === "true";
 const BATCH_SIZE = Math.max(1, parseInt(args["batch-size"] || "1", 10));
 const HEALING = args.healing !== "false";
 const MIN_PRESERVE_RATIO = parseFloat(args["min-preserve"] || "0.85");
+// 🧠 C278 (2 de noviembre de 2026): si el workflow pasa TRIGGUI_IA_LIB (la ruta a ia/ia.cjs de triggui-app), la llamada
+// va por ese único lugar, con el proveedor y el modelo de ia/config.json. Sin la variable, todo queda exactamente como antes.
+let IA = null;
+if (process.env.TRIGGUI_IA_LIB) {
+  try { IA = require(process.env.TRIGGUI_IA_LIB); }
+  catch (e) { console.error("TRIGGUI_IA_LIB no se pudo cargar (" + process.env.TRIGGUI_IA_LIB + "): " + e.message); process.exit(2); }
+}
 const OPENAI_KEY = process.env.OPENAI_API_KEY;
-const MODEL = "gpt-4o-mini";
+const MODEL = IA ? "mini" : "gpt-4o-mini";   // con IA, el papel "mini" de ia/config.json
 
 if (!CATALOG || !fs.existsSync(CATALOG)) { console.error("missing --catalog"); process.exit(2); }
-if (!OPENAI_KEY) { console.error("missing OPENAI_API_KEY"); process.exit(2); }
+if (IA ? !IA.hayLlave() : !OPENAI_KEY) { console.error("missing " + (IA && IA.proveedor() === "claude" ? "ANTHROPIC_API_KEY" : "OPENAI_API_KEY")); process.exit(2); }
 if (!["report","fix"].includes(MODE)) { console.error("--mode must be report|fix"); process.exit(2); }
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"));
@@ -296,16 +303,17 @@ Responde JSON:
     " chars.\nSi truncada, devuelve fixed_phrase de longitud ≥ " + phrase.length +
     " chars con TODO el contexto previo preservado." + groundingBlock;
 
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
+  const peticion = {
+    model: MODEL, temperature: 0, max_tokens: 400,
+    response_format: { type: "json_object" },
+    messages: [{ role: "system", content: system }, { role: "user", content: user }]
+  };
+  const res = IA ? await IA.chatCompat(peticion) : await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: { "Content-Type": "application/json", "Authorization": "Bearer " + OPENAI_KEY },
-    body: JSON.stringify({
-      model: MODEL, temperature: 0, max_tokens: 400,
-      response_format: { type: "json_object" },
-      messages: [{ role: "system", content: system }, { role: "user", content: user }]
-    })
+    body: JSON.stringify(peticion)
   });
-  if (!res.ok) { const t = await res.text(); throw new Error("OpenAI " + res.status + ": " + t.slice(0,150)); }
+  if (!res.ok) { const t = await res.text(); throw new Error((IA ? IA.nombreProveedor() : "OpenAI") + " " + res.status + ": " + t.slice(0,150)); }
   const data = await res.json();
   return JSON.parse(data.choices?.[0]?.message?.content || "{}");
 }
