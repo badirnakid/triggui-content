@@ -1,6 +1,1041 @@
 {
   "libros": [
     {
+      "titulo": "A Thousand Brains",
+      "autor": "Jeff Hawkins",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Mil cerebros",
+      "titulo_en": "A Thousand Brains",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Activo",
+      "palabras": [
+        "confusión",
+        "creencias",
+        "intuición",
+        "percibir"
+      ],
+      "palabras_en": [
+        "confusion",
+        "beliefs",
+        "intuition",
+        "perception"
+      ],
+      "frases": [
+        "🪨 Toca una taza con los ojos cerrados y nota cuántas partes de ella tu mano reconoce.",
+        "🌌 ¿Cuántas de tus creencias nacen de lo que percibiste, y cuántas de lo que tu cerebro supuso?",
+        "🚶 Tu cerebro no solo reacciona al mundo: adelanta lo que va a tocar y corrige cuando se equivoca.",
+        "🕯 Cientos de modelos pequeños miran lo mismo desde distinto lugar y votan hasta una sola imagen."
+      ],
+      "frases_en": [
+        "🪨 Close your eyes and touch a cup. Notice how many of its parts your hand recognizes.",
+        "🌌 How many of your beliefs came from what you sensed, and how many from what your brain assumed?",
+        "⏳ Your brain does not only react. It predicts what it will touch, then corrects its errors.",
+        "🔭 Hundreds of small models look at the same thing from different places and vote."
+      ],
+      "frases_og": [
+        "🔍 Tu percepción es una votación entre muchos modelos del mundo.",
+        "💠 Mira algo conocido y busca la parte que reconoces primero.",
+        "✨ ¿Por qué dos personas, mismos datos, llegan a creencias distintas?",
+        "⚓ Lo que llamas realidad es una predicción que el cerebro corrige."
+      ],
+      "frases_og_en": [
+        "🔍 Your sense of one solid object is a vote, not a photograph.",
+        "💠 Touch something you know well, and notice what you assumed.",
+        "✨ How much of what you see is what you actually sensed?",
+        "⚓ Many small views, one picture, and no single eye sees it whole."
+      ],
+      "colores": [
+        "#90D6DF",
+        "#4D9DCB",
+        "#2C3A96",
+        "#211957"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD1D3",
+      "tarjeta": {
+        "titulo": "Cientos de modelos votan lo que ves",
+        "parrafoTop": "Cuando miras una taza no ves una imagen que llega entera a tu cabeza. Miles de columnas en tu neocórtex tocan una parte del objeto cada una, y cada una arma su propio modelo de lo que toca. [H]Ninguna ve la taza completa.[/H]",
+        "subtitulo": "¿Cómo se vuelven todos esos modelos una sola experiencia?",
+        "parrafoBot": "[H]La respuesta, según creo, es el voto.[/H] Los modelos se comparan y se inclinan hacia el que mejor encaja con lo que llega por los sentidos. Esa votación es lo que sientes como un solo objeto frente a ti.",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Cientos de modelos votan lo que ves",
+        "parrafoTop": "Cuando miras una taza no ves una imagen que llega entera a tu cabeza. Miles de columnas en tu neocórtex tocan una parte del objeto cada una, y cada una arma su propio modelo de lo que toca. [H]Ninguna ve la taza completa.[/H]",
+        "subtitulo": "¿Cómo se vuelven todos esos modelos una sola experiencia?",
+        "parrafoBot": "[H]La respuesta, según creo, es el voto.[/H] Los modelos se comparan y se inclinan hacia el que mejor encaja con lo que llega por los sentidos. Esa votación es lo que sientes como un solo objeto frente a ti.",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Cientos de modelos votan lo que ves",
+        "parrafoTop": "Cuando miras una taza no ves una imagen que llega entera a tu cabeza. Miles de columnas en tu neocórtex tocan una parte del objeto cada una, y cada una arma su propio modelo de lo que toca. [H]Ninguna ve la taza completa.[/H]",
+        "subtitulo": "¿Cómo se vuelven todos esos modelos una sola experiencia?",
+        "parrafoBot": "[H]La respuesta, según creo, es el voto.[/H] Los modelos se comparan y se inclinan hacia el que mejor encaja con lo que llega por los sentidos. Esa votación es lo que sientes como un solo objeto frente a ti.",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Hundreds of models vote on what you see",
+        "parrafoTop": "When you look at a cup, the image does not arrive whole in your head. Thousands of columns in your neocortex each touch one small part of it. Each one builds its own model of what it touches. [H]None of them sees the whole cup.[/H]",
+        "subtitulo": "How do all those models become one single experience?",
+        "parrafoBot": "The answer, as I see it, is voting. The models are compared, and they lean toward the one that best fits what arrives through the senses. [H]That vote is what you feel as one object in front of you.[/H]",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Hundreds of models vote on what you see",
+        "parrafoTop": "When you look at a cup, the image does not arrive whole in your head. Thousands of columns in your neocortex each touch one small part of it. Each one builds its own model of what it touches. [H]None of them sees the whole cup.[/H]",
+        "subtitulo": "How do all those models become one single experience?",
+        "parrafoBot": "The answer, as I see it, is voting. The models are compared, and they lean toward the one that best fits what arrives through the senses. [H]That vote is what you feel as one object in front of you.[/H]",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Hundreds of models vote on what you see",
+        "parrafoTop": "When you look at a cup, the image does not arrive whole in your head. Thousands of columns in your neocortex each touch one small part of it. Each one builds its own model of what it touches. [H]None of them sees the whole cup.[/H]",
+        "subtitulo": "How do all those models become one single experience?",
+        "parrafoBot": "The answer, as I see it, is voting. The models are compared, and they lean toward the one that best fits what arrives through the senses. [H]That vote is what you feel as one object in front of you.[/H]",
+        "style": {
+          "accent": "#1F65D6",
+          "paper": "#CFD1D3",
+          "ink": "#17191C",
+          "border": "#7C7D7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+A%20Thousand%20Brains%20Jeff%20Hawkins%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+A%20Thousand%20Brains%20Jeff%20Hawkins%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-11-03T00:32:52.364Z",
+        "workflow_run_id": "41553508628",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.46,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Mil cerebros",
+          "titulo_en": "A Thousand Brains",
+          "autor_completo": "Jeff Hawkins",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "cada columna cortical del neocórtex construye su propio modelo del objeto que toca",
+            "la percepción unificada surge de votar entre cientos de modelos paralelos del mundo",
+            "la inteligencia es predicción sensoriomotora continua, no reacción a estímulos"
+          ],
+          "key_terms": [
+            "columnas corticales",
+            "marcos de referencia",
+            "modelo del mundo",
+            "predicción sensoriomotora",
+            "votación de modelos"
+          ],
+          "authorial_voice_notes": "Hawkins escribe desde la neurociencia computacional con tono de ingeniero curioso: explica mecanismos con analogías concretas, admite lo que aún no se sabe y contrasta su propuesta con creencias erróneas sobre el cerebro. No es narrativa con personajes; su voz es didáctica, directa y provocadora, con confianza moderada en su teoría y apertura a la crítica.",
+          "authorial_voice_notes_en": "Hawkins writes from computational neuroscience with the tone of a curious engineer: he explains mechanisms through concrete analogies, admits what is still unknown, and contrasts his proposal with mistaken beliefs about the brain. It is not narrative with characters; his voice is didactic, direct, and provocative, with moderate confidence in his theory and openness to criticism."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro no aborda directamente la cronobiología, la teoría de juegos, el autoconocimiento, los pilares de vida ni el mapa de Hawkins de conciencia. Su tema es el funcionamiento del neocórtex y la inteligencia artificial. Algunas resonancias tangenciales existen con el lente de autoconocimiento (cómo construimos un yo y cómo dos personas llegan a creencias distintas ante lo mismo), pero no es un libro sobre el momento humano ni sobre decisiones estratégicas, por lo que los lentes aplican solo de forma indirecta.",
+          "decision": "dont_apply_book_is_about_something_else"
+        },
+        "visual_intent": {
+          "hue_primary": 235.15625,
+          "saturation": "balanced",
+          "lightness_paper": "medium_light",
+          "temperature_shift": -18,
+          "palette_strategy": "analogous",
+          "typography_family": "sans_tecnologico",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "contemporaneo",
+          "genre_visual": "tecnico"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "manana"
+        },
+        "card_es": {
+          "titulo": "Cientos de modelos votan lo que ves",
+          "parrafoTop": "Cuando miras una taza no ves una imagen que llega entera a tu cabeza. Miles de columnas en tu neocórtex tocan una parte del objeto cada una, y cada una arma su propio modelo de lo que toca. Ninguna ve la taza completa.",
+          "subtitulo": "¿Cómo se vuelven todos esos modelos una sola experiencia?",
+          "parrafoBot": "La respuesta, según creo, es el voto. Los modelos se comparan y se inclinan hacia el que mejor encaja con lo que llega por los sentidos. Esa votación es lo que sientes como un solo objeto frente a ti."
+        },
+        "card_en": {
+          "titulo": "Hundreds of models vote on what you see",
+          "parrafoTop": "When you look at a cup, the image does not arrive whole in your head. Thousands of columns in your neocortex each touch one small part of it. Each one builds its own model of what it touches. None of them sees the whole cup.",
+          "subtitulo": "How do all those models become one single experience?",
+          "parrafoBot": "The answer, as I see it, is voting. The models are compared, and they lean toward the one that best fits what arrives through the senses. That vote is what you feel as one object in front of you."
+        },
+        "emotional_words_es": [
+          "confusión",
+          "creencias",
+          "intuición",
+          "percibir"
+        ],
+        "emotional_words_en": [
+          "confusion",
+          "beliefs",
+          "intuition",
+          "perception"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 Tu percepción es una votación entre muchos modelos del mundo.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Mira algo conocido y busca la parte que reconoces primero.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "atención",
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ ¿Por qué dos personas, mismos datos, llegan a creencias distintas?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "⚓ Lo que llamas realidad es una predicción que el cerebro corrige.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 Your sense of one solid object is a vote, not a photograph.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "💠 Touch something you know well, and notice what you assumed.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "✨ How much of what you see is what you actually sensed?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ Many small views, one picture, and no single eye sees it whole.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tacto",
+            "phrase": "🪨 Toca una taza con los ojos cerrados y nota cuántas partes de ella tu mano reconoce.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 ¿Cuántas de tus creencias nacen de lo que percibiste, y cuántas de lo que tu cerebro supuso?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🚶 Tu cerebro no solo reacciona al mundo: adelanta lo que va a tocar y corrige cuando se equivoca.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": "predicción",
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "luz",
+            "phrase": "🕯 Cientos de modelos pequeños miran lo mismo desde distinto lugar y votan hasta una sola imagen.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "touch",
+            "phrase": "🪨 Close your eyes and touch a cup. Notice how many of its parts your hand recognizes.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "space",
+            "phrase": "🌌 How many of your beliefs came from what you sensed, and how many from what your brain assumed?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ Your brain does not only react. It predicts what it will touch, then corrects its errors.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 Hundreds of small models look at the same thing from different places and vote.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.85,
+          "combined": 0.91,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.85
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "A Thousand Brains",
+          "autor_completo": "Jeff Hawkins",
+          "titulo_api": "A Thousand Brains",
+          "autor_api": "Jeff Hawkins",
+          "año": "2022",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1618807793",
+          "categorias": [
+            "Informática e Internet",
+            "Libros"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/a-thousand-brains/id1618807793?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.85,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content draws on concepts central to Hawkins' thousand brains theory: cortical columns each modeling part of an object, voting between models, and the brain predicting sensory input. These map directly to the book's core thesis, though the ground truth synopsis itself mentions neither columns nor voting explicitly, so the grounding is strong but partly inferred from the book's known content."
+        },
+        "en": {
+          "grounded_score": 0.85,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content reflects Hawkins' core thousand-brains theory: cortical columns each modeling a small part of an object, models voting to produce a single perceived object, and prediction correcting errors. These match the ground truth's themes of unifying sensory input into one experience and how the brain forms beliefs. The ground truth itself does not name cortical columns or voting explicitly, so some specificity is inferred from the book's known theory rather than the provided synopsis, which lowers the score slightly."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa del autor en primera persona ('según creo'), sin referencias meta al libro.",
+          "elapsed_ms": 1550,
+          "usage": {
+            "prompt_tokens": 895,
+            "completion_tokens": 57,
+            "total_tokens": 952
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa en primera persona del autor explicando su teoría, sin referencias meta al libro.",
+          "elapsed_ms": 871,
+          "usage": {
+            "prompt_tokens": 833,
+            "completion_tokens": 58,
+            "total_tokens": 891
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1843,
+        "total_ms": 1550
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 235.15625,
+          "adjusted_hue": 217.15625,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": -18,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#90D6DF",
+          "--palette-1": "#4D9DCB",
+          "--palette-2": "#2C3A96",
+          "--palette-3": "#211957",
+          "--accent": "#1F65D6",
+          "--accent-soft": "#1F65D638",
+          "--accent-glow": "#1F65D66b",
+          "--paper": "#CFD1D3",
+          "--ink": "#17191C",
+          "--border": "#7C7D7F",
+          "--highlight-bg": "#1B59BCd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'IBM Plex Sans', 'Inter', sans-serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "4px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "aforismo_autorial",
+          "imagen_concreta"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism",
+          "concrete_image"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-11-03T00-32-52",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 18,
+        "franja": "noche",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Noche: melatonina en ascenso. Reflexivo, contemplativo, sin urgencia."
+      },
+      "_metrics": {
+        "tokens_total": 162959,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 28264,
+          "palette": 0,
+          "content_es": 39288,
+          "judge_es": 2027,
+          "content_es_retry": 38193,
+          "judge_es_retry": 2014,
+          "content_en": 34280,
+          "judge_en": 1987,
+          "voice": 1843,
+          "voice_extended": 15063,
+          "highlight_judge_es_parrafoTop": 1166,
+          "highlight_judge_es_parrafoBot": 1191,
+          "highlight_judge_en_parrafoTop": 1183,
+          "highlight_judge_en_parrafoBot": 1198,
+          "csal": 6754
+        },
+        "elapsed_ms_total": 63678,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 5203,
+          "palette": 0,
+          "cover_fallback": 2035,
+          "content_es": 20288,
+          "judge_es": 2195,
+          "content_es_retry": 15514,
+          "content_en": 12349,
+          "judge_en": 1644,
+          "voice": 1550,
+          "voice_extended": 1552,
+          "highlight_judge": 5309,
+          "lens_compatibility": 879,
+          "csal": 10510,
+          "post_processing": 16704
+        },
+        "llm_calls_count": 25,
+        "models_used": [
+          "claude-haiku-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.1,
+        "game-theory": 0.05,
+        "self-knowledge": 0.3,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.9,
+          "negocio": 0.05,
+          "familia": 0.02,
+          "espiritu": 0.1,
+          "relaciones": 0.05,
+          "finanzas": 0.02
+        },
+        "hawkins": 0.9
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que tu mente te engaña con lo que crees ver",
+          "cuando dos personas ven lo mismo y llegan a conclusiones opuestas",
+          "cuando te preguntas cómo se junta todo lo que sientes en una sola experiencia",
+          "cuando quieres entender por qué tomas decisiones sin darte cuenta",
+          "antes de discutir con alguien que está seguro de algo que tú dudas",
+          "cuando notas que reaccionas antes de pensar",
+          "cuando te cuesta distinguir lo que percibes de lo que supones",
+          "cuando te preguntas si una inteligencia artificial podría pensar como tú",
+          "después de descubrir que una creencia que tenías era falsa",
+          "cuando sientes curiosidad por cómo funciona tu propio cerebro",
+          "cuando tocas un objeto con los ojos cerrados y lo reconoces al instante",
+          "cuando intentas explicar a alguien por qué piensas lo que piensas",
+          "cuando te sorprende que tu cuerpo anticipe lo que va a pasar",
+          "cuando te preguntas qué es el yo y por qué te sientes una persona única",
+          "antes de creer algo solo porque lo viste con tus propios ojos",
+          "cuando quieres entender cómo aprende un niño a reconocer el mundo",
+          "cuando te interesa saber si la inteligencia es reacción o predicción",
+          "cuando la realidad que percibes no coincide con la que otros describen",
+          "después de equivocarte al predecir algo y corregir tu idea",
+          "cuando te preguntas cómo se forma una opinión en tu cabeza",
+          "cuando escuchas un argumento y sientes que tu cerebro ya tenía una respuesta",
+          "cuando te interesa la neurociencia pero las explicaciones te parecen confusas",
+          "cuando dudas de lo que tus sentidos te muestran",
+          "cuando observas cómo se mueve tu mano y tu mirada para entender un objeto",
+          "cuando te preguntas si máquinas inteligentes necesitan un cuerpo",
+          "cuando quieres comprender por qué olvidamos o recordamos de cierta manera",
+          "cuando te fascina que cientos de partes pequeñas formen un solo pensamiento",
+          "cuando intentas separar lo que es intuición de lo que es conocimiento",
+          "cuando te cuestionas si tu percepción del mundo es completa o parcial",
+          "cuando buscas una explicación ingenieril a la conciencia humana",
+          "cuando te preguntas por qué dos personas con la misma información llegan a distintas creencias"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "confusión",
+            "confundido",
+            "curiosidad",
+            "curioso",
+            "duda",
+            "dudoso",
+            "asombro",
+            "fascinación",
+            "frustración",
+            "certeza",
+            "incertidumbre",
+            "sorpresa",
+            "desconcierto",
+            "intriga",
+            "escepticismo",
+            "humildad",
+            "desconfianza",
+            "claridad",
+            "maravilla",
+            "inquietud",
+            "confusion",
+            "curiosity",
+            "doubt",
+            "wonder",
+            "puzzled",
+            "amazement",
+            "skeptical",
+            "uncertainty",
+            "surprise",
+            "bewilderment",
+            "intuición",
+            "intuition"
+          ],
+          "objetos": [
+            "cerebro",
+            "neocórtex",
+            "neuronas",
+            "mente",
+            "percepción",
+            "creencias",
+            "sentidos",
+            "modelo del mundo",
+            "objeto",
+            "taza",
+            "mano",
+            "mapa mental",
+            "red neuronal",
+            "inteligencia artificial",
+            "yo",
+            "conciencia",
+            "brain",
+            "neocortex",
+            "neurons",
+            "mind",
+            "perception",
+            "beliefs",
+            "senses",
+            "world model",
+            "coffee cup",
+            "hand",
+            "artificial intelligence",
+            "self",
+            "consciousness"
+          ],
+          "contextos": [
+            "en la cocina",
+            "al tocar algo",
+            "en una discusión",
+            "al mirar algo",
+            "al aprender",
+            "en la escuela",
+            "en un laboratorio",
+            "al debatir ideas",
+            "al despertar",
+            "al tomar una decisión",
+            "in the kitchen",
+            "touching something",
+            "in an argument",
+            "learning",
+            "in a lab",
+            "debating ideas",
+            "waking up",
+            "making a decision"
+          ],
+          "verbos": [
+            "percibir",
+            "creer",
+            "tocar",
+            "predecir",
+            "corregir",
+            "decidir",
+            "recordar",
+            "confundir",
+            "entender",
+            "aprender",
+            "votar",
+            "anticipar",
+            "imaginar",
+            "dudar",
+            "preguntar",
+            "perceive",
+            "believe",
+            "touch",
+            "predict",
+            "correct",
+            "decide",
+            "remember",
+            "confuse",
+            "understand",
+            "learn",
+            "imagine",
+            "doubt",
+            "ask"
+          ]
+        },
+        "concept_tags": [
+          "neocórtex y columnas corticales como modelos locales del mundo",
+          "votación entre cientos de modelos paralelos para unificar la percepción",
+          "inteligencia como predicción sensoriomotora continua",
+          "marcos de referencia en la corteza cerebral",
+          "Thousand Brains Theory de Jeff Hawkins",
+          "percepción táctil de objetos con los ojos cerrados",
+          "movimiento de los sensores como fuente de aprendizaje cortical",
+          "representaciones de objetos anclados a marcos de referencia",
+          "creencias como modelos del mundo formados por el cerebro",
+          "inteligencia artificial inspirada en la neocorteza",
+          "conciencia del yo como modelo predictivo",
+          "jerarquía cortical y pensamiento abstracto",
+          "conocimiento sensoriomotor y mapas de objetos",
+          "Numenta y la neurociencia computacional de la inteligencia",
+          "percepción unificada a partir de sensaciones fragmentadas",
+          "teoría de la mente como modelo predictivo del cuerpo",
+          "grid cells y marcos de referencia en la neocorteza",
+          "cuánto de la percepción es predicción y cuánto es estímulo"
+        ],
+        "anti_patterns": [
+          "consejos de autoayuda para mejorar la productividad diaria",
+          "técnicas de meditación o relajación",
+          "recetas de dieta o salud física",
+          "finanzas personales e inversiones",
+          "relaciones de pareja y consejos sentimentales",
+          "psicología clínica para tratar trastornos",
+          "narrativa de ficción o novelas",
+          "historia de la humanidad sin enfoque cerebral",
+          "religión o espiritualidad",
+          "recomendaciones de entrenamiento físico",
+          "gestión empresarial y liderazgo",
+          "programación práctica de software sin teoría cerebral"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🫳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🧠"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🔮"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "👁️"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase está escrita en segunda persona como enunciado del propio contenido, una idea que el texto afirma directamente y no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una instrucción en voz directa que podría formar parte del propio texto del libro, dirigiéndose al lector desde dentro de la narración, no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.7,
+              "reason": "Es una pregunta retórica formulada como voz autoral que abre la reflexión del texto, no una descripción externa del libro; parece parte del contenido mismo."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una afirmación en voz autoral sobre el mundo, presentada como contenido del propio libro y no como descripción externa de la obra."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "Es una instrucción directa en segunda persona, como parte del propio texto del libro, no una descripción del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta directa al lector en voz autoral, planteada como parte del contenido del libro y no como descripción externa sobre él."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "Es una afirmación directa en voz autoral sobre el tema, presentada como contenido del libro y no como descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase describe la idea misma del libro en voz autoral directa, como contenido narrado y no como reseña o sinopsis ajena."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una afirmación en voz autoral que forma parte del argumento del libro, presentando una idea directamente al lector en lugar de describir la obra desde fuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The sentence speaks directly to the reader as an instruction within the text's own voice, not describing the book from outside, so it reads as content written inside the book."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The sentence is a direct second-person question posed to the reader in the book's own voice, reading as text inside the book rather than commentary about it."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una observación poética en primera escritura que forma parte del texto, no una descripción del libro desde afuera; se lee como un pasaje interno y no como metadata."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una instrucción directa en segunda persona que el autor dirige al lector dentro del texto, no una descripción del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "The sentence is a direct rhetorical question posed to the reader in the book's own voice, not a description of the book by an outside critic, editor, or blurb writer."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase enuncia una tesis directa sobre el funcionamiento del cerebro en voz autoral, como si estuviera dentro del texto explicativo, no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase describe un mecanismo directamente como contenido narrado en voz del autor, sin hablar del libro desde fuera ni resumirlo como metadata."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-03T00:34:12.745Z",
+      "_slug": "a-thousand-brains",
+      "_edicion_numero": 110,
+      "_musica": {
+        "resuelto_el": "2026-11-02",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Cast Your Fate to the Wind (aterrizar), Night Train (abrir) y Lean on Me (resonar): luz, pulso y calidez sin robar la lectura.",
+        "candidatos": [
+          {
+            "id": "821116933",
+            "cancion": "Cast Your Fate to the Wind",
+            "artista": "Vince Guaraldi",
+            "album": "Since I Fell for You",
+            "genero": "Jazz Latino",
+            "dur": 184,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/97/d2/3b/97d23b0f-f861-bc35-bde1-29b45165063a/mzaf_6753018615050595618.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/cast-your-fate-to-the-wind/821116925?i=821116933&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/6b/12/21/6b12215e-f066-94c4-62d7-24242fc772e7/888608171823.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Samba-jazz de Guaraldi: calidez y ritmo ligero que asientan la mente como un coro de voces que se suman.",
+            "frase_eco": "🔍 Tu percepción es una votación entre muchos modelos del mundo."
+          },
+          {
+            "id": "1440721548",
+            "cancion": "Night Train",
+            "artista": "Oscar Peterson Trio",
+            "album": "Night Train (Expanded Edition)",
+            "genero": "Jazz",
+            "dur": 290,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/7d/74/587d7499-3d62-6100-3c53-6880f8f0245e/mzaf_2500459270831043735.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/night-train/1440721546?i=1440721548&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/df/c9/f7dfc963-95d2-c2c1-ee47-25ae0eabae1b/10UMGIM03780.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Swing pulsante y luminoso; despierta la curiosidad, aunque no tiene nada de la intimidad del libro.",
+            "frase_eco": "✨ ¿Por qué dos personas, mismos datos, llegan a creencias distintas?"
+          },
+          {
+            "id": "402127904",
+            "cancion": "La Primavera: Concierto Nº1 En Mi Mayor",
+            "artista": "The Hamburg Symphony Orchestra",
+            "album": "Vivaldi: Las Cuatro Estaciones",
+            "genero": "Clásica",
+            "dur": 622,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/b7/6f/43b76fdb-7c95-926c-cd01-5b78fe24bfbb/mzaf_16881572888051355809.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/la-primavera-concierto-n%C2%BA1-en-mi-mayor/402127890?i=402127904&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/f8/d3/1a/f8d31a95-f8c8-fd95-e56d-029fdb06e002/885686277690.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "Vivaldi como una orquesta de voces que deciden juntas; el pulso luminoso de Primavera encaja con la idea de muchos modelos llegando a un acu",
+            "frase_eco": "🔍 Tu percepción es una votación entre muchos modelos del mundo."
+          },
+          {
+            "id": "1498699829",
+            "cancion": "Summer",
+            "artista": "Joe Hisaishi Ensemble",
+            "album": "Shoot the Violist",
+            "genero": "Crossover clásica",
+            "dur": 236,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/bb/73/13bb73e9-218d-c436-5b47-1b7794da2590/mzaf_6033147438199188901.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/summer/1498699810?i=1498699829&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/28/a4/42/28a4425d-45af-18e4-033c-c941fdccdb68/20UMGIM04192.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una melodía cálida y de pulso suave que despierta la atención sin robar la lectura sobre cómo el cerebro construye lo que percibimos.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-11-02",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría 'Machine Learning Street Talk' para abrir, 'Brains@Bay' para profundizar y 'DigitalFUTURES' para resonar, porque son las voces de Hawkins explicando la votación de modelos con la misma tensión del libro.",
+        "candidatos": [
+          {
+            "id": "6VQILbDqaI4",
+            "titulo": "#59 JEFF HAWKINS - Thousand Brains Theory",
+            "canal": "Machine Learning Street Talk",
+            "dur": 9306,
+            "armonia": 9,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "⚓ Lo que llamas realidad es una predicción que el cerebro corrige.",
+            "pie": "Hawkins presenta en su propia voz la idea de miles de modelos del mundo en el cerebro, la base del libro.",
+            "pie_en": "Hawkins presents in his own voice the idea of thousands of models of the world in the brain, the foundation of the book."
+          },
+          {
+            "id": "XK-Vksr3IT8",
+            "titulo": "Brains@Bay Meetup - A Thousand Brains: a fireside chat with Jeff Hawkins (Apr 14, 2021)",
+            "canal": "Numenta",
+            "dur": 7402,
+            "armonia": 8,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🚶 Tu cerebro no solo reacciona al mundo: adelanta lo que va a tocar y corrige cuando se equivoca.",
+            "pie": "Charla de Hawkins sobre el libro, con el mecanismo de predicción sensoriomotora explicado desde la neurociencia.",
+            "pie_en": "Hawkins talk about the book, with the sensorimotor prediction mechanism explained from the standpoint of neuroscience."
+          },
+          {
+            "id": "jZSCqwUbSx0",
+            "titulo": "A Thousand Brains: A New Theory of Intelligence with Jeff Hawkins",
+            "canal": "Secular Student Alliance",
+            "dur": 3734,
+            "armonia": 6,
+            "rol": "resonar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "",
+            "pie": "Conversación sobre el libro con preguntas de estudiantes, una mirada más general a la teoría.",
+            "pie_en": "Conversation about the book with questions from students, a more general look at the theory."
+          }
+        ]
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.640.webp",
+        "srcset": "https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.640.webp 640w, https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.1280.webp 1280w",
+        "w": 2024,
+        "h": 3000,
+        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
+        "de": "0f494fee1977",
+        "fecha": "2026-11-03"
+      }
+    },
+    {
       "titulo": "Carta desde Japón",
       "autor": "Marie Kondo",
       "tagline": "",
@@ -66657,7 +67692,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -72240,7 +73275,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -75963,7 +76998,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -81370,7 +82405,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-19",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la atención y la claridad, acompañando la lectura sin distraer.",
         "candidatos": [
@@ -81387,6 +82422,66 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "Una interpretación clásica que invita a la reflexión y la atención plena.",
+            "frase_eco": ""
+          },
+          {
+            "id": "79616230",
+            "cancion": "Water Music: Allegro",
+            "artista": "Summit Brass",
+            "album": "Delights",
+            "genero": "Clásica",
+            "dur": 164,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/72/b4/94/mzm.dnunnyla.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/water-music-allegro/79616283?i=79616230&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m08/d30/h14/mzi.nmkbirxr.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "aterrizar",
+            "pie": "Metales luminosos y brillantes de Handel: una versión breve y precisa que asienta la mirada con alegría y claridad.",
+            "frase_eco": "⚓ La claridad visual se encuentra en la atención plena: observa."
+          },
+          {
+            "id": "1057243012",
+            "cancion": "Brandenburg Concerto No. 3 in G Major, BWV 1048: III. Allegro",
+            "artista": "David Parry & London Philharmonic Orchestra",
+            "album": "Bach",
+            "genero": "Clásica",
+            "dur": 344,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a8/2a/5e/a82a5e68-5b26-66c6-7969-1f83f20c8f0a/mzaf_14688659494659724631.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/brandenburg-concerto-no-3-in-g-major-bwv-1048-iii-allegro/1057242816?i=1057243012&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c1/33/44/c133442b-2cd0-e8bd-fab8-5dbe131b34fc/mzm.vqwwumcb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "El tercer movimiento de Bach respira brío y precisión orquestal; afila la atención como lo pide el libro, con calidez suficiente.",
+            "frase_eco": ""
+          },
+          {
+            "id": "82970777",
+            "cancion": "Water Music - Suite in F major, HWV 348: III. Allegro - Andante",
+            "artista": "Capella Istropolitana",
+            "album": "The Very Best of Handel",
+            "genero": "Clásica",
+            "dur": 419,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9d/b5/94/9db59459-37e5-29cf-6139-3c2bacc6f15b/mzaf_10286909065877351669.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/water-music-suite-in-f-major-hwv-348-iii-allegro-andante/82971077?i=82970777&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/23/5f/55/mzi.gmaafixy.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "Handel con luz y pulso limpio: el Allegro acompaña la lectura y eleva el ánimo sin exigir atención.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1277131273",
+            "cancion": "Brandenburg Concerto No. 3 in G Major, BWV 1048: I. —",
+            "artista": "Rinaldo Alessandrini & Concerto Italiano",
+            "album": "Bach: Brandenburg Concertos",
+            "genero": "Clásica",
+            "dur": 336,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/10/72/c51072a9-7b1e-9177-88f3-46d4ed39d218/mzaf_14535217642426305075.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/brandenburg-concerto-no-3-in-g-major-bwv-1048-i/1277130830?i=1277131273&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/bd/bd/2d/bdbd2d53-8e6e-3f48-ccbd-dd2521faf2fd/cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Bach en versión historicista: claridad de líneas que despierta la atención sin prisa, aunque no es la pieza más viva del conjunto.",
             "frase_eco": ""
           }
         ]
@@ -86124,7 +87219,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-19",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza para profundizar en la claridad y orden que busca el libro, aunque no es la más luminosa.",
         "candidatos": [
@@ -86157,6 +87252,51 @@
             "rol": "abrir",
             "pie": "Esta pieza jazzística evoca la libertad y el movimiento que se busca en un negocio autónomo.",
             "frase_eco": "💠 Imagina un negocio que opera de manera autónoma, liberándote para enfocarte en lo que realmente amas."
+          },
+          {
+            "id": "6797971194",
+            "cancion": "What A Wonderful World",
+            "artista": "The Oak Ridge Boys",
+            "album": "Buried Treasures",
+            "genero": "Country",
+            "dur": 250,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/a8/4a/53a84a25-ae1c-8f59-6db1-f500111269fe/mzaf_13652493122150484914.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/what-a-wonderful-world/6797970758?i=6797971194&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1b/cf/27/1bcf278b-7d0d-4dc3-d63e-ad06818d8ee7/885288136555.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Versión country de un clásico luminoso; calidez y brío sin robar la lectura.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1452164251",
+            "cancion": "Concerto Grosso in D, Op. 3, No. 1, RV 549: I. Allegro",
+            "artista": "Berliner Philharmoniker, Herbert von Karajan, Michel Schwalbé, Thomas ",
+            "album": "Vivaldi: The Four Seasons; L'estro armonico - Bach: Brandenburg Concertos Nos. 3 & 5 & Sui",
+            "genero": "Clásica",
+            "dur": 200,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/91/5f/ed915fc3-10f0-712e-0db2-7bb52c1e08c6/mzaf_2716278306325555261.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/concerto-grosso-in-d-op-3-no-1-rv-549-i-allegro/1452163411?i=1452164251&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/23/b1/e8/23b1e817-6fe4-85b7-7cac-656e7db1e846/00028947428725.rgb.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "aterrizar",
+            "pie": "Allegro de Vivaldi con luz y empuje: la sensación de un equipo que avanza solo, con claridad y libertad.",
+            "frase_eco": "🔍 La libertad de un empresario se encuentra en la autonomía de su equipo."
+          },
+          {
+            "id": "1452388275",
+            "cancion": "Concerto grosso in D Minor, Op. 3 / 11, RV 565: II. Adagio spiccato: Allegro",
+            "artista": "Daniel Hope & Chamber Orchestra of Europe",
+            "album": "Vivaldi: Concertos, Andromeda liberata (Aria), Trio Sonata",
+            "genero": "Clásica",
+            "dur": 190,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/63/51/00/63510066-5462-5fe1-7cbd-0d7117830c72/mzaf_10478060182208359919.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/concerto-grosso-in-d-minor-op-3-11-rv-565-ii-adagio/1452387208?i=1452388275&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f3/70/54/f37054e3-f2a7-0d06-2baf-3bbe75e54fab/00028947778820.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Vivaldi con pulso vivo y brillante: despierta el brío y encaja con la energía de un negocio que se pone en marcha.",
+            "frase_eco": ""
           }
         ]
       },
@@ -90666,7 +91806,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -92483,7 +93623,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de evocar reflexión, aunque su tono melancólico puede no ser el más adecuado para elevar el ánimo.",
         "candidatos": [
@@ -92501,6 +93641,51 @@
             "rol": "profundizar",
             "pie": "Una melodía que evoca la reflexión, pero su tono melancólico puede restar energía.",
             "frase_eco": "La ética es un ejercicio de reflexión constante."
+          },
+          {
+            "id": "348295867",
+            "cancion": "PRIMAVERA Allegro",
+            "artista": "Hamburg Chamber Orchestra & Wilfred Bottcher",
+            "album": "Vivaldi: Las Cuatro Estaciones",
+            "genero": "Clásica",
+            "dur": 314,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/c4/cf/70c4cf23-a40c-033b-7f3b-ce69bbb61809/mzaf_15337917045863356622.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/primavera-allegro/348295858?i=348295867&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6a/8b/84/6a8b8451-ea17-c64b-aa63-9ff69deb7efc/mzi.rdjslxxt.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Vivaldi en primavera despierta el brío para preguntarse qué decisiones orientan el día; luminoso y claro, sin robar la lectura.",
+            "frase_eco": "📖 ¿Qué decisiones tomas hoy que orientan tu vida?"
+          },
+          {
+            "id": "70729038",
+            "cancion": "Allegro",
+            "artista": "St. Louis Brass Quintet",
+            "album": "Baroque Brass",
+            "genero": "Clásica",
+            "dur": 105,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/2c/21/182c2120-8f34-f091-8caa-50e17baa53cb/mzaf_2344219474667042805.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/allegro/70731069?i=70729038&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m06/d09/h20/s05.rgqhgltl.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Metal de bronce barroco con pulso firme y alegre; sube el ánimo y da un tono de compromiso luminoso con la convivencia.",
+            "frase_eco": "🌓 La libertad implica un compromiso con la convivencia."
+          },
+          {
+            "id": "348295873",
+            "cancion": "PRIMAVERA  Allegro",
+            "artista": "Hamburg Chamber Orchestra & Wilfred Bottcher",
+            "album": "Vivaldi: Las Cuatro Estaciones",
+            "genero": "Clásica",
+            "dur": 207,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/5e/63/335e6346-d1d9-f447-fc06-e27dd4ae3757/mzaf_1227951820692172514.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/primavera-allegro/348295858?i=348295873&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6a/8b/84/6a8b8451-ea17-c64b-aa63-9ff69deb7efc/mzi.rdjslxxt.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Versión breve del allegro de primavera: brío limpio para arrancar la lectura y pensar en las decisiones del día.",
+            "frase_eco": "📖 ¿Qué decisiones tomas hoy que orientan tu vida?"
           }
         ]
       },
@@ -93366,7 +94551,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la curiosidad y el cuestionamiento, resonando con el espíritu rebelde de Einstein.",
         "candidatos": [
@@ -93398,6 +94583,54 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una pieza que sugiere un viaje introspectivo, aunque no logra elevar el ánimo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1452388339",
+            "cancion": "Sonata for Violin and Piano No. 5 in F Major, Op. 24 \"Spring\": I. Allegro",
+            "artista": "Itzhak Perlman & Vladimir Ashkenazy",
+            "album": "Beethoven: Violin Sonatas No. 9 \"Kreutzer & No. 5 \"Spring\"",
+            "genero": "Clásica",
+            "dur": 593,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/bf/b2/63bfb2b7-4ac9-ab6b-b4d1-50b1232abb57/mzaf_8026616705961150463.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sonata-for-violin-and-piano-no-5-in-f-major-op-24/1452388323?i=1452388339&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/10/44/55/1044550d-8c18-9d0e-b2f4-f9d2b1e4cf80/00028947886204.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "abrir",
+            "pie": "La Primavera de Beethoven tiene el brío de quien rompe reglas; el allegro abre la lectura como una pregunta.",
+            "frase_eco": "🎯 ¿Qué verdades aceptadas estás dispuesto a cuestionar hoy?"
+          },
+          {
+            "id": "1452537516",
+            "cancion": "Violin Sonata in F Major, K. 376: I. Allegro",
+            "artista": "Hilary Hahn & Natalie Zhu",
+            "album": "Mozart: Violin Sonatas K. 301, 304, 376 & 526",
+            "genero": "Clásica",
+            "dur": 307,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/a2/98/c2a2982f-df8b-e543-3305-bfea89294260/mzaf_13573992784495498382.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/violin-sonata-in-f-major-k-376-i-allegro/1452537413?i=1452537516&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5a/84/47/5a844738-94a6-9355-6b00-5c420a0f5fb4/00028947759515.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "Mozart luminoso y ágil, con la brillantez de quien imagina sin pesar; buen apoyo para leer.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1856087806",
+            "cancion": "Violin Sonata No. 3 in E-Flat Major, Op. 12 No. 3: III. Rondo. Allegro molto",
+            "artista": "Alena Baeva & Vadym Kholodenko",
+            "album": "Beethoven: Violin Sonatas Nos. 5 \"Spring\", 9 'Kreutzer\" & 3",
+            "genero": "Clásica",
+            "dur": 254,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/c8/99/7cc89901-f53e-b60f-e339-d8324aa68707/mzaf_4465818328160970996.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/violin-sonata-no-3-in-e-flat-major-op-12-no-3-iii-rondo/1856087315?i=1856087806&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/93/5d/a8/935da886-2d84-7972-ce33-d56494f5fba6/3701624512081.png/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Rondo de Beethoven ligero y juguetón, buen cierre luminoso, aunque menos singular que la Primavera.",
             "frase_eco": ""
           }
         ]
@@ -95177,7 +96410,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la reflexión, aunque no logra elevar el ánimo como se espera.",
         "candidatos": [
@@ -95209,6 +96442,21 @@
             "armonia": 7,
             "rol": "abrir",
             "pie": "Una melodía optimista que invita a enfrentar los desafíos con una sonrisa.",
+            "frase_eco": "🌱 Cuando enfrentes un desafío, recuerda que la mentalidad que elijas adoptar determinará tu capacidad para alcanzar el alto rendimiento."
+          },
+          {
+            "id": "1440761728",
+            "cancion": "Hymn to Freedom",
+            "artista": "Oscar Peterson Trio",
+            "album": "Night Train",
+            "genero": "Jazz",
+            "dur": 336,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fd/09/0f/fd090f1e-51da-e1f5-1133-c5c030b39c8e/mzaf_17959012835674103063.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/hymn-to-freedom/1440761118?i=1440761728&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ab/c4/fc/abc4fc25-9e4e-810b-d438-45722722c3b5/06UMGIM09109.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Un piano de jazz con pulso firme y brío para empezar; luminoso, aunque sin letra que oriente el propósito del libro.",
             "frase_eco": "🌱 Cuando enfrentes un desafío, recuerda que la mentalidad que elijas adoptar determinará tu capacidad para alcanzar el alto rendimiento."
           }
         ]
@@ -97902,7 +99150,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "pool-emergencia+completar",
         "sinfonia": "pool:calma",
         "candidatos": [
@@ -97935,6 +99183,21 @@
             "rol": "aterrizar",
             "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
             "frase_eco": "respira; la página espera"
+          },
+          {
+            "id": "1442210675",
+            "cancion": "Wave (feat. Antônio Carlos Jobim)",
+            "artista": "Frank Sinatra",
+            "album": "Sinatra & Company",
+            "genero": "Jazz vocal",
+            "dur": 199,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/95/5e/38955e0c-48db-23d0-5d47-28cc2dac1109/mzaf_13157257852120311843.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/wave-feat-ant%C3%B4nio-carlos-jobim/1442210228?i=1442210675&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/8b/ea/45/8bea45a4-fa10-39a7-a4e0-e00458525dd2/00602537554492.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Sinatra y Jobim: calidez de bossa y swing luminoso, ajena al universo del libro pero amable.",
+            "frase_eco": ""
           }
         ]
       },
@@ -98799,7 +100062,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Upside Down' de Jack Johnson por su mensaje optimista y su ritmo suave, que inspira a dar el primer paso en el emprendimiento.",
         "candidatos": [
@@ -98817,6 +100080,36 @@
             "rol": "abrir",
             "pie": "La canción invita a ver el mundo desde una nueva perspectiva, ideal para emprender.",
             "frase_eco": "🎯 ¿Qué te impide dar el primer paso hacia tu emprendimiento?"
+          },
+          {
+            "id": "1181964570",
+            "cancion": "Time (From \"Inception\")",
+            "artista": "Tina Guo, Gavin Greenaway & Czech Philharmonic",
+            "album": "Hans Zimmer - The Classics",
+            "genero": "Crossover clásica",
+            "dur": 282,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/18/f6/1818f68f-e673-f960-80e8-519c12a661d8/mzaf_8501340419569007203.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/time-from-inception/1181964048?i=1181964570&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/98/62/13/9862136c-3bb4-c97f-9337-6c72348aa26e/886445824049.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Hans Zimmer en versión clásica: pulso firme y ascendente que asienta la idea de perseverar, con luz suficiente para acompañar la lectura.",
+            "frase_eco": "La perseverancia y la adaptación constante son las claves que nos llevan al éxito en este camino emprendedor."
+          },
+          {
+            "id": "1657214995",
+            "cancion": "Love Theme (From \"Cinema Paradiso\")",
+            "artista": "The City of Prague Philharmonic Orchestra & Paul Bateman",
+            "album": "Music from Italian Films",
+            "genero": "Soundtrack",
+            "dur": 214,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/c1/e6/31/c1e631bb-f8d2-eee7-f37d-14bb007d9825/mzaf_1688162875862391429.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/love-theme-from-cinema-paradiso/1657214994?i=1657214995&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/a0/65/83/a06583a8-73f8-15dc-83e7-8ba324e047a6/22UMGIM25232.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Melodía de cine italiano, cálida y nostálgica; despierta sin imponerse, aunque su alma pertenece a otro universo.",
+            "frase_eco": ""
           }
         ]
       },
@@ -99691,7 +100984,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Sunrise' de Norah Jones por su suavidad y calidez, que complementa la búsqueda de silencio y conexión interna del libro.",
         "candidatos": [
@@ -99724,6 +101017,21 @@
             "rol": "abrir",
             "pie": "Una melodía suave que invita a la reflexión y al silencio interior.",
             "frase_eco": "🌱 ¿Qué pasaría si dedicas unos minutos a la práctica del silencio?"
+          },
+          {
+            "id": "1147103058",
+            "cancion": "Raga: Mishra Piloo (Aalap, Gat in Rupak & Teental)",
+            "artista": "Deepak Ram & Enayet Hossain",
+            "album": "Incandescent",
+            "genero": "Música clásica de la India",
+            "dur": 1602,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/f7/a3/56/f7a3568a-9488-17bc-40d8-74e18b456074/mzaf_4315752823528848578.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/raga-mishra-piloo-aalap-gat-in-rupak-teental/1147103055?i=1147103058&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/60/19/40/6019402d-8699-7b76-6227-d2e640313c4f/859549041421.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Raga Mishra Piloo con pulso rítmico en el gat; más vivo que la versión larga y apto para lectura de calma activa.",
+            "frase_eco": ""
           }
         ]
       },
@@ -100566,7 +101874,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-02",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría solo esta pieza por su suavidad, pero no logra elevar el ánimo ni acompaña la lectura de manera efectiva.",
         "candidatos": [
@@ -100584,6 +101892,21 @@
             "rol": "profundizar",
             "pie": "Una melodía suave que invita a la reflexión, pero carece de energía para elevar el ánimo.",
             "frase_eco": ""
+          },
+          {
+            "id": "643610373",
+            "cancion": "Garota de Ipanema",
+            "artista": "Conexao Tupi & Antônio Carlos Jobim",
+            "album": "Best Brazilian Classics",
+            "genero": "Brasileña",
+            "dur": 238,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ad/f0/19/adf0194a-0dfc-896b-7973-5791a76927e9/mzaf_998583647588053004.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/garota-de-ipanema/643609665?i=643610373&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/4f/b4/50/4fb4506a-77f7-ea06-a76a-8ad7add753b1/Best_brazilian_Classics_d2a.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Bossa nova luminosa y cálida: sube el ánimo sin robar la atención a la lectura sobre señales.",
+            "frase_eco": "✨ ¿Qué te dice el lenguaje corporal de la persona frente a ti?"
           }
         ]
       },
@@ -144532,7 +145855,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-10-06",
         "juez": "pool-emergencia+completar",
@@ -153639,7 +154962,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-10-10",
         "juez": "gpt-4o-mini+completar",
@@ -161838,7 +163161,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-10-25T19:04:15.609Z",
+      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
       "_musica": {
         "resuelto_el": "2026-10-17",
         "juez": "pool-emergencia+completar",
@@ -163730,9 +165053,9 @@
     }
   ],
   "meta": {
-    "next_edition_number": 110,
-    "total": 177,
-    "last_audit": "2026-10-25T19:04:15.609Z",
+    "next_edition_number": 111,
+    "total": 178,
+    "last_audit": "2026-11-03T00:34:17.795Z",
     "healing_rotation_idx": 56,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
     "last_healing_timestamp": "2026-10-25T19:20:52.219Z"
