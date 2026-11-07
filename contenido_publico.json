@@ -1,11 +1,923 @@
 {
   "libros": [
     {
+      "titulo": "Esencialismo",
+      "autor": "Greg McKeown",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "Esencialismo",
+      "titulo_en": "Essentialism: The Disciplined Pursuit of Less",
+      "idioma_original": "en",
+      "dimension": "Prosperidad",
+      "punto": "Activo",
+      "palabras": [
+        "sobrecarga",
+        "prisa",
+        "elegir",
+        "decir no"
+      ],
+      "palabras_en": [
+        "overload",
+        "hurry",
+        "choose",
+        "saying no"
+      ],
+      "frases": [
+        "⏳ ¿Cuántas de las cosas que haces hoy realmente elegiste tú?",
+        "🔭 Antes de responder el próximo pedido, mira tu agenda y busca lo que de verdad importa.",
+        "🌌 Hacer menos cosas, pero que salgan bien, te devuelve las riendas de tus días.",
+        "🌬 El poder de decir no nace de saber qué merece tu sí."
+      ],
+      "frases_en": [
+        "⏳ How many things on your list did you actually choose to do?",
+        "🫁 Before you answer the next request, put your hand on your chest and take one slow breath.",
+        "🌌 An automatic yes is a quiet no to the thing that mattered more.",
+        "☀ Saying no is not refusal. It is knowing what deserves your yes."
+      ],
+      "frases_og": [
+        "💠 El sí automático cobra su precio antes de que lo notes.",
+        "✨ Quita de tu lista lo que no pediste de verdad y mira qué queda.",
+        "⚓ ¿Qué cambiaría si eligieras una sola cosa y la hicieras bien?",
+        "🔁 Menos, pero bien hecho: ahí empieza el control de tu vida."
+      ],
+      "frases_og_en": [
+        "💠 Most of your busy week was decided by someone else.",
+        "✨ Stop saying yes before you know what it costs.",
+        "⚓ Less, done well, is more than more, done badly.",
+        "🔁 What would you protect if you could keep only three things?"
+      ],
+      "colores": [
+        "#90CADF",
+        "#4D8ACB",
+        "#2D2C96",
+        "#2A1957"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#CFD0D3",
+      "tarjeta": {
+        "titulo": "Lo esencial no se negocia con la prisa",
+        "parrafoTop": "[H]Cuando todo parece urgente, nada lo es.[/H] Lo esencial no grita; espera a que alguien deje de hacer cosas por inercia y mire qué quiere de verdad. Discernir es una disciplina: decidir qué merece tu tiempo y cuál es el costo de decir sí a cada pedido.",
+        "subtitulo": "¿Cuánto de tu semana sale de decisiones que nunca tomaste?",
+        "parrafoBot": "[H]Cada sí automático es un no a algo más importante.[/H] Por eso el trabajo no es hacer más en menos tiempo, sino eliminar lo que no es esencial hasta que quede lo que vale la pena hacer bien.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Lo esencial no se negocia con la prisa",
+        "parrafoTop": "[H]Cuando todo parece urgente, nada lo es.[/H] Lo esencial no grita; espera a que alguien deje de hacer cosas por inercia y mire qué quiere de verdad. Discernir es una disciplina: decidir qué merece tu tiempo y cuál es el costo de decir sí a cada pedido.",
+        "subtitulo": "¿Cuánto de tu semana sale de decisiones que nunca tomaste?",
+        "parrafoBot": "[H]Cada sí automático es un no a algo más importante.[/H] Por eso el trabajo no es hacer más en menos tiempo, sino eliminar lo que no es esencial hasta que quede lo que vale la pena hacer bien.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Lo esencial no se negocia con la prisa",
+        "parrafoTop": "[H]Cuando todo parece urgente, nada lo es.[/H] Lo esencial no grita; espera a que alguien deje de hacer cosas por inercia y mire qué quiere de verdad. Discernir es una disciplina: decidir qué merece tu tiempo y cuál es el costo de decir sí a cada pedido.",
+        "subtitulo": "¿Cuánto de tu semana sale de decisiones que nunca tomaste?",
+        "parrafoBot": "[H]Cada sí automático es un no a algo más importante.[/H] Por eso el trabajo no es hacer más en menos tiempo, sino eliminar lo que no es esencial hasta que quede lo que vale la pena hacer bien.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "Essential things don't shout",
+        "parrafoTop": "[H]When everything feels urgent, nothing really is.[/H] The essential doesn't shout. It waits until you stop doing things out of habit. Most of us say yes before we ask what the yes will cost. Then the week fills with requests we never chose.",
+        "subtitulo": "How much of your week came from decisions you never made?",
+        "parrafoBot": "[H]Each reflex yes quietly says no to something that mattered more.[/H] The discipline is not doing more in less time. It is cutting away what is not essential, until only the worthy things remain, and doing them well.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "Essential things don't shout",
+        "parrafoTop": "[H]When everything feels urgent, nothing really is.[/H] The essential doesn't shout. It waits until you stop doing things out of habit. Most of us say yes before we ask what the yes will cost. Then the week fills with requests we never chose.",
+        "subtitulo": "How much of your week came from decisions you never made?",
+        "parrafoBot": "[H]Each reflex yes quietly says no to something that mattered more.[/H] The discipline is not doing more in less time. It is cutting away what is not essential, until only the worthy things remain, and doing them well.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "Essential things don't shout",
+        "parrafoTop": "[H]When everything feels urgent, nothing really is.[/H] The essential doesn't shout. It waits until you stop doing things out of habit. Most of us say yes before we ask what the yes will cost. Then the week fills with requests we never chose.",
+        "subtitulo": "How much of your week came from decisions you never made?",
+        "parrafoBot": "[H]Each reflex yes quietly says no to something that mattered more.[/H] The discipline is not doing more in less time. It is cutting away what is not essential, until only the worthy things remain, and doing them well.",
+        "style": {
+          "accent": "#1F4AD6",
+          "paper": "#CFD0D3",
+          "ink": "#17181C",
+          "border": "#7C7D7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Esencialismo%20Greg%20McKeown%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Essentialism%3A%20The%20Disciplined%20Pursuit%20of%20Less%20Greg%20McKeown%20interview",
+      "_animo_promedio": 0.53,
+      "_valor_predominante": "negocios",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "Esencialismo como disciplina sistemática para discernir lo absolutamente esencial, no como gestión del tiempo",
+            "Recuperar el control de tus decisiones en lugar de dar a otros el permiso de elegir por ti",
+            "Obtener sólo cosas bien hechas: hacer menos para lograr más, no hacer más en menos tiempo",
+            "Criterio más selectivo de lo esencial como fuente de poder personal sobre tu tiempo y energía"
+          ],
+          "key_terms": [
+            "esencialismo",
+            "lo esencial",
+            "disciplina de menos",
+            "trade-offs",
+            "no es no a todo lo demás",
+            "el poder de decir no"
+          ],
+          "authorial_voice_notes": "Voz de ensayo práctico y directo, de tono reflexivo pero sin dramatismo, que se dirige al lector como alguien atrapado en la sobrecarga. McKeown desmonta la cultura de hacerlo todo, usando ejemplos cotidianos y una lógica casi de filosofía aplicada. Escribe con claridad y ritmo ordenado, más confrontativo con el hábito del sí automático que con el lector mismo."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "💠 El sí automático cobra su precio antes de que lo notes.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "✨ Quita de tu lista lo que no pediste de verdad y mira qué queda.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": "foco",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ ¿Qué cambiaría si eligieras una sola cosa y la hicieras bien?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": "control",
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🔁 Menos, pero bien hecho: ahí empieza el control de tu vida.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "💠 Most of your busy week was decided by someone else.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ Stop saying yes before you know what it costs.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "⚓ Less, done well, is more than more, done badly.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔁 What would you protect if you could keep only three things?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "⏳ ¿Cuántas de las cosas que haces hoy realmente elegiste tú?",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "negocios",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Antes de responder el próximo pedido, mira tu agenda y busca lo que de verdad importa.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "foco",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Hacer menos cosas, pero que salgan bien, te devuelve las riendas de tus días.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": "control",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🌬 El poder de decir no nace de saber qué merece tu sí.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": "decir no",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "time",
+            "phrase": "⏳ How many things on your list did you actually choose to do?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🫁 Before you answer the next request, put your hand on your chest and take one slow breath.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🌌 An automatic yes is a quiet no to the thing that mattered more.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": "trade-offs",
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "light",
+            "phrase": "☀ Saying no is not refusal. It is knowing what deserves your yes.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.6,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content echoes core Esencialismo concepts such as discerning what is essential, saying no to automatic yeses, and doing less but well, and phrases like 'hacer menos, pero bien hecho' mirror the synopsis. However, much of the copy is generic productivity and self-help phrasing ('cuando todo parece urgente, nada lo es') that could fit many books, and it lacks McKeown-specific framing or named ideas like the 'no es una estrategia de gestión del tiempo' distinction."
+        },
+        "en": {
+          "grounded_score": 0.45,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content uses the book's core theme of essentialism (essential vs. non-essential, cutting away, doing fewer things well, saying no to protect what matters), which ties it to Esencialismo. However, the phrasing is largely generic productivity and mindfulness language (\"put your hand on your chest and take one slow breath\", \"when everything feels urgent\") that could sit in many self-help books, and it lacks named book-specific frameworks or content."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa del libro con preguntas retóricas y consejos, sin referencias meta al autor ni a la obra.",
+          "elapsed_ms": 1341,
+          "usage": {
+            "prompt_tokens": 904,
+            "completion_tokens": 65,
+            "total_tokens": 969
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa e imperativa del libro, sin referencias meta al autor ni al título.",
+          "elapsed_ms": 1395,
+          "usage": {
+            "prompt_tokens": 837,
+            "completion_tokens": 55,
+            "total_tokens": 892
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1861,
+        "total_ms": 1395
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 237.96875,
+          "adjusted_hue": 225.96875,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": -12,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.50",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#90CADF",
+          "--palette-1": "#4D8ACB",
+          "--palette-2": "#2D2C96",
+          "--palette-3": "#2A1957",
+          "--accent": "#1F4AD6",
+          "--accent-soft": "#1F4AD638",
+          "--accent-glow": "#1F4AD66b",
+          "--paper": "#CFD0D3",
+          "--ink": "#17181C",
+          "--border": "#7C7D7F",
+          "--highlight-bg": "#1B41BCd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "8px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "pregunta_directa",
+          "instruccion_sensorial",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "direct_question",
+          "sensory_instruction",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-11-07T15-11-19",
+      "_crono": {
+        "dia": "sábado",
+        "hora": 9,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "espacio_personal",
+        "descripcion_dia": "Sábado es tiempo de profundidad personal. Más íntimo y contemplativo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 182189,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 28806,
+          "palette": 0,
+          "content_es": 39018,
+          "judge_es": 2465,
+          "content_es_retry": 38593,
+          "judge_es_retry": 2470,
+          "content_en": 35139,
+          "judge_en": 2405,
+          "voice": 1861,
+          "voice_extended": 31432,
+          "highlight_judge_es_parrafoTop": 1187,
+          "highlight_judge_es_parrafoBot": 1182,
+          "highlight_judge_en_parrafoTop": 1170,
+          "highlight_judge_en_parrafoBot": 1177,
+          "csal": 7027
+        },
+        "elapsed_ms_total": 69597,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 6901,
+          "palette": 0,
+          "cover_fallback": 2105,
+          "content_es": 18020,
+          "judge_es": 2341,
+          "content_es_retry": 14949,
+          "content_en": 16091,
+          "judge_en": 1667,
+          "voice": 1396,
+          "voice_extended": 4400,
+          "highlight_judge": 7287,
+          "lens_compatibility": 898,
+          "csal": 11087,
+          "post_processing": 19277
+        },
+        "llm_calls_count": 42,
+        "models_used": [
+          "claude-haiku-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 1,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.1,
+        "game-theory": 0.35,
+        "self-knowledge": 0.4,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.6,
+          "negocio": 0.6,
+          "familia": 0.2,
+          "espiritu": 0.2,
+          "relaciones": 0.3,
+          "finanzas": 0.15
+        },
+        "hawkins": 0.1
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "manana"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando dices que sí a todo y luego no alcanzas el tiempo para lo importante",
+          "cuando sientes que tu agenda la deciden otros y no tú",
+          "antes de aceptar una nueva tarea sin revisar tus prioridades",
+          "cuando estás tan ocupado que ya no distingues lo urgente de lo esencial",
+          "después de una semana llena de pendientes que no elegiste",
+          "cuando te cuesta decir no a un jefe que siempre pide más",
+          "cuando sientes culpa por rechazar una invitación o un favor",
+          "cuando quieres hacerlo todo y terminas sin terminar nada bien",
+          "cuando tu bandeja de correo te dicta el ritmo del día",
+          "cuando te comparas con otros que parecen lograr más sin esfuerzo",
+          "cuando el trabajo se mezcla con la familia y no sabes dónde poner límites",
+          "cuando llegas a fin de mes agotado sin saber en qué invertiste tu energía",
+          "cuando una reunión más se come la tarde que tenías para pensar",
+          "cuando alguien te pide algo urgente y lo haces sin preguntarte si importa",
+          "cuando quieres dejar de estar disperso y enfocarte en una sola cosa",
+          "antes de comprometerte con un proyecto extra por miedo a quedar mal",
+          "cuando te das cuenta de que estás reaccionando todo el día y no decidiendo",
+          "cuando la lista de pendientes crece más rápido de lo que la puedes cerrar",
+          "después de decir sí por cortesía y arrepentirte horas más tarde",
+          "cuando sientes que ser productivo te roba la vida",
+          "cuando quieres simplificar tus decisiones pero no sabes por dónde empezar",
+          "cuando el éxito de otros te hace sentir que no estás haciendo lo suficiente",
+          "cuando te interrumpen constantemente y pierdes el hilo de lo que importa",
+          "cuando te preguntas si realmente elegiste tu carrera o solo la fuiste aceptando",
+          "cuando buscas menos cosas pero mejor hechas en tu trabajo",
+          "cuando el perfeccionismo te impide cerrar proyectos y avanzar",
+          "cuando la ansiedad por no quedarte atrás te empuja a aceptar más",
+          "cuando planeas el año y todo parece prioritario al mismo tiempo",
+          "antes de una semana nueva en la que quieres proteger tu tiempo",
+          "cuando sientes que la vida pasa mientras cumples con pendientes ajenos",
+          "cuando te preguntas qué dejarías de hacer si tuvieras permiso para elegir",
+          "cuando necesitas justificar ante otros por qué no haces algo",
+          "cuando quieres recuperar el control de tus días después de un periodo caótico"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "agotado",
+            "abrumado",
+            "culpable",
+            "ansioso",
+            "frustrado",
+            "estresado",
+            "saturado",
+            "quemado",
+            "burned out",
+            "overwhelmed",
+            "guilty",
+            "anxious",
+            "drained",
+            "distraído",
+            "resignado",
+            "inquieto",
+            "presionado",
+            "overloaded",
+            "stressed",
+            "fatigado",
+            "sobrecarga",
+            "prisa",
+            "overload",
+            "hurry",
+            "saying no"
+          ],
+          "objetos": [
+            "agenda",
+            "calendario",
+            "lista de pendientes",
+            "to-do list",
+            "correo",
+            "bandeja de entrada",
+            "inbox",
+            "reuniones",
+            "meetings",
+            "prioridades",
+            "priorities",
+            "proyectos",
+            "projects",
+            "tiempo",
+            "time",
+            "energía",
+            "energy",
+            "compromisos",
+            "commitments",
+            "tareas",
+            "tasks"
+          ],
+          "contextos": [
+            "trabajo",
+            "oficina",
+            "office",
+            "jefe",
+            "boss",
+            "equipo",
+            "team",
+            "casa",
+            "home",
+            "familia",
+            "family",
+            "fin de mes",
+            "semana laboral",
+            "workweek",
+            "proyecto nuevo",
+            "new project",
+            "junta",
+            "meeting room",
+            "lunes",
+            "vacaciones",
+            "side hustle"
+          ],
+          "verbos": [
+            "decir no",
+            "say no",
+            "elegir",
+            "choose",
+            "priorizar",
+            "prioritize",
+            "delegar",
+            "delegate",
+            "soltar",
+            "let go",
+            "simplificar",
+            "simplify",
+            "aceptar de más",
+            "overcommit",
+            "enfocarse",
+            "focus",
+            "recuperar",
+            "reclaim",
+            "cerrar",
+            "finish",
+            "descartar",
+            "eliminate"
+          ]
+        },
+        "concept_tags": [
+          "esencialismo como disciplina sistemática",
+          "discernir lo absolutamente esencial",
+          "eliminar lo que no es esencial",
+          "obtener solo cosas bien hechas",
+          "hacer menos para lograr más",
+          "recuperar el control de decisiones propias",
+          "dar a otros el permiso de elegir por ti",
+          "criterio selectivo de lo esencial",
+          "el poder de decir no",
+          "la trampa del sí automático",
+          "esencial vs trivial vs útil",
+          "sobrecarga de compromisos",
+          "tiempo y energía como recursos limitados",
+          "la lógica del menos pero mejor",
+          "Greg McKeown Esencialismo 2011",
+          "el esencialista frente al hacedor de todo",
+          "priorización disciplinada de proyectos",
+          "inversión selectiva del tiempo"
+        ],
+        "anti_patterns": [
+          "técnicas de productividad con apps o hacks",
+          "gestión del tiempo minuto a minuto",
+          "cómo hacer más cosas en menos tiempo",
+          "rutinas matutinas de alto rendimiento",
+          "motivación para trabajar más horas",
+          "estrategias de marketing personal",
+          "finanzas personales e inversiones",
+          "dieta, nutrición o fitness",
+          "meditación o mindfulness como técnica principal",
+          "coaching de liderazgo corporativo",
+          "trucos de networking para vender más"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "⏳"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🗂️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🎯"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🛑"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una afirmación en voz autoral sobre la vida misma, como sentencia dentro de la narración o reflexión, no describe el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es un consejo directo en segunda persona, escrito como parte del contenido del libro y no como descripción externa de él."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.7,
+              "reason": "Es una pregunta directa al lector en voz autoral, propia de la escritura del libro y no una descripción externa sobre el contenido."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.72,
+              "reason": "Es una máxima en voz directa del autor, dirigida al lector como parte del argumento, no una descripción externa del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta retórica interpelando directamente al lector desde la voz del texto, como parte del contenido del libro y no como descripción externa sobre él."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una instrucción directa en segunda persona dentro de la voz del texto, no una descripción externa del libro, por lo que pertenece al contenido."
+            },
+            {
+              "category": "fuera",
+              "confidence": 0.72,
+              "reason": "La frase enuncia una moraleja o lección general sobre el libro, funcionando como resumen o reseña del mensaje, no como escritura narrativa interna del texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.72,
+              "reason": "Es una afirmación en voz autoral que enuncia una idea directamente, sin describir el libro ni referirse a él desde afuera; se lee como contenido del propio texto."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The sentence speaks directly to the reader in second person as narrative voice, reading like a line from the book itself rather than a description of it."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Reads as a direct second-person piece of advice written in the book's own voice, not a description of the book by an outside commentator."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "Frase en voz autoral que enuncia una máxima de la obra misma, sin describir el libro desde afuera; suena a algo escrito dentro del texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta directa al lector en voz autoral, formulada como parte del texto narrativo o reflexivo, no una descripción del libro desde afuera."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase interpela directamente al lector como parte de la narración, como una pregunta reflexiva escrita dentro del propio texto, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.7,
+              "reason": "Esta frase es una instrucción directa dirigida al lector dentro de la voz del texto, no una descripción externa del libro; parece contenido escrito en primera escritura."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una máxima en primera escritura que forma parte del contenido del libro, expresando una idea directamente en lugar de describir el libro desde fuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una afirmación de voz autoral en primera escritura, presentada como enunciado del propio libro y no como descripción ajena de su contenido."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-07T15:12:47.909Z",
+      "_slug": "esencialismo",
+      "_edicion_numero": 111,
+      "_musica": {
+        "resuelto_el": "2026-11-07",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Solo hay una pieza, Summertime de Ella Fitzgerald: cálida y segura, pero de ánimo melancólico y poco eco con el libro; sin alternativas suficientes para armar un quinteto.",
+        "candidatos": [
+          {
+            "id": "257595977",
+            "cancion": "Long Tall Dexter",
+            "artista": "Dexter Gordon",
+            "album": "Gone With the Wind",
+            "genero": "Jazz",
+            "dur": 180,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/4f/42/f3/4f42f3f6-a9c6-99aa-62d7-c5017a1928de/mzaf_5960339821653727451.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/long-tall-dexter/257595741?i=257595977&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/78/ef/85/mzi.wjgwbybo.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Swing vivo y juguetón de Dexter Gordon que despierta brío; un 'no' con sonrisa tras el sí automático.",
+            "frase_eco": "💠 El sí automático cobra su precio antes de que lo notes."
+          },
+          {
+            "id": "944513729",
+            "cancion": "Saudade De Bahia",
+            "artista": "Dorival Caymmi",
+            "album": "Risque",
+            "genero": "Jazz",
+            "dur": 171,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c0/90/18/c090186f-7e78-c82d-2cbc-26fb2b5f6115/mzaf_16893509274066687035.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/saudade-de-bahia/944513698?i=944513729&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/53/b3/63/53b3631e-717e-38e6-1b7b-a07debeffb81/811868543529_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Caymmi cálido y saudoso; luminoso en su ternura pero algo melancólico para un libro de elección activa.",
+            "frase_eco": ""
+          },
+          {
+            "id": "159193417",
+            "cancion": "Wave",
+            "artista": "Dexter Gordon",
+            "album": "Swiss Nights, Vol. 2",
+            "genero": "Jazz",
+            "dur": 659,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/78/5f/e9/785fe9cf-dfbb-4e25-4af8-e25c8c694490/mzaf_12824721555509573482.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/wave/159193298?i=159193417&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/e8/5f/8a/mzi.vjgkfjaw.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Dexter Gordon en pulso relajado y largo; sostiene la lectura con calidez, sin mucho hook que empuje.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1442242414",
+            "cancion": "Saudade De Itapoan",
+            "artista": "Dorival Caymmi",
+            "album": "Canções Praieiras",
+            "genero": "MPB",
+            "dur": 153,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/28/da/d628da6c-8985-b8a2-3de5-40211fe52aa8/mzaf_398314141187935614.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/saudade-de-itapoan/1442242236?i=1442242414&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/c5/90/6f/c5906f1c-798e-9023-ac03-54897347871a/00602557785395.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Caymmi de costa y brisa, asienta con luz suave; una sola cosa bien hecha, como la canción.",
+            "frase_eco": "⚓ ¿Qué cambiaría si eligieras una sola cosa y la hicieras bien?"
+          }
+        ]
+      },
+      "_video": {
+        "resuelto_el": "2026-11-07",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría 'Greg McKeown: Essentialism' (T9x6D09AKBU) para abrir, 'Discurso de McKeown en REACH 2018' (v7Nao8lpsIs) para profundizar y 'Greg McKeown on ESSENTIALISM' (ZGgICDVnO5M) para aterrizar, porque son voz directa del autor sobre la disc",
+        "candidatos": [
+          {
+            "id": "v7Nao8lpsIs",
+            "titulo": "Essentialism: The Disciplined Pursuit of Less | Greg McKeown",
+            "canal": "Crucial Learning",
+            "dur": 2750,
+            "armonia": 9,
+            "rol": "profundizar",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "🌬 El poder de decir no nace de saber qué merece tu sí.",
+            "pie": "Discurso de McKeown en REACH 2018 sobre la disciplina de elegir menos; la voz del autor desarrollando la idea central del libro."
+          },
+          {
+            "id": "T9x6D09AKBU",
+            "titulo": "Greg McKeown: Essentialism - The Disciplined Pursuit of Less",
+            "canal": "Stanford Graduate School of Business",
+            "dur": 303,
+            "armonia": 8,
+            "rol": "abrir",
+            "tipo": "autor_habla",
+            "relacion": "invita",
+            "idioma": "en",
+            "frase_eco": "⏳ ¿Cuántas de las cosas que haces hoy realmente elegiste tú?",
+            "pie": "McKeown explica cómo el éxito lleva a ejecutivos a perder el foco al intentar hacerlo todo, a partir de la idea de 'menos pero mejor'."
+          },
+          {
+            "id": "8aILLcGvC1E",
+            "titulo": "How SUCCESS Can Come From The DISCIPLINED PURSUIT OF LESS | Greg McKeown & Jay Shetty",
+            "canal": "Jay Shetty",
+            "dur": 4116,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "⚓ ¿Qué cambiaría si eligieras una sola cosa y la hicieras bien?",
+            "pie": "Conversación con Jay Shetty sobre cómo aplicar la disciplina de hacer menos a un día productivo y a la vida cotidiana."
+          }
+        ]
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/esencialismo.da92a4c209.640.webp",
+        "srcset": "https://app.triggui.com/portadas/esencialismo.da92a4c209.640.webp 640w, https://app.triggui.com/portadas/esencialismo.da92a4c209.1280.webp 1280w",
+        "w": 1842,
+        "h": 3000,
+        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/3000x3000bb.jpg",
+        "de": "3de08651ad9f",
+        "fecha": "2026-11-07"
+      }
+    },
+    {
       "titulo": "A Thousand Brains",
       "autor": "Jeff Hawkins",
       "tagline": "",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/88/00/9f/88009f9a-704b-4927-3c87-be000fc90ffd/9781541675803.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/88/00/9f/88009f9a-704b-4927-3c87-be000fc90ffd/9781541675803.jpg/3000x3000bb.jpg",
       "isbn": "",
       "titulo_es": "Mil cerebros",
       "titulo_en": "A Thousand Brains",
@@ -152,7 +1064,8 @@
             "predicción sensoriomotora",
             "votación de modelos"
           ],
-          "authorial_voice_notes": "Hawkins escribe desde la neurociencia computacional con tono de ingeniero curioso: explica mecanismos con analogías concretas, admite lo que aún no se sabe y contrasta su propuesta con creencias erróneas sobre el cerebro. No es narrativa con personajes; su voz es didáctica, directa y provocadora, con confianza moderada en su teoría y apertura a la crítica."
+          "authorial_voice_notes": "Hawkins escribe desde la neurociencia computacional con tono de ingeniero curioso: explica mecanismos con analogías concretas, admite lo que aún no se sabe y contrasta su propuesta con creencias erróneas sobre el cerebro. No es narrativa con personajes; su voz es didáctica, directa y provocadora, con confianza moderada en su teoría y apertura a la crítica.",
+          "authorial_voice_notes_en": "Hawkins writes from computational neuroscience with the tone of a curious engineer: he explains mechanisms through concrete analogies, admits what is still unknown, and contrasts his proposal with mistaken beliefs about the brain. It is not narrative with characters; his voice is didactic, direct, and provocative, with moderate confidence in his theory and openness to criticism."
         },
         "og_phrases_es": [
           {
@@ -882,7 +1795,8 @@
             "relacion": "invita",
             "idioma": "en",
             "frase_eco": "⚓ Lo que llamas realidad es una predicción que el cerebro corrige.",
-            "pie": "Hawkins presenta en su propia voz la idea de miles de modelos del mundo en el cerebro, la base del libro."
+            "pie": "Hawkins presenta en su propia voz la idea de miles de modelos del mundo en el cerebro, la base del libro.",
+            "pie_en": "Hawkins presents in his own voice the idea of thousands of models of the world in the brain, the foundation of the book."
           },
           {
             "id": "XK-Vksr3IT8",
@@ -895,7 +1809,8 @@
             "relacion": "invita",
             "idioma": "en",
             "frase_eco": "🚶 Tu cerebro no solo reacciona al mundo: adelanta lo que va a tocar y corrige cuando se equivoca.",
-            "pie": "Charla de Hawkins sobre el libro, con el mecanismo de predicción sensoriomotora explicado desde la neurociencia."
+            "pie": "Charla de Hawkins sobre el libro, con el mecanismo de predicción sensoriomotora explicado desde la neurociencia.",
+            "pie_en": "Hawkins talk about the book, with the sensorimotor prediction mechanism explained from the standpoint of neuroscience."
           },
           {
             "id": "jZSCqwUbSx0",
@@ -908,17 +1823,18 @@
             "relacion": "acompana",
             "idioma": "en",
             "frase_eco": "",
-            "pie": "Conversación sobre el libro con preguntas de estudiantes, una mirada más general a la teoría."
+            "pie": "Conversación sobre el libro con preguntas de estudiantes, una mirada más general a la teoría.",
+            "pie_en": "Conversation about the book with questions from students, a more general look at the theory."
           }
         ]
       },
       "portada_app": {
-        "src": "https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.640.webp",
-        "srcset": "https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.640.webp 640w, https://app.triggui.com/portadas/a-thousand-brains.e71b1d8b98.1280.webp 1280w",
-        "w": 2024,
-        "h": 3000,
-        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/02/33/cd/0233cdb4-a029-9b84-72e1-b009239f5e54/1036656633.jpg/3000x3000bb.jpg",
-        "de": "0f494fee1977",
+        "src": "https://app.triggui.com/portadas/a-thousand-brains.7b3a301900.640.webp",
+        "srcset": "https://app.triggui.com/portadas/a-thousand-brains.7b3a301900.640.webp 640w, https://app.triggui.com/portadas/a-thousand-brains.7b3a301900.1280.webp 1280w",
+        "w": 1733,
+        "h": 2600,
+        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication112/v4/88/00/9f/88009f9a-704b-4927-3c87-be000fc90ffd/9781541675803.jpg/3000x3000bb.jpg",
+        "de": "7ab35545e424",
         "fecha": "2026-11-03"
       }
     },
@@ -6731,7 +7647,7 @@
       "_slug": "the-importance-of-being-little",
       "_edicion_numero": 103,
       "_musica": {
-        "resuelto_el": "2026-09-26",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Morning Mood' por su capacidad de evocar un sentido de calma y claridad, ideal para acompañar la reflexión sobre la educación y el juego.",
         "candidatos": [
@@ -6764,6 +7680,21 @@
             "rol": "aterrizar",
             "pie": "Una melodía suave que invita a reflexionar sobre la importancia del juego en la infancia.",
             "frase_eco": "🌓 El juego no es un lujo, es una necesidad vital para el desarrollo."
+          },
+          {
+            "id": "539446938",
+            "cancion": "Unforgettable",
+            "artista": "Nat \"King\" Cole",
+            "album": "The Very Best of Jazz: 50 Unforgettable Tracks (Remastered)",
+            "genero": "Jazz",
+            "dur": 193,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/69/48/3e69488c-4cf9-5b76-96f6-b7231eee7009/mzaf_14120255381820785253.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/unforgettable/539446930?i=539446938&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/be/4e/e3be4e3c-f351-f1ff-66a8-5f322b1660cd/cover.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Un jazz cálido y luminoso que despierta la curiosidad sin pesar, ideal para abrir el libro con brío.",
+            "frase_eco": "📖 ¿Qué aprendizaje se pierde cuando priorizamos las calificaciones?"
           }
         ]
       },
@@ -59588,7 +60519,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -64506,7 +65437,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+completar",
@@ -67755,7 +68686,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-09-19",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -80783,7 +81714,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -91250,7 +92181,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Happy' y 'Good Vibrations' por su energía positiva y su capacidad de inspirar acción, perfectas para el clima de crecimiento del libro.",
         "candidatos": [
@@ -91283,6 +92214,51 @@
             "rol": "resonar",
             "pie": "La energía de esta canción refleja el viaje de crecimiento personal que propone el libro.",
             "frase_eco": "🔁 El crecimiento personal es un viaje, no un destino."
+          },
+          {
+            "id": "1452537607",
+            "cancion": "Serenade No. 13 in G Major, K. 525 \"Eine kleine Nachtmusik\": IV. Rondo",
+            "artista": "Academy of St Martin in the Fields & Sir Neville Marriner",
+            "album": "Mozart: Eine kleine Nachtmusik - Pachelbel: Canon",
+            "genero": "Clásica",
+            "dur": 182,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/97/fb/ca97fb01-e26e-74e6-2aae-5d08775c072c/mzaf_17235942635007210714.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/serenade-no-13-in-g-major-k-525-eine-kleine-nachtmusik/1452536848?i=1452537607&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ba/3e/80/ba3e804d-618f-c982-bd32-9a35d7028c93/06UMGIM62404.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "El Rondó de Mozart tiene pulso y alegría ligera, buena para arrancar el impulso que pide actuar hoy.",
+            "frase_eco": "⚓ Actúa hoy, no mañana. Cada decisión cuenta."
+          },
+          {
+            "id": "1452537559",
+            "cancion": "Serenade No. 13 in G Major, K. 525 \"Eine kleine Nachtmusik\": II. Romanze",
+            "artista": "Academy of St Martin in the Fields & Sir Neville Marriner",
+            "album": "Mozart: Eine kleine Nachtmusik - Pachelbel: Canon",
+            "genero": "Clásica",
+            "dur": 366,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/6f/53/1f6f536b-22e3-82f8-1955-6f53010a2372/mzaf_11177110165841579842.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/serenade-no-13-in-g-major-k-525-eine-kleine-nachtmusik/1452536848?i=1452537559&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ba/3e/80/ba3e804d-618f-c982-bd32-9a35d7028c93/06UMGIM62404.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Mozart en su Romanza: calma lírica que sostiene la lectura sin pedir protagonismo, aunque apenas empuja el ánimo.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1491110437",
+            "cancion": "Cast Your Fate to the Wind",
+            "artista": "George Winston",
+            "album": "Linus & Lucy: The Music of Vince Guaraldi",
+            "genero": "Instrumental",
+            "dur": 382,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/b1/63/4db163dd-ca3d-ffbb-f029-e03a2047e074/mzaf_5779762395609060021.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/cast-your-fate-to-the-wind/1491110436?i=1491110437&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/63/a6/89/63a6899f-8fe9-ec79-3acf-70082c5460fc/George_Winston_-_Linus_Lucy.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "aterrizar",
+            "pie": "Piano luminoso y pulsante que asienta la idea de salir de la zona de confort con ligereza.",
+            "frase_eco": "💠 La zona de confort es una prisión disfrazada de seguridad."
           }
         ]
       },
@@ -98057,7 +99033,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'What A Wonderful World' por su mensaje optimista que resuena con la superación y la autenticidad del libro, mientras que 'Here Comes the Sun' aporta una calidez que acompaña la reflexión.",
         "candidatos": [
@@ -98089,6 +99065,51 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "Una melodía que invita a reflexionar sobre la libertad y el cambio.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1484688971",
+            "cancion": "Wave",
+            "artista": "Antônio Carlos Jobim",
+            "album": "Wave",
+            "genero": "Jazz",
+            "dur": 175,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/ba/5d/83ba5d49-7653-0bef-b8c3-9f6ab7860845/mzaf_2858694914923001373.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/wave/1484688152?i=1484688971&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/4d/d3/f94dd36b-5729-9d63-7a1c-30c4a0b5fb98/14UMGIM16954.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Bossa nova serena y elegante; sube el ánimo con suavidad, aunque no hay un hook que dispare la chispa creativa.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1427138826",
+            "cancion": "Dream A Little Dream Of Me",
+            "artista": "Ella Fitzgerald & Louis Armstrong",
+            "album": "Ella: The Legendary Decca Recordings",
+            "genero": "Jazz",
+            "dur": 187,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/04/62/8e046244-50f8-a768-5569-bcb23bed8611/mzaf_9512070990594639020.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dream-a-little-dream-of-me/1427138251?i=1427138826&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ed/7e/55ed7ebe-e899-8a95-6b2a-ea8785bdb37d/06UMGIM18875.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Calidez clásica y cercana; acompaña la lectura con un aire de sueño que invita a imaginar, sin robar atención.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1766878904",
+            "cancion": "Moon River (From \"Breakfast at Tiffany's\")",
+            "artista": "Orquesta Filarmónica de Málaga & José María Moreno Valiente",
+            "album": "Henry Mancini Centennial",
+            "genero": "Clásica",
+            "dur": 296,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/7e/a6/dc7ea6c3-e541-46e3-da82-264089250d98/mzaf_990711080566082314.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/moon-river-from-breakfast-at-tiffanys/1766878900?i=1766878904&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/c6/b4/a3c6b4a7-89fa-b6f7-7b7c-b2034d0f8296/8436597700788.png/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Moon River en versión sinfónica: cálida y luminosa, invita a respirar y a sostener la lectura con ternura.",
             "frase_eco": ""
           }
         ]
@@ -98824,7 +99845,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'A Sky Full of Stars' por su energía optimista que acompaña la búsqueda de Musk por la innovación, resonando con su historia.",
         "candidatos": [
@@ -98842,6 +99863,66 @@
             "rol": "abrir",
             "pie": "La energía de esta canción refleja la lucha entre la genialidad y la vulnerabilidad de Musk.",
             "frase_eco": "La búsqueda incesante de Musk por la innovación conlleva un precio que a menudo se manifiesta en sus relaciones personales y su bienestar emocional."
+          },
+          {
+            "id": "944398836",
+            "cancion": "Time",
+            "artista": "2CELLOS",
+            "album": "Celloverse (Deluxe Edition)",
+            "genero": "Crossover clásica",
+            "dur": 258,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/4b/e2/224be220-b50a-50ce-7005-b404fa18db95/mzaf_1831804172417317767.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/time/944398649?i=944398836&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4c/24/da/4c24da09-e37f-4594-4b26-95b1e3ebb01c/886444957540.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Cello con brío y pulso, pero sin el alma de Musk: suena bien, no dice nada de su historia.",
+            "frase_eco": ""
+          },
+          {
+            "id": "634152730",
+            "cancion": "Mission Impossible (feat. Lindsey Stirling)",
+            "artista": "The Piano Guys",
+            "album": "The Piano Guys 2",
+            "genero": "Crossover clásica",
+            "dur": 226,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/6a/b9/176ab927-87f9-0a19-8484-260f711fb394/mzaf_3145715186897362042.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/mission-impossible-feat-lindsey-stirling/634152326?i=634152730&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/82/b7/09/82b709fe-80e5-bb30-ffd6-1681293d160d/886443905658.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "resonar",
+            "pie": "Versión piano y violín de un tema icónico de misión y riesgo; energía y épica que encajan con la crisis convertida en impulso.",
+            "frase_eco": "🧭 La crisis alimenta la creatividad, y Musk es el mejor ejemplo."
+          },
+          {
+            "id": "1464278447",
+            "cancion": "Sofrito",
+            "artista": "Mongo Santamaria",
+            "album": "Sofrito",
+            "genero": "Salsa y tropical",
+            "dur": 366,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/90/5d/23905d4d-b28c-82a0-9fad-c93d9e959d1a/mzaf_9909855405162740350.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/sofrito/1464278441?i=1464278447&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d1/8f/52/d18f522a-0e8a-979e-5aac-16815c3fe336/19CRGIM09170.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Percusión cálida y festiva que empuja el pulso; eleva el ánimo un escalón frente a la tensión del libro.",
+            "frase_eco": "⚡ La búsqueda incesante de Musk por la innovación conlleva un precio que a menudo se manifiesta en sus relaciones personales y su bienestar emocional."
+          },
+          {
+            "id": "1440490967",
+            "cancion": "Bésame Mamá",
+            "artista": "Poncho Sanchez",
+            "album": "Conga Blue (feat. Mongo Santamaria)",
+            "genero": "Jazz Latino",
+            "dur": 393,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/58/12/915812e8-e5aa-2195-5707-4d9232e4ae92/mzaf_12087389316253773185.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/b%C3%A9same-mam%C3%A1/1440490965?i=1440490967&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/55/14/1e/55141e73-ca2e-78bd-8450-94d5dd4be5ae/00013431472629.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Jazz latino alegre y ligero; luminoso y cálido, aunque su cercanía con lo romántico lo aleja del universo del libro.",
+            "frase_eco": "🪞 La historia de Elon Musk es un reflejo palpable de la lucha constante entre su brillantez y las sombras de su autodestrucción."
           }
         ]
       },
@@ -99598,7 +100679,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Corcovado' por su atmósfera suave y reflexiva, que acompaña la búsqueda de aceptación y paz interior en el texto.",
         "candidatos": [
@@ -99631,6 +100712,21 @@
             "rol": "profundizar",
             "pie": "Una pieza que invita a la reflexión y a la calma, perfecta para profundizar en la aceptación.",
             "frase_eco": "✨ La aceptación es el primer paso hacia la paz interior."
+          },
+          {
+            "id": "41377197",
+            "cancion": "Allegro",
+            "artista": "Various Artists",
+            "album": "Antonio Vivaldi: Le 4 Stagioni",
+            "genero": "Clásica",
+            "dur": 196,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9f/46/b2/9f46b24f-70d3-ab20-1e0c-81191a1a93d6/mzaf_216584160727074031.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/allegro/41377245?i=41377197&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m01/d11/h01/s05.nrqnryof.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Vivaldi en pulso vivo: despeja la mente como un examen claro de pensamientos antes de leer.",
+            "frase_eco": "🔍 El sufrimiento se disipa cuando los pensamientos son examinados."
           }
         ]
       },
@@ -100401,7 +101497,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en la reflexión, acompañando el viaje de transformación del lector.",
         "candidatos": [
@@ -100419,6 +101515,21 @@
             "rol": "profundizar",
             "pie": "Una melodía que invita a la reflexión sobre el propósito y la valentía en la vida.",
             "frase_eco": "Vacía."
+          },
+          {
+            "id": "1775415677",
+            "cancion": "The Four Seasons, Violin Concerto in E Major, Op. 8 No. 1, RV 269 \"Spring\": I. Allegro",
+            "artista": "Daniel Pioro & Manchester Camerata",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Clásica",
+            "dur": 199,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/f2/89/73f289d6-401c-e47a-9906-a78df0a9d3f5/mzaf_2148666883452455106.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-four-seasons-violin-concerto-in-e-major-op-8-no-1/1775415671?i=1775415677&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5b/aa/a9/5baaa99d-0829-ea17-18e2-9a1cf2c195e0/5059449196398.png/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "La Primavera de Vivaldi despierta brío y luz; el arranque perfecto para reconocer el potencial que ya tienes.",
+            "frase_eco": "El primer paso hacia el cambio es reconocer tu potencial."
           }
         ]
       },
@@ -101972,7 +103083,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-22",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'La vie en rose' por su capacidad de profundizar en los deseos y emociones, resonando con la exploración de la mente.",
         "candidatos": [
@@ -101990,6 +103101,51 @@
             "rol": "profundizar",
             "pie": "La canción evoca la belleza de los deseos ocultos en nuestra mente.",
             "frase_eco": "🕊 La mente es un laberinto donde se ocultan nuestros deseos más profunds."
+          },
+          {
+            "id": "693711977",
+            "cancion": "The Four Seasons, Concerto No. 1 in E Major, RV 269 \"Spring\": III. Allegro pastorale",
+            "artista": "London Philharmonic Orchestra & Itzhak Perlman",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Classical",
+            "dur": 289,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/06/55/2a065585-7526-1ae5-5242-4a515c8f21ad/mzaf_4869268603253807830.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-four-seasons-concerto-no-1-in-e-major-rv-269/693711974?i=693711977&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/13/5c/00/135c005f-1913-2471-6930-389de64e0bde/dj.hmhugpix.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "El Allegro pastorale despierta pulso y luz; su brillo primaveral sube el ánimo y resuena con la idea de vivir plenamente.",
+            "frase_eco": "🪞 Ignorar la mente es perder la oportunidad de vivir plenamente."
+          },
+          {
+            "id": "693711976",
+            "cancion": "The Four Seasons, Concerto No. 1 in E Major, RV 269 \"Spring\": II. Largo",
+            "artista": "London Philharmonic Orchestra & Itzhak Perlman",
+            "album": "Vivaldi: The Four Seasons",
+            "genero": "Classical",
+            "dur": 162,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/d0/ab/03d0abc9-15d8-67f7-6581-7ece1fda6cb7/mzaf_8426334210536368918.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-four-seasons-concerto-no-1-in-e-major-rv-269/693711974?i=693711976&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/13/5c/00/135c005f-1913-2471-6930-389de64e0bde/dj.hmhugpix.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "El Largo de la Primavera de Vivaldi asienta con luz y lirismo, cálido y sereno, ideal para acompañar una reflexión sobre las emociones.",
+            "frase_eco": ""
+          },
+          {
+            "id": "432563191",
+            "cancion": "The Secret (feat. Ali Farka Touré)",
+            "artista": "Vieux Farka Touré",
+            "album": "The Secret",
+            "genero": "África",
+            "dur": 411,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/7e/a6/4c7ea662-9254-1771-15a2-c2362703e50f/mzaf_14907525896427043029.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-secret-feat-ali-farka-tour%C3%A9/432563168?i=432563191&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f7/59/72/f7597278-5fec-6d67-317d-c63fad10e434/657036117921.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Vieux Farka Touré y su guitarra luminosa dan brío con calidez, heredera del mismo linaje que la primera pieza del universo de Ali Farka.",
+            "frase_eco": ""
           }
         ]
       },
@@ -105179,7 +106335,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-26",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su suavidad y conexión emocional, aunque no eleva el ánimo tanto como otras opciones.",
         "candidatos": [
@@ -105197,6 +106353,51 @@
             "rol": "aterrizar",
             "pie": "Una melodía suave que evoca la conexión emocional, pero carece de un impulso claro.",
             "frase_eco": ""
+          },
+          {
+            "id": "1434874774",
+            "cancion": "The Girl from Ipanema",
+            "artista": "Astrud Gilberto",
+            "album": "Verve Jazz Masters, Vol. 9: Astrud Gilberto",
+            "genero": "Jazz",
+            "dur": 395,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/cf/48/14cf4834-ffdd-0a8d-b1f4-3c58ca2d1627/mzaf_9433103176614958264.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-girl-from-ipanema/1434874753?i=1434874774&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/da/f5/cd/daf5cdc3-32d0-96ea-ebda-919ce29267a6/06UMGIM15932.rgb.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Bossa luminosa y ligera; asienta el ánimo como un puente abierto entre lector y libro.",
+            "frase_eco": "💠 La narrativa auténtica se erige como un puente entre almas, uniendo experiencias y sentimientos en un espacio compartido."
+          },
+          {
+            "id": "1701654443",
+            "cancion": "Let's Get It On",
+            "artista": "Marvin Gaye",
+            "album": "Let's Get It On (Deluxe Edition)",
+            "genero": "R&B/Soul",
+            "dur": 293,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/36/77/103677db-b70e-505f-eefd-cfb20ae130d2/mzaf_3849021925576978930.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/lets-get-it-on/1701654441?i=1701654443&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e5/65/db/e565db27-c3fd-e972-4010-1bfa2d918f10/23UMGIM49775.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Soul sensual y cálido; sube el pulso, aunque su tono íntimo queda algo lejos del tema de la escritura.",
+            "frase_eco": "🌿 La autenticidad revela lo que las máscaras ocultan."
+          },
+          {
+            "id": "1188937447",
+            "cancion": "Moon River",
+            "artista": "2CELLOS",
+            "album": "Score",
+            "genero": "Crossover clásica",
+            "dur": 192,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/26/06/3e260684-e153-e816-2a17-799dcacf3d71/mzaf_1266299291184169530.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/moon-river/1188937433?i=1188937447&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0b/8e/ab/0b8eabcb-11ff-1e3b-b0a9-8b2ea9b852f3/886445944495.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Versión cálida y serena de Moon River; acompaña la vulnerabilidad sin robarle la lectura.",
+            "frase_eco": "🧭 Permite que tu vulnerabilidad guíe tus palabras."
           }
         ]
       },
@@ -107617,7 +108818,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-26",
+        "resuelto_el": "2026-11-07",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría esta pieza por su conexión con el tema de la atención plena, aunque no logra elevar el ánimo lo suficiente para acompañar la lectura.",
         "candidatos": [
@@ -107635,6 +108836,66 @@
             "rol": "profundizar",
             "pie": "Una pieza que evoca la conexión con el presente, pero carece de energía para acompañar la lectura.",
             "frase_eco": ""
+          },
+          {
+            "id": "269732654",
+            "cancion": "Legrand : The Windmills of Your Mind",
+            "artista": "Michel Legrand, The London Studio Orchestra, Dame Kiri Te Kanawa & Lon",
+            "album": "Kiri Te Kanawa - Artist Portrait 2007",
+            "genero": "Clásica",
+            "dur": 209,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2c/30/ed/2c30ed2f-5b42-2a9b-acd0-0e4f1e90ed0e/mzaf_13615519641460428375.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/legrand-the-windmills-of-your-mind/269731466?i=269732654&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/1a/e4/ea/mzi.kmlqjepo.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Una versión elegante de The Windmills of Your Mind que acompaña la pregunta sobre la mente en movimiento, sin robar la atención.",
+            "frase_eco": "✨ ¿Cuántas veces corres sin pensar realmente en lo que sientes?"
+          },
+          {
+            "id": "505045047",
+            "cancion": "Legrand: The Windmills of your Mind",
+            "artista": "Dame Kiri Te Kanawa, London Studio Orchestra & Michel Legrand",
+            "album": "Jazzin' Divas",
+            "genero": "Jazz",
+            "dur": 209,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/88/24/9e/mzm.fhychemb.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/legrand-the-windmills-of-your-mind/505045027?i=505045047&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/b8/40/ff/mzi.cefxuwor.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Versión jazzística con cálida voz; sostiene el ritmo de la zancada y el pensamiento que se integra al paso.",
+            "frase_eco": "⚓ Integra el pensamiento consciente en cada zancada que das."
+          },
+          {
+            "id": "1296697430",
+            "cancion": "Over the Rainbow",
+            "artista": "Israel Kamakawiwo'ole",
+            "album": "Somewhere Over The Rainbow: The Best of Israel Kamakawiwo'ole",
+            "genero": "Músicas del mundo",
+            "dur": 211,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/16/76/f71676f1-0f76-c36f-c179-921dbd6a623a/mzaf_12782181527516942387.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/over-the-rainbow/1296697429?i=1296697430&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e1/48/6d/e1486d07-6c2a-11df-977c-87e1e27f660e/761268591227.png/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Versión de recopilación, cálida y reconocible; asienta la mente clara con el cuerpo en movimiento.",
+            "frase_eco": "La mente clara acompaña al cuerpo fuerte en el camino del runner."
+          },
+          {
+            "id": "6920352",
+            "cancion": "Somewhere Over the Rainbow / What a Wonderful World",
+            "artista": "Israel Kamakawiwo'ole",
+            "album": "Facing Future",
+            "genero": "Músicas del mundo",
+            "dur": 307,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/1b/20/571b2033-e6c3-d1ec-5889-d961c0dcb770/mzaf_9383666807688999801.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/somewhere-over-the-rainbow-what-a-wonderful-world/6920356?i=6920352&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m04/d20/h17/s05.kbjerdzd.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Calidez luminosa que despierta la atención al cuerpo; el ukelele abre el ánimo sin robar la lectura.",
+            "frase_eco": "¿Cuántas veces corres sin pensar realmente en lo que sientes?"
           }
         ]
       },
@@ -113301,770 +114562,6 @@
         "h": 3000,
         "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication124/v4/ec/05/22/ec052238-92bc-33e9-3b53-cd3a54c46e3b/1032591156.jpg/3000x3000bb.jpg",
         "de": "dfb364323a73",
-        "fecha": "2026-11-01"
-      }
-    },
-    {
-      "titulo": "Esencialismo",
-      "autor": "Greg McKeown",
-      "tagline": "Esencial no se trata de hacer más cosas en menos tiempo. Se trata de obtener sólo cosas bien hechas. No es una estrategia de gestión del tiempo o una técnica de productividad. Es una disciplina sistemática para discernir lo que es absolutamente esencial y eliminar todo lo que no es, para que podamos enfocarnos en lo que verdaderamente importa y recuperar el control de nuestras decisiones sobre el tiempo y la energía.",
-      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/626x0w.jpg",
-      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/626x0w.jpg",
-      "isbn": "",
-      "titulo_es": "Esencialismo",
-      "titulo_en": "Essentialism",
-      "idioma_original": "es",
-      "dimension": "Bienestar",
-      "punto": "Creativo",
-      "palabras": [
-        "claridad",
-        "control",
-        "enfoque",
-        "disciplina"
-      ],
-      "palabras_en": [
-        "meaningful",
-        "essential",
-        "commitment",
-        "control"
-      ],
-      "frases": [
-        "⏳ Detente por un momento. Reflexiona sobre las decisiones que has tomado esta semana y evalúa cuáles fueron las más significativas.",
-        "🗺 ¿Qué cosas en tu vida te están robando tiempo y energía sin ofrecer valor?",
-        "🌅 Imagina un espacio despejado, donde cada objeto tiene su razón de estar presente.",
-        "🚶 Decidir conscientemente es el primer paso hacia la libertad."
-      ],
-      "frases_en": [
-        "⏳ Pause and reflect on the commitments you make each day.",
-        "🗺 Look at your day and identify the activities that do not contribute to your purpose; let them go.",
-        "🌅 Imagine a life where every choice aligns with your deepest values.",
-        "☀ When we gain clarity in our decision-making, we can finally see the path that leads us to true fulfillment."
-      ],
-      "frases_og": [
-        "💠 ¿Qué pasaría si decidieras eliminar lo no esencial de tu vida?",
-        "✨ El verdadero enfoque surge cuando decidimos qué es esencial y qué no.",
-        "⚓ Algunas decisiones son como una brújula que nos guía hacia lo que deba ser esencial para recuperar el control de nuestras vidas.",
-        "🔁 Menos es más: simplificar es la clave para el verdadero progreso."
-      ],
-      "frases_og_en": [
-        "💠 Essentialism is the disciplined pursuit of less but better.",
-        "✨ Identify what truly matters. Eliminate the distractions.",
-        "⚓ Are you allowing others to dictate your time?",
-        "🔁 When you make decisions with clarity, you carve a path toward a life filled with purpose and fulfillment."
-      ],
-      "colores": [
-        "#F17ED0",
-        "#30E864",
-        "#AE135C",
-        "#0B653B"
-      ],
-      "textColors": [
-        "#FFFFFF",
-        "#000000",
-        "#FFFFFF",
-        "#FFFFFF"
-      ],
-      "fondo": "#F0EFF0",
-      "tarjeta": {
-        "titulo": "El arte de discernir lo esencial",
-        "parrafoTop": "La disciplina sistemática para discernir lo esencial se convierte en el camino hacia una vida más significativa. En un mundo repleto de distracciones, es crucial recuperar el control sobre nuestras decisiones y enfocarnos en lo que verdaderamente importa. [H]Esto no es solo un acto de elección, sino una práctica continua.[/H]",
-        "subtitulo": "¿Cómo puedes identificar lo que realmente importa?",
-        "parrafoBot": "[H]Al eliminar lo no esencial, abrimos espacio para obtener solo cosas bien hechas.[/H] Este enfoque no es una estrategia de gestión del tiempo, sino un compromiso profundo con nuestros valores y objetivos. Cada decisión se convierte en un paso hacia una vida más plena.",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_base": {
-        "titulo": "El arte de discernir lo esencial",
-        "parrafoTop": "La disciplina sistemática para discernir lo esencial se convierte en el camino hacia una vida más significativa. En un mundo repleto de distracciones, es crucial recuperar el control sobre nuestras decisiones y enfocarnos en lo que verdaderamente importa. [H]Esto no es solo un acto de elección, sino una práctica continua.[/H]",
-        "subtitulo": "¿Cómo puedes identificar lo que realmente importa?",
-        "parrafoBot": "[H]Al eliminar lo no esencial, abrimos espacio para obtener solo cosas bien hechas.[/H] Este enfoque no es una estrategia de gestión del tiempo, sino un compromiso profundo con nuestros valores y objetivos. Cada decisión se convierte en un paso hacia una vida más plena.",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_presentacion": {
-        "titulo": "El arte de discernir lo esencial",
-        "parrafoTop": "La disciplina sistemática para discernir lo esencial se convierte en el camino hacia una vida más significativa. En un mundo repleto de distracciones, es crucial recuperar el control sobre nuestras decisiones y enfocarnos en lo que verdaderamente importa. [H]Esto no es solo un acto de elección, sino una práctica continua.[/H]",
-        "subtitulo": "¿Cómo puedes identificar lo que realmente importa?",
-        "parrafoBot": "[H]Al eliminar lo no esencial, abrimos espacio para obtener solo cosas bien hechas.[/H] Este enfoque no es una estrategia de gestión del tiempo, sino un compromiso profundo con nuestros valores y objetivos. Cada decisión se convierte en un paso hacia una vida más plena.",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_en": {
-        "titulo": "The Art of Discernment",
-        "parrafoTop": "The systematic discipline of discerning the essential becomes the pathway to a more meaningful life. In a world crowded with distractions, it is crucial to regain control over our decisions and focus on what truly matters. [H]This is not merely an act of choice, but a continuous practice.[/H]",
-        "subtitulo": "How can you identify what truly matters?",
-        "parrafoBot": "By eliminating the non-essential, we open up space to achieve only what is done well. This approach is not a time management strategy, but a profound commitment to our values and objectives. [H]Each decision becomes a step toward a fuller life.[/H]",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_base_en": {
-        "titulo": "The Art of Discernment",
-        "parrafoTop": "The systematic discipline of discerning the essential becomes the pathway to a more meaningful life. In a world crowded with distractions, it is crucial to regain control over our decisions and focus on what truly matters. [H]This is not merely an act of choice, but a continuous practice.[/H]",
-        "subtitulo": "How can you identify what truly matters?",
-        "parrafoBot": "By eliminating the non-essential, we open up space to achieve only what is done well. This approach is not a time management strategy, but a profound commitment to our values and objectives. [H]Each decision becomes a step toward a fuller life.[/H]",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "tarjeta_presentacion_en": {
-        "titulo": "The Art of Discernment",
-        "parrafoTop": "The systematic discipline of discerning the essential becomes the pathway to a more meaningful life. In a world crowded with distractions, it is crucial to regain control over our decisions and focus on what truly matters. [H]This is not merely an act of choice, but a continuous practice.[/H]",
-        "subtitulo": "How can you identify what truly matters?",
-        "parrafoBot": "By eliminating the non-essential, we open up space to achieve only what is done well. This approach is not a time management strategy, but a profound commitment to our values and objectives. [H]Each decision becomes a step toward a fuller life.[/H]",
-        "style": {
-          "accent": "#E212A7",
-          "paper": "#F0EFF0",
-          "ink": "#1C171A",
-          "border": "#908F90"
-        }
-      },
-      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Esencialismo%20Greg%20McKeown%20entrevista%20espa%C3%B1ol",
-      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Essentialism%20Greg%20McKeown%20interview",
-      "_animo_promedio": 0.45,
-      "_valor_predominante": "salud_emocional",
-      "_punto_ciclo_optimo": "cero",
-      "_nucleus": {
-        "book_grounding_anchors": {
-          "concepts": [
-            "disciplina sistemática para discernir lo esencial",
-            "recuperar el control de las decisiones sobre el tiempo y energía",
-            "enfocarse en lo que verdaderamente importa",
-            "eliminar lo no esencial",
-            "obtener solo cosas bien hechas"
-          ],
-          "key_terms": [
-            "esencialismo",
-            "disciplina",
-            "enfoque",
-            "control",
-            "decisiones"
-          ],
-          "authorial_voice_notes": "La voz de Greg McKeown es directa y pragmática, centrada en ofrecer herramientas prácticas para una vida más significativa a través de la reducción de la carga y el enfoque en lo que realmente importa.",
-          "authorial_voice_notes_en": "Greg McKeown's voice is direct and pragmatic, focused on providing practical tools for a more meaningful life through reducing burdens and focusing on what truly matters."
-        },
-        "og_phrases_es": [
-          {
-            "phrase": "💠 ¿Qué pasaría si decidieras eliminar lo no esencial de tu vida?",
-            "rol_sinfonico": "abrir",
-            "eje_animo": 0.5,
-            "eje_valor": null,
-            "pilar": "salud_emocional",
-            "punto_optimo": "creativo"
-          },
-          {
-            "phrase": "✨ El verdadero enfoque surge cuando decidimos qué es esencial y qué no.",
-            "rol_sinfonico": "profundizar",
-            "eje_animo": 0.3,
-            "eje_valor": null,
-            "pilar": "negocios",
-            "punto_optimo": "activo"
-          },
-          {
-            "phrase": "⚓ Algunas decisiones son como una brújula que nos guía hacia lo que deba ser esencial en nuestras vidas.",
-            "rol_sinfonico": "aterrizar",
-            "eje_animo": 0.6,
-            "eje_valor": null,
-            "pilar": "espiritualidad",
-            "punto_optimo": "maximo"
-          },
-          {
-            "phrase": "🔁 Menos es más: simplificar es la clave para el verdadero progreso.",
-            "rol_sinfonico": "resonar",
-            "eje_animo": 0.4,
-            "eje_valor": null,
-            "pilar": "salud_fisica",
-            "punto_optimo": "cero"
-          }
-        ],
-        "og_phrases_en": [
-          {
-            "phrase": "💠 Essentialism is the disciplined pursuit of less but better.",
-            "role_symphonic": "land",
-            "mood_axis": 0.7,
-            "value_axis": null,
-            "pilar": "salud_emocional",
-            "punto_optimo": "activo"
-          },
-          {
-            "phrase": "✨ Identify what truly matters. Eliminate the distractions.",
-            "role_symphonic": "open",
-            "mood_axis": 0.5,
-            "value_axis": null,
-            "pilar": "negocios",
-            "punto_optimo": "creativo"
-          },
-          {
-            "phrase": "⚓ Are you allowing others to dictate your time?",
-            "role_symphonic": "resonate",
-            "mood_axis": 0.3,
-            "value_axis": null,
-            "pilar": "salud_financiera",
-            "punto_optimo": "cero"
-          },
-          {
-            "phrase": "🔁 When you make decisions with clarity, you carve a path toward a life filled with purpose and fulfillment.",
-            "role_symphonic": "deepen",
-            "mood_axis": 0.6,
-            "value_axis": null,
-            "pilar": "familia",
-            "punto_optimo": "activo"
-          }
-        ],
-        "edition_blocks_es": [
-          {
-            "gesture_type": "instruccion_sensorial",
-            "sensory_anchor": "tiempo",
-            "phrase": "⏳ Detente por un momento. Reflexiona sobre las decisiones que has tomado esta semana y evalúa cuáles fueron las más significativas.",
-            "rol_sinfonico": "abrir",
-            "eje_animo": 0.5,
-            "eje_valor": null,
-            "pilar": "salud_emocional",
-            "punto_optimo": "cero"
-          },
-          {
-            "gesture_type": "pregunta_directa",
-            "sensory_anchor": "espacio",
-            "phrase": "🗺 ¿Qué cosas en tu vida te están robando tiempo y energía sin ofrecer valor?",
-            "rol_sinfonico": "profundizar",
-            "eje_animo": 0.3,
-            "eje_valor": null,
-            "pilar": "negocios",
-            "punto_optimo": "activo"
-          },
-          {
-            "gesture_type": "imagen_concreta",
-            "sensory_anchor": "vista",
-            "phrase": "🌅 Imagina un espacio despejado, donde cada objeto tiene su razón de estar presente.",
-            "rol_sinfonico": "aterrizar",
-            "eje_animo": 0.6,
-            "eje_valor": null,
-            "pilar": "espiritualidad",
-            "punto_optimo": "maximo"
-          },
-          {
-            "gesture_type": "aforismo_autorial",
-            "sensory_anchor": "movimiento",
-            "phrase": "🚶 Decidir conscientemente es el primer paso hacia la libertad.",
-            "rol_sinfonico": "resonar",
-            "eje_animo": 0.4,
-            "eje_valor": null,
-            "pilar": "salud_fisica",
-            "punto_optimo": "creativo"
-          }
-        ],
-        "edition_blocks_en": [
-          {
-            "gesture_type": "sensory_instruction",
-            "sensory_anchor": "time",
-            "phrase": "⏳ Pause and reflect on the commitments you make each day.",
-            "role_symphonic": "deepen",
-            "mood_axis": 0.5,
-            "value_axis": null,
-            "pilar": "salud_emocional",
-            "punto_optimo": "creativo"
-          },
-          {
-            "gesture_type": "direct_question",
-            "sensory_anchor": "space",
-            "phrase": "🗺 Look at your day and identify the activities that do not contribute to your purpose; let them go.",
-            "role_symphonic": "open",
-            "mood_axis": 0.4,
-            "value_axis": null,
-            "pilar": "negocios",
-            "punto_optimo": "activo"
-          },
-          {
-            "gesture_type": "concrete_image",
-            "sensory_anchor": "sight",
-            "phrase": "🌅 Imagine a life where every choice aligns with your deepest values.",
-            "role_symphonic": "land",
-            "mood_axis": 0.7,
-            "value_axis": null,
-            "pilar": "salud_financiera",
-            "punto_optimo": "maximo"
-          },
-          {
-            "gesture_type": "authorial_aphorism",
-            "sensory_anchor": "light",
-            "phrase": "☀ When we gain clarity in our decision-making, we can finally see the path that leads us to true fulfillment.",
-            "role_symphonic": "resonate",
-            "mood_axis": 0.6,
-            "value_axis": null,
-            "pilar": "familia",
-            "punto_optimo": "activo"
-          }
-        ]
-      },
-      "_grounding_judge": {
-        "es": {
-          "grounded_score": 0.9,
-          "uses_book_specific_concepts": true,
-          "could_apply_to_any_book": false,
-          "feels_like_back_cover_meta_description": true,
-          "reason": "El contenido generado refleja de manera muy específica los conceptos del libro 'Esencialismo', como la disciplina sistemática para discernir lo esencial y la idea de eliminar lo no esencial para enfocarse en lo que realmente importa. Utiliza frases que resuenan con la sinopsis oficial, como el enfoque en decisiones conscientes y el compromiso con valores y objetivos. Aunque es muy específico, no s"
-        },
-        "en": {
-          "grounded_score": 0.9,
-          "uses_book_specific_concepts": true,
-          "could_apply_to_any_book": false,
-          "feels_like_back_cover_meta_description": true,
-          "reason": "The content closely reflects the core themes of the book, such as discerning the essential and focusing on what truly matters. It uses specific phrases like 'systematic discipline' and 'eliminating the non-essential,' which are central to the book's message. The emphasis on values and decision-making aligns well with the book's premise, making it feel like a meta-description rather than generic. A"
-        }
-      },
-      "_voice_verdict": {
-        "consolidated": "pagina",
-        "confidence": 0.9,
-        "es": {
-          "verdict": "pagina",
-          "confidence": 0.9,
-          "reason": "Voz directa y reflexiones sobre el contenido del libro.",
-          "elapsed_ms": 700,
-          "usage": {
-            "prompt_tokens": 400,
-            "completion_tokens": 27,
-            "total_tokens": 427,
-            "prompt_tokens_details": {
-              "cached_tokens": 0,
-              "audio_tokens": 0
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "audio_tokens": 0,
-              "accepted_prediction_tokens": 0,
-              "rejected_prediction_tokens": 0
-            }
-          },
-          "error": null
-        },
-        "en": {
-          "verdict": "pagina",
-          "confidence": 0.9,
-          "reason": "Voz directa y enfoque en el contenido del libro.",
-          "elapsed_ms": 820,
-          "usage": {
-            "prompt_tokens": 388,
-            "completion_tokens": 26,
-            "total_tokens": 414,
-            "prompt_tokens_details": {
-              "cached_tokens": 0,
-              "audio_tokens": 0
-            },
-            "completion_tokens_details": {
-              "reasoning_tokens": 0,
-              "audio_tokens": 0,
-              "accepted_prediction_tokens": 0,
-              "rejected_prediction_tokens": 0
-            }
-          },
-          "error": null
-        },
-        "circuit_tripped": false,
-        "should_reextract": false,
-        "total_tokens": 841,
-        "total_ms": 820
-      },
-      "_visual": {
-        "synthesis_inputs": {
-          "hue_primary": 307,
-          "adjusted_hue": 317,
-          "saturation": "vivid",
-          "saturation_value": 0.8,
-          "lightness_paper": "light",
-          "paper_lightness_value": 0.94,
-          "temperature_shift": 10,
-          "palette_strategy": "complementary"
-        },
-        "contrast_ratio": "15.43",
-        "paper_is_dark": false,
-        "cssVars": {
-          "--palette-0": "#F17ED0",
-          "--palette-1": "#30E864",
-          "--palette-2": "#AE135C",
-          "--palette-3": "#0B653B",
-          "--accent": "#E212A7",
-          "--accent-soft": "#E212A738",
-          "--accent-glow": "#E212A76b",
-          "--paper": "#F0EFF0",
-          "--ink": "#1C171A",
-          "--border": "#908F90",
-          "--highlight-bg": "#C71093d9",
-          "--highlight-ink": "#FFFFFF",
-          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
-          "--line-height": 1.65,
-          "--letter-spacing": 0.2,
-          "--paragraph-gap": 1,
-          "--font-size-scale": 1,
-          "--word-spacing-scale": 1,
-          "--card-radius": "8px",
-          "--highlight-radius": "5px"
-        }
-      },
-      "_edition_meta": {
-        "gesture_types_es": [
-          "instruccion_sensorial",
-          "pregunta_directa",
-          "imagen_concreta",
-          "aforismo_autorial"
-        ],
-        "gesture_types_en": [
-          "sensory_instruction",
-          "direct_question",
-          "concrete_image",
-          "authorial_aphorism"
-        ],
-        "distinct_types_es": 4,
-        "distinct_types_en": 4
-      },
-      "_quality_warning": null,
-      "_inputs_snapshot": "2026-06-03T22-11-02",
-      "_crono": {
-        "dia": "miércoles",
-        "hora": 16,
-        "franja": "tarde",
-        "energia": 0.6,
-        "modo": "meseta_media",
-        "descripcion_dia": "Miércoles es meseta. El contenido puede empezar a retar suavemente.",
-        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
-      },
-      "_metrics": {
-        "tokens_total": 69930,
-        "tokens_by_phase": {
-          "grounding": 0,
-          "anchors": 15369,
-          "palette": 0,
-          "content_es": 18009,
-          "judge_es": 1284,
-          "content_en": 16674,
-          "judge_en": 1271,
-          "voice": 841,
-          "voice_extended": 16482,
-          "highlight_judge_es_parrafoTop": 646,
-          "highlight_judge_es_parrafoBot": 649,
-          "highlight_judge_en_parrafoTop": 647,
-          "highlight_judge_en_parrafoBot": 640,
-          "csal": 4285
-        },
-        "elapsed_ms_total": 40736,
-        "elapsed_ms_by_phase": {
-          "grounding": 4447,
-          "anchors": 8445,
-          "palette": 0,
-          "cover_fallback": 550,
-          "content_es": 10451,
-          "judge_es": 2357,
-          "content_en": 6748,
-          "judge_en": 2728,
-          "voice": 820,
-          "voice_extended": 4190,
-          "highlight_judge": 4333,
-          "lens_compatibility": 1842,
-          "csal": 23531,
-          "post_processing": 29707
-        },
-        "llm_calls_count": 42,
-        "models_used": [
-          "gpt-4o-mini-2024-07-18"
-        ],
-        "pipeline_version": "nucleus-canonical-v3",
-        "final_validation": "pass",
-        "judge_degradations": [],
-        "portada_auto_healed": false,
-        "highlights_auto_corrected": 0,
-        "highlight_degradations": [],
-        "lens_compat_degraded": false,
-        "voice_judge_extended_degraded": false,
-        "voice_judge_extended_regenerations": 3,
-        "csal_degraded": false
-      },
-      "_lens_compatibility": {
-        "chronobiology": 0.5,
-        "game-theory": 0.5,
-        "self-knowledge": 0.7,
-        "pilares": {
-          "cuerpo": 0.3,
-          "mente": 0.9,
-          "negocio": 0.8,
-          "familia": 0.3,
-          "espiritu": 0.5,
-          "relaciones": 0.4,
-          "finanzas": 0.3
-        },
-        "hawkins": 0.7
-      },
-      "_hawkins_range": [
-        150,
-        250
-      ],
-      "_chronobiology_optimal": {
-        "preferred_franjas": [
-          "manana"
-        ],
-        "preferred_dias": [],
-        "energy_minimum_required": 0.4
-      },
-      "_csal": {
-        "trigger_situations": [
-          "cuando me siento abrumado por tantas responsabilidades y no sé por dónde empezar",
-          "cuando me doy cuenta de que estoy haciendo cosas que no me importan realmente",
-          "antes de una reunión en la que siento que debo decir que no a más tareas",
-          "después de un día largo y cansado, reflexiono sobre cómo he utilizado mi tiempo",
-          "cuando veo que mis metas se están diluyendo por falta de enfoque y claridad",
-          "cuando quiero hacer un cambio significativo en mi vida pero no sé por dónde comenzar",
-          "cuando siento que estoy persiguiendo la aprobación de los demás en lugar de mis propios objetivos",
-          "cuando busco un equilibrio entre mi vida personal y profesional",
-          "antes de tomar una decisión importante que afectará mi futuro",
-          "cuando me doy cuenta de que el 'sí' automático me está llevando a la insatisfacción.",
-          "ar decisiones\",\"enfoque en lo esencial\",\"eliminar lo no esencial\",\"vida significativa\",\"productividad consciente\",\"priorizar\",\"tiempo y",
-          "cuando me siento abrumado por tantas responsabilidades y no sé por dónde empezar",
-          "cuando me doy cuenta de que estoy haciendo cosas que no me importan realmente",
-          "antes de una reunión en la que siento que debo decir que no a más tareas",
-          "después de un día largo y cansado, reflexiono sobre cómo he utilizado mi tiempo",
-          "cuando veo que mis metas se están diluyendo por falta de enfoque y claridad",
-          "cuando quiero hacer un cambio significativo en mi vida pero no sé por dónde comenzar",
-          "cuando siento que estoy persiguiendo la aprobación de los demás en lugar de mis propios objetivos",
-          "cuando busco un equilibrio entre mi vida personal y profesional",
-          "antes de tomar una decisión importante que afectará mi futuro",
-          "cuando me doy cuenta de que el 'sí' automático me está llevando a la insatisfacción.",
-          "ar decisiones\",\"enfoque en lo esencial\",\"eliminar lo no esencial\",\"vida significativa\",\"productividad consciente\",\"priorizar\",\"tiempo y",
-          "cuando me siento abrumado por tantas responsabilidades y no sé por dónde empezar",
-          "cuando me doy cuenta de que estoy haciendo cosas que no me importan realmente",
-          "antes de una reunión en la que siento que debo decir que no a más tareas",
-          "después de un día largo y cansado, reflexiono sobre cómo he utilizado mi tiempo",
-          "cuando veo que mis metas se están diluyendo por falta de enfoque y claridad",
-          "cuando quiero hacer un cambio significativo en mi vida pero no sé por dónde comenzar",
-          "cuando siento que estoy persiguiendo la aprobación de los demás en lugar de mis propios objetivos",
-          "cuando busco un equilibrio entre mi vida personal y profesional",
-          "antes de tomar una decisión importante que afectará mi futuro",
-          "cuando me doy cuenta de que el 'sí' automático me está llevando a la insatisfacción."
-        ],
-        "trigger_keywords": {
-          "emociones": [
-            "frustración",
-            "abrumado",
-            "confusión",
-            "claridad",
-            "libertad",
-            "satisfacción",
-            "desesperanza",
-            "enfoque",
-            "determinación",
-            "motivación"
-          ],
-          "objetos": [
-            "calendario",
-            "lista de tareas",
-            "agenda",
-            "notas",
-            "prioridades"
-          ],
-          "contextos": [
-            "oficina",
-            "hogar",
-            "reuniones",
-            "jardín",
-            "transportes"
-          ],
-          "verbos": [
-            "decidir",
-            "eliminar",
-            "enfocar",
-            "organizar",
-            "reflexionar"
-          ]
-        },
-        "concept_tags": [
-          "disciplina sistemática",
-          "controlar decisiones",
-          "enfoque en lo esencial",
-          "eliminar lo no esencial",
-          "vida significativa",
-          "productividad consciente",
-          "priorizar",
-          "tiempo y energía",
-          "decisiones claras",
-          "menos es más"
-        ],
-        "anti_patterns": [
-          "no sirve para aquellos que buscan hacer más en menos tiempo",
-          "no es una guía para la gestión del estrés diario",
-          "no ayuda a quienes prefieren seguir un enfoque maximalista",
-          "no es un manual de autoayuda genérico"
-        ],
-        "bloques": [
-          {
-            "index": 0,
-            "emoji_specific": "⏳"
-          },
-          {
-            "index": 1,
-            "emoji_specific": "🔍"
-          },
-          {
-            "index": 2,
-            "emoji_specific": "🗂️"
-          },
-          {
-            "index": 3,
-            "emoji_specific": "🛤️"
-          }
-        ]
-      },
-      "_voice_judge_extended_verdicts": {
-        "es": {
-          "og_phrases": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase plantea una pregunta reflexiva que invita a la introspección, típica de un contenido que podría encontrarse dentro del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase expresa una reflexión que podría estar en el desarrollo de un argumento dentro del libro, mostrando voz autoral."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "La frase presenta una metáfora que sugiere una reflexión interna, típica de la voz del autor en el texto."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "La frase presenta una reflexión que podría estar en el contexto de un libro, sugiriendo una idea central del autor."
-            }
-          ],
-          "edition_blocks": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase invita al lector a reflexionar y parece ser parte de un discurso interno o una narrativa del autor, lo que sugiere que está escrita dentro del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase invita a la reflexión personal y parece ser parte de un diálogo interno del autor, lo que sugiere que está escrita dentro del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase invita al lector a visualizar una escena, lo que sugiere que es parte del contenido narrativo del libro."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "La frase expresa una idea reflexiva que podría formar parte de un argumento o desarrollo dentro del libro, sugiriendo voz autoral."
-            }
-          ]
-        },
-        "en": {
-          "og_phrases": [
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase presents a concept in a definitive manner, suggesting it is part of the author's argument or explanation within the book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "The phrase presents a directive that feels like advice or insight directly from the author, suggesting an internal voice rather than an external commentary."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "The phrase poses a direct question that engages the reader, suggesting an introspective moment typical of an author's voice within the text."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "The phrase presents a direct insight or reflection that feels like it could be part of the narrative or thematic exploration within the book."
-            }
-          ],
-          "edition_blocks": [
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "The phrase encourages introspection and feels like direct advice or insight from the author, suggesting it is part of the narrative."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.9,
-              "reason": "The phrase provides direct advice and guidance, suggesting actions for the reader, which aligns with an author's voice within the book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.8,
-              "reason": "The phrase invites the reader to envision a scenario, suggesting an introspective moment typical of narrative or reflective writing within a book."
-            },
-            {
-              "category": "dentro",
-              "confidence": 0.85,
-              "reason": "The phrase expresses a thought that feels like it could be part of a narrative or reflection within the book, focusing on personal growth and insight."
-            }
-          ]
-        }
-      },
-      "_musica": {
-        "resuelto_el": "2026-09-26",
-        "juez": "pool-emergencia+completar",
-        "sinfonia": "pool:calma",
-        "candidatos": [
-          {
-            "id": "1597454856",
-            "cancion": "Spiegel im Spiegel",
-            "artista": "Duo Cassadó",
-            "album": "Arvo Pärt: Spiegel im Spiegel - Single",
-            "genero": "Clásica",
-            "dur": 434,
-            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/46/af/93/46af93c3-afc0-14af-8a82-5dbdbe531b74/mzaf_10824783644429950310.plus.aac.p.m4a",
-            "link": "https://music.apple.com/mx/album/spiegel-im-spiegel/1597454542?i=1597454856&uo=4",
-            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b8/3d/09/b83d09d2-019c-8b88-34a6-9c7d10df33be/190296323201.jpg/600x600bb.jpg",
-            "armonia": 5,
-            "rol": "aterrizar",
-            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
-            "frase_eco": "respira; la página espera"
-          },
-          {
-            "id": "444967148",
-            "cancion": "Clair de Lune",
-            "artista": "Claude Debussy",
-            "album": "Clair de Lune - Single",
-            "genero": "Instrumental",
-            "dur": 218,
-            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/22/f3/4922f374-b517-fb33-cff6-8fa6ca15656b/mzaf_12675765766962791398.plus.aac.p.m4a",
-            "link": "https://music.apple.com/mx/album/clair-de-lune/444967120?i=444967148&uo=4",
-            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/5f/f2/dc/mzi.cjpwuohz.jpg/600x600bb.jpg",
-            "armonia": 5,
-            "rol": "aterrizar",
-            "pie": "Refugio en calma — pieza elegida a mano para leer sin prisa.",
-            "frase_eco": "respira; la página espera"
-          }
-        ]
-      },
-      "portada_app": {
-        "src": "https://app.triggui.com/portadas/esencialismo.3c9a3f3e68.626.webp",
-        "w": 626,
-        "h": 1019,
-        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication114/v4/12/37/f3/1237f3f8-6456-850e-c97d-5cec878bef02/9786071133847.jpg/626x0w.jpg",
-        "de": "9c38e79b54bb",
         "fecha": "2026-11-01"
       }
     },
@@ -128321,7 +128818,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-10-06",
         "juez": "pool-emergencia+completar",
@@ -136325,7 +136822,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-10-10",
         "juez": "gpt-4o-mini+completar",
@@ -143513,7 +144010,7 @@
       ],
       "_audit_score": 0.688,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-03T00:34:17.795Z",
+      "_audit_timestamp": "2026-11-07T15:12:49.572Z",
       "_musica": {
         "resuelto_el": "2026-10-17",
         "juez": "pool-emergencia+completar",
@@ -145174,9 +145671,9 @@
     }
   ],
   "meta": {
-    "next_edition_number": 111,
+    "next_edition_number": 112,
     "total": 178,
-    "last_audit": "2026-11-03T00:34:17.795Z",
+    "last_audit": "2026-11-07T15:12:49.572Z",
     "healing_rotation_idx": 56,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
     "last_healing_timestamp": "2026-10-25T19:20:52.219Z"
