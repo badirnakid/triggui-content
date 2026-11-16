@@ -3,6 +3,976 @@
   "generated_at": null,
   "libros": [
     {
+      "titulo": "A través del espejo",
+      "autor": "Lewis Carroll",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/cc/d1/e1/ccd1e151-f666-a9f5-646b-e2e3ad1da01e/9786071677228.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/cc/d1/e1/ccd1e151-f666-a9f5-646b-e2e3ad1da01e/9786071677228.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "A través del espejo",
+      "titulo_en": "Through the Looking-Glass, and What Alice Found There",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Creativo",
+      "palabras": [
+        "perdido",
+        "cansado",
+        "avanzar",
+        "palabras"
+      ],
+      "palabras_en": [
+        "lost",
+        "weary",
+        "moving forward",
+        "words"
+      ],
+      "frases": [
+        "👁 Alicia cruza el espejo y el cuarto de su casa queda del otro lado, al revés.",
+        "🌊 Mira el paisaje mientras caminas: a veces todo sigue igual aunque avances.",
+        "🌌 Un peón llega a Reina solo cuando cruza todo el tablero, casilla a casilla.",
+        "🎧 ¿Quién manda sobre el sentido de una palabra: quien la dice o quien la escucha?"
+      ],
+      "frases_en": [
+        "🏛 I stepped through the glass, and my own room turned backwards.",
+        "🌊 Walk three slow steps, then look back at where you started from.",
+        "🌓 A pawn moves one square at a time, and dreams of becoming a Queen.",
+        "🎧 Who is master of a word's meaning: the one who says it, or the one who hears it?"
+      ],
+      "frases_og": [
+        "🔁 El espejo muestra el cuarto, pero lo muestra al revés.",
+        "🛡 Mira bien las reglas antes de creer que ya las entiendes.",
+        "🎯 ¿Cuántas casillas hay que cruzar para llegar a ser Reina?",
+        "🌱 Cada palabra significa lo que su dueño decida, ni más ni menos."
+      ],
+      "frases_og_en": [
+        "🔁 Behind the glass, every room is turned the other way round.",
+        "🛡 Step onto the board, and move only one square at a time.",
+        "🎯 Who is master of a word: the one who says it, or who hears?",
+        "🌱 Running hard, yet staying put: the strange cost of this road."
+      ],
+      "colores": [
+        "#CAF17E",
+        "#6E30E8",
+        "#54AE13",
+        "#400B65"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#D2D3CF",
+      "tarjeta": {
+        "titulo": "Del otro lado del espejo, todo queda al revés",
+        "parrafoTop": "Crucé el espejo sin pedir permiso, y el cuarto de mi casa quedó del otro lado, todo al revés. Pensé que bastaba con entender las reglas. [H]Pero aquí cada regla cambia en cuanto la miras de cerca.[/H]",
+        "subtitulo": "¿Cómo se gana una partida donde nada es lo que parece?",
+        "parrafoBot": "Un peón avanza una casilla cada vez, sin saber si algún día llegará a Reina. [H]Las reglas de este tablero no se explican solas; se aprenden moviendo la pieza.[/H] Abre el libro en cualquier página y lee en voz alta su primer párrafo.",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Del otro lado del espejo, todo queda al revés",
+        "parrafoTop": "Crucé el espejo sin pedir permiso, y el cuarto de mi casa quedó del otro lado, todo al revés. Pensé que bastaba con entender las reglas. [H]Pero aquí cada regla cambia en cuanto la miras de cerca.[/H]",
+        "subtitulo": "¿Cómo se gana una partida donde nada es lo que parece?",
+        "parrafoBot": "Un peón avanza una casilla cada vez, sin saber si algún día llegará a Reina. [H]Las reglas de este tablero no se explican solas; se aprenden moviendo la pieza.[/H] Abre el libro en cualquier página y lee en voz alta su primer párrafo.",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Del otro lado del espejo, todo queda al revés",
+        "parrafoTop": "Crucé el espejo sin pedir permiso, y el cuarto de mi casa quedó del otro lado, todo al revés. Pensé que bastaba con entender las reglas. [H]Pero aquí cada regla cambia en cuanto la miras de cerca.[/H]",
+        "subtitulo": "¿Cómo se gana una partida donde nada es lo que parece?",
+        "parrafoBot": "Un peón avanza una casilla cada vez, sin saber si algún día llegará a Reina. [H]Las reglas de este tablero no se explican solas; se aprenden moviendo la pieza.[/H] Abre el libro en cualquier página y lee en voz alta su primer párrafo.",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "On the other side of the glass, everything is backwards",
+        "parrafoTop": "I went through the glass without asking anyone's leave, and my own room lay on the other side, all turned backwards. [H]I thought knowing the rules would be enough.[/H] But here, every rule changes the moment I look at it closely.",
+        "subtitulo": "How do you win a game where nothing is what it seems?",
+        "parrafoBot": "A pawn moves one square at a time, never certain it will ever reach a Queen. The rules of this board are not explained beforehand; you learn them by moving the piece. [H]Open the book at any page now and read its first paragraph aloud.[/H]",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "On the other side of the glass, everything is backwards",
+        "parrafoTop": "I went through the glass without asking anyone's leave, and my own room lay on the other side, all turned backwards. [H]I thought knowing the rules would be enough.[/H] But here, every rule changes the moment I look at it closely.",
+        "subtitulo": "How do you win a game where nothing is what it seems?",
+        "parrafoBot": "A pawn moves one square at a time, never certain it will ever reach a Queen. The rules of this board are not explained beforehand; you learn them by moving the piece. [H]Open the book at any page now and read its first paragraph aloud.[/H]",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "On the other side of the glass, everything is backwards",
+        "parrafoTop": "I went through the glass without asking anyone's leave, and my own room lay on the other side, all turned backwards. [H]I thought knowing the rules would be enough.[/H] But here, every rule changes the moment I look at it closely.",
+        "subtitulo": "How do you win a game where nothing is what it seems?",
+        "parrafoBot": "A pawn moves one square at a time, never certain it will ever reach a Queen. The rules of this board are not explained beforehand; you learn them by moving the piece. [H]Open the book at any page now and read its first paragraph aloud.[/H]",
+        "style": {
+          "accent": "#9DE212",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+A%20trav%C3%A9s%20del%20espejo%20Lewis%20Carroll%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Through%20the%20Looking-Glass%2C%20and%20What%20Alice%20Found%20There%20Lewis%20Carroll%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-11-16T20:07:58.289Z",
+        "workflow_run_id": "43946380928",
+        "catalog_mode": "kids",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.5,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "activo",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "A través del espejo",
+          "titulo_en": "Through the Looking-Glass, and What Alice Found There",
+          "autor_completo": "Charles Lutwidge Dodgson (Lewis Carroll)",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "Alicia atraviesa el espejo de su casa y entra en un mundo donde todo está al revés",
+            "El tablero de ajedrez como escenario: Alicia es un peón que aspira a ser Reina",
+            "Las reglas del juego se rompen y nada es lo que parece",
+            "Juegos de palabras, acrósticos y poemas absurdos como forma de pensar"
+          ],
+          "key_terms": [
+            "espejo",
+            "tablero de ajedrez",
+            "peón",
+            "Reina",
+            "Jabberwocky",
+            "Humpty Dumpty"
+          ],
+          "authorial_voice_notes": "La voz de Carroll es la de un narrador lúcido y juguetón que observa a Alicia con una mezcla de ternura y ironía lógica. Alicia habla con la seriedad de una niña que intenta aplicar reglas razonables a un mundo que las desobedece; sus preguntas son las de alguien que quiere entender. Los personajes adultos (Humpty Dumpty, el Rey Blanco, la Reina Roja) hablan con una autoridad absurda que se sostiene en definiciones caprichosas del lenguaje, lo que hace que el humor nazca de la precisión mal usada."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro sí aborda, de forma directa y literal, la idea de un mundo con reglas invertidas y un juego de ajedrez con movimientos que obligan a Alicia a avanzar para llegar a ser Reina. Sin embargo, la lente de Pilares y Hawkins no se aplica de manera natural: el libro no trata del equilibrio entre dimensiones de vida ni de niveles de conciencia. Su tema central es la lógica del absurdo y el lenguaje. La lente de juego estratégico encaja parcialmente con el tablero, pero el libro es más una sátira del razonamiento que un manual de estrategia. Se aplica a través de la metáfora del avance de peón y de las reglas que se rompen, no como teoría de incentivos.",
+          "decision": "apply_through_adjacent_concept"
+        },
+        "visual_intent": {
+          "hue_primary": 92.109375,
+          "saturation": "vivid",
+          "lightness_paper": "medium_light",
+          "temperature_shift": -12,
+          "palette_strategy": "complementary",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "rapido",
+          "era": "clasico",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "Del otro lado del espejo, todo queda al revés",
+          "parrafoTop": "Crucé el espejo sin pedir permiso, y el cuarto de mi casa quedó del otro lado, todo al revés. Pensé que bastaba con entender las reglas. Pero aquí cada regla cambia en cuanto la miras de cerca.",
+          "subtitulo": "¿Cómo se gana una partida donde nada es lo que parece?",
+          "parrafoBot": "Un peón avanza una casilla cada vez, sin saber si algún día llegará a Reina. Las reglas de este tablero no se explican solas; se aprenden moviendo la pieza. Abre el libro en cualquier página y lee en voz alta su primer párrafo."
+        },
+        "card_en": {
+          "titulo": "On the other side of the glass, everything is backwards",
+          "parrafoTop": "I went through the glass without asking anyone's leave, and my own room lay on the other side, all turned backwards. I thought knowing the rules would be enough. But here, every rule changes the moment I look at it closely.",
+          "subtitulo": "How do you win a game where nothing is what it seems?",
+          "parrafoBot": "A pawn moves one square at a time, never certain it will ever reach a Queen. The rules of this board are not explained beforehand; you learn them by moving the piece. Open the book at any page now and read its first paragraph aloud."
+        },
+        "emotional_words_es": [
+          "perdido",
+          "cansado",
+          "avanzar",
+          "palabras"
+        ],
+        "emotional_words_en": [
+          "lost",
+          "weary",
+          "moving forward",
+          "words"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔁 El espejo muestra el cuarto, pero lo muestra al revés.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 Mira bien las reglas antes de creer que ya las entiendes.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🎯 ¿Cuántas casillas hay que cruzar para llegar a ser Reina?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": "perseverancia",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 Cada palabra significa lo que su dueño decida, ni más ni menos.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": "humildad",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔁 Behind the glass, every room is turned the other way round.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🛡 Step onto the board, and move only one square at a time.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": "patience",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🎯 Who is master of a word: the one who says it, or who hears?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🌱 Running hard, yet staying put: the strange cost of this road.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": "perseverance",
+            "pilar": "salud_financiera",
+            "punto_optimo": "activo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "👁 Alicia cruza el espejo y el cuarto de su casa queda del otro lado, al revés.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "movimiento",
+            "phrase": "🌊 Mira el paisaje mientras caminas: a veces todo sigue igual aunque avances.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": "paciencia",
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Un peón llega a Reina solo cuando cruza todo el tablero, casilla a casilla.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": "perseverancia",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "🎧 ¿Quién manda sobre el sentido de una palabra: quien la dice o quien la escucha?",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": "humildad",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "space",
+            "phrase": "🏛 I stepped through the glass, and my own room turned backwards.",
+            "role_symphonic": "open",
+            "mood_axis": 0.5,
+            "value_axis": "curiosity",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Walk three slow steps, then look back at where you started from.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": "calm",
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 A pawn moves one square at a time, and dreams of becoming a Queen.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": "perseverance",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "hearing",
+            "phrase": "🎧 Who is master of a word's meaning: the one who says it, or the one who hears it?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.85,
+          "combined": 0.91,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.85
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "A través del espejo",
+          "autor_completo": "Lewis Carroll",
+          "titulo_api": "A través del espejo",
+          "autor_api": "Lewis Carroll",
+          "año": "2023",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "6469093523",
+          "categorias": [
+            "Juvenil: clásicos",
+            "Libros",
+            "Juvenil",
+            "Juvenil: ficción"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/a-trav%C3%A9s-del-espejo/id6469093523?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.85,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "Several phrases reference specific ground-truth concepts: crossing the mirror, the room reversed, the chess board where rules break, and the pawn who wants to become Queen. The 'Abre el libro en cualquier página' line and the edition blocks about the pawn crossing the board are anchored to the book. Some lines, like 'Mira el paisaje mientras caminas' and the closing question about who governs word meaning, are looser but still tied to the book's wordplay theme."
+        },
+        "en": {
+          "grounded_score": 0.85,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "Multiple phrases map directly to ground truth concepts: passing through the mirror into a backwards world, the chessboard where rules break, a pawn dreaming of becoming a Queen, and word-play on meaning. These are specific to this book's premise, not generic filler. The content is anchored, though one card ('Open the book at any page now') is a generic reader-directed instruction rather than book-specific."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa y narrativa del propio libro, sin referencias meta al autor ni a la obra desde afuera.",
+          "elapsed_ms": 2116,
+          "usage": {
+            "prompt_tokens": 900,
+            "completion_tokens": 64,
+            "total_tokens": 964
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa del narrador en primera persona, sin referencias meta al libro ni al autor.",
+          "elapsed_ms": 1972,
+          "usage": {
+            "prompt_tokens": 851,
+            "completion_tokens": 57,
+            "total_tokens": 908
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1872,
+        "total_ms": 2116
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 92.109375,
+          "adjusted_hue": 80.109375,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": -12,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "11.42",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#CAF17E",
+          "--palette-1": "#6E30E8",
+          "--palette-2": "#54AE13",
+          "--palette-3": "#400B65",
+          "--accent": "#9DE212",
+          "--accent-soft": "#9DE21238",
+          "--accent-glow": "#9DE2126b",
+          "--paper": "#D2D3CF",
+          "--ink": "#1A1C17",
+          "--border": "#7E7F7C",
+          "--highlight-bg": "#8AC710d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 0.97,
+          "--word-spacing-scale": 0.96,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "imagen_concreta",
+          "instruccion_sensorial",
+          "aforismo_autorial",
+          "pregunta_directa"
+        ],
+        "gesture_types_en": [
+          "concrete_image",
+          "sensory_instruction",
+          "authorial_aphorism",
+          "direct_question"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-11-16T20-07-58",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 14,
+        "franja": "tarde",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Tarde: pensamiento analítico. Matices, profundidad, contexto."
+      },
+      "_metrics": {
+        "tokens_total": 131125,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 30697,
+          "palette": 0,
+          "content_es": 41750,
+          "judge_es": 1799,
+          "content_en": 38240,
+          "judge_en": 1731,
+          "voice": 1872,
+          "voice_extended": 15036,
+          "highlight_judge_es_parrafoTop": 1201,
+          "highlight_judge_es_parrafoBot": 1209,
+          "highlight_judge_en_parrafoTop": 1168,
+          "highlight_judge_en_parrafoBot": 1189,
+          "csal": 6170
+        },
+        "elapsed_ms_total": 74191,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 23119,
+          "palette": 0,
+          "cover_fallback": 1046,
+          "content_es": 20348,
+          "judge_es": 2464,
+          "content_en": 20393,
+          "judge_en": 2452,
+          "voice": 2116,
+          "voice_extended": 2244,
+          "highlight_judge": 16337,
+          "lens_compatibility": 944,
+          "csal": 9677,
+          "post_processing": 26966
+        },
+        "llm_calls_count": 23,
+        "models_used": [
+          "claude-haiku-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.05,
+        "game-theory": 0.35,
+        "self-knowledge": 0.2,
+        "pilares": {
+          "cuerpo": 0.02,
+          "mente": 0.85,
+          "negocio": 0.05,
+          "familia": 0.1,
+          "espiritu": 0.15,
+          "relaciones": 0.2,
+          "finanzas": 0.01
+        },
+        "hawkins": 0.15
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes que el mundo está al revés y nada tiene sentido",
+          "cuando cruzas un cambio de vida y ya no reconoces tu propio cuarto",
+          "cuando quieres ser más de lo que te permiten en tu lugar actual",
+          "cuando sientes que avanzas pero el paisaje sigue igual",
+          "antes de una conversación donde las palabras se malinterpretan",
+          "cuando alguien usa una palabra a su manera y te confunde",
+          "cuando te sientes como un peón que quiere llegar a ser reina",
+          "cuando las reglas que conoces ya no funcionan en un lugar nuevo",
+          "cuando te cansas de caminar sin llegar a ningún lado",
+          "cuando te preguntas quién decide el significado de lo que dices",
+          "cuando te frustra que los adultos hablen con autoridad absurda",
+          "cuando te pierdes en un lugar donde todo parece lo contrario",
+          "después de una discusión donde no entendiste lo que te dijeron",
+          "cuando quieres entender las reglas de un juego que cambian sin aviso",
+          "cuando sientes que tu voz no pesa en las decisiones de otros",
+          "cuando buscas sentido en un acertijo o un juego de palabras",
+          "cuando la lógica no te alcanza para explicar lo que vives",
+          "cuando te sientes pequeño frente a quienes mandan",
+          "cuando necesitas valor para cruzar algo que te da miedo",
+          "cuando no sabes si lo que escuchas es broma o verdad",
+          "cuando te cuesta distinguir lo real de lo que parece",
+          "cuando una situación cotidiana se vuelve extraña de golpe",
+          "cuando quieres volver a casa pero el camino cambió",
+          "cuando la rutina se siente como un tablero que no entiendes",
+          "cuando alguien define las cosas a su conveniencia",
+          "cuando buscas un espejo para entender quién eres",
+          "cuando te sientes perdido en un mundo que no sigue tu lógica",
+          "cuando la paciencia se agota mientras esperas que algo cambie",
+          "cuando debes decidir qué movimiento hacer sin saber las consecuencias",
+          "cuando te imaginas otro mundo para escapar del tuyo",
+          "cuando un poema absurdo te parece más verdadero que una explicación",
+          "antes de enfrentar a alguien que habla con seguridad pero sin sentido",
+          "cuando la niñez se mezcla con la duda de crecer"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "perdido",
+            "perdida",
+            "cansado",
+            "cansada",
+            "confundido",
+            "confundida",
+            "curiosidad",
+            "ternura",
+            "frustración",
+            "asombro",
+            "miedo",
+            "valentía",
+            "impotencia",
+            "desconcierto",
+            "nostalgia",
+            "lost",
+            "weary",
+            "confused",
+            "curious",
+            "frustrated",
+            "amazed",
+            "brave",
+            "moving forward"
+          ],
+          "objetos": [
+            "espejo",
+            "tablero",
+            "ajedrez",
+            "peón",
+            "reina",
+            "reglas",
+            "palabras",
+            "poema",
+            "acertijo",
+            "casa",
+            "cuarto",
+            "piezas",
+            "juego",
+            "mapa",
+            "lost mirror",
+            "chessboard",
+            "queen",
+            "pawn",
+            "words",
+            "riddle",
+            "puzzle"
+          ],
+          "contextos": [
+            "el otro lado del espejo",
+            "mundo al revés",
+            "tablero de ajedrez",
+            "país de las maravillas",
+            "casa de Alicia",
+            "partida",
+            "camino",
+            "jardín",
+            "bosque",
+            "reino",
+            "other side of the mirror",
+            "upside down world",
+            "chess game",
+            "wonderland"
+          ],
+          "verbos": [
+            "cruzar",
+            "atravesar",
+            "avanzar",
+            "caminar",
+            "perderse",
+            "preguntar",
+            "definir",
+            "jugar",
+            "decidir",
+            "escuchar",
+            "cross",
+            "walk",
+            "move forward",
+            "get lost",
+            "ask",
+            "play"
+          ]
+        },
+        "concept_tags": [
+          "Alicia atraviesa el espejo de su casa",
+          "mundo al revés al otro lado del espejo",
+          "Alicia peón que aspira a ser Reina",
+          "tablero de ajedrez como escenario narrativo",
+          "reglas del juego que se rompen",
+          "Humpty Dumpty y el sentido de las palabras",
+          "el Rey Blanco y la autoridad absurda",
+          "la Reina Roja y las definiciones caprichosas",
+          "juegos de palabras y acrósticos carrollianos",
+          "poemas absurdos como forma de pensar",
+          "continuación de Alicia en el país de las maravillas",
+          "Jabberwocky y el lenguaje inventado",
+          "Tweedledum y Tweedledee",
+          "la lógica infantil frente a un mundo ilógico"
+        ],
+        "anti_patterns": [
+          "manuales de ajedrez o estrategia de juego real",
+          "autoayuda sobre productividad o motivación",
+          "finanzas personales o inversiones",
+          "recetas de cocina o salud física",
+          "textos académicos de matemáticas aplicadas",
+          "guías de viaje a lugares reales",
+          "consejos de negocios o emprendimiento"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🪞"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "♟️"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "👑"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🎩"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase describe una imagen concreta dentro de la escena, en voz narrativa directa, no habla sobre el libro desde afuera ni resume su contenido."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase se dirige directamente al lector en segunda persona como voz del propio texto, dando un consejo narrativo y no describiendo el libro desde fuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una pregunta en voz del propio texto, como un personaje o narrador dentro del juego de ajedrez, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una afirmación en voz autoral sobre el lenguaje, parte del pensamiento del texto y no una descripción externa del libro ni de su contenido."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.93,
+              "reason": "La frase narra un suceso dentro de la historia en voz autoral, describiendo la acción del personaje, no hablando del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una exhortación en segunda persona con tono narrativo y reflexivo, como voz del texto mismo y no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase enuncia una regla del ajedrez como contenido en sí, hablando del peón dentro del mundo del texto, no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta filosófica planteada directamente por la voz del texto, no una descripción externa del libro; parece formar parte del contenido autoral."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una imagen narrada en voz propia del texto, describiendo una escena dentro de la historia en lugar de hablar sobre el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The imperative voice gives direct instructions to the reader as if written within the book's own text, like a game rule or instruction, not describing the book from outside."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una pregunta filosófica en primera escritura, como voz de un personaje o narrador dentro del texto, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.7,
+              "reason": "La frase tiene voz narrativa en primera escritura, con imagen poética del camino, como si fuera un pasaje del propio libro y no una descripción externa."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.95,
+              "reason": "La frase está escrita en primera persona narrando una acción dentro de la historia, como parte de la escena misma, no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "Reads as direct narrative instruction or imagery written within the book, addressing the reader in the moment rather than describing the book from outside."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase narra en voz propia al peón como personaje, con su deseo interior, es decir, parece escrita dentro de la historia y no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase es una pregunta filosófica planteada directamente por la voz del texto, como parte del contenido del libro, no una descripción externa sobre él."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-16T20:09:39.445Z",
+      "_slug": "a-traves-del-espejo",
+      "_edicion_numero": 113,
+      "_musica": {
+        "resuelto_el": "2026-11-16",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría Alice's Theme, Little Alice, Alice Reprise #5, Hada Golosina y Paganini de Liszt: asombro, curiosidad, cierre luminoso y travesura para leer en voz alta.",
+        "candidatos": [
+          {
+            "id": "1442867663",
+            "cancion": "Alice's Theme",
+            "artista": "Danny Elfman",
+            "album": "Alice In Wonderland (Original Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 307,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/83/f8/9083f810-8528-ea08-0a47-1ce9e0fca1b9/mzaf_8843911348949495007.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/alices-theme/1442867523?i=1442867663&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/19/89/cb/1989cb35-8c45-3cde-0ba7-c172ed18e82a/00050087161767.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 10,
+            "rol": "abrir",
+            "pie": "El tema de Elfman abre la puerta del espejo con asombro juguetón; el adulto lo disfruta tanto como el niño que cruza.",
+            "frase_eco": "El espejo muestra el cuarto, pero lo muestra al revés."
+          },
+          {
+            "id": "1442867674",
+            "cancion": "Little Alice",
+            "artista": "Danny Elfman",
+            "album": "Alice In Wonderland (Original Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 94,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/85/d3/c885d31d-a497-40c7-39fa-658cd144a3b2/mzaf_9584379695615326041.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/little-alice/1442867523?i=1442867674&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/19/89/cb/1989cb35-8c45-3cde-0ba7-c172ed18e82a/00050087161767.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "Una Alicia pequeña y curiosa que sostiene la atención sin pedir nada; buena para la pausa en que se piensa la regla.",
+            "frase_eco": "Mira bien las reglas antes de creer que ya las entiendes."
+          },
+          {
+            "id": "1442868877",
+            "cancion": "Alice Reprise #5",
+            "artista": "Danny Elfman",
+            "album": "Alice In Wonderland (Original Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 175,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/b2/4d/13b24df5-ffee-73fa-b253-c608025b85e6/mzaf_22650205403137430.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/alice-reprise-5/1442867523?i=1442868877&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/19/89/cb/1989cb35-8c45-3cde-0ba7-c172ed18e82a/00050087161767.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "pie": "La reprise cierra el viaje con brío de desfile de ajedrez; el niño vuelve a casa sintiendo que llegó lejos.",
+            "frase_eco": "¿Cuántas casillas hay que cruzar para llegar a ser Reina?"
+          },
+          {
+            "id": "1586565896",
+            "cancion": "Suite Cascanueces, Op. 71a: III. Danza del Hada Golosina",
+            "artista": "Cuarteto de Guitarras de Chile",
+            "album": "Clásicos, Cuarteto de Guitarras de Chile",
+            "genero": "Clásica",
+            "dur": 114,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/58/3e/1d583e90-78cf-2389-02ff-918e066d7c82/mzaf_9870053067160486964.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/suite-cascanueces-op-71a-iii-danza-del-hada-golosina/1586565889?i=1586565896&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/22/09/cd/2209cd27-558c-362a-0213-3080810baa3f/198002190642.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "El Hada Golosina de Tchaikovsky en guitarra: ligera y juguetona, con la travesura de los juguetes que cobran vida.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1013876356",
+            "cancion": "Grandes études de Paganini, S. 141: III. Allegretto",
+            "artista": "Jeanne Marie Darre",
+            "album": "Franz Liszt - Rapsodia Húngara",
+            "genero": "Clásica",
+            "dur": 281,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/13/f3/f7/13f3f7b0-4265-36ec-277e-221da06704a8/mzaf_17853024059949317574.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/grandes-%C3%A9tudes-de-paganini-s-141-iii-allegretto/1013869858?i=1013876356&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/ba/05/d0/ba05d08a-84bb-8ce3-64ca-d68a727e940d/889845353812.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "Paganini de Liszt con ingenio y chispa; el adulto se anima y el niño sigue el brinco del Allegretto.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "tienda_compra": {
+        "tienda": "casadelibro",
+        "url": "https://casadelibro.com.mx/productos/a-traves-del-espejo-y-lo-que-alicia-encontro-alli1/",
+        "isbn": "9788414035184",
+        "revisado": "2026-11-14"
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/a-traves-del-espejo.98b9a30a94.640.webp",
+        "srcset": "https://app.triggui.com/portadas/a-traves-del-espejo.98b9a30a94.640.webp 640w, https://app.triggui.com/portadas/a-traves-del-espejo.98b9a30a94.1280.webp 1280w",
+        "w": 1400,
+        "h": 1886,
+        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/cc/d1/e1/ccd1e151-f666-a9f5-646b-e2e3ad1da01e/9786071677228.jpg/3000x3000bb.jpg",
+        "de": "d85f6faea0c1",
+        "fecha": "2026-11-16"
+      }
+    },
+    {
       "titulo": "Si le das una Galletita a un Raton",
       "autor": "Laura Numeroff",
       "tagline": "",
@@ -42966,7 +43936,7 @@
       ],
       "_audit_score": 0.845,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-27T17:33:21.558Z",
+      "_audit_timestamp": "2026-11-16T20:09:41.960Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -76474,7 +77444,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Powerhouse' de Carl Stalling por su energía juguetona que puede abrir la historia, aunque no sea perfecta. La Obertura 1812 es poderosa, pero su dramatismo puede interrumpir la lectura.",
         "candidatos": [
@@ -76507,6 +77477,54 @@
             "rol": "profundizar",
             "pie": "La Rapsodia sobre un tema de Paganini envuelve el viaje de autodescubrimiento de Shasta con su belleza melódica.",
             "frase_eco": "⚓ La valentía nace de conocer quiénes somos realmente."
+          },
+          {
+            "id": "1440750112",
+            "cancion": "Evacuating London",
+            "artista": "Harry Gregson-Williams",
+            "album": "The Chronicles of Narnia - The Lion, the Witch and the Wardrobe (Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 218,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/80/82/8d80825b-828e-ea89-6c83-2683a99ec275/mzaf_3795417565588301234.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/evacuating-london/1440749643?i=1440750112&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bf/8b/62/bf8b622f-50c5-6517-6928-d21aa94e77f8/00050086137473.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "abrir",
+            "pie": "El tema de Narnia con la tensión de la huida: la aventura arranca y el padre que lee ya siente el brío de Shasta.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1440750882",
+            "cancion": "Only the Beginning of the Adventure",
+            "artista": "Harry Gregson-Williams",
+            "album": "The Chronicles of Narnia - The Lion, the Witch and the Wardrobe (Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 332,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/12/04/781204d2-89b7-1bae-2c32-ceb6c85b2dfe/mzaf_11832054154461164382.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/only-the-beginning-of-the-adventure/1440749643?i=1440750882&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bf/8b/62/bf8b622f-50c5-6517-6928-d21aa94e77f8/00050086137473.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "Only the Beginning of the Adventure: el aire de quien empieza un viaje hacia lo desconocido, justo el eje de descubrir quién se es.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1444019011",
+            "cancion": "The Kings and Queens of Old",
+            "artista": "Harry Gregson-Williams",
+            "album": "The Chronicles of Narnia: Prince Caspian (An Original Walt Disney Records Soundtrack)",
+            "genero": "Soundtrack",
+            "dur": 207,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/27/62/0627622f-b4d8-e168-8f4a-7589e9938241/mzaf_13198741281021580783.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/the-kings-and-queens-of-old/1444018864?i=1444019011&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/1f/82/16/1f821621-34cb-2c52-3023-8b474a11baac/00050087108502.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "resonar",
+            "pie": "The Kings and Queens of Old suena a linaje y honor: el eco de la identidad que se reclama, con la luz de quien vuelve a casa.",
+            "frase_eco": ""
           }
         ]
       },
@@ -84787,7 +85805,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría una pieza más clásica y melódica que mantenga la energía de la búsqueda de Meg, como una versión orquestal de la Obertura de Guillermo Tell, que inspire asombro y valentía.",
         "candidatos": [
@@ -84819,6 +85837,36 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "La música sugiere un viaje a través de las estrellas, aunque no logra conectar del todo con la emoción familiar.",
+            "frase_eco": ""
+          },
+          {
+            "id": "6796434844",
+            "cancion": "Le carnaval des animaux, R. 125: XIII. Le cygne (Orch. Vidal)",
+            "artista": "Sheku Kanneh-Mason, London Philharmonic Orchestra & Edward Gardner",
+            "album": "Hope in Shadow",
+            "genero": "Clásica",
+            "dur": 170,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/ff/48/84ff4859-a2ac-cf19-d5fd-1ff476b0d199/mzaf_7656551324265100463.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/le-carnaval-des-animaux-r-125-xiii-le-cygne-orch-vidal/6796434842?i=6796434844&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2e/b8/ae/2eb8ae07-862d-4686-b85f-8afec0c1a52b/26UMGIM71034.rgb.jpg/600x600bb.jpg",
+            "armonia": 8,
+            "rol": "resonar",
+            "pie": "El cisne de Saint-Saëns, de El carnaval de los animales, es una pieza luminosa y cercana al mundo de los cuentos; deja leer y eleva el ánimo",
+            "frase_eco": "🌿 La búsqueda de Meg revela que el amor trasciende dimensiones."
+          },
+          {
+            "id": "629708793",
+            "cancion": "Grieg: Peer Gynt - Morning Mood",
+            "artista": "Nature Classic",
+            "album": "Best Nature Piano Classic 5",
+            "genero": "Naturaleza",
+            "dur": 200,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3c/11/77/3c1177bc-1db9-506e-fd70-1993f01b3dd6/mzaf_815071256974113074.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/grieg-peer-gynt-morning-mood/629708482?i=629708793&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/44/ca/f1/44caf164-d64a-e642-59e9-b7856399ca8c/5051813414602_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "La mañana de Peer Gynt en piano de naturaleza; calma luminosa que acompaña el paso de Meg, aunque sin el brillo de la versión orquestal.",
             "frase_eco": ""
           }
         ]
@@ -93204,9 +94252,9 @@
       ],
       "_audit_score": 0.81,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-08-27T17:33:21.558Z",
+      "_audit_timestamp": "2026-11-16T20:09:41.960Z",
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su energía, aunque su versión sintética puede distraer un poco. Aporta un sentido de aventura, pero no logra conectar del todo con la esencia del cuento.",
         "candidatos": [
@@ -93223,6 +94271,54 @@
             "armonia": 4,
             "rol": "abrir",
             "pie": "La Obertura de Guillermo Tell tiene energía, pero su versión sintética puede distraer al lector.",
+            "frase_eco": ""
+          },
+          {
+            "id": "883513433",
+            "cancion": "Tema de Apertura: El Tiovivo de la Vida",
+            "artista": "Joe Hisaishi",
+            "album": "El Castillo Ambulante (Original Soundtrack)",
+            "genero": "Música original",
+            "dur": 153,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/c7/78/14c778c9-3518-3261-e2ba-f26ee12001d0/mzaf_11155612570277188693.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/tema-de-apertura-el-tiovivo-de-la-vida/883513360?i=883513433&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4b/af/f0/4baff0ae-1795-7807-128c-4259ad2fd970/TKCA-72775.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "El tema de apertura de El Castillo Ambulante tiene la chispa del viaje y el brío de un comienzo de aventura.",
+            "frase_eco": ""
+          },
+          {
+            "id": "883501723",
+            "cancion": "Un Día de Aquel Verano",
+            "artista": "Joe Hisaishi",
+            "album": "El Viaje de Chihiro (Original Soundtrack)",
+            "genero": "Música original",
+            "dur": 189,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/bf/a2/a2bfa255-786b-551c-2433-f40d5b7cbb6e/mzaf_6741552970465711655.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/un-d%C3%ADa-de-aquel-verano/883501721?i=883501723&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/12/dc/cf/12dccf7e-32ce-12e8-03fe-37574d6c2197/TKCA-72165.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Hisaishi de Chihiro: ternura melódica y paciencia, buena calidez, aunque su universo no es el de este cuento.",
+            "frase_eco": ""
+          },
+          {
+            "id": "883513470",
+            "cancion": "Paseo por el Cielo",
+            "artista": "Joe Hisaishi",
+            "album": "El Castillo Ambulante (Original Soundtrack)",
+            "genero": "Música original",
+            "dur": 134,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/0a/51/500a51c6-51f5-765f-9ee8-f98c10157862/mzaf_4752252315321788956.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/paseo-por-el-cielo/883513360?i=883513470&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4b/af/f0/4baff0ae-1795-7807-128c-4259ad2fd970/TKCA-72775.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Paseo por el Cielo lleva el ánimo ligero y abierto; sirve de eco luminoso, aunque no nace del universo de este libro.",
             "frase_eco": ""
           }
         ]
@@ -96952,7 +98048,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'William Tell Overture' por su energía vibrante que invita a la creatividad y al juego en equipo, resonando con el espíritu de LEGO Friends.",
         "candidatos": [
@@ -96986,6 +98082,54 @@
             "rol": "abrir",
             "pie": "La canción de LEGO Friends celebra la amistad y la colaboración, animando a los niños a jugar juntos.",
             "frase_eco": "🔁 ¿Qué nuevas ideas pueden surgir al jugar juntos?"
+          },
+          {
+            "id": "1455918230",
+            "cancion": "Friends Are Family (feat. Will Arnett & Jeff Lewis)",
+            "artista": "Oh, Hush!",
+            "album": "The Lego Batman Movie (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 143,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/6b/5e/1a6b5e7f-ad31-88eb-9371-41cae1258795/mzaf_15202871032377591534.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/friends-are-family-feat-will-arnett-jeff-lewis/1455918216?i=1455918230&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/23/28/ff/2328ff6e-333f-5ef3-a95e-a09ac1d92965/794043191916.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Un aire de familia elegido por la amistad; sube el ánimo y deja leer sin pelear con la voz del adulto.",
+            "frase_eco": "Cada amiga trae su propio talento, creando magia en equipo."
+          },
+          {
+            "id": "1454371410",
+            "cancion": "Found My Place (feat. Jeff Lewis)",
+            "artista": "Oh, Hush!",
+            "album": "The Lego Ninjago Movie (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 196,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/9d/63/a29d637d-8e43-d159-b013-1217bd41bd91/mzaf_12714795443164754748.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/found-my-place-feat-jeff-lewis/1454371219?i=1454371410&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/0c/3c/37/0c3c3731-258e-ce3b-88e2-27dbfdde7478/794043193910.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "Una canción de encontrar el propio lugar en el grupo; asienta la colaboración con calidez y luz.",
+            "frase_eco": "La amistad se fortalece a través de la colaboración."
+          },
+          {
+            "id": "1053934846",
+            "cancion": "Adventure of a Lifetime",
+            "artista": "Coldplay",
+            "album": "A Head Full of Dreams",
+            "genero": "Alternativa",
+            "dur": 263,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/df/83/e8df830f-e6b4-e1df-863e-7c7a9b56b642/mzaf_4564048335141026337.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/adventure-of-a-lifetime/1053933969?i=1053934846&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c8/0a/6d/c80a6df9-e55a-fb83-0311-f4776984ac67/mzm.lasidxkv.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Optimismo amplio y luminoso, aunque no pertenece al universo LEGO y su escala épica puede arrastrar la lectura.",
+            "frase_eco": ""
           }
         ]
       },
@@ -104261,7 +105405,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Morning Mood' por su atmósfera suave que puede acompañar la valentía del cuento, aunque no es del todo específica para la historia.",
         "candidatos": [
@@ -104278,6 +105422,51 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "La pieza evoca un amanecer que puede resonar con la valentía del protagonista, aunque suena algo genérica.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1811608402",
+            "cancion": "Finlandia, Op. 26",
+            "artista": "Esa-Pekka Salonen & San Francisco Symphony",
+            "album": "Sibelius: Finlandia, Op. 26 - Single",
+            "genero": "Clásica",
+            "dur": 539,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/ae/6b/f6ae6b98-fea3-cc71-50ef-88c5163aae06/mzaf_10280035963759470234.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/finlandia-op-26/1811608401?i=1811608402&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d7/1b/b4/d71bb44e-1f18-daed-76e2-d2d426e3ca80/821936011829.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Finlandia dirigida por Salonen: la tormenta se abre en luz, eco directo de enfrentar el miedo para hallar valor.",
+            "frase_eco": "El verdadero poder reside en aquellos que se enfrentan a sus propios miedos y descubren su valentía interior."
+          },
+          {
+            "id": "1833194575",
+            "cancion": "Holst: The Planets - Jupiter (Re:Scored)",
+            "artista": "London Music Works & Snorre Tidemand",
+            "album": "Re:Scored - Epic Classical",
+            "genero": "Crossover clásica",
+            "dur": 170,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/cf/31/77cf31db-b5b0-fd7d-e54d-5944d73b5f73/mzaf_4880172183968627768.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/holst-the-planets-jupiter-re-scored/1833194565?i=1833194575&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4e/f9/40/4ef940fb-c98e-31f8-18d1-32d5712d0d76/1528.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Júpiter reescalado con brío heroico; sube el ánimo y el misterio, aunque sea una versión de crossover.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1234730237",
+            "cancion": "Finlandia",
+            "artista": "Keven John Edusei & Chineke! Orchestra",
+            "album": "Dvořák: Symphony No. 9 \"From the New World\" - Sibelius: Finlandia",
+            "genero": "Clásica",
+            "dur": 470,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/75/d7/86/75d7860e-c0d7-5738-90e3-69c9a1c16d3c/mzaf_16008039310579220801.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/finlandia/1234730081?i=1234730237&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/77/08/43/770843ec-849e-5bd9-4123-1680dff54fdd/635212051528.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Finlandia de Sibelius, himno de luz tras la tormenta; eco de la valentía interior sin aturdir al adulto.",
             "frase_eco": ""
           }
         ]
@@ -107018,7 +108207,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Carnival of the Animals - Aquarium' por su capacidad de evocar un mundo mágico y conectar con la espiritualidad del cuento, creando un ambiente de asombro y conexión.",
         "candidatos": [
@@ -107051,6 +108240,51 @@
             "rol": "profundizar",
             "pie": "La Suite del Cascanueces evoca un mundo de ensueño, pero su tono es más melancólico que alegre.",
             "frase_eco": ""
+          },
+          {
+            "id": "1737317613",
+            "cancion": "Jupiter (from the Planets)",
+            "artista": "David Christensen & Gustav Holst",
+            "album": "Jupiter (from the Planets) - Single",
+            "genero": "Piano",
+            "dur": 210,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/0a/6f/bc0a6f9e-7d5f-2547-24a7-80c44a7304fa/mzaf_15867162369059353203.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/jupiter-from-the-planets/1737317612?i=1737317613&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/bd/68/7cbd6816-a85d-e022-e664-da51c44d712b/28260821-d257-42f7-aff2-12f98c01e058.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Holst en versión de piano: majestuosa y sobria, abre el ánimo sin imponer; con el tema de Júpiter, la grandeza del cosmos del cuento.",
+            "frase_eco": "El universo es un entramado de conexiones invisibles."
+          },
+          {
+            "id": "1108438173",
+            "cancion": "Ralph Vaughan Williams: Fantasia on a Theme by Thomas Tallis",
+            "artista": "TrondheimSolistene, Øyvind Gimse & Geir Inge Lotsberg",
+            "album": "REFLECTIONS",
+            "genero": "Clásica",
+            "dur": 885,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f4/db/55/f4db55dc-8218-723d-67b6-d0f55af31209/mzaf_1337618796340484808.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/ralph-vaughan-williams-fantasia-on-a-theme-by-thomas-tallis/1108437751?i=1108438173&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music30/v4/4f/49/33/4f49332f-ab9f-1e9c-fb4c-bca5ae44233c/cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "El tema de Tallis de Vaughan Williams sostiene la calidez y la quietud del corazón; el adulto respira y el niño siente la conexión invisible",
+            "frase_eco": "La verdadera batalla se libra en el corazón."
+          },
+          {
+            "id": "1394280585",
+            "cancion": "Fantasia on a Theme by Thomas Tallis",
+            "artista": "LSO String Ensemble & Roman Simovic",
+            "album": "Vaughan Williams: Fantasia on a Theme by Thomas Tallis - Britten: Variations on a Theme of",
+            "genero": "Clásica",
+            "dur": 866,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/33/47/cd/3347cda7-4bf7-a2f8-44d7-7b66eeddee30/mzaf_17171175019297713137.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/fantasia-on-a-theme-by-thomas-tallis/1394279513?i=1394280585&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0b/3f/cf/0b3fcfd8-bf5e-b622-a230-71873d97f0d4/0822231179269.png/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "La misma Fantasía de Tallis en cuerdas: luminosa y cálida, deja un eco de amor que sana sin aturdir a quien lee en voz alta.",
+            "frase_eco": "¿Qué poder tiene el amor para sanar y transformar?"
           }
         ]
       },
@@ -108854,7 +110088,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Morning Mood' para profundizar en la calma y reflexión que el cuento inspira, aunque no sea del todo vibrante. La Pantera Rosa, aunque divertida, no se alinea con el valor de escuchar.",
         "candidatos": [
@@ -108887,6 +110121,54 @@
             "rol": "abrir",
             "pie": "La danza de las hadas evoca un mundo mágico, pero no conecta con la esencia de Horton.",
             "frase_eco": ""
+          },
+          {
+            "id": "1443659250",
+            "cancion": "Horton Suite",
+            "artista": "John Powell, Pete Anthony, Hollywood Studio Symphony & Edie Lehmann Bo",
+            "album": "Dr. Seuss' Horton Hears a Who! (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 411,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/63/f2/b363f2a4-0465-3166-adff-a716efeacd97/mzaf_4541160074998149536.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/horton-suite/1443658809?i=1443659250&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b4/e2/7d/b4e27d52-ac1c-13a9-a1e9-8aff39950414/00030206688894.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 10,
+            "rol": "abrir",
+            "pie": "La suite del propio Horton: el tema que acompaña al elefante, la música canónica del cuento; el adulto sonríe y el niño se enciende desde el",
+            "frase_eco": "🛡 ¿Cuántas voces se pierden en el ruido del mundo?"
+          },
+          {
+            "id": "1443659248",
+            "cancion": "JoJo Saves the Day",
+            "artista": "John Powell, Pete Anthony, Hollywood Studio Symphony & Edie Lehmann Bo",
+            "album": "Dr. Seuss' Horton Hears a Who! (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 142,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/c8/94/5cc894f9-8318-e5e4-286b-bf425721cf1a/mzaf_8122657670534549757.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/jojo-saves-the-day/1443658809?i=1443659248&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b4/e2/7d/b4e27d52-ac1c-13a9-a1e9-8aff39950414/00030206688894.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "JoJo, el pequeño de Who-ville, tiene su tema propio: el valor de escuchar al chico que nadie oía, con brío y calidez.",
+            "frase_eco": "🎯 Escucha a los más pequeños y despierta tu corazón valiente."
+          },
+          {
+            "id": "1443659236",
+            "cancion": "Mountain Chase",
+            "artista": "John Powell, Pete Anthony, Hollywood Studio Symphony & Edie Lehmann Bo",
+            "album": "Dr. Seuss' Horton Hears a Who! (Original Motion Picture Soundtrack)",
+            "genero": "Bandas sonoras",
+            "dur": 127,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/84/6a/6b/846a6b9d-6a88-671e-f8fe-44347d0ea73f/mzaf_5376657622184196158.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/mountain-chase/1443658809?i=1443659236&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b4/e2/7d/b4e27d52-ac1c-13a9-a1e9-8aff39950414/00030206688894.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "pie": "Mountain Chase: la marcha de aventura de la película, luminosa y valiente, para asentar el cuento sin aturdir al lector.",
+            "frase_eco": "🌱 La valentía de Horton resonó en cada rincón de Who-ville."
           }
         ]
       },
@@ -110741,7 +112023,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría la Obertura de Rossini por su energía vibrante que puede abrir el ánimo, aunque no es perfecta para el cuento. La Obertura de William Tell es más plana y no logra conectar con la valentía que",
         "candidatos": [
@@ -110774,6 +112056,54 @@
             "rol": "abrir",
             "pie": "La Obertura de Guillermo Tell despierta la emoción de la valentía y la aventura, ideal para el mundo mágico de Harry Potter.",
             "frase_eco": ""
+          },
+          {
+            "id": "1657440816",
+            "cancion": "Hogwarts March (From \"Harry Potter and the Goblet of Fire\")",
+            "artista": "The City of Prague Philharmonic Orchestra",
+            "album": "The Essential Harry Potter Film Music Collection",
+            "genero": "Bandas sonoras",
+            "dur": 175,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1d/06/3c/1d063c63-5114-c0a5-64d3-79b9ec2a8ca2/mzaf_11473059130154093036.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/hogwarts-march-from-harry-potter-and-the-goblet-of-fire/1657438273?i=1657440816&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9d/ba/de/9dbade2d-1f6e-8cf8-751a-2adcb72b26be/13UADIM47666.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 10,
+            "rol": "abrir",
+            "pie": "La Marcha de Hogwarts es canónica de la película del cáliz; despierta el valor del cuento con pulso de desfile que el adulto disfruta leer.",
+            "frase_eco": "A veces, el mayor acto de magia es enfrentar tus propios dragones."
+          },
+          {
+            "id": "1442256370",
+            "cancion": "Harry In Winter (From \"Harry Potter And The Goblet Of Fire\")",
+            "artista": "Patrick Doyle",
+            "album": "The Music of Patrick Doyle: Solo Piano",
+            "genero": "Bandas sonoras",
+            "dur": 180,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/5c/3d/e75c3df6-be13-4f54-3338-9ba1b31c4971/mzaf_14198554515183234208.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/harry-in-winter-from-harry-potter-and-the-goblet-of-fire/1442255925?i=1442256370&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/1b/b1/ec/1bb1eca4-ab17-6443-cca6-a836d9b9a742/00030206734300.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "La pieza de piano de Patrick Doyle lleva el tono íntimo de Harry en el invierno del torneo; sostiene la calidez sin oscurecer el clima.",
+            "frase_eco": "Es la lealtad entre amigos lo que transforma lo imposible en posible."
+          },
+          {
+            "id": "1657148101",
+            "cancion": "Potter Waltz (From \"Harry Potter and the Goblet of Fire\")",
+            "artista": "The City of Prague Philharmonic Orchestra",
+            "album": "Music from the Harry Potter Films",
+            "genero": "Bandas sonoras",
+            "dur": 149,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/77/c1/1b/77c11b99-c0fd-0f62-7864-8c09c7b9b1af/mzaf_4361420010050634777.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/potter-waltz-from-harry-potter-and-the-goblet-of-fire/1657147802?i=1657148101&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/09/49/9b/09499b8d-6d2f-7e65-0673-ffc3c034d7a4/13UADIM03642.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "pie": "El vals del Torneo de Goblet of Fire lleva el brío festivo de la película; el niño se enciende y la lectura sigue con ánimo.",
+            "frase_eco": "La magia del Torneo de los Tres Magos revela la verdadera valentía."
           }
         ]
       },
@@ -114406,7 +115736,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría 'Rhapsody on a Theme of Paganini' para profundizar en la magia de la lectura, aunque no logra elevar el ánimo como se espera.",
         "candidatos": [
@@ -114438,6 +115768,51 @@
             "armonia": 6,
             "rol": "abrir",
             "pie": "El Vuelo del Moscardón es dinámico y divertido, pero puede ser un poco frenético para la lectura.",
+            "frase_eco": ""
+          },
+          {
+            "id": "105285497",
+            "cancion": "Danubio Azul (Blue Danube)",
+            "artista": "Orquesta De Concierto",
+            "album": "Valses De Strauss",
+            "genero": "Clásica",
+            "dur": 174,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f3/0d/09/f30d094b-624b-f659-d7f9-f1ce4633fc44/mzaf_14957135462385980607.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/danubio-azul-blue-danube/105285959?i=105285497&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/7b/c4/4e/mzi.vkseicly.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "El Danubio de Strauss tiene el vals que invita a girar; alegre y amable, aunque genérico como versión de orquesta sin identidad clara.",
+            "frase_eco": ""
+          },
+          {
+            "id": "409016671",
+            "cancion": "An der schönen, blauen Donau, Op. 314 [Blue Danube Waltz]",
+            "artista": "Armin Jordan & Basler Sinfonie Orchester",
+            "album": "100 Classical Classics",
+            "genero": "Clásica",
+            "dur": 597,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/05/b8/5605b817-2c77-c4ba-9504-f74d67761b0a/mzaf_4582680555623827460.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/an-der-sch%C3%B6nen-blauen-donau-op-314-blue-danube-waltz/409016450?i=409016671&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/ef/21/73ef21c7-92b5-1774-b0b1-59e35f6ef07d/mzi.tqbgeonv.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "Versión extensa del Danubio; sube el ánimo de los dos sin aturdir, pero con su duración puede cansar la lectura en voz alta.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1876793900",
+            "cancion": "Dukas: L'apprenti sorcier (Excerpt)",
+            "artista": "Mariss Jansons & Oslo Philharmonic",
+            "album": "Cinema: The Silver Screen Classics Collection",
+            "genero": "Clásica",
+            "dur": 399,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/5f/e3/665fe32d-3d36-1b0a-1f02-05adce894d33/mzaf_2713529006983544700.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/dukas-lapprenti-sorcier-excerpt/1876792752?i=1876793900&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/55/ce/85/55ce852a-bbc4-7269-7fb9-6a884fd05465/5026854653532.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "resonar",
+            "pie": "Extracto de El aprendiz de brujo, más corto y cinematográfico; sube el ánimo de los dos con magia reconocible.",
             "frase_eco": ""
           }
         ]
@@ -123570,10 +124945,10 @@
     }
   ],
   "meta": {
-    "next_edition_number": 55,
-    "total": 133,
+    "next_edition_number": 114,
+    "total": 134,
     "svg_cleanup": "20260516-200328",
-    "last_audit": "2026-08-27T17:33:21.558Z",
+    "last_audit": "2026-11-16T20:09:41.960Z",
     "last_updated": "2026-08-27T17:51:24.076Z",
     "healing_rotation_idx": 12,
     "last_healing_book": "La Bella y la Bestia",
