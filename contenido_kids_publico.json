@@ -3,6 +3,866 @@
   "generated_at": null,
   "libros": [
     {
+      "titulo": "El grúfalo",
+      "autor": "Julia Donaldson",
+      "tagline": "",
+      "portada": "https://covers.openlibrary.org/b/isbn/9788469663271-L.jpg",
+      "portada_url": "https://covers.openlibrary.org/b/isbn/9788469663271-L.jpg",
+      "isbn": "",
+      "titulo_es": "El grúfalo",
+      "titulo_en": "The Gruffalo",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "miedo",
+        "astucia",
+        "bosque",
+        "sorpresa"
+      ],
+      "palabras_en": [
+        "fear",
+        "cunning",
+        "forest",
+        "surprise"
+      ],
+      "frases": [
+        "🔭 Un ratón camina por el bosque y a lo lejos asoma un zorro.",
+        "📻 ¿Y si dices algo tan grande, tan raro, que nadie se atreve a acercarse?",
+        "🏛 El ratón no tiene garras ni colmillos. Tiene una historia.",
+        "🫁 Respira hondo, cuenta algo inventado y mira cómo cambia el bosque."
+      ],
+      "frases_en": [
+        "🔭 A little mouse walks through the deep wood. Far away, a fox appears between the trees.",
+        "📻 What if you said something so big and so strange that nobody dared come near?",
+        "⏳ The mouse has no claws and no fangs. It has a story, and it tells it calmly.",
+        "🫁 Take a slow breath, tell yourself something invented, and watch how the forest changes."
+      ],
+      "frases_og": [
+        "🔮 Un ratón pequeño y un monstruo que no existe.",
+        "🕊 Cuenta tu historia con calma y el zorro se irá.",
+        "📖 ¿Cuánto vale una mentira que nadie quiere probar?",
+        "🌓 Bosque hondo, ratón chico: el cuento hace el resto."
+      ],
+      "frases_og_en": [
+        "🔮 A story told with a calm voice can make the hungriest fox stop.",
+        "🕊 Tell a bold tale with a steady voice and watch the hunters hesitate.",
+        "📖 What happens when the thing you invented starts to cast a shadow?",
+        "🌓 No claws, no fangs, only words: the smallest one still walks the forest."
+      ],
+      "colores": [
+        "#F1B77E",
+        "#308EE8",
+        "#AE8613",
+        "#0B2265"
+      ],
+      "textColors": [
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#F0F0EF",
+      "tarjeta": {
+        "titulo": "El ratón y el bosque lleno de bocas",
+        "parrafoTop": "El zorro lo mira con hambre. El ratón no corre. [H]Sonríe y dice: «Voy a comer con el grúfalo[/H].» El zorro se queda quieto. «¿El grúfalo? ¿Qué es eso?» El ratón lo cuenta con calma, como si lo hubiera visto mil veces.",
+        "subtitulo": "¿Qué pasa cuando lo inventado empieza a tener sombra?",
+        "parrafoBot": "El búho escucha, la serpiente escucha, y todos se van corriendo. El ratón se queda solo, con su bellota y su cuento. [H]Pero entre los árboles algo pesado se mueve.[/H] Abre el libro en cualquier página, ahora.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El ratón y el bosque lleno de bocas",
+        "parrafoTop": "El zorro lo mira con hambre. El ratón no corre. [H]Sonríe y dice: «Voy a comer con el grúfalo[/H].» El zorro se queda quieto. «¿El grúfalo? ¿Qué es eso?» El ratón lo cuenta con calma, como si lo hubiera visto mil veces.",
+        "subtitulo": "¿Qué pasa cuando lo inventado empieza a tener sombra?",
+        "parrafoBot": "El búho escucha, la serpiente escucha, y todos se van corriendo. El ratón se queda solo, con su bellota y su cuento. [H]Pero entre los árboles algo pesado se mueve.[/H] Abre el libro en cualquier página, ahora.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El ratón y el bosque lleno de bocas",
+        "parrafoTop": "El zorro lo mira con hambre. El ratón no corre. [H]Sonríe y dice: «Voy a comer con el grúfalo[/H].» El zorro se queda quieto. «¿El grúfalo? ¿Qué es eso?» El ratón lo cuenta con calma, como si lo hubiera visto mil veces.",
+        "subtitulo": "¿Qué pasa cuando lo inventado empieza a tener sombra?",
+        "parrafoBot": "El búho escucha, la serpiente escucha, y todos se van corriendo. El ratón se queda solo, con su bellota y su cuento. [H]Pero entre los árboles algo pesado se mueve.[/H] Abre el libro en cualquier página, ahora.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Mouse and the Forest Full of Mouths",
+        "parrafoTop": "The fox looks at the mouse with hunger. The mouse does not run. He smiles and says, I am going to lunch with the Gruffalo. The fox stays still. The Gruffalo? What is that? The mouse describes it calmly, as if he had seen it a thousand times. [H]Every word he says is a little bigger than the last.[/H]",
+        "subtitulo": "What happens when something made up starts to cast a shadow?",
+        "parrafoBot": "The owl listens, and the snake listens, and then they all run away. The mouse is left alone with his nut and his story. [H]But between the trees something heavy begins to move[/H]. Open the book at any page, now.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Mouse and the Forest Full of Mouths",
+        "parrafoTop": "The fox looks at the mouse with hunger. The mouse does not run. He smiles and says, I am going to lunch with the Gruffalo. The fox stays still. The Gruffalo? What is that? The mouse describes it calmly, as if he had seen it a thousand times. [H]Every word he says is a little bigger than the last.[/H]",
+        "subtitulo": "What happens when something made up starts to cast a shadow?",
+        "parrafoBot": "The owl listens, and the snake listens, and then they all run away. The mouse is left alone with his nut and his story. [H]But between the trees something heavy begins to move[/H]. Open the book at any page, now.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Mouse and the Forest Full of Mouths",
+        "parrafoTop": "The fox looks at the mouse with hunger. The mouse does not run. He smiles and says, I am going to lunch with the Gruffalo. The fox stays still. The Gruffalo? What is that? The mouse describes it calmly, as if he had seen it a thousand times. [H]Every word he says is a little bigger than the last.[/H]",
+        "subtitulo": "What happens when something made up starts to cast a shadow?",
+        "parrafoBot": "The owl listens, and the snake listens, and then they all run away. The mouse is left alone with his nut and his story. [H]But between the trees something heavy begins to move[/H]. Open the book at any page, now.",
+        "style": {
+          "accent": "#E27912",
+          "paper": "#F0F0EF",
+          "ink": "#1C1917",
+          "border": "#90908F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20gr%C3%BAfalo%20Julia%20Donaldson%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+The%20Gruffalo%20Julia%20Donaldson%20interview",
+      "_animo_promedio": 0.65,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "creativo",
+      "_nucleus": {
+        "book_grounding_anchors": {
+          "concepts": [
+            "el ratón inventa un monstruo imaginario, el grúfalo, para protegerse de sus depredadores en el bosque",
+            "el ingenio verbal como forma de sobrevivir al peligro sin usar la fuerza",
+            "la mentira inofensiva que se vuelve realidad cuando aparece el animal que solo existía en la historia"
+          ],
+          "key_terms": [
+            "grúfalo",
+            "ratón",
+            "bosque",
+            "zorro",
+            "búho",
+            "serpiente",
+            "pura imaginación"
+          ],
+          "authorial_voice_notes": "La voz de Donaldson es rítmica, rimada y lúdica, pensada para ser leída en voz alta. Su narrador es casi un juglar que avanza en cuartetos cortos y repetitivos, con un ratón protagonista que habla con astucia y confianza. Los depredadores se presentan con ironía, y el giro final provoca una sonrisa cómplice. El tono es cálido, sin moraleja explícita, y el humor nace del contraste entre la falsedad inventada y la realidad que se materializa."
+        },
+        "og_phrases_es": [
+          {
+            "phrase": "🔮 Un ratón pequeño y un monstruo que no existe.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.6,
+            "eje_valor": "imaginación",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 Cuenta tu historia con calma y el zorro se irá.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": "astucia",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 ¿Cuánto vale una mentira que nadie quiere probar?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": "ingenio",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🌓 Bosque hondo, ratón chico: el cuento hace el resto.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.8,
+            "eje_valor": "alegría",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔮 A story told with a calm voice can make the hungriest fox stop.",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": "cunning",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 Tell a bold tale with a steady voice and watch the hunters hesitate.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.7,
+            "value_axis": "courage",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 What happens when the thing you invented starts to cast a shadow?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": "imagination",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          },
+          {
+            "phrase": "🌓 No claws, no fangs, only words: the smallest one still walks the forest.",
+            "role_symphonic": "land",
+            "mood_axis": 0.8,
+            "value_axis": "joy",
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🔭 Un ratón camina por el bosque y a lo lejos asoma un zorro.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "📻 ¿Y si dices algo tan grande, tan raro, que nadie se atreve a acercarse?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": "imaginación",
+            "pilar": "negocios",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🏛 El ratón no tiene garras ni colmillos. Tiene una historia.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.7,
+            "eje_valor": "ingenio",
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🫁 Respira hondo, cuenta algo inventado y mira cómo cambia el bosque.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.8,
+            "eje_valor": "alegría",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "sight",
+            "phrase": "🔭 A little mouse walks through the deep wood. Far away, a fox appears between the trees.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": "courage",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "hearing",
+            "phrase": "📻 What if you said something so big and so strange that nobody dared come near?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.6,
+            "value_axis": "imagination",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "⏳ The mouse has no claws and no fangs. It has a story, and it tells it calmly.",
+            "role_symphonic": "land",
+            "mood_axis": 0.7,
+            "value_axis": "calm",
+            "pilar": "salud_emocional",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "breath",
+            "phrase": "🫁 Take a slow breath, tell yourself something invented, and watch how the forest changes.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.8,
+            "value_axis": "joy",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ]
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.45,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content draws on the Gruffalo story's characters (mouse, fox, owl, snake) and the invented-monster premise, which are specific to the book. However, the ground truth only supplies title, author and year, so the content goes beyond verified metadata, and the phrases are largely evocative editorial prose rather than verifiable book concepts."
+        },
+        "en": {
+          "grounded_score": 0.55,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content draws on the actual plot of The Gruffalo (mouse, fox, owl, snake, the Gruffalo, the nut, the deep wood), so it is anchored to the book's story rather than generic filler. However, the ground truth provided only contains title, author, and year, so the grounding cannot be fully verified against stated concepts, and some edition blocks are generic motivational phrasing."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.85,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.85,
+          "reason": "Narración directa en tercera persona con diálogo y tono ficcional; interpela al lector sin referencias meta al libro.",
+          "elapsed_ms": 1723,
+          "usage": {
+            "prompt_tokens": 914,
+            "completion_tokens": 67,
+            "total_tokens": 981
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.85,
+          "reason": "Narrative voice inside the story, dramatic present, no meta references to the book or author.",
+          "elapsed_ms": 1746,
+          "usage": {
+            "prompt_tokens": 880,
+            "completion_tokens": 53,
+            "total_tokens": 933
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1914,
+        "total_ms": 1746
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 17.5,
+          "adjusted_hue": 29.5,
+          "saturation": "vivid",
+          "saturation_value": 0.8,
+          "lightness_paper": "light",
+          "paper_lightness_value": 0.94,
+          "temperature_shift": 12,
+          "palette_strategy": "complementary"
+        },
+        "contrast_ratio": "15.34",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#F1B77E",
+          "--palette-1": "#308EE8",
+          "--palette-2": "#AE8613",
+          "--palette-3": "#0B2265",
+          "--accent": "#E27912",
+          "--accent-soft": "#E2791238",
+          "--accent-glow": "#E279126b",
+          "--paper": "#F0F0EF",
+          "--ink": "#1C1917",
+          "--border": "#90908F",
+          "--highlight-bg": "#C76A10d9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Work Sans', 'Open Sans', 'Segoe UI', sans-serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 0.97,
+          "--word-spacing-scale": 0.96,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "imagen_concreta",
+          "pregunta_directa",
+          "aforismo_autorial",
+          "instruccion_sensorial"
+        ],
+        "gesture_types_en": [
+          "concrete_image",
+          "direct_question",
+          "authorial_aphorism",
+          "sensory_instruction"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoBot_residual_warning",
+          "highlights_auto_corrected_v3.7: 2 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-11-19T11-10-44",
+      "_crono": {
+        "dia": "jueves",
+        "hora": 5,
+        "franja": "madrugada",
+        "energia": 1.2,
+        "modo": "ejecucion_pico",
+        "descripcion_dia": "Jueves 9-11 AM es el peak de ejecución. Contenido directo y accionable.",
+        "descripcion_franja": "Madrugada: claridad mental máxima. Presencia. Pocas palabras, mucho peso."
+      },
+      "_metrics": {
+        "tokens_total": 209378,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 30306,
+          "palette": 0,
+          "content_es": 42024,
+          "judge_es": 1523,
+          "content_es_retry": 42061,
+          "judge_es_retry": 1481,
+          "content_es_escalate": 38482,
+          "content_en": 34997,
+          "judge_en": 1547,
+          "voice": 1914,
+          "voice_extended": 15043,
+          "highlight_judge_es_parrafoTop": 1231,
+          "highlight_judge_es_parrafoTop_retry": 1233,
+          "highlight_judge_es_parrafoBot": 1202,
+          "highlight_judge_en_parrafoTop": 1173,
+          "highlight_judge_en_parrafoBot": 1211,
+          "highlight_judge_en_parrafoBot_retry": 1179,
+          "csal": 6016
+        },
+        "elapsed_ms_total": 81898,
+        "elapsed_ms_by_phase": {
+          "grounding": 1,
+          "anchors": 5810,
+          "palette": 0,
+          "cover_fallback": 3366,
+          "content_es": 23419,
+          "judge_es": 2427,
+          "content_es_retry": 22999,
+          "content_en": 6454,
+          "judge_en": 1750,
+          "voice": 1747,
+          "voice_extended": 1920,
+          "highlight_judge": 11175,
+          "lens_compatibility": 1005,
+          "csal": 10300,
+          "post_processing": 22485
+        },
+        "llm_calls_count": 26,
+        "models_used": [
+          "claude-haiku-5-5",
+          "claude-sonnet-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 2,
+        "highlight_degradations": [
+          "highlight_es_parrafoTop_residual_warning",
+          "highlight_en_parrafoBot_residual_warning"
+        ],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.1,
+        "game-theory": 0.3,
+        "self-knowledge": 0.2,
+        "pilares": {
+          "cuerpo": 0.05,
+          "mente": 0.5,
+          "negocio": 0.02,
+          "familia": 0.2,
+          "espiritu": 0.1,
+          "relaciones": 0.2,
+          "finanzas": 0.01
+        },
+        "hawkins": 0.1
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes miedo de que alguien más fuerte te haga daño",
+          "cuando necesitas salir de un problema sin pelear",
+          "cuando quieres que los demás te respeten sin usar la fuerza",
+          "antes de enfrentarte a alguien que te intimida",
+          "cuando tienes que improvisar una salida rápida",
+          "cuando alguien te amenaza y no tienes con qué defenderte",
+          "cuando quieres inventar una historia para que te dejen en paz",
+          "cuando un compañero abusón te busca pleito",
+          "cuando estás perdido en un lugar peligroso y necesitas pensar rápido",
+          "cuando sientes que tu tamaño te pone en desventaja",
+          "cuando quieres que tus hijos aprendan a usar la cabeza en vez de los puños",
+          "cuando necesitas contar un cuento para calmar a un niño asustado",
+          "después de sentirte acorralado por alguien con más poder",
+          "cuando la gente sólo te toma en serio si exageras",
+          "cuando tienes miedo de salir de noche y necesitas valor",
+          "cuando alguien te dice que no vales nada y quieres responder con ingenio",
+          "cuando buscas una forma divertida de explicar el peligro a un niño",
+          "cuando estás rodeado de depredadores y no sabes qué hacer",
+          "cuando necesitas un truco mental para espantar tus miedos",
+          "antes de presentarte ante un grupo que te intimida",
+          "cuando alguien quiere comerte o aprovecharse de ti y tienes que reaccionar",
+          "cuando una mentira pequeña parece ser la única salida",
+          "cuando quieres sorprender a alguien con una respuesta inesperada",
+          "cuando sientes que tu inteligencia vale más que tu fuerza",
+          "después de un susto en el bosque y quieres reírte de ello",
+          "cuando te toca hablar en público y temes que se burlen",
+          "cuando tu hermano mayor te intimida y buscas cómo plantarle cara",
+          "cuando quieres enseñar a un niño que el ingenio protege más que la violencia",
+          "cuando una situación parece perdida y necesitas inventar un plan",
+          "cuando alguien con fama de fuerte te reta y prefieres el truco al enfrentamiento",
+          "cuando te sientes pequeño frente a un mundo que parece enorme",
+          "cuando necesitas creer que tu historia puede cambiar el resultado",
+          "antes de cruzar un territorio ajeno lleno de peligros",
+          "cuando quieres usar el humor para desarmar una amenaza",
+          "cuando un adulto te exige obediencia y quieres negociar con astucia",
+          "cuando el miedo te paraliza y necesitas un empujón creativo"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "miedo",
+            "pánico",
+            "susto",
+            "temor",
+            "nervios",
+            "astucia",
+            "ingenio",
+            "valor",
+            "coraje",
+            "orgullo",
+            "sorpresa",
+            "alivio",
+            "risa",
+            "confianza",
+            "desconfianza",
+            "inseguridad",
+            "tensión",
+            "calma",
+            "fear",
+            "scared",
+            "cunning",
+            "clever",
+            "brave",
+            "relief",
+            "laugh",
+            "nervous",
+            "dread",
+            "surprise"
+          ],
+          "objetos": [
+            "ratón",
+            "bosque",
+            "zorro",
+            "búho",
+            "serpiente",
+            "árbol",
+            "hojas",
+            "historia",
+            "cuento",
+            "mentira",
+            "garras",
+            "colmillos",
+            "monstruo",
+            "sombra",
+            "nuez",
+            "mapa",
+            "mouse",
+            "forest",
+            "owl",
+            "snake",
+            "monster",
+            "story",
+            "lie"
+          ],
+          "contextos": [
+            "bosque",
+            "noche",
+            "camino",
+            "madriguera",
+            "cuento infantil",
+            "lectura en voz alta",
+            "sala de clases",
+            "patio del colegio",
+            "parque",
+            "escuela",
+            "hogar",
+            "cama antes de dormir",
+            "forest",
+            "night",
+            "path",
+            "bedtime story",
+            "playground"
+          ],
+          "verbos": [
+            "inventar",
+            "engañar",
+            "esconderse",
+            "huir",
+            "contar",
+            "fingir",
+            "sobrevivir",
+            "espantar",
+            "escapar",
+            "convencer",
+            "improvisar",
+            "mentir",
+            "reír",
+            "make up",
+            "trick",
+            "hide",
+            "escape",
+            "survive",
+            "pretend"
+          ]
+        },
+        "concept_tags": [
+          "grúfalo, monstruo inventado por el ratón",
+          "ratón protagonista astuto del bosque",
+          "zorro, búho y serpiente como depredadores",
+          "mentira inofensiva que cobra vida",
+          "ingenio verbal como defensa sin fuerza",
+          "cuarteto rimado en voz alta",
+          "giro final del monstruo que aparece",
+          "juglar narrador de cuartetos cortos",
+          "astucia infantil frente al peligro",
+          "literatura infantil bilingüe sobre sobrevivir con ingenio",
+          "The Gruffalo, Julia Donaldson, cuento rimado",
+          "la historia como arma del débil",
+          "humor del contraste entre invención y realidad"
+        ],
+        "anti_patterns": [
+          "fuerza física o combate cuerpo a cuerpo",
+          "manuales de defensa personal",
+          "terapia psicológica formal para miedos clínicos",
+          "consejos financieros o de inversión",
+          "recetas de cocina o salud nutricional",
+          "estudio académico de ecología del bosque",
+          "moraleja explícita o enseñanza directa sobre valores",
+          "biografía de la autora",
+          "ciencia natural o zoología rigurosa",
+          "relaciones de pareja o asuntos románticos"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🐭"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🦉"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🌲"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🎭"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase describe directamente a los personajes y elementos de la historia en voz narrativa, como si estuviera escrita dentro del texto y no hablando sobre el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una instrucción directa en segunda persona, con la voz de un narrador dentro del cuento que se dirige al lector o personaje, no describe el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta retórica en voz directa de un narrador o personaje, no una descripción externa del libro; suena escrita dentro del relato."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es un fragmento narrativo en voz autoral, con imagen y ritmo propios del texto, no describe el libro desde afuera ni lo reseña."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase narra una escena directamente, como voz autoral dentro de la historia, no describe el libro desde afuera ni lo resume."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "Es una pregunta directa en voz autoral, dirigida al lector desde dentro de la narración, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una afirmación narrativa en voz autoral que parece escrita en la página del libro, no una descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "Es una instrucción en segunda persona con voz narrativa literaria, como si el autor hablara directamente al lector dentro de la historia, no describiendo el libro desde afuera."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una afirmación narrativa en voz autoral, similar a una línea de la historia, no una descripción o reseña externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una exhortación directa en segunda persona, con voz narrativa imaginativa, que suena como texto escrito dentro de un libro y no como descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una pregunta reflexiva en voz autoral, parte del tono narrativo del libro y no describe el libro desde afuera.)"
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The phrase reads as an in-world narrative line, a voice speaking within the story's imagery about the forest, rather than a summary or review describing the book from outside."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase narra una escena directamente, en voz de narrador dentro del relato, describiendo acciones de personajes en la historia y no hablando acerca del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una pregunta retórica en voz directa, como la que un narrador o personaje diría dentro de la historia, no un comentario externo sobre el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es voz narrativa en primera escritura sobre un personaje del relato, no describe el libro desde fuera, así que se lee como contenido interno del texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una instrucción directa en segunda persona que forma parte del texto narrativo o contemplativo del libro, no una descripción externa de él."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-19T11:12:28.778Z",
+      "_slug": "el-grufalo",
+      "_edicion_numero": 114,
+      "_musica": {
+        "resuelto_el": "2026-11-19",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría Gruta del Rey, Peer Gynt y Hall del Rey: abrir con el monstruo que no existe, sostener con el bosque y cerrar con el suspenso en ascenso; El Cisne queda como alternativa de calma.",
+        "candidatos": [
+          {
+            "id": "508378671",
+            "cancion": "Peer Gynt Suite No. 1, Op. 46. Incidental music to Peer Gynt by Ibsen: Peer Gynt Suite n.º",
+            "artista": "WDR Sinfonieorchester Köln & Eivind Aadland",
+            "album": "Grieg: Complete Symphonic Works, Vol. I",
+            "genero": "Clásica",
+            "dur": 151,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cb/f4/24/cbf424f8-e0a2-4d4d-dde3-88889f5014ac/mzaf_2056107056056440286.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peer-gynt-suite-no-1-op-46-incidental-music-to-peer/508378315?i=508378671&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/b7/34/c7/b734c7f6-1f61-91b3-0ace-962ce4a55211/cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "El Peer Gynt de Grieg tiene el aire del bosque nórdico y un pulso narrativo que el adulto disfruta leyendo; el ánimo sube sin aturdir.",
+            "frase_eco": "Bosque hondo, ratón chico: el cuento hace el resto."
+          },
+          {
+            "id": "402485422",
+            "cancion": "En La Gruta del Rey de la Montaña, Op. 23",
+            "artista": "Inma Shara & Czech National Symphony Orchestra",
+            "album": "La Isla de los Sonidos",
+            "genero": "Clásica",
+            "dur": 160,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0d/a8/50/0da850d7-0a7e-ab24-19ef-eb056246d257/mzaf_5608152781154001618.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/en-la-gruta-del-rey-de-la-monta%C3%B1a-op-23/402485301?i=402485422&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2e/b1/68/2eb168a9-85af-455b-9464-95a574b881a2/mzi.bwqlkzod.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "La Gruta del Rey de la Montaña tiene el juego de la amenaza que se vuelve travesura; el niño se enciende y el adulto sonríe ante el monstruo",
+            "frase_eco": "Un ratón pequeño y un monstruo que no existe."
+          },
+          {
+            "id": "1624838386",
+            "cancion": "In the Hall of the Mountain King",
+            "artista": "Martin Gratton",
+            "album": "Classical Classics 1",
+            "genero": "Clásica",
+            "dur": 150,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/42/a4/1142a48a-bec8-f77d-6d2c-84925f56bca5/mzaf_6758046469679013033.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/in-the-hall-of-the-mountain-king/1624838385?i=1624838386&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/55/e4/ca/55e4cae4-7ba1-e368-3ffe-de124e97d85d/5054429146110.png/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "aterrizar",
+            "pie": "El Hall del Rey de la Montaña mantiene la tensión con humor de caricatura; el crescendo acompaña el suspenso del cuento sin oscurecer el cli",
+            "frase_eco": "¿Cuánto vale una mentira que nadie quiere probar?"
+          }
+        ]
+      },
+      "tienda_compra": {
+        "tienda": "casadelibro",
+        "url": "https://casadelibro.com.mx/productos/el-grufalo/",
+        "isbn": "9786076218389",
+        "revisado": "2026-11-14"
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/el-grufalo.0245b34514.398.webp",
+        "w": 398,
+        "h": 499,
+        "origen": "https://covers.openlibrary.org/b/isbn/9788469663271-L.jpg",
+        "de": "603aea500199",
+        "fecha": "2026-11-19"
+      }
+    },
+    {
       "titulo": "A través del espejo",
       "autor": "Lewis Carroll",
       "tagline": "",
@@ -38642,7 +39502,7 @@
       ],
       "_audit_score": 0.845,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-16T20:09:41.960Z",
+      "_audit_timestamp": "2026-11-19T11:12:31.104Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -82896,7 +83756,7 @@
       ],
       "_audit_score": 0.81,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-16T20:09:41.960Z",
+      "_audit_timestamp": "2026-11-19T11:12:31.104Z",
       "_musica": {
         "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -102630,7 +103490,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-19",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría la Rapsodia sobre un tema de Paganini por su belleza melódica, aunque su tono puede ser un poco melancólico para el valor de la familia en el cuento.",
         "candidatos": [
@@ -102662,6 +103522,53 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "La pieza evoca un amanecer que puede conectar con la búsqueda de tesoros en la vida familiar.",
+            "frase_eco": ""
+          },
+          {
+            "id": "955931415",
+            "cancion": "Ali Baba and the Forty Thieves",
+            "artista": "Brandon Fiechter",
+            "album": "Desert Sands",
+            "genero": "Instrumental",
+            "dur": 264,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4b/0e/32/4b0e320d-3c6c-ff8a-5a7f-3290a0dce77d/mzaf_4695183161749684387.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/ali-baba-and-the-forty-thieves/955931385?i=955931415&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/91/34/76/913476ed-87f9-4a81-ae45-25ba53c9f2a1/859713905399_cover.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "abrir",
+            "pie": "Ali Baba en versión instrumental de desierto: el cuento respira en su propio universo sin pelear con la voz del adulto.",
+            "frase_eco": ""
+          },
+          {
+            "id": "30103153",
+            "cancion": "Gayane Suite No. 2: VI. Sabre Dance",
+            "artista": "André Anichanov & St. Petersburg State Symphony Orchestra",
+            "album": "Khachaturian: Gayane Suites Nos. 1 - 3",
+            "genero": "Clásica",
+            "dur": 146,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/72/6f/3e726f63-e51f-4e47-8d9c-bd2eba1073f9/mzaf_2753382297207145559.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/gayane-suite-no-2-vi-sabre-dance/30103184?i=30103153&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m11/d15/h18/s05.nqrnhfni.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "La danza de Khachaturian aporta brío festivo; el ritmo sube el ánimo sin aturdir a quien lee.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1263477545",
+            "cancion": "Ali Baba",
+            "artista": "John Holt",
+            "album": "John Holt Selects Reggae",
+            "genero": "Reggae",
+            "dur": 157,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/8a/f3/6d8af300-adc6-69d1-89e6-1382fbfe7f7a/mzaf_1623862653312746205.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/ali-baba/1263477203?i=1263477545&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b0/f9/45/b0f94597-879a-d5ca-5f1c-94c71d908428/5055283435709.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "Reggae cálido con el título del cuento: sube el ánimo de los dos y deja leer con una cadencia amable.",
             "frase_eco": ""
           }
         ]
@@ -105063,7 +105970,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-19",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría la Obertura de el Gazza Ladra por su energía, aunque su tono es más serio que el cuento. Aporta un sentido de determinación que puede resonar con la historia.",
         "candidatos": [
@@ -105095,6 +106002,53 @@
             "armonia": 6,
             "rol": "aterrizar",
             "pie": "El vals tiene un aire ligero, pero su conexión con el valor de la historia es tenue.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1462450849",
+            "cancion": "Winnie the Pooh and the Heffalump",
+            "artista": "James Stewart",
+            "album": "The Little Engine That Could",
+            "genero": "Música para niños",
+            "dur": 345,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/14/ff/9f/14ff9f4e-c01d-4cc7-0709-18cbdabdf726/mzaf_3526628146659324063.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/winnie-the-pooh-and-the-heffalump/1462450846?i=1462450849&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/91/e6/4b/91e64b09-6635-3ac9-6fc8-8509bc9d5a44/886447242230.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "La canción oficial de la locomotora del cuento: el niño reconoce la historia de inmediato y el adulto sonríe antes de empezar a leer.",
+            "frase_eco": "⚡ ¿Qué pasaría si decides creer en tus habilidades?"
+          },
+          {
+            "id": "1462450852",
+            "cancion": "Winnie the Pooh and Eeyore",
+            "artista": "James Stewart",
+            "album": "The Little Engine That Could",
+            "genero": "Música para niños",
+            "dur": 378,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/06/99/32/069932e3-e30c-da1b-5e3f-7be819ae8c92/mzaf_3984552401717236531.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/winnie-the-pooh-and-eeyore/1462450846?i=1462450852&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/91/e6/4b/91e64b09-6635-3ac9-6fc8-8509bc9d5a44/886447242230.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 8,
+            "rol": "profundizar",
+            "pie": "Eeyore del universo del cuento: calidez y paciencia que acompañan la perseverancia sin competir con la voz del adulto.",
+            "frase_eco": "🌿 Cada pequeño esfuerzo suma: persevera y ayuda a otros."
+          },
+          {
+            "id": "6803843078",
+            "cancion": "Morning Mood (From Peer Gynt, Op. 23) [Arr. Allhoff for Jazz Ensemble]",
+            "artista": "Lucienne Renaudin Vary, Quatuor Hanson, Thomas Bramerie, Franck Agulho",
+            "album": "On My Mind",
+            "genero": "Crossover clásica",
+            "dur": 305,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/0d/39/750d3922-be2f-1ad6-a964-882462e86af9/mzaf_16241041894132859358.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/morning-mood-from-peer-gynt-op-23-arr-allhoff-for-jazz/6803842832?i=6803843078&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/25/c2/c525c27c-f376-c616-a668-ba04c7bc5d67/5026854597041.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "aterrizar",
+            "pie": "El amanecer de Peer Gynt en versión jazz suave: luminoso y amable, sube el ánimo de los dos sin pelear con la lectura.",
             "frase_eco": ""
           }
         ]
@@ -106678,7 +107632,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-19",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría 'Morning Mood' por su atmósfera suave que invita a la exploración, aunque no logra captar completamente la esencia de aventura que se busca.",
         "candidatos": [
@@ -106695,6 +107649,69 @@
             "armonia": 5,
             "rol": "profundizar",
             "pie": "La melodía evoca un ambiente de misterio, pero carece de la chispa necesaria para encender la curiosidad de los niños.",
+            "frase_eco": ""
+          },
+          {
+            "id": "270186248",
+            "cancion": "The Flight of the Griffin",
+            "artista": "James Horner",
+            "album": "The Spiderwick Chronicles (Original Motion Picture Score)",
+            "genero": "Bandas sonoras",
+            "dur": 415,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/1d/8f/601d8f5a-5b47-c5b2-dc1a-76326666f748/mzaf_14144691973703546417.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-flight-of-the-griffin/270186215?i=270186248&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/0b/ee/c7/mzi.kuunawza.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 10,
+            "rol": "abrir",
+            "pie": "El vuelo del grifo de Horner es la música del universo Spiderwick: brío y asombro que el adulto disfruta tanto como el niño.",
+            "frase_eco": "🎯 ¿Qué secretos de la mansión podrían cambiarlo todo?"
+          },
+          {
+            "id": "270186277",
+            "cancion": "Closing Credits",
+            "artista": "James Horner",
+            "album": "The Spiderwick Chronicles (Original Motion Picture Score)",
+            "genero": "Bandas sonoras",
+            "dur": 503,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/80/4f/3c/804f3cc1-d9fe-714a-d28b-d3d1784e74c5/mzaf_16429911335976560341.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/closing-credits/270186215?i=270186277&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/0b/ee/c7/mzi.kuunawza.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "aterrizar",
+            "pie": "Los créditos de Horner cierran la historia con calidez y luz; el adulto puede terminar la lectura con el ánimo arriba.",
+            "frase_eco": "🛡 La curiosidad es el primer paso hacia la aventura."
+          },
+          {
+            "id": "270186219",
+            "cancion": "Writing the Chronicles",
+            "artista": "James Horner",
+            "album": "The Spiderwick Chronicles (Original Motion Picture Score)",
+            "genero": "Bandas sonoras",
+            "dur": 183,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a0/b1/0b/a0b10b39-a70e-1e9b-90e1-2335a5d360c4/mzaf_6216952473912608852.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/writing-the-chronicles/270186215?i=270186219&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/0b/ee/c7/mzi.kuunawza.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "Escribiendo las crónicas: el tema de Horner suena a libro que se abre, con el misterio de la mansión en el aire.",
+            "frase_eco": "🌱 Cada rincón de la antigua mansión guarda un misterio."
+          },
+          {
+            "id": "1500977781",
+            "cancion": "Anitras Dance Peer Gynt Suite No.1",
+            "artista": "Edvard Grieg",
+            "album": "Classical Lines",
+            "genero": "Instrumental",
+            "dur": 200,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/ed/f8/20edf856-73e8-d5d4-4bd4-dee36bbb0eb5/mzaf_16041738828272655995.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/anitras-dance-peer-gynt-suite-no-1/1500977772?i=1500977781&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/2b/bd/e9/2bbde963-c831-3335-0739-c828a85fb7a0/018736315428_cover.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "La danza de Anitra es ligera y juguetona, pero se aleja un poco del misterio de la mansión.",
             "frase_eco": ""
           }
         ]
@@ -108258,7 +109275,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-19",
         "juez": "gpt-4o-mini+completar",
         "sinfonia": "Elegiría 'Rhapsody on a Theme of Paganini' por su belleza melódica que puede resonar con la astucia del sastrecillo, aunque le falta un poco de brío para abrir la lectura.",
         "candidatos": [
@@ -108292,6 +109309,53 @@
             "rol": "abrir",
             "pie": "La melodía del Sastrecillo Valiente invita a la aventura y a la valentía, haciendo sonreír a grandes y pequeños.",
             "frase_eco": "⚓ ¿Quién dice que un sastrecillo no puede conquistar reinos?"
+          },
+          {
+            "id": "1511968997",
+            "cancion": "El Sastrecillo Valiente (Latino)",
+            "artista": "Hermanos Grimm",
+            "album": "Cuentos Clásicos Como Nunca I (Latino)",
+            "genero": "Cuentos",
+            "dur": 505,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/0f/71/010f7133-3931-5f40-c48e-6a921a7233cf/mzaf_14881356438363486680.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/el-sastrecillo-valiente-latino/1511968991?i=1511968997&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/75/e9/93/75e99387-e950-a196-e4d0-45d7301fc9be/cover_10170480.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "abrir",
+            "pie": "La narración del propio cuento, con su voz de relato; el adulto lee sobre la voz sin competir.",
+            "frase_eco": "¿Quién dice que un sastrecillo no puede conquistar reinos?"
+          },
+          {
+            "id": "1443659287",
+            "cancion": "The Bremen Town Musicians Band",
+            "artista": "Disney Studio Chorus",
+            "album": "Silly Symphonies",
+            "genero": "Música para niños",
+            "dur": 125,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/d1/82/8ad182e5-9dfb-16dc-6ffd-bb091d7e7fa9/mzaf_4610312709554195837.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/the-bremen-town-musicians-band/1443659270?i=1443659287&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/86/c2/09/86c209db-3904-62be-9baa-23a190c87d34/00050087162443.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 9,
+            "rol": "resonar",
+            "pie": "La versión de los Silly Symphonies de los músicos de Bremen: brío de dibujo animado que levanta al niño y hace reír al adulto.",
+            "frase_eco": "Con un cinturón heroico, un sastrecillo se enfrenta a gigantes."
+          },
+          {
+            "id": "514015674",
+            "cancion": "Masquerade Suite: Waltz",
+            "artista": "Moscow RTV Large Symphony Orchestra & Karen Khatchaturian",
+            "album": "Khachaturian: Masquerade Suite 1-5 - EP",
+            "genero": "Clásica",
+            "dur": 255,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/31/b1/0a/31b10a7a-7c43-f9e6-fe7d-34f8bdc6d20e/mzaf_16053976276642779603.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/masquerade-suite-waltz/514015346?i=514015674&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/81/47/45/8147453e-d7a1-c145-77ae-2bc93cee120d/886788775923.tif/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "Un vals de baile de máscaras que da un aire de fiesta y juego; calidez que sostiene la lectura.",
+            "frase_eco": "La verdadera grandeza puede encontrarse en los detalles más pequeños."
           }
         ]
       },
@@ -109053,7 +110117,7 @@
         }
       },
       "_musica": {
-        "resuelto_el": "2026-09-10",
+        "resuelto_el": "2026-11-19",
         "juez": "gpt-4o-mini+rescate+completar",
         "sinfonia": "Elegiría esta pieza por su capacidad de profundizar en el descubrimiento emocional, aunque su tono no es el más adecuado para el ánimo del cuento.",
         "candidatos": [
@@ -109085,6 +110149,51 @@
             "armonia": 6,
             "rol": "profundizar",
             "pie": "La belleza de 'El Cisne' evoca la amistad y la conexión en momentos de introspección.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1477160820",
+            "cancion": "Peer Gynt Suite n.º 1 op. 46: IV. En la gruta del rey de la montaña",
+            "artista": "WDR Sinfonieorchester Köln & Eivind Aadland",
+            "album": "Grieg: Complete Symphonic Works",
+            "genero": "Clásica",
+            "dur": 151,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/24/78/68247882-6438-9cff-e95f-5bd561c47ad7/mzaf_16835985349664346902.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/peer-gynt-suite-n-%C2%BA-1-op-46-iv-en-la-gruta-del-rey-de-la-monta%C3%B1a/1477160638?i=1477160820&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/51/05/de/5105de80-5621-cc3c-7083-6e29b4cb3172/cover.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "profundizar",
+            "pie": "La entrada del rey de la montaña de Grieg tiene aire de aventura y misterio; el adulto que lee se contagia del pulso sin que el niño se sien",
+            "frase_eco": "⚓ ¿Qué tesoros ocultos puedes descubrir a través de tus amigos?"
+          },
+          {
+            "id": "319974198",
+            "cancion": "Powerhouse",
+            "artista": "The Raymond Scott Orchestrette",
+            "album": "Pushbutton Parfait",
+            "genero": "Jazz",
+            "dur": 329,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/aa/5b/b5aa5b79-9fe1-005e-9f93-d662930f0c6f/mzaf_4130798477429398585.plus.aac.p.m4a",
+            "link": "https://music.apple.com/us/album/powerhouse/319974067?i=319974198&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/2e/4b/0e/mzi.qhbyibns.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "Jazz juguetón y brillante que despierta el ánimo; alegre, aunque sin relación directa con el desierto ni con Hoyos.",
+            "frase_eco": "✨ La amistad verdadera se forja en momentos de desafío."
+          },
+          {
+            "id": "19668528",
+            "cancion": "Guillaume Tell (William Tell): Overture",
+            "artista": "Michael Halász & Zagreb Festival Orchestra",
+            "album": "Rossini: Overtures",
+            "genero": "Clásica",
+            "dur": 729,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/21/57/e5215718-7598-84fd-ae8d-7eeefed9a4b5/mzaf_6254422367647512883.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/guillaume-tell-william-tell-overture/19668532?i=19668528&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m07/d30/h23/s05.qnebagkk.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "abrir",
+            "pie": "La obertura de Guillermo Tell de Rossini despierta el brío del cuento; buena para arrancar, aunque no conecta con el desierto ni con la amis",
             "frase_eco": ""
           }
         ]
@@ -109898,10 +111007,10 @@
     }
   ],
   "meta": {
-    "next_edition_number": 114,
-    "total": 134,
+    "next_edition_number": 115,
+    "total": 135,
     "svg_cleanup": "20260516-200328",
-    "last_audit": "2026-11-16T20:09:41.960Z",
+    "last_audit": "2026-11-19T11:12:31.104Z",
     "last_updated": "2026-08-27T17:51:24.076Z",
     "healing_rotation_idx": 12,
     "last_healing_book": "La Bella y la Bestia",
