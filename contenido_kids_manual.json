@@ -1,6 +1,970 @@
 {
   "libros": [
     {
+      "titulo": "Cuentos de la selva",
+      "autor": "Horacio Quiroga",
+      "tagline": "",
+      "portada": "https://books.google.com/books/content?id=d9DiCgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api&fife=w1200",
+      "portada_url": "https://books.google.com/books/content?id=d9DiCgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api&fife=w1200",
+      "isbn": "",
+      "titulo_es": "Cuentos de la selva",
+      "titulo_en": "Cuentos de la selva",
+      "idioma_original": "es",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "miedo",
+        "cuidado",
+        "compañía",
+        "paciencia"
+      ],
+      "palabras_en": [
+        "fear",
+        "caution",
+        "company",
+        "patience"
+      ],
+      "frases": [
+        "🌅 El yacaré abre un ojo en el agua quieta. Mira, y no se mueve.",
+        "🎧 Cierra los ojos un rato. Escucha el monte: algo cruje, algo respira.",
+        "🕰 ¿Quién te enseñó a esperar antes de dar el primer paso?",
+        "🌌 Lo que no se puede dominar se aprende a mirar. Es la manera de no perderlo."
+      ],
+      "frases_en": [
+        "🌅 The caiman opens one eye in the still water. It looks, and it does not move.",
+        "🎧 Close your eyes for a moment. Listen to the jungle: something cracks, something breathes.",
+        "🌊 Who taught you to wait before taking the first step?",
+        "🌓 What you cannot control, you learn to watch. That is how you keep it."
+      ],
+      "frases_og": [
+        "🌱 El monte enseña bajito a quien sabe oír.",
+        "🔮 Pega la panza al suelo. Escucha antes de correr.",
+        "🕊 ¿Cuántos peligros se evitan con solo esperar?",
+        "📖 Poca garra, buen oído: así se llega a viejo."
+      ],
+      "frases_og_en": [
+        "🌱 The jungle does not forgive a moment of carelessness.",
+        "🔮 Lie flat, stay still, and let the whole jungle pass.",
+        "🕊 Who warns you when the river itself says nothing at all?",
+        "📖 Quiet eyes see the hunger that loud feet never notice."
+      ],
+      "colores": [
+        "#DFCD90",
+        "#C8CB4D",
+        "#5E962C",
+        "#275719"
+      ],
+      "textColors": [
+        "#000000",
+        "#000000",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#D2D3CF",
+      "tarjeta": {
+        "titulo": "Lo que enseña el monte a los pequeños",
+        "parrafoTop": "La selva no perdona los descuidos. Los cachorros lo saben desde que abren los ojos. [H]Cada ruido tiene dueño, y cada sombra, un hambre.[/H] Quien aprende a escuchar antes de correr llega a viejo. El yacaré vigila el río, y el río no avisa.",
+        "subtitulo": "¿Qué hace el más chico cuando el monte entero lo mira?",
+        "parrafoBot": "Camina despacio, pega la panza al suelo y espera. Los amigos de otra especie se avisan con un silbido bajo, y esa ayuda vale más que una garra. [H]Abre el libro en cualquier página, ahora.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Lo que enseña el monte a los pequeños",
+        "parrafoTop": "La selva no perdona los descuidos. Los cachorros lo saben desde que abren los ojos. [H]Cada ruido tiene dueño, y cada sombra, un hambre.[/H] Quien aprende a escuchar antes de correr llega a viejo. El yacaré vigila el río, y el río no avisa.",
+        "subtitulo": "¿Qué hace el más chico cuando el monte entero lo mira?",
+        "parrafoBot": "Camina despacio, pega la panza al suelo y espera. Los amigos de otra especie se avisan con un silbido bajo, y esa ayuda vale más que una garra. [H]Abre el libro en cualquier página, ahora.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Lo que enseña el monte a los pequeños",
+        "parrafoTop": "La selva no perdona los descuidos. Los cachorros lo saben desde que abren los ojos. [H]Cada ruido tiene dueño, y cada sombra, un hambre.[/H] Quien aprende a escuchar antes de correr llega a viejo. El yacaré vigila el río, y el río no avisa.",
+        "subtitulo": "¿Qué hace el más chico cuando el monte entero lo mira?",
+        "parrafoBot": "Camina despacio, pega la panza al suelo y espera. Los amigos de otra especie se avisan con un silbido bajo, y esa ayuda vale más que una garra. [H]Abre el libro en cualquier página, ahora.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "What the jungle teaches its young",
+        "parrafoTop": "The jungle does not forgive carelessness. The young ones know this from the day they open their eyes. Every noise has an owner, and every shadow has a hunger. [H]Whoever learns to listen before running grows old.[/H] The caiman watches the river, and the river never warns you.",
+        "subtitulo": "What does the smallest one do when the whole jungle is watching?",
+        "parrafoBot": "It walks slowly, presses its belly to the ground, and waits. Friends of other species warn each other with a low whistle, and that help is worth more than a claw. [H]Open the book at any page, now.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "What the jungle teaches its young",
+        "parrafoTop": "The jungle does not forgive carelessness. The young ones know this from the day they open their eyes. Every noise has an owner, and every shadow has a hunger. [H]Whoever learns to listen before running grows old.[/H] The caiman watches the river, and the river never warns you.",
+        "subtitulo": "What does the smallest one do when the whole jungle is watching?",
+        "parrafoBot": "It walks slowly, presses its belly to the ground, and waits. Friends of other species warn each other with a low whistle, and that help is worth more than a claw. [H]Open the book at any page, now.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "What the jungle teaches its young",
+        "parrafoTop": "The jungle does not forgive carelessness. The young ones know this from the day they open their eyes. Every noise has an owner, and every shadow has a hunger. [H]Whoever learns to listen before running grows old.[/H] The caiman watches the river, and the river never warns you.",
+        "subtitulo": "What does the smallest one do when the whole jungle is watching?",
+        "parrafoBot": "It walks slowly, presses its belly to the ground, and waits. Friends of other species warn each other with a low whistle, and that help is worth more than a claw. [H]Open the book at any page, now.[/H]",
+        "style": {
+          "accent": "#A4D61F",
+          "paper": "#D2D3CF",
+          "ink": "#1A1C17",
+          "border": "#7E7F7C"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuentos%20de%20la%20selva%20Horacio%20Quiroga%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Cuentos%20de%20la%20selva%20Horacio%20Quiroga%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-11-23T11:10:42.003Z",
+        "workflow_run_id": "45162512095",
+        "catalog_mode": "kids",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.53,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "Cuentos de la selva",
+          "titulo_en": "Cuentos de la selva",
+          "autor_completo": "Horacio Quiroga",
+          "idioma_original": "es"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la selva misionera como escenario donde animales y hombres comparten leyes de supervivencia",
+            "el aprendizaje de los pequeños animales sobre el peligro, la prudencia y la muerte como parte del orden natural",
+            "la amistad y la solidaridad entre criaturas distintas frente a una naturaleza que no perdona descuidos",
+            "el valor de la observación paciente y el respeto por lo que no se domina"
+          ],
+          "key_terms": [
+            "selva",
+            "yacaré",
+            "Anaconda",
+            "Tatá",
+            "Yasí-Yateré",
+            "Mborá"
+          ],
+          "authorial_voice_notes": "Narración sobria, directa y casi científica, con una mirada que no humaniza en exceso a los animales sino que los observa en su ley propia. Quiroga escribe frases breves, precisas y con ritmo sostenido, sin moraleja explícita; el narrador es omnisciente y distante, aunque cercano a la experiencia de la naturaleza. Los personajes principales son animales cuyas decisiones revelan tensión entre instinto, miedo y supervivencia, y el tono oscila entre ternura contenida y crudeza."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la relación entre el hombre, la naturaleza y la vida en la selva, con cuentos donde la muerte, el peligro y la solidaridad aparecen sin adornos. Aunque es literatura infantil con intención pedagógica, la verdad que transmite no es una virtud abstracta sino la ley de la selva observada con precisión. El curador pide que cada phrase destile un valor; esto se sostiene en valores como la prudencia, la lealtad y el respeto por el entorno, que están presentes en los cuentos de forma concreta.",
+          "decision": "apply_directly"
+        },
+        "visual_intent": {
+          "hue_primary": 64.375,
+          "saturation": "balanced",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 12,
+          "palette_strategy": "analogous",
+          "typography_family": "serif_literario",
+          "density": "equilibrado",
+          "rhythm": "medio",
+          "era": "clasico",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "Lo que enseña el monte a los pequeños",
+          "parrafoTop": "La selva no perdona los descuidos. Los cachorros lo saben desde que abren los ojos. Cada ruido tiene dueño, y cada sombra, un hambre. Quien aprende a escuchar antes de correr llega a viejo. El yacaré vigila el río, y el río no avisa.",
+          "subtitulo": "¿Qué hace el más chico cuando el monte entero lo mira?",
+          "parrafoBot": "Camina despacio, pega la panza al suelo y espera. Los amigos de otra especie se avisan con un silbido bajo, y esa ayuda vale más que una garra. Abre el libro en cualquier página, ahora."
+        },
+        "card_en": {
+          "titulo": "What the jungle teaches its young",
+          "parrafoTop": "The jungle does not forgive carelessness. The young ones know this from the day they open their eyes. Every noise has an owner, and every shadow has a hunger. Whoever learns to listen before running grows old. The caiman watches the river, and the river never warns you.",
+          "subtitulo": "What does the smallest one do when the whole jungle is watching?",
+          "parrafoBot": "It walks slowly, presses its belly to the ground, and waits. Friends of other species warn each other with a low whistle, and that help is worth more than a claw. Open the book at any page, now."
+        },
+        "emotional_words_es": [
+          "miedo",
+          "cuidado",
+          "compañía",
+          "paciencia"
+        ],
+        "emotional_words_en": [
+          "fear",
+          "caution",
+          "company",
+          "patience"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🌱 El monte enseña bajito a quien sabe oír.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.5,
+            "eje_valor": "curiosidad",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔮 Pega la panza al suelo. Escucha antes de correr.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.4,
+            "eje_valor": "prudencia",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 ¿Cuántos peligros se evitan con solo esperar?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.5,
+            "eje_valor": "paciencia",
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 Poca garra, buen oído: así se llega a viejo.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": "humildad",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🌱 The jungle does not forgive a moment of carelessness.",
+            "role_symphonic": "land",
+            "mood_axis": 0.3,
+            "value_axis": "caution",
+            "pilar": "salud_fisica",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🔮 Lie flat, stay still, and let the whole jungle pass.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": "patience",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🕊 Who warns you when the river itself says nothing at all?",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": "friendship",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "📖 Quiet eyes see the hunger that loud feet never notice.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": "attention",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 El yacaré abre un ojo en el agua quieta. Mira, y no se mueve.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.4,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "oido",
+            "phrase": "🎧 Cierra los ojos un rato. Escucha el monte: algo cruje, algo respira.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.5,
+            "eje_valor": "calma",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "tiempo",
+            "phrase": "🕰 ¿Quién te enseñó a esperar antes de dar el primer paso?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": "paciencia",
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "espacio",
+            "phrase": "🌌 Lo que no se puede dominar se aprende a mirar. Es la manera de no perderlo.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.7,
+            "eje_valor": "respeto",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "sight",
+            "phrase": "🌅 The caiman opens one eye in the still water. It looks, and it does not move.",
+            "role_symphonic": "open",
+            "mood_axis": 0.4,
+            "value_axis": "caution",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "hearing",
+            "phrase": "🎧 Close your eyes for a moment. Listen to the jungle: something cracks, something breathes.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": "attention",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "movement",
+            "phrase": "🌊 Who taught you to wait before taking the first step?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": "friendship",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 What you cannot control, you learn to watch. That is how you keep it.",
+            "role_symphonic": "land",
+            "mood_axis": 0.5,
+            "value_axis": "patience",
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.9,
+          "specificity": 0.95,
+          "grounding_judge": 0.43,
+          "combined": 0.78,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9049999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.42500000000000004
+          }
+        }
+      },
+      "_grounding": {
+        "source": "google_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "Cuentos de la selva",
+          "autor_completo": "Horacio Quiroga",
+          "titulo_api": "Cuentos de la selva",
+          "autor_api": "Horacio Quiroga",
+          "subtitulo": "",
+          "año": "2011",
+          "editorial": "NoBooks Editorial",
+          "paginas": 32,
+          "isbn": "",
+          "isbn13": "",
+          "isbn10": "",
+          "categorias": [
+            "Fiction"
+          ],
+          "idioma": "es",
+          "preview_link": "http://books.google.com/books?id=d9DiCgAAQBAJ&printsec=frontcover&dq=intitle:Cuentos+de+la+selva+inauthor:Horacio+Quiroga&hl=&cd=1&source=gbs_api"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.3,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content draws on jungle imagery ('la selva') but never references Quiroga, the uruguayan author, the 1918 Buenos Aires publication, or any specific story or character from Cuentos de la selva. The advice about staying still, listening, and watching for danger is generic survival/mindfulness philosophy that could be applied to nearly any nature-themed or self-help book with minimal edits."
+        },
+        "en": {
+          "grounded_score": 0.55,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content references jungle imagery and a caiman, which plausibly echo Quiroga's jungle stories, but the ground truth itself contains only publisher boilerplate and a bare summary, naming no specific characters, stories, or concepts. The grounding is therefore partly inferred from the title rather than verifiable against the ground truth, so it is only moderately grounded."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.82,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.82,
+          "reason": "Voz directa del narrador de la selva, sin referencias meta al libro ni al autor; tono coherente con la obra.",
+          "elapsed_ms": 1929,
+          "usage": {
+            "prompt_tokens": 901,
+            "completion_tokens": 66,
+            "total_tokens": 967
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.8,
+          "reason": "Voz directa, narrativa y sin referencias meta al libro ni al autor; suena a texto interno.",
+          "elapsed_ms": 1810,
+          "usage": {
+            "prompt_tokens": 857,
+            "completion_tokens": 61,
+            "total_tokens": 918
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1885,
+        "total_ms": 1929
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 64.375,
+          "adjusted_hue": 76.375,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 12,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.42",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#DFCD90",
+          "--palette-1": "#C8CB4D",
+          "--palette-2": "#5E962C",
+          "--palette-3": "#275719",
+          "--accent": "#A4D61F",
+          "--accent-soft": "#A4D61F38",
+          "--accent-glow": "#A4D61F6b",
+          "--paper": "#D2D3CF",
+          "--ink": "#1A1C17",
+          "--border": "#7E7F7C",
+          "--highlight-bg": "#90BC1Bd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.65,
+          "--letter-spacing": 0.2,
+          "--paragraph-gap": 1,
+          "--font-size-scale": 1,
+          "--word-spacing-scale": 1,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "imagen_concreta",
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "sensory_instruction",
+          "direct_question",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 3
+      },
+      "_quality_warning": null,
+      "_inputs_snapshot": "2026-11-23T11-10-42",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 5,
+        "franja": "madrugada",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Madrugada: claridad mental máxima. Presencia. Pocas palabras, mucho peso."
+      },
+      "_metrics": {
+        "tokens_total": 209391,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 30531,
+          "palette": 0,
+          "content_es": 41531,
+          "judge_es": 1660,
+          "content_es_retry": 41731,
+          "judge_es_retry": 1647,
+          "content_es_escalate": 38655,
+          "content_en": 35122,
+          "judge_en": 1657,
+          "voice": 1885,
+          "voice_extended": 14972,
+          "highlight_judge_es_parrafoTop": 1192,
+          "highlight_judge_es_parrafoBot": 1205,
+          "highlight_judge_en_parrafoTop": 1188,
+          "highlight_judge_en_parrafoBot": 1184,
+          "csal": 6137
+        },
+        "elapsed_ms_total": 77491,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 6804,
+          "palette": 0,
+          "cover_fallback": 876,
+          "content_es": 20053,
+          "judge_es": 2621,
+          "content_es_retry": 19844,
+          "content_en": 7757,
+          "judge_en": 3263,
+          "voice": 1931,
+          "voice_extended": 2603,
+          "highlight_judge": 9269,
+          "lens_compatibility": 828,
+          "csal": 12173,
+          "post_processing": 22276
+        },
+        "llm_calls_count": 26,
+        "models_used": [
+          "claude-haiku-5-5",
+          "claude-sonnet-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.1,
+        "game-theory": 0.25,
+        "self-knowledge": 0.2,
+        "pilares": {
+          "cuerpo": 0.3,
+          "mente": 0.35,
+          "negocio": 0.02,
+          "familia": 0.2,
+          "espiritu": 0.2,
+          "relaciones": 0.4,
+          "finanzas": 0.02
+        },
+        "hawkins": 0.15
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando sientes miedo ante algo que no puedes controlar",
+          "cuando necesitas aprender a ser prudente en un lugar desconocido",
+          "cuando alguien cercano se enfrenta al peligro y no sabes cómo ayudarlo",
+          "cuando dudas si confiar en alguien diferente a ti",
+          "cuando te cuesta aceptar que la muerte es parte natural de la vida",
+          "cuando observas la naturaleza y quieres entender sus reglas",
+          "antes de adentrarte en un bosque, selva o campo abierto",
+          "después de sufrir un susto o un accidente por descuido",
+          "cuando sientes que el mundo es más duro de lo que esperabas",
+          "cuando quieres enseñarle a un niño a cuidarse solo",
+          "cuando la soledad te pesa y buscas compañía verdadera",
+          "cuando te cuesta esperar antes de tomar una decisión importante",
+          "cuando necesitas paciencia para observar antes de actuar",
+          "cuando tienes que sobrevivir con pocos recursos",
+          "cuando sientes que no dominas una situación y debes aprender a mirar",
+          "cuando una amistad inesperada te salva de un problema",
+          "cuando te preguntas qué significa ser valiente de verdad",
+          "cuando el instinto te dice que algo no está bien",
+          "cuando debes convivir con quienes son distintos a ti",
+          "cuando reflexionas sobre el orden natural que no perdona errores",
+          "cuando buscas historias sobre animales que enseñan lecciones de vida",
+          "cuando te enfrentas a la crueldad del entorno y necesitas entenderla",
+          "cuando quieres leer con niños sobre el peligro sin asustarlos demasiado",
+          "cuando te preguntas cómo sobreviven las criaturas pequeñas",
+          "cuando una caída o un error te obliga a ser más cuidadoso",
+          "cuando sientes curiosidad por la vida silvestre de Sudamérica",
+          "cuando necesitas un cuento corto para reflexionar sobre la prudencia",
+          "cuando te invade el temor a lo desconocido en la noche",
+          "cuando la fuerza de otro te intimida y debes decidir cómo responder",
+          "cuando buscas una lectura sobria y directa sobre la naturaleza",
+          "cuando quieres comprender el miedo como un aliado que protege"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "miedo",
+            "temor",
+            "susto",
+            "angustia",
+            "inquietud",
+            "cuidado",
+            "prudencia",
+            "calma",
+            "paciencia",
+            "compañía",
+            "soledad",
+            "confianza",
+            "valentía",
+            "ternura",
+            "desconfianza",
+            "alivio",
+            "nervios",
+            "asombro",
+            "tristeza",
+            "resignación",
+            "fear",
+            "caution",
+            "company",
+            "patience",
+            "scared",
+            "lonely",
+            "trust",
+            "calm",
+            "worry"
+          ],
+          "objetos": [
+            "selva",
+            "monte",
+            "yacaré",
+            "caimán",
+            "río",
+            "agua",
+            "ojo",
+            "tigre",
+            "víbora",
+            "hormiga",
+            "pájaro",
+            "nido",
+            "árbol",
+            "animal",
+            "bosque",
+            "cuento",
+            "guía",
+            "pantano",
+            "serpiente",
+            "jungle",
+            "forest",
+            "river",
+            "snake",
+            "bird",
+            "tree"
+          ],
+          "contextos": [
+            "selva misionera",
+            "monte de noche",
+            "orilla del río",
+            "pantano quieto",
+            "campo abierto",
+            "bosque denso",
+            "cuento para niños",
+            "lectura en voz alta",
+            "tierra del Litoral",
+            "naturaleza salvaje",
+            "jungle at night",
+            "riverbank",
+            "rainforest",
+            "wild nature"
+          ],
+          "verbos": [
+            "observar",
+            "esperar",
+            "escuchar",
+            "cuidarse",
+            "aprender",
+            "sobrevivir",
+            "acechar",
+            "huir",
+            "confiar",
+            "mirar",
+            "proteger",
+            "advertir",
+            "cruzar",
+            "avanzar",
+            "shelter",
+            "watch",
+            "wait",
+            "listen",
+            "survive",
+            "learn",
+            "observe",
+            "protect"
+          ]
+        },
+        "concept_tags": [
+          "Cuentos de la selva Horacio Quiroga",
+          "selva misionera como escenario de supervivencia",
+          "yacaré y el agua quieta en Quiroga",
+          "cuentos de animales para niños de Quiroga Litoral",
+          "aprendizaje de los pequeños animales sobre el peligro",
+          "la muerte como parte del orden natural en Quiroga",
+          "amistad entre criaturas distintas en la selva",
+          "observación paciente de la naturaleza salvaje",
+          "narrativa sobria y distante sobre animales",
+          "cuentos uruguayos de 1918 para niños",
+          "NoBooks Editorial Cuentos de la selva",
+          "relato del tigre, la víbora y el monte misionero"
+        ],
+        "anti_patterns": [
+          "manuales de supervivencia práctica",
+          "guías de viaje o turismo ecológico",
+          "ciencia natural académica o zoología formal",
+          "fantasía épica con magia o criaturas mitológicas",
+          "novela psicológica sobre relaciones humanas urbanas",
+          "autoayuda sobre productividad o finanzas",
+          "literatura infantil moralizante con enseñanzas explícitas",
+          "textos sobre jardinería o cuidado de plantas domésticas"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🐊"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌿"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🦜"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🪵"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase es una imagen poética en voz narrativa que parece pertenecer al propio texto del libro, no una descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una instrucción directa en voz autoral, como si el narrador le hablara al lector dentro de la historia, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta retórica en voz narrativa del propio texto, no una descripción externa del libro, por lo que se lee como contenido escrito dentro de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.72,
+              "reason": "Suena a dicho o frase de un personaje escrita dentro de la narrativa, con voz propia y sin describir el libro desde fuera."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.92,
+              "reason": "La frase es una imagen narrativa en presente que describe una escena directamente, como voz del texto y no como comentario sobre el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una instrucción sensorial en segunda persona dirigida al lector dentro de la narración, no una descripción del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta directa al lector en voz narrativa, escrita como parte del texto del libro y no como descripción o comentario externo sobre él."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase suena a voz autoral reflexiva dentro del texto, con una enseñanza en primera escritura, no una descripción externa del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una afirmación narrativa en voz autoral sobre el mundo de la historia, como si estuviera escrita dentro del libro y no describiéndolo desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una instrucción en voz directa del personaje o narrador dentro de la escena, no una descripción del libro desde afuera, por lo que pertenece al contenido del texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "La frase es una pregunta retórica en voz narrativa poética que forma parte del texto del libro, no una descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Frase en voz autoral con imagen poética directa; no describe el libro sino que suena como un pasaje escrito dentro de la narrativa."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.93,
+              "reason": "La frase narra una escena directamente, con voz de narrador en presente y sin describir el libro desde fuera; se lee como texto interno de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una escena narrada en segunda persona directa, como voz autoral que invita al lector dentro de la historia, no una descripción del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta directa dirigida al lector dentro del texto, con voz narrativa propia y no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "The sentence reads as a first-person narrative voice within the book, a line a character or narrator would speak, not a description of the book from outside."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-23T11:12:21.769Z",
+      "_slug": "cuentos-de-la-selva",
+      "_c5_flags": [
+        {
+          "field": "EN tarjeta.parrafoTop",
+          "reason": "suspect-short \"you\"",
+          "tail": " watches the river, and the river never warns you."
+        }
+      ],
+      "_edicion_numero": 116,
+      "_musica": {
+        "resuelto_el": "2026-11-23",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría Busca Lo Mas Vital para abrir, En La Cueva del Rey para profundizar, y la Obertura de Guillermo Tell para despertar al niño, por su brío y su leve tono de juego sin pelear con la lectura.",
+        "candidatos": [
+          {
+            "id": "632453125",
+            "cancion": "Busca Lo Mas Vital (De \"El Libro de la Selva\")",
+            "artista": "Grupo Musical Ginesitos",
+            "album": "Canciones Infantiles \"El Cine de los Niños\"",
+            "genero": "Música para niños",
+            "dur": 264,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/82/c4/4e/82c44eca-2497-e05d-bcbf-ebdc342fa83d/mzaf_17570868116324840640.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/busca-lo-mas-vital-de-el-libro-de-la-selva/632452025?i=632453125&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/2c/bb/df/2cbbdf3e-0236-6a51-b357-c3a549489dc4/887845977748.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 8,
+            "rol": "abrir",
+            "pie": "La canción del libro de la selva que busca lo vital: los cachorros alegres, el espíritu de la historia de Kipling en tono de juego.",
+            "frase_eco": "El monte enseña bajito a quien sabe oír."
+          },
+          {
+            "id": "337926171",
+            "cancion": "En La Cueva Del Rey De La Montaña (Allá Marcia E Molto Marcato)",
+            "artista": "Royal Danish Symphony Orchestra & Menudt Nortram",
+            "album": "Grieg: Peer Gynt Suites nº1 y nº2",
+            "genero": "Clásica",
+            "dur": 161,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/5e/6c/005e6c5f-307b-7e25-69ff-8a6264efd4d0/mzaf_17610535271956024868.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/en-la-cueva-del-rey-de-la-monta%C3%B1a-all%C3%A1-marcia-e-molto-marcato/337926050?i=337926171&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/9e/e0/96/mzi.hbhckqnz.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Marcha de Grieg, bonita y de tono oscuro; sirve al pulso de la selva pero no al brío del valor, así que solo queda a media altura.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1462174099",
+            "cancion": "Guillermo Tell: Obertura",
+            "artista": "Orquesta Sinfónica Chamartín & Cesar Belda",
+            "album": "Varios Compositores: Disco XXV Aniversario (Vol.2)",
+            "genero": "Clásica",
+            "dur": 227,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/a6/fa/46a6fa95-098e-6eda-5e2e-c7f4aedf8caf/mzaf_5739453178550291866.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/guillermo-tell-obertura/1462174079?i=1462174099&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/73/2b/44/732b44da-910c-7c15-04de-492d269d14e0/8429006370986.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Obertura de Rossini, la paleta de la caricatura: brío y travesura que despiertan al niño sin aturdir al adulto.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "tienda_compra": {
+        "tienda": "casadelibro",
+        "url": "https://casadelibro.com.mx/productos/cuentos-de-la-selva2/",
+        "isbn": "9788418451539",
+        "revisado": "2026-11-14"
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/cuentos-de-la-selva.2ae6c936ab.640.webp",
+        "srcset": "https://app.triggui.com/portadas/cuentos-de-la-selva.2ae6c936ab.640.webp 640w, https://app.triggui.com/portadas/cuentos-de-la-selva.2ae6c936ab.1280.webp 1280w",
+        "w": 1600,
+        "h": 2262,
+        "origen": "https://books.google.com/books/content?id=d9DiCgAAQBAJ&printsec=frontcover&img=1&source=gbs_api&zoom=0&fife=w1600",
+        "de": "1067fc2eca4d",
+        "fecha": "2026-11-23"
+      }
+    },
+    {
       "titulo": "El grúfalo",
       "autor": "Julia Donaldson",
       "tagline": "",
@@ -1938,10 +2902,10 @@
     }
   ],
   "meta": {
-    "next_edition_number": 115,
-    "total": 135,
+    "next_edition_number": 117,
+    "total": 136,
     "svg_cleanup": "20260516-200328",
-    "last_audit": "2026-11-19T11:12:31.104Z",
+    "last_audit": "2026-11-23T11:12:25.850Z",
     "last_updated": "2026-08-27T17:51:24.076Z",
     "healing_rotation_idx": 12,
     "last_healing_book": "La Bella y la Bestia",
