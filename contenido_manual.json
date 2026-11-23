@@ -1,6 +1,998 @@
 {
   "libros": [
     {
+      "titulo": "El gato que amaba los libros",
+      "autor": "Sosuke Natsukawa",
+      "tagline": "",
+      "portada": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/3000x3000bb.jpg",
+      "portada_url": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/3000x3000bb.jpg",
+      "isbn": "",
+      "titulo_es": "El gato que amaba los libros",
+      "titulo_en": "Neko Shojo Tora (The Cat Who Loved Books)",
+      "idioma_original": "en",
+      "dimension": "Conexion",
+      "punto": "Activo",
+      "palabras": [
+        "soledad",
+        "cansancio",
+        "empezar",
+        "escuchar"
+      ],
+      "palabras_en": [
+        "loneliness",
+        "tiredness",
+        "starting over",
+        "listening"
+      ],
+      "frases": [
+        "🗺 La librería de viejo huele a papel dormido. Los libros esperan a quien los necesite.",
+        "🌓 Un libro olvidado no está muerto. Solo espera la mano que lo abra.",
+        "✋ Toma un libro. Pasa una página despacio y siente el papel entre los dedos.",
+        "🔔 ¿Y si hoy solo escuchas, sin responder, hasta entender de verdad al otro?"
+      ],
+      "frases_en": [
+        "🕯 The old bookshop smells of paper that has been sleeping for years. The books wait for whoever needs them.",
+        "🌓 A forgotten book is not dead. It only waits for a hand to open it.",
+        "✋ Take a book. Turn one page slowly and feel the paper between your fingers.",
+        "🔔 What if today you only listen, without answering, until you truly understand the other?"
+      ],
+      "frases_og": [
+        "🛡 Hay libros que esperan a quien los necesita.",
+        "🎯 Pasa la página despacio. Saborea cada línea.",
+        "🌱 ¿Qué libro olvidado te está esperando hoy?",
+        "🔮 Callar y escuchar: así también se habla."
+      ],
+      "frases_og_en": [
+        "🛡 Old books keep their stories until someone finally opens them.",
+        "🎯 Turn one page slowly. Let the paper tell you its age.",
+        "🌱 Who hears the silence between the words of a friend?",
+        "🔮 Quiet rooms hold the books that wait longest for us."
+      ],
+      "colores": [
+        "#90A1DF",
+        "#534DCB",
+        "#662C96",
+        "#4A1957"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF",
+        "#FFFFFF"
+      ],
+      "fondo": "#D0CFD3",
+      "tarjeta": {
+        "titulo": "El gato y la librería de viejo",
+        "parrafoTop": "Mi abuelo me dejó esta librería y yo casi no hablo con nadie. [H]Pero entre estos estantes hay un gato atigrado que sí me habla.[/H] Dice que los libros no esperan en silencio. Esperan a que alguien los salve.",
+        "subtitulo": "¿Quién escucha primero cuando nadie quiere hablar?",
+        "parrafoBot": "Tora camina por los lomos sin prisa. Mueve la cola y dice que escuchar también es una forma de hablar. Yo me quedo callado un rato. [H]Entonces oigo mejor lo que callan los libros.[/H]",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "El gato y la librería de viejo",
+        "parrafoTop": "Mi abuelo me dejó esta librería y yo casi no hablo con nadie. [H]Pero entre estos estantes hay un gato atigrado que sí me habla.[/H] Dice que los libros no esperan en silencio. Esperan a que alguien los salve.",
+        "subtitulo": "¿Quién escucha primero cuando nadie quiere hablar?",
+        "parrafoBot": "Tora camina por los lomos sin prisa. Mueve la cola y dice que escuchar también es una forma de hablar. Yo me quedo callado un rato. [H]Entonces oigo mejor lo que callan los libros.[/H]",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "El gato y la librería de viejo",
+        "parrafoTop": "Mi abuelo me dejó esta librería y yo casi no hablo con nadie. [H]Pero entre estos estantes hay un gato atigrado que sí me habla.[/H] Dice que los libros no esperan en silencio. Esperan a que alguien los salve.",
+        "subtitulo": "¿Quién escucha primero cuando nadie quiere hablar?",
+        "parrafoBot": "Tora camina por los lomos sin prisa. Mueve la cola y dice que escuchar también es una forma de hablar. Yo me quedo callado un rato. [H]Entonces oigo mejor lo que callan los libros.[/H]",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "The Cat and the Old Bookshop",
+        "parrafoTop": "My grandfather left me this bookshop, and I hardly speak to anyone. But between these shelves there is a striped cat who does speak to me. He says the books do not wait in silence. [H]They wait for someone to save them.[/H]",
+        "subtitulo": "Who listens first when nobody wants to talk?",
+        "parrafoBot": "[H]Tora walks along the spines without hurry.[/H] He flicks his tail and says listening is also a way of speaking. So I stay quiet for a while. Then I hear better what the books are not saying.",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "The Cat and the Old Bookshop",
+        "parrafoTop": "My grandfather left me this bookshop, and I hardly speak to anyone. But between these shelves there is a striped cat who does speak to me. He says the books do not wait in silence. [H]They wait for someone to save them.[/H]",
+        "subtitulo": "Who listens first when nobody wants to talk?",
+        "parrafoBot": "[H]Tora walks along the spines without hurry.[/H] He flicks his tail and says listening is also a way of speaking. So I stay quiet for a while. Then I hear better what the books are not saying.",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "The Cat and the Old Bookshop",
+        "parrafoTop": "My grandfather left me this bookshop, and I hardly speak to anyone. But between these shelves there is a striped cat who does speak to me. He says the books do not wait in silence. [H]They wait for someone to save them.[/H]",
+        "subtitulo": "Who listens first when nobody wants to talk?",
+        "parrafoBot": "[H]Tora walks along the spines without hurry.[/H] He flicks his tail and says listening is also a way of speaking. So I stay quiet for a while. Then I hear better what the books are not saying.",
+        "style": {
+          "accent": "#541FD6",
+          "paper": "#D0CFD3",
+          "ink": "#19171C",
+          "border": "#7D7C7F"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+El%20gato%20que%20amaba%20los%20libros%20Sosuke%20Natsukawa%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+Neko%20Shojo%20Tora%20(The%20Cat%20Who%20Loved%20Books)%20Sosuke%20Natsukawa%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-11-23T12:03:15.215Z",
+        "workflow_run_id": "45170516507",
+        "catalog_mode": "adulto",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.63,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "El gato que amaba los libros",
+          "titulo_en": "Neko Shojo Tora (The Cat Who Loved Books)",
+          "autor_completo": "Sosuke Natsukawa",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la librería de viejo como refugio donde los libros aguardan a quien los necesita",
+            "la misión de salvar libros olvidados y devolverlos a manos de lectores",
+            "el valor sensorial de pasar páginas y saborear una historia con calma",
+            "Rintaro aprende a hablar con otros desde el silencio y la escucha de Tora"
+          ],
+          "key_terms": [
+            "librería de viejo",
+            "Tora",
+            "Rintaro",
+            "libros en peligro",
+            "lectura sensorial"
+          ],
+          "authorial_voice_notes": "Narración en primera persona de Rintaro, un joven retraído que habla con calma y cierta melancolía. La voz de Tora aparece con ironía y sabiduría felina, casi como un maestro travieso. El tono es cálido, pausado y contemplativo, con una ternura casi fabulesca que convierte cada libro en un personaje vivo. Las frases son sencillas pero llevan peso emocional, sin dramatismo excesivo.",
+          "authorial_voice_notes_en": "First-person narration by Rintaro, a withdrawn young man who speaks calmly and with a touch of melancholy. Tora's voice comes through with irony and feline wisdom, almost like a mischievous teacher. The tone is warm, unhurried and contemplative, with an almost fable-like tenderness that turns every book into a living character. The sentences are simple but carry emotional weight, without excessive drama."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la lectura como experiencia sensorial y afectiva, no como productividad. Hay una lectura de la propia relación con la palabra impresa y de cómo los libros nos acompañan en momentos de retraimiento. La cronobiología aparece tenuemente (ritmo pausado, lectura para saborear con té), y el Mapa de Hawkins encuentra eco en la transición de Rintaro desde el miedo y el aislamiento hacia el coraje y la apertura. No hay análisis de juegos estratégicos ni de pilares equilibrados como eje principal, aunque la búsqueda de conexión toca Relaciones y Espíritu.",
+          "decision": "apply_through_adjacent_concept"
+        },
+        "visual_intent": {
+          "hue_primary": 243.59375,
+          "saturation": "balanced",
+          "lightness_paper": "medium_light",
+          "temperature_shift": 14,
+          "palette_strategy": "analogous",
+          "typography_family": "serif_literario",
+          "density": "aireado",
+          "rhythm": "lento",
+          "era": "contemporaneo",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Conexion",
+          "punto_hawkins": "Activo",
+          "franja_ideal": "tarde"
+        },
+        "card_es": {
+          "titulo": "El gato y la librería de viejo",
+          "parrafoTop": "Mi abuelo me dejó esta librería y yo casi no hablo con nadie. Pero entre estos estantes hay un gato atigrado que sí me habla. Dice que los libros no esperan en silencio. Esperan a que alguien los salve.",
+          "subtitulo": "¿Quién escucha primero cuando nadie quiere hablar?",
+          "parrafoBot": "Tora camina por los lomos sin prisa. Mueve la cola y dice que escuchar también es una forma de hablar. Yo me quedo callado un rato. Entonces oigo mejor lo que callan los libros."
+        },
+        "card_en": {
+          "titulo": "The Cat and the Old Bookshop",
+          "parrafoTop": "My grandfather left me this bookshop, and I hardly speak to anyone. But between these shelves there is a striped cat who does speak to me. He says the books do not wait in silence. They wait for someone to save them.",
+          "subtitulo": "Who listens first when nobody wants to talk?",
+          "parrafoBot": "Tora walks along the spines without hurry. He flicks his tail and says listening is also a way of speaking. So I stay quiet for a while. Then I hear better what the books are not saying."
+        },
+        "emotional_words_es": [
+          "soledad",
+          "cansancio",
+          "empezar",
+          "escuchar"
+        ],
+        "emotional_words_en": [
+          "loneliness",
+          "tiredness",
+          "starting over",
+          "listening"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🛡 Hay libros que esperan a quien los necesita.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🎯 Pasa la página despacio. Saborea cada línea.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "🌱 ¿Qué libro olvidado te está esperando hoy?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.6,
+            "eje_valor": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔮 Callar y escuchar: así también se habla.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.65,
+            "eje_valor": "escucha",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🛡 Old books keep their stories until someone finally opens them.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "🎯 Turn one page slowly. Let the paper tell you its age.",
+            "role_symphonic": "open",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🌱 Who hears the silence between the words of a friend?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "🔮 Quiet rooms hold the books that wait longest for us.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "espacio",
+            "phrase": "🗺 La librería de viejo huele a papel dormido. Los libros esperan a quien los necesite.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.55,
+            "eje_valor": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "tiempo",
+            "phrase": "🌓 Un libro olvidado no está muerto. Solo espera la mano que lo abra.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.65,
+            "eje_valor": "paciencia",
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "tacto",
+            "phrase": "✋ Toma un libro. Pasa una página despacio y siente el papel entre los dedos.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.7,
+            "eje_valor": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "oido",
+            "phrase": "🔔 ¿Y si hoy solo escuchas, sin responder, hasta entender de verdad al otro?",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.6,
+            "eje_valor": "escucha",
+            "pilar": "relaciones_clave",
+            "punto_optimo": "cero"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "smell",
+            "phrase": "🕯 The old bookshop smells of paper that has been sleeping for years. The books wait for whoever needs them.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.4,
+            "value_axis": null,
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "time",
+            "phrase": "🌓 A forgotten book is not dead. It only waits for a hand to open it.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": null,
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "touch",
+            "phrase": "✋ Take a book. Turn one page slowly and feel the paper between your fingers.",
+            "role_symphonic": "open",
+            "mood_axis": 0.7,
+            "value_axis": null,
+            "pilar": "salud_fisica",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "hearing",
+            "phrase": "🔔 What if today you only listen, without answering, until you truly understand the other?",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": null,
+            "pilar": "relaciones_clave",
+            "punto_optimo": "activo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.95,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.38,
+          "combined": 0.77,
+          "signals": {
+            "bookIdentityConfidence": 0.95,
+            "voiceSignal": 0.9325,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.375
+          }
+        }
+      },
+      "_grounding": {
+        "source": "apple_books",
+        "tier_reached": 2,
+        "book_identity_confidence": 0.95,
+        "resolution_path": [
+          "evidence_preloaded"
+        ],
+        "verified_identity": {
+          "titulo_real": "El gato que amaba los libros",
+          "autor_completo": "Sosuke Natsukawa",
+          "titulo_api": "El gato que amaba los libros",
+          "autor_api": "Sosuke Natsukawa",
+          "año": "2022",
+          "editorial": null,
+          "isbn": "",
+          "apple_track_id": "1600978213",
+          "categorias": [
+            "Ficción literaria",
+            "Libros",
+            "Ficción y literatura"
+          ],
+          "track_view_url": "https://books.apple.com/mx/book/el-gato-que-amaba-los-libros/id1600978213?uo=4"
+        },
+        "match_score": 1,
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.2,
+          "uses_book_specific_concepts": false,
+          "could_apply_to_any_book": true,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The excerpts discuss old books on shelves, reading slowly and savoring pages, which loosely echoes the book's love of libraries and reading, but none name Rintaro, Tora the cat, the rescue mission for endangered books, or the used bookshop. Phrases like 'Leer no es una carrera' and 'quédate en silencio' are generic and could fit any reading or self-help text."
+        },
+        "en": {
+          "grounded_score": 0.55,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content clearly references the novel's characters and setting: Tora the striped cat, the old bookshop inherited from a grandfather, and the mission to save books. However, many lines are generic bookish sentiment about books waiting, paper, and listening that could appear in many book-themed texts, and the content does not mention Rintaro, Japan, or the specific tea and reading-experience framing from the ground truth."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.93,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.93,
+          "reason": "Voz narrativa directa del protagonista y del gato, sin referencias meta al libro ni al autor.",
+          "elapsed_ms": 1652,
+          "usage": {
+            "prompt_tokens": 880,
+            "completion_tokens": 61,
+            "total_tokens": 941
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa del narrador y personajes, sin referencias meta al libro ni al autor.",
+          "elapsed_ms": 1141,
+          "usage": {
+            "prompt_tokens": 843,
+            "completion_tokens": 56,
+            "total_tokens": 899
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1840,
+        "total_ms": 1652
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 243.59375,
+          "adjusted_hue": 257.59375,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_light",
+          "paper_lightness_value": 0.82,
+          "temperature_shift": 14,
+          "palette_strategy": "analogous"
+        },
+        "contrast_ratio": "11.47",
+        "paper_is_dark": false,
+        "cssVars": {
+          "--palette-0": "#90A1DF",
+          "--palette-1": "#534DCB",
+          "--palette-2": "#662C96",
+          "--palette-3": "#4A1957",
+          "--accent": "#541FD6",
+          "--accent-soft": "#541FD638",
+          "--accent-glow": "#541FD66b",
+          "--paper": "#D0CFD3",
+          "--ink": "#19171C",
+          "--border": "#7D7C7F",
+          "--highlight-bg": "#4A1BBCd9",
+          "--highlight-ink": "#FFFFFF",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1.04,
+          "--word-spacing-scale": 1.05,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "imagen_concreta",
+          "aforismo_autorial",
+          "instruccion_sensorial",
+          "pregunta_directa"
+        ],
+        "gesture_types_en": [
+          "concrete_image",
+          "authorial_aphorism",
+          "sensory_instruction",
+          "direct_question"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "voice_judge_extended_degraded_sprint: phrases siguen \"fuera\" después de regenerar (Capa A Pilar 2)"
+        ]
+      },
+      "_inputs_snapshot": "2026-11-23T12-03-15",
+      "_crono": {
+        "dia": "lunes",
+        "hora": 6,
+        "franja": "manana",
+        "energia": 0.8,
+        "modo": "activacion_gentil",
+        "descripcion_dia": "Lunes requiere entrada suave. El lector está reentrando al modo productivo.",
+        "descripcion_franja": "Mañana: cortisol alto, acción. Directo, claro, con propósito."
+      },
+      "_metrics": {
+        "tokens_total": 216204,
+        "tokens_by_phase": {
+          "grounding": 0,
+          "anchors": 28432,
+          "palette": 0,
+          "content_es": 38900,
+          "judge_es": 2042,
+          "content_es_retry": 38334,
+          "judge_es_retry": 2036,
+          "content_es_escalate": 35961,
+          "content_en": 32515,
+          "judge_en": 2044,
+          "voice": 1840,
+          "voice_extended": 34100,
+          "highlight_judge_es_parrafoTop": 1199,
+          "highlight_judge_es_parrafoBot": 1202,
+          "highlight_judge_en_parrafoTop": 1174,
+          "highlight_judge_en_parrafoBot": 1172,
+          "csal": 6534
+        },
+        "elapsed_ms_total": 76868,
+        "elapsed_ms_by_phase": {
+          "grounding": 2,
+          "anchors": 8912,
+          "palette": 0,
+          "cover_fallback": 2377,
+          "content_es": 20523,
+          "judge_es": 2012,
+          "content_es_retry": 18062,
+          "content_en": 4975,
+          "judge_en": 1926,
+          "voice": 1652,
+          "voice_extended": 5445,
+          "highlight_judge": 7543,
+          "lens_compatibility": 815,
+          "csal": 9747,
+          "post_processing": 18112
+        },
+        "llm_calls_count": 42,
+        "models_used": [
+          "claude-haiku-5-5",
+          "claude-sonnet-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": false,
+        "highlights_auto_corrected": 0,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": true,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.25,
+        "game-theory": 0.05,
+        "self-knowledge": 0.35,
+        "pilares": {
+          "cuerpo": 0.1,
+          "mente": 0.6,
+          "negocio": 0.1,
+          "familia": 0.2,
+          "espiritu": 0.5,
+          "relaciones": 0.45,
+          "finanzas": 0.05
+        },
+        "hawkins": 0.3
+      },
+      "_hawkins_range": [
+        310,
+        500
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "tarde"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.6
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando te sientes solo y buscas un lugar tranquilo donde refugiarte",
+          "cuando llevas tiempo sin leer y quieres volver a los libros",
+          "cuando necesitas bajar el ritmo y saborear algo con calma",
+          "cuando quieres una historia que huela a papel y a té",
+          "cuando te cuesta hablar con otros y prefieres escuchar primero",
+          "cuando sientes que los libros viejos que amaste se están perdiendo",
+          "cuando buscas un regalo para alguien que ama las librerías",
+          "cuando extrañas una librería de barrio y su silencio",
+          "cuando estás agotado y quieres una lectura amable y reconfortante",
+          "antes de dormir y quieres leer algo cálido sin prisas",
+          "cuando quieres sentir que tus libros tienen valor más allá de lo que cuestan",
+          "cuando te preguntas si vale la pena seguir leyendo libros impresos",
+          "cuando la vida digital te tiene saturado y quieres volver al papel",
+          "después de una temporada en la que no sabías qué hacer con tu tiempo",
+          "cuando alguien cercano se aísla y no sabes cómo acercarte",
+          "cuando quieres aprender a escuchar de verdad a quien tienes enfrente",
+          "cuando buscas una historia con un gato sabio y travieso",
+          "cuando necesitas recordar por qué empezaste a amar los libros",
+          "cuando heredas una tienda o un negocio que no sabes si conservar",
+          "cuando te sientes perdido y necesitas una misión pequeña pero con sentido",
+          "cuando visitas una librería de viejo y quieres una lectura que la acompañe",
+          "cuando quieres una fábula sencilla con peso emocional",
+          "cuando la prisa del día te hace olvidar el placer de pasar una página",
+          "cuando buscas compañía silenciosa en una tarde lluviosa",
+          "cuando quieres leer sobre el valor de la paciencia y la escucha",
+          "cuando te cuesta expresar lo que sientes y prefieres observar",
+          "cuando piensas en los libros que se quedaron olvidados en un estante",
+          "cuando quieres una lectura para compartir con alguien que ama los libros",
+          "cuando necesitas volver a sentir curiosidad por lo que hay entre páginas",
+          "cuando pasas por un momento de melancolía y buscas ternura",
+          "cuando quieres un libro japonés contemplativo y no demasiado dramático",
+          "cuando te preguntas cómo cuidar lo que amas aunque nadie más lo note",
+          "cuando necesitas una historia que te invite a bajar la guardia"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "soledad",
+            "melancolía",
+            "cansancio",
+            "ternura",
+            "nostalgia",
+            "calma",
+            "curiosidad",
+            "paciencia",
+            "timidez",
+            "añoranza",
+            "serenidad",
+            "gusto",
+            "asombro",
+            "tristeza suave",
+            "alivio",
+            "loneliness",
+            "tiredness",
+            "tenderness",
+            "nostalgic",
+            "calm",
+            "curious",
+            "shy",
+            "wistful",
+            "peaceful",
+            "empezar",
+            "starting over",
+            "listening"
+          ],
+          "objetos": [
+            "libro",
+            "libros",
+            "librería",
+            "librería de viejo",
+            "papel",
+            "página",
+            "té",
+            "gato",
+            "estante",
+            "novela",
+            "eReader",
+            "libro usado",
+            "tomo",
+            "biblioteca",
+            "paper",
+            "book",
+            "bookstore",
+            "secondhand bookshop",
+            "tea",
+            "cat",
+            "bookshelf"
+          ],
+          "contextos": [
+            "librería",
+            "librería de viejo",
+            "tarde lluviosa",
+            "casa",
+            "sala de lectura",
+            "rincón tranquilo",
+            "antes de dormir",
+            "biblioteca",
+            "barrio",
+            "café",
+            "rainy afternoon",
+            "cozy corner",
+            "used bookstore",
+            "bedtime"
+          ],
+          "verbos": [
+            "leer",
+            "hojear",
+            "saborear",
+            "escuchar",
+            "rescatar",
+            "pasar página",
+            "recomendar",
+            "regalar",
+            "refugiarse",
+            "observar",
+            "read",
+            "browse",
+            "savor",
+            "listen",
+            "rescue",
+            "recommend",
+            "gift"
+          ]
+        },
+        "concept_tags": [
+          "Rintaro librero heredero de librería de viejo",
+          "Tora gato atigrado sabio e ingenioso",
+          "misión de salvar libros en peligro",
+          "librería de viejo como refugio de libros",
+          "el placer sensorial de pasar páginas de papel",
+          "Sosuke Natsukawa El gato que amaba los libros",
+          "novela japonesa de gato y librería",
+          "libros que esperan a quien los necesite",
+          "fábula sobre el poder de la lectura",
+          "té japonés y lectura contemplativa",
+          "Rintaro aprende a escuchar en silencio",
+          "homenaje a las librerías independientes",
+          "gato que habla con ironía y sabiduría",
+          "Japón contemporáneo y amor por el libro impreso",
+          "fábula mágica de Natsukawa"
+        ],
+        "anti_patterns": [
+          "libros de autoayuda con técnicas prácticas",
+          "guías de productividad o gestión del tiempo",
+          "thrillers de acción o suspenso intenso",
+          "ciencia ficción tecnológica",
+          "manuales de estudio o académicos",
+          "historia política o económica",
+          "recetas de cocina",
+          "tutoriales de programación",
+          "libros de negocios o emprendimiento",
+          "novelas de romance intenso o erótico",
+          "literatura de terror o gore"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🌙"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🍂"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "📖"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🐾"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "fuera",
+              "confidence": 0.8,
+              "reason": "La frase funciona como reseña o contraportada que habla del libro desde afuera, a modo de moraleja, en lugar de ser contenido narrativo escrito dentro del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una instrucción directa al lector escrita en el propio texto, como parte de la voz narrativa, no una descripción externa del libro."
+            },
+            {
+              "category": "fuera",
+              "confidence": 0.85,
+              "reason": "Es una pregunta dirigida al lector, típica de una reseña, anuncio o campaña de promoción de lectura que habla sobre libros desde afuera, no un pasaje del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.72,
+              "reason": "Suena a voz autoral del libro, una máxima o reflexión escrita por el narrador o personaje, no una descripción externa del texto."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una imagen sensorial escrita en voz narrativa, como si el lector abriera una página del libro; no describe ni resume la obra desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase tiene voz autoral en primera escritura, como una reflexión dentro del texto, y no describe el libro desde afuera ni lo promociona."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una instrucción directa en segunda persona escrita como parte del contenido del libro, invitando al lector a una acción dentro de la lectura, no describiéndola desde fuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta directa al lector en voz autoral, parte del contenido del libro y no una descripción externa sobre él."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.72,
+              "reason": "La frase es una reflexión poética en voz propia, como si estuviera escrita dentro del libro y no describiendo el libro desde fuera; habla de libros en general más que de una obra concreta."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una instrucción en segunda persona dirigida al lector desde la voz del propio texto, como si fuera parte de la página, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una pregunta retórica en primera escritura, reflexiva y poética, que suena como voz del texto y no como descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "The sentence is a lyrical, first-person-style line speaking poetically within the book's voice rather than describing it from outside, so it reads as written content, not metadata about the book."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es prosa narrativa en primera escritura que describe una escena dentro de la ficción, no un comentario sobre el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.82,
+              "reason": "La frase es una reflexión poética en primera escritura sobre los libros, sin describir el libro ni hablar de él desde fuera; suena como voz autoral dentro del texto."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una instrucción directa al lector escrita como parte del contenido del libro, no una descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una interpelación directa en segunda persona que invita al lector a actuar, como voz del texto y no como descripción del libro desde afuera."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-23T12:04:50.193Z",
+      "_slug": "el-gato-que-amaba-los-libros",
+      "_edicion_numero": 117,
+      "_musica": {
+        "resuelto_el": "2026-11-23",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría Soy Lo Prohibido para abrir, luego Cu-Cu-Ru-Cu-Cu Paloma para resonar; ambas suben el ánimo sin pelear con la lectura.",
+        "candidatos": [
+          {
+            "id": "1443127451",
+            "cancion": "Cu-Cu-Ru-Cu-Cu Paloma (iTunes Session)",
+            "artista": "Caetano Veloso",
+            "album": "iTunes Session",
+            "genero": "MPB",
+            "dur": 231,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0a/cd/02/0acd0250-eddb-319e-4dfb-f4e7014f0ebb/mzaf_10498441208024044739.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/cu-cu-ru-cu-cu-paloma-itunes-session/1443126677?i=1443127451&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/bf/9b/d3/bf9bd33c-1904-334f-d447-acaae96bfddd/00602537719464.rgb.jpg/600x600bb.jpg",
+            "canon": true,
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Versión íntima y ligera; acompaña la lectura, aunque sin el alma de la original.",
+            "frase_eco": ""
+          },
+          {
+            "id": "1288179886",
+            "cancion": "Kiki’s Delivery Service - On a Clear Day",
+            "artista": "Vitamin String Quartet",
+            "album": "The World of Studio Ghibli",
+            "genero": "Crossover clásica",
+            "dur": 203,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/a5/83/f1a583c0-f5ae-eef9-1af1-bf6fac8dcb95/mzaf_14536744061417059824.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/kikis-delivery-service-on-a-clear-day/1288179310?i=1288179886&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0d/a4/73/0da47381-a6bd-1151-05be-de4e92f14de0/1165_3000x3000.jpg/600x600bb.jpg",
+            "armonia": 7,
+            "rol": "abrir",
+            "pie": "Cuerdas claras y ligeras que despiertan el día; el aire limpio de Kiki sube el ánimo sin robar la lectura.",
+            "frase_eco": "🛡 Hay libros que esperan a quien los necesita."
+          },
+          {
+            "id": "1869312747",
+            "cancion": "Kiki's Delivery Service",
+            "artista": "NDR Radiophilharmonie & Michael England",
+            "album": "Epic Anime",
+            "genero": "Crossover clásica",
+            "dur": 282,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/7b/70/d17b7070-2930-d177-391f-7bb1b5fcbd12/mzaf_249884277016332416.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/kikis-delivery-service/1869312074?i=1869312747&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/c4/02/d9c402f6-6d41-8487-04f0-ee5d00ba576b/196873084213.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Orquesta amplia y cálida, algo grandilocuente; acompaña la lectura pero exige un poco más de atención.",
+            "frase_eco": "🎯 Pasa la página despacio. Saborea cada línea."
+          }
+        ]
+      },
+      "tienda_compra": {
+        "tienda": "casadelibro",
+        "url": "https://casadelibro.com.mx/productos/el-gato-que-amaba-los-libros/",
+        "isbn": "9786073820615",
+        "revisado": "2026-11-14"
+      },
+      "_video": {
+        "resuelto_el": "2026-11-23",
+        "juez": "claude-haiku-5-5+completar",
+        "sinfonia": "Elegiría Lily_Tiger Reads por su reseña sobre el libro, y Drinking By My Shelf como cierre aterrizador; Sho Nagata sirve como apertura de contexto, aunque de armonía modesta.",
+        "candidatos": [
+          {
+            "id": "Hy2T7r-hrkk",
+            "titulo": "Balancing the Books for January | Drinking By My Shelf",
+            "canal": "Drinking By My Shelf",
+            "dur": 602,
+            "armonia": 6,
+            "rol": "aterrizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "✋ Toma un libro. Pasa una página despacio y siente el papel entre los dedos.",
+            "pie": "Una lectora hace balance de su mes de lectura y menciona El gato que salvaba libros entre otros títulos, con tono cercano y personal.",
+            "pie_en": "A reader takes stock of her reading month and mentions The Cat Who Saved Books among other titles, in a friendly, personal tone."
+          },
+          {
+            "id": "Bc5A1Berzn4",
+            "titulo": "Review - The Cat Who Saved Books by Sosuke Natsukawa",
+            "canal": "Lily_Tiger Reads",
+            "dur": 649,
+            "armonia": 6,
+            "rol": "profundizar",
+            "tipo": "tercero_habla",
+            "relacion": "acompana",
+            "idioma": "en",
+            "frase_eco": "🌓 Un libro olvidado no está muerto. Solo espera la mano que lo abra.",
+            "pie": "Lily_Tiger reseña el libro con cuatro estrellas: un gato, una librería de viejo y un joven que aprende a leer despacio.",
+            "pie_en": "Lily_Tiger reviews the book with four stars: a cat, a secondhand bookshop and a young man who learns to read slowly."
+          }
+        ]
+      },
+      "portada_app": {
+        "src": "https://app.triggui.com/portadas/el-gato-que-amaba-los-libros.fb8a959b01.640.webp",
+        "srcset": "https://app.triggui.com/portadas/el-gato-que-amaba-los-libros.fb8a959b01.640.webp 640w, https://app.triggui.com/portadas/el-gato-que-amaba-los-libros.fb8a959b01.1280.webp 1280w",
+        "w": 1974,
+        "h": 3000,
+        "origen": "https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/f4/5e/85/f45e85d8-1348-3e47-3054-43dbd0a28cfc/9788425360329.jpg/3000x3000bb.jpg",
+        "de": "b902c2c0ee09",
+        "fecha": "2026-11-23"
+      }
+    },
+    {
       "titulo": "Tiende tu cama",
       "autor": "William H. McRaven",
       "tagline": "",
@@ -1003,7 +1995,7 @@
             "idioma": "en",
             "frase_eco": "🪨 Antes de salir del cuarto, alisa la sábana con las dos manos y siente la tela.",
             "pie": "McRaven, en voz propia, explica por qué tender la cama es el primer paso; el mismo gesto que abre el libro.",
-            "pie_en": "McRaven, in his own voice, explains why making the bed is the first step; the same gesture that opens the book."
+            "pie_en": "McRaven, in his own voice, explains why making your bed is the first step; the same gesture that opens the book."
           },
           {
             "id": "yaQZFhrW0fU",
@@ -48092,9 +49084,9 @@
     }
   ],
   "meta": {
-    "next_edition_number": 116,
-    "total": 180,
-    "last_audit": "2026-11-19T12:04:54.649Z",
+    "next_edition_number": 118,
+    "total": 181,
+    "last_audit": "2026-11-23T12:04:52.768Z",
     "healing_rotation_idx": 56,
     "last_healing_book": "Wu Wei. La vía del no actuar o cómo seguir el ritmo natural de la vida",
     "last_healing_timestamp": "2026-10-25T19:20:52.219Z"
