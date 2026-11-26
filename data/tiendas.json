@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generado": "2026-11-23T12:14:28.819Z",
+ "generado": "2026-11-26T11:18:29.623Z",
  "regla": "En México, «Comprar» lleva a Casa del Libro si tiene el libro físico con existencias; si no, a Gandhi; si ninguna, a la búsqueda de Gandhi por título (Badir, 2 y 14 de noviembre de 2026, B417).",
  "fuentes": {
   "contenido.json": 179,
@@ -12,7 +12,7 @@
  "resumen": {
   "ninguna": 701,
   "gandhi": 160,
-  "casadelibro": 337,
+  "casadelibro": 338,
   "motivos": {
    "agotado": 307,
    "sin_coincidencia": 386,
@@ -345,6 +345,37 @@
    "revisado": "2026-11-14",
    "fuentes": [
     "libros_master.csv"
+   ]
+  },
+  "a qué sabe la luna?__michael grejniec": {
+   "titulo": "A qué sabe la luna?",
+   "autor": "Michael Grejniec",
+   "tienda": "casadelibro",
+   "url": "https://casadelibro.com.mx/productos/a-que-sabe-la-luna/",
+   "isbn": "9788484645641",
+   "idioma": "Español",
+   "casadelibro": {
+    "nombre": "¿A QUE SABE LA LUNA?",
+    "url": "https://casadelibro.com.mx/productos/a-que-sabe-la-luna/",
+    "isbn": "9788484645641",
+    "disponible": true
+   },
+   "gandhi": {
+    "nombre": "¿A QUE SABE LA LUNA?",
+    "autores": [
+     "Michael Grejniec"
+    ],
+    "url": "https://www.gandhi.com.mx/¿a-que-sabe-la-luna--9788484645641/p",
+    "isbn": "9788484645641",
+    "idioma": "Español",
+    "tipo": "Tapa dura",
+    "disponible": true,
+    "precio": 348
+   },
+   "motivo": null,
+   "revisado": "2026-11-26",
+   "fuentes": [
+    "detonacion"
    ]
   },
   "a random walk down wall street__burton malkiel": {

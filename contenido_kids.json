@@ -3,6 +3,948 @@
   "generated_at": null,
   "libros": [
     {
+      "titulo": "A qué sabe la luna?",
+      "autor": "Michael Grejniec",
+      "tagline": "",
+      "portada": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBIHF1w6kgc2FiZSBsYSBsdW5hPyDigJQgTWljaGFlbCBHcmVqbmllYyI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiM0NDQ5NEIiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjRUVGMEYxIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2QTZCIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzI2LjQgUSAyNzAgMzE0LjQsIDMwMCAzMjYuNCBUIDM2MCAzMjYuNCIgCiAgICAgICAgc3Ryb2tlPSIjNTVDMEU3IiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMyNi40IiByPSIyLjUiIGZpbGw9IiM1NUMwRTciIC8+CiAgPHBhdGggZD0iTSAyNDAgNjEzLjU5OTk5OTk5OTk5OTkgUSAyNzAgNjI1LjU5OTk5OTk5OTk5OTksIDMwMCA2MTMuNTk5OTk5OTk5OTk5OSBUIDM2MCA2MTMuNTk5OTk5OTk5OTk5OSIgCiAgICAgICAgc3Ryb2tlPSIjNTVDMEU3IiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjYxMy41OTk5OTk5OTk5OTk5IiByPSIyLjUiIGZpbGw9IiM1NUMwRTciIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiNFRUYwRjEiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+QSBxdcOpIHNhYmU8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiNFRUYwRjEiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+bGEgbHVuYT88L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1NjMuNTk5OTk5OTk5OTk5OSIgZmlsbD0iIzU1QzBFNyIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+TWljaGFlbCBHcmVqbmllYzwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iI0VFRjBGMSIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "portada_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgOTAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBIHF1w6kgc2FiZSBsYSBsdW5hPyDigJQgTWljaGFlbCBHcmVqbmllYyI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IiM0NDQ5NEIiIC8+CgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhcGVyR3JhaW4iIHg9IjAiIHk9IjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMC4zIiBmaWxsPSIjRUVGMEYxIiBvcGFjaXR5PSIwLjA0IiAvPgogICAgPC9wYXR0ZXJuPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjkwMCIgZmlsbD0idXJsKCNwYXBlckdyYWluKSIgLz4KPHJlY3QgeD0iMjQiIHk9IjI0IiB3aWR0aD0iNTUyIiBoZWlnaHQ9Ijg1MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjY2QTZCIiBzdHJva2Utd2lkdGg9IjAuOCIgb3BhY2l0eT0iMC4zNSIgLz4KCiAgPHBhdGggZD0iTSAyNDAgMzI2LjQgUSAyNzAgMzE0LjQsIDMwMCAzMjYuNCBUIDM2MCAzMjYuNCIgCiAgICAgICAgc3Ryb2tlPSIjNTVDMEU3IiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMyNi40IiByPSIyLjUiIGZpbGw9IiM1NUMwRTciIC8+CiAgPHBhdGggZD0iTSAyNDAgNjEzLjU5OTk5OTk5OTk5OTkgUSAyNzAgNjI1LjU5OTk5OTk5OTk5OTksIDMwMCA2MTMuNTk5OTk5OTk5OTk5OSBUIDM2MCA2MTMuNTk5OTk5OTk5OTk5OSIgCiAgICAgICAgc3Ryb2tlPSIjNTVDMEU3IiBzdHJva2Utd2lkdGg9IjEuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiAvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjYxMy41OTk5OTk5OTk5OTk5IiByPSIyLjUiIGZpbGw9IiM1NUMwRTciIC8+CiAgPHRleHQgeD0iMzAwIiB5PSI0MzAiIGZpbGw9IiNFRUYwRjEiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+QSBxdcOpIHNhYmU8L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1MDMuNTk5OTk5OTk5OTk5OTciIGZpbGw9IiNFRUYwRjEiIGZvbnQtZmFtaWx5PSciTG9yYSIsICJNZXJyaXdlYXRoZXIiLCAiR2VvcmdpYSIsIHNlcmlmJyBmb250LXNpemU9IjY0IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBsZXR0ZXItc3BhY2luZz0iLTAuMDFlbSI+bGEgbHVuYT88L3RleHQ+CiAgPHRleHQgeD0iMzAwIiB5PSI1NjMuNTk5OTk5OTk5OTk5OSIgZmlsbD0iIzU1QzBFNyIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMjYuODgiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC13ZWlnaHQ9IjQwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjAuMDNlbSI+TWljaGFlbCBHcmVqbmllYzwvdGV4dD4KICA8dGV4dCB4PSIzMDAiIHk9Ijg1MCIgZmlsbD0iI0VFRjBGMSIgZm9udC1mYW1pbHk9JyJMb3JhIiwgIk1lcnJpd2VhdGhlciIsICJHZW9yZ2lhIiwgc2VyaWYnIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIwLjI1ZW0iIG9wYWNpdHk9IjAuNDUiPlRSSUdHVUk8L3RleHQ+Cjwvc3ZnPg==",
+      "isbn": "",
+      "titulo_es": "¿A qué sabe la luna?",
+      "titulo_en": "What Does the Moon Taste Like?",
+      "idioma_original": "en",
+      "dimension": "Bienestar",
+      "punto": "Creativo",
+      "palabras": [
+        "noche",
+        "curiosidad",
+        "asombro",
+        "imaginar"
+      ],
+      "palabras_en": [
+        "night",
+        "curiosity",
+        "wonder",
+        "imagine"
+      ],
+      "frases": [
+        "🌅 Mira la luna desde la ventana y piensa a qué sabría si pudieras probarla.",
+        "🍎 ¿A qué sabe la luna, si es tan redonda y está tan lejos?",
+        "🪨 Una luna blanda, que cuelga sobre la casa como algo que se podría tocar.",
+        "🧘 Preguntar por la luna ya es probarla un poco."
+      ],
+      "frases_en": [
+        "💡 Look at the moon through the window. Imagine what it would taste like if you could try it.",
+        "🍎 What does the moon taste like, if it is so round and so far away?",
+        "🪨 A soft moon hangs over the house, like something you could almost touch.",
+        "🧘 Asking about the moon is already a little way of tasting it."
+      ],
+      "frases_og": [
+        "🔍 La luna siempre tiene algo que contarle a quien pregunta.",
+        "💠 Mira la luna y pregúntale a qué sabe, en voz bajita.",
+        "✨ ¿Y si la luna supiera a lo mismo que tu imaginación?",
+        "⚓ Una noche sin respuesta también puede ser una noche dulce."
+      ],
+      "frases_og_en": [
+        "🔍 What does the moon taste like on a quiet night?",
+        "💠 Look up. Let the moon be soft enough to touch.",
+        "✨ Some questions are sweet because nobody has finished tasting them.",
+        "⚓ Round, far and near at once: the moon waits to be tried."
+      ],
+      "colores": [
+        "#1D5063",
+        "#9E2E48",
+        "#D1B761",
+        "#A8B6E6"
+      ],
+      "textColors": [
+        "#FFFFFF",
+        "#FFFFFF",
+        "#000000",
+        "#000000"
+      ],
+      "fondo": "#44494B",
+      "tarjeta": {
+        "titulo": "Una pregunta que sabe a noche",
+        "parrafoTop": "¿A qué sabe la luna? Puede que a leche tibia, o a algo que nadie se atreve a morder. [H]Nadie lo sabe del todo[/H]. Por eso la pregunta sigue siendo tan bonita cada noche.",
+        "subtitulo": "¿Y si la luna supiera a algo que solo tú puedes imaginar?",
+        "parrafoBot": "Hay noches en que la luna parece tan cerca que casi se podría probar. [H]Quizá así sabe la imaginación: a algo que nunca se termina de comer.[/H] Abre el libro y lee en voz alta su primera página antes de dormir.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "tarjeta_base": {
+        "titulo": "Una pregunta que sabe a noche",
+        "parrafoTop": "¿A qué sabe la luna? Puede que a leche tibia, o a algo que nadie se atreve a morder. [H]Nadie lo sabe del todo[/H]. Por eso la pregunta sigue siendo tan bonita cada noche.",
+        "subtitulo": "¿Y si la luna supiera a algo que solo tú puedes imaginar?",
+        "parrafoBot": "Hay noches en que la luna parece tan cerca que casi se podría probar. [H]Quizá así sabe la imaginación: a algo que nunca se termina de comer.[/H] Abre el libro y lee en voz alta su primera página antes de dormir.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "tarjeta_presentacion": {
+        "titulo": "Una pregunta que sabe a noche",
+        "parrafoTop": "¿A qué sabe la luna? Puede que a leche tibia, o a algo que nadie se atreve a morder. [H]Nadie lo sabe del todo[/H]. Por eso la pregunta sigue siendo tan bonita cada noche.",
+        "subtitulo": "¿Y si la luna supiera a algo que solo tú puedes imaginar?",
+        "parrafoBot": "Hay noches en que la luna parece tan cerca que casi se podría probar. [H]Quizá así sabe la imaginación: a algo que nunca se termina de comer.[/H] Abre el libro y lee en voz alta su primera página antes de dormir.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "tarjeta_en": {
+        "titulo": "A question that tastes of night",
+        "parrafoTop": "[H]What does the moon taste like?[/H] Maybe like warm milk, or something no one dares to bite. Nobody knows for sure. That is why the question stays so lovely, night after night. Look up at the round moon over the roofs. It hangs so low that you could almost reach it with your hand. Your mouth wants to try it, just a little.",
+        "subtitulo": "What if the moon tasted of something only you can imagine?",
+        "parrafoBot": "Some nights the moon seems so close that you could almost taste it. [H]Maybe that is how imagination tastes: like something you never finish eating.[/H] Sit by the window and say the question out loud, slowly. Then read the first page of this book before you sleep, aloud, for three minutes.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "tarjeta_base_en": {
+        "titulo": "A question that tastes of night",
+        "parrafoTop": "[H]What does the moon taste like?[/H] Maybe like warm milk, or something no one dares to bite. Nobody knows for sure. That is why the question stays so lovely, night after night. Look up at the round moon over the roofs. It hangs so low that you could almost reach it with your hand. Your mouth wants to try it, just a little.",
+        "subtitulo": "What if the moon tasted of something only you can imagine?",
+        "parrafoBot": "Some nights the moon seems so close that you could almost taste it. [H]Maybe that is how imagination tastes: like something you never finish eating.[/H] Sit by the window and say the question out loud, slowly. Then read the first page of this book before you sleep, aloud, for three minutes.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "tarjeta_presentacion_en": {
+        "titulo": "A question that tastes of night",
+        "parrafoTop": "[H]What does the moon taste like?[/H] Maybe like warm milk, or something no one dares to bite. Nobody knows for sure. That is why the question stays so lovely, night after night. Look up at the round moon over the roofs. It hangs so low that you could almost reach it with your hand. Your mouth wants to try it, just a little.",
+        "subtitulo": "What if the moon tasted of something only you can imagine?",
+        "parrafoBot": "Some nights the moon seems so close that you could almost taste it. [H]Maybe that is how imagination tastes: like something you never finish eating.[/H] Sit by the window and say the question out loud, slowly. Then read the first page of this book before you sleep, aloud, for three minutes.",
+        "style": {
+          "accent": "#55C0E7",
+          "paper": "#44494B",
+          "ink": "#EEF0F1",
+          "border": "#666A6B"
+        }
+      },
+      "videoUrl": "https://duckduckgo.com/?q=!ducky+site:youtube.com+A%20qu%C3%A9%20sabe%20la%20luna%3F%20Michael%20Grejniec%20entrevista%20espa%C3%B1ol",
+      "videoUrl_en": "https://duckduckgo.com/?q=!ducky+site:youtube.com+What%20Does%20the%20Moon%20Taste%20Like%3F%20Michael%20Grejniec%20interview",
+      "_curator_meta": {
+        "timestamp": "2026-11-26T11:16:14.385Z",
+        "workflow_run_id": "45808035261",
+        "catalog_mode": "kids",
+        "modo": "single_book",
+        "punto_ciclo": "auto",
+        "pilar": "auto",
+        "hawkins_target": "auto",
+        "lentes_activos": [
+          "chronobiology",
+          "hawkins",
+          "pilares",
+          "game-theory",
+          "self-knowledge"
+        ],
+        "lente_extra": "",
+        "nota_libro": "",
+        "sentimiento": ""
+      },
+      "_animo_promedio": 0.65,
+      "_valor_predominante": "salud_emocional",
+      "_punto_ciclo_optimo": "cero",
+      "_nucleus": {
+        "book_identity": {
+          "titulo_es": "¿A qué sabe la luna?",
+          "titulo_en": "What Does the Moon Taste Like?",
+          "autor_completo": "Michael Grejniec",
+          "idioma_original": "en"
+        },
+        "book_grounding_anchors": {
+          "concepts": [
+            "la luna imaginada como objeto que podría tener sabor y textura, desde la mirada sensorial de un niño",
+            "preguntas simples y repetitivas que invitan al lector pequeño a fantasear sobre fenómenos nocturnos",
+            "la imagen como vehículo principal de sentido, con el texto reducido a un juego de pregunta y respuesta"
+          ],
+          "key_terms": [
+            "luna",
+            "sabor",
+            "pregunta",
+            "noche",
+            "imaginación",
+            "juego"
+          ],
+          "authorial_voice_notes": "Voz breve y lúdica, dirigida directamente al lector infantil mediante preguntas abiertas que no exigen respuesta correcta. Ritmo repetitivo y pausado, con predominio de la ilustración sobre el texto, al estilo habitual de Grejniec. La ternura nace de la curiosidad sin moraleja explícita; el tono es de asombro compartido más que de enseñanza. Se sostiene en lo sensorial y en lo cotidiano nocturno, sin dramatizar ni cerrar la pregunta con una respuesta cerrada."
+        },
+        "lens_analysis": {
+          "lens_provided": true,
+          "analysis": "El libro aborda la curiosidad infantil ante la luna de forma sensorial y lúdica: la pregunta sobre su sabor es el eje, y la fantasía reemplaza cualquier explicación científica. Esto encaja con el lente Kids en su valor de asombro y ternura, sin pedagogía declarada. Los lentes de cronobiología, teoría de juegos, autoconocimiento, pilares y Hawkins aplican débilmente: el libro no trata incentivos, patrones internos ni estados vibracionales de adultos, aunque la franja nocturna sí resuena con la luna. El ground truth es inferido, por lo que los anchors se mantienen en el nivel de la pregunta y no afirman contenido textual específico.",
+          "decision": "apply_through_adjacent_concept"
+        },
+        "visual_intent": {
+          "hue_primary": 208.125,
+          "saturation": "balanced",
+          "lightness_paper": "medium_dark",
+          "temperature_shift": -12,
+          "palette_strategy": "split_complementary",
+          "typography_family": "serif_literario",
+          "density": "aireado",
+          "rhythm": "lento",
+          "era": "contemporaneo",
+          "genre_visual": "narrativa"
+        },
+        "surface_hints": {
+          "dimension": "Bienestar",
+          "punto_hawkins": "Creativo",
+          "franja_ideal": "noche"
+        },
+        "card_es": {
+          "titulo": "Una pregunta que sabe a noche",
+          "parrafoTop": "¿A qué sabe la luna? Puede que a leche tibia, o a algo que nadie se atreve a morder. Nadie lo sabe del todo. Por eso la pregunta sigue siendo tan bonita cada noche.",
+          "subtitulo": "¿Y si la luna supiera a algo que solo tú puedes imaginar?",
+          "parrafoBot": "Hay noches en que la luna parece tan cerca que casi se podría probar. Quizá así sabe la imaginación: a algo que nunca se termina de comer. Abre el libro y lee en voz alta su primera página antes de dormir."
+        },
+        "card_en": {
+          "titulo": "A question that tastes of night",
+          "parrafoTop": "What does the moon taste like? Maybe like warm milk, or something no one dares to bite. Nobody knows for sure. That is why the question stays so lovely, night after night. Look up at the round moon over the roofs. It hangs so low that you could almost reach it with your hand. Your mouth wants to try it, just a little.",
+          "subtitulo": "What if the moon tasted of something only you can imagine?",
+          "parrafoBot": "Some nights the moon seems so close that you could almost taste it. Maybe that is how imagination tastes: like something you never finish eating. Sit by the window and say the question out loud, slowly. Then read the first page of this book before you sleep, aloud, for three minutes."
+        },
+        "emotional_words_es": [
+          "noche",
+          "curiosidad",
+          "asombro",
+          "imaginar"
+        ],
+        "emotional_words_en": [
+          "night",
+          "curiosity",
+          "wonder",
+          "imagine"
+        ],
+        "og_phrases_es": [
+          {
+            "phrase": "🔍 La luna siempre tiene algo que contarle a quien pregunta.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.7,
+            "eje_valor": "asombro",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "💠 Mira la luna y pregúntale a qué sabe, en voz bajita.",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": "curiosidad",
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "✨ ¿Y si la luna supiera a lo mismo que tu imaginación?",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.8,
+            "eje_valor": "imaginacion",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "⚓ Una noche sin respuesta también puede ser una noche dulce.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": "ternura",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          }
+        ],
+        "og_phrases_en": [
+          {
+            "phrase": "🔍 What does the moon taste like on a quiet night?",
+            "role_symphonic": "open",
+            "mood_axis": 0.6,
+            "value_axis": "curiosity",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "phrase": "💠 Look up. Let the moon be soft enough to touch.",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.7,
+            "value_axis": "wonder",
+            "pilar": "familia",
+            "punto_optimo": "creativo"
+          },
+          {
+            "phrase": "✨ Some questions are sweet because nobody has finished tasting them.",
+            "role_symphonic": "land",
+            "mood_axis": 0.6,
+            "value_axis": "imagination",
+            "pilar": "espiritualidad",
+            "punto_optimo": "activo"
+          },
+          {
+            "phrase": "⚓ Round, far and near at once: the moon waits to be tried on the tongue.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.5,
+            "value_axis": "awe",
+            "pilar": "salud_emocional",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "edition_blocks_es": [
+          {
+            "gesture_type": "instruccion_sensorial",
+            "sensory_anchor": "vista",
+            "phrase": "🌅 Mira la luna desde la ventana y piensa a qué sabría si pudieras probarla.",
+            "rol_sinfonico": "abrir",
+            "eje_animo": 0.7,
+            "eje_valor": "curiosidad",
+            "pilar": "familia",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "pregunta_directa",
+            "sensory_anchor": "gusto",
+            "phrase": "🍎 ¿A qué sabe la luna, si es tan redonda y está tan lejos?",
+            "rol_sinfonico": "profundizar",
+            "eje_animo": 0.6,
+            "eje_valor": "curiosidad",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "imagen_concreta",
+            "sensory_anchor": "tacto",
+            "phrase": "🪨 Una luna blanda, que cuelga sobre la casa como algo que se podría tocar.",
+            "rol_sinfonico": "aterrizar",
+            "eje_animo": 0.8,
+            "eje_valor": "asombro",
+            "pilar": "espiritualidad",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "aforismo_autorial",
+            "sensory_anchor": "respiracion",
+            "phrase": "🧘 Preguntar por la luna ya es probarla un poco.",
+            "rol_sinfonico": "resonar",
+            "eje_animo": 0.5,
+            "eje_valor": "imaginacion",
+            "pilar": "salud_emocional",
+            "punto_optimo": "creativo"
+          }
+        ],
+        "edition_blocks_en": [
+          {
+            "gesture_type": "sensory_instruction",
+            "sensory_anchor": "light",
+            "phrase": "💡 Look at the moon through the window. Imagine what it would taste like if you could try it.",
+            "role_symphonic": "open",
+            "mood_axis": 0.7,
+            "value_axis": "imagination",
+            "pilar": "salud_emocional",
+            "punto_optimo": "cero"
+          },
+          {
+            "gesture_type": "direct_question",
+            "sensory_anchor": "taste",
+            "phrase": "🍎 What does the moon taste like, if it is so round and so far away?",
+            "role_symphonic": "deepen",
+            "mood_axis": 0.5,
+            "value_axis": "curiosity",
+            "pilar": "espiritualidad",
+            "punto_optimo": "creativo"
+          },
+          {
+            "gesture_type": "concrete_image",
+            "sensory_anchor": "touch",
+            "phrase": "🪨 A soft moon hangs over the house, like something you could almost touch.",
+            "role_symphonic": "land",
+            "mood_axis": 0.8,
+            "value_axis": "awe",
+            "pilar": "familia",
+            "punto_optimo": "activo"
+          },
+          {
+            "gesture_type": "authorial_aphorism",
+            "sensory_anchor": "breath",
+            "phrase": "🧘 Asking about the moon is already a little way of tasting it.",
+            "role_symphonic": "resonate",
+            "mood_axis": 0.6,
+            "value_axis": "wonder",
+            "pilar": "espiritualidad",
+            "punto_optimo": "maximo"
+          }
+        ],
+        "confidence": {
+          "book_grounding": 0.41,
+          "voice_authenticity": 0.93,
+          "specificity": 0.95,
+          "grounding_judge": 0.55,
+          "combined": 0.66,
+          "signals": {
+            "bookIdentityConfidence": 0.41250000000000003,
+            "voiceSignal": 0.9249999999999999,
+            "specificitySignal": 0.95,
+            "judgeScore": 0.55
+          }
+        }
+      },
+      "_grounding": {
+        "source": "model_inference",
+        "tier_reached": 3,
+        "book_identity_confidence": 0.41250000000000003,
+        "resolution_path": [
+          "evidence_preloaded",
+          "tier3_conf_0.55"
+        ],
+        "verified_identity": {
+          "titulo_real": "A qué sabe la luna?",
+          "autor_completo": "Michael Grejniec",
+          "año": null
+        },
+        "similar_books": [
+          {
+            "titulo": "Dónde está el oso",
+            "autor": "Michael Grejniec",
+            "razon": "Mismo autor y estilo de ilustraciones sencillas y poéticas dirigidas a la primera infancia, con preguntas y juegos de búsqueda visual."
+          },
+          {
+            "titulo": "El lobo y los siete cabritillos",
+            "autor": "Hermanos Grimm",
+            "razon": "Cuento tradicional infantil con una estructura repetitiva y un tono sencillo que comparte la misma función lúdica y narrativa para niños pequeños."
+          },
+          {
+            "titulo": "Buenas noches, Luna",
+            "autor": "Margaret Wise Brown",
+            "razon": "Libro ilustrado clásico sobre la luna y la hora de dormir, con lenguaje rítmico y contemplativo, cercano al imaginario lunar del libro buscado."
+          },
+          {
+            "titulo": "El gato que se comió la luna",
+            "autor": "Anónimo (tradición popular)",
+            "razon": "Motivo folclórico sobre la luna como objeto de curiosidad e imaginación infantil, con un tono juguetón y de asombro."
+          }
+        ],
+        "from_cache": false
+      },
+      "_grounding_judge": {
+        "es": {
+          "grounded_score": 0.55,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content anchors to the inferred theme of a child's curiosity about the moon and its imagined taste ('¿A qué sabe la luna?', 'leche tibia', 'probarla'), and the edition blocks reuse that sensory-curiosity concept, so it is tied to the ground truth rather than generic. However, the ground truth is itself inferred, and the copy never references the inferred voice traits (repetitive rhythm, image-over-text) or the similar titles, so grounding is moderate rather than strong."
+        },
+        "en": {
+          "grounded_score": 0.55,
+          "uses_book_specific_concepts": true,
+          "could_apply_to_any_book": false,
+          "feels_like_back_cover_meta_description": false,
+          "reason": "The content clearly engages the inferred theme of a child's sensory curiosity about the moon, asking what it tastes like and inviting imaginative play, which matches the ground truth. However, the ground truth is itself inferred, and the copy lacks Grejniec-specific voice cues such as repetitive rhythm or image-driven structure; it reads as a plausible generic children's moon book rather than something anchored to verified text."
+        }
+      },
+      "_voice_verdict": {
+        "consolidated": "pagina",
+        "confidence": 0.9,
+        "es": {
+          "verdict": "pagina",
+          "confidence": 0.85,
+          "reason": "Voz directa y poética que se dirige al lector, sin referencias meta al libro ni al autor.",
+          "elapsed_ms": 2201,
+          "usage": {
+            "prompt_tokens": 882,
+            "completion_tokens": 59,
+            "total_tokens": 941
+          },
+          "error": null
+        },
+        "en": {
+          "verdict": "pagina",
+          "confidence": 0.9,
+          "reason": "Voz directa del libro, se dirige al lector con imperativos e imágenes, sin referencias meta ni resumen externo.",
+          "elapsed_ms": 1827,
+          "usage": {
+            "prompt_tokens": 900,
+            "completion_tokens": 68,
+            "total_tokens": 968
+          },
+          "error": null
+        },
+        "circuit_tripped": false,
+        "should_reextract": false,
+        "total_tokens": 1909,
+        "total_ms": 2201
+      },
+      "_visual": {
+        "synthesis_inputs": {
+          "hue_primary": 208.125,
+          "adjusted_hue": 196.125,
+          "saturation": "balanced",
+          "saturation_value": 0.55,
+          "lightness_paper": "medium_dark",
+          "paper_lightness_value": 0.28,
+          "temperature_shift": -12,
+          "palette_strategy": "split_complementary"
+        },
+        "contrast_ratio": "7.99",
+        "paper_is_dark": true,
+        "cssVars": {
+          "--palette-0": "#1D5063",
+          "--palette-1": "#9E2E48",
+          "--palette-2": "#D1B761",
+          "--palette-3": "#A8B6E6",
+          "--accent": "#55C0E7",
+          "--accent-soft": "#55C0E738",
+          "--accent-glow": "#55C0E76b",
+          "--paper": "#44494B",
+          "--ink": "#EEF0F1",
+          "--border": "#666A6B",
+          "--highlight-bg": "#55C0E7d9",
+          "--highlight-ink": "#44494B",
+          "--typography-stack": "'Crimson Pro', 'Source Serif Pro', Georgia, serif",
+          "--line-height": 1.85,
+          "--letter-spacing": 0.4,
+          "--paragraph-gap": 1.4,
+          "--font-size-scale": 1.04,
+          "--word-spacing-scale": 1.05,
+          "--card-radius": "12px",
+          "--highlight-radius": "5px"
+        }
+      },
+      "_edition_meta": {
+        "gesture_types_es": [
+          "instruccion_sensorial",
+          "pregunta_directa",
+          "imagen_concreta",
+          "aforismo_autorial"
+        ],
+        "gesture_types_en": [
+          "sensory_instruction",
+          "direct_question",
+          "concrete_image",
+          "authorial_aphorism"
+        ],
+        "distinct_types_es": 4,
+        "distinct_types_en": 4
+      },
+      "_quality_warning": {
+        "overall": "pass_with_warnings",
+        "warnings": [
+          "portada_auto_healed_v3.6: original \"\" rechazada por undefined",
+          "highlights_auto_corrected_v3.7: 1 highlight(s) extendidos a frase completa por LLM judge"
+        ]
+      },
+      "_inputs_snapshot": "2026-11-26T11-16-14",
+      "_crono": {
+        "dia": "jueves",
+        "hora": 5,
+        "franja": "madrugada",
+        "energia": 1.2,
+        "modo": "ejecucion_pico",
+        "descripcion_dia": "Jueves 9-11 AM es el peak de ejecución. Contenido directo y accionable.",
+        "descripcion_franja": "Madrugada: claridad mental máxima. Presencia. Pocas palabras, mucho peso."
+      },
+      "_metrics": {
+        "tokens_total": 130327,
+        "tokens_by_phase": {
+          "grounding": 1557,
+          "anchors": 30961,
+          "palette": 0,
+          "content_es": 41345,
+          "judge_es": 2055,
+          "content_en": 35480,
+          "judge_en": 2070,
+          "voice": 1909,
+          "voice_extended": 14950,
+          "highlight_judge_es_parrafoTop": 1196,
+          "highlight_judge_es_parrafoTop_retry": 1187,
+          "highlight_judge_es_parrafoBot": 1194,
+          "highlight_judge_en_parrafoTop": 1186,
+          "highlight_judge_en_parrafoBot": 1190,
+          "csal": 6460
+        },
+        "elapsed_ms_total": 48723,
+        "elapsed_ms_by_phase": {
+          "grounding": 5647,
+          "anchors": 6144,
+          "palette": 0,
+          "cover_fallback": 2728,
+          "content_es": 17113,
+          "judge_es": 2595,
+          "content_en": 7619,
+          "judge_en": 2305,
+          "voice": 2202,
+          "voice_extended": 2366,
+          "highlight_judge": 9563,
+          "lens_compatibility": 778,
+          "csal": 10181,
+          "post_processing": 20526
+        },
+        "llm_calls_count": 24,
+        "models_used": [
+          "claude-haiku-5-5"
+        ],
+        "pipeline_version": "nucleus-canonical-v3",
+        "final_validation": "pass_with_warnings",
+        "judge_degradations": [],
+        "portada_auto_healed": true,
+        "highlights_auto_corrected": 1,
+        "highlight_degradations": [],
+        "lens_compat_degraded": false,
+        "voice_judge_extended_degraded": false,
+        "voice_judge_extended_regenerations": 0,
+        "csal_degraded": false
+      },
+      "_lens_compatibility": {
+        "chronobiology": 0.3,
+        "game-theory": 0,
+        "self-knowledge": 0.15,
+        "pilares": {
+          "cuerpo": 0.2,
+          "mente": 0.45,
+          "negocio": 0,
+          "familia": 0.3,
+          "espiritu": 0.25,
+          "relaciones": 0.2,
+          "finanzas": 0
+        },
+        "hawkins": 0.2
+      },
+      "_hawkins_range": [
+        150,
+        250
+      ],
+      "_chronobiology_optimal": {
+        "preferred_franjas": [
+          "noche"
+        ],
+        "preferred_dias": [],
+        "energy_minimum_required": 0.4
+      },
+      "_csal": {
+        "trigger_situations": [
+          "cuando mi hijo pregunta por qué la luna sigue al carro",
+          "cuando un niño quiere saber a qué sabe la luna",
+          "antes de dormir y el niño mira la luna por la ventana",
+          "cuando la noche se vuelve tema de curiosidad infantil",
+          "cuando quiero que mi hijo imagine cosas sencillas antes de dormir",
+          "cuando el niño se asombra de algo tan lejano como la luna",
+          "después de apagar la luz y seguir hablando de la luna",
+          "cuando mi peque pregunta si la luna se puede tocar",
+          "cuando busco un libro ilustrado corto para la hora de dormir",
+          "cuando el niño quiere fantasear sobre fenómenos de la noche",
+          "cuando un bebé o niño pequeño señala la luna en el cielo",
+          "cuando quiero leer algo que invite a preguntar y no a dar respuestas",
+          "antes de dormir y necesito un cuento sin moraleja",
+          "cuando el niño se sorprende con la forma redonda de la luna",
+          "cuando quiero un libro de imágenes para compartir con mi hijo de dos a cinco años",
+          "cuando el niño quiere saber cómo se sentiría tocar el cielo de noche",
+          "cuando la luna aparece en la ventana y el niño no quiere dormir",
+          "cuando busco un cuento repetitivo para niños pequeños que aprenden a hablar",
+          "cuando mi hija me pregunta por qué la luna cambia de forma",
+          "cuando quiero acompañar la curiosidad nocturna sin explicar demasiado",
+          "cuando un niño juega a imaginar qué come la luna",
+          "cuando buscas un regalo ilustrado para un niño que mira las estrellas",
+          "cuando el niño duda si la luna está cerca o lejos",
+          "cuando la familia lee juntos antes de la siesta o la noche",
+          "cuando un niño pregunta de qué está hecha la luna",
+          "cuando la maestra busca un libro para hablar de sentidos con niños pequeños",
+          "cuando el niño descubre el mundo a través del gusto y el tacto",
+          "cuando quiero un libro poético y sencillo para la primera infancia",
+          "antes de la hora de dormir cuando el niño se resiste a cerrar los ojos",
+          "cuando el niño se pregunta qué pasaría si la luna cayera",
+          "cuando quiero que mi hijo sienta asombro sin miedo a la oscuridad",
+          "cuando los niños quieren contar qué imaginan sobre la luna",
+          "cuando la noche se llena de preguntas y necesito calma"
+        ],
+        "trigger_keywords": {
+          "emociones": [
+            "curiosidad",
+            "asombro",
+            "ternura",
+            "calma",
+            "ilusión",
+            "fascinación",
+            "sorpresa",
+            "intriga",
+            "alegría",
+            "sosiego",
+            "nostalgia",
+            "dulzura",
+            "paz",
+            "tranquilidad",
+            "maravilla",
+            "wonder",
+            "curious",
+            "amazed",
+            "cozy",
+            "sleepy",
+            "night",
+            "curiosity"
+          ],
+          "objetos": [
+            "luna",
+            "estrellas",
+            "cielo",
+            "ventana",
+            "noche",
+            "sabor",
+            "textura",
+            "nube",
+            "techo",
+            "cama",
+            "almohada",
+            "luz",
+            "luna llena",
+            "media luna",
+            "wonder moon",
+            "moon",
+            "stars",
+            "window",
+            "pillow"
+          ],
+          "contextos": [
+            "hora de dormir",
+            "cuarto del niño",
+            "ventana de noche",
+            "antes de la siesta",
+            "cuento antes de dormir",
+            "sala con luz tenue",
+            "jardín de noche",
+            "bedtime",
+            "nursery",
+            "bedroom",
+            "night sky"
+          ],
+          "verbos": [
+            "preguntar",
+            "imaginar",
+            "mirar",
+            "probar",
+            "tocar",
+            "soñar",
+            "señalar",
+            "fantasear",
+            "contar",
+            "descubrir",
+            "wonder",
+            "imagine",
+            "look",
+            "taste",
+            "touch",
+            "ask"
+          ]
+        },
+        "concept_tags": [
+          "la luna imaginada como objeto con sabor y textura",
+          "preguntas sencillas e imaginativas sobre la naturaleza de la luna",
+          "la luna vista desde la mirada sensorial de un niño pequeño",
+          "fantasía sensorial nocturna sin respuesta cerrada",
+          "juego de pregunta y respuesta con texto mínimo",
+          "predominio de la ilustración sobre el texto",
+          "estética de Michael Grejniec para primera infancia",
+          "la noche como espacio de asombro compartido",
+          "ritmo repetitivo y pausado de libro álbum",
+          "la luna como puerta a la curiosidad de los sentidos",
+          "libro álbum para preguntar en voz alta antes de dormir"
+        ],
+        "anti_patterns": [
+          "enseñanza explícita de astronomía o ciencia",
+          "moraleja o lección de vida",
+          "cuentos de terror o miedo a la oscuridad",
+          "libros para lectores adultos o adolescentes",
+          "manuales de educación formal o currículo escolar",
+          "respuestas científicas cerradas sobre la luna",
+          "historias largas con trama compleja",
+          "cuentos de aventura o acción"
+        ],
+        "bloques": [
+          {
+            "index": 0,
+            "emoji_specific": "🪟"
+          },
+          {
+            "index": 1,
+            "emoji_specific": "🌙"
+          },
+          {
+            "index": 2,
+            "emoji_specific": "🧸"
+          },
+          {
+            "index": 3,
+            "emoji_specific": "🫧"
+          }
+        ]
+      },
+      "_voice_judge_extended_verdicts": {
+        "es": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.78,
+              "reason": "Es una frase poética en primera escritura, con voz narrativa propia que forma parte del relato, no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "Es una instrucción poética en voz directa del narrador, como si fuera una línea del propio libro, no una descripción externa de la obra."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "Es una pregunta poética en primera escritura que abre una imagen dentro de la voz narrativa, no describe ni comenta el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase tiene voz autoral en primera escritura, como una reflexión poética que el autor pondría dentro de la narración, no una descripción externa del libro."
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una escena narrada en voz autoral, describe una acción y un pensamiento del personaje dentro de la historia, no habla acerca del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "Es una pregunta poética en primera escritura, como una voz narrativa dentro del texto, no una descripción del libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.93,
+              "reason": "Es una imagen poética en voz narrativa que describe una escena del relato, como si fuera una página del libro; no habla sobre el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase tiene voz poética de primera escritura, como una imagen que el autor pone en el texto, no una descripción externa del libro."
+            }
+          ]
+        },
+        "en": {
+          "og_phrases": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "Es una pregunta poética en primera escritura que abre la experiencia del texto; no describe ni comenta el libro desde afuera, sino que forma parte de su contenido."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "Es una frase imperativa y poética en voz autoral, como si el narrador hablara directamente al lector desde dentro de la escena, no describiendo el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una reflexión poética en voz propia, como una línea escrita dentro de la obra, no un comentario externo sobre el libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.8,
+              "reason": "La frase es una imagen poética en voz narrativa que se lee como parte de la escritura del libro, no como descripción externa de la obra.</reasoning_effort>"
+            }
+          ],
+          "edition_blocks": [
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "La frase es una instrucción en segunda persona que invita al lector a imaginar, como voz narrativa dentro del texto y no una descripción externa del libro."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "The sentence is a character's wondering question spoken within the narrative, reading as text from the book itself rather than commentary about it."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.9,
+              "reason": "Es una imagen descriptiva en voz narrativa dentro de la ficción, no un comentario sobre el libro desde afuera."
+            },
+            {
+              "category": "dentro",
+              "confidence": 0.85,
+              "reason": "Reads as the author's own lyrical voice inside the text, a reflective image rather than commentary describing the book from outside."
+            }
+          ]
+        }
+      },
+      "_manual": true,
+      "_manual_generated_at": "2026-11-26T11:17:23.633Z",
+      "_slug": "a-que-sabe-la-luna",
+      "_edicion_numero": 118,
+      "_musica": {
+        "resuelto_el": "2026-11-26",
+        "juez": "claude-haiku-5-5",
+        "sinfonia": "Elegiría Claro de luna para resonar, Los Perfumes de la noche para profundizar, Stamps para abrir si el ánimo pide más brío.",
+        "candidatos": [
+          {
+            "id": "724466418",
+            "cancion": "Images Pour Orch: Iberia, No.2: II. Les Parfums De La Nuit",
+            "artista": "Leopold Stokowski & Orchestre National de France",
+            "album": "Stokowski - Debussy: Nocturnes - Iberia - Clair De Lune - Prelude à L'apres-Midi d'un Faun",
+            "genero": "Clásica",
+            "dur": 542,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/0a/bd/7d0abd95-6404-59a4-453b-46ead59778b8/mzaf_10872237497947625572.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/images-pour-orch-iberia-no-2-ii-les-parfums-de-la-nuit/724465366?i=724466418&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/80/d1/35/80d135c3-dbea-7c2b-92ac-d4b2009c1dd3/00724356731356.jpg/600x600bb.jpg",
+            "armonia": 9,
+            "rol": "profundizar",
+            "pie": "Los Perfumes de la noche de Debussy son la noche española hecha sonido; el adulto sonríe ante el asombro y el niño se asoma a la ventana.",
+            "frase_eco": "💠 Mira la luna y pregúntale a qué sabe, en voz bajita."
+          },
+          {
+            "id": "543232739",
+            "cancion": "Claro de Luna",
+            "artista": "Orquesta George Melachrino & George Melachrino",
+            "album": "Orquesta George Melachrino",
+            "genero": "Orquestal",
+            "dur": 250,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dc/1c/c7/dc1cc74b-a6c6-087e-5ad6-dfbfe00821e8/mzaf_3155052996784954643.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/claro-de-luna/543232700?i=543232739&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/44/e1/c1/44e1c187-ecb2-7a04-c97c-707fd678bf71/887396042810.tif/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "resonar",
+            "pie": "Claro de luna evoca la noche y el asombro del cuento; el adulto lee con calidez y el niño se queda mirando el cielo.",
+            "frase_eco": "¿Y si la luna supiera a lo mismo que tu imaginación?"
+          },
+          {
+            "id": "1887499262",
+            "cancion": "Préludes, Book 1, CD 125: VIII. La fille aux cheveux de lin (Arr. Spindler for Violin & Or",
+            "artista": "María Dueñas, Orquesta Sinfonica Simón Bolívar & Gustavo Dudamel",
+            "album": "Homage to Heifetz",
+            "genero": "Clásica",
+            "dur": 151,
+            "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/8c/da/768cda06-30d2-24e2-d4e3-ded5dab8dcd3/mzaf_4083848770993731158.plus.aac.p.m4a",
+            "link": "https://music.apple.com/mx/album/pr%C3%A9ludes-book-1-cd-125-viii-la-fille-aux-cheveux-de/1887499248?i=1887499262&uo=4",
+            "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ac/c8/7f/acc87fc3-7204-5c1b-8b2a-1172c4e28fb6/26UMGIM16751.rgb.jpg/600x600bb.jpg",
+            "armonia": 6,
+            "rol": "profundizar",
+            "pie": "Debussy íntimo y delicado; sostiene la voz bajita del adulto, aunque el vínculo con la luna es indirecto.",
+            "frase_eco": ""
+          }
+        ]
+      },
+      "tienda_compra": {
+        "tienda": "casadelibro",
+        "url": "https://casadelibro.com.mx/productos/a-que-sabe-la-luna/",
+        "isbn": "9788484645641",
+        "revisado": "2026-11-26"
+      },
+      "portada_app": {
+        "estado": "sin_portada",
+        "motivo": "sin imagen real (vacía o portada de texto)",
+        "de": "95ec9fa83246",
+        "fecha": "2026-11-26"
+      }
+    },
+    {
       "titulo": "Cuentos de la selva",
       "autor": "Horacio Quiroga",
       "tagline": "",
@@ -45866,7 +46808,7 @@
       ],
       "_audit_score": 0.845,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-23T11:12:25.849Z",
+      "_audit_timestamp": "2026-11-26T11:17:25.571Z",
       "_musica": {
         "resuelto_el": "2026-08-31",
         "juez": "gpt-4o-mini",
@@ -96182,7 +97124,7 @@
       ],
       "_audit_score": 0.81,
       "_audit_decision": "KEEP_WITH_WARNING",
-      "_audit_timestamp": "2026-11-23T11:12:25.849Z",
+      "_audit_timestamp": "2026-11-26T11:17:25.571Z",
       "_musica": {
         "resuelto_el": "2026-11-16",
         "juez": "gpt-4o-mini+rescate+completar",
@@ -127124,10 +128066,10 @@
     }
   ],
   "meta": {
-    "next_edition_number": 117,
-    "total": 136,
+    "next_edition_number": 119,
+    "total": 137,
     "svg_cleanup": "20260516-200328",
-    "last_audit": "2026-11-23T11:12:25.850Z",
+    "last_audit": "2026-11-26T11:17:25.571Z",
     "last_updated": "2026-08-27T17:51:24.076Z",
     "healing_rotation_idx": 12,
     "last_healing_book": "La Bella y la Bestia",
